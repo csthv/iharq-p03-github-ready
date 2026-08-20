@@ -1,0 +1,70 @@
+{
+  "record_id": "IHARQ-LABELMAPRECORD-20260806-4379781a3b5f5ea9",
+  "record_type": "LabelMapRecord",
+  "schema_version": "1.0-p01",
+  "authority_status": "REGISTRY_REFERENCED",
+  "owner_layer": "L1",
+  "phase_id": "P01",
+  "config_id": "d03f0a7c869dd95a2a67e5a32edc501d52bfc3851d8e761ef56595d8bd1ff52f",
+  "source_ids": [
+    "IHARQ-DATASETRECORD-20260806-66309cda68771bef"
+  ],
+  "evidence_mode": "IMPLEMENTATION",
+  "limitation_tags": [
+    "NON_CLINICAL",
+    "NO_DEPLOYMENT_CLAIM",
+    "PUBLIC_EEG_ONLY"
+  ],
+  "lifecycle_status": "VALIDATED",
+  "fixture": false,
+  "fixture_tags": [],
+  "evidence_role": "PRIMARY",
+  "payload": {
+    "label_map_id": "PhysioNetMI:label-map:d03f0a7c869d",
+    "dataset_id": "PhysioNetMI",
+    "mapping": {
+      "run_4_8_12:T1": "left_hand",
+      "run_4_8_12:T2": "right_hand"
+    },
+    "mapping_metadata": {
+      "run_4_8_12:T0": {
+        "normalized_label": "rest_no_action",
+        "included": false,
+        "reason": "REST_EXCLUDED_FROM_BINARY_MI"
+      },
+      "run_4_8_12:T1": {
+        "normalized_label": "left_hand",
+        "included": true,
+        "reason": "IMAGINED_LEFT_HAND"
+      },
+      "run_4_8_12:T2": {
+        "normalized_label": "right_hand",
+        "included": true,
+        "reason": "IMAGINED_RIGHT_HAND"
+      }
+    },
+    "original_labels": [
+      "run_4_8_12:T0",
+      "run_4_8_12:T1",
+      "run_4_8_12:T2"
+    ],
+    "normalized_labels": [
+      "left_hand",
+      "right_hand"
+    ],
+    "excluded_labels": [
+      "run_4_8_12:T0"
+    ],
+    "unknown_labels": [],
+    "proxy_limitations": [
+      "PROXY_INTENT_ONLY",
+      "PUBLIC_EEG_ONLY",
+      "NO_REAL_CONTROL_INTENT_CLAIM"
+    ],
+    "round_trip_required": true,
+    "expected_event_codes": [],
+    "unknown_event_behavior": "BLOCK_SOURCE_EVENT_WITH_UNKNOWN_LABEL"
+  },
+  "ablation_id": null,
+  "semantic_hash": "4379781a3b5f5ea91f70c560e007de42d8624b4ee0e6a792921079fbd069a663"
+}

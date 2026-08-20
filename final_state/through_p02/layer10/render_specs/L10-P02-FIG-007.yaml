@@ -1,0 +1,16 @@
+artifact_id: L10-P02-FIG-007
+source_data: figure_source_data/P02_Table_Stage18S_three_repeat_anchor_stability.csv
+render_script: scripts/render_layer10.py
+claim_ids:
+- P02-CLM-009/v1
+- CUM-CLM-005/v1
+finding_ids:
+- P02-FIND-012
+- CF-06
+limitations:
+- POST_HOC_ONLY
+- THREE_REPEAT_NOT_FIVE_REPEAT
+output: figures/L10-P02-FIG-007.png
+scientific_transform: DISPLAY_ONLY
+source_data_sha256: 9f234c9721066123a98380893e917dd32ae9656ee7aa5b850237e8e9b396564f
+output_sha256: 02b2d838461643f93c7eb540edf6b82da035dd6addaa0d6a5dfd1352e71746cb

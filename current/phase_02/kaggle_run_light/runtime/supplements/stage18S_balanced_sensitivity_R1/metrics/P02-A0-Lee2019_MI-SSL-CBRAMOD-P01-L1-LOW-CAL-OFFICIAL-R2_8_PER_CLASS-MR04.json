@@ -1,0 +1,185 @@
+{
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "run_cell_id": "P02-A0-Lee2019_MI-SSL-CBRAMOD-P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS-MR04",
+  "dataset_id": "Lee2019_MI",
+  "branch_id": "SSL-CBRAMOD",
+  "resolved_variant": "CBraMod-HF-Braindecode-GovernedP02-R6Scale1e4",
+  "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS",
+  "metrics": {
+    "BACC": 0.5216666666666667,
+    "F1_MACRO": 0.47020438050524416,
+    "ACC": 0.5216666666666666,
+    "CONFUSION": [
+      [
+        63,
+        237
+      ],
+      [
+        50,
+        250
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      300,
+      300
+    ],
+    "PRED_COMPLETE": 600,
+    "ROC_AUC": 0.5330777777777779,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+  },
+  "validation_selection": {
+    "ACC": 0.51,
+    "BACC": 0.51,
+    "CLASS_SUPPORT": [
+      250,
+      250
+    ],
+    "CONFUSION": [
+      [
+        47,
+        203
+      ],
+      [
+        42,
+        208
+      ]
+    ],
+    "F1_MACRO": 0.4533178030962295,
+    "PRED_COMPLETE": 500,
+    "ROC_AUC": 0.497872,
+    "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY",
+    "ROC_AUC_STATUS": "PASS"
+  },
+  "validation_burden_seconds": 56.64997100830078,
+  "model_storage_bytes": 19993608,
+  "selected_candidate_id": "R6-CBRAMOD-SOURCE-CENTERED-R1",
+  "selected_params": {
+    "recipe_id": "R6-CBRAMOD-SOURCE-CENTERED-R1",
+    "optimizer": "AdamW",
+    "body_lr": 0.0001,
+    "head_lr": 0.0005,
+    "weight_decay": 0.05,
+    "batch_size": 64,
+    "scheduler": "cosine",
+    "eta_min": 1e-06,
+    "label_smoothing": 0.1,
+    "grad_clip": 1.0,
+    "input_scale": 10000.0,
+    "source_sampling_hz": 160,
+    "target_sampling_hz": 200,
+    "max_epochs": 150,
+    "patience": 40,
+    "selection": "validation_BACC",
+    "restore_best": true,
+    "branch": "SSL-CBRAMOD",
+    "dataset_id": "Lee2019_MI",
+    "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS"
+  },
+  "candidate_failures": [],
+  "observed_denominator": 600,
+  "expected_denominator": 600,
+  "score_type": "SOFTMAX_PROBABILITY",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.009604376999050146,
+    "batch1_latency_p95_s": 0.009749079199536936,
+    "repeats": 5,
+    "latency_probe_mode": "FORWARD_ONLY_NO_METRICS"
+  },
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "class_weights": null,
+  "class_weight_calibration": {
+    "selected_policy": "UNIFORM_NO_WEIGHT",
+    "selected_weights": null,
+    "validation_metrics": {
+      "BACC": 0.51,
+      "F1_MACRO": 0.4533178030962295,
+      "ACC": 0.51,
+      "CONFUSION": [
+        [
+          47,
+          203
+        ],
+        [
+          42,
+          208
+        ]
+      ],
+      "CLASS_SUPPORT": [
+        250,
+        250
+      ],
+      "PRED_COMPLETE": 500,
+      "ROC_AUC": 0.497872,
+      "ROC_AUC_STATUS": "PASS",
+      "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+    },
+    "candidate_results": [
+      {
+        "status": "SUCCESS",
+        "policy": "UNIFORM_NO_WEIGHT",
+        "weights": null,
+        "validation_metrics": {
+          "BACC": 0.51,
+          "F1_MACRO": 0.4533178030962295,
+          "ACC": 0.51,
+          "CONFUSION": [
+            [
+              47,
+              203
+            ],
+            [
+              42,
+              208
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            250,
+            250
+          ],
+          "PRED_COMPLETE": 500,
+          "ROC_AUC": 0.497872,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+        },
+        "validation_burden_seconds": 56.64997100830078,
+        "model_storage_bytes": 19993608,
+        "best_epoch": 19,
+        "epochs_completed": 59,
+        "history_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/staging_runtime/raw_outputs/stage12_r6_training_history/P02-A0-Lee2019_MI-SSL-CBRAMOD-P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS-MR04__UNIFORM_NO_WEIGHT.json",
+        "candidate_checkpoint_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/staging_runtime/raw_outputs/stage12_r6_training_history/P02-A0-Lee2019_MI-SSL-CBRAMOD-P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS-MR04__UNIFORM_NO_WEIGHT.candidate.chk",
+        "candidate_checkpoint_sha256": "3f55fb8c80c7ddf1fca504e955447d886c155e3abeae0896e14630eb6d986e5f"
+      }
+    ],
+    "test_set_used": false
+  },
+  "r6_scientific_amendment": true,
+  "r6_max_epochs": 150,
+  "r6_patience": 40,
+  "horizon_sufficiency": {
+    "best_by_cutoff": {
+      "100": {
+        "BACC": 0.51,
+        "epoch": 19
+      },
+      "150": {
+        "BACC": 0.51,
+        "epoch": 19
+      },
+      "50": {
+        "BACC": 0.51,
+        "epoch": 19
+      }
+    },
+    "epochs_completed": 59,
+    "final_best_BACC": 0.51,
+    "final_best_epoch": 19,
+    "gain_after_100": 0.0,
+    "gain_after_150": 0.0,
+    "max_epochs": 150,
+    "patience": 40,
+    "status": "PASS"
+  },
+  "test_loaded_after_group_selection_sealed": true,
+  "test_set_used_for_selection": false
+}

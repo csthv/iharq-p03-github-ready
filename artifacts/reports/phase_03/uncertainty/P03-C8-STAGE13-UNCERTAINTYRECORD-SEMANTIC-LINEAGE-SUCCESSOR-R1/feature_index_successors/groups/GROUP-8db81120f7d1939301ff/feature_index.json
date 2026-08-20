@@ -1,0 +1,20 @@
+{
+  "confidence": {
+    "alias_of_feature_id": null,
+    "decision_time_eligible": true,
+    "direction": "higher_is_better",
+    "family": "confidence"
+  },
+  "normalized_entropy": {
+    "alias_of_feature_id": null,
+    "decision_time_eligible": true,
+    "direction": "lower_is_better",
+    "family": "entropy"
+  },
+  "top1_top2_margin": {
+    "alias_of_feature_id": null,
+    "decision_time_eligible": true,
+    "direction": "higher_is_better",
+    "family": "margin"
+  }
+}

@@ -1,0 +1,499 @@
+{
+  "record_id": "IHARQ-FINAL-WHOLE-PHASE-CLOSURE-VALIDATION-THROUGH-P02-R1",
+  "coverage": [
+    "P00",
+    "P01",
+    "P02"
+  ],
+  "closing_phase": "P02",
+  "closing_layer": "L2",
+  "checks": [
+    {
+      "check": "pre-PDF closure validation",
+      "status": "PASS",
+      "detail": {
+        "total": 30,
+        "pass": 30,
+        "fail": 0
+      }
+    },
+    {
+      "check": "post-analysis governance source validation",
+      "status": "PASS",
+      "detail": {
+        "total": 39,
+        "pass": 39,
+        "fail": 0
+      }
+    },
+    {
+      "check": "cumulative Phase Analysis source finalized",
+      "status": "PASS",
+      "detail": "FINALIZED_WITH_EXPLICIT_NONBLOCKING_LIMITATIONS"
+    },
+    {
+      "check": "cumulative Protocol source validation",
+      "status": "PASS",
+      "detail": "PASS"
+    },
+    {
+      "check": "producer-consumer matrix complete",
+      "status": "PASS",
+      "detail": 27
+    },
+    {
+      "check": "independent Layer2 product matrix complete",
+      "status": "PASS",
+      "detail": 21
+    },
+    {
+      "check": "expected P02 product matrix complete",
+      "status": "PASS",
+      "detail": 30
+    },
+    {
+      "check": "master closure ledger has no missing/blocked",
+      "status": "PASS",
+      "detail": {
+        "COMPLETE": 16,
+        "COMPLETE_AFTER_CORRECTION": 1,
+        "INHERITED_UNCHANGED": 25
+      }
+    },
+    {
+      "check": "Layer2ReadinessReport P03 PASS",
+      "status": "PASS",
+      "detail": {
+        "compatibility": "PASS",
+        "missing_fields": 0,
+        "blocking_reasons": 0
+      }
+    },
+    {
+      "check": "PredictionRecord partition manifests 1014",
+      "status": "PASS",
+      "detail": 1014
+    },
+    {
+      "check": "ModelRegistryRecord partition manifests 672",
+      "status": "PASS",
+      "detail": 672
+    },
+    {
+      "check": "record-family counts expected",
+      "status": "PASS",
+      "detail": {
+        "BaselineMetricRecord": 2625,
+        "LowCalibrationCurveRecord": 36,
+        "SubjectProfileRecord": 18,
+        "EnsembleControlRecord": 342,
+        "FailureCaseIndex": 648,
+        "Layer2ReadinessReport": 1,
+        "NegativeResultNote": 340,
+        "DiagnosticOnlyFlag": 309,
+        "ModelRegistryRecord": 672
+      }
+    },
+    {
+      "check": "Evidence Map cumulative counts",
+      "status": "PASS",
+      "detail": {
+        "claims": 37,
+        "findings": 49,
+        "limitations": 54,
+        "evidence_nodes": 69,
+        "artifacts": 47,
+        "relationships": 146,
+        "figures": 14,
+        "tables": 13
+      }
+    },
+    {
+      "check": "P02 evidence completeness all true",
+      "status": "PASS",
+      "detail": {
+        "expected_scientific_outputs_dispositioned": true,
+        "all_major_findings_mapped": true,
+        "all_candidate_claims_layer0_reviewed": true,
+        "all_datasets_mapped": true,
+        "all_models_mapped": true,
+        "all_budgets_mapped": true,
+        "all_metrics_mapped": true,
+        "A0_mapped": true,
+        "A4_mapped": true,
+        "stage11_12_mapped": true,
+        "author_aligned_correction_mapped": true,
+        "resource_constraint_mapped": true,
+        "stage18S_mapped_if_applicable": true,
+        "failure_evidence_mapped": true,
+        "negative_evidence_mapped": true,
+        "statistics_mapped": true,
+        "limitations_mapped": true,
+        "Layer10_representation_sufficient": true
+      }
+    },
+    {
+      "check": "no orphan material claims",
+      "status": "PASS",
+      "detail": 0
+    },
+    {
+      "check": "no orphan material evidence",
+      "status": "PASS",
+      "detail": 0
+    },
+    {
+      "check": "Evidence Map ID integrity",
+      "status": "PASS",
+      "detail": {
+        "claims": 37,
+        "findings": 49,
+        "artifacts": 47,
+        "figures": 14,
+        "tables": 13
+      }
+    },
+    {
+      "check": "numeric consistency source checks",
+      "status": "PASS",
+      "detail": 9
+    },
+    {
+      "check": "dual symbolic credentials and single-token prohibition",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "preferred P02 immutable workspace pinned",
+      "status": "PASS",
+      "detail": "REMOTE_NOT_ACCESSIBLE_PRIVATE"
+    },
+    {
+      "check": "archival P02 immutable release pinned",
+      "status": "PASS",
+      "detail": "REMOTE_NOT_ACCESSIBLE_PRIVATE"
+    },
+    {
+      "check": "sanitized notebook transport exists",
+      "status": "PASS",
+      "detail": {
+        "source_filename": "notebook110a2128e2 (18).ipynb",
+        "source_sha256": "498b837ffaabc945160cd2b8482528c17ed85e978501119a19c88073d72b543a",
+        "transport_filename": "execution/P02_Final_Executed_Notebook_SANITIZED.ipynb",
+        "literal_hf_token_occurrences_redacted": 3,
+        "replacement_symbolic_credential": "IHARQ_HF_TOKEN_P02",
+        "scientific_measurement_change": false,
+        "reason": "SECURITY_TRANSPORT_REDACTION_ONLY"
+      }
+    },
+    {
+      "check": "raw unsanitized notebook absent",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "sanitized notebook contains no literal hf token",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "symbolic P02 credential retained in sanitized notebook",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "prior top-level source archive audit preserved/pass",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "prior nested archive recursive audit preserved/pass",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "all final structured artifacts parse",
+      "status": "PASS",
+      "detail": {
+        "files_checked": 3506,
+        "failures": []
+      }
+    },
+    {
+      "check": "CSV/TSV column consistency",
+      "status": "PASS",
+      "detail": {
+        "failures": []
+      }
+    },
+    {
+      "check": "all final PDFs openable/text-based/unencrypted",
+      "status": "PASS",
+      "detail": [
+        {
+          "path": "analysis/IHARQ_Cumulative_Phase_Evidence_Results_and_Interpretation_Through_P02_Final_R1.pdf",
+          "pages": 123,
+          "text_pages": 123,
+          "encrypted": false,
+          "sha256": "eacb1eed8b249fc73b559227d06ccdc8ea3203f6e18d8bcb26f915367bb8725c"
+        },
+        {
+          "path": "authorities/foundational/01_Master_Architecture_Specification_FINAL_T29_LAYOUT_CORRECTED_R1.pdf",
+          "pages": 765,
+          "text_pages": 765,
+          "encrypted": false,
+          "sha256": "ae374c9de061bc5179c9223e7d646c70cf0d98c414007ab6baf95cd68c814f9b"
+        },
+        {
+          "path": "authorities/protocol_v1/IHARQ_Protocol_v1_0_Final_Through_Phase_02_R1.pdf",
+          "pages": 76,
+          "text_pages": 76,
+          "encrypted": false,
+          "sha256": "b878365a8cb676bbaacbd5be165bde7b3081d8b21c947f7b38afd7f62024c5a1"
+        },
+        {
+          "path": "evidence_map/IHARQ_Cumulative_Evidence_Map_Through_P02.pdf",
+          "pages": 11,
+          "text_pages": 11,
+          "encrypted": false,
+          "sha256": "b28d0af2a1439dde79c584702289249d22ec0bdb13f1d62483dc5e3514e3465c"
+        },
+        {
+          "path": "layer0/Layer_0_Claim_Governance_Through_P02.pdf",
+          "pages": 12,
+          "text_pages": 12,
+          "encrypted": false,
+          "sha256": "f00cf4aad639dd1f5f4c91954a20eedf4b2cbb62cba80ba2bdaef5ed5bb04cdb"
+        },
+        {
+          "path": "layer10/Layer_10_Artifact_Package_Through_P02.pdf",
+          "pages": 6,
+          "text_pages": 6,
+          "encrypted": false,
+          "sha256": "74556db58bdc9d71da8e4655ad0181c7545ccf6087aded11db9d75059fefa2f7"
+        },
+        {
+          "path": "validation/final_phase_closure_report.pdf",
+          "pages": 8,
+          "text_pages": 8,
+          "encrypted": false,
+          "sha256": "0529707edd30146b8adc209bc81c1573402c83f62a213f4bbfd83a2b397d6274"
+        }
+      ]
+    },
+    {
+      "check": "new closure-report PDF visual QA",
+      "status": "PASS",
+      "detail": {
+        "pdf": "validation/final_phase_closure_report.pdf",
+        "pages": 8,
+        "pages_visually_inspected": 8,
+        "method": "rendered at 140 dpi; full 8-page contact sheet visually inspected after table-to-record PDF rendering projection",
+        "clipped_text": 0,
+        "truncated_tables": 0,
+        "overlap": 0,
+        "missing_sections": 0,
+        "broken_status_tokens": 0,
+        "status": "PASS"
+      }
+    },
+    {
+      "check": "cumulative analysis source PDF QA preserved",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Layer0/EvidenceMap/Layer10 source PDF QA preserved",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "literal secret scan clean",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "check": "no DOC/DOCX in final handoff",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "check": "all required canonical handoff files present",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "check": "UNRESOLVED_REQUIRED_ARTIFACTS = 0",
+      "status": "PASS",
+      "detail": {
+        "UNRESOLVED_REQUIRED_ARTIFACTS": 0,
+        "items": []
+      }
+    },
+    {
+      "check": "DOWNSTREAM_BLOCKERS = 0",
+      "status": "PASS",
+      "detail": {
+        "DOWNSTREAM_BLOCKERS": 0,
+        "items": []
+      }
+    }
+  ],
+  "summary": {
+    "total": 38,
+    "pass": 38,
+    "fail": 0
+  },
+  "pdfs": [
+    {
+      "path": "analysis/IHARQ_Cumulative_Phase_Evidence_Results_and_Interpretation_Through_P02_Final_R1.pdf",
+      "pages": 123,
+      "text_pages": 123,
+      "encrypted": false,
+      "sha256": "eacb1eed8b249fc73b559227d06ccdc8ea3203f6e18d8bcb26f915367bb8725c"
+    },
+    {
+      "path": "authorities/foundational/01_Master_Architecture_Specification_FINAL_T29_LAYOUT_CORRECTED_R1.pdf",
+      "pages": 765,
+      "text_pages": 765,
+      "encrypted": false,
+      "sha256": "ae374c9de061bc5179c9223e7d646c70cf0d98c414007ab6baf95cd68c814f9b"
+    },
+    {
+      "path": "authorities/protocol_v1/IHARQ_Protocol_v1_0_Final_Through_Phase_02_R1.pdf",
+      "pages": 76,
+      "text_pages": 76,
+      "encrypted": false,
+      "sha256": "b878365a8cb676bbaacbd5be165bde7b3081d8b21c947f7b38afd7f62024c5a1"
+    },
+    {
+      "path": "evidence_map/IHARQ_Cumulative_Evidence_Map_Through_P02.pdf",
+      "pages": 11,
+      "text_pages": 11,
+      "encrypted": false,
+      "sha256": "b28d0af2a1439dde79c584702289249d22ec0bdb13f1d62483dc5e3514e3465c"
+    },
+    {
+      "path": "layer0/Layer_0_Claim_Governance_Through_P02.pdf",
+      "pages": 12,
+      "text_pages": 12,
+      "encrypted": false,
+      "sha256": "f00cf4aad639dd1f5f4c91954a20eedf4b2cbb62cba80ba2bdaef5ed5bb04cdb"
+    },
+    {
+      "path": "layer10/Layer_10_Artifact_Package_Through_P02.pdf",
+      "pages": 6,
+      "text_pages": 6,
+      "encrypted": false,
+      "sha256": "74556db58bdc9d71da8e4655ad0181c7545ccf6087aded11db9d75059fefa2f7"
+    },
+    {
+      "path": "validation/final_phase_closure_report.pdf",
+      "pages": 8,
+      "text_pages": 8,
+      "encrypted": false,
+      "sha256": "0529707edd30146b8adc209bc81c1573402c83f62a213f4bbfd83a2b397d6274"
+    }
+  ],
+  "structured_files_checked": 3506,
+  "csv_tsv_shape_failures": [],
+  "secret_hits": [],
+  "doc_or_docx_files": [],
+  "producer_consumer_rows": 27,
+  "layer2_product_rows": 21,
+  "expected_p02_product_rows": 30,
+  "unresolved_required_artifacts": 0,
+  "downstream_blockers": 0,
+  "blockers": [],
+  "major_issues": [],
+  "nonblocking_limitations": {
+    "limitations": [
+      {
+        "limitation_id": "P02-LIM-01",
+        "tag": "PUBLIC_BENCHMARK_BINARY_MI_RESEARCH_ONLY",
+        "status_after_P02": "PERSISTING_NONBLOCKING",
+        "downstream_claim_impact": "Carry into downstream interpretation; do not silently broaden scope."
+      },
+      {
+        "limitation_id": "P02-LIM-02",
+        "tag": "INHERITED_P01_DATA_SPLIT_PREPROCESS_WINDOW_SCOPE",
+        "status_after_P02": "PERSISTING_NONBLOCKING",
+        "downstream_claim_impact": "Carry into downstream interpretation; do not silently broaden scope."
+      },
+      {
+        "limitation_id": "P02-LIM-03",
+        "tag": "ONE_FROZEN_LOW_LABEL_SUBSET_PER_BUDGET",
+        "status_after_P02": "PERSISTING_NONBLOCKING",
+        "downstream_claim_impact": "Do not infer repeated-subset sample-efficiency stability."
+      },
+      {
+        "limitation_id": "P02-LIM-04",
+        "tag": "NON_SUCCESS_TERMINALS_PRESERVED",
+        "status_after_P02": "PERSISTING_NONBLOCKING",
+        "downstream_claim_impact": "Carry into downstream interpretation; do not silently broaden scope."
+      },
+      {
+        "limitation_id": "P02-LIM-05",
+        "tag": "POST_OBSERVATION_STAGE11_STAGE12_AMENDMENTS",
+        "status_after_P02": "PERSISTING_NONBLOCKING",
+        "downstream_claim_impact": "Carry into downstream interpretation; do not silently broaden scope."
+      },
+      {
+        "limitation_id": "P02-LIM-06",
+        "tag": "STAGE11_MIXED_GRANDFATHERED_LINEAGE",
+        "status_after_P02": "PERSISTING_NONBLOCKING",
+        "downstream_claim_impact": "Carry into downstream interpretation; do not silently broaden scope."
+      },
+      {
+        "limitation_id": "P02-LIM-07",
+        "tag": "A4_SINGLE_REFIT_REPEAT_AND_DEEP_ANCHOR_BUDGETS_ONLY",
+        "status_after_P02": "PERSISTING_NONBLOCKING",
+        "downstream_claim_impact": "No five-repeat stability, dense deep-budget curve, or full-grid-equivalence claim."
+      },
+      {
+        "limitation_id": "P02-LIM-08",
+        "tag": "STAGE18S_POST_HOC_DESCRIPTIVE_ONLY",
+        "status_after_P02": "PERSISTING_NONBLOCKING",
+        "downstream_claim_impact": "Keep Stage18S post-hoc/descriptive; never use as confirmatory replacement for Stage18."
+      },
+      {
+        "limitation_id": "P02-LIM-09",
+        "tag": "CONDITIONAL_SCORE_SEMANTICS",
+        "status_after_P02": "PERSISTING_NONBLOCKING",
+        "downstream_claim_impact": "Carry into downstream interpretation; do not silently broaden scope."
+      },
+      {
+        "limitation_id": "P02-LIM-10",
+        "tag": "POST_RESTART_NOTEBOOK_RECONSTRUCTION",
+        "status_after_P02": "PERSISTING_NONBLOCKING",
+        "downstream_claim_impact": "Carry into downstream interpretation; do not silently broaden scope."
+      },
+      {
+        "limitation_id": "P02-LIM-11",
+        "tag": "PRIVATE_HF_REMOTE_ACCESS_REQUIRES_AUTHORIZATION",
+        "status_after_P02": "PERSISTING_NONBLOCKING",
+        "downstream_claim_impact": "Resolve symbolic credential class at runtime; never hardcode or assume one token."
+      },
+      {
+        "limitation_id": "P02-LIM-12",
+        "tag": "DUAL_SYMBOLIC_HF_CREDENTIAL_CLASSES",
+        "status_after_P02": "PERSISTING_NONBLOCKING",
+        "downstream_claim_impact": "Resolve symbolic credential class at runtime; never hardcode or assume one token."
+      },
+      {
+        "limitation_id": "P02-LIM-13",
+        "tag": "RECORDED_RUNTIME_ENVIRONMENT_BOUND",
+        "status_after_P02": "PERSISTING_NONBLOCKING",
+        "downstream_claim_impact": "Carry into downstream interpretation; do not silently broaden scope."
+      },
+      {
+        "limitation_id": "P02-LIM-14",
+        "tag": "DOWNSTREAM_CALIBRATION_POLICY_STRESS_EMBODIMENT_UNTESTED_BY_P02",
+        "status_after_P02": "PERSISTING_NONBLOCKING",
+        "downstream_claim_impact": "P03+ must test calibration/selective/uncertainty behavior; P02 does not establish it."
+      }
+    ]
+  },
+  "P02_PHASE_AND_LAYER_CLOSURE_STATUS": "GREEN_LIGHT_WITH_EXPLICIT_NONBLOCKING_LIMITATIONS",
+  "archive_validation": "PERFORMED_AFTER_SERIALIZATION; see ZIP sidecar validation record distributed with the ZIP"
+}

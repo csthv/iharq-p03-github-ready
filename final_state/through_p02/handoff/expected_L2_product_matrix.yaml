@@ -1,0 +1,195 @@
+layer2_expected_products:
+- layer2_product: PredictionRecord partitions
+  identity_or_schema: iharq://schemas/p02/predictionrecord/v1
+  produced: 'YES'
+  canonical: CURRENT_CANONICAL
+  downstream_consumer: P03/L3
+  availability: POINTER_BACKED; 1,014 partition manifests local; heavy rows recoverable
+    from preferred workspace
+  integrity: Stage20 required prediction/support fields PASS
+  limitation: conditional score semantics; preserve class order and lineage
+  ready: 'YES'
+- layer2_product: ModelRegistryRecord + checkpoint lineage
+  identity_or_schema: iharq://schemas/p02/modelregistryrecord/v1
+  produced: 'YES'
+  canonical: CURRENT_CANONICAL
+  downstream_consumer: P03/L3
+  availability: 672 light ModelRegistryRecord rows local; heavy checkpoints external
+    where applicable
+  integrity: 672 rows/partition manifests; checkpoint SHA fields governed
+  limitation: conditional branch failures/skips remain visible
+  ready: 'YES'
+- layer2_product: BaselineMetricRecord
+  identity_or_schema: iharq://schemas/p02/baselinemetricrecord/v1
+  produced: 'YES'
+  canonical: CURRENT_CANONICAL
+  downstream_consumer: P03 context
+  availability: LOCAL
+  integrity: 2,625 rows; schema frozen
+  limitation: A0 raw accept-all semantics; use governed aggregation
+  ready: 'YES'
+- layer2_product: LowCalibrationCurveRecord
+  identity_or_schema: iharq://schemas/p02/lowcalibrationcurverecord/v1
+  produced: 'YES'
+  canonical: CURRENT_CANONICAL
+  downstream_consumer: P03 context
+  availability: LOCAL
+  integrity: 36 rows; schema frozen
+  limitation: one frozen subset per budget; not repeated-subset stability evidence
+  ready: 'YES'
+- layer2_product: SubjectProfileRecord
+  identity_or_schema: iharq://schemas/p02/subjectprofilerecord/v1
+  produced: 'YES'
+  canonical: CURRENT_CANONICAL
+  downstream_consumer: P03 context
+  availability: LOCAL
+  integrity: 18 rows; schema frozen
+  limitation: participant scope follows frozen test population
+  ready: 'YES'
+- layer2_product: EnsembleControlRecord + A4 analysis inputs
+  identity_or_schema: iharq://schemas/p02/ensemblecontrolrecord/v1
+  produced: 'YES'
+  canonical: CURRENT_CANONICAL
+  downstream_consumer: P03 context
+  availability: LOCAL
+  integrity: 342 records + governed A4 analysis inputs
+  limitation: single canonical refit repeat/deep anchor budgets; Stage18S separate
+    post-hoc
+  ready: 'YES'
+- layer2_product: FailureCaseIndex
+  identity_or_schema: iharq://schemas/p02/failurecaseindex/v1
+  produced: 'YES'
+  canonical: CURRENT_CANONICAL
+  downstream_consumer: P03/L3
+  availability: LOCAL
+  integrity: 648 records; schema frozen
+  limitation: do not conflate failure/skip/incompatibility classes
+  ready: 'YES'
+- layer2_product: NegativeResultNote
+  identity_or_schema: iharq://schemas/p02/negativeresultnote/v1
+  produced: 'YES'
+  canonical: CURRENT_CANONICAL
+  downstream_consumer: P03/L3
+  availability: LOCAL
+  integrity: 340 records; schema frozen
+  limitation: negative result does not imply universal ineffectiveness
+  ready: 'YES'
+- layer2_product: DiagnosticOnlyFlag
+  identity_or_schema: iharq://schemas/p02/diagnosticonlyflag/v1
+  produced: 'YES'
+  canonical: CURRENT_CANONICAL
+  downstream_consumer: P03/L3
+  availability: LOCAL
+  integrity: 309 records; schema frozen
+  limitation: diagnostic artifacts are non-claim-bearing unless separately governed
+  ready: 'YES'
+- layer2_product: Layer2ReadinessReport
+  identity_or_schema: iharq://schemas/p02/layer2readinessreport/v1
+  produced: 'YES'
+  canonical: CURRENT_CANONICAL
+  downstream_consumer: P03
+  availability: LOCAL
+  integrity: compatibility_status=PASS; missing_fields=[]; blocking_reasons=[]
+  limitation: inherits all persistent P02 limitations
+  ready: 'YES'
+- layer2_product: A0 metrics/statistics contract
+  identity_or_schema: P02 cumulative analysis contract
+  produced: 'YES'
+  canonical: CURRENT_CANONICAL
+  downstream_consumer: P03 context
+  availability: LOCAL
+  integrity: 678 terminal cells reconciled
+  limitation: no universal decoder winner claim
+  ready: 'YES'
+- layer2_product: A4 comparison/statistics contract
+  identity_or_schema: P02 cumulative analysis contract
+  produced: 'YES'
+  canonical: CURRENT_CANONICAL
+  downstream_consumer: P03 context
+  availability: LOCAL
+  integrity: 1,218 terminal cells reconciled
+  limitation: resource-constrained evidence ceiling applies
+  ready: 'YES'
+- layer2_product: Stage11/12 correction/amendment lineage
+  identity_or_schema: Protocol amendment/successor records
+  produced: 'YES'
+  canonical: CURRENT_CANONICAL
+  downstream_consumer: P03 reproduction context
+  availability: LOCAL
+  integrity: accepted vs diagnostic lineage preserved
+  limitation: post-observation/source-informed amendments; do not retrospectively
+    normalize
+  ready: 'YES'
+- layer2_product: Stage18S sensitivity supplement
+  identity_or_schema: P02 Stage18S handoff
+  produced: 'YES'
+  canonical: CURRENT_CANONICAL
+  downstream_consumer: P03 context
+  availability: LOCAL
+  integrity: supplement PASS; canonical Stage18 unchanged
+  limitation: POST_HOC/DESCRIPTIVE/SENSITIVITY only
+  ready: 'YES'
+- layer2_product: Frozen P02 record schemas
+  identity_or_schema: P02-RECORD-SCHEMA-FREEZE-R2
+  produced: 'YES'
+  canonical: CURRENT_CANONICAL
+  downstream_consumer: P03/L3
+  availability: LOCAL
+  integrity: 10 governed record schemas; predecessor mutation prohibited
+  limitation: owner-routed warnings/comparison reports remain separate
+  ready: 'YES'
+- layer2_product: P03 input contract
+  identity_or_schema: P02-TO-P03-INPUT-CONTRACT-R1
+  produced: 'YES'
+  canonical: CURRENT_CANONICAL
+  downstream_consumer: P03
+  availability: LOCAL
+  integrity: contract parsed and reconciled with Stage20 readiness
+  limitation: P03 may calibrate/threshold; P02 may not
+  ready: 'YES'
+- layer2_product: Run/config/freeze identity
+  identity_or_schema: Protocol v1 cumulative
+  produced: 'YES'
+  canonical: CURRENT_CANONICAL
+  downstream_consumer: P03 intake
+  availability: LOCAL
+  integrity: run/config/freeze identities parity checked
+  limitation: recorded environment/config scope
+  ready: 'YES'
+- layer2_product: Frozen 38-input Phase Analysis contract
+  identity_or_schema: Cumulative Protocol analysis contract
+  produced: 'YES'
+  canonical: CURRENT_CANONICAL
+  downstream_consumer: reproduction
+  availability: LOCAL
+  integrity: 38 canonical P02 analysis inputs verified in prior finalization
+  limitation: analysis-only; no new confirmatory tests
+  ready: 'YES'
+- layer2_product: Preferred full P02 workspace snapshot
+  identity_or_schema: HF immutable dataset revision
+  produced: 'YES'
+  canonical: CURRENT_CANONICAL
+  downstream_consumer: P03
+  availability: PRIVATE_EXTERNAL
+  integrity: manifest + per-object index + 17,089 runtime entries reconciled; 0 unmatched
+  limitation: requires symbolic IHARQ_HF_TOKEN_P02; live remote not claimed
+  ready: 'YES'
+- layer2_product: Archival/chunked P02 release
+  identity_or_schema: HF immutable archival revision
+  produced: 'YES'
+  canonical: CURRENT_CANONICAL
+  downstream_consumer: reproduction/archive
+  availability: PRIVATE_EXTERNAL
+  integrity: 10 uploaded object paths/sizes/SHA recorded
+  limitation: fallback; preferred workspace remains direct continuation source
+  ready: 'YES'
+- layer2_product: Readiness/handoff/evidence/export gates and underlying artifacts
+  identity_or_schema: runtime stage artifacts
+  produced: 'YES'
+  canonical: CURRENT_CANONICAL
+  downstream_consumer: P03/reproduction
+  availability: LOCAL
+  integrity: Stage20/22/23/24 PASS; underlying readiness/contract/manifest artifacts
+    included
+  limitation: gate PASS is supporting evidence, not sole basis
+  ready: 'YES'

@@ -1,0 +1,2121 @@
+{
+  "artifact_id": "P03-PROD-051-a62388f4eb927ff2486b",
+  "checksums": {
+    "pending_stage24": true,
+    "raw_stage23_tree_sha256": "5d7b5eb7311b30c3ae407a5405b62aca2d04bf55c55548447273ac9804eac332",
+    "stage23_output_manifest_sha256": "2a116532b3f3fc0d109dc7500e00404bc31b53d23a1c65834f7b24567f0217fd"
+  },
+  "code_sha256": "c8c3ce9ce3ed39361cf1372fd094c0ed5bb19f0bc664384fa150c68ed7943c0b",
+  "config_sha256": "2e5ebd6fc62f4c9ca3ed0102914f64142de9e1206be0b6e6b3e32cad90f1d742",
+  "created_at_utc": "2026-08-18T19:25:20.972660+00:00",
+  "environment_sha256": "67dc3d67c8e0b6b664688c6aa1d2cbcb2b612386422a26d153e45966c070f700",
+  "evidence_sufficiency": {
+    "A0_status": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT",
+    "A1_denominator_complete": true,
+    "A2_denominator_complete": true,
+    "A3_denominator_complete": true,
+    "A4_status": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT",
+    "all_canonical_prior_stages_terminal": false,
+    "all_in_scope_prior_stages_terminal": true,
+    "candidate_claims_approved": false,
+    "canonical_full_product_universe_realized": false,
+    "canonical_full_run_stage23_parity": false,
+    "canonical_pre_stage24_product_universe_accounted": true,
+    "checksums_pending_stage_24": true,
+    "downstream_handoffs_created": true,
+    "every_in_scope_required_artifact_produced_or_lawfully_terminal": true,
+    "exact_canonical_stage23_handler_portable": false,
+    "failures_persisted": true,
+    "final_phase_sufficiency": false,
+    "final_phase_sufficiency_pending_stage24": true,
+    "member_disagreement_denominator_accounted": true,
+    "out_of_scope_prior_stages": [
+      "00",
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06"
+    ],
+    "out_of_scope_prior_stages_explicitly_accounted": true,
+    "out_of_scope_product_ids": [
+      "P03-PROD-001",
+      "P03-PROD-002",
+      "P03-PROD-003",
+      "P03-PROD-004",
+      "P03-PROD-005",
+      "P03-PROD-006",
+      "P03-PROD-007",
+      "P03-PROD-008",
+      "P03-PROD-009",
+      "P03-PROD-010"
+    ],
+    "preupload_full_artifact_obligation_audit_pending_stage24": true,
+    "publication_contract": {
+      "contract_id": "P03S-POSTEXT-STAGE24-RELEASE-POLICY-R1",
+      "direct_github_upload_permitted": false,
+      "external_artifact_pointer_product_id": "P03-PROD-061",
+      "external_pointer_minimum_fields": [
+        "provider",
+        "repository_id",
+        "immutable_revision",
+        "object_path",
+        "bytes",
+        "sha256",
+        "role",
+        "credential_class"
+      ],
+      "final_upload_requires_separate_explicit_authorization": true,
+      "network_upload_authorized_now": false,
+      "new_huggingface_repository_count_required": 2,
+      "preupload_audit_must_cover": [
+        "all 65 P03 expected product IDs with realized or lawful out-of-scope disposition",
+        "all P04-P15 and documentary downstream consumer contracts",
+        "Protocol / Phase Analysis / Layer0 / Evidence Map / Layer10 / Paper-Thesis handoff requirements",
+        "canonical artifact/interface registry requirements",
+        "execution/evidence plan requirements",
+        "experiment/ablation/evaluation protocol requirements",
+        "complete phase execution playbook requirements",
+        "Layers0-to-10 design/rationale/nuts-and-bolts authority requirements",
+        "P03 implementation build-book product/artifact coverage requirements",
+        "actual accepted Stage07-Stage24 manifests, receipts, hardening and limitations",
+        "GitHub-ready metric/calculation/numerical-result completeness",
+        "heavy-artifact pointer immutable revision and checksum closure",
+        "secret scan and credential-safety closure"
+      ],
+      "preupload_full_artifact_obligation_audit_required": true,
+      "previous_phase3_huggingface_repository_reuse_permitted": false,
+      "release_provider": "HuggingFace",
+      "repositories": {
+        "github_ready_archive_repository": {
+          "contains_github_ready_tree": true,
+          "must_be_new": true,
+          "must_include_all_metrics_calculations_and_numerical_results": true,
+          "must_include_machine_readable_heavy_artifact_pointers": true,
+          "payload_form": "ZIP"
+        },
+        "heavy_artifact_repository": {
+          "metrics_or_calculations_may_exist_only_here": false,
+          "must_be_new": true,
+          "must_have_object_manifest_and_checksums": true,
+          "role": "HEAVY_ARTIFACTS_ONLY"
+        }
+      },
+      "stage24_expected_product_ids": [
+        "P03-PROD-058",
+        "P03-PROD-059",
+        "P03-PROD-060",
+        "P03-PROD-061",
+        "P03-PROD-064",
+        "P03-PROD-065"
+      ],
+      "status": "LOCKED_FOR_FUTURE_STAGE24_AND_RELEASE_GATES"
+    },
+    "required_output_missing": [],
+    "scope": "POSTEXT_SUPPLEMENT_PRE_EXPORT",
+    "secret_scan_pending_stage_24": true,
+    "status": "PASS",
+    "test_used_for_selection": false
+  },
+  "failures": {
+    "denominator_complete": true,
+    "failure_ledger_rows": 1016,
+    "limitation_count": 7,
+    "negative_result_rows": 1016,
+    "scope": "POSTEXT_SUPPLEMENT"
+  },
+  "gates": [
+    {
+      "canonical_stage_copied": false,
+      "decision": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT",
+      "gate_id": "G03-00-AUTHORITY",
+      "receipt_sha256": null,
+      "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+      "stage_id": "00",
+      "synthetic_stage_created": false
+    },
+    {
+      "canonical_stage_copied": false,
+      "decision": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT",
+      "gate_id": "G03-01-REPOSITORY",
+      "receipt_sha256": null,
+      "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+      "stage_id": "01",
+      "synthetic_stage_created": false
+    },
+    {
+      "canonical_stage_copied": false,
+      "decision": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT",
+      "gate_id": "G03-02-ENVIRONMENT",
+      "receipt_sha256": null,
+      "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+      "stage_id": "02",
+      "synthetic_stage_created": false
+    },
+    {
+      "canonical_stage_copied": false,
+      "decision": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT",
+      "gate_id": "G03-03-RETRIEVAL",
+      "receipt_sha256": null,
+      "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+      "stage_id": "03",
+      "synthetic_stage_created": false
+    },
+    {
+      "canonical_stage_copied": false,
+      "decision": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT",
+      "gate_id": "G03-04-HANDOFF",
+      "receipt_sha256": null,
+      "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+      "stage_id": "04",
+      "synthetic_stage_created": false
+    },
+    {
+      "canonical_stage_copied": false,
+      "decision": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT",
+      "gate_id": "G03-05-FREEZE",
+      "receipt_sha256": null,
+      "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+      "stage_id": "05",
+      "synthetic_stage_created": false
+    },
+    {
+      "canonical_stage_copied": false,
+      "decision": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT",
+      "gate_id": "G03-06-SMOKE",
+      "receipt_sha256": null,
+      "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+      "stage_id": "06",
+      "synthetic_stage_created": false
+    },
+    {
+      "decision": "PASS",
+      "gate_id": "G03-07-JOIN",
+      "receipt_sha256": "5282a0b7599b43375d19dae63f33a34a3efe812c4a1cd38134f5566daaa86a41",
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "07"
+    },
+    {
+      "decision": "PASS",
+      "gate_id": "G03-08-LEAKAGE",
+      "receipt_sha256": "544718e603e1db71113a631191ac3a6f8a2b5d40f9929c26068268b18055b146",
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "08"
+    },
+    {
+      "decision": "PASS",
+      "gate_id": "G03-09-ELIGIBILITY",
+      "receipt_sha256": "e9c71d95f6675314fc53da716fed40dc59054110936568b1d889ccd6b6c41f9d",
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "09"
+    },
+    {
+      "decision": "PASS",
+      "gate_id": "G03-10-IDENTITY",
+      "receipt_sha256": "aced7bd29c83486a422156b8530232334deb252eb781c1041ee78586d16a1890",
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "10"
+    },
+    {
+      "decision": "PASS",
+      "gate_id": "G03-11-CALIBRATION",
+      "receipt_sha256": "f91a989bb12a1c5e320ebfbe21205cf5a7ad184886aac96aa94f9b1038342df0",
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "11"
+    },
+    {
+      "decision": "PASS",
+      "gate_id": "G03-12-RELIABILITY",
+      "receipt_sha256": "f9887c376ac3386de03fc1ba582d92d44f5d77d234ec30479d0dd2a097d5659e",
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "12"
+    },
+    {
+      "decision": "PASS",
+      "gate_id": "G03-13-UNCERTAINTY",
+      "receipt_sha256": "2336c01e4a8352a1e8ce5ef4bfc2e038c9ffab26dcfcba132613009d66028e6f",
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "13"
+    },
+    {
+      "decision": "PASS",
+      "gate_id": "G03-14-A2-SELECT",
+      "receipt_sha256": "18731ede79a859946e0202586a6217eca414e730070b07ca180863c9d41f06cc",
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "14"
+    },
+    {
+      "decision": "PASS",
+      "gate_id": "G03-15-A2-APPLY",
+      "receipt_sha256": "a644230567a2415c12a45be4d40baefa30fd47007d19ffdfafa768792feddc7b",
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "15"
+    },
+    {
+      "decision": "PASS",
+      "gate_id": "G03-16-A3",
+      "receipt_sha256": "09cd4066d04baa7157030de52f8b3df2df47a35340d6930e210fd1365a64bf32",
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "16"
+    },
+    {
+      "decision": "PASS",
+      "gate_id": "G03-17-THRESHOLD",
+      "receipt_sha256": "555ec9b356f4fc3a68d2d42682056f68d76fd773da2068d799e623e6847080b0",
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "17"
+    },
+    {
+      "decision": "PASS",
+      "gate_id": "G03-18-MATCHED",
+      "receipt_sha256": "cfd95ac6820eb95c28a0ba411db1edfe95caf743ee0917e3f3a32e5e116d5965",
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "18"
+    },
+    {
+      "decision": "PASS",
+      "gate_id": "G03-19-GROUP",
+      "receipt_sha256": "449f0c52a092f2f8da720406270db9fd5dafa4233dd311ace38f54c283626f2a",
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "19"
+    },
+    {
+      "decision": "PASS",
+      "gate_id": "G03-20-NEGATIVE",
+      "receipt_sha256": "364396f658104b05527a4607957f84af5284039a3fef2efdca22fa188756b83a",
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "20"
+    },
+    {
+      "decision": "PASS",
+      "gate_id": "G03-21-SOURCES",
+      "receipt_sha256": "7d240e286a8e49ec63e056ee6063018d3192739f83fa3bb2017746af6e969dc9",
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "21"
+    },
+    {
+      "decision": "PASS",
+      "gate_id": "G03-22-HANDOFFS",
+      "receipt_sha256": "faf287ac29871888fb83936fa964f4f8caae00043e87a9845b35d683b1fbfa52",
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "22"
+    }
+  ],
+  "hardening_id": "P03S-POSTEXT-64-128-256-STAGE23-SUPPLEMENT-NATIVE-SUFFICIENCY-HARDENING-R1",
+  "input_manifest_sha256": "0e4d987bf078bb7a4753e2defe5c2acc94a6f96a69daaa845b7df80f0eb30aa2",
+  "limitations": [
+    "Stage23 is supplement-scoped pre-export sufficiency; final checksum, secret-scan, packaging, and full artifact-obligation closure remain Stage24 responsibilities.",
+    "Canonical stages 00-06 and products P001-P010 are lawfully out of supplement scope and are not fabricated.",
+    "A2/A3 are distinct ablation identities, but binary uncertainty features do not provide independent ranking information."
+  ],
+  "lineage": {
+    "lawful_not_applicable_prior_stage_count": 7,
+    "lawful_out_of_scope_product_count": 10,
+    "operational_stage23_receipt_sha256": "0684998a7c46ed281b07ea5f506cefa62000f2941e0c159a673fd9de99db5948",
+    "physical_prior_stage_count": 16,
+    "post_stage23_realized_product_count": 49,
+    "pre_stage23_realized_product_count": 42,
+    "pre_stage24_accounted_product_count": 59,
+    "prior_stage_accounted_count": 23,
+    "raw_stage23_tree_sha256": "5d7b5eb7311b30c3ae407a5405b62aca2d04bf55c55548447273ac9804eac332"
+  },
+  "payload_sha256": "a62388f4eb927ff2486bc307215b34990479987ec6b1bae09b9de7a3c1fa4785",
+  "product_id": "P03-PROD-051",
+  "products": [
+    {
+      "product_id": "P03-PROD-001",
+      "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+      "status": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-002",
+      "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+      "status": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-003",
+      "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+      "status": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-004",
+      "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+      "status": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-005",
+      "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+      "status": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-006",
+      "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+      "status": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-007",
+      "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+      "status": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-008",
+      "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+      "status": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-009",
+      "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+      "status": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-010",
+      "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+      "status": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-011",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-012",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-013",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-014",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-015",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-016",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-017",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-018",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-019",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-020",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-021",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-022",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-023",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-024",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-025",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-026",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-027",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-028",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-029",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-030",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-031",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-032",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-033",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-034",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-035",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-036",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-037",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-038",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-039",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-040",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-041",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-042",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-043",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-044",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-045",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-046",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-047",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-048",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-049",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-050",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-051",
+      "scope_disposition": "IN_SCOPE_STAGE23_WRITER",
+      "status": "STAGE23_WRITER_DECLARED"
+    },
+    {
+      "product_id": "P03-PROD-052",
+      "scope_disposition": "IN_SCOPE_STAGE23_WRITER",
+      "status": "STAGE23_WRITER_DECLARED"
+    },
+    {
+      "product_id": "P03-PROD-053",
+      "scope_disposition": "IN_SCOPE_STAGE23_WRITER",
+      "status": "STAGE23_WRITER_DECLARED"
+    },
+    {
+      "product_id": "P03-PROD-054",
+      "scope_disposition": "IN_SCOPE_STAGE23_WRITER",
+      "status": "STAGE23_WRITER_DECLARED"
+    },
+    {
+      "product_id": "P03-PROD-055",
+      "scope_disposition": "IN_SCOPE_STAGE23_WRITER",
+      "status": "STAGE23_WRITER_DECLARED"
+    },
+    {
+      "product_id": "P03-PROD-056",
+      "scope_disposition": "IN_SCOPE_STAGE23_WRITER",
+      "status": "STAGE23_WRITER_DECLARED"
+    },
+    {
+      "product_id": "P03-PROD-057",
+      "scope_disposition": "IN_SCOPE_STAGE23_WRITER",
+      "status": "STAGE23_WRITER_DECLARED"
+    },
+    {
+      "product_id": "P03-PROD-062",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    },
+    {
+      "product_id": "P03-PROD-063",
+      "scope_disposition": "IN_SCOPE_REALIZED",
+      "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+    }
+  ],
+  "protocol_sha256": "dc46b87cb802d1a6a3ab0efd3dc6db6be5c3b5c7125c54e95a9cdbea8eef797d",
+  "publication_contract": {
+    "contract_id": "P03S-POSTEXT-STAGE24-RELEASE-POLICY-R1",
+    "direct_github_upload_permitted": false,
+    "external_artifact_pointer_product_id": "P03-PROD-061",
+    "external_pointer_minimum_fields": [
+      "provider",
+      "repository_id",
+      "immutable_revision",
+      "object_path",
+      "bytes",
+      "sha256",
+      "role",
+      "credential_class"
+    ],
+    "final_upload_requires_separate_explicit_authorization": true,
+    "network_upload_authorized_now": false,
+    "new_huggingface_repository_count_required": 2,
+    "preupload_audit_must_cover": [
+      "all 65 P03 expected product IDs with realized or lawful out-of-scope disposition",
+      "all P04-P15 and documentary downstream consumer contracts",
+      "Protocol / Phase Analysis / Layer0 / Evidence Map / Layer10 / Paper-Thesis handoff requirements",
+      "canonical artifact/interface registry requirements",
+      "execution/evidence plan requirements",
+      "experiment/ablation/evaluation protocol requirements",
+      "complete phase execution playbook requirements",
+      "Layers0-to-10 design/rationale/nuts-and-bolts authority requirements",
+      "P03 implementation build-book product/artifact coverage requirements",
+      "actual accepted Stage07-Stage24 manifests, receipts, hardening and limitations",
+      "GitHub-ready metric/calculation/numerical-result completeness",
+      "heavy-artifact pointer immutable revision and checksum closure",
+      "secret scan and credential-safety closure"
+    ],
+    "preupload_full_artifact_obligation_audit_required": true,
+    "previous_phase3_huggingface_repository_reuse_permitted": false,
+    "release_provider": "HuggingFace",
+    "repositories": {
+      "github_ready_archive_repository": {
+        "contains_github_ready_tree": true,
+        "must_be_new": true,
+        "must_include_all_metrics_calculations_and_numerical_results": true,
+        "must_include_machine_readable_heavy_artifact_pointers": true,
+        "payload_form": "ZIP"
+      },
+      "heavy_artifact_repository": {
+        "metrics_or_calculations_may_exist_only_here": false,
+        "must_be_new": true,
+        "must_have_object_manifest_and_checksums": true,
+        "role": "HEAVY_ARTIFACTS_ONLY"
+      }
+    },
+    "stage24_expected_product_ids": [
+      "P03-PROD-058",
+      "P03-PROD-059",
+      "P03-PROD-060",
+      "P03-PROD-061",
+      "P03-PROD-064",
+      "P03-PROD-065"
+    ],
+    "status": "LOCKED_FOR_FUTURE_STAGE24_AND_RELEASE_GATES"
+  },
+  "raw_stage23_execution_manifest": {
+    "canonical_pre_stage24_product_universe_accounted_count": 59,
+    "canonical_pre_stage24_product_universe_realized_count": 49,
+    "evidence_sufficiency": {
+      "A0_status": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT",
+      "A1_denominator_complete": true,
+      "A2_denominator_complete": true,
+      "A3_denominator_complete": true,
+      "A4_status": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT",
+      "all_canonical_prior_stages_terminal": false,
+      "all_in_scope_prior_stages_terminal": true,
+      "candidate_claims_approved": false,
+      "canonical_full_product_universe_realized": false,
+      "canonical_full_run_stage23_parity": false,
+      "canonical_pre_stage24_product_universe_accounted": true,
+      "checksums_pending_stage_24": true,
+      "downstream_handoffs_created": true,
+      "every_in_scope_required_artifact_produced_or_lawfully_terminal": true,
+      "exact_canonical_stage23_handler_portable": false,
+      "failures_persisted": true,
+      "final_phase_sufficiency": false,
+      "final_phase_sufficiency_pending_stage24": true,
+      "member_disagreement_denominator_accounted": true,
+      "out_of_scope_prior_stages": [
+        "00",
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06"
+      ],
+      "out_of_scope_prior_stages_explicitly_accounted": true,
+      "out_of_scope_product_ids": [
+        "P03-PROD-001",
+        "P03-PROD-002",
+        "P03-PROD-003",
+        "P03-PROD-004",
+        "P03-PROD-005",
+        "P03-PROD-006",
+        "P03-PROD-007",
+        "P03-PROD-008",
+        "P03-PROD-009",
+        "P03-PROD-010"
+      ],
+      "preupload_full_artifact_obligation_audit_pending_stage24": true,
+      "publication_contract": {
+        "contract_id": "P03S-POSTEXT-STAGE24-RELEASE-POLICY-R1",
+        "direct_github_upload_permitted": false,
+        "external_artifact_pointer_product_id": "P03-PROD-061",
+        "external_pointer_minimum_fields": [
+          "provider",
+          "repository_id",
+          "immutable_revision",
+          "object_path",
+          "bytes",
+          "sha256",
+          "role",
+          "credential_class"
+        ],
+        "final_upload_requires_separate_explicit_authorization": true,
+        "network_upload_authorized_now": false,
+        "new_huggingface_repository_count_required": 2,
+        "preupload_audit_must_cover": [
+          "all 65 P03 expected product IDs with realized or lawful out-of-scope disposition",
+          "all P04-P15 and documentary downstream consumer contracts",
+          "Protocol / Phase Analysis / Layer0 / Evidence Map / Layer10 / Paper-Thesis handoff requirements",
+          "canonical artifact/interface registry requirements",
+          "execution/evidence plan requirements",
+          "experiment/ablation/evaluation protocol requirements",
+          "complete phase execution playbook requirements",
+          "Layers0-to-10 design/rationale/nuts-and-bolts authority requirements",
+          "P03 implementation build-book product/artifact coverage requirements",
+          "actual accepted Stage07-Stage24 manifests, receipts, hardening and limitations",
+          "GitHub-ready metric/calculation/numerical-result completeness",
+          "heavy-artifact pointer immutable revision and checksum closure",
+          "secret scan and credential-safety closure"
+        ],
+        "preupload_full_artifact_obligation_audit_required": true,
+        "previous_phase3_huggingface_repository_reuse_permitted": false,
+        "release_provider": "HuggingFace",
+        "repositories": {
+          "github_ready_archive_repository": {
+            "contains_github_ready_tree": true,
+            "must_be_new": true,
+            "must_include_all_metrics_calculations_and_numerical_results": true,
+            "must_include_machine_readable_heavy_artifact_pointers": true,
+            "payload_form": "ZIP"
+          },
+          "heavy_artifact_repository": {
+            "metrics_or_calculations_may_exist_only_here": false,
+            "must_be_new": true,
+            "must_have_object_manifest_and_checksums": true,
+            "role": "HEAVY_ARTIFACTS_ONLY"
+          }
+        },
+        "stage24_expected_product_ids": [
+          "P03-PROD-058",
+          "P03-PROD-059",
+          "P03-PROD-060",
+          "P03-PROD-061",
+          "P03-PROD-064",
+          "P03-PROD-065"
+        ],
+        "status": "LOCKED_FOR_FUTURE_STAGE24_AND_RELEASE_GATES"
+      },
+      "required_output_missing": [],
+      "scope": "POSTEXT_SUPPLEMENT_PRE_EXPORT",
+      "secret_scan_pending_stage_24": true,
+      "status": "PASS",
+      "test_used_for_selection": false
+    },
+    "immutable_fingerprint": {
+      "code_sha256": "c8c3ce9ce3ed39361cf1372fd094c0ed5bb19f0bc664384fa150c68ed7943c0b",
+      "config_sha256": "2e5ebd6fc62f4c9ca3ed0102914f64142de9e1206be0b6e6b3e32cad90f1d742",
+      "environment_sha256": "67dc3d67c8e0b6b664688c6aa1d2cbcb2b612386422a26d153e45966c070f700",
+      "protocol_sha256": "dc46b87cb802d1a6a3ab0efd3dc6db6be5c3b5c7125c54e95a9cdbea8eef797d",
+      "run_id": "P03-L3-POSTEXT-64-128-256-R1-1833e865bcb88ff8",
+      "source_manifest_sha256": "0e4d987bf078bb7a4753e2defe5c2acc94a6f96a69daaa845b7df80f0eb30aa2"
+    },
+    "out_of_scope_product_ids_before_export": [
+      "P03-PROD-001",
+      "P03-PROD-002",
+      "P03-PROD-003",
+      "P03-PROD-004",
+      "P03-PROD-005",
+      "P03-PROD-006",
+      "P03-PROD-007",
+      "P03-PROD-008",
+      "P03-PROD-009",
+      "P03-PROD-010"
+    ],
+    "out_of_scope_stage_count_before_export": 7,
+    "physical_checkpoint_count_before_export": 16,
+    "product_ids_before_export": [
+      "P03-PROD-011",
+      "P03-PROD-012",
+      "P03-PROD-013",
+      "P03-PROD-014",
+      "P03-PROD-015",
+      "P03-PROD-016",
+      "P03-PROD-017",
+      "P03-PROD-018",
+      "P03-PROD-019",
+      "P03-PROD-020",
+      "P03-PROD-021",
+      "P03-PROD-022",
+      "P03-PROD-023",
+      "P03-PROD-024",
+      "P03-PROD-025",
+      "P03-PROD-026",
+      "P03-PROD-027",
+      "P03-PROD-028",
+      "P03-PROD-029",
+      "P03-PROD-030",
+      "P03-PROD-031",
+      "P03-PROD-032",
+      "P03-PROD-033",
+      "P03-PROD-034",
+      "P03-PROD-035",
+      "P03-PROD-036",
+      "P03-PROD-037",
+      "P03-PROD-038",
+      "P03-PROD-039",
+      "P03-PROD-040",
+      "P03-PROD-041",
+      "P03-PROD-042",
+      "P03-PROD-043",
+      "P03-PROD-044",
+      "P03-PROD-045",
+      "P03-PROD-046",
+      "P03-PROD-047",
+      "P03-PROD-048",
+      "P03-PROD-049",
+      "P03-PROD-050",
+      "P03-PROD-051",
+      "P03-PROD-052",
+      "P03-PROD-053",
+      "P03-PROD-054",
+      "P03-PROD-055",
+      "P03-PROD-056",
+      "P03-PROD-057",
+      "P03-PROD-062",
+      "P03-PROD-063"
+    ],
+    "products": [
+      {
+        "product_id": "P03-PROD-001",
+        "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+        "status": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-002",
+        "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+        "status": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-003",
+        "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+        "status": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-004",
+        "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+        "status": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-005",
+        "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+        "status": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-006",
+        "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+        "status": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-007",
+        "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+        "status": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-008",
+        "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+        "status": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-009",
+        "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+        "status": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-010",
+        "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+        "status": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-011",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-012",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-013",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-014",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-015",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-016",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-017",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-018",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-019",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-020",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-021",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-022",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-023",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-024",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-025",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-026",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-027",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-028",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-029",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-030",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-031",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-032",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-033",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-034",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-035",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-036",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-037",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-038",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-039",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-040",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-041",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-042",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-043",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-044",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-045",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-046",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-047",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-048",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-049",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-050",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-051",
+        "scope_disposition": "IN_SCOPE_STAGE23_WRITER",
+        "status": "STAGE23_WRITER_DECLARED"
+      },
+      {
+        "product_id": "P03-PROD-052",
+        "scope_disposition": "IN_SCOPE_STAGE23_WRITER",
+        "status": "STAGE23_WRITER_DECLARED"
+      },
+      {
+        "product_id": "P03-PROD-053",
+        "scope_disposition": "IN_SCOPE_STAGE23_WRITER",
+        "status": "STAGE23_WRITER_DECLARED"
+      },
+      {
+        "product_id": "P03-PROD-054",
+        "scope_disposition": "IN_SCOPE_STAGE23_WRITER",
+        "status": "STAGE23_WRITER_DECLARED"
+      },
+      {
+        "product_id": "P03-PROD-055",
+        "scope_disposition": "IN_SCOPE_STAGE23_WRITER",
+        "status": "STAGE23_WRITER_DECLARED"
+      },
+      {
+        "product_id": "P03-PROD-056",
+        "scope_disposition": "IN_SCOPE_STAGE23_WRITER",
+        "status": "STAGE23_WRITER_DECLARED"
+      },
+      {
+        "product_id": "P03-PROD-057",
+        "scope_disposition": "IN_SCOPE_STAGE23_WRITER",
+        "status": "STAGE23_WRITER_DECLARED"
+      },
+      {
+        "product_id": "P03-PROD-062",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      },
+      {
+        "product_id": "P03-PROD-063",
+        "scope_disposition": "IN_SCOPE_REALIZED",
+        "status": "REALIZED_OR_LAWFULLY_TERMINAL_IN_POSTEXT_SUPPLEMENT"
+      }
+    ],
+    "publication_contract": {
+      "contract_id": "P03S-POSTEXT-STAGE24-RELEASE-POLICY-R1",
+      "direct_github_upload_permitted": false,
+      "external_artifact_pointer_product_id": "P03-PROD-061",
+      "external_pointer_minimum_fields": [
+        "provider",
+        "repository_id",
+        "immutable_revision",
+        "object_path",
+        "bytes",
+        "sha256",
+        "role",
+        "credential_class"
+      ],
+      "final_upload_requires_separate_explicit_authorization": true,
+      "network_upload_authorized_now": false,
+      "new_huggingface_repository_count_required": 2,
+      "preupload_audit_must_cover": [
+        "all 65 P03 expected product IDs with realized or lawful out-of-scope disposition",
+        "all P04-P15 and documentary downstream consumer contracts",
+        "Protocol / Phase Analysis / Layer0 / Evidence Map / Layer10 / Paper-Thesis handoff requirements",
+        "canonical artifact/interface registry requirements",
+        "execution/evidence plan requirements",
+        "experiment/ablation/evaluation protocol requirements",
+        "complete phase execution playbook requirements",
+        "Layers0-to-10 design/rationale/nuts-and-bolts authority requirements",
+        "P03 implementation build-book product/artifact coverage requirements",
+        "actual accepted Stage07-Stage24 manifests, receipts, hardening and limitations",
+        "GitHub-ready metric/calculation/numerical-result completeness",
+        "heavy-artifact pointer immutable revision and checksum closure",
+        "secret scan and credential-safety closure"
+      ],
+      "preupload_full_artifact_obligation_audit_required": true,
+      "previous_phase3_huggingface_repository_reuse_permitted": false,
+      "release_provider": "HuggingFace",
+      "repositories": {
+        "github_ready_archive_repository": {
+          "contains_github_ready_tree": true,
+          "must_be_new": true,
+          "must_include_all_metrics_calculations_and_numerical_results": true,
+          "must_include_machine_readable_heavy_artifact_pointers": true,
+          "payload_form": "ZIP"
+        },
+        "heavy_artifact_repository": {
+          "metrics_or_calculations_may_exist_only_here": false,
+          "must_be_new": true,
+          "must_have_object_manifest_and_checksums": true,
+          "role": "HEAVY_ARTIFACTS_ONLY"
+        }
+      },
+      "stage24_expected_product_ids": [
+        "P03-PROD-058",
+        "P03-PROD-059",
+        "P03-PROD-060",
+        "P03-PROD-061",
+        "P03-PROD-064",
+        "P03-PROD-065"
+      ],
+      "status": "LOCKED_FOR_FUTURE_STAGE24_AND_RELEASE_GATES"
+    },
+    "readiness": {
+      "A0_status": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT",
+      "A1_complete": true,
+      "A2_A3_design_identity_distinct": true,
+      "A2_complete": true,
+      "A2_explicit_no_rule_groups": 37,
+      "A2_successful_rule_groups": 71,
+      "A3_complete": true,
+      "A3_explicit_no_rule_children": 111,
+      "A3_independent_ranking_information": false,
+      "A3_successful_rule_children": 213,
+      "A4_disagreement_all_groups_accounted": true,
+      "A4_disagreement_eligible_groups": 0,
+      "A4_disagreement_ineligible_groups": 108,
+      "A4_status": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT",
+      "P02_contract_status": "OUT_OF_SCOPE_NOT_REVALIDATED_BY_POSTEXT_SUPPLEMENT",
+      "P02_contract_validated_in_this_supplement": false,
+      "canonical_prior_stage_count": 23,
+      "canonical_products_expected_final": 65,
+      "canonical_products_required_before_stage24": 59,
+      "class_order_complete": true,
+      "explicit_out_of_scope_prior_stage_count": 7,
+      "leakage_guards_pass": true,
+      "literal_secret_scan_status": "PENDING_STAGE24",
+      "physical_in_scope_prior_stage_count": 16,
+      "products_accounted_before_stage24": 59,
+      "products_explicitly_out_of_scope_before_stage24": 10,
+      "products_physically_realized_after_stage23_writers": 49,
+      "publication_contract": {
+        "contract_id": "P03S-POSTEXT-STAGE24-RELEASE-POLICY-R1",
+        "direct_github_upload_permitted": false,
+        "external_artifact_pointer_product_id": "P03-PROD-061",
+        "external_pointer_minimum_fields": [
+          "provider",
+          "repository_id",
+          "immutable_revision",
+          "object_path",
+          "bytes",
+          "sha256",
+          "role",
+          "credential_class"
+        ],
+        "final_upload_requires_separate_explicit_authorization": true,
+        "network_upload_authorized_now": false,
+        "new_huggingface_repository_count_required": 2,
+        "preupload_audit_must_cover": [
+          "all 65 P03 expected product IDs with realized or lawful out-of-scope disposition",
+          "all P04-P15 and documentary downstream consumer contracts",
+          "Protocol / Phase Analysis / Layer0 / Evidence Map / Layer10 / Paper-Thesis handoff requirements",
+          "canonical artifact/interface registry requirements",
+          "execution/evidence plan requirements",
+          "experiment/ablation/evaluation protocol requirements",
+          "complete phase execution playbook requirements",
+          "Layers0-to-10 design/rationale/nuts-and-bolts authority requirements",
+          "P03 implementation build-book product/artifact coverage requirements",
+          "actual accepted Stage07-Stage24 manifests, receipts, hardening and limitations",
+          "GitHub-ready metric/calculation/numerical-result completeness",
+          "heavy-artifact pointer immutable revision and checksum closure",
+          "secret scan and credential-safety closure"
+        ],
+        "preupload_full_artifact_obligation_audit_required": true,
+        "previous_phase3_huggingface_repository_reuse_permitted": false,
+        "release_provider": "HuggingFace",
+        "repositories": {
+          "github_ready_archive_repository": {
+            "contains_github_ready_tree": true,
+            "must_be_new": true,
+            "must_include_all_metrics_calculations_and_numerical_results": true,
+            "must_include_machine_readable_heavy_artifact_pointers": true,
+            "payload_form": "ZIP"
+          },
+          "heavy_artifact_repository": {
+            "metrics_or_calculations_may_exist_only_here": false,
+            "must_be_new": true,
+            "must_have_object_manifest_and_checksums": true,
+            "role": "HEAVY_ARTIFACTS_ONLY"
+          }
+        },
+        "stage24_expected_product_ids": [
+          "P03-PROD-058",
+          "P03-PROD-059",
+          "P03-PROD-060",
+          "P03-PROD-061",
+          "P03-PROD-064",
+          "P03-PROD-065"
+        ],
+        "status": "LOCKED_FOR_FUTURE_STAGE24_AND_RELEASE_GATES"
+      },
+      "scope": "POSTEXT_SUPPLEMENT_PRE_EXPORT",
+      "score_semantics_complete": true,
+      "stage24_product_count_pending": 6,
+      "status": "READY_FOR_POSTEXT_SUPPLEMENT_PRE_EXPORT_GATING"
+    },
+    "run_id": "P03-L3-POSTEXT-64-128-256-R1-1833e865bcb88ff8",
+    "runtime_implementation_amendment_id": "P03S-POSTEXT-STAGE23-SCOPE-ADAPTER-R1",
+    "scope": "POSTEXT_SUPPLEMENT_PRE_EXPORT",
+    "stage_count_before_export": 23
+  },
+  "readiness": {
+    "A0_status": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT",
+    "A1_complete": true,
+    "A2_A3_design_identity_distinct": true,
+    "A2_complete": true,
+    "A2_explicit_no_rule_groups": 37,
+    "A2_successful_rule_groups": 71,
+    "A3_complete": true,
+    "A3_explicit_no_rule_children": 111,
+    "A3_independent_ranking_information": false,
+    "A3_successful_rule_children": 213,
+    "A4_disagreement_all_groups_accounted": true,
+    "A4_disagreement_eligible_groups": 0,
+    "A4_disagreement_ineligible_groups": 108,
+    "A4_status": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT",
+    "P02_contract_status": "OUT_OF_SCOPE_NOT_REVALIDATED_BY_POSTEXT_SUPPLEMENT",
+    "P02_contract_validated_in_this_supplement": false,
+    "canonical_prior_stage_count": 23,
+    "canonical_products_expected_final": 65,
+    "canonical_products_required_before_stage24": 59,
+    "class_order_complete": true,
+    "explicit_out_of_scope_prior_stage_count": 7,
+    "leakage_guards_pass": true,
+    "literal_secret_scan_status": "PENDING_STAGE24",
+    "physical_in_scope_prior_stage_count": 16,
+    "products_accounted_before_stage24": 59,
+    "products_explicitly_out_of_scope_before_stage24": 10,
+    "products_physically_realized_after_stage23_writers": 49,
+    "publication_contract": {
+      "contract_id": "P03S-POSTEXT-STAGE24-RELEASE-POLICY-R1",
+      "direct_github_upload_permitted": false,
+      "external_artifact_pointer_product_id": "P03-PROD-061",
+      "external_pointer_minimum_fields": [
+        "provider",
+        "repository_id",
+        "immutable_revision",
+        "object_path",
+        "bytes",
+        "sha256",
+        "role",
+        "credential_class"
+      ],
+      "final_upload_requires_separate_explicit_authorization": true,
+      "network_upload_authorized_now": false,
+      "new_huggingface_repository_count_required": 2,
+      "preupload_audit_must_cover": [
+        "all 65 P03 expected product IDs with realized or lawful out-of-scope disposition",
+        "all P04-P15 and documentary downstream consumer contracts",
+        "Protocol / Phase Analysis / Layer0 / Evidence Map / Layer10 / Paper-Thesis handoff requirements",
+        "canonical artifact/interface registry requirements",
+        "execution/evidence plan requirements",
+        "experiment/ablation/evaluation protocol requirements",
+        "complete phase execution playbook requirements",
+        "Layers0-to-10 design/rationale/nuts-and-bolts authority requirements",
+        "P03 implementation build-book product/artifact coverage requirements",
+        "actual accepted Stage07-Stage24 manifests, receipts, hardening and limitations",
+        "GitHub-ready metric/calculation/numerical-result completeness",
+        "heavy-artifact pointer immutable revision and checksum closure",
+        "secret scan and credential-safety closure"
+      ],
+      "preupload_full_artifact_obligation_audit_required": true,
+      "previous_phase3_huggingface_repository_reuse_permitted": false,
+      "release_provider": "HuggingFace",
+      "repositories": {
+        "github_ready_archive_repository": {
+          "contains_github_ready_tree": true,
+          "must_be_new": true,
+          "must_include_all_metrics_calculations_and_numerical_results": true,
+          "must_include_machine_readable_heavy_artifact_pointers": true,
+          "payload_form": "ZIP"
+        },
+        "heavy_artifact_repository": {
+          "metrics_or_calculations_may_exist_only_here": false,
+          "must_be_new": true,
+          "must_have_object_manifest_and_checksums": true,
+          "role": "HEAVY_ARTIFACTS_ONLY"
+        }
+      },
+      "stage24_expected_product_ids": [
+        "P03-PROD-058",
+        "P03-PROD-059",
+        "P03-PROD-060",
+        "P03-PROD-061",
+        "P03-PROD-064",
+        "P03-PROD-065"
+      ],
+      "status": "LOCKED_FOR_FUTURE_STAGE24_AND_RELEASE_GATES"
+    },
+    "scope": "POSTEXT_SUPPLEMENT_PRE_EXPORT",
+    "score_semantics_complete": true,
+    "stage24_product_count_pending": 6,
+    "status": "READY_FOR_POSTEXT_SUPPLEMENT_PRE_EXPORT_GATING"
+  },
+  "run_id": "P03-L3-POSTEXT-64-128-256-R1-1833e865bcb88ff8",
+  "schema_id": "ExecutionManifest.v1",
+  "schema_version": "1.0.0",
+  "scope": "POSTEXT_SUPPLEMENT_PRE_EXPORT",
+  "semantic_qualification": {
+    "A2_A3_design_identity_distinct": true,
+    "A2_A3_raw_distinct_field_interpretation": "Distinct ablation identities only; not independent uncertainty ranking evidence.",
+    "A3_independent_ranking_information": false,
+    "binary_uncertainty_alias_limitation_preserved": true,
+    "candidate_claims_approved": false,
+    "checksums_pending_stage24": true,
+    "final_phase_sufficiency": false,
+    "final_phase_sufficiency_pending_stage24": true,
+    "no_legal_threshold_preserved": true,
+    "secret_scan_pending_stage24": true,
+    "stage23_sufficiency_scope": "PRE_EXPORT",
+    "supplement_scope": "POSTEXT_SUPPLEMENT_PRE_EXPORT",
+    "test_used_for_selection": false
+  },
+  "source_artifact_ids": [
+    "P03-PROD-048",
+    "P03-PROD-062",
+    "P03-PROD-063",
+    "STAGE23-RAW-TREE"
+  ],
+  "source_sha256s": [
+    "da063e215bef02cdef682400b0d5a50c4a47289e1fc701cdf4e3aeadbeae091a",
+    "0f27184dc3cd4e72f1fd1960e01b3b5986556bdf583d7c28e8db49e9cd5baffe",
+    "4d90fd1248a36abeecd2951920868d181e1e425b462b757a5f82722c69edbd78",
+    "5d7b5eb7311b30c3ae407a5405b62aca2d04bf55c55548447273ac9804eac332"
+  ],
+  "stage_id": "23",
+  "stages": [
+    {
+      "attempt": null,
+      "gate_id": "G03-00-AUTHORITY",
+      "inputs": {
+        "canonical_stage_copied": false,
+        "synthetic_stage_created": false
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": null,
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+      "stage_id": "00",
+      "terminal": {
+        "failure": null,
+        "status": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT"
+      },
+      "tests": {
+        "receipt_status": "NOT_MATERIALIZED",
+        "terminal_receipt_present": false
+      },
+      "timing": null
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-01-REPOSITORY",
+      "inputs": {
+        "canonical_stage_copied": false,
+        "synthetic_stage_created": false
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": null,
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+      "stage_id": "01",
+      "terminal": {
+        "failure": null,
+        "status": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT"
+      },
+      "tests": {
+        "receipt_status": "NOT_MATERIALIZED",
+        "terminal_receipt_present": false
+      },
+      "timing": null
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-02-ENVIRONMENT",
+      "inputs": {
+        "canonical_stage_copied": false,
+        "synthetic_stage_created": false
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": null,
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+      "stage_id": "02",
+      "terminal": {
+        "failure": null,
+        "status": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT"
+      },
+      "tests": {
+        "receipt_status": "NOT_MATERIALIZED",
+        "terminal_receipt_present": false
+      },
+      "timing": null
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-03-RETRIEVAL",
+      "inputs": {
+        "canonical_stage_copied": false,
+        "synthetic_stage_created": false
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": null,
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+      "stage_id": "03",
+      "terminal": {
+        "failure": null,
+        "status": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT"
+      },
+      "tests": {
+        "receipt_status": "NOT_MATERIALIZED",
+        "terminal_receipt_present": false
+      },
+      "timing": null
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-04-HANDOFF",
+      "inputs": {
+        "canonical_stage_copied": false,
+        "synthetic_stage_created": false
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": null,
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+      "stage_id": "04",
+      "terminal": {
+        "failure": null,
+        "status": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT"
+      },
+      "tests": {
+        "receipt_status": "NOT_MATERIALIZED",
+        "terminal_receipt_present": false
+      },
+      "timing": null
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-05-FREEZE",
+      "inputs": {
+        "canonical_stage_copied": false,
+        "synthetic_stage_created": false
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": null,
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+      "stage_id": "05",
+      "terminal": {
+        "failure": null,
+        "status": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT"
+      },
+      "tests": {
+        "receipt_status": "NOT_MATERIALIZED",
+        "terminal_receipt_present": false
+      },
+      "timing": null
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-06-SMOKE",
+      "inputs": {
+        "canonical_stage_copied": false,
+        "synthetic_stage_created": false
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": null,
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+      "stage_id": "06",
+      "terminal": {
+        "failure": null,
+        "status": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT"
+      },
+      "tests": {
+        "receipt_status": "NOT_MATERIALIZED",
+        "terminal_receipt_present": false
+      },
+      "timing": null
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-07-JOIN",
+      "inputs": {
+        "code_sha": null,
+        "config_sha": null,
+        "environment_sha": null,
+        "input_manifest_sha": null,
+        "protocol_sha": null
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": "9ff7f98b07ecf5e0313970b3078fe5bf75d8008ff9e674f74d5bc66c55459d67",
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "07",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": null,
+        "start_time": null
+      }
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-08-LEAKAGE",
+      "inputs": {
+        "code_sha": null,
+        "config_sha": null,
+        "environment_sha": null,
+        "input_manifest_sha": null,
+        "protocol_sha": null
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": "c0cbcf89be6aced50f87d8e6c30bf1f67282bc119280b97e1374e4151e182e61",
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "08",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": null,
+        "start_time": null
+      }
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-09-ELIGIBILITY",
+      "inputs": {
+        "code_sha": null,
+        "config_sha": null,
+        "environment_sha": null,
+        "input_manifest_sha": null,
+        "protocol_sha": null
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": "7f72805e0c79ecaf3717e63a4ca33734ee416ec6ba635c1cdc33a0e97428d51e",
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "09",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": null,
+        "start_time": null
+      }
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-10-IDENTITY",
+      "inputs": {
+        "code_sha": null,
+        "config_sha": null,
+        "environment_sha": null,
+        "input_manifest_sha": null,
+        "protocol_sha": null
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": "7b00c94d1f5edca60114deeb6efa009369a5e0738f02a5957ca45a8fa1067ba0",
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "10",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": null,
+        "start_time": null
+      }
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-11-CALIBRATION",
+      "inputs": {
+        "code_sha": null,
+        "config_sha": null,
+        "environment_sha": null,
+        "input_manifest_sha": null,
+        "protocol_sha": null
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": "12129b1c0a6255a7a363d7c97134d56d0f9faf1c2a58d27d3c238c26c531342f",
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "11",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": null,
+        "start_time": null
+      }
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-12-RELIABILITY",
+      "inputs": {
+        "code_sha": null,
+        "config_sha": null,
+        "environment_sha": null,
+        "input_manifest_sha": null,
+        "protocol_sha": null
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": "4440013c6d118bcaa8c1e8286fde580ab1a5b489c117b6bc6a71c253b08e4347",
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "12",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": null,
+        "start_time": null
+      }
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-13-UNCERTAINTY",
+      "inputs": {
+        "code_sha": null,
+        "config_sha": null,
+        "environment_sha": null,
+        "input_manifest_sha": null,
+        "protocol_sha": null
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": "ab93d52ec18b6e67192192a68d6862c34654e1290757e00d7661a040c1227cc2",
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "13",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": null,
+        "start_time": null
+      }
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-14-A2-SELECT",
+      "inputs": {
+        "code_sha": null,
+        "config_sha": null,
+        "environment_sha": null,
+        "input_manifest_sha": null,
+        "protocol_sha": null
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": "40651951514c1f31177e8d08a7a600108560ad7149d86a002ae6228fae4e50b5",
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "14",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": null,
+        "start_time": null
+      }
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-15-A2-APPLY",
+      "inputs": {
+        "code_sha": null,
+        "config_sha": null,
+        "environment_sha": null,
+        "input_manifest_sha": null,
+        "protocol_sha": null
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": "b1db0ef2e96613420d07db8ebdeab119db15a516a9693d715e1d66d0f5cd51e0",
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "15",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": null,
+        "start_time": null
+      }
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-16-A3",
+      "inputs": {
+        "code_sha": null,
+        "config_sha": null,
+        "environment_sha": null,
+        "input_manifest_sha": null,
+        "protocol_sha": null
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": "42a04119c4808a471ef9792d88eb9c91c9ba6fdf658cad7e3abc8811ea916c2b",
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "16",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": null,
+        "start_time": null
+      }
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-17-THRESHOLD",
+      "inputs": {
+        "code_sha": null,
+        "config_sha": null,
+        "environment_sha": null,
+        "input_manifest_sha": null,
+        "protocol_sha": null
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": "472831fcbaa65c58df9c52bc2d90adc20b078f562d270d1c682ad009205031ee",
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "17",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": null,
+        "start_time": null
+      }
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-18-MATCHED",
+      "inputs": {
+        "code_sha": null,
+        "config_sha": null,
+        "environment_sha": null,
+        "input_manifest_sha": null,
+        "protocol_sha": null
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": "f11f76a542a79de7bc2fc78852db1a9b54f2991c49a56d42f72ea453ca754657",
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "18",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": null,
+        "start_time": null
+      }
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-19-GROUP",
+      "inputs": {
+        "code_sha": null,
+        "config_sha": null,
+        "environment_sha": null,
+        "input_manifest_sha": null,
+        "protocol_sha": null
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": "fe42c59b6cdae4e1ef5ccce298e3de08bbdd8177baa1a14026a49e1d493d941d",
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "19",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": null,
+        "start_time": null
+      }
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-20-NEGATIVE",
+      "inputs": {
+        "code_sha": null,
+        "config_sha": null,
+        "environment_sha": null,
+        "input_manifest_sha": null,
+        "protocol_sha": null
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": "2f35e17af762628d151fd75a0b4b6846da3b8816a2d180eb3b267a0751f508b1",
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "20",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": null,
+        "start_time": null
+      }
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-21-SOURCES",
+      "inputs": {
+        "code_sha": null,
+        "config_sha": null,
+        "environment_sha": null,
+        "input_manifest_sha": null,
+        "protocol_sha": null
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": "3fe80ba37387d06b19a1e7467e53d76ce63d4d84030c7f4c7eed41a16d5042b9",
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "21",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": null,
+        "start_time": null
+      }
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-22-HANDOFFS",
+      "inputs": {
+        "code_sha": null,
+        "config_sha": null,
+        "environment_sha": null,
+        "input_manifest_sha": null,
+        "protocol_sha": null
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": "03e50e2ff2df329eb84f58b8cfd853bca45113f978955596554ab54f966951f5",
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "22",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": null,
+        "start_time": null
+      }
+    }
+  ]
+}

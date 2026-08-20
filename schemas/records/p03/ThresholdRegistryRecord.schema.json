@@ -1,0 +1,383 @@
+{
+  "$id": "https://github.com/csthv/IHARQ/schemas/schemas/records/p03/ThresholdRegistryRecord.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "ablation_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "applicability": {
+      "type": [
+        "object",
+        "array",
+        "string"
+      ]
+    },
+    "config_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "created_at_utc": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "effective_from": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "effective_until": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object",
+        "null"
+      ]
+    },
+    "failure_code": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object",
+        "null"
+      ]
+    },
+    "feature_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "invalidated_by": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object",
+        "null"
+      ]
+    },
+    "layer_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "lifecycle_status": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "limitations": {
+      "type": "array"
+    },
+    "lineage_parent_ids": {
+      "type": "array"
+    },
+    "operator": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "payload_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "permissions": {
+      "type": [
+        "object",
+        "array",
+        "string"
+      ]
+    },
+    "phase_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "probability_source_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "producer_module": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "protocol_snapshot_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "record_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "rule_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "run_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "schema_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "schema_version": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "selection_budget_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "selection_dataset_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "selection_role": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "selection_split_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "source_artifact_ids": {
+      "type": "array"
+    },
+    "source_sha256s": {
+      "type": "array"
+    },
+    "supersedes": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object",
+        "null"
+      ]
+    },
+    "supersession_reason": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "target_profile_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "terminal_status": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "threshold_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "threshold_value": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "threshold_version": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "tie_policy": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "record_id",
+    "phase_id",
+    "layer_id",
+    "run_id",
+    "config_sha256",
+    "protocol_snapshot_id",
+    "created_at_utc",
+    "producer_module",
+    "source_artifact_ids",
+    "source_sha256s",
+    "lineage_parent_ids",
+    "lifecycle_status",
+    "terminal_status",
+    "supersedes",
+    "invalidated_by",
+    "limitations",
+    "failure_code",
+    "payload_sha256",
+    "threshold_id",
+    "threshold_version",
+    "ablation_id",
+    "feature_id",
+    "probability_source_id",
+    "selection_dataset_id",
+    "selection_budget_id",
+    "selection_split_id",
+    "selection_role",
+    "target_profile_id",
+    "operator",
+    "threshold_value",
+    "tie_policy",
+    "applicability",
+    "permissions",
+    "effective_from",
+    "effective_until",
+    "supersession_reason",
+    "rule_sha256"
+  ],
+  "title": "IHARQ P03 ThresholdRegistryRecord governed profile v1",
+  "type": "object",
+  "x-iharq-layer": "L3",
+  "x-iharq-phase": "P03",
+  "x-iharq-status": "GOVERNED_P03_PROFILE"
+}

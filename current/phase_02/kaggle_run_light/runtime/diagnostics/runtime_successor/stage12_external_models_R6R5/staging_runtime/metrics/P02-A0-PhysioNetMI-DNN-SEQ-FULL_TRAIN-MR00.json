@@ -1,0 +1,224 @@
+{
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "run_cell_id": "P02-A0-PhysioNetMI-DNN-SEQ-FULL_TRAIN-MR00",
+  "dataset_id": "PhysioNetMI",
+  "branch_id": "DNN-SEQ",
+  "resolved_variant": "DBConformer-OriginalAuthor-P01CompatibilityPatched",
+  "budget_id": "FULL_TRAIN",
+  "metrics": {
+    "BACC": 0.6650197628458498,
+    "F1_MACRO": 0.6640119462419114,
+    "ACC": 0.6666666666666666,
+    "CONFUSION": [
+      [
+        187,
+        66
+      ],
+      [
+        99,
+        143
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      253,
+      242
+    ],
+    "PRED_COMPLETE": 495,
+    "ROC_AUC": 0.7170646457387384,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+  },
+  "validation_selection": {
+    "ACC": 0.7232323232323232,
+    "BACC": 0.7229405426584387,
+    "CLASS_SUPPORT": [
+      249,
+      246
+    ],
+    "CONFUSION": [
+      [
+        192,
+        57
+      ],
+      [
+        80,
+        166
+      ]
+    ],
+    "F1_MACRO": 0.7224666358364471,
+    "PRED_COMPLETE": 495,
+    "ROC_AUC": 0.7646194534234498,
+    "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY",
+    "ROC_AUC_STATUS": "PASS"
+  },
+  "validation_burden_seconds": 229.32518100738525,
+  "model_storage_bytes": 387628,
+  "selected_candidate_id": "R6-DBCONFORMER-AUTHOR-CENTERED-R1",
+  "selected_params": {
+    "recipe_id": "R6-DBCONFORMER-AUTHOR-CENTERED-R1",
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "batch_size": 32,
+    "scheduler": "constant",
+    "label_smoothing": 0.0,
+    "grad_clip": null,
+    "max_epochs": 150,
+    "patience": 40,
+    "selection": "validation_BACC",
+    "restore_best": true,
+    "branch": "DNN-SEQ",
+    "dataset_id": "PhysioNetMI",
+    "budget_id": "FULL_TRAIN"
+  },
+  "candidate_failures": [],
+  "observed_denominator": 495,
+  "expected_denominator": 495,
+  "score_type": "SOFTMAX_PROBABILITY",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.003819801000645384,
+    "batch1_latency_p95_s": 0.003923510999447899,
+    "repeats": 5,
+    "latency_probe_mode": "FORWARD_ONLY_NO_METRICS"
+  },
+  "class_weight_policy": "SKLEARN_BALANCED_TRAIN_FOLD",
+  "class_weights": [
+    0.9895973154362416,
+    1.010623714873201
+  ],
+  "class_weight_calibration": {
+    "selected_policy": "SKLEARN_BALANCED_TRAIN_FOLD",
+    "selected_weights": [
+      0.9895973154362416,
+      1.010623714873201
+    ],
+    "validation_metrics": {
+      "BACC": 0.7229405426584387,
+      "F1_MACRO": 0.7224666358364471,
+      "ACC": 0.7232323232323232,
+      "CONFUSION": [
+        [
+          192,
+          57
+        ],
+        [
+          80,
+          166
+        ]
+      ],
+      "CLASS_SUPPORT": [
+        249,
+        246
+      ],
+      "PRED_COMPLETE": 495,
+      "ROC_AUC": 0.7646194534234498,
+      "ROC_AUC_STATUS": "PASS",
+      "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+    },
+    "candidate_results": [
+      {
+        "status": "SUCCESS",
+        "policy": "UNIFORM_NO_WEIGHT",
+        "weights": null,
+        "validation_metrics": {
+          "BACC": 0.7189244784014106,
+          "F1_MACRO": 0.7185302455726961,
+          "ACC": 0.7191919191919192,
+          "CONFUSION": [
+            [
+              190,
+              59
+            ],
+            [
+              80,
+              166
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            249,
+            246
+          ],
+          "PRED_COMPLETE": 495,
+          "ROC_AUC": 0.7759819766872367,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+        },
+        "validation_burden_seconds": 202.85187005996704,
+        "model_storage_bytes": 387628,
+        "best_epoch": 78,
+        "epochs_completed": 118,
+        "history_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/staging_runtime/raw_outputs/stage12_r6_training_history/P02-A0-PhysioNetMI-DNN-SEQ-FULL_TRAIN-MR00__UNIFORM_NO_WEIGHT.json",
+        "candidate_checkpoint_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/staging_runtime/raw_outputs/stage12_r6_training_history/P02-A0-PhysioNetMI-DNN-SEQ-FULL_TRAIN-MR00__UNIFORM_NO_WEIGHT.candidate.chk",
+        "candidate_checkpoint_sha256": "8d8fb38145b929807d34a2eb100aee79a43662de8fcc7df6ff53ca972f1f9e01"
+      },
+      {
+        "status": "SUCCESS",
+        "policy": "SKLEARN_BALANCED_TRAIN_FOLD",
+        "weights": [
+          0.9895973154362416,
+          1.010623714873201
+        ],
+        "validation_metrics": {
+          "BACC": 0.7229405426584387,
+          "F1_MACRO": 0.7224666358364471,
+          "ACC": 0.7232323232323232,
+          "CONFUSION": [
+            [
+              192,
+              57
+            ],
+            [
+              80,
+              166
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            249,
+            246
+          ],
+          "PRED_COMPLETE": 495,
+          "ROC_AUC": 0.7646194534234498,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+        },
+        "validation_burden_seconds": 229.32518100738525,
+        "model_storage_bytes": 387628,
+        "best_epoch": 95,
+        "epochs_completed": 135,
+        "history_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/staging_runtime/raw_outputs/stage12_r6_training_history/P02-A0-PhysioNetMI-DNN-SEQ-FULL_TRAIN-MR00__SKLEARN_BALANCED_TRAIN_FOLD.json",
+        "candidate_checkpoint_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/staging_runtime/raw_outputs/stage12_r6_training_history/P02-A0-PhysioNetMI-DNN-SEQ-FULL_TRAIN-MR00__SKLEARN_BALANCED_TRAIN_FOLD.candidate.chk",
+        "candidate_checkpoint_sha256": "ed09b344f07dceea8f837523ae7654074b5fd41b0635c85329e7c9e8c2241126"
+      }
+    ],
+    "test_set_used": false
+  },
+  "r6_scientific_amendment": true,
+  "r6_max_epochs": 150,
+  "r6_patience": 40,
+  "horizon_sufficiency": {
+    "best_by_cutoff": {
+      "100": {
+        "BACC": 0.7229405426584387,
+        "epoch": 95
+      },
+      "150": {
+        "BACC": 0.7229405426584387,
+        "epoch": 95
+      },
+      "50": {
+        "BACC": 0.7209080223332354,
+        "epoch": 40
+      }
+    },
+    "epochs_completed": 135,
+    "final_best_BACC": 0.7229405426584387,
+    "final_best_epoch": 95,
+    "gain_after_100": 0.0,
+    "gain_after_150": 0.0,
+    "max_epochs": 150,
+    "patience": 40,
+    "status": "PASS"
+  },
+  "test_loaded_after_group_selection_sealed": true,
+  "test_set_used_for_selection": false
+}

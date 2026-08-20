@@ -1,0 +1,17 @@
+{
+  "gate_id": "P01-G11",
+  "official_or_local_name": "quality_coverage",
+  "status": "PASS",
+  "inputs": [],
+  "procedure_version": "P01-L1-GATE-R6",
+  "observations": {},
+  "failure_codes": [],
+  "repair_owner": "L1_QUALITY",
+  "affected_artifacts": [],
+  "evidence_paths": [
+    "reports/phase_01/quality/quality_coverage.json",
+    "records/quality/"
+  ],
+  "manifest_entry": "manifests/phase_01/gates/P01-G11.json",
+  "blocking_effect": false
+}

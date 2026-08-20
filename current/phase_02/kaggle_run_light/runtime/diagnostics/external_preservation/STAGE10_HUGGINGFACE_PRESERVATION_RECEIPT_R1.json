@@ -1,0 +1,74 @@
+{
+  "G10": "PASS",
+  "P00_P01_mutated": false,
+  "Stage10": "SUCCESS",
+  "byte_count_exact_match": true,
+  "commit_oid": "d283e2499894620580f70af16b78548e745dffea",
+  "commit_url": "https://huggingface.co/datasets/csthv999z/iharq-p02-through-s10-8e4ca693-11a9df6c/commit/d283e2499894620580f70af16b78548e745dffea",
+  "created_utc": "2026-08-09T18:37:59Z",
+  "full_train_success_by_dataset": {
+    "BNCI2014_001": [
+      "RIE-EA-TS",
+      "RIE-MDM",
+      "RIE-TS-LR"
+    ],
+    "Lee2019_MI": [
+      "RIE-EA-TS",
+      "RIE-MDM",
+      "RIE-TS-LR"
+    ],
+    "PhysioNetMI": [
+      "RIE-EA-TS",
+      "RIE-MDM",
+      "RIE-TS-LR"
+    ]
+  },
+  "immutable_revision_verified": "d283e2499894620580f70af16b78548e745dffea",
+  "local_verified_zip_retained_after_success": true,
+  "local_zip": {
+    "bytes": 60510317,
+    "crc": "PASS",
+    "members": 3266,
+    "path": "/kaggle/working/_s10hfup/s10.zip",
+    "sha256": "11a9df6cdf275e3fe60a883c23420032cf6443ad8258d06bf3d71462e52fe6a1"
+  },
+  "member_count_exact_match": true,
+  "meta_sha256_exact_match": true,
+  "original_run_root_still_present": true,
+  "preservation_manifest_sha256_exact_match": true,
+  "prior_stage09_hf": {
+    "commit_oid": "1627a4f83857e8b6b708ee39123a9c435b79b39e",
+    "repo_id": "csthv999z/iharq-p02-s09-c31206f1-5f76954c",
+    "verified": true
+  },
+  "receipt_id": "IHARQ_P02_STAGE10_HUGGINGFACE_PRESERVATION_RECEIPT_R1",
+  "remote_provider": "HUGGING_FACE_HUB",
+  "remote_zip": {
+    "bytes": 60510317,
+    "crc": "PASS",
+    "members": 3266,
+    "sha256": "11a9df6cdf275e3fe60a883c23420032cf6443ad8258d06bf3d71462e52fe6a1"
+  },
+  "repo_id": "csthv999z/iharq-p02-through-s10-8e4ca693-11a9df6c",
+  "repo_type": "dataset",
+  "repo_url": "https://huggingface.co/datasets/csthv999z/iharq-p02-through-s10-8e4ca693-11a9df6c",
+  "requested_visibility": "private",
+  "safe_to_continue_to_stage11": true,
+  "scientific_configuration_changed": false,
+  "semantic_G10": "PASS",
+  "sha256_exact_match": true,
+  "snapshot_boundary": "AFTER_STAGE10_BEFORE_STAGE11",
+  "stage10_attempt_id": "8e4ca693efde",
+  "stage10_branch_counts": {
+    "RIE-EA-TS": 3,
+    "RIE-MDM": 3,
+    "RIE-TS-LR": 21
+  },
+  "stage10_planned_cells": 27,
+  "stage10_terminal_counts": {
+    "SUCCESS": 27
+  },
+  "status": "STAGE10_HF_PRIVATE_REMOTE_VERIFIED_SUCCESS",
+  "token_persisted_by_this_cell": false,
+  "token_source": "HIDDEN_GETPASS"
+}

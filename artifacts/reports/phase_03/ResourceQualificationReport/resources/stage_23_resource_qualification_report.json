@@ -1,0 +1,49 @@
+{
+  "artifact_id": "P03-PROD-057-ea750e7238c30cd42006",
+  "created_at_utc": "2026-08-16T21:01:39.937399Z",
+  "hardening_id": "P03-C8-STAGE23-SUFFICIENCY-PARITY-EVIDENCE-HARDENING-R2",
+  "observed_stage23": {
+    "completed_work_units": 1,
+    "cpu_count": 4,
+    "elapsed_seconds": 0.09175284900265979,
+    "filesystem_free_bytes": 12188418048,
+    "filesystem_total_bytes": 20957446144,
+    "filesystem_used_bytes": 8752250880,
+    "max_rss_kib": 2441992,
+    "pid": 140,
+    "run_stage_artifact_plus_canonical_artifact_bytes": 4346166259,
+    "spill_observed": false,
+    "stage23_promoted_bytes": 39734,
+    "total_work_units": 1
+  },
+  "payload_sha256": "fa68541da7562020bd6197ce76fb45c8f0999086c35ecf2134b034ce1570a650",
+  "plan_feasibility": {
+    "heartbeat_seconds": 120,
+    "qualification_scope": "Observed Stage23 execution plus current filesystem capacity; not a prediction of future heavy compute.",
+    "resource_reduction_applied": false,
+    "stage23_completed": true,
+    "stage24_pending": true
+  },
+  "product_id": "P03-PROD-057",
+  "raw_resource_report": {
+    "authoring_fixture": false,
+    "heartbeat_seconds": 120,
+    "numerical_threads": 1,
+    "resource_reduction_applied": false,
+    "scientific_worker_processes": 1,
+    "status": "PASS"
+  },
+  "run_id": "P03-L3-OFFICIAL-09ca82c743e0411a",
+  "schema_id": "ResourceQualificationReport.v1",
+  "schema_version": "1.0.0",
+  "source_artifact_ids": [
+    "STAGE23-RAW-RESOURCE",
+    "STAGE23-CHECKPOINT-RECEIPT"
+  ],
+  "source_sha256s": [
+    "bb0260952d1b38e095cdabd11ecce10517dc9f3bc50d1fcf83714be1fab58054",
+    "3c6c23bb7f38f6206167c77d0fb7b4d8c8bd3eea8d5dec8866138c37aa8c6887"
+  ],
+  "stage_id": "23",
+  "status": "PASS"
+}

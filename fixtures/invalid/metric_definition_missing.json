@@ -1,0 +1,38 @@
+{
+  "bundle_id": "INVALID-METRIC_DEFINITION_MISSING",
+  "records": [
+    {
+      "record_id": "IHARQ-DATASETRECORD-20260802-71553ced5d787069",
+      "record_type": "DatasetRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L1",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "dataset_id": "MOCK_DATASET_ID_1",
+        "source_uri": "MOCK_SOURCE_URI_1",
+        "license_id": "MOCK_LICENSE_ID_1",
+        "access_status": "MOCK_ACCESS_STATUS_1"
+      },
+      "ablation_id": null
+    }
+  ],
+  "controls": {
+    "metric_definition_present": false
+  },
+  "expected_failure_category": "metric_definition_missing"
+}

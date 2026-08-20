@@ -1,0 +1,413 @@
+{
+  "$id": "https://github.com/csthv/IHARQ/schemas/schemas/records/p03/CalibrationRecord.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "ablation_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "application_role": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "budget_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "calibrated_probability_path": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "calibration_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "class_order": {
+      "type": "array"
+    },
+    "config_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "convergence_status": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "created_at_utc": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "dataset_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "diagnostic_only": {
+      "type": "boolean"
+    },
+    "eligibility_status": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "failure_code": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object",
+        "null"
+      ]
+    },
+    "fallback_reason": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object",
+        "null"
+      ]
+    },
+    "fit_role": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "identity_comparator_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "invalidated_by": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object",
+        "null"
+      ]
+    },
+    "layer_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "lifecycle_status": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "limitations": {
+      "type": "array"
+    },
+    "lineage_parent_ids": {
+      "type": "array"
+    },
+    "method_family": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "method_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "model_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "optimizer_result": {
+      "type": [
+        "object",
+        "array",
+        "string"
+      ]
+    },
+    "parameterization": {
+      "type": [
+        "object",
+        "array",
+        "string"
+      ]
+    },
+    "parameters_path": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "payload_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "phase_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "producer_module": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "protocol_snapshot_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "record_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "run_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "schema_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "schema_version": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "score_type": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "source_artifact_ids": {
+      "type": "array"
+    },
+    "source_prediction_partition_ids": {
+      "type": "array"
+    },
+    "source_sha256s": {
+      "type": "array"
+    },
+    "split_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "supersedes": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object",
+        "null"
+      ]
+    },
+    "support_counts": {
+      "type": [
+        "object",
+        "array",
+        "string"
+      ]
+    },
+    "terminal_status": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "record_id",
+    "phase_id",
+    "layer_id",
+    "run_id",
+    "config_sha256",
+    "protocol_snapshot_id",
+    "created_at_utc",
+    "producer_module",
+    "source_artifact_ids",
+    "source_sha256s",
+    "lineage_parent_ids",
+    "lifecycle_status",
+    "terminal_status",
+    "supersedes",
+    "invalidated_by",
+    "limitations",
+    "failure_code",
+    "payload_sha256",
+    "calibration_id",
+    "ablation_id",
+    "dataset_id",
+    "model_id",
+    "budget_id",
+    "split_id",
+    "fit_role",
+    "application_role",
+    "method_id",
+    "method_family",
+    "score_type",
+    "class_order",
+    "source_prediction_partition_ids",
+    "parameterization",
+    "optimizer_result",
+    "support_counts",
+    "eligibility_status",
+    "identity_comparator_id",
+    "calibrated_probability_path",
+    "parameters_path",
+    "convergence_status",
+    "fallback_reason",
+    "diagnostic_only"
+  ],
+  "title": "IHARQ P03 CalibrationRecord governed profile v1",
+  "type": "object",
+  "x-iharq-layer": "L3",
+  "x-iharq-phase": "P03",
+  "x-iharq-status": "GOVERNED_P03_PROFILE"
+}

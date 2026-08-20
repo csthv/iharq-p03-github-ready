@@ -1,0 +1,66 @@
+rows:
+- scientific_item: Accepted run identity
+  protocol: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis: same
+  layer0: support provenance
+  evidence_map: same provenance
+  layer10: source registry
+  handoff: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  consistency: PASS
+- scientific_item: Config SHA-256
+  protocol: 9e181d2e...ce13
+  analysis: same
+  layer0: support provenance
+  evidence_map: same
+  layer10: source registry
+  handoff: 9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13
+  consistency: PASS
+- scientific_item: Scientific freeze
+  protocol: P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5
+  analysis: same
+  layer0: support provenance
+  evidence_map: same
+  layer10: source registry
+  handoff: P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5
+  consistency: PASS
+- scientific_item: A0 closure
+  protocol: 678 terminal; 657 SUCCESS / 3 FAILED / 15 CONDITIONAL_SKIP / 3 DEPENDENCY_BLOCKED
+  analysis: deeply analyzed
+  layer0: bounded decoder claims
+  evidence_map: A0 mapped
+  layer10: A0 figures/tables
+  handoff: A0 inputs linked
+  consistency: PASS
+- scientific_item: A4 closure
+  protocol: 1218 terminal; 591 SUCCESS / 576 CONDITIONAL_SKIP / 9 INPUT_INCOMPATIBLE
+    / 42 N/A repeat slots
+  analysis: deeply analyzed
+  layer0: resource-bounded claims
+  evidence_map: A4+deviation+Stage18S mapped
+  layer10: A4/limitation views
+  handoff: A4 evidence linked
+  consistency: PASS
+- scientific_item: Stage18S status
+  protocol: post-hoc descriptive only
+  analysis: same
+  layer0: same boundary
+  evidence_map: separate supplement
+  layer10: visible limitation
+  handoff: separate release handoff
+  consistency: PASS
+- scientific_item: Dual credentials
+  protocol: IHARQ_HF_TOKEN_PRE_P02 + IHARQ_HF_TOKEN_P02
+  analysis: limitation/context
+  layer0: not claim-bearing
+  evidence_map: external provenance
+  layer10: not embedded
+  handoff: explicit dual classes
+  consistency: PASS
+- scientific_item: P03 readiness
+  protocol: Layer2ReadinessReport in analysis contract
+  analysis: downstream-ready with limits
+  layer0: limitations propagated
+  evidence_map: readiness evidence
+  layer10: presentation only
+  handoff: compatibility PASS; no missing fields
+  consistency: PASS

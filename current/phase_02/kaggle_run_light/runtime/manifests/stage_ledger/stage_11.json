@@ -1,0 +1,55 @@
+{
+  "stage_id": "11",
+  "status": "SUCCESS",
+  "attempt_id": "77533b224dad",
+  "inputs": {},
+  "input_hashes": {},
+  "outputs": {
+    "status": "PASS",
+    "artifact": "stage_artifacts/11_author_centered_r7.json",
+    "runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R7H7-STAGE11-EEGNET-AUTHOR-CENTERED-10000E-TRUE-P120-CONTINUATION",
+    "primary_success": 105,
+    "sr_calibration_success": 45,
+    "challenger_success": 15,
+    "execution_policy_sha256": "b482d6a35e7a4e047139c7e357618f0fc5a4f172911436448b026aaf571d7462",
+    "accepted_recipe_sha256s": [
+      "18cbe259c05bfcea6b26934118216d5a60ff14d659906e6e8e2f590ffc502866",
+      "74fa2011fa0b94a537338792ce9669350e4ca3153b5f1a3ee50ad556d312690e",
+      "76a601fee7b69395453f240507abc843c63722c548211f43cf2b88647ac7af09"
+    ],
+    "observed_recipe_counts": {
+      "76a601fee7b69395453f240507abc843c63722c548211f43cf2b88647ac7af09": 101,
+      "74fa2011fa0b94a537338792ce9669350e4ca3153b5f1a3ee50ad556d312690e": 4,
+      "18cbe259c05bfcea6b26934118216d5a60ff14d659906e6e8e2f590ffc502866": 15
+    }
+  },
+  "output_hashes": {
+    "status": "727e9bd17b077ba162e13ba877135cc6fbc6b30f83da0b34b3e20233f1cc885f",
+    "artifact": "31ac499bf09a83b64456c456f4da9187e64f6cb9a5ea4570a53b26c47b2d6a32",
+    "runtime_successor_id": "e1a2763729e8a2d17ae72a6c58816d6a2e05421383ba1287a689d05127b962e1",
+    "primary_success": "1253e9373e781b7500266caa55150e08e210bc8cd8cc70d89985e3600155e860",
+    "sr_calibration_success": "811786ad1ae74adfdd20dd0372abaaebc6246e343aebd01da0bfc4c02bf0106c",
+    "challenger_success": "e629fa6598d732768f7c726b4b621285f9c3b85303900aa912017db7617d8bdb",
+    "execution_policy_sha256": "f8d3ac42f8863ff8a0ef824d964f82e72d68785849a89324ef5905d1a33b802f",
+    "accepted_recipe_sha256s": "600689fa7833b771995a8b3d341b8d7f6bc00e0433f771d701b550a2b324e61a",
+    "observed_recipe_counts": "71766acf89fea6bf877d996713e41e46fa3a82b64258bb872560ae1a270ebcd5"
+  },
+  "dependencies": [
+    "10"
+  ],
+  "elapsed_seconds": 0.00989675521850586,
+  "log_path": "logs/stage_11_77533b224dad.log",
+  "heartbeat_write_errors": [],
+  "observability_status": "PASS",
+  "blockers": [],
+  "observations": [],
+  "revision_fingerprint": {
+    "notebook_revision": "R4",
+    "notebook_id": "IHARQ-P02-COMPLETE-EXECUTION-AND-ANALYSIS-R4",
+    "source_sha256": "a54bfa816acc6763c1d1042b8c65cf54ae04ec774c57ec50de86014a6730c5fa",
+    "config_sha256": "d82334535e397c681d6172694da96d3fff0143ffb1b63a18876ee1f7778f60a1",
+    "stage_plan_sha256": "043eb30e008af910d37c563e8be8c719ef881cf009aec3e34687dc97bdc34aad",
+    "scientific_freeze_sha256": "7449216c988eec14191ba85300d720547f06fbc6ac7020e9e142bf12a4b0a598",
+    "scientific_freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5"
+  }
+}

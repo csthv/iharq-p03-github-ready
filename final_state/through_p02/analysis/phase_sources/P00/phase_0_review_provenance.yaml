@@ -1,0 +1,21 @@
+review_mode: LLM_ONLY_MULTI_PASS_FAIL_CLOSED
+human_review_used: false
+deterministic_evidence_precedence: true
+audit_id: P00-ANALYSIS-FINAL-INDEPENDENT-AUDIT-R2
+passes:
+- pass: Authority Reconstruction LLM
+  record: reports/phase_00_analysis/final_independent_audit_R2/reviews/01_authority_reconstruction.md
+  decision: PASS_AFTER_REPAIR
+- pass: Evidence Recalculation LLM
+  record: reports/phase_00_analysis/final_independent_audit_R2/reviews/02_evidence_recalculation.md
+  decision: PASS_AFTER_REPAIR
+- pass: Adversarial Report Red-Team LLM
+  record: reports/phase_00_analysis/final_independent_audit_R2/reviews/03_adversarial_red_team.md
+  decision: PASS_AFTER_REPAIR
+- pass: Deterministic Validation/Reproduction LLM
+  record: reports/phase_00_analysis/final_independent_audit_R2/reviews/04_deterministic_validation.md
+  decision: PENDING_FINAL_ZIP_REPRODUCTION
+- pass: Final Governance LLM
+  record: reports/phase_00_analysis/final_independent_audit_R2/reviews/05_final_governance.md
+  decision: PENDING_FINAL_FREEZE
+unresolved_dissent: []

@@ -1,0 +1,180 @@
+{
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "run_cell_id": "P02-A0-Lee2019_MI-DNN-SEQ-FULL_TRAIN-MR04",
+  "dataset_id": "Lee2019_MI",
+  "branch_id": "DNN-SEQ",
+  "resolved_variant": "DBConformer-OriginalAuthor-P01CompatibilityPatched",
+  "budget_id": "FULL_TRAIN",
+  "metrics": {
+    "BACC": 0.8,
+    "F1_MACRO": 0.7998198378540686,
+    "ACC": 0.8,
+    "CONFUSION": [
+      [
+        231,
+        69
+      ],
+      [
+        51,
+        249
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      300,
+      300
+    ],
+    "PRED_COMPLETE": 600,
+    "ROC_AUC": 0.8903222222222222,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+  },
+  "validation_selection": {
+    "ACC": 0.764,
+    "BACC": 0.764,
+    "CLASS_SUPPORT": [
+      250,
+      250
+    ],
+    "CONFUSION": [
+      [
+        206,
+        44
+      ],
+      [
+        74,
+        176
+      ]
+    ],
+    "F1_MACRO": 0.7631473303894019,
+    "PRED_COMPLETE": 500,
+    "ROC_AUC": 0.7899839999999999,
+    "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY",
+    "ROC_AUC_STATUS": "PASS"
+  },
+  "validation_burden_seconds": 187.29562377929688,
+  "model_storage_bytes": 386988,
+  "selected_candidate_id": "R6-DBCONFORMER-AUTHOR-CENTERED-R1",
+  "selected_params": {
+    "recipe_id": "R6-DBCONFORMER-AUTHOR-CENTERED-R1",
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "batch_size": 32,
+    "scheduler": "constant",
+    "label_smoothing": 0.0,
+    "grad_clip": null,
+    "max_epochs": 150,
+    "patience": 40,
+    "selection": "validation_BACC",
+    "restore_best": true,
+    "branch": "DNN-SEQ",
+    "dataset_id": "Lee2019_MI",
+    "budget_id": "FULL_TRAIN"
+  },
+  "candidate_failures": [],
+  "observed_denominator": 600,
+  "expected_denominator": 600,
+  "score_type": "SOFTMAX_PROBABILITY",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.003841540998109849,
+    "batch1_latency_p95_s": 0.003895596801157808,
+    "repeats": 5,
+    "latency_probe_mode": "FORWARD_ONLY_NO_METRICS"
+  },
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "class_weights": null,
+  "class_weight_calibration": {
+    "selected_policy": "UNIFORM_NO_WEIGHT",
+    "selected_weights": null,
+    "validation_metrics": {
+      "BACC": 0.764,
+      "F1_MACRO": 0.7631473303894019,
+      "ACC": 0.764,
+      "CONFUSION": [
+        [
+          206,
+          44
+        ],
+        [
+          74,
+          176
+        ]
+      ],
+      "CLASS_SUPPORT": [
+        250,
+        250
+      ],
+      "PRED_COMPLETE": 500,
+      "ROC_AUC": 0.7899839999999999,
+      "ROC_AUC_STATUS": "PASS",
+      "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+    },
+    "candidate_results": [
+      {
+        "status": "SUCCESS",
+        "policy": "UNIFORM_NO_WEIGHT",
+        "weights": null,
+        "validation_metrics": {
+          "BACC": 0.764,
+          "F1_MACRO": 0.7631473303894019,
+          "ACC": 0.764,
+          "CONFUSION": [
+            [
+              206,
+              44
+            ],
+            [
+              74,
+              176
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            250,
+            250
+          ],
+          "PRED_COMPLETE": 500,
+          "ROC_AUC": 0.7899839999999999,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+        },
+        "validation_burden_seconds": 187.29562377929688,
+        "model_storage_bytes": 386988,
+        "best_epoch": 62,
+        "epochs_completed": 102,
+        "history_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/staging_runtime/raw_outputs/stage12_r6_training_history/P02-A0-Lee2019_MI-DNN-SEQ-FULL_TRAIN-MR04__UNIFORM_NO_WEIGHT.json",
+        "candidate_checkpoint_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/staging_runtime/raw_outputs/stage12_r6_training_history/P02-A0-Lee2019_MI-DNN-SEQ-FULL_TRAIN-MR04__UNIFORM_NO_WEIGHT.candidate.chk",
+        "candidate_checkpoint_sha256": "d2d8e9b83f298dd8b78e415155ae31ad0a16373bda9fefc088d99d6053507564"
+      }
+    ],
+    "test_set_used": false
+  },
+  "r6_scientific_amendment": true,
+  "r6_max_epochs": 150,
+  "r6_patience": 40,
+  "horizon_sufficiency": {
+    "best_by_cutoff": {
+      "100": {
+        "BACC": 0.764,
+        "epoch": 62
+      },
+      "150": {
+        "BACC": 0.764,
+        "epoch": 62
+      },
+      "50": {
+        "BACC": 0.754,
+        "epoch": 23
+      }
+    },
+    "epochs_completed": 102,
+    "final_best_BACC": 0.764,
+    "final_best_epoch": 62,
+    "gain_after_100": 0.0,
+    "gain_after_150": 0.0,
+    "max_epochs": 150,
+    "patience": 40,
+    "status": "PASS"
+  },
+  "test_loaded_after_group_selection_sealed": true,
+  "test_set_used_for_selection": false
+}

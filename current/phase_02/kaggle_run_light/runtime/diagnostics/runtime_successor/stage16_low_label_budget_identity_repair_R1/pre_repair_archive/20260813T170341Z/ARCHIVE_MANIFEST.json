@@ -1,0 +1,37 @@
+{
+  "artifact_id": "P02-STAGE16-PRE-REPAIR-ARCHIVE-R1",
+  "created_at_utc": "2026-08-13T17:03:41.260288+00:00",
+  "reason": "SUPERSEDED_FALSE_POSITIVE_G16_ZERO_RECORD_CLOSURE",
+  "files": {
+    "stage_16_ledger.json": {
+      "original": "/kaggle/working/iharq_p02_run/stage_ledger/stage_16.json",
+      "archived": "diagnostics/runtime_successor/stage16_low_label_budget_identity_repair_R1/pre_repair_archive/20260813T170341Z/stage_16_ledger.json",
+      "sha256": "8a4f2213d7279c008e0f7ef8aa5afbae7b7be69520cc8bc8cd2d7da49e022d08",
+      "size_bytes": 1485
+    },
+    "G16.json": {
+      "original": "/kaggle/working/iharq_p02_run/gate_results/G16.json",
+      "archived": "diagnostics/runtime_successor/stage16_low_label_budget_identity_repair_R1/pre_repair_archive/20260813T170341Z/G16.json",
+      "sha256": "028513f702550005d429080662f21ce0f60439882659fd15f6e3684c0af847ed",
+      "size_bytes": 276
+    },
+    "stage_16_artifact.json": {
+      "original": "/kaggle/working/iharq_p02_run/stage_artifacts/16_low_label.json",
+      "archived": "diagnostics/runtime_successor/stage16_low_label_budget_identity_repair_R1/pre_repair_archive/20260813T170341Z/stage_16_artifact.json",
+      "sha256": "c01d612cfa98c1df1d5dd158369a8fb39d6f46f3e3be95939c7cdc4f0be030eb",
+      "size_bytes": 39
+    },
+    "low_label_metric_source.csv": {
+      "original": "/kaggle/working/iharq_p02_run/runtime/analysis_inputs/low_label_metric_source.csv",
+      "archived": "diagnostics/runtime_successor/stage16_low_label_budget_identity_repair_R1/pre_repair_archive/20260813T170341Z/low_label_metric_source.csv",
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "size_bytes": 2
+    },
+    "low_label_curve_summary.json": {
+      "original": "/kaggle/working/iharq_p02_run/runtime/analysis_inputs/low_label_curve_summary.json",
+      "archived": "diagnostics/runtime_successor/stage16_low_label_budget_identity_repair_R1/pre_repair_archive/20260813T170341Z/low_label_curve_summary.json",
+      "sha256": "e142eb80270c031f8a1540914c35b1996b025ac16a4b72f9eafa80d9afbf85a6",
+      "size_bytes": 160
+    }
+  }
+}

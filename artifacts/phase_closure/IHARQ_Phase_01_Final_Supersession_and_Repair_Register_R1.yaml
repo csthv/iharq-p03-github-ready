@@ -1,0 +1,26 @@
+register_id: P01-FINAL-SUPERSESSION-AND-REPAIR-REGISTER-R1
+current_status: PHASE_01_SCOPE_FINALIZED
+historical_surfaces_preserved:
+- path: artifacts/phase_execution_handoff.yaml
+  historical_status: execution-time handoff; documentary products not yet created
+  current_successor: artifacts/phase_closure/IHARQ_Phase_01_Final_Handoff_and_Phase2_Readiness_R1.yaml
+- path: artifacts/handoffs/phase_01_to_phase_02.yaml
+  historical_status: execution-time P02 technical handoff; A4 Protocol sync pending
+    at that time
+  current_successor: artifacts/phase_closure/IHARQ_Phase_01_Final_Handoff_and_Phase2_Readiness_R1.yaml
+- path: GITHUB_READY_REPOSITORY_MANIFEST.json
+  historical_status: execution-export repository manifest
+  current_successor: CURRENT_GITHUB_READY_REPOSITORY_MANIFEST.json
+repository_metadata_repairs:
+- field: pyproject.project.requires-python
+  old: '>=3.11,<3.12'
+  new: '>=3.12,<3.13'
+  reason: accepted execution used Python 3.12.13 under documented compatibility amendment
+- field: tool.iharq.primary_python
+  old: '3.11'
+  new: '3.12'
+  reason: align operational repository metadata with accepted runtime while preserving
+    pre-run Build Book intent separately
+scientific_changes: false
+execution_changes: false
+new_computation: false

@@ -1,0 +1,342 @@
+{
+  "$id": "https://github.com/csthv/IHARQ/schemas/schemas/records/p03/P03IntakeLedger.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "budget_profile_ids": {
+      "type": "array"
+    },
+    "class_order": {
+      "type": "array"
+    },
+    "config_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "created_at_utc": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "external_revision": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "failure_code": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object",
+        "null"
+      ]
+    },
+    "immutability_status": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "intake_gate_status": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "intake_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "invalidated_by": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object",
+        "null"
+      ]
+    },
+    "layer_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "lifecycle_status": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "limitation_ids": {
+      "type": "array"
+    },
+    "limitations": {
+      "type": "array"
+    },
+    "lineage_parent_ids": {
+      "type": "array"
+    },
+    "manifest_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "model_registry_success_count": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "object_index_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "payload_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "phase_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "prediction_partition_count": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "producer_module": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "protocol_snapshot_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "record_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "required_readiness_record_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "retrieval_receipt_ids": {
+      "type": "array"
+    },
+    "run_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "schema_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "schema_version": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "source_artifact_ids": {
+      "type": "array"
+    },
+    "source_config_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "source_environment_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "source_phase": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "source_protocol_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "source_run_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "source_sha256s": {
+      "type": "array"
+    },
+    "split_profile_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "supersedes": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object",
+        "null"
+      ]
+    },
+    "terminal_status": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "record_id",
+    "phase_id",
+    "layer_id",
+    "run_id",
+    "config_sha256",
+    "protocol_snapshot_id",
+    "created_at_utc",
+    "producer_module",
+    "source_artifact_ids",
+    "source_sha256s",
+    "lineage_parent_ids",
+    "lifecycle_status",
+    "terminal_status",
+    "supersedes",
+    "invalidated_by",
+    "limitations",
+    "failure_code",
+    "payload_sha256",
+    "intake_id",
+    "source_phase",
+    "source_run_id",
+    "source_config_sha256",
+    "source_protocol_id",
+    "source_environment_id",
+    "prediction_partition_count",
+    "model_registry_success_count",
+    "required_readiness_record_id",
+    "class_order",
+    "split_profile_id",
+    "budget_profile_ids",
+    "external_revision",
+    "manifest_sha256",
+    "object_index_sha256",
+    "retrieval_receipt_ids",
+    "immutability_status",
+    "limitation_ids",
+    "intake_gate_status"
+  ],
+  "title": "IHARQ P03 P03IntakeLedger governed profile v1",
+  "type": "object",
+  "x-iharq-layer": "L3",
+  "x-iharq-phase": "P03",
+  "x-iharq-status": "GOVERNED_P03_PROFILE"
+}

@@ -1,0 +1,120 @@
+{
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "run_cell_id": "P02-A0-PhysioNetMI-RIE-TS-LR-FULL_TRAIN-MR00",
+  "dataset_id": "PhysioNetMI",
+  "branch_id": "RIE-TS-LR",
+  "resolved_variant": "RIE-TS-LR",
+  "budget_id": "FULL_TRAIN",
+  "metrics": {
+    "BACC": 0.45833333333333337,
+    "F1_MACRO": 0.45739130434782604,
+    "ACC": 0.4583333333333333,
+    "CONFUSION": [
+      [
+        6,
+        6
+      ],
+      [
+        7,
+        5
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      12,
+      12
+    ],
+    "PRED_COMPLETE": 24,
+    "ROC_AUC": 0.4513888888888889,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "NATIVE_PROBABILITY"
+  },
+  "validation_selection": {
+    "BACC": 0.5,
+    "F1_MACRO": 0.4857142857142857,
+    "ACC": 0.5,
+    "CONFUSION": [
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        8
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      12,
+      12
+    ],
+    "PRED_COMPLETE": 24,
+    "ROC_AUC": 0.4583333333333333,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "NATIVE_PROBABILITY"
+  },
+  "validation_burden_seconds": 0.0052598410002246965,
+  "model_storage_bytes": 793,
+  "selected_candidate_id": "CAND-02",
+  "selected_params": {
+    "C": 10,
+    "covariance": "oas",
+    "tangent_metric": "riemann",
+    "max_iter": 2000
+  },
+  "candidate_failures": [],
+  "observed_denominator": 24,
+  "expected_denominator": 24,
+  "score_type": "NATIVE_PROBABILITY",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.00013963700075692032,
+    "batch1_latency_p95_s": 0.00019120199976896401,
+    "repeats": 5
+  },
+  "permutation_provenance": null,
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "class_weights": null,
+  "class_weight_calibration": {
+    "selected_policy": "UNIFORM_NO_WEIGHT",
+    "selected_weights": null,
+    "candidate_results": [
+      {
+        "status": "SUCCESS",
+        "policy": "UNIFORM_NO_WEIGHT",
+        "weights": null,
+        "validation_metrics": {
+          "BACC": 0.5,
+          "F1_MACRO": 0.4857142857142857,
+          "ACC": 0.5,
+          "CONFUSION": [
+            [
+              4,
+              8
+            ],
+            [
+              4,
+              8
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            12,
+            12
+          ],
+          "PRED_COMPLETE": 24,
+          "ROC_AUC": 0.4583333333333333,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "NATIVE_PROBABILITY"
+        },
+        "validation_burden_seconds": 0.0052598410002246965,
+        "model_storage_bytes": 793
+      }
+    ],
+    "training_count_evidence": {
+      "counts": [
+        24,
+        24
+      ],
+      "exactly_equal": true,
+      "selection_required": false
+    },
+    "test_set_used": false
+  }
+}

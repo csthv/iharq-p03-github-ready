@@ -1,0 +1,23 @@
+{
+  "artifact_id": "P02-STAGE18S-R1-RUNTIME-EVIDENCE-HANDOFF",
+  "supplement_id": "P02-STAGE18S-BALANCED-SENSITIVITY-R1",
+  "status": "PASS",
+  "canonical_stage18_remains_source_of_G18": true,
+  "supplement_is_additional_sensitivity_evidence": true,
+  "analysis_inputs": [
+    "analysis_inputs/stage18S_R1_combined_cell_effects.csv",
+    "analysis_inputs/stage18S_R1_three_repeat_anchor_stability.csv",
+    "analysis_inputs/stage18S_R1_six_budget_mr00_sensitivity.csv",
+    "analysis_inputs/stage18S_R1_participant_paired_effects.csv",
+    "analysis_inputs/stage18S_R1_member_training_provenance.csv",
+    "analysis_inputs/stage18S_R1_training_provenance_summary.csv",
+    "analysis_inputs/stage18S_R1_decision_support_summary.json",
+    "analysis_inputs/stage18S_balanced_sensitivity_R1_preexecution_freeze.json"
+  ],
+  "reporting_limits": {
+    "post_hoc": true,
+    "not_five_repeat_confirmatory": true,
+    "not_full_buildbook_equivalent": true,
+    "do_not_overwrite_original_stage18_protocol_deviation": true
+  }
+}

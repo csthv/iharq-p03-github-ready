@@ -1,0 +1,88 @@
+{
+  "artifact_id": "P03-PROD-056-34c1e08a2cfa490b1024",
+  "created_at_utc": "2026-08-16T21:01:39.502050Z",
+  "evidence": {
+    "a2_no_legal_threshold_count": 91,
+    "a2_success_count": 194,
+    "a3_no_legal_threshold_count": 273,
+    "a3_success_count": 582,
+    "canonical_p048_sha256": "dacec8269c6b127499d0fdc3b565be8d2b2bb96f97430839eb09b181018f1bae",
+    "canonical_p062_sha256": "af5a78021474731997d4a8f0cc11ff4ca430ab3271fd741ef8ffd61ab434ee59",
+    "canonical_p063_sha256": "4e6b9117d070c1a0737b72ffabdc72a2c5ba5b2704bfa92e2bdb053e1a3a49a0",
+    "limitation_count": 21,
+    "missing_required_outputs": [],
+    "missing_required_products": [],
+    "negative_result_count": 3618,
+    "prior_stage_count": 23,
+    "required_products_before_stage24": 59,
+    "stage23_output_manifest_sha256": "210621d8578766ca0ed6d0dd8a3878359cf473bfa4c20b6279628fceec4872e9"
+  },
+  "final_phase_sufficiency": false,
+  "final_phase_sufficiency_pending_stage24": true,
+  "gate_id": "G03-23-SUFFICIENCY",
+  "hardening_id": "P03-C8-STAGE23-SUFFICIENCY-PARITY-EVIDENCE-HARDENING-R2",
+  "insufficiency": {
+    "blocking_defects": [],
+    "pending_non_stage23_closure": [
+      "Stage24 phase-export checksum closure",
+      "Stage24 secret scan",
+      "Stage24 complete export/bundle closure"
+    ]
+  },
+  "limitations": [
+    "This is pre-export evidence sufficiency, not final Phase-3 package closure.",
+    "Stage24 checksum and secret-scan gates remain mandatory."
+  ],
+  "loopback": {
+    "owner": null,
+    "policy": "Minimum lawful affected-scope repair only if an actual blocking defect is later found.",
+    "required_now": false,
+    "stage": null
+  },
+  "payload_sha256": "6711b42b3840f21f1597f97e608f4ed59c715ad1bfdc8cc143093821b908f7d9",
+  "product_id": "P03-PROD-056",
+  "raw_sufficiency": {
+    "all_prior_stages_terminal": true,
+    "authoring_fixture": false,
+    "checksums_pending_stage_24": true,
+    "downstream_handoffs_created": true,
+    "every_required_ablation_ran": true,
+    "every_required_artifact_produced_or_lawfully_terminal": true,
+    "failures_persisted": true,
+    "implementation_amendment_id": "P03-L3-IMPL-AMEND-NO-RULE-R1",
+    "manifests_complete": true,
+    "required_output_missing": [],
+    "secret_scan_pending_stage_24": true,
+    "status": "PASS"
+  },
+  "requirements": [
+    "all prior stages 00-22 terminal COMPLETE",
+    "required products before Stage24 realized or lawfully terminal",
+    "A0/A1/A2/A3/A4 denominator closure",
+    "required documentary/scientific output paths present",
+    "member-disagreement conditional denominator accounted",
+    "failure/negative denominator complete",
+    "downstream P04/later handoffs created",
+    "canonical PhaseAnalysisInputIndex and ClaimEvidenceInput available",
+    "TEST not used for selection",
+    "candidate claims remain unapproved"
+  ],
+  "run_id": "P03-L3-OFFICIAL-09ca82c743e0411a",
+  "schema_id": "EvidenceSufficiencyDecision.v1",
+  "schema_version": "1.0.0",
+  "scope": "PRE_EXPORT",
+  "source_artifact_ids": [
+    "STAGE23-RAW-SUFFICIENCY",
+    "P03-PROD-048",
+    "P03-PROD-062",
+    "P03-PROD-063"
+  ],
+  "source_sha256s": [
+    "0d5eedc3f4aa4ad06925ae96efba130915ba1f18c90040d7d75bc443f8dffafa",
+    "dacec8269c6b127499d0fdc3b565be8d2b2bb96f97430839eb09b181018f1bae",
+    "af5a78021474731997d4a8f0cc11ff4ca430ab3271fd741ef8ffd61ab434ee59",
+    "4e6b9117d070c1a0737b72ffabdc72a2c5ba5b2704bfa92e2bdb053e1a3a49a0"
+  ],
+  "stage_id": "23",
+  "status": "PASS"
+}

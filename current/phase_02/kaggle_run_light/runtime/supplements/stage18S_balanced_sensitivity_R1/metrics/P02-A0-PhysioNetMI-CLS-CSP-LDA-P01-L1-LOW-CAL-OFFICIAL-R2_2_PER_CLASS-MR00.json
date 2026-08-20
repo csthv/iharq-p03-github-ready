@@ -1,0 +1,121 @@
+{
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "run_cell_id": "P02-A0-PhysioNetMI-CLS-CSP-LDA-P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS-MR00",
+  "dataset_id": "PhysioNetMI",
+  "branch_id": "CLS-CSP-LDA",
+  "resolved_variant": "CLS-CSP-LDA",
+  "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS",
+  "metrics": {
+    "BACC": 0.5458138699245418,
+    "F1_MACRO": 0.5347920819618933,
+    "ACC": 0.5494949494949495,
+    "CONFUSION": [
+      [
+        180,
+        73
+      ],
+      [
+        150,
+        92
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      253,
+      242
+    ],
+    "PRED_COMPLETE": 495,
+    "ROC_AUC": 0.5352464639205566,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "NATIVE_PROBABILITY"
+  },
+  "validation_selection": {
+    "BACC": 0.5064403957292585,
+    "F1_MACRO": 0.5013541632262113,
+    "ACC": 0.5070707070707071,
+    "CONFUSION": [
+      [
+        152,
+        97
+      ],
+      [
+        147,
+        99
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      249,
+      246
+    ],
+    "PRED_COMPLETE": 495,
+    "ROC_AUC": 0.5135174845724361,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "NATIVE_PROBABILITY"
+  },
+  "validation_burden_seconds": 0.2940792829976999,
+  "model_storage_bytes": 68715,
+  "selected_candidate_id": "CAND-02",
+  "selected_params": {
+    "n_components": 8,
+    "base_branch_id": "CLS-CSP-LDA",
+    "csp_reg": "oas",
+    "lda_solver": "lsqr",
+    "lda_shrinkage": "auto"
+  },
+  "candidate_failures": [],
+  "observed_denominator": 495,
+  "expected_denominator": 495,
+  "score_type": "NATIVE_PROBABILITY",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.0007210539988591336,
+    "batch1_latency_p95_s": 0.000864439600991318,
+    "repeats": 5
+  },
+  "permutation_provenance": null,
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "class_weights": null,
+  "class_weight_calibration": {
+    "selected_policy": "UNIFORM_NO_WEIGHT",
+    "selected_weights": null,
+    "candidate_results": [
+      {
+        "status": "SUCCESS",
+        "policy": "UNIFORM_NO_WEIGHT",
+        "weights": null,
+        "validation_metrics": {
+          "BACC": 0.5064403957292585,
+          "F1_MACRO": 0.5013541632262113,
+          "ACC": 0.5070707070707071,
+          "CONFUSION": [
+            [
+              152,
+              97
+            ],
+            [
+              147,
+              99
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            249,
+            246
+          ],
+          "PRED_COMPLETE": 495,
+          "ROC_AUC": 0.5135174845724361,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "NATIVE_PROBABILITY"
+        },
+        "validation_burden_seconds": 0.2940792829976999,
+        "model_storage_bytes": 68715
+      }
+    ],
+    "training_count_evidence": {
+      "counts": [
+        2,
+        2
+      ],
+      "exactly_equal": true,
+      "selection_required": false
+    },
+    "test_set_used": false
+  }
+}

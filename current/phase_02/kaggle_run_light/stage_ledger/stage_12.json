@@ -1,0 +1,155 @@
+{
+  "attempt_id": "b9d3bbee230b",
+  "blockers": [],
+  "dependencies": [
+    "11"
+  ],
+  "elapsed_seconds": 0.771381139755249,
+  "heartbeat_write_errors": [],
+  "input_hashes": {},
+  "inputs": {},
+  "log_path": "logs/stage_12_b9d3bbee230b.log",
+  "observability_status": "PASS",
+  "observations": [],
+  "output_hashes": {
+    "artifact": "51b9caf92e6b5742a518f1cbc8779f9ed97b3f4b3644192287f4a3befa79a8ed",
+    "attempted": "620c9c332101a5bae955c66ae72268fbcd3972766179522c8deede6a249addb7",
+    "branches": "6508f1f1db955c182a51b6b5ee362ab39cd48ca2f67868f801a3ecde07f6c873",
+    "status": "727e9bd17b077ba162e13ba877135cc6fbc6b30f83da0b34b3e20233f1cc885f",
+    "terminal_counts": "3ba70f9bce5bb44c3cd3321a60b6d419e7654290521a2eb0dd89298888c6e811"
+  },
+  "outputs": {
+    "artifact": "stage_artifacts/12_family.json",
+    "attempted": 153,
+    "branches": [
+      "DNN-EGTC",
+      "DNN-FBCNET",
+      "DNN-SEQ",
+      "SSL-CBRAMOD",
+      "SSL-REVE"
+    ],
+    "status": "PASS",
+    "terminal_counts": {
+      "CONDITIONAL_SKIP": 15,
+      "DEPENDENCY_BLOCKED": 3,
+      "SUCCESS": 135
+    }
+  },
+  "pre_stage11_r7_status": "SUCCESS",
+  "revision_fingerprint": {
+    "config_sha256": "d82334535e397c681d6172694da96d3fff0143ffb1b63a18876ee1f7778f60a1",
+    "notebook_id": "IHARQ-P02-COMPLETE-EXECUTION-AND-ANALYSIS-R4",
+    "notebook_revision": "R4",
+    "scientific_freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5",
+    "scientific_freeze_sha256": "7449216c988eec14191ba85300d720547f06fbc6ac7020e9e142bf12a4b0a598",
+    "source_sha256": "a54bfa816acc6763c1d1042b8c65cf54ae04ec774c57ec50de86014a6730c5fa",
+    "stage_plan_sha256": "043eb30e008af910d37c563e8be8c719ef881cf009aec3e34687dc97bdc34aad"
+  },
+  "runtime_successor": {
+    "FBCNet_author_horizon_provenance": {
+      "IHARQ_preserved_differences": {
+        "class_weight_policy": "P02_R2_GOVERNED",
+        "continue_after_earlystop": false,
+        "selection_metric": "validation_BACC",
+        "split_authority": "P01_SUBJECT_GROUPED_ROLES",
+        "test_visibility": "STRICTLY_AFTER_SELECTION"
+      },
+      "author_batch_size": 16,
+      "author_load_best_model": true,
+      "author_lr": 0.001,
+      "author_max_epochs": 1500,
+      "author_no_decrease_epochs": 200,
+      "source_commit": "de1bbdd8a54cb1e466830e3d47070e0e56761a37",
+      "source_file": "codes/classify/cv.py",
+      "source_repository": "ravikiran-mane/FBCNet"
+    },
+    "P00_P01_mutated": false,
+    "P01_consumption_audit": "diagnostics/runtime_successor/stage12_external_models_R6R5/P02_STAGE12_R6R5_P01_CONSUMPTION_AUDIT_R1.json",
+    "amendment_reason": "PREDECLARED_R6R4_MODEL_SPECIFIC_HORIZON: FBCNET_1500_200_MATCHING_ORIGINAL_AUTHOR_HORIZON_AND_NODECREASE_WINDOW; DBCONFORMER_AND_CBRAMOD_RETAIN_150_40",
+    "artifact_id": "P02-STAGE12-R6R5-FBCNET-AUTHOR-HORIZON-R1",
+    "author_centered_recipes": {
+      "DNN-FBCNET": {
+        "batch_size": 16,
+        "grad_clip": null,
+        "label_smoothing": 0.0,
+        "lr": 0.001,
+        "max_epochs": 1500,
+        "optimizer": "Adam",
+        "patience": 200,
+        "recipe_id": "R6-FBCNET-AUTHOR-CENTERED-R1",
+        "restore_best": true,
+        "scheduler": "constant",
+        "selection": "validation_BACC",
+        "weight_decay": 0.0
+      },
+      "DNN-SEQ": {
+        "batch_size": 32,
+        "grad_clip": null,
+        "label_smoothing": 0.0,
+        "lr": 0.001,
+        "max_epochs": 150,
+        "optimizer": "Adam",
+        "patience": 40,
+        "recipe_id": "R6-DBCONFORMER-AUTHOR-CENTERED-R1",
+        "restore_best": true,
+        "scheduler": "constant",
+        "selection": "validation_BACC",
+        "weight_decay": 0.0
+      },
+      "SSL-CBRAMOD": {
+        "batch_size": 64,
+        "body_lr": 0.0001,
+        "eta_min": 1e-06,
+        "grad_clip": 1.0,
+        "head_lr": 0.0005,
+        "input_scale": 10000.0,
+        "label_smoothing": 0.1,
+        "max_epochs": 150,
+        "optimizer": "AdamW",
+        "patience": 40,
+        "recipe_id": "R6-CBRAMOD-SOURCE-CENTERED-R1",
+        "restore_best": true,
+        "scheduler": "cosine",
+        "selection": "validation_BACC",
+        "source_sampling_hz": 160,
+        "target_sampling_hz": 200,
+        "weight_decay": 0.05
+      }
+    },
+    "id": "P02-RUNTIME-SUCCESSOR-R6R5-STAGE12-FBCNET-AUTHOR-HORIZON-1500-200",
+    "model_specific_horizon_policy": {
+      "DNN-FBCNET": {
+        "max_epochs": 1500,
+        "patience": 200,
+        "reason": "PREDECLARED_R6R5_ORIGINAL_AUTHOR_HORIZON_AND_NODECREASE_WINDOW"
+      },
+      "DNN-SEQ": {
+        "max_epochs": 150,
+        "patience": 40,
+        "reason": "AUTHOR_CENTERED_R6R3_HORIZON_RETAINED"
+      },
+      "SSL-CBRAMOD": {
+        "max_epochs": 150,
+        "patience": 40,
+        "reason": "SOURCE_CENTERED_R6R3_HORIZON_RETAINED"
+      }
+    },
+    "pre_r6_archive": "diagnostics/runtime_successor/stage12_external_models_R6R5/pre_r6r3_official_stage12_archive/20260812T005807Z",
+    "scientific_configuration_changed": true,
+    "scientific_training_policy_amendment": true,
+    "semantic_audit": "diagnostics/runtime_successor/G12_R6R3_SEMANTIC_AUDIT.json",
+    "staged_closure_audit": "diagnostics/runtime_successor/stage12_external_models_R6R5/G12_R6R5_STAGED_CLOSURE_AUDIT_R1.json",
+    "test_set_used_for_hyperparameter_selection": false
+  },
+  "stage_id": "12",
+  "status": "SUCCESS",
+  "upstream_stage11_revalidation": {
+    "canonical_stage11_runtime_successor": "P02-RUNTIME-SUCCESSOR-R7H7-STAGE11-EEGNET-AUTHOR-CENTERED-10000E-TRUE-P120-CONTINUATION",
+    "completion_receipt": "diagnostics/runtime_successor/P02_STAGE12_REVALIDATED_AFTER_CANONICAL_STAGE11_R1.json",
+    "dependency_audit": "ACCEPTANCE_PREREQUISITE_ONLY",
+    "reason": "UPSTREAM_STAGE11_REPLACED_BY_R7H_AUTHOR_CENTERED_10000E_P500_SUCCESSOR",
+    "retraining_implied": false,
+    "scientific_artifacts_byte_identical": true,
+    "status": "PASS"
+  }
+}

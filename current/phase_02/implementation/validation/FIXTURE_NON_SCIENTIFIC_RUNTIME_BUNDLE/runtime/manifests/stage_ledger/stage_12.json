@@ -1,0 +1,41 @@
+{
+  "stage_id": "12",
+  "status": "SUCCESS",
+  "attempt_id": "7495ccd699ee",
+  "inputs": {},
+  "input_hashes": {},
+  "outputs": {
+    "status": "PASS",
+    "attempted": 1,
+    "branches": [
+      "SSL-CBRAMOD"
+    ],
+    "terminal_counts": {
+      "CHECKPOINT_BLOCKED": 1
+    },
+    "artifact": "stage_artifacts/12_family.json"
+  },
+  "output_hashes": {
+    "status": "727e9bd17b077ba162e13ba877135cc6fbc6b30f83da0b34b3e20233f1cc885f",
+    "attempted": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+    "branches": "e426c51d874cbb94e56498fcf51832665cda4f7e2fc594406ac1ececc8cbded7",
+    "terminal_counts": "f9086f559029b29d35037b2973a8646e565014538b09e19c4c908641dd9d72a7",
+    "artifact": "51b9caf92e6b5742a518f1cbc8779f9ed97b3f4b3644192287f4a3befa79a8ed"
+  },
+  "dependencies": [
+    "11"
+  ],
+  "elapsed_seconds": 0.013075828552246094,
+  "log_path": "logs/stage_12_7495ccd699ee.log",
+  "heartbeat_write_errors": [],
+  "observability_status": "PASS",
+  "blockers": [],
+  "observations": [],
+  "revision_fingerprint": {
+    "notebook_revision": "R4",
+    "source_sha256": "AUTHORING_FIXTURE_SOURCE",
+    "config_sha256": "AUTHORING_FIXTURE_CONFIG",
+    "stage_plan_sha256": "AUTHORING_FIXTURE_STAGE_PLAN",
+    "scientific_freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5"
+  }
+}

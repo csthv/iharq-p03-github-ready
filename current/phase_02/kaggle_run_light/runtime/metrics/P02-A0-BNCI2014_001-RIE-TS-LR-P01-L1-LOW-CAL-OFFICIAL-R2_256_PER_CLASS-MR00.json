@@ -1,0 +1,83 @@
+{
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "run_cell_id": "P02-A0-BNCI2014_001-RIE-TS-LR-P01-L1-LOW-CAL-OFFICIAL-R2:256_PER_CLASS-MR00",
+  "dataset_id": "BNCI2014_001",
+  "branch_id": "RIE-TS-LR",
+  "resolved_variant": "RIE-TS-LR",
+  "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:256_PER_CLASS",
+  "budget_repeat_id": "P01_FROZEN_SINGLE_SUBSET",
+  "model_repeat_index": 0,
+  "metrics": {
+    "BACC": 0.5416666666666666,
+    "F1_MACRO": 0.5208711433756805,
+    "ACC": 0.5416666666666666,
+    "CONFUSION": [
+      [
+        48,
+        96
+      ],
+      [
+        36,
+        108
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      144,
+      144
+    ],
+    "PRED_COMPLETE": 288,
+    "ROC_AUC": 0.5836226851851851,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "NATIVE_PROBABILITY"
+  },
+  "validation_selection": {
+    "ACC": 0.7534722222222222,
+    "BACC": 0.7534722222222223,
+    "CLASS_SUPPORT": [
+      144,
+      144
+    ],
+    "CONFUSION": [
+      [
+        79,
+        65
+      ],
+      [
+        6,
+        138
+      ]
+    ],
+    "F1_MACRO": 0.7426726904345419,
+    "PRED_COMPLETE": 288,
+    "ROC_AUC": 0.8969425154320988,
+    "ROC_AUC_SCORE_TYPE": "NATIVE_PROBABILITY",
+    "ROC_AUC_STATUS": "PASS"
+  },
+  "validation_burden_seconds": 1.1615120740007114,
+  "model_storage_bytes": 6904,
+  "selected_candidate_id": "CAND-00",
+  "selected_params": {
+    "C": 0.1,
+    "covariance": "oas",
+    "max_iter": 2000,
+    "tangent_metric": "riemann"
+  },
+  "checkpoint_format": "TRUSTED_PROJECT_PICKLE_PINNED_ENVIRONMENT",
+  "candidate_failures": [],
+  "observed_denominator": 288,
+  "expected_denominator": 288,
+  "score_type": "NATIVE_PROBABILITY",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.0029429919995891396,
+    "batch1_latency_p95_s": 0.0031510843997239134,
+    "repeats": 5
+  },
+  "class_weight_policy": "UNIFORM_NO_WEIGHT_EXACT_BALANCED_TRAIN",
+  "class_weights": null,
+  "test_loaded_after_group_selection_sealed": true,
+  "test_set_used_for_selection": false,
+  "evidence_class": "P02_POST_HOC_LOW_LABEL_EXTENSION_R1",
+  "integration_source_run_cell_id": "P02S-LLX-R1-A0-BNCI2014_001-RIE-TS-LR-256PC-MR00",
+  "integration_source_config_sha256": "67807d9959d98c6a138288dc2c3f12377e0acb8bfce9d76f333485a0cb0a760e",
+  "integration_revision": "P02-INTEGRATED-LOW-LABEL-1-TO-256-R1"
+}

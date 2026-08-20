@@ -1,0 +1,80 @@
+{
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "metrics": {
+    "BACC": 0.495,
+    "F1_MACRO": 0.4297204124332243,
+    "ACC": 0.495,
+    "CONFUSION": [
+      [
+        250,
+        50
+      ],
+      [
+        253,
+        47
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      300,
+      300
+    ],
+    "PRED_COMPLETE": 600,
+    "ROC_AUC": null,
+    "ROC_AUC_STATUS": "NOT_AVAILABLE_NO_CONTINUOUS_SCORE"
+  },
+  "strongest_constituent_branch": "SSL-CBRAMOD",
+  "strongest_constituent_prediction_partition": "records/PredictionRecord/dataset=Lee2019_MI/branch=SSL-CBRAMOD/budget=P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS/P02-A0-Lee2019_MI-SSL-CBRAMOD-P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS-MR03.jsonl",
+  "validation_selection_provenance": {
+    "selected_branch": "SSL-CBRAMOD",
+    "candidate_summaries": [
+      {
+        "branch_id": "SSL-CBRAMOD",
+        "BACC": 0.526,
+        "F1": 0.5071373808915337,
+        "burden": 76.62826228141785
+      },
+      {
+        "branch_id": "DNN-EEGNET",
+        "BACC": 0.516,
+        "F1": 0.49953660797034294,
+        "burden": 41.83886580699982
+      },
+      {
+        "branch_id": "CLS-CSP-LDA",
+        "BACC": 0.502,
+        "F1": 0.4548821976347579,
+        "burden": 0.41019257900188677
+      },
+      {
+        "branch_id": "RIE-TS-LR",
+        "BACC": 0.492,
+        "F1": 0.4741984631690514,
+        "burden": 2.334666749000462
+      }
+    ],
+    "test_outcome_influence": "PROHIBITED"
+  },
+  "matched_denominator": 600,
+  "ensemble_member_branches": [
+    "CLS-CSP-LDA",
+    "RIE-TS-LR",
+    "DNN-EEGNET",
+    "SSL-CBRAMOD"
+  ],
+  "ensemble_member_checkpoint_ids": [
+    "0d7cbe6a2d985341d73ea7c6cc262e10855b72d4b0571259a9c57736ac726538",
+    "1bf90a853cea9bf691ea9af03f0ef398b62f77931c24b2ac0689fee0d22c1ea6",
+    "9e92d95766cb3a48d7825032b160b07d5a493e7641909edcb24abefa5e316e66",
+    "b8e8c81874c71a55c9bc8d32ced0da7a87eb43fd2d46c92922afb847ada8fce7"
+  ],
+  "burden": {
+    "evidence_duration_s": 3.0,
+    "observation_horizon_s": 3.0,
+    "model_or_view_evaluations": 4,
+    "member_count": 4,
+    "aggregation_operation": "HARD_VOTE",
+    "batch1_latency_median_s": 0.02026086099613167,
+    "batch1_latency_p95_s": 0.021857256596922524,
+    "aggregation_latency_s": 0.002925192000475363
+  }
+}

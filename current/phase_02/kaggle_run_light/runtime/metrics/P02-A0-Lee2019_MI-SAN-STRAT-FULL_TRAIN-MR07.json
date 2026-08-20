@@ -1,0 +1,115 @@
+{
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "run_cell_id": "P02-A0-Lee2019_MI-SAN-STRAT-FULL_TRAIN-MR07",
+  "dataset_id": "Lee2019_MI",
+  "branch_id": "SAN-STRAT",
+  "resolved_variant": "SAN-STRAT",
+  "budget_id": "FULL_TRAIN",
+  "metrics": {
+    "BACC": 0.495,
+    "F1_MACRO": 0.4949312545318668,
+    "ACC": 0.495,
+    "CONFUSION": [
+      [
+        152,
+        148
+      ],
+      [
+        155,
+        145
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      300,
+      300
+    ],
+    "PRED_COMPLETE": 600,
+    "ROC_AUC": 0.5,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "TRAIN_PRIOR_PROBABILITY"
+  },
+  "validation_selection": {
+    "BACC": 0.49,
+    "F1_MACRO": 0.48998163933901623,
+    "ACC": 0.49,
+    "CONFUSION": [
+      [
+        124,
+        126
+      ],
+      [
+        129,
+        121
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      250,
+      250
+    ],
+    "PRED_COMPLETE": 500,
+    "ROC_AUC": 0.5,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "TRAIN_PRIOR_PROBABILITY"
+  },
+  "validation_burden_seconds": 0.005014671000026283,
+  "model_storage_bytes": 611,
+  "selected_candidate_id": "CAND-00",
+  "selected_params": {},
+  "candidate_failures": [],
+  "observed_denominator": 600,
+  "expected_denominator": 600,
+  "score_type": "TRAIN_PRIOR_PROBABILITY",
+  "inference_burden": {
+    "batch1_latency_median_s": 3.063899930566549e-05,
+    "batch1_latency_p95_s": 6.846260039310436e-05,
+    "repeats": 5
+  },
+  "permutation_provenance": null,
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "class_weights": null,
+  "class_weight_calibration": {
+    "selected_policy": "UNIFORM_NO_WEIGHT",
+    "selected_weights": null,
+    "candidate_results": [
+      {
+        "status": "SUCCESS",
+        "policy": "UNIFORM_NO_WEIGHT",
+        "weights": null,
+        "validation_metrics": {
+          "BACC": 0.49,
+          "F1_MACRO": 0.48998163933901623,
+          "ACC": 0.49,
+          "CONFUSION": [
+            [
+              124,
+              126
+            ],
+            [
+              129,
+              121
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            250,
+            250
+          ],
+          "PRED_COMPLETE": 500,
+          "ROC_AUC": 0.5,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "TRAIN_PRIOR_PROBABILITY"
+        },
+        "validation_burden_seconds": 0.005014671000026283,
+        "model_storage_bytes": 611
+      }
+    ],
+    "training_count_evidence": {
+      "counts": [
+        1600,
+        1600
+      ],
+      "exactly_equal": true,
+      "selection_required": false
+    },
+    "test_set_used": false
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "run_cell_id": "P02-A0-BNCI2014_001-DNN-FBCNET-FULL_TRAIN-MR00",
+  "dataset_id": "BNCI2014_001",
+  "branch_id": "DNN-FBCNET",
+  "resolved_variant": "FBCNet-OriginalAuthor-P01ConstrainedFilterBank",
+  "budget_id": "FULL_TRAIN",
+  "metrics": {
+    "BACC": 0.4722222222222222,
+    "F1_MACRO": 0.4721967687484929,
+    "ACC": 0.4722222222222222,
+    "CONFUSION": [
+      [
+        69,
+        75
+      ],
+      [
+        77,
+        67
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      144,
+      144
+    ],
+    "PRED_COMPLETE": 288,
+    "ROC_AUC": 0.46932870370370366,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+  },
+  "validation_selection": {
+    "ACC": 0.7638888888888888,
+    "BACC": 0.7638888888888888,
+    "CLASS_SUPPORT": [
+      144,
+      144
+    ],
+    "CONFUSION": [
+      [
+        90,
+        54
+      ],
+      [
+        14,
+        130
+      ]
+    ],
+    "F1_MACRO": 0.7592446892210858,
+    "PRED_COMPLETE": 288,
+    "ROC_AUC": 0.8252314814814814,
+    "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY",
+    "ROC_AUC_STATUS": "PASS"
+  },
+  "validation_burden_seconds": 172.1532428264618,
+  "model_storage_bytes": 25352,
+  "selected_candidate_id": "R6-FBCNET-AUTHOR-CENTERED-R1",
+  "selected_params": {
+    "recipe_id": "R6-FBCNET-AUTHOR-CENTERED-R1",
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "batch_size": 16,
+    "scheduler": "constant",
+    "label_smoothing": 0.0,
+    "grad_clip": null,
+    "max_epochs": 1500,
+    "patience": 200,
+    "selection": "validation_BACC",
+    "restore_best": true,
+    "branch": "DNN-FBCNET",
+    "dataset_id": "BNCI2014_001",
+    "budget_id": "FULL_TRAIN"
+  },
+  "candidate_failures": [],
+  "observed_denominator": 288,
+  "expected_denominator": 288,
+  "score_type": "SOFTMAX_PROBABILITY",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.0005565209999076615,
+    "batch1_latency_p95_s": 0.0006130669999038219,
+    "repeats": 5,
+    "latency_probe_mode": "FORWARD_ONLY_NO_METRICS"
+  },
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "class_weights": null,
+  "class_weight_calibration": {
+    "selected_policy": "UNIFORM_NO_WEIGHT",
+    "selected_weights": null,
+    "validation_metrics": {
+      "BACC": 0.7638888888888888,
+      "F1_MACRO": 0.7592446892210858,
+      "ACC": 0.7638888888888888,
+      "CONFUSION": [
+        [
+          90,
+          54
+        ],
+        [
+          14,
+          130
+        ]
+      ],
+      "CLASS_SUPPORT": [
+        144,
+        144
+      ],
+      "PRED_COMPLETE": 288,
+      "ROC_AUC": 0.8252314814814814,
+      "ROC_AUC_STATUS": "PASS",
+      "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+    },
+    "candidate_results": [
+      {
+        "status": "SUCCESS",
+        "policy": "UNIFORM_NO_WEIGHT",
+        "weights": null,
+        "validation_metrics": {
+          "BACC": 0.7638888888888888,
+          "F1_MACRO": 0.7592446892210858,
+          "ACC": 0.7638888888888888,
+          "CONFUSION": [
+            [
+              90,
+              54
+            ],
+            [
+              14,
+              130
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            144,
+            144
+          ],
+          "PRED_COMPLETE": 288,
+          "ROC_AUC": 0.8252314814814814,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+        },
+        "validation_burden_seconds": 172.1532428264618,
+        "model_storage_bytes": 25352,
+        "best_epoch": 251,
+        "epochs_completed": 451,
+        "history_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/staging_runtime/raw_outputs/stage12_r6_training_history/P02-A0-BNCI2014_001-DNN-FBCNET-FULL_TRAIN-MR00__UNIFORM_NO_WEIGHT.json",
+        "candidate_checkpoint_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/staging_runtime/raw_outputs/stage12_r6_training_history/P02-A0-BNCI2014_001-DNN-FBCNET-FULL_TRAIN-MR00__UNIFORM_NO_WEIGHT.candidate.chk",
+        "candidate_checkpoint_sha256": "e795723a0700cdb522782398fb7355cb9632014567aca81d03ab70f3ba5966a8"
+      }
+    ],
+    "test_set_used": false
+  },
+  "r6_scientific_amendment": true,
+  "r6_max_epochs": 1500,
+  "r6_patience": 200,
+  "horizon_sufficiency": {
+    "best_by_cutoff": {
+      "100": {
+        "BACC": 0.7222222222222222,
+        "epoch": 64
+      },
+      "1000": {
+        "BACC": 0.7638888888888888,
+        "epoch": 251
+      },
+      "1250": {
+        "BACC": 0.7638888888888888,
+        "epoch": 251
+      },
+      "150": {
+        "BACC": 0.7430555555555556,
+        "epoch": 137
+      },
+      "1500": {
+        "BACC": 0.7638888888888888,
+        "epoch": 251
+      },
+      "200": {
+        "BACC": 0.7465277777777777,
+        "epoch": 185
+      },
+      "250": {
+        "BACC": 0.75,
+        "epoch": 213
+      },
+      "300": {
+        "BACC": 0.7638888888888888,
+        "epoch": 251
+      },
+      "400": {
+        "BACC": 0.7638888888888888,
+        "epoch": 251
+      },
+      "50": {
+        "BACC": 0.6631944444444444,
+        "epoch": 45
+      },
+      "500": {
+        "BACC": 0.7638888888888888,
+        "epoch": 251
+      },
+      "750": {
+        "BACC": 0.7638888888888888,
+        "epoch": 251
+      }
+    },
+    "epochs_completed": 451,
+    "final_best_BACC": 0.7638888888888888,
+    "final_best_epoch": 251,
+    "gain_after_100": 0.04166666666666663,
+    "gain_after_1000": 0.0,
+    "gain_after_1250": 0.0,
+    "gain_after_150": 0.02083333333333326,
+    "gain_after_200": 0.01736111111111116,
+    "gain_after_250": 0.01388888888888884,
+    "gain_after_300": 0.0,
+    "gain_after_400": 0.0,
+    "gain_after_500": 0.0,
+    "gain_after_750": 0.0,
+    "max_epochs": 1500,
+    "patience": 200,
+    "status": "PASS"
+  },
+  "test_loaded_after_group_selection_sealed": true,
+  "test_set_used_for_selection": false
+}

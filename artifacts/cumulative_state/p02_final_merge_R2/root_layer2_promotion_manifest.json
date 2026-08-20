@@ -1,0 +1,276 @@
+{
+  "promotion_id": "P02-L2-ROOT-PROMOTION-R1",
+  "generated_at": "2026-08-14T22:49:00+03:30",
+  "scientific_execution_changed": false,
+  "source_package": "current/phase_02/implementation/",
+  "files": [
+    {
+      "path": "src/iharq/layer2_decoders/__init__.py",
+      "source_path": "current/phase_02/implementation/src/iharq/layer2_decoders/__init__.py",
+      "sha256": "93123bb6108ed799077cf3326e4ae2d498a5d0ed6e772e6581c17b91b133d2ef",
+      "byte_identical": false,
+      "cumulative_compatibility_shim": "SCIENTIFIC_EXECUTION=False and LAYER_ID=L2 only; nested canonical source unchanged",
+      "promoted_sha256": "c921638d6b5b51300c0425f53569e08f40877ea89d7e5c48fbf313a7b4612dfb",
+      "source_sha256": "93123bb6108ed799077cf3326e4ae2d498a5d0ed6e772e6581c17b91b133d2ef"
+    },
+    {
+      "path": "src/iharq/layer2_decoders/a4.py",
+      "source_path": "current/phase_02/implementation/src/iharq/layer2_decoders/a4.py",
+      "sha256": "610b33ea2663c1040718a250a98c467a2794e68ebf231ba0da753e74ab76bbcd",
+      "byte_identical": true,
+      "promoted_sha256": "610b33ea2663c1040718a250a98c467a2794e68ebf231ba0da753e74ab76bbcd",
+      "source_sha256": "610b33ea2663c1040718a250a98c467a2794e68ebf231ba0da753e74ab76bbcd"
+    },
+    {
+      "path": "src/iharq/layer2_decoders/ablation_controller.py",
+      "source_path": "current/phase_02/implementation/src/iharq/layer2_decoders/ablation_controller.py",
+      "sha256": "d9c4b385b4f74aa89438f83d31fd20b570ec2383bb262f20d330332b729052f8",
+      "byte_identical": true,
+      "promoted_sha256": "d9c4b385b4f74aa89438f83d31fd20b570ec2383bb262f20d330332b729052f8",
+      "source_sha256": "d9c4b385b4f74aa89438f83d31fd20b570ec2383bb262f20d330332b729052f8"
+    },
+    {
+      "path": "src/iharq/layer2_decoders/bundle.py",
+      "source_path": "current/phase_02/implementation/src/iharq/layer2_decoders/bundle.py",
+      "sha256": "5a1e9c013ce4234c18ed40b0fd54765d2122ceac60fa8b73064af4943dc494e8",
+      "byte_identical": true,
+      "promoted_sha256": "5a1e9c013ce4234c18ed40b0fd54765d2122ceac60fa8b73064af4943dc494e8",
+      "source_sha256": "5a1e9c013ce4234c18ed40b0fd54765d2122ceac60fa8b73064af4943dc494e8"
+    },
+    {
+      "path": "src/iharq/layer2_decoders/checkpoints.py",
+      "source_path": "current/phase_02/implementation/src/iharq/layer2_decoders/checkpoints.py",
+      "sha256": "3580c3183ebae681a9f886eb2c0fb9f2c7a70ae822a914c0016735051195b31b",
+      "byte_identical": true,
+      "promoted_sha256": "3580c3183ebae681a9f886eb2c0fb9f2c7a70ae822a914c0016735051195b31b",
+      "source_sha256": "3580c3183ebae681a9f886eb2c0fb9f2c7a70ae822a914c0016735051195b31b"
+    },
+    {
+      "path": "src/iharq/layer2_decoders/cli.py",
+      "source_path": "current/phase_02/implementation/src/iharq/layer2_decoders/cli.py",
+      "sha256": "2c260744008be3b6cd830191c030bd739b569c415b2ef19f71fcbd9c98e8f50d",
+      "byte_identical": true,
+      "promoted_sha256": "2c260744008be3b6cd830191c030bd739b569c415b2ef19f71fcbd9c98e8f50d",
+      "source_sha256": "2c260744008be3b6cd830191c030bd739b569c415b2ef19f71fcbd9c98e8f50d"
+    },
+    {
+      "path": "src/iharq/layer2_decoders/config.py",
+      "source_path": "current/phase_02/implementation/src/iharq/layer2_decoders/config.py",
+      "sha256": "60190c290d7059ff1e4c5cd45e2e22f0f9c57939385e632caf455a48eebea9f2",
+      "byte_identical": true,
+      "promoted_sha256": "60190c290d7059ff1e4c5cd45e2e22f0f9c57939385e632caf455a48eebea9f2",
+      "source_sha256": "60190c290d7059ff1e4c5cd45e2e22f0f9c57939385e632caf455a48eebea9f2"
+    },
+    {
+      "path": "src/iharq/layer2_decoders/data.py",
+      "source_path": "current/phase_02/implementation/src/iharq/layer2_decoders/data.py",
+      "sha256": "f04e1b8f1de9e142d7adc02e5e53d193d9c30c8ea9f49d97c5d8c4379e252ddd",
+      "byte_identical": true,
+      "promoted_sha256": "f04e1b8f1de9e142d7adc02e5e53d193d9c30c8ea9f49d97c5d8c4379e252ddd",
+      "source_sha256": "f04e1b8f1de9e142d7adc02e5e53d193d9c30c8ea9f49d97c5d8c4379e252ddd"
+    },
+    {
+      "path": "src/iharq/layer2_decoders/environment.py",
+      "source_path": "current/phase_02/implementation/src/iharq/layer2_decoders/environment.py",
+      "sha256": "a9126e96b2b5ce262b4690a525322102f51bb0740488dfcefe87d8c21561310f",
+      "byte_identical": true,
+      "promoted_sha256": "a9126e96b2b5ce262b4690a525322102f51bb0740488dfcefe87d8c21561310f",
+      "source_sha256": "a9126e96b2b5ce262b4690a525322102f51bb0740488dfcefe87d8c21561310f"
+    },
+    {
+      "path": "src/iharq/layer2_decoders/evidence.py",
+      "source_path": "current/phase_02/implementation/src/iharq/layer2_decoders/evidence.py",
+      "sha256": "50c2e1f14fd8b2f8b16e113b210ee879ec11a7dfd4fc30dcc714a072e00fa840",
+      "byte_identical": true,
+      "promoted_sha256": "50c2e1f14fd8b2f8b16e113b210ee879ec11a7dfd4fc30dcc714a072e00fa840",
+      "source_sha256": "50c2e1f14fd8b2f8b16e113b210ee879ec11a7dfd4fc30dcc714a072e00fa840"
+    },
+    {
+      "path": "src/iharq/layer2_decoders/fixtures.py",
+      "source_path": "current/phase_02/implementation/src/iharq/layer2_decoders/fixtures.py",
+      "sha256": "1e3f85baea9d031ca575fa5628777b63011d72a424a763ada80142f0df05cdf8",
+      "byte_identical": true,
+      "promoted_sha256": "1e3f85baea9d031ca575fa5628777b63011d72a424a763ada80142f0df05cdf8",
+      "source_sha256": "1e3f85baea9d031ca575fa5628777b63011d72a424a763ada80142f0df05cdf8"
+    },
+    {
+      "path": "src/iharq/layer2_decoders/handoffs.py",
+      "source_path": "current/phase_02/implementation/src/iharq/layer2_decoders/handoffs.py",
+      "sha256": "f01588977f9c0c09ad89f3f198437434b69ca27a5e9874a9abde954e66f799f1",
+      "byte_identical": true,
+      "promoted_sha256": "f01588977f9c0c09ad89f3f198437434b69ca27a5e9874a9abde954e66f799f1",
+      "source_sha256": "f01588977f9c0c09ad89f3f198437434b69ca27a5e9874a9abde954e66f799f1"
+    },
+    {
+      "path": "src/iharq/layer2_decoders/hf_assets.py",
+      "source_path": "current/phase_02/implementation/src/iharq/layer2_decoders/hf_assets.py",
+      "sha256": "d2dc1768331053fd76f759e1f4e9de9c2addc74a89a9690a5e31549480d62173",
+      "byte_identical": true,
+      "promoted_sha256": "d2dc1768331053fd76f759e1f4e9de9c2addc74a89a9690a5e31549480d62173",
+      "source_sha256": "d2dc1768331053fd76f759e1f4e9de9c2addc74a89a9690a5e31549480d62173"
+    },
+    {
+      "path": "src/iharq/layer2_decoders/hf_cbramod_adapter.py",
+      "source_path": "current/phase_02/implementation/src/iharq/layer2_decoders/hf_cbramod_adapter.py",
+      "sha256": "09313b44a46ed5f02a9c1a8fbfa6b9750be4ce393b334e21be29daac34d73036",
+      "byte_identical": true,
+      "promoted_sha256": "09313b44a46ed5f02a9c1a8fbfa6b9750be4ce393b334e21be29daac34d73036",
+      "source_sha256": "09313b44a46ed5f02a9c1a8fbfa6b9750be4ce393b334e21be29daac34d73036"
+    },
+    {
+      "path": "src/iharq/layer2_decoders/identity.py",
+      "source_path": "current/phase_02/implementation/src/iharq/layer2_decoders/identity.py",
+      "sha256": "475f14a160dba571b69af9103e7c2f01cef803052e27c38e2a19263f2348bc74",
+      "byte_identical": true,
+      "promoted_sha256": "475f14a160dba571b69af9103e7c2f01cef803052e27c38e2a19263f2348bc74",
+      "source_sha256": "475f14a160dba571b69af9103e7c2f01cef803052e27c38e2a19263f2348bc74"
+    },
+    {
+      "path": "src/iharq/layer2_decoders/input_resolver.py",
+      "source_path": "current/phase_02/implementation/src/iharq/layer2_decoders/input_resolver.py",
+      "sha256": "00fa6e35cfce224d8751ce2a4a26797909bfc2294024a509fdd4fe460456e752",
+      "byte_identical": true,
+      "promoted_sha256": "00fa6e35cfce224d8751ce2a4a26797909bfc2294024a509fdd4fe460456e752",
+      "source_sha256": "00fa6e35cfce224d8751ce2a4a26797909bfc2294024a509fdd4fe460456e752"
+    },
+    {
+      "path": "src/iharq/layer2_decoders/kaggle_entry.py",
+      "source_path": "current/phase_02/implementation/src/iharq/layer2_decoders/kaggle_entry.py",
+      "sha256": "eb37bbb9cab57bff03071d0ff350156df996eae91b56be218b4477e38c267b92",
+      "byte_identical": true,
+      "promoted_sha256": "eb37bbb9cab57bff03071d0ff350156df996eae91b56be218b4477e38c267b92",
+      "source_sha256": "eb37bbb9cab57bff03071d0ff350156df996eae91b56be218b4477e38c267b92"
+    },
+    {
+      "path": "src/iharq/layer2_decoders/limits.py",
+      "source_path": "current/phase_02/implementation/src/iharq/layer2_decoders/limits.py",
+      "sha256": "99d293284ccfe5476b313b63fca0daee80ddff7c7ba5d73e90a53408845d7539",
+      "byte_identical": true,
+      "promoted_sha256": "99d293284ccfe5476b313b63fca0daee80ddff7c7ba5d73e90a53408845d7539",
+      "source_sha256": "99d293284ccfe5476b313b63fca0daee80ddff7c7ba5d73e90a53408845d7539"
+    },
+    {
+      "path": "src/iharq/layer2_decoders/metrics.py",
+      "source_path": "current/phase_02/implementation/src/iharq/layer2_decoders/metrics.py",
+      "sha256": "a1494a93765b08ae4d100303dba861c34b4ddce38e4c257e8b3d990e099f7f5c",
+      "byte_identical": true,
+      "promoted_sha256": "a1494a93765b08ae4d100303dba861c34b4ddce38e4c257e8b3d990e099f7f5c",
+      "source_sha256": "a1494a93765b08ae4d100303dba861c34b4ddce38e4c257e8b3d990e099f7f5c"
+    },
+    {
+      "path": "src/iharq/layer2_decoders/models.py",
+      "source_path": "current/phase_02/implementation/src/iharq/layer2_decoders/models.py",
+      "sha256": "0f52ec338a9a728b36bfaaf9a077e96fa4024951ed17d07716cf8ba7057020cc",
+      "byte_identical": true,
+      "promoted_sha256": "0f52ec338a9a728b36bfaaf9a077e96fa4024951ed17d07716cf8ba7057020cc",
+      "source_sha256": "0f52ec338a9a728b36bfaaf9a077e96fa4024951ed17d07716cf8ba7057020cc"
+    },
+    {
+      "path": "src/iharq/layer2_decoders/orchestration.py",
+      "source_path": "current/phase_02/implementation/src/iharq/layer2_decoders/orchestration.py",
+      "sha256": "c438d3dafff3cbbb450aac850079a48844cc3719d34846e38843d1d4f608485b",
+      "byte_identical": true,
+      "promoted_sha256": "c438d3dafff3cbbb450aac850079a48844cc3719d34846e38843d1d4f608485b",
+      "source_sha256": "c438d3dafff3cbbb450aac850079a48844cc3719d34846e38843d1d4f608485b"
+    },
+    {
+      "path": "src/iharq/layer2_decoders/readiness.py",
+      "source_path": "current/phase_02/implementation/src/iharq/layer2_decoders/readiness.py",
+      "sha256": "7df7693c65f2f064deb11f7d287690fbdfa3b9b3afb03a65036b134d50868293",
+      "byte_identical": true,
+      "promoted_sha256": "7df7693c65f2f064deb11f7d287690fbdfa3b9b3afb03a65036b134d50868293",
+      "source_sha256": "7df7693c65f2f064deb11f7d287690fbdfa3b9b3afb03a65036b134d50868293"
+    },
+    {
+      "path": "src/iharq/layer2_decoders/records.py",
+      "source_path": "current/phase_02/implementation/src/iharq/layer2_decoders/records.py",
+      "sha256": "092a835e621d6e327c22f52591c356692b20267fcefbbd65ac53cf14dc65f3d9",
+      "byte_identical": true,
+      "promoted_sha256": "092a835e621d6e327c22f52591c356692b20267fcefbbd65ac53cf14dc65f3d9",
+      "source_sha256": "092a835e621d6e327c22f52591c356692b20267fcefbbd65ac53cf14dc65f3d9"
+    },
+    {
+      "path": "src/iharq/layer2_decoders/resources.py",
+      "source_path": "current/phase_02/implementation/src/iharq/layer2_decoders/resources.py",
+      "sha256": "e173403f77268b72240020ce82b8b004a5d425763b3e904933cd802fde814e5e",
+      "byte_identical": true,
+      "promoted_sha256": "e173403f77268b72240020ce82b8b004a5d425763b3e904933cd802fde814e5e",
+      "source_sha256": "e173403f77268b72240020ce82b8b004a5d425763b3e904933cd802fde814e5e"
+    },
+    {
+      "path": "src/iharq/layer2_decoders/scientific.py",
+      "source_path": "current/phase_02/implementation/src/iharq/layer2_decoders/scientific.py",
+      "sha256": "2627e4e04f09f236682d9d0e7cdcd8e72faccf9594aebaacc46c2ba2d924ab8e",
+      "byte_identical": true,
+      "promoted_sha256": "2627e4e04f09f236682d9d0e7cdcd8e72faccf9594aebaacc46c2ba2d924ab8e",
+      "source_sha256": "2627e4e04f09f236682d9d0e7cdcd8e72faccf9594aebaacc46c2ba2d924ab8e"
+    },
+    {
+      "path": "src/iharq/layer2_decoders/security.py",
+      "source_path": "current/phase_02/implementation/src/iharq/layer2_decoders/security.py",
+      "sha256": "474e105c0d1e39bda3afc972eabec6beb758d22caee70c1d3004c927c5af2d0a",
+      "byte_identical": true,
+      "promoted_sha256": "474e105c0d1e39bda3afc972eabec6beb758d22caee70c1d3004c927c5af2d0a",
+      "source_sha256": "474e105c0d1e39bda3afc972eabec6beb758d22caee70c1d3004c927c5af2d0a"
+    },
+    {
+      "path": "src/iharq/layer2_decoders/stage_runner.py",
+      "source_path": "current/phase_02/implementation/src/iharq/layer2_decoders/stage_runner.py",
+      "sha256": "b25863b7027afcc4b99d2df88fb97a06756dd342c2a7e6ccce4051596c3e47c5",
+      "byte_identical": true,
+      "promoted_sha256": "b25863b7027afcc4b99d2df88fb97a06756dd342c2a7e6ccce4051596c3e47c5",
+      "source_sha256": "b25863b7027afcc4b99d2df88fb97a06756dd342c2a7e6ccce4051596c3e47c5"
+    },
+    {
+      "path": "src/iharq/layer2_decoders/statistics.py",
+      "source_path": "current/phase_02/implementation/src/iharq/layer2_decoders/statistics.py",
+      "sha256": "34d5f81df43ab323d3aa57a102f24e81b71226c074b6add56726f62b1cca1a5d",
+      "byte_identical": true,
+      "promoted_sha256": "34d5f81df43ab323d3aa57a102f24e81b71226c074b6add56726f62b1cca1a5d",
+      "source_sha256": "34d5f81df43ab323d3aa57a102f24e81b71226c074b6add56726f62b1cca1a5d"
+    },
+    {
+      "path": "src/iharq/layer2_decoders/store.py",
+      "source_path": "current/phase_02/implementation/src/iharq/layer2_decoders/store.py",
+      "sha256": "4df3d85e0fa086e3682cc98837c0aa71cd9d0eb555a68b4092e8d0a8b5acc92d",
+      "byte_identical": true,
+      "promoted_sha256": "4df3d85e0fa086e3682cc98837c0aa71cd9d0eb555a68b4092e8d0a8b5acc92d",
+      "source_sha256": "4df3d85e0fa086e3682cc98837c0aa71cd9d0eb555a68b4092e8d0a8b5acc92d"
+    },
+    {
+      "path": "src/iharq/layer2_decoders/training_policy.py",
+      "source_path": "current/phase_02/implementation/src/iharq/layer2_decoders/training_policy.py",
+      "sha256": "10520eca7c7c1437c8122f892dc33aa7c53391f6715f1639d7f118ed2dc3deb9",
+      "byte_identical": true,
+      "promoted_sha256": "10520eca7c7c1437c8122f892dc33aa7c53391f6715f1639d7f118ed2dc3deb9",
+      "source_sha256": "10520eca7c7c1437c8122f892dc33aa7c53391f6715f1639d7f118ed2dc3deb9"
+    },
+    {
+      "path": "src/iharq/layer2_decoders/training_policy_evidence.py",
+      "source_path": "current/phase_02/implementation/src/iharq/layer2_decoders/training_policy_evidence.py",
+      "sha256": "257c76e36156b66a6b99215f3202f179ac89df7a872798b5b7157d29909eb4be",
+      "byte_identical": true,
+      "promoted_sha256": "257c76e36156b66a6b99215f3202f179ac89df7a872798b5b7157d29909eb4be",
+      "source_sha256": "257c76e36156b66a6b99215f3202f179ac89df7a872798b5b7157d29909eb4be"
+    },
+    {
+      "path": "src/iharq/layer2_decoders/validation.py",
+      "source_path": "current/phase_02/implementation/src/iharq/layer2_decoders/validation.py",
+      "sha256": "f35fddba2627e6ff3bf4bc62ac0fce0c8b57f4beb55d496cc1c98bb84c1262db",
+      "byte_identical": true,
+      "promoted_sha256": "f35fddba2627e6ff3bf4bc62ac0fce0c8b57f4beb55d496cc1c98bb84c1262db",
+      "source_sha256": "f35fddba2627e6ff3bf4bc62ac0fce0c8b57f4beb55d496cc1c98bb84c1262db"
+    },
+    {
+      "path": "src/iharq/layer2_decoders/writers.py",
+      "source_path": "current/phase_02/implementation/src/iharq/layer2_decoders/writers.py",
+      "sha256": "5f4297c01aa6a72251d2c5a6fc4d8040db4867df7470667cad9d65791f9417b7",
+      "byte_identical": true,
+      "promoted_sha256": "5f4297c01aa6a72251d2c5a6fc4d8040db4867df7470667cad9d65791f9417b7",
+      "source_sha256": "5f4297c01aa6a72251d2c5a6fc4d8040db4867df7470667cad9d65791f9417b7"
+    }
+  ],
+  "all_byte_identical": false,
+  "functional_module_files_byte_identical_except_init_compatibility_shim": true,
+  "scientific_logic_changed": false
+}

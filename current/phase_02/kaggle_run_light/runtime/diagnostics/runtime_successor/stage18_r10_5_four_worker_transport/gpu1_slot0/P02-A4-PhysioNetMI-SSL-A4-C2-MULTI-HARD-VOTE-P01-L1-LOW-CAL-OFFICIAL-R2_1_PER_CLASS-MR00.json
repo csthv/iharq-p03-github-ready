@@ -1,0 +1,22 @@
+{
+  "artifact_id": "P02-STAGE18-R10-5-FOUR-WORKER-TRANSPORT-R1",
+  "planned_run_cell_id": "P02-A4-PhysioNetMI-SSL-A4-C2-MULTI-HARD-VOTE-P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS-MR00",
+  "gpu_id": 1,
+  "slot_id": 0,
+  "gpu_name": "Tesla T4",
+  "phase": "COMPLETED",
+  "scheduler_revision": "R10.5_TWO_SLOTS_PER_GPU",
+  "dedicated_cuda_stream": true,
+  "virtualized_per_fit_cuda_rng": true,
+  "single_model_multi_gpu": false,
+  "same_cache_group_on_multiple_workers": false,
+  "scientific_configuration_changed": false,
+  "policy_sha256": "a21655f9b52cfbf817b1b271f758739cf01b1e7a75e786c880ccdd1a3c58ef32",
+  "group": [
+    "PhysioNetMI",
+    "P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS",
+    "SSL",
+    0
+  ],
+  "terminal_status": "SUCCESS"
+}

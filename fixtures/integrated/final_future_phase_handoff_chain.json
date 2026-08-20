@@ -1,0 +1,185 @@
+{
+  "chain_id": "P00-FINAL-FUTURE-PHASE-HANDOFF-R1",
+  "status": "PASS_LOCAL",
+  "phases": [
+    {
+      "phase_id": "P00",
+      "profile": "configs/phases/p00.yaml",
+      "input_contract": "contracts/phases/p00/input_contract.yaml",
+      "output_contract": "contracts/phases/p00/output_contract.yaml",
+      "report_template": "docs/templates/phase_evidence_report_template.md",
+      "layer0_template": "docs/templates/layer0_disposition_template.md",
+      "evidence_map_template": "docs/templates/evidence_map_annex_template.md",
+      "layer10_template": "docs/templates/layer10_package_template.md",
+      "handoff_template": "docs/templates/phase_handoff_template.yaml"
+    },
+    {
+      "phase_id": "P01",
+      "profile": "configs/phases/p01.yaml",
+      "input_contract": "contracts/phases/p01/input_contract.yaml",
+      "output_contract": "contracts/phases/p01/output_contract.yaml",
+      "report_template": "docs/templates/phase_evidence_report_template.md",
+      "layer0_template": "docs/templates/layer0_disposition_template.md",
+      "evidence_map_template": "docs/templates/evidence_map_annex_template.md",
+      "layer10_template": "docs/templates/layer10_package_template.md",
+      "handoff_template": "docs/templates/phase_handoff_template.yaml"
+    },
+    {
+      "phase_id": "P02",
+      "profile": "configs/phases/p02.yaml",
+      "input_contract": "contracts/phases/p02/input_contract.yaml",
+      "output_contract": "contracts/phases/p02/output_contract.yaml",
+      "report_template": "docs/templates/phase_evidence_report_template.md",
+      "layer0_template": "docs/templates/layer0_disposition_template.md",
+      "evidence_map_template": "docs/templates/evidence_map_annex_template.md",
+      "layer10_template": "docs/templates/layer10_package_template.md",
+      "handoff_template": "docs/templates/phase_handoff_template.yaml"
+    },
+    {
+      "phase_id": "P03",
+      "profile": "configs/phases/p03.yaml",
+      "input_contract": "contracts/phases/p03/input_contract.yaml",
+      "output_contract": "contracts/phases/p03/output_contract.yaml",
+      "report_template": "docs/templates/phase_evidence_report_template.md",
+      "layer0_template": "docs/templates/layer0_disposition_template.md",
+      "evidence_map_template": "docs/templates/evidence_map_annex_template.md",
+      "layer10_template": "docs/templates/layer10_package_template.md",
+      "handoff_template": "docs/templates/phase_handoff_template.yaml"
+    },
+    {
+      "phase_id": "P04",
+      "profile": "configs/phases/p04.yaml",
+      "input_contract": "contracts/phases/p04/input_contract.yaml",
+      "output_contract": "contracts/phases/p04/output_contract.yaml",
+      "report_template": "docs/templates/phase_evidence_report_template.md",
+      "layer0_template": "docs/templates/layer0_disposition_template.md",
+      "evidence_map_template": "docs/templates/evidence_map_annex_template.md",
+      "layer10_template": "docs/templates/layer10_package_template.md",
+      "handoff_template": "docs/templates/phase_handoff_template.yaml"
+    },
+    {
+      "phase_id": "P05",
+      "profile": "configs/phases/p05.yaml",
+      "input_contract": "contracts/phases/p05/input_contract.yaml",
+      "output_contract": "contracts/phases/p05/output_contract.yaml",
+      "report_template": "docs/templates/phase_evidence_report_template.md",
+      "layer0_template": "docs/templates/layer0_disposition_template.md",
+      "evidence_map_template": "docs/templates/evidence_map_annex_template.md",
+      "layer10_template": "docs/templates/layer10_package_template.md",
+      "handoff_template": "docs/templates/phase_handoff_template.yaml"
+    },
+    {
+      "phase_id": "P06",
+      "profile": "configs/phases/p06.yaml",
+      "input_contract": "contracts/phases/p06/input_contract.yaml",
+      "output_contract": "contracts/phases/p06/output_contract.yaml",
+      "report_template": "docs/templates/phase_evidence_report_template.md",
+      "layer0_template": "docs/templates/layer0_disposition_template.md",
+      "evidence_map_template": "docs/templates/evidence_map_annex_template.md",
+      "layer10_template": "docs/templates/layer10_package_template.md",
+      "handoff_template": "docs/templates/phase_handoff_template.yaml"
+    },
+    {
+      "phase_id": "P07",
+      "profile": "configs/phases/p07.yaml",
+      "input_contract": "contracts/phases/p07/input_contract.yaml",
+      "output_contract": "contracts/phases/p07/output_contract.yaml",
+      "report_template": "docs/templates/phase_evidence_report_template.md",
+      "layer0_template": "docs/templates/layer0_disposition_template.md",
+      "evidence_map_template": "docs/templates/evidence_map_annex_template.md",
+      "layer10_template": "docs/templates/layer10_package_template.md",
+      "handoff_template": "docs/templates/phase_handoff_template.yaml"
+    },
+    {
+      "phase_id": "P08",
+      "profile": "configs/phases/p08.yaml",
+      "input_contract": "contracts/phases/p08/input_contract.yaml",
+      "output_contract": "contracts/phases/p08/output_contract.yaml",
+      "report_template": "docs/templates/phase_evidence_report_template.md",
+      "layer0_template": "docs/templates/layer0_disposition_template.md",
+      "evidence_map_template": "docs/templates/evidence_map_annex_template.md",
+      "layer10_template": "docs/templates/layer10_package_template.md",
+      "handoff_template": "docs/templates/phase_handoff_template.yaml"
+    },
+    {
+      "phase_id": "P09",
+      "profile": "configs/phases/p09.yaml",
+      "input_contract": "contracts/phases/p09/input_contract.yaml",
+      "output_contract": "contracts/phases/p09/output_contract.yaml",
+      "report_template": "docs/templates/phase_evidence_report_template.md",
+      "layer0_template": "docs/templates/layer0_disposition_template.md",
+      "evidence_map_template": "docs/templates/evidence_map_annex_template.md",
+      "layer10_template": "docs/templates/layer10_package_template.md",
+      "handoff_template": "docs/templates/phase_handoff_template.yaml"
+    },
+    {
+      "phase_id": "P10",
+      "profile": "configs/phases/p10.yaml",
+      "input_contract": "contracts/phases/p10/input_contract.yaml",
+      "output_contract": "contracts/phases/p10/output_contract.yaml",
+      "report_template": "docs/templates/phase_evidence_report_template.md",
+      "layer0_template": "docs/templates/layer0_disposition_template.md",
+      "evidence_map_template": "docs/templates/evidence_map_annex_template.md",
+      "layer10_template": "docs/templates/layer10_package_template.md",
+      "handoff_template": "docs/templates/phase_handoff_template.yaml"
+    },
+    {
+      "phase_id": "P11",
+      "profile": "configs/phases/p11.yaml",
+      "input_contract": "contracts/phases/p11/input_contract.yaml",
+      "output_contract": "contracts/phases/p11/output_contract.yaml",
+      "report_template": "docs/templates/phase_evidence_report_template.md",
+      "layer0_template": "docs/templates/layer0_disposition_template.md",
+      "evidence_map_template": "docs/templates/evidence_map_annex_template.md",
+      "layer10_template": "docs/templates/layer10_package_template.md",
+      "handoff_template": "docs/templates/phase_handoff_template.yaml"
+    },
+    {
+      "phase_id": "P12",
+      "profile": "configs/phases/p12.yaml",
+      "input_contract": "contracts/phases/p12/input_contract.yaml",
+      "output_contract": "contracts/phases/p12/output_contract.yaml",
+      "report_template": "docs/templates/phase_evidence_report_template.md",
+      "layer0_template": "docs/templates/layer0_disposition_template.md",
+      "evidence_map_template": "docs/templates/evidence_map_annex_template.md",
+      "layer10_template": "docs/templates/layer10_package_template.md",
+      "handoff_template": "docs/templates/phase_handoff_template.yaml"
+    },
+    {
+      "phase_id": "P13",
+      "profile": "configs/phases/p13.yaml",
+      "input_contract": "contracts/phases/p13/input_contract.yaml",
+      "output_contract": "contracts/phases/p13/output_contract.yaml",
+      "report_template": "docs/templates/phase_evidence_report_template.md",
+      "layer0_template": "docs/templates/layer0_disposition_template.md",
+      "evidence_map_template": "docs/templates/evidence_map_annex_template.md",
+      "layer10_template": "docs/templates/layer10_package_template.md",
+      "handoff_template": "docs/templates/phase_handoff_template.yaml"
+    },
+    {
+      "phase_id": "P14",
+      "profile": "configs/phases/p14.yaml",
+      "input_contract": "contracts/phases/p14/input_contract.yaml",
+      "output_contract": "contracts/phases/p14/output_contract.yaml",
+      "report_template": "docs/templates/phase_evidence_report_template.md",
+      "layer0_template": "docs/templates/layer0_disposition_template.md",
+      "evidence_map_template": "docs/templates/evidence_map_annex_template.md",
+      "layer10_template": "docs/templates/layer10_package_template.md",
+      "handoff_template": "docs/templates/phase_handoff_template.yaml"
+    },
+    {
+      "phase_id": "P15",
+      "profile": "configs/phases/p15.yaml",
+      "input_contract": "contracts/phases/p15/input_contract.yaml",
+      "output_contract": "contracts/phases/p15/output_contract.yaml",
+      "report_template": "docs/templates/phase_evidence_report_template.md",
+      "layer0_template": "docs/templates/layer0_disposition_template.md",
+      "evidence_map_template": "docs/templates/evidence_map_annex_template.md",
+      "layer10_template": "docs/templates/layer10_package_template.md",
+      "handoff_template": "docs/templates/phase_handoff_template.yaml"
+    }
+  ],
+  "no_fake_outputs": true,
+  "records": [],
+  "controls": {}
+}

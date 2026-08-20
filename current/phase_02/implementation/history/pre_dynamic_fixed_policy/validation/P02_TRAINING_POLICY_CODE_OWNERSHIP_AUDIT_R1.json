@@ -1,0 +1,28 @@
+{
+  "audit_id": "P02-TRAINING-POLICY-CODE-OWNERSHIP-AUDIT-R1",
+  "status": "PASS",
+  "principle": "Scientific values are owned by governed amendment/config; production code validates and consumes them without restating numeric/count bindings.",
+  "governed_sources": [
+    "contracts/P02_PREEXECUTION_TRAINING_POLICY_AMENDMENT_R1.yaml",
+    "configs/phase_02/training_policy_authority_bindings.yaml",
+    "machine_readable/p02_training_policy_challenger_run_cells_R1.yaml",
+    "machine_readable/p02_planned_scientific_execution_freeze_R4.yaml"
+  ],
+  "production_source_literal_scan": {
+    "0.5": false,
+    "n_segments=4": false,
+    "segment_count=4": false,
+    "!=15": false,
+    "else 15": false,
+    "[1.0,1.0]": false
+  },
+  "runtime_paths": [
+    "Stage05 validate binding/input identity",
+    "Stage11 execute primary EEGNet + diagnostic S&R challenger",
+    "Stage15 close A0 + training-policy diagnostics",
+    "Stage22 emit downstream handoff",
+    "Stage24 include protocol-change-required records"
+  ],
+  "regression_test": "test_training_policy_scientific_values_are_config_owned_not_production_magic_constants",
+  "unresolved_code_owned_scientific_bindings": 0
+}

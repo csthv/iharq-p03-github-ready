@@ -1,0 +1,71 @@
+{
+  "config_sha256": "2e5ebd6fc62f4c9ca3ed0102914f64142de9e1206be0b6e6b3e32cad90f1d742",
+  "dataset_id": "P03-L10-TABLE-SOURCES-R1",
+  "no_recompute_contract": "PROHIBITED",
+  "product_id": "P03-PROD-042",
+  "run_id": "P03-L3-POSTEXT-64-128-256-R1-1833e865bcb88ff8",
+  "schema_id": "TableSourceDataset.v1",
+  "source_files": [
+    {
+      "artifact_id": "P03-TABLE-SOURCE-GROUP-BUDGET",
+      "bytes": 164148,
+      "columns": [
+        "group_source_id",
+        "group_field",
+        "group_id",
+        "support_count",
+        "sparse_support",
+        "brier",
+        "nll",
+        "status"
+      ],
+      "limitations": [
+        "P03-LIM-SPARSE-SUPPORT-POLICY-R1"
+      ],
+      "path": "table_source_data/group_budget_audit.csv",
+      "sha256": "5dea1d2b4775cb834138f4d6ff298768ea2c50335ea3c4031f5811aa0fef51ec",
+      "source_artifact_ids": [
+        "P03-PROD-033"
+      ],
+      "source_sha256s": [
+        "5dea1d2b4775cb834138f4d6ff298768ea2c50335ea3c4031f5811aa0fef51ec"
+      ],
+      "units": {
+        "brier": "score",
+        "nll": "nats",
+        "support_count": "records"
+      }
+    },
+    {
+      "artifact_id": "P03-TABLE-SOURCE-NEGATIVE-RESULTS",
+      "bytes": 322844,
+      "columns": [
+        "failure_class",
+        "family",
+        "group_id",
+        "method_or_feature",
+        "reason",
+        "source",
+        "terminal_status"
+      ],
+      "limitations": [
+        "P03-LIM-SELECTIVE-NO-LEGAL-RULE-R1",
+        "P03-LIM-MEMBER-DISAGREEMENT-UNAVAILABLE-R1",
+        "P03-LIM-GENUINE-LOGITS-R1",
+        "P03-LIM-BINARY-UNCERTAINTY-ALIAS-R1",
+        "P03-LIM-CONFORMAL-PROXY-R1"
+      ],
+      "path": "table_source_data/negative_results.jsonl",
+      "sha256": "566efa3ebb3ab8186bd2d410480e63832ed02ff7f9d86249778c06387e9ab89f",
+      "source_artifact_ids": [
+        "P03-PROD-035",
+        "P03-PROD-036",
+        "P03-PROD-037"
+      ],
+      "source_sha256s": [
+        "566efa3ebb3ab8186bd2d410480e63832ed02ff7f9d86249778c06387e9ab89f"
+      ],
+      "units": {}
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "audit_id": "P02-TRAINING-POLICY-CODE-OWNERSHIP-AUDIT-R2",
+  "status": "PASS",
+  "principle": "Scientific policy algorithms/candidate sets are governed by R2 amendment/config. Production code derives realized per-dataset/per-run values only from legal training/validation evidence and records them before test inference.",
+  "governed_sources": [
+    "contracts/P02_PREEXECUTION_TRAINING_POLICY_AMENDMENT_R2.yaml",
+    "configs/phase_02/training_policy_authority_bindings.yaml",
+    "machine_readable/p02_training_policy_challenger_run_cells_R2.yaml",
+    "machine_readable/p02_planned_scientific_execution_freeze_R5.yaml"
+  ],
+  "production_code_responsibility": [
+    "validate governed algorithm",
+    "derive deterministic augmentation seeds",
+    "ask pinned Braindecode for auto n_segments",
+    "compute standard balanced weights from fit labels",
+    "perform validation-only selection",
+    "record realized policy/evidence",
+    "fail closed on unsupported/insufficient selection"
+  ],
+  "production_code_must_not": [
+    "choose candidate grid from test",
+    "choose imbalance threshold",
+    "use test scores for policy selection",
+    "change A0/A4 ownership",
+    "promote diagnostic S&R to primary"
+  ],
+  "realized_values_predeclared_as_constants": false,
+  "test_set_used_for_resolution": false,
+  "unresolved_code_owned_scientific_bindings": 0
+}

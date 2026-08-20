@@ -1,0 +1,44 @@
+{
+  "stage_id": "22",
+  "status": "SUCCESS",
+  "attempt_id": "09220f652f26",
+  "inputs": {},
+  "input_hashes": {},
+  "outputs": {
+    "status": "PASS",
+    "handoffs": {
+      "protocol_v1_handoff": "protocol_v1_handoff.yaml",
+      "phase_analysis_handoff": "phase_analysis_handoff.yaml",
+      "layer0_handoff": "layer0_handoff.yaml",
+      "evidence_map_handoff": "evidence_map_handoff.yaml",
+      "layer10_source_handoff": "layer10_source_handoff.yaml",
+      "p03_handoff": "p03_handoff.yaml"
+    },
+    "manual_reconstruction_required": false,
+    "artifact": "stage_artifacts/22_handoffs.json"
+  },
+  "output_hashes": {
+    "status": "727e9bd17b077ba162e13ba877135cc6fbc6b30f83da0b34b3e20233f1cc885f",
+    "handoffs": "229a0c71622225373d5621bf9564ede02378527c04e55b15f5230fd1162c2198",
+    "manual_reconstruction_required": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
+    "artifact": "d68c237d27445531443866b37cf5e31923a93c541ab19f8636de926f1b5c5798"
+  },
+  "dependencies": [
+    "21"
+  ],
+  "elapsed_seconds": 0.03529071807861328,
+  "log_path": "logs/stage_22_09220f652f26.log",
+  "heartbeat_write_errors": [],
+  "observability_status": "PASS",
+  "blockers": [],
+  "observations": [],
+  "revision_fingerprint": {
+    "notebook_revision": "R4",
+    "notebook_id": "IHARQ-P02-COMPLETE-EXECUTION-AND-ANALYSIS-R4",
+    "source_sha256": "a54bfa816acc6763c1d1042b8c65cf54ae04ec774c57ec50de86014a6730c5fa",
+    "config_sha256": "d82334535e397c681d6172694da96d3fff0143ffb1b63a18876ee1f7778f60a1",
+    "stage_plan_sha256": "043eb30e008af910d37c563e8be8c719ef881cf009aec3e34687dc97bdc34aad",
+    "scientific_freeze_sha256": "7449216c988eec14191ba85300d720547f06fbc6ac7020e9e142bf12a4b0a598",
+    "scientific_freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5"
+  }
+}

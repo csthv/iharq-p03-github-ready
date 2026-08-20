@@ -1,0 +1,468 @@
+canonical_map_id: IHARQ-CUMULATIVE-EVIDENCE-MAP-THROUGH-P02-R1
+limitations:
+- limitation_id: P00-LIM-002
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P00-CLM-001/v2
+  - P00-CLM-002/v2
+  - P00-CLM-007/v2
+  affected_findings:
+  - P00-F-001
+  - P00-F-002
+  - P00-F-008
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: P00-LIM-003
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P00-CLM-001/v2
+  - P00-CLM-002/v2
+  - P00-CLM-005/v2
+  - P00-CLM-006/v2
+  - P00-CLM-007/v2
+  affected_findings:
+  - P00-F-001
+  - P00-F-002
+  - P00-F-006
+  - P00-F-007
+  - P00-F-008
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: P00-LIM-004
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P00-CLM-001/v2
+  - P00-CLM-002/v2
+  - P00-CLM-003/v2
+  - P00-CLM-004/v2
+  - P00-CLM-005/v2
+  - P00-CLM-006/v2
+  affected_findings:
+  - P00-F-001
+  - P00-F-002
+  - P00-F-003
+  - P00-F-004
+  - P00-F-005
+  - P00-F-006
+  - P00-F-007
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: P00-LIM-L0-001
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P00-CLM-001/v2
+  - P00-CLM-003/v2
+  - P00-CLM-004/v2
+  - P00-CLM-005/v2
+  - P00-CLM-006/v2
+  affected_findings:
+  - P00-F-001
+  - P00-F-003
+  - P00-F-004
+  - P00-F-005
+  - P00-F-006
+  - P00-F-007
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: P00-LIM-001
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P00-CLM-002/v2
+  - P00-CLM-007/v2
+  affected_findings:
+  - P00-F-002
+  - P00-F-008
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: PUBLIC_EEG_ONLY
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P01-CLM-001/v1
+  - P01-CLM-012/v1
+  - P02-CLM-001/v1
+  affected_findings:
+  - P01-FIND-001
+  - P01-FIND-012
+  - P02-FIND-001
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: NON_CLINICAL
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P01-CLM-001/v1
+  - P01-CLM-012/v1
+  affected_findings:
+  - P01-FIND-001
+  - P01-FIND-012
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: BINARY_MI_BRANCH_SCOPE
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P01-CLM-001/v1
+  affected_findings:
+  - P01-FIND-001
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: IMPLEMENTED_CHECKS_ONLY
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P01-CLM-002/v1
+  affected_findings:
+  - P01-FIND-002
+  - P01-FIND-006
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: NO_MODEL_EFFECT_INFERENCE
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P01-CLM-003/v1
+  affected_findings:
+  - P01-FIND-003
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: PRIVATE_KAGGLE_EXTERNAL_ARTIFACT_ACCESS
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P01-CLM-004/v1
+  affected_findings:
+  - P01-FIND-004
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: SOURCE_LICENSE_REDISTRIBUTION_CONSTRAINTS
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P01-CLM-004/v1
+  affected_findings:
+  - P01-FIND-004
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: SOFT_FLAG_NOT_EQUIVALENT_TO_CORRUPTION
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P01-CLM-005/v1
+  affected_findings:
+  - P01-FIND-005
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: NO_ABLATION_EFFECTIVENESS_IN_P01
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P01-CLM-006/v1
+  affected_findings:
+  - P01-FIND-008
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: A4_R2_RETROSPECTIVE_FEASIBILITY_ORIGIN_NOT_CONFIRMATORY_IN_P01
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P01-CLM-007/v1
+  - P01-CLM-011/v1
+  affected_findings:
+  - P01-FIND-009
+  - P01-FIND-010
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: A4_EFFECTIVENESS_NOT_EXECUTED
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P01-CLM-007/v1
+  - P01-CLM-011/v1
+  affected_findings:
+  - P01-FIND-009
+  - P01-FIND-010
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: NO_EFFECTIVENESS_INFERENCE
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P01-CLM-008/v1
+  affected_findings:
+  - P01-FIND-012
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: ACTUAL_RUNTIME_PYTHON_3_12_13_WITH_COMPATIBILITY_AMENDMENT
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P01-CLM-009/v1
+  affected_findings:
+  - P01-FIND-011
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: ADAPTIVE_DISK_RESOURCE_AMENDMENT
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P01-CLM-009/v1
+  affected_findings:
+  - P01-FIND-011
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: DOCUMENTARY_CLOSURE_SEQUENCE_REMAINS
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P01-CLM-010/v1
+  affected_findings:
+  - P01-FIND-014
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: NO_DEPLOYMENT_CLAIM
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P01-CLM-012/v1
+  affected_findings:
+  - P01-FIND-001
+  - P01-FIND-012
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: NO_CALIBRATION_POLICY_CLAIM
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P02-CLM-001/v1
+  affected_findings:
+  - P02-FIND-001
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: DATASET_HETEROGENEITY
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P02-CLM-002/v1
+  affected_findings:
+  - P02-FIND-002
+  - P02-FIND-003
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: BNCI_TEST_PARTICIPANTS_1
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P02-CLM-002/v1
+  affected_findings:
+  - P02-FIND-002
+  - P02-FIND-003
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: MULTIPLICITY
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P02-CLM-003/v1
+  affected_findings:
+  - P02-FIND-003
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: PARTICIPANT_HETEROGENEITY
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P02-CLM-003/v1
+  affected_findings:
+  - P02-FIND-003
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: SINGLE_FROZEN_SUBSET
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P02-CLM-004/v1
+  affected_findings:
+  - P02-FIND-005
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: NO_LOW_LABEL_REPEAT_STABILITY
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P02-CLM-004/v1
+  affected_findings:
+  - P02-FIND-005
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: POST_OBSERVATION_AMENDMENT
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P02-CLM-005/v1
+  affected_findings:
+  - P02-FIND-006
+  - P02-FIND-008
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: DIAGNOSTIC_VALIDATION_EVIDENCE
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P02-CLM-005/v1
+  affected_findings:
+  - P02-FIND-006
+  - P02-FIND-008
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: DIAGNOSTIC_ONLY
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P02-CLM-006/v1
+  affected_findings:
+  - P02-FIND-007
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: SINGLE_REPEAT
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P02-CLM-007/v1
+  affected_findings:
+  - P02-FIND-009
+  - P02-FIND-010
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: DEEP_ANCHOR_BUDGETS
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P02-CLM-007/v1
+  affected_findings:
+  - P02-FIND-009
+  - P02-FIND-010
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: CELL_SPECIFIC_EFFECT
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P02-CLM-008/v1
+  affected_findings:
+  - P02-FIND-011
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: POST_HOC_ONLY
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P02-CLM-009/v1
+  affected_findings:
+  - P02-FIND-012
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: THREE_REPEAT_NOT_FIVE_REPEAT
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P02-CLM-009/v1
+  affected_findings:
+  - P02-FIND-012
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: DOWNSTREAM_SCIENCE_NOT_EXECUTED
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - P02-CLM-010/v1
+  affected_findings:
+  - P02-FIND-013
+  - P02-FIND-014
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: Technical traceability is not scientific/clinical effectiveness by itself.
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - CUM-CLM-001/v1
+  affected_findings:
+  - CF-01
+  - CF-02
+  - CF-09
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: Bounded to the implemented registered leakage/disjointness checks.
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - CUM-CLM-002/v1
+  affected_findings:
+  - CF-02
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: BNCI held-out test participant n=1; no universal rank claim.
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - CUM-CLM-003/v1
+  affected_findings:
+  - CF-03
+  - CF-11
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: Single frozen subset per budget; no repeated-subset stability.
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - CUM-CLM-004/v1
+  affected_findings:
+  - CF-04
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: Single canonical refit repeat, deep anchor budgets, Stage18S post-hoc.
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - CUM-CLM-005/v1
+  affected_findings:
+  - CF-05
+  - CF-06
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: Diagnostic/validation evidence does not establish universal test-set gains or architecture superiority.
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - CUM-CLM-006/v1
+  affected_findings:
+  - CF-07
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: Different negative-evidence classes are not quantitatively interchangeable.
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - CUM-CLM-007/v1
+  affected_findings:
+  - CF-08
+  - CF-09
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: Downstream science is not yet executed.
+  origin: PRIOR_OR_P02_CLAIM_BOUNDARY
+  affected_claims:
+  - CUM-CLM-008/v1
+  affected_findings:
+  - CF-12
+  effect: QUALIFICATION_OR_SCOPE_BOUNDARY
+- limitation_id: CLIM-01
+  origin: P00
+  theme: Environment portability
+  description: P00 exact Python 3.13.5 local snapshot; cross-version portability not established.
+  later_phase_effect: P01 recorded actual Python 3.12.13 compatibility amendment; P02 records its own runtime/config identities rather than assuming
+    one environment.
+  final_status: PERSISTING_AS_ENVIRONMENT_SPECIFIC_REPRODUCIBILITY
+  current_claim_impact: Reproduction must use recorded environment identities or validate equivalence; no universal portability claim.
+  affected_claims: []
+  affected_findings: []
+  effect: CUMULATIVE_LIMITATION_LIFECYCLE
+- limitation_id: CLIM-02
+  origin: P01
+  theme: Public/non-clinical EEG scope
+  description: P01 public benchmark/research EEG; no clinical endpoint or deployment safety evidence.
+  later_phase_effect: P02 uses the same governed public EEG scope for decoder measurement.
+  final_status: PERSISTING
+  current_claim_impact: No clinical effectiveness, patient benefit, deployment safety or medical-device readiness claim.
+  affected_claims: []
+  affected_findings: []
+  effect: CUMULATIVE_LIMITATION_LIFECYCLE
+- limitation_id: CLIM-03
+  origin: P01
+  theme: External artifact access
+  description: Private Kaggle numerical artifacts with source-license restrictions.
+  later_phase_effect: P02 adds private immutable HF workspace/archive routes and dual credential classes for mixed-phase workflows.
+  final_status: PERSISTING_BUT_RETRIEVAL_ARCHITECTURE_EXTENDED
+  current_claim_impact: Scientific content remains available to authorized consumers, but independent retrieval requires credentials and exact
+    revision/hash verification.
+  affected_claims: []
+  affected_findings: []
+  effect: CUMULATIVE_LIMITATION_LIFECYCLE
+- limitation_id: CLIM-04
+  origin: P01
+  theme: A4 +4.0 s feasibility boundary
+  description: One valid parent event lacked the 640 post-cue samples required by the proposed +4.0 s design.
+  later_phase_effect: P01 froze matched +3.5 s R2 and P02 executed A4 on that substrate.
+  final_status: RESOLVED_AS_DATA_FEASIBILITY_PROBLEM
+  current_claim_impact: The original +4.0 s proposal remains historically invalid for full-denominator matched execution; R2 is the governed substrate.
+  affected_claims: []
+  affected_findings: []
+  effect: CUMULATIVE_LIMITATION_LIFECYCLE
+- limitation_id: CLIM-05
+  origin: P01
+  theme: A4 effectiveness untested in P01
+  description: P01 Layer 0 deferred A4 effectiveness claim.
+  later_phase_effect: P02 executes A4 and supplies governed statistical/control evidence.
+  final_status: RESOLVED_AS_UNTESTED_QUESTION_BUT_REPLACED_BY_STRONGER_SCOPE_LIMITATION
+  current_claim_impact: Effectiveness is now empirically addressed only within P02 constrained single-repeat/deep-anchor scope.
+  affected_claims: []
+  affected_findings: []
+  effect: CUMULATIVE_LIMITATION_LIFECYCLE
+- limitation_id: CLIM-06
+  origin: P02
+  theme: A4 repeat and deep-budget coverage
+  description: Not present before P02 execution.
+  later_phase_effect: Canonical Stage18 uses repeat0 and deep anchor budgets; Stage18S adds post-hoc three-repeat/six-budget sensitivity without
+    modifying G18.
+  final_status: PERSISTING
+  current_claim_impact: No five-repeat stability, dense deep-budget curve or full Build Book replication-equivalence claim.
+  affected_claims: []
+  affected_findings: []
+  effect: CUMULATIVE_LIMITATION_LIFECYCLE
+- limitation_id: CLIM-07
+  origin: P02
+  theme: Low-label single-subset design
+  description: P01 froze one deterministic subset per budget for downstream use.
+  later_phase_effect: P02 measures those exact populations but does not repeat subset sampling.
+  final_status: PERSISTING
+  current_claim_impact: Low-label curves are descriptive; no subset-robust sample-efficiency ordering.
+  affected_claims: []
+  affected_findings: []
+  effect: CUMULATIVE_LIMITATION_LIFECYCLE
+- limitation_id: CLIM-08
+  origin: P02
+  theme: BNCI2014_001 held-out participant count
+  description: P01 subject split is valid but P02 held-out BNCI test role contains one participant.
+  later_phase_effect: A0 rankings on BNCI are descriptive only for participant-level inference.
+  final_status: PERSISTING
+  current_claim_impact: No participant-level inferential generalization from BNCI P02 test result.
+  affected_claims: []
+  affected_findings: []
+  effect: CUMULATIVE_LIMITATION_LIFECYCLE
+- limitation_id: CLIM-09
+  origin: P02
+  theme: Stage18S post-hoc status
+  description: Canonical Stage18 already closed under resource-constrained design.
+  later_phase_effect: Stage18S adds descriptive sensitivity only.
+  final_status: PHASE_SPECIFIC_PERSISTING_CLAIM_BOUNDARY
+  current_claim_impact: Cannot be presented as confirmatory or as retroactively changing G18.
+  affected_claims: []
+  affected_findings: []
+  effect: CUMULATIVE_LIMITATION_LIFECYCLE

@@ -1,0 +1,88 @@
+{
+  "actual_budget_count_per_mr00_trajectory": 9,
+  "anchor_sign_consistency_counts": {
+    "ALL_NEGATIVE": 10,
+    "ALL_POSITIVE": 27,
+    "MIXED": 53
+  },
+  "artifact_id": "P02-STAGE18S-R1-INTEGRATED-1-256-DECISION-SUPPORT-R2",
+  "claim_scope": "POST_HOC_SENSITIVITY_DESCRIPTIVE",
+  "combined_successful_effect_rows": 315,
+  "created_at_utc": "2026-08-17T17:19:59.066914+00:00",
+  "execution_surface": {
+    "member_receipts": 432,
+    "member_status_counts": {
+      "INPUT_INCOMPATIBLE": 54,
+      "SUCCESS": 378
+    },
+    "planned_cells": 324,
+    "planned_groups": 108,
+    "terminal_counts": {
+      "INPUT_INCOMPATIBLE": 54,
+      "SUCCESS": 270
+    }
+  },
+  "high_budget_descriptive_summary": {
+    "128": {
+      "mean_delta_BACC": 0.006353499864698803,
+      "median_delta_BACC": 0.0083333333333333,
+      "n_effects": 45,
+      "positive_fraction": 0.6
+    },
+    "256": {
+      "mean_delta_BACC": 0.02139682175288236,
+      "median_delta_BACC": 0.0145526410348545,
+      "n_effects": 45,
+      "positive_fraction": 0.7777777777777778
+    },
+    "64": {
+      "mean_delta_BACC": -0.003427016098623489,
+      "median_delta_BACC": -0.0034722222222222,
+      "n_effects": 45,
+      "positive_fraction": 0.4666666666666667
+    }
+  },
+  "interpretation_rules": {
+    "do_not_claim_256_significant_from_descriptive_summary": true,
+    "do_not_claim_full_buildbook_equivalence": true,
+    "do_not_claim_monotonic_budget_response": true,
+    "do_not_merge_into_canonical_G18": true,
+    "high_budget_extension_is_post_hoc": true,
+    "no_new_confirmatory_test_family_created_here": true,
+    "post_hoc": true,
+    "three_repeat_results_are_descriptive_not_five_repeat_confirmatory": true
+  },
+  "median_repeat_sd_delta_BACC": 0.0184713557364089,
+  "mr00_mean_sign_flips_per_trajectory": 4.066666666666666,
+  "mr00_sign_flip_fraction": 1.0,
+  "mr00_total_sign_flips": 61,
+  "mr00_trajectories_with_sign_flip": 15,
+  "nine_budget_mr00_trajectories": 15,
+  "nine_budget_sequence": [
+    "1",
+    "4",
+    "8",
+    "16",
+    "32",
+    "64",
+    "128",
+    "256",
+    "FULL"
+  ],
+  "p90_repeat_sd_delta_BACC": 0.04459155125980855,
+  "participant_effect_rows": 1890,
+  "six_budget_field_retained_for_compatibility_only": true,
+  "six_budget_mr00_trajectories": 15,
+  "status": "PASS",
+  "supplement_id": "P02-STAGE18S-BALANCED-SENSITIVITY-R1",
+  "three_repeat_anchor_budgets": [
+    "1",
+    "8",
+    "64",
+    "128",
+    "256",
+    "FULL"
+  ],
+  "three_repeat_anchor_trajectories": 90,
+  "training_provenance_issues": 0
+}

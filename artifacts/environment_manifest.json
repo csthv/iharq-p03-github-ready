@@ -1,0 +1,58 @@
+{
+  "python": "3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]",
+  "platform": "Linux-6.12.90+-x86_64-with-glibc2.35",
+  "cpu_count": 4,
+  "ram_bytes": 33659379712,
+  "disk_total_bytes": 20957446144,
+  "disk_free_bytes": 20336979968,
+  "official_kaggle": true,
+  "installed_packages": {
+    "moabb": "1.5.0",
+    "mne": "1.12.1",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "pandas": "2.3.1",
+    "scikit-learn": "1.7.1",
+    "h5py": "3.14.0",
+    "pooch": "1.8.2",
+    "pyyaml": "6.0.2",
+    "pydantic": "2.11.7",
+    "jsonschema": "4.25.0",
+    "nbformat": "5.10.4"
+  },
+  "pin_mismatches": {},
+  "resource_failures": [],
+  "deterministic_environment": {
+    "PYTHONHASHSEED": "20260804",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "python_required_major_minor": "3.12",
+  "python_observed_major_minor": "3.12",
+  "required_import_failures": [],
+  "resource_policy_id": "P01-L1-KAGGLE-ADAPTIVE-DISK-R1",
+  "legacy_60_gb_preflight_applied": false,
+  "legacy_60_gb_preflight_preserved_as_history": true,
+  "adaptive_startup_calculation": {
+    "runtime_input_bytes": 7641752,
+    "dependency_layer_bytes": 542213634,
+    "fixed_footprint_bytes": 549855386,
+    "calculated_required_bytes": 3908544705,
+    "effective_required_bytes": 6442450944,
+    "effective_required_gib": 6.0
+  },
+  "disk_snapshot": {
+    "event": "STAGE_01_ADAPTIVE_PREFLIGHT",
+    "captured_unix": 1786113123.0517013,
+    "disk_total_bytes": 20957446144,
+    "disk_used_bytes": 603697152,
+    "disk_free_bytes": 20336971776,
+    "disk_free_gib": 18.94,
+    "source_cache_bytes": 0,
+    "runtime_input_bytes": 7641752,
+    "dependency_layer_bytes": 542213634,
+    "bundle_bytes": 386583
+  },
+  "automatic_source_removal_allowed": false
+}

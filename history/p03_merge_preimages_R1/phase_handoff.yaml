@@ -1,0 +1,33 @@
+phase_handoff:
+  handoff_id: P02-POST-EXTENSION-64-128-256-HANDOFF-P03-READINESS-R3
+  producer_phase: P02
+  producer_layer: L2
+  consumer_phase: P03
+  status: READY_WITH_EXPLICIT_NONBLOCKING_LIMITATIONS
+  p02_execution_status: STAGE24_SUCCESS_G24_PASS_PLUS_64_128_256_EXTENSION_ANNEX_PASS
+  p02_final_closure: GREEN_LIGHT_WITH_EXPLICIT_NONBLOCKING_LIMITATIONS
+  scientific_stage_rerun_for_merge: false
+  canonical_documentary_state: final_state/through_p02/
+  consumer_handoff: artifacts/handoffs/phase_02_to_phase_03/downstream_readiness.yaml
+  fresh_session_checklist: artifacts/handoffs/phase_02_to_phase_03/P03_fresh_session_intake_checklist.md
+  source_snapshot:
+    repo_id: Csthv/p02-phase02-final-whole-working-20260814t052120z-b890ff92
+    immutable_revision: bc14961e14f2e48690e55df3577014275f9cbf30
+    manifest_sha256: 564bbb44e67d14da8457ad83d33651ded93dfc6b89ab90f10f78a36a20b8e8f5
+    credential_class: IHARQ_HF_TOKEN_P02
+  pre_p02_credential_class: IHARQ_HF_TOKEN_PRE_P02
+  rules:
+  - P03 MUST perform fresh authority/reuse/config/environment/Protocol freeze before execution.
+  - P03 MUST preserve P02 limitations and post-hoc labels.
+  - P03 MUST NOT infer one credential can access both pre-P02 and P02 repositories.
+  - P03 MUST consult the P02 64/128/256 extension handoff and location index before historical P02 fallbacks.
+  - P03 MUST resolve current heavy extension artifacts by exact repository, immutable revision, remote path, archive member,
+    and SHA-256.
+  blockers: []
+  extension_annex_id: P02_LOWLABEL_64_128_256_STAGE18S_R1_a0e2462396cf
+  extension_handoff: artifacts/handoffs/phase_02_to_phase_03/P02_64_128_256_EXTENSION_ANNEX_HANDOFF_R1.json
+  extension_location_index: artifacts/handoffs/phase_02_to_phase_03/P02_64_128_256_EXTENSION_ANNEX_LOCATION_INDEX.jsonl
+  current_heavy_extension_repo: Csthv/iharq-p02-phase02-r2-P02-L2-OFFICIAL-RUN-R4DY-20260817t182318z
+  current_heavy_extension_revision: 7f43cf3a9ea4b2056d96b9d2135bc14eac605b90
+  canonical_stage18_G18_modified: false
+  stage18S_claim_scope: POST_HOC_SENSITIVITY_DESCRIPTIVE

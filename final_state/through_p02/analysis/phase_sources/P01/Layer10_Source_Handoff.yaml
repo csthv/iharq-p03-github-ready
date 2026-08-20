@@ -1,0 +1,20 @@
+cumulative_report_id: IHARQ-CUMULATIVE-PHASE-EVIDENCE-RESULTS-INTERPRETATION-THROUGH-P01-R1
+status: P01_SOURCE_INPUTS_READY_PENDING_P01_EVIDENCE_MAP
+p00_state: BASIC_READ_ONLY_PACKAGE_ALREADY_EXISTS
+p00_layer10_package_id: P00-BASIC-LAYER10-PACKAGE-R2
+p01_handoff:
+  report_id: IHARQ-P01-EVIDENCE-RESULTS-INTERPRETATION-REPORT-R1
+  status: READY_SOURCE_ONLY
+  read_only_sources:
+  - source dataset reconciliation table
+  - split allocation table
+  - denominator conservation flow
+  - quality closure table
+  - A0-A13 readiness table
+  - A4 chronology/timing table
+  - repair chronology table
+  - gate closure table
+  - external artifact registry
+  - limitation register
+  rule: Layer 10 may render saved evidence only; no hidden recomputation, threshold
+    retuning, claim strengthening, or omission of negative evidence.

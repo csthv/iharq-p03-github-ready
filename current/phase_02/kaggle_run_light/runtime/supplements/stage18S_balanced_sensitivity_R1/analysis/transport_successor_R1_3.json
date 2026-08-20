@@ -1,0 +1,16 @@
+{
+  "artifact_id": "P02-STAGE18S-R1-TRANSPORT-SUCCESSOR-R1.3",
+  "supplement_id": "P02-STAGE18S-BALANCED-SENSITIVITY-R1",
+  "transport_revision": "R1.3-SIX-SLOTS-PER-GPU-ADAPTIVE-RAMPED-BACKOFF",
+  "created_at_utc": "2026-08-17T14:59:13.053658+00:00",
+  "status": "INSTALLED",
+  "scientific_plan_sha256": "ed6c7a682211c2f83c347c66623625cfa5a54df556f06c840533bbe175ebca55",
+  "scientific_policy_changed": false,
+  "canonical_stage18_changed": false,
+  "max_slots_per_gpu": 6,
+  "max_workers": 12,
+  "single_model_multi_gpu": false,
+  "adaptive_vram_ram_admission": true,
+  "automatic_resource_backoff": true,
+  "automatic_retry_of_resource_blocked_supplement_cells": true
+}

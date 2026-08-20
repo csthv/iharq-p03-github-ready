@@ -1,0 +1,44 @@
+harmony:
+- component: Authority/governance
+  P00_state: engineering foundation
+  P01_state: reused/extended
+  P02_state: reused/extended
+  current_cumulative_state: single Governance V6.1 + cumulative authorities
+  consistency: PASS
+- component: Data identity
+  P00_state: schema/identity machinery
+  P01_state: 3 datasets + frozen split/preprocessing/windows
+  P02_state: consumes without mutation
+  current_cumulative_state: P01 identities remain upstream data authority
+  consistency: PASS
+- component: Protocol
+  P00_state: preserved historical annex
+  P01_state: accepted execution contract
+  P02_state: accepted Layer2 execution + amendments
+  current_cumulative_state: one cumulative Protocol through P02
+  consistency: PASS
+- component: A4
+  P00_state: conceptual/governance foundation
+  P01_state: matched 3.5s feasibility substrate; effectiveness deferred
+  P02_state: resource-constrained execution + Stage18S sensitivity
+  current_cumulative_state: valid anchor evidence; generic improvement/stability not
+    established
+  consistency: PASS
+- component: Claim governance
+  P00_state: historical dispositions preserved
+  P01_state: historical dispositions preserved incl. A4 defer
+  P02_state: 10 P02 + cumulative claims governed
+  current_cumulative_state: 37 current governed claims with historical lineage
+  consistency: PASS
+- component: Evidence Map
+  P00_state: predecessor preserved
+  P01_state: predecessor cumulative map preserved
+  P02_state: integrated current map
+  current_cumulative_state: 49 unique findings / 37 claims / 69 evidence nodes
+  consistency: PASS
+- component: Layer10
+  P00_state: prior artifacts preserved
+  P01_state: prior cumulative artifacts preserved
+  P02_state: P02 + cumulative views
+  current_cumulative_state: claim-safe reproducible cumulative package
+  consistency: PASS

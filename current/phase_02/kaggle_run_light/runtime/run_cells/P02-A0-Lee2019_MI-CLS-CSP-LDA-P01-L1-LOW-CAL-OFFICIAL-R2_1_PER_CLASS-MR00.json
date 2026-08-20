@@ -1,0 +1,29 @@
+{
+  "run_cell_id": "P02-A0-Lee2019_MI-CLS-CSP-LDA-P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS-MR00",
+  "ablation_id": "A0",
+  "terminal_status": "FAILED",
+  "candidate_failures": [
+    {
+      "status": "FAILED",
+      "exception": "ValueError",
+      "message": "The number of samples must be more than the number of classes.",
+      "candidate_id": "CAND-00"
+    },
+    {
+      "status": "FAILED",
+      "exception": "ValueError",
+      "message": "The number of samples must be more than the number of classes.",
+      "candidate_id": "CAND-01"
+    },
+    {
+      "status": "FAILED",
+      "exception": "ValueError",
+      "message": "The number of samples must be more than the number of classes.",
+      "candidate_id": "CAND-02"
+    }
+  ],
+  "permutation_provenance": null,
+  "training_condition_id": "A0-RAW-ACCEPT-ALL",
+  "augmentation_provenance": null,
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

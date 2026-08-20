@@ -1,0 +1,38 @@
+phase_id: P04
+official_name: IHARQ-lite Evidence Verification
+profile_status: TEMPLATE_READY
+phase0_contract_status: CONTRACT_READY
+primary_layer_scope: L4
+input_contract: contracts/phases/p04/input_contract.yaml
+output_contract: contracts/phases/p04/output_contract.yaml
+run_manifest_schema: schemas/manifests/PhaseRunManifest.schema.json
+environment_hook: configs/environments/python312.yaml
+seed_hook: SEED_OR_NOT_APPLICABLE_REQUIRED
+schema_profile_references:
+- catalogs/final_schema_catalog.yaml
+- catalogs/final_record_family_coverage_matrix.yaml
+expected_artifact_ids: []
+lifecycle_statuses:
+- CREATED
+- VALIDATED
+- ACCEPTED
+- BLOCKED
+- DIAGNOSTIC_ONLY
+- SUPERSEDED
+- INVALIDATED
+gate_hooks:
+- G-PHASE-INPUTS
+- G-PHASE-RUN
+- G-PHASE-EVIDENCE
+- G-PHASE-HANDOFF
+repair_reentry: docs/templates/repair_reentry_template.yaml
+analysis_hook: docs/templates/analysis_contract_template.yaml
+report_template: docs/templates/phase_evidence_report_template.md
+layer0_template: docs/templates/layer0_disposition_template.md
+evidence_map_template: docs/templates/evidence_map_annex_template.md
+layer10_template: docs/templates/layer10_package_template.md
+handoff_template: docs/templates/phase_handoff_template.yaml
+external_pointer_support: schemas/manifests/ArtifactPointerRecord.schema.json
+limitation_inheritance: true
+scientific_execution: FUTURE_EMPIRICAL_OUTPUT_NOT_YET_EXPECTED
+result_values: PROHIBITED_IN_P00

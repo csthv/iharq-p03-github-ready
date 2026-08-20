@@ -1,0 +1,82 @@
+limitations:
+- limitation_id: CLIM-01
+  theme: Environment portability
+  introduced_phase: P00
+  earlier_state: P00 exact Python 3.13.5 local snapshot; cross-version portability
+    not established.
+  later_phase_effect: P01 recorded actual Python 3.12.13 compatibility amendment;
+    P02 records its own runtime/config identities rather than assuming one environment.
+  final_status: PERSISTING_AS_ENVIRONMENT_SPECIFIC_REPRODUCIBILITY
+  current_claim_impact: Reproduction must use recorded environment identities or validate
+    equivalence; no universal portability claim.
+- limitation_id: CLIM-02
+  theme: Public/non-clinical EEG scope
+  introduced_phase: P01
+  earlier_state: P01 public benchmark/research EEG; no clinical endpoint or deployment
+    safety evidence.
+  later_phase_effect: P02 uses the same governed public EEG scope for decoder measurement.
+  final_status: PERSISTING
+  current_claim_impact: No clinical effectiveness, patient benefit, deployment safety
+    or medical-device readiness claim.
+- limitation_id: CLIM-03
+  theme: External artifact access
+  introduced_phase: P01
+  earlier_state: Private Kaggle numerical artifacts with source-license restrictions.
+  later_phase_effect: P02 adds private immutable HF workspace/archive routes and dual
+    credential classes for mixed-phase workflows.
+  final_status: PERSISTING_BUT_RETRIEVAL_ARCHITECTURE_EXTENDED
+  current_claim_impact: Scientific content remains available to authorized consumers,
+    but independent retrieval requires credentials and exact revision/hash verification.
+- limitation_id: CLIM-04
+  theme: A4 +4.0 s feasibility boundary
+  introduced_phase: P01
+  earlier_state: One valid parent event lacked the 640 post-cue samples required by
+    the proposed +4.0 s design.
+  later_phase_effect: P01 froze matched +3.5 s R2 and P02 executed A4 on that substrate.
+  final_status: RESOLVED_AS_DATA_FEASIBILITY_PROBLEM
+  current_claim_impact: The original +4.0 s proposal remains historically invalid
+    for full-denominator matched execution; R2 is the governed substrate.
+- limitation_id: CLIM-05
+  theme: A4 effectiveness untested in P01
+  introduced_phase: P01
+  earlier_state: P01 Layer 0 deferred A4 effectiveness claim.
+  later_phase_effect: P02 executes A4 and supplies governed statistical/control evidence.
+  final_status: RESOLVED_AS_UNTESTED_QUESTION_BUT_REPLACED_BY_STRONGER_SCOPE_LIMITATION
+  current_claim_impact: Effectiveness is now empirically addressed only within P02
+    constrained single-repeat/deep-anchor scope.
+- limitation_id: CLIM-06
+  theme: A4 repeat and deep-budget coverage
+  introduced_phase: P02
+  earlier_state: Not present before P02 execution.
+  later_phase_effect: Canonical Stage18 uses repeat0 and deep anchor budgets; Stage18S
+    adds post-hoc three-repeat/six-budget sensitivity without modifying G18.
+  final_status: PERSISTING
+  current_claim_impact: No five-repeat stability, dense deep-budget curve or full
+    Build Book replication-equivalence claim.
+- limitation_id: CLIM-07
+  theme: Low-label single-subset design
+  introduced_phase: P02
+  earlier_state: P01 froze one deterministic subset per budget for downstream use.
+  later_phase_effect: P02 measures those exact populations but does not repeat subset
+    sampling.
+  final_status: PERSISTING
+  current_claim_impact: Low-label curves are descriptive; no subset-robust sample-efficiency
+    ordering.
+- limitation_id: CLIM-08
+  theme: BNCI2014_001 held-out participant count
+  introduced_phase: P02
+  earlier_state: P01 subject split is valid but P02 held-out BNCI test role contains
+    one participant.
+  later_phase_effect: A0 rankings on BNCI are descriptive only for participant-level
+    inference.
+  final_status: PERSISTING
+  current_claim_impact: No participant-level inferential generalization from BNCI
+    P02 test result.
+- limitation_id: CLIM-09
+  theme: Stage18S post-hoc status
+  introduced_phase: P02
+  earlier_state: Canonical Stage18 already closed under resource-constrained design.
+  later_phase_effect: Stage18S adds descriptive sensitivity only.
+  final_status: PHASE_SPECIFIC_PERSISTING_CLAIM_BOUNDARY
+  current_claim_impact: Cannot be presented as confirmatory or as retroactively changing
+    G18.

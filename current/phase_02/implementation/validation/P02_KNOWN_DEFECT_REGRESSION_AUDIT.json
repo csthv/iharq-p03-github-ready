@@ -1,0 +1,20 @@
+{
+  "validation_id": "P02_KNOWN_DEFECT_REGRESSION_AUDIT",
+  "status": "PASS",
+  "DEFECT_01": {
+    "defect": "incomplete 26-stage dispatcher",
+    "expected_repair": "full real stage dispatch",
+    "test": "full stage-graph synthetic integration + static 26-row traceability",
+    "current_evidence": "26/26 HANDLERS; P02_STAGE_RUNTIME_IMPLEMENTATION_TRACEABILITY.csv; full_stage_graph_synthetic_integration.json",
+    "result": "PASS"
+  },
+  "DEFECT_02": {
+    "defect": "missing C4/C5 ensemble-vs-strongest-constituent inferential closure",
+    "expected_repair": "complete participant-level comparison + export",
+    "test": "C4/C5 comparison integration + golden + negative tests",
+    "current_evidence": "a4.execute_ensemble; evidence.close_a4; C4/C5 artifact/common-support/stat files; P02_A4_COMPARISON_TRACEABILITY.csv",
+    "result": "PASS"
+  },
+  "known_implementation_defects_unrepaired": 0,
+  "post_repair_full_audit_required": true
+}

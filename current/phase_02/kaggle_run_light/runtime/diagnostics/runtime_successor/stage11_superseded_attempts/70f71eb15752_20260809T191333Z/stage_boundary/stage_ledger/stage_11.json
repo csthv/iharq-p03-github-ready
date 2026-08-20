@@ -1,0 +1,55 @@
+{
+  "stage_id": "11",
+  "status": "SUCCESS",
+  "attempt_id": "70f71eb15752",
+  "inputs": {},
+  "input_hashes": {},
+  "outputs": {
+    "status": "PASS",
+    "attempted": 105,
+    "branches": [
+      "DNN-EEGNET"
+    ],
+    "terminal_counts": {
+      "DEPENDENCY_BLOCKED": 105
+    },
+    "artifact": "stage_artifacts/11_neural_and_training_policy_challenger.json",
+    "training_policy_challenger": {
+      "attempted": 15,
+      "terminal_counts": {
+        "CONDITIONAL_SKIP": 15
+      }
+    }
+  },
+  "output_hashes": {
+    "status": "727e9bd17b077ba162e13ba877135cc6fbc6b30f83da0b34b3e20233f1cc885f",
+    "attempted": "1253e9373e781b7500266caa55150e08e210bc8cd8cc70d89985e3600155e860",
+    "branches": "bd471958d140897543c6b42b0b0c4902a379aad141a0454c20fcfe44f107d780",
+    "terminal_counts": "0d8009d3933e42912d485c75ea06931c500585f9ddb4f8f14e14ac704349307c",
+    "artifact": "24c7b139acd3cc764c34bc860f9f917cf15a665dac191c5df239046e6c992054",
+    "training_policy_challenger": "e6939d82388f826c6c0287a41b3e067dccc57d7d770ab3fe8a16502a8d4193a4"
+  },
+  "dependencies": [
+    "10"
+  ],
+  "elapsed_seconds": 2.392098903656006,
+  "log_path": "logs/stage_11_70f71eb15752.log",
+  "heartbeat_write_errors": [],
+  "observability_status": "PASS",
+  "blockers": [],
+  "observations": [],
+  "revision_fingerprint": {
+    "notebook_revision": "R4",
+    "notebook_id": "IHARQ-P02-COMPLETE-EXECUTION-AND-ANALYSIS-R4",
+    "source_sha256": "a54bfa816acc6763c1d1042b8c65cf54ae04ec774c57ec50de86014a6730c5fa",
+    "config_sha256": "d82334535e397c681d6172694da96d3fff0143ffb1b63a18876ee1f7778f60a1",
+    "stage_plan_sha256": "043eb30e008af910d37c563e8be8c719ef881cf009aec3e34687dc97bdc34aad",
+    "scientific_freeze_sha256": "7449216c988eec14191ba85300d720547f06fbc6ac7020e9e142bf12a4b0a598",
+    "scientific_freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5"
+  },
+  "runtime_successor": {
+    "id": "P02-RUNTIME-SUCCESSOR-R2-CANONICAL-LOW-CAL-BUDGET-ID-PARSER-LIVE-CONTINUATION",
+    "scientific_configuration_changed": false,
+    "semantic_audit": "diagnostics/runtime_successor/G11_SEMANTIC_AUDIT_R1.json"
+  }
+}

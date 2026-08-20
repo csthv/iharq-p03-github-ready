@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "repair_id": "P02-STAGE16-LOW-LABEL-INHERITED-BUDGET-IDENTITY-REPAIR-R1",
+  "repair_scope": "DERIVED_EVIDENCE_ONLY",
+  "scientific_training_performed": false,
+  "prediction_regenerated": false,
+  "scientific_configuration_changed": false,
+  "test_outcome_used_for_model_selection": false,
+  "records": 36,
+  "expected_records": 36,
+  "metrics": [
+    "BACC",
+    "F1_MACRO",
+    "ACC"
+  ],
+  "datasets": [
+    "BNCI2014_001",
+    "Lee2019_MI",
+    "PhysioNetMI"
+  ],
+  "eligible_branches": [
+    "CLS-CSP-LDA",
+    "RIE-TS-LR",
+    "DNN-EEGNET",
+    "SSL-CBRAMOD"
+  ],
+  "frozen_budgets_per_class": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32
+  ],
+  "inherited_budget_ids": {
+    "1": "P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS",
+    "2": "P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS",
+    "4": "P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS",
+    "8": "P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS",
+    "16": "P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS",
+    "32": "P01-L1-LOW-CAL-OFFICIAL-R2:32_PER_CLASS"
+  },
+  "planned_low_label_run_cells": 216,
+  "expected_low_label_run_cells": 216,
+  "terminal_counts": {
+    "FAILED": 3,
+    "SUCCESS": 213
+  },
+  "aggregate_curve_points_attempted": 216,
+  "expected_aggregate_curve_points": 216,
+  "source_rows": 216,
+  "point_status_counts": {
+    "EXPLICIT_NON_SUCCESS": 9,
+    "VALID": 207
+  },
+  "successful_run_cell_attempts": 213,
+  "non_success_run_cell_attempts": 3,
+  "all_legal_budgets_accounted": true,
+  "explicit_non_success_retained": true,
+  "no_interpolation": true,
+  "single_frozen_subset_limitation": true,
+  "budget_repeat_count": 1,
+  "budget_repeat_ids": [
+    "P01_FROZEN_SINGLE_SUBSET"
+  ]
+}

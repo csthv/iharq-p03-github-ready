@@ -1,0 +1,27 @@
+phase_id: P02
+analysis_release_id: P02-PHASE-ANALYSIS-FINAL-R2
+primary_authority_sources:
+- source: finalized cumulative Protocol v1.0 through P02
+  path: /mnt/data/IHARQ_Protocol_v1_0_Final_Through_Phase_02_R1/IHARQ_Protocol_v1_0_Final_Through_Phase_02_R1.md
+  role: canonical execution and analysis authority
+- source: finalized P02 Protocol Annex R2
+  path: /mnt/data/IHARQ_Protocol_v1_0_Phase_02_Layer_02_Final_R2/IHARQ_Experiment_Ablation_Evaluation_Protocol_v1_0_Phase_02_Annex_R2.md
+  role: P02 exact execution-and-analysis record
+- source: cumulative Phase Analysis through P01
+  path: /mnt/data/p02_final_audit/extract/IHARQ_Cumulative_Phase_Analysis_Through_P01_Final(3)/IHARQ_Cumulative_Phase_Evidence_Results_and_Interpretation_Report_Through_P01_Current.md
+  role: document-family precedent and inherited analytical findings
+supporting_project_sources:
+- source_family: governance + seven core authorities
+  role: layer purpose, record semantics, evaluation rules, method rationale
+- source_family: P02 integrated Build Book R4
+  role: pre-execution intended implementation and expected scientific scope
+- source_family: completed P02 notebook and canonical runtime ledger/manifests
+  role: execution evolution, amendments, runtime successors, gates
+- source_family: 38 Protocol-frozen canonical analysis inputs
+  role: all measured quantitative/statistical evidence used by this report
+- source_family: P00/P01 Phase Analysis, Layer0, Evidence Map, Layer10 material
+  role: cross-phase continuity and already-governed prior context
+external_literature_role: original/authoritative model papers, dataset references,
+  reproducibility/foundation-model/few-shot context; never used to overwrite project
+  evidence
+canonical_analysis_inputs_manifest: machine_readable/P02_canonical_analysis_inputs.yaml

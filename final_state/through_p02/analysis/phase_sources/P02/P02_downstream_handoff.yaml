@@ -1,0 +1,66 @@
+phase_id: P02
+analysis_release_id: P02-PHASE-ANALYSIS-FINAL-R2
+layer0_handoff:
+  candidate_claim_ids:
+  - P02-CLAIM-CAND-001
+  - P02-CLAIM-CAND-002
+  - P02-CLAIM-CAND-003
+  - P02-CLAIM-CAND-004
+  - P02-CLAIM-CAND-005
+  - P02-CLAIM-CAND-006
+  - P02-CLAIM-CAND-007
+  - P02-CLAIM-CAND-008
+  - P02-CLAIM-CAND-009
+  - P02-CLAIM-CAND-010
+  status: PENDING_REVIEW
+  prohibited_stronger_domains:
+  - clinical efficacy/safety
+  - calibrated uncertainty
+  - threshold/readiness policy effectiveness
+  - selective risk/abstention
+  - temporal/stress robustness
+  - embodiment
+  - five-repeat A4 stability
+  - dense deep-budget A4 curve
+  - full Build Book A4 equivalence
+evidence_map_handoff:
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  findings:
+  - P02-FIND-001
+  - P02-FIND-002
+  - P02-FIND-003
+  - P02-FIND-004
+  - P02-FIND-005
+  - P02-FIND-006
+  - P02-FIND-007
+  - P02-FIND-008
+  - P02-FIND-009
+  - P02-FIND-010
+  - P02-FIND-011
+  - P02-FIND-012
+  - P02-FIND-013
+  - P02-FIND-014
+  traceability_file: P02_results_to_claims.yaml
+  canonical_analysis_inputs_count: 38
+layer10_handoff:
+  figure_sources: table_sources and canonical analysis_inputs
+  figures:
+  - P02_Figure_01_A0_fulltrain_model_by_dataset.png
+  - P02_Figure_02_Lee2019_MI_participant_distribution.png
+  - P02_Figure_02_PhysioNetMI_participant_distribution.png
+  - P02_Figure_03_low_label_BNCI2014_001.png
+  - P02_Figure_03_low_label_Lee2019_MI.png
+  - P02_Figure_03_low_label_PhysioNetMI.png
+  - P02_Figure_04_training_policy_challenger_effect.png
+  - P02_Figure_05_A4_role_control_effects.png
+  - P02_Figure_06_Stage18S_sign_consistency.png
+  negative_result_visualization: P02-FIND-013
+  limitation_warnings:
+  - A4 claim ceiling
+  - Stage18S post-hoc status
+  - low-label single-subset limitation
+p03_handoff:
+  readiness: READY_WITH_CARRIED_LIMITATIONS
+  canonical_decoder_evidence: A0 and canonical checkpoints/predictions from accepted
+    P02 run
+  must_not_treat_as: calibrated or policy-ready predictions

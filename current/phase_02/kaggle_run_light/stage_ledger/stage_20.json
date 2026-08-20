@@ -1,0 +1,85 @@
+{
+  "stage_id": "20",
+  "status": "SUCCESS",
+  "attempt_id": "b5a19c3412a2",
+  "inputs": {},
+  "input_hashes": {},
+  "outputs": {
+    "status": "PASS",
+    "runtime_evidence_checked": true,
+    "prediction_partitions": 1014,
+    "a0": true,
+    "a4": true,
+    "c4c5": true,
+    "p03": {
+      "status": "PASS",
+      "missing_prediction_fields": [],
+      "missing_support_fields": [],
+      "required_prediction_fields": [
+        "budget_id",
+        "budget_repeat_id",
+        "checkpoint_id",
+        "class_order",
+        "dataset_id",
+        "model_id",
+        "model_seed",
+        "model_variant",
+        "score_semantics",
+        "score_type",
+        "score_vector",
+        "session_id",
+        "source_event_id",
+        "split_id",
+        "split_role",
+        "subject_id",
+        "window_id",
+        "y_pred"
+      ],
+      "required_support_fields": [
+        "ablation_id",
+        "aggregation_identity",
+        "condition_id",
+        "config_sha256",
+        "failure_missingness_status",
+        "metric_dictionary_reference",
+        "run_cell_id",
+        "scientific_freeze_id"
+      ]
+    },
+    "readiness_record": "records/Layer2ReadinessReport/dataset=ALL/branch=READINESS/budget=ALL/P02-L2-READINESS-P03.jsonl",
+    "artifact": "stage_artifacts/20_readiness.json"
+  },
+  "output_hashes": {
+    "status": "727e9bd17b077ba162e13ba877135cc6fbc6b30f83da0b34b3e20233f1cc885f",
+    "runtime_evidence_checked": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+    "prediction_partitions": "df4865fca1f159162557359ef967f9502087f57527b0e030e139933e54f3061e",
+    "a0": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+    "a4": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+    "c4c5": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+    "p03": "7201db9d27845195739b50f5438c52f3802e5ec920cadd13490a71cfd7611261",
+    "readiness_record": "7470c5e6706bc717ba19577fd1346aefd4108c35efa34f626e4618e8237fb7c8",
+    "artifact": "ae74c4e279a623e1607037fd61272db8c9e95487ba920bbea51138aefe43853e"
+  },
+  "dependencies": [
+    "19"
+  ],
+  "elapsed_seconds": 0.2999687194824219,
+  "log_path": "logs/stage_20_b5a19c3412a2.log",
+  "heartbeat_write_errors": [],
+  "observability_status": "PASS",
+  "blockers": [],
+  "observations": [],
+  "revision_fingerprint": {
+    "notebook_revision": "R4",
+    "notebook_id": "IHARQ-P02-COMPLETE-EXECUTION-AND-ANALYSIS-R4",
+    "source_sha256": "a54bfa816acc6763c1d1042b8c65cf54ae04ec774c57ec50de86014a6730c5fa",
+    "config_sha256": "d82334535e397c681d6172694da96d3fff0143ffb1b63a18876ee1f7778f60a1",
+    "stage_plan_sha256": "043eb30e008af910d37c563e8be8c719ef881cf009aec3e34687dc97bdc34aad",
+    "scientific_freeze_sha256": "7449216c988eec14191ba85300d720547f06fbc6ac7020e9e142bf12a4b0a598",
+    "scientific_freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5"
+  },
+  "runtime_successor": {
+    "id": "P02-RUNTIME-SUCCESSOR-R10-STAGE18-A4-ANCHOR-BUDGET-SINGLE-REPEAT-R1",
+    "scientific_configuration_changed": false
+  }
+}

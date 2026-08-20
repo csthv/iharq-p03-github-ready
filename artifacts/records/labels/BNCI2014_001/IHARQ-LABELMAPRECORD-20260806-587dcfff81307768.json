@@ -1,0 +1,137 @@
+{
+  "record_id": "IHARQ-LABELMAPRECORD-20260806-587dcfff81307768",
+  "record_type": "LabelMapRecord",
+  "schema_version": "1.0-p01",
+  "authority_status": "REGISTRY_REFERENCED",
+  "owner_layer": "L1",
+  "phase_id": "P01",
+  "config_id": "d03f0a7c869dd95a2a67e5a32edc501d52bfc3851d8e761ef56595d8bd1ff52f",
+  "source_ids": [
+    "IHARQ-DATASETRECORD-20260806-42c424800627b6ee"
+  ],
+  "evidence_mode": "IMPLEMENTATION",
+  "limitation_tags": [
+    "NON_CLINICAL",
+    "NO_DEPLOYMENT_CLAIM",
+    "PUBLIC_EEG_ONLY"
+  ],
+  "lifecycle_status": "VALIDATED",
+  "fixture": false,
+  "fixture_tags": [],
+  "evidence_role": "PRIMARY",
+  "payload": {
+    "label_map_id": "BNCI2014_001:label-map:d03f0a7c869d",
+    "dataset_id": "BNCI2014_001",
+    "mapping": {
+      "769": "left_hand",
+      "770": "right_hand"
+    },
+    "mapping_metadata": {
+      "276": {
+        "original_name": "idling_eyes_open",
+        "normalized_label": "excluded_execution_or_technical",
+        "included": false,
+        "reason": "BASELINE_NOT_BINARY_MI"
+      },
+      "277": {
+        "original_name": "idling_eyes_closed",
+        "normalized_label": "excluded_execution_or_technical",
+        "included": false,
+        "reason": "BASELINE_NOT_BINARY_MI"
+      },
+      "768": {
+        "original_name": "start_trial",
+        "normalized_label": "excluded_execution_or_technical",
+        "included": false
+      },
+      "769": {
+        "original_name": "left_hand",
+        "normalized_label": "left_hand",
+        "included": true
+      },
+      "770": {
+        "original_name": "right_hand",
+        "normalized_label": "right_hand",
+        "included": true
+      },
+      "771": {
+        "original_name": "feet",
+        "normalized_label": "excluded_other_motor_imagery",
+        "included": false,
+        "reason": "OUTSIDE_UNIFIED_BINARY_BRANCH"
+      },
+      "772": {
+        "original_name": "tongue",
+        "normalized_label": "excluded_other_motor_imagery",
+        "included": false,
+        "reason": "OUTSIDE_UNIFIED_BINARY_BRANCH"
+      },
+      "783": {
+        "original_name": "cue_unknown",
+        "normalized_label": "excluded_execution_or_technical",
+        "included": false,
+        "reason": "AMBIGUOUS_CUE_BLOCK_AND_PRESERVE"
+      },
+      "1023": {
+        "original_name": "rejected_trial",
+        "normalized_label": "excluded_execution_or_technical",
+        "included": false,
+        "reason": "PROVIDER_REJECTED_TRIAL"
+      },
+      "1072": {
+        "original_name": "eye_movements",
+        "normalized_label": "excluded_execution_or_technical",
+        "included": false,
+        "reason": "ARTIFACT_OR_TECHNICAL_EVENT"
+      },
+      "32766": {
+        "original_name": "start_run",
+        "normalized_label": "excluded_execution_or_technical",
+        "included": false
+      }
+    },
+    "original_labels": [
+      "769",
+      "770",
+      "771",
+      "772"
+    ],
+    "normalized_labels": [
+      "left_hand",
+      "right_hand"
+    ],
+    "excluded_labels": [
+      "1023",
+      "1072",
+      "276",
+      "277",
+      "32766",
+      "768",
+      "771",
+      "772",
+      "783"
+    ],
+    "unknown_labels": [],
+    "proxy_limitations": [
+      "PROXY_INTENT_ONLY",
+      "PUBLIC_EEG_ONLY"
+    ],
+    "round_trip_required": true,
+    "expected_event_codes": [
+      "1023",
+      "1072",
+      "276",
+      "277",
+      "32766",
+      "768",
+      "769",
+      "770",
+      "771",
+      "772",
+      "783"
+    ],
+    "unknown_event_behavior": "BLOCK_SOURCE_EVENT_WITH_UNKNOWN_LABEL"
+  },
+  "ablation_id": null,
+  "semantic_hash": "587dcfff813077685eaa34b9b204eae5791be7c5d25f2a500ddaff39b0348f84"
+}

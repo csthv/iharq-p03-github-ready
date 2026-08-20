@@ -1,0 +1,149 @@
+report_id: IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+coverage:
+- P00
+- P01
+- P02
+phases:
+  P00:
+    inherited_from: []
+    scientific_role: Non-empirical engineering, schema, interface, validation, reproducibility
+      and contract foundation.
+    produced:
+    - 19/19 registered engineering cells PASS
+    - 102/102 deterministic tests PASS
+    - 85 schemas
+    - 35 configs
+    - 79 record-family profiles
+    - 11/11 Layer 0-10 foundation interfaces PASS
+    - P01-P15 reusable contract surfaces
+    findings:
+    - P00-F-001
+    - P00-F-002
+    - P00-F-003
+    - P00-F-004
+    - P00-F-005
+    - P00-F-006
+    - P00-F-007
+    - P00-F-008
+    - P00-F-009
+    limitations:
+    - P00-LIM-001
+    - P00-LIM-002
+    - P00-LIM-003
+    - P00-LIM-004
+    - P00-LIM-L0-001
+    handoff_to:
+    - P01
+    evidence_ceiling: ENGINEERING_FOUNDATION / VALIDATION / LOCAL_REPRODUCIBILITY;
+      no scientific effectiveness.
+  P01:
+    inherited_from:
+    - P00
+    artifact_dependencies:
+    - P00 schemas/configs/record/interface contracts
+    - P00 validation and package conventions
+    scientific_dependencies:
+    - P00 foundation conformance sufficient to instantiate governed Layer-1 records
+      and handoffs
+    scientific_role: Public EEG data provenance, subject-group split, preprocessing/window
+      materialization, low-label identities, A0-A13 readiness and A4 R2 matched substrate.
+    produced:
+    - 3 public EEG datasets
+    - 172 subject groups
+    - 12,910 accepted events -> 12,910 valid core windows
+    - 18 low-label budget rows
+    - 12,910/12,910 matched A4 R2 parents
+    - 27/27 stages PASS
+    - 16/16 gates PASS
+    - 50/50 regression tests PASS
+    findings:
+    - P01-FIND-001
+    - P01-FIND-002
+    - P01-FIND-003
+    - P01-FIND-004
+    - P01-FIND-005
+    - P01-FIND-006
+    - P01-FIND-007
+    - P01-FIND-008
+    - P01-FIND-009
+    - P01-FIND-010
+    - P01-FIND-011
+    - P01-FIND-012
+    - P01-FIND-013
+    - P01-FIND-014
+    limitations:
+    - PUBLIC_EEG_ONLY
+    - NON_CLINICAL
+    - NO_DEPLOYMENT_CLAIM
+    - PRIVATE_KAGGLE_EXTERNAL_ARTIFACT_ACCESS
+    - A4_R2_RETROSPECTIVE_FEASIBILITY_ORIGIN_NOT_CONFIRMATORY_IN_P01
+    - ACTUAL_RUNTIME_PYTHON_3_12_13_WITH_COMPATIBILITY_AMENDMENT
+    - ADAPTIVE_DISK_RESOURCE_AMENDMENT
+    - SOURCE_LICENSE_REDISTRIBUTION_CONSTRAINTS
+    - BINARY_MI_BRANCH_SCOPE
+    handoff_to:
+    - P02
+    evidence_ceiling: Data provenance/integrity/readiness/reproducibility; no decoder
+      effectiveness in P01.
+  P02:
+    inherited_from:
+    - P00
+    - P01
+    artifact_dependencies:
+    - P01 dataset identities
+    - P01 subject-group split
+    - P01 preprocessing/core windows
+    - P01 low-label budget identities
+    - P01 A4 R2 matched substrate
+    scientific_dependencies:
+    - P01 denominator/split/leakage closure allows P02 differences to be interpreted
+      as decoder/condition evidence rather than silent data-contract mutation
+    scientific_role: Layer-2 decoder/baseline empirical measurement, low-label stress
+      test, A4 controls, training-policy diagnostics/corrections, failure/negative-evidence
+      preservation and downstream prediction/checkpoint readiness.
+    produced:
+    - A0 678/678 terminal cells
+    - 657 A0 successes; 3 failed; 15 conditional skips; 3 dependency blocked
+    - A4 1,218 terminal cells
+    - 591 A4 successes; 576 conditional skips; 9 input-incompatible; 42 not-applicable-repeat
+      slots
+    - 14 finalized findings
+    - 10 candidate claims pending Layer 0
+    findings:
+    - P02-FIND-001
+    - P02-FIND-002
+    - P02-FIND-003
+    - P02-FIND-004
+    - P02-FIND-005
+    - P02-FIND-006
+    - P02-FIND-007
+    - P02-FIND-008
+    - P02-FIND-009
+    - P02-FIND-010
+    - P02-FIND-011
+    - P02-FIND-012
+    - P02-FIND-013
+    - P02-FIND-014
+    limitations:
+    - Canonical A4 refit evidence is limited to one executed refit repeat and governed
+      deep anchor budgets; five-repeat stability and dense deep-budget characterization
+      are not established.
+    - The low-label analysis uses one frozen subset per budget rather than repeated
+      independent subset sampling; sample-efficiency/stability claims remain qualified.
+    - BNCI2014_001 contributes one held-out test participant in the frozen P02 evaluation
+      and is therefore descriptive for participant-level inference.
+    - Stage 18S is post-hoc descriptive sensitivity evidence and does not modify canonical
+      Stage 18/G18 or create confirmatory repeat evidence.
+    - P02 covers the governed public EEG datasets/model families and does not establish
+      clinical, deployment, calibration, threshold, abstention, safety, or embodiment
+      claims.
+    - External literature headline numbers are generally methodological/contextual
+      references because protocols, datasets, splits, supervision, and metrics differ.
+    handoff_to:
+    - Layer0
+    - Evidence Map
+    - Layer10
+    - P03
+    evidence_ceiling: Layer-2 raw decoder/baseline, descriptive low-label, governed
+      A4/control and readiness evidence; no clinical/deployment/calibration/threshold/abstention/temporal-stress/embodiment
+      claims.

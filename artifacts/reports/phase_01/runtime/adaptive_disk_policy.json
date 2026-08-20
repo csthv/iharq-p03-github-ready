@@ -1,0 +1,45 @@
+{
+  "policy": {
+    "policy_id": "P01-L1-KAGGLE-ADAPTIVE-DISK-R1",
+    "policy_kind": "RUNTIME_RESOURCE_AMENDMENT_ONLY",
+    "legacy_project_preflight_gb": 60,
+    "legacy_recommended_gb": 90,
+    "startup_floor_gib": 6.0,
+    "startup_fixed_footprint_multiplier": 1.25,
+    "startup_additional_reserve_gib": 3.0,
+    "soft_warning_floor_gib": 4.0,
+    "hard_emergency_floor_gib": 1.5,
+    "minimum_export_reserve_gib": 1.5,
+    "export_bundle_multiplier": 1.25,
+    "export_additional_reserve_gib": 0.5,
+    "active_sources_unchanged": [
+      "PhysioNetMI",
+      "BNCI2014_001",
+      "Lee2019_MI"
+    ],
+    "automatic_source_removal_allowed": false,
+    "cache_eviction": "DELETE_ONLY_AFTER_SUCCESSFUL_LOAD_AND_SHA256_REVERIFICATION",
+    "read_only_input_deletion_allowed": false,
+    "scientific_freeze_unchanged": "P01-L1-OFFICIAL-RUN-FREEZE-R2"
+  },
+  "startup_calculation": {
+    "runtime_input_bytes": 7641752,
+    "dependency_layer_bytes": 542213634,
+    "fixed_footprint_bytes": 549855386,
+    "calculated_required_bytes": 3908544705,
+    "effective_required_bytes": 6442450944,
+    "effective_required_gib": 6.0
+  },
+  "snapshot": {
+    "event": "STAGE_01_ADAPTIVE_PREFLIGHT",
+    "captured_unix": 1786113123.0517013,
+    "disk_total_bytes": 20957446144,
+    "disk_used_bytes": 603697152,
+    "disk_free_bytes": 20336971776,
+    "disk_free_gib": 18.94,
+    "source_cache_bytes": 0,
+    "runtime_input_bytes": 7641752,
+    "dependency_layer_bytes": 542213634,
+    "bundle_bytes": 386583
+  }
+}

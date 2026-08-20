@@ -1,0 +1,31 @@
+phase_id: P02
+layer_id: L2
+analysis_release_id: P02-PHASE-ANALYSIS-FINAL-R2
+unresolved_questions:
+- id: P02-UQ-001
+  question: Would repeated independent low-label subset sampling produce stable sample-efficiency
+    rankings?
+  why_unresolved: P02 uses one inherited exact frozen subset per budget.
+  future_test: Prospective repeated-subset low-label protocol.
+- id: P02-UQ-002
+  question: Would A4 effect directions stabilize under the originally envisioned five-repeat
+    design?
+  why_unresolved: Canonical Stage18 executes refit repeat 0 only; Stage18S is three-repeat
+    descriptive/post-hoc.
+  future_test: Prospective full five-repeat A4 replication.
+- id: P02-UQ-003
+  question: What is the dense deep-model A4 response between anchor budgets?
+  why_unresolved: Canonical deep A4 budgets are 1/class, 8/class and FULL_TRAIN.
+  future_test: Prospective dense deep-budget A4 grid.
+- id: P02-UQ-004
+  question: Would participant-aware model selection outperform a fixed global decoder
+    family?
+  why_unresolved: P02 observes participant heterogeneity but does not test a personalization
+    policy.
+  future_test: Prospective participant-aware selection study.
+- id: P02-UQ-005
+  question: Which mechanism specifically explains architecture-dependent Stage11/12
+    optimization sensitivity?
+  why_unresolved: P02 changes multiple training-policy elements and diagnostics are
+    not a causal factorial ablation.
+  future_test: Prospective factorial training-policy ablation.

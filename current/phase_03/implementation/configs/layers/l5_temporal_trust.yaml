@@ -1,0 +1,23 @@
+layer: L5
+phase: P00
+foundation_only: true
+regimes:
+- STABLE
+- DEGRADED
+- VOLATILE
+- RECOVERY
+- UNKNOWN
+trust_states:
+- TRUSTED
+- CAUTION
+- UNTRUSTED
+- RECOVERING
+- BLOCKED
+warning_types:
+- WARNING
+- STOP_LOSS
+- COOLDOWN
+- RECOVERY
+- SILENT_RESET_BLOCK
+chronology_fail_closed: true
+real_temporal_inference: false

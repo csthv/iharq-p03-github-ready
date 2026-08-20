@@ -1,0 +1,204 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/csthv/IHARQ/schemas/records/TemporalTrustRecord.schema.json",
+  "title": "TemporalTrustRecord Phase 0 foundation profile",
+  "type": "object",
+  "required": [
+    "record_id",
+    "record_type",
+    "schema_version",
+    "authority_status",
+    "owner_layer",
+    "phase_id",
+    "config_id",
+    "source_ids",
+    "evidence_mode",
+    "limitation_tags",
+    "lifecycle_status",
+    "fixture",
+    "fixture_tags",
+    "evidence_role",
+    "payload"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "pattern": "^IHARQ-[A-Z][A-Z0-9_]*-[0-9]{8}-[0-9a-f]{16}$"
+    },
+    "record_type": {
+      "const": "TemporalTrustRecord"
+    },
+    "schema_version": {
+      "const": "1.0-foundation"
+    },
+    "authority_status": {
+      "const": "SOURCE_REFERENCED_LOCAL_PROFILE"
+    },
+    "owner_layer": {
+      "const": "L5"
+    },
+    "phase_id": {
+      "const": "P00"
+    },
+    "config_id": {
+      "type": "string"
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "evidence_mode": {
+      "enum": [
+        "FOUNDATION",
+        "IMPLEMENTATION",
+        "CONFORMANCE",
+        "VALIDATION",
+        "REPRODUCIBILITY_READINESS"
+      ]
+    },
+    "limitation_tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "lifecycle_status": {
+      "enum": [
+        "CREATED",
+        "VALIDATED",
+        "ACCEPTED",
+        "DIAGNOSTIC_ONLY",
+        "BLOCKED",
+        "SUPERSEDED",
+        "INVALIDATED"
+      ]
+    },
+    "fixture": {
+      "type": "boolean"
+    },
+    "fixture_tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "evidence_role": {
+      "enum": [
+        "PRIMARY",
+        "DERIVED",
+        "GOVERNANCE",
+        "RENDERING",
+        "PACKAGING"
+      ]
+    },
+    "payload": {
+      "anyOf": [
+        {
+          "type": "object",
+          "required": [
+            "temporal_trust_id",
+            "regime_state_id",
+            "trust_score"
+          ],
+          "properties": {
+            "temporal_trust_id": {
+              "type": "string"
+            },
+            "regime_state_id": {
+              "type": "string"
+            },
+            "trust_score": {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          },
+          "additionalProperties": true
+        },
+        {
+          "type": "object",
+          "required": [
+            "temporal_trust_id",
+            "regime_state_id",
+            "sequence_id",
+            "window_start",
+            "window_end",
+            "trust_score",
+            "history_record_ids",
+            "chronology_status",
+            "reuse_status"
+          ],
+          "properties": {
+            "temporal_trust_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "regime_state_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "sequence_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "window_start": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "window_end": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "trust_score": {
+              "type": "string",
+              "pattern": "^-?(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+            },
+            "history_record_ids": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "chronology_status": {
+              "enum": [
+                "VALID",
+                "INVALID",
+                "INSUFFICIENT_HISTORY"
+              ]
+            },
+            "reuse_status": {
+              "enum": [
+                "CURRENT_SEQUENCE_ONLY",
+                "CROSS_SEQUENCE_FORBIDDEN",
+                "INVALID"
+              ]
+            },
+            "recovery_provenance_id": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "ablation_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "x-iharq-authority-status": "SOURCE_REFERENCED_LOCAL_PROFILE"
+}

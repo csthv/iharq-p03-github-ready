@@ -1,0 +1,79 @@
+{
+  "sources": [
+    {
+      "dataset_id": "PhysioNetMI",
+      "authority_status": "PRIMARY_SELECTED",
+      "active_for_run": true,
+      "exact_revision": "1.0.0",
+      "citation": "Schalk G. EEG Motor Movement/Imagery Dataset (version 1.0.0). PhysioNet. 2009. DOI 10.13026/C28G6P; associated instrumentation paper: Schalk et al., BCI2000, IEEE TBME 2004.",
+      "license": "Open Data Commons Attribution License 1.0 (ODC-By-1.0)",
+      "access_method": "MOABB_1_5_0_OFFICIAL_PHYSIONET_DOWNLOAD",
+      "official_reference": "https://physionet.org/content/eegmmidb/1.0.0/; https://doi.org/10.13026/C28G6P",
+      "published_checksum": "PROVIDER_SHA256SUMS_TXT_AVAILABLE_AT_DATASET_ROOT",
+      "checksum_policy": "VERIFY_EACH_DOWNLOADED_FILE_AGAINST_PHYSIONET_SHA256SUMS_TXT_THEN_INDEPENDENTLY_RECOMPUTE_AND_FREEZE_AGGREGATE",
+      "observed_aggregate_sha256": "28cd2062983b6236f9a0e7fdee91fc9d8d5aad8eee3ef561cff5828ae89bf2ba",
+      "checksum_status": "COMPUTED_AND_FROZEN_FOR_RUN",
+      "redistribution_allowed": "YES_WITH_ODC_BY_1_0_ATTRIBUTION; RAW_BYTES_EXCLUDED_FROM_PHASE_BUNDLE"
+    },
+    {
+      "dataset_id": "BNCI2014_001",
+      "authority_status": "PRIMARY_SELECTED",
+      "active_for_run": true,
+      "exact_revision": "001-2014 provider file set A01T/A01E through A09T/A09E",
+      "citation": "Tangermann M, Müller KR, Aertsen A, et al. Review of the BCI Competition IV. Frontiers in Neuroscience. 2012;6:55. DOI 10.3389/fnins.2012.00055.",
+      "license": "Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0)",
+      "access_method": "MOABB_1_5_0_OFFICIAL_BNCI_DOWNLOAD",
+      "official_reference": "https://bnci-horizon-2020.eu/database/data-sets; https://moabb.neurotechx.com/docs/generated/moabb.datasets.BNCI2014_001.html; https://doi.org/10.3389/fnins.2012.00055",
+      "published_checksum": "NO_SINGLE_PROVIDER_WIDE_PUBLISHED_SHA256",
+      "checksum_policy": "COMPUTE_SHA256_PER_GDF/MAT_FILE_AND_FREEZE_AGGREGATE_BEFORE_ADMISSION",
+      "observed_aggregate_sha256": "04a5390f8f36eaadbc0c480ec9377ce1b99caf0b7ab53bad9fda12347995bc49",
+      "checksum_status": "COMPUTED_AND_FROZEN_FOR_RUN",
+      "redistribution_allowed": "NO_DERIVATIVE_REDISTRIBUTION; RAW_BYTES_EXCLUDED; ONLY METADATA/HASHES/RECORDS EXPORTED"
+    },
+    {
+      "dataset_id": "Lee2019_MI",
+      "authority_status": "PRIMARY_SELECTED_WITH_SOURCE_QUALIFICATIONS",
+      "active_for_run": true,
+      "exact_revision": "GigaDB dataset DOI 10.5524/100542; MOABB 1.5.0 Lee2019_MI wrapper; labeled offline/train MI runs only",
+      "citation": "Lee MH, Kwon OY, Kim YJ, et al. EEG dataset and OpenBMI toolbox for three BCI paradigms: an investigation into BCI illiteracy. GigaScience. 2019;8(5):giz002. DOI 10.1093/gigascience/giz002; data DOI 10.5524/100542.",
+      "license": "GNU General Public License v3.0 as documented by the maintained MOABB source card; source terms retained in DatasetCard",
+      "access_method": "MOABB_1_5_0_OFFICIAL_GIGADB_DOWNLOAD",
+      "official_reference": "https://moabb.neurotechx.com/docs/generated/moabb.datasets.Lee2019_MI.html; https://doi.org/10.1093/gigascience/giz002; https://doi.org/10.5524/100542",
+      "published_checksum": "NO_SINGLE_PROVIDER_WIDE_PUBLISHED_SHA256",
+      "checksum_policy": "COMPUTE_SHA256_PER_SOURCE_ARCHIVE/FILE_AND_FREEZE_AGGREGATE_BEFORE_ADMISSION",
+      "observed_aggregate_sha256": "3a07b2f302da949efd418a0712d5a9427df34dcb8b027ca553fae8e67a849f78",
+      "checksum_status": "COMPUTED_AND_FROZEN_FOR_RUN",
+      "redistribution_allowed": "ONLY_AS_PER_GPL_3_0_AND_GIGADB_SOURCE_TERMS; RAW_BYTES_EXCLUDED_FROM_PHASE BUNDLE"
+    },
+    {
+      "dataset_id": "Cho2017",
+      "authority_status": "SCREENED_FALLBACK",
+      "active_for_run": false,
+      "exact_revision": "GigaDB dataset DOI 10.5524/100295; MOABB 1.5.0 source card",
+      "citation": "Cho H, Ahn M, Ahn S, Kwon M, Jun SC. EEG datasets for motor imagery brain-computer interface. GigaScience. 2017;6(7):gix034. DOI 10.1093/gigascience/gix034; data DOI 10.5524/100295.",
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "access_method": "NOT_ACTIVE_FOR_P01_OFFICIAL_RUN",
+      "official_reference": "https://moabb.neurotechx.com/docs/generated/moabb.datasets.Cho2017.html; https://doi.org/10.1093/gigascience/gix034; https://doi.org/10.5524/100295",
+      "published_checksum": "NOT_APPLICABLE_TO_INACTIVE_SOURCE",
+      "checksum_policy": "COMPUTE_AND_FREEZE_ONLY_IF_ACTIVATED_BY_VERSIONED_AMENDMENT",
+      "observed_aggregate_sha256": null,
+      "checksum_status": "NOT_EXECUTED",
+      "redistribution_allowed": "CC_BY_4_0_WITH_ATTRIBUTION; NOT DOWNLOADED IN CURRENT RUN"
+    },
+    {
+      "dataset_id": "GuttmannFlury2025_MI",
+      "authority_status": "SCREENED_CURRENT_DELTA_CANDIDATE",
+      "active_for_run": false,
+      "exact_revision": "Zenodo v1 DOI 10.5281/zenodo.18970793, published 2026-03-12; re-hosted from Synapse DOI 10.7303/syn64005218; MOABB 1.5.0 BDF conversion",
+      "citation": "Guttmann-Flury and colleagues. Three-session motor imagery/motor execution EEG dataset. Scientific Data. 2025. DOI 10.1038/s41597-025-04861-9.",
+      "license": "Dataset release: CC0 1.0 Universal; associated article publication license is separate",
+      "access_method": "NOT_ACTIVE_FOR_P01_OFFICIAL_RUN",
+      "official_reference": "https://zenodo.org/records/18970793; https://doi.org/10.5281/zenodo.18970793; https://doi.org/10.7303/syn64005218; https://moabb.neurotechx.com/docs/generated/moabb.datasets.GuttmannFlury2025_MI.html; https://doi.org/10.1038/s41597-025-04861-9",
+      "published_checksum": "NOT_APPLICABLE_TO_INACTIVE_SOURCE",
+      "checksum_policy": "COMPUTE_AND_FREEZE_ONLY_IF_ACTIVATED_BY_VERSIONED_AMENDMENT",
+      "observed_aggregate_sha256": null,
+      "checksum_status": "NOT_EXECUTED",
+      "redistribution_allowed": "CC0_1_0_SOURCE; NOT DOWNLOADED IN CURRENT RUN"
+    }
+  ]
+}

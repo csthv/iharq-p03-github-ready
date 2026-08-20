@@ -1,0 +1,81 @@
+{
+  "status": "SUCCESS",
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "branch": "SSL-CBRAMOD",
+  "member": 1,
+  "checkpoint_sha256": "890182b3906c5a8a8e9235af61d7dceea343b6a7321fe47fdd3f085d1604cdba",
+  "model_id": "SSL-CBRAMOD:A4-R8:PhysioNetMI__P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS__SSL-CBRAMOD__1__1",
+  "score_type": "SOFTMAX_PROBABILITY",
+  "checkpoint_format": "EXTERNAL_GOVERNED_INTERFACE",
+  "execution_device": "cuda:0",
+  "latency_summary": {
+    "batch1_latency_median_s": 0.06857351500002551,
+    "batch1_latency_p95_s": 0.06857351500002551,
+    "repeats": 1
+  },
+  "r8_policy_sha256": "a21655f9b52cfbf817b1b271f758739cf01b1e7a75e786c880ccdd1a3c58ef32",
+  "r8_runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R10-STAGE18-A4-ANCHOR-BUDGET-SINGLE-REPEAT-R1",
+  "recipe_id": "R6-CBRAMOD-SOURCE-CENTERED-R1",
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "class_weights": null,
+  "class_weight_frozen_from_a0": true,
+  "matching_a0_checkpoint_sha256": "15539aba2afbb307864c74623b221fbb92d03a053551d6953be2f65b12ba6e1e",
+  "test_loaded_after_checkpoint_sealed": true,
+  "test_set_used_for_selection": false,
+  "raw_train_shape": [
+    2,
+    64,
+    320
+  ],
+  "raw_validation_shape": [
+    495,
+    64,
+    320
+  ],
+  "raw_test_shape": [
+    495,
+    64,
+    320
+  ],
+  "training_provenance": {
+    "recipe_id": "R6-CBRAMOD-SOURCE-CENTERED-R1",
+    "best_epoch": 1,
+    "epochs_completed": 41,
+    "best_validation": {
+      "BACC": 0.5276716622587913,
+      "F1_MACRO": 0.5254113675101613,
+      "ACC": 0.5272727272727272,
+      "CONFUSION": [
+        [
+          115,
+          134
+        ],
+        [
+          100,
+          146
+        ]
+      ],
+      "CLASS_SUPPORT": [
+        249,
+        246
+      ],
+      "PRED_COMPLETE": 495,
+      "ROC_AUC": 0.5558657393802853,
+      "ROC_AUC_STATUS": "PASS",
+      "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+    },
+    "elapsed_seconds": 87.78867411613464,
+    "prepared_train_shape": [
+      2,
+      64,
+      400
+    ],
+    "prepared_validation_shape": [
+      495,
+      64,
+      400
+    ],
+    "test_set_used_for_selection": false,
+    "same_gpu_virtual_cuda_rng": true
+  }
+}

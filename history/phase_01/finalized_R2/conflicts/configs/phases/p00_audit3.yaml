@@ -1,0 +1,15 @@
+phase_id: P00
+audit_id: IHARQ-P00-OFFICIAL-LAYER-AUDIT-03-R1
+scope:
+- L8
+- L9
+- L10
+- L0-L10_INTEGRATION
+review_mode: LLM_ONLY_MULTI_PASS_FAIL_CLOSED
+predecessor_handoffs:
+- phase_0_layers_0_to_3_official_audit/R2
+- P00-OFFICIAL-AUDIT2-HANDOFF-R3
+github_mode: READ_ONLY
+no_github_writes: true
+no_empirical_execution: true
+five_llm_passes_required: true

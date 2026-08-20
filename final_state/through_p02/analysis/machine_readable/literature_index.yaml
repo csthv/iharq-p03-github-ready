@@ -1,0 +1,203 @@
+verified_on: '2026-08-14'
+references:
+- study_id: LIT-EEGNET
+  Study: Lawhern et al. 2018
+  Model/topic: EEGNet
+  Source: Journal of Neural Engineering 15(5):056013
+  DOI: 10.1088/1741-2552/aace8c
+  URL: https://pubmed.ncbi.nlm.nih.gov/29932424/
+  Original setting: Four BCI paradigms; within- and cross-subject; compact depthwise/separable
+    CNN; limited-data emphasis
+  IHARQ relation: EEGNet is one P02 neural decoder; IHARQ uses frozen P01 binary left/right
+    task, subject-group split, 160 Hz 8-32 Hz 3 s windows, governed validation/test
+    isolation
+  Comparability: methodological reference only / partial architecture comparison
+  Key use: Motivates compact EEG-specific architecture and source-centered training
+    recipe; not a direct performance benchmark.
+- study_id: LIT-FBCNET
+  Study: Mane et al. 2020/2021
+  Model/topic: FBCNet
+  Source: IEEE EMBC 2020; extended FBCNet preprint/toolbox
+  DOI: PMID 33018625; arXiv:2104.01233
+  URL: https://pubmed.ncbi.nlm.nih.gov/33018625/
+  Original setting: Filter-bank multi-view MI decoder with variance layer; subject-specific/cross-validation
+    settings including OpenBMI/BCIC-IV-2a
+  IHARQ relation: P02 uses author-centered model construction but IHARQ split, binary
+    task, preprocessing, low-label budgets and test isolation differ
+  Comparability: methodological reference only
+  Key use: Supports use of filter-bank/variance inductive bias; source diagnostics
+    informed Stage12 author-centered horizon.
+- study_id: LIT-DBCONF
+  Study: Wang et al. 2026
+  Model/topic: DBConformer
+  Source: IEEE Journal of Biomedical and Health Informatics 30(5):4134-4147
+  DOI: 10.1109/JBHI.2025.3622725
+  URL: https://pubmed.ncbi.nlm.nih.gov/41129442/
+  Original setting: Dual temporal/spatial Conformer across MI, seizure and SSVEP under
+    four evaluation settings
+  IHARQ relation: P02 DNN-SEQ resolves to DBConformer with P01-compatibility patch
+    and IHARQ-specific binary subject-group protocol
+  Comparability: methodological reference only
+  Key use: Context for strong descriptive full-training performance on two IHARQ datasets;
+    headline paper results are not numerically comparable.
+- study_id: LIT-CBRAMOD
+  Study: Wang et al. 2025
+  Model/topic: CBraMod
+  Source: ICLR 2025
+  DOI: ICLR 2025 proceedings
+  URL: https://proceedings.iclr.cc/paper_files/paper/2025/hash/bbbd6d915cb90be21c1254a82d45cedd-Abstract-Conference.html
+  Original setting: Criss-cross EEG foundation model; masked pretraining; 10 downstream
+    tasks across 12 public datasets
+  IHARQ relation: P02 fine-tunes/uses governed CBraMod branch under P01 binary MI
+    substrate and P02 model-local adaptation
+  Comparability: methodological reference only
+  Key use: Context for foundation-model branch and the difficulty of transferring
+    generic pretrained representations under constrained task-specific supervision.
+- study_id: LIT-RIEMANN
+  Study: Barachant et al. 2013
+  Model/topic: Riemannian covariance methods
+  Source: Neurocomputing 112:172-178
+  DOI: 10.1016/j.neucom.2012.12.039
+  URL: https://www.sciencedirect.com/science/article/abs/pii/S0925231213001574
+  Original setting: Covariance-matrix classification with Riemannian kernel for MI
+    BCI
+  IHARQ relation: P02 includes Riemannian tangent-space and alignment variants under
+    a common subject-grouped test protocol
+  Comparability: methodological reference only
+  Key use: Context for competitive classical/Riemannian baselines and covariance geometry.
+- study_id: LIT-MOABB
+  Study: Chevallier et al. 2024
+  Model/topic: MOABB reproducibility benchmark
+  Source: large open EEG-BCI reproducibility benchmark
+  DOI: arXiv:2404.15319
+  URL: https://arxiv.org/abs/2404.15319
+  Original setting: 30 pipelines, 36 public datasets; standardized benchmark spanning
+    raw, Riemannian and deep pipelines
+  IHARQ relation: P02 similarly values multi-family, multi-dataset comparison but
+    uses its own frozen P01 split/budget/ablation contract
+  Comparability: contextual benchmark only
+  Key use: Supports interpretation that model-family performance is evaluation-regime
+    dependent and reproducible benchmarking matters.
+- study_id: LIT-EEGPT
+  Study: Wang et al. 2024
+  Model/topic: EEGPT
+  Source: NeurIPS 2024
+  DOI: 10.52202/079017-1239
+  URL: https://proceedings.neurips.cc/paper_files/paper/2024/hash/4540d267eeec4e5dbd9dae9448f0b739-Abstract-Conference.html
+  Original setting: 10M-parameter pretrained transformer; multi-task EEG pretraining
+    and linear probing
+  IHARQ relation: Not executed in P02; contextualizes contemporary foundation-model
+    direction and challenges of inter-subject/channel heterogeneity
+  Comparability: methodological reference only
+  Key use: Broader literature positioning only; not an IHARQ comparator.
+- study_id: LIT-OPENBMI
+  Study: Lee et al. 2019
+  Model/topic: OpenBMI / Lee2019_MI dataset
+  Source: GigaScience 8(5):giz002
+  DOI: 10.1093/gigascience/giz002
+  URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC6501944/
+  Original setting: Large EEG dataset/toolbox spanning MI and other BCI paradigms
+  IHARQ relation: Source dataset for Lee2019_MI; P01 imposes IHARQ binary labels,
+    preprocessing and subject-group roles
+  Comparability: dataset provenance; protocol differs
+  Key use: Dataset provenance and external context.
+- study_id: LIT-PHYSIONET
+  Study: Schalk 2009
+  Model/topic: EEG Motor Movement/Imagery Dataset
+  Source: PhysioNet v1.0.0
+  DOI: 10.13026/C28G6P
+  URL: https://www.physionet.org/content/eegmmidb/1.0.0/
+  Original setting: 64-channel BCI2000 motor execution/imagery recordings
+  IHARQ relation: Source dataset for PhysioNetMI; P01 freezes legal left/right MI
+    subset, preprocessing and subject-group split
+  Comparability: dataset provenance; protocol differs
+  Key use: Dataset provenance.
+- study_id: LIT-BCIIV
+  Study: Tangermann et al. 2012
+  Model/topic: BCI Competition IV dataset 2a
+  Source: Frontiers in Neuroscience 6:55
+  DOI: 10.3389/fnins.2012.00055
+  URL: https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2012.00055/full
+  Original setting: 22 EEG channels; four-class MI; competition train/test sessions
+  IHARQ relation: Source family underlying BNCI2014_001; IHARQ uses binary left/right
+    task and own frozen subject-group roles
+  Comparability: dataset provenance / contextual only
+  Key use: Dataset provenance and warning against direct comparison to four-class
+    competition scores.
+- study_id: LIT-TCPL2025
+  Study: Wang et al. 2025
+  Model/topic: TCPL few-shot cross-subject MI decoding
+  Source: Frontiers in Neuroscience 19:1689286
+  DOI: 10.3389/fnins.2025.1689286
+  URL: https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2025.1689286/full
+  Original setting: Few-shot cross-subject MI with task-conditioned prompts, temporal
+    convolution, Transformer and meta-learning on three public datasets
+  IHARQ relation: Context for the continuing difficulty of label-scarce and participant-adaptive
+    MI; P02 does not implement meta-learning or personalization
+  Comparability: methodological context only
+  Key use: Recent evidence that low-label/cross-subject adaptation is an active specialized
+    research problem rather than a solved property of generic decoders.
+- study_id: LIT-EEGFMBENCH2025
+  Study: Xiong et al. 2025
+  Model/topic: EEG-FM-Bench foundation-model benchmark
+  Source: arXiv:2508.17742
+  DOI: arXiv:2508.17742
+  URL: https://arxiv.org/abs/2508.17742
+  Original setting: Standardized multi-task/multi-dataset benchmark of EEG foundation
+    models
+  IHARQ relation: Context for careful evaluation of foundation models such as CBraMod;
+    P02 uses one governed binary MI downstream setting
+  Comparability: contextual benchmark only
+  Key use: Supports the need for standardized downstream evaluation rather than assuming
+    foundation-model superiority from pretraining scale.
+- study_id: LIT-MOABB2026PREPRINT
+  Study: Vasques et al. 2026 preprint
+  Model/topic: Participant-level decoder optimality benchmark
+  Source: arXiv:2606.24394
+  DOI: arXiv:2606.24394
+  URL: https://arxiv.org/abs/2606.24394
+  Original setting: MOABB-style evaluation of 1,056 MI decoding configurations across
+    three public left/right datasets; within-participant/session regime
+  IHARQ relation: Recent contextual evidence on participant-specific decoder rankings;
+    IHARQ P02 uses different subject-grouped held-out test roles and therefore is
+    not directly comparable
+  Comparability: recent preprint; contextual only
+  Key use: Supports discussion that average rankings can obscure participant-specific
+    decoder behavior; not used as proof of P02 personalization value.
+- study_id: LIT-MOABB-ORIGINAL
+  Study: Jayaram & Barachant 2018
+  Model/topic: Reproducible multi-dataset BCI benchmarking
+  Source: Journal of Neural Engineering 15(6):066011
+  DOI: 10.1088/1741-2552/aadea0
+  URL: https://pubmed.ncbi.nlm.nih.gov/30177583/
+  Original setting: 12 open datasets, >250 subjects; standardized pipelines
+  IHARQ relation: Supports the cumulative interpretation that identical decoder pipelines
+    can rank differently across datasets and that reproducible multi-dataset comparison
+    is methodologically important.
+  Comparability: methodological reference only
+  Key use: Cross-phase reproducibility and dataset-heterogeneity context.
+- study_id: LIT-REALWORLD-MI-2025
+  Study: Nzakuna et al. 2025
+  Model/topic: Real-world evaluation of deep learning MI EEG decoders
+  Source: Frontiers in Systems Neuroscience
+  DOI: 10.3389/fnsys.2025.1718390
+  URL: https://pubmed.ncbi.nlm.nih.gov/41472918/
+  Original setting: 10 deep decoders under short-window soft real-time protocol; ranking
+    shifts and inter-subject variability
+  IHARQ relation: Contextualizes P02 observations that rankings and participant outcomes
+    depend on evaluation regime; IHARQ is offline/frozen and therefore not numerically
+    comparable.
+  Comparability: contextual only
+  Key use: External-validity and participant-heterogeneity discussion.
+- study_id: LIT-CROSSSESSION-2022
+  Study: Ma et al. 2022
+  Model/topic: Cross-session variability in MI BCI
+  Source: Scientific Data 9:531
+  DOI: 10.1038/s41597-022-01647-1
+  URL: https://pubmed.ncbi.nlm.nih.gov/36050394/
+  Original setting: 25 subjects across 5 days; within-session, cross-session and adapted
+    evaluation
+  IHARQ relation: Context for why participant/session heterogeneity remains a downstream
+    uncertainty even after frozen data/split integrity.
+  Comparability: contextual only
+  Key use: Cross-phase external-validity and unresolved-question context.

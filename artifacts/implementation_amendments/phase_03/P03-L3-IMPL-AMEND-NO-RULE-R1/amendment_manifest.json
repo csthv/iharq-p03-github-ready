@@ -1,0 +1,79 @@
+{
+  "a2_target_type": "maximum_risk",
+  "a2_target_value": 0.25,
+  "accepted_stages_00_13_mutated": false,
+  "affected_stages": [
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "20",
+    "23"
+  ],
+  "amendment_class": "IMPLEMENTATION_RUNTIME_OVERLAY",
+  "amendment_id": "P03-L3-IMPL-AMEND-NO-RULE-R1",
+  "base_immutable_fingerprint": {
+    "code_sha256": "aa3668558596b20f17010f2ee7f7994bc1059a31b1301025ffaaaab1ce3478a9",
+    "config_sha256": "2eda0689ab42e93c91b3ef9b76e0168d1c13d1feb3d1a552beaade91105ab7c3",
+    "environment_sha256": "67dc3d67c8e0b6b664688c6aa1d2cbcb2b612386422a26d153e45966c070f700",
+    "protocol_sha256": "dc46b87cb802d1a6a3ab0efd3dc6db6be5c3b5c7125c54e95a9cdbea8eef797d",
+    "run_id": "P03-L3-OFFICIAL-09ca82c743e0411a",
+    "source_manifest_sha256": "2753878607d1573b8d95fa8424cf25f666705f6b962353ecc27e64d7850e3017"
+  },
+  "base_package_mutated": false,
+  "base_source_anchor_before_overlay": {
+    "/kaggle/working/iharq_p03_l3/repository/configs/phases/p03.yaml": "ecbeb537fc1d17f92020eb77ed1bbfa82a3d33ab72a992e4754b0343f6a30cf8",
+    "/kaggle/working/iharq_p03_l3/repository/src/iharq/layer3_calibration_uncertainty/conditional_proxies.py": "5822cd35e1731d36bbc4a6cf44c2e28cd4043c4f7f902989d581b9854e91c10c",
+    "/kaggle/working/iharq_p03_l3/repository/src/iharq/layer3_calibration_uncertainty/group_audit.py": "843774cd60e7e1bf8b3d423ce995ab02cb128df33719f4f5a16b66da6c0b9e83",
+    "/kaggle/working/iharq_p03_l3/repository/src/iharq/layer3_calibration_uncertainty/matched_operating_points.py": "9c7f7a818555fc7ea404459bda4c3815f2e861e666f82b516647af03443b5ff2",
+    "/kaggle/working/iharq_p03_l3/repository/src/iharq/layer3_calibration_uncertainty/records.py": "e71a1b5602d6f8292bf3a34c84091068eb36152dfa2e69fc9052bad49b9ff8d2",
+    "/kaggle/working/iharq_p03_l3/repository/src/iharq/layer3_calibration_uncertainty/reliability.py": "20b4dd8c7be48e23e879bd60fd10ba2c04eed06aa647b98baa9433bd23603d8b",
+    "/kaggle/working/iharq_p03_l3/repository/src/iharq/layer3_calibration_uncertainty/selective.py": "fb5ca5b50f520c1ff249faf21fbb99dbc367a49b2b09d356192bfba52815cbad",
+    "/kaggle/working/iharq_p03_l3/repository/src/iharq/layer3_calibration_uncertainty/stages.py": "59940de1e893fa4c7bc4045bee79073f3bb5e296d92ec1254953053681cbb946",
+    "/kaggle/working/iharq_p03_l3/repository/src/iharq/layer3_calibration_uncertainty/thresholds.py": "83aaff1bb1efcf35b10a85b86b28f62ed8c863b0e84362bc4f957aaa915cd529",
+    "/kaggle/working/iharq_p03_l3/repository/src/iharq/layer3_calibration_uncertainty/uncertainty.py": "a01d56e86991fba0110e414a2406fbd55236674856053def5b2c8c9d25cf62a1"
+  },
+  "config_changed": false,
+  "correction_semantics": {
+    "matched_evidence": "structural matching retained; non-success members yield comparability_status=INELIGIBLE",
+    "negative_evidence": "A2/A3 no-rule outcomes and actual failed stage attempts are preserved",
+    "no_legal_threshold": "explicit INELIGIBLE terminal with failure_code=NO_LEGAL_THRESHOLD; rule=None",
+    "threshold_registry": "register SUCCESS rules only; explicit no-rule rows are never converted to thresholds",
+    "zero_coverage": "not fabricated; no-rule application has coverage=None and risk=None"
+  },
+  "created_at_utc": "2026-08-16T14:47:37.874592+00:00",
+  "evaluation_role": "test",
+  "failed_stage14_attempt_preserved": true,
+  "fallback_threshold_permitted": false,
+  "forensic_expected_a2_counts": {
+    "NO_LEGAL_THRESHOLD": 91,
+    "SUCCESS": 194
+  },
+  "overlay_bytes": 49505,
+  "overlay_path": "artifacts/implementation_amendments/phase_03/P03-L3-IMPL-AMEND-NO-RULE-R1/runtime_overlay.py",
+  "overlay_sha256": "4b4aa2d0fd0d648c1a852c80465a5aa823a4464daf276ec2c4d7c4301694e01c",
+  "protocol_changed": false,
+  "reason_code": "EXPECTED_NO_LEGAL_THRESHOLD_WAS_UNCAUGHT_STAGE_FAILURE",
+  "run_id": "P03-L3-OFFICIAL-09ca82c743e0411a",
+  "scientific_method_changed": false,
+  "synthetic_all_reject_fallback_permitted": false,
+  "test_used_for_threshold_selection": false,
+  "threshold_selection_role": "threshold_validation",
+  "unaffected_accepted_stages": [
+    "00",
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "08",
+    "09",
+    "10",
+    "11",
+    "12",
+    "13"
+  ]
+}

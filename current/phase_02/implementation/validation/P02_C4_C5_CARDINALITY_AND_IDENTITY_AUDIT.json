@@ -1,0 +1,48 @@
+{
+  "validation_id": "P02-C4-C5-CARDINALITY-IDENTITY-MULTIPLICITY-AUDIT-R1",
+  "status": "PASS",
+  "frozen_statistical_contract": {
+    "inferential_unit": "participant",
+    "confidence": 0.95,
+    "bootstrap_resamples": 10000,
+    "bootstrap_method": "BCa_WITH_PERCENTILE_FALLBACK",
+    "paired_test": "WILCOXON_TWO_SIDED",
+    "minimum_complete_pairs": 5,
+    "insufficient_support": "DESCRIPTIVE_ONLY",
+    "multiplicity": "HOLM_WITHIN_DATASET_BUDGET_REPEAT_C4_C5_FAMILY"
+  },
+  "comparison_families": [
+    "A4-C4-MODEL-HARD-VOTE vs strongest validation-selected constituent",
+    "A4-C5-MODEL-PROB-AVG vs strongest validation-selected constituent"
+  ],
+  "identity_chain": [
+    "planned_run_cell_id",
+    "ensemble identity",
+    "strongest constituent branch/checkpoint",
+    "dataset",
+    "matched participant/common-event support",
+    "metric source",
+    "statistical result",
+    "figure source",
+    "table source",
+    "handoff refs"
+  ],
+  "runtime_enforcement": [
+    "validation-only strongest selection",
+    "test-set selection rejected",
+    "checkpoint ID parity enforced",
+    "C5 probability/class-order validity enforced",
+    "common-support participant accounting exported",
+    "duplicate comparison IDs rejected",
+    "failure/missingness preserved without membership mutation"
+  ],
+  "A4_C4_C5_MULTIPLICITY_TREATMENT_UNDEFINED": 0,
+  "A4_C4_C5_RESULT_CARDINALITY_MISMATCH": 0,
+  "A4_C4_C5_BROKEN_EVIDENCE_IDENTITIES": 0,
+  "A4_UNRELATED_VALID_EVIDENCE_INVALIDATED_BY_C4_C5_FAILURE": 0,
+  "A4_C4_C5_SILENT_ENSEMBLE_MEMBERSHIP_MUTATION": 0,
+  "A4_STRONGEST_CONSTITUENT_TEST_SET_SELECTION": 0,
+  "A4_C4_C5_UNMATCHED_INFERENCE": 0,
+  "A4_C4_C5_STATISTICS_NOT_USING_FROZEN_CONTRACT": 0,
+  "test_evidence": "tests/test_p02_runtime.py; full_stage_graph_synthetic_integration.json"
+}

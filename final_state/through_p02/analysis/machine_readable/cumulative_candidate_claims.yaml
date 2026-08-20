@@ -1,0 +1,147 @@
+cumulative_candidate_claims:
+- claim_id: CC-01
+  claim_text: IHARQ P00-P02 forms a governed evidence chain in which validated foundation
+    contracts, a frozen provenance-traceable EEG substrate, and Layer-2 decoder evidence
+    remain linked by explicit identities and handoffs.
+  origin_phase: CUMULATIVE
+  supporting_phases:
+  - P00
+  - P01
+  - P02
+  supporting_findings:
+  - CF-01
+  - CF-02
+  - CF-09
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  limitations:
+  - Technical traceability is not scientific/clinical effectiveness by itself.
+  prohibited_stronger_wording: Do not state that the complete project is deployment-ready
+    or clinically validated.
+  recommended_manuscript_role: Methods / reproducibility
+  layer0_status: PENDING_REVIEW
+- claim_id: CC-02
+  claim_text: The P02 decoder results are evaluated on the frozen P01 subject-grouped,
+    denominator-conserving binary motor-imagery data contract rather than on a phase-local
+    redefinition of labels, split or core windows.
+  origin_phase: CUMULATIVE
+  supporting_phases:
+  - P01
+  - P02
+  supporting_findings:
+  - CF-02
+  claim_ceiling: SUPPORTED
+  limitations:
+  - Bounded to the implemented registered leakage/disjointness checks.
+  prohibited_stronger_wording: Do not claim that every conceivable leakage mechanism
+    is impossible.
+  recommended_manuscript_role: Methods / validity
+  layer0_status: PENDING_REVIEW
+- claim_id: CC-03
+  claim_text: Across the three governed P02 datasets, decoder-family performance is
+    context-dependent rather than universally ordered, and participant-level heterogeneity
+    further limits global winner claims.
+  origin_phase: P02_WITH_CUMULATIVE_FOUNDATION
+  supporting_phases:
+  - P01
+  - P02
+  supporting_findings:
+  - CF-03
+  - CF-11
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  limitations:
+  - BNCI held-out test participant n=1; no universal rank claim.
+  prohibited_stronger_wording: Do not claim DBConformer, CSP-LDA or any other decoder
+    is universally best.
+  recommended_manuscript_role: Main Results / Discussion
+  layer0_status: PENDING_REVIEW
+- claim_id: CC-04
+  claim_text: The deterministic low-label populations prepared in P01 exposed difficult,
+    non-monotonic and rank-changing P02 low-label behavior; the completed evidence
+    does not support a universal sample-efficiency ordering.
+  origin_phase: P01_TO_P02
+  supporting_phases:
+  - P01
+  - P02
+  supporting_findings:
+  - CF-04
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  limitations:
+  - Single frozen subset per budget; no repeated-subset stability.
+  prohibited_stronger_wording: Do not claim stable low-label resilience or universal
+    sample-efficiency superiority.
+  recommended_manuscript_role: Secondary Results / Limitations
+  layer0_status: PENDING_REVIEW
+- claim_id: CC-05
+  claim_text: P01 resolved the A4 data-feasibility problem by freezing a fully matched
+    R2 substrate, while P02 found no generic statistically detectable C1-C3 improvement
+    under the accepted constrained A4 execution and observed additional repeat/budget
+    sign sensitivity post hoc.
+  origin_phase: P01_TO_P02
+  supporting_phases:
+  - P01
+  - P02
+  supporting_findings:
+  - CF-05
+  - CF-06
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  limitations:
+  - Single canonical refit repeat, deep anchor budgets, Stage18S post-hoc.
+  prohibited_stronger_wording: Do not claim A4 has zero effect, is five-repeat stable,
+    or is fully equivalent to the originally planned dense grid.
+  recommended_manuscript_role: Ablation Study / negative result
+  layer0_status: PENDING_REVIEW
+- claim_id: CC-06
+  claim_text: The P02 correction history indicates that architecture-specific training-policy
+    fidelity can materially affect whether a decoder appears collapsed or viable,
+    while upstream P00/P01 data and identity foundations remained stable.
+  origin_phase: P02_WITH_UPSTREAM_CONTEXT
+  supporting_phases:
+  - P00
+  - P01
+  - P02
+  supporting_findings:
+  - CF-07
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  limitations:
+  - Diagnostic/validation evidence does not establish universal test-set gains or
+    architecture superiority.
+  prohibited_stronger_wording: Do not claim the original uniform policy was theoretically
+    invalid or that source-aligned settings universally improve every model.
+  recommended_manuscript_role: Methodological Discussion
+  layer0_status: PENDING_REVIEW
+- claim_id: CC-07
+  claim_text: Across P00-P02, fail-closed validation and explicit preservation of
+    negative/superseded evidence materially improve the interpretability and reproducibility
+    of the project history.
+  origin_phase: CUMULATIVE
+  supporting_phases:
+  - P00
+  - P01
+  - P02
+  supporting_findings:
+  - CF-08
+  - CF-09
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  limitations:
+  - Different negative-evidence classes are not quantitatively interchangeable.
+  prohibited_stronger_wording: Do not claim that fail-closed process guarantees scientific
+    correctness or deployment safety.
+  recommended_manuscript_role: Reproducibility / Discussion
+  layer0_status: PENDING_REVIEW
+- claim_id: CC-08
+  claim_text: At the end of P02, the project is technically ready to hand canonical
+    Layer-2 evidence into P03 and downstream governance while carrying forward explicit
+    scope, stability, access and non-clinical limitations.
+  origin_phase: CUMULATIVE
+  supporting_phases:
+  - P01
+  - P02
+  supporting_findings:
+  - CF-12
+  claim_ceiling: SUPPORTED
+  limitations:
+  - Downstream science is not yet executed.
+  prohibited_stronger_wording: Do not equate technical handoff readiness with future
+    scientific success.
+  recommended_manuscript_role: Methods / roadmap
+  layer0_status: PENDING_REVIEW

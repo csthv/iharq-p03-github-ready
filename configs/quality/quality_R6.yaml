@@ -1,0 +1,35 @@
+profile_id: P01-L1-QUALITY-OFFICIAL-R2
+policy: ANNOTATE_NOT_REPAIR
+units: VOLTS_AFTER_UNIT_VALIDATION_BEFORE_STANDARDIZATION
+thresholds:
+  flat_channel_std_max_v: 0.0
+  absolute_amplitude_max_v: 0.0005
+  nonfinite_count_max: 0
+  minimum_window_samples: 480
+  repeated_identical_samples_max: 160
+checks:
+- provider/source artifact marker
+- bad-channel marker
+- bad-trial marker
+- NaN/Inf
+- shape/duration
+- flat channel
+- absolute amplitude
+- repeated identical/clipping proxy
+source_native_quality:
+  PhysioNetMI: preserve EDF+ annotations; no unsupported provider artifact flag is
+    invented
+  BNCI2014_001: preserve EOG and rejected-trial event 1023; do not silently interpolate
+  Lee2019_MI: preserve source phase and any provider bad-channel/trial metadata
+hard_invalid:
+- nonfinite values
+- wrong tensor rank
+- duration shorter than frozen window
+- missing source-event lineage
+soft_flags:
+- flat channel
+- absolute amplitude exceedance
+- repeated identical samples
+- source-declared bad trial/channel
+no_silent_repair: true
+amplitude_threshold_semantics: SOFT_WARNING_ONLY; NOT_A_REJECTION_THRESHOLD; NOT_A_CLAIM_OF_UNIVERSAL_PHYSIOLOGICAL_BOUND

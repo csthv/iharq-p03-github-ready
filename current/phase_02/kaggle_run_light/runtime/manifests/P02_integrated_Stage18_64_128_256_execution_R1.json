@@ -1,0 +1,70 @@
+{
+  "A4_ensemble_window_id_accessor_repaired": true,
+  "A4_ensemble_window_id_repair_method": "READ_ONLY_CORE_ROWS_PROXY_MATERIALIZING_GOVERNED_WINDOW_ID",
+  "A4_package_execute_ensemble_logic_changed": false,
+  "accepted_R10_reduction_policy_changed": false,
+  "accepted_R5R_qualification_wrapper_preserved": true,
+  "artifact_id": "P02-INTEGRATED-STAGE18-64-128-256-ENSEMBLE-WINDOWID-ADAPTER-CHECKPOINT-BUDGET-REPAIR-R5",
+  "budget_memberships_changed": false,
+  "canonical_budget_ids": [
+    "P01-L1-LOW-CAL-OFFICIAL-R2:64_PER_CLASS",
+    "P01-L1-LOW-CAL-OFFICIAL-R2:128_PER_CLASS",
+    "P01-L1-LOW-CAL-OFFICIAL-R2:256_PER_CLASS"
+  ],
+  "canonical_budget_parser_repaired": true,
+  "canonical_budget_parser_source": "ACCEPTED_R10_5_A4_TRAIN_ROW_RESOLVER",
+  "checkpoint_classical_route_probe": {
+    "checkpoint_bytes": 53,
+    "checkpoint_format": "TRUSTED_PROJECT_PICKLE_PINNED_ENVIRONMENT",
+    "checkpoint_sha256": "e968ec2df66f74c008e4326a032a519d44038fd187a36b39a06aa5b67a1d5d6c",
+    "path": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/diagnostics/repairs/INT14R5_checkpoint_parent_probe/classical_probe.pkl",
+    "reason": null,
+    "status": "PASS"
+  },
+  "checkpoint_external_first_router_preserved": true,
+  "checkpoint_external_route_probe": {
+    "checkpoint_bytes": 28,
+    "checkpoint_format": "EXTERNAL_GOVERNED_INTERFACE",
+    "checkpoint_sha256": "57797ffb9eaa414e53ef18b1db4fa7d56adb17669a00c8df90895c766b53fa65",
+    "path": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/diagnostics/repairs/INT14R5_checkpoint_parent_probe/external_probe.external.chk",
+    "reason": null,
+    "status": "PASS"
+  },
+  "checkpoint_fallback_parent_repaired": true,
+  "checkpoint_fallback_parent_source": "PRISTINE_PACKAGE_CHECKPOINTS_SAVE_ROUNDTRIP",
+  "classical_A4_parent_uses_pristine_factory": true,
+  "created_at_utc": "2026-08-17T14:46:06.264627+00:00",
+  "deep_anchor_budgets_unchanged": [
+    "1",
+    "8",
+    "FULL_TRAIN"
+  ],
+  "defect": "LIVE_KERNEL_STAGE18_PARENT_WRAPPER_CHAIN_RECURSION",
+  "integrated_A4_terminals": 1740,
+  "kernel_restart_required": false,
+  "new_A4_cells": 522,
+  "new_high_budget_deep_refits_deferred_to_Stage18S": true,
+  "new_terminal_counts": {
+    "CONDITIONAL_SKIP": 270,
+    "SUCCESS": 252
+  },
+  "partial_terminals_from_failed_attempt_reused": true,
+  "predecessor_A4_reused": 1218,
+  "qualified_adapter_factory_parent_repaired": true,
+  "qualified_adapter_factory_parent_repairs": [
+    {
+      "after_module": "iharq.layer2_decoders._iharq_int14r4_pristine_models",
+      "after_name": "make_adapter",
+      "before_module": "__main__",
+      "before_name": "R5R_QUALIFIED_make_adapter",
+      "global_name": "_BASE_PACKAGE_FACTORY"
+    }
+  ],
+  "qualified_adapter_factory_parent_source": "PRISTINE_PACKAGE_MODELS_MAKE_ADAPTER",
+  "repair_scope": "RUNTIME_PARENT_BINDINGS_AND_ORCHESTRATION_RETRY_ONLY",
+  "scientific_configuration_changed": false,
+  "session_restart_required": false,
+  "status": "PASS",
+  "terminal_deletion_performed": false,
+  "underlying_CORE_mutated": false
+}

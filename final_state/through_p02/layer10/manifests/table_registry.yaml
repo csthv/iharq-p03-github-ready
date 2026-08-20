@@ -1,0 +1,175 @@
+tables:
+- table_id: L10-CUM-TBL-001
+  title: L10 CUM TBL 001
+  path: tables/L10-CUM-TBL-001.csv
+  rows: 37
+  source_data: table_source_data/L10-CUM-TBL-001.csv
+  source_claim_ids:
+  - P00-CLM-001/v2
+  - P00-CLM-002/v2
+  - P00-CLM-003/v2
+  - P00-CLM-004/v2
+  - P00-CLM-005/v2
+  - P00-CLM-006/v2
+  - P00-CLM-007/v2
+  - P01-CLM-001/v1
+  - P01-CLM-002/v1
+  - P01-CLM-003/v1
+  - P01-CLM-004/v1
+  - P01-CLM-005/v1
+  - P01-CLM-006/v1
+  - P01-CLM-007/v1
+  - P01-CLM-008/v1
+  - P01-CLM-009/v1
+  - P01-CLM-010/v1
+  - P01-CLM-011/v1
+  - P01-CLM-012/v1
+  - P02-CLM-001/v1
+  - P02-CLM-002/v1
+  - P02-CLM-003/v1
+  - P02-CLM-004/v1
+  - P02-CLM-005/v1
+  - P02-CLM-006/v1
+  - P02-CLM-007/v1
+  - P02-CLM-008/v1
+  - P02-CLM-009/v1
+  - P02-CLM-010/v1
+  - CUM-CLM-001/v1
+  - CUM-CLM-002/v1
+  - CUM-CLM-003/v1
+  - CUM-CLM-004/v1
+  - CUM-CLM-005/v1
+  - CUM-CLM-006/v1
+  - CUM-CLM-007/v1
+  - CUM-CLM-008/v1
+  render_transformation: NONE_OR_DISPLAY_FORMATTING_ONLY
+  sha256: acf37cc40a7f0abef20a6fece522db5c9b1f04299d5bb5f897fd1ba36e7bb3e0
+  lifecycle: CURRENT
+- table_id: L10-CUM-TBL-002
+  title: L10 CUM TBL 002
+  path: tables/L10-CUM-TBL-002.csv
+  rows: 3
+  source_data: table_source_data/L10-CUM-TBL-002.csv
+  source_claim_ids: []
+  render_transformation: NONE_OR_DISPLAY_FORMATTING_ONLY
+  sha256: 174f521d0952e9858e21213bd21113a4169ab7acdbc38d675364d60eeb13a0b6
+  lifecycle: CURRENT
+- table_id: L10-CUM-TBL-003
+  title: L10 CUM TBL 003
+  path: tables/L10-CUM-TBL-003.csv
+  rows: 15
+  source_data: table_source_data/L10-CUM-TBL-003.csv
+  source_claim_ids: []
+  render_transformation: NONE_OR_DISPLAY_FORMATTING_ONLY
+  sha256: ab5d0119342307d5dbe26a2e4d088cd0380345571969f4156aba5df119d807c6
+  lifecycle: CURRENT
+- table_id: L10-CUM-TBL-004
+  title: L10 CUM TBL 004
+  path: tables/L10-CUM-TBL-004.csv
+  rows: 9
+  source_data: table_source_data/L10-CUM-TBL-004.csv
+  source_claim_ids: []
+  render_transformation: NONE_OR_DISPLAY_FORMATTING_ONLY
+  sha256: ed592a9d3da7d05404b176b53df1b0ac0b30598eebb19662f0871c914ad5a6ef
+  lifecycle: CURRENT
+- table_id: L10-P02-TBL-001
+  title: L10 P02 TBL 001
+  path: tables/L10-P02-TBL-001.csv
+  rows: 42
+  source_data: table_source_data/L10-P02-TBL-001.csv
+  source_claim_ids:
+  - P02-CLM-001/v1
+  - P02-CLM-002/v1
+  - P02-CLM-003/v1
+  render_transformation: NONE_OR_DISPLAY_FORMATTING_ONLY
+  sha256: 2f62ab327d951c7eebe2a57c7f59e448aea9080877299df94afbc10f41c043f7
+  lifecycle: CURRENT
+- table_id: L10-P02-TBL-002
+  title: L10 P02 TBL 002
+  path: tables/L10-P02-TBL-002.csv
+  rows: 72
+  source_data: table_source_data/L10-P02-TBL-002.csv
+  source_claim_ids:
+  - P02-CLM-004/v1
+  - CUM-CLM-004/v1
+  render_transformation: NONE_OR_DISPLAY_FORMATTING_ONLY
+  sha256: 2c3d377c97853deb9c0c489e3b551e11d5fae540c89029ea489510de11e77de1
+  lifecycle: CURRENT
+- table_id: L10-P02-TBL-003
+  title: L10 P02 TBL 003
+  path: tables/L10-P02-TBL-003.csv
+  rows: 18
+  source_data: table_source_data/L10-P02-TBL-003.csv
+  source_claim_ids:
+  - P02-CLM-004/v1
+  - CUM-CLM-004/v1
+  render_transformation: NONE_OR_DISPLAY_FORMATTING_ONLY
+  sha256: 421992f8677557cc431f99ae67af5a7fc8ebf5a1a08b8e238457a4a6fd99b6bc
+  lifecycle: CURRENT
+- table_id: L10-P02-TBL-004
+  title: L10 P02 TBL 004
+  path: tables/L10-P02-TBL-004.csv
+  rows: 4
+  source_data: table_source_data/L10-P02-TBL-004.csv
+  source_claim_ids:
+  - P02-CLM-005/v1
+  - P02-CLM-006/v1
+  - CUM-CLM-006/v1
+  render_transformation: NONE_OR_DISPLAY_FORMATTING_ONLY
+  sha256: 9d372f66b06b406e43cf5d63f9e3d3842247b0ccc6438b37ca2d63cb48f19900
+  lifecycle: CURRENT
+- table_id: L10-P02-TBL-005
+  title: L10 P02 TBL 005
+  path: tables/L10-P02-TBL-005.csv
+  rows: 3
+  source_data: table_source_data/L10-P02-TBL-005.csv
+  source_claim_ids:
+  - P02-CLM-005/v1
+  - P02-CLM-006/v1
+  - CUM-CLM-006/v1
+  render_transformation: NONE_OR_DISPLAY_FORMATTING_ONLY
+  sha256: 0b2c9b948726d8691f38edb6e5bf049e2e6b5d38e84da0e88e1ac4f1527ed1d8
+  lifecycle: CURRENT
+- table_id: L10-P02-TBL-006
+  title: L10 P02 TBL 006
+  path: tables/L10-P02-TBL-006.csv
+  rows: 756
+  source_data: table_source_data/L10-P02-TBL-006.csv
+  source_claim_ids:
+  - P02-CLM-007/v1
+  - CUM-CLM-005/v1
+  render_transformation: NONE_OR_DISPLAY_FORMATTING_ONLY
+  sha256: d1ad0b94fb337e4cc75708e7a64f96b36a3025626826a5df7cbaf5bb3a24cbdb
+  lifecycle: CURRENT
+- table_id: L10-P02-TBL-007
+  title: L10 P02 TBL 007
+  path: tables/L10-P02-TBL-007.csv
+  rows: 210
+  source_data: table_source_data/L10-P02-TBL-007.csv
+  source_claim_ids:
+  - P02-CLM-008/v1
+  render_transformation: NONE_OR_DISPLAY_FORMATTING_ONLY
+  sha256: 24ca5408cd1c361b83adb18baf9a3d663d94b67cf29d91347069ede160d9c0de
+  lifecycle: CURRENT
+- table_id: L10-P02-TBL-008
+  title: L10 P02 TBL 008
+  path: tables/L10-P02-TBL-008.csv
+  rows: 45
+  source_data: table_source_data/L10-P02-TBL-008.csv
+  source_claim_ids:
+  - P02-CLM-009/v1
+  - CUM-CLM-005/v1
+  render_transformation: NONE_OR_DISPLAY_FORMATTING_ONLY
+  sha256: 9f234c9721066123a98380893e917dd32ae9656ee7aa5b850237e8e9b396564f
+  lifecycle: CURRENT
+- table_id: L10-P02-TBL-009
+  title: L10 P02 TBL 009
+  path: tables/L10-P02-TBL-009.csv
+  rows: 8
+  source_data: table_source_data/L10-P02-TBL-009.csv
+  source_claim_ids:
+  - P02-CLM-010/v1
+  - CUM-CLM-007/v1
+  render_transformation: NONE_OR_DISPLAY_FORMATTING_ONLY
+  sha256: 4f97a4abe453faf85d02b320d99ed52a152247bc7d25d12c49d6dbe16820ae8e
+  lifecycle: CURRENT

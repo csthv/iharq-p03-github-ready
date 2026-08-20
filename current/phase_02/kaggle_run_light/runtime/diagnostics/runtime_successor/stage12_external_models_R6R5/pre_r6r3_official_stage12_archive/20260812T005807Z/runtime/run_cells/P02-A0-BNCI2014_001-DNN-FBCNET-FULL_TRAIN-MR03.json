@@ -1,0 +1,82 @@
+{
+  "run_cell_id": "P02-A0-BNCI2014_001-DNN-FBCNET-FULL_TRAIN-MR03",
+  "ablation_id": "A0",
+  "terminal_status": "SUCCESS",
+  "prediction_partition": "records/PredictionRecord/dataset=BNCI2014_001/branch=DNN-FBCNET/budget=FULL_TRAIN/P02-A0-BNCI2014_001-DNN-FBCNET-FULL_TRAIN-MR03.jsonl",
+  "metric_source": "metrics/P02-A0-BNCI2014_001-DNN-FBCNET-FULL_TRAIN-MR03.json",
+  "checkpoint_sha256": "7bd0e2772231ca84395c48b4cbe00a64ac014fc2134ad90d0fd5ce27d641ca46",
+  "observed_denominator": 288,
+  "selected_params": {
+    "recipe_id": "R6-FBCNET-ORIGINAL-AUTHOR-P01-COMPAT",
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "batch_size": 16,
+    "label_smoothing": 0.0,
+    "grad_clip": null,
+    "scheduler": "constant",
+    "input_scale": 1.0,
+    "use_data_parallel": false
+  },
+  "resolved_variant": "FBCNet-OriginalAuthor-P01ConstrainedFilterBank-R6AuthorCentered",
+  "score_type": "SOFTMAX_PROBABILITY",
+  "validation_burden_seconds": 52.08663566500036,
+  "model_storage_bytes": 25352,
+  "selected_candidate_id": "CAND-00",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.00201559499691939,
+    "batch1_latency_p95_s": 0.002085161197464913,
+    "repeats": 5
+  },
+  "permutation_provenance": null,
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "class_weights": null,
+  "class_weight_calibration": {
+    "selected_policy": "UNIFORM_NO_WEIGHT",
+    "selected_weights": null,
+    "candidate_results": [
+      {
+        "status": "SUCCESS",
+        "policy": "UNIFORM_NO_WEIGHT",
+        "weights": null,
+        "validation_metrics": {
+          "BACC": 0.7291666666666667,
+          "F1_MACRO": 0.7261956998683634,
+          "ACC": 0.7291666666666666,
+          "CONFUSION": [
+            [
+              90,
+              54
+            ],
+            [
+              24,
+              120
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            144,
+            144
+          ],
+          "PRED_COMPLETE": 288,
+          "ROC_AUC": 0.7828414351851852,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+        },
+        "validation_burden_seconds": 52.08663566500036,
+        "model_storage_bytes": 25352
+      }
+    ],
+    "training_count_evidence": {
+      "counts": [
+        720,
+        720
+      ],
+      "exactly_equal": true,
+      "selection_required": false
+    },
+    "test_set_used": false
+  },
+  "training_condition_id": "A0-RAW-ACCEPT-ALL",
+  "augmentation_provenance": null,
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

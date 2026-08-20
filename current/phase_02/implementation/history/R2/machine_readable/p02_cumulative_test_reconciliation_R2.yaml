@@ -1,0 +1,12 @@
+patch_id: P02-CUMULATIVE-LEGACY-TEST-RECONCILIATION-R2
+reason: Three old tests assert historical P00 publication paths rather than current
+  cumulative state.
+original_observation: 23 PASS / 3 FAIL
+patched_disposable_copy_result: 26 PASS / 0 FAIL
+historical_tests_preserved: true
+current_test_meaning:
+- current Governance V6.1 authority manifest
+- current finalized P00+P01 status and boundaries
+- predecessor publication/release references rather than obsolete root publication
+  directory
+required_before_kaggle_scientific_stage: true

@@ -1,0 +1,18 @@
+{
+  "manifest_type": "EnvironmentManifest",
+  "manifest_id": "IHARQ-CUMULATIVE-P00-P01-ENVIRONMENT-MANIFEST-R1",
+  "cross_phase_single_environment_verified": false,
+  "phase_environments": {
+    "P00": {
+      "path": "environments/phase_00",
+      "verified_historical_runtime": "Python 3.13.5",
+      "scope": "P00_GITHUB_R2_ENGINEERING_FOUNDATION"
+    },
+    "P01": {
+      "path": "environments/phase_01",
+      "accepted_runtime": "Python 3.12.13",
+      "scope": "P01_ACCEPTED_EXECUTION_AND_FINALIZED_REPOSITORY"
+    }
+  },
+  "p02_rule": "P02 MUST FREEZE ITS OWN ENVIRONMENT BEFORE EXECUTION; DO NOT INFER CROSS-PHASE PORTABILITY."
+}

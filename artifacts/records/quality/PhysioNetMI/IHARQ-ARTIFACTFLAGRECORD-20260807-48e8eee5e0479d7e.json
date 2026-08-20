@@ -1,0 +1,36 @@
+{
+  "record_id": "IHARQ-ARTIFACTFLAGRECORD-20260807-48e8eee5e0479d7e",
+  "record_type": "ArtifactFlagRecord",
+  "schema_version": "1.0-p01",
+  "authority_status": "REGISTRY_REFERENCED",
+  "owner_layer": "L1",
+  "phase_id": "P01",
+  "config_id": "d03f0a7c869dd95a2a67e5a32edc501d52bfc3851d8e761ef56595d8bd1ff52f",
+  "source_ids": [
+    "IHARQ-DATASETRECORD-20260806-66309cda68771bef"
+  ],
+  "evidence_mode": "IMPLEMENTATION",
+  "limitation_tags": [
+    "NON_CLINICAL",
+    "NO_DEPLOYMENT_CLAIM",
+    "PUBLIC_EEG_ONLY"
+  ],
+  "lifecycle_status": "VALIDATED",
+  "fixture": false,
+  "fixture_tags": [],
+  "evidence_role": "DERIVED",
+  "payload": {
+    "artifact_flag_id": "PhysioNetMI:4:C5:AMPLITUDE_EXCEEDS_SOFT_THRESHOLD",
+    "dataset_id": "PhysioNetMI",
+    "target_id": "PhysioNetMI:95:0:4",
+    "flag_code": "AMPLITUDE_EXCEEDS_SOFT_THRESHOLD",
+    "channel_name": "C5",
+    "severity": "WARNING",
+    "source_supported": false,
+    "action": "ANNOTATE_ONLY",
+    "units": "VOLTS",
+    "threshold_profile_id": "P01-L1-QUALITY-OFFICIAL-R2"
+  },
+  "ablation_id": null,
+  "semantic_hash": "48e8eee5e0479d7eb60a89e1773592f6c2acb5e9193f28f1518712f0f1430e8a"
+}

@@ -1,0 +1,36 @@
+matrix_id: P02-FULL-ABLATION-PHASE-ANALYSIS-INPUTS-R3
+status: FROZEN
+rows:
+- ablation_id: A0
+  requirements:
+  - PredictionRecord partitions
+  - ModelRegistryRecord
+  - BaselineMetricRecord
+  - MatchedComparisonReport
+  - denominator/terminal ledger
+  - participant/session source tables
+  - statistical uncertainty source table
+  - negative/failure rows
+  - figure source
+  - table source
+  - Protocol handoff
+  - Layer0/EvidenceMap/Layer10/P03 handoff
+  missing_allowed: false
+- ablation_id: A4
+  requirements:
+  - CORE/LONG/view/aggregate PredictionRecords
+  - EnsembleControlRecord
+  - ModelRegistryRecord
+  - BaselineMetricRecord
+  - MatchedComparisonReport
+  - original/matched/unmatched denominator table
+  - burden table
+  - participant/session paired delta source table
+  - statistical uncertainty source table
+  - negative/failure/semantic-ineligible rows
+  - figure source
+  - table source
+  - Protocol handoff
+  - Layer0/EvidenceMap/Layer10/P03 handoff
+  missing_allowed: false
+invariant: FULL_P02_ABLATIONS_WITHOUT_COMPLETE_PHASE_ANALYSIS_INPUTS = 0

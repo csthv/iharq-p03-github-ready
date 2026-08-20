@@ -1,0 +1,117 @@
+gates:
+- gate_id: G00
+  requirement: Current project state and authority hashes resolve
+  blocking: true
+  failure: BLOCK_PREPARATION
+- gate_id: G01
+  requirement: P02 environment packages/resource inventory resolvable; branch-specific
+    dependencies isolated
+  blocking: true
+  failure: BLOCK_CORE or branch-specific RESOURCE/INCOMPATIBLE
+- gate_id: G02
+  requirement: Cumulative repository manifest/checksum verification PASS
+  blocking: true
+  failure: BLOCK
+- gate_id: G03
+  requirement: Core and A4 external pointer identities/checksums/version namespaces
+    resolve
+  blocking: true
+  failure: BLOCK affected substrate
+- gate_id: G04
+  requirement: 3 DatasetRecords/12910 WindowRecords/Split/Preprocessing/LabelMap/Validation
+    contract validates without mutation
+  blocking: true
+  failure: BLOCK and owner-routed P01 defect
+- gate_id: G05
+  requirement: Exact P02 R5 scientific execution freeze and owner-authorized R2 dynamic
+    training-policy amendment, run families, model portfolio, metrics, seeds/repeats,
+    budgets, grids, statistics, resource caps and ablation unlock state are all present
+    and hash-verified; realized training-policy values may be selected only from legal
+    train/validation evidence under the frozen algorithm.
+  blocking: true
+  failure: BLOCK OFFICIAL RUN; no notebook-time default filling
+- gate_id: G06
+  requirement: P02 schemas/interfaces/fixtures/imports/smoke path pass
+  blocking: true
+  failure: BLOCK
+- gate_id: G07
+  requirement: role firewall, lineage and loaders pass
+  blocking: true
+  failure: BLOCK
+- gate_id: G08
+  requirement: sanity controls emit expected outputs/negative-control behavior
+  blocking: true
+  failure: BLOCK core measurement spine if lower-bound/pipeline integrity absent
+- gate_id: G09
+  requirement: classical floor has >=1 lawful classical anchor
+  blocking: true
+  failure: BLOCK scientifically useful P02
+- gate_id: G10
+  requirement: Riemannian/robust-classical comparator present
+  blocking: true
+  failure: BLOCK minimum floor
+- gate_id: G11
+  requirement: EEGNet compact neural executes where feasible; resource infeasibility
+    is measured and routed
+  blocking: false
+  failure: RESOURCE_BLOCKED with explicit evidence consequence
+- gate_id: G12
+  requirement: every conditional deep/SSL branch has explicit admission terminal status;
+    no hidden omission
+  blocking: false
+  failure: branch-specific blocked/skipped; primary floor continues
+- gate_id: G13
+  requirement: accepted model checkpoints reload and registry linkage complete
+  blocking: true
+  failure: affected model INVALID/BLOCKED
+- gate_id: G14
+  requirement: PredictionRecord coverage/class order/score semantics/lineage valid
+  blocking: true
+  failure: affected branch consumer-ineligible
+- gate_id: G15
+  requirement: A0 source metrics and denominators complete for eligible primary branches
+  blocking: true
+  failure: BLOCK A0/evidence sufficiency
+- gate_id: G16
+  requirement: legal budget points emitted or explicit failed/ineligible statuses
+    retained
+  blocking: true
+  failure: curve scope downgraded; no invented/interpolated point
+- gate_id: G17
+  requirement: descriptive profiles preserve coverage and no diagnosis/routing
+  blocking: false
+  failure: diagnostic/omit unsupported profile claim
+- gate_id: G18
+  requirement: A4 R2 exact parent matching/class order/aggregation/burden and missingness
+    rules pass
+  blocking: true
+  failure: BLOCK A4 claim-bearing control evidence
+- gate_id: G18U
+  requirement: extra ablation runs only if Stage05 FULLY_UNLOCKED + authority-owned
+    P02 + all scientific bindings frozen
+  blocking: false
+  failure: NOT_AUTHORIZED/INCOMPATIBLE; never separate mode
+- gate_id: G19
+  requirement: all planned/attempted/failed/skipped/blocked rows visible
+  blocking: true
+  failure: BLOCK release if negative evidence hidden
+- gate_id: G20
+  requirement: consumer-specific readiness matrix complete
+  blocking: true
+  failure: downstream affected consumer blocked/diagnostic
+- gate_id: G21
+  requirement: source tables carry exact lineage and limitations
+  blocking: true
+  failure: not thesis/L10-ready
+- gate_id: G22
+  requirement: all downstream handoffs present and source-linked
+  blocking: true
+  failure: BLOCK phase documentary closure
+- gate_id: G23
+  requirement: evidence sufficiency passes or minimal repair route emitted
+  blocking: true
+  failure: LOOPBACK only relevant scope
+- gate_id: G24
+  requirement: manifest/checksums/path safety/secret scan/output inventory PASS
+  blocking: true
+  failure: BLOCK export/release

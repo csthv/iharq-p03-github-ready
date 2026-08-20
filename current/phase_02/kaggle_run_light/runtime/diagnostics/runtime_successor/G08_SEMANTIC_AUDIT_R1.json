@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "gate_id": "G08",
+  "runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R1-CLASS-WEIGHT-APPLICABILITY-LIVE-CONTINUATION",
+  "prior_stage08_attempt_id": "43e766d443bc",
+  "stage08_run_cells": 369,
+  "terminal_counts": {
+    "SUCCESS": 369
+  },
+  "branch_counts": {
+    "SAN-MAJ": 3,
+    "SAN-STRAT": 60,
+    "SAN-PERM": 300,
+    "SAN-PRIOR": 3,
+    "DIAG-LOGVAR": 3
+  },
+  "per_dataset_counts": {
+    "PhysioNetMI": {
+      "SAN-MAJ": 1,
+      "SAN-STRAT": 20,
+      "SAN-PERM": 100,
+      "SAN-PRIOR": 1,
+      "DIAG-LOGVAR": 1
+    },
+    "BNCI2014_001": {
+      "SAN-MAJ": 1,
+      "SAN-STRAT": 20,
+      "SAN-PERM": 100,
+      "SAN-PRIOR": 1,
+      "DIAG-LOGVAR": 1
+    },
+    "Lee2019_MI": {
+      "SAN-MAJ": 1,
+      "SAN-STRAT": 20,
+      "SAN-PERM": 100,
+      "SAN-PRIOR": 1,
+      "DIAG-LOGVAR": 1
+    }
+  },
+  "metric_missing_count": 0,
+  "denominator_mismatch_count": 0,
+  "permutation_provenance_error_count": 0,
+  "repaired_applicability_error_count": 0,
+  "san_perm_descriptive_summary": {
+    "PhysioNetMI": {
+      "n": 100,
+      "mean_BACC": 0.5003656126482213,
+      "median_BACC": 0.49941609773625584,
+      "std_BACC": 0.017182043938837533,
+      "min_BACC": 0.45499461013295006,
+      "max_BACC": 0.5386273805246138,
+      "behavior_threshold_used_for_gate": false,
+      "note": "Descriptive negative-control summary only; no post-hoc numerical threshold invented."
+    },
+    "BNCI2014_001": {
+      "n": 100,
+      "mean_BACC": 0.5024652777777778,
+      "median_BACC": 0.5,
+      "std_BACC": 0.04214123390245798,
+      "min_BACC": 0.4027777777777778,
+      "max_BACC": 0.6215277777777778,
+      "behavior_threshold_used_for_gate": false,
+      "note": "Descriptive negative-control summary only; no post-hoc numerical threshold invented."
+    },
+    "Lee2019_MI": {
+      "n": 100,
+      "mean_BACC": 0.5059666666666667,
+      "median_BACC": 0.5016666666666667,
+      "std_BACC": 0.03390435149807544,
+      "min_BACC": 0.3983333333333333,
+      "max_BACC": 0.6016666666666667,
+      "behavior_threshold_used_for_gate": false,
+      "note": "Descriptive negative-control summary only; no post-hoc numerical threshold invented."
+    }
+  },
+  "issues": [],
+  "scientific_configuration_changed": false,
+  "test_set_used_for_repair_decision": false
+}

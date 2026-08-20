@@ -1,0 +1,143 @@
+{
+  "P01_audit": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/P02_STAGE12_R6R5_P01_CONSUMPTION_AUDIT_R1.json",
+  "R6_recipes": {
+    "DNN-FBCNET": {
+      "batch_size": 16,
+      "grad_clip": null,
+      "label_smoothing": 0.0,
+      "lr": 0.001,
+      "max_epochs": 1500,
+      "optimizer": "Adam",
+      "patience": 200,
+      "recipe_id": "R6-FBCNET-AUTHOR-CENTERED-R1",
+      "restore_best": true,
+      "scheduler": "constant",
+      "selection": "validation_BACC",
+      "weight_decay": 0.0
+    },
+    "DNN-SEQ": {
+      "batch_size": 32,
+      "grad_clip": null,
+      "label_smoothing": 0.0,
+      "lr": 0.001,
+      "max_epochs": 150,
+      "optimizer": "Adam",
+      "patience": 40,
+      "recipe_id": "R6-DBCONFORMER-AUTHOR-CENTERED-R1",
+      "restore_best": true,
+      "scheduler": "constant",
+      "selection": "validation_BACC",
+      "weight_decay": 0.0
+    },
+    "SSL-CBRAMOD": {
+      "batch_size": 64,
+      "body_lr": 0.0001,
+      "eta_min": 1e-06,
+      "grad_clip": 1.0,
+      "head_lr": 0.0005,
+      "input_scale": 10000.0,
+      "label_smoothing": 0.1,
+      "max_epochs": 150,
+      "optimizer": "AdamW",
+      "patience": 40,
+      "recipe_id": "R6-CBRAMOD-SOURCE-CENTERED-R1",
+      "restore_best": true,
+      "scheduler": "cosine",
+      "selection": "validation_BACC",
+      "source_sampling_hz": 160,
+      "target_sampling_hz": 200,
+      "weight_decay": 0.05
+    }
+  },
+  "RAM_cleanup": {
+    "after": {
+      "created_utc": "2026-08-11T22:49:08.984901+00:00",
+      "cuda": [
+        {
+          "allocated_gib": 0.09973955154418945,
+          "free_gib": 14.21368408203125,
+          "gpu": 0,
+          "name": "Tesla T4",
+          "reserved_gib": 0.201171875,
+          "total_gib": 14.56219482421875
+        },
+        {
+          "allocated_gib": 0.0,
+          "free_gib": 14.45977783203125,
+          "gpu": 1,
+          "name": "Tesla T4",
+          "reserved_gib": 0.0,
+          "total_gib": 14.56219482421875
+        }
+      ],
+      "label": "after_r6_cleanup",
+      "process_rss_gib": 3.0330429077148438,
+      "system_available_gib": 27.407272338867188,
+      "system_total_gib": 31.347740173339844,
+      "system_used_percent": 12.6
+    },
+    "before": {
+      "created_utc": "2026-08-11T22:49:08.270299+00:00",
+      "cuda": [
+        {
+          "allocated_gib": 0.1836104393005371,
+          "free_gib": 10.73907470703125,
+          "gpu": 0,
+          "name": "Tesla T4",
+          "reserved_gib": 3.67578125,
+          "total_gib": 14.56219482421875
+        },
+        {
+          "allocated_gib": 0.0,
+          "free_gib": 14.45977783203125,
+          "gpu": 1,
+          "name": "Tesla T4",
+          "reserved_gib": 0.0,
+          "total_gib": 14.56219482421875
+        }
+      ],
+      "label": "before_r6_cleanup",
+      "process_rss_gib": 3.649066925048828,
+      "system_available_gib": 26.828990936279297,
+      "system_total_gib": 31.347740173339844,
+      "system_used_percent": 14.4
+    },
+    "external_preparation_cache_clear": [
+      {
+        "entries_cleared": 0,
+        "module": "iharq_stage12_external_adapters"
+      }
+    ],
+    "known_large_globals_removed": [],
+    "malloc_trim_called": true
+  },
+  "artifact_id": "P02-G12-R6R3-STAGED-CLOSURE-AUDIT-R1",
+  "branch_terminal_counts": {
+    "DNN-EGTC": {
+      "CONDITIONAL_SKIP": 15
+    },
+    "DNN-FBCNET": {
+      "SUCCESS": 15
+    },
+    "DNN-SEQ": {
+      "SUCCESS": 15
+    },
+    "SSL-CBRAMOD": {
+      "SUCCESS": 105
+    },
+    "SSL-REVE": {
+      "DEPENDENCY_BLOCKED": 3
+    }
+  },
+  "created_utc": "2026-08-12T00:58:07.450295+00:00",
+  "issues": [],
+  "planned_cells": 153,
+  "runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R6R5-STAGE12-FBCNET-AUTHOR-HORIZON-1500-200",
+  "status": "PASS",
+  "terminal_counts": {
+    "CONDITIONAL_SKIP": 15,
+    "DEPENDENCY_BLOCKED": 3,
+    "SUCCESS": 135
+  },
+  "test_set_used_for_hyperparameter_selection": false
+}

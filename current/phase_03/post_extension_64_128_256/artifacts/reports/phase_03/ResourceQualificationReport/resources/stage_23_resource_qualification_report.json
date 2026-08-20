@@ -1,0 +1,45 @@
+{
+  "artifact_id": "P03-PROD-057-f0af77bd4b1286763bd2",
+  "created_at_utc": "2026-08-18T19:25:20.972660+00:00",
+  "hardening_id": "P03S-POSTEXT-64-128-256-STAGE23-SUPPLEMENT-NATIVE-SUFFICIENCY-HARDENING-R1",
+  "observed_stage23": {
+    "heavy_compute_performed": false,
+    "physical_stage23_file_count": 8,
+    "raw_handler_file_count": 6,
+    "raw_handler_tree_sha256": "5d7b5eb7311b30c3ae407a5405b62aca2d04bf55c55548447273ac9804eac332",
+    "stage23_completed": true,
+    "stage_manifest_file_count": 7
+  },
+  "payload_sha256": "f0af77bd4b1286763bd2543035e067852c8d012738561a342ae5d246d9842fd9",
+  "plan_feasibility": {
+    "qualification_scope": "Observed documentary Stage23 supplement execution only; Stage24 packaging/release remains separate.",
+    "resource_reduction_applied": false,
+    "stage23_completed": true,
+    "stage24_pending": true
+  },
+  "product_id": "P03-PROD-057",
+  "raw_resource_report": {
+    "documentary_worker_processes": 1,
+    "heartbeat_seconds": 120,
+    "heavy_compute_performed": false,
+    "numerical_threads": 1,
+    "resource_reduction_applied": false,
+    "scientific_worker_processes": 0,
+    "scope": "DOCUMENTARY_STAGE23_ONLY",
+    "stage24_heavy_artifact_packaging_pending": true,
+    "status": "PASS"
+  },
+  "run_id": "P03-L3-POSTEXT-64-128-256-R1-1833e865bcb88ff8",
+  "schema_id": "ResourceQualificationReport.v1",
+  "schema_version": "1.0.0",
+  "source_artifact_ids": [
+    "STAGE23-RAW-RESOURCE",
+    "STAGE23-OPERATIONAL-CHECKPOINT-RECEIPT"
+  ],
+  "source_sha256s": [
+    "442eac9006ec05f3b1b35b36bb74897219e1173d9a5952de2ab3443af32ad042",
+    "0684998a7c46ed281b07ea5f506cefa62000f2941e0c159a673fd9de99db5948"
+  ],
+  "stage_id": "23",
+  "status": "PASS"
+}

@@ -1,0 +1,184 @@
+{
+  "artifact_id": "P03-PROD-055-0979d69aa6510323119c",
+  "created_at_utc": "2026-08-18T19:25:20.972660+00:00",
+  "facets": {
+    "consumer": {
+      "P03_PROD_048_bound": true,
+      "P03_PROD_062_bound": true,
+      "P03_PROD_063_bound": true,
+      "downstream_handoffs_created": true
+    },
+    "data": {
+      "P02_contract_status": "OUT_OF_SCOPE_NOT_REVALIDATED_BY_POSTEXT_SUPPLEMENT",
+      "P02_contract_validated": false,
+      "class_order_complete": true,
+      "score_semantics_complete": true
+    },
+    "evidence": {
+      "failure_denominator_complete": true,
+      "limitation_count": 7,
+      "member_disagreement_all_groups_accounted": true,
+      "member_disagreement_eligible_groups": 0,
+      "member_disagreement_ineligible_groups": 108,
+      "negative_result_count": 1016
+    },
+    "execution": {
+      "prior_stage_obligations_accounted": 23,
+      "prior_stages_complete": 16,
+      "prior_stages_not_applicable": 7,
+      "products_expected_final": 65,
+      "products_pre_export_accounted": 59,
+      "products_pre_export_out_of_scope": 10,
+      "products_pre_export_realized": 49,
+      "resource_reduction_applied": false
+    },
+    "science": {
+      "A0_status": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT",
+      "A1_complete": true,
+      "A2_complete": true,
+      "A2_explicit_no_rule_groups": 37,
+      "A2_successful_rule_groups": 71,
+      "A3_complete": true,
+      "A3_explicit_no_rule_children": 111,
+      "A3_independent_ranking_information": false,
+      "A3_successful_rule_children": 213,
+      "A4_status": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT"
+    },
+    "security": {
+      "final_security_clearance": false,
+      "secret_scan_pending_stage24": true
+    }
+  },
+  "hardening_id": "P03S-POSTEXT-64-128-256-STAGE23-SUPPLEMENT-NATIVE-SUFFICIENCY-HARDENING-R1",
+  "limitations": [
+    "Canonical stages 00-06 and P001-P010 are out of supplement scope and are not re-materialized.",
+    "Stage24 checksum, secret scan, package closure, and cross-authority artifact-obligation audit remain pending."
+  ],
+  "payload_sha256": "0979d69aa6510323119cedf19588d026955b1be172fe860168e50af50ba8f8b7",
+  "product_id": "P03-PROD-055",
+  "raw_readiness": {
+    "A0_status": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT",
+    "A1_complete": true,
+    "A2_A3_design_identity_distinct": true,
+    "A2_complete": true,
+    "A2_explicit_no_rule_groups": 37,
+    "A2_successful_rule_groups": 71,
+    "A3_complete": true,
+    "A3_explicit_no_rule_children": 111,
+    "A3_independent_ranking_information": false,
+    "A3_successful_rule_children": 213,
+    "A4_disagreement_all_groups_accounted": true,
+    "A4_disagreement_eligible_groups": 0,
+    "A4_disagreement_ineligible_groups": 108,
+    "A4_status": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT",
+    "P02_contract_status": "OUT_OF_SCOPE_NOT_REVALIDATED_BY_POSTEXT_SUPPLEMENT",
+    "P02_contract_validated_in_this_supplement": false,
+    "canonical_prior_stage_count": 23,
+    "canonical_products_expected_final": 65,
+    "canonical_products_required_before_stage24": 59,
+    "class_order_complete": true,
+    "explicit_out_of_scope_prior_stage_count": 7,
+    "leakage_guards_pass": true,
+    "literal_secret_scan_status": "PENDING_STAGE24",
+    "physical_in_scope_prior_stage_count": 16,
+    "products_accounted_before_stage24": 59,
+    "products_explicitly_out_of_scope_before_stage24": 10,
+    "products_physically_realized_after_stage23_writers": 49,
+    "publication_contract": {
+      "contract_id": "P03S-POSTEXT-STAGE24-RELEASE-POLICY-R1",
+      "direct_github_upload_permitted": false,
+      "external_artifact_pointer_product_id": "P03-PROD-061",
+      "external_pointer_minimum_fields": [
+        "provider",
+        "repository_id",
+        "immutable_revision",
+        "object_path",
+        "bytes",
+        "sha256",
+        "role",
+        "credential_class"
+      ],
+      "final_upload_requires_separate_explicit_authorization": true,
+      "network_upload_authorized_now": false,
+      "new_huggingface_repository_count_required": 2,
+      "preupload_audit_must_cover": [
+        "all 65 P03 expected product IDs with realized or lawful out-of-scope disposition",
+        "all P04-P15 and documentary downstream consumer contracts",
+        "Protocol / Phase Analysis / Layer0 / Evidence Map / Layer10 / Paper-Thesis handoff requirements",
+        "canonical artifact/interface registry requirements",
+        "execution/evidence plan requirements",
+        "experiment/ablation/evaluation protocol requirements",
+        "complete phase execution playbook requirements",
+        "Layers0-to-10 design/rationale/nuts-and-bolts authority requirements",
+        "P03 implementation build-book product/artifact coverage requirements",
+        "actual accepted Stage07-Stage24 manifests, receipts, hardening and limitations",
+        "GitHub-ready metric/calculation/numerical-result completeness",
+        "heavy-artifact pointer immutable revision and checksum closure",
+        "secret scan and credential-safety closure"
+      ],
+      "preupload_full_artifact_obligation_audit_required": true,
+      "previous_phase3_huggingface_repository_reuse_permitted": false,
+      "release_provider": "HuggingFace",
+      "repositories": {
+        "github_ready_archive_repository": {
+          "contains_github_ready_tree": true,
+          "must_be_new": true,
+          "must_include_all_metrics_calculations_and_numerical_results": true,
+          "must_include_machine_readable_heavy_artifact_pointers": true,
+          "payload_form": "ZIP"
+        },
+        "heavy_artifact_repository": {
+          "metrics_or_calculations_may_exist_only_here": false,
+          "must_be_new": true,
+          "must_have_object_manifest_and_checksums": true,
+          "role": "HEAVY_ARTIFACTS_ONLY"
+        }
+      },
+      "stage24_expected_product_ids": [
+        "P03-PROD-058",
+        "P03-PROD-059",
+        "P03-PROD-060",
+        "P03-PROD-061",
+        "P03-PROD-064",
+        "P03-PROD-065"
+      ],
+      "status": "LOCKED_FOR_FUTURE_STAGE24_AND_RELEASE_GATES"
+    },
+    "scope": "POSTEXT_SUPPLEMENT_PRE_EXPORT",
+    "score_semantics_complete": true,
+    "stage24_product_count_pending": 6,
+    "status": "READY_FOR_POSTEXT_SUPPLEMENT_PRE_EXPORT_GATING"
+  },
+  "run_id": "P03-L3-POSTEXT-64-128-256-R1-1833e865bcb88ff8",
+  "schema_id": "ReadinessReport.v1",
+  "schema_version": "1.0.0",
+  "semantic_qualification": {
+    "A2_A3_design_identity_distinct": true,
+    "A2_A3_raw_distinct_field_interpretation": "Distinct ablation identities only; not independent uncertainty ranking evidence.",
+    "A3_independent_ranking_information": false,
+    "binary_uncertainty_alias_limitation_preserved": true,
+    "candidate_claims_approved": false,
+    "checksums_pending_stage24": true,
+    "final_phase_sufficiency": false,
+    "final_phase_sufficiency_pending_stage24": true,
+    "no_legal_threshold_preserved": true,
+    "secret_scan_pending_stage24": true,
+    "stage23_sufficiency_scope": "PRE_EXPORT",
+    "supplement_scope": "POSTEXT_SUPPLEMENT_PRE_EXPORT",
+    "test_used_for_selection": false
+  },
+  "source_artifact_ids": [
+    "STAGE23-RAW-READINESS",
+    "P03-PROD-048",
+    "P03-PROD-062",
+    "P03-PROD-063"
+  ],
+  "source_sha256s": [
+    "7d6bd905aa755f784ab9370012544cf0ef761d4901bf4c924797e96e7aa0c16f",
+    "da063e215bef02cdef682400b0d5a50c4a47289e1fc701cdf4e3aeadbeae091a",
+    "0f27184dc3cd4e72f1fd1960e01b3b5986556bdf583d7c28e8db49e9cd5baffe",
+    "4d90fd1248a36abeecd2951920868d181e1e425b462b757a5f82722c69edbd78"
+  ],
+  "stage_id": "23",
+  "status": "READY_FOR_POSTEXT_SUPPLEMENT_PRE_EXPORT_GATING"
+}

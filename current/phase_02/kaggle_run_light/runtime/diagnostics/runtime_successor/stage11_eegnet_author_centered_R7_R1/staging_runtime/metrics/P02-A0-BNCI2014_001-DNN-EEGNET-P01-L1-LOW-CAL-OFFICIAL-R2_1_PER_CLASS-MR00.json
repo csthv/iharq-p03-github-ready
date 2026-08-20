@@ -1,0 +1,152 @@
+{
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "run_cell_id": "P02-A0-BNCI2014_001-DNN-EEGNET-P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS-MR00",
+  "dataset_id": "BNCI2014_001",
+  "branch_id": "DNN-EEGNET",
+  "resolved_variant": "EEGNet-R7-LAWHERN-SMR-P01-160HZ",
+  "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS",
+  "metrics": {
+    "BACC": 0.5,
+    "F1_MACRO": 0.428287841191067,
+    "ACC": 0.5,
+    "CONFUSION": [
+      [
+        123,
+        21
+      ],
+      [
+        123,
+        21
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      144,
+      144
+    ],
+    "PRED_COMPLETE": 288,
+    "ROC_AUC": 0.5407021604938271,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+  },
+  "validation_selection": {
+    "BACC": 0.5590277777777778,
+    "F1_MACRO": 0.4999384766826627,
+    "ACC": 0.5590277777777778,
+    "CONFUSION": [
+      [
+        130,
+        14
+      ],
+      [
+        113,
+        31
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      144,
+      144
+    ],
+    "PRED_COMPLETE": 288,
+    "ROC_AUC": 0.5478395061728395,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+  },
+  "validation_burden_seconds": 11.761594771000091,
+  "model_storage_bytes": 14811,
+  "selected_candidate_id": "R7-EEGNET-LAWHERN-SMR-SOURCE-CENTERED-P01-160HZ-R1",
+  "selected_params": {
+    "recipe_id": "R7-EEGNET-LAWHERN-SMR-SOURCE-CENTERED-P01-160HZ-R1",
+    "lr": 0.001,
+    "optimizer": "Adam",
+    "weight_decay": 0.0,
+    "dropout": 0.5,
+    "epochs": 500,
+    "kernel_length": 40,
+    "depthwise_kernel_length": 20,
+    "pool1_kernel_size": 5,
+    "pool2_kernel_size": 10
+  },
+  "candidate_failures": [],
+  "observed_denominator": 288,
+  "expected_denominator": 288,
+  "score_type": "SOFTMAX_PROBABILITY",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.001268065001568175,
+    "batch1_latency_p95_s": 0.007156939400010741,
+    "repeats": 5,
+    "latency_probe_mode": "FORWARD_ONLY_NO_METRICS"
+  },
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "class_weights": null,
+  "class_weight_calibration": {
+    "selected_policy": "UNIFORM_NO_WEIGHT",
+    "selected_weights": null,
+    "candidate_results": [
+      {
+        "status": "SUCCESS",
+        "policy": "UNIFORM_NO_WEIGHT",
+        "weights": null,
+        "validation_metrics": {
+          "BACC": 0.5590277777777778,
+          "F1_MACRO": 0.4999384766826627,
+          "ACC": 0.5590277777777778,
+          "CONFUSION": [
+            [
+              130,
+              14
+            ],
+            [
+              113,
+              31
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            144,
+            144
+          ],
+          "PRED_COMPLETE": 288,
+          "ROC_AUC": 0.5478395061728395,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+        },
+        "candidate_checkpoint_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage11_eegnet_author_centered_R7_R1/staging_runtime/raw_outputs/stage11_r7_training_history/P02-A0-BNCI2014_001-DNN-EEGNET-P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS-MR00__primary__UNIFORM_NO_WEIGHT.candidate.state_dict.pt",
+        "candidate_checkpoint_sha256": "85ff590bc5877014098d4cc60348ab7050e114652fde2b8259c742cc32a5a714",
+        "candidate_checkpoint_bytes": 14811,
+        "actual_batch_size": 64,
+        "gradient_accumulation": 1,
+        "input_statistics": {
+          "source_unit": "V",
+          "unit_multiplier": 1000000.0,
+          "mean_uv_min": -0.016425896182808986,
+          "mean_uv_max": 0.015658582017593254,
+          "std_uv_min": 1.187665775076413,
+          "std_uv_max": 3.692713848052607,
+          "channel_count": 22,
+          "fit_samples": 2,
+          "test_statistics_used": false
+        },
+        "best_epoch": 225,
+        "elapsed_seconds": 11.761594771000091
+      }
+    ],
+    "test_set_used": false
+  },
+  "source_centered_recipe_sha256": "a677a8d3a9eb7da1a830b95af4e79aecf1ca8c54080c92b83a3e87a312ae7bb9",
+  "source_centered_recipe_id": "R7-EEGNET-LAWHERN-SMR-SOURCE-CENTERED-P01-160HZ-R1",
+  "input_statistics": {
+    "source_unit": "V",
+    "unit_multiplier": 1000000.0,
+    "mean_uv_min": -0.016425896182808986,
+    "mean_uv_max": 0.015658582017593254,
+    "std_uv_min": 1.187665775076413,
+    "std_uv_max": 3.692713848052607,
+    "channel_count": 22,
+    "fit_samples": 2,
+    "test_statistics_used": false
+  },
+  "best_epoch": 225,
+  "training_condition_kind": "PRIMARY_NO_AUGMENTATION",
+  "comparison_reference": null,
+  "augmentation_probability": null,
+  "augmentation_condition_id": null
+}

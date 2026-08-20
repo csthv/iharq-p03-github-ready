@@ -1,0 +1,652 @@
+candidate_claims:
+- approval_status: CANDIDATE_ONLY
+  candidate_claim: Selected calibration may alter held-out probabilistic reliability
+    relative to the identity baseline; direction, magnitude, uncertainty, and multiplicity
+    belong to governed Phase Analysis.
+  candidate_claim_id: P03-CAND-CALIBRATION-RELIABILITY-R1
+  comparator: A1 identity calibration versus the selected calibrated probability source
+    within the same accepted group/cell.
+  evidence:
+  - P03-PROD-020
+  - P03-PROD-021
+  - P03-PROD-039
+  - P03-PROD-040
+  - P03-PROD-043
+  - P03-PROD-044
+  limitations: &id001
+  - P02-LIM-01
+  - P02-LIM-02
+  - P02-LIM-03
+  - P02-LIM-04
+  - P02-LIM-05
+  - P02-LIM-06
+  - P02-LIM-07
+  - P02-LIM-08
+  - P02-LIM-09
+  - P02-LIM-10
+  - P02-LIM-11
+  - P02-LIM-12
+  - P02-LIM-13
+  - P02-LIM-14
+  - P03-LIM-SELECTIVE-NO-LEGAL-RULE-R1
+  - P03-LIM-MEMBER-DISAGREEMENT-UNAVAILABLE-R1
+  - P03-LIM-GENUINE-LOGITS-R1
+  - P03-LIM-BINARY-UNCERTAINTY-ALIAS-R1
+  - P03-LIM-CONFORMAL-PROXY-R1
+  - P03-LIM-SPARSE-SUPPORT-POLICY-R1
+  - P03-LIM-FAILED-ATTEMPT-PRESERVATION-R1
+  negatives:
+  - P03-PROD-035
+  - P03-PROD-036
+- approval_status: CANDIDATE_ONLY
+  candidate_claim: Validation-selected selective-prediction operating points require
+    held-out risk/coverage evaluation and must not be described as a universal TEST-risk
+    guarantee.
+  candidate_claim_id: P03-CAND-SELECTIVE-TRANSPORT-R1
+  comparator: A1 full-coverage operating point versus A2 confidence and A3 uncertainty-feature
+    operating points under the frozen matched design.
+  evidence:
+  - P03-PROD-026
+  - P03-PROD-027
+  - P03-PROD-028
+  - P03-PROD-029
+  - P03-PROD-032
+  - P03-PROD-039
+  - P03-PROD-040
+  limitations: *id001
+  negatives:
+  - P03-PROD-035
+  - P03-PROD-036
+- approval_status: CANDIDATE_ONLY
+  candidate_claim: In the binary probability surface, confidence, normalized entropy,
+    and top1-top2 margin are candidate rank-equivalent uncertainty views and must
+    not be counted as independent scientific wins.
+  candidate_claim_id: P03-CAND-BINARY-UQ-ALIAS-R1
+  comparator: A3 confidence versus normalized entropy versus top1-top2 margin, with
+    A2 confidence retained as the selective baseline.
+  evidence:
+  - P03-PROD-024
+  - P03-PROD-025
+  - P03-PROD-028
+  - P03-PROD-029
+  - P03-PROD-032
+  limitations:
+  - P03-LIM-BINARY-UNCERTAINTY-ALIAS-R1
+  negatives:
+  - P03-PROD-037
+- approval_status: CANDIDATE_ONLY
+  candidate_claim: No-legal-threshold, conditional ineligibility, failed-attempt,
+    and inherited upstream limitation states remain part of the governed Phase-3 evidence
+    denominator.
+  candidate_claim_id: P03-CAND-NEGATIVE-DENOMINATOR-R1
+  comparator: Successful terminal states versus explicit no-rule, ineligible, diagnostic-only,
+    blocked, failed, and inherited-failure states.
+  evidence:
+  - P03-PROD-035
+  - P03-PROD-036
+  - P03-PROD-037
+  limitations: *id001
+  negatives:
+  - P03-PROD-035
+  - P03-PROD-036
+candidate_only: true
+claim_approval_performed: false
+claim_boundary_id: P03-CANDIDATE-CLAIM-NO-APPROVAL-R1
+config_sha256: 2eda0689ab42e93c91b3ef9b76e0168d1c13d1feb3d1a552beaade91105ab7c3
+evidence_map_handoff_path: artifacts/evidence_map_handoff/phase_03/evidence_map_handoff.yaml
+evidence_map_handoff_sha256: a5e0adf43f3cfeff8f275eb5a5d582f6e378957c25ab8d743893a0b455a00e90
+layer0_handoff_path: artifacts/layer0_handoff/phase_03/layer0_claim_handoff.yaml
+layer0_handoff_sha256: 087812be5e68900e5674766a69197ae3af1d800d22a2b2e72230d89d9a029b2c
+limitation_ids: *id001
+limitations:
+- affected_artifacts:
+  - P03-PROD-035
+  - P03-PROD-036
+  - P03-PROD-037
+  - P03-PROD-038
+  - P03-PROD-046
+  - P03-PROD-047
+  - P03-PROD-048
+  - P03-PROD-063
+  description: PUBLIC_BENCHMARK_BINARY_MI_RESEARCH_ONLY
+  evidence_consequence: Carry into downstream interpretation; do not silently broaden
+    scope.
+  inherited: true
+  lifecycle: ACTIVE
+  limitation_id: P02-LIM-01
+  scope: INHERITED_CLAIM_AND_CONSUMER_SCOPE
+  source: P03 intake ledger / inherited P02 limitation authority
+  source_ids:
+  - P02-LIM-01
+  source_phase: P02
+  source_sha256s:
+  - 4d510f5e83a51e19bdec3e344f2a83368568cef125a7b326610b7dc6c1199166
+  - ecd152f8979b778af2a71c391535a74036c5705a06895d292cff2218a42f238d
+  status: PERSISTING_NONBLOCKING
+- affected_artifacts:
+  - P03-PROD-035
+  - P03-PROD-036
+  - P03-PROD-037
+  - P03-PROD-038
+  - P03-PROD-046
+  - P03-PROD-047
+  - P03-PROD-048
+  - P03-PROD-063
+  description: INHERITED_P01_DATA_SPLIT_PREPROCESS_WINDOW_SCOPE
+  evidence_consequence: Carry into downstream interpretation; do not silently broaden
+    scope.
+  inherited: true
+  lifecycle: ACTIVE
+  limitation_id: P02-LIM-02
+  scope: INHERITED_CLAIM_AND_CONSUMER_SCOPE
+  source: P03 intake ledger / inherited P02 limitation authority
+  source_ids:
+  - P02-LIM-02
+  source_phase: P02
+  source_sha256s:
+  - 4d510f5e83a51e19bdec3e344f2a83368568cef125a7b326610b7dc6c1199166
+  - ecd152f8979b778af2a71c391535a74036c5705a06895d292cff2218a42f238d
+  status: PERSISTING_NONBLOCKING
+- affected_artifacts:
+  - P03-PROD-035
+  - P03-PROD-036
+  - P03-PROD-037
+  - P03-PROD-038
+  - P03-PROD-046
+  - P03-PROD-047
+  - P03-PROD-048
+  - P03-PROD-063
+  description: ONE_FROZEN_LOW_LABEL_SUBSET_PER_BUDGET
+  evidence_consequence: Do not infer repeated-subset sample-efficiency stability.
+  inherited: true
+  lifecycle: ACTIVE
+  limitation_id: P02-LIM-03
+  scope: INHERITED_CLAIM_AND_CONSUMER_SCOPE
+  source: P03 intake ledger / inherited P02 limitation authority
+  source_ids:
+  - P02-LIM-03
+  source_phase: P02
+  source_sha256s:
+  - 4d510f5e83a51e19bdec3e344f2a83368568cef125a7b326610b7dc6c1199166
+  - ecd152f8979b778af2a71c391535a74036c5705a06895d292cff2218a42f238d
+  status: PERSISTING_NONBLOCKING
+- affected_artifacts:
+  - P03-PROD-035
+  - P03-PROD-036
+  - P03-PROD-037
+  - P03-PROD-038
+  - P03-PROD-046
+  - P03-PROD-047
+  - P03-PROD-048
+  - P03-PROD-063
+  description: NON_SUCCESS_TERMINALS_PRESERVED
+  evidence_consequence: Carry into downstream interpretation; do not silently broaden
+    scope.
+  inherited: true
+  lifecycle: ACTIVE
+  limitation_id: P02-LIM-04
+  scope: INHERITED_CLAIM_AND_CONSUMER_SCOPE
+  source: P03 intake ledger / inherited P02 limitation authority
+  source_ids:
+  - P02-LIM-04
+  source_phase: P02
+  source_sha256s:
+  - 4d510f5e83a51e19bdec3e344f2a83368568cef125a7b326610b7dc6c1199166
+  - ecd152f8979b778af2a71c391535a74036c5705a06895d292cff2218a42f238d
+  status: PERSISTING_NONBLOCKING
+- affected_artifacts:
+  - P03-PROD-035
+  - P03-PROD-036
+  - P03-PROD-037
+  - P03-PROD-038
+  - P03-PROD-046
+  - P03-PROD-047
+  - P03-PROD-048
+  - P03-PROD-063
+  description: POST_OBSERVATION_STAGE11_STAGE12_AMENDMENTS
+  evidence_consequence: Carry into downstream interpretation; do not silently broaden
+    scope.
+  inherited: true
+  lifecycle: ACTIVE
+  limitation_id: P02-LIM-05
+  scope: INHERITED_CLAIM_AND_CONSUMER_SCOPE
+  source: P03 intake ledger / inherited P02 limitation authority
+  source_ids:
+  - P02-LIM-05
+  source_phase: P02
+  source_sha256s:
+  - 4d510f5e83a51e19bdec3e344f2a83368568cef125a7b326610b7dc6c1199166
+  - ecd152f8979b778af2a71c391535a74036c5705a06895d292cff2218a42f238d
+  status: PERSISTING_NONBLOCKING
+- affected_artifacts:
+  - P03-PROD-035
+  - P03-PROD-036
+  - P03-PROD-037
+  - P03-PROD-038
+  - P03-PROD-046
+  - P03-PROD-047
+  - P03-PROD-048
+  - P03-PROD-063
+  description: STAGE11_MIXED_GRANDFATHERED_LINEAGE
+  evidence_consequence: Carry into downstream interpretation; do not silently broaden
+    scope.
+  inherited: true
+  lifecycle: ACTIVE
+  limitation_id: P02-LIM-06
+  scope: INHERITED_CLAIM_AND_CONSUMER_SCOPE
+  source: P03 intake ledger / inherited P02 limitation authority
+  source_ids:
+  - P02-LIM-06
+  source_phase: P02
+  source_sha256s:
+  - 4d510f5e83a51e19bdec3e344f2a83368568cef125a7b326610b7dc6c1199166
+  - ecd152f8979b778af2a71c391535a74036c5705a06895d292cff2218a42f238d
+  status: PERSISTING_NONBLOCKING
+- affected_artifacts:
+  - P03-PROD-035
+  - P03-PROD-036
+  - P03-PROD-037
+  - P03-PROD-038
+  - P03-PROD-046
+  - P03-PROD-047
+  - P03-PROD-048
+  - P03-PROD-063
+  description: A4_SINGLE_REFIT_REPEAT_AND_DEEP_ANCHOR_BUDGETS_ONLY
+  evidence_consequence: No five-repeat stability, dense deep-budget curve, or full-grid-equivalence
+    claim.
+  inherited: true
+  lifecycle: ACTIVE
+  limitation_id: P02-LIM-07
+  scope: INHERITED_CLAIM_AND_CONSUMER_SCOPE
+  source: P03 intake ledger / inherited P02 limitation authority
+  source_ids:
+  - P02-LIM-07
+  source_phase: P02
+  source_sha256s:
+  - 4d510f5e83a51e19bdec3e344f2a83368568cef125a7b326610b7dc6c1199166
+  - ecd152f8979b778af2a71c391535a74036c5705a06895d292cff2218a42f238d
+  status: PERSISTING_NONBLOCKING
+- affected_artifacts:
+  - P03-PROD-035
+  - P03-PROD-036
+  - P03-PROD-037
+  - P03-PROD-038
+  - P03-PROD-046
+  - P03-PROD-047
+  - P03-PROD-048
+  - P03-PROD-063
+  description: STAGE18S_POST_HOC_DESCRIPTIVE_ONLY
+  evidence_consequence: Keep Stage18S post-hoc/descriptive; never use as confirmatory
+    replacement for Stage18.
+  inherited: true
+  lifecycle: ACTIVE
+  limitation_id: P02-LIM-08
+  scope: INHERITED_CLAIM_AND_CONSUMER_SCOPE
+  source: P03 intake ledger / inherited P02 limitation authority
+  source_ids:
+  - P02-LIM-08
+  source_phase: P02
+  source_sha256s:
+  - 4d510f5e83a51e19bdec3e344f2a83368568cef125a7b326610b7dc6c1199166
+  - ecd152f8979b778af2a71c391535a74036c5705a06895d292cff2218a42f238d
+  status: PERSISTING_NONBLOCKING
+- affected_artifacts:
+  - P03-PROD-035
+  - P03-PROD-036
+  - P03-PROD-037
+  - P03-PROD-038
+  - P03-PROD-046
+  - P03-PROD-047
+  - P03-PROD-048
+  - P03-PROD-063
+  description: CONDITIONAL_SCORE_SEMANTICS
+  evidence_consequence: Carry into downstream interpretation; do not silently broaden
+    scope.
+  inherited: true
+  lifecycle: ACTIVE
+  limitation_id: P02-LIM-09
+  scope: INHERITED_CLAIM_AND_CONSUMER_SCOPE
+  source: P03 intake ledger / inherited P02 limitation authority
+  source_ids:
+  - P02-LIM-09
+  source_phase: P02
+  source_sha256s:
+  - 4d510f5e83a51e19bdec3e344f2a83368568cef125a7b326610b7dc6c1199166
+  - ecd152f8979b778af2a71c391535a74036c5705a06895d292cff2218a42f238d
+  status: PERSISTING_NONBLOCKING
+- affected_artifacts:
+  - P03-PROD-035
+  - P03-PROD-036
+  - P03-PROD-037
+  - P03-PROD-038
+  - P03-PROD-046
+  - P03-PROD-047
+  - P03-PROD-048
+  - P03-PROD-063
+  description: POST_RESTART_NOTEBOOK_RECONSTRUCTION
+  evidence_consequence: Carry into downstream interpretation; do not silently broaden
+    scope.
+  inherited: true
+  lifecycle: ACTIVE
+  limitation_id: P02-LIM-10
+  scope: INHERITED_CLAIM_AND_CONSUMER_SCOPE
+  source: P03 intake ledger / inherited P02 limitation authority
+  source_ids:
+  - P02-LIM-10
+  source_phase: P02
+  source_sha256s:
+  - 4d510f5e83a51e19bdec3e344f2a83368568cef125a7b326610b7dc6c1199166
+  - ecd152f8979b778af2a71c391535a74036c5705a06895d292cff2218a42f238d
+  status: PERSISTING_NONBLOCKING
+- affected_artifacts:
+  - P03-PROD-035
+  - P03-PROD-036
+  - P03-PROD-037
+  - P03-PROD-038
+  - P03-PROD-046
+  - P03-PROD-047
+  - P03-PROD-048
+  - P03-PROD-063
+  description: PRIVATE_HF_REMOTE_ACCESS_REQUIRES_AUTHORIZATION
+  evidence_consequence: Resolve symbolic credential class at runtime; never hardcode
+    or assume one token.
+  inherited: true
+  lifecycle: ACTIVE
+  limitation_id: P02-LIM-11
+  scope: INHERITED_CLAIM_AND_CONSUMER_SCOPE
+  source: P03 intake ledger / inherited P02 limitation authority
+  source_ids:
+  - P02-LIM-11
+  source_phase: P02
+  source_sha256s:
+  - 4d510f5e83a51e19bdec3e344f2a83368568cef125a7b326610b7dc6c1199166
+  - ecd152f8979b778af2a71c391535a74036c5705a06895d292cff2218a42f238d
+  status: PERSISTING_NONBLOCKING
+- affected_artifacts:
+  - P03-PROD-035
+  - P03-PROD-036
+  - P03-PROD-037
+  - P03-PROD-038
+  - P03-PROD-046
+  - P03-PROD-047
+  - P03-PROD-048
+  - P03-PROD-063
+  description: DUAL_SYMBOLIC_HF_CREDENTIAL_CLASSES
+  evidence_consequence: Resolve symbolic credential class at runtime; never hardcode
+    or assume one token.
+  inherited: true
+  lifecycle: ACTIVE
+  limitation_id: P02-LIM-12
+  scope: INHERITED_CLAIM_AND_CONSUMER_SCOPE
+  source: P03 intake ledger / inherited P02 limitation authority
+  source_ids:
+  - P02-LIM-12
+  source_phase: P02
+  source_sha256s:
+  - 4d510f5e83a51e19bdec3e344f2a83368568cef125a7b326610b7dc6c1199166
+  - ecd152f8979b778af2a71c391535a74036c5705a06895d292cff2218a42f238d
+  status: PERSISTING_NONBLOCKING
+- affected_artifacts:
+  - P03-PROD-035
+  - P03-PROD-036
+  - P03-PROD-037
+  - P03-PROD-038
+  - P03-PROD-046
+  - P03-PROD-047
+  - P03-PROD-048
+  - P03-PROD-063
+  description: RECORDED_RUNTIME_ENVIRONMENT_BOUND
+  evidence_consequence: Carry into downstream interpretation; do not silently broaden
+    scope.
+  inherited: true
+  lifecycle: ACTIVE
+  limitation_id: P02-LIM-13
+  scope: INHERITED_CLAIM_AND_CONSUMER_SCOPE
+  source: P03 intake ledger / inherited P02 limitation authority
+  source_ids:
+  - P02-LIM-13
+  source_phase: P02
+  source_sha256s:
+  - 4d510f5e83a51e19bdec3e344f2a83368568cef125a7b326610b7dc6c1199166
+  - ecd152f8979b778af2a71c391535a74036c5705a06895d292cff2218a42f238d
+  status: PERSISTING_NONBLOCKING
+- affected_artifacts:
+  - P03-PROD-035
+  - P03-PROD-036
+  - P03-PROD-037
+  - P03-PROD-038
+  - P03-PROD-046
+  - P03-PROD-047
+  - P03-PROD-048
+  - P03-PROD-063
+  description: DOWNSTREAM_CALIBRATION_POLICY_STRESS_EMBODIMENT_UNTESTED_BY_P02
+  evidence_consequence: P03+ must test calibration/selective/uncertainty behavior;
+    P02 does not establish it.
+  inherited: true
+  lifecycle: ACTIVE
+  limitation_id: P02-LIM-14
+  scope: INHERITED_CLAIM_AND_CONSUMER_SCOPE
+  source: P03 intake ledger / inherited P02 limitation authority
+  source_ids:
+  - P02-LIM-14
+  source_phase: P02
+  source_sha256s:
+  - 4d510f5e83a51e19bdec3e344f2a83368568cef125a7b326610b7dc6c1199166
+  - ecd152f8979b778af2a71c391535a74036c5705a06895d292cff2218a42f238d
+  status: PERSISTING_NONBLOCKING
+- affected_artifacts:
+  - P03-PROD-026
+  - P03-PROD-027
+  - P03-PROD-028
+  - P03-PROD-029
+  - P03-PROD-030
+  - P03-PROD-032
+  - P03-PROD-035
+  - P03-PROD-036
+  - P03-PROD-037
+  description: A2 has 91 groups with no legal non-empty threshold under the frozen
+    maximum-risk target; A3 preserves 273 corresponding feature-level NO_LEGAL_THRESHOLD
+    terminals. TEST retuning is prohibited.
+  evidence_consequence: No-rule groups remain explicit ineligible evidence and cannot
+    be silently converted to all-reject or TEST-tuned thresholds.
+  inherited: false
+  lifecycle: ACTIVE
+  limitation_id: P03-LIM-SELECTIVE-NO-LEGAL-RULE-R1
+  scope: A2_A3_SELECTIVE_GENERALIZATION
+  source: Stages14–18 selective prediction evidence
+  source_ids:
+  - Stage14
+  - Stage16
+  - Stage18
+  source_phase: P03
+  source_sha256s:
+  - 3170aa6849f93e3138260cb13cad3ed9c49feec19746c7b73fc52c7df38c68d9
+  - 44f533535757155584cc6349bf8b9dd769a7004b89741b29f9797a85b8d5aff4
+  - 8f6d150192d403974531ab2006bb26b8b9ff723062ae0b833fe546cd89fcc785
+  status: NONBLOCKING_NEGATIVE_RESULT
+- affected_artifacts:
+  - P03-PROD-025
+  - P03-PROD-035
+  - P03-PROD-036
+  - P03-PROD-037
+  description: member_disagreement is unavailable when the exact A4 control is not
+    bound to the source; A4_CONTROL_NOT_BOUND_TO_SOURCE remains explicit.
+  evidence_consequence: No ensemble/member-disagreement estimate may be fabricated
+    from unrelated checkpoints or substituted controls.
+  inherited: false
+  lifecycle: ACTIVE
+  limitation_id: P03-LIM-MEMBER-DISAGREEMENT-UNAVAILABLE-R1
+  scope: A3_CONDITIONAL_MEMBER_DISAGREEMENT
+  source: Stage13 conditional uncertainty evidence
+  source_ids:
+  - Stage13:member_disagreement
+  source_phase: P03
+  source_sha256s:
+  - 97f9a6d6d690bd91cc92ddad9f2adc1eb515b2a5487ea477f294b78da4400b58
+  status: CONDITIONAL_INELIGIBILITY
+- affected_artifacts:
+  - P03-PROD-019
+  - P03-PROD-035
+  - P03-PROD-036
+  - P03-PROD-037
+  description: genuine_logits are required for logits-dependent methods such as temperature
+    and vector_scaling; hard labels or incompatible score semantics are never promoted
+    to fabricated logits.
+  evidence_consequence: Logits-dependent calibrators remain unavailable where genuine
+    compatible logits and class order are not established.
+  inherited: false
+  lifecycle: ACTIVE
+  limitation_id: P03-LIM-GENUINE-LOGITS-R1
+  scope: CALIBRATOR_ELIGIBILITY
+  source: Stage11 calibration attempt ledger / score-semantics contract
+  source_ids:
+  - Stage11:calibration_attempt_ledger
+  source_phase: P03
+  source_sha256s:
+  - 620af4e9e80e30bbaa7fc1ce3c9c371669d00b3fbc41722098c8a24cdea6a599
+  status: CONDITIONAL_INELIGIBILITY
+- affected_artifacts:
+  - P03-PROD-024
+  - P03-PROD-028
+  - P03-PROD-029
+  - P03-PROD-032
+  - P03-PROD-037
+  description: In the binary experiment, confidence, top1_top2_margin and normalized
+    entropy are deterministic monotone/rank-equivalent alias views of the same probability
+    ordering; they do not provide independent selective policy evidence.
+  evidence_consequence: A3 feature multiplicity must not be interpreted as three independent
+    uncertainty mechanisms or as evidence of replicated policy improvement.
+  inherited: false
+  lifecycle: ACTIVE
+  limitation_id: P03-LIM-BINARY-UNCERTAINTY-ALIAS-R1
+  scope: A3_FEATURE_INTERPRETATION
+  source: Stages13/16 binary uncertainty and selective evidence
+  source_ids:
+  - Stage13
+  - Stage16
+  source_phase: P03
+  source_sha256s:
+  - 97f9a6d6d690bd91cc92ddad9f2adc1eb515b2a5487ea477f294b78da4400b58
+  - 44f533535757155584cc6349bf8b9dd769a7004b89741b29f9797a85b8d5aff4
+  status: NONBLOCKING_INTERPRETATION_LIMIT
+- affected_artifacts:
+  - P03-PROD-025
+  - P03-PROD-037
+  - P03-PROD-046
+  - P03-PROD-063
+  description: The conformal path is a conditional conformal proxy/diagnostic. Exchangeability
+    under clustered subject/session EEG and downstream selection is not established
+    as a universal formal-coverage guarantee.
+  evidence_consequence: Do not claim universal formal 90% IHARQ TEST coverage from
+    the Stage13 proxy calculations; report empirical/diagnostic behavior only.
+  inherited: false
+  lifecycle: ACTIVE
+  limitation_id: P03-LIM-CONFORMAL-PROXY-R1
+  scope: CONFORMAL_CLAIM_CEILING
+  source: Stage13 conformal proxy evidence / frozen conditional design
+  source_ids:
+  - Stage13:conformal_set_size
+  source_phase: P03
+  source_sha256s:
+  - 97f9a6d6d690bd91cc92ddad9f2adc1eb515b2a5487ea477f294b78da4400b58
+  status: NONBLOCKING_CLAIM_LIMIT
+- affected_artifacts:
+  - P03-PROD-033
+  - P03-PROD-034
+  - P03-PROD-037
+  description: Sparse support is governed by the frozen minimum-support policy. The
+    accepted Stage19 run observed zero sparse_support warnings; minimum realized subgroup
+    support was above the policy threshold.
+  evidence_consequence: Absence of sparse warnings is a zero-event result, not permission
+    for post-hoc subgroup creation or unsupported sparse-cell inference.
+  inherited: false
+  lifecycle: ACTIVE
+  limitation_id: P03-LIM-SPARSE-SUPPORT-POLICY-R1
+  scope: GROUP_AUDIT_SUPPORT
+  source: Stage19 group/budget audit
+  source_ids:
+  - Stage19
+  source_phase: P03
+  source_sha256s:
+  - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  - 8f6d150192d403974531ab2006bb26b8b9ff723062ae0b833fe546cd89fcc785
+  status: NOT_TRIGGERED_IN_ACCEPTED_RUN
+- affected_artifacts:
+  - P03-PROD-035
+  - P03-PROD-037
+  - P03-PROD-051
+  - P03-PROD-053
+  - P03-PROD-054
+  description: Actual failed stage attempts remain immutable evidence and are not
+    deleted after successful successor correction.
+  evidence_consequence: Execution history must distinguish failed attempts from accepted
+    successor stages; documentary summaries cannot rewrite the run as failure-free.
+  inherited: false
+  lifecycle: ACTIVE
+  limitation_id: P03-LIM-FAILED-ATTEMPT-PRESERVATION-R1
+  scope: EXECUTION_HISTORY
+  source: Preserved stage failure receipts
+  source_ids:
+  - artifacts/negative_and_failed_results/phase_03/stage_failures/stage_07_attempt_001.json
+  - artifacts/negative_and_failed_results/phase_03/stage_failures/stage_14_attempt_001.json
+  - artifacts/negative_and_failed_results/phase_03/stage_failures/stage_14_attempt_002.json
+  source_phase: P03
+  source_sha256s:
+  - d63372d8783dddaebd861e436b1945e3aff5fc8bc93be7cec0899bd0c6154ab1
+  - d40f73adbdbb9fbadaa529dbdf175084428c6c625eb447530ca290bab691e5c7
+  - a1f7a07b4ff7fa0120474e8e1f065d59b9e0cac98f633941159a4659607ad6f5
+  - 8f6d150192d403974531ab2006bb26b8b9ff723062ae0b833fe546cd89fcc785
+  status: NONBLOCKING_AFTER_SUCCESSOR_CORRECTION
+negative_evidence:
+  failure_class_counts:
+    GOVERNED_TERMINAL_STATE: 648
+    conditional skip: 2280
+    no threshold: 364
+    persistent upstream limitation: 14
+    stage execution failure: 3
+    upstream diagnostic-only evidence: 309
+  failure_ledger_path: artifacts/negative_and_failed_results/phase_03/failure_ledger.jsonl
+  negative_result_count: 3618
+  negative_result_path: artifacts/negative_and_failed_results/phase_03/negative_results/P03-C8-STAGE20-NEGATIVE-EVIDENCE-HARDENING-R1/negative_result_notes.jsonl
+  source_product_ids:
+  - P03-PROD-035
+  - P03-PROD-036
+  - P03-PROD-037
+  terminal_status_counts:
+    BLOCKED: 1
+    DIAGNOSTIC_ONLY: 1449
+    FAILED: 2
+    INELIGIBLE: 1504
+    INHERITED_FAILURE: 648
+    PERSISTING_NONBLOCKING: 14
+product_id: P03-PROD-063
+prohibited_wording:
+- Do not state or imply that the validation maximum-risk target is a universal TEST
+  guarantee.
+- Do not state or imply a formal conformal coverage guarantee beyond the frozen proxy/diagnostic
+  scope.
+- Do not count binary confidence, entropy, and margin aliases as independent scientific
+  wins.
+- Do not imply TEST-driven threshold tuning or post-hoc feature selection.
+- Do not omit no-rule, failed, blocked, diagnostic-only, or inherited negative evidence.
+- Do not make clinical, safety, deployment, or physiological-state claims from P03
+  evidence.
+- Do not treat candidate claims as approved before Layer 0.
+protocol_sha256: dc46b87cb802d1a6a3ab0efd3dc6db6be5c3b5c7125c54e95a9cdbea8eef797d
+run_id: P03-L3-OFFICIAL-09ca82c743e0411a
+schema_id: ClaimEvidenceInput.v1
+schema_version: 1.0.0
+source_artifact_ids:
+- P03-PROD-046
+- P03-PROD-038
+- P03-PROD-039
+- P03-PROD-040
+- P03-PROD-047
+source_sha256s:
+- 087812be5e68900e5674766a69197ae3af1d800d22a2b2e72230d89d9a029b2c
+- 3e7167373f9d97386773783e1be8637c2e340f7c8347d6a811961377715603f7
+- b43221bf4b1c7b763557d55a48cb4ecf87efade5795626ad72c2216eb8b2c1eb
+- 20d4dc59d9338a2c3d19a2df8802d81c1e2ee83d22e933bbda678759e2ac1bdd
+- 4e0c950fa4e8d1331e4d43be0d5e6af800bcced6c8e62c256a89a0e8b46106e3
+- e1f786ec9f7c3d46dd29a8569d4076c83a1e33493ff32fb4530c02134142862d
+- a5e0adf43f3cfeff8f275eb5a5d582f6e378957c25ab8d743893a0b455a00e90

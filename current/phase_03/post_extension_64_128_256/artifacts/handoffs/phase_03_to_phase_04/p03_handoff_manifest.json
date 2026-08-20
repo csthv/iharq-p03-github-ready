@@ -1,0 +1,177 @@
+{
+  "allowed_uses": [
+    "evidence verification using frozen L3 outputs"
+  ],
+  "artifact_count": 35,
+  "artifact_index_path": "artifacts/handoffs/phase_03_to_phase_04/artifact_index.csv",
+  "blockers": [],
+  "checksum_ledger_path": "artifacts/handoffs/phase_03_to_phase_04/checksums.sha256",
+  "config_identity": {
+    "sha256": "2e5ebd6fc62f4c9ca3ed0102914f64142de9e1206be0b6e6b3e32cad90f1d742"
+  },
+  "config_sha256": "2e5ebd6fc62f4c9ca3ed0102914f64142de9e1206be0b6e6b3e32cad90f1d742",
+  "consumer_smoke_receipt": {
+    "artifact_index_count": 35,
+    "consumer_id": "P04",
+    "method": "schema validation + canonical fresh JSON reload",
+    "status": "PASS"
+  },
+  "created_at_utc": "2026-08-17T23:03:30.933074+00:00",
+  "destination": "P04",
+  "environment_identity": {
+    "sha256": "67dc3d67c8e0b6b664688c6aa1d2cbcb2b612386422a26d153e45966c070f700"
+  },
+  "evidence_map_seed_ids": [
+    "P03-CAND-CALIBRATION-RELIABILITY-R1",
+    "P03-CAND-SELECTIVE-TRANSPORT-R1",
+    "P03-CAND-BINARY-UQ-ALIAS-R1",
+    "P03-CAND-NEGATIVE-DENOMINATOR-R1"
+  ],
+  "external_pointer_ids": [],
+  "failure_code": null,
+  "handoff_id": "P03-P04-CANONICAL-HANDOFF-4d5c52b639cbdb0e6e82",
+  "handoff_status": "READY_WITH_EXPLICIT_LIMITATIONS",
+  "invalidated_by": [],
+  "layer0_boundary_ids": [
+    "P03-CANDIDATE-CLAIM-NO-APPROVAL-R1"
+  ],
+  "layer_id": "L3",
+  "lifecycle_status": "ACTIVE",
+  "limitation_ids": [
+    "P03-LIM-SELECTIVE-NO-LEGAL-RULE-R1",
+    "P03-LIM-MEMBER-DISAGREEMENT-UNAVAILABLE-R1",
+    "P03-LIM-GENUINE-LOGITS-R1",
+    "P03-LIM-BINARY-UNCERTAINTY-ALIAS-R1",
+    "P03-LIM-CONFORMAL-PROXY-R1",
+    "P03-LIM-SPARSE-SUPPORT-POLICY-R1",
+    "P03-LIM-FAILED-ATTEMPT-PRESERVATION-R1"
+  ],
+  "limitations": [
+    "P03-LIM-SELECTIVE-NO-LEGAL-RULE-R1",
+    "P03-LIM-MEMBER-DISAGREEMENT-UNAVAILABLE-R1",
+    "P03-LIM-GENUINE-LOGITS-R1",
+    "P03-LIM-BINARY-UNCERTAINTY-ALIAS-R1",
+    "P03-LIM-CONFORMAL-PROXY-R1",
+    "P03-LIM-SPARSE-SUPPORT-POLICY-R1",
+    "P03-LIM-FAILED-ATTEMPT-PRESERVATION-R1"
+  ],
+  "lineage_parent_ids": [
+    "P03-PROD-038",
+    "P03-PROD-045",
+    "P03-PROD-046",
+    "P03-PROD-047",
+    "P03-PROD-062",
+    "P03-PROD-063"
+  ],
+  "payload_sha256": "622a3cb4e472da731cc06cf674aa0eba9f21650345737b4e6a39013b2b3c35cb",
+  "phase_id": "P03",
+  "producer_module": "L3-M08",
+  "prohibited_uses": [
+    "retuning, evaluation truth, safety inference, upstream mutation"
+  ],
+  "protocol_identity": {
+    "sha256": "dc46b87cb802d1a6a3ab0efd3dc6db6be5c3b5c7125c54e95a9cdbea8eef797d",
+    "snapshot_id": "IHARQ-P03-L3-OFFICIAL-STRETCH-C-EXECUTION-FREEZE-R1"
+  },
+  "protocol_snapshot_id": "IHARQ-P03-L3-OFFICIAL-STRETCH-C-EXECUTION-FREEZE-R1",
+  "readiness_facets": {
+    "claim_inputs_candidate_only": true,
+    "limitation_rows": 7,
+    "metric_analysis_normalized_rows": 5148,
+    "negative_result_rows": 1016,
+    "stage21_final_disposition": "ACCEPT/FREEZE",
+    "stage22_raw_handoffs_reproduced": true,
+    "statistics_executed_in_stage22": false,
+    "statistics_input_rows": 5148
+  },
+  "record_family_versions": {
+    "CalibrationDashboardMetricRecord": {
+      "schema_path": "schemas/candidates/p03/CalibrationDashboardMetricRecord.schema.json",
+      "status": "CANDIDATE_REGISTRY_PATCH_REQUIRED"
+    },
+    "CalibrationEligibilityTable": {
+      "schema_path": "schemas/candidates/p03/CalibrationEligibilityTable.schema.json",
+      "status": "CANDIDATE_REGISTRY_PATCH_REQUIRED"
+    },
+    "CalibrationRecord": {
+      "schema_path": "schemas/records/p03/CalibrationRecord.schema.json",
+      "status": "GOVERNED_P03_PROFILE"
+    },
+    "HighConfidenceWrongTable": {
+      "schema_path": "schemas/records/p03/HighConfidenceWrongTable.schema.json",
+      "status": "GOVERNED_P03_PROFILE"
+    },
+    "Layer3MatchedOperatingPointTable": {
+      "schema_path": "schemas/records/p03/Layer3MatchedOperatingPointTable.schema.json",
+      "status": "GOVERNED_P03_PROFILE"
+    },
+    "LeakageWarningRecord": {
+      "schema_path": "schemas/records/p03/LeakageWarningRecord.schema.json",
+      "status": "GOVERNED_P03_PROFILE"
+    },
+    "P03HandoffManifest": {
+      "schema_path": "schemas/records/p03/P03HandoffManifest.schema.json",
+      "status": "GOVERNED_P03_PROFILE"
+    },
+    "P03IntakeLedger": {
+      "schema_path": "schemas/records/p03/P03IntakeLedger.schema.json",
+      "status": "GOVERNED_P03_PROFILE"
+    },
+    "ReliabilityAuditReport": {
+      "schema_path": "schemas/records/p03/ReliabilityAuditReport.schema.json",
+      "status": "GOVERNED_P03_PROFILE"
+    },
+    "RiskCoverageCurveSource": {
+      "schema_path": "schemas/records/p03/RiskCoverageCurveSource.schema.json",
+      "status": "GOVERNED_P03_PROFILE"
+    },
+    "SelectivePredictionRecord": {
+      "schema_path": "schemas/records/p03/SelectivePredictionRecord.schema.json",
+      "status": "GOVERNED_P03_PROFILE"
+    },
+    "SplitIntegrityReport": {
+      "schema_path": "schemas/records/p03/SplitIntegrityReport.schema.json",
+      "status": "GOVERNED_P03_PROFILE"
+    },
+    "ThresholdRegistryRecord": {
+      "schema_path": "schemas/records/p03/ThresholdRegistryRecord.schema.json",
+      "status": "GOVERNED_P03_PROFILE"
+    },
+    "UncertaintyRecord": {
+      "schema_path": "schemas/records/p03/UncertaintyRecord.schema.json",
+      "status": "GOVERNED_P03_PROFILE"
+    }
+  },
+  "record_id": "P03-P03HandoffManifest-e9132e93e6bd13388b52",
+  "run_id": "P03-L3-POSTEXT-64-128-256-R1-1833e865bcb88ff8",
+  "run_identity": {
+    "run_id": "P03-L3-POSTEXT-64-128-256-R1-1833e865bcb88ff8",
+    "source_manifest_sha256": "0e4d987bf078bb7a4753e2defe5c2acc94a6f96a69daaa845b7df80f0eb30aa2"
+  },
+  "schema_id": "P03HandoffManifest.v1",
+  "schema_version": "1.0.0",
+  "source_artifact_ids": [
+    "P03-PROD-038",
+    "P03-PROD-039",
+    "P03-PROD-040",
+    "P03-PROD-045",
+    "P03-PROD-046",
+    "P03-PROD-047",
+    "P03-PROD-062",
+    "P03-PROD-063"
+  ],
+  "source_sha256s": [
+    "c77e60ba1616b050eae837325baa9629be8244e8a01a245de9e103ec180afb10",
+    "5dd079bff4b861b66d7cc5019c08fb5beff6789aff62b95592c911d442cd9441",
+    "c2c63c346b89b030f63fb166b48be996e8c0ef4c2e6226972fff224447111700",
+    "4e08c3c08defb14aa8b29cf60fdf9c8856e6f8f7324bd0fdf72bd84e9ecea285",
+    "d08348524d62be2e8ccc09b1b8ca7de951a1c694c2bb72544de8afe906b9ae07",
+    "e4c3253ec359a01eace813d761bd9209dad44f40c9f5002ad0fa8708103fa0d3",
+    "59fceccf3a692edf27f7b5820367785cbbdbdc4771365cf09e0a5bd96e0f8cf4",
+    "0f27184dc3cd4e72f1fd1960e01b3b5986556bdf583d7c28e8db49e9cd5baffe",
+    "4d90fd1248a36abeecd2951920868d181e1e425b462b757a5f82722c69edbd78",
+    "03e50e2ff2df329eb84f58b8cfd853bca45113f978955596554ab54f966951f5"
+  ],
+  "supersedes": [],
+  "terminal_status": "SUCCESS"
+}

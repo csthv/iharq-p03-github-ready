@@ -1,0 +1,1651 @@
+{
+  "bundle_id": "P00-ALL-RECORD-FAMILIES-R1",
+  "records": [
+    {
+      "record_id": "IHARQ-DATASETRECORD-20260802-71553ced5d787069",
+      "record_type": "DatasetRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L1",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "dataset_id": "MOCK_DATASET_ID_1",
+        "source_uri": "MOCK_SOURCE_URI_1",
+        "license_id": "MOCK_LICENSE_ID_1",
+        "access_status": "MOCK_ACCESS_STATUS_1"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-SUBJECTRECORD-20260802-34a9d7bd1e276a8d",
+      "record_type": "SubjectRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "SOURCE_REFERENCED_LOCAL_PROFILE",
+      "owner_layer": "L1",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "subject_id": "MOCK_SUBJECT_ID_2",
+        "privacy_class": "MOCK_PRIVACY_CLASS_2"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-SESSIONRECORD-20260802-7f9e1a03c3043c0d",
+      "record_type": "SessionRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "SOURCE_REFERENCED_LOCAL_PROFILE",
+      "owner_layer": "L1",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "session_id": "MOCK_SESSION_ID_3",
+        "subject_id": "MOCK_SUBJECT_ID_3",
+        "acquired_at": "MOCK_ACQUIRED_AT_3"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-TRIALRECORD-20260802-062218fc2e7c3ca8",
+      "record_type": "TrialRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L1",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "trial_id": "MOCK_TRIAL_ID_4",
+        "session_id": "MOCK_SESSION_ID_4",
+        "trial_index": 4
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-WINDOWRECORD-20260802-aebb83a972d16606",
+      "record_type": "WindowRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L1",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "window_id": "MOCK_WINDOW_ID_5",
+        "trial_id": "MOCK_TRIAL_ID_5",
+        "start_index": 5,
+        "end_index": 5
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-SPLITRECORD-20260802-a74015b036505c4a",
+      "record_type": "SplitRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L1",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "split_id": "MOCK_SPLIT_ID_6",
+        "train_ids": [],
+        "validation_ids": [],
+        "test_ids": []
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-PREPROCESSINGRECORD-20260802-c2c11f9eea618f0f",
+      "record_type": "PreprocessingRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L1",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "preprocessing_id": "MOCK_PREPROCESSING_ID_7",
+        "input_ids": [],
+        "steps": []
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-LABELMAPRECORD-20260802-46811c73e2ca5c5c",
+      "record_type": "LabelMapRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L1",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "label_map_id": "MOCK_LABEL_MAP_ID_8",
+        "mapping": {}
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-ARTIFACTFLAGRECORD-20260802-85bf2b34578ce1f5",
+      "record_type": "ArtifactFlagRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L1",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "artifact_flag_id": "MOCK_ARTIFACT_FLAG_ID_9",
+        "target_id": "MOCK_TARGET_ID_9",
+        "flag_code": "MOCK_FLAG_CODE_9"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-VALIDATIONREPORT-20260802-fbaff78d77efdf50",
+      "record_type": "ValidationReport",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L1",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "validation_report_id": "MOCK_VALIDATION_REPORT_ID_10",
+        "target_ids": [],
+        "checks": []
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-LAYER1MANIFEST-20260802-7eac6cfdb9666484",
+      "record_type": "Layer1Manifest",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L1",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "manifest_id": "MOCK_MANIFEST_ID_11",
+        "record_ids": []
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-MODELREGISTRYRECORD-20260802-ae928a1bfcdafa17",
+      "record_type": "ModelRegistryRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L2",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "model_id": "MOCK_MODEL_ID_12",
+        "implementation_id": "MOCK_IMPLEMENTATION_ID_12",
+        "task": "MOCK_TASK_12"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-CHECKPOINTRECORD-20260802-381a020f397302c2",
+      "record_type": "CheckpointRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "SOURCE_REFERENCED_LOCAL_PROFILE",
+      "owner_layer": "L2",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "checkpoint_id": "MOCK_CHECKPOINT_ID_13",
+        "model_id": "MOCK_MODEL_ID_13",
+        "artifact_pointer": "MOCK_ARTIFACT_POINTER_13"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-PREDICTIONRECORD-20260802-b7b81a50b1c73a18",
+      "record_type": "PredictionRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L2",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "prediction_id": "MOCK_PREDICTION_ID_14",
+        "model_id": "MOCK_MODEL_ID_14",
+        "window_id": "MOCK_WINDOW_ID_14",
+        "predicted_label": "MOCK_PREDICTED_LABEL_14",
+        "scores": {}
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-BASELINEMETRICRECORD-20260802-fd629afff106d868",
+      "record_type": "BaselineMetricRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L2",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "baseline_metric_id": "MOCK_BASELINE_METRIC_ID_15",
+        "model_id": "MOCK_MODEL_ID_15",
+        "metric_entry_id": "MOCK_METRIC_ENTRY_ID_15",
+        "value": "0.0"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-ENSEMBLECONTROLRECORD-20260802-3c29f95e8d7f6f1f",
+      "record_type": "EnsembleControlRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L2",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "ensemble_id": "MOCK_ENSEMBLE_ID_16",
+        "member_model_ids": [],
+        "combination_rule": "MOCK_COMBINATION_RULE_16"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-CALIBRATIONRECORD-20260802-ee567534da7184e3",
+      "record_type": "CalibrationRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L3",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "calibration_id": "MOCK_CALIBRATION_ID_17",
+        "source_prediction_id": "MOCK_SOURCE_PREDICTION_ID_17",
+        "fit_split_id": "MOCK_FIT_SPLIT_ID_17",
+        "method_id": "MOCK_METHOD_ID_17"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-UNCERTAINTYRECORD-20260802-be270b429f8ed598",
+      "record_type": "UncertaintyRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L3",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "uncertainty_id": "MOCK_UNCERTAINTY_ID_18",
+        "source_prediction_id": "MOCK_SOURCE_PREDICTION_ID_18",
+        "method_id": "MOCK_METHOD_ID_18",
+        "value": "0.0"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-SELECTIVEPREDICTIONRECORD-20260802-36c05804a17a3e8c",
+      "record_type": "SelectivePredictionRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L3",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "selective_prediction_id": "MOCK_SELECTIVE_PREDICTION_ID_19",
+        "prediction_id": "MOCK_PREDICTION_ID_19",
+        "decision": "MOCK_DECISION_19",
+        "threshold_id": "MOCK_THRESHOLD_ID_19"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-THRESHOLDREGISTRYRECORD-20260802-68759d02ed8255c3",
+      "record_type": "ThresholdRegistryRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L3",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "threshold_id": "MOCK_THRESHOLD_ID_20",
+        "metric_entry_id": "MOCK_METRIC_ENTRY_ID_20",
+        "value": "0.0",
+        "selection_split_id": "MOCK_SELECTION_SPLIT_ID_20"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-EVIDENCEREQUESTRECORD-20260802-f59bdd48e8025b02",
+      "record_type": "EvidenceRequestRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "SOURCE_REFERENCED_LOCAL_PROFILE",
+      "owner_layer": "L4",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "evidence_request_id": "MOCK_EVIDENCE_REQUEST_ID_21",
+        "source_prediction_id": "MOCK_SOURCE_PREDICTION_ID_21",
+        "requested_evidence": []
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-EVIDENCEQUALITYRECORD-20260802-7409aa2a915d9e4e",
+      "record_type": "EvidenceQualityRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L4",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "evidence_quality_id": "MOCK_EVIDENCE_QUALITY_ID_22",
+        "request_id": "MOCK_REQUEST_ID_22",
+        "producer_id": "MOCK_PRODUCER_ID_22",
+        "variant_id": "MOCK_VARIANT_ID_22",
+        "quality_status": "MOCK_QUALITY_STATUS_22"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-IHARQDECISIONRECORD-20260802-f38a3f6940ab6a90",
+      "record_type": "IHARQDecisionRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L4",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "iharq_decision_id": "MOCK_IHARQ_DECISION_ID_23",
+        "evidence_quality_ids": [],
+        "action": "MOCK_ACTION_23",
+        "reason_code": "MOCK_REASON_CODE_23",
+        "fallback": "MOCK_FALLBACK_23"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-REGIMESTATERECORD-20260802-3f9bca6c048948aa",
+      "record_type": "RegimeStateRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L5",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "regime_state_id": "MOCK_REGIME_STATE_ID_24",
+        "time_index": 24,
+        "regime": "MOCK_REGIME_24",
+        "trust_state": "MOCK_TRUST_STATE_24"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-TEMPORALTRUSTRECORD-20260802-a0e773e96fae4e43",
+      "record_type": "TemporalTrustRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "SOURCE_REFERENCED_LOCAL_PROFILE",
+      "owner_layer": "L5",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "temporal_trust_id": "MOCK_TEMPORAL_TRUST_ID_25",
+        "regime_state_id": "MOCK_REGIME_STATE_ID_25",
+        "trust_score": "0.0"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-WARNINGRECORD-20260802-b16baf4fd3d79cd8",
+      "record_type": "WarningRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "SOURCE_REFERENCED_LOCAL_PROFILE",
+      "owner_layer": "L5",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "warning_id": "MOCK_WARNING_ID_26",
+        "state_id": "MOCK_STATE_ID_26",
+        "reason_code": "MOCK_REASON_CODE_26",
+        "severity": "MOCK_SEVERITY_26"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-READINESSCONTEXTRECORD-20260802-aadd9fa1bc3e806c",
+      "record_type": "ReadinessContextRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L6",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "readiness_context_id": "MOCK_READINESS_CONTEXT_ID_27",
+        "evidence_ids": [],
+        "legal_actions": [],
+        "budget": "0.0"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-DEFERRALRECORD-20260802-5fcefb4df7b5cfc3",
+      "record_type": "DeferralRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L6",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "deferral_id": "MOCK_DEFERRAL_ID_28",
+        "context_id": "MOCK_CONTEXT_ID_28",
+        "reason_code": "MOCK_REASON_CODE_28"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-POLICYACTIONRECORD-20260802-0ff0fde462900505",
+      "record_type": "PolicyActionRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L6",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "policy_action_id": "MOCK_POLICY_ACTION_ID_29",
+        "context_id": "MOCK_CONTEXT_ID_29",
+        "action": "MOCK_ACTION_29",
+        "policy_id": "MOCK_POLICY_ID_29"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-POLICYRECORD-20260802-8f2da7ea7dde1f4f",
+      "record_type": "PolicyRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "SOURCE_REFERENCED_LOCAL_PROFILE",
+      "owner_layer": "L6",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "policy_id": "MOCK_POLICY_ID_30",
+        "policy_version": "MOCK_POLICY_VERSION_30",
+        "mode": "MOCK_MODE_30"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-POLICYUPDATETRACE-20260802-53f9621568e98436",
+      "record_type": "PolicyUpdateTrace",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L7",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "policy_update_trace_id": "MOCK_POLICY_UPDATE_TRACE_ID_31",
+        "policy_id": "MOCK_POLICY_ID_31",
+        "source_transition_id": "MOCK_SOURCE_TRANSITION_ID_31",
+        "reward_version": "MOCK_REWARD_VERSION_31",
+        "seed": 31
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-STATERECORD-20260802-aa0d180cee855791",
+      "record_type": "StateRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L7",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "state_id": "MOCK_STATE_ID_32",
+        "episode_id": "MOCK_EPISODE_ID_32",
+        "state_payload": {}
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-TRANSITIONRECORD-20260802-4ad99dbfb1ee21f9",
+      "record_type": "TransitionRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L7",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "transition_id": "MOCK_TRANSITION_ID_33",
+        "state_id": "MOCK_STATE_ID_33",
+        "action_id": "MOCK_ACTION_ID_33",
+        "next_state_id": "MOCK_NEXT_STATE_ID_33",
+        "reward": "0.0",
+        "cost": "0.0"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-EPISODERECORD-20260802-526da08e83b8a4a1",
+      "record_type": "EpisodeRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "SOURCE_REFERENCED_LOCAL_PROFILE",
+      "owner_layer": "L7",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "episode_id": "MOCK_EPISODE_ID_34",
+        "session_id": "MOCK_SESSION_ID_34",
+        "terminal_reason": "MOCK_TERMINAL_REASON_34"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-ROLLOUTRECORD-20260802-9d22cbdcdcafcce0",
+      "record_type": "RolloutRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "SOURCE_REFERENCED_LOCAL_PROFILE",
+      "owner_layer": "L7",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "rollout_id": "MOCK_ROLLOUT_ID_35",
+        "policy_id": "MOCK_POLICY_ID_35",
+        "transition_ids": [],
+        "mode": "MOCK_MODE_35"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-STRESSPROFILERECORD-20260802-771f8dd4a062aee0",
+      "record_type": "StressProfileRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L8",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "STRESS_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "stress_profile_id": "MOCK_STRESS_PROFILE_ID_36",
+        "stress_type": "MOCK_STRESS_TYPE_36",
+        "intensity": "0.0",
+        "seed": 36
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-STRESSAPPLICATIONRECORD-20260802-d4969a5e643a2dd0",
+      "record_type": "StressApplicationRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "SOURCE_REFERENCED_LOCAL_PROFILE",
+      "owner_layer": "L8",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "STRESS_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "stress_application_id": "MOCK_STRESS_APPLICATION_ID_37",
+        "stress_profile_id": "MOCK_STRESS_PROFILE_ID_37",
+        "target_id": "MOCK_TARGET_ID_37"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-MATCHEDSTRESSPAIRRECORD-20260802-878316e9f3371dc4",
+      "record_type": "MatchedStressPairRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "SOURCE_REFERENCED_LOCAL_PROFILE",
+      "owner_layer": "L8",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "STRESS_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "matched_stress_pair_id": "MOCK_MATCHED_STRESS_PAIR_ID_38",
+        "clean_id": "MOCK_CLEAN_ID_38",
+        "stressed_id": "MOCK_STRESSED_ID_38",
+        "matching_keys": []
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-EMBODIMENTSTATERECORD-20260802-2580b98800040cc4",
+      "record_type": "EmbodimentStateRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L9",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "EMBODIMENT_PROXY_ONLY",
+        "SIMULATION_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "embodiment_state_id": "MOCK_EMBODIMENT_STATE_ID_39",
+        "platform_id": "MOCK_PLATFORM_ID_39",
+        "task_id": "MOCK_TASK_ID_39",
+        "state_payload": {}
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-EMBODIMENTOUTCOMERECORD-20260802-d94cba063c994d84",
+      "record_type": "EmbodimentOutcomeRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L9",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "EMBODIMENT_PROXY_ONLY",
+        "SIMULATION_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "embodiment_outcome_id": "MOCK_EMBODIMENT_OUTCOME_ID_40",
+        "state_id": "MOCK_STATE_ID_40",
+        "command_id": "MOCK_COMMAND_ID_40",
+        "outcome": "MOCK_OUTCOME_40"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-SAFETYEVENTRECORD-20260802-14c8b2fc0f2977f1",
+      "record_type": "SafetyEventRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L9",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "EMBODIMENT_PROXY_ONLY",
+        "SIMULATION_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "safety_event_id": "MOCK_SAFETY_EVENT_ID_41",
+        "state_id": "MOCK_STATE_ID_41",
+        "severity": "MOCK_SEVERITY_41",
+        "reason_code": "MOCK_REASON_CODE_41"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-LAYER9REWARDTRACE-20260802-c1b34e848e641ff8",
+      "record_type": "Layer9RewardTrace",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L9",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "EMBODIMENT_PROXY_ONLY",
+        "SIMULATION_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "reward_trace_id": "MOCK_REWARD_TRACE_ID_42",
+        "transition_id": "MOCK_TRANSITION_ID_42",
+        "components": []
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-LAYER9EMBODIMENTDEMOMANIFEST-20260802-a95ee9c14f42a95d",
+      "record_type": "Layer9EmbodimentDemoManifest",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L9",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "EMBODIMENT_PROXY_ONLY",
+        "SIMULATION_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "demo_manifest_id": "MOCK_DEMO_MANIFEST_ID_43",
+        "platform_id": "MOCK_PLATFORM_ID_43",
+        "artifact_ids": []
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-METRICDICTIONARYENTRY-20260802-0b33ce01ead025f5",
+      "record_type": "MetricDictionaryEntry",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L10",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-DATASETRECORD-20260802-71553ced5d787069"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "RENDERING",
+      "payload": {
+        "metric_entry_id": "MOCK_METRIC_ENTRY_ID_44",
+        "name": "MOCK_NAME_44",
+        "definition": "MOCK_DEFINITION_44",
+        "unit": "MOCK_UNIT_44",
+        "direction": "MOCK_DIRECTION_44"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-METRICDICTIONARY-20260802-8c070b5d2ff407cb",
+      "record_type": "MetricDictionary",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L10",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-DATASETRECORD-20260802-71553ced5d787069"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "RENDERING",
+      "payload": {
+        "metric_dictionary_id": "MOCK_METRIC_DICTIONARY_ID_45",
+        "entry_ids": []
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-DASHBOARDMETRICRECORD-20260802-e1de6d34624d5dd2",
+      "record_type": "DashboardMetricRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L10",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-DATASETRECORD-20260802-71553ced5d787069"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "RENDERING",
+      "payload": {
+        "dashboard_metric_id": "MOCK_DASHBOARD_METRIC_ID_46",
+        "metric_entry_id": "MOCK_METRIC_ENTRY_ID_46",
+        "source_artifact_ids": [],
+        "rendering_only": true
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-VIEWDEFINITION-20260802-b5b89f2fcaa04919",
+      "record_type": "ViewDefinition",
+      "schema_version": "1.0-foundation",
+      "authority_status": "SOURCE_REFERENCED_LOCAL_PROFILE",
+      "owner_layer": "L10",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-DATASETRECORD-20260802-71553ced5d787069"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "RENDERING",
+      "payload": {
+        "view_definition_id": "MOCK_VIEW_DEFINITION_ID_47",
+        "source_metric_ids": [],
+        "view_type": "MOCK_VIEW_TYPE_47"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-CARDDEFINITION-20260802-9abb747cc1d576b9",
+      "record_type": "CardDefinition",
+      "schema_version": "1.0-foundation",
+      "authority_status": "SOURCE_REFERENCED_LOCAL_PROFILE",
+      "owner_layer": "L10",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-DATASETRECORD-20260802-71553ced5d787069"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "RENDERING",
+      "payload": {
+        "card_definition_id": "MOCK_CARD_DEFINITION_ID_48",
+        "source_ids": [],
+        "card_type": "MOCK_CARD_TYPE_48"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-MATCHEDCOMPARISONREPORT-20260802-337e9b6b5e6cb03c",
+      "record_type": "MatchedComparisonReport",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L10",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-DATASETRECORD-20260802-71553ced5d787069"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "RENDERING",
+      "payload": {
+        "matched_comparison_report_id": "MOCK_MATCHED_COMPARISON_REPORT_ID_49",
+        "left_ids": [],
+        "right_ids": [],
+        "matching_keys": [],
+        "metric_entry_ids": []
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-NEGATIVERESULTNOTE-20260802-f3782d815c81ebc9",
+      "record_type": "NegativeResultNote",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L0",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "GOVERNANCE",
+      "payload": {
+        "negative_result_note_id": "MOCK_NEGATIVE_RESULT_NOTE_ID_50",
+        "source_artifact_ids": [],
+        "statement": "MOCK_STATEMENT_50",
+        "limitations": "MOCK_LIMITATIONS_50"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-DIAGNOSTICSTATUSRECORD-20260802-25ebd1d24d304104",
+      "record_type": "DiagnosticStatusRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "SOURCE_REFERENCED_LOCAL_PROFILE",
+      "owner_layer": "L0",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "GOVERNANCE",
+      "payload": {
+        "diagnostic_status_id": "MOCK_DIAGNOSTIC_STATUS_ID_51",
+        "target_id": "MOCK_TARGET_ID_51",
+        "status": "MOCK_STATUS_51",
+        "reason_code": "MOCK_REASON_CODE_51"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-CLAIMEVIDENCEMATRIX-20260802-efe7a9fda9d5040c",
+      "record_type": "ClaimEvidenceMatrix",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_DECISION_ACCEPTED",
+      "owner_layer": "L0",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "GOVERNANCE",
+      "payload": {
+        "claim_evidence_matrix_id": "MOCK_CLAIM_EVIDENCE_MATRIX_ID_52",
+        "claim_ids": [],
+        "evidence_ids": [],
+        "link_rows": {}
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-CLAIMEVIDENCEMANIFEST-20260802-de9ab9e9c8c954e7",
+      "record_type": "ClaimEvidenceManifest",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_DECISION_ACCEPTED",
+      "owner_layer": "L10",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-DATASETRECORD-20260802-71553ced5d787069"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "RENDERING",
+      "payload": {
+        "claim_evidence_manifest_id": "MOCK_CLAIM_EVIDENCE_MANIFEST_ID_53",
+        "matrix_id": "MOCK_MATRIX_ID_53",
+        "entry_ids": []
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-LAYER0DISPOSITIONRECORD-20260802-cce815f7c8b1e6d7",
+      "record_type": "Layer0DispositionRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "SOURCE_REFERENCED_LOCAL_PROFILE",
+      "owner_layer": "L0",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "GOVERNANCE",
+      "payload": {
+        "layer0_disposition_id": "MOCK_LAYER0_DISPOSITION_ID_54",
+        "statement_id": "MOCK_STATEMENT_ID_54",
+        "status": "MOCK_STATUS_54",
+        "limitations": "MOCK_LIMITATIONS_54",
+        "review_roles": []
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-REPRODUCTIONMANIFEST-20260802-8456125ff18d62db",
+      "record_type": "ReproductionManifest",
+      "schema_version": "1.0-foundation",
+      "authority_status": "SOURCE_REFERENCED_LOCAL_PROFILE",
+      "owner_layer": "L10",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-DATASETRECORD-20260802-71553ced5d787069"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "RENDERING",
+      "payload": {
+        "reproduction_manifest_id": "MOCK_REPRODUCTION_MANIFEST_ID_55",
+        "source_commit": "MOCK_SOURCE_COMMIT_55",
+        "environment_id": "MOCK_ENVIRONMENT_ID_55",
+        "config_id": "MOCK_CONFIG_ID_55",
+        "artifact_ids": []
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-PHASEHANDOFFRECORD-20260802-0c066cb7619bde1b",
+      "record_type": "PhaseHandoffRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "SOURCE_REFERENCED_LOCAL_PROFILE",
+      "owner_layer": "L10",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-DATASETRECORD-20260802-71553ced5d787069"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "RENDERING",
+      "payload": {
+        "phase_handoff_id": "MOCK_PHASE_HANDOFF_ID_56",
+        "source_phase": "MOCK_SOURCE_PHASE_56",
+        "target_phase": "MOCK_TARGET_PHASE_56",
+        "artifact_ids": [],
+        "gate_decision_ids": []
+      },
+      "ablation_id": null
+    }
+  ],
+  "controls": {
+    "chronology_valid": true,
+    "matched": true,
+    "metric_definition_present": true,
+    "disabled_update_audit": true,
+    "frozen": true,
+    "mutation_count": 0
+  }
+}

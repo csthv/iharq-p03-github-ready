@@ -1,0 +1,63 @@
+manifest_id: IHARQ-P02-STAGE24-REPLAY-GITHUB-READY-MANIFEST-R1
+created_at_utc: '2026-08-14T06:07:42.489751+00:00'
+status: PASS
+source_snapshot: &id001
+  artifact_id: P02-STAGE24-REPLAY-SOURCE-HF-SNAPSHOT-R1
+  created_at_utc: '2026-08-14T06:07:39.368883+00:00'
+  status: PASS
+  source_repo_id: Csthv/p02-phase02-final-whole-working-20260814t052120z-b890ff92
+  source_repo_type: dataset
+  source_immutable_revision: bc14961e14f2e48690e55df3577014275f9cbf30
+  source_manifest_path: __IHARQ_SNAPSHOT__/WORKING_TREE_MANIFEST.jsonl
+  source_manifest_sha256: 564bbb44e67d14da8457ad83d33651ded93dfc6b89ab90f10f78a36a20b8e8f5
+  source_metadata_path: __IHARQ_SNAPSHOT__/SNAPSHOT_METADATA.json
+  large_artifacts_are_referenced_not_duplicated: true
+stage24_replay:
+  artifact_id: P02-STAGE24-FINALIZATION-REPLAY-FROM-HF-SNAPSHOT-R1
+  created_at_utc: '2026-08-14T06:07:39.369538+00:00'
+  status: PASS
+  operation: FINALIZATION_AND_RELEASE_ASSEMBLY_REPLAY
+  scientific_stage_rerun: false
+  training_rerun: false
+  scientific_configuration_changed: false
+  source_snapshot: *id001
+  validated_source_state:
+    stage11:
+      ledger: SUCCESS
+      gate: PASS
+      role: CANONICAL_ACCEPTED_MAIN
+    stage12:
+      ledger: SUCCESS
+      gate: PASS
+      role: CANONICAL_ACCEPTED_MAIN
+    stage18:
+      ledger: SUCCESS
+      gate: PASS
+      canonical_G18_modified: false
+    stage18S:
+      status: PASS
+      claim_scope: POST_HOC_SENSITIVITY_DESCRIPTIVE
+      terminal_counts:
+        INPUT_INCOMPATIBLE: 27
+        SUCCESS: 135
+      member_receipts: 216
+    stage23:
+      ledger: SUCCESS
+      gate: PASS
+    stage24:
+      ledger: SUCCESS
+      gate: PASS
+  release_policy:
+    github_ready_contains_light_results_directly: true
+    csv_json_jsonl_metric_result_files_direct: true
+    large_artifacts_externalized_to_hf_source_snapshot: true
+    no_3gib_bundle_transport: true
+    target_upload_strategy: ONE_HIGH_LEVEL_UPLOAD_FOLDER
+  counts:
+    source_manifest_files: 24661
+    direct_release_files_before_security_filter: 14506
+    hf_external_files: 10122
+    security_exclusions: 0
+external_artifact_pointer_manifest: external_artifact_pointer_manifest.yaml
+no_3gib_bundles: true
+large_artifacts_externalized: true

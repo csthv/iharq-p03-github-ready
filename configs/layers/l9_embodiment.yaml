@@ -1,0 +1,18 @@
+layer_id: L9
+mode: FOUNDATION_ONLY
+owner: Layer 9
+profile_version: 1.0-audit3
+supported_branches:
+- STATIC_REPLAY
+- MYOSUITE_PLACEHOLDER
+- OPENSIM_PLACEHOLDER
+command_mapping_required: true
+safety_gate_required: true
+seed_required: true
+required_limitations:
+- SIMULATION_ONLY
+- EMBODIMENT_PROXY_ONLY
+- MOCK_ONLY
+real_world_claims_forbidden: true
+clinical_claims_forbidden: true
+scientific_execution: false

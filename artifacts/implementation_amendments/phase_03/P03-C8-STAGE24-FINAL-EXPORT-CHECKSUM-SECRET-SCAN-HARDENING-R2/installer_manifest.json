@@ -1,0 +1,58 @@
+{
+  "canonical_paths": {
+    "P03-PROD-058": "artifacts/reports/phase_03/SecretScanReport/security/secret_scan.json",
+    "P03-PROD-059": "artifacts/manifests/phase_03/checksums.sha256",
+    "P03-PROD-060": "artifacts/manifests/phase_03/package_manifest.json",
+    "P03-PROD-061": "artifacts/manifests/phase_03/external_artifact_pointer.yaml",
+    "P03-PROD-064": "final_state/through_p03/provenance/p03/paper_thesis_provenance_bundle.json",
+    "P03-PROD-065": "final_state/through_p03/p03_final_export_bundle.json"
+  },
+  "config_changed": false,
+  "correction": "R2 removes fragile huggingface_hub.utils RemoteEntryNotFoundError import; freshness classification is fail-closed by exception type/status.",
+  "external": {
+    "access_class": "PRIVATE_GOVERNED",
+    "authenticated": true,
+    "credential_symbol": "IHARQ_HF_TOKEN_P02",
+    "credential_value_persisted": false,
+    "huggingface_hub_version": "1.24.0",
+    "path": "phase_03/layer_03/P03-L3-OFFICIAL-09ca82c743e0411a",
+    "provider": "Hugging Face private dataset",
+    "remote_target_fresh": true,
+    "repository": "Csthv/iharq-p03-phase03-l3-execution"
+  },
+  "hardening_id": "P03-C8-STAGE24-FINAL-EXPORT-CHECKSUM-SECRET-SCAN-HARDENING-R2",
+  "installed_at_utc": "2026-08-16T21:16:49.765439Z",
+  "low_disk": {
+    "filesystem_free_bytes": 12188237824,
+    "hardlink_supported": true,
+    "same_filesystem": true,
+    "source_file_count": 15719,
+    "source_logical_bytes": 4346271936
+  },
+  "maxq_audit_id": "P03-C8-MAXQ-STAGE24-FINAL-EXPORT-EVIDENCE-HARDENING-R2",
+  "protocol_changed": false,
+  "repository_mutated": false,
+  "run_id": "P03-L3-OFFICIAL-09ca82c743e0411a",
+  "science_boundary": {
+    "A2_no_legal_threshold": 91,
+    "A2_success": 194,
+    "A3_independent_ranking_information": false,
+    "A3_no_legal_threshold": 273,
+    "A3_success": 582,
+    "candidate_claim_count": 4,
+    "claim_approval_performed": false,
+    "limitation_rows": 21,
+    "negative_result_rows": 3618,
+    "test_used_for_selection": false
+  },
+  "scientific_method_changed": false,
+  "scope": "PROSPECTIVE_POST_PROMOTION_FINAL_EXPORT_EVIDENCE_TRANSPORT_ONLY",
+  "stage23_final_disposition": "ACCEPT/FREEZE",
+  "stage23_fingerprint": "c09e4af624d017c9a8377b65058d97045badf9c6f83874b7ee8f5d6a814b6665",
+  "stage23_hardening_manifest_sha256": "e90cd8a4e8d955105cd89fccfbf3754d1724943159d1eb80b97c5224c5b35371",
+  "stage23_output_manifest_sha256": "210621d8578766ca0ed6d0dd8a3878359cf473bfa4c20b6279628fceec4872e9",
+  "stage24_executed_at_install": false,
+  "stage24_handler_changed": false,
+  "stage24_handler_sha256": "a91a0788c4eacdb64897e7e24e2ecab838afd091c7ccd749445c21bdad7e092c",
+  "stage_id": "24"
+}

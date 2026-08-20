@@ -1,0 +1,731 @@
+phase_id: P01
+layer_id: L1
+execution_identity: P01-L1-OFFICIAL-R6-AUTHORITY-FIRST-CONTROLLED-REPAIR
+governance: V6.1 single-track
+build_book_id: IHARQ-IBB-R10-P01-L1-INDEPENDENT-AUDIT-REPAIRED
+annex_id: IHARQ-IBB-P01-L1-ANNEX-R4
+freeze_id: P01-L1-OFFICIAL-RUN-FREEZE-R2
+datasets:
+- dataset_id: PhysioNetMI
+  aliases:
+  - PhysioNetMI
+  - EEGMMI
+  - EEG Motor Movement/Imagery Dataset
+  authority_status: PRIMARY_SELECTED
+  scientific_role: source/rest/provenance anchor
+  active_for_run: true
+  active_disposition: ACTIVE_FOR_P01_OFFICIAL_RUN
+  exact_revision: 1.0.0
+  citation: 'Schalk G. EEG Motor Movement/Imagery Dataset (version 1.0.0). PhysioNet.
+    2009. DOI 10.13026/C28G6P; associated instrumentation paper: Schalk et al., BCI2000,
+    IEEE TBME 2004.'
+  license: Open Data Commons Attribution License 1.0 (ODC-By-1.0)
+  access_method: MOABB_1_5_0_OFFICIAL_PHYSIONET_DOWNLOAD
+  official_reference: https://physionet.org/content/eegmmidb/1.0.0/; https://doi.org/10.13026/C28G6P
+  published_checksum: PROVIDER_SHA256SUMS_TXT_AVAILABLE_AT_DATASET_ROOT
+  checksum_policy: VERIFY_EACH_DOWNLOADED_FILE_AGAINST_PHYSIONET_SHA256SUMS_TXT_THEN_INDEPENDENTLY_RECOMPUTE_AND_FREEZE_AGGREGATE
+  expected_checksum: COMPUTE_OR_VERIFY_PER_FROZEN_POLICY
+  adapter: MOABBPhysionetMIAdapter
+  cache_path: source_cache/PhysioNetMI
+  redistribution_allowed: YES_WITH_ODC_BY_1_0_ATTRIBUTION; RAW_BYTES_EXCLUDED_FROM_PHASE_BUNDLE
+  source_native_preprocessing: &id001
+  - provider signal as distributed; preserve EDF+ annotations and channel order
+  limitations: &id002
+  - Run context is mandatory for T1/T2 semantics
+  - Executed-movement and baseline runs are excluded from the official binary MI branch
+  - Subject 88 rate exception must be recorded and resampled deterministically
+  - MOABB bulk loading across subject 88 and 160 Hz subjects is prohibited; per-subject
+    acquisition is mandatory.
+  adapter_options:
+    moabb_class: PhysionetMI
+    subjects: 1-109
+    runs:
+    - 4
+    - 8
+    - 12
+    accept_terms: false
+    internet_required: true
+    load_policy: ONE_SUBJECT_PER_GET_DATA_CALL
+    subject_88_policy: LOAD_SUBJECT_88_SEPARATELY_AT_128_HZ; JOINTLY_RESAMPLE_ITS_SIGNAL_AND_EVENTS_TO_160_HZ;
+      DO_NOT_BULK_LOAD_WITH_160_HZ SUBJECTS
+    official_reference: https://physionet.org/content/eegmmidb/1.0.0/; https://doi.org/10.13026/C28G6P
+    checksum_policy: VERIFY_EACH_DOWNLOADED_FILE_AGAINST_PHYSIONET_SHA256SUMS_TXT_THEN_INDEPENDENTLY_RECOMPUTE_AND_FREEZE_AGGREGATE
+    published_checksum: PROVIDER_SHA256SUMS_TXT_AVAILABLE_AT_DATASET_ROOT
+    expected_event_inventory:
+    - 'T0: rest/no action'
+    - 'T1: left-hand imagery in runs 4/8/12'
+    - 'T2: right-hand imagery in runs 4/8/12'
+    sampling_and_channel_profile:
+      eeg_channels: 64
+      nominal_sampling_hz: 160
+      subject_88_sampling_hz: 128
+      format: EDF+
+    source_native_preprocessing: *id001
+    limitations: *id002
+    allow_byte_equivalent_attachment_fallback: false
+    acquisition_contract: MOABB_1_5_0_OFFICIAL_PROVIDER_DOWNLOAD_ONLY
+- dataset_id: BNCI2014_001
+  aliases:
+  - BNCI2014_001
+  - BCI Competition IV-2a
+  - BNCI 001-2014
+  authority_status: PRIMARY_SELECTED
+  scientific_role: standard four-class MI benchmark companion; official P01 binary
+    left/right branch
+  active_for_run: true
+  active_disposition: ACTIVE_FOR_P01_OFFICIAL_RUN
+  exact_revision: 001-2014 provider file set A01T/A01E through A09T/A09E
+  citation: Tangermann M, Müller KR, Aertsen A, et al. Review of the BCI Competition
+    IV. Frontiers in Neuroscience. 2012;6:55. DOI 10.3389/fnins.2012.00055.
+  license: Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND
+    4.0)
+  access_method: MOABB_1_5_0_OFFICIAL_BNCI_DOWNLOAD
+  official_reference: https://bnci-horizon-2020.eu/database/data-sets; https://moabb.neurotechx.com/docs/generated/moabb.datasets.BNCI2014_001.html;
+    https://doi.org/10.3389/fnins.2012.00055
+  published_checksum: NO_SINGLE_PROVIDER_WIDE_PUBLISHED_SHA256
+  checksum_policy: COMPUTE_SHA256_PER_GDF/MAT_FILE_AND_FREEZE_AGGREGATE_BEFORE_ADMISSION
+  expected_checksum: COMPUTE_OR_VERIFY_PER_FROZEN_POLICY
+  adapter: MOABBBNCI2014001Adapter
+  cache_path: source_cache/BNCI2014_001
+  redistribution_allowed: NO_DERIVATIVE_REDISTRIBUTION; RAW_BYTES_EXCLUDED; ONLY METADATA/HASHES/RECORDS
+    EXPORTED
+  source_native_preprocessing: &id003
+  - 0.5-100 Hz provider acquisition filter
+  - 50 Hz notch filter
+  limitations: &id004
+  - Feet and tongue are preserved as excluded source labels in the official binary
+    branch
+  - EOG channels are metadata/quality channels and not model input
+  - CC BY-ND restrictions prohibit redistributed derived raw-signal variants
+  adapter_options:
+    moabb_class: BNCI2014_001
+    subjects: 1-9
+    sessions:
+    - 0train
+    - 1test
+    internet_required: true
+    official_reference: https://bnci-horizon-2020.eu/database/data-sets; https://moabb.neurotechx.com/docs/generated/moabb.datasets.BNCI2014_001.html;
+      https://doi.org/10.3389/fnins.2012.00055
+    checksum_policy: COMPUTE_SHA256_PER_GDF/MAT_FILE_AND_FREEZE_AGGREGATE_BEFORE_ADMISSION
+    published_checksum: NO_SINGLE_PROVIDER_WIDE_PUBLISHED_SHA256
+    expected_event_inventory:
+    - '276: idling EEG, eyes open (excluded technical/baseline)'
+    - '277: idling EEG, eyes closed (excluded technical/baseline)'
+    - '768: start of trial (excluded technical)'
+    - '769: left hand MI (included)'
+    - '770: right hand MI (included)'
+    - '771: both feet MI (excluded from binary branch)'
+    - '772: tongue MI (excluded from binary branch)'
+    - '783: cue unknown (blocked/preserved as ambiguous)'
+    - '1023: rejected trial (excluded and preserved)'
+    - '1072: eye movements (excluded technical/artifact provenance)'
+    - '32766: start of new run (excluded technical)'
+    sampling_and_channel_profile:
+      eeg_channels: 22
+      eog_channels: 3
+      sampling_hz: 250
+      trial_duration_seconds: 4
+      format: GDF/MAT
+    source_native_preprocessing: *id003
+    limitations: *id004
+    allow_byte_equivalent_attachment_fallback: false
+    acquisition_contract: MOABB_1_5_0_OFFICIAL_PROVIDER_DOWNLOAD_ONLY
+- dataset_id: Lee2019_MI
+  aliases:
+  - Lee2019_MI
+  - OpenBMI MI
+  - OpenBMI
+  authority_status: PRIMARY_SELECTED_WITH_SOURCE_QUALIFICATIONS
+  scientific_role: maximum-scope two-session left/right MI target companion
+  active_for_run: true
+  active_disposition: ACTIVE_FOR_P01_OFFICIAL_RUN
+  exact_revision: GigaDB dataset DOI 10.5524/100542; MOABB 1.5.0 Lee2019_MI wrapper;
+    labeled offline/train MI runs only
+  citation: 'Lee MH, Kwon OY, Kim YJ, et al. EEG dataset and OpenBMI toolbox for three
+    BCI paradigms: an investigation into BCI illiteracy. GigaScience. 2019;8(5):giz002.
+    DOI 10.1093/gigascience/giz002; data DOI 10.5524/100542.'
+  license: GNU General Public License v3.0 as documented by the maintained MOABB source
+    card; source terms retained in DatasetCard
+  access_method: MOABB_1_5_0_OFFICIAL_GIGADB_DOWNLOAD
+  official_reference: https://moabb.neurotechx.com/docs/generated/moabb.datasets.Lee2019_MI.html;
+    https://doi.org/10.1093/gigascience/giz002; https://doi.org/10.5524/100542
+  published_checksum: NO_SINGLE_PROVIDER_WIDE_PUBLISHED_SHA256
+  checksum_policy: COMPUTE_SHA256_PER_SOURCE_ARCHIVE/FILE_AND_FREEZE_AGGREGATE_BEFORE_ADMISSION
+  expected_checksum: COMPUTE_OR_VERIFY_PER_FROZEN_POLICY
+  adapter: MOABBLee2019MIAdapter
+  cache_path: source_cache/Lee2019_MI
+  redistribution_allowed: ONLY_AS_PER_GPL_3_0_AND_GIGADB_SOURCE_TERMS; RAW_BYTES_EXCLUDED_FROM_PHASE
+    BUNDLE
+  source_native_preprocessing: &id005
+  - raw source status; preserve original metadata and source phase
+  limitations: &id006
+  - Online/test runs are excluded from supervised P01 records
+  - High-rate source requires deterministic anti-aliased resampling
+  - Source phase and session must remain in lineage
+  adapter_options:
+    moabb_class: Lee2019_MI
+    subjects: 1-54
+    train_run: true
+    test_run: false
+    sessions:
+    - 1
+    - 2
+    internet_required: true
+    official_reference: https://moabb.neurotechx.com/docs/generated/moabb.datasets.Lee2019_MI.html;
+      https://doi.org/10.1093/gigascience/giz002; https://doi.org/10.5524/100542
+    checksum_policy: COMPUTE_SHA256_PER_SOURCE_ARCHIVE/FILE_AND_FREEZE_AGGREGATE_BEFORE_ADMISSION
+    published_checksum: NO_SINGLE_PROVIDER_WIDE_PUBLISHED_SHA256
+    expected_event_inventory:
+    - left_hand
+    - right_hand
+    - online/test MI events excluded because classification labels are unavailable
+      or restricted
+    sampling_and_channel_profile:
+      eeg_channels: 62
+      sampling_hz: 1000
+      trial_duration_seconds: 4
+      format: MAT via GigaDB/MOABB
+    source_native_preprocessing: *id005
+    limitations: *id006
+    allow_byte_equivalent_attachment_fallback: false
+    acquisition_contract: MOABB_1_5_0_OFFICIAL_PROVIDER_DOWNLOAD_ONLY
+- dataset_id: Cho2017
+  aliases:
+  - Cho2017
+  authority_status: SCREENED_FALLBACK
+  scientific_role: subject-diverse left/right MI fallback
+  active_for_run: false
+  active_disposition: SCREENED_NOT_PROMOTED
+  exact_revision: GigaDB dataset DOI 10.5524/100295; MOABB 1.5.0 source card
+  citation: Cho H, Ahn M, Ahn S, Kwon M, Jun SC. EEG datasets for motor imagery brain-computer
+    interface. GigaScience. 2017;6(7):gix034. DOI 10.1093/gigascience/gix034; data
+    DOI 10.5524/100295.
+  license: Creative Commons Attribution 4.0 International (CC BY 4.0)
+  access_method: NOT_ACTIVE_FOR_P01_OFFICIAL_RUN
+  official_reference: https://moabb.neurotechx.com/docs/generated/moabb.datasets.Cho2017.html;
+    https://doi.org/10.1093/gigascience/gix034; https://doi.org/10.5524/100295
+  published_checksum: NOT_APPLICABLE_TO_INACTIVE_SOURCE
+  checksum_policy: COMPUTE_AND_FREEZE_ONLY_IF_ACTIVATED_BY_VERSIONED_AMENDMENT
+  expected_checksum: NOT_APPLICABLE_TO_ACTIVE_RUN
+  adapter: NOT_APPLICABLE_TO_ACTIVE_RUN
+  cache_path: source_cache/Cho2017
+  redistribution_allowed: CC_BY_4_0_WITH_ATTRIBUTION; NOT DOWNLOADED IN CURRENT RUN
+  source_native_preprocessing: &id007
+  - raw source; provider bad-trial indices retained
+  limitations: &id008
+  - One-session structure weakens cross-session analysis
+  - Screened source is not silently promoted
+  adapter_options:
+    activation_condition: Only if a versioned Method Selection-compatible substitution
+      is issued because Lee2019_MI is unusable
+    official_reference: https://moabb.neurotechx.com/docs/generated/moabb.datasets.Cho2017.html;
+      https://doi.org/10.1093/gigascience/gix034; https://doi.org/10.5524/100295
+    checksum_policy: COMPUTE_AND_FREEZE_ONLY_IF_ACTIVATED_BY_VERSIONED_AMENDMENT
+    published_checksum: NOT_APPLICABLE_TO_INACTIVE_SOURCE
+    expected_event_inventory:
+    - left_hand
+    - right_hand
+    sampling_and_channel_profile:
+      eeg_channels: 64
+      emg_channels: 4
+      sampling_hz: 512
+      trial_duration_seconds: 3
+    source_native_preprocessing: *id007
+    limitations: *id008
+    allow_byte_equivalent_attachment_fallback: false
+    acquisition_contract: MOABB_1_5_0_OFFICIAL_PROVIDER_DOWNLOAD_ONLY
+- dataset_id: GuttmannFlury2025_MI
+  aliases:
+  - GuttmannFlury2025_MI
+  authority_status: SCREENED_CURRENT_DELTA_CANDIDATE
+  scientific_role: current-delta three-session MI candidate
+  active_for_run: false
+  active_disposition: SCREENED_NOT_PROMOTED
+  exact_revision: Zenodo v1 DOI 10.5281/zenodo.18970793, published 2026-03-12; re-hosted
+    from Synapse DOI 10.7303/syn64005218; MOABB 1.5.0 BDF conversion
+  citation: Guttmann-Flury and colleagues. Three-session motor imagery/motor execution
+    EEG dataset. Scientific Data. 2025. DOI 10.1038/s41597-025-04861-9.
+  license: 'Dataset release: CC0 1.0 Universal; associated article publication license
+    is separate'
+  access_method: NOT_ACTIVE_FOR_P01_OFFICIAL_RUN
+  official_reference: https://zenodo.org/records/18970793; https://doi.org/10.5281/zenodo.18970793;
+    https://doi.org/10.7303/syn64005218; https://moabb.neurotechx.com/docs/generated/moabb.datasets.GuttmannFlury2025_MI.html;
+    https://doi.org/10.1038/s41597-025-04861-9
+  published_checksum: NOT_APPLICABLE_TO_INACTIVE_SOURCE
+  checksum_policy: COMPUTE_AND_FREEZE_ONLY_IF_ACTIVATED_BY_VERSIONED_AMENDMENT
+  expected_checksum: NOT_APPLICABLE_TO_ACTIVE_RUN
+  adapter: NOT_APPLICABLE_TO_ACTIVE_RUN
+  cache_path: source_cache/GuttmannFlury2025_MI
+  redistribution_allowed: CC0_1_0_SOURCE; NOT DOWNLOADED IN CURRENT RUN
+  source_native_preprocessing: &id009
+  - Neuroscan CSV re-host converted to 24-bit BDF with source sidecars retained
+  - source reference right mastoid M1; original event/sync metadata retained
+  limitations: &id010
+  - Not active in the official P01 run
+  - Any later promotion must preserve 62 EEG + 2 mastoid + 1 EOG + 1 STIM taxonomy
+  - Variable one-to-three-session structure and MI-only event semantics require explicit
+    reconciliation
+  - Zenodo dataset release is CC0; publication licensing is a separate surface
+  adapter_options:
+    activation_condition: Future source-card/channel/protocol reconciliation and explicit
+      Method Selection-compatible promotion
+    official_reference: https://zenodo.org/records/18970793; https://doi.org/10.5281/zenodo.18970793;
+      https://doi.org/10.7303/syn64005218; https://moabb.neurotechx.com/docs/generated/moabb.datasets.GuttmannFlury2025_MI.html;
+      https://doi.org/10.1038/s41597-025-04861-9
+    checksum_policy: COMPUTE_AND_FREEZE_ONLY_IF_ACTIVATED_BY_VERSIONED_AMENDMENT
+    published_checksum: NOT_APPLICABLE_TO_INACTIVE_SOURCE
+    expected_event_inventory:
+    - left_hand_mi
+    - right_hand_mi
+    - motor-execution labels excluded from MI-only future branch
+    sampling_and_channel_profile:
+      scalp_eeg_channels: 62
+      mastoid_channels: 2
+      eog_channels: 1
+      stim_channels: 1
+      total_channels: 66
+      sampling_hz: 1000
+      reference: right mastoid M1
+      line_frequency_hz: 50
+      format: BDF converted from Neuroscan CSV
+    source_native_preprocessing: *id009
+    limitations: *id010
+    allow_byte_equivalent_attachment_fallback: false
+    acquisition_contract: MOABB_1_5_0_OFFICIAL_PROVIDER_DOWNLOAD_ONLY
+labels:
+- dataset_id: PhysioNetMI
+  mapping:
+    run_4_8_12:T1: left_hand
+    run_4_8_12:T2: right_hand
+  mapping_metadata:
+    run_4_8_12:T0:
+      normalized_label: rest_no_action
+      included: false
+      reason: REST_EXCLUDED_FROM_BINARY_MI
+    run_4_8_12:T1:
+      normalized_label: left_hand
+      included: true
+      reason: IMAGINED_LEFT_HAND
+    run_4_8_12:T2:
+      normalized_label: right_hand
+      included: true
+      reason: IMAGINED_RIGHT_HAND
+  excluded_labels:
+  - run_4_8_12:T0
+  unknown_event_behavior: BLOCK_SOURCE_EVENT_WITH_UNKNOWN_LABEL
+  round_trip_required: true
+  proxy_limitations:
+  - PROXY_INTENT_ONLY
+  - PUBLIC_EEG_ONLY
+  - NO_REAL_CONTROL_INTENT_CLAIM
+  expected_event_codes: []
+  run_policy:
+    include_runs:
+    - 4
+    - 8
+    - 12
+    exclude_runs:
+    - 1
+    - 2
+    - 3
+    - 5
+    - 6
+    - 7
+    - 9
+    - 10
+    - 11
+    - 13
+    - 14
+  source_phase_policy: {}
+- dataset_id: BNCI2014_001
+  mapping:
+    '769': left_hand
+    '770': right_hand
+  mapping_metadata:
+    '276':
+      original_name: idling_eyes_open
+      normalized_label: excluded_execution_or_technical
+      included: false
+      reason: BASELINE_NOT_BINARY_MI
+    '277':
+      original_name: idling_eyes_closed
+      normalized_label: excluded_execution_or_technical
+      included: false
+      reason: BASELINE_NOT_BINARY_MI
+    '768':
+      original_name: start_trial
+      normalized_label: excluded_execution_or_technical
+      included: false
+    '769':
+      original_name: left_hand
+      normalized_label: left_hand
+      included: true
+    '770':
+      original_name: right_hand
+      normalized_label: right_hand
+      included: true
+    '771':
+      original_name: feet
+      normalized_label: excluded_other_motor_imagery
+      included: false
+      reason: OUTSIDE_UNIFIED_BINARY_BRANCH
+    '772':
+      original_name: tongue
+      normalized_label: excluded_other_motor_imagery
+      included: false
+      reason: OUTSIDE_UNIFIED_BINARY_BRANCH
+    '783':
+      original_name: cue_unknown
+      normalized_label: excluded_execution_or_technical
+      included: false
+      reason: AMBIGUOUS_CUE_BLOCK_AND_PRESERVE
+    '1023':
+      original_name: rejected_trial
+      normalized_label: excluded_execution_or_technical
+      included: false
+      reason: PROVIDER_REJECTED_TRIAL
+    '1072':
+      original_name: eye_movements
+      normalized_label: excluded_execution_or_technical
+      included: false
+      reason: ARTIFACT_OR_TECHNICAL_EVENT
+    '32766':
+      original_name: start_run
+      normalized_label: excluded_execution_or_technical
+      included: false
+  excluded_labels:
+  - '1023'
+  - '1072'
+  - '276'
+  - '277'
+  - '32766'
+  - '768'
+  - '771'
+  - '772'
+  - '783'
+  unknown_event_behavior: BLOCK_SOURCE_EVENT_WITH_UNKNOWN_LABEL
+  round_trip_required: true
+  proxy_limitations:
+  - PROXY_INTENT_ONLY
+  - PUBLIC_EEG_ONLY
+  expected_event_codes:
+  - '276'
+  - '277'
+  - '768'
+  - '769'
+  - '770'
+  - '771'
+  - '772'
+  - '783'
+  - '1023'
+  - '1072'
+  - '32766'
+  run_policy: {}
+  source_phase_policy: {}
+- dataset_id: Lee2019_MI
+  mapping:
+    left_hand: left_hand
+    right_hand: right_hand
+  mapping_metadata:
+    left_hand:
+      normalized_label: left_hand
+      included: true
+    right_hand:
+      normalized_label: right_hand
+      included: true
+  excluded_labels: []
+  unknown_event_behavior: BLOCK_SOURCE_EVENT_WITH_UNKNOWN_LABEL
+  round_trip_required: true
+  proxy_limitations:
+  - PROXY_INTENT_ONLY
+  - PUBLIC_EEG_ONLY
+  - LABELED_OFFLINE_RUNS_ONLY
+  expected_event_codes: []
+  run_policy: {}
+  source_phase_policy:
+    include:
+    - offline_train_labeled
+    exclude:
+    - online_test_unlabeled
+    - resting_state
+    - ssvep
+    - erp
+preprocessing:
+  profile_id: P01-L1-PREPROCESS-OFFICIAL-R2
+  operations:
+  - name: validate_units
+    target_unit: V
+    conversion_from_metadata_required: true
+    order: 1
+  - name: capture_events
+    sources:
+    - annotations
+    - stim_channel
+    - provider_event_table
+    preserve_original_sample_index: true
+    preserve_original_onset_seconds: true
+    fail_on_ambiguous_event_origin: true
+    order: 2
+  - name: select_eeg
+    channel_type: eeg
+    preserve_original_order: true
+    order: 3
+  - name: demean
+    axis: time
+    scope: each continuous run after event capture and before resampling
+    order: 4
+  - name: rereference_average
+    channel_scope: selected EEG channels
+    order: 5
+  - name: resample_polyphase_with_events
+    target_hz: 160
+    anti_alias: true
+    rational_ratio_from_exact_source_rate: true
+    implementation: mne.io.Raw.resample
+    method: polyphase
+    joint_events_parameter_required: true
+    event_sample_source: returned jointly resampled event array
+    independent_float_time_rounding_allowed: false
+    window:
+    - kaiser
+    - 5.0
+    pad: reflect
+    n_jobs: 1
+    stim_picks: AUTO
+    expected_mne_call: raw.resample(160, method="polyphase", window=("kaiser", 5.0),
+      pad="reflect", events=events, n_jobs=1)
+    order: 6
+  - name: bandpass_sos_zero_phase
+    low_hz: 8.0
+    high_hz: 32.0
+    order: 7
+    padtype: odd
+    implementation: scipy.signal.sosfiltfilt
+    design_order: 4
+    effective_forward_backward_order: 8
+    padlen_samples: 27
+    padlen_rule: 3 * (2 * n_sos + 1 - min(zero_count_at_origin, pole_count_at_origin));
+      evaluates to 27 for frozen 4th-order 8-32 Hz bandpass at 160 Hz
+    minimum_input_samples: 29
+    sos_output_required: true
+  - name: cast
+    dtype: float32
+    order: 8
+  fit_scope: NOT_REQUIRED_FOR_OFFICIAL_LAYER1_PROFILE
+  fit_roles:
+  - train
+  held_out_statistics_allowed: false
+  event_timing_policy:
+    original_event_samples_preserved: true
+    resampled_event_samples_preserved: true
+    joint_resampling_required: true
+    window_anchor: returned resampled event sample
+    prohibited: independent timestamp-to-sample reconstruction after resampling
+split:
+  protocol_id: P01-L1-SPLIT-OFFICIAL-R2
+  split_unit: SUBJECT
+  group_keys:
+  - dataset_id
+  - subject_id
+  roles:
+  - train
+  - calibration
+  - validation
+  - test
+  ratios:
+    train: 0.6
+    calibration: 0.2
+    validation: 0.1
+    test: 0.1
+  seed: 20260804
+  allocation_algorithm: SHA256_RANK_SUBJECT_GROUPS_WITH_LARGEST_REMAINDER_AND_MINIMUM_ONE_GROUP_PER_ROLE
+  tie_break_order:
+  - test
+  - validation
+  - calibration
+  - train
+  expected_group_counts:
+    PhysioNetMI:
+      train: 65
+      calibration: 22
+      validation: 11
+      test: 11
+    BNCI2014_001:
+      train: 5
+      calibration: 2
+      validation: 1
+      test: 1
+    Lee2019_MI:
+      train: 32
+      calibration: 11
+      validation: 5
+      test: 6
+  constraints:
+  - all sessions/runs/events/windows of a subject remain in one role
+  - source-event atomicity
+  - no window-level split
+  - all four roles nonempty
+  - membership and attrition reconcile
+  purge_embargo: SOURCE_EVENT_ATOMICITY_PLUS_OVERLAP_GROUP_DISJOINTNESS; no additional
+    temporal embargo for one nonoverlapping window/event
+budgets:
+  profile_id: P01-L1-LOW-CAL-OFFICIAL-R2
+  budgets_per_class:
+  - 1
+  - 2
+  - 4
+  - 8
+  - 16
+  - 32
+  seed: 20260804
+  source_role: calibration
+  normalized_classes:
+  - left_hand
+  - right_hand
+  selection_algorithm: SHA256_RANK_BY_DATASET_SUBJECT_SESSION_RUN_SOURCE_EVENT_WITH_NESTED_PREFIX_SUBSETS
+  nested_subsets: true
+  insufficient_class_behavior: MARK_AFFECTED_BUDGET_INELIGIBLE_DIAGNOSTIC_ONLY; NEVER
+    BORROW_FROM_VALIDATION_OR_TEST
+windows:
+  profile_id: P01-L1-WINDOW-OFFICIAL-R2
+  event_anchor: MI_CUE_ONSET
+  start_offset_seconds: 0.5
+  duration_seconds: 3.0
+  stride_seconds: 3.0
+  target_sampling_hz: 160
+  start_offset_samples: 80
+  duration_samples: 480
+  stride_samples: 480
+  last_window_policy: ONE_WINDOW_PER_INCLUDED_SOURCE_EVENT
+  bounds_policy: REJECT_OUT_OF_BOUNDS
+  overlap_group: PARENT_SOURCE_EVENT
+  rounding: NO_INDEPENDENT_FLOAT_TIME_ROUNDING; returned resampled event sample +
+    exact integer offset 80
+  failure_behavior: OUT_OF_BOUNDS_OR_MISSING_PARENT_IS_INVALID_WINDOW; PRESERVE REASON
+    CODE; NO CLIPPING
+quality:
+  profile_id: P01-L1-QUALITY-OFFICIAL-R2
+  policy: ANNOTATE_NOT_REPAIR
+  units: VOLTS_AFTER_UNIT_VALIDATION_BEFORE_STANDARDIZATION
+  thresholds:
+    flat_channel_std_max_v: 0.0
+    absolute_amplitude_max_v: 0.0005
+    nonfinite_count_max: 0
+    minimum_window_samples: 480
+    repeated_identical_samples_max: 160
+  checks:
+  - provider/source artifact marker
+  - bad-channel marker
+  - bad-trial marker
+  - NaN/Inf
+  - shape/duration
+  - flat channel
+  - absolute amplitude
+  - repeated identical/clipping proxy
+  source_native_quality:
+    PhysioNetMI: preserve EDF+ annotations; no unsupported provider artifact flag
+      is invented
+    BNCI2014_001: preserve EOG and rejected-trial event 1023; do not silently interpolate
+    Lee2019_MI: preserve source phase and any provider bad-channel/trial metadata
+  hard_invalid:
+  - nonfinite values
+  - wrong tensor rank
+  - duration shorter than frozen window
+  - missing source-event lineage
+  soft_flags:
+  - flat channel
+  - absolute amplitude exceedance
+  - repeated identical samples
+  - source-declared bad trial/channel
+  no_silent_repair: true
+  amplitude_threshold_semantics: SOFT_WARNING_ONLY; NOT_A_REJECTION_THRESHOLD; NOT_A_CLAIM_OF_UNIVERSAL_PHYSIOLOGICAL_BOUND
+validation:
+  require_zero_schema_errors: true
+  require_zero_leakage: true
+  require_complete_lineage: true
+  require_a14_absence: true
+  require_all_active_sources: true
+  require_all_roles_nonempty: true
+  require_exact_freeze_parity: true
+  require_complete_bundle: true
+cards:
+  required_limitations:
+  - PUBLIC_EEG_ONLY
+  - NON_CLINICAL
+  - NO_DEPLOYMENT_CLAIM
+  - PROXY_INTENT_ONLY
+  include_source_license: true
+  include_excluded_branches: true
+  include_freeze_identity: true
+manifests:
+  hash_algorithm: SHA-256
+  bundle_name_prefix: IHARQ_P01_L1_Phase_Execution_Bundle
+  implementation_snapshot_required: true
+  integration_patch_manifest_required: true
+environment:
+  freeze_id: P01-L1-KAGGLE-ENV-FREEZE-R2
+  platform: Kaggle Notebooks
+  accelerator: CPU
+  internet: ON_FOR_OFFICIAL_PROVIDER_DOWNLOAD
+  kaggle_image:
+    tag: gcr.io/kaggle-images/python:v168
+    immutable_digest: sha256:02c72a7c98e5e0895056901d9c715d181cd30eae392491235dfea93e6d0de3ed
+  python:
+    required_major_minor: '3.11'
+    patch_identity: DEFINED_BY_IMMUTABLE_IMAGE_AND_CAPTURED_IN_ENVIRONMENT_MANIFEST
+    constraint: '>=3.11,<3.12'
+  packages:
+    moabb: 1.5.0
+    mne: 1.12.1
+    numpy: 2.2.6
+    scipy: 1.15.3
+    pandas: 2.3.1
+    scikit-learn: 1.7.1
+    h5py: 3.14.0
+    pooch: 1.8.2
+    pyyaml: 6.0.2
+    pydantic: 2.11.7
+    jsonschema: 4.25.0
+    nbformat: 5.10.4
+  deterministic_environment:
+    PYTHONHASHSEED: '20260804'
+    OMP_NUM_THREADS: '1'
+    MKL_NUM_THREADS: '1'
+    OPENBLAS_NUM_THREADS: '1'
+  resources:
+    minimum_ram_gb: 16
+    recommended_ram_gb: 30
+    minimum_free_disk_gb: 60
+    recommended_free_disk_gb: 90
+    expected_wall_time_hours_upper_bound: 9
+    platform_guarantee: NONE; VALUES ARE IHARQ PREFLIGHT THRESHOLDS, NOT CLAIMS ABOUT
+      KAGGLE GUARANTEES
+    preflight: BLOCK_BEFORE_SOURCE_DOWNLOAD_WHEN_FREE_DISK_LT_60_GB; RECORD RAM/DISK;
+      PROCESS SOURCES SEQUENTIALLY; CHECKPOINT AFTER EACH DATASET
+  cache_layout: /kaggle/working/iharq_p01_l1/source_cache/<dataset_id>; process datasets
+    sequentially; checkpoint after each dataset; remove only verified provider cache
+    copies when disk pressure requires
+  restartability: DATASET_LEVEL_CHECKPOINTS_WITH_CONFIG/SOURCE HASH; RESUME ONLY WHEN
+    HASHES MATCH
+  input_bundle_identity:
+    filename: IHARQ_P01_L1_Kaggle_Input_Bundle_R6.zip
+    basis: Authority-first controlled R6 repair of R5; final R10/R4 implementation
+      authority and scientific freeze unchanged
+  official_notebook_identity:
+    filename: IHARQ_Phase_01_Layer_01_Complete_Public_Data_and_Split_Execution_R6.ipynb
+    basis: Authority-first controlled R6 repair of R5 execution closure; final R10/R4
+      authority and P01-L1-OFFICIAL-RUN-FREEZE-R2 unchanged
+  output_bundle_identity: IHARQ_P01_L1_Phase_Execution_Bundle_<RUN_ID>.zip
+  dependency_resolution_policy: VERIFY MOABB 1.5.0 WHEEL SHA-256; INSTALL THE VERIFIED
+    WHEEL WITH ITS FULL DECLARED DEPENDENCY GRAPH; ENFORCE ALL PROJECT-DIRECT EXACT
+    PINS; VERIFY REQUIRED IMPORTS; FAIL BEFORE SOURCE DOWNLOAD ON ANY MISMATCH
+  package_integrity:
+    moabb_wheel: moabb-1.5.0-py3-none-any.whl
+    moabb_wheel_sha256: 8856067aba66fa4389f86e1fbc5cd9c5d52343538ad59193cef103a48a41c297
+    moabb_sdist: moabb-1.5.0.tar.gz
+    moabb_sdist_sha256: 8fd2182f5e35607e0c63de081c3d61a125bc806787270307d58c5ff3eaa31ecb
+    index: https://pypi.org/simple
+    policy: VERIFY_HASH_BEFORE_INSTALL
+run_matrix_file: implementation_authority/current_r10_r4/machine_readable/p01_l1_official_run_matrix_R2.csv
+notebook_revision: R6
+runtime_package_revision: R6

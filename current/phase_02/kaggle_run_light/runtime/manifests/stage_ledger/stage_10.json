@@ -1,0 +1,50 @@
+{
+  "stage_id": "10",
+  "status": "SUCCESS",
+  "attempt_id": "8e4ca693efde",
+  "inputs": {},
+  "input_hashes": {},
+  "outputs": {
+    "status": "PASS",
+    "attempted": 27,
+    "branches": [
+      "RIE-EA-TS",
+      "RIE-MDM",
+      "RIE-TS-LR"
+    ],
+    "terminal_counts": {
+      "SUCCESS": 27
+    },
+    "artifact": "stage_artifacts/10_family.json"
+  },
+  "output_hashes": {
+    "status": "727e9bd17b077ba162e13ba877135cc6fbc6b30f83da0b34b3e20233f1cc885f",
+    "attempted": "670671cd97404156226e507973f2ab8330d3022ca96e0c93bdbdb320c41adcaf",
+    "branches": "b687321fec4fa1e2af40d78f9c914a1ea07a649add424e3ab7dbdc3c602baf0e",
+    "terminal_counts": "cb6f4eddde487cb268da86fb4627c55be45233b0b189d7978e904f1ff02f7551",
+    "artifact": "93f9afbb204a8e0ac90a26f95e0e29c8f516676b4b8e8b035ec34f502e463606"
+  },
+  "dependencies": [
+    "09"
+  ],
+  "elapsed_seconds": 729.0062344074249,
+  "log_path": "logs/stage_10_8e4ca693efde.log",
+  "heartbeat_write_errors": [],
+  "observability_status": "PASS",
+  "blockers": [],
+  "observations": [],
+  "revision_fingerprint": {
+    "notebook_revision": "R4",
+    "notebook_id": "IHARQ-P02-COMPLETE-EXECUTION-AND-ANALYSIS-R4",
+    "source_sha256": "a54bfa816acc6763c1d1042b8c65cf54ae04ec774c57ec50de86014a6730c5fa",
+    "config_sha256": "d82334535e397c681d6172694da96d3fff0143ffb1b63a18876ee1f7778f60a1",
+    "stage_plan_sha256": "043eb30e008af910d37c563e8be8c719ef881cf009aec3e34687dc97bdc34aad",
+    "scientific_freeze_sha256": "7449216c988eec14191ba85300d720547f06fbc6ac7020e9e142bf12a4b0a598",
+    "scientific_freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5"
+  },
+  "runtime_successor": {
+    "id": "P02-RUNTIME-SUCCESSOR-R2-CANONICAL-LOW-CAL-BUDGET-ID-PARSER-LIVE-CONTINUATION",
+    "scientific_configuration_changed": false,
+    "semantic_audit": "diagnostics/runtime_successor/G10_SEMANTIC_AUDIT_R1.json"
+  }
+}

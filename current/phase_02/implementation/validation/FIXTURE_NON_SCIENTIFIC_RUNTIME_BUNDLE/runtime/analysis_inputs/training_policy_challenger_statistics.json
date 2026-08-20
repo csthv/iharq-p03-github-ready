@@ -1,0 +1,23 @@
+{
+  "PhysioNetMI": {
+    "participant_rows": 6,
+    "wilcoxon": {
+      "status": "PASS",
+      "n": 6,
+      "p_value": 1.0,
+      "statistic": 7.5,
+      "median_difference": 0.125,
+      "rank_biserial": 0.0
+    },
+    "bootstrap_delta_BACC": {
+      "status": "PASS",
+      "n": 6,
+      "estimate": 0.125,
+      "low": -0.375,
+      "high": 0.25,
+      "level": 0.95,
+      "method": "BCa",
+      "resamples": 10000
+    }
+  }
+}

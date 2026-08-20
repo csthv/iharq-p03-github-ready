@@ -1,0 +1,9 @@
+implementation_parameters_id: P02-L2-IMPLEMENTATION-PARAMETERS-R2
+status: FROZEN_IMPLEMENTATION_BEHAVIOR
+classical:
+  FBCSP:
+    filter_order: 4
+    sampling_source: configs.phase_02.data.core_window.sampling_hz
+metrics:
+  latency_probe_repeats: 5
+  latency_quantile: 0.95

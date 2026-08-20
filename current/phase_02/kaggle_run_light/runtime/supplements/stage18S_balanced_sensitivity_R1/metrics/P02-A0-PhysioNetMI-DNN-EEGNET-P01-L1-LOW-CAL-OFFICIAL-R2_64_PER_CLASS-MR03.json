@@ -1,0 +1,83 @@
+{
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "run_cell_id": "P02-A0-PhysioNetMI-DNN-EEGNET-P01-L1-LOW-CAL-OFFICIAL-R2:64_PER_CLASS-MR03",
+  "dataset_id": "PhysioNetMI",
+  "branch_id": "DNN-EEGNET",
+  "resolved_variant": "EEGNet-R7-LAWHERN-SMR-P01-160HZ",
+  "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:64_PER_CLASS",
+  "budget_repeat_id": "P01_FROZEN_SINGLE_SUBSET",
+  "model_repeat_index": 3,
+  "metrics": {
+    "BACC": 0.5300934243621991,
+    "F1_MACRO": 0.529016134367305,
+    "ACC": 0.5292929292929293,
+    "CONFUSION": [
+      [
+        125,
+        128
+      ],
+      [
+        105,
+        137
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      253,
+      242
+    ],
+    "PRED_COMPLETE": 495,
+    "ROC_AUC": 0.5337438343187535,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+  },
+  "validation_selection": {
+    "ACC": 0.5777777777777777,
+    "BACC": 0.5781908120286022,
+    "CLASS_SUPPORT": [
+      249,
+      246
+    ],
+    "CONFUSION": [
+      [
+        127,
+        122
+      ],
+      [
+        87,
+        159
+      ]
+    ],
+    "F1_MACRO": 0.5760058360416556,
+    "PRED_COMPLETE": 495,
+    "ROC_AUC": 0.564583537401639,
+    "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY",
+    "ROC_AUC_STATUS": "PASS"
+  },
+  "validation_burden_seconds": 33.76587281799948,
+  "model_storage_bytes": 9160,
+  "selected_candidate_id": "CAND-00",
+  "selected_params": {
+    "dropout": 0.5,
+    "lr": 0.001,
+    "source_centered_recipe_sha256": "abf4809de67deae59373a7f4a57acf35201ffc2d7a77a7d5cfc89c9e7583b4ff",
+    "weight_decay": 0.0
+  },
+  "checkpoint_format": "PYTORCH_STATE_DICT_WEIGHTS_ONLY",
+  "candidate_failures": [],
+  "observed_denominator": 495,
+  "expected_denominator": 495,
+  "score_type": "SOFTMAX_PROBABILITY",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.0018997139995917678,
+    "batch1_latency_p95_s": 0.002287061599417939,
+    "repeats": 5
+  },
+  "class_weight_policy": "UNIFORM_NO_WEIGHT_EXACT_BALANCED_TRAIN",
+  "class_weights": null,
+  "test_loaded_after_group_selection_sealed": true,
+  "test_set_used_for_selection": false,
+  "evidence_class": "P02_POST_HOC_LOW_LABEL_EXTENSION_R1",
+  "integration_source_run_cell_id": "P02S-LLX-R1-A0-PhysioNetMI-DNN-EEGNET-64PC-MR03",
+  "integration_source_config_sha256": "67807d9959d98c6a138288dc2c3f12377e0acb8bfce9d76f333485a0cb0a760e",
+  "integration_revision": "P02-INTEGRATED-LOW-LABEL-1-TO-256-R1"
+}

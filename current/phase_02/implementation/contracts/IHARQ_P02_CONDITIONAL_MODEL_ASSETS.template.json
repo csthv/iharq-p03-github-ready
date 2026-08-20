@@ -1,0 +1,32 @@
+{
+  "manifest_id": "IHARQ-P02-CONDITIONAL-MODEL-ASSETS-R1",
+  "branches": {
+    "DNN-FBCNET": {
+      "implementation_module": "vendor_fbcnet_iharq",
+      "module_file": "vendor_fbcnet_iharq.py",
+      "module_sha256": "<SHA256>",
+      "implementation_equivalence": "VERIFIED_EQUIVALENT",
+      "license_status": "CAN_EXECUTE"
+    },
+    "DNN-SEQ": {
+      "dbconformer": {
+        "implementation_module": "vendor_dbconformer_iharq",
+        "license_status": "CAN_EXECUTE"
+      }
+    },
+    "SSL-CBRAMOD": {
+      "implementation_module": "vendor_cbramod_iharq",
+      "module_file": "vendor_cbramod_iharq.py",
+      "module_sha256": "<SHA256>",
+      "checkpoint_file": "cbramod_checkpoint.bin",
+      "checkpoint_sha256": "<SHA256>",
+      "license_status": "CAN_EXECUTE",
+      "corpus_overlap_status": "PASS",
+      "input_compatibility_status": "PASS",
+      "channel_montage_status": "PASS",
+      "sampling_adapter_verified": true,
+      "target_sampling_hz": 200,
+      "source_recipe_verified": true
+    }
+  }
+}

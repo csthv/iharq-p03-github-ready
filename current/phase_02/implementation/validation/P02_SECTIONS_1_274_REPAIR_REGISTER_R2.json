@@ -1,0 +1,167 @@
+{
+  "validation_id": "P02-SECTIONS-1-274-REPAIR-REGISTER-R2",
+  "status": "PASS_ORDINARY_DEFECTS_REPAIRED",
+  "ordinary_defects": [
+    {
+      "repair_id": "R2-FIX-001",
+      "surface": "26-stage production dispatcher",
+      "resolution": "replaced metadata/stub orchestration with 26 real handlers",
+      "status": "PASS"
+    },
+    {
+      "repair_id": "R2-FIX-002",
+      "surface": "A4 C4/C5 closure",
+      "resolution": "implemented validation-selected strongest-constituent participant-level inferential closure and downstream exports",
+      "status": "PASS"
+    },
+    {
+      "repair_id": "R2-FIX-003",
+      "surface": "model semantic aliasing",
+      "resolution": "removed EEGConformer aliasing; gated FBCNet, sequence fallback, EEG-TCNet and SSL semantics",
+      "status": "PASS"
+    },
+    {
+      "repair_id": "R2-FIX-004",
+      "surface": "RIE-EA-TS",
+      "resolution": "train-only Euclidean Alignment reference/whitener",
+      "status": "PASS"
+    },
+    {
+      "repair_id": "R2-FIX-005",
+      "surface": "RIE-MDM",
+      "resolution": "distance-derived score semantics, not calibrated/native probability",
+      "status": "PASS"
+    },
+    {
+      "repair_id": "R2-FIX-006",
+      "surface": "SAN-PERM",
+      "resolution": "actual legal-fit-label permutation with provenance",
+      "status": "PASS"
+    },
+    {
+      "repair_id": "R2-FIX-007",
+      "surface": "A4 provider/index resolution",
+      "resolution": "real immutable provider filenames + pointer fallback",
+      "status": "PASS"
+    },
+    {
+      "repair_id": "R2-FIX-008",
+      "surface": "HDF5 reader performance",
+      "resolution": "batch-by-shard access preserving canonical order/integrity",
+      "status": "PASS"
+    },
+    {
+      "repair_id": "R2-FIX-009",
+      "surface": "neural training contract",
+      "resolution": "validation-BACC early stop, patience, restore-best, governed batch ladder and accumulation",
+      "status": "PASS"
+    },
+    {
+      "repair_id": "R2-FIX-010",
+      "surface": "A4 representative selection",
+      "resolution": "validation-only deterministic selection and all-repeat carry-forward",
+      "status": "PASS"
+    },
+    {
+      "repair_id": "R2-FIX-011",
+      "surface": "A4 burden evidence",
+      "resolution": "measured latency/evidence-duration/member/aggregation source",
+      "status": "PASS"
+    },
+    {
+      "repair_id": "R2-FIX-012",
+      "surface": "stale run-cell/cache reuse",
+      "resolution": "semantic-config fingerprint required before reuse",
+      "status": "PASS"
+    },
+    {
+      "repair_id": "R2-FIX-013",
+      "surface": "exception observability",
+      "resolution": "resource/environment/heartbeat failures classified and persisted",
+      "status": "PASS"
+    },
+    {
+      "repair_id": "R2-FIX-014",
+      "surface": "read-only Kaggle Stage06",
+      "resolution": "in-memory syntax compile + clean subprocess import; no source-tree bytecode writes",
+      "status": "PASS"
+    },
+    {
+      "repair_id": "R2-FIX-015",
+      "surface": "checkpoint persistence",
+      "resolution": "atomic native state-dict for neural; governed external interface; trusted pinned-env classical serializer",
+      "status": "PASS"
+    },
+    {
+      "repair_id": "R2-FIX-016",
+      "surface": "metric validation",
+      "resolution": "score-shape/nonfinite/AUC availability explicit fail-closed states",
+      "status": "PASS"
+    },
+    {
+      "repair_id": "R2-FIX-017",
+      "surface": "BCa fallback",
+      "resolution": "fallback restricted to mathematically degenerate/undefined BCa cases",
+      "status": "PASS"
+    },
+    {
+      "repair_id": "R2-FIX-018",
+      "surface": "low-label evidence",
+      "resolution": "BACC/F1/ACC source curves and failure accounting",
+      "status": "PASS"
+    },
+    {
+      "repair_id": "R2-FIX-019",
+      "surface": "participant/session/multimethod evidence",
+      "resolution": "participant aggregation, Friedman/Kendall-W, paired Wilcoxon/Holm",
+      "status": "PASS"
+    },
+    {
+      "repair_id": "R2-FIX-020",
+      "surface": "readiness/P03",
+      "resolution": "canonical Layer2ReadinessReport and P03 field closure",
+      "status": "PASS"
+    },
+    {
+      "repair_id": "R2-FIX-021",
+      "surface": "partial-failure bundle",
+      "resolution": "truthful PARTIAL_FAILED_EXPORT with CRC/checksum-safe archive",
+      "status": "PASS"
+    },
+    {
+      "repair_id": "R2-FIX-022",
+      "surface": "conditional external assets",
+      "resolution": "hash/license/checkpoint/input qualification; blocked states preserved",
+      "status": "PASS"
+    },
+    {
+      "repair_id": "R2-FIX-023",
+      "surface": "runtime caps and preflight",
+      "resolution": "resource/time caps and fail-closed preflight evidence",
+      "status": "PASS"
+    },
+    {
+      "repair_id": "R2-FIX-024",
+      "surface": "current config parity",
+      "resolution": "realized schema status, owner-routed records, correct R3/R4 G05 identity",
+      "status": "PASS"
+    },
+    {
+      "repair_id": "R2-FIX-025",
+      "surface": "blocked notebook early stop",
+      "resolution": "known authority blockers terminate notebook before dependency installation/science",
+      "status": "PASS"
+    },
+    {
+      "repair_id": "R2-FIX-026",
+      "surface": "duplicate record retry",
+      "resolution": "atomic partition overwrite/idempotency verified; no 2N retry duplication",
+      "status": "PASS"
+    }
+  ],
+  "ordinary_implementation_defects_unrepaired": 0,
+  "scientific_freeze_blockers_excluded_from_ordinary_repair_count": [
+    "P02-BLOCK-TRAIN-AUG-001",
+    "P02-BLOCK-TRAIN-WEIGHT-002"
+  ]
+}

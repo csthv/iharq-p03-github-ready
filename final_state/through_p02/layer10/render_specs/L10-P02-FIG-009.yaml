@@ -1,0 +1,15 @@
+artifact_id: L10-P02-FIG-009
+source_data: figure_source_data/P02_Table_A0_participant_first_fulltrain_source.csv
+render_script: scripts/render_layer10.py
+claim_ids:
+- P02-CLM-002/v1
+- CUM-CLM-003/v1
+finding_ids:
+- P02-FIND-004
+- CF-11
+limitations:
+- PARTICIPANT_HETEROGENEITY
+output: figures/L10-P02-FIG-009.png
+scientific_transform: DISPLAY_ONLY
+source_data_sha256: 742e4362eebbd8c9e5ed2d59c0018805fe66a491737fde3b7cf1b144cd04743c
+output_sha256: 444aa170a66376e8021db91c934730601679466a04ddca9a2c9f66fc908aacd5

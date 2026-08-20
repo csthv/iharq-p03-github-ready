@@ -1,0 +1,60 @@
+{
+  "conflicts": [
+    {
+      "path": ".gitignore",
+      "owner": "CUMULATIVE",
+      "decision": "UNION_REGENERATED",
+      "p00_preserved": "history/phase_00/github_ready_R2/conflicts/.gitignore",
+      "p01_preserved": "history/phase_01/finalized_R2/conflicts/.gitignore"
+    },
+    {
+      "path": "README.md",
+      "owner": "CUMULATIVE",
+      "decision": "REGENERATED_CURRENT_NAVIGATION",
+      "p00_preserved": "history/phase_00/github_ready_R2/conflicts/README.md",
+      "p01_preserved": "history/phase_01/finalized_R2/conflicts/README.md"
+    },
+    {
+      "path": "SECURITY.md",
+      "owner": "CUMULATIVE",
+      "decision": "REGENERATED_CURRENT_SECURITY_BOUNDARY",
+      "p00_preserved": "history/phase_00/github_ready_R2/conflicts/SECURITY.md",
+      "p01_preserved": "history/phase_01/finalized_R2/conflicts/SECURITY.md"
+    },
+    {
+      "path": "configs/phases/p00_audit3.yaml",
+      "owner": "P00",
+      "decision": "P00_GITHUB_R2_PHASE_SPECIFIC_VERSION_CURRENT",
+      "p00_preserved": "CURRENT",
+      "p01_preserved": "history/phase_01/finalized_R2/conflicts/configs/phases/p00_audit3.yaml"
+    },
+    {
+      "path": "pyproject.toml",
+      "owner": "P01_OPERATIONAL",
+      "decision": "P01_RUNTIME_CURRENT; P00_ENVIRONMENT_PRESERVED_SEPARATELY",
+      "p00_preserved": "environments/phase_00/pyproject.toml",
+      "p01_preserved": "CURRENT"
+    },
+    {
+      "path": "requirements-lock.txt",
+      "owner": "P01_OPERATIONAL",
+      "decision": "P01_RUNTIME_CURRENT; P00_LOCK_PRESERVED_SEPARATELY",
+      "p00_preserved": "environments/phase_00/requirements-lock.txt",
+      "p01_preserved": "CURRENT"
+    },
+    {
+      "path": "src/iharq/l0_emap_l10_final_audit.py",
+      "owner": "P00",
+      "decision": "P00_PHASE_SPECIFIC_R2_AUDIT_VERSION_CURRENT",
+      "p00_preserved": "CURRENT",
+      "p01_preserved": "history/phase_01/finalized_R2/conflicts/src/iharq/l0_emap_l10_final_audit.py"
+    },
+    {
+      "path": "src/iharq/layer1_data_protocol/__init__.py",
+      "owner": "P01",
+      "decision": "P01_LAYER1_RUNTIME_CURRENT",
+      "p00_preserved": "history/phase_00/github_ready_R2/conflicts/src/iharq/layer1_data_protocol/__init__.py",
+      "p01_preserved": "CURRENT"
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "bundle_id": "LAYERS_7_10_STRESS_EMBODIMENT",
+  "records": [
+    {
+      "record_id": "IHARQ-ROLLOUTRECORD-20260802-9d22cbdcdcafcce0",
+      "record_type": "RolloutRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "SOURCE_REFERENCED_LOCAL_PROFILE",
+      "owner_layer": "L7",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "rollout_id": "MOCK_ROLLOUT_ID_35",
+        "policy_id": "MOCK_POLICY_ID_35",
+        "transition_ids": [],
+        "mode": "MOCK_MODE_35"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-STRESSPROFILERECORD-20260802-771f8dd4a062aee0",
+      "record_type": "StressProfileRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L8",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-ROLLOUTRECORD-20260802-9d22cbdcdcafcce0"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "STRESS_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "stress_profile_id": "MOCK_STRESS_PROFILE_ID_36",
+        "stress_type": "MOCK_STRESS_TYPE_36",
+        "intensity": "0.0",
+        "seed": 36
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-STRESSAPPLICATIONRECORD-20260802-d4969a5e643a2dd0",
+      "record_type": "StressApplicationRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "SOURCE_REFERENCED_LOCAL_PROFILE",
+      "owner_layer": "L8",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-STRESSPROFILERECORD-20260802-771f8dd4a062aee0"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "STRESS_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "stress_application_id": "MOCK_STRESS_APPLICATION_ID_37",
+        "stress_profile_id": "MOCK_STRESS_PROFILE_ID_37",
+        "target_id": "MOCK_TARGET_ID_37"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-MATCHEDSTRESSPAIRRECORD-20260802-878316e9f3371dc4",
+      "record_type": "MatchedStressPairRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "SOURCE_REFERENCED_LOCAL_PROFILE",
+      "owner_layer": "L8",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-STRESSAPPLICATIONRECORD-20260802-d4969a5e643a2dd0"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "STRESS_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "matched_stress_pair_id": "MOCK_MATCHED_STRESS_PAIR_ID_38",
+        "clean_id": "MOCK_CLEAN_ID_38",
+        "stressed_id": "MOCK_STRESSED_ID_38",
+        "matching_keys": []
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-EMBODIMENTSTATERECORD-20260802-2580b98800040cc4",
+      "record_type": "EmbodimentStateRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L9",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-MATCHEDSTRESSPAIRRECORD-20260802-878316e9f3371dc4"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "EMBODIMENT_PROXY_ONLY",
+        "SIMULATION_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "embodiment_state_id": "MOCK_EMBODIMENT_STATE_ID_39",
+        "platform_id": "MOCK_PLATFORM_ID_39",
+        "task_id": "MOCK_TASK_ID_39",
+        "state_payload": {}
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-SAFETYEVENTRECORD-20260802-14c8b2fc0f2977f1",
+      "record_type": "SafetyEventRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L9",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-EMBODIMENTSTATERECORD-20260802-2580b98800040cc4"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "EMBODIMENT_PROXY_ONLY",
+        "SIMULATION_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "safety_event_id": "MOCK_SAFETY_EVENT_ID_41",
+        "state_id": "MOCK_STATE_ID_41",
+        "severity": "MOCK_SEVERITY_41",
+        "reason_code": "MOCK_REASON_CODE_41"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-EMBODIMENTOUTCOMERECORD-20260802-d94cba063c994d84",
+      "record_type": "EmbodimentOutcomeRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L9",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-SAFETYEVENTRECORD-20260802-14c8b2fc0f2977f1"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "EMBODIMENT_PROXY_ONLY",
+        "SIMULATION_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "embodiment_outcome_id": "MOCK_EMBODIMENT_OUTCOME_ID_40",
+        "state_id": "MOCK_STATE_ID_40",
+        "command_id": "MOCK_COMMAND_ID_40",
+        "outcome": "MOCK_OUTCOME_40"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-CLAIMEVIDENCEMATRIX-20260802-efe7a9fda9d5040c",
+      "record_type": "ClaimEvidenceMatrix",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_DECISION_ACCEPTED",
+      "owner_layer": "L0",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-EMBODIMENTOUTCOMERECORD-20260802-d94cba063c994d84"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "GOVERNANCE",
+      "payload": {
+        "claim_evidence_matrix_id": "MOCK_CLAIM_EVIDENCE_MATRIX_ID_52",
+        "claim_ids": [],
+        "evidence_ids": [],
+        "link_rows": {}
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-CLAIMEVIDENCEMANIFEST-20260802-de9ab9e9c8c954e7",
+      "record_type": "ClaimEvidenceManifest",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_DECISION_ACCEPTED",
+      "owner_layer": "L10",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-CLAIMEVIDENCEMATRIX-20260802-efe7a9fda9d5040c"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "RENDERING",
+      "payload": {
+        "claim_evidence_manifest_id": "MOCK_CLAIM_EVIDENCE_MANIFEST_ID_53",
+        "matrix_id": "MOCK_MATRIX_ID_53",
+        "entry_ids": []
+      },
+      "ablation_id": null
+    }
+  ],
+  "controls": {
+    "matched": true
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "audit_id": "P02-TRAINING-POLICY-SOURCE-EXHAUSTION-R2",
+  "status": "PASS",
+  "authority_findings": {
+    "augmentation": "Existing authority fixed primary no-augmentation, separate training-only S&R challenger, legal donor scope, and downstream ownership of exact probability/segments. It did not provide a lawful exact numeric binding.",
+    "class_weighting": "Existing authority fixed no correction when sufficiently balanced and training-fold-derived class-weighted loss/classifier otherwise; exact trigger/formula remained downstream."
+  },
+  "preexisting_gap_confirmed": true,
+  "owner_override_resolution_rule": "Prefer lawful code resolution from train/validation evidence; use external literature/standard implementations to define predeclared algorithm; never use test to select policy.",
+  "external_standard_practice_used": [
+    "Braindecode SegmentationReconstruction public API with n_segments=None",
+    "Braindecode validation/CV augmentation search example",
+    "scikit-learn compute_class_weight balanced formula",
+    "PyTorch CrossEntropyLoss class weight support"
+  ],
+  "current_amendment": "P02-PREEXEC-TRAINING-POLICY-AMENDMENT-R2",
+  "current_scientific_freeze": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5",
+  "post_amendment_reaudit": "PASS",
+  "other_same_class_freeze_gaps_found": 0,
+  "P00_P01_revision_required": false
+}

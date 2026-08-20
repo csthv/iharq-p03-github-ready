@@ -1,0 +1,70 @@
+{
+  "stage_id": "18",
+  "status": "SUCCESS",
+  "attempt_id": "bcc69acaa60c",
+  "inputs": {},
+  "input_hashes": {},
+  "outputs": {
+    "status": "PASS",
+    "slots": 1740,
+    "terminal_counts": {
+      "SUCCESS": 843,
+      "CONDITIONAL_SKIP": 846,
+      "INPUT_INCOMPATIBLE": 9,
+      "NOT_APPLICABLE_REPEAT_SLOT": 42
+    },
+    "representative_groups": 30,
+    "c4_vs_strongest": "COMPLETE",
+    "c5_vs_strongest": "COMPLETE",
+    "closure": {
+      "status": "PASS",
+      "planned": 1740,
+      "terminal_counts": {
+        "SUCCESS": 843,
+        "CONDITIONAL_SKIP": 846,
+        "INPUT_INCOMPATIBLE": 9,
+        "NOT_APPLICABLE_REPEAT_SLOT": 42
+      },
+      "participant_rows": 5058,
+      "role_control_expected": 1080,
+      "role_control_closure_rows": 1080,
+      "role_control_incomplete": 0,
+      "c4_c5_expected": 300,
+      "c4_c5_closure_rows": 300,
+      "c4_c5_incomplete": 0,
+      "burden_rows": 1740,
+      "burden_source_complete": true,
+      "phase_analysis_source_complete": true,
+      "layer10_recomputation_required": false
+    },
+    "artifact": "stage_artifacts/18_a4.json"
+  },
+  "output_hashes": {
+    "status": "727e9bd17b077ba162e13ba877135cc6fbc6b30f83da0b34b3e20233f1cc885f",
+    "slots": "04e17d3132b946c48d0a3c708526055e7cd184f9a6b792995f309dd65c4c3d24",
+    "terminal_counts": "a85c92dfaabde54113bb34541a3e9fab667fffd7c56cb5bd074f3c8a1686e14c",
+    "representative_groups": "624b60c58c9d8bfb6ff1886c2fd605d2adeb6ea4da576068201b6c6958ce93f4",
+    "c4_vs_strongest": "0ba9a455349c3f02ebe6f28595a29e30a4d03a954f412f2688924056e81a7067",
+    "c5_vs_strongest": "0ba9a455349c3f02ebe6f28595a29e30a4d03a954f412f2688924056e81a7067",
+    "closure": "90034ec4aae67cca6aa7e6e2b84f99859eb2159f0f3322dd7fabea2738fe94f9",
+    "artifact": "3f7ab645f160ebe147c60664be252788f06aef6cd14655b901e7f3b5a567b579"
+  },
+  "dependencies": [
+    "17"
+  ],
+  "elapsed_seconds": 530.1363594532013,
+  "log_path": "logs/stage_18_bcc69acaa60c.log",
+  "heartbeat_write_errors": [],
+  "observability_status": "PASS",
+  "blockers": [],
+  "observations": [],
+  "revision_fingerprint": {
+    "notebook_revision": "R4",
+    "notebook_id": "IHARQ-P02-COMPLETE-EXECUTION-AND-ANALYSIS-R4",
+    "source_sha256": "a54bfa816acc6763c1d1042b8c65cf54ae04ec774c57ec50de86014a6730c5fa",
+    "config_sha256": "d82334535e397c681d6172694da96d3fff0143ffb1b63a18876ee1f7778f60a1",
+    "stage_plan_sha256": "043eb30e008af910d37c563e8be8c719ef881cf009aec3e34687dc97bdc34aad",
+    "scientific_freeze_sha256": "7449216c988eec14191ba85300d720547f06fbc6ac7020e9e142bf12a4b0a598",
+    "scientific_freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5"
+  }
+}

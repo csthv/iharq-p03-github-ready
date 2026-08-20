@@ -1,0 +1,76 @@
+{
+  "A3_independent_ranking_information": false,
+  "NO_LEGAL_THRESHOLD_preserved": true,
+  "checksums": {
+    "canonical_checksum_path": "artifacts/manifests/phase_03/checksums.sha256",
+    "canonical_checksum_sha256": "51f346de9450f214c89126e3d3e971d6e708b1e032891fd8c3bf3f0d6317f58c",
+    "raw_checksum_path": "stage_artifacts/stage_24/final_export_bundle/checksums.sha256",
+    "raw_checksum_sha256": "81e0cc8267c8d296f905b5eaf4302fef6a60f6553950c97fcb3e212292055bdb",
+    "semantic_checksum_ledger_path": "artifacts/manifests/phase_03/checksum_ledger.json",
+    "semantic_checksum_ledger_sha256": "8fd27fda549268caff808081674b3b490c0a8ce4407637a3661cb614f2fc442e"
+  },
+  "claim_approval_performed": false,
+  "complete_package": {
+    "local_final_state_root": "final_state/through_p03",
+    "raw_export_package": "package",
+    "raw_external_bundle_file_count": 15729,
+    "raw_external_bundle_path": "stage_artifacts/stage_24/final_export_bundle",
+    "stage24_closure_overlay": "stage24_closure"
+  },
+  "created_at_utc": "2026-08-16T21:47:06.704905Z",
+  "external_pointer": {
+    "canonical_path": "artifacts/manifests/phase_03/external_artifact_pointer.yaml",
+    "canonical_sha256": "320a059b885a285db4db5274c5c706199cd602eda66768f6057b2508bbf5603a",
+    "immutable_revision": "60487529b43206abf0a7c01a219b30d3a31741ab",
+    "remote_object_count": 15729,
+    "remote_path": "phase_03/layer_03/P03-L3-OFFICIAL-09ca82c743e0411a",
+    "remote_revision_verified": true
+  },
+  "final_phase_sufficiency": true,
+  "hardening_id": "P03-C8-STAGE24-FINAL-EXPORT-CHECKSUM-SECRET-SCAN-HARDENING-R3",
+  "independent_closeout_pending": true,
+  "manifest": {
+    "canonical_package_manifest_path": "artifacts/manifests/phase_03/package_manifest.json",
+    "canonical_package_manifest_sha256": "32298ed8874209333fa6d6f3137768932243404337d2708c04b5c48733c77bec",
+    "raw_package_manifest_path": "stage_artifacts/stage_24/final_export_bundle/package_manifest.json",
+    "raw_package_manifest_sha256": "5b304300c16791cd2eddbe00a97bde7747862bd644dfe878849ca6f17396d533"
+  },
+  "payload_sha256": "d364eeee01e60cac1eaf460b8b66d1ecebc60ef05a819936f924dfe1f831ebd9",
+  "product_id": "P03-PROD-065",
+  "run_id": "P03-L3-OFFICIAL-09ca82c743e0411a",
+  "schema_id": "P03FinalExportBundle.v1",
+  "schema_version": "1.0.0",
+  "source_artifact_ids": [
+    "P03-PROD-051",
+    "P03-PROD-056",
+    "P03-PROD-058",
+    "P03-PROD-059",
+    "P03-PROD-060",
+    "P03-PROD-061",
+    "P03-PROD-062",
+    "P03-PROD-063",
+    "P03-PROD-064"
+  ],
+  "source_sha256s": [
+    "a32de37a1429d5030cf297fcee2d6b36d002e2d23f4a2fbd01048d13330ec074",
+    "dc542ed2394e802ad1f5c9700af83a592f08913b3be00722b8628e4c90892238",
+    "003721535fa293d56a880c43a3daecb537a12aa56ef7369901c276504c5ce499",
+    "8fd27fda549268caff808081674b3b490c0a8ce4407637a3661cb614f2fc442e",
+    "32298ed8874209333fa6d6f3137768932243404337d2708c04b5c48733c77bec",
+    "320a059b885a285db4db5274c5c706199cd602eda66768f6057b2508bbf5603a",
+    "af5a78021474731997d4a8f0cc11ff4ca430ab3271fd741ef8ffd61ab434ee59",
+    "4e6b9117d070c1a0737b72ffabdc72a2c5ba5b2704bfa92e2bdb053e1a3a49a0",
+    "5dc9d4c389998b3e8e715c5ddd056929c1982eb27de9721d8987fb6ae86ec9c3"
+  ],
+  "stage_id": "24",
+  "status_axes": {
+    "consumer": "PASS",
+    "data": "PASS",
+    "evidence": "PASS",
+    "execution": "PASS",
+    "external_immutable_persistence": "PASS",
+    "science": "PASS_WITH_GOVERNED_LIMITATIONS",
+    "security": "PASS"
+  },
+  "test_used_for_selection": false
+}

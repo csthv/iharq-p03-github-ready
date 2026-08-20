@@ -1,0 +1,35 @@
+{
+  "artifact_id": "P02-STAGE18-R10-4-PERSISTENT-DUAL-GPU-SCHEDULER-R1",
+  "created_at_utc": "2026-08-13T21:50:31.152010+00:00",
+  "status": "PASS",
+  "scheduler_revision": "R10.4.1_PERSISTENT_TWO_ENDED_CONTEXT_FIXED",
+  "root_cause_fixed": [
+    "R10_3_ONE_SHOT_GPU1_PREFETCH_IDLED_AFTER_EARLY_COMPLETION",
+    "R10_4_GPU1_WORKER_USED_NONEXISTENT_DIRECT_CONTEXT_ATTRIBUTES"
+  ],
+  "dual_gpu_available": true,
+  "gpu_names": [
+    "Tesla T4",
+    "Tesla T4"
+  ],
+  "single_model_multi_gpu": false,
+  "group_key": [
+    "dataset_id",
+    "budget_id",
+    "role_id",
+    "model_repeat_index"
+  ],
+  "whole_cache_group_single_gpu": true,
+  "gpu0_direction": "CANONICAL_FORWARD",
+  "gpu1_direction": "PERSISTENT_REVERSE",
+  "deep_group_count": 18,
+  "scientific_policy_sha256": "a21655f9b52cfbf817b1b271f758739cf01b1e7a75e786c880ccdd1a3c58ef32",
+  "scientific_policy_changed": false,
+  "per_fit_training_recipe_changed": false,
+  "budget_policy_changed": false,
+  "repeat_policy_changed": false,
+  "test_isolation_changed": false,
+  "checkpoint_route_changed_from_r10_3": false,
+  "existing_stage18_terminals": 44,
+  "next_action": "RERUN_ONLY_EXISTING_STAGE18_R10_3_EXECUTION_CELL"
+}

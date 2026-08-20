@@ -1,0 +1,89 @@
+{
+  "artifact_id": "P02-STAGE18-CONSOLIDATED-RELEASE-FAMILY-R1",
+  "canonical_stage18": {
+    "G18": "PASS",
+    "canonical_a4_terminals": 1218,
+    "mutated_by_this_cell": false,
+    "protected_files": [
+      {
+        "absolute_source_path": "/kaggle/working/iharq_p02_run/stage_ledger/stage_18.json",
+        "bytes": 3990,
+        "logical_role": "CANONICAL_STAGE18_LEDGER",
+        "path": "stage_ledger/stage_18.json",
+        "sha256": "d2f06ea260312d91b3babb78ca5732e88b55b7f211ce62869ab58c617beca8d1",
+        "suffix": ".json"
+      },
+      {
+        "absolute_source_path": "/kaggle/working/iharq_p02_run/gate_results/G18.json",
+        "bytes": 1167,
+        "logical_role": "CANONICAL_G18",
+        "path": "gate_results/G18.json",
+        "sha256": "2a2745760f6e3c353a403301116ea61b729efe87b2df00c812507c1021c35ff9",
+        "suffix": ".json"
+      },
+      {
+        "absolute_source_path": "/kaggle/working/iharq_p02_run/runtime/analysis_inputs/a4_completion.json",
+        "bytes": 1245,
+        "logical_role": "CANONICAL_STAGE18_A4_COMPLETION",
+        "path": "runtime/analysis_inputs/a4_completion.json",
+        "sha256": "0489a31df63523e5df1264fd2c1cf1738b6978ca4bc91fada20fab26a0cfcb90",
+        "suffix": ".json"
+      }
+    ],
+    "source_of_canonical_G18": true,
+    "status": "SUCCESS"
+  },
+  "checkpoints": {
+    "bytes": 78584296,
+    "files": 1281,
+    "manifest": "runtime/stage18_consolidated_release_R1/manifests/stage18_and_stage18S_checkpoint_manifest.jsonl",
+    "release_policy": "BYTES_MAY_BE_EXTERNALIZED_TO_HF; EXACT_HASHED_POINTER_REQUIRED"
+  },
+  "created_at_utc": "2026-08-14T04:20:53.158616+00:00",
+  "interpretation_boundary": {
+    "canonical_stage18_and_stage18S_are_not_retroactively_merged": true,
+    "stage18S_is_grouped_into_stage18_release_family_for_preservation": true,
+    "stage18S_must_be_visible_in_final_release": true,
+    "stage18S_must_not_be_presented_as_prespecified_five_repeat_confirmatory": true
+  },
+  "phase_id": "P02",
+  "stage18S": {
+    "canonical_G18_modified": false,
+    "canonical_stage18_modified": false,
+    "claim_scope": "POST_HOC_SENSITIVITY_DESCRIPTIVE",
+    "complete_output_bytes": 1767907943,
+    "complete_output_files": 1743,
+    "complete_output_manifest": "runtime/stage18_consolidated_release_R1/manifests/stage18S_complete_output_manifest.jsonl",
+    "handoff": "runtime/handoffs/stage18S_R1_sensitivity_evidence.json",
+    "member_receipts": 216,
+    "member_status_counts": {
+      "INPUT_INCOMPATIBLE": 27,
+      "SUCCESS": 189
+    },
+    "planned_cells": 162,
+    "post_hoc": true,
+    "project_visible_analysis_files": [
+      "runtime/analysis_inputs/stage18S_R1_combined_cell_effects.csv",
+      "runtime/analysis_inputs/stage18S_R1_three_repeat_anchor_stability.csv",
+      "runtime/analysis_inputs/stage18S_R1_six_budget_mr00_sensitivity.csv",
+      "runtime/analysis_inputs/stage18S_R1_participant_paired_effects.csv",
+      "runtime/analysis_inputs/stage18S_R1_member_training_provenance.csv",
+      "runtime/analysis_inputs/stage18S_R1_training_provenance_summary.csv",
+      "runtime/analysis_inputs/stage18S_R1_decision_support_summary.json",
+      "runtime/analysis_inputs/stage18S_balanced_sensitivity_R1_preexecution_freeze.json"
+    ],
+    "status": "PASS",
+    "supplement_id": "P02-STAGE18S-BALANCED-SENSITIVITY-R1",
+    "supplement_is_additional_sensitivity_evidence": true,
+    "terminal_counts": {
+      "INPUT_INCOMPATIBLE": 27,
+      "SUCCESS": 135
+    }
+  },
+  "status": "PASS",
+  "structured_outputs": {
+    "bytes": 1306688776,
+    "files": 15149,
+    "manifest": "runtime/stage18_consolidated_release_R1/manifests/stage18_and_phase_structured_output_manifest.jsonl"
+  }
+}

@@ -1,0 +1,503 @@
+{
+  "rows": [
+    {
+      "ablation_id": "A0",
+      "official_identity": "Raw Decoder / Accept-All Raw Decoder Reference",
+      "owner": "DOWNSTREAM_AUTHORITY",
+      "downstream_phase": "P02-P15",
+      "required_layer1_record_types": [
+        "DatasetRecord",
+        "WindowRecord",
+        "SplitRecord",
+        "PreprocessingRecord",
+        "LabelMapRecord",
+        "ValidationReport"
+      ],
+      "required_matching_keys": [
+        "dataset_id",
+        "split_id",
+        "preprocessing_id",
+        "label_map_id",
+        "window_id",
+        "config_hash",
+        "seed"
+      ],
+      "missing_key_behavior": "NOT_READY_OR_DIAGNOSTIC_ONLY",
+      "diagnostic_only_behavior": "VISIBLE_WITH_REASON",
+      "invalidation": "ANY_SOURCE_SPLIT_PREPROCESS_LABEL_WINDOW_OR_VALIDATION_IDENTITY_CHANGE",
+      "status": "FOUNDATION_READY",
+      "activated_in_p01": false,
+      "executed_in_p01": false,
+      "output_path": "manifests/phase_01/layer1_ablation_readiness_l1_v1.json"
+    },
+    {
+      "ablation_id": "A1",
+      "official_identity": "Calibrated Decoder / Calibration Visibility",
+      "owner": "DOWNSTREAM_AUTHORITY",
+      "downstream_phase": "P02-P15",
+      "required_layer1_record_types": [
+        "DatasetRecord",
+        "WindowRecord",
+        "SplitRecord",
+        "PreprocessingRecord",
+        "LabelMapRecord",
+        "ValidationReport"
+      ],
+      "required_matching_keys": [
+        "dataset_id",
+        "split_id",
+        "preprocessing_id",
+        "label_map_id",
+        "window_id",
+        "config_hash",
+        "seed"
+      ],
+      "missing_key_behavior": "NOT_READY_OR_DIAGNOSTIC_ONLY",
+      "diagnostic_only_behavior": "VISIBLE_WITH_REASON",
+      "invalidation": "ANY_SOURCE_SPLIT_PREPROCESS_LABEL_WINDOW_OR_VALIDATION_IDENTITY_CHANGE",
+      "status": "FOUNDATION_READY",
+      "activated_in_p01": false,
+      "executed_in_p01": false,
+      "output_path": "manifests/phase_01/layer1_ablation_readiness_l1_v1.json"
+    },
+    {
+      "ablation_id": "A2",
+      "official_identity": "Simple Registered Threshold / Confidence-Threshold Baseline",
+      "owner": "DOWNSTREAM_AUTHORITY",
+      "downstream_phase": "P02-P15",
+      "required_layer1_record_types": [
+        "DatasetRecord",
+        "WindowRecord",
+        "SplitRecord",
+        "PreprocessingRecord",
+        "LabelMapRecord",
+        "ValidationReport"
+      ],
+      "required_matching_keys": [
+        "dataset_id",
+        "split_id",
+        "preprocessing_id",
+        "label_map_id",
+        "window_id",
+        "config_hash",
+        "seed"
+      ],
+      "missing_key_behavior": "NOT_READY_OR_DIAGNOSTIC_ONLY",
+      "diagnostic_only_behavior": "VISIBLE_WITH_REASON",
+      "invalidation": "ANY_SOURCE_SPLIT_PREPROCESS_LABEL_WINDOW_OR_VALIDATION_IDENTITY_CHANGE",
+      "status": "FOUNDATION_READY",
+      "activated_in_p01": false,
+      "executed_in_p01": false,
+      "output_path": "manifests/phase_01/layer1_ablation_readiness_l1_v1.json"
+    },
+    {
+      "ablation_id": "A3",
+      "official_identity": "Uncertainty and Selective Prediction",
+      "owner": "DOWNSTREAM_AUTHORITY",
+      "downstream_phase": "P02-P15",
+      "required_layer1_record_types": [
+        "DatasetRecord",
+        "WindowRecord",
+        "SplitRecord",
+        "PreprocessingRecord",
+        "LabelMapRecord",
+        "ValidationReport"
+      ],
+      "required_matching_keys": [
+        "dataset_id",
+        "split_id",
+        "preprocessing_id",
+        "label_map_id",
+        "window_id",
+        "config_hash",
+        "seed"
+      ],
+      "missing_key_behavior": "NOT_READY_OR_DIAGNOSTIC_ONLY",
+      "diagnostic_only_behavior": "VISIBLE_WITH_REASON",
+      "invalidation": "ANY_SOURCE_SPLIT_PREPROCESS_LABEL_WINDOW_OR_VALIDATION_IDENTITY_CHANGE",
+      "status": "FOUNDATION_READY",
+      "activated_in_p01": false,
+      "executed_in_p01": false,
+      "output_path": "manifests/phase_01/layer1_ablation_readiness_l1_v1.json"
+    },
+    {
+      "ablation_id": "A4",
+      "official_identity": "Longer-Window, Multi-Window Voting/Averaging and Ordinary Ensemble Controls",
+      "owner": "DOWNSTREAM_AUTHORITY",
+      "downstream_phase": "P02-P15",
+      "required_layer1_record_types": [
+        "DatasetRecord",
+        "WindowRecord",
+        "SplitRecord",
+        "PreprocessingRecord",
+        "LabelMapRecord",
+        "ValidationReport"
+      ],
+      "required_matching_keys": [
+        "dataset_id",
+        "split_id",
+        "preprocessing_id",
+        "label_map_id",
+        "window_id",
+        "config_hash",
+        "seed"
+      ],
+      "missing_key_behavior": "NOT_READY_OR_DIAGNOSTIC_ONLY",
+      "diagnostic_only_behavior": "VISIBLE_WITH_REASON",
+      "invalidation": "ANY_SOURCE_SPLIT_PREPROCESS_LABEL_WINDOW_OR_VALIDATION_IDENTITY_CHANGE",
+      "status": "FOUNDATION_READY",
+      "activated_in_p01": false,
+      "executed_in_p01": false,
+      "output_path": "manifests/phase_01/layer1_ablation_readiness_l1_v1.json",
+      "foundation_ready": true,
+      "data_substrate_status": "READY_WITH_PROTOCOL_SYNC_REQUIRED",
+      "a4_components": {
+        "ordinary_cross_model_ensemble": {
+          "status": "DOWNSTREAM_MODEL_PREDICTIONS_REQUIRED",
+          "data_ready": true
+        },
+        "longer_window_matched3p5s": {
+          "status": "DATA_READY_PROTOCOL_SYNC_REQUIRED",
+          "window_profile_id": "A4_LONG_MATCHED_3P5S_R2",
+          "pointer": "external_artifact_pointers/a4_window_family_dataset.json"
+        },
+        "same_event_multi_window_3x2s": {
+          "status": "DATA_READY_PROTOCOL_SYNC_REQUIRED",
+          "window_profile_id": "A4_MULTI_3X2S_UNIFORM_0P75S_R2",
+          "member_count": 3,
+          "pointer": "external_artifact_pointers/a4_window_family_dataset.json"
+        }
+      },
+      "confirmatory_use_rule": "PROTOCOL_V1_EXACT_PROFILE_SYNC_REQUIRED"
+    },
+    {
+      "ablation_id": "A5",
+      "official_identity": "IHARQ-lite / Rule-Based Evidence Verification",
+      "owner": "DOWNSTREAM_AUTHORITY",
+      "downstream_phase": "P02-P15",
+      "required_layer1_record_types": [
+        "DatasetRecord",
+        "WindowRecord",
+        "SplitRecord",
+        "PreprocessingRecord",
+        "LabelMapRecord",
+        "ValidationReport"
+      ],
+      "required_matching_keys": [
+        "dataset_id",
+        "split_id",
+        "preprocessing_id",
+        "label_map_id",
+        "window_id",
+        "config_hash",
+        "seed"
+      ],
+      "missing_key_behavior": "NOT_READY_OR_DIAGNOSTIC_ONLY",
+      "diagnostic_only_behavior": "VISIBLE_WITH_REASON",
+      "invalidation": "ANY_SOURCE_SPLIT_PREPROCESS_LABEL_WINDOW_OR_VALIDATION_IDENTITY_CHANGE",
+      "status": "FOUNDATION_READY",
+      "activated_in_p01": false,
+      "executed_in_p01": false,
+      "output_path": "manifests/phase_01/layer1_ablation_readiness_l1_v1.json"
+    },
+    {
+      "ablation_id": "A6",
+      "official_identity": "IHARQ + Evidence-Quality Estimator",
+      "owner": "DOWNSTREAM_AUTHORITY",
+      "downstream_phase": "P02-P15",
+      "required_layer1_record_types": [
+        "DatasetRecord",
+        "WindowRecord",
+        "SplitRecord",
+        "PreprocessingRecord",
+        "LabelMapRecord",
+        "ValidationReport"
+      ],
+      "required_matching_keys": [
+        "dataset_id",
+        "split_id",
+        "preprocessing_id",
+        "label_map_id",
+        "window_id",
+        "config_hash",
+        "seed"
+      ],
+      "missing_key_behavior": "NOT_READY_OR_DIAGNOSTIC_ONLY",
+      "diagnostic_only_behavior": "VISIBLE_WITH_REASON",
+      "invalidation": "ANY_SOURCE_SPLIT_PREPROCESS_LABEL_WINDOW_OR_VALIDATION_IDENTITY_CHANGE",
+      "status": "FOUNDATION_READY",
+      "activated_in_p01": false,
+      "executed_in_p01": false,
+      "output_path": "manifests/phase_01/layer1_ablation_readiness_l1_v1.json"
+    },
+    {
+      "ablation_id": "A7",
+      "official_identity": "IHARQ + RegimeRisk Temporal Trust",
+      "owner": "DOWNSTREAM_AUTHORITY",
+      "downstream_phase": "P02-P15",
+      "required_layer1_record_types": [
+        "DatasetRecord",
+        "WindowRecord",
+        "SplitRecord",
+        "PreprocessingRecord",
+        "LabelMapRecord",
+        "ValidationReport"
+      ],
+      "required_matching_keys": [
+        "dataset_id",
+        "split_id",
+        "preprocessing_id",
+        "label_map_id",
+        "window_id",
+        "config_hash",
+        "seed"
+      ],
+      "missing_key_behavior": "NOT_READY_OR_DIAGNOSTIC_ONLY",
+      "diagnostic_only_behavior": "VISIBLE_WITH_REASON",
+      "invalidation": "ANY_SOURCE_SPLIT_PREPROCESS_LABEL_WINDOW_OR_VALIDATION_IDENTITY_CHANGE",
+      "status": "FOUNDATION_READY",
+      "activated_in_p01": false,
+      "executed_in_p01": false,
+      "output_path": "manifests/phase_01/layer1_ablation_readiness_l1_v1.json"
+    },
+    {
+      "ablation_id": "A8",
+      "official_identity": "Learning-to-defer / Deferral Comparison",
+      "owner": "DOWNSTREAM_AUTHORITY",
+      "downstream_phase": "P02-P15",
+      "required_layer1_record_types": [
+        "DatasetRecord",
+        "WindowRecord",
+        "SplitRecord",
+        "PreprocessingRecord",
+        "LabelMapRecord",
+        "ValidationReport"
+      ],
+      "required_matching_keys": [
+        "dataset_id",
+        "split_id",
+        "preprocessing_id",
+        "label_map_id",
+        "window_id",
+        "config_hash",
+        "seed"
+      ],
+      "missing_key_behavior": "NOT_READY_OR_DIAGNOSTIC_ONLY",
+      "diagnostic_only_behavior": "VISIBLE_WITH_REASON",
+      "invalidation": "ANY_SOURCE_SPLIT_PREPROCESS_LABEL_WINDOW_OR_VALIDATION_IDENTITY_CHANGE",
+      "status": "FOUNDATION_READY",
+      "activated_in_p01": false,
+      "executed_in_p01": false,
+      "output_path": "manifests/phase_01/layer1_ablation_readiness_l1_v1.json"
+    },
+    {
+      "ablation_id": "A9",
+      "official_identity": "Supervised Adaptive-IHARQ / Adaptive Readiness Policy",
+      "owner": "DOWNSTREAM_AUTHORITY",
+      "downstream_phase": "P02-P15",
+      "required_layer1_record_types": [
+        "DatasetRecord",
+        "WindowRecord",
+        "SplitRecord",
+        "PreprocessingRecord",
+        "LabelMapRecord",
+        "ValidationReport"
+      ],
+      "required_matching_keys": [
+        "dataset_id",
+        "split_id",
+        "preprocessing_id",
+        "label_map_id",
+        "window_id",
+        "config_hash",
+        "seed"
+      ],
+      "missing_key_behavior": "NOT_READY_OR_DIAGNOSTIC_ONLY",
+      "diagnostic_only_behavior": "VISIBLE_WITH_REASON",
+      "invalidation": "ANY_SOURCE_SPLIT_PREPROCESS_LABEL_WINDOW_OR_VALIDATION_IDENTITY_CHANGE",
+      "status": "FOUNDATION_READY",
+      "activated_in_p01": false,
+      "executed_in_p01": false,
+      "output_path": "manifests/phase_01/layer1_ablation_readiness_l1_v1.json"
+    },
+    {
+      "ablation_id": "A10",
+      "official_identity": "Contextual Bandit / Simulation-Bounded Immediate-Reward Adaptation",
+      "owner": "DOWNSTREAM_AUTHORITY",
+      "downstream_phase": "P02-P15",
+      "required_layer1_record_types": [
+        "DatasetRecord",
+        "WindowRecord",
+        "SplitRecord",
+        "PreprocessingRecord",
+        "LabelMapRecord",
+        "ValidationReport"
+      ],
+      "required_matching_keys": [
+        "dataset_id",
+        "split_id",
+        "preprocessing_id",
+        "label_map_id",
+        "window_id",
+        "config_hash",
+        "seed"
+      ],
+      "missing_key_behavior": "NOT_READY_OR_DIAGNOSTIC_ONLY",
+      "diagnostic_only_behavior": "VISIBLE_WITH_REASON",
+      "invalidation": "ANY_SOURCE_SPLIT_PREPROCESS_LABEL_WINDOW_OR_VALIDATION_IDENTITY_CHANGE",
+      "status": "FOUNDATION_READY",
+      "activated_in_p01": false,
+      "executed_in_p01": false,
+      "output_path": "manifests/phase_01/layer1_ablation_readiness_l1_v1.json"
+    },
+    {
+      "ablation_id": "A11",
+      "official_identity": "Reinforcement-Learning Policy / Simulation-Bounded Sequential Policy Learning",
+      "owner": "DOWNSTREAM_AUTHORITY",
+      "downstream_phase": "P02-P15",
+      "required_layer1_record_types": [
+        "DatasetRecord",
+        "WindowRecord",
+        "SplitRecord",
+        "PreprocessingRecord",
+        "LabelMapRecord",
+        "ValidationReport"
+      ],
+      "required_matching_keys": [
+        "dataset_id",
+        "split_id",
+        "preprocessing_id",
+        "label_map_id",
+        "window_id",
+        "config_hash",
+        "seed"
+      ],
+      "missing_key_behavior": "NOT_READY_OR_DIAGNOSTIC_ONLY",
+      "diagnostic_only_behavior": "VISIBLE_WITH_REASON",
+      "invalidation": "ANY_SOURCE_SPLIT_PREPROCESS_LABEL_WINDOW_OR_VALIDATION_IDENTITY_CHANGE",
+      "status": "FOUNDATION_READY",
+      "activated_in_p01": false,
+      "executed_in_p01": false,
+      "output_path": "manifests/phase_01/layer1_ablation_readiness_l1_v1.json"
+    },
+    {
+      "ablation_id": "A12",
+      "official_identity": "StressForge Stress Tests / Controlled Stress Robustness",
+      "owner": "DOWNSTREAM_AUTHORITY",
+      "downstream_phase": "P02-P15",
+      "required_layer1_record_types": [
+        "DatasetRecord",
+        "WindowRecord",
+        "SplitRecord",
+        "PreprocessingRecord",
+        "LabelMapRecord",
+        "ValidationReport"
+      ],
+      "required_matching_keys": [
+        "dataset_id",
+        "split_id",
+        "preprocessing_id",
+        "label_map_id",
+        "window_id",
+        "config_hash",
+        "seed"
+      ],
+      "missing_key_behavior": "NOT_READY_OR_DIAGNOSTIC_ONLY",
+      "diagnostic_only_behavior": "VISIBLE_WITH_REASON",
+      "invalidation": "ANY_SOURCE_SPLIT_PREPROCESS_LABEL_WINDOW_OR_VALIDATION_IDENTITY_CHANGE",
+      "status": "FOUNDATION_READY",
+      "activated_in_p01": false,
+      "executed_in_p01": false,
+      "output_path": "manifests/phase_01/layer1_ablation_readiness_l1_v1.json"
+    },
+    {
+      "ablation_id": "A13",
+      "official_identity": "Layer 9 Simulation-Only Embodiment Demo",
+      "owner": "DOWNSTREAM_AUTHORITY",
+      "downstream_phase": "P02-P15",
+      "required_layer1_record_types": [
+        "DatasetRecord",
+        "WindowRecord",
+        "SplitRecord",
+        "PreprocessingRecord",
+        "LabelMapRecord",
+        "ValidationReport"
+      ],
+      "required_matching_keys": [
+        "dataset_id",
+        "split_id",
+        "preprocessing_id",
+        "label_map_id",
+        "window_id",
+        "config_hash",
+        "seed"
+      ],
+      "missing_key_behavior": "NOT_READY_OR_DIAGNOSTIC_ONLY",
+      "diagnostic_only_behavior": "VISIBLE_WITH_REASON",
+      "invalidation": "ANY_SOURCE_SPLIT_PREPROCESS_LABEL_WINDOW_OR_VALIDATION_IDENTITY_CHANGE",
+      "status": "FOUNDATION_READY",
+      "activated_in_p01": false,
+      "executed_in_p01": false,
+      "output_path": "manifests/phase_01/layer1_ablation_readiness_l1_v1.json"
+    }
+  ],
+  "a14_absence": {
+    "status": "PASS",
+    "a14_present": false,
+    "selector_present": false,
+    "run_present": false,
+    "result_present": false,
+    "claim_present": false
+  },
+  "a4_window_family_pointer": "external_artifact_pointers/a4_window_family_dataset.json",
+  "a4_window_family": {
+    "window_family_id": "P01-L1-A4-WINDOW-FAMILY-FREEZE-R2",
+    "protocol_status": "DATA_READY_PROTOCOL_SYNC_REQUIRED",
+    "target_sampling_hz": 160,
+    "materialized_profile": {
+      "profile_id": "A4_LONG_MATCHED_3P5S_R2",
+      "event_anchor": "MI_CUE_ONSET",
+      "start_offset_samples": 0,
+      "duration_samples": 560,
+      "duration_seconds": "3.5",
+      "view_kind": "MATERIALIZED"
+    },
+    "multi_window_profile": {
+      "profile_id": "A4_MULTI_3X2S_UNIFORM_0P75S_R2",
+      "member_count": 3,
+      "member_duration_samples": 320,
+      "member_duration_seconds": "2.0",
+      "member_stride_samples": 120,
+      "member_stride_seconds": "0.75",
+      "member_slices": [
+        {
+          "member_index": 1,
+          "condition_id": "A4_MULTI_3X2S_M1_R2",
+          "slice_start": 0,
+          "slice_stop": 320,
+          "start_offset_seconds": "0.0",
+          "stop_offset_seconds": "2.0"
+        },
+        {
+          "member_index": 2,
+          "condition_id": "A4_MULTI_3X2S_M2_R2",
+          "slice_start": 120,
+          "slice_stop": 440,
+          "start_offset_seconds": "0.75",
+          "stop_offset_seconds": "2.75"
+        },
+        {
+          "member_index": 3,
+          "condition_id": "A4_MULTI_3X2S_M3_R2",
+          "slice_start": 240,
+          "slice_stop": 560,
+          "start_offset_seconds": "1.5",
+          "stop_offset_seconds": "3.5"
+        }
+      ],
+      "view_kind": "REGISTERED_VIRTUAL_SLICE",
+      "storage_rule": "VIEWS_REFERENCE_THE_LOSSLESS_MATCHED_3P5S_EVENT_TENSOR; OVERLAPPING_NUMERICAL_BYTES_ARE_NOT_DUPLICATED"
+    }
+  },
+  "core_dataset_pointer": "external_artifact_pointers/derived_windows_dataset.json"
+}

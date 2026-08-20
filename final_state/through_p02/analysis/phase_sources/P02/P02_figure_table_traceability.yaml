@@ -1,0 +1,208 @@
+phase_id: P02
+analysis_release_id: P02-PHASE-ANALYSIS-FINAL-R2
+figures:
+- figure_id: P02_Figure_01_A0_fulltrain_model_by_dataset
+  path: figures/P02_Figure_01_A0_fulltrain_model_by_dataset.png
+  sources:
+  - runtime/analysis_inputs/a0_participant_metrics.csv
+  sha256: 2cc8fe67aeeb52c6221a47bef07a4e71472455d69d954823a283ac7b4b3dd842
+  derivation: descriptive rendering only; no new confirmatory test
+- figure_id: P02_Figure_02_Lee2019_MI_participant_distribution
+  path: figures/P02_Figure_02_Lee2019_MI_participant_distribution.png
+  sources:
+  - runtime/analysis_inputs/a0_participant_metrics.csv
+  sha256: a2f961ff337f4762ee34e70afb5c3334096cfb0548e4295bf863d4b6d3924815
+  derivation: descriptive rendering only; no new confirmatory test
+- figure_id: P02_Figure_02_PhysioNetMI_participant_distribution
+  path: figures/P02_Figure_02_PhysioNetMI_participant_distribution.png
+  sources:
+  - runtime/analysis_inputs/a0_participant_metrics.csv
+  sha256: 708399812148663a37c8107491d040120a6298335dfb67a9d1a4071981bc7178
+  derivation: descriptive rendering only; no new confirmatory test
+- figure_id: P02_Figure_03_low_label_BNCI2014_001
+  path: figures/P02_Figure_03_low_label_BNCI2014_001.png
+  sources:
+  - runtime/analysis_inputs/low_label_metric_source.csv
+  sha256: 2f5602a77bb4c2b989466679cc5a6b62ba5a8fab259a480a21be87a72f4724da
+  derivation: descriptive rendering only; no new confirmatory test
+- figure_id: P02_Figure_03_low_label_Lee2019_MI
+  path: figures/P02_Figure_03_low_label_Lee2019_MI.png
+  sources:
+  - runtime/analysis_inputs/low_label_metric_source.csv
+  sha256: afb75fac3edb022a69b47c4293f375b82a1244668418959260cf5a36bc9f144d
+  derivation: descriptive rendering only; no new confirmatory test
+- figure_id: P02_Figure_03_low_label_PhysioNetMI
+  path: figures/P02_Figure_03_low_label_PhysioNetMI.png
+  sources:
+  - runtime/analysis_inputs/low_label_metric_source.csv
+  sha256: f07ccdaab2c18ff2d1e985dad1bc5cf4bb2899fb76e8c909fed6f916b56831e9
+  derivation: descriptive rendering only; no new confirmatory test
+- figure_id: P02_Figure_04_training_policy_challenger_effect
+  path: figures/P02_Figure_04_training_policy_challenger_effect.png
+  sources:
+  - runtime/analysis_inputs/training_policy_challenger_statistics.json
+  sha256: a3e00e2c4aa5eb0a03a8aafedf5c7f0efb06fb4f423581f1b63b692cca1b2b0e
+  derivation: descriptive rendering only; no new confirmatory test
+- figure_id: P02_Figure_05_A4_role_control_effects
+  path: figures/P02_Figure_05_A4_role_control_effects.png
+  sources:
+  - runtime/analysis_inputs/a4_role_control_statistics.json
+  sha256: 7388a6b62f5da6d89b4f47ec8c2b72dac6551e9281c9a7a1fb688465f1b85343
+  derivation: descriptive rendering only; no new confirmatory test
+- figure_id: P02_Figure_06_Stage18S_sign_consistency
+  path: figures/P02_Figure_06_Stage18S_sign_consistency.png
+  sources:
+  - runtime/analysis_inputs/stage18S_R1_three_repeat_anchor_stability.csv
+  sha256: a025be95cc2789e2e2c331376570b96952748c1f9a7f29689934f04011ad38d3
+  derivation: descriptive rendering only; no new confirmatory test
+tables:
+- table_id: P02_Table_A0_fulltrain_branch_summary
+  path: table_sources/P02_Table_A0_fulltrain_branch_summary.csv
+  sources:
+  - runtime/analysis_inputs/a0_participant_metrics.csv
+  sha256: 2f62ab327d951c7eebe2a57c7f59e448aea9080877299df94afbc10f41c043f7
+  derivation: machine-derived from canonical P02 analysis inputs; publication-formatted
+    precision is separate from source precision
+- table_id: P02_Table_A0_fulltrain_model_ranks
+  path: table_sources/P02_Table_A0_fulltrain_model_ranks.csv
+  sources:
+  - runtime/analysis_inputs/a0_participant_metrics.csv
+  sha256: 05eadf33203b0fb1cfa68bf52f833687c3409aa8bde1f12bbd99ade0669affca
+  derivation: machine-derived descriptive/traceability artifact; no new confirmatory
+    test
+- table_id: P02_Table_A0_participant_first_fulltrain_source
+  path: table_sources/P02_Table_A0_participant_first_fulltrain_source.csv
+  sources:
+  - runtime/analysis_inputs/a0_participant_metrics.csv
+  sha256: 742e4362eebbd8c9e5ed2d59c0018805fe66a491737fde3b7cf1b144cd04743c
+  derivation: machine-derived from canonical P02 analysis inputs; publication-formatted
+    precision is separate from source precision
+- table_id: P02_Table_A0_secondary_metric_leaders
+  path: table_sources/P02_Table_A0_secondary_metric_leaders.csv
+  sources:
+  - runtime/analysis_inputs/a0_participant_metrics.csv
+  sha256: 5514014946714132bdb5378ee7bf80fdbceabe6dd3e6ccbd7709a37f50ad9962
+  derivation: machine-derived from canonical P02 analysis inputs; publication-formatted
+    precision is separate from source precision
+- table_id: P02_Table_A4_C4_C5_statistics
+  path: table_sources/P02_Table_A4_C4_C5_statistics.csv
+  sources:
+  - runtime/analysis_inputs/a4_c4_c5_statistics.json
+  sha256: 24ca5408cd1c361b83adb18baf9a3d663d94b67cf29d91347069ede160d9c0de
+  derivation: machine-derived from canonical P02 analysis inputs; publication-formatted
+    precision is separate from source precision
+- table_id: P02_Table_A4_burden_summary
+  path: table_sources/P02_Table_A4_burden_summary.csv
+  sources:
+  - runtime/analysis_inputs/a4_burden_source.csv
+  sha256: 3e87d26a7dd5281aef48fd5526ba44675902451ac4fe64d3b5d321571fa1fb2e
+  derivation: machine-derived descriptive/traceability artifact; no new confirmatory
+    test
+- table_id: P02_Table_A4_role_condition_summary
+  path: table_sources/P02_Table_A4_role_condition_summary.csv
+  sources:
+  - runtime/analysis_inputs/a4_role_control_statistics.json
+  sha256: c8a4958910d7db18fa1d0156f9c1883f124601927151f641a4bbbfe0439f2e9b
+  derivation: machine-derived from canonical P02 analysis inputs; publication-formatted
+    precision is separate from source precision
+- table_id: P02_Table_A4_role_control_statistics
+  path: table_sources/P02_Table_A4_role_control_statistics.csv
+  sources:
+  - runtime/analysis_inputs/a4_role_control_statistics.json
+  sha256: d1ad0b94fb337e4cc75708e7a64f96b36a3025626826a5df7cbaf5bb3a24cbdb
+  derivation: machine-derived from canonical P02 analysis inputs; publication-formatted
+    precision is separate from source precision
+- table_id: P02_Table_Stage12_validation_before_after_exact
+  path: table_sources/P02_Table_Stage12_validation_before_after_exact.csv
+  sources:
+  - runtime/diagnostics/stage12_R6_ABC_author_adaptive_R1/job_summaries/*.json
+  sha256: 9d372f66b06b406e43cf5d63f9e3d3842247b0ccc6438b37ca2d63cb48f19900
+  derivation: machine-derived descriptive/traceability artifact; no new confirmatory
+    test
+- table_id: P02_Table_Stage18S_six_budget_sensitivity
+  path: table_sources/P02_Table_Stage18S_six_budget_sensitivity.csv
+  sources:
+  - runtime/analysis_inputs/stage18S_R1_six_budget_mr00_sensitivity.csv
+  sha256: 0dd430789a9af6d95340663629db6aadbb75409720a73b87110cad66002e9589
+  derivation: machine-derived from canonical P02 analysis inputs; publication-formatted
+    precision is separate from source precision
+- table_id: P02_Table_Stage18S_three_repeat_anchor_stability
+  path: table_sources/P02_Table_Stage18S_three_repeat_anchor_stability.csv
+  sources:
+  - runtime/analysis_inputs/stage18S_R1_three_repeat_anchor_stability.csv
+  sha256: 9f234c9721066123a98380893e917dd32ae9656ee7aa5b850237e8e9b396564f
+  derivation: machine-derived from canonical P02 analysis inputs; publication-formatted
+    precision is separate from source precision
+- table_id: P02_Table_failure_category_breakdown
+  path: table_sources/P02_Table_failure_category_breakdown.csv
+  sources:
+  - runtime/records/FailureCaseIndex/failures.jsonl
+  sha256: 4f97a4abe453faf85d02b320d99ed52a152247bc7d25d12c49d6dbe16820ae8e
+  derivation: machine-derived descriptive/traceability artifact; no new confirmatory
+    test
+- table_id: P02_Table_failure_code_summary
+  path: table_sources/P02_Table_failure_code_summary.csv
+  sources:
+  - runtime/records/FailureCaseIndex/failures.jsonl
+  sha256: 0feca6efadf88a9793a147cdf5a3dd3127ae62638ad90dc274d488c7f6a23146
+  derivation: machine-derived descriptive/traceability artifact; no new confirmatory
+    test
+- table_id: P02_Table_low_label_BACC
+  path: table_sources/P02_Table_low_label_BACC.csv
+  sources:
+  - runtime/analysis_inputs/low_label_metric_source.csv
+  sha256: 2c3d377c97853deb9c0c489e3b551e11d5fae540c89029ea489510de11e77de1
+  derivation: machine-derived from canonical P02 analysis inputs; publication-formatted
+    precision is separate from source precision
+- table_id: P02_Table_low_label_budget_deltas
+  path: table_sources/P02_Table_low_label_budget_deltas.csv
+  sources:
+  - runtime/analysis_inputs/low_label_metric_source.csv
+  sha256: 2a65e9e28402aa16421e014fe009613e866ccd0b7cbd80ea40d1971a7c8f705d
+  derivation: machine-derived from canonical P02 analysis inputs; publication-formatted
+    precision is separate from source precision
+- table_id: P02_Table_low_label_budget_leaders_and_rank_changes
+  path: table_sources/P02_Table_low_label_budget_leaders_and_rank_changes.csv
+  sources:
+  - runtime/analysis_inputs/low_label_metric_source.csv
+  - runtime/analysis_inputs/a0_participant_metrics.csv
+  sha256: 421992f8677557cc431f99ae67af5a7fc8ebf5a1a08b8e238457a4a6fd99b6bc
+  derivation: machine-derived descriptive/traceability artifact; no new confirmatory
+    test
+- table_id: P02_Table_low_label_exact_deltas_and_ranks
+  path: table_sources/P02_Table_low_label_exact_deltas_and_ranks.csv
+  sources:
+  - runtime/analysis_inputs/low_label_metric_source.csv
+  - runtime/analysis_inputs/a0_participant_metrics.csv
+  sha256: 1a3d3a919b1fa5c4a0e18bb79957838a5aefa2a20cf4f7efff92f56d98cbb429
+  derivation: machine-derived descriptive/traceability artifact; no new confirmatory
+    test
+- table_id: P02_Table_low_label_interval_deltas
+  path: table_sources/P02_Table_low_label_interval_deltas.csv
+  sources:
+  - runtime/analysis_inputs/low_label_metric_source.csv
+  - runtime/analysis_inputs/a0_participant_metrics.csv
+  sha256: 1b9370106a35ed362abe1bb4da0ef16a59683757ec06f47055b7ab3f3a62e0fc
+  derivation: machine-derived descriptive/traceability artifact; no new confirmatory
+    test
+- table_id: P02_Table_participant_difficulty_summary
+  path: table_sources/P02_Table_participant_difficulty_summary.csv
+  sources:
+  - runtime/analysis_inputs/a0_participant_metrics.csv
+  sha256: 81ba257dfd42916535ba6330ac60793f879f66ad1823b59818085f2b0ee2fb87
+  derivation: machine-derived descriptive/traceability artifact; no new confirmatory
+    test
+- table_id: P02_Table_participant_heterogeneity_summary
+  path: table_sources/P02_Table_participant_heterogeneity_summary.csv
+  sources:
+  - runtime/analysis_inputs/a0_participant_metrics.csv
+  sha256: 98a2bacd3ac621f414655c58390175a286e9658a67e9bf8a88ebe15f038bb23c
+  derivation: machine-derived descriptive/traceability artifact; no new confirmatory
+    test
+- table_id: P02_Table_training_policy_challenger_statistics
+  path: table_sources/P02_Table_training_policy_challenger_statistics.csv
+  sources:
+  - runtime/analysis_inputs/training_policy_challenger_statistics.json
+  sha256: 0b2c9b948726d8691f38edb6e5bf049e2e6b5d38e84da0e88e1ac4f1527ed1d8
+  derivation: machine-derived from canonical P02 analysis inputs; publication-formatted
+    precision is separate from source precision

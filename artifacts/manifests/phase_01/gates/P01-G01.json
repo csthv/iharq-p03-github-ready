@@ -1,0 +1,17 @@
+{
+  "gate_id": "P01-G01",
+  "official_or_local_name": "authority_phase0_intake",
+  "status": "PASS",
+  "inputs": [],
+  "procedure_version": "P01-L1-GATE-R6",
+  "observations": {},
+  "failure_codes": [],
+  "repair_owner": "GOVERNANCE_AND_PHASE0",
+  "affected_artifacts": [],
+  "evidence_paths": [
+    "manifests/phase_01/test_manifest.json",
+    "authority_manifest.json"
+  ],
+  "manifest_entry": "manifests/phase_01/gates/P01-G01.json",
+  "blocking_effect": false
+}

@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/csthv/IHARQ/schemas/records/CalibrationDashboardMetricRecord.schema.json",
+  "title": "CalibrationDashboardMetricRecord Phase 0 official audit local profile",
+  "type": "object",
+  "required": [
+    "record_id",
+    "record_type",
+    "schema_version",
+    "authority_status",
+    "owner_layer",
+    "phase_id",
+    "config_id",
+    "source_ids",
+    "evidence_mode",
+    "limitation_tags",
+    "lifecycle_status",
+    "fixture",
+    "fixture_tags",
+    "evidence_role",
+    "payload"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "pattern": "^IHARQ-[A-Z][A-Z0-9_]*-[0-9]{8}-[0-9a-f]{16}$"
+    },
+    "record_type": {
+      "const": "CalibrationDashboardMetricRecord"
+    },
+    "schema_version": {
+      "const": "1.0-foundation"
+    },
+    "authority_status": {
+      "const": "AUDIT_PROMPT_LOCAL_PROFILE"
+    },
+    "owner_layer": {
+      "const": "L3"
+    },
+    "phase_id": {
+      "const": "P00"
+    },
+    "config_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "evidence_mode": {
+      "enum": [
+        "FOUNDATION",
+        "IMPLEMENTATION",
+        "CONFORMANCE",
+        "VALIDATION",
+        "REPRODUCIBILITY_READINESS"
+      ]
+    },
+    "limitation_tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "lifecycle_status": {
+      "enum": [
+        "CREATED",
+        "VALIDATED",
+        "ACCEPTED",
+        "DIAGNOSTIC_ONLY",
+        "BLOCKED",
+        "SUPERSEDED",
+        "INVALIDATED"
+      ]
+    },
+    "fixture": {
+      "type": "boolean"
+    },
+    "fixture_tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "evidence_role": {
+      "enum": [
+        "PRIMARY",
+        "DERIVED",
+        "GOVERNANCE",
+        "RENDERING",
+        "PACKAGING"
+      ]
+    },
+    "payload": {
+      "type": "object",
+      "required": [
+        "calibration_dashboard_metric_id",
+        "metric_entry_ids",
+        "source_artifact_ids",
+        "rendering_only"
+      ],
+      "properties": {
+        "calibration_dashboard_metric_id": {
+          "type": "string"
+        },
+        "metric_entry_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "source_artifact_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "rendering_only": {
+          "const": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "ablation_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "x-iharq-authority-status": "AUDIT_PROMPT_LOCAL_PROFILE",
+  "$comment": "Local Phase 0 foundation profile created by Official Layer Audit 1. It does not silently amend Registry R44."
+}

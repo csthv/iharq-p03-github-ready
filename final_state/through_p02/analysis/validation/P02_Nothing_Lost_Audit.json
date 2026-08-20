@@ -1,0 +1,36 @@
+{
+  "phase_id": "P02",
+  "analysis_source": "P02-PHASE-ANALYSIS-FINAL-R2",
+  "expected_evidence": {
+    "total_requirements": 104,
+    "fully_analyzed": 72,
+    "not_applicable": 32,
+    "partially_analyzed": 0,
+    "missing": 0,
+    "total_dispositioned": 104
+  },
+  "actual_evidence_families": 46,
+  "phase_local_findings": 14,
+  "phase_local_candidate_claims": 10,
+  "figures_preserved": 9,
+  "table_sources_preserved": 21,
+  "standalone_p02_semantic_validation": {
+    "total": 431,
+    "pass": 431,
+    "fail": 0
+  },
+  "tests": {
+    "complete_p02_analytical_body_preserved": true,
+    "expected_vs_actual_vs_analyzed_closed": true,
+    "stage11_12_history_preserved": true,
+    "a0_preserved_and_interpreted": true,
+    "a4_preserved_and_interpreted": true,
+    "resource_constraint_and_claim_ceiling_preserved": true,
+    "stage18S_posthoc_status_preserved": true,
+    "negative_failure_evidence_preserved": true,
+    "claims_and_limitations_preserved": true,
+    "downstream_handoffs_preserved": true
+  },
+  "preservation_declaration": "NO MATERIAL P02 SCIENTIFIC CONTENT WOULD BE LOST",
+  "status": "PASS"
+}

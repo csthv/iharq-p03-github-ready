@@ -1,0 +1,80 @@
+finding_relationships:
+- source_finding: P00-F-006
+  target_finding: P01-FIND-001
+  relationship: ENABLES
+  rationale: P00 foundation interfaces and records permit P01 to instantiate governed
+    dataset provenance.
+- source_finding: P00-F-007
+  target_finding: P01-FIND-014
+  relationship: EXTENDS
+  rationale: P00 reusable phase-contract surfaces are concretized by P01 as a P02-consumable
+    Layer-1 contract.
+- source_finding: P00-F-009
+  target_finding: P01-FIND-008
+  relationship: EXTENDS
+  rationale: P00 A0-A13 hooks become explicit Layer-1 readiness records while A14
+    remains rejected.
+- source_finding: P01-FIND-002
+  target_finding: P02-FIND-001
+  relationship: DEPENDS_ON
+  rationale: P02 A0 uses the frozen subject-grouped split rather than inventing a
+    new evaluation population.
+- source_finding: P01-FIND-003
+  target_finding: P02-FIND-001
+  relationship: DEPENDS_ON
+  rationale: P02 decoder evidence is measured on the denominator-conserving core materialization
+    established in P01.
+- source_finding: P01-FIND-006
+  target_finding: P02-FIND-001
+  relationship: DEPENDS_ON
+  rationale: P02 interpretation inherits the registered split/leakage checks and test-visibility
+    boundary.
+- source_finding: P01-FIND-007
+  target_finding: P02-FIND-005
+  relationship: ACTIVATES
+  rationale: P01 frozen low-label population identities become the P02 empirical low-label
+    stress test.
+- source_finding: P01-FIND-008
+  target_finding: P02-FIND-001
+  relationship: ACTIVATES_A0
+  rationale: P01 A0 readiness becomes actual A0 decoder execution in P02.
+- source_finding: P01-FIND-009
+  target_finding: P02-FIND-009
+  relationship: ACTIVATES_A4
+  rationale: The fully matched P01 A4 R2 substrate becomes the canonical P02 A4 execution
+    substrate.
+- source_finding: P01-FIND-010
+  target_finding: P02-FIND-009
+  relationship: CONTEXTUALIZES
+  rationale: The P01 +4.0 s feasibility failure explains why the P02 A4 R2 condition
+    family uses the matched +3.5 s substrate.
+- source_finding: P01-FIND-014
+  target_finding: P02-FIND-014
+  relationship: FULFILLS_HANDOFF
+  rationale: P02 consumes the frozen Layer-1 contract and produces the Layer-2 evidence/readiness
+    handoff.
+- source_finding: P01-FIND-009
+  target_finding: P02-FIND-010
+  relationship: QUALIFIED_BY
+  rationale: P01 established A4 readiness but no effectiveness; P02 finds no generic
+    C1-C3 statistically detectable improvement under the governed constrained scope.
+- source_finding: P01-FIND-009
+  target_finding: P02-FIND-012
+  relationship: QUALIFIED_BY
+  rationale: Stage 18S indicates repeat/budget sign sensitivity, limiting stability
+    claims about the previously prepared A4 substrate.
+- source_finding: P01-FIND-013
+  target_finding: P02-FIND-013
+  relationship: EXTENDS
+  rationale: P01 fail-closed repair/reentry evolves into P02 preservation of failed,
+    skipped, incompatible and diagnostic evidence.
+- source_finding: P00-F-008
+  target_finding: P01-FIND-012
+  relationship: EXTENDS
+  rationale: Local bounded reproduction matures into closed P01 execution/gates/tests
+    and immutable data identities.
+- source_finding: P01-FIND-012
+  target_finding: P02-FIND-013
+  relationship: EXTENDS
+  rationale: P02 extends deterministic closure into model-level provenance, failure
+    ledgers, checkpoints/predictions and immutable external storage.

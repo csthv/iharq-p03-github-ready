@@ -1,0 +1,2734 @@
+manifest_id: IHARQ-CUMULATIVE-EVIDENCE-MAP-CLAIM-MANIFEST-THROUGH-P02-R1
+canonical_map_id: IHARQ-CUMULATIVE-EVIDENCE-MAP-THROUGH-P02-R1
+release_id: P00-P02-EVIDENCE-MAP-RELEASE-R1
+phases:
+- P00
+- P01
+- P02
+predecessor_map_id: IHARQ-CUMULATIVE-EVIDENCE-MAP-THROUGH-P01-R1
+source_protocol_id: IHARQ-PROTOCOL-V1-CUMULATIVE-THROUGH-P02-R1
+source_phase_analysis_id: IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+source_layer0_id: IHARQ-CUMULATIVE-LAYER0-THROUGH-P02-R1
+rows:
+- claim_id: P00-CLM-001/v2
+  phase: P00
+  source_candidate_claim_id: P00-CS-001
+  reviewed_claim_text: Under the exact registered local snapshot and verified Python 3.13.5 environment, all 19 registered Phase 0 engineering/foundation conformance
+    cells passed; this is non-empirical Mode B evidence and does not establish scientific effectiveness or Phase 0 closure.
+  reviewed_wording_sha256: acd0d4ddf5f6e53ad0e26a8898dcd23f12d6b9c1ec772fd97c8497478db735bf
+  layer0_disposition_id: P00-L0-DISP-001
+  layer0_disposition: APPROVED_WITH_QUALIFICATIONS
+  finding_ids:
+  - P00-F-001
+  protocol_analysis_ids:
+  - P00_PROTOCOL_MODE_B_ENGINEERING_FOUNDATION
+  run_ids:
+  - P00-EXECUTION-RELEASE-R2
+  record_ids: []
+  analysis_release_id: P00-ANALYSIS-RELEASE-R2
+  analysis_report_id: IHARQ-P00-PHASE-ANALYSIS-REPORT-R3-LAYER0-CORRECTED
+  ablation_ids: []
+  comparison_ids: []
+  metric_ids: []
+  dataset_ids: []
+  split_ids: []
+  config_ids: []
+  environment_ids:
+  - PYTHON_3_13_5_LOCAL
+  external_artifact_ids: []
+  evidence_paths:
+  - P00_EVIDENCE_MAP_PREDECESSOR_ROW:P00-CLM-001/v2
+  - P00_ANALYSIS_RELEASE:P00-ANALYSIS-RELEASE-R2
+  negative_evidence_ids:
+  - P00-N-003
+  - P00-N-004
+  - P00-N-009
+  limitation_ids:
+  - P00-LIM-002
+  - P00-LIM-003
+  - P00-LIM-004
+  - P00-LIM-L0-001
+  required_warning_text: Preserve P00 Mode B non-empirical engineering/foundation evidence ceiling and current qualified wording.
+  figure_ids: []
+  table_ids: []
+  layer10_view_ids:
+  - ClaimBoundaryView
+  - P00PhaseStatusView
+  card_ids:
+  - claim_card_01
+  layer10_export_ids:
+  - claims/claim_01.json
+  predecessor_layer10_slots:
+  - ClaimBoundaryView
+  - P00PhaseStatusView
+  - claim_card_01
+  manuscript_sections:
+  - Methods or Reproducibility Statement Only
+  thesis_sections:
+  - Methods / Phase 0 Foundation and Reproducibility
+  appendix_sections:
+  - Phase 0 foundation/reproducibility appendix — item 1
+  reproduction_assets:
+  - P00-EVIDENCE-MAP-RELEASE-R2
+  - P00-BASIC-LAYER10-PACKAGE-R2
+  - P00-EXECUTION-RELEASE-R2
+  - P00-ANALYSIS-RELEASE-R2
+  evidence_map_status: PRESERVED_UNCHANGED
+  lifecycle_state: ACTIVE_QUALIFIED_CURRENT
+  claim_ceiling: ENGINEERING_FOUNDATION_CONFORMANCE
+  evidence_class: ENGINEERING_FOUNDATION_CONFORMANCE
+  denominator: '19'
+  layer10_eligibility: PRESERVED_EXISTING_LAYER10
+  paper_placement: Methods or Reproducibility Statement Only
+  thesis_placement: Methods / Phase 0 Foundation and Reproducibility
+  logical_table_family: P00_EXISTING_LAYER10_AND_EVIDENCE_MAP
+  source_map_state: PRESERVED_UNCHANGED
+  historical_mapping_preserved: true
+  predecessor_evidence_map_disposition: APPROVE_WITH_QUALIFICATIONS
+  disposition_normalization_note: Current cumulative disposition aligned to governing Layer0; predecessor Evidence Map spelling preserved in predecessor_evidence_map_disposition
+    and archived predecessor package.
+- claim_id: P00-CLM-002/v2
+  phase: P00
+  source_candidate_claim_id: P00-CS-002
+  reviewed_claim_text: In the frozen local Python 3.13.5 environment, the complete registered deterministic suite passed 102 of 102 tests; cross-version portability
+    is not established.
+  reviewed_wording_sha256: fd0433bb7a4e3f05b2af29a85d881663fc5e8869dd9172921564a76e9865d3a3
+  layer0_disposition_id: P00-L0-DISP-002
+  layer0_disposition: APPROVED_WITH_QUALIFICATIONS
+  finding_ids:
+  - P00-F-002
+  protocol_analysis_ids:
+  - P00_PROTOCOL_MODE_B_ENGINEERING_FOUNDATION
+  run_ids:
+  - P00-EXECUTION-RELEASE-R2
+  record_ids: []
+  analysis_release_id: P00-ANALYSIS-RELEASE-R2
+  analysis_report_id: IHARQ-P00-PHASE-ANALYSIS-REPORT-R3-LAYER0-CORRECTED
+  ablation_ids: []
+  comparison_ids: []
+  metric_ids: []
+  dataset_ids: []
+  split_ids: []
+  config_ids: []
+  environment_ids:
+  - PYTHON_3_13_5_LOCAL
+  external_artifact_ids: []
+  evidence_paths:
+  - P00_EVIDENCE_MAP_PREDECESSOR_ROW:P00-CLM-002/v2
+  - P00_ANALYSIS_RELEASE:P00-ANALYSIS-RELEASE-R2
+  negative_evidence_ids:
+  - P00-N-002
+  - P00-N-003
+  - P00-N-004
+  limitation_ids:
+  - P00-LIM-001
+  - P00-LIM-002
+  - P00-LIM-003
+  - P00-LIM-004
+  required_warning_text: Preserve P00 Mode B non-empirical engineering/foundation evidence ceiling and current qualified wording.
+  figure_ids: []
+  table_ids: []
+  layer10_view_ids:
+  - ClaimBoundaryView
+  - P00PhaseStatusView
+  card_ids:
+  - claim_card_02
+  layer10_export_ids:
+  - claims/claim_02.json
+  predecessor_layer10_slots:
+  - ClaimBoundaryView
+  - P00PhaseStatusView
+  - claim_card_02
+  manuscript_sections:
+  - Methods or Reproducibility Statement Only
+  thesis_sections:
+  - Methods / Phase 0 Foundation and Reproducibility
+  appendix_sections:
+  - Phase 0 foundation/reproducibility appendix — item 2
+  reproduction_assets:
+  - P00-EVIDENCE-MAP-RELEASE-R2
+  - P00-BASIC-LAYER10-PACKAGE-R2
+  - P00-EXECUTION-RELEASE-R2
+  - P00-ANALYSIS-RELEASE-R2
+  evidence_map_status: PRESERVED_UNCHANGED
+  lifecycle_state: ACTIVE_QUALIFIED_CURRENT
+  claim_ceiling: ENGINEERING_FOUNDATION_CONFORMANCE
+  evidence_class: ENGINEERING_FOUNDATION_CONFORMANCE
+  denominator: '102'
+  layer10_eligibility: PRESERVED_EXISTING_LAYER10
+  paper_placement: Methods or Reproducibility Statement Only
+  thesis_placement: Methods / Phase 0 Foundation and Reproducibility
+  logical_table_family: P00_EXISTING_LAYER10_AND_EVIDENCE_MAP
+  source_map_state: PRESERVED_UNCHANGED
+  historical_mapping_preserved: true
+  predecessor_evidence_map_disposition: APPROVE_WITH_QUALIFICATIONS
+  disposition_normalization_note: Current cumulative disposition aligned to governing Layer0; predecessor Evidence Map spelling preserved in predecessor_evidence_map_disposition
+    and archived predecessor package.
+- claim_id: P00-CLM-003/v2
+  phase: P00
+  source_candidate_claim_id: P00-CS-003
+  reviewed_claim_text: Within the registered non-empirical fixture inventory, all 19 valid or integrated bundles were accepted and all 178 intentionally malformed
+    categories were rejected as expected, with zero false valid rejections and zero false malformed acceptances.
+  reviewed_wording_sha256: 7167fef067a3ff78ef3b13cd57020f6a1f6d97bd0702adf8b93bb90193556fc9
+  layer0_disposition_id: P00-L0-DISP-003
+  layer0_disposition: APPROVED_WITH_QUALIFICATIONS
+  finding_ids:
+  - P00-F-003
+  - P00-F-004
+  protocol_analysis_ids:
+  - P00_PROTOCOL_MODE_B_ENGINEERING_FOUNDATION
+  run_ids:
+  - P00-EXECUTION-RELEASE-R2
+  record_ids: []
+  analysis_release_id: P00-ANALYSIS-RELEASE-R2
+  analysis_report_id: IHARQ-P00-PHASE-ANALYSIS-REPORT-R3-LAYER0-CORRECTED
+  ablation_ids: []
+  comparison_ids: []
+  metric_ids: []
+  dataset_ids: []
+  split_ids: []
+  config_ids: []
+  environment_ids: []
+  external_artifact_ids: []
+  evidence_paths:
+  - P00_EVIDENCE_MAP_PREDECESSOR_ROW:P00-CLM-003/v2
+  - P00_ANALYSIS_RELEASE:P00-ANALYSIS-RELEASE-R2
+  negative_evidence_ids:
+  - P00-N-001
+  limitation_ids:
+  - P00-LIM-004
+  - P00-LIM-L0-001
+  required_warning_text: Preserve P00 Mode B non-empirical engineering/foundation evidence ceiling and current qualified wording.
+  figure_ids: []
+  table_ids: []
+  layer10_view_ids:
+  - ClaimBoundaryView
+  - P00PhaseStatusView
+  card_ids:
+  - claim_card_03
+  layer10_export_ids:
+  - claims/claim_03.json
+  predecessor_layer10_slots:
+  - ClaimBoundaryView
+  - P00PhaseStatusView
+  - claim_card_03
+  manuscript_sections:
+  - Methods or Reproducibility Statement Only
+  thesis_sections:
+  - Methods / Phase 0 Foundation and Reproducibility
+  appendix_sections:
+  - Phase 0 foundation/reproducibility appendix — item 3
+  reproduction_assets:
+  - P00-EVIDENCE-MAP-RELEASE-R2
+  - P00-BASIC-LAYER10-PACKAGE-R2
+  - P00-EXECUTION-RELEASE-R2
+  - P00-ANALYSIS-RELEASE-R2
+  evidence_map_status: PRESERVED_UNCHANGED
+  lifecycle_state: ACTIVE_QUALIFIED_CURRENT
+  claim_ceiling: VALIDATION_EVIDENCE
+  evidence_class: ENGINEERING_FOUNDATION_CONFORMANCE
+  denominator: 19; 178
+  layer10_eligibility: PRESERVED_EXISTING_LAYER10
+  paper_placement: Methods or Reproducibility Statement Only
+  thesis_placement: Methods / Phase 0 Foundation and Reproducibility
+  logical_table_family: P00_EXISTING_LAYER10_AND_EVIDENCE_MAP
+  source_map_state: PRESERVED_UNCHANGED
+  historical_mapping_preserved: true
+  predecessor_evidence_map_disposition: APPROVE_WITH_QUALIFICATIONS
+  disposition_normalization_note: Current cumulative disposition aligned to governing Layer0; predecessor Evidence Map spelling preserved in predecessor_evidence_map_disposition
+    and archived predecessor package.
+- claim_id: P00-CLM-004/v2
+  phase: P00
+  source_candidate_claim_id: P00-CS-004
+  reviewed_claim_text: The frozen Phase 0 package contains and validates the registered foundation inventories of 85 schemas, 35 configuration profiles, and 79 record-family
+    profiles; inventory closure does not establish later-phase scientific effectiveness.
+  reviewed_wording_sha256: 306cc07bda684fd312de578c48d4f3933df2c6ca5dfb93bf16c664cd49b088dc
+  layer0_disposition_id: P00-L0-DISP-004
+  layer0_disposition: APPROVED_WITH_QUALIFICATIONS
+  finding_ids:
+  - P00-F-005
+  protocol_analysis_ids:
+  - P00_PROTOCOL_MODE_B_ENGINEERING_FOUNDATION
+  run_ids:
+  - P00-EXECUTION-RELEASE-R2
+  record_ids: []
+  analysis_release_id: P00-ANALYSIS-RELEASE-R2
+  analysis_report_id: IHARQ-P00-PHASE-ANALYSIS-REPORT-R3-LAYER0-CORRECTED
+  ablation_ids: []
+  comparison_ids: []
+  metric_ids: []
+  dataset_ids: []
+  split_ids: []
+  config_ids: []
+  environment_ids: []
+  external_artifact_ids: []
+  evidence_paths:
+  - P00_EVIDENCE_MAP_PREDECESSOR_ROW:P00-CLM-004/v2
+  - P00_ANALYSIS_RELEASE:P00-ANALYSIS-RELEASE-R2
+  negative_evidence_ids: []
+  limitation_ids:
+  - P00-LIM-004
+  - P00-LIM-L0-001
+  required_warning_text: Preserve P00 Mode B non-empirical engineering/foundation evidence ceiling and current qualified wording.
+  figure_ids: []
+  table_ids: []
+  layer10_view_ids:
+  - ClaimBoundaryView
+  - P00PhaseStatusView
+  card_ids:
+  - claim_card_04
+  layer10_export_ids:
+  - claims/claim_04.json
+  predecessor_layer10_slots:
+  - ClaimBoundaryView
+  - P00PhaseStatusView
+  - claim_card_04
+  manuscript_sections:
+  - Methods or Reproducibility Statement Only
+  thesis_sections:
+  - Methods / Phase 0 Foundation and Reproducibility
+  appendix_sections:
+  - Phase 0 foundation/reproducibility appendix — item 4
+  reproduction_assets:
+  - P00-EVIDENCE-MAP-RELEASE-R2
+  - P00-BASIC-LAYER10-PACKAGE-R2
+  - P00-EXECUTION-RELEASE-R2
+  - P00-ANALYSIS-RELEASE-R2
+  evidence_map_status: PRESERVED_UNCHANGED
+  lifecycle_state: ACTIVE_QUALIFIED_CURRENT
+  claim_ceiling: ARTIFACT_CLOSURE
+  evidence_class: ENGINEERING_FOUNDATION_CONFORMANCE
+  denominator: 85 schemas; 35 configs; 79 record families
+  layer10_eligibility: PRESERVED_EXISTING_LAYER10
+  paper_placement: Methods or Reproducibility Statement Only
+  thesis_placement: Methods / Phase 0 Foundation and Reproducibility
+  logical_table_family: P00_EXISTING_LAYER10_AND_EVIDENCE_MAP
+  source_map_state: PRESERVED_UNCHANGED
+  historical_mapping_preserved: true
+  predecessor_evidence_map_disposition: APPROVE_WITH_QUALIFICATIONS
+  disposition_normalization_note: Current cumulative disposition aligned to governing Layer0; predecessor Evidence Map spelling preserved in predecessor_evidence_map_disposition
+    and archived predecessor package.
+- claim_id: P00-CLM-005/v2
+  phase: P00
+  source_candidate_claim_id: P00-CS-005
+  reviewed_claim_text: All eleven Layer 0–10 foundation interfaces passed the registered Phase 0 integration scope; no later-phase scientific execution or effectiveness
+    result is claimed.
+  reviewed_wording_sha256: 193811b063a515c08dff31d75363d0ac90b1fe2f02d406b80380d19cd5134e5f
+  layer0_disposition_id: P00-L0-DISP-005
+  layer0_disposition: APPROVED_WITH_QUALIFICATIONS
+  finding_ids:
+  - P00-F-006
+  protocol_analysis_ids:
+  - P00_PROTOCOL_MODE_B_ENGINEERING_FOUNDATION
+  run_ids:
+  - P00-EXECUTION-RELEASE-R2
+  record_ids: []
+  analysis_release_id: P00-ANALYSIS-RELEASE-R2
+  analysis_report_id: IHARQ-P00-PHASE-ANALYSIS-REPORT-R3-LAYER0-CORRECTED
+  ablation_ids: []
+  comparison_ids: []
+  metric_ids: []
+  dataset_ids: []
+  split_ids: []
+  config_ids: []
+  environment_ids: []
+  external_artifact_ids: []
+  evidence_paths:
+  - P00_EVIDENCE_MAP_PREDECESSOR_ROW:P00-CLM-005/v2
+  - P00_ANALYSIS_RELEASE:P00-ANALYSIS-RELEASE-R2
+  negative_evidence_ids:
+  - P00-N-004
+  - P00-N-009
+  limitation_ids:
+  - P00-LIM-003
+  - P00-LIM-004
+  - P00-LIM-L0-001
+  required_warning_text: Preserve P00 Mode B non-empirical engineering/foundation evidence ceiling and current qualified wording.
+  figure_ids: []
+  table_ids: []
+  layer10_view_ids:
+  - ClaimBoundaryView
+  - P00PhaseStatusView
+  card_ids:
+  - claim_card_05
+  layer10_export_ids:
+  - claims/claim_05.json
+  predecessor_layer10_slots:
+  - ClaimBoundaryView
+  - P00PhaseStatusView
+  - claim_card_05
+  manuscript_sections:
+  - Methods or Reproducibility Statement Only
+  thesis_sections:
+  - Methods / Phase 0 Foundation and Reproducibility
+  appendix_sections:
+  - Phase 0 foundation/reproducibility appendix — item 5
+  reproduction_assets:
+  - P00-EVIDENCE-MAP-RELEASE-R2
+  - P00-BASIC-LAYER10-PACKAGE-R2
+  - P00-EXECUTION-RELEASE-R2
+  - P00-ANALYSIS-RELEASE-R2
+  evidence_map_status: PRESERVED_UNCHANGED
+  lifecycle_state: ACTIVE_QUALIFIED_CURRENT
+  claim_ceiling: FOUNDATION_INTEGRATION
+  evidence_class: ENGINEERING_FOUNDATION_CONFORMANCE
+  denominator: 11 layers; registered chain fixtures
+  layer10_eligibility: PRESERVED_EXISTING_LAYER10
+  paper_placement: Methods or Reproducibility Statement Only
+  thesis_placement: Methods / Phase 0 Foundation and Reproducibility
+  logical_table_family: P00_EXISTING_LAYER10_AND_EVIDENCE_MAP
+  source_map_state: PRESERVED_UNCHANGED
+  historical_mapping_preserved: true
+  predecessor_evidence_map_disposition: APPROVE_WITH_QUALIFICATIONS
+  disposition_normalization_note: Current cumulative disposition aligned to governing Layer0; predecessor Evidence Map spelling preserved in predecessor_evidence_map_disposition
+    and archived predecessor package.
+- claim_id: P00-CLM-006/v2
+  phase: P00
+  source_candidate_claim_id: P00-CS-006
+  reviewed_claim_text: The P00 implementation foundation is complete within its registered local scope, and P01–P15 reusable contract surfaces are ready for later
+    governed annex creation and execution; future empirical outputs have not been produced.
+  reviewed_wording_sha256: 0805b095d02bcee3927473ab56190df49d15cba101b5fc99b808a0459adf29b2
+  layer0_disposition_id: P00-L0-DISP-006
+  layer0_disposition: APPROVED_WITH_QUALIFICATIONS
+  finding_ids:
+  - P00-F-007
+  protocol_analysis_ids:
+  - P00_PROTOCOL_MODE_B_ENGINEERING_FOUNDATION
+  run_ids:
+  - P00-EXECUTION-RELEASE-R2
+  record_ids: []
+  analysis_release_id: P00-ANALYSIS-RELEASE-R2
+  analysis_report_id: IHARQ-P00-PHASE-ANALYSIS-REPORT-R3-LAYER0-CORRECTED
+  ablation_ids:
+  - A0-A13_READINESS_ONLY_NOT_ACTIVATED
+  comparison_ids: []
+  metric_ids: []
+  dataset_ids: []
+  split_ids: []
+  config_ids: []
+  environment_ids: []
+  external_artifact_ids: []
+  evidence_paths:
+  - P00_EVIDENCE_MAP_PREDECESSOR_ROW:P00-CLM-006/v2
+  - P00_ANALYSIS_RELEASE:P00-ANALYSIS-RELEASE-R2
+  negative_evidence_ids:
+  - P00-N-004
+  - P00-N-009
+  limitation_ids:
+  - P00-LIM-003
+  - P00-LIM-004
+  - P00-LIM-L0-001
+  required_warning_text: Preserve P00 Mode B non-empirical engineering/foundation evidence ceiling and current qualified wording.
+  figure_ids: []
+  table_ids: []
+  layer10_view_ids:
+  - ClaimBoundaryView
+  - P00PhaseStatusView
+  card_ids:
+  - claim_card_06
+  layer10_export_ids:
+  - claims/claim_06.json
+  predecessor_layer10_slots:
+  - ClaimBoundaryView
+  - P00PhaseStatusView
+  - claim_card_06
+  manuscript_sections:
+  - Methods or Reproducibility Statement Only
+  thesis_sections:
+  - Methods / Phase 0 Foundation and Reproducibility
+  appendix_sections:
+  - Phase 0 foundation/reproducibility appendix — item 6
+  reproduction_assets:
+  - P00-EVIDENCE-MAP-RELEASE-R2
+  - P00-BASIC-LAYER10-PACKAGE-R2
+  - P00-EXECUTION-RELEASE-R2
+  - P00-ANALYSIS-RELEASE-R2
+  evidence_map_status: PRESERVED_UNCHANGED
+  lifecycle_state: ACTIVE_QUALIFIED_CURRENT
+  claim_ceiling: CONTRACT_READINESS
+  evidence_class: ENGINEERING_FOUNDATION_CONFORMANCE
+  denominator: '16'
+  layer10_eligibility: PRESERVED_EXISTING_LAYER10
+  paper_placement: Methods or Reproducibility Statement Only
+  thesis_placement: Methods / Phase 0 Foundation and Reproducibility
+  logical_table_family: P00_EXISTING_LAYER10_AND_EVIDENCE_MAP
+  source_map_state: PRESERVED_UNCHANGED
+  historical_mapping_preserved: true
+  predecessor_evidence_map_disposition: APPROVE_WITH_QUALIFICATIONS
+  disposition_normalization_note: Current cumulative disposition aligned to governing Layer0; predecessor Evidence Map spelling preserved in predecessor_evidence_map_disposition
+    and archived predecessor package.
+- claim_id: P00-CLM-007/v2
+  phase: P00
+  source_candidate_claim_id: P00-CS-007
+  reviewed_claim_text: The package reproduced from a clean isolated copy under the exact verified Python 3.13.5 and 22-distribution local dependency snapshot; portable
+    cross-version reproducibility is not established.
+  reviewed_wording_sha256: d5e1b1e0a9eeea91e1f03ddddbd056b5d10f3bcc6a10595d105833caaeb4aab5
+  layer0_disposition_id: P00-L0-DISP-007
+  layer0_disposition: APPROVED_WITH_QUALIFICATIONS
+  finding_ids:
+  - P00-F-008
+  protocol_analysis_ids:
+  - P00_PROTOCOL_MODE_B_ENGINEERING_FOUNDATION
+  run_ids:
+  - P00-EXECUTION-RELEASE-R2
+  record_ids: []
+  analysis_release_id: P00-ANALYSIS-RELEASE-R2
+  analysis_report_id: IHARQ-P00-PHASE-ANALYSIS-REPORT-R3-LAYER0-CORRECTED
+  ablation_ids: []
+  comparison_ids: []
+  metric_ids: []
+  dataset_ids: []
+  split_ids: []
+  config_ids: []
+  environment_ids:
+  - PYTHON_3_13_5_LOCAL
+  external_artifact_ids: []
+  evidence_paths:
+  - P00_EVIDENCE_MAP_PREDECESSOR_ROW:P00-CLM-007/v2
+  - P00_ANALYSIS_RELEASE:P00-ANALYSIS-RELEASE-R2
+  negative_evidence_ids:
+  - P00-N-002
+  - P00-N-003
+  - P00-N-006
+  limitation_ids:
+  - P00-LIM-001
+  - P00-LIM-002
+  - P00-LIM-003
+  required_warning_text: Preserve P00 Mode B non-empirical engineering/foundation evidence ceiling and current qualified wording.
+  figure_ids: []
+  table_ids: []
+  layer10_view_ids:
+  - ClaimBoundaryView
+  - P00PhaseStatusView
+  card_ids:
+  - claim_card_07
+  layer10_export_ids:
+  - claims/claim_07.json
+  predecessor_layer10_slots:
+  - ClaimBoundaryView
+  - P00PhaseStatusView
+  - claim_card_07
+  manuscript_sections:
+  - Methods or Reproducibility Statement Only
+  thesis_sections:
+  - Methods / Phase 0 Foundation and Reproducibility
+  appendix_sections:
+  - Phase 0 foundation/reproducibility appendix — item 7
+  reproduction_assets:
+  - P00-EVIDENCE-MAP-RELEASE-R2
+  - P00-BASIC-LAYER10-PACKAGE-R2
+  - P00-EXECUTION-RELEASE-R2
+  - P00-ANALYSIS-RELEASE-R2
+  evidence_map_status: PRESERVED_UNCHANGED
+  lifecycle_state: ACTIVE_QUALIFIED_CURRENT
+  claim_ceiling: LOCAL_REPRODUCIBILITY
+  evidence_class: ENGINEERING_FOUNDATION_CONFORMANCE
+  denominator: '8'
+  layer10_eligibility: PRESERVED_EXISTING_LAYER10
+  paper_placement: Methods or Reproducibility Statement Only
+  thesis_placement: Methods / Phase 0 Foundation and Reproducibility
+  logical_table_family: P00_EXISTING_LAYER10_AND_EVIDENCE_MAP
+  source_map_state: PRESERVED_UNCHANGED
+  historical_mapping_preserved: true
+  predecessor_evidence_map_disposition: APPROVE_WITH_QUALIFICATIONS
+  disposition_normalization_note: Current cumulative disposition aligned to governing Layer0; predecessor Evidence Map spelling preserved in predecessor_evidence_map_disposition
+    and archived predecessor package.
+- claim_id: P01-CLM-001/v1
+  phase: P01
+  source_candidate_claim_id: P01-CLAIM-CAND-001
+  reviewed_claim_text: Within the frozen P01 binary motor-imagery branch, Phase 1 established a checksum-bound, provenance-traceable foundation over the three activated
+    public EEG datasets.
+  reviewed_wording_sha256: 664c1475235f623bbdaaa36ba26edd5c4adb67c9c18569f4459396e89c5f6b8d
+  layer0_disposition_id: P01-L0-DISP-001
+  layer0_disposition: APPROVED_WITH_QUALIFICATIONS
+  finding_ids:
+  - P01-FIND-001
+  protocol_analysis_ids:
+  - P01-AC-001-SOURCE-INVENTORY
+  run_ids:
+  - P01-STAGE-05
+  - P01-STAGE-06
+  - P01-STAGE-07
+  record_ids:
+  - IHARQ-DATASETRECORD-20260806-66309cda68771bef
+  - IHARQ-DATASETRECORD-20260806-42c424800627b6ee
+  - IHARQ-DATASETRECORD-20260806-adb91f25a65e588e
+  record_collections: []
+  analysis_release_id: NOT_SEPARATELY_ISSUED_UNDER_CUMULATIVE_ANALYSIS_AUTHORITY
+  analysis_report_id: IHARQ-CUMULATIVE-PHASE-EVIDENCE-RESULTS-INTERPRETATION-THROUGH-P01-R2-LAYER0-INTEGRATED
+  ablation_ids: []
+  comparison_ids: []
+  metric_ids: []
+  dataset_ids: &id001
+  - PhysioNetMI
+  - BNCI2014_001
+  - Lee2019_MI
+  split_ids: []
+  config_ids:
+  - d03f0a7c869dd95a2a67e5a32edc501d52bfc3851d8e761ef56595d8bd1ff52f
+  environment_ids: []
+  external_artifact_ids: []
+  evidence_paths:
+  - records/datasets/BNCI2014_001/IHARQ-DATASETRECORD-20260806-42c424800627b6ee.json
+  - records/datasets/Lee2019_MI/IHARQ-DATASETRECORD-20260806-adb91f25a65e588e.json
+  - records/datasets/PhysioNetMI/IHARQ-DATASETRECORD-20260806-66309cda68771bef.json
+  - reports/phase_01/sources/source_version_license_report.json
+  external_source_references: []
+  negative_evidence_ids: []
+  limitation_ids:
+  - PUBLIC_EEG_ONLY
+  - NON_CLINICAL
+  - BINARY_MI_BRANCH_SCOPE
+  required_warning_text: PUBLIC_EEG_ONLY; NON_CLINICAL; BINARY_MI_BRANCH_SCOPE
+  forbidden_wording:
+  - P01 established a clinically representative or deployment-ready EEG foundation.
+  figure_ids:
+  - P01-FIG-SRC-001
+  - P01-FIG-SRC-002
+  table_ids:
+  - PENDING_LAYER10:DATASET_INVENTORY
+  layer10_view_ids: []
+  card_ids:
+  - PENDING_LAYER10
+  layer10_export_ids: []
+  predecessor_layer10_slots: []
+  manuscript_sections:
+  - PROVISIONAL_METHODS_DATA
+  thesis_sections:
+  - PROVISIONAL_METHODS_DATA_FOUNDATION
+  appendix_sections:
+  - PENDING_FINAL_MANUSCRIPT_STRUCTURE
+  reproduction_assets:
+  - IHARQ_P01_L1_Phase_Execution_Bundle_d03f0a7c869d.zip
+  - d03f0a7c869dd95a2a67e5a32edc501d52bfc3851d8e761ef56595d8bd1ff52f
+  evidence_map_status: QUALIFIED_CURRENT
+  lifecycle_state: QUALIFIED_CURRENT
+  claim_ceiling: PUBLIC_EEG_DATA_FOUNDATION
+  evidence_class: PROVENANCE_EVIDENCE
+  denominator: 3 datasets; 172 subject groups; 453 source files
+  layer10_eligibility: ELIGIBLE_WITH_MANDATORY_WARNING
+  paper_placement: PROVISIONAL_METHODS_DATA
+  thesis_placement: PROVISIONAL_METHODS_DATA_FOUNDATION
+  logical_table_family: PENDING_LAYER10:DATASET_INVENTORY
+  source_map_state: P01_NEW_MAPPING
+  historical_mapping_preserved: true
+- claim_id: P01-CLM-002/v1
+  phase: P01
+  source_candidate_claim_id: P01-CLAIM-CAND-002
+  reviewed_claim_text: The frozen P01 split assigned 172 subject groups wholly and disjointly across train, calibration, validation, and test roles and passed the
+    implemented registered leakage/disjointness checks; this does not prove that every conceivable leakage mechanism is impossible.
+  reviewed_wording_sha256: 3fb7b1d11a0db14c323faff80f5035cd79b479d20571bcc9635ceb21601f4dd6
+  layer0_disposition_id: P01-L0-DISP-002
+  layer0_disposition: APPROVED_WITH_QUALIFICATIONS
+  finding_ids:
+  - P01-FIND-002
+  - P01-FIND-006
+  protocol_analysis_ids:
+  - P01-AC-002-SPLIT
+  - P01-AC-005-LEAKAGE
+  run_ids:
+  - P01-STAGE-11
+  - P01-STAGE-17
+  record_ids:
+  - IHARQ-SPLITRECORD-20260806-e4e371d332c61e36
+  record_collections: []
+  analysis_release_id: NOT_SEPARATELY_ISSUED_UNDER_CUMULATIVE_ANALYSIS_AUTHORITY
+  analysis_report_id: IHARQ-CUMULATIVE-PHASE-EVIDENCE-RESULTS-INTERPRETATION-THROUGH-P01-R2-LAYER0-INTEGRATED
+  ablation_ids: []
+  comparison_ids: []
+  metric_ids: []
+  dataset_ids: []
+  split_ids:
+  - IHARQ-SPLITRECORD-20260806-e4e371d332c61e36
+  config_ids:
+  - d03f0a7c869dd95a2a67e5a32edc501d52bfc3851d8e761ef56595d8bd1ff52f
+  environment_ids: []
+  external_artifact_ids: []
+  evidence_paths:
+  - records/splits/P01-L1-SPLIT-OFFICIAL-R2/IHARQ-SPLITRECORD-20260806-e4e371d332c61e36.json
+  - reports/phase_01/splits/disjointness.json
+  - reports/phase_01/leakage/leakage_contamination.json
+  external_source_references: []
+  negative_evidence_ids: []
+  limitation_ids:
+  - IMPLEMENTED_CHECKS_ONLY
+  required_warning_text: IMPLEMENTED_CHECKS_ONLY
+  forbidden_wording:
+  - P01 proves that leakage is impossible.
+  figure_ids:
+  - P01-FIG-SRC-003
+  table_ids:
+  - PENDING_LAYER10:SPLIT_COUNTS
+  layer10_view_ids: []
+  card_ids:
+  - PENDING_LAYER10
+  layer10_export_ids: []
+  predecessor_layer10_slots: []
+  manuscript_sections:
+  - PROVISIONAL_METHODS_SPLIT_AND_LEAKAGE
+  thesis_sections:
+  - PROVISIONAL_METHODS_SPLIT_AND_LEAKAGE
+  appendix_sections:
+  - PENDING_FINAL_MANUSCRIPT_STRUCTURE
+  reproduction_assets:
+  - IHARQ_P01_L1_Phase_Execution_Bundle_d03f0a7c869d.zip
+  - d03f0a7c869dd95a2a67e5a32edc501d52bfc3851d8e761ef56595d8bd1ff52f
+  evidence_map_status: QUALIFIED_CURRENT
+  lifecycle_state: QUALIFIED_CURRENT
+  claim_ceiling: IMPLEMENTED_SPLIT_AND_LEAKAGE_CHECKS
+  evidence_class: VALIDATION_EVIDENCE
+  denominator: 172 subject groups = 102 train / 35 calibration / 17 validation / 18 test
+  layer10_eligibility: ELIGIBLE_WITH_MANDATORY_WARNING
+  paper_placement: PROVISIONAL_METHODS_SPLIT_AND_LEAKAGE
+  thesis_placement: PROVISIONAL_METHODS_SPLIT_AND_LEAKAGE
+  logical_table_family: PENDING_LAYER10:SPLIT_COUNTS
+  source_map_state: P01_NEW_MAPPING
+  historical_mapping_preserved: true
+- claim_id: P01-CLM-003/v1
+  phase: P01
+  source_candidate_claim_id: P01-CLAIM-CAND-003
+  reviewed_claim_text: Under the frozen official core-window policy, all 12,910 accepted events yielded 12,910 valid core windows, with 0/12,910 invalid official
+    core windows.
+  reviewed_wording_sha256: e8f0eba65ea24b53c423d8adc1c2d7934f492164730d6fba0a7f50aaad4df1d2
+  layer0_disposition_id: P01-L0-DISP-003
+  layer0_disposition: APPROVED
+  finding_ids:
+  - P01-FIND-003
+  protocol_analysis_ids:
+  - P01-AC-003-DENOMINATOR
+  run_ids:
+  - P01-STAGE-13
+  - P01-STAGE-14
+  - P01-STAGE-16
+  record_ids:
+  - IHARQ-SPLITRECORD-20260806-e4e371d332c61e36
+  - IHARQ-PREPROCESSINGRECORD-20260806-a11b59eeb3861a08
+  record_collections: []
+  analysis_release_id: NOT_SEPARATELY_ISSUED_UNDER_CUMULATIVE_ANALYSIS_AUTHORITY
+  analysis_report_id: IHARQ-CUMULATIVE-PHASE-EVIDENCE-RESULTS-INTERPRETATION-THROUGH-P01-R2-LAYER0-INTEGRATED
+  ablation_ids: []
+  comparison_ids: []
+  metric_ids: []
+  dataset_ids: []
+  split_ids:
+  - IHARQ-SPLITRECORD-20260806-e4e371d332c61e36
+  config_ids:
+  - d03f0a7c869dd95a2a67e5a32edc501d52bfc3851d8e761ef56595d8bd1ff52f
+  environment_ids: []
+  external_artifact_ids:
+  - P01-L1-DERIVED-WINDOWS-d03f0a7c869dd95a-20260806222242-68a91473
+  evidence_paths:
+  - records/windows/
+  - external_artifact_pointers/derived_windows_dataset.json
+  external_source_references: []
+  negative_evidence_ids: []
+  limitation_ids:
+  - NO_MODEL_EFFECT_INFERENCE
+  required_warning_text: NO_MODEL_EFFECT_INFERENCE
+  forbidden_wording:
+  - Denominator closure proves the dataset will yield strong decoder performance.
+  figure_ids:
+  - P01-FIG-SRC-002
+  - P01-FIG-SRC-005
+  table_ids:
+  - PENDING_LAYER10:EVENT_WINDOW_COUNTS
+  layer10_view_ids: []
+  card_ids:
+  - PENDING_LAYER10
+  layer10_export_ids: []
+  predecessor_layer10_slots: []
+  manuscript_sections:
+  - PROVISIONAL_RESULTS_DATA_FOUNDATION
+  thesis_sections:
+  - PROVISIONAL_RESULTS_DATA_FOUNDATION
+  appendix_sections:
+  - PENDING_FINAL_MANUSCRIPT_STRUCTURE
+  reproduction_assets:
+  - IHARQ_P01_L1_Phase_Execution_Bundle_d03f0a7c869d.zip
+  - P01-L1-DERIVED-WINDOWS-d03f0a7c869dd95a-20260806222242-68a91473
+  - d03f0a7c869dd95a2a67e5a32edc501d52bfc3851d8e761ef56595d8bd1ff52f
+  evidence_map_status: CURRENT_SUPPORTED
+  lifecycle_state: CURRENT_SUPPORTED
+  claim_ceiling: DENOMINATOR_AND_MATERIALIZATION_CLOSURE
+  evidence_class: INTEGRITY_EVIDENCE
+  denominator: 12,910 accepted events → 12,910 valid core windows; 0 invalid
+  layer10_eligibility: ELIGIBLE_FOR_LAYER10
+  paper_placement: PROVISIONAL_RESULTS_DATA_FOUNDATION
+  thesis_placement: PROVISIONAL_RESULTS_DATA_FOUNDATION
+  logical_table_family: PENDING_LAYER10:EVENT_WINDOW_COUNTS
+  source_map_state: P01_NEW_MAPPING
+  historical_mapping_preserved: true
+- claim_id: P01-CLM-004/v1
+  phase: P01
+  source_candidate_claim_id: P01-CLAIM-CAND-004
+  reviewed_claim_text: The official P01 core numerical artifact was persisted as 172 lossless HDF5 subject shards covering 12,910 windows and was verified under its
+    Kaggle provider-version/logical-revision/manifest-hash identity contract.
+  reviewed_wording_sha256: 72eaafbcb355737c6e1a3c26c39985d8920a78ea8d043d4825c97494301c6172
+  layer0_disposition_id: P01-L0-DISP-004
+  layer0_disposition: APPROVED_WITH_QUALIFICATIONS
+  finding_ids:
+  - P01-FIND-004
+  protocol_analysis_ids:
+  - P01-AC-006-EXTERNAL
+  run_ids:
+  - P01-STAGE-14
+  - P01-STAGE-15
+  - P01-STAGE-20
+  record_ids:
+  - P01-L1-DERIVED-WINDOWS-d03f0a7c869dd95a-20260806222242-68a91473
+  - IHARQ-SPLITRECORD-20260806-e4e371d332c61e36
+  - IHARQ-PREPROCESSINGRECORD-20260806-a11b59eeb3861a08
+  record_collections: []
+  analysis_release_id: NOT_SEPARATELY_ISSUED_UNDER_CUMULATIVE_ANALYSIS_AUTHORITY
+  analysis_report_id: IHARQ-CUMULATIVE-PHASE-EVIDENCE-RESULTS-INTERPRETATION-THROUGH-P01-R2-LAYER0-INTEGRATED
+  ablation_ids: []
+  comparison_ids: []
+  metric_ids: []
+  dataset_ids: []
+  split_ids:
+  - IHARQ-SPLITRECORD-20260806-e4e371d332c61e36
+  config_ids:
+  - d03f0a7c869dd95a2a67e5a32edc501d52bfc3851d8e761ef56595d8bd1ff52f
+  environment_ids: []
+  external_artifact_ids:
+  - P01-L1-DERIVED-WINDOWS-d03f0a7c869dd95a-20260806222242-68a91473
+  evidence_paths:
+  - reports/phase_01/storage/existing_core_dataset_adoption.json
+  - external_artifact_pointers/derived_windows_dataset.json
+  external_source_references: []
+  negative_evidence_ids: []
+  limitation_ids:
+  - PRIVATE_KAGGLE_EXTERNAL_ARTIFACT_ACCESS
+  - SOURCE_LICENSE_REDISTRIBUTION_CONSTRAINTS
+  required_warning_text: PRIVATE_KAGGLE_EXTERNAL_ARTIFACT_ACCESS; SOURCE_LICENSE_REDISTRIBUTION_CONSTRAINTS
+  forbidden_wording:
+  - The core Dataset is universally public and independently downloadable without access or license constraints.
+  figure_ids:
+  - P01-FIG-SRC-005
+  table_ids:
+  - PENDING_LAYER10:EXTERNAL_ARTIFACTS
+  layer10_view_ids: []
+  card_ids:
+  - PENDING_LAYER10
+  layer10_export_ids: []
+  predecessor_layer10_slots: []
+  manuscript_sections:
+  - PROVISIONAL_METHODS_REPRODUCIBILITY
+  thesis_sections:
+  - PROVISIONAL_REPRODUCIBILITY
+  appendix_sections:
+  - PENDING_FINAL_MANUSCRIPT_STRUCTURE
+  reproduction_assets:
+  - IHARQ_P01_L1_Phase_Execution_Bundle_d03f0a7c869d.zip
+  - P01-L1-DERIVED-WINDOWS-d03f0a7c869dd95a-20260806222242-68a91473
+  - d03f0a7c869dd95a2a67e5a32edc501d52bfc3851d8e761ef56595d8bd1ff52f
+  evidence_map_status: QUALIFIED_CURRENT
+  lifecycle_state: QUALIFIED_CURRENT
+  claim_ceiling: EXTERNAL_ARTIFACT_IDENTITY_AND_RETRIEVABILITY
+  evidence_class: INTEGRITY_EVIDENCE
+  denominator: 172 HDF5 shards; 12,910 windows
+  layer10_eligibility: ELIGIBLE_WITH_MANDATORY_WARNING
+  paper_placement: PROVISIONAL_METHODS_REPRODUCIBILITY
+  thesis_placement: PROVISIONAL_REPRODUCIBILITY
+  logical_table_family: PENDING_LAYER10:EXTERNAL_ARTIFACTS
+  source_map_state: P01_NEW_MAPPING
+  historical_mapping_preserved: true
+- claim_id: P01-CLM-005/v1
+  phase: P01
+  source_candidate_claim_id: P01-CLAIM-CAND-005
+  reviewed_claim_text: 'P01 applied the ANNOTATE_NOT_REPAIR quality policy across 489 quality summaries: 20 soft/provider flags were retained, 0/489 summaries were
+    hard-invalid, and 0/12,910 official core windows were invalid under the registered criteria.'
+  reviewed_wording_sha256: fffce437970542436e6a67f83b154772ba40ea95e1f444357dc76c332d07cc3b
+  layer0_disposition_id: P01-L0-DISP-005
+  layer0_disposition: APPROVED_WITH_QUALIFICATIONS
+  finding_ids:
+  - P01-FIND-005
+  protocol_analysis_ids:
+  - P01-AC-004-QUALITY
+  run_ids:
+  - P01-STAGE-13
+  - P01-STAGE-16
+  record_ids: []
+  record_collections:
+  - records/quality/ (489 governed quality summaries)
+  analysis_release_id: NOT_SEPARATELY_ISSUED_UNDER_CUMULATIVE_ANALYSIS_AUTHORITY
+  analysis_report_id: IHARQ-CUMULATIVE-PHASE-EVIDENCE-RESULTS-INTERPRETATION-THROUGH-P01-R2-LAYER0-INTEGRATED
+  ablation_ids: []
+  comparison_ids: []
+  metric_ids: []
+  dataset_ids: []
+  split_ids: []
+  config_ids:
+  - d03f0a7c869dd95a2a67e5a32edc501d52bfc3851d8e761ef56595d8bd1ff52f
+  environment_ids: []
+  external_artifact_ids: []
+  evidence_paths:
+  - reports/phase_01/quality/quality_coverage.json
+  - records/quality/
+  external_source_references: []
+  negative_evidence_ids: []
+  limitation_ids:
+  - SOFT_FLAG_NOT_EQUIVALENT_TO_CORRUPTION
+  required_warning_text: SOFT_FLAG_NOT_EQUIVALENT_TO_CORRUPTION
+  forbidden_wording:
+  - All P01 EEG was flawless or artifact-free.
+  figure_ids: []
+  table_ids:
+  - PENDING_LAYER10:QUALITY_OUTCOMES
+  layer10_view_ids: []
+  card_ids:
+  - PENDING_LAYER10
+  layer10_export_ids: []
+  predecessor_layer10_slots: []
+  manuscript_sections:
+  - PROVISIONAL_RESULTS_DATA_QUALITY
+  thesis_sections:
+  - PROVISIONAL_RESULTS_DATA_QUALITY
+  appendix_sections:
+  - PENDING_FINAL_MANUSCRIPT_STRUCTURE
+  reproduction_assets:
+  - IHARQ_P01_L1_Phase_Execution_Bundle_d03f0a7c869d.zip
+  - d03f0a7c869dd95a2a67e5a32edc501d52bfc3851d8e761ef56595d8bd1ff52f
+  evidence_map_status: QUALIFIED_CURRENT
+  lifecycle_state: QUALIFIED_CURRENT
+  claim_ceiling: REGISTERED_QUALITY_ANNOTATION_AND_HARD_VALIDITY_CLOSURE
+  evidence_class: VALIDATION_EVIDENCE
+  denominator: 489 quality summaries; 20 soft/provider flags; 0 hard-invalid; 0/12,910 invalid core windows
+  layer10_eligibility: ELIGIBLE_WITH_MANDATORY_WARNING
+  paper_placement: PROVISIONAL_RESULTS_DATA_QUALITY
+  thesis_placement: PROVISIONAL_RESULTS_DATA_QUALITY
+  logical_table_family: PENDING_LAYER10:QUALITY_OUTCOMES
+  source_map_state: P01_NEW_MAPPING
+  historical_mapping_preserved: true
+- claim_id: P01-CLM-006/v1
+  phase: P01
+  source_candidate_claim_id: P01-CLAIM-CAND-006
+  reviewed_claim_text: P01 established Layer-1 foundation readiness for each official A0-A13 identity; none of these ablation-effectiveness experiments was executed
+    in P01, and A14 remained absent/prohibited.
+  reviewed_wording_sha256: 9530e521edf347a9337a281e07ec8f7675f54b652d9e2a2aa107bbe3f6192c2e
+  layer0_disposition_id: P01-L0-DISP-006
+  layer0_disposition: APPROVED_WITH_QUALIFICATIONS
+  finding_ids:
+  - P01-FIND-008
+  protocol_analysis_ids:
+  - P01-AC-007-ABLATION-READINESS
+  run_ids:
+  - P01-STAGE-18
+  record_ids: []
+  record_collections:
+  - A0-A13 readiness manifest
+  analysis_release_id: NOT_SEPARATELY_ISSUED_UNDER_CUMULATIVE_ANALYSIS_AUTHORITY
+  analysis_report_id: IHARQ-CUMULATIVE-PHASE-EVIDENCE-RESULTS-INTERPRETATION-THROUGH-P01-R2-LAYER0-INTEGRATED
+  ablation_ids:
+  - A0
+  - A1
+  - A2
+  - A3
+  - A4
+  - A5
+  - A6
+  - A7
+  - A8
+  - A9
+  - A10
+  - A11
+  - A12
+  - A13
+  comparison_ids: []
+  metric_ids: []
+  dataset_ids: []
+  split_ids: []
+  config_ids:
+  - d03f0a7c869dd95a2a67e5a32edc501d52bfc3851d8e761ef56595d8bd1ff52f
+  environment_ids: []
+  external_artifact_ids: []
+  evidence_paths:
+  - manifests/phase_01/layer1_ablation_readiness_l1_v1.json
+  external_source_references: []
+  negative_evidence_ids:
+  - A14_ABSENT_PROHIBITED
+  limitation_ids:
+  - NO_ABLATION_EFFECTIVENESS_IN_P01
+  required_warning_text: NO_ABLATION_EFFECTIVENESS_IN_P01
+  forbidden_wording:
+  - P01 demonstrated that A0-A13 ablations are effective.
+  figure_ids:
+  - P01-FIG-SRC-009
+  table_ids:
+  - PENDING_LAYER10:A0_A13_READINESS
+  layer10_view_ids: []
+  card_ids:
+  - PENDING_LAYER10
+  layer10_export_ids: []
+  predecessor_layer10_slots: []
+  manuscript_sections:
+  - PROVISIONAL_METHODS_ABLATION_READINESS
+  thesis_sections:
+  - PROVISIONAL_METHODS_ABLATION_READINESS
+  appendix_sections:
+  - PENDING_FINAL_MANUSCRIPT_STRUCTURE
+  reproduction_assets:
+  - IHARQ_P01_L1_Phase_Execution_Bundle_d03f0a7c869d.zip
+  - d03f0a7c869dd95a2a67e5a32edc501d52bfc3851d8e761ef56595d8bd1ff52f
+  evidence_map_status: QUALIFIED_CURRENT
+  lifecycle_state: QUALIFIED_CURRENT
+  claim_ceiling: A0_A13_LAYER1_FOUNDATION_READINESS_ONLY
+  evidence_class: READINESS_EVIDENCE
+  denominator: 14 readiness rows A0-A13; executed_in_p01=false; A14 absent
+  layer10_eligibility: ELIGIBLE_WITH_MANDATORY_WARNING
+  paper_placement: PROVISIONAL_METHODS_ABLATION_READINESS
+  thesis_placement: PROVISIONAL_METHODS_ABLATION_READINESS
+  logical_table_family: PENDING_LAYER10:A0_A13_READINESS
+  source_map_state: P01_NEW_MAPPING
+  historical_mapping_preserved: true
+- claim_id: P01-CLM-007/v1
+  phase: P01
+  source_candidate_claim_id: P01-CLAIM-CAND-007
+  reviewed_claim_text: 'P01 established a fully matched A4 R2 Layer-1 data substrate for future governed evaluation: 12,910/12,910 parent events are represented without
+    padding, clipping, fabricated samples, or parent-event loss. A4 R2 arose after the +4.0 s feasibility failure and was not evaluated for decoder effectiveness
+    in P01.'
+  reviewed_wording_sha256: e6c55f132a42163e7e469debbe3b84af58abfa7989845c4131c0a2af86290f41
+  layer0_disposition_id: P01-L0-DISP-007
+  layer0_disposition: APPROVED_WITH_QUALIFICATIONS
+  finding_ids:
+  - P01-FIND-009
+  - P01-FIND-010
+  protocol_analysis_ids:
+  - P01-AC-008-A4
+  run_ids:
+  - P01-STAGE-14
+  - P01-STAGE-15
+  - P01-STAGE-18
+  record_ids:
+  - P01-L1-A4-DERIVED-WINDOWS-4cd080393345e8aa-20260807143013-663eab13
+  - P01-L1-A4-WINDOW-FAMILY-FREEZE-R2
+  record_collections: []
+  analysis_release_id: NOT_SEPARATELY_ISSUED_UNDER_CUMULATIVE_ANALYSIS_AUTHORITY
+  analysis_report_id: IHARQ-CUMULATIVE-PHASE-EVIDENCE-RESULTS-INTERPRETATION-THROUGH-P01-R2-LAYER0-INTEGRATED
+  ablation_ids:
+  - A4
+  comparison_ids: []
+  metric_ids: []
+  dataset_ids: []
+  split_ids: []
+  config_ids:
+  - d03f0a7c869dd95a2a67e5a32edc501d52bfc3851d8e761ef56595d8bd1ff52f
+  environment_ids: []
+  external_artifact_ids:
+  - P01-L1-A4-DERIVED-WINDOWS-4cd080393345e8aa-20260807143013-663eab13
+  evidence_paths:
+  - external_artifact_pointers/a4_window_family_dataset.json
+  - reports/phase_01/storage/a4_derived_output_storage_actual_precommit.json
+  - config_snapshot/p01_l1_a4_window_family_freeze_R2.json
+  external_source_references:
+  - P01_EXECUTED_NOTEBOOK_R49_A4_BOUNDARY_EXPLANATION
+  negative_evidence_ids:
+  - P01-NEG-A4-4S-INFEASIBILITY
+  - P01-CLM-011/v1
+  limitation_ids:
+  - A4_R2_RETROSPECTIVE_FEASIBILITY_ORIGIN_NOT_CONFIRMATORY_IN_P01
+  - A4_EFFECTIVENESS_NOT_EXECUTED
+  required_warning_text: A4_R2_RETROSPECTIVE_FEASIBILITY_ORIGIN_NOT_CONFIRMATORY_IN_P01; A4_EFFECTIVENESS_NOT_EXECUTED
+  forbidden_wording:
+  - A4 R2 improves accuracy, AUROC, robustness, or decoder performance.
+  figure_ids:
+  - P01-FIG-SRC-006
+  - P01-FIG-SRC-007
+  table_ids:
+  - PENDING_LAYER10:A4_PROFILE
+  layer10_view_ids: []
+  card_ids:
+  - PENDING_LAYER10
+  layer10_export_ids: []
+  predecessor_layer10_slots: []
+  manuscript_sections:
+  - PROVISIONAL_RESULTS_DATA_FOUNDATION_WITH_PROXIMATE_A4_WARNING
+  thesis_sections:
+  - PROVISIONAL_RESULTS_A4_FOUNDATION_WITH_PROXIMATE_WARNING
+  appendix_sections:
+  - PENDING_FINAL_MANUSCRIPT_STRUCTURE
+  reproduction_assets:
+  - IHARQ_P01_L1_Phase_Execution_Bundle_d03f0a7c869d.zip
+  - P01-L1-A4-DERIVED-WINDOWS-4cd080393345e8aa-20260807143013-663eab13
+  - d03f0a7c869dd95a2a67e5a32edc501d52bfc3851d8e761ef56595d8bd1ff52f
+  evidence_map_status: QUALIFIED_CURRENT
+  lifecycle_state: QUALIFIED_CURRENT
+  claim_ceiling: A4_R2_DATA_SUBSTRATE_READINESS_ONLY
+  evidence_class: READINESS_EVIDENCE
+  denominator: 12,910/12,910 matched parents; 12,910 stored 3.5 s tensors; 38,730 virtual 2 s views; 0 invalid
+  layer10_eligibility: ELIGIBLE_WITH_MANDATORY_WARNING
+  paper_placement: PROVISIONAL_RESULTS_DATA_FOUNDATION_WITH_PROXIMATE_A4_WARNING
+  thesis_placement: PROVISIONAL_RESULTS_A4_FOUNDATION_WITH_PROXIMATE_WARNING
+  logical_table_family: PENDING_LAYER10:A4_PROFILE
+  source_map_state: P01_NEW_MAPPING
+  historical_mapping_preserved: true
+- claim_id: P01-CLM-008/v1
+  phase: P01
+  source_candidate_claim_id: P01-CLAIM-CAND-008
+  reviewed_claim_text: The accepted P01 execution completed 27/27 registered stages, 16/16 deterministic P01 gates, and 50/50 regression tests with 0 unresolved blockers;
+    final execution-bundle integrity checks also closed.
+  reviewed_wording_sha256: 5fe3a29ca3e7a78eb3f4dffdfd5253e24438fc7189c94c662fb400d627402c54
+  layer0_disposition_id: P01-L0-DISP-008
+  layer0_disposition: APPROVED
+  finding_ids:
+  - P01-FIND-012
+  protocol_analysis_ids:
+  - P01-AC-010-GATES-REPAIRS
+  run_ids:
+  - P01-STAGE-04
+  - P01-STAGE-23
+  - P01-STAGE-24
+  - P01-STAGE-26
+  record_ids: []
+  record_collections:
+  - P01-G01...P01-G16
+  - stage_results 00...26
+  analysis_release_id: NOT_SEPARATELY_ISSUED_UNDER_CUMULATIVE_ANALYSIS_AUTHORITY
+  analysis_report_id: IHARQ-CUMULATIVE-PHASE-EVIDENCE-RESULTS-INTERPRETATION-THROUGH-P01-R2-LAYER0-INTEGRATED
+  ablation_ids: []
+  comparison_ids: []
+  metric_ids: []
+  dataset_ids: []
+  split_ids: []
+  config_ids:
+  - d03f0a7c869dd95a2a67e5a32edc501d52bfc3851d8e761ef56595d8bd1ff52f
+  environment_ids: []
+  external_artifact_ids: []
+  evidence_paths:
+  - reports/phase_01/tests/stage_results.json
+  - gate_decision.json
+  - reports/phase_01/tests/phase0_and_runtime_regression.json
+  - reports/phase_01/repair_reentry.json
+  - checksums.sha256
+  external_source_references: []
+  negative_evidence_ids:
+  - P01-HISTORICAL-FAILED-EXECUTION
+  limitation_ids:
+  - NO_EFFECTIVENESS_INFERENCE
+  required_warning_text: NO_EFFECTIVENESS_INFERENCE
+  forbidden_wording:
+  - Because all gates passed, P01 proved scientific or clinical effectiveness.
+  figure_ids:
+  - P01-FIG-SRC-008
+  table_ids:
+  - PENDING_LAYER10:GATES_TESTS
+  layer10_view_ids: []
+  card_ids:
+  - PENDING_LAYER10
+  layer10_export_ids: []
+  predecessor_layer10_slots: []
+  manuscript_sections:
+  - PROVISIONAL_METHODS_REPRODUCIBILITY
+  thesis_sections:
+  - PROVISIONAL_REPRODUCIBILITY_AND_AUDIT
+  appendix_sections:
+  - PENDING_FINAL_MANUSCRIPT_STRUCTURE
+  reproduction_assets:
+  - IHARQ_P01_L1_Phase_Execution_Bundle_d03f0a7c869d.zip
+  - d03f0a7c869dd95a2a67e5a32edc501d52bfc3851d8e761ef56595d8bd1ff52f
+  evidence_map_status: CURRENT_SUPPORTED
+  lifecycle_state: CURRENT_SUPPORTED
+  claim_ceiling: EXECUTION_AND_REPRODUCIBILITY_CLOSURE
+  evidence_class: EXECUTION_EVIDENCE
+  denominator: 27/27 stages; 16/16 gates; 50/50 tests; 0 blockers; 13,164/13,164 bundle checksums
+  layer10_eligibility: ELIGIBLE_FOR_LAYER10
+  paper_placement: PROVISIONAL_METHODS_REPRODUCIBILITY
+  thesis_placement: PROVISIONAL_REPRODUCIBILITY_AND_AUDIT
+  logical_table_family: PENDING_LAYER10:GATES_TESTS
+  source_map_state: P01_NEW_MAPPING
+  historical_mapping_preserved: true
+- claim_id: P01-CLM-009/v1
+  phase: P01
+  source_candidate_claim_id: P01-CLAIM-CAND-009
+  reviewed_claim_text: The accepted P01 run used Python 3.12.13 under a documented compatibility amendment and the governed adaptive-disk policy P01-L1-KAGGLE-ADAPTIVE-DISK-R1;
+    the accepted records show no change to the frozen datasets, labels, subject split, core preprocessing, core window policy, or 12,910-event denominator attributable
+    to these runtime/resource amendments.
+  reviewed_wording_sha256: 973c575a07010193c62644f51cfddb04dc02075b8c8a7a73b09f4e4c1bad7b56
+  layer0_disposition_id: P01-L0-DISP-009
+  layer0_disposition: APPROVED_WITH_QUALIFICATIONS
+  finding_ids:
+  - P01-FIND-011
+  protocol_analysis_ids:
+  - P01-AC-009-ENVIRONMENT
+  run_ids:
+  - P01-STAGE-01
+  - P01-STAGE-03
+  record_ids:
+  - P01-L1-KAGGLE-ENV-FREEZE-R5
+  - P01-L1-KAGGLE-ADAPTIVE-DISK-R1
+  record_collections: []
+  analysis_release_id: NOT_SEPARATELY_ISSUED_UNDER_CUMULATIVE_ANALYSIS_AUTHORITY
+  analysis_report_id: IHARQ-CUMULATIVE-PHASE-EVIDENCE-RESULTS-INTERPRETATION-THROUGH-P01-R2-LAYER0-INTEGRATED
+  ablation_ids: []
+  comparison_ids: []
+  metric_ids: []
+  dataset_ids: []
+  split_ids: []
+  config_ids:
+  - d03f0a7c869dd95a2a67e5a32edc501d52bfc3851d8e761ef56595d8bd1ff52f
+  environment_ids:
+  - P01-L1-KAGGLE-ENV-FREEZE-R5
+  - P01-L1-KAGGLE-ADAPTIVE-DISK-R1
+  external_artifact_ids: []
+  evidence_paths:
+  - environment_manifest.json
+  - environment_amendment.json
+  external_source_references: []
+  negative_evidence_ids: []
+  limitation_ids:
+  - ACTUAL_RUNTIME_PYTHON_3_12_13_WITH_COMPATIBILITY_AMENDMENT
+  - ADAPTIVE_DISK_RESOURCE_AMENDMENT
+  required_warning_text: ACTUAL_RUNTIME_PYTHON_3_12_13_WITH_COMPATIBILITY_AMENDMENT; ADAPTIVE_DISK_RESOURCE_AMENDMENT
+  forbidden_wording:
+  - Environment differences could have no effect whatsoever or are universally irrelevant.
+  figure_ids: []
+  table_ids:
+  - PENDING_LAYER10:ENVIRONMENT_AMENDMENTS
+  layer10_view_ids: []
+  card_ids:
+  - PENDING_LAYER10
+  layer10_export_ids: []
+  predecessor_layer10_slots: []
+  manuscript_sections:
+  - PROVISIONAL_METHODS_REPRODUCIBILITY
+  thesis_sections:
+  - PROVISIONAL_REPRODUCIBILITY_ENVIRONMENT
+  appendix_sections:
+  - PENDING_FINAL_MANUSCRIPT_STRUCTURE
+  reproduction_assets:
+  - IHARQ_P01_L1_Phase_Execution_Bundle_d03f0a7c869d.zip
+  - d03f0a7c869dd95a2a67e5a32edc501d52bfc3851d8e761ef56595d8bd1ff52f
+  evidence_map_status: QUALIFIED_CURRENT
+  lifecycle_state: QUALIFIED_CURRENT
+  claim_ceiling: RECORDED_RUNTIME_RESOURCE_COMPATIBILITY
+  evidence_class: EXECUTION_EVIDENCE
+  denominator: Python 3.12.13; adaptive disk minimum 6.0 GiB; observed free 18.94 GiB
+  layer10_eligibility: ELIGIBLE_WITH_MANDATORY_WARNING
+  paper_placement: PROVISIONAL_METHODS_REPRODUCIBILITY
+  thesis_placement: PROVISIONAL_REPRODUCIBILITY_ENVIRONMENT
+  logical_table_family: PENDING_LAYER10:ENVIRONMENT_AMENDMENTS
+  source_map_state: P01_NEW_MAPPING
+  historical_mapping_preserved: true
+- claim_id: P01-CLM-010/v1
+  phase: P01
+  source_candidate_claim_id: P01-CLAIM-CAND-010
+  reviewed_claim_text: P01 freezes a technical Layer-1 data contract that P02 may consume using the recorded dataset, label-map, split, preprocessing, core-window,
+    and external-artifact identities; silent relabeling, rewindowing, split mutation, denominator substitution, or test-visibility leakage is prohibited. This is
+    technical readiness, not evidence of P02 scientific success.
+  reviewed_wording_sha256: 8d09e698817c8925b0d0065f179a3f5f85d53e7136f14e9940e077754462856d
+  layer0_disposition_id: P01-L0-DISP-010
+  layer0_disposition: APPROVED_WITH_QUALIFICATIONS
+  finding_ids:
+  - P01-FIND-014
+  protocol_analysis_ids:
+  - P01-AC-003-DENOMINATOR
+  - P01-AC-005-LEAKAGE
+  - P01-AC-006-EXTERNAL
+  - P01-AC-007-ABLATION-READINESS
+  - P01-AC-010-GATES-REPAIRS
+  run_ids:
+  - P01-STAGE-22
+  - P01-STAGE-23
+  - P01-STAGE-26
+  record_ids:
+  - IHARQ-DATASETRECORD-20260806-66309cda68771bef
+  - IHARQ-DATASETRECORD-20260806-42c424800627b6ee
+  - IHARQ-DATASETRECORD-20260806-adb91f25a65e588e
+  - IHARQ-LABELMAPRECORD-20260806-4379781a3b5f5ea9
+  - IHARQ-LABELMAPRECORD-20260806-587dcfff81307768
+  - IHARQ-LABELMAPRECORD-20260806-b551cfd20335896c
+  - IHARQ-SPLITRECORD-20260806-e4e371d332c61e36
+  - IHARQ-PREPROCESSINGRECORD-20260806-a11b59eeb3861a08
+  - P01-L1-DERIVED-WINDOWS-d03f0a7c869dd95a-20260806222242-68a91473
+  - P01-L1-A4-DERIVED-WINDOWS-4cd080393345e8aa-20260807143013-663eab13
+  record_collections: []
+  analysis_release_id: NOT_SEPARATELY_ISSUED_UNDER_CUMULATIVE_ANALYSIS_AUTHORITY
+  analysis_report_id: IHARQ-CUMULATIVE-PHASE-EVIDENCE-RESULTS-INTERPRETATION-THROUGH-P01-R2-LAYER0-INTEGRATED
+  ablation_ids: []
+  comparison_ids: []
+  metric_ids: []
+  dataset_ids: *id001
+  split_ids:
+  - IHARQ-SPLITRECORD-20260806-e4e371d332c61e36
+  config_ids:
+  - d03f0a7c869dd95a2a67e5a32edc501d52bfc3851d8e761ef56595d8bd1ff52f
+  environment_ids: []
+  external_artifact_ids:
+  - P01-L1-DERIVED-WINDOWS-d03f0a7c869dd95a-20260806222242-68a91473
+  - P01-L1-A4-DERIVED-WINDOWS-4cd080393345e8aa-20260807143013-663eab13
+  evidence_paths:
+  - handoffs/phase_01_to_phase_02.yaml
+  - phase2_handoff/phase_01_to_phase_02.yaml
+  external_source_references: []
+  negative_evidence_ids: []
+  limitation_ids:
+  - DOCUMENTARY_CLOSURE_SEQUENCE_REMAINS
+  required_warning_text: DOCUMENTARY_CLOSURE_SEQUENCE_REMAINS
+  forbidden_wording:
+  - P01 proves that P02 will succeed scientifically or that downstream models will perform well.
+  figure_ids:
+  - P01-FIG-SRC-010
+  table_ids:
+  - PENDING_LAYER10:P01_P02_HANDOFF
+  layer10_view_ids: []
+  card_ids:
+  - PENDING_LAYER10
+  layer10_export_ids: []
+  predecessor_layer10_slots: []
+  manuscript_sections:
+  - PROVISIONAL_METHODS_DOWNSTREAM_HANDOFF
+  thesis_sections:
+  - PROVISIONAL_DOWNSTREAM_READINESS
+  appendix_sections:
+  - PENDING_FINAL_MANUSCRIPT_STRUCTURE
+  reproduction_assets:
+  - IHARQ_P01_L1_Phase_Execution_Bundle_d03f0a7c869d.zip
+  - P01-L1-DERIVED-WINDOWS-d03f0a7c869dd95a-20260806222242-68a91473
+  - P01-L1-A4-DERIVED-WINDOWS-4cd080393345e8aa-20260807143013-663eab13
+  - d03f0a7c869dd95a2a67e5a32edc501d52bfc3851d8e761ef56595d8bd1ff52f
+  evidence_map_status: QUALIFIED_CURRENT
+  lifecycle_state: QUALIFIED_CURRENT
+  claim_ceiling: P02_TECHNICAL_DATA_CONTRACT_READINESS
+  evidence_class: READINESS_EVIDENCE
+  denominator: P01→P02 technical handoff over frozen dataset/label/split/preprocessing/window/artifact identities
+  layer10_eligibility: ELIGIBLE_WITH_MANDATORY_WARNING
+  paper_placement: PROVISIONAL_METHODS_DOWNSTREAM_HANDOFF
+  thesis_placement: PROVISIONAL_DOWNSTREAM_READINESS
+  logical_table_family: PENDING_LAYER10:P01_P02_HANDOFF
+  source_map_state: P01_NEW_MAPPING
+  historical_mapping_preserved: true
+- claim_id: P01-CLM-011/v1
+  phase: P01
+  source_candidate_claim_id: P01-CLAIM-CAND-011
+  reviewed_claim_text: P01 did not evaluate whether A4 R2 improves decoder performance relative to the core window; that effectiveness question remains deferred to
+    a future governed matched downstream experiment.
+  reviewed_wording_sha256: 310d0218a7ebf5f91456c11da837f0ae8a81c42639627a7bb0c2134ae50709df
+  layer0_disposition_id: P01-L0-DISP-011
+  layer0_disposition: DEFERRED
+  finding_ids:
+  - P01-FIND-009
+  protocol_analysis_ids:
+  - P01-AC-008-A4
+  run_ids:
+  - P01-STAGE-14
+  - P01-STAGE-15
+  record_ids:
+  - P01-L1-A4-DERIVED-WINDOWS-4cd080393345e8aa-20260807143013-663eab13
+  - P01-L1-A4-WINDOW-FAMILY-FREEZE-R2
+  record_collections: []
+  analysis_release_id: NOT_SEPARATELY_ISSUED_UNDER_CUMULATIVE_ANALYSIS_AUTHORITY
+  analysis_report_id: IHARQ-CUMULATIVE-PHASE-EVIDENCE-RESULTS-INTERPRETATION-THROUGH-P01-R2-LAYER0-INTEGRATED
+  ablation_ids:
+  - A4
+  comparison_ids: []
+  metric_ids: []
+  dataset_ids: []
+  split_ids: []
+  config_ids:
+  - d03f0a7c869dd95a2a67e5a32edc501d52bfc3851d8e761ef56595d8bd1ff52f
+  environment_ids: []
+  external_artifact_ids:
+  - P01-L1-A4-DERIVED-WINDOWS-4cd080393345e8aa-20260807143013-663eab13
+  evidence_paths:
+  - external_artifact_pointers/a4_window_family_dataset.json
+  - config_snapshot/p01_l1_a4_window_family_freeze_R2.json
+  external_source_references: []
+  negative_evidence_ids:
+  - P01-NEG-A4-EFFECTIVENESS-NOT-EXECUTED
+  limitation_ids:
+  - A4_EFFECTIVENESS_NOT_EXECUTED
+  - A4_R2_RETROSPECTIVE_FEASIBILITY_ORIGIN_NOT_CONFIRMATORY_IN_P01
+  required_warning_text: A4_EFFECTIVENESS_NOT_EXECUTED; A4_R2_RETROSPECTIVE_FEASIBILITY_ORIGIN_NOT_CONFIRMATORY_IN_P01
+  forbidden_wording:
+  - A4 R2 improves decoder performance relative to the core window.
+  figure_ids:
+  - P01-FIG-SRC-006
+  - P01-FIG-SRC-007
+  table_ids:
+  - PENDING_LAYER10:NEGATIVE_DEFERRED_CLAIMS
+  layer10_view_ids: []
+  card_ids:
+  - PENDING_LAYER10
+  layer10_export_ids: []
+  predecessor_layer10_slots: []
+  manuscript_sections:
+  - PROVISIONAL_FUTURE_WORK_OR_LIMITATIONS
+  thesis_sections:
+  - PROVISIONAL_FUTURE_WORK_OR_LIMITATIONS
+  appendix_sections:
+  - PENDING_FINAL_MANUSCRIPT_STRUCTURE
+  reproduction_assets:
+  - IHARQ_P01_L1_Phase_Execution_Bundle_d03f0a7c869d.zip
+  - P01-L1-A4-DERIVED-WINDOWS-4cd080393345e8aa-20260807143013-663eab13
+  - d03f0a7c869dd95a2a67e5a32edc501d52bfc3851d8e761ef56595d8bd1ff52f
+  evidence_map_status: DEFERRED_NOT_MAPPABLE_AS_SUPPORTED
+  lifecycle_state: DEFERRED_NOT_MAPPABLE_AS_SUPPORTED
+  claim_ceiling: NO_P01_A4_EFFECTIVENESS_CLAIM
+  evidence_class: UNSUPPORTED_CURRENTLY
+  denominator: No governed A4 effectiveness experiment in P01
+  layer10_eligibility: DEFERRED_NOT_ELIGIBLE_AS_SUPPORTED
+  paper_placement: PROVISIONAL_FUTURE_WORK_OR_LIMITATIONS
+  thesis_placement: PROVISIONAL_FUTURE_WORK_OR_LIMITATIONS
+  logical_table_family: PENDING_LAYER10:NEGATIVE_DEFERRED_CLAIMS
+  source_map_state: P01_NEW_MAPPING
+  historical_mapping_preserved: true
+  current_cumulative_resolution: SUPERSEDED_BY_P02_QUALIFIED_A4_RESULT
+  related_current_claim_ids:
+  - P02-CLM-007/v1
+  - CUM-CLM-005/v1
+- claim_id: P01-CLM-012/v1
+  phase: P01
+  source_candidate_claim_id: P01-CLAIM-CAND-012
+  reviewed_claim_text: P01 is a public, non-clinical data-foundation and execution-validation phase; it does not establish clinical effectiveness, patient benefit,
+    deployment safety, or medical-device readiness.
+  reviewed_wording_sha256: b85c8e6c22a210747a0ef4e9bf27df7cb4fec7aff49663da11a1471a34a91946
+  layer0_disposition_id: P01-L0-DISP-012
+  layer0_disposition: REJECTED
+  finding_ids:
+  - P01-FIND-001
+  - P01-FIND-012
+  protocol_analysis_ids:
+  - P01-AC-001-SOURCE-INVENTORY
+  - P01-AC-010-GATES-REPAIRS
+  run_ids:
+  - P01-STAGE-06
+  - P01-STAGE-26
+  record_ids:
+  - IHARQ-DATASETRECORD-20260806-66309cda68771bef
+  - IHARQ-DATASETRECORD-20260806-42c424800627b6ee
+  - IHARQ-DATASETRECORD-20260806-adb91f25a65e588e
+  record_collections: []
+  analysis_release_id: NOT_SEPARATELY_ISSUED_UNDER_CUMULATIVE_ANALYSIS_AUTHORITY
+  analysis_report_id: IHARQ-CUMULATIVE-PHASE-EVIDENCE-RESULTS-INTERPRETATION-THROUGH-P01-R2-LAYER0-INTEGRATED
+  ablation_ids: []
+  comparison_ids: []
+  metric_ids: []
+  dataset_ids: *id001
+  split_ids: []
+  config_ids: []
+  environment_ids: []
+  external_artifact_ids: []
+  evidence_paths:
+  - reports/phase_01/sources/source_version_license_report.json
+  - gate_decision.json
+  external_source_references: []
+  negative_evidence_ids:
+  - P01-NEG-CLINICAL-DEPLOYMENT-NOT-SUPPORTED
+  limitation_ids:
+  - PUBLIC_EEG_ONLY
+  - NON_CLINICAL
+  - NO_DEPLOYMENT_CLAIM
+  required_warning_text: PUBLIC_EEG_ONLY; NON_CLINICAL; NO_DEPLOYMENT_CLAIM
+  forbidden_wording:
+  - The P01 data foundation demonstrates clinical effectiveness or deployment safety.
+  figure_ids:
+  - P01-FIG-SRC-009
+  table_ids:
+  - PENDING_LAYER10:NEGATIVE_DEFERRED_CLAIMS
+  layer10_view_ids: []
+  card_ids:
+  - PENDING_LAYER10
+  layer10_export_ids: []
+  predecessor_layer10_slots: []
+  manuscript_sections:
+  - PROVISIONAL_LIMITATIONS_OR_CLAIM_BOUNDARY
+  thesis_sections:
+  - PROVISIONAL_LIMITATIONS_OR_CLAIM_BOUNDARY
+  appendix_sections:
+  - PENDING_FINAL_MANUSCRIPT_STRUCTURE
+  reproduction_assets:
+  - IHARQ_P01_L1_Phase_Execution_Bundle_d03f0a7c869d.zip
+  evidence_map_status: REJECTED_PROHIBITED_AS_SUPPORTED
+  lifecycle_state: REJECTED_PROHIBITED_AS_SUPPORTED
+  claim_ceiling: NON_CLINICAL_NO_DEPLOYMENT_CLAIM
+  evidence_class: PROHIBITED_BY_EVIDENCE_SCOPE
+  denominator: P01 public EEG data foundation; no clinical/deployment evaluation
+  layer10_eligibility: REJECTED_NOT_ELIGIBLE_AS_SUPPORTED
+  paper_placement: PROVISIONAL_LIMITATIONS_OR_CLAIM_BOUNDARY
+  thesis_placement: PROVISIONAL_LIMITATIONS_OR_CLAIM_BOUNDARY
+  logical_table_family: PENDING_LAYER10:NEGATIVE_DEFERRED_CLAIMS
+  source_map_state: P01_NEW_MAPPING
+  historical_mapping_preserved: true
+- claim_id: P02-CLM-001/v1
+  phase: P02
+  source_candidate_claim_id: P02-CLAIM-CAND-001
+  reviewed_claim_text: Under the frozen P01 subject-grouped binary motor-imagery protocol, P02 established a complete multi-family raw accept-all decoder/baseline
+    measurement spine across the three activated public EEG datasets; this is Layer-2 measurement evidence and does not establish calibration, abstention, clinical
+    effectiveness, safety, or deployment readiness.
+  layer0_disposition_id: P02-L0-DISP-001
+  layer0_disposition: APPROVED_WITH_QUALIFICATIONS
+  finding_ids:
+  - P02-FIND-001
+  protocol_analysis_ids:
+  - P02_PROTOCOL_V1_AUTHORIZED_ANALYSIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  analysis_release_id: P02-PHASE-ANALYSIS-FINAL-R2
+  analysis_report_id: IHARQ-Phase02-Evidence-Results-Interpretation-Final-R2
+  ablation_ids:
+  - A0
+  comparison_ids: []
+  metric_ids:
+  - BACC
+  - F1_MACRO
+  - ACC
+  - conditional ROC_AUC
+  dataset_ids:
+  - PhysioNetMI
+  - Lee2019_MI
+  - BNCI2014_001
+  split_ids:
+  - P01-L1-SPLIT-OFFICIAL-R2
+  config_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  environment_ids:
+  - P02_RUNTIME_CONFIG_RECORDED
+  external_artifact_ids:
+  - P02-STAGE24-REPLAY-SOURCE-HF-SNAPSHOT-R1
+  evidence_paths:
+  - analysis_inputs/a0_completion.json
+  - analysis_inputs/a0_participant_metrics.csv
+  numeric_support: &id002
+    A0_terminal_cells: 678
+    SUCCESS: 657
+    FAILED: 3
+    CONDITIONAL_SKIP: 15
+    DEPENDENCY_BLOCKED: 3
+    datasets: 3
+  negative_evidence_ids: []
+  limitation_ids:
+  - PUBLIC_EEG_ONLY
+  - NO_CALIBRATION_POLICY_CLAIM
+  required_warning_text: Raw accept-all decoder evidence only; not clinical or safety evidence.
+  figure_ids: []
+  table_ids:
+  - L10-P02-TBL-001
+  layer10_view_ids:
+  - L10-P02-VIEW-001
+  card_ids:
+  - L10-P02-CARD-001
+  layer10_export_ids:
+  - L10-P02-TBL-001
+  manuscript_sections:
+  - Methods / empirical foundation
+  reproduction_assets:
+  - P02-PHASE-ANALYSIS-FINAL-R2
+  - P00-P02-EVIDENCE-MAP-RELEASE-R1
+  - P00-P02-LAYER10-RELEASE-R1
+  evidence_map_status: CURRENT_GOVERNED
+  lifecycle_state: ACTIVE_QUALIFIED_CURRENT
+  claim_ceiling: SUPPORTED
+  evidence_class: LAYER2_MEASUREMENT_CLOSURE
+  denominator: *id002
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  paper_placement: Methods / empirical foundation
+  source_map_state: NEW_P02_GOVERNED_MAPPING
+- claim_id: P02-CLM-002/v1
+  phase: P02
+  source_candidate_claim_id: P02-CLAIM-CAND-002
+  reviewed_claim_text: 'Within full-training A0, descriptive decoder ordering was dataset-dependent: CSP-LDA led the single-participant BNCI2014_001 test split, while
+    DBConformer had the highest participant-first mean BACC on Lee2019_MI and PhysioNetMI. These rankings are descriptive and do not establish a universal winning
+    decoder.'
+  layer0_disposition_id: P02-L0-DISP-002
+  layer0_disposition: APPROVED_WITH_QUALIFICATIONS
+  finding_ids:
+  - P02-FIND-002
+  - P02-FIND-003
+  protocol_analysis_ids:
+  - P02_PROTOCOL_V1_AUTHORIZED_ANALYSIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  analysis_release_id: P02-PHASE-ANALYSIS-FINAL-R2
+  analysis_report_id: IHARQ-Phase02-Evidence-Results-Interpretation-Final-R2
+  ablation_ids:
+  - A0
+  comparison_ids: []
+  metric_ids:
+  - BACC
+  dataset_ids:
+  - PhysioNetMI
+  - Lee2019_MI
+  - BNCI2014_001
+  split_ids:
+  - P01-L1-SPLIT-OFFICIAL-R2
+  config_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  environment_ids:
+  - P02_RUNTIME_CONFIG_RECORDED
+  external_artifact_ids:
+  - P02-STAGE24-REPLAY-SOURCE-HF-SNAPSHOT-R1
+  evidence_paths:
+  - table_sources/P02_Table_A0_fulltrain_branch_summary.csv
+  numeric_support: &id003
+    full_training_descriptive_leaders:
+      BNCI2014_001:
+        branch_id: CLS-CSP-LDA
+        participant_first_mean_BACC: 0.6388888888888888
+        participants: 1
+      Lee2019_MI:
+        branch_id: DNN-SEQ
+        participant_first_mean_BACC: 0.795
+        participants: 6
+      PhysioNetMI:
+        branch_id: DNN-SEQ
+        participant_first_mean_BACC: 0.649724517906336
+        participants: 11
+  negative_evidence_ids: []
+  limitation_ids:
+  - DATASET_HETEROGENEITY
+  - BNCI_TEST_PARTICIPANTS_1
+  required_warning_text: Descriptive rankings; no universal winner; BNCI inferential n=1.
+  figure_ids:
+  - L10-P02-FIG-001
+  - L10-P02-FIG-009
+  - L10-P02-FIG-010
+  table_ids:
+  - L10-P02-TBL-001
+  layer10_view_ids:
+  - L10-P02-VIEW-002
+  card_ids:
+  - L10-P02-CARD-002
+  layer10_export_ids:
+  - L10-P02-FIG-001
+  - L10-P02-FIG-009
+  - L10-P02-FIG-010
+  - L10-P02-TBL-001
+  manuscript_sections:
+  - Main/secondary result
+  reproduction_assets:
+  - P02-PHASE-ANALYSIS-FINAL-R2
+  - P00-P02-EVIDENCE-MAP-RELEASE-R1
+  - P00-P02-LAYER10-RELEASE-R1
+  evidence_map_status: CURRENT_GOVERNED
+  lifecycle_state: ACTIVE_QUALIFIED_CURRENT
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  evidence_class: DESCRIPTIVE_MODEL_HETEROGENEITY
+  denominator: *id003
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  paper_placement: Main/secondary result
+  source_map_state: NEW_P02_GOVERNED_MAPPING
+- claim_id: P02-CLM-003/v1
+  phase: P02
+  source_candidate_claim_id: P02-CLAIM-CAND-003
+  reviewed_claim_text: On PhysioNetMI full-training A0, the governed Friedman comparison detected overall decoder heterogeneity (statistic 20.544, p=0.00451, Kendall
+    W=0.267), while no individual alternative-versus-CSP-LDA contrast survived Holm correction; the omnibus result therefore does not identify a statistically supported
+    pairwise winner.
+  layer0_disposition_id: P02-L0-DISP-003
+  layer0_disposition: APPROVED_WITH_QUALIFICATIONS
+  finding_ids:
+  - P02-FIND-003
+  protocol_analysis_ids:
+  - P02_PROTOCOL_V1_AUTHORIZED_ANALYSIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  analysis_release_id: P02-PHASE-ANALYSIS-FINAL-R2
+  analysis_report_id: IHARQ-Phase02-Evidence-Results-Interpretation-Final-R2
+  ablation_ids:
+  - A0
+  comparison_ids: []
+  metric_ids:
+  - BACC
+  dataset_ids:
+  - PhysioNetMI
+  - Lee2019_MI
+  split_ids:
+  - P01-L1-SPLIT-OFFICIAL-R2
+  config_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  environment_ids:
+  - P02_RUNTIME_CONFIG_RECORDED
+  external_artifact_ids:
+  - P02-STAGE24-REPLAY-SOURCE-HF-SNAPSHOT-R1
+  evidence_paths:
+  - analysis_inputs/a0_statistics.json
+  numeric_support: &id004
+    PhysioNetMI_Friedman_statistic: 20.544
+    p_value: 0.00451
+    Kendall_W: 0.267
+    Lee2019_MI_Friedman_p: 0.148
+    Holm_significant_alt_vs_CSP_LDA: 0
+  negative_evidence_ids: []
+  limitation_ids:
+  - MULTIPLICITY
+  - PARTICIPANT_HETEROGENEITY
+  required_warning_text: Global omnibus heterogeneity is not evidence that a specific decoder is superior.
+  figure_ids:
+  - L10-P02-FIG-001
+  table_ids:
+  - L10-P02-TBL-001
+  layer10_view_ids:
+  - L10-P02-VIEW-003
+  card_ids:
+  - L10-P02-CARD-003
+  layer10_export_ids:
+  - L10-P02-FIG-001
+  - L10-P02-TBL-001
+  manuscript_sections:
+  - Main result / discussion
+  reproduction_assets:
+  - P02-PHASE-ANALYSIS-FINAL-R2
+  - P00-P02-EVIDENCE-MAP-RELEASE-R1
+  - P00-P02-LAYER10-RELEASE-R1
+  evidence_map_status: CURRENT_GOVERNED
+  lifecycle_state: ACTIVE_QUALIFIED_CURRENT
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  evidence_class: GOVERNED_STATISTICAL_RESULT
+  denominator: *id004
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  paper_placement: Main result / discussion
+  source_map_state: NEW_P02_GOVERNED_MAPPING
+- claim_id: P02-CLM-004/v1
+  phase: P02
+  source_candidate_claim_id: P02-CLAIM-CAND-004
+  reviewed_claim_text: Across the governed 1, 2, 4, 8, 16 and 32 labels/class P02 low-label surface, performance was difficult, non-monotonic and rank-changing under
+    one frozen subset per budget; the evidence does not support a stable or universal sample-efficiency ordering among the evaluated branches.
+  layer0_disposition_id: P02-L0-DISP-004
+  layer0_disposition: APPROVED_WITH_QUALIFICATIONS
+  finding_ids:
+  - P02-FIND-005
+  protocol_analysis_ids:
+  - P02_PROTOCOL_V1_AUTHORIZED_ANALYSIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  analysis_release_id: P02-PHASE-ANALYSIS-FINAL-R2
+  analysis_report_id: IHARQ-Phase02-Evidence-Results-Interpretation-Final-R2
+  ablation_ids:
+  - A0
+  comparison_ids: []
+  metric_ids:
+  - BACC
+  dataset_ids:
+  - PhysioNetMI
+  - Lee2019_MI
+  - BNCI2014_001
+  split_ids:
+  - P01-L1-SPLIT-OFFICIAL-R2
+  config_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  environment_ids:
+  - P02_RUNTIME_CONFIG_RECORDED
+  external_artifact_ids:
+  - P02-STAGE24-REPLAY-SOURCE-HF-SNAPSHOT-R1
+  evidence_paths:
+  - analysis_inputs/low_label_curve_summary.json
+  - analysis_inputs/low_label_metric_source.csv
+  numeric_support: &id005
+    governed_low_label_budgets_per_class:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 16
+    - 32
+    leader_changes:
+      BNCI2014_001: 4
+      Lee2019_MI: 4
+      PhysioNetMI: 6
+    design: single frozen subset per budget
+  negative_evidence_ids: []
+  limitation_ids:
+  - SINGLE_FROZEN_SUBSET
+  - NO_LOW_LABEL_REPEAT_STABILITY
+  required_warning_text: One frozen subset per budget; descriptive only.
+  figure_ids:
+  - L10-P02-FIG-002
+  - L10-P02-FIG-003
+  - L10-P02-FIG-004
+  table_ids:
+  - L10-P02-TBL-002
+  - L10-P02-TBL-003
+  layer10_view_ids:
+  - L10-P02-VIEW-004
+  card_ids:
+  - L10-P02-CARD-004
+  layer10_export_ids:
+  - L10-P02-FIG-002
+  - L10-P02-FIG-003
+  - L10-P02-FIG-004
+  - L10-P02-TBL-002
+  - L10-P02-TBL-003
+  manuscript_sections:
+  - Secondary result / limitation
+  reproduction_assets:
+  - P02-PHASE-ANALYSIS-FINAL-R2
+  - P00-P02-EVIDENCE-MAP-RELEASE-R1
+  - P00-P02-LAYER10-RELEASE-R1
+  evidence_map_status: CURRENT_GOVERNED
+  lifecycle_state: ACTIVE_QUALIFIED_CURRENT
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  evidence_class: DESCRIPTIVE_LOW_LABEL
+  denominator: *id005
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  paper_placement: Secondary result / limitation
+  source_map_state: NEW_P02_GOVERNED_MAPPING
+- claim_id: P02-CLM-005/v1
+  phase: P02
+  source_candidate_claim_id: P02-CLAIM-CAND-005
+  reviewed_claim_text: The preserved P02 training-correction history shows that model viability and optimization behavior under the implemented configurations depended
+    materially on training-policy choice. This supports treating inadequate optimization as distinct from demonstrated architectural incapacity, but does not establish
+    universal test-set gains, architecture superiority, or theoretical invalidity of the earlier generic policy.
+  layer0_disposition_id: P02-L0-DISP-005
+  layer0_disposition: APPROVED_WITH_QUALIFICATIONS
+  finding_ids:
+  - P02-FIND-006
+  - P02-FIND-008
+  protocol_analysis_ids:
+  - P02_PROTOCOL_V1_AUTHORIZED_ANALYSIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  analysis_release_id: P02-PHASE-ANALYSIS-FINAL-R2
+  analysis_report_id: IHARQ-Phase02-Evidence-Results-Interpretation-Final-R2
+  ablation_ids:
+  - diagnostic training-policy challenger
+  - none; diagnostic/amendment evidence
+  - A0
+  comparison_ids: []
+  metric_ids:
+  - BACC
+  - F1_MACRO
+  dataset_ids:
+  - PhysioNetMI
+  - Lee2019_MI
+  - BNCI2014_001
+  split_ids:
+  - P01-L1-SPLIT-OFFICIAL-R2
+  config_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  environment_ids:
+  - P02_RUNTIME_CONFIG_RECORDED
+  external_artifact_ids:
+  - P02-STAGE24-REPLAY-SOURCE-HF-SNAPSHOT-R1
+  evidence_paths:
+  - runtime/diagnostics/runtime_successor/stage11_maximum_analysis/stage11_source_centered_recipe.json
+  - machine_readable P02 Protocol run matrix
+  numeric_support: &id006
+    Stage12_validation_only_examples:
+    - dataset_id: BNCI2014_001
+      branch_id: DNN-FBCNET
+      A_BACC: 0.5
+      B_BACC: 0.7222222222222222
+      absolute_delta_BACC: 0.2222222222222222
+      claim_bearing: false
+    - dataset_id: PhysioNetMI
+      branch_id: DNN-FBCNET
+      A_BACC: 0.6395092565383486
+      B_BACC: 0.6601038299539622
+      absolute_delta_BACC: 0.0205945734156136
+      claim_bearing: false
+    - dataset_id: PhysioNetMI
+      branch_id: DNN-SEQ
+      A_BACC: 0.6985502987559996
+      B_BACC: 0.7167940052894505
+      absolute_delta_BACC: 0.0182437065334508
+      claim_bearing: false
+    - dataset_id: PhysioNetMI
+      branch_id: SSL-CBRAMOD
+      A_BACC: 0.5
+      B_BACC: 0.6384072876873348
+      absolute_delta_BACC: 0.1384072876873348
+      claim_bearing: false
+    test_role_loaded: false
+  negative_evidence_ids: []
+  limitation_ids:
+  - POST_OBSERVATION_AMENDMENT
+  - DIAGNOSTIC_VALIDATION_EVIDENCE
+  required_warning_text: Mechanistic interpretation; source diagnostics are not a direct claim of test-set performance improvement for every model.
+  figure_ids:
+  - L10-P02-FIG-005
+  table_ids:
+  - L10-P02-TBL-004
+  - L10-P02-TBL-005
+  layer10_view_ids:
+  - L10-P02-VIEW-005
+  card_ids:
+  - L10-P02-CARD-005
+  layer10_export_ids:
+  - L10-P02-FIG-005
+  - L10-P02-TBL-004
+  - L10-P02-TBL-005
+  manuscript_sections:
+  - Discussion / reproducibility observation
+  reproduction_assets:
+  - P02-PHASE-ANALYSIS-FINAL-R2
+  - P00-P02-EVIDENCE-MAP-RELEASE-R1
+  - P00-P02-LAYER10-RELEASE-R1
+  evidence_map_status: CURRENT_GOVERNED
+  lifecycle_state: ACTIVE_QUALIFIED_CURRENT
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  evidence_class: METHODOLOGICAL_CORRECTION
+  denominator: *id006
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  paper_placement: Discussion / reproducibility observation
+  source_map_state: NEW_P02_GOVERNED_MAPPING
+- claim_id: P02-CLM-006/v1
+  phase: P02
+  source_candidate_claim_id: P02-CLAIM-CAND-006
+  reviewed_claim_text: The Stage-11 S&R diagnostic challenger did not yield a consistent participant-level BACC improvement over the canonical primary EEGNet across
+    BNCI2014_001, Lee2019_MI and PhysioNetMI; it remains diagnostic-only and does not replace primary A0 evidence.
+  layer0_disposition_id: P02-L0-DISP-006
+  layer0_disposition: APPROVED_WITH_QUALIFICATIONS
+  finding_ids:
+  - P02-FIND-007
+  protocol_analysis_ids:
+  - P02_PROTOCOL_V1_AUTHORIZED_ANALYSIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  analysis_release_id: P02-PHASE-ANALYSIS-FINAL-R2
+  analysis_report_id: IHARQ-Phase02-Evidence-Results-Interpretation-Final-R2
+  ablation_ids:
+  - diagnostic-only; not an A-number
+  comparison_ids: []
+  metric_ids:
+  - BACC
+  dataset_ids:
+  - PhysioNetMI
+  - Lee2019_MI
+  - BNCI2014_001
+  split_ids:
+  - P01-L1-SPLIT-OFFICIAL-R2
+  config_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  environment_ids:
+  - P02_RUNTIME_CONFIG_RECORDED
+  external_artifact_ids:
+  - P02-STAGE24-REPLAY-SOURCE-HF-SNAPSHOT-R1
+  evidence_paths:
+  - analysis_inputs/training_policy_challenger_statistics.json
+  numeric_support: &id007
+    diagnostic_challenger:
+    - dataset_id: BNCI2014_001
+      n: 5
+      median_delta_BACC: -0.0347222222222222
+      ci_low: -0.0763888888888889
+      ci_high: -0.0347222222222221
+      p_value: 0.125
+      rank_biserial: -0.8666666666666667
+    - dataset_id: Lee2019_MI
+      n: 30
+      median_delta_BACC: 0.01
+      ci_low: -0.005
+      ci_high: 0.025
+      p_value: 0.2309220325143355
+      rank_biserial: 0.2586206896551724
+    - dataset_id: PhysioNetMI
+      n: 55
+      median_delta_BACC: 0.0
+      ci_low: -0.0343477914915631
+      ci_high: 0.0029761904761905
+      p_value: 0.455185419014922
+      rank_biserial: -0.1190130624092888
+  negative_evidence_ids:
+  - P02-NEGATIVE-RESULTS
+  limitation_ids:
+  - DIAGNOSTIC_ONLY
+  required_warning_text: Not an A-number and not a replacement for primary A0.
+  figure_ids:
+  - L10-P02-FIG-005
+  table_ids:
+  - L10-P02-TBL-005
+  layer10_view_ids:
+  - L10-P02-VIEW-006
+  card_ids:
+  - L10-P02-CARD-006
+  layer10_export_ids:
+  - L10-P02-FIG-005
+  - L10-P02-TBL-005
+  manuscript_sections:
+  - Negative methodological result / supplement
+  reproduction_assets:
+  - P02-PHASE-ANALYSIS-FINAL-R2
+  - P00-P02-EVIDENCE-MAP-RELEASE-R1
+  - P00-P02-LAYER10-RELEASE-R1
+  evidence_map_status: CURRENT_GOVERNED
+  lifecycle_state: ACTIVE_QUALIFIED_CURRENT
+  claim_ceiling: SUPPORTED
+  evidence_class: DIAGNOSTIC_NEGATIVE_RESULT
+  denominator: *id007
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  paper_placement: Negative methodological result / supplement
+  source_map_state: NEW_P02_GOVERNED_MAPPING
+- claim_id: P02-CLM-007/v1
+  phase: P02
+  source_candidate_claim_id: P02-CLAIM-CAND-007
+  reviewed_claim_text: Within the canonical resource-constrained A4 scope, none of the 756 governed C1-C3 role-control statistical rows reached raw p<=0.05. This
+    is an absence of statistically detected improvement under the executed scope, not proof that the true effect is zero and not evidence of five-repeat or dense-budget
+    stability.
+  layer0_disposition_id: P02-L0-DISP-007
+  layer0_disposition: APPROVED_WITH_QUALIFICATIONS
+  finding_ids:
+  - P02-FIND-009
+  - P02-FIND-010
+  protocol_analysis_ids:
+  - P02_PROTOCOL_V1_AUTHORIZED_ANALYSIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  analysis_release_id: P02-PHASE-ANALYSIS-FINAL-R2
+  analysis_report_id: IHARQ-Phase02-Evidence-Results-Interpretation-Final-R2
+  ablation_ids:
+  - A4
+  comparison_ids: []
+  metric_ids:
+  - BACC
+  - burden/delay
+  dataset_ids:
+  - PhysioNetMI
+  - Lee2019_MI
+  - BNCI2014_001
+  split_ids:
+  - P01-L1-SPLIT-OFFICIAL-R2
+  config_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  environment_ids:
+  - P02_RUNTIME_CONFIG_RECORDED
+  external_artifact_ids:
+  - P02-STAGE24-REPLAY-SOURCE-HF-SNAPSHOT-R1
+  evidence_paths:
+  - analysis_inputs/a4_completion.json
+  - analysis_inputs/stage18_resource_constrained_anchor_budget_deviation.json
+  numeric_support: &id008
+    governed_C1_C3_statistical_rows: 756
+    raw_p_le_0_05: 0
+    scope: single canonical refit repeat / governed deep anchor budgets
+  negative_evidence_ids:
+  - P02-NEGATIVE-RESULTS
+  limitation_ids:
+  - SINGLE_REPEAT
+  - DEEP_ANCHOR_BUDGETS
+  required_warning_text: Absence of detected effects is not proof of zero effect; canonical deep scope is reduced.
+  figure_ids:
+  - L10-P02-FIG-006
+  table_ids:
+  - L10-P02-TBL-006
+  layer10_view_ids:
+  - L10-P02-VIEW-007
+  card_ids:
+  - L10-P02-CARD-007
+  layer10_export_ids:
+  - L10-P02-FIG-006
+  - L10-P02-TBL-006
+  manuscript_sections:
+  - Ablation result / negative result
+  reproduction_assets:
+  - P02-PHASE-ANALYSIS-FINAL-R2
+  - P00-P02-EVIDENCE-MAP-RELEASE-R1
+  - P00-P02-LAYER10-RELEASE-R1
+  evidence_map_status: CURRENT_GOVERNED
+  lifecycle_state: ACTIVE_QUALIFIED_CURRENT
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  evidence_class: GOVERNED_ABLATION_NEGATIVE_NULL_RESULT
+  denominator: *id008
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  paper_placement: Ablation result / negative result
+  source_map_state: NEW_P02_GOVERNED_MAPPING
+- claim_id: P02-CLM-008/v1
+  phase: P02
+  source_candidate_claim_id: P02-CLAIM-CAND-008
+  reviewed_claim_text: 'A hard-vote ensemble was not uniformly beneficial: one governed PhysioNetMI full-training C4 comparison at repeat 4 showed a Holm-significant
+    disadvantage relative to the validation-selected EEGNet constituent (median delta BACC -0.0435; Holm p=0.0371). This cell-specific negative result does not establish
+    that ensembles are generally inferior.'
+  layer0_disposition_id: P02-L0-DISP-008
+  layer0_disposition: APPROVED_WITH_QUALIFICATIONS
+  finding_ids:
+  - P02-FIND-011
+  protocol_analysis_ids:
+  - P02_PROTOCOL_V1_AUTHORIZED_ANALYSIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  analysis_release_id: P02-PHASE-ANALYSIS-FINAL-R2
+  analysis_report_id: IHARQ-Phase02-Evidence-Results-Interpretation-Final-R2
+  ablation_ids:
+  - A4
+  comparison_ids: []
+  metric_ids:
+  - BACC
+  dataset_ids:
+  - PhysioNetMI
+  split_ids:
+  - P01-L1-SPLIT-OFFICIAL-R2
+  config_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  environment_ids:
+  - P02_RUNTIME_CONFIG_RECORDED
+  external_artifact_ids:
+  - P02-STAGE24-REPLAY-SOURCE-HF-SNAPSHOT-R1
+  evidence_paths:
+  - analysis_inputs/a4_c4_c5_statistics.json
+  numeric_support: &id009
+    Holm_significant_rows: 1
+    significant_rows:
+    - comparison_id: P02-A4-PhysioNetMI-ENSEMBLE-A4-C4-MODEL-HARD-VOTE-FULL_TRAIN-ER04:VS_STRONGEST
+      dataset_id: PhysioNetMI
+      condition_id: A4-C4-MODEL-HARD-VOTE
+      budget_id: FULL_TRAIN
+      repeat: 4
+      strongest_constituent_branch: DNN-EEGNET
+      closure_status: COMPLETE
+      n: 11.0
+      median_delta_BACC: -0.0434782608695651
+      p_value: 0.0185546875
+      holm_adjusted_p: 0.037109375
+      rank_biserial: -0.7878787878787878
+      ci_low: -0.1304347826086956
+      ci_high: -0.0119047619047618
+  negative_evidence_ids:
+  - P02-NEGATIVE-RESULTS
+  limitation_ids:
+  - CELL_SPECIFIC_EFFECT
+  required_warning_text: Do not generalize from one corrected comparison to all ensembles.
+  figure_ids: []
+  table_ids:
+  - L10-P02-TBL-007
+  layer10_view_ids:
+  - L10-P02-VIEW-008
+  card_ids:
+  - L10-P02-CARD-008
+  layer10_export_ids:
+  - L10-P02-TBL-007
+  manuscript_sections:
+  - Negative ablation result / discussion
+  reproduction_assets:
+  - P02-PHASE-ANALYSIS-FINAL-R2
+  - P00-P02-EVIDENCE-MAP-RELEASE-R1
+  - P00-P02-LAYER10-RELEASE-R1
+  evidence_map_status: CURRENT_GOVERNED
+  lifecycle_state: ACTIVE_QUALIFIED_CURRENT
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  evidence_class: CELL_SPECIFIC_NEGATIVE_ABLATION_RESULT
+  denominator: *id009
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  paper_placement: Negative ablation result / discussion
+  source_map_state: NEW_P02_GOVERNED_MAPPING
+- claim_id: P02-CLM-009/v1
+  phase: P02
+  source_candidate_claim_id: P02-CLAIM-CAND-009
+  reviewed_claim_text: Post-hoc Stage18S sensitivity evidence shows that A4 effect direction can change across descriptive repeats and budgets (22/45 anchor trajectories
+    mixed-sign; all 15 six-budget MR00 trajectories changed sign at least once). This supports the existing claim ceiling but remains POST_HOC/DESCRIPTIVE/SENSITIVITY
+    evidence and does not modify canonical Stage18/G18.
+  layer0_disposition_id: P02-L0-DISP-009
+  layer0_disposition: APPROVED_WITH_QUALIFICATIONS
+  finding_ids:
+  - P02-FIND-012
+  protocol_analysis_ids:
+  - P02_PROTOCOL_V1_AUTHORIZED_ANALYSIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  analysis_release_id: P02-PHASE-ANALYSIS-FINAL-R2
+  analysis_report_id: IHARQ-Phase02-Evidence-Results-Interpretation-Final-R2
+  ablation_ids:
+  - A4 supplemental sensitivity
+  comparison_ids: []
+  metric_ids:
+  - ΔBACC
+  dataset_ids:
+  - PhysioNetMI
+  - Lee2019_MI
+  - BNCI2014_001
+  split_ids:
+  - P01-L1-SPLIT-OFFICIAL-R2
+  config_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  environment_ids:
+  - P02_RUNTIME_CONFIG_RECORDED
+  external_artifact_ids:
+  - P02-STAGE24-REPLAY-SOURCE-HF-SNAPSHOT-R1
+  evidence_paths:
+  - analysis_inputs/stage18S_R1_decision_support_summary.json
+  - analysis_inputs/stage18S_R1_three_repeat_anchor_stability.csv
+  - analysis_inputs/stage18S_R1_six_budget_mr00_sensitivity.csv
+  numeric_support: &id010
+    three_repeat_anchor_trajectories: 45
+    all_negative: 7
+    mixed: 22
+    all_positive: 16
+    six_budget_trajectories: 15
+    six_budget_with_sign_flip: 15
+  negative_evidence_ids:
+  - P02-NEGATIVE-RESULTS
+  limitation_ids:
+  - POST_HOC_ONLY
+  - THREE_REPEAT_NOT_FIVE_REPEAT
+  required_warning_text: Descriptive/post-hoc only; does not modify canonical G18.
+  figure_ids:
+  - L10-P02-FIG-007
+  table_ids:
+  - L10-P02-TBL-008
+  layer10_view_ids:
+  - L10-P02-VIEW-009
+  card_ids:
+  - L10-P02-CARD-009
+  layer10_export_ids:
+  - L10-P02-FIG-007
+  - L10-P02-TBL-008
+  manuscript_sections:
+  - Supplement / limitation justification
+  reproduction_assets:
+  - P02-PHASE-ANALYSIS-FINAL-R2
+  - P00-P02-EVIDENCE-MAP-RELEASE-R1
+  - P00-P02-LAYER10-RELEASE-R1
+  evidence_map_status: CURRENT_GOVERNED
+  lifecycle_state: ACTIVE_QUALIFIED_CURRENT
+  claim_ceiling: POST_HOC_ONLY
+  evidence_class: POST_HOC_SENSITIVITY
+  denominator: *id010
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  paper_placement: Supplement / limitation justification
+  source_map_state: NEW_P02_GOVERNED_MAPPING
+- claim_id: P02-CLM-010/v1
+  phase: P02
+  source_candidate_claim_id: P02-CLAIM-CAND-010
+  reviewed_claim_text: P02 provides a fail-closed, provenance-rich Layer-2 evidence substrate for downstream use while preserving successful and non-success outcomes,
+    including 648 FailureCaseIndex records, 340 NegativeResultNotes and 309 DiagnosticOnlyFlags. This is technical evidence readiness, not deployment readiness or
+    future-phase scientific success.
+  layer0_disposition_id: P02-L0-DISP-010
+  layer0_disposition: APPROVED_WITH_QUALIFICATIONS
+  finding_ids:
+  - P02-FIND-013
+  - P02-FIND-014
+  protocol_analysis_ids:
+  - P02_PROTOCOL_V1_AUTHORIZED_ANALYSIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  analysis_release_id: P02-PHASE-ANALYSIS-FINAL-R2
+  analysis_report_id: IHARQ-Phase02-Evidence-Results-Interpretation-Final-R2
+  ablation_ids:
+  - diagnostics
+  - A4
+  - A0
+  comparison_ids: []
+  metric_ids:
+  - terminal status / provenance
+  dataset_ids:
+  - all
+  split_ids:
+  - P01-L1-SPLIT-OFFICIAL-R2
+  config_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  environment_ids:
+  - P02_RUNTIME_CONFIG_RECORDED
+  external_artifact_ids:
+  - P02-STAGE24-REPLAY-SOURCE-HF-SNAPSHOT-R1
+  evidence_paths:
+  - analysis_inputs/failure_negative_summary.json
+  - negative_and_failed_results/
+  numeric_support: &id011
+    FailureCaseIndex: 648
+    NegativeResultNote: 340
+    DiagnosticOnlyFlag: 309
+    failure_terminal_breakdown:
+      CONDITIONAL_SKIP: 591
+      NOT_APPLICABLE_REPEAT_SLOT: 42
+      INPUT_INCOMPATIBLE: 9
+      FAILED: 3
+      DEPENDENCY_BLOCKED: 3
+  negative_evidence_ids:
+  - P02-NEGATIVE-RESULTS
+  limitation_ids:
+  - DOWNSTREAM_SCIENCE_NOT_EXECUTED
+  required_warning_text: Technical readiness is not deployment readiness.
+  figure_ids:
+  - L10-P02-FIG-008
+  table_ids:
+  - L10-P02-TBL-009
+  layer10_view_ids:
+  - L10-P02-VIEW-010
+  card_ids:
+  - L10-P02-CARD-010
+  layer10_export_ids:
+  - L10-P02-FIG-008
+  - L10-P02-TBL-009
+  manuscript_sections:
+  - Methods / reproducibility / supplement
+  reproduction_assets:
+  - P02-PHASE-ANALYSIS-FINAL-R2
+  - P00-P02-EVIDENCE-MAP-RELEASE-R1
+  - P00-P02-LAYER10-RELEASE-R1
+  evidence_map_status: CURRENT_GOVERNED
+  lifecycle_state: ACTIVE_QUALIFIED_CURRENT
+  claim_ceiling: SUPPORTED
+  evidence_class: REPRODUCIBILITY_NEGATIVE_EVIDENCE
+  denominator: *id011
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  paper_placement: Methods / reproducibility / supplement
+  source_map_state: NEW_P02_GOVERNED_MAPPING
+- claim_id: CUM-CLM-001/v1
+  phase: CUMULATIVE_P00_P02
+  source_candidate_claim_id: CC-01
+  reviewed_claim_text: Through P02, IHARQ has a governed evidence chain linking validated foundation contracts, the frozen P01 provenance-traceable EEG substrate,
+    and P02 Layer-2 decoder evidence through explicit identities, manifests and handoffs; this traceability does not by itself establish clinical or deployment effectiveness.
+  layer0_disposition_id: CUM-L0-DISP-001
+  layer0_disposition: APPROVED_WITH_QUALIFICATIONS
+  finding_ids:
+  - CF-01
+  - CF-02
+  - CF-09
+  protocol_analysis_ids:
+  - CUMULATIVE_PHASE_ANALYSIS_AUTHORIZED_SYNTHESIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  analysis_release_id: IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  analysis_report_id: IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  ablation_ids: []
+  comparison_ids: []
+  metric_ids: []
+  dataset_ids: []
+  split_ids: []
+  config_ids: []
+  environment_ids: []
+  external_artifact_ids:
+  - P02-STAGE24-REPLAY-SOURCE-HF-SNAPSHOT-R1
+  evidence_paths:
+  - machine_readable/cumulative_findings.yaml
+  - machine_readable/results_to_claims.yaml
+  negative_evidence_ids: []
+  limitation_ids:
+  - Technical traceability is not scientific/clinical effectiveness by itself.
+  required_warning_text: Technical traceability is not scientific/clinical effectiveness by itself.
+  figure_ids:
+  - L10-CUM-FIG-001
+  table_ids:
+  - L10-CUM-TBL-001
+  layer10_view_ids:
+  - L10-CUM-VIEW-001
+  card_ids:
+  - L10-CUM-CARD-001
+  layer10_export_ids:
+  - L10-CUM-FIG-001
+  - L10-CUM-TBL-001
+  manuscript_sections:
+  - Methods / reproducibility
+  reproduction_assets:
+  - IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  - P00-P02-EVIDENCE-MAP-RELEASE-R1
+  - P00-P02-LAYER10-RELEASE-R1
+  evidence_map_status: CURRENT_GOVERNED
+  lifecycle_state: ACTIVE_QUALIFIED_CURRENT
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  evidence_class: CROSS_PHASE_SYNTHESIS
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  paper_placement: Methods / reproducibility
+  source_map_state: NEW_CUMULATIVE_GOVERNED_MAPPING
+- claim_id: CUM-CLM-002/v1
+  phase: CUMULATIVE_P00_P02
+  source_candidate_claim_id: CC-02
+  reviewed_claim_text: The P02 decoder analyses consume the frozen P01 subject-grouped, denominator-conserving binary motor-imagery data contract rather than a P02-local
+    redefinition of labels, split or core windows, subject to the scope of the implemented registered integrity and leakage checks.
+  layer0_disposition_id: CUM-L0-DISP-002
+  layer0_disposition: APPROVED_WITH_QUALIFICATIONS
+  finding_ids:
+  - CF-02
+  protocol_analysis_ids:
+  - CUMULATIVE_PHASE_ANALYSIS_AUTHORIZED_SYNTHESIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  analysis_release_id: IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  analysis_report_id: IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  ablation_ids: []
+  comparison_ids: []
+  metric_ids: []
+  dataset_ids: []
+  split_ids:
+  - P01-L1-SPLIT-OFFICIAL-R2
+  config_ids: []
+  environment_ids: []
+  external_artifact_ids:
+  - P02-STAGE24-REPLAY-SOURCE-HF-SNAPSHOT-R1
+  evidence_paths:
+  - machine_readable/cumulative_findings.yaml
+  - machine_readable/results_to_claims.yaml
+  negative_evidence_ids: []
+  limitation_ids:
+  - Bounded to the implemented registered leakage/disjointness checks.
+  required_warning_text: Bounded to the implemented registered leakage/disjointness checks.
+  figure_ids:
+  - L10-CUM-FIG-001
+  table_ids:
+  - L10-CUM-TBL-001
+  layer10_view_ids:
+  - L10-CUM-VIEW-002
+  card_ids:
+  - L10-CUM-CARD-002
+  layer10_export_ids:
+  - L10-CUM-FIG-001
+  - L10-CUM-TBL-001
+  manuscript_sections:
+  - Methods / validity
+  reproduction_assets:
+  - IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  - P00-P02-EVIDENCE-MAP-RELEASE-R1
+  - P00-P02-LAYER10-RELEASE-R1
+  evidence_map_status: CURRENT_GOVERNED
+  lifecycle_state: ACTIVE_QUALIFIED_CURRENT
+  claim_ceiling: SUPPORTED
+  evidence_class: CROSS_PHASE_SYNTHESIS
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  paper_placement: Methods / validity
+  source_map_state: NEW_CUMULATIVE_GOVERNED_MAPPING
+- claim_id: CUM-CLM-003/v1
+  phase: CUMULATIVE_P00_P02
+  source_candidate_claim_id: CC-03
+  reviewed_claim_text: Across the three governed P02 datasets, decoder-family ordering is context-dependent rather than universally ordered, and participant heterogeneity
+    on the multi-participant datasets limits any global winner claim; BNCI2014_001 is descriptive at the participant-inference level because its held-out P02 test
+    set contains one participant.
+  layer0_disposition_id: CUM-L0-DISP-003
+  layer0_disposition: APPROVED_WITH_QUALIFICATIONS
+  finding_ids:
+  - CF-03
+  - CF-11
+  protocol_analysis_ids:
+  - CUMULATIVE_PHASE_ANALYSIS_AUTHORIZED_SYNTHESIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  analysis_release_id: IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  analysis_report_id: IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  ablation_ids: []
+  comparison_ids: []
+  metric_ids: []
+  dataset_ids:
+  - BNCI2014_001
+  - Lee2019_MI
+  - PhysioNetMI
+  split_ids:
+  - P01-L1-SPLIT-OFFICIAL-R2
+  config_ids: []
+  environment_ids: []
+  external_artifact_ids:
+  - P02-STAGE24-REPLAY-SOURCE-HF-SNAPSHOT-R1
+  evidence_paths:
+  - machine_readable/cumulative_findings.yaml
+  - machine_readable/results_to_claims.yaml
+  negative_evidence_ids: []
+  limitation_ids:
+  - BNCI held-out test participant n=1; no universal rank claim.
+  required_warning_text: BNCI held-out test participant n=1; no universal rank claim.
+  figure_ids: []
+  table_ids:
+  - L10-CUM-TBL-001
+  layer10_view_ids:
+  - L10-CUM-VIEW-003
+  card_ids:
+  - L10-CUM-CARD-003
+  layer10_export_ids:
+  - L10-CUM-TBL-001
+  manuscript_sections:
+  - Main Results / Discussion
+  reproduction_assets:
+  - IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  - P00-P02-EVIDENCE-MAP-RELEASE-R1
+  - P00-P02-LAYER10-RELEASE-R1
+  evidence_map_status: CURRENT_GOVERNED
+  lifecycle_state: ACTIVE_QUALIFIED_CURRENT
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  evidence_class: CROSS_PHASE_SYNTHESIS
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  paper_placement: Main Results / Discussion
+  source_map_state: NEW_CUMULATIVE_GOVERNED_MAPPING
+- claim_id: CUM-CLM-004/v1
+  phase: CUMULATIVE_P00_P02
+  source_candidate_claim_id: CC-04
+  reviewed_claim_text: The deterministic low-label populations prepared in P01 expose difficult, non-monotonic and rank-changing P02 behavior across the governed
+    1-32 labels/class surface; one frozen subset per budget prevents a stable repeated-subset sample-efficiency claim.
+  layer0_disposition_id: CUM-L0-DISP-004
+  layer0_disposition: APPROVED_WITH_QUALIFICATIONS
+  finding_ids:
+  - CF-04
+  protocol_analysis_ids:
+  - CUMULATIVE_PHASE_ANALYSIS_AUTHORIZED_SYNTHESIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  analysis_release_id: IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  analysis_report_id: IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  ablation_ids: []
+  comparison_ids: []
+  metric_ids: []
+  dataset_ids:
+  - BNCI2014_001
+  - Lee2019_MI
+  - PhysioNetMI
+  split_ids:
+  - P01-L1-SPLIT-OFFICIAL-R2
+  config_ids: []
+  environment_ids: []
+  external_artifact_ids:
+  - P02-STAGE24-REPLAY-SOURCE-HF-SNAPSHOT-R1
+  evidence_paths:
+  - machine_readable/cumulative_findings.yaml
+  - machine_readable/results_to_claims.yaml
+  negative_evidence_ids: []
+  limitation_ids:
+  - Single frozen subset per budget; no repeated-subset stability.
+  required_warning_text: Single frozen subset per budget; no repeated-subset stability.
+  figure_ids: []
+  table_ids:
+  - L10-CUM-TBL-001
+  layer10_view_ids:
+  - L10-CUM-VIEW-004
+  card_ids:
+  - L10-CUM-CARD-004
+  layer10_export_ids:
+  - L10-CUM-TBL-001
+  manuscript_sections:
+  - Secondary Results / Limitations
+  reproduction_assets:
+  - IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  - P00-P02-EVIDENCE-MAP-RELEASE-R1
+  - P00-P02-LAYER10-RELEASE-R1
+  evidence_map_status: CURRENT_GOVERNED
+  lifecycle_state: ACTIVE_QUALIFIED_CURRENT
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  evidence_class: CROSS_PHASE_SYNTHESIS
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  paper_placement: Secondary Results / Limitations
+  source_map_state: NEW_CUMULATIVE_GOVERNED_MAPPING
+- claim_id: CUM-CLM-005/v1
+  phase: CUMULATIVE_P00_P02
+  source_candidate_claim_id: CC-05
+  reviewed_claim_text: P01 resolved A4 data-feasibility by freezing a fully matched R2 substrate. Under P02’s accepted constrained A4 execution, no generic C1-C3
+    statistically detected improvement was observed, and post-hoc Stage18S further shows repeat/budget sign sensitivity. These results do not establish zero effect,
+    five-repeat stability, dense-budget behavior, or full original-grid equivalence.
+  layer0_disposition_id: CUM-L0-DISP-005
+  layer0_disposition: APPROVED_WITH_QUALIFICATIONS
+  finding_ids:
+  - CF-05
+  - CF-06
+  protocol_analysis_ids:
+  - CUMULATIVE_PHASE_ANALYSIS_AUTHORIZED_SYNTHESIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  analysis_release_id: IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  analysis_report_id: IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  ablation_ids:
+  - A4
+  comparison_ids: []
+  metric_ids: []
+  dataset_ids:
+  - BNCI2014_001
+  - Lee2019_MI
+  - PhysioNetMI
+  split_ids:
+  - P01-L1-SPLIT-OFFICIAL-R2
+  config_ids: []
+  environment_ids: []
+  external_artifact_ids:
+  - P02-STAGE24-REPLAY-SOURCE-HF-SNAPSHOT-R1
+  evidence_paths:
+  - machine_readable/cumulative_findings.yaml
+  - machine_readable/results_to_claims.yaml
+  negative_evidence_ids:
+  - P02-NEGATIVE-RESULTS
+  limitation_ids:
+  - Single canonical refit repeat, deep anchor budgets, Stage18S post-hoc.
+  required_warning_text: Single canonical refit repeat, deep anchor budgets, Stage18S post-hoc.
+  figure_ids:
+  - L10-CUM-FIG-002
+  table_ids:
+  - L10-CUM-TBL-001
+  layer10_view_ids:
+  - L10-CUM-VIEW-005
+  card_ids:
+  - L10-CUM-CARD-005
+  layer10_export_ids:
+  - L10-CUM-FIG-002
+  - L10-CUM-TBL-001
+  manuscript_sections:
+  - Ablation Study / negative result
+  reproduction_assets:
+  - IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  - P00-P02-EVIDENCE-MAP-RELEASE-R1
+  - P00-P02-LAYER10-RELEASE-R1
+  evidence_map_status: CURRENT_GOVERNED
+  lifecycle_state: ACTIVE_QUALIFIED_CURRENT
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  evidence_class: CROSS_PHASE_SYNTHESIS
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  paper_placement: Ablation Study / negative result
+  source_map_state: NEW_CUMULATIVE_GOVERNED_MAPPING
+- claim_id: CUM-CLM-006/v1
+  phase: CUMULATIVE_P00_P02
+  source_candidate_claim_id: CC-06
+  reviewed_claim_text: The P02 correction history shows that apparent model viability under the implemented configurations depended on training-policy choice while
+    the inherited P00/P01 data and identity foundations remained unchanged; this supports a reproduction/optimization-sensitivity interpretation, not universal architecture
+    superiority or guaranteed gains from source-aligned settings.
+  layer0_disposition_id: CUM-L0-DISP-006
+  layer0_disposition: APPROVED_WITH_QUALIFICATIONS
+  finding_ids:
+  - CF-07
+  protocol_analysis_ids:
+  - CUMULATIVE_PHASE_ANALYSIS_AUTHORIZED_SYNTHESIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  analysis_release_id: IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  analysis_report_id: IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  ablation_ids: []
+  comparison_ids: []
+  metric_ids: []
+  dataset_ids:
+  - BNCI2014_001
+  - Lee2019_MI
+  - PhysioNetMI
+  split_ids:
+  - P01-L1-SPLIT-OFFICIAL-R2
+  config_ids: []
+  environment_ids: []
+  external_artifact_ids:
+  - P02-STAGE24-REPLAY-SOURCE-HF-SNAPSHOT-R1
+  evidence_paths:
+  - machine_readable/cumulative_findings.yaml
+  - machine_readable/results_to_claims.yaml
+  negative_evidence_ids: []
+  limitation_ids:
+  - Diagnostic/validation evidence does not establish universal test-set gains or architecture superiority.
+  required_warning_text: Diagnostic/validation evidence does not establish universal test-set gains or architecture superiority.
+  figure_ids: []
+  table_ids:
+  - L10-CUM-TBL-001
+  layer10_view_ids:
+  - L10-CUM-VIEW-006
+  card_ids:
+  - L10-CUM-CARD-006
+  layer10_export_ids:
+  - L10-CUM-TBL-001
+  manuscript_sections:
+  - Methodological Discussion
+  reproduction_assets:
+  - IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  - P00-P02-EVIDENCE-MAP-RELEASE-R1
+  - P00-P02-LAYER10-RELEASE-R1
+  evidence_map_status: CURRENT_GOVERNED
+  lifecycle_state: ACTIVE_QUALIFIED_CURRENT
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  evidence_class: CROSS_PHASE_SYNTHESIS
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  paper_placement: Methodological Discussion
+  source_map_state: NEW_CUMULATIVE_GOVERNED_MAPPING
+- claim_id: CUM-CLM-007/v1
+  phase: CUMULATIVE_P00_P02
+  source_candidate_claim_id: CC-07
+  reviewed_claim_text: Across P00-P02, fail-closed validation and explicit retention of failures, supersessions, null/negative results and diagnostic states provide
+    an auditable project history in which non-success evidence remains available for interpretation; this process does not guarantee scientific correctness or deployment
+    safety.
+  layer0_disposition_id: CUM-L0-DISP-007
+  layer0_disposition: APPROVED_WITH_QUALIFICATIONS
+  finding_ids:
+  - CF-08
+  - CF-09
+  protocol_analysis_ids:
+  - CUMULATIVE_PHASE_ANALYSIS_AUTHORIZED_SYNTHESIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  analysis_release_id: IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  analysis_report_id: IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  ablation_ids: []
+  comparison_ids: []
+  metric_ids: []
+  dataset_ids: []
+  split_ids: []
+  config_ids: []
+  environment_ids: []
+  external_artifact_ids:
+  - P02-STAGE24-REPLAY-SOURCE-HF-SNAPSHOT-R1
+  evidence_paths:
+  - machine_readable/cumulative_findings.yaml
+  - machine_readable/results_to_claims.yaml
+  negative_evidence_ids:
+  - P02-NEGATIVE-RESULTS
+  limitation_ids:
+  - Different negative-evidence classes are not quantitatively interchangeable.
+  required_warning_text: Different negative-evidence classes are not quantitatively interchangeable.
+  figure_ids:
+  - L10-CUM-FIG-003
+  table_ids:
+  - L10-CUM-TBL-001
+  layer10_view_ids:
+  - L10-CUM-VIEW-007
+  card_ids:
+  - L10-CUM-CARD-007
+  layer10_export_ids:
+  - L10-CUM-FIG-003
+  - L10-CUM-TBL-001
+  manuscript_sections:
+  - Reproducibility / Discussion
+  reproduction_assets:
+  - IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  - P00-P02-EVIDENCE-MAP-RELEASE-R1
+  - P00-P02-LAYER10-RELEASE-R1
+  evidence_map_status: CURRENT_GOVERNED
+  lifecycle_state: ACTIVE_QUALIFIED_CURRENT
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  evidence_class: CROSS_PHASE_SYNTHESIS
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  paper_placement: Reproducibility / Discussion
+  source_map_state: NEW_CUMULATIVE_GOVERNED_MAPPING
+- claim_id: CUM-CLM-008/v1
+  phase: CUMULATIVE_P00_P02
+  source_candidate_claim_id: CC-08
+  reviewed_claim_text: At the end of P02, canonical Layer-2 evidence is technically ready for governed downstream consumption, including P03, while explicit scope,
+    repeat/stability, access and non-clinical limitations remain mandatory handoff constraints; this does not imply future-phase scientific success.
+  layer0_disposition_id: CUM-L0-DISP-008
+  layer0_disposition: APPROVED_WITH_QUALIFICATIONS
+  finding_ids:
+  - CF-12
+  protocol_analysis_ids:
+  - CUMULATIVE_PHASE_ANALYSIS_AUTHORIZED_SYNTHESIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  analysis_release_id: IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  analysis_report_id: IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  ablation_ids: []
+  comparison_ids: []
+  metric_ids: []
+  dataset_ids: []
+  split_ids:
+  - P01-L1-SPLIT-OFFICIAL-R2
+  config_ids: []
+  environment_ids: []
+  external_artifact_ids:
+  - P02-STAGE24-REPLAY-SOURCE-HF-SNAPSHOT-R1
+  evidence_paths:
+  - machine_readable/cumulative_findings.yaml
+  - machine_readable/results_to_claims.yaml
+  negative_evidence_ids: []
+  limitation_ids:
+  - Downstream science is not yet executed.
+  required_warning_text: Downstream science is not yet executed.
+  figure_ids:
+  - L10-CUM-FIG-001
+  table_ids:
+  - L10-CUM-TBL-001
+  layer10_view_ids:
+  - L10-CUM-VIEW-008
+  card_ids:
+  - L10-CUM-CARD-008
+  layer10_export_ids:
+  - L10-CUM-FIG-001
+  - L10-CUM-TBL-001
+  manuscript_sections:
+  - Methods / roadmap
+  reproduction_assets:
+  - IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  - P00-P02-EVIDENCE-MAP-RELEASE-R1
+  - P00-P02-LAYER10-RELEASE-R1
+  evidence_map_status: CURRENT_GOVERNED
+  lifecycle_state: ACTIVE_QUALIFIED_CURRENT
+  claim_ceiling: SUPPORTED
+  evidence_class: CROSS_PHASE_SYNTHESIS
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  paper_placement: Methods / roadmap
+  source_map_state: NEW_CUMULATIVE_GOVERNED_MAPPING

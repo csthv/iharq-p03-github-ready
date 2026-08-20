@@ -1,0 +1,219 @@
+cumulative_findings:
+- cumulative_finding_id: CF-01
+  text: Across P00-P02, IHARQ progressed from validated non-empirical engineering
+    contracts to a provenance-locked Layer-1 EEG substrate and then to a governed
+    Layer-2 empirical decoder/baseline evidence spine without silently redefining
+    phase identities or upstream data contracts.
+  supporting_phases:
+  - P00
+  - P01
+  - P02
+  supporting_findings:
+  - P00-F-006
+  - P00-F-007
+  - P01-FIND-014
+  - P02-FIND-001
+  - P02-FIND-014
+  relationship: FOUNDATION_TO_EMPIRICAL_CHAIN
+  limitations:
+  - Technical/evidence-chain closure is not clinical or deployment validation.
+  paper_relevance: Methods, reproducibility and project architecture.
+- cumulative_finding_id: CF-02
+  text: The P02 empirical results are interpretable against a stable upstream substrate
+    because P01 froze a subject-grouped disjoint split, conserved all 12,910 accepted
+    events into 12,910 valid core windows, and handed those identities forward; P02
+    did not require silent relabeling, rewindowing or denominator substitution.
+  supporting_phases:
+  - P01
+  - P02
+  supporting_findings:
+  - P01-FIND-002
+  - P01-FIND-003
+  - P01-FIND-006
+  - P01-FIND-014
+  - P02-FIND-001
+  relationship: INHERITED_DATA_CONTRACT
+  limitations:
+  - The implemented leakage checks are bounded; they do not prove every conceivable
+    leakage mechanism impossible.
+  paper_relevance: Methods and validity.
+- cumulative_finding_id: CF-03
+  text: The transition from a three-dataset Layer-1 foundation to P02 decoder evaluation
+    exposed dataset-dependent model ordering rather than a universal decoder hierarchy;
+    full-training leaders and inferential strength differed materially across BNCI2014_001,
+    Lee2019_MI and PhysioNetMI.
+  supporting_phases:
+  - P01
+  - P02
+  supporting_findings:
+  - P01-FIND-001
+  - P02-FIND-002
+  - P02-FIND-003
+  - P02-FIND-004
+  relationship: MULTI_DATASET_EVIDENCE_REVEALS_HETEROGENEITY
+  limitations:
+  - BNCI2014_001 has one held-out P02 test participant; no universal rank claim is
+    authorized.
+  paper_relevance: Main Results and Discussion.
+- cumulative_finding_id: CF-04
+  text: 'P01 low-label readiness became an empirical P02 stress test: the exact frozen
+    1/2/4/8/16/32-per-class populations were usable downstream, but P02 observed near-chance,
+    non-monotonic and rank-changing low-label behavior rather than a stable universal
+    sample-efficiency ordering.'
+  supporting_phases:
+  - P01
+  - P02
+  supporting_findings:
+  - P01-FIND-007
+  - P02-FIND-005
+  relationship: READINESS_TO_EMPIRICAL_STRESS_TEST
+  limitations:
+  - One frozen subset per budget; repeated-subset stability is not established.
+  paper_relevance: Low-label Results and Limitations.
+- cumulative_finding_id: CF-05
+  text: 'A4 evolved in two scientifically distinct steps: P01 discovered that the
+    original +4.0 s proposal could not preserve the full parent-event denominator
+    and froze a matched +3.5 s R2 substrate; P02 then evaluated the resulting A4 family
+    and found no generic statistically detectable C1-C3 improvement under its governed
+    resource-constrained scope.'
+  supporting_phases:
+  - P01
+  - P02
+  supporting_findings:
+  - P01-FIND-009
+  - P01-FIND-010
+  - P02-FIND-009
+  - P02-FIND-010
+  relationship: FEASIBILITY_TO_EFFECTIVENESS
+  limitations:
+  - P02 canonical A4 uses one refit repeat and deep anchor budgets; absence of detected
+    effects is not proof of zero effect.
+  paper_relevance: Ablation Study and Discussion.
+- cumulative_finding_id: CF-06
+  text: The P01-deferred question of whether A4 R2 itself improves decoder performance
+    is no longer simply untested after P02; instead it is qualified by predominantly
+    null/heterogeneous control evidence, one specific negative hard-vote ensemble
+    result, and post-hoc Stage 18S sign sensitivity.
+  supporting_phases:
+  - P01
+  - P02
+  supporting_findings:
+  - P01-FIND-009
+  - P02-FIND-010
+  - P02-FIND-011
+  - P02-FIND-012
+  relationship: DEFERRED_QUESTION_RESOLVED_WITH_QUALIFICATION
+  limitations:
+  - No five-repeat stability or dense deep-budget response claim; Stage 18S is post-hoc.
+  paper_relevance: Ablation negative-result narrative.
+- cumulative_finding_id: CF-07
+  text: Because P00/P01 stabilized schemas, data identities, splits and windows before
+    P02 model execution, the Stage 11/12 correction history is best interpreted as
+    a P02-local training/optimization fidelity issue rather than evidence that upstream
+    data foundations were invalid.
+  supporting_phases:
+  - P00
+  - P01
+  - P02
+  supporting_findings:
+  - P00-F-005
+  - P01-FIND-003
+  - P01-FIND-014
+  - P02-FIND-006
+  - P02-FIND-008
+  relationship: UPSTREAM_STABILITY_LOCALIZES_CORRECTION
+  limitations:
+  - Stage 12 before/after diagnostics are validation-only and do not establish universal
+    test-set improvement.
+  paper_relevance: Reproducibility and methodological Discussion.
+- cumulative_finding_id: CF-08
+  text: 'Fail-closed behavior is a cumulative methodological property rather than
+    a single-phase anecdote: P00 rejected malformed fixtures, P01 blocked and repaired
+    material stage failures, and P02 preserved failed, skipped, incompatible, superseded
+    and diagnostic outcomes alongside successes.'
+  supporting_phases:
+  - P00
+  - P01
+  - P02
+  supporting_findings:
+  - P00-F-004
+  - P01-FIND-013
+  - P02-FIND-013
+  relationship: FAIL_CLOSED_EVOLUTION
+  limitations:
+  - Engineering rejection evidence and scientific negative results are different evidence
+    classes and must not be numerically pooled.
+  paper_relevance: Methods, reproducibility and negative-results Discussion.
+- cumulative_finding_id: CF-09
+  text: Reproducibility matured from exact local-snapshot foundation evidence in P00,
+    through immutable dataset/split/window identities and execution closure in P01,
+    to model/run/checkpoint/prediction provenance and preserved external P02 workspace/release
+    identities.
+  supporting_phases:
+  - P00
+  - P01
+  - P02
+  supporting_findings:
+  - P00-F-008
+  - P01-FIND-004
+  - P01-FIND-011
+  - P01-FIND-012
+  - P02-FIND-013
+  - P02-FIND-014
+  relationship: REPRODUCIBILITY_MATURITY
+  limitations:
+  - Cross-environment portability and private external-artifact access remain bounded
+    rather than universally solved.
+  paper_relevance: Reproducibility contribution.
+- cumulative_finding_id: CF-10
+  text: The scientific evidence ceiling expanded phase by phase—from P00 engineering/readiness
+    evidence, to P01 data-integrity/readiness evidence, to P02 empirical decoder and
+    governed A4 evidence—but later empirical breadth did not erase the project-wide
+    public-benchmark, non-clinical and non-deployment boundary.
+  supporting_phases:
+  - P00
+  - P01
+  - P02
+  supporting_findings:
+  - P00-F-009
+  - P01-FIND-008
+  - P02-FIND-001
+  - P02-FIND-014
+  relationship: EVIDENCE_CEILING_EXPANSION_WITH_PERSISTENT_BOUNDARY
+  limitations:
+  - No clinical effectiveness, deployment safety, calibrated decision policy, stress
+    robustness or embodiment claim is supported through P02.
+  paper_relevance: Scope and Limitations.
+- cumulative_finding_id: CF-11
+  text: 'Participant and dataset heterogeneity become scientifically visible only
+    once the project reaches P02 empirical decoding: upstream integrity enables fair
+    measurement, but does not make individual EEG decoding outcomes homogeneous.'
+  supporting_phases:
+  - P01
+  - P02
+  supporting_findings:
+  - P01-FIND-002
+  - P01-FIND-003
+  - P02-FIND-002
+  - P02-FIND-004
+  relationship: INTEGRITY_DOES_NOT_REMOVE_BIOLOGICAL_HETEROGENEITY
+  limitations:
+  - P02 does not test a personalization policy or cross-session adaptation mechanism.
+  paper_relevance: Discussion and future work.
+- cumulative_finding_id: CF-12
+  text: 'At the end of P02 the project has a traceable technical continuation point
+    for P03: frozen upstream data identities, canonical P02 predictions/checkpoints/failure
+    semantics and explicit claim restrictions can be inherited without treating technical
+    readiness as downstream scientific success.'
+  supporting_phases:
+  - P01
+  - P02
+  supporting_findings:
+  - P01-FIND-014
+  - P02-FIND-013
+  - P02-FIND-014
+  relationship: DOWNSTREAM_READINESS_WITH_CLAIM_BOUNDARY
+  limitations:
+  - P03 and later scientific outcomes are not part of the completed evidence through
+    P02.
+  paper_relevance: Handoff and future Methods.

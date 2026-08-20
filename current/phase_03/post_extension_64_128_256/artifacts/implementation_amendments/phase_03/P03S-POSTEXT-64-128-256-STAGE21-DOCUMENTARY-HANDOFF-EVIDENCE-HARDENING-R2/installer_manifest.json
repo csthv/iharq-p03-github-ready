@@ -1,0 +1,53 @@
+{
+  "canonical_algorithm_profile": "P03-C8-STAGE21-DOCUMENTARY-HANDOFF-EVIDENCE-HARDENING-R2",
+  "canonical_products_after_stage21": {
+    "P03-PROD-038": "artifacts/manifests/phase_03/artifact_traceability.csv",
+    "P03-PROD-039": "artifacts/phase_analysis_handoff/phase_03/metrics/",
+    "P03-PROD-040": "artifacts/phase_analysis_handoff/phase_03/statistics/",
+    "P03-PROD-041": "artifacts/layer10_source_bundle/phase_03/figure_source_data/",
+    "P03-PROD-042": "artifacts/layer10_source_bundle/phase_03/table_source_data/",
+    "P03-PROD-043": "artifacts/records/phase_03/CalibrationDashboardMetricRecord/P03S-POSTEXT-64-128-256-STAGE21-DOCUMENTARY-HANDOFF-EVIDENCE-HARDENING-R2/",
+    "P03-PROD-044": "artifacts/layer10_source_bundle/phase_03/cards/",
+    "P03-PROD-045": "artifacts/layer10_source_bundle/phase_03/"
+  },
+  "config_changed": false,
+  "hardening_id": "P03S-POSTEXT-64-128-256-STAGE21-DOCUMENTARY-HANDOFF-EVIDENCE-HARDENING-R2",
+  "maxq_fix_id": "P03S-POSTEXT-STAGE21-CANONICAL-HANDOFF-SURFACE-R2",
+  "preexecution_expected": {
+    "governed_stage12_reliability_parents": 108,
+    "governed_stage19_group_parents": 1440,
+    "group_budget_rows": 1440,
+    "matched_rows": 972,
+    "metric_analysis_normalized_rows": 5148,
+    "negative_result_rows": 1016,
+    "raw_dashboard_rows": 324,
+    "raw_layer10_source_file_count": 5,
+    "raw_reliability_cards": 108,
+    "reliability_records": 108,
+    "statistics_input_normalized_rows": 5148,
+    "traceability_rows": 24
+  },
+  "prohibitions": {
+    "claim_strengthening": true,
+    "inferential_statistics_in_stage21": true,
+    "layer10_recomputation": true,
+    "model_or_calibrator_fitting": true,
+    "new_scientific_estimation": true,
+    "test_driven_selection": true,
+    "threshold_retuning": true
+  },
+  "protocol_changed": false,
+  "repository_mutated": false,
+  "run_id": "P03-L3-POSTEXT-64-128-256-R1-1833e865bcb88ff8",
+  "schema_id": "P03Stage21DocumentaryHandoffHardeningInstallerManifest.v1",
+  "schema_version": "1.0.0",
+  "scientific_handler_changed": false,
+  "scientific_handler_module": "iharq.layer3_calibration_uncertainty.stages",
+  "scientific_handler_sha256": "081b7972b6065ccaf211e2207b4ef81c50cd291892bab56c8bee3128ae4910b7",
+  "scientific_method_changed": false,
+  "stage20_final_disposition": "ACCEPT/FREEZE",
+  "stage21_executed": false,
+  "stage22_executed": false,
+  "stage_id": "21",
+  "status": "PASS"
+}

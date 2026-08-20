@@ -1,0 +1,63 @@
+dataset_id: Lee2019_MI
+aliases:
+- Lee2019_MI
+- OpenBMI MI
+- OpenBMI
+authority_status: PRIMARY_SELECTED_WITH_SOURCE_QUALIFICATIONS
+scientific_role: maximum-scope two-session left/right MI target companion
+active_for_run: true
+active_disposition: ACTIVE_FOR_P01_OFFICIAL_RUN
+exact_revision: GigaDB dataset DOI 10.5524/100542; MOABB 1.5.0 Lee2019_MI wrapper;
+  labeled offline/train MI runs only
+citation: 'Lee MH, Kwon OY, Kim YJ, et al. EEG dataset and OpenBMI toolbox for three
+  BCI paradigms: an investigation into BCI illiteracy. GigaScience. 2019;8(5):giz002.
+  DOI 10.1093/gigascience/giz002; data DOI 10.5524/100542.'
+license: GNU General Public License v3.0 as documented by the maintained MOABB source
+  card; source terms retained in DatasetCard
+access_method: MOABB_1_5_0_OFFICIAL_GIGADB_DOWNLOAD
+official_reference: https://moabb.neurotechx.com/docs/generated/moabb.datasets.Lee2019_MI.html;
+  https://doi.org/10.1093/gigascience/giz002; https://doi.org/10.5524/100542
+published_checksum: NO_SINGLE_PROVIDER_WIDE_PUBLISHED_SHA256
+checksum_policy: COMPUTE_SHA256_PER_SOURCE_ARCHIVE/FILE_AND_FREEZE_AGGREGATE_BEFORE_ADMISSION
+expected_checksum: COMPUTE_OR_VERIFY_PER_FROZEN_POLICY
+adapter: MOABBLee2019MIAdapter
+cache_path: source_cache/Lee2019_MI
+redistribution_allowed: ONLY_AS_PER_GPL_3_0_AND_GIGADB_SOURCE_TERMS; RAW_BYTES_EXCLUDED_FROM_PHASE
+  BUNDLE
+source_native_preprocessing:
+- raw source status; preserve original metadata and source phase
+limitations:
+- Online/test runs are excluded from supervised P01 records
+- High-rate source requires deterministic anti-aliased resampling
+- Source phase and session must remain in lineage
+adapter_options:
+  moabb_class: Lee2019_MI
+  subjects: 1-54
+  train_run: true
+  test_run: false
+  sessions:
+  - 1
+  - 2
+  internet_required: true
+  official_reference: https://moabb.neurotechx.com/docs/generated/moabb.datasets.Lee2019_MI.html;
+    https://doi.org/10.1093/gigascience/giz002; https://doi.org/10.5524/100542
+  checksum_policy: COMPUTE_SHA256_PER_SOURCE_ARCHIVE/FILE_AND_FREEZE_AGGREGATE_BEFORE_ADMISSION
+  published_checksum: NO_SINGLE_PROVIDER_WIDE_PUBLISHED_SHA256
+  expected_event_inventory:
+  - left_hand
+  - right_hand
+  - online/test MI events excluded because classification labels are unavailable or
+    restricted
+  sampling_and_channel_profile:
+    eeg_channels: 62
+    sampling_hz: 1000
+    trial_duration_seconds: 4
+    format: MAT via GigaDB/MOABB
+  source_native_preprocessing:
+  - raw source status; preserve original metadata and source phase
+  limitations:
+  - Online/test runs are excluded from supervised P01 records
+  - High-rate source requires deterministic anti-aliased resampling
+  - Source phase and session must remain in lineage
+  allow_byte_equivalent_attachment_fallback: false
+  acquisition_contract: MOABB_1_5_0_OFFICIAL_PROVIDER_DOWNLOAD_ONLY

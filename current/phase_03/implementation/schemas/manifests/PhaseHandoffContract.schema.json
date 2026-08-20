@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/csthv/IHARQ/schemas/manifests/PhaseHandoffContract.schema.json",
+  "title": "PhaseHandoffContract",
+  "type": "object",
+  "required": [
+    "handoff_id",
+    "phase_id",
+    "status",
+    "gate_decisions",
+    "limitations"
+  ],
+  "properties": {
+    "handoff_id": {
+      "type": "string"
+    },
+    "phase_id": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "gate_decisions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "blocking_defects": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    }
+  },
+  "additionalProperties": false,
+  "x-iharq-status": "PHASE0_FOUNDATION_PROFILE"
+}

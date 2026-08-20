@@ -1,0 +1,56 @@
+{
+  "audit_id": "P02-HF-CONDITIONAL-ASSET-AUDIT-R1",
+  "status": "PASS",
+  "scientific_design_change": false,
+  "policy_id": "P02-HF-CONDITIONAL-ASSET-POLICY-R1",
+  "credential": {
+    "preferred": "KAGGLE_SECRET:HF_TOKEN",
+    "interactive_fallback": "GETPASS_HIDDEN_PROMPT",
+    "environment_fallback": "HF_TOKEN/HUGGINGFACE_TOKEN",
+    "hardcoded": false,
+    "persisted_by_iharq": false,
+    "cleared_after_stage03": true,
+    "bundle_inclusion": "PROHIBITED",
+    "logged_value": false,
+    "source_type_recording_only": true
+  },
+  "retrieval": {
+    "api": "huggingface_hub.hf_hub_download",
+    "token_passing": "DIRECT_CALL_ARGUMENT",
+    "persistent_login_used": false,
+    "revision_pin_required": true,
+    "file_sha256_verification_required": true,
+    "offline_preattached_fallback_preserved": true
+  },
+  "CBraMod": {
+    "status": "ELIGIBLE_CURRENT_P02_AUTO_RETRIEVAL",
+    "repo_id": "braindecode/cbramod-pretrained",
+    "revision": "584cdc415913739a05d84bf0c1cb3db397764507",
+    "checkpoint_file": "model.safetensors",
+    "checkpoint_sha256": "a939ace9aa1e229f08391ad8bb2d197b507ae2c519a50addf087f0151b2df5c3",
+    "license_status": "CAN_EXECUTE",
+    "corpus_overlap_status": "PASS",
+    "implementation_module": "iharq.layer2_decoders.hf_cbramod_adapter"
+  },
+  "REVE": {
+    "status": "BLOCKED_KNOWN_P02_PRETRAINING_CORPUS_OVERLAP",
+    "repo_id": "brain-bzh/reve-base",
+    "gated": true,
+    "license_status": "POINTER_ONLY_GATED_NO_REDISTRIBUTION",
+    "corpus_overlap_status": "BLOCKED_KNOWN_P02_OVERLAP",
+    "download_policy": "DO_NOT_DOWNLOAD_CURRENT_P02",
+    "authentication_can_override_scientific_gate": false
+  },
+  "invariants": {
+    "A0_cells": 678,
+    "A4_slots": 1218,
+    "official_A0_A4_total": 1896,
+    "new_A_number": false,
+    "A14": "ABSENT_PROHIBITED",
+    "downstream_contracts_changed": false
+  },
+  "tests": "82/82 PASS",
+  "static_authoring": "91/91 PASS",
+  "fixture": "26/26 stages; 311/311 runtime checksums; CRC PASS",
+  "freeze_critical_blockers": 0
+}

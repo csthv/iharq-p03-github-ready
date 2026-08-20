@@ -1,0 +1,21 @@
+{
+  "run_cell_id": "P02-A4-Lee2019_MI-CLASSICAL-A4-C0-CORE-P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS-MR00",
+  "ablation_id": "A4",
+  "terminal_status": "SUCCESS",
+  "resolved_branch": "CLS-CSP-LDA",
+  "prediction_partition": "records/PredictionRecord/dataset=Lee2019_MI/branch=CLS-CSP-LDA/budget=P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS/P02-A0-Lee2019_MI-CLS-CSP-LDA-P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS-MR00.jsonl",
+  "metric_source": "metrics/P02-A0-Lee2019_MI-CLS-CSP-LDA-P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS-MR00.json",
+  "checkpoint_sha256": "0d7cbe6a2d985341d73ea7c6cc262e10855b72d4b0571259a9c57736ac726538",
+  "observed_denominator": 600,
+  "burden": {
+    "evidence_duration_s": 3.0,
+    "observation_horizon_s": 3.0,
+    "model_or_view_evaluations": 1,
+    "member_count": 1,
+    "aggregation_operation": "DIRECT_CORE",
+    "batch1_latency_median_s": 0.0007295709983736742,
+    "batch1_latency_p95_s": 0.0008900713983166497,
+    "aggregation_latency_s": 0.0
+  },
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

@@ -1,0 +1,63 @@
+{
+  "canonical_main": {
+    "analysis_self_sufficient_without_heavy": true,
+    "checks": {
+      "artifact_traceability": true,
+      "checkpoint_receipts": true,
+      "dashboard_metrics": true,
+      "evidence_map_handoff_input": true,
+      "execution_manifest": true,
+      "failure_ledger": true,
+      "gate_results": true,
+      "layer0_handoff_input": true,
+      "layer10_bundle": true,
+      "limitation_register": true,
+      "matched_operating_points": true,
+      "negative_results": true,
+      "p04_handoff": true,
+      "phase_analysis_index": true,
+      "protocol_handoff_input": true,
+      "reliability_audit": true,
+      "stage_ledger": true,
+      "threshold_registry": true
+    },
+    "missing": [],
+    "scope": "CANONICAL_MAIN"
+  },
+  "heavy_may_be_required_for": [
+    "checkpoints",
+    "row_level_calibration_uncertainty_selective_prediction_records",
+    "full_risk_coverage_curves",
+    "large_future_phase_analysis_rows",
+    "large_future_layer10_sources",
+    "raw_stage_reproduction",
+    "diagnostics_and_logs"
+  ],
+  "heavy_required_for_current_phase_analysis": false,
+  "post_extension_64_128_256": {
+    "analysis_self_sufficient_without_heavy": true,
+    "checks": {
+      "artifact_traceability": true,
+      "checkpoint_receipts": true,
+      "dashboard_metrics": true,
+      "evidence_map_handoff_input": true,
+      "execution_manifest": true,
+      "failure_ledger": true,
+      "gate_results": true,
+      "layer0_handoff_input": true,
+      "layer10_bundle": true,
+      "limitation_register": true,
+      "matched_operating_points": true,
+      "negative_results": true,
+      "p04_handoff": true,
+      "phase_analysis_index": true,
+      "protocol_handoff_input": true,
+      "reliability_audit": true,
+      "stage_ledger": true,
+      "threshold_registry": true
+    },
+    "missing": [],
+    "scope": "POST_EXTENSION_64_128_256"
+  },
+  "status": "PASS"
+}

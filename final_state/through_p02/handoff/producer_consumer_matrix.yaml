@@ -1,0 +1,384 @@
+producer_consumer_matrix:
+- artifact_id: P02-PREDICTION-SUBSTRATE
+  producer_phase: P02
+  producer_layer: L2
+  artifact_type: PredictionRecord partitions
+  canonical_location: execution/runtime/manifests/record_partitions/PredictionRecord
+  schema: iharq://schemas/p02/predictionrecord/v1
+  status: CURRENT_CANONICAL
+  immediate_consumer: P03/L3
+  later_consumers: L4-L10; reproduction
+  required_or_optional: REQUIRED
+  availability: POINTER_BACKED; 1,014 partition manifests local; heavy rows recoverable
+    from preferred workspace
+  integrity: Stage20 required prediction/support fields PASS
+  limitations: conditional score semantics; preserve class order and lineage
+  ready: 'YES'
+- artifact_id: P02-MODEL-REGISTRY
+  producer_phase: P02
+  producer_layer: L2
+  artifact_type: ModelRegistryRecord + checkpoint lineage
+  canonical_location: execution/runtime/records/ModelRegistryRecord
+  schema: iharq://schemas/p02/modelregistryrecord/v1
+  status: CURRENT_CANONICAL
+  immediate_consumer: P03/L3
+  later_consumers: later decoder consumers; reproduction
+  required_or_optional: REQUIRED
+  availability: 672 light ModelRegistryRecord rows local; heavy checkpoints external
+    where applicable
+  integrity: 672 rows/partition manifests; checkpoint SHA fields governed
+  limitations: conditional branch failures/skips remain visible
+  ready: 'YES'
+- artifact_id: P02-BASELINE-METRICS
+  producer_phase: P02
+  producer_layer: L2
+  artifact_type: BaselineMetricRecord
+  canonical_location: execution/runtime/records/BaselineMetricRecord
+  schema: iharq://schemas/p02/baselinemetricrecord/v1
+  status: CURRENT_CANONICAL
+  immediate_consumer: P03 context
+  later_consumers: Analysis/Layer0/EvidenceMap/Layer10
+  required_or_optional: REQUIRED_CONTEXT
+  availability: LOCAL
+  integrity: 2,625 rows; schema frozen
+  limitations: A0 raw accept-all semantics; use governed aggregation
+  ready: 'YES'
+- artifact_id: P02-LOW-LABEL-CURVES
+  producer_phase: P02
+  producer_layer: L2
+  artifact_type: LowCalibrationCurveRecord
+  canonical_location: execution/runtime/records/LowCalibrationCurveRecord
+  schema: iharq://schemas/p02/lowcalibrationcurverecord/v1
+  status: CURRENT_CANONICAL
+  immediate_consumer: P03 context
+  later_consumers: later low-label analyses/Layer10
+  required_or_optional: REQUIRED_CONTEXT
+  availability: LOCAL
+  integrity: 36 rows; schema frozen
+  limitations: one frozen subset per budget; not repeated-subset stability evidence
+  ready: 'YES'
+- artifact_id: P02-SUBJECT-PROFILES
+  producer_phase: P02
+  producer_layer: L2
+  artifact_type: SubjectProfileRecord
+  canonical_location: execution/runtime/records/SubjectProfileRecord
+  schema: iharq://schemas/p02/subjectprofilerecord/v1
+  status: CURRENT_CANONICAL
+  immediate_consumer: P03 context
+  later_consumers: L5/L6/L8/L10
+  required_or_optional: OPTIONAL_BUT_GOVERNED
+  availability: LOCAL
+  integrity: 18 rows; schema frozen
+  limitations: participant scope follows frozen test population
+  ready: 'YES'
+- artifact_id: P02-A4-CONTROLS
+  producer_phase: P02
+  producer_layer: L2
+  artifact_type: EnsembleControlRecord + A4 analysis inputs
+  canonical_location: execution/runtime/records/EnsembleControlRecord
+  schema: iharq://schemas/p02/ensemblecontrolrecord/v1
+  status: CURRENT_CANONICAL
+  immediate_consumer: P03 context
+  later_consumers: L4/L10/reproduction
+  required_or_optional: OPTIONAL_CONTEXT
+  availability: LOCAL
+  integrity: 342 records + governed A4 analysis inputs
+  limitations: single canonical refit repeat/deep anchor budgets; Stage18S separate
+    post-hoc
+  ready: 'YES'
+- artifact_id: P02-FAILURE-INDEX
+  producer_phase: P02
+  producer_layer: L2
+  artifact_type: FailureCaseIndex
+  canonical_location: execution/runtime/records/FailureCaseIndex
+  schema: iharq://schemas/p02/failurecaseindex/v1
+  status: CURRENT_CANONICAL
+  immediate_consumer: P03/L3
+  later_consumers: all affected consumers
+  required_or_optional: REQUIRED_SUPPORT
+  availability: LOCAL
+  integrity: 648 records; schema frozen
+  limitations: do not conflate failure/skip/incompatibility classes
+  ready: 'YES'
+- artifact_id: P02-NEGATIVE-NOTES
+  producer_phase: P02
+  producer_layer: L2
+  artifact_type: NegativeResultNote
+  canonical_location: execution/runtime/records/NegativeResultNote
+  schema: iharq://schemas/p02/negativeresultnote/v1
+  status: CURRENT_CANONICAL
+  immediate_consumer: P03/L3
+  later_consumers: Layer0/EvidenceMap/Layer10/Paper
+  required_or_optional: REQUIRED_SUPPORT
+  availability: LOCAL
+  integrity: 340 records; schema frozen
+  limitations: negative result does not imply universal ineffectiveness
+  ready: 'YES'
+- artifact_id: P02-DIAGNOSTIC-FLAGS
+  producer_phase: P02
+  producer_layer: L2
+  artifact_type: DiagnosticOnlyFlag
+  canonical_location: execution/runtime/records/DiagnosticOnlyFlag
+  schema: iharq://schemas/p02/diagnosticonlyflag/v1
+  status: CURRENT_CANONICAL
+  immediate_consumer: P03/L3
+  later_consumers: all affected consumers
+  required_or_optional: REQUIRED_SUPPORT
+  availability: LOCAL
+  integrity: 309 records; schema frozen
+  limitations: diagnostic artifacts are non-claim-bearing unless separately governed
+  ready: 'YES'
+- artifact_id: P02-L2-READINESS-P03
+  producer_phase: P02
+  producer_layer: L2
+  artifact_type: Layer2ReadinessReport
+  canonical_location: execution/runtime/records/Layer2ReadinessReport/dataset=ALL/branch=READINESS/budget=ALL/P02-L2-READINESS-P03.jsonl
+  schema: iharq://schemas/p02/layer2readinessreport/v1
+  status: CURRENT_CANONICAL
+  immediate_consumer: P03
+  later_consumers: release/reproduction
+  required_or_optional: REQUIRED
+  availability: LOCAL
+  integrity: compatibility_status=PASS; missing_fields=[]; blocking_reasons=[]
+  limitations: inherits all persistent P02 limitations
+  ready: 'YES'
+- artifact_id: P02-A0-ANALYSIS
+  producer_phase: P02
+  producer_layer: L2
+  artifact_type: A0 metrics/statistics contract
+  canonical_location: execution/runtime/analysis_inputs/a0_completion.json
+  schema: P02 cumulative analysis contract
+  status: CURRENT_CANONICAL
+  immediate_consumer: P03 context
+  later_consumers: Analysis/Layer0/EvidenceMap/Layer10
+  required_or_optional: REQUIRED_CONTEXT
+  availability: LOCAL
+  integrity: 678 terminal cells reconciled
+  limitations: no universal decoder winner claim
+  ready: 'YES'
+- artifact_id: P02-A4-ANALYSIS
+  producer_phase: P02
+  producer_layer: L2
+  artifact_type: A4 comparison/statistics contract
+  canonical_location: execution/runtime/analysis_inputs/a4_completion.json
+  schema: P02 cumulative analysis contract
+  status: CURRENT_CANONICAL
+  immediate_consumer: P03 context
+  later_consumers: Analysis/Layer0/EvidenceMap/Layer10
+  required_or_optional: OPTIONAL_CONTEXT
+  availability: LOCAL
+  integrity: 1,218 terminal cells reconciled
+  limitations: resource-constrained evidence ceiling applies
+  ready: 'YES'
+- artifact_id: P02-STAGE11-12-LINEAGE
+  producer_phase: P02
+  producer_layer: L2
+  artifact_type: Stage11/12 correction/amendment lineage
+  canonical_location: execution/runtime/analysis_inputs/training_policy_challenger_completion.json
+  schema: Protocol amendment/successor records
+  status: CURRENT_CANONICAL
+  immediate_consumer: P03 reproduction context
+  later_consumers: Paper/reproduction
+  required_or_optional: REQUIRED_HISTORY
+  availability: LOCAL
+  integrity: accepted vs diagnostic lineage preserved
+  limitations: post-observation/source-informed amendments; do not retrospectively
+    normalize
+  ready: 'YES'
+- artifact_id: P02-STAGE18S
+  producer_phase: P02
+  producer_layer: L2
+  artifact_type: Stage18S sensitivity supplement
+  canonical_location: execution/runtime/analysis_inputs/stage18S_R1_decision_support_summary.json
+  schema: P02 Stage18S handoff
+  status: CURRENT_CANONICAL
+  immediate_consumer: P03 context
+  later_consumers: future A4 design/Layer10
+  required_or_optional: OPTIONAL_CONTEXT
+  availability: LOCAL
+  integrity: supplement PASS; canonical Stage18 unchanged
+  limitations: POST_HOC/DESCRIPTIVE/SENSITIVITY only
+  ready: 'YES'
+- artifact_id: P02-RECORD-SCHEMA-FREEZE
+  producer_phase: P02
+  producer_layer: L2
+  artifact_type: Frozen P02 record schemas
+  canonical_location: execution/implementation/contracts/record_schema_freeze.yaml
+  schema: P02-RECORD-SCHEMA-FREEZE-R2
+  status: CURRENT_CANONICAL
+  immediate_consumer: P03/L3
+  later_consumers: P04+ loaders/reproduction
+  required_or_optional: REQUIRED
+  availability: LOCAL
+  integrity: 10 governed record schemas; predecessor mutation prohibited
+  limitations: owner-routed warnings/comparison reports remain separate
+  ready: 'YES'
+- artifact_id: P02-TO-P03-CONTRACT
+  producer_phase: P02
+  producer_layer: L2
+  artifact_type: P03 input contract
+  canonical_location: execution/implementation/contracts/p03_handoff_contract.yaml
+  schema: P02-TO-P03-INPUT-CONTRACT-R1
+  status: CURRENT_CANONICAL
+  immediate_consumer: P03
+  later_consumers: later phase intake templates
+  required_or_optional: REQUIRED
+  availability: LOCAL
+  integrity: contract parsed and reconciled with Stage20 readiness
+  limitations: P03 may calibrate/threshold; P02 may not
+  ready: 'YES'
+- artifact_id: P02-RUN-FREEZE-CONFIG
+  producer_phase: P02
+  producer_layer: L2
+  artifact_type: Run/config/freeze identity
+  canonical_location: authorities/protocol_v1/IHARQ_Protocol_v1_0_Final_Through_Phase_02_R1.md
+  schema: Protocol v1 cumulative
+  status: CURRENT_CANONICAL
+  immediate_consumer: P03 intake
+  later_consumers: reproduction/audit
+  required_or_optional: REQUIRED
+  availability: LOCAL
+  integrity: run/config/freeze identities parity checked
+  limitations: recorded environment/config scope
+  ready: 'YES'
+- artifact_id: P02-ANALYSIS-CONTRACT
+  producer_phase: P02
+  producer_layer: L2
+  artifact_type: Frozen 38-input Phase Analysis contract
+  canonical_location: authorities/protocol_v1/protocol_v1_0/machine_readable/analysis_contract.yaml
+  schema: Cumulative Protocol analysis contract
+  status: CURRENT_CANONICAL
+  immediate_consumer: reproduction
+  later_consumers: Paper/EvidenceMap
+  required_or_optional: REQUIRED
+  availability: LOCAL
+  integrity: 38 canonical P02 analysis inputs verified in prior finalization
+  limitations: analysis-only; no new confirmatory tests
+  ready: 'YES'
+- artifact_id: P02-PREFERRED-WORKSPACE
+  producer_phase: P02
+  producer_layer: L2
+  artifact_type: Preferred full P02 workspace snapshot
+  canonical_location: handoff/external_artifact_retrieval.yaml
+  schema: HF immutable dataset revision
+  status: CURRENT_CANONICAL
+  immediate_consumer: P03
+  later_consumers: P04-P15/reproduction
+  required_or_optional: REQUIRED_FOR_HEAVY_BYTES
+  availability: PRIVATE_EXTERNAL
+  integrity: manifest + per-object index + 17,089 runtime entries reconciled; 0 unmatched
+  limitations: requires symbolic IHARQ_HF_TOKEN_P02; live remote not claimed
+  ready: 'YES'
+- artifact_id: P02-ARCHIVAL-RELEASE
+  producer_phase: P02
+  producer_layer: L2
+  artifact_type: Archival/chunked P02 release
+  canonical_location: handoff/external_artifact_retrieval.yaml
+  schema: HF immutable archival revision
+  status: CURRENT_CANONICAL
+  immediate_consumer: reproduction/archive
+  later_consumers: P03-P15 fallback
+  required_or_optional: FALLBACK
+  availability: PRIVATE_EXTERNAL
+  integrity: 10 uploaded object paths/sizes/SHA recorded
+  limitations: fallback; preferred workspace remains direct continuation source
+  ready: 'YES'
+- artifact_id: P01-UPSTREAM-DATA
+  producer_phase: P01
+  producer_layer: L1
+  artifact_type: Inherited P01 dataset/split/preprocessing/window identities
+  canonical_location: authorities/protocol_v1/protocol_v1_0/machine_readable/external_artifact_access_contract.yaml
+  schema: P01 frozen identities
+  status: CURRENT_CANONICAL
+  immediate_consumer: P03 via P02 lineage
+  later_consumers: P04-P15
+  required_or_optional: REQUIRED_UPSTREAM
+  availability: PRIVATE_EXTERNAL_POINTERS
+  integrity: immutable P01 pointers/manifests preserved
+  limitations: requires predecessor access route; no silent relabel/split/window mutation
+  ready: 'YES'
+- artifact_id: P00-P02-PROTOCOL
+  producer_phase: P00-P02
+  producer_layer: project
+  artifact_type: Cumulative Protocol v1.0
+  canonical_location: authorities/protocol_v1/IHARQ_Protocol_v1_0_Final_Through_Phase_02_R1.md
+  schema: IHARQ-PROTOCOL-V1-CUMULATIVE-THROUGH-P02-R1
+  status: CURRENT_CANONICAL
+  immediate_consumer: P03 intake
+  later_consumers: all downstream governance/reproduction
+  required_or_optional: REQUIRED
+  availability: LOCAL
+  integrity: source finalization validation preserved
+  limitations: phase-specific historical rules remain scoped
+  ready: 'YES'
+- artifact_id: P00-P02-ANALYSIS
+  producer_phase: P00-P02
+  producer_layer: project
+  artifact_type: Cumulative Phase Analysis
+  canonical_location: analysis/IHARQ_Cumulative_Phase_Evidence_Results_and_Interpretation_Through_P02_Final_R1.md
+  schema: IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  status: CURRENT_CANONICAL
+  immediate_consumer: P03 context
+  later_consumers: Layer0/EvidenceMap/Paper
+  required_or_optional: REQUIRED_CONTEXT
+  availability: LOCAL
+  integrity: 235/235 cumulative pre-PDF checks + P02 431/431 source semantic checks
+  limitations: scientific limitations carried
+  ready: 'YES'
+- artifact_id: P00-P02-LAYER0
+  producer_phase: P00-P02
+  producer_layer: L0
+  artifact_type: Cumulative Layer0 governance
+  canonical_location: layer0/Layer_0_Claim_Governance_Through_P02.md
+  schema: IHARQ-CUMULATIVE-LAYER0-THROUGH-P02-R1
+  status: CURRENT_CANONICAL
+  immediate_consumer: EvidenceMap/Layer10
+  later_consumers: Paper/P03 context
+  required_or_optional: REQUIRED_GOVERNANCE
+  availability: LOCAL
+  integrity: 37 governed claims; historical decisions preserved
+  limitations: claims remain bounded by Layer0
+  ready: 'YES'
+- artifact_id: P00-P02-EVIDMAP
+  producer_phase: P00-P02
+  producer_layer: EvidenceMap
+  artifact_type: Cumulative Evidence Map
+  canonical_location: evidence_map/evidence_map.yaml
+  schema: IHARQ-CUMULATIVE-EVIDENCE-MAP-THROUGH-P02-R1
+  status: CURRENT_CANONICAL
+  immediate_consumer: Layer10/P03 provenance
+  later_consumers: Paper/reproduction
+  required_or_optional: REQUIRED_PROVENANCE
+  availability: LOCAL
+  integrity: 37 claims / 49 findings / 69 evidence nodes / 47 artifacts / 146 relationships
+  limitations: external literature separated from project evidence
+  ready: 'YES'
+- artifact_id: P00-P02-LAYER10
+  producer_phase: P00-P02
+  producer_layer: L10
+  artifact_type: Cumulative Layer10 package
+  canonical_location: layer10/Layer_10_Artifact_Package_Through_P02.md
+  schema: Layer10 cumulative R1
+  status: CURRENT_CANONICAL
+  immediate_consumer: Paper/Thesis
+  later_consumers: later communication
+  required_or_optional: REQUIRED_PRESENTATION
+  availability: LOCAL
+  integrity: 14 figures + 13 supporting tables with source provenance
+  limitations: read-only science; claim-safe captions
+  ready: 'YES'
+- artifact_id: P02-STAGE20-24
+  producer_phase: P02
+  producer_layer: L2
+  artifact_type: Readiness/handoff/evidence/export gates and underlying artifacts
+  canonical_location: execution/runtime/manifests/stage_artifacts
+  schema: runtime stage artifacts
+  status: CURRENT_CANONICAL
+  immediate_consumer: P03/reproduction
+  later_consumers: all downstream consumers
+  required_or_optional: REQUIRED_CLOSURE_SUPPORT
+  availability: LOCAL
+  integrity: Stage20/22/23/24 PASS; underlying readiness/contract/manifest artifacts
+    included
+  limitations: gate PASS is supporting evidence, not sole basis
+  ready: 'YES'

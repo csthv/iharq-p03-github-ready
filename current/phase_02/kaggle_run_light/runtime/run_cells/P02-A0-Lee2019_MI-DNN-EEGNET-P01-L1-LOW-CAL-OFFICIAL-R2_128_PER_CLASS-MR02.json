@@ -1,0 +1,36 @@
+{
+  "run_cell_id": "P02-A0-Lee2019_MI-DNN-EEGNET-P01-L1-LOW-CAL-OFFICIAL-R2:128_PER_CLASS-MR02",
+  "ablation_id": "A0",
+  "terminal_status": "SUCCESS",
+  "checkpoint_sha256": "ac687e04360d8c80e1c5f4f8aa7ba13b0df44bfca864ea7e52a68e43b05514c8",
+  "observed_denominator": 600,
+  "expected_denominator": 600,
+  "selected_params": {
+    "source_centered_recipe_sha256": "abf4809de67deae59373a7f4a57acf35201ffc2d7a77a7d5cfc89c9e7583b4ff",
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "dropout": 0.5
+  },
+  "resolved_variant": "EEGNet-R7-LAWHERN-SMR-P01-160HZ",
+  "score_type": "SOFTMAX_PROBABILITY",
+  "validation_burden_seconds": 72.63864471099987,
+  "model_storage_bytes": 9032,
+  "selected_candidate_id": "CAND-00",
+  "checkpoint_format": "PYTORCH_STATE_DICT_WEIGHTS_ONLY",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.001997073000893579,
+    "batch1_latency_p95_s": 0.0021820112011482705,
+    "repeats": 5
+  },
+  "budget_repeat_id": "P01_FROZEN_SINGLE_SUBSET",
+  "evidence_class": "P02_POST_HOC_LOW_LABEL_EXTENSION_R1",
+  "test_loaded_after_group_selection_sealed": true,
+  "prediction_partition": "records/PredictionRecord/dataset=Lee2019_MI/branch=DNN-EEGNET/budget=P01-L1-LOW-CAL-OFFICIAL-R2:128_PER_CLASS/P02-A0-Lee2019_MI-DNN-EEGNET-P01-L1-LOW-CAL-OFFICIAL-R2:128_PER_CLASS-MR02.jsonl",
+  "metric_source": "metrics/P02-A0-Lee2019_MI-DNN-EEGNET-P01-L1-LOW-CAL-OFFICIAL-R2:128_PER_CLASS-MR02.json",
+  "checkpoint_path": "checkpoints/integrated_64_128_256/P02-A0-Lee2019_MI-DNN-EEGNET-P01-L1-LOW-CAL-OFFICIAL-R2:128_PER_CLASS-MR02.state_dict.pt",
+  "integration_source_run_cell_id": "P02S-LLX-R1-A0-Lee2019_MI-DNN-EEGNET-128PC-MR02",
+  "integration_source_config_sha256": "67807d9959d98c6a138288dc2c3f12377e0acb8bfce9d76f333485a0cb0a760e",
+  "integration_revision": "P02-INTEGRATED-LOW-LABEL-1-TO-256-R1",
+  "scientific_numeric_result_reused_without_recomputation": true,
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

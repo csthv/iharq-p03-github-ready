@@ -1,0 +1,66 @@
+{
+  "runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R3-BRAINCDECODE-EEGNET-API-COMPATIBILITY-LIVE-CONTINUATION",
+  "parent_runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R2-CANONICAL-LOW-CAL-BUDGET-ID-PARSER-LIVE-CONTINUATION",
+  "created_utc": "2026-08-09T19:13:34.327563+00:00",
+  "scope": "STAGE11_DNN_EEGNET_ONLY",
+  "superseded_stage11_attempt": "70f71eb15752",
+  "original_primary_terminal_counts": {
+    "DEPENDENCY_BLOCKED": 105
+  },
+  "original_challenger_terminal_counts": {
+    "CONDITIONAL_SKIP": 15
+  },
+  "root_causes": [
+    {
+      "type": "BRAINCDECODE_MODEL_SYMBOL_COMPATIBILITY",
+      "before": "EEGNet -> EEGNetv4",
+      "after": "EEGNet -> EEGNet"
+    },
+    {
+      "type": "BRAINCDECODE_CONSTRUCTOR_ARGUMENT_COMPATIBILITY",
+      "before": "drop_prob + dropout",
+      "after": "drop_prob only for EEGNet"
+    }
+  ],
+  "live_environment": {
+    "torch": "2.13.0+cu130",
+    "braindecode": "1.6.1",
+    "cuda_available": true
+  },
+  "compatibility_evidence": {
+    "admission": "PASS",
+    "construction": "PASS",
+    "forward": "PASS",
+    "one_epoch_training": "PASS",
+    "prediction": "PASS",
+    "probability_scores": "PASS",
+    "frozen_batch_ladder": [
+      64,
+      32,
+      16
+    ],
+    "effective_batch_target": 64
+  },
+  "repaired_models_py_sha256": "0f52ec338a9a728b36bfaaf9a077e96fa4024951ed17d07716cf8ba7057020cc",
+  "archive_root": "diagnostics/runtime_successor/stage11_superseded_attempts/70f71eb15752_20260809T191333Z",
+  "archived_per_cell_files": 225,
+  "archived_stage_level_files": 6,
+  "stage10_hf_boundary": {
+    "repo_id": "csthv999z/iharq-p02-through-s10-8e4ca693-11a9df6c",
+    "commit_oid": "d283e2499894620580f70af16b78548e745dffea",
+    "verified": true
+  },
+  "P00_mutated": false,
+  "P01_mutated": false,
+  "signals_changed": false,
+  "labels_changed": false,
+  "splits_changed": false,
+  "budget_memberships_changed": false,
+  "seeds_changed": false,
+  "model_repeat_counts_changed": false,
+  "hyperparameter_grid_changed": false,
+  "training_policy_changed": false,
+  "metrics_changed": false,
+  "test_selection_policy_changed": false,
+  "scientific_configuration_changed": false
+}

@@ -1,0 +1,17 @@
+artifact_id: L10-CUM-FIG-001
+source_data: figure_source_data/CUM_FIG_01_Phase_Dependency_source.csv
+render_script: scripts/render_layer10.py
+claim_ids:
+- CUM-CLM-001/v1
+- CUM-CLM-002/v1
+- CUM-CLM-008/v1
+finding_ids:
+- CF-01
+- CF-02
+- CF-12
+limitations:
+- TECHNICAL_TRACEABILITY_NOT_EFFECTIVENESS
+output: figures/L10-CUM-FIG-001.png
+scientific_transform: DISPLAY_ONLY
+source_data_sha256: 174f521d0952e9858e21213bd21113a4169ab7acdbc38d675364d60eeb13a0b6
+output_sha256: 04f9c990d27addba6e894720d74869500facfc1aab1769b151bbf5df317f892e

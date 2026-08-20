@@ -1,0 +1,137 @@
+{
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "run_cell_id": "P02-A0-BNCI2014_001-SAN-PERM-FULL_TRAIN-MR00-PR033",
+  "dataset_id": "BNCI2014_001",
+  "branch_id": "SAN-PERM",
+  "resolved_variant": "SAN-PERM",
+  "budget_id": "FULL_TRAIN",
+  "metrics": {
+    "BACC": 0.5173611111111112,
+    "F1_MACRO": 0.5136967164324153,
+    "ACC": 0.5173611111111112,
+    "CONFUSION": [
+      [
+        87,
+        57
+      ],
+      [
+        82,
+        62
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      144,
+      144
+    ],
+    "PRED_COMPLETE": 288,
+    "ROC_AUC": 0.5042920524691358,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "NATIVE_PROBABILITY"
+  },
+  "validation_selection": {
+    "BACC": 0.36458333333333337,
+    "F1_MACRO": 0.2794389073458841,
+    "ACC": 0.3645833333333333,
+    "CONFUSION": [
+      [
+        102,
+        42
+      ],
+      [
+        141,
+        3
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      144,
+      144
+    ],
+    "PRED_COMPLETE": 288,
+    "ROC_AUC": 0.2906539351851852,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "NATIVE_PROBABILITY"
+  },
+  "validation_burden_seconds": 1.8644938480001656,
+  "model_storage_bytes": 10239,
+  "selected_candidate_id": "CAND-02",
+  "selected_params": {
+    "n_components": 8,
+    "base_branch_id": "CLS-CSP-LDA",
+    "csp_reg": "oas",
+    "lda_solver": "lsqr",
+    "lda_shrinkage": "auto"
+  },
+  "candidate_failures": [],
+  "observed_denominator": 288,
+  "expected_denominator": 288,
+  "score_type": "NATIVE_PROBABILITY",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.0006793200000174693,
+    "batch1_latency_p95_s": 0.0007600648001243826,
+    "repeats": 5
+  },
+  "permutation_provenance": {
+    "performed": true,
+    "scope": "LEGAL_FIT_ROLE_SOURCE_EVENTS_ONLY",
+    "permutation_seed": 1183490333,
+    "aux_repeat_index": 33,
+    "label_count": 1440,
+    "class_support_before": [
+      720,
+      720
+    ],
+    "class_support_after": [
+      720,
+      720
+    ],
+    "validation_labels_permuted": false,
+    "test_labels_permuted": false
+  },
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "class_weights": null,
+  "class_weight_calibration": {
+    "selected_policy": "UNIFORM_NO_WEIGHT",
+    "selected_weights": null,
+    "candidate_results": [
+      {
+        "status": "SUCCESS",
+        "policy": "UNIFORM_NO_WEIGHT",
+        "weights": null,
+        "validation_metrics": {
+          "BACC": 0.36458333333333337,
+          "F1_MACRO": 0.2794389073458841,
+          "ACC": 0.3645833333333333,
+          "CONFUSION": [
+            [
+              102,
+              42
+            ],
+            [
+              141,
+              3
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            144,
+            144
+          ],
+          "PRED_COMPLETE": 288,
+          "ROC_AUC": 0.2906539351851852,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "NATIVE_PROBABILITY"
+        },
+        "validation_burden_seconds": 1.8644938480001656,
+        "model_storage_bytes": 10239
+      }
+    ],
+    "training_count_evidence": {
+      "counts": [
+        720,
+        720
+      ],
+      "exactly_equal": true,
+      "selection_required": false
+    },
+    "test_set_used": false
+  }
+}

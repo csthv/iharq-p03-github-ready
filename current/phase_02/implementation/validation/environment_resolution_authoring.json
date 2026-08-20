@@ -1,0 +1,10 @@
+{
+  "validation_id": "P02-ENVIRONMENT-AUTHORING-RESOLUTION-R1",
+  "status": "RUNTIME_GATE_REQUIRED",
+  "authoring_resolution": "NOT_TESTABLE_ON_AUTHORING_INDEX",
+  "reason": "Local authoring package index exposes no MOABB 1.5.0 distribution; this does not establish Kaggle incompatibility. The authored notebook and Stage 01 enforce the exact frozen pins on Kaggle and fail closed if exact environment materialization/verification fails.",
+  "scientific_design_change": false,
+  "kaggle_runtime_gate": "G01",
+  "required_python": "3.12.x",
+  "requirements_file": "requirements-kaggle.txt"
+}

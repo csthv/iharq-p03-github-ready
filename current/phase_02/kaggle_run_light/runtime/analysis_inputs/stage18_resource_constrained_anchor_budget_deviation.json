@@ -1,0 +1,102 @@
+{
+  "artifact_id": "P02-STAGE18-R10-ANCHOR-BUDGET-SINGLE-REPEAT-DEVIATION-R1",
+  "status": "PASS",
+  "protocol_deviation_from_buildbook": true,
+  "protocol_deviation_id": "P02-STAGE18-RESOURCE-CONSTRAINED-ANCHOR-BUDGET-SINGLE-REPEAT-R1",
+  "reason": "KAGGLE_WALL_CLOCK_CONSTRAINT_OWNER_DECISION",
+  "claim_scope": "RESOURCE_CONSTRAINED_ANCHOR_BUDGET_SINGLE_REPEAT_A4_ABLATION",
+  "full_buildbook_replication_equivalence": false,
+  "ablation_conditions_removed": false,
+  "model_family_removed": false,
+  "dataset_removed": false,
+  "representation_removed": false,
+  "datasets_preserved": [
+    "BNCI2014_001",
+    "Lee2019_MI",
+    "PhysioNetMI"
+  ],
+  "budgets_in_frozen_plan": [
+    "FULL_TRAIN",
+    "P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS",
+    "P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS",
+    "P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS",
+    "P01-L1-LOW-CAL-OFFICIAL-R2:32_PER_CLASS",
+    "P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS",
+    "P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS"
+  ],
+  "conditions_preserved": [
+    "A4-C0-CORE",
+    "A4-C1-LONG-3P5S",
+    "A4-C2-MULTI-HARD-VOTE",
+    "A4-C3-MULTI-PROB-AVG",
+    "A4-C4-MODEL-HARD-VOTE",
+    "A4-C5-MODEL-PROB-AVG"
+  ],
+  "refit_roles_present": [
+    "CLASSICAL",
+    "NEURAL",
+    "RIEMANNIAN",
+    "SSL"
+  ],
+  "deep_roles": [
+    "NEURAL",
+    "SSL"
+  ],
+  "original_repeat_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "executed_repeat_indices": [
+    0
+  ],
+  "declared_skipped_repeat_indices": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "deep_anchor_budget_ids": [
+    "P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS",
+    "P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS",
+    "FULL_TRAIN"
+  ],
+  "deep_anchor_semantics": {
+    "P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS": "LOW_RESOURCE_EXTREME",
+    "P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS": "INTERMEDIATE_RESOURCE_ANCHOR",
+    "FULL_TRAIN": "FULL_DATA_UPPER_BOUND"
+  },
+  "deep_budget_grid_reduced": true,
+  "planned_a4_cells": 1218,
+  "refit_cells_in_frozen_plan": 756,
+  "declared_reduced_run_cells": 576,
+  "repeat_reduced_run_cells": 504,
+  "deep_budget_reduced_run_cells": 72,
+  "reduction_reason_counts": {
+    "STAGE18_RESOURCE_CONSTRAINED_DEEP_ANCHOR_BUDGET_ONLY": 72,
+    "STAGE18_RESOURCE_CONSTRAINED_SINGLE_REPEAT_ALL_REFIT_ROLES": 504
+  },
+  "executable_refit_run_cells": 180,
+  "executable_deep_refit_run_cells": 54,
+  "original_unique_deep_member_fits_estimate": 840,
+  "reduced_unique_deep_member_fits_estimate": 72,
+  "deep_member_fit_reduction_fraction": 0.9142857142857143,
+  "latency_measurement_repeats": 1,
+  "per_fit_training_recipe_changed": false,
+  "representative_selection_changed": false,
+  "test_isolation_changed": false,
+  "checkpoint_roundtrip_changed": false,
+  "statistical_comparison_definition_changed": false,
+  "multi_seed_stability_claim_authorized": false,
+  "dense_deep_budget_curve_claim_authorized": false,
+  "anchor_budget_deep_claim_authorized": true,
+  "terminal_counts": {
+    "CONDITIONAL_SKIP": 576,
+    "INPUT_INCOMPATIBLE": 9,
+    "NOT_APPLICABLE_REPEAT_SLOT": 42,
+    "SUCCESS": 591
+  },
+  "issues": []
+}

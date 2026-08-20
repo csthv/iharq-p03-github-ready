@@ -1,0 +1,361 @@
+expected_products:
+- product_id: EP01
+  expected_P02_artifact_or_product: Accepted P02 run + scientific freeze
+  authority: Protocol/Build Book
+  produced: 'YES'
+  canonical: 'YES'
+  analyzed: YES_OR_SUPPORT
+  layer0_governed: N/A_OR_INDIRECT
+  evidence_mapped: 'YES'
+  layer10_role: NO_PUBLIC_FIGURE_REQUIRED
+  downstream_consumer: P03+
+  ready: 'YES'
+  notes: ''
+- product_id: EP02
+  expected_P02_artifact_or_product: PredictionRecord partitions
+  authority: Registry/Build Book
+  produced: 'YES'
+  canonical: 'YES'
+  analyzed: YES_OR_SUPPORT
+  layer0_governed: N/A_OR_INDIRECT
+  evidence_mapped: 'YES'
+  layer10_role: NO_PUBLIC_FIGURE_REQUIRED
+  downstream_consumer: P03 L3
+  ready: 'YES'
+  notes: ''
+- product_id: EP03
+  expected_P02_artifact_or_product: ModelRegistryRecord/checkpoint lineage
+  authority: Registry/Build Book
+  produced: 'YES'
+  canonical: 'YES'
+  analyzed: YES_OR_SUPPORT
+  layer0_governed: N/A_OR_INDIRECT
+  evidence_mapped: 'YES'
+  layer10_role: NO_PUBLIC_FIGURE_REQUIRED
+  downstream_consumer: P03/reproduction
+  ready: 'YES'
+  notes: ''
+- product_id: EP04
+  expected_P02_artifact_or_product: BaselineMetricRecord / A0
+  authority: Protocol
+  produced: 'YES'
+  canonical: 'YES'
+  analyzed: YES_OR_SUPPORT
+  layer0_governed: 'YES'
+  evidence_mapped: 'YES'
+  layer10_role: 'YES'
+  downstream_consumer: P03/Analysis
+  ready: 'YES'
+  notes: ''
+- product_id: EP05
+  expected_P02_artifact_or_product: LowCalibrationCurveRecord
+  authority: Registry/Protocol
+  produced: 'YES'
+  canonical: 'YES'
+  analyzed: YES_OR_SUPPORT
+  layer0_governed: N/A_OR_INDIRECT
+  evidence_mapped: 'YES'
+  layer10_role: 'YES'
+  downstream_consumer: Analysis/L10
+  ready: 'YES'
+  notes: ''
+- product_id: EP06
+  expected_P02_artifact_or_product: SubjectProfileRecord
+  authority: Registry
+  produced: 'YES'
+  canonical: 'YES'
+  analyzed: YES_OR_SUPPORT
+  layer0_governed: N/A_OR_INDIRECT
+  evidence_mapped: 'YES'
+  layer10_role: 'YES'
+  downstream_consumer: L5/L6/L8/L10
+  ready: 'YES'
+  notes: ''
+- product_id: EP07
+  expected_P02_artifact_or_product: A4 controls / EnsembleControlRecord
+  authority: Protocol
+  produced: 'YES'
+  canonical: 'YES'
+  analyzed: YES_OR_SUPPORT
+  layer0_governed: 'YES'
+  evidence_mapped: 'YES'
+  layer10_role: 'YES'
+  downstream_consumer: L3/L4/L10
+  ready: 'YES'
+  notes: ''
+- product_id: EP08
+  expected_P02_artifact_or_product: FailureCaseIndex
+  authority: Registry/Protocol
+  produced: 'YES'
+  canonical: 'YES'
+  analyzed: YES_OR_SUPPORT
+  layer0_governed: N/A_OR_INDIRECT
+  evidence_mapped: 'YES'
+  layer10_role: 'YES'
+  downstream_consumer: Analysis/L0/P03
+  ready: 'YES'
+  notes: ''
+- product_id: EP09
+  expected_P02_artifact_or_product: NegativeResultNote
+  authority: Registry
+  produced: 'YES'
+  canonical: 'YES'
+  analyzed: YES_OR_SUPPORT
+  layer0_governed: N/A_OR_INDIRECT
+  evidence_mapped: 'YES'
+  layer10_role: 'YES'
+  downstream_consumer: Analysis/L0/L10
+  ready: 'YES'
+  notes: ''
+- product_id: EP10
+  expected_P02_artifact_or_product: DiagnosticOnlyFlag
+  authority: Registry
+  produced: 'YES'
+  canonical: 'YES'
+  analyzed: YES_OR_SUPPORT
+  layer0_governed: N/A_OR_INDIRECT
+  evidence_mapped: 'YES'
+  layer10_role: NO_PUBLIC_FIGURE_REQUIRED
+  downstream_consumer: all affected consumers
+  ready: 'YES'
+  notes: ''
+- product_id: EP11
+  expected_P02_artifact_or_product: Layer2ReadinessReport
+  authority: Build Book
+  produced: 'YES'
+  canonical: 'YES'
+  analyzed: YES_OR_SUPPORT
+  layer0_governed: N/A_OR_INDIRECT
+  evidence_mapped: 'YES'
+  layer10_role: NO_PUBLIC_FIGURE_REQUIRED
+  downstream_consumer: P03+
+  ready: 'YES'
+  notes: ''
+- product_id: EP12
+  expected_P02_artifact_or_product: Stage11/12 amendment/rerun history
+  authority: Protocol
+  produced: 'YES'
+  canonical: 'YES'
+  analyzed: YES_OR_SUPPORT
+  layer0_governed: 'YES'
+  evidence_mapped: 'YES'
+  layer10_role: 'YES'
+  downstream_consumer: Reproduction/Paper
+  ready: 'YES'
+  notes: ''
+- product_id: EP13
+  expected_P02_artifact_or_product: Stage18/18S evidence
+  authority: Protocol
+  produced: 'YES'
+  canonical: 'YES'
+  analyzed: YES_OR_SUPPORT
+  layer0_governed: 'YES'
+  evidence_mapped: 'YES'
+  layer10_role: 'YES'
+  downstream_consumer: Analysis/L0/EM/L10
+  ready: 'YES'
+  notes: ''
+- product_id: EP14
+  expected_P02_artifact_or_product: Protocol v1 cumulative
+  authority: Governance
+  produced: 'YES'
+  canonical: 'YES'
+  analyzed: YES_OR_SUPPORT
+  layer0_governed: N/A_OR_INDIRECT
+  evidence_mapped: 'YES'
+  layer10_role: NO_PUBLIC_FIGURE_REQUIRED
+  downstream_consumer: P03+
+  ready: 'YES'
+  notes: ''
+- product_id: EP15
+  expected_P02_artifact_or_product: Cumulative Phase Analysis
+  authority: Governance
+  produced: 'YES'
+  canonical: 'YES'
+  analyzed: YES_OR_SUPPORT
+  layer0_governed: 'YES'
+  evidence_mapped: 'YES'
+  layer10_role: NO_PUBLIC_FIGURE_REQUIRED
+  downstream_consumer: Layer0/Paper/P03
+  ready: 'YES'
+  notes: ''
+- product_id: EP16
+  expected_P02_artifact_or_product: Cumulative Layer0
+  authority: Governance
+  produced: 'YES'
+  canonical: 'YES'
+  analyzed: YES_OR_SUPPORT
+  layer0_governed: 'YES'
+  evidence_mapped: 'YES'
+  layer10_role: NO_PUBLIC_FIGURE_REQUIRED
+  downstream_consumer: EvidenceMap/Layer10
+  ready: 'YES'
+  notes: ''
+- product_id: EP17
+  expected_P02_artifact_or_product: Cumulative Evidence Map
+  authority: Governance
+  produced: 'YES'
+  canonical: 'YES'
+  analyzed: YES_OR_SUPPORT
+  layer0_governed: 'YES'
+  evidence_mapped: 'YES'
+  layer10_role: NO_PUBLIC_FIGURE_REQUIRED
+  downstream_consumer: Layer10/Paper/P03
+  ready: 'YES'
+  notes: ''
+- product_id: EP18
+  expected_P02_artifact_or_product: Cumulative Layer10
+  authority: Governance
+  produced: 'YES'
+  canonical: 'YES'
+  analyzed: YES_OR_SUPPORT
+  layer0_governed: N/A_OR_INDIRECT
+  evidence_mapped: 'YES'
+  layer10_role: 'YES'
+  downstream_consumer: Paper/Thesis
+  ready: 'YES'
+  notes: ''
+- product_id: EP19
+  expected_P02_artifact_or_product: Analysis-input contract (38 inputs)
+  authority: Protocol
+  produced: 'YES'
+  canonical: 'YES'
+  analyzed: YES_OR_SUPPORT
+  layer0_governed: N/A_OR_INDIRECT
+  evidence_mapped: 'YES'
+  layer10_role: NO_PUBLIC_FIGURE_REQUIRED
+  downstream_consumer: Analysis/reproduction
+  ready: 'YES'
+  notes: ''
+- product_id: EP20
+  expected_P02_artifact_or_product: External artifact access contract
+  authority: Protocol
+  produced: 'YES'
+  canonical: 'YES'
+  analyzed: YES_OR_SUPPORT
+  layer0_governed: N/A_OR_INDIRECT
+  evidence_mapped: 'YES'
+  layer10_role: NO_PUBLIC_FIGURE_REQUIRED
+  downstream_consumer: P03-P15
+  ready: 'YES'
+  notes: ''
+- product_id: EP21
+  expected_P02_artifact_or_product: Record schema freeze
+  authority: Build Book/Registry
+  produced: 'YES'
+  canonical: 'YES'
+  analyzed: YES_OR_SUPPORT
+  layer0_governed: N/A_OR_INDIRECT
+  evidence_mapped: 'YES'
+  layer10_role: NO_PUBLIC_FIGURE_REQUIRED
+  downstream_consumer: P03+
+  ready: 'YES'
+  notes: ''
+- product_id: EP22
+  expected_P02_artifact_or_product: Environment/config identity
+  authority: Protocol/Build Book
+  produced: 'YES'
+  canonical: 'YES'
+  analyzed: YES_OR_SUPPORT
+  layer0_governed: N/A_OR_INDIRECT
+  evidence_mapped: 'YES'
+  layer10_role: NO_PUBLIC_FIGURE_REQUIRED
+  downstream_consumer: P03/reproduction
+  ready: 'YES'
+  notes: ''
+- product_id: EP23
+  expected_P02_artifact_or_product: Stage20 readiness
+  authority: Build Book
+  produced: 'YES'
+  canonical: 'YES'
+  analyzed: YES_OR_SUPPORT
+  layer0_governed: N/A_OR_INDIRECT
+  evidence_mapped: PROVENANCE_SUPPORT
+  layer10_role: NO_PUBLIC_FIGURE_REQUIRED
+  downstream_consumer: P03
+  ready: 'YES'
+  notes: ''
+- product_id: EP24
+  expected_P02_artifact_or_product: Stage22 handoffs
+  authority: Build Book
+  produced: 'YES'
+  canonical: 'YES'
+  analyzed: YES_OR_SUPPORT
+  layer0_governed: N/A_OR_INDIRECT
+  evidence_mapped: PROVENANCE_SUPPORT
+  layer10_role: NO_PUBLIC_FIGURE_REQUIRED
+  downstream_consumer: Protocol/Analysis/L0/EM/L10/P03
+  ready: 'YES'
+  notes: ''
+- product_id: EP25
+  expected_P02_artifact_or_product: Stage23 evidence sufficiency
+  authority: Build Book
+  produced: 'YES'
+  canonical: 'YES'
+  analyzed: YES_OR_SUPPORT
+  layer0_governed: N/A_OR_INDIRECT
+  evidence_mapped: PROVENANCE_SUPPORT
+  layer10_role: NO_PUBLIC_FIGURE_REQUIRED
+  downstream_consumer: closure
+  ready: 'YES'
+  notes: ''
+- product_id: EP26
+  expected_P02_artifact_or_product: Stage24 export/provenance
+  authority: Build Book
+  produced: 'YES'
+  canonical: 'YES'
+  analyzed: YES_OR_SUPPORT
+  layer0_governed: N/A_OR_INDIRECT
+  evidence_mapped: PROVENANCE_SUPPORT
+  layer10_role: NO_PUBLIC_FIGURE_REQUIRED
+  downstream_consumer: reproduction
+  ready: 'YES'
+  notes: ''
+- product_id: EP27
+  expected_P02_artifact_or_product: Figures/tables/source data
+  authority: Phase Analysis/L10
+  produced: 'YES'
+  canonical: 'YES'
+  analyzed: YES_OR_SUPPORT
+  layer0_governed: 'YES'
+  evidence_mapped: 'YES'
+  layer10_role: 'YES'
+  downstream_consumer: Paper/Thesis
+  ready: 'YES'
+  notes: ''
+- product_id: EP28
+  expected_P02_artifact_or_product: Cumulative final producer-consumer handoff
+  authority: Current closure
+  produced: 'YES'
+  canonical: 'YES'
+  analyzed: YES_OR_SUPPORT
+  layer0_governed: N/A_OR_INDIRECT
+  evidence_mapped: 'YES'
+  layer10_role: NO_PUBLIC_FIGURE_REQUIRED
+  downstream_consumer: P03+
+  ready: 'YES'
+  notes: ''
+- product_id: EP29
+  expected_P02_artifact_or_product: Persistent limitation handoff
+  authority: Protocol/L0
+  produced: 'YES'
+  canonical: 'YES'
+  analyzed: YES_OR_SUPPORT
+  layer0_governed: 'YES'
+  evidence_mapped: 'YES'
+  layer10_role: NO_PUBLIC_FIGURE_REQUIRED
+  downstream_consumer: P03+
+  ready: 'YES'
+  notes: ''
+- product_id: EP30
+  expected_P02_artifact_or_product: Canonical artifact index + manifests/checksums
+  authority: Governance
+  produced: 'YES'
+  canonical: 'YES'
+  analyzed: YES_OR_SUPPORT
+  layer0_governed: N/A_OR_INDIRECT
+  evidence_mapped: 'YES'
+  layer10_role: NO_PUBLIC_FIGURE_REQUIRED
+  downstream_consumer: P03+/reproduction
+  ready: 'YES'
+  notes: ''

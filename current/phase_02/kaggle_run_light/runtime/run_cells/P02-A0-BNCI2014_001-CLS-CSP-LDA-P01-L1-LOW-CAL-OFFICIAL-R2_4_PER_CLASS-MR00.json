@@ -1,0 +1,77 @@
+{
+  "run_cell_id": "P02-A0-BNCI2014_001-CLS-CSP-LDA-P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS-MR00",
+  "ablation_id": "A0",
+  "terminal_status": "SUCCESS",
+  "prediction_partition": "records/PredictionRecord/dataset=BNCI2014_001/branch=CLS-CSP-LDA/budget=P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS/P02-A0-BNCI2014_001-CLS-CSP-LDA-P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS-MR00.jsonl",
+  "metric_source": "metrics/P02-A0-BNCI2014_001-CLS-CSP-LDA-P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS-MR00.json",
+  "checkpoint_sha256": "2114628ce5a11fd6c94927ae44c7831e67c9185b4c27ae00850774a44581087c",
+  "observed_denominator": 288,
+  "selected_params": {
+    "n_components": 6,
+    "base_branch_id": "CLS-CSP-LDA",
+    "csp_reg": "oas",
+    "lda_solver": "lsqr",
+    "lda_shrinkage": "auto"
+  },
+  "resolved_variant": "CLS-CSP-LDA",
+  "score_type": "NATIVE_PROBABILITY",
+  "validation_burden_seconds": 0.09408424299908802,
+  "model_storage_bytes": 9935,
+  "selected_candidate_id": "CAND-01",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.0008944700020947494,
+    "batch1_latency_p95_s": 0.0009579848010616843,
+    "repeats": 5
+  },
+  "permutation_provenance": null,
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "class_weights": null,
+  "class_weight_calibration": {
+    "selected_policy": "UNIFORM_NO_WEIGHT",
+    "selected_weights": null,
+    "candidate_results": [
+      {
+        "status": "SUCCESS",
+        "policy": "UNIFORM_NO_WEIGHT",
+        "weights": null,
+        "validation_metrics": {
+          "BACC": 0.6076388888888888,
+          "F1_MACRO": 0.6036198433674774,
+          "ACC": 0.6076388888888888,
+          "CONFUSION": [
+            [
+              102,
+              42
+            ],
+            [
+              71,
+              73
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            144,
+            144
+          ],
+          "PRED_COMPLETE": 288,
+          "ROC_AUC": 0.6702835648148148,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "NATIVE_PROBABILITY"
+        },
+        "validation_burden_seconds": 0.09408424299908802,
+        "model_storage_bytes": 9935
+      }
+    ],
+    "training_count_evidence": {
+      "counts": [
+        4,
+        4
+      ],
+      "exactly_equal": true,
+      "selection_required": false
+    },
+    "test_set_used": false
+  },
+  "training_condition_id": "A0-RAW-ACCEPT-ALL",
+  "augmentation_provenance": null,
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

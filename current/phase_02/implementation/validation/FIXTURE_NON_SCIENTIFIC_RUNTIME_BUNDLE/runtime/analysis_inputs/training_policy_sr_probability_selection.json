@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "selection_scope": "VALIDATION_ONLY",
+  "test_set_used": false,
+  "datasets": {
+    "PhysioNetMI": {
+      "status": "PASS",
+      "selected_probability": 0.5,
+      "candidate_summaries": [
+        {
+          "probability": 0.25,
+          "status": "ELIGIBLE",
+          "successful_seeds": 1,
+          "median_validation_BACC": 0.5,
+          "median_validation_F1_MACRO": 0.49650349650349646
+        },
+        {
+          "probability": 0.5,
+          "status": "ELIGIBLE",
+          "successful_seeds": 1,
+          "median_validation_BACC": 0.625,
+          "median_validation_F1_MACRO": 0.6190476190476191
+        },
+        {
+          "probability": 0.75,
+          "status": "ELIGIBLE",
+          "successful_seeds": 1,
+          "median_validation_BACC": 0.5,
+          "median_validation_F1_MACRO": 0.49650349650349646
+        }
+      ],
+      "selection_scope": "VALIDATION_ONLY",
+      "test_set_used": false,
+      "tie_break": [
+        "BACC",
+        "F1_MACRO",
+        "PROXIMITY_TO_0P5",
+        "LOWER_PROBABILITY"
+      ]
+    }
+  },
+  "candidate_grid": [
+    0.25,
+    0.5,
+    0.75
+  ],
+  "segment_count_policy": {
+    "type": "BRAINCDECODE_PUBLIC_API_AUTO_N_SEGMENTS",
+    "requested_n_segments": null,
+    "pinned_package": "braindecode==1.6.1",
+    "resolver": "SegmentationReconstruction(probability=<candidate>, n_segments=None, random_state=<derived>).get_augmentation_params",
+    "fixture_fallback": "DOCUMENTED_DIVISOR_RULE_ONLY_FOR_NON_SCIENTIFIC_FIXTURE",
+    "test_set_access": "NONE"
+  },
+  "official_A0_A4_cell_count_unchanged": 1896
+}

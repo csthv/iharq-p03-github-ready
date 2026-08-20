@@ -1,0 +1,34 @@
+{
+  "merge_id": "IHARQ-P00-P01-P02-GITHUB-READY-FINAL-MERGE-R2",
+  "generated_at": "2026-08-14T22:49:00+03:30",
+  "source_archives": [
+    {
+      "role": "CUMULATIVE_THROUGH_P01_PREDECESSOR",
+      "path": "IHARQ_Cumulative_GitHub_Ready_Through_P01_R1(20260814-191220).zip",
+      "sha256": "dc2708ab70e7746499ae09760456825b54efcf587cae3db3410e6f72b0024542",
+      "entries": 13802
+    },
+    {
+      "role": "CUMULATIVE_THROUGH_P02_STAGE24_REPLAY_BASE",
+      "path": "IHARQ_Cumulative_GitHub_Ready_Through_P02_Stage24Replay_R1(1).zip",
+      "sha256": "4e779859fc5ab2c07cb1cdb079f1e9d08cfe41641142d51e093f6c3936bfec81",
+      "entries": 27080
+    }
+  ],
+  "normalized_overlap": {
+    "p01_files": 13802,
+    "p02_files": 27080,
+    "common": 13802,
+    "identical": 13799,
+    "changed": 3,
+    "missing_from_p02": 0,
+    "added_in_p02": 13278
+  },
+  "merge_decision": "USE_P02_STAGE24_REPLAY_TREE_AS_CONTENT_BASE_BECAUSE_IT_CONTAINS_ALL_P01_FILES; PRESERVE PREDECESSOR ROOT METADATA; PROMOTE ACCEPTED_L2; ADD_FINAL_POST_EXECUTION_STATE",
+  "scientific_mutation": false,
+  "missing_predecessor_files": 0,
+  "notes": [
+    "P02 base already preserved all P00/P01 paths. Root README/ROADMAP/status were documentary-stale and corrected in R2.",
+    "Stage24 replay and nested P02 implementation remain preserved under original paths."
+  ]
+}

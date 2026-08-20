@@ -1,0 +1,30 @@
+# Python/build transients
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+*.log
+.DS_Store
+
+# Secrets/private runtime
+.env
+*.token
+*.secret
+
+# Large/raw scientific data stay external
+*.h5
+*.hdf5
+*.mat
+*.edf
+*.gdf
+*.fif
+data/raw/
+data/derived/
+source_cache/
+streaming_runtime/

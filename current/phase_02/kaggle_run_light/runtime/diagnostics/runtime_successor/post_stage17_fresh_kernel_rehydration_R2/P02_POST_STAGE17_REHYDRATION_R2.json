@@ -1,0 +1,29 @@
+{
+  "a4_planned_cells": 1218,
+  "accepted_stage13_17": {
+    "13": true,
+    "14": true,
+    "15": true,
+    "16": true,
+    "17": true
+  },
+  "accepted_stage18": false,
+  "artifact_id": "P02-POST-STAGE17-FRESH-KERNEL-REHYDRATION-R2",
+  "base_rehydrator_path": "/kaggle/working/_IHARQ_CONTINUATION_META_20260812T005832Z/resume_scripts/IHARQ_P02_R6R3_REHYDRATE_EXACT.py",
+  "base_rehydrator_sha256": "58602da3549728d8a812e83438820c1843fdc28b79b6b63e9339f512a7a4870d",
+  "boundary": "POST_STAGE17_PRE_G18",
+  "boundary_amendment": "ALLOW_EXACT_ACCEPTED_STAGES_13_17_ONLY",
+  "created_at_utc": "2026-08-13T20:56:05.523948+00:00",
+  "existing_stage18_terminals": 30,
+  "iharq_import_path": "/kaggle/working/IHARQ_P02_L2_Kaggle_Notebook_Implementation_Package_R5/src/iharq/__init__.py",
+  "marker": "IHARQ_P02_POST_STAGE17_REHYDRATED_R2",
+  "model_training_performed": false,
+  "next_action": "RUN_STAGE18_R10_3_INSTALLER_THEN_EXECUTION",
+  "prediction_regenerated": false,
+  "protected_stage13_17_ledgers_gates_byte_identical": true,
+  "runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R7H7-STAGE11-EEGNET-AUTHOR-CENTERED-10000E-TRUE-P120-CONTINUATION",
+  "scientific_configuration_changed": false,
+  "scientific_stage_rerun": false,
+  "semantic_dispatcher_available": true,
+  "status": "PASS"
+}

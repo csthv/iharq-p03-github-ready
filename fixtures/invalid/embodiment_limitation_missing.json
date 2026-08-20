@@ -1,0 +1,36 @@
+{
+  "bundle_id": "INVALID-EMBODIMENT_LIMITATION_MISSING",
+  "records": [
+    {
+      "record_id": "IHARQ-EMBODIMENTSTATERECORD-20260802-2580b98800040cc4",
+      "record_type": "EmbodimentStateRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L9",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "embodiment_state_id": "MOCK_EMBODIMENT_STATE_ID_39",
+        "platform_id": "MOCK_PLATFORM_ID_39",
+        "task_id": "MOCK_TASK_ID_39",
+        "state_payload": {}
+      },
+      "ablation_id": null
+    }
+  ],
+  "controls": {},
+  "expected_failure_category": "embodiment_limitation_missing"
+}

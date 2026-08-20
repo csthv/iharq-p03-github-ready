@@ -1,0 +1,106 @@
+layer0_id: IHARQ-CUMULATIVE-LAYER0-THROUGH-P02-R1
+rows:
+- claim_id: P00-CLM-001/v2
+  prohibited_stronger_wording: []
+- claim_id: P00-CLM-002/v2
+  prohibited_stronger_wording: []
+- claim_id: P00-CLM-003/v2
+  prohibited_stronger_wording: []
+- claim_id: P00-CLM-004/v2
+  prohibited_stronger_wording: []
+- claim_id: P00-CLM-005/v2
+  prohibited_stronger_wording: []
+- claim_id: P00-CLM-006/v2
+  prohibited_stronger_wording: []
+- claim_id: P00-CLM-007/v2
+  prohibited_stronger_wording: []
+- claim_id: P01-CLM-001/v1
+  prohibited_stronger_wording:
+  - P01 established a clinically representative or deployment-ready EEG foundation.
+- claim_id: P01-CLM-002/v1
+  prohibited_stronger_wording:
+  - P01 proves that leakage is impossible.
+- claim_id: P01-CLM-003/v1
+  prohibited_stronger_wording:
+  - Denominator closure proves the dataset will yield strong decoder performance.
+- claim_id: P01-CLM-004/v1
+  prohibited_stronger_wording:
+  - The core Dataset is universally public and independently downloadable without access or license constraints.
+- claim_id: P01-CLM-005/v1
+  prohibited_stronger_wording:
+  - All P01 EEG was flawless or artifact-free.
+- claim_id: P01-CLM-006/v1
+  prohibited_stronger_wording:
+  - P01 demonstrated that A0-A13 ablations are effective.
+- claim_id: P01-CLM-007/v1
+  prohibited_stronger_wording:
+  - A4 R2 improves accuracy, AUROC, robustness, or decoder performance.
+- claim_id: P01-CLM-008/v1
+  prohibited_stronger_wording:
+  - Because all gates passed, P01 proved scientific or clinical effectiveness.
+- claim_id: P01-CLM-009/v1
+  prohibited_stronger_wording:
+  - Environment differences could have no effect whatsoever or are universally irrelevant.
+- claim_id: P01-CLM-010/v1
+  prohibited_stronger_wording:
+  - P01 proves that P02 will succeed scientifically or that downstream models will perform well.
+- claim_id: P01-CLM-011/v1
+  prohibited_stronger_wording:
+  - A4 R2 improves decoder performance relative to the core window.
+- claim_id: P01-CLM-012/v1
+  prohibited_stronger_wording:
+  - The P01 data foundation demonstrates clinical effectiveness or deployment safety.
+- claim_id: P02-CLM-001/v1
+  prohibited_stronger_wording:
+  - Do not call P02 calibration-, threshold-, abstention-, safety-, or deployment-ready.
+- claim_id: P02-CLM-002/v1
+  prohibited_stronger_wording:
+  - Do not claim one decoder is universally best across datasets or participants.
+- claim_id: P02-CLM-003/v1
+  prohibited_stronger_wording:
+  - Do not convert omnibus heterogeneity into a significant pairwise winner claim.
+- claim_id: P02-CLM-004/v1
+  prohibited_stronger_wording:
+  - Do not claim stable sample-efficiency ordering or subset-robust low-label behavior.
+- claim_id: P02-CLM-005/v1
+  prohibited_stronger_wording:
+  - Do not claim architecture superiority or theoretical invalidity of the original uniform policy.
+- claim_id: P02-CLM-006/v1
+  prohibited_stronger_wording:
+  - Do not claim the Stage11 challenger improved EEGNet generally.
+- claim_id: P02-CLM-007/v1
+  prohibited_stronger_wording:
+  - Do not claim zero A4 effect, five-repeat stability, dense deep-budget characterization, or full-grid equivalence.
+- claim_id: P02-CLM-008/v1
+  prohibited_stronger_wording:
+  - Do not claim ensembles are generally inferior; one corrected comparison was negative.
+- claim_id: P02-CLM-009/v1
+  prohibited_stronger_wording:
+  - Do not present Stage18S as confirmatory or as modifying G18.
+- claim_id: P02-CLM-010/v1
+  prohibited_stronger_wording:
+  - Do not equate technical evidence readiness with deployment readiness.
+- claim_id: CUM-CLM-001/v1
+  prohibited_stronger_wording:
+  - Do not state that the complete project is deployment-ready or clinically validated.
+- claim_id: CUM-CLM-002/v1
+  prohibited_stronger_wording:
+  - Do not claim that every conceivable leakage mechanism is impossible.
+- claim_id: CUM-CLM-003/v1
+  prohibited_stronger_wording:
+  - Do not claim DBConformer, CSP-LDA or any other decoder is universally best.
+- claim_id: CUM-CLM-004/v1
+  prohibited_stronger_wording:
+  - Do not claim stable low-label resilience or universal sample-efficiency superiority.
+- claim_id: CUM-CLM-005/v1
+  prohibited_stronger_wording:
+  - Do not claim A4 has zero effect, is five-repeat stable, or is fully equivalent to the originally planned dense grid.
+- claim_id: CUM-CLM-006/v1
+  prohibited_stronger_wording:
+  - Do not claim the original uniform policy was theoretically invalid or that source-aligned settings universally improve every model.
+- claim_id: CUM-CLM-007/v1
+  prohibited_stronger_wording:
+  - Do not claim that fail-closed process guarantees scientific correctness or deployment safety.
+- claim_id: CUM-CLM-008/v1
+  prohibited_stronger_wording:
+  - Do not equate technical handoff readiness with future scientific success.

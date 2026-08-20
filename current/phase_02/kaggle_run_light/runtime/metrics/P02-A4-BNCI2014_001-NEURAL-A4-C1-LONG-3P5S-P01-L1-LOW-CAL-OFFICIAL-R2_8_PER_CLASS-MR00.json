@@ -1,0 +1,39 @@
+{
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "metrics": {
+    "BACC": 0.48611111111111116,
+    "F1_MACRO": 0.46738641475483583,
+    "ACC": 0.4861111111111111,
+    "CONFUSION": [
+      [
+        97,
+        47
+      ],
+      [
+        101,
+        43
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      144,
+      144
+    ],
+    "PRED_COMPLETE": 288,
+    "ROC_AUC": 0.5434268904320987,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+  },
+  "validation_selected_branch": "DNN-EEGNET",
+  "observed_denominator": 288,
+  "condition_id": "A4-C1-LONG-3P5S",
+  "burden": {
+    "evidence_duration_s": 3.5,
+    "observation_horizon_s": 3.5,
+    "model_or_view_evaluations": 1,
+    "member_count": 1,
+    "aggregation_operation": "DIRECT_LONG",
+    "batch1_latency_median_s": 0.0039465159989049425,
+    "batch1_latency_p95_s": 0.0039465159989049425,
+    "aggregation_latency_s": 0.0
+  }
+}

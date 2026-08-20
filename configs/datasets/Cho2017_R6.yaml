@@ -1,0 +1,48 @@
+dataset_id: Cho2017
+aliases:
+- Cho2017
+authority_status: SCREENED_FALLBACK
+scientific_role: subject-diverse left/right MI fallback
+active_for_run: false
+active_disposition: SCREENED_NOT_PROMOTED
+exact_revision: GigaDB dataset DOI 10.5524/100295; MOABB 1.5.0 source card
+citation: Cho H, Ahn M, Ahn S, Kwon M, Jun SC. EEG datasets for motor imagery brain-computer
+  interface. GigaScience. 2017;6(7):gix034. DOI 10.1093/gigascience/gix034; data DOI
+  10.5524/100295.
+license: Creative Commons Attribution 4.0 International (CC BY 4.0)
+access_method: NOT_ACTIVE_FOR_P01_OFFICIAL_RUN
+official_reference: https://moabb.neurotechx.com/docs/generated/moabb.datasets.Cho2017.html;
+  https://doi.org/10.1093/gigascience/gix034; https://doi.org/10.5524/100295
+published_checksum: NOT_APPLICABLE_TO_INACTIVE_SOURCE
+checksum_policy: COMPUTE_AND_FREEZE_ONLY_IF_ACTIVATED_BY_VERSIONED_AMENDMENT
+expected_checksum: NOT_APPLICABLE_TO_ACTIVE_RUN
+adapter: NOT_APPLICABLE_TO_ACTIVE_RUN
+cache_path: source_cache/Cho2017
+redistribution_allowed: CC_BY_4_0_WITH_ATTRIBUTION; NOT DOWNLOADED IN CURRENT RUN
+source_native_preprocessing:
+- raw source; provider bad-trial indices retained
+limitations:
+- One-session structure weakens cross-session analysis
+- Screened source is not silently promoted
+adapter_options:
+  activation_condition: Only if a versioned Method Selection-compatible substitution
+    is issued because Lee2019_MI is unusable
+  official_reference: https://moabb.neurotechx.com/docs/generated/moabb.datasets.Cho2017.html;
+    https://doi.org/10.1093/gigascience/gix034; https://doi.org/10.5524/100295
+  checksum_policy: COMPUTE_AND_FREEZE_ONLY_IF_ACTIVATED_BY_VERSIONED_AMENDMENT
+  published_checksum: NOT_APPLICABLE_TO_INACTIVE_SOURCE
+  expected_event_inventory:
+  - left_hand
+  - right_hand
+  sampling_and_channel_profile:
+    eeg_channels: 64
+    emg_channels: 4
+    sampling_hz: 512
+    trial_duration_seconds: 3
+  source_native_preprocessing:
+  - raw source; provider bad-trial indices retained
+  limitations:
+  - One-session structure weakens cross-session analysis
+  - Screened source is not silently promoted
+  allow_byte_equivalent_attachment_fallback: false
+  acquisition_contract: MOABB_1_5_0_OFFICIAL_PROVIDER_DOWNLOAD_ONLY

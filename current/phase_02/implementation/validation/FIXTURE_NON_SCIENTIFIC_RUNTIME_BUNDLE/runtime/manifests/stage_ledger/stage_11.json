@@ -1,0 +1,48 @@
+{
+  "stage_id": "11",
+  "status": "SUCCESS",
+  "attempt_id": "44f80eec6047",
+  "inputs": {},
+  "input_hashes": {},
+  "outputs": {
+    "status": "PASS",
+    "attempted": 1,
+    "branches": [
+      "DNN-EEGNET"
+    ],
+    "terminal_counts": {
+      "SUCCESS": 1
+    },
+    "artifact": "stage_artifacts/11_neural_and_training_policy_challenger.json",
+    "training_policy_challenger": {
+      "attempted": 1,
+      "terminal_counts": {
+        "SUCCESS": 1
+      }
+    }
+  },
+  "output_hashes": {
+    "status": "727e9bd17b077ba162e13ba877135cc6fbc6b30f83da0b34b3e20233f1cc885f",
+    "attempted": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+    "branches": "bd471958d140897543c6b42b0b0c4902a379aad141a0454c20fcfe44f107d780",
+    "terminal_counts": "53f0ab7932f6baa104fcb4e538316e361ffe1e8192ba531c0865bdb4839f74cd",
+    "artifact": "24c7b139acd3cc764c34bc860f9f917cf15a665dac191c5df239046e6c992054",
+    "training_policy_challenger": "4990901bd4d470f5f4b082d8bd368259de3c5dcbb89ad7c1726e89c4830fb39d"
+  },
+  "dependencies": [
+    "10"
+  ],
+  "elapsed_seconds": 0.16384577751159668,
+  "log_path": "logs/stage_11_44f80eec6047.log",
+  "heartbeat_write_errors": [],
+  "observability_status": "PASS",
+  "blockers": [],
+  "observations": [],
+  "revision_fingerprint": {
+    "notebook_revision": "R4",
+    "source_sha256": "AUTHORING_FIXTURE_SOURCE",
+    "config_sha256": "AUTHORING_FIXTURE_CONFIG",
+    "stage_plan_sha256": "AUTHORING_FIXTURE_STAGE_PLAN",
+    "scientific_freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5"
+  }
+}

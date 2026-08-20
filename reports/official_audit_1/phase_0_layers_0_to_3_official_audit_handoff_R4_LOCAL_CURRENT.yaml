@@ -1,0 +1,30 @@
+phase_0_layers_0_to_3_official_audit:
+  revision: R4
+  status: PASS_WITH_NONBLOCKING_LIMITATIONS
+  audit_status: PASS_WITH_NONBLOCKING_LIMITATIONS
+  review_mode: LLM_ONLY
+  human_review_used: false
+  external_ci_policy: OUT_OF_SCOPE_NOT_A_GATE_NOT_EXECUTED
+  github_ci_required: false
+  github_hosted_tests_required: false
+  p0_gate_17_local: PASS
+  open_blocking_defects: []
+  phase_0_closed: false
+  phase_1_authorized: false
+  handoff_id: P00-OFFICIAL-AUDIT1-HANDOFF-R4-LOCAL
+  scope: Layers L0-L3 Phase 0 foundation audit
+  integrated_fixture_status: PASS
+  layer_results:
+    L0: PASS_WITH_NONBLOCKING_LIMITATIONS
+    L1: PASS_WITH_NONBLOCKING_LIMITATIONS
+    L2: PASS_WITH_NONBLOCKING_LIMITATIONS
+    L3: PASS_WITH_NONBLOCKING_LIMITATIONS
+  historical_blockers_superseded:
+  - CURRENT_MAIN_STALE_TRANSPORT_CONTROLLERS
+  - ACCEPTED_EXACT_COMMIT_GITHUB_CI_MISSING
+  open_nonblocking_limitations:
+  - No scientific execution was required or performed.
+  - Layer PASS means Phase 0 foundation readiness only.
+  exact_next_step: Use the local current successor for downstream audits. Publication
+    byte/pointer verification remains the closure dependency; no GitHub CI run is
+    required.

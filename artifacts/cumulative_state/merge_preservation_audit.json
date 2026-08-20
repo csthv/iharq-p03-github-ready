@@ -1,0 +1,28 @@
+{
+  "audit_id": "IHARQ-P00-P01-MERGE-PRESERVATION-AUDIT-R1",
+  "result": "PASS",
+  "phases": {
+    "P00": {
+      "counts": {
+        "CURRENT_DIRECT_EXACT": 549,
+        "PRESERVED_ELSEWHERE_EXACT": 39,
+        "TRANSIENT_EXCLUDED": 0,
+        "PREDECESSOR_ZIP_GUARANTEE": 0,
+        "UNEXPLAINED": 0
+      },
+      "unexplained_paths": []
+    },
+    "P01": {
+      "counts": {
+        "CURRENT_DIRECT_EXACT": 13213,
+        "PRESERVED_ELSEWHERE_EXACT": 11,
+        "TRANSIENT_EXCLUDED": 112,
+        "PREDECESSOR_ZIP_GUARANTEE": 0,
+        "UNEXPLAINED": 0
+      },
+      "unexplained_paths": []
+    }
+  },
+  "p00_exact_predecessor_zip": "release_assets/predecessors/phase_00/IHARQ_Phase_0_GitHub_Scholarship_Ready_R2.zip",
+  "note": "PREDECESSOR_ZIP_GUARANTEE is used only for P00 files intentionally replaced by cumulative navigation/current-authority surfaces; the exact P00 GitHub tree ZIP is embedded with its published SHA-256."
+}

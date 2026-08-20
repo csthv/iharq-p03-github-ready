@@ -1,0 +1,81 @@
+{
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "metrics": {
+    "BACC": 0.53125,
+    "F1_MACRO": 0.4931097871008957,
+    "ACC": 0.53125,
+    "CONFUSION": [
+      [
+        37,
+        107
+      ],
+      [
+        28,
+        116
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      144,
+      144
+    ],
+    "PRED_COMPLETE": 288,
+    "ROC_AUC": 0.5893132716049382,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "PROBABILITY_AVERAGE"
+  },
+  "strongest_constituent_branch": "RIE-TS-LR",
+  "strongest_constituent_prediction_partition": "records/PredictionRecord/dataset=BNCI2014_001/branch=RIE-TS-LR/budget=P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS/P02-A0-BNCI2014_001-RIE-TS-LR-P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS-MR00.jsonl",
+  "validation_selection_provenance": {
+    "selected_branch": "RIE-TS-LR",
+    "candidate_summaries": [
+      {
+        "branch_id": "RIE-TS-LR",
+        "BACC": 0.6041666666666667,
+        "F1": 0.5745386688782915,
+        "burden": 0.5482576649992552
+      },
+      {
+        "branch_id": "DNN-EEGNET",
+        "BACC": 0.5868055555555556,
+        "F1": 0.5831417624521074,
+        "burden": 20.704226685998947
+      },
+      {
+        "branch_id": "SSL-CBRAMOD",
+        "BACC": 0.5555555555555556,
+        "F1": 0.5520347259902334,
+        "burden": 14.623725414276123
+      },
+      {
+        "branch_id": "CLS-CSP-LDA",
+        "BACC": 0.5,
+        "F1": 0.40710241893978383,
+        "burden": 0.22271985100087477
+      }
+    ],
+    "test_outcome_influence": "PROHIBITED"
+  },
+  "matched_denominator": 288,
+  "ensemble_member_branches": [
+    "CLS-CSP-LDA",
+    "RIE-TS-LR",
+    "DNN-EEGNET",
+    "SSL-CBRAMOD"
+  ],
+  "ensemble_member_checkpoint_ids": [
+    "ede0bc497a0228e91f60a7417f1684c8f2bca84a5330b9a674db5a4b8e086cce",
+    "21d7e4aba8464e55d06768e11ac93a4b54059732f2eb33702551da85b61c0264",
+    "645bc74da8ece2759184e7918413de7b9ad558b9d01961f6297858bd04baa728",
+    "3c94b4496cb3033080c7cd15e6cca302056fe3eebe3aa5a719b547e3c562ec44"
+  ],
+  "burden": {
+    "evidence_duration_s": 3.0,
+    "observation_horizon_s": 3.0,
+    "model_or_view_evaluations": 4,
+    "member_count": 4,
+    "aggregation_operation": "PROBABILITY_AVERAGE",
+    "batch1_latency_median_s": 0.014618371003962238,
+    "batch1_latency_p95_s": 0.015620870401835418,
+    "aggregation_latency_s": 0.0001827019987103995
+  }
+}

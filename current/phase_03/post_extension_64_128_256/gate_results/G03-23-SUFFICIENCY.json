@@ -1,0 +1,220 @@
+{
+  "artifact_id": "P03-PROD-054-0d943344db16925f516e",
+  "blockers": [],
+  "created_at_utc": "2026-08-18T19:25:20.972660+00:00",
+  "decision": "PASS",
+  "evidence": {
+    "lawful_not_applicable_prior_stage_count": 7,
+    "pending_stage24": [
+      "P03-PROD-058",
+      "P03-PROD-059",
+      "P03-PROD-060",
+      "P03-PROD-061",
+      "P03-PROD-064",
+      "P03-PROD-065"
+    ],
+    "physical_prior_stage_count": 16,
+    "pre_export_accounted_product_count": 59,
+    "pre_export_out_of_scope_product_count": 10,
+    "pre_export_realized_product_count": 49,
+    "prior_gate_rows": [
+      {
+        "canonical_stage_copied": false,
+        "decision": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT",
+        "gate_id": "G03-00-AUTHORITY",
+        "receipt_sha256": null,
+        "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+        "stage_id": "00",
+        "synthetic_stage_created": false
+      },
+      {
+        "canonical_stage_copied": false,
+        "decision": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT",
+        "gate_id": "G03-01-REPOSITORY",
+        "receipt_sha256": null,
+        "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+        "stage_id": "01",
+        "synthetic_stage_created": false
+      },
+      {
+        "canonical_stage_copied": false,
+        "decision": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT",
+        "gate_id": "G03-02-ENVIRONMENT",
+        "receipt_sha256": null,
+        "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+        "stage_id": "02",
+        "synthetic_stage_created": false
+      },
+      {
+        "canonical_stage_copied": false,
+        "decision": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT",
+        "gate_id": "G03-03-RETRIEVAL",
+        "receipt_sha256": null,
+        "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+        "stage_id": "03",
+        "synthetic_stage_created": false
+      },
+      {
+        "canonical_stage_copied": false,
+        "decision": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT",
+        "gate_id": "G03-04-HANDOFF",
+        "receipt_sha256": null,
+        "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+        "stage_id": "04",
+        "synthetic_stage_created": false
+      },
+      {
+        "canonical_stage_copied": false,
+        "decision": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT",
+        "gate_id": "G03-05-FREEZE",
+        "receipt_sha256": null,
+        "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+        "stage_id": "05",
+        "synthetic_stage_created": false
+      },
+      {
+        "canonical_stage_copied": false,
+        "decision": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT",
+        "gate_id": "G03-06-SMOKE",
+        "receipt_sha256": null,
+        "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+        "stage_id": "06",
+        "synthetic_stage_created": false
+      },
+      {
+        "decision": "PASS",
+        "gate_id": "G03-07-JOIN",
+        "receipt_sha256": "5282a0b7599b43375d19dae63f33a34a3efe812c4a1cd38134f5566daaa86a41",
+        "scope_disposition": "IN_SCOPE_COMPLETE",
+        "stage_id": "07"
+      },
+      {
+        "decision": "PASS",
+        "gate_id": "G03-08-LEAKAGE",
+        "receipt_sha256": "544718e603e1db71113a631191ac3a6f8a2b5d40f9929c26068268b18055b146",
+        "scope_disposition": "IN_SCOPE_COMPLETE",
+        "stage_id": "08"
+      },
+      {
+        "decision": "PASS",
+        "gate_id": "G03-09-ELIGIBILITY",
+        "receipt_sha256": "e9c71d95f6675314fc53da716fed40dc59054110936568b1d889ccd6b6c41f9d",
+        "scope_disposition": "IN_SCOPE_COMPLETE",
+        "stage_id": "09"
+      },
+      {
+        "decision": "PASS",
+        "gate_id": "G03-10-IDENTITY",
+        "receipt_sha256": "aced7bd29c83486a422156b8530232334deb252eb781c1041ee78586d16a1890",
+        "scope_disposition": "IN_SCOPE_COMPLETE",
+        "stage_id": "10"
+      },
+      {
+        "decision": "PASS",
+        "gate_id": "G03-11-CALIBRATION",
+        "receipt_sha256": "f91a989bb12a1c5e320ebfbe21205cf5a7ad184886aac96aa94f9b1038342df0",
+        "scope_disposition": "IN_SCOPE_COMPLETE",
+        "stage_id": "11"
+      },
+      {
+        "decision": "PASS",
+        "gate_id": "G03-12-RELIABILITY",
+        "receipt_sha256": "f9887c376ac3386de03fc1ba582d92d44f5d77d234ec30479d0dd2a097d5659e",
+        "scope_disposition": "IN_SCOPE_COMPLETE",
+        "stage_id": "12"
+      },
+      {
+        "decision": "PASS",
+        "gate_id": "G03-13-UNCERTAINTY",
+        "receipt_sha256": "2336c01e4a8352a1e8ce5ef4bfc2e038c9ffab26dcfcba132613009d66028e6f",
+        "scope_disposition": "IN_SCOPE_COMPLETE",
+        "stage_id": "13"
+      },
+      {
+        "decision": "PASS",
+        "gate_id": "G03-14-A2-SELECT",
+        "receipt_sha256": "18731ede79a859946e0202586a6217eca414e730070b07ca180863c9d41f06cc",
+        "scope_disposition": "IN_SCOPE_COMPLETE",
+        "stage_id": "14"
+      },
+      {
+        "decision": "PASS",
+        "gate_id": "G03-15-A2-APPLY",
+        "receipt_sha256": "a644230567a2415c12a45be4d40baefa30fd47007d19ffdfafa768792feddc7b",
+        "scope_disposition": "IN_SCOPE_COMPLETE",
+        "stage_id": "15"
+      },
+      {
+        "decision": "PASS",
+        "gate_id": "G03-16-A3",
+        "receipt_sha256": "09cd4066d04baa7157030de52f8b3df2df47a35340d6930e210fd1365a64bf32",
+        "scope_disposition": "IN_SCOPE_COMPLETE",
+        "stage_id": "16"
+      },
+      {
+        "decision": "PASS",
+        "gate_id": "G03-17-THRESHOLD",
+        "receipt_sha256": "555ec9b356f4fc3a68d2d42682056f68d76fd773da2068d799e623e6847080b0",
+        "scope_disposition": "IN_SCOPE_COMPLETE",
+        "stage_id": "17"
+      },
+      {
+        "decision": "PASS",
+        "gate_id": "G03-18-MATCHED",
+        "receipt_sha256": "cfd95ac6820eb95c28a0ba411db1edfe95caf743ee0917e3f3a32e5e116d5965",
+        "scope_disposition": "IN_SCOPE_COMPLETE",
+        "stage_id": "18"
+      },
+      {
+        "decision": "PASS",
+        "gate_id": "G03-19-GROUP",
+        "receipt_sha256": "449f0c52a092f2f8da720406270db9fd5dafa4233dd311ace38f54c283626f2a",
+        "scope_disposition": "IN_SCOPE_COMPLETE",
+        "stage_id": "19"
+      },
+      {
+        "decision": "PASS",
+        "gate_id": "G03-20-NEGATIVE",
+        "receipt_sha256": "364396f658104b05527a4607957f84af5284039a3fef2efdca22fa188756b83a",
+        "scope_disposition": "IN_SCOPE_COMPLETE",
+        "stage_id": "20"
+      },
+      {
+        "decision": "PASS",
+        "gate_id": "G03-21-SOURCES",
+        "receipt_sha256": "7d240e286a8e49ec63e056ee6063018d3192739f83fa3bb2017746af6e969dc9",
+        "scope_disposition": "IN_SCOPE_COMPLETE",
+        "stage_id": "21"
+      },
+      {
+        "decision": "PASS",
+        "gate_id": "G03-22-HANDOFFS",
+        "receipt_sha256": "faf287ac29871888fb83936fa964f4f8caae00043e87a9845b35d683b1fbfa52",
+        "scope_disposition": "IN_SCOPE_COMPLETE",
+        "stage_id": "22"
+      }
+    ],
+    "prior_stage_accounted_count": 23,
+    "scope": "PRE_EXPORT",
+    "stage23_governed_checkpoint_receipt_path_adapted": true,
+    "stage23_operational_checkpoint_receipt_sha256": "0684998a7c46ed281b07ea5f506cefa62000f2941e0c159a673fd9de99db5948",
+    "supplement_scope": "POSTEXT_SUPPLEMENT_PRE_EXPORT"
+  },
+  "gate_id": "G03-23-SUFFICIENCY",
+  "hardening_id": "P03S-POSTEXT-64-128-256-STAGE23-SUPPLEMENT-NATIVE-SUFFICIENCY-HARDENING-R1",
+  "owner": "P03 post-extension Stage23 supplement-scope sufficiency gate",
+  "payload_sha256": "0d943344db16925f516ead9a511aa21bc08ac971103810ca3f1eaa7c88f28ff8",
+  "product_id": "P03-PROD-054",
+  "run_id": "P03-L3-POSTEXT-64-128-256-R1-1833e865bcb88ff8",
+  "schema_id": "GateDecisionReport.v1",
+  "schema_version": "1.0.0",
+  "source_artifact_ids": [
+    "STAGE23-RAW-GATE-DECISION-REPORT",
+    "STAGE23-OPERATIONAL-CHECKPOINT-RECEIPT"
+  ],
+  "source_sha256s": [
+    "9bf00c69eab192dd8ce09e46236c0adde3dd6af7c04f062b0f36b0bb4900585b",
+    "0684998a7c46ed281b07ea5f506cefa62000f2941e0c159a673fd9de99db5948"
+  ],
+  "stage_id": "23"
+}

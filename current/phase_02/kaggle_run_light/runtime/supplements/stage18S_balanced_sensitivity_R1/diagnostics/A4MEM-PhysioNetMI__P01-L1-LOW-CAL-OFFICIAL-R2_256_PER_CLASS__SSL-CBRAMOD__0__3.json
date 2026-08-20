@@ -1,0 +1,81 @@
+{
+  "status": "SUCCESS",
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "branch": "SSL-CBRAMOD",
+  "member": 3,
+  "checkpoint_sha256": "553fb79d764391ae6eabd4f9e478de765f7a1d73645da6bde92ee88c15c5396b",
+  "model_id": "SSL-CBRAMOD:A4-R8:PhysioNetMI__P01-L1-LOW-CAL-OFFICIAL-R2:256_PER_CLASS__SSL-CBRAMOD__0__3",
+  "score_type": "SOFTMAX_PROBABILITY",
+  "checkpoint_format": "EXTERNAL_GOVERNED_INTERFACE",
+  "execution_device": "cuda:0",
+  "latency_summary": {
+    "batch1_latency_median_s": 0.11265925199950289,
+    "batch1_latency_p95_s": 0.11265925199950289,
+    "repeats": 1
+  },
+  "r8_policy_sha256": "a21655f9b52cfbf817b1b271f758739cf01b1e7a75e786c880ccdd1a3c58ef32",
+  "r8_runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R10-STAGE18-A4-ANCHOR-BUDGET-SINGLE-REPEAT-R1",
+  "recipe_id": "R6-CBRAMOD-SOURCE-CENTERED-R1",
+  "class_weight_policy": "UNIFORM_NO_WEIGHT_EXACT_BALANCED_TRAIN",
+  "class_weights": null,
+  "class_weight_frozen_from_a0": true,
+  "matching_a0_checkpoint_sha256": "72bcfe6c398d8a242594715b6351e3f969177e6701045b0383aa2b42273a41b5",
+  "test_loaded_after_checkpoint_sealed": true,
+  "test_set_used_for_selection": false,
+  "raw_train_shape": [
+    512,
+    64,
+    320
+  ],
+  "raw_validation_shape": [
+    495,
+    64,
+    320
+  ],
+  "raw_test_shape": [
+    495,
+    64,
+    320
+  ],
+  "training_provenance": {
+    "recipe_id": "R6-CBRAMOD-SOURCE-CENTERED-R1",
+    "best_epoch": 1,
+    "epochs_completed": 41,
+    "best_validation": {
+      "BACC": 0.5279655206190617,
+      "F1_MACRO": 0.504840613931523,
+      "ACC": 0.5292929292929293,
+      "CONFUSION": [
+        [
+          186,
+          63
+        ],
+        [
+          170,
+          76
+        ]
+      ],
+      "CLASS_SUPPORT": [
+        249,
+        246
+      ],
+      "PRED_COMPLETE": 495,
+      "ROC_AUC": 0.5138113429327065,
+      "ROC_AUC_STATUS": "PASS",
+      "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+    },
+    "elapsed_seconds": 866.1098713874817,
+    "prepared_train_shape": [
+      512,
+      64,
+      400
+    ],
+    "prepared_validation_shape": [
+      495,
+      64,
+      400
+    ],
+    "test_set_used_for_selection": false,
+    "same_gpu_virtual_cuda_rng": true
+  }
+}

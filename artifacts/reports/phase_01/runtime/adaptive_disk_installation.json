@@ -1,0 +1,29 @@
+{
+  "policy": {
+    "policy_id": "P01-L1-KAGGLE-ADAPTIVE-DISK-R1",
+    "policy_kind": "RUNTIME_RESOURCE_AMENDMENT_ONLY",
+    "legacy_project_preflight_gb": 60,
+    "legacy_recommended_gb": 90,
+    "startup_floor_gib": 6.0,
+    "startup_fixed_footprint_multiplier": 1.25,
+    "startup_additional_reserve_gib": 3.0,
+    "soft_warning_floor_gib": 4.0,
+    "hard_emergency_floor_gib": 1.5,
+    "minimum_export_reserve_gib": 1.5,
+    "export_bundle_multiplier": 1.25,
+    "export_additional_reserve_gib": 0.5,
+    "active_sources_unchanged": [
+      "PhysioNetMI",
+      "BNCI2014_001",
+      "Lee2019_MI"
+    ],
+    "automatic_source_removal_allowed": false,
+    "cache_eviction": "DELETE_ONLY_AFTER_SUCCESSFUL_LOAD_AND_SHA256_REVERIFICATION",
+    "read_only_input_deletion_allowed": false,
+    "scientific_freeze_unchanged": "P01-L1-OFFICIAL-RUN-FREEZE-R2"
+  },
+  "installed_at_unix": 1786113015.661664,
+  "work_root": "/kaggle/working/iharq_p01_l1",
+  "bundle_root": "/kaggle/working/iharq_p01_l1/IHARQ_P01_L1_Phase_Execution_Bundle_d03f0a7c869d",
+  "runtime_package_root": "/kaggle/working/iharq_p01_l1/runtime_input/base_bundle"
+}

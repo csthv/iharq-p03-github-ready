@@ -1,0 +1,90 @@
+{
+  "canonical_algorithm_profile": "P03-C8-STAGE22-HANDOFF-CANONICALIZATION-HARDENING-R1",
+  "checksum_ledger_path": "artifacts/handoffs/phase_03_to_phase_04/checksums.sha256",
+  "config_changed": false,
+  "hardening_id": "P03S-POSTEXT-64-128-256-STAGE22-HANDOFF-CANONICALIZATION-HARDENING-R1",
+  "invariants": {
+    "claim_approval_performed": false,
+    "claim_comparators_explicit": true,
+    "claim_strengthening": false,
+    "inferential_statistics_executed": false,
+    "normalized_p039_bound": true,
+    "normalized_p040_bound": true,
+    "raw_stage22_payloads_exactly_reproduced": true,
+    "scientific_recomputation": false,
+    "test_used_for_selection": false
+  },
+  "products": {
+    "P03-PROD-046": {
+      "candidate_claim_count": 4,
+      "path": "artifacts/layer0_handoff/phase_03/layer0_claim_handoff.yaml",
+      "sha256": "e4c3253ec359a01eace813d761bd9209dad44f40c9f5002ad0fa8708103fa0d3"
+    },
+    "P03-PROD-047": {
+      "node_count": 46,
+      "orphan_count": 0,
+      "path": "artifacts/evidence_map_handoff/phase_03/evidence_map_handoff.yaml",
+      "relation_count": 43,
+      "sha256": "59fceccf3a692edf27f7b5820367785cbbdbdc4771365cf09e0a5bd96e0f8cf4"
+    },
+    "P03-PROD-048": {
+      "artifact_count": 35,
+      "path": "artifacts/handoffs/phase_03_to_phase_04/p03_handoff_manifest.json",
+      "sha256": "da063e215bef02cdef682400b0d5a50c4a47289e1fc701cdf4e3aeadbeae091a"
+    },
+    "P03-PROD-049": {
+      "path": "artifacts/manifests/phase_03/later_phase_handoff.csv",
+      "row_count": 11,
+      "sha256": "6da50a41c180ed1eb8d03413165eea9d093d76679a532b63cb4183010a271a5b"
+    },
+    "P03-PROD-050": {
+      "gate_count": 16,
+      "path": "artifacts/protocol_v1_handoff/phase_03/protocol_actual_run_annex_input.yaml",
+      "sha256": "6b52466e29d1556f4bf5433200205f7946fc84b8498fd1a42c1818b699d2684f"
+    },
+    "P03-PROD-062": {
+      "metric_rows": 5148,
+      "path": "artifacts/phase_analysis_handoff/phase_03/index.yaml",
+      "sha256": "0f27184dc3cd4e72f1fd1960e01b3b5986556bdf583d7c28e8db49e9cd5baffe",
+      "statistics_rows": 5148
+    },
+    "P03-PROD-063": {
+      "candidate_claim_count": 4,
+      "explicit_comparator_count": 4,
+      "path": "artifacts/layer0_handoff/phase_03/claim_evidence_input.yaml",
+      "sha256": "4d90fd1248a36abeecd2951920868d181e1e425b462b757a5f82722c69edbd78"
+    }
+  },
+  "protocol_changed": false,
+  "repository_mutated": false,
+  "run_id": "P03-L3-POSTEXT-64-128-256-R1-1833e865bcb88ff8",
+  "schema_id": "P03Stage22HandoffCanonicalizationHardeningManifest.v1",
+  "schema_version": "1.0.0",
+  "scientific_handler_changed": false,
+  "scientific_handler_sha256": "167a7d3c6a72fc0d52c9f92036a79156f182492f1b0f83eae6017c3155c56ba3",
+  "scientific_method_changed": false,
+  "stage22_output_manifest_sha256": "03e50e2ff2df329eb84f58b8cfd853bca45113f978955596554ab54f966951f5",
+  "stage22_scientific_bytes_changed": false,
+  "stage_id": "22",
+  "status": "PASS",
+  "supplement_adaptations": {
+    "canonical_stage04_copied": false,
+    "claim_scope_narrowed_to_supplement_denominator": true,
+    "inherited_p02_limitations_fabricated": false,
+    "reason": "Supplement raw Stage20 intentionally exposed no product IDs; accepted governed P035/P036/P037 are inserted documentary-only to preserve Stage22 evidence-map referential closure.",
+    "stage04_disposition": {
+      "canonical_stage04_copied": false,
+      "reason": "Stage04 intake is outside the post-extension supplement scope; no canonical Stage04 artifact is copied or fabricated.",
+      "stage_id": "04",
+      "status": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT",
+      "synthetic_stage04_created": false,
+      "terminal_status": "NOT_MATERIALIZED"
+    },
+    "stage20_governed_products_added_to_artifact_index": [
+      "P03-PROD-035",
+      "P03-PROD-036",
+      "P03-PROD-037"
+    ],
+    "synthetic_stage04_created": false
+  }
+}

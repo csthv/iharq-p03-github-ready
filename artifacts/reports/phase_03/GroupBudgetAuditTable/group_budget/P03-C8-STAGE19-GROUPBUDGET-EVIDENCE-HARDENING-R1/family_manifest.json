@@ -1,0 +1,99 @@
+{
+  "diagnostic_only_count": 0,
+  "eligible_count": 3800,
+  "evaluation_role": "test",
+  "group_field_counts": {
+    "branch_id": 285,
+    "budget_id": 285,
+    "calibration_method_id": 285,
+    "dataset_id": 285,
+    "model_id": 285,
+    "session_id": 380,
+    "split_id": 285,
+    "subject_id": 1710
+  },
+  "hardening_id": "P03-C8-STAGE19-GROUPBUDGET-EVIDENCE-HARDENING-R1",
+  "minimum_support": 10,
+  "partition_count": 8,
+  "partitions": [
+    {
+      "bytes": 1038428,
+      "group_field": "branch_id",
+      "path": "records/group_field=branch_id/sparse=false/records.jsonl",
+      "record_count": 285,
+      "sha256": "99335a395249560c6f9d4d5fc0c82131fece0aa57dceb3d54d992b67dbfb6021",
+      "sparse_support": false
+    },
+    {
+      "bytes": 1044179,
+      "group_field": "budget_id",
+      "path": "records/group_field=budget_id/sparse=false/records.jsonl",
+      "record_count": 285,
+      "sha256": "caf0903b183a5ca703c2c445498cae2ec9359405a2fd63c4206213cceef5270d",
+      "sparse_support": false
+    },
+    {
+      "bytes": 1041848,
+      "group_field": "calibration_method_id",
+      "path": "records/group_field=calibration_method_id/sparse=false/records.jsonl",
+      "record_count": 285,
+      "sha256": "7bfb0be0040bea91f515a62c60c2323c21fef9d126b272e9b15851ddb692b6db",
+      "sparse_support": false
+    },
+    {
+      "bytes": 1038713,
+      "group_field": "dataset_id",
+      "path": "records/group_field=dataset_id/sparse=false/records.jsonl",
+      "record_count": 285,
+      "sha256": "869463bb891c767bf314711630f25b919e53c19536258382bfd88ed98f60786d",
+      "sparse_support": false
+    },
+    {
+      "bytes": 1067279,
+      "group_field": "model_id",
+      "path": "records/group_field=model_id/sparse=false/records.jsonl",
+      "record_count": 285,
+      "sha256": "f1aced992841fbf9937cccea3bf4a6c44f30f78c2ff5add413389b01211bb0f4",
+      "sparse_support": false
+    },
+    {
+      "bytes": 1382465,
+      "group_field": "session_id",
+      "path": "records/group_field=session_id/sparse=false/records.jsonl",
+      "record_count": 380,
+      "sha256": "cf1ed254c680e624b32bb752ad9ea11053630d0c477bff338378b937ba019bc3",
+      "sparse_support": false
+    },
+    {
+      "bytes": 1047263,
+      "group_field": "split_id",
+      "path": "records/group_field=split_id/sparse=false/records.jsonl",
+      "record_count": 285,
+      "sha256": "95045b02b94e43dbb1d0ab73849e9806b97b6403e67fb4c65025ea93548cb208",
+      "sparse_support": false
+    },
+    {
+      "bytes": 6213196,
+      "group_field": "subject_id",
+      "path": "records/group_field=subject_id/sparse=false/records.jsonl",
+      "record_count": 1710,
+      "sha256": "076a96338060ecb7e44487f4f391611b5fe53227635da5d132b275fde5510ea7",
+      "sparse_support": false
+    }
+  ],
+  "posthoc_group_creation_count": 0,
+  "product_id": "P03-PROD-033",
+  "raw_stage19_csv_sha256": "64895c333f8d143a6b598e8b90e95223e9ff5cc16b5ca539a732fcc7fb57434b",
+  "raw_stage19_rows_sha256": "eb8fb6ece4e6eb790f9452fca08cc6617e8a1b90631a54d89b43593c8673d080",
+  "record_count": 3800,
+  "record_family": "GroupBudgetAuditTable",
+  "record_schema_id": "GroupBudgetAuditTable.v1",
+  "run_id": "P03-L3-OFFICIAL-09ca82c743e0411a",
+  "schema_id": "P03Stage19GroupBudgetAuditMaterializationManifest.v1",
+  "schema_version": "1.0.0",
+  "scientific_row_change_count": 0,
+  "stage19_output_manifest_sha256": "8f6d150192d403974531ab2006bb26b8b9ff723062ae0b833fe546cd89fcc785",
+  "stage_id": "19",
+  "status": "PASS",
+  "test_selected_count": 0
+}

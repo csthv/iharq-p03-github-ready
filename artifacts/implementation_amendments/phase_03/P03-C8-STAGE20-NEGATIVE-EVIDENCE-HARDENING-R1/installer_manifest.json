@@ -1,0 +1,90 @@
+{
+  "canonical_products_after_successful_stage20": {
+    "P03-PROD-035": {
+      "path": "artifacts/negative_and_failed_results/phase_03/failure_ledger.jsonl",
+      "product": "P03FailureLedger",
+      "schema_id": "FailureLedger.v1"
+    },
+    "P03-PROD-036": {
+      "path": "artifacts/negative_and_failed_results/phase_03/negative_results/P03-C8-STAGE20-NEGATIVE-EVIDENCE-HARDENING-R1/",
+      "product": "NegativeResultNote",
+      "schema_id": "NegativeResultNote.v1"
+    },
+    "P03-PROD-037": {
+      "path": "artifacts/negative_and_failed_results/phase_03/limitation_register.yaml",
+      "product": "LimitationRegister",
+      "schema_id": "LimitationRegister.v1"
+    }
+  },
+  "config_changed": false,
+  "hardening_id": "P03-C8-STAGE20-NEGATIVE-EVIDENCE-HARDENING-R1",
+  "independent_preexecution_reconstruction": {
+    "a2_no_rule_count": 91,
+    "a2_terminal_count": 285,
+    "a3_no_rule_count": 273,
+    "a3_terminal_count": 855,
+    "conditional_uncertainty_attempts": 855,
+    "denominator_complete": true,
+    "expected_negative_result_count": 3618,
+    "failed_attempts_deleted": 0,
+    "failure_class_counts": {
+      "GOVERNED_TERMINAL_STATE": 648,
+      "conditional skip": 2280,
+      "no threshold": 364,
+      "persistent upstream limitation": 14,
+      "stage execution failure": 3,
+      "upstream diagnostic-only evidence": 309
+    },
+    "inherited_p02_negative_count": 971,
+    "leakage_warning_count": 0,
+    "planned_calibration_attempts": 3135,
+    "preserved_stage_failure_count": 3,
+    "sparse_support_warning_count": 0,
+    "terminal_counts": {
+      "BLOCKED": 1,
+      "DIAGNOSTIC_ONLY": 1449,
+      "FAILED": 2,
+      "INELIGIBLE": 1504,
+      "INHERITED_FAILURE": 648,
+      "PERSISTING_NONBLOCKING": 14
+    },
+    "threshold_expected": 776
+  },
+  "limitation_model": {
+    "inherited_p02_limitations": 14,
+    "p03_explicit_limitations": 7,
+    "required_visibility": [
+      "member_disagreement / A4_CONTROL_NOT_BOUND_TO_SOURCE",
+      "genuine_logits / temperature / vector_scaling eligibility",
+      "sparse_support policy",
+      "binary rank-equivalent alias limitation",
+      "conformal proxy / exchangeability claim ceiling",
+      "no legal selective threshold",
+      "failed-attempt preservation"
+    ],
+    "total_expected_limitations": 21
+  },
+  "maxq_fix_id": "P03-C8-MAXQ-STAGE20-NEGATIVE-EVIDENCE-HARDENED-AUDIT-R1",
+  "protocol_changed": false,
+  "repository_mutated": false,
+  "run_id": "P03-L3-OFFICIAL-09ca82c743e0411a",
+  "schema_id": "P03Stage20NegativeEvidenceProspectiveHardeningInstallerManifest.v1",
+  "schema_version": "1.0.0",
+  "scientific_handler_changed": false,
+  "scientific_handler_module": "iharq_p03_l3_norule_runtime_amendment_r1",
+  "scientific_handler_sha256": "f69a806413bbac603c05e8c81dfaca752f55afbfd7992435760a5f991b97a79f",
+  "scientific_method_changed": false,
+  "scientific_prohibitions": {
+    "claim_ceiling_removal": true,
+    "failed_attempt_deletion": true,
+    "negative_result_deletion": true,
+    "synthetic_no_rule_replacement": true,
+    "test_driven_selection": true,
+    "threshold_retuning": true
+  },
+  "stage19_final_disposition": "ACCEPT/FREEZE",
+  "stage20_executed": false,
+  "stage21_executed": false,
+  "stage_id": "20",
+  "status": "PASS"
+}

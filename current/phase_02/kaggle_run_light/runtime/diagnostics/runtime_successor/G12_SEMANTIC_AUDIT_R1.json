@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "blocking": false,
+  "stage_id": "12",
+  "gate_id": "G12",
+  "runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R5R-STAGE12-RESOURCE-OPTIMIZED-EXTERNAL-MODEL-LIVE-CONTINUATION",
+  "planned_cells": 153,
+  "branch_counts": {
+    "DNN-FBCNET": 15,
+    "DNN-SEQ": 15,
+    "DNN-EGTC": 15,
+    "SSL-CBRAMOD": 105,
+    "SSL-REVE": 3
+  },
+  "terminal_counts": {
+    "SUCCESS": 135,
+    "CONDITIONAL_SKIP": 15,
+    "DEPENDENCY_BLOCKED": 3
+  },
+  "branch_terminal_counts": {
+    "DNN-EGTC": {
+      "CONDITIONAL_SKIP": 15
+    },
+    "DNN-FBCNET": {
+      "SUCCESS": 15
+    },
+    "DNN-SEQ": {
+      "SUCCESS": 15
+    },
+    "SSL-CBRAMOD": {
+      "SUCCESS": 105
+    },
+    "SSL-REVE": {
+      "DEPENDENCY_BLOCKED": 3
+    }
+  },
+  "missing_terminal_ids": [],
+  "missing_metrics": [],
+  "denominator_mismatch": [],
+  "missing_checkpoint_identity": [],
+  "missing_checkpoint_artifact": [],
+  "wrong_resolved_variant": [],
+  "obsolete_prepromotion_blocks": [],
+  "DNN_SEQ_pre_result_resolution": "DBConformer",
+  "EEGTC_fallback_activated": false,
+  "REVE_scientific_authority": "BLOCKED_KNOWN_P02_OVERLAP",
+  "REVE_claim_bearing": false,
+  "scientific_configuration_changed": false,
+  "resource_execution_successor": true,
+  "issues": []
+}

@@ -1,0 +1,26 @@
+{
+  "artifact_id": "P02-STAGE18-RELEASE-ANALYSIS-INDEX-R1",
+  "canonical_stage18_source_of_G18": true,
+  "checkpoint_manifest": "runtime/stage18_consolidated_release_R1/manifests/stage18_and_stage18S_checkpoint_manifest.jsonl",
+  "created_at_utc": "2026-08-17T18:17:35.536931+00:00",
+  "stage18S_analysis_inputs": [
+    "runtime/analysis_inputs/stage18S_R1_combined_cell_effects.csv",
+    "runtime/analysis_inputs/stage18S_R1_three_repeat_anchor_stability.csv",
+    "runtime/analysis_inputs/stage18S_R1_six_budget_mr00_sensitivity.csv",
+    "runtime/analysis_inputs/stage18S_R1_nine_budget_mr00_sensitivity.csv",
+    "runtime/analysis_inputs/stage18S_R1_participant_paired_effects.csv",
+    "runtime/analysis_inputs/stage18S_R1_member_training_provenance.csv",
+    "runtime/analysis_inputs/stage18S_R1_training_provenance_summary.csv",
+    "runtime/analysis_inputs/stage18S_R1_training_provenance_summary_by_member.csv",
+    "runtime/analysis_inputs/stage18S_R1_high_budget_64_128_256_summary.csv",
+    "runtime/analysis_inputs/stage18S_R1_high_budget_role_condition_summary.csv",
+    "runtime/analysis_inputs/stage18S_R1_six_anchor_stability_by_budget.csv",
+    "runtime/analysis_inputs/stage18S_R1_decision_support_summary.json",
+    "runtime/analysis_inputs/stage18S_balanced_sensitivity_R1_preexecution_freeze.json"
+  ],
+  "stage18S_output_manifest": "runtime/stage18_consolidated_release_R1/manifests/stage18S_complete_output_manifest.jsonl",
+  "stage18S_registered_as_post_hoc_sensitivity": true,
+  "stage18_release_family_artifact": "stage_artifacts/18_stage18S_consolidated_release_family_R1.json",
+  "status": "PASS",
+  "structured_output_manifest": "runtime/stage18_consolidated_release_R1/manifests/stage18_and_phase_structured_output_manifest.jsonl"
+}

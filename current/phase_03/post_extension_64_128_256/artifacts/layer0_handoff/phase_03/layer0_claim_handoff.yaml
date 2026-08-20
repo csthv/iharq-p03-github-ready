@@ -1,0 +1,308 @@
+candidate_findings:
+- approval_status: CANDIDATE_ONLY
+  candidate_claim: Selected calibration may alter held-out probabilistic reliability
+    relative to the identity baseline; direction, magnitude, uncertainty, and multiplicity
+    belong to governed Phase Analysis.
+  candidate_claim_id: P03-CAND-CALIBRATION-RELIABILITY-R1
+  comparator: A1 identity calibration versus the selected calibrated probability source
+    within the same accepted group/cell.
+  evidence:
+  - P03-PROD-020
+  - P03-PROD-021
+  - P03-PROD-039
+  - P03-PROD-040
+  - P03-PROD-043
+  - P03-PROD-044
+  limitations: &id001
+  - P03-LIM-SELECTIVE-NO-LEGAL-RULE-R1
+  - P03-LIM-MEMBER-DISAGREEMENT-UNAVAILABLE-R1
+  - P03-LIM-GENUINE-LOGITS-R1
+  - P03-LIM-BINARY-UNCERTAINTY-ALIAS-R1
+  - P03-LIM-CONFORMAL-PROXY-R1
+  - P03-LIM-SPARSE-SUPPORT-POLICY-R1
+  - P03-LIM-FAILED-ATTEMPT-PRESERVATION-R1
+  negatives:
+  - P03-PROD-035
+  - P03-PROD-036
+- approval_status: CANDIDATE_ONLY
+  candidate_claim: Validation-selected selective-prediction operating points require
+    held-out risk/coverage evaluation and must not be described as a universal TEST-risk
+    guarantee.
+  candidate_claim_id: P03-CAND-SELECTIVE-TRANSPORT-R1
+  comparator: A1 full-coverage operating point versus A2 confidence and A3 uncertainty-feature
+    operating points under the frozen matched design.
+  evidence:
+  - P03-PROD-026
+  - P03-PROD-027
+  - P03-PROD-028
+  - P03-PROD-029
+  - P03-PROD-032
+  - P03-PROD-039
+  - P03-PROD-040
+  limitations: *id001
+  negatives:
+  - P03-PROD-035
+  - P03-PROD-036
+- approval_status: CANDIDATE_ONLY
+  candidate_claim: In the binary probability surface, confidence, normalized entropy,
+    and top1-top2 margin are candidate rank-equivalent uncertainty views and must
+    not be counted as independent scientific wins.
+  candidate_claim_id: P03-CAND-BINARY-UQ-ALIAS-R1
+  comparator: A3 confidence versus normalized entropy versus top1-top2 margin, with
+    A2 confidence retained as the selective baseline.
+  evidence:
+  - P03-PROD-024
+  - P03-PROD-025
+  - P03-PROD-028
+  - P03-PROD-029
+  - P03-PROD-032
+  limitations:
+  - P03-LIM-BINARY-UNCERTAINTY-ALIAS-R1
+  negatives:
+  - P03-PROD-037
+- approval_status: CANDIDATE_ONLY
+  candidate_claim: No-legal-threshold, conditional ineligibility, and failed-attempt
+    states remain part of the governed post-extension supplement evidence denominator.
+  candidate_claim_id: P03-CAND-NEGATIVE-DENOMINATOR-R1
+  comparator: Successful terminal states versus explicit no-rule, ineligible, diagnostic-only,
+    and failed-attempt states.
+  evidence:
+  - P03-PROD-035
+  - P03-PROD-036
+  - P03-PROD-037
+  limitations: *id001
+  negatives:
+  - P03-PROD-035
+  - P03-PROD-036
+candidate_only: true
+claim_approval_performed: false
+claim_boundary_id: P03-CANDIDATE-CLAIM-NO-APPROVAL-R1
+comparators:
+- candidate_claim_id: P03-CAND-CALIBRATION-RELIABILITY-R1
+  comparator: A1 identity calibration versus the selected calibrated probability source
+    within the same accepted group/cell.
+- candidate_claim_id: P03-CAND-SELECTIVE-TRANSPORT-R1
+  comparator: A1 full-coverage operating point versus A2 confidence and A3 uncertainty-feature
+    operating points under the frozen matched design.
+- candidate_claim_id: P03-CAND-BINARY-UQ-ALIAS-R1
+  comparator: A3 confidence versus normalized entropy versus top1-top2 margin, with
+    A2 confidence retained as the selective baseline.
+- candidate_claim_id: P03-CAND-NEGATIVE-DENOMINATOR-R1
+  comparator: Successful terminal states versus explicit no-rule, ineligible, diagnostic-only,
+    and failed-attempt states.
+config_sha256: 2e5ebd6fc62f4c9ca3ed0102914f64142de9e1206be0b6e6b3e32cad90f1d742
+evidence_artifact_index_path: artifacts/handoffs/phase_03_to_phase_04/artifact_index.csv
+limitation_ids: *id001
+limitations:
+- affected_artifacts:
+  - P03-PROD-026
+  - P03-PROD-027
+  - P03-PROD-028
+  - P03-PROD-029
+  - P03-PROD-030
+  - P03-PROD-032
+  - P03-PROD-035
+  - P03-PROD-036
+  - P03-PROD-037
+  description: A2 has 37 supplement groups with no legal non-empty threshold under
+    the frozen maximum-risk target; A3 preserves 111 corresponding feature-level NO_LEGAL_THRESHOLD
+    terminals. TEST retuning is prohibited.
+  evidence_consequence: No-rule groups remain explicit ineligible evidence and cannot
+    be silently converted to all-reject or TEST-tuned thresholds.
+  inherited: false
+  lifecycle: ACTIVE
+  limitation_id: P03-LIM-SELECTIVE-NO-LEGAL-RULE-R1
+  scope: A2_A3_SELECTIVE_GENERALIZATION
+  source: Stages14–18 selective prediction evidence
+  source_ids:
+  - Stage14
+  - Stage16
+  - Stage18
+  source_phase: P03
+  source_sha256s:
+  - 8ca6cd4cc2b3d6b0a62a101e446076a236753211e3e441fbdc860b6e7fb22c9f
+  - 51003ffef44161545d1d15e3dce2374359224158c9525ac8fc1bbb664bb21229
+  - fe42c59b6cdae4e1ef5ccce298e3de08bbdd8177baa1a14026a49e1d493d941d
+  status: NONBLOCKING_NEGATIVE_RESULT
+- affected_artifacts:
+  - P03-PROD-025
+  - P03-PROD-035
+  - P03-PROD-036
+  - P03-PROD-037
+  description: member_disagreement is unavailable when the exact A4 control is not
+    bound to the source; A4_CONTROL_NOT_BOUND_TO_SOURCE remains explicit.
+  evidence_consequence: No ensemble/member-disagreement estimate may be fabricated
+    from unrelated checkpoints or substituted controls.
+  inherited: false
+  lifecycle: ACTIVE
+  limitation_id: P03-LIM-MEMBER-DISAGREEMENT-UNAVAILABLE-R1
+  scope: A3_CONDITIONAL_MEMBER_DISAGREEMENT
+  source: Stage13 conditional uncertainty evidence
+  source_ids:
+  - Stage13:member_disagreement
+  source_phase: P03
+  source_sha256s:
+  - 273ea0a56f08bc9d54b39f7876e0756c78b642a7216346f43b7ad68ce922b2e9
+  status: CONDITIONAL_INELIGIBILITY
+- affected_artifacts:
+  - P03-PROD-019
+  - P03-PROD-035
+  - P03-PROD-036
+  - P03-PROD-037
+  description: genuine_logits are required for logits-dependent methods such as temperature
+    and vector_scaling; hard labels or incompatible score semantics are never promoted
+    to fabricated logits.
+  evidence_consequence: Logits-dependent calibrators remain unavailable where genuine
+    compatible logits and class order are not established.
+  inherited: false
+  lifecycle: ACTIVE
+  limitation_id: P03-LIM-GENUINE-LOGITS-R1
+  scope: CALIBRATOR_ELIGIBILITY
+  source: Stage11 calibration attempt ledger / score-semantics contract
+  source_ids:
+  - Stage11:calibration_attempt_ledger
+  source_phase: P03
+  source_sha256s:
+  - 3ba261de6a7fdf613f35041a41e3b73e2f55317f7ca50d24027e0e97454bf10f
+  status: CONDITIONAL_INELIGIBILITY
+- affected_artifacts:
+  - P03-PROD-024
+  - P03-PROD-028
+  - P03-PROD-029
+  - P03-PROD-032
+  - P03-PROD-037
+  description: In the binary experiment, confidence, top1_top2_margin and normalized
+    entropy are deterministic monotone/rank-equivalent alias views of the same probability
+    ordering; they do not provide independent selective policy evidence.
+  evidence_consequence: A3 feature multiplicity must not be interpreted as three independent
+    uncertainty mechanisms or as evidence of replicated policy improvement.
+  inherited: false
+  lifecycle: ACTIVE
+  limitation_id: P03-LIM-BINARY-UNCERTAINTY-ALIAS-R1
+  scope: A3_FEATURE_INTERPRETATION
+  source: Stages13/16 binary uncertainty and selective evidence
+  source_ids:
+  - Stage13
+  - Stage16
+  source_phase: P03
+  source_sha256s:
+  - 273ea0a56f08bc9d54b39f7876e0756c78b642a7216346f43b7ad68ce922b2e9
+  - 51003ffef44161545d1d15e3dce2374359224158c9525ac8fc1bbb664bb21229
+  status: NONBLOCKING_INTERPRETATION_LIMIT
+- affected_artifacts:
+  - P03-PROD-025
+  - P03-PROD-037
+  - P03-PROD-046
+  - P03-PROD-063
+  description: The conformal path is a conditional conformal proxy/diagnostic. Exchangeability
+    under clustered subject/session EEG and downstream selection is not established
+    as a universal formal-coverage guarantee.
+  evidence_consequence: Do not claim universal formal 90% IHARQ TEST coverage from
+    the Stage13 proxy calculations; report empirical/diagnostic behavior only.
+  inherited: false
+  lifecycle: ACTIVE
+  limitation_id: P03-LIM-CONFORMAL-PROXY-R1
+  scope: CONFORMAL_CLAIM_CEILING
+  source: Stage13 conformal proxy evidence / frozen conditional design
+  source_ids:
+  - Stage13:conformal_set_size
+  source_phase: P03
+  source_sha256s:
+  - 273ea0a56f08bc9d54b39f7876e0756c78b642a7216346f43b7ad68ce922b2e9
+  status: NONBLOCKING_CLAIM_LIMIT
+- affected_artifacts:
+  - P03-PROD-033
+  - P03-PROD-034
+  - P03-PROD-037
+  description: Sparse support is governed by the frozen minimum-support policy. The
+    accepted supplement Stage19 run observed zero sparse_support warnings; minimum
+    realized subgroup support was above the policy threshold.
+  evidence_consequence: Absence of sparse warnings is a zero-event result, not permission
+    for post-hoc subgroup creation or unsupported sparse-cell inference.
+  inherited: false
+  lifecycle: ACTIVE
+  limitation_id: P03-LIM-SPARSE-SUPPORT-POLICY-R1
+  scope: GROUP_AUDIT_SUPPORT
+  source: Stage19 group/budget audit
+  source_ids:
+  - Stage19
+  source_phase: P03
+  source_sha256s:
+  - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  - fe42c59b6cdae4e1ef5ccce298e3de08bbdd8177baa1a14026a49e1d493d941d
+  status: NOT_TRIGGERED_IN_ACCEPTED_RUN
+- affected_artifacts:
+  - P03-PROD-035
+  - P03-PROD-037
+  - P03-PROD-051
+  - P03-PROD-053
+  - P03-PROD-054
+  description: Actual failed stage attempts remain immutable evidence and are not
+    deleted after successful successor correction.
+  evidence_consequence: Execution history must distinguish failed attempts from accepted
+    successor stages; documentary summaries cannot rewrite the run as failure-free.
+  inherited: false
+  lifecycle: ACTIVE
+  limitation_id: P03-LIM-FAILED-ATTEMPT-PRESERVATION-R1
+  scope: EXECUTION_HISTORY
+  source: Preserved stage failure receipts
+  source_ids:
+  - checkpoints/stage_07/failed_20260817T230545Z.json
+  - checkpoints/stage_20/failed_20260818T151823Z.json
+  - checkpoints/stage_20/failed_20260818T152214Z.json
+  - checkpoints/stage_20/failed_20260818T152636Z.json
+  source_phase: P03
+  source_sha256s:
+  - 67b8ff6ce6190a670619a103521db2173fe7735e3770cf64aa7e29e78c779777
+  - 65ad2f9f8289e3724fedb506eb502358f0fb89223f56bf2d17b590522bce9f35
+  - 87e43c5f11489b9cda7a721f45468d762bff3e19a32265f999f250150c662ab6
+  - e4f631d46ab094a9dfbf7b6928b446c3dc4a1b85e5110954cdec364cadbf06ef
+  - fe42c59b6cdae4e1ef5ccce298e3de08bbdd8177baa1a14026a49e1d493d941d
+  status: NONBLOCKING_AFTER_SUCCESSOR_CORRECTION
+negative_evidence:
+  failure_class_counts:
+    conditional skip: 864
+    no threshold: 148
+    stage execution failure: 4
+  failure_ledger_path: artifacts/negative_and_failed_results/phase_03/failure_ledger.jsonl
+  negative_result_count: 1016
+  negative_result_path: artifacts/negative_and_failed_results/phase_03/negative_results/P03S-POSTEXT-64-128-256-STAGE20-NEGATIVE-EVIDENCE-HARDENING-R1_1/negative_result_notes.jsonl
+  source_product_ids:
+  - P03-PROD-035
+  - P03-PROD-036
+  - P03-PROD-037
+  terminal_status_counts:
+    DIAGNOSTIC_ONLY: 432
+    FAILED_ATTEMPT: 4
+    INELIGIBLE: 580
+product_id: P03-PROD-046
+prohibited_wording:
+- Do not state or imply that the validation maximum-risk target is a universal TEST
+  guarantee.
+- Do not state or imply a formal conformal coverage guarantee beyond the frozen proxy/diagnostic
+  scope.
+- Do not count binary confidence, entropy, and margin aliases as independent scientific
+  wins.
+- Do not imply TEST-driven threshold tuning or post-hoc feature selection.
+- Do not omit no-rule, failed, blocked, diagnostic-only, or other explicit negative
+  evidence.
+- Do not make clinical, safety, deployment, or physiological-state claims from P03
+  evidence.
+- Do not treat candidate claims as approved before Layer 0.
+protocol_sha256: dc46b87cb802d1a6a3ab0efd3dc6db6be5c3b5c7125c54e95a9cdbea8eef797d
+run_id: P03-L3-POSTEXT-64-128-256-R1-1833e865bcb88ff8
+schema_id: Layer0ClaimHandoff.v1
+schema_version: 1.0.0
+source_artifact_ids:
+- P03-PROD-038
+- P03-PROD-039
+- P03-PROD-040
+- P03-PROD-045
+source_sha256s:
+- 5dd079bff4b861b66d7cc5019c08fb5beff6789aff62b95592c911d442cd9441
+- c2c63c346b89b030f63fb166b48be996e8c0ef4c2e6226972fff224447111700
+- 4e08c3c08defb14aa8b29cf60fdf9c8856e6f8f7324bd0fdf72bd84e9ecea285
+- d08348524d62be2e8ccc09b1b8ca7de951a1c694c2bb72544de8afe906b9ae07
+- 268dae12748ef7519df11dcafffa9588eb6110227649a2b9b42b41e09f3ddf1e
+- 03e50e2ff2df329eb84f58b8cfd853bca45113f978955596554ab54f966951f5
+- 5bbc0285c30f9b4add7d7e1779b28c1d016dea54371bec1bc0767d9035aa757e

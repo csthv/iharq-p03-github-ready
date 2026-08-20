@@ -1,0 +1,60 @@
+{
+  "record_id": "IHARQ-LABELMAPRECORD-20260806-b551cfd20335896c",
+  "record_type": "LabelMapRecord",
+  "schema_version": "1.0-p01",
+  "authority_status": "REGISTRY_REFERENCED",
+  "owner_layer": "L1",
+  "phase_id": "P01",
+  "config_id": "d03f0a7c869dd95a2a67e5a32edc501d52bfc3851d8e761ef56595d8bd1ff52f",
+  "source_ids": [
+    "IHARQ-DATASETRECORD-20260806-adb91f25a65e588e"
+  ],
+  "evidence_mode": "IMPLEMENTATION",
+  "limitation_tags": [
+    "NON_CLINICAL",
+    "NO_DEPLOYMENT_CLAIM",
+    "PUBLIC_EEG_ONLY"
+  ],
+  "lifecycle_status": "VALIDATED",
+  "fixture": false,
+  "fixture_tags": [],
+  "evidence_role": "PRIMARY",
+  "payload": {
+    "label_map_id": "Lee2019_MI:label-map:d03f0a7c869d",
+    "dataset_id": "Lee2019_MI",
+    "mapping": {
+      "left_hand": "left_hand",
+      "right_hand": "right_hand"
+    },
+    "mapping_metadata": {
+      "left_hand": {
+        "normalized_label": "left_hand",
+        "included": true
+      },
+      "right_hand": {
+        "normalized_label": "right_hand",
+        "included": true
+      }
+    },
+    "original_labels": [
+      "left_hand",
+      "right_hand"
+    ],
+    "normalized_labels": [
+      "left_hand",
+      "right_hand"
+    ],
+    "excluded_labels": [],
+    "unknown_labels": [],
+    "proxy_limitations": [
+      "PROXY_INTENT_ONLY",
+      "PUBLIC_EEG_ONLY",
+      "LABELED_OFFLINE_RUNS_ONLY"
+    ],
+    "round_trip_required": true,
+    "expected_event_codes": [],
+    "unknown_event_behavior": "BLOCK_SOURCE_EVENT_WITH_UNKNOWN_LABEL"
+  },
+  "ablation_id": null,
+  "semantic_hash": "b551cfd20335896c762d508e5950c8598772b7d4c75bec5d9ddee8e177bfe105"
+}

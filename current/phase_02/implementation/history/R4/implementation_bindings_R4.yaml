@@ -1,0 +1,38 @@
+bindings_id: P02-L2-MODEL-IMPLEMENTATION-BINDINGS-R2
+status: FROZEN_RUNTIME_BINDINGS
+DNN-FBCNET:
+  variant_name: FBCNet
+  implementation_module: null
+  implementation_equivalence: UNVERIFIED
+  license_status: null
+  checkpoint_required: false
+  rule: ORIGINAL_AUTHOR_OR_VERIFIED_EQUIVALENT_ONLY_OTHERWISE_DEPENDENCY_BLOCKED
+DNN-SEQ:
+  allow_eegconformer_fallback: true
+  dropout: 0.25
+  dbconformer:
+    variant_name: DBConformer
+    implementation_module: null
+    license_status: null
+    checkpoint_required: false
+    rule: PREFERRED_IF_IMMUTABLE_SOURCE_LICENSE_INTERFACE_GATES_PASS
+  fallback_variant: EEGConformer
+  fallback_rule: PRE_RESULT_DIRECT_FALLBACK_IF_DBCONFORMER_NOT_ADMITTED
+DNN-EGTC:
+  variant_name: EEGTCNet
+  fallback_activated: false
+  activation_rule: ONLY_IF_DNN_SEQ_DB_CONFORMER_AND_EEG_CONFORMER_PATH_RESOLVES_RESOURCE_BLOCKED_INPUT_INCOMPATIBLE_OR_NONCONVERGENT_PRE_RESULT
+SSL-CBRAMOD:
+  variant_name: CBraMod
+  implementation_module: null
+  license_status: null
+  checkpoint_required: true
+  checkpoint_path: null
+  rule: CHECKSUM_LICENSE_CORPUS_INPUT_RESOURCE_RELOAD_GATED
+SSL-REVE:
+  variant_name: REVE
+  implementation_module: null
+  license_status: null
+  checkpoint_required: true
+  checkpoint_path: null
+  rule: DIAGNOSTIC_ONLY_IF_EXACT_SOURCE_RECIPE_RESOURCE_PROVENANCE_PASS

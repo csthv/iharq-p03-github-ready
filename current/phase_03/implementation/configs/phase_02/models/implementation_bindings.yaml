@@ -1,0 +1,60 @@
+bindings_id: P02-L2-MODEL-IMPLEMENTATION-BINDINGS-R3-HF
+status: FROZEN_RUNTIME_BINDINGS
+DNN-FBCNET:
+  variant_name: FBCNet
+  implementation_module: null
+  implementation_equivalence: UNVERIFIED
+  license_status: null
+  checkpoint_required: false
+  rule: ORIGINAL_AUTHOR_OR_VERIFIED_EQUIVALENT_ONLY_OTHERWISE_DEPENDENCY_BLOCKED
+DNN-SEQ:
+  allow_eegconformer_fallback: true
+  dropout: 0.25
+  dbconformer:
+    variant_name: DBConformer
+    implementation_module: null
+    license_status: null
+    checkpoint_required: false
+    rule: PREFERRED_IF_IMMUTABLE_SOURCE_LICENSE_INTERFACE_GATES_PASS
+  fallback_variant: EEGConformer
+  fallback_rule: PRE_RESULT_DIRECT_FALLBACK_IF_DBCONFORMER_NOT_ADMITTED
+DNN-EGTC:
+  variant_name: EEGTCNet
+  fallback_activated: false
+  activation_rule: ONLY_IF_DNN_SEQ_DB_CONFORMER_AND_EEG_CONFORMER_PATH_RESOLVES_RESOURCE_BLOCKED_INPUT_INCOMPATIBLE_OR_NONCONVERGENT_PRE_RESULT
+SSL-CBRAMOD:
+  variant_name: CBraMod
+  implementation_module: iharq.layer2_decoders.hf_cbramod_adapter
+  license_status: CAN_EXECUTE
+  checkpoint_required: true
+  checkpoint_path: null
+  rule: CHECKSUM_LICENSE_CORPUS_INPUT_RESOURCE_RELOAD_GATED
+  checkpoint_sha256: a939ace9aa1e229f08391ad8bb2d197b507ae2c519a50addf087f0151b2df5c3
+  corpus_overlap_status: PASS
+  input_compatibility_status: PASS
+  channel_montage_status: PASS
+  source_recipe_verified: true
+  sampling_adapter_verified: true
+  target_sampling_hz: 200
+  asset_resolution: HUGGING_FACE_RUNTIME_OR_PREATTACHED_FALLBACK
+  plugin_config:
+    source_sampling_hz: 160
+    target_sampling_hz: 200
+    patch_size: 200
+    pretrained_local_dir_from_checkpoint_parent: true
+    strict_patch_alignment: true
+SSL-REVE:
+  variant_name: REVE
+  implementation_module: null
+  license_status: POINTER_ONLY_GATED_NO_REDISTRIBUTION
+  checkpoint_required: true
+  checkpoint_path: null
+  rule: DIAGNOSTIC_ONLY; KNOWN_PRETRAINING_CORPUS_OVERLAP BLOCKS CURRENT P02 EXECUTION;
+    AUTHENTICATION_CANNOT_OVERRIDE_SCIENTIFIC_GATE
+  corpus_overlap_status: BLOCKED_KNOWN_P02_OVERLAP
+  input_compatibility_status: NOT_EVALUATED_BECAUSE_OVERLAP_BLOCKS
+  channel_montage_status: NOT_EVALUATED_BECAUSE_OVERLAP_BLOCKS
+  source_recipe_verified: false
+  sampling_adapter_verified: false
+  target_sampling_hz: 200
+  asset_resolution: HF_GATED_SUPPORTED_BUT_CURRENT_P02_DOWNLOAD_PROHIBITED_BY_CORPUS_OVERLAP_GATE

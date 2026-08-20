@@ -1,0 +1,683 @@
+status: OFFICIAL_RUN_FAMILY_MATRIX_R3_FROZEN
+run_families:
+- run_family_id: P02-RF-SAN-MAJ
+  phase_id: P02
+  layer_id: L2
+  datasets: &id001
+  - PhysioNetMI
+  - BNCI2014_001
+  - Lee2019_MI
+  split_id: P01-L1-SPLIT-OFFICIAL-R2
+  window_profiles:
+  - CORE
+  budget_ids:
+  - FULL_TRAIN
+  seed_policy: MASTER_20260804; 1 deterministic/frozen model seed; exact SHA256 derivation
+    in P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R3
+  model_family: majority/frequency
+  branch_status: REQUIRED
+  ablation_ids:
+  - A0
+  fit_scope: legal training roles only; no test fit
+  selection_scope: frozen validation/inner roles; no final test
+  evaluation_scope: frozen evaluation roles only after selection
+  required_scores: native output semantics; probabilities only when genuine/declared
+  aggregation_unit: window/trial -> session/subject -> dataset/project per MetricDictionary/Protocol
+  expected_outputs:
+  - ModelRegistryRecord
+  - PredictionRecord
+  - BaselineMetricRecord
+  admission_gate: always if training labels legal
+  terminal_statuses:
+  - SUCCESS
+  - FAILED
+  - NONCONVERGENT
+  - RESOURCE_BLOCKED
+  - LICENSE_BLOCKED
+  - INCOMPATIBLE
+  - SKIPPED_BY_CONDITIONAL_GATE
+  - INVALID
+  - DIAGNOSTIC_ONLY
+  budget_repeat_policy: P01_FROZEN_SINGLE_SUBSET; repeat_count=1; no new membership
+    generation
+  low_label_status: NOT_SCHEDULED_UNDER_R3_PORTFOLIO_CONTRACT
+- run_family_id: P02-RF-SAN-STRAT
+  phase_id: P02
+  layer_id: L2
+  datasets: *id001
+  split_id: P01-L1-SPLIT-OFFICIAL-R2
+  window_profiles:
+  - CORE
+  budget_ids:
+  - FULL_TRAIN
+  seed_policy: MASTER_20260804; 20 derived stochastic seeds; exact SHA256 derivation
+    in P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R3
+  model_family: seeded stratified random
+  branch_status: REQUIRED
+  ablation_ids:
+  - A0
+  fit_scope: legal training roles only; no test fit
+  selection_scope: frozen validation/inner roles; no final test
+  evaluation_scope: frozen evaluation roles only after selection
+  required_scores: native output semantics; probabilities only when genuine/declared
+  aggregation_unit: window/trial -> session/subject -> dataset/project per MetricDictionary/Protocol
+  expected_outputs:
+  - ModelRegistryRecord
+  - PredictionRecord
+  - BaselineMetricRecord
+  admission_gate: training-role frequency vector + registered seed
+  terminal_statuses:
+  - SUCCESS
+  - FAILED
+  - NONCONVERGENT
+  - RESOURCE_BLOCKED
+  - LICENSE_BLOCKED
+  - INCOMPATIBLE
+  - SKIPPED_BY_CONDITIONAL_GATE
+  - INVALID
+  - DIAGNOSTIC_ONLY
+  budget_repeat_policy: P01_FROZEN_SINGLE_SUBSET; repeat_count=1; no new membership
+    generation
+  low_label_status: NOT_SCHEDULED_UNDER_R3_PORTFOLIO_CONTRACT
+- run_family_id: P02-RF-SAN-PERM
+  phase_id: P02
+  layer_id: L2
+  datasets: *id001
+  split_id: P01-L1-SPLIT-OFFICIAL-R2
+  window_profiles:
+  - CORE
+  budget_ids:
+  - FULL_TRAIN
+  seed_policy: MASTER_20260804; 100 derived permutation seeds; exact SHA256 derivation
+    in P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R3
+  model_family: grouped full-pipeline source-event label permutation
+  branch_status: REQUIRED_DIAGNOSTIC
+  ablation_ids:
+  - A0
+  fit_scope: legal training roles only; no test fit
+  selection_scope: frozen validation/inner roles; no final test
+  evaluation_scope: frozen evaluation roles only after selection
+  required_scores: native output semantics; probabilities only when genuine/declared
+  aggregation_unit: window/trial -> session/subject -> dataset/project per MetricDictionary/Protocol
+  expected_outputs:
+  - ModelRegistryRecord
+  - PredictionRecord
+  - BaselineMetricRecord
+  admission_gate: training role only; group/source-event atomicity
+  terminal_statuses:
+  - SUCCESS
+  - FAILED
+  - NONCONVERGENT
+  - RESOURCE_BLOCKED
+  - LICENSE_BLOCKED
+  - INCOMPATIBLE
+  - SKIPPED_BY_CONDITIONAL_GATE
+  - INVALID
+  - DIAGNOSTIC_ONLY
+  budget_repeat_policy: P01_FROZEN_SINGLE_SUBSET; repeat_count=1; no new membership
+    generation
+  low_label_status: NOT_SCHEDULED_UNDER_R3_PORTFOLIO_CONTRACT
+- run_family_id: P02-RF-SAN-PRIOR
+  phase_id: P02
+  layer_id: L2
+  datasets: *id001
+  split_id: P01-L1-SPLIT-OFFICIAL-R2
+  window_profiles:
+  - CORE
+  budget_ids:
+  - FULL_TRAIN
+  seed_policy: MASTER_20260804; 1 deterministic/frozen model seed; exact SHA256 derivation
+    in P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R3
+  model_family: training-prior vector
+  branch_status: DIAGNOSTIC_ONLY
+  ablation_ids:
+  - A0
+  fit_scope: legal training roles only; no test fit
+  selection_scope: frozen validation/inner roles; no final test
+  evaluation_scope: frozen evaluation roles only after selection
+  required_scores: native output semantics; probabilities only when genuine/declared
+  aggregation_unit: window/trial -> session/subject -> dataset/project per MetricDictionary/Protocol
+  expected_outputs:
+  - ModelRegistryRecord
+  - PredictionRecord
+  - BaselineMetricRecord
+  admission_gate: training-role class frequencies
+  terminal_statuses:
+  - SUCCESS
+  - FAILED
+  - NONCONVERGENT
+  - RESOURCE_BLOCKED
+  - LICENSE_BLOCKED
+  - INCOMPATIBLE
+  - SKIPPED_BY_CONDITIONAL_GATE
+  - INVALID
+  - DIAGNOSTIC_ONLY
+  budget_repeat_policy: P01_FROZEN_SINGLE_SUBSET; repeat_count=1; no new membership
+    generation
+  low_label_status: NOT_SCHEDULED_UNDER_R3_PORTFOLIO_CONTRACT
+- run_family_id: P02-RF-DIAG-LOGVAR
+  phase_id: P02
+  layer_id: L2
+  datasets: *id001
+  split_id: P01-L1-SPLIT-OFFICIAL-R2
+  window_profiles:
+  - CORE
+  budget_ids:
+  - FULL_TRAIN
+  seed_policy: MASTER_20260804; 1 deterministic/frozen model seed; exact SHA256 derivation
+    in P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R3
+  model_family: log-bandpower/log-variance + L2 logistic
+  branch_status: DIAGNOSTIC_ONLY
+  ablation_ids:
+  - A0
+  fit_scope: legal training roles only; no test fit
+  selection_scope: frozen validation/inner roles; no final test
+  evaluation_scope: frozen evaluation roles only after selection
+  required_scores: native output semantics; probabilities only when genuine/declared
+  aggregation_unit: window/trial -> session/subject -> dataset/project per MetricDictionary/Protocol
+  expected_outputs:
+  - ModelRegistryRecord
+  - PredictionRecord
+  - BaselineMetricRecord
+  admission_gate: legal train fit and score semantics
+  terminal_statuses:
+  - SUCCESS
+  - FAILED
+  - NONCONVERGENT
+  - RESOURCE_BLOCKED
+  - LICENSE_BLOCKED
+  - INCOMPATIBLE
+  - SKIPPED_BY_CONDITIONAL_GATE
+  - INVALID
+  - DIAGNOSTIC_ONLY
+  budget_repeat_policy: P01_FROZEN_SINGLE_SUBSET; repeat_count=1; no new membership
+    generation
+  low_label_status: NOT_SCHEDULED_UNDER_R3_PORTFOLIO_CONTRACT
+- run_family_id: P02-RF-CLS-CSP-LDA
+  phase_id: P02
+  layer_id: L2
+  datasets: *id001
+  split_id: P01-L1-SPLIT-OFFICIAL-R2
+  window_profiles:
+  - CORE
+  - A4_LONG
+  - A4_MULTI
+  budget_ids:
+  - FULL_TRAIN
+  - P01-L1-LOW-CAL-OFFICIAL-R2:{1,2,4,8,16,32}_PER_CLASS
+  seed_policy: MASTER_20260804; 1 deterministic/frozen model seed; exact SHA256 derivation
+    in P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R3
+  model_family: CSP + shrinkage LDA
+  branch_status: SELECTED_MAXIMUM_SCOPE
+  ablation_ids:
+  - A0
+  - A4
+  fit_scope: legal training roles only; no test fit
+  selection_scope: frozen validation/inner roles; no final test
+  evaluation_scope: frozen evaluation roles only after selection
+  required_scores: native output semantics; probabilities only when genuine/declared
+  aggregation_unit: window/trial -> session/subject -> dataset/project per MetricDictionary/Protocol
+  expected_outputs:
+  - ModelRegistryRecord
+  - PredictionRecord
+  - BaselineMetricRecord
+  - EnsembleControlRecord
+  admission_gate: P01 compatibility + valid train fit
+  terminal_statuses:
+  - SUCCESS
+  - FAILED
+  - NONCONVERGENT
+  - RESOURCE_BLOCKED
+  - LICENSE_BLOCKED
+  - INCOMPATIBLE
+  - SKIPPED_BY_CONDITIONAL_GATE
+  - INVALID
+  - DIAGNOSTIC_ONLY
+  budget_repeat_policy: P01_FROZEN_SINGLE_SUBSET; repeat_count=1; no new membership
+    generation
+- run_family_id: P02-RF-CLS-FBCSP-LR
+  phase_id: P02
+  layer_id: L2
+  datasets: *id001
+  split_id: P01-L1-SPLIT-OFFICIAL-R2
+  window_profiles:
+  - CORE
+  - A4_LONG
+  - A4_MULTI
+  budget_ids:
+  - FULL_TRAIN
+  seed_policy: MASTER_20260804; 1 deterministic/frozen model seed; exact SHA256 derivation
+    in P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R3
+  model_family: FBCSP + L2 logistic
+  branch_status: SELECTED_MAXIMUM_SCOPE
+  ablation_ids:
+  - A0
+  - A4
+  fit_scope: legal training roles only; no test fit
+  selection_scope: frozen validation/inner roles; no final test
+  evaluation_scope: frozen evaluation roles only after selection
+  required_scores: native output semantics; probabilities only when genuine/declared
+  aggregation_unit: window/trial -> session/subject -> dataset/project per MetricDictionary/Protocol
+  expected_outputs:
+  - ModelRegistryRecord
+  - PredictionRecord
+  - BaselineMetricRecord
+  - EnsembleControlRecord
+  admission_gate: filter-bank provenance + legal train fit
+  terminal_statuses:
+  - SUCCESS
+  - FAILED
+  - NONCONVERGENT
+  - RESOURCE_BLOCKED
+  - LICENSE_BLOCKED
+  - INCOMPATIBLE
+  - SKIPPED_BY_CONDITIONAL_GATE
+  - INVALID
+  - DIAGNOSTIC_ONLY
+  budget_repeat_policy: P01_FROZEN_SINGLE_SUBSET; repeat_count=1; no new membership
+    generation
+  low_label_status: NOT_SCHEDULED_UNDER_R3_PORTFOLIO_CONTRACT
+- run_family_id: P02-RF-RIE-TS-LR
+  phase_id: P02
+  layer_id: L2
+  datasets: *id001
+  split_id: P01-L1-SPLIT-OFFICIAL-R2
+  window_profiles:
+  - CORE
+  - A4_LONG
+  - A4_MULTI
+  budget_ids:
+  - FULL_TRAIN
+  - P01-L1-LOW-CAL-OFFICIAL-R2:{1,2,4,8,16,32}_PER_CLASS
+  seed_policy: MASTER_20260804; 1 deterministic/frozen model seed; exact SHA256 derivation
+    in P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R3
+  model_family: shrinkage covariance -> tangent space -> L2 logistic
+  branch_status: SELECTED_MAXIMUM_SCOPE
+  ablation_ids:
+  - A0
+  - A4
+  fit_scope: legal training roles only; no test fit
+  selection_scope: frozen validation/inner roles; no final test
+  evaluation_scope: frozen evaluation roles only after selection
+  required_scores: native output semantics; probabilities only when genuine/declared
+  aggregation_unit: window/trial -> session/subject -> dataset/project per MetricDictionary/Protocol
+  expected_outputs:
+  - ModelRegistryRecord
+  - PredictionRecord
+  - BaselineMetricRecord
+  - EnsembleControlRecord
+  admission_gate: legal covariance/tangent reference train fit
+  terminal_statuses:
+  - SUCCESS
+  - FAILED
+  - NONCONVERGENT
+  - RESOURCE_BLOCKED
+  - LICENSE_BLOCKED
+  - INCOMPATIBLE
+  - SKIPPED_BY_CONDITIONAL_GATE
+  - INVALID
+  - DIAGNOSTIC_ONLY
+  budget_repeat_policy: P01_FROZEN_SINGLE_SUBSET; repeat_count=1; no new membership
+    generation
+- run_family_id: P02-RF-RIE-EA-TS
+  phase_id: P02
+  layer_id: L2
+  datasets: *id001
+  split_id: P01-L1-SPLIT-OFFICIAL-R2
+  window_profiles:
+  - CORE
+  - A4_LONG
+  - A4_MULTI
+  budget_ids:
+  - FULL_TRAIN
+  seed_policy: MASTER_20260804; 1 deterministic/frozen model seed; exact SHA256 derivation
+    in P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R3
+  model_family: train-safe Euclidean Alignment + tangent/logistic
+  branch_status: CONDITIONALLY_SELECTED
+  ablation_ids:
+  - A0
+  - A4
+  fit_scope: legal training roles only; no test fit
+  selection_scope: frozen validation/inner roles; no final test
+  evaluation_scope: frozen evaluation roles only after selection
+  required_scores: native output semantics; probabilities only when genuine/declared
+  aggregation_unit: window/trial -> session/subject -> dataset/project per MetricDictionary/Protocol
+  expected_outputs:
+  - ModelRegistryRecord
+  - PredictionRecord
+  - BaselineMetricRecord
+  - EnsembleControlRecord
+  admission_gate: fit only legal train/adaptation role; matched aligned/unaligned
+    comparison
+  terminal_statuses:
+  - SUCCESS
+  - FAILED
+  - NONCONVERGENT
+  - RESOURCE_BLOCKED
+  - LICENSE_BLOCKED
+  - INCOMPATIBLE
+  - SKIPPED_BY_CONDITIONAL_GATE
+  - INVALID
+  - DIAGNOSTIC_ONLY
+  budget_repeat_policy: P01_FROZEN_SINGLE_SUBSET; repeat_count=1; no new membership
+    generation
+  low_label_status: NOT_SCHEDULED_UNDER_R3_PORTFOLIO_CONTRACT
+- run_family_id: P02-RF-RIE-MDM
+  phase_id: P02
+  layer_id: L2
+  datasets: *id001
+  split_id: P01-L1-SPLIT-OFFICIAL-R2
+  window_profiles:
+  - CORE
+  budget_ids:
+  - FULL_TRAIN
+  seed_policy: MASTER_20260804; 1 deterministic/frozen model seed; exact SHA256 derivation
+    in P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R3
+  model_family: MDM/FgMDM
+  branch_status: DIAGNOSTIC_ONLY
+  ablation_ids:
+  - A0
+  fit_scope: legal training roles only; no test fit
+  selection_scope: frozen validation/inner roles; no final test
+  evaluation_scope: frozen evaluation roles only after selection
+  required_scores: native output semantics; probabilities only when genuine/declared
+  aggregation_unit: window/trial -> session/subject -> dataset/project per MetricDictionary/Protocol
+  expected_outputs:
+  - ModelRegistryRecord
+  - PredictionRecord
+  - BaselineMetricRecord
+  admission_gate: score semantics explicitly distance-derived; not calibrated probability
+  terminal_statuses:
+  - SUCCESS
+  - FAILED
+  - NONCONVERGENT
+  - RESOURCE_BLOCKED
+  - LICENSE_BLOCKED
+  - INCOMPATIBLE
+  - SKIPPED_BY_CONDITIONAL_GATE
+  - INVALID
+  - DIAGNOSTIC_ONLY
+  budget_repeat_policy: P01_FROZEN_SINGLE_SUBSET; repeat_count=1; no new membership
+    generation
+  low_label_status: NOT_SCHEDULED_UNDER_R3_PORTFOLIO_CONTRACT
+- run_family_id: P02-RF-DNN-EEGNET
+  phase_id: P02
+  layer_id: L2
+  datasets: *id001
+  split_id: P01-L1-SPLIT-OFFICIAL-R2
+  window_profiles:
+  - CORE
+  - A4_LONG
+  - A4_MULTI
+  budget_ids:
+  - FULL_TRAIN
+  - P01-L1-LOW-CAL-OFFICIAL-R2:{1,2,4,8,16,32}_PER_CLASS
+  seed_policy: MASTER_20260804; 5 derived model seeds when admitted; exact SHA256
+    derivation in P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R3
+  model_family: EEGNet
+  branch_status: SELECTED_MAXIMUM_SCOPE
+  ablation_ids:
+  - A0
+  - A4
+  fit_scope: legal training roles only; no test fit
+  selection_scope: frozen validation/inner roles; no final test
+  evaluation_scope: frozen evaluation roles only after selection
+  required_scores: native output semantics; probabilities only when genuine/declared
+  aggregation_unit: window/trial -> session/subject -> dataset/project per MetricDictionary/Protocol
+  expected_outputs:
+  - ModelRegistryRecord
+  - PredictionRecord
+  - BaselineMetricRecord
+  - EnsembleControlRecord
+  admission_gate: input/output/resource compatibility
+  terminal_statuses:
+  - SUCCESS
+  - FAILED
+  - NONCONVERGENT
+  - RESOURCE_BLOCKED
+  - LICENSE_BLOCKED
+  - INCOMPATIBLE
+  - SKIPPED_BY_CONDITIONAL_GATE
+  - INVALID
+  - DIAGNOSTIC_ONLY
+  budget_repeat_policy: P01_FROZEN_SINGLE_SUBSET; repeat_count=1; no new membership
+    generation
+- run_family_id: P02-RF-DNN-FBCNET
+  phase_id: P02
+  layer_id: L2
+  datasets: *id001
+  split_id: P01-L1-SPLIT-OFFICIAL-R2
+  window_profiles:
+  - CORE
+  - A4_LONG
+  - A4_MULTI
+  budget_ids:
+  - FULL_TRAIN
+  seed_policy: MASTER_20260804; 5 derived model seeds when admitted; exact SHA256
+    derivation in P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R3
+  model_family: FBCNet
+  branch_status: CONDITIONALLY_SELECTED
+  ablation_ids:
+  - A0
+  - A4
+  fit_scope: legal training roles only; no test fit
+  selection_scope: frozen validation/inner roles; no final test
+  evaluation_scope: frozen evaluation roles only after selection
+  required_scores: native output semantics; probabilities only when genuine/declared
+  aggregation_unit: window/trial -> session/subject -> dataset/project per MetricDictionary/Protocol
+  expected_outputs:
+  - ModelRegistryRecord
+  - PredictionRecord
+  - BaselineMetricRecord
+  - EnsembleControlRecord
+  admission_gate: original-author implementation or demonstrated equivalence; resource/input
+    gates
+  terminal_statuses:
+  - SUCCESS
+  - FAILED
+  - NONCONVERGENT
+  - RESOURCE_BLOCKED
+  - LICENSE_BLOCKED
+  - INCOMPATIBLE
+  - SKIPPED_BY_CONDITIONAL_GATE
+  - INVALID
+  - DIAGNOSTIC_ONLY
+  budget_repeat_policy: P01_FROZEN_SINGLE_SUBSET; repeat_count=1; no new membership
+    generation
+  low_label_status: NOT_SCHEDULED_UNDER_R3_PORTFOLIO_CONTRACT
+- run_family_id: P02-RF-DNN-SEQ
+  phase_id: P02
+  layer_id: L2
+  datasets: *id001
+  split_id: P01-L1-SPLIT-OFFICIAL-R2
+  window_profiles:
+  - CORE
+  - A4_LONG
+  - A4_MULTI
+  budget_ids:
+  - FULL_TRAIN
+  seed_policy: MASTER_20260804; 5 derived model seeds when admitted; exact SHA256
+    derivation in P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R3
+  model_family: DBConformer preferred; EEG Conformer direct fallback/matched comparator
+  branch_status: CONDITIONALLY_SELECTED_ONE_FINAL_SLOT
+  ablation_ids:
+  - A0
+  - A4
+  fit_scope: legal training roles only; no test fit
+  selection_scope: frozen validation/inner roles; no final test
+  evaluation_scope: frozen evaluation roles only after selection
+  required_scores: native output semantics; probabilities only when genuine/declared
+  aggregation_unit: window/trial -> session/subject -> dataset/project per MetricDictionary/Protocol
+  expected_outputs:
+  - ModelRegistryRecord
+  - PredictionRecord
+  - BaselineMetricRecord
+  - EnsembleControlRecord
+  admission_gate: DBConformer first; if any admission gate fails use EEG Conformer;
+    no final-test selection
+  terminal_statuses:
+  - SUCCESS
+  - FAILED
+  - NONCONVERGENT
+  - RESOURCE_BLOCKED
+  - LICENSE_BLOCKED
+  - INCOMPATIBLE
+  - SKIPPED_BY_CONDITIONAL_GATE
+  - INVALID
+  - DIAGNOSTIC_ONLY
+  budget_repeat_policy: P01_FROZEN_SINGLE_SUBSET; repeat_count=1; no new membership
+    generation
+  low_label_status: NOT_SCHEDULED_UNDER_R3_PORTFOLIO_CONTRACT
+- run_family_id: P02-RF-DNN-EGTC
+  phase_id: P02
+  layer_id: L2
+  datasets: *id001
+  split_id: P01-L1-SPLIT-OFFICIAL-R2
+  window_profiles:
+  - CORE
+  budget_ids:
+  - FULL_TRAIN
+  seed_policy: MASTER_20260804; 5 derived model seeds when admitted; exact SHA256
+    derivation in P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R3
+  model_family: EEG-TCNet
+  branch_status: SCREENED_LOW_RESOURCE_FALLBACK
+  ablation_ids:
+  - A0
+  fit_scope: legal training roles only; no test fit
+  selection_scope: frozen validation/inner roles; no final test
+  evaluation_scope: frozen evaluation roles only after selection
+  required_scores: native output semantics; probabilities only when genuine/declared
+  aggregation_unit: window/trial -> session/subject -> dataset/project per MetricDictionary/Protocol
+  expected_outputs:
+  - ModelRegistryRecord
+  - PredictionRecord
+  - BaselineMetricRecord
+  admission_gate: only governed reopen if DBConformer + EEG Conformer exceed resource/stability
+    ceiling
+  terminal_statuses:
+  - SUCCESS
+  - FAILED
+  - NONCONVERGENT
+  - RESOURCE_BLOCKED
+  - LICENSE_BLOCKED
+  - INCOMPATIBLE
+  - SKIPPED_BY_CONDITIONAL_GATE
+  - INVALID
+  - DIAGNOSTIC_ONLY
+  budget_repeat_policy: P01_FROZEN_SINGLE_SUBSET; repeat_count=1; no new membership
+    generation
+  low_label_status: NOT_SCHEDULED_UNDER_R3_PORTFOLIO_CONTRACT
+- run_family_id: P02-RF-SSL-CBRAMOD
+  phase_id: P02
+  layer_id: L2
+  datasets: *id001
+  split_id: P01-L1-SPLIT-OFFICIAL-R2
+  window_profiles:
+  - CORE
+  - A4_LONG
+  - A4_MULTI
+  budget_ids:
+  - FULL_TRAIN
+  - P01-L1-LOW-CAL-OFFICIAL-R2:{1,2,4,8,16,32}_PER_CLASS
+  seed_policy: MASTER_20260804; 5 derived model seeds when admitted; exact SHA256
+    derivation in P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R3
+  model_family: CBraMod
+  branch_status: CONDITIONALLY_SELECTED
+  ablation_ids:
+  - A0
+  - A4
+  fit_scope: legal training roles only; no test fit
+  selection_scope: frozen validation/inner roles; no final test
+  evaluation_scope: frozen evaluation roles only after selection
+  required_scores: native output semantics; probabilities only when genuine/declared
+  aggregation_unit: window/trial -> session/subject -> dataset/project per MetricDictionary/Protocol
+  expected_outputs:
+  - ModelRegistryRecord
+  - PredictionRecord
+  - BaselineMetricRecord
+  - EnsembleControlRecord
+  admission_gate: checkpoint hash + corpus-overlap + license + channel/montage + 200-Hz
+    model-local adapter + resource + output + reload gates
+  terminal_statuses:
+  - SUCCESS
+  - FAILED
+  - NONCONVERGENT
+  - RESOURCE_BLOCKED
+  - LICENSE_BLOCKED
+  - INCOMPATIBLE
+  - SKIPPED_BY_CONDITIONAL_GATE
+  - INVALID
+  - DIAGNOSTIC_ONLY
+  budget_repeat_policy: P01_FROZEN_SINGLE_SUBSET; repeat_count=1; no new membership
+    generation
+- run_family_id: P02-RF-SSL-REVE
+  phase_id: P02
+  layer_id: L2
+  datasets: *id001
+  split_id: P01-L1-SPLIT-OFFICIAL-R2
+  window_profiles:
+  - CORE
+  budget_ids:
+  - FULL_TRAIN
+  seed_policy: MASTER_20260804; 1 deterministic/frozen model seed; exact SHA256 derivation
+    in P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R3
+  model_family: REVE
+  branch_status: DIAGNOSTIC_ONLY
+  ablation_ids:
+  - A0
+  fit_scope: legal training roles only; no test fit
+  selection_scope: frozen validation/inner roles; no final test
+  evaluation_scope: frozen evaluation roles only after selection
+  required_scores: native output semantics; probabilities only when genuine/declared
+  aggregation_unit: window/trial -> session/subject -> dataset/project per MetricDictionary/Protocol
+  expected_outputs:
+  - ModelRegistryRecord
+  - PredictionRecord
+  - BaselineMetricRecord
+  admission_gate: documentary/bounded diagnostic only under current authority
+  terminal_statuses:
+  - SUCCESS
+  - FAILED
+  - NONCONVERGENT
+  - RESOURCE_BLOCKED
+  - LICENSE_BLOCKED
+  - INCOMPATIBLE
+  - SKIPPED_BY_CONDITIONAL_GATE
+  - INVALID
+  - DIAGNOSTIC_ONLY
+  budget_repeat_policy: P01_FROZEN_SINGLE_SUBSET; repeat_count=1; no new membership
+    generation
+  low_label_status: NOT_SCHEDULED_UNDER_R3_PORTFOLIO_CONTRACT
+expansion_axes:
+- dataset
+- split/window profile
+- legal budget membership
+- model branch
+- derived seed/repetition
+- A0/A4 control condition
+no_result_dependent_expansion: true
+full_ablation_execution:
+  A0:
+    state: FULL_EXECUTION_REQUIRED_IN_P02
+    run_cell_template: P02-A0-{dataset_id}-{branch_id}-{evidence_regime}-{budget_id}-{model_repeat_index}-{seed_id}
+    all_planned_branch_terminal_rows_required: true
+    kaggle_stage: '15'
+  A4:
+    state: FULL_EXECUTION_REQUIRED_IN_P02
+    condition_ids:
+    - A4-C0-CORE
+    - A4-C1-LONG-3P5S
+    - A4-C2-MULTI-HARD-VOTE
+    - A4-C3-MULTI-PROB-AVG
+    - A4-C4-MODEL-HARD-VOTE
+    - A4-C5-MODEL-PROB-AVG
+    run_cell_template: P02-A4-{dataset_id}-{role_id}-{branch_id}-{condition_id}-{evidence_regime}-{budget_id}-{model_repeat_index}-{seed_id}
+    all_condition_terminal_rows_required: true
+    kaggle_stage: '18'
+full_p02_ablations_without_run_cells: 0
+full_ablation_planned_run_cells:
+  manifest: p02_full_ablation_planned_run_cells_R3.yaml
+  A0: 678
+  A4: 1218
+  TOTAL: 1896
+  state: FULL_EXECUTION_REQUIRED_IN_P02

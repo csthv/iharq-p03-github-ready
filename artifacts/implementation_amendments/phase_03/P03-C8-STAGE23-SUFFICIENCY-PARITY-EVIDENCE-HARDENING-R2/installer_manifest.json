@@ -1,0 +1,89 @@
+{
+  "binary_alias_semantic_qualification": {
+    "A2_A3_design_identity_distinct": true,
+    "A2_A3_raw_distinct_field_interpretation": "Distinct ablation identities only; not independent uncertainty ranking evidence.",
+    "A3_independent_ranking_information": false,
+    "binary_uncertainty_alias_limitation_preserved": true,
+    "candidate_claims_approved": false,
+    "checksums_pending_stage24": true,
+    "final_phase_sufficiency": false,
+    "final_phase_sufficiency_pending_stage24": true,
+    "no_legal_threshold_preserved": true,
+    "secret_scan_pending_stage24": true,
+    "stage23_sufficiency_scope": "PRE_EXPORT",
+    "test_used_for_selection": false
+  },
+  "canonical_paths": {
+    "P03-PROD-051": "artifacts/manifests/phase_03/execution_manifest.json",
+    "P03-PROD-052": "checkpoints/stage_23/receipt.json",
+    "P03-PROD-053": "stage_ledger/stage_23.json",
+    "P03-PROD-054": "gate_results/G03-23-SUFFICIENCY.json",
+    "P03-PROD-055": "artifacts/reports/phase_03/ReadinessReport/readiness/stage_23_readiness_report.json",
+    "P03-PROD-056": "artifacts/reports/phase_03/EvidenceSufficiencyDecision/evidence_sufficiency/stage_23_evidence_sufficiency_decision.json",
+    "P03-PROD-057": "artifacts/reports/phase_03/ResourceQualificationReport/resources/stage_23_resource_qualification_report.json"
+  },
+  "claim_approval_performed": false,
+  "config_changed": false,
+  "final_phase_sufficiency_requires_stage24": true,
+  "hardening_id": "P03-C8-STAGE23-SUFFICIENCY-PARITY-EVIDENCE-HARDENING-R2",
+  "installed_at_utc": "2026-08-16T20:57:23.282533Z",
+  "maxq_audit_id": "P03-C8-MAXQ-STAGE23-SUFFICIENCY-PARITY-HARDENED-AUDIT-R2",
+  "pre_export_sufficiency_semantics": true,
+  "protocol_changed": false,
+  "raw_dryrun": {
+    "a2_no_rule_count": 91,
+    "a2_success_count": 194,
+    "a3_no_rule_count": 273,
+    "a3_success_count": 582,
+    "candidate_claim_count": 4,
+    "limitation_count": 21,
+    "missing_products": [],
+    "negative_result_count": 3618,
+    "prior_complete_stages": 23,
+    "products_pre_export_realized_after_stage23_writers": 59,
+    "required_products_before_stage24": 59,
+    "traceability_products_pre_stage23": 52
+  },
+  "repository_mutated": false,
+  "returned_stage23_products": [
+    "P03-PROD-051",
+    "P03-PROD-052",
+    "P03-PROD-053",
+    "P03-PROD-054",
+    "P03-PROD-055",
+    "P03-PROD-056",
+    "P03-PROD-057"
+  ],
+  "reused_stage22_product_sha256s": {
+    "P03-PROD-048": "dacec8269c6b127499d0fdc3b565be8d2b2bb96f97430839eb09b181018f1bae",
+    "P03-PROD-062": "af5a78021474731997d4a8f0cc11ff4ca430ab3271fd741ef8ffd61ab434ee59",
+    "P03-PROD-063": "4e6b9117d070c1a0737b72ffabdc72a2c5ba5b2704bfa92e2bdb053e1a3a49a0"
+  },
+  "reused_stage22_products": [
+    "P03-PROD-062",
+    "P03-PROD-063"
+  ],
+  "run_id": "P03-L3-OFFICIAL-09ca82c743e0411a",
+  "schema_files": {
+    "CheckpointReceipt": "artifacts/schemas/phase_03/CheckpointReceipt.schema.json",
+    "EvidenceSufficiencyDecision": "artifacts/schemas/phase_03/EvidenceSufficiencyDecision.schema.json",
+    "GateDecisionReport": "artifacts/schemas/phase_03/GateDecisionReport.schema.json",
+    "P03ExecutionManifest": "artifacts/schemas/phase_03/P03ExecutionManifest.schema.json",
+    "ReadinessReport": "artifacts/schemas/phase_03/ReadinessReport.schema.json",
+    "ResourceQualificationReport": "artifacts/schemas/phase_03/ResourceQualificationReport.schema.json",
+    "StageLedger": "artifacts/schemas/phase_03/StageLedger.schema.json"
+  },
+  "scientific_method_changed": false,
+  "scope": "PROSPECTIVE_POST_PROMOTION_STAGE23_DOCUMENTARY_EVIDENCE_ONLY",
+  "stage22_audit_recovery_manifest_sha256": "59109875db4741c5652993838c686c1d9671a54639d2edf7d65574a036490528",
+  "stage22_final_disposition": "ACCEPT/FREEZE",
+  "stage22_fingerprint": "5314bd711ea142dc15f850d819e3e39b025dac53b6c68e7c288b2b12b70bab33",
+  "stage22_hardening_manifest_sha256": "b251f3f134f5d4a00495bc2f08c86f0f7a4b228f6bf9098fc291f78328eca1bf",
+  "stage22_output_manifest_sha256": "e1f786ec9f7c3d46dd29a8569d4076c83a1e33493ff32fb4530c02134142862d",
+  "stage23_executed_at_install": false,
+  "stage23_handler_module": "iharq_p03_l3_norule_runtime_amendment_r1",
+  "stage23_handler_sha256": "dbdb02878139f65be4c67f6f713e7d15dd008bb2e56c5cdcc142f3baedd42afe",
+  "stage23_scientific_handler_changed": false,
+  "stage24_executed_at_install": false,
+  "test_used_for_selection": false
+}

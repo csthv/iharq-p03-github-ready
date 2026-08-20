@@ -1,0 +1,17 @@
+{
+  "gate_id": "P01-G10",
+  "official_or_local_name": "window_identity",
+  "status": "PASS",
+  "inputs": [],
+  "procedure_version": "P01-L1-GATE-R6",
+  "observations": {},
+  "failure_codes": [],
+  "repair_owner": "L1_WINDOWS",
+  "affected_artifacts": [],
+  "evidence_paths": [
+    "reports/phase_01/windows/window_timing_overlap.json",
+    "records/windows/"
+  ],
+  "manifest_entry": "manifests/phase_01/gates/P01-G10.json",
+  "blocking_effect": false
+}

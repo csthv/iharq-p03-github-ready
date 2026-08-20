@@ -1,0 +1,25 @@
+{
+  "bundle_id": "P00-LOCAL-FIRST-READINESS-CHAIN-R1",
+  "fixture_tags": [
+    "MOCK",
+    "NON_EMPIRICAL",
+    "NON_CLAIM_BEARING"
+  ],
+  "records": [],
+  "workflow_strategy_id": "P00-LOCAL-FIRST-SINGLE-PUBLICATION-R1",
+  "source_package_sha256": "366b5f28bd42aebe5dfa47b79ac3c9f0053f19f820346472b35a06b2e0f2e8f8",
+  "authority_zip_sha256": "beb00f47e4a790242d62405dcca799647d849c8dc2ff043c5196cee372607128",
+  "gate_profile_id": "P00-LOCAL-FIRST-GATE-PROFILE-R1",
+  "readiness_package_ids": [
+    "P00-PROTOCOL-V1-MODE-C-READINESS-R1",
+    "P00-PHASE-ANALYSIS-READINESS-R1",
+    "P00-PHASE-EVIDENCE-REPORT-READINESS-R1",
+    "P00-LAYER0-DISPOSITION-READINESS-R1",
+    "P00-EVIDENCE-MAP-READINESS-R1",
+    "P00-LAYER10-CLOSURE-READINESS-R1"
+  ],
+  "final_documents_created": false,
+  "github_writes_performed": false,
+  "github_ci_attempted": false,
+  "future_publication_mode": "ONE_FINAL_BATCH"
+}

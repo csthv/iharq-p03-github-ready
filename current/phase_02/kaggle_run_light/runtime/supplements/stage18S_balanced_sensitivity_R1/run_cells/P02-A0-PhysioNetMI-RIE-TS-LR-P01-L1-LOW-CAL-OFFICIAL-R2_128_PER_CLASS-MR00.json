@@ -1,0 +1,36 @@
+{
+  "run_cell_id": "P02-A0-PhysioNetMI-RIE-TS-LR-P01-L1-LOW-CAL-OFFICIAL-R2:128_PER_CLASS-MR00",
+  "ablation_id": "A0",
+  "terminal_status": "SUCCESS",
+  "checkpoint_sha256": "3c49403328c5d207be7d956cbfd6692d14bf4ba45f78bf5d8ef949ec65363531",
+  "observed_denominator": 495,
+  "expected_denominator": 495,
+  "selected_params": {
+    "C": 1.0,
+    "covariance": "oas",
+    "max_iter": 2000,
+    "tangent_metric": "riemann"
+  },
+  "resolved_variant": "RIE-TS-LR",
+  "score_type": "NATIVE_PROBABILITY",
+  "validation_burden_seconds": 5.966110841000045,
+  "model_storage_bytes": 50418,
+  "selected_candidate_id": "CAND-01",
+  "checkpoint_format": "TRUSTED_PROJECT_PICKLE_PINNED_ENVIRONMENT",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.009298356000726926,
+    "batch1_latency_p95_s": 0.00937340239979676,
+    "repeats": 5
+  },
+  "budget_repeat_id": "P01_FROZEN_SINGLE_SUBSET",
+  "evidence_class": "P02_POST_HOC_LOW_LABEL_EXTENSION_R1",
+  "test_loaded_after_group_selection_sealed": true,
+  "prediction_partition": "records/PredictionRecord/dataset=PhysioNetMI/branch=RIE-TS-LR/budget=P01-L1-LOW-CAL-OFFICIAL-R2:128_PER_CLASS/P02-A0-PhysioNetMI-RIE-TS-LR-P01-L1-LOW-CAL-OFFICIAL-R2:128_PER_CLASS-MR00.jsonl",
+  "metric_source": "metrics/P02-A0-PhysioNetMI-RIE-TS-LR-P01-L1-LOW-CAL-OFFICIAL-R2:128_PER_CLASS-MR00.json",
+  "checkpoint_path": "checkpoints/integrated_64_128_256/P02-A0-PhysioNetMI-RIE-TS-LR-P01-L1-LOW-CAL-OFFICIAL-R2:128_PER_CLASS-MR00.checkpoint",
+  "integration_source_run_cell_id": "P02S-LLX-R1-A0-PhysioNetMI-RIE-TS-LR-128PC-MR00",
+  "integration_source_config_sha256": "67807d9959d98c6a138288dc2c3f12377e0acb8bfce9d76f333485a0cb0a760e",
+  "integration_revision": "P02-INTEGRATED-LOW-LABEL-1-TO-256-R1",
+  "scientific_numeric_result_reused_without_recomputation": true,
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

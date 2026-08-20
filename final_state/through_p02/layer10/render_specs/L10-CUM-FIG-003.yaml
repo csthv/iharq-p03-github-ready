@@ -1,0 +1,16 @@
+artifact_id: L10-CUM-FIG-003
+source_data: figure_source_data/CUM_FIG_03_Evidence_Role_Evolution_source.csv
+render_script: scripts/render_layer10.py
+claim_ids:
+- CUM-CLM-001/v1
+- CUM-CLM-007/v1
+finding_ids:
+- CF-01
+- CF-08
+- CF-09
+limitations:
+- EVIDENCE_CLASS_NOT_INTERCHANGEABLE
+output: figures/L10-CUM-FIG-003.png
+scientific_transform: DISPLAY_ONLY
+source_data_sha256: 1fdb88f3d4851d596843749e3eed54fe63621a26c878d5b2f5efeefa1fb8bba6
+output_sha256: 793ca1fa06db1476b79d1315ccfad9df804ef3bdb4da0d0aca6d395d465e9e0c

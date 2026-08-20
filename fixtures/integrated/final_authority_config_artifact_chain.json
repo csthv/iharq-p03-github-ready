@@ -1,0 +1,21 @@
+{
+  "chain_id": "P00-FINAL-AUTHORITY-CONFIG-ARTIFACT-R1",
+  "status": "PASS_LOCAL",
+  "authority_manifest": "manifests/final_authority_manifest.yaml",
+  "config": "configs/phases/p00.yaml",
+  "schema_catalog": "catalogs/final_schema_catalog.yaml",
+  "artifact_catalog": "catalogs/final_record_family_coverage_matrix.yaml",
+  "run_manifest_schema": "schemas/manifests/PhaseRunManifest.schema.json",
+  "validation_evidence": "reports/phase_00/final_implementation_audit_deterministic_summary_R1.json",
+  "candidate_statement_interface": "schemas/records/ClaimStatementRecord.schema.json",
+  "layer0_interface": "schemas/records/Layer0DispositionRecord.schema.json",
+  "future_evidence_map_slot": "docs/templates/evidence_map_annex_template.md",
+  "layer10_interface": "schemas/records/ReproducibilityManifest.schema.json",
+  "future_handoff": "reports/phase_00/phase_0_implementation_finalization_handoff_R1.yaml",
+  "limitations": [
+    "NON_EMPIRICAL",
+    "LOCAL_SUCCESSOR_NOT_COMMITTED"
+  ],
+  "records": [],
+  "controls": {}
+}

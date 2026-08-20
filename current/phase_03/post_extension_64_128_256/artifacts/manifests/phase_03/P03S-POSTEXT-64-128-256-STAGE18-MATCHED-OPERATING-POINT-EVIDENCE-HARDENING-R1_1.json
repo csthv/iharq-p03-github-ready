@@ -1,0 +1,99 @@
+{
+  "A0_source_nonnull_count": 0,
+  "A2_rule_nonnull_count": 213,
+  "A3_rule_nonnull_count": 213,
+  "canonical_exemplar_profile_id": "P03-C8-STAGE18-MATCHED-OPERATING-POINT-EVIDENCE-HARDENING-R2",
+  "comparable_count": 213,
+  "family_manifest_sha256": "f7a54516869087f88b236e7956c7fe87ce757fff0575b212e65e3e11d077c54b",
+  "hardening_id": "P03S-POSTEXT-64-128-256-STAGE18-MATCHED-OPERATING-POINT-EVIDENCE-HARDENING-R1_1",
+  "ineligible_count": 111,
+  "lineage_parent_id_length_census": {
+    "12": 45,
+    "13": 168,
+    "8": 3,
+    "9": 108
+  },
+  "no_rule_ineligible_preserved_count": 111,
+  "partitions": [
+    {
+      "bytes": 533484,
+      "comparability_status": "COMPARABLE",
+      "feature_id": "confidence",
+      "path": "records/comparability=COMPARABLE/feature=confidence/records.jsonl",
+      "record_count": 71,
+      "sha256": "a7ca6b09cd42dcac14732894a4f717e9eaa2a032ab675f3ad7b59bcdbbeca498"
+    },
+    {
+      "bytes": 534052,
+      "comparability_status": "COMPARABLE",
+      "feature_id": "normalized_entropy",
+      "path": "records/comparability=COMPARABLE/feature=normalized_entropy/records.jsonl",
+      "record_count": 71,
+      "sha256": "580a6f936f09dd5182149e0222ef49d4ea669d76ff7660b664ce69ac9ba5d258"
+    },
+    {
+      "bytes": 533910,
+      "comparability_status": "COMPARABLE",
+      "feature_id": "top1_top2_margin",
+      "path": "records/comparability=COMPARABLE/feature=top1_top2_margin/records.jsonl",
+      "record_count": 71,
+      "sha256": "30413eb73a815340ba8ce280f5fad9419c65c24194d2f0b5987d04fb8acb9a71"
+    },
+    {
+      "bytes": 252818,
+      "comparability_status": "INELIGIBLE",
+      "feature_id": "confidence",
+      "path": "records/comparability=INELIGIBLE/feature=confidence/records.jsonl",
+      "record_count": 37,
+      "sha256": "1356ca74b6fa04c1b5ad9625121320204258780ea67ad40e3e6121f8e95e672f"
+    },
+    {
+      "bytes": 253114,
+      "comparability_status": "INELIGIBLE",
+      "feature_id": "normalized_entropy",
+      "path": "records/comparability=INELIGIBLE/feature=normalized_entropy/records.jsonl",
+      "record_count": 37,
+      "sha256": "279450c542e5ced0f75753b1abfb2b403655236d6c9682f8a34617d5a465cdf4"
+    },
+    {
+      "bytes": 253040,
+      "comparability_status": "INELIGIBLE",
+      "feature_id": "top1_top2_margin",
+      "path": "records/comparability=INELIGIBLE/feature=top1_top2_margin/records.jsonl",
+      "record_count": 37,
+      "sha256": "13334ab3faf2c0e3c331fafa4f8f460b953aae80d4a6a2fe6cd7003a6fe6b247"
+    }
+  ],
+  "posthoc_feature_winner_selected_count": 0,
+  "proceed_to_stage19": false,
+  "product_id": "P03-PROD-032",
+  "record_count": 324,
+  "record_family": "Layer3MatchedOperatingPointTable",
+  "run_id": "P03-L3-POSTEXT-64-128-256-R1-1833e865bcb88ff8",
+  "schema_id": "P03SStage18MatchedOperatingPointEvidenceHardeningManifest.v1",
+  "schema_sha256": "d886a7ee8723eeec610527f9bb5b540bea964169614e96da5961edd9480b66e0",
+  "schema_version": "1.0.0",
+  "scientific_change": false,
+  "scientific_required_field_change_count": 0,
+  "selected_calibration_record_count": 108,
+  "source_sha256_length_census": {
+    "17": 3,
+    "18": 108,
+    "21": 45,
+    "22": 168
+  },
+  "stage15_selective_successor_parent_count": 71,
+  "stage16_selective_successor_parent_count": 213,
+  "stage17_threshold_registry_parent_count": 284,
+  "stage18_output_manifest_sha256": "f11f76a542a79de7bc2fc78852db1a9b54f2991c49a56d42f72ea453ca754657",
+  "stage18_raw_matched_sha256": "3d8bf56e58082b7931adce4aceee8241428e26e8f140d4b996243d777d7205d2",
+  "stage18_raw_rows_sha256": "014313fe85a823be8c249d8583f90332dfc91d79fa7eb306ec1afa5a2177913a",
+  "stage18_rerun": false,
+  "stage18_scientific_bytes_changed": false,
+  "stage19_executed": false,
+  "stage_id": "18",
+  "status": "PASS",
+  "table_id": "P03-L3-MATCHED-TABLE-691909229d3ab6f9dc47",
+  "test_used_for_threshold_selection_count": 0,
+  "unmatched_count": 0
+}

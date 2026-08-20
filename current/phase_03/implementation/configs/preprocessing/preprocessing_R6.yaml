@@ -1,0 +1,70 @@
+profile_id: P01-L1-PREPROCESS-OFFICIAL-R2
+operations:
+- name: validate_units
+  target_unit: V
+  conversion_from_metadata_required: true
+  order: 1
+- name: capture_events
+  sources:
+  - annotations
+  - stim_channel
+  - provider_event_table
+  preserve_original_sample_index: true
+  preserve_original_onset_seconds: true
+  fail_on_ambiguous_event_origin: true
+  order: 2
+- name: select_eeg
+  channel_type: eeg
+  preserve_original_order: true
+  order: 3
+- name: demean
+  axis: time
+  scope: each continuous run after event capture and before resampling
+  order: 4
+- name: rereference_average
+  channel_scope: selected EEG channels
+  order: 5
+- name: resample_polyphase_with_events
+  target_hz: 160
+  anti_alias: true
+  rational_ratio_from_exact_source_rate: true
+  implementation: mne.io.Raw.resample
+  method: polyphase
+  joint_events_parameter_required: true
+  event_sample_source: returned jointly resampled event array
+  independent_float_time_rounding_allowed: false
+  window:
+  - kaiser
+  - 5.0
+  pad: reflect
+  n_jobs: 1
+  stim_picks: AUTO
+  expected_mne_call: raw.resample(160, method="polyphase", window=("kaiser", 5.0),
+    pad="reflect", events=events, n_jobs=1)
+  order: 6
+- name: bandpass_sos_zero_phase
+  low_hz: 8.0
+  high_hz: 32.0
+  order: 7
+  padtype: odd
+  implementation: scipy.signal.sosfiltfilt
+  design_order: 4
+  effective_forward_backward_order: 8
+  padlen_samples: 27
+  padlen_rule: 3 * (2 * n_sos + 1 - min(zero_count_at_origin, pole_count_at_origin));
+    evaluates to 27 for frozen 4th-order 8-32 Hz bandpass at 160 Hz
+  minimum_input_samples: 29
+  sos_output_required: true
+- name: cast
+  dtype: float32
+  order: 8
+fit_scope: NOT_REQUIRED_FOR_OFFICIAL_LAYER1_PROFILE
+fit_roles:
+- train
+held_out_statistics_allowed: false
+event_timing_policy:
+  original_event_samples_preserved: true
+  resampled_event_samples_preserved: true
+  joint_resampling_required: true
+  window_anchor: returned resampled event sample
+  prohibited: independent timestamp-to-sample reconstruction after resampling

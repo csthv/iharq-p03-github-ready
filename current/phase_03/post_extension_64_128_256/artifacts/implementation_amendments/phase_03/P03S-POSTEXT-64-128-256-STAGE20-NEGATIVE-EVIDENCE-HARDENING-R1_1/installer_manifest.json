@@ -1,0 +1,35 @@
+{
+  "affected_products": [
+    "P03-PROD-035",
+    "P03-PROD-036",
+    "P03-PROD-037"
+  ],
+  "canonical_groups_recomputed": 0,
+  "canonical_negative_rows_copied": 0,
+  "canonical_schema_shas": {
+    "FailureLedger.schema.json": "30de7cefe6770bf5061affb718a40e17ad4e2eed6bdd6c852bc302bf0500042d",
+    "LimitationRegister.schema.json": "cfdea21c66b3f9e7249a6199572db7d30332e4e6e74ba24b591a923af3d76535",
+    "NegativeResultNote.schema.json": "dadb2480ec78bdae091aa8355bf41deb223fe93827fec95581a94c5d1002301d"
+  },
+  "excluded_product": "P03-PROD-038",
+  "excluded_product_stage": "21",
+  "hardening_manifest_sha256": "56a6e2214e483a5cab99d610a6ed6ebe570df1d18c534c26d0f64a8680ecf07f",
+  "installer_id": "P03S-POSTEXT-64-128-256-STAGE20-NEGATIVE-EVIDENCE-HARDENING-R1_1",
+  "repair_from_failed_materializer_id": "P03S-POSTEXT-64-128-256-STAGE20-NEGATIVE-EVIDENCE-HARDENING-R1",
+  "repair_scope": "STAGE19_SUPPLEMENT_HARDENING_MANIFEST_BINDING_ONLY",
+  "run_id": "P03-L3-POSTEXT-64-128-256-R1-1833e865bcb88ff8",
+  "schema_id": "P03SStage20NegativeEvidenceHardeningInstallerManifest.v1",
+  "schema_version": "1.0.0",
+  "scientific_handler_changed": false,
+  "scientific_method_changed": false,
+  "stage19_hardening_id": "P03S-POSTEXT-64-128-256-STAGE19-GROUPBUDGET-EVIDENCE-HARDENING-R1_1",
+  "stage19_hardening_manifest_sha256": "d70f06423dcb1b74be77ce259670631b59ec3e1966ecc02cc35d7ac3ddf22a5a",
+  "stage19ha_gate_id": "P03S-POSTEXT-64-128-256-STAGE19-INDEPENDENT-REPORT-PROFILE-CLOSURE-19HA-R1",
+  "stage19ha_gate_sha256": "f528df6c156102814899bf77787f29a6fd1b5f4e379c03927fff87efb1cad109",
+  "stage20_rerun": false,
+  "stage20_stage_artifacts_mutated": false,
+  "stage20a_gate_id": "P03S-POSTEXT-64-128-256-STAGE20-INDEPENDENT-RAW-NEGATIVE-EVIDENCE-CLOSURE-20A-R1",
+  "stage20a_gate_sha256": "5f6be856c78ab354b558ba87467bb8da0122d81d9d370a0b12fc3fefda1c3679",
+  "stage_id": "20",
+  "status": "PASS"
+}

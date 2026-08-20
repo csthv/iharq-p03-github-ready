@@ -1,0 +1,24 @@
+{
+  "artifact_id": "P02-STAGE18S-R1-SUPPLEMENT-GATE",
+  "supplement_id": "P02-STAGE18S-BALANCED-SENSITIVITY-R1",
+  "created_at_utc": "2026-08-14T03:35:03.660377+00:00",
+  "status": "PASS",
+  "canonical_stage18_modified": false,
+  "canonical_G18_modified": false,
+  "execution_receipt_status": "PASS",
+  "planned_cells": 162,
+  "terminal_counts": {
+    "INPUT_INCOMPATIBLE": 27,
+    "SUCCESS": 135
+  },
+  "member_status_counts": {
+    "INPUT_INCOMPATIBLE": 27,
+    "SUCCESS": 189
+  },
+  "three_repeat_anchor_trajectories": 45,
+  "six_budget_mr00_trajectories": 15,
+  "participant_effect_rows": 1080,
+  "training_provenance_issues": 0,
+  "claim_scope": "POST_HOC_SENSITIVITY_DESCRIPTIVE",
+  "ready_for_downstream_preservation": true
+}

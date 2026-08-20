@@ -1,0 +1,354 @@
+{
+  "$id": "https://github.com/csthv/IHARQ/schemas/schemas/records/p03/HighConfidenceWrongTable.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "budget_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "confidence": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "config_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "created_at_utc": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "dataset_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "decision_time_export_prohibited": {
+      "type": "boolean"
+    },
+    "error_rank": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "evaluation_role": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "failure_code": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object",
+        "null"
+      ]
+    },
+    "group_ids": {
+      "type": "array"
+    },
+    "invalidated_by": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object",
+        "null"
+      ]
+    },
+    "layer_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "lifecycle_status": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "limitations": {
+      "type": "array"
+    },
+    "lineage_parent_ids": {
+      "type": "array"
+    },
+    "model_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "payload_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "phase_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "predicted_class": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "probability_source_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "producer_module": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "protocol_snapshot_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "record_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "row_source_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "run_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "schema_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "schema_version": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "session_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "source_artifact_ids": {
+      "type": "array"
+    },
+    "source_sha256s": {
+      "type": "array"
+    },
+    "subject_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "supersedes": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object",
+        "null"
+      ]
+    },
+    "table_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "terminal_status": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "threshold_profile_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "true_class": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "window_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "record_id",
+    "phase_id",
+    "layer_id",
+    "run_id",
+    "config_sha256",
+    "protocol_snapshot_id",
+    "created_at_utc",
+    "producer_module",
+    "source_artifact_ids",
+    "source_sha256s",
+    "lineage_parent_ids",
+    "lifecycle_status",
+    "terminal_status",
+    "supersedes",
+    "invalidated_by",
+    "limitations",
+    "failure_code",
+    "payload_sha256",
+    "table_id",
+    "probability_source_id",
+    "threshold_profile_id",
+    "evaluation_role",
+    "dataset_id",
+    "model_id",
+    "budget_id",
+    "subject_id",
+    "session_id",
+    "window_id",
+    "confidence",
+    "predicted_class",
+    "true_class",
+    "error_rank",
+    "group_ids",
+    "decision_time_export_prohibited",
+    "row_source_id"
+  ],
+  "title": "IHARQ P03 HighConfidenceWrongTable governed profile v1",
+  "type": "object",
+  "x-iharq-layer": "L3",
+  "x-iharq-phase": "P03",
+  "x-iharq-status": "GOVERNED_P03_PROFILE"
+}

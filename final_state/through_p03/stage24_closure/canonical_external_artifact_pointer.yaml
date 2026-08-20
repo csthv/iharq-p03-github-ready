@@ -1,0 +1,61 @@
+access_class: PRIVATE_GOVERNED
+created_at_utc: '2026-08-16T21:47:04.754268Z'
+credential_class: SYMBOLIC_ONLY
+credential_symbol: IHARQ_HF_TOKEN_P02
+credential_value_persisted: false
+hardening_id: P03-C8-STAGE24-FINAL-EXPORT-CHECKSUM-SECRET-SCAN-HARDENING-R3
+immutable_revision: 60487529b43206abf0a7c01a219b30d3a31741ab
+mutable_latest_prohibited: true
+object_manifest:
+  hash_verification_modes:
+    GIT_BLOB_SHA1: 11114
+    LFS_SHA256: 4615
+  hash_verified: true
+  immutable_revision: 60487529b43206abf0a7c01a219b30d3a31741ab
+  object_count: 15729
+  path: phase_03/layer_03/P03-L3-OFFICIAL-09ca82c743e0411a
+  path_set_verified: true
+  repo_info_revision_verified: true
+  repository: Csthv/iharq-p03-phase03-l3-execution
+  size_verified: true
+  total_bytes: 4353115259
+path: phase_03/layer_03/P03-L3-OFFICIAL-09ca82c743e0411a
+payload_sha256: df7393f2ae5f0d4ec15590d2a2d32c54fdc182ae31dc31c969868f485c4d8cbd
+pointer_outside_immutable_payload_reason: The immutable revision must exist before
+  its pointer can name it; the pointer is therefore a separately checksummed Stage24
+  closure artifact.
+post_upload_revision_gate: true
+product_id: P03-PROD-061
+provider: Hugging Face private dataset
+raw_pointer:
+  access_class: PRIVATE_GOVERNED
+  bundle_manifest_sha256: 815ae116eafabe675b1a7a83854f446d9d9a9e47f5ad7e99cd21bb67cb3ea02e
+  credential_symbol: IHARQ_HF_TOKEN_P02
+  fallback_role: KAGGLE_WORKING_EXPORT_UNTIL_VERIFIED_UPLOAD
+  immutable_revision: 60487529b43206abf0a7c01a219b30d3a31741ab
+  mutable_latest_prohibited: true
+  object_count: 15723
+  path: phase_03/layer_03/P03-L3-OFFICIAL-09ca82c743e0411a
+  post_upload_revision_gate: true
+  preferred_role: EXTERNAL_FIRST_FOR_COMPLETE_VALIDATED_P03_RESULT_SURFACE
+  provider: Hugging Face private dataset
+  remote_revision_verified: true
+  repository: Csthv/iharq-p03-phase03-l3-execution
+  revision_status: IMMUTABLE_COMMIT_VERIFIED
+raw_pointer_path: stage_artifacts/stage_24/external_artifact_pointer.json
+raw_pointer_sha256: f7adf55e497f863b57f542cfceda956d38411081f99ce9f93d635901c15af6fa
+remote_revision_verified: true
+repository: Csthv/iharq-p03-phase03-l3-execution
+revision_status: IMMUTABLE_COMMIT_VERIFIED
+run_id: P03-L3-OFFICIAL-09ca82c743e0411a
+schema_id: ExternalArtifactPointer.v1
+schema_version: 1.0.0
+source_artifact_ids:
+- P03-PROD-059
+- P03-PROD-060
+- STAGE24-RAW-EXTERNAL-POINTER
+source_sha256s:
+- 81e0cc8267c8d296f905b5eaf4302fef6a60f6553950c97fcb3e212292055bdb
+- 5b304300c16791cd2eddbe00a97bde7747862bd644dfe878849ca6f17396d533
+- f7adf55e497f863b57f542cfceda956d38411081f99ce9f93d635901c15af6fa
+stage_id: '24'

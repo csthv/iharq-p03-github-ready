@@ -1,0 +1,180 @@
+models:
+- branch_id: SAN-MAJ
+  family: majority/frequency
+  category: sanity
+  status: REQUIRED
+  role: deterministic hard-label lower bound
+  admission: always if training labels legal
+  scores: hard label; prior vector separately diagnostic
+  claim: A0 lower-bound context
+  model_repeats: 1
+  low_label_claim_ready: false
+- branch_id: SAN-STRAT
+  family: seeded stratified random
+  category: sanity
+  status: REQUIRED
+  role: stochastic chance reference
+  admission: training-role frequency vector + registered seed
+  scores: probability/prior-based stochastic output where implementation supports
+  claim: A0 chance context
+  model_repeats: 20
+  low_label_claim_ready: false
+- branch_id: SAN-PERM
+  family: grouped full-pipeline source-event label permutation
+  category: sanity
+  status: REQUIRED_DIAGNOSTIC
+  role: pipeline/leakage negative control
+  admission: training role only; group/source-event atomicity
+  scores: native selected simple pipeline output
+  claim: diagnostic only
+  model_repeats: 1
+  low_label_claim_ready: false
+  permutation_repeats: 100
+- branch_id: SAN-PRIOR
+  family: training-prior vector
+  category: sanity
+  status: DIAGNOSTIC_ONLY
+  role: score diagnostic; not duplicate hard-label baseline
+  admission: training-role class frequencies
+  scores: prior vector
+  claim: diagnostic only
+  model_repeats: 1
+  low_label_claim_ready: false
+- branch_id: DIAG-LOGVAR
+  family: log-bandpower/log-variance + L2 logistic
+  category: diagnostic
+  status: DIAGNOSTIC_ONLY
+  role: spatial-attribution diagnostic
+  admission: legal train fit and score semantics
+  scores: logistic native
+  claim: diagnostic only
+  model_repeats: 1
+  low_label_claim_ready: false
+- branch_id: CLS-CSP-LDA
+  family: CSP + shrinkage LDA
+  category: classical
+  status: SELECTED_MAXIMUM_SCOPE
+  role: claim-bearing classical anchor
+  admission: P01 compatibility + valid train fit
+  scores: labels + native posterior/decision semantics recorded
+  claim: A0/A4 eligible
+  model_repeats: 1
+  low_label_claim_ready: true
+- branch_id: CLS-FBCSP-LR
+  family: FBCSP + L2 logistic
+  category: classical
+  status: SELECTED_MAXIMUM_SCOPE
+  role: frequency-sensitive classical anchor
+  admission: filter-bank provenance + legal train fit
+  scores: logistic scores/probabilities
+  claim: A0/A4 eligible
+  model_repeats: 1
+  low_label_claim_ready: false
+- branch_id: RIE-TS-LR
+  family: shrinkage covariance -> tangent space -> L2 logistic
+  category: riemannian
+  status: SELECTED_MAXIMUM_SCOPE
+  role: geometry-aware score-producing anchor
+  admission: legal covariance/tangent reference train fit
+  scores: logistic scores/probabilities
+  claim: A0/A4 eligible
+  model_repeats: 1
+  low_label_claim_ready: true
+- branch_id: RIE-EA-TS
+  family: train-safe Euclidean Alignment + tangent/logistic
+  category: riemannian
+  status: CONDITIONALLY_SELECTED
+  role: matched aligned challenger
+  admission: fit only legal train/adaptation role; matched aligned/unaligned comparison
+  scores: native terminal classifier output
+  claim: qualified A0/A4 if admitted
+  model_repeats: 1
+  low_label_claim_ready: false
+- branch_id: RIE-MDM
+  family: MDM/FgMDM
+  category: riemannian
+  status: DIAGNOSTIC_ONLY
+  role: geometric mechanism sanity check
+  admission: score semantics explicitly distance-derived; not calibrated probability
+  scores: distance-derived simplex/labels
+  claim: diagnostic only
+  model_repeats: 1
+  low_label_claim_ready: false
+- branch_id: DNN-EEGNET
+  family: EEGNet
+  category: compact_neural
+  status: SELECTED_MAXIMUM_SCOPE
+  role: permanent compact specialist anchor
+  admission: input/output/resource compatibility
+  scores: native logits/probabilities with exact semantics
+  claim: A0/A4 eligible
+  model_repeats: 5
+  low_label_claim_ready: true
+- branch_id: DNN-FBCNET
+  family: FBCNet
+  category: conditional_neural
+  status: CONDITIONALLY_SELECTED
+  role: frequency-aware neural challenger
+  admission: original-author implementation or demonstrated equivalence; resource/input
+    gates
+  scores: native logits
+  claim: qualified if admitted
+  model_repeats: 5
+  low_label_claim_ready: false
+- branch_id: DNN-SEQ
+  family: DBConformer preferred; EEG Conformer direct fallback/matched comparator
+  category: conditional_sequence
+  status: CONDITIONALLY_SELECTED_ONE_FINAL_SLOT
+  role: one modern sequence slot
+  admission: DBConformer first; if any admission gate fails use EEG Conformer; no
+    final-test selection
+  scores: native logits/probabilities semantics verified
+  claim: one claim-bearing sequence slot if admitted
+  model_repeats: 5
+  low_label_claim_ready: false
+- branch_id: DNN-EGTC
+  family: EEG-TCNet
+  category: fallback
+  status: SCREENED_LOW_RESOURCE_FALLBACK
+  role: controlled low-resource sequence fallback
+  admission: pre-result fallback only if DBConformer and EEG Conformer are both RESOURCE_BLOCKED/INCOMPATIBLE
+    at Stage12; no human reopen or test-driven activation
+  scores: native logits
+  claim: diagnostic fallback; not permanent claim-bearing branch
+  model_repeats: 5
+  low_label_claim_ready: false
+- branch_id: SSL-CBRAMOD
+  family: CBraMod
+  category: compact_ssl
+  status: CONDITIONALLY_SELECTED
+  role: audited compact pretrained branch
+  admission: checkpoint hash + corpus-overlap + license + channel/montage + 200-Hz
+    model-local adapter + resource + output + reload gates
+  scores: native logits
+  claim: qualified A0 and A4_MULTI variant if admitted; A4_LONG fail-closed under
+    current 700-sample adapter compatibility freeze
+  model_repeats: 5
+  low_label_claim_ready: true
+  a4_eligibility:
+    CORE: CONDITIONAL
+    A4_MULTI: CONDITIONAL
+    A4_LONG: INCOMPATIBLE_FAIL_CLOSED_UNLESS_PREVERIFIED_700_SUPPORT
+- branch_id: SSL-REVE
+  family: REVE
+  category: compact_ssl
+  status: DIAGNOSTIC_ONLY
+  role: resource/flexible-montage reference
+  admission: documentary/bounded diagnostic only under current authority
+  scores: as declared by implementation
+  claim: diagnostic only
+  model_repeats: 1
+  low_label_claim_ready: false
+minimum_lawful_floor:
+- required sanity controls
+- '>=1 classical anchor'
+- '>=1 Riemannian/robust-classical comparator'
+- EEGNet compact neural where measured resources permit
+one_sequence_slot_rule: DBConformer preferred conditional; EEG Conformer direct fallback/matched
+  comparator; no final-test selection
+portfolio_freeze_id: P02-L2-MODEL-PORTFOLIO-R2
+stage05_behavior: VERIFY_ONLY

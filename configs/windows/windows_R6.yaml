@@ -1,0 +1,16 @@
+profile_id: P01-L1-WINDOW-OFFICIAL-R2
+event_anchor: MI_CUE_ONSET
+start_offset_seconds: 0.5
+duration_seconds: 3.0
+stride_seconds: 3.0
+target_sampling_hz: 160
+start_offset_samples: 80
+duration_samples: 480
+stride_samples: 480
+last_window_policy: ONE_WINDOW_PER_INCLUDED_SOURCE_EVENT
+bounds_policy: REJECT_OUT_OF_BOUNDS
+overlap_group: PARENT_SOURCE_EVENT
+rounding: NO_INDEPENDENT_FLOAT_TIME_ROUNDING; returned resampled event sample + exact
+  integer offset 80
+failure_behavior: OUT_OF_BOUNDS_OR_MISSING_PARENT_IS_INVALID_WINDOW; PRESERVE REASON
+  CODE; NO CLIPPING

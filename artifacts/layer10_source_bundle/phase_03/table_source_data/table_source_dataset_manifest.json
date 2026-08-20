@@ -1,0 +1,68 @@
+{
+  "config_sha256": "2eda0689ab42e93c91b3ef9b76e0168d1c13d1feb3d1a552beaade91105ab7c3",
+  "dataset_id": "P03-L10-TABLE-SOURCES-R1",
+  "no_recompute_contract": "PROHIBITED",
+  "product_id": "P03-PROD-042",
+  "run_id": "P03-L3-OFFICIAL-09ca82c743e0411a",
+  "schema_id": "TableSourceDataset.v1",
+  "source_files": [
+    {
+      "artifact_id": "P03-TABLE-SOURCE-GROUP-BUDGET",
+      "bytes": 436355,
+      "columns": [
+        "group_source_id",
+        "group_field",
+        "group_id",
+        "support_count",
+        "sparse_support",
+        "brier",
+        "nll",
+        "status"
+      ],
+      "limitations": [
+        "P03-LIM-SPARSE-SUPPORT-POLICY-R1"
+      ],
+      "path": "table_source_data/group_budget_audit.csv",
+      "sha256": "64895c333f8d143a6b598e8b90e95223e9ff5cc16b5ca539a732fcc7fb57434b",
+      "source_artifact_ids": [
+        "P03-PROD-033"
+      ],
+      "source_sha256s": [
+        "64895c333f8d143a6b598e8b90e95223e9ff5cc16b5ca539a732fcc7fb57434b"
+      ],
+      "units": {
+        "brier": "score",
+        "nll": "nats",
+        "support_count": "records"
+      }
+    },
+    {
+      "artifact_id": "P03-TABLE-SOURCE-NEGATIVE-RESULTS",
+      "bytes": 846845,
+      "columns": [
+        "failure_class",
+        "reason",
+        "source",
+        "terminal_status"
+      ],
+      "limitations": [
+        "P03-LIM-SELECTIVE-NO-LEGAL-RULE-R1",
+        "P03-LIM-MEMBER-DISAGREEMENT-UNAVAILABLE-R1",
+        "P03-LIM-GENUINE-LOGITS-R1",
+        "P03-LIM-BINARY-UNCERTAINTY-ALIAS-R1",
+        "P03-LIM-CONFORMAL-PROXY-R1"
+      ],
+      "path": "table_source_data/negative_results.jsonl",
+      "sha256": "15b9caf4d091435fbf76fe7d7117e1d5d36e5e4f66ec71b503990c55a7c63aea",
+      "source_artifact_ids": [
+        "P03-PROD-035",
+        "P03-PROD-036",
+        "P03-PROD-037"
+      ],
+      "source_sha256s": [
+        "15b9caf4d091435fbf76fe7d7117e1d5d36e5e4f66ec71b503990c55a7c63aea"
+      ],
+      "units": {}
+    }
+  ]
+}

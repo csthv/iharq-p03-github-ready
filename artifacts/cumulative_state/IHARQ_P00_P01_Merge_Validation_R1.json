@@ -1,0 +1,44 @@
+{
+  "validation_id": "IHARQ-P00-P01-CUMULATIVE-MERGE-VALIDATION-R1",
+  "status": "PASS",
+  "source_validation": {
+    "p00_github_predecessor": "PASS_NO_PROBLEMS",
+    "p01_finalized_predecessor": "24/24 PASS"
+  },
+  "merge_validation": {
+    "cumulative_release_verifier": "40/40 PASS",
+    "phase01_release_verifier_in_cumulative_tree": "24/24 PASS",
+    "python_compileall": "PASS_WITH_PYCACHE_REDIRECTED_OUTSIDE_REPOSITORY",
+    "structured_current_controls": "14/14 PARSE PASS",
+    "preservation_audit": "PASS",
+    "p00_files_accounted": 588,
+    "p01_nontransient_files_accounted": 13224,
+    "p01_transient_bytecode_excluded": 112,
+    "unexplained_source_loss": 0,
+    "path_overlap": {
+      "common": 70,
+      "byte_identical": 62,
+      "different": 8
+    },
+    "current_authority_stack": "Governance V6.1 + seven core authorities",
+    "p02_input_contract_manifest_types": "5/5 PRESENT",
+    "p02_entry_readiness": "PASS",
+    "p02_execution_started": false,
+    "open_blockers": 0
+  },
+  "scientific_noninterference": {
+    "p00_measurements_changed": false,
+    "p01_measurements_changed": false,
+    "p01_findings_changed": false,
+    "protocol_changed": false,
+    "layer0_wording_changed": false,
+    "evidence_map_relations_changed": false,
+    "layer10_source_values_changed": false
+  },
+  "boundaries": {
+    "a14": "ABSENT_PROHIBITED",
+    "a4_effectiveness_in_p01": false,
+    "clinical_deployment_effectiveness_in_p01": false
+  },
+  "decision": "GREEN_LIGHT_TO_BEGIN_GOVERNED_P02_PREPARATION; P02 EXECUTION REQUIRES ITS OWN PRE-RUN FREEZE"
+}

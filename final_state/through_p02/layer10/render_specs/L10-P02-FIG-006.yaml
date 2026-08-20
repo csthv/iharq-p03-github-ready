@@ -1,0 +1,17 @@
+artifact_id: L10-P02-FIG-006
+source_data: figure_source_data/P02_Table_A4_role_condition_summary.csv
+render_script: scripts/render_layer10.py
+claim_ids:
+- P02-CLM-007/v1
+- CUM-CLM-005/v1
+finding_ids:
+- P02-FIND-009
+- P02-FIND-010
+- CF-05
+limitations:
+- SINGLE_REPEAT
+- DEEP_ANCHOR_BUDGETS
+output: figures/L10-P02-FIG-006.png
+scientific_transform: DISPLAY_ONLY
+source_data_sha256: c8a4958910d7db18fa1d0156f9c1883f124601927151f641a4bbbfe0439f2e9b
+output_sha256: 60ebe794cb3629f23cbe790984506bb259d1e9525687bc20496fd75ec18e8d3a

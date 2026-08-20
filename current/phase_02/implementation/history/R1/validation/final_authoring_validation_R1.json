@@ -1,0 +1,179 @@
+{
+  "validation_id": "P02-KAGGLE-NOTEBOOK-AUTHORING-FINAL-VALIDATION-R1-POST-REPAIR",
+  "status": "PASS",
+  "scientific_execution_started": false,
+  "scientific_results_generated": false,
+  "fixture_evidence_only": true,
+  "identities": {
+    "notebook_id": "IHARQ-P02-COMPLETE-EXECUTION-AND-ANALYSIS-R4",
+    "notebook_file": "IHARQ_Phase_02_Complete_Execution_and_Analysis_R4.ipynb",
+    "build_book": "IHARQ-P02-L2-INTEGRATED-BUILD-BOOK-R4",
+    "scientific_freeze": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R3",
+    "package": "IHARQ_P02_L2_Kaggle_Notebook_Implementation_Package_R1"
+  },
+  "counts": {
+    "official_L2_modules": 8,
+    "required_capabilities": 53,
+    "model_branches": 16,
+    "A0_cells": 678,
+    "A4_slots": 1218,
+    "full_ablation_cells": 1896,
+    "runtime_stages": 26,
+    "real_production_handlers": 26,
+    "stub_only_handlers": 0,
+    "gates": 26,
+    "authoring_tests_passed": 42,
+    "fixture_runtime_checksum_targets": 257,
+    "P01_failure_prevention_rows": 15
+  },
+  "audit_families": {
+    "Build Book exhaustion": "PASS",
+    "Stretch-Version completeness": "PASS",
+    "code-quality audit": "PASS",
+    "actual-working-code audit": "PASS",
+    "A0 audit": "PASS",
+    "A4 audit": "PASS",
+    "evaluation audit": "PASS",
+    "artifact audit": "PASS",
+    "test audit": "PASS",
+    "gate audit": "PASS",
+    "P01 regression audit": "PASS",
+    "Kaggle simulation": "PASS",
+    "Phase Analysis simulation": "PASS",
+    "Layer 10 simulation": "PASS",
+    "P03 simulation": "PASS",
+    "security audit": "PASS",
+    "bundle audit": "PASS",
+    "zero-unresolved audit": "PASS",
+    "known-defect regression audit": "PASS",
+    "repair/no-regression audit": "PASS"
+  },
+  "known_defects": {
+    "status": "PASS",
+    "remaining": 0
+  },
+  "C4_C5_closure": {
+    "status": "PASS",
+    "test_set_selection": 0,
+    "unmatched_inference": 0,
+    "silent_membership_mutation": 0,
+    "required_artifacts_not_exportable": 0,
+    "deferred_to_phase_analysis": 0,
+    "layer10_recomputation_required": 0
+  },
+  "P01_upstream_regression": {
+    "cumulative_verifier": "40/40 PASS",
+    "P01_verifier": "24/24 PASS"
+  },
+  "static_authoring_validation": {
+    "status": "PASS",
+    "checks_pass": 52,
+    "checks_total": 52
+  },
+  "fixture_integration": {
+    "status": "PASS",
+    "label": "FIXTURE_NON_SCIENTIFIC_NOT_P02_EVIDENCE",
+    "scientific_evidence": false,
+    "stages": 26,
+    "stage15_a0_closure": "PASS",
+    "stage18_a4_execution": "PASS",
+    "c1_c2_c3_vs_c0_closure": "PASS",
+    "c4_c5_vs_strongest_closure": "PASS",
+    "stage18u": "PASS",
+    "late_stage_chain": "PASS",
+    "runtime_checksums": {
+      "status": "PASS",
+      "rows": 257,
+      "missing": [],
+      "mismatch": []
+    },
+    "runtime_zip": {
+      "status": "PASS",
+      "sha256": "d025ba9f9d80aee1a6a7db1bc8b8b63b0ffd44f8d98ea105380c177694ea7591",
+      "bytes": 195584,
+      "members": 258,
+      "crc": "PASS",
+      "unsafe_paths": 0
+    },
+    "fixture_bundle_path": "validation/FIXTURE_NON_SCIENTIFIC_RUNTIME_BUNDLE.zip"
+  },
+  "strict_zero_defect_invariants": {
+    "KNOWN_P02_IMPLEMENTATION_DEFECTS_UNREPAIRED": 0,
+    "P02_RUNTIME_STAGES_STUB_ONLY": 0,
+    "P02_RUNTIME_STAGES_METADATA_ONLY": 0,
+    "P02_RUNTIME_STAGES_WITHOUT_REAL_STAGE_HANDLER": 0,
+    "STAGE_DISPATCH_TARGETS_WITHOUT_PRODUCTION_IMPLEMENTATION": 0,
+    "A0_RUN_CELLS_NOT_ROUTED_TO_REAL_MODEL_STAGE": 0,
+    "MODEL_BRANCHES_WITH_UNRESOLVED_RUNTIME_ROUTING": 0,
+    "STAGE15_A0_REQUIRED_CLOSURE_OUTPUTS_MISSING": 0,
+    "A0_COMPLETION_WITHOUT_EXPLICIT_CLOSURE": 0,
+    "A4_CONDITIONS_WITHOUT_RUNTIME_HANDLER": 0,
+    "A4_SELECTED_REPRESENTATIVES_NOT_CONSUMED_BY_STAGE18": 0,
+    "A4_C4_INFERENTIAL_CLOSURE_INCOMPLETE": 0,
+    "A4_C5_INFERENTIAL_CLOSURE_INCOMPLETE": 0,
+    "A4_STRONGEST_CONSTITUENT_TEST_SET_SELECTION": 0,
+    "A4_C4_C5_STATISTICS_NOT_USING_FROZEN_CONTRACT": 0,
+    "A4_C4_C5_UNMATCHED_INFERENCE": 0,
+    "A4_C4_C5_SILENT_ENSEMBLE_MEMBERSHIP_MUTATION": 0,
+    "A4_C4_C5_REQUIRED_ARTIFACTS_NOT_EXPORTABLE": 0,
+    "A4_C4_C5_COMPARISON_DEFERRED_TO_PHASE_ANALYSIS": 0,
+    "A4_C4_C5_LAYER10_SCIENTIFIC_RECOMPUTATION_REQUIRED": 0,
+    "STAGE18U_STUB_ONLY": 0,
+    "FAILURE_EVIDENCE_AGGREGATION_STAGE_MISSING": 0,
+    "READINESS_VALIDATOR_ACCEPTS_METADATA_ONLY": 0,
+    "FIGURE_SOURCE_STAGE_NOT_WIRED_TO_RUNTIME": 0,
+    "TABLE_SOURCE_STAGE_NOT_WIRED_TO_RUNTIME": 0,
+    "HANDOFF_GENERATORS_NOT_WIRED_TO_RUNTIME": 0,
+    "FINAL_RUNTIME_BUNDLE_STAGE_STUB_ONLY": 0,
+    "FINAL_RUNTIME_BUNDLE_GENERATION_NOT_IMPLEMENTED": 0,
+    "LOW_LEVEL_IMPLEMENTATION_NOT_CONNECTED_TO_RUNTIME": 0,
+    "RUNTIME_DISPATCH_TARGETS_RESOLVING_TO_STUBS": 0,
+    "STAGES_WITH_INCOMPLETE_RUNTIME_TRACEABILITY": 0,
+    "A4_REQUIRED_COMPARISON_FAMILIES_UNMAPPED": 0,
+    "A4_C4_C5_MULTIPLICITY_TREATMENT_UNDEFINED": 0,
+    "A4_C4_C5_RESULT_CARDINALITY_MISMATCH": 0,
+    "A4_C4_C5_BROKEN_EVIDENCE_IDENTITIES": 0,
+    "A4_UNRELATED_VALID_EVIDENCE_INVALIDATED_BY_C4_C5_FAILURE": 0,
+    "STAGE_RESULTS_WITHOUT_BUNDLE_TRACE": 0,
+    "BROKEN_P02_RUNTIME_ORCHESTRATION_LINKS": 0,
+    "REPAIR_INDUCED_REGRESSIONS": 0
+  },
+  "pre_pass_questions": {
+    "Q1_26_stages_real": "YES",
+    "Q2_A0_678_routed_and_closed": "YES",
+    "Q3_A4_1218_routed_and_closed": "YES",
+    "Q4_C4_C5_vs_validation_selected_strongest": "YES",
+    "Q5_C4_C5_exported_not_deferred": "YES",
+    "Q6_Stage18U_real": "YES",
+    "Q7_late_stages_consume_runtime_outputs": "YES"
+  },
+  "environment_authoring_resolution": "RUNTIME_GATE_REQUIRED because the local authoring index cannot resolve MOABB; Kaggle Stage 01 enforces the exact frozen pins and fails closed.",
+  "freeze_critical_blockers": 0,
+  "post_package_audit": "REQUIRED_AND_PROVIDED_AS_DETACHED_FINAL_VALIDATION_AFTER_ZIP_FREEZE",
+  "decision": "PREPACKAGE_AUTHORING_COMPLETE_READY_FOR_TRANSPORT_FREEZE",
+  "known_defect_regression": {
+    "validation_id": "P02_KNOWN_DEFECT_REGRESSION_AUDIT",
+    "status": "PASS",
+    "DEFECT_01": {
+      "defect": "incomplete 26-stage dispatcher",
+      "expected_repair": "full real stage dispatch",
+      "test": "full stage-graph synthetic integration + static 26-row traceability",
+      "current_evidence": "26/26 HANDLERS; P02_STAGE_RUNTIME_IMPLEMENTATION_TRACEABILITY.csv; full_stage_graph_synthetic_integration.json",
+      "result": "PASS"
+    },
+    "DEFECT_02": {
+      "defect": "missing C4/C5 ensemble-vs-strongest-constituent inferential closure",
+      "expected_repair": "complete participant-level comparison + export",
+      "test": "C4/C5 comparison integration + golden + negative tests",
+      "current_evidence": "a4.execute_ensemble; evidence.close_a4; C4/C5 artifact/common-support/stat files; P02_A4_COMPARISON_TRACEABILITY.csv",
+      "result": "PASS"
+    },
+    "known_implementation_defects_unrepaired": 0,
+    "post_repair_full_audit_required": true
+  },
+  "expanded_readiness": {
+    "status": "PASS",
+    "zero_invariants": 39,
+    "all_zero": true
+  }
+}

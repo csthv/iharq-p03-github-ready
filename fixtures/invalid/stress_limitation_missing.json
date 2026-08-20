@@ -1,0 +1,36 @@
+{
+  "bundle_id": "INVALID-STRESS_LIMITATION_MISSING",
+  "records": [
+    {
+      "record_id": "IHARQ-STRESSPROFILERECORD-20260802-771f8dd4a062aee0",
+      "record_type": "StressProfileRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L8",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "stress_profile_id": "MOCK_STRESS_PROFILE_ID_36",
+        "stress_type": "MOCK_STRESS_TYPE_36",
+        "intensity": "0.0",
+        "seed": 36
+      },
+      "ablation_id": null
+    }
+  ],
+  "controls": {},
+  "expected_failure_category": "stress_limitation_missing"
+}

@@ -1,0 +1,29 @@
+{
+  "runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R4-SR-PROBABILITY-STALE-CACHE-INVALIDATION-LIVE-CONTINUATION",
+  "parent_runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R3-BRAINCDECODE-EEGNET-API-COMPATIBILITY-LIVE-CONTINUATION",
+  "created_utc": "2026-08-09T20:36:43.788264+00:00",
+  "scope": "STAGE11_SR_DIAGNOSTIC_ONLY",
+  "prior_stage11_attempt": "aeac04dd07a8",
+  "defect": "S&R dataset-level probability-selection cache was produced while the original EEGNet primaries were blocked and was subsequently reused after those primaries were successfully repaired.",
+  "stale_cache_proof": {
+    "cached_rows": 45,
+    "cached_PRIMARY_NOT_SUCCESSFUL_rows": 45,
+    "contradictions_with_current_primary_SUCCESS": 45
+  },
+  "repair": "Invalidate only stale S&R probability-selection analysis cache, recompute the frozen 45-fit validation-only selector, then rerun only the 15 S&R challenger cells.",
+  "primary_cells_recomputed": false,
+  "primary_cells_preserved": 105,
+  "probability_grid": [
+    0.25,
+    0.5,
+    0.75
+  ],
+  "probability_selection_scope": "DATASET_SPECIFIC_VALIDATION_ONLY",
+  "probability_calibration_fits_expected": 45,
+  "final_challenger_cells": 15,
+  "augmentation_hyperparameter_retuning": false,
+  "reuse_primary_selected_hyperparameters": true,
+  "test_used_for_probability_selection": false,
+  "scientific_configuration_changed": false,
+  "archive_root": "diagnostics/runtime_successor/stage11_r4_sr_cache_reentry/aeac04dd07a8_20260809T203643Z"
+}

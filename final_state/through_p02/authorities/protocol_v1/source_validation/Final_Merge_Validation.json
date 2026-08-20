@@ -1,0 +1,390 @@
+{
+  "protocol_id": "IHARQ-PROTOCOL-V1-CUMULATIVE-THROUGH-P02-R1",
+  "validation_timestamp": "2026-08-14T18:31:00+03:30",
+  "checks": [
+    {
+      "check": "YAML parse protocol_v1_0/machine_readable/ablation_register.yaml",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "YAML parse protocol_v1_0/machine_readable/amendment_rerun_register.yaml",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "YAML parse protocol_v1_0/machine_readable/analysis_contract.yaml",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "YAML parse protocol_v1_0/machine_readable/external_artifact_access_contract.yaml",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "YAML parse protocol_v1_0/machine_readable/limitation_register.yaml",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "YAML parse protocol_v1_0/machine_readable/run_matrix.yaml",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "YAML parse protocol_v1_0/machine_readable/source_phase_02_r2/P02_analysis_contract.yaml",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "YAML parse protocol_v1_0/machine_readable/source_phase_02_r2/P02_external_artifact_access_contract.yaml",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "YAML parse protocol_v1_0/machine_readable/source_phase_02_r2/P02_run_matrix.yaml",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "CSV parse merge/Content_Mapping_Matrix.csv",
+      "status": "PASS",
+      "detail": "rows=15"
+    },
+    {
+      "check": "CSV parse merge/Harmonization_Decisions.csv",
+      "status": "PASS",
+      "detail": "rows=2"
+    },
+    {
+      "check": "canonical Markdown equals master_protocol.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "required file IHARQ_Protocol_v1_0_Final_Through_Phase_02_R1.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "required file IHARQ_Protocol_v1_0_Final_Through_Phase_02_R1.docx",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "required file IHARQ_Protocol_v1_0_Final_Through_Phase_02_R1.pdf",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "required file protocol_v1_0/phases/phase_00_annex.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "required file protocol_v1_0/phases/phase_01_annex.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "required file protocol_v1_0/phases/phase_02_annex.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "required file protocol_v1_0/machine_readable/run_matrix.yaml",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "required file protocol_v1_0/machine_readable/analysis_contract.yaml",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "required file protocol_v1_0/machine_readable/external_artifact_access_contract.yaml",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "required file merge/Merge_Notes.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "required file merge/Content_Mapping_Matrix.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "required file merge/Harmonization_Decisions.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "canonical contains IHARQ-PROTOCOL-V1-CUMULATIVE-THROUGH-P02-R1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "canonical contains P00",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "canonical contains P01",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "canonical contains P02",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "canonical contains IHARQ_PROTOCOL_V1_THROUGH_P02_MERGE_STATUS = COMPLETE",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "canonical contains P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "canonical contains P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "canonical contains IHARQ_HF_TOKEN_PRE_P02",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "canonical contains IHARQ_HF_TOKEN_P02",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "canonical contains bc14961e14f2e48690e55df3577014275f9cbf30",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "canonical contains 257a407b5c7ea37b6c620863ee261c010c8f197c",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exact P02 R2 source companion P02_run_matrix.yaml",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exact P02 R2 source companion P02_analysis_contract.yaml",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exact P02 R2 source companion P02_external_artifact_access_contract.yaml",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 run matrix stage count",
+      "status": "PASS",
+      "detail": "26"
+    },
+    {
+      "check": "P02 gate count",
+      "status": "PASS",
+      "detail": "26"
+    },
+    {
+      "check": "P02 analysis input count",
+      "status": "PASS",
+      "detail": "38"
+    },
+    {
+      "check": "external contract contains IHARQ_HF_TOKEN_PRE_P02",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "external contract contains IHARQ_HF_TOKEN_P02",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "external contract contains bc14961e14f2e48690e55df3577014275f9cbf30",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "external contract contains 257a407b5c7ea37b6c620863ee261c010c8f197c",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "DOCX contains IHARQ-PROTOCOL-V1-CUMULATIVE-THROUGH-P02-R1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PDF contains IHARQ-PROTOCOL-V1-CUMULATIVE-THROUGH-P02-R1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "DOCX contains P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PDF contains P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "DOCX contains IHARQ_HF_TOKEN_PRE_P02",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PDF contains IHARQ_HF_TOKEN_PRE_P02",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "DOCX contains IHARQ_HF_TOKEN_P02",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PDF contains IHARQ_HF_TOKEN_P02",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "DOCX contains IHARQ_PROTOCOL_V1_THROUGH_P02_MERGE_STATUS = COMPLETE",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PDF contains IHARQ_PROTOCOL_V1_THROUGH_P02_MERGE_STATUS = COMPLETE",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "DOCX substantive heading parity",
+      "status": "PASS",
+      "detail": "exact=182/196 consolidated_aliases=['Cumulative integration declaration', 'Predecessor representations and preservation state', 'P02 allowed analyses and frozen analysis inputs', 'Canonical P02 Phase-Analysis input set (38 paths)', 'Cumulative integration event through P02', 'Cumulative current-state rule', 'Cumulative split and budget state', 'P02 private Hugging Face artifact sources', 'Preferred direct-continuation source', 'Archival/fallback P02 release', 'Credential-class and retrieval rule', 'Evidence ceilings at predecessor P01 closure (historical cumulative state)', 'Layer 0 / Evidence Map / Layer 10', 'APPENDIX E — STRUCTURED CUMULATIVE EXTERNAL ARTIFACT REGISTER']"
+    },
+    {
+      "check": "PDF substantive heading parity",
+      "status": "PASS",
+      "detail": "exact=182/196 consolidated_aliases=['Cumulative integration declaration', 'Predecessor representations and preservation state', 'P02 allowed analyses and frozen analysis inputs', 'Canonical P02 Phase-Analysis input set (38 paths)', 'Cumulative integration event through P02', 'Cumulative current-state rule', 'Cumulative split and budget state', 'P02 private Hugging Face artifact sources', 'Preferred direct-continuation source', 'Archival/fallback P02 release', 'Credential-class and retrieval rule', 'Evidence ceilings at predecessor P01 closure (historical cumulative state)', 'Layer 0 / Evidence Map / Layer 10', 'APPENDIX E — STRUCTURED CUMULATIVE EXTERNAL ARTIFACT REGISTER']"
+    },
+    {
+      "check": "DOCX metadata title through P02",
+      "status": "PASS",
+      "detail": "IHARQ Single Canonical Protocol v1.0 Through Phase 02"
+    },
+    {
+      "check": "PDF metadata title through P02",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PDF page count 76",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "literal secret scan",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "PDF preflight Pages: 76",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PDF preflight Encrypted: False",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PDF preflight Openable (PyMuPDF): True",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PDF preflight Likely scanned: False",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PDF preflight XFA present: False",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "DOCX latest render visual QA",
+      "status": "PASS",
+      "detail": "76/76 pages visually inspected after P02 style namespacing and footer correction"
+    },
+    {
+      "check": "metadata-only rerender pixel parity",
+      "status": "PASS",
+      "detail": "76/76 pages pixel-identical to visually approved render"
+    },
+    {
+      "check": "merge preservation marker Stage 11",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "merge preservation marker Stage 12",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "merge preservation marker Stage 18S",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "merge preservation marker A4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "merge preservation marker A14",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "merge preservation marker P02 → P03",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "merge preservation marker Current canonical state at end of P02",
+      "status": "PASS",
+      "detail": ""
+    }
+  ],
+  "pass": 75,
+  "fail": 0,
+  "status": "PASS",
+  "presentation_heading_note": "14 canonical Markdown headings are intentionally consolidated/aliased in the presentation derivatives; their substantive content remains present and the canonical Markdown/master remains the semantic authority.",
+  "visual_qa": {
+    "pages": 76,
+    "all_pages_inspected": true,
+    "metadata_rerender_pixel_identical_pages": 76
+  }
+}

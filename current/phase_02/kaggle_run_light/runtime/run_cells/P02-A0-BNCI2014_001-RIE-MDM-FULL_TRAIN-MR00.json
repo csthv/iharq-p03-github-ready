@@ -1,0 +1,71 @@
+{
+  "run_cell_id": "P02-A0-BNCI2014_001-RIE-MDM-FULL_TRAIN-MR00",
+  "ablation_id": "A0",
+  "terminal_status": "SUCCESS",
+  "prediction_partition": "records/PredictionRecord/dataset=BNCI2014_001/branch=RIE-MDM/budget=FULL_TRAIN/P02-A0-BNCI2014_001-RIE-MDM-FULL_TRAIN-MR00.jsonl",
+  "metric_source": "metrics/P02-A0-BNCI2014_001-RIE-MDM-FULL_TRAIN-MR00.json",
+  "checkpoint_sha256": "a4f52e56dc2674ef3bb60dabb490ab0d1d39b660a85d44cee64c1aa71c2d21eb",
+  "observed_denominator": 288,
+  "selected_params": {},
+  "resolved_variant": "RIE-MDM",
+  "score_type": "DISTANCE_DERIVED_SIMPLEX",
+  "validation_burden_seconds": 2.639209885001037,
+  "model_storage_bytes": 8264,
+  "selected_candidate_id": "CAND-00",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.002666000000317581,
+    "batch1_latency_p95_s": 0.0027876184009073767,
+    "repeats": 5
+  },
+  "permutation_provenance": null,
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "class_weights": null,
+  "class_weight_calibration": {
+    "selected_policy": "UNIFORM_NO_WEIGHT",
+    "selected_weights": null,
+    "candidate_results": [
+      {
+        "status": "SUCCESS",
+        "policy": "UNIFORM_NO_WEIGHT",
+        "weights": null,
+        "validation_metrics": {
+          "BACC": 0.5208333333333334,
+          "F1_MACRO": 0.3780281690140845,
+          "ACC": 0.5208333333333334,
+          "CONFUSION": [
+            [
+              144,
+              0
+            ],
+            [
+              138,
+              6
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            144,
+            144
+          ],
+          "PRED_COMPLETE": 288,
+          "ROC_AUC": 0.8299575617283951,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "DISTANCE_DERIVED_SIMPLEX"
+        },
+        "validation_burden_seconds": 2.639209885001037,
+        "model_storage_bytes": 8264
+      }
+    ],
+    "training_count_evidence": {
+      "counts": [
+        720,
+        720
+      ],
+      "exactly_equal": true,
+      "selection_required": false
+    },
+    "test_set_used": false
+  },
+  "training_condition_id": "A0-RAW-ACCEPT-ALL",
+  "augmentation_provenance": null,
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

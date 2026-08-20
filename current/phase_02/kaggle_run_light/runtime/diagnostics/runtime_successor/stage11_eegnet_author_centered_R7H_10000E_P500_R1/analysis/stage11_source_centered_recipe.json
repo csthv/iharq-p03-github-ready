@@ -1,0 +1,473 @@
+{
+  "active_new_fit_recipe": {
+    "IHARQ_preserved_differences": {
+      "P01_preprocessing": "unchanged 160Hz, 8-32Hz, 3s, float32 volts",
+      "S&R": "existing P02 training-only diagnostic challenger unchanged",
+      "class_weighting": "P02-R2 governed",
+      "dataset_protocol": "P01 subject-grouped roles and binary legal left/right task; NOT the paper's original 4-class BCI-IV-2a folds",
+      "test_visibility": "strictly after group selection sealing",
+      "validation_selection": "IHARQ validation BACC then macro-F1"
+    },
+    "architecture": {
+      "D": 2,
+      "F1": 8,
+      "F2": 16,
+      "conv_spatial_max_norm": 1.0,
+      "depthwise_kernel_length": 20,
+      "drop_prob": 0.5,
+      "dropout_type": "Dropout",
+      "final_layer_with_constraint": true,
+      "kernel_length": 40,
+      "n_outputs": 2,
+      "n_times": 480,
+      "norm_rate": 0.25,
+      "pool1_kernel_size": 5,
+      "pool2_kernel_size": 10,
+      "pool_mode": "mean",
+      "sfreq": 160.0
+    },
+    "executable_implementation": "braindecode.models.EEGNet",
+    "executable_package": "braindecode==1.6.1",
+    "model_local_input_contract": {
+      "P01_bytes_changed": false,
+      "epsilon_uv": 1e-06,
+      "fit_axes": [
+        "trials",
+        "time"
+      ],
+      "normalization": "FIT_ROLE_CHANNELWISE_MEAN_STD",
+      "numeric_unit_before_standardization": "uV",
+      "source_unit": "V",
+      "test": "FROZEN_FIT_ROLE_STATISTICS",
+      "unit_multiplier": 1000000.0,
+      "validation": "FROZEN_FIT_ROLE_STATISTICS"
+    },
+    "recipe_id": "R7H7-EEGNET-LAWHERN-SMR-SOURCE-CENTERED-P01-160HZ-10000E-TRUE-P120-R1",
+    "source_authority": {
+      "author_repo_configuration_facts": [
+        "revised EEGNet-8,2",
+        "ordinary Dropout recommended for oscillatory/SMR",
+        "SMR kernLength=32 at 128Hz",
+        "sampling-rate-dependent temporal kernels/pooling",
+        "spatial max_norm=1",
+        "classifier max_norm=0.25"
+      ],
+      "official_author_repo": "https://github.com/vlawhern/arl-eegmodels",
+      "official_model_file": "EEGModels.py",
+      "owner_authorized_horizon_extension": {
+        "interpretation": "NOT claimed as an original Lawhern stopping rule. Lawhern's 500-epoch training fact remains source context, but the owner-authorized R7 continuation uses true validation patience=120 from epoch 1 for every new/unsealed fit. Previously sealed P500 and R6 P120/FLOOR500 artifacts remain grandfathered to avoid restarting Stage11.",
+        "max_epochs": 10000,
+        "minimum_epochs_before_early_stop": 1,
+        "patience": 120
+      },
+      "paper": "Lawhern et al. 2018, EEGNet",
+      "paper_training_facts": [
+        "Adam",
+        "categorical cross-entropy",
+        "500 epochs"
+      ],
+      "paper_url": "https://arxiv.org/abs/1611.08024"
+    },
+    "training": {
+      "amp": false,
+      "batch_ladder": [
+        64,
+        32,
+        16
+      ],
+      "checkpoint_selection": [
+        "BACC_DESC",
+        "F1_MACRO_DESC",
+        "EARLIER_EPOCH"
+      ],
+      "data_parallel": false,
+      "early_stop_min_delta": 0.0,
+      "early_stop_monitor": "VALIDATION_BACC_THEN_MACRO_F1",
+      "early_stopping": true,
+      "effective_batch_target": 64,
+      "loss": "CrossEntropyLoss",
+      "lr": 0.001,
+      "max_epochs": 10000,
+      "min_epochs_before_early_stop": 1,
+      "optimizer": "Adam",
+      "patience": 120,
+      "primary_augmentation": "NONE",
+      "restore_best_validation_checkpoint": true,
+      "tf32": false,
+      "torch_compile": false,
+      "weight_decay": 0.0
+    }
+  },
+  "active_new_fit_recipe_sha256": "18cbe259c05bfcea6b26934118216d5a60ff14d659906e6e8e2f590ffc502866",
+  "amendment": {
+    "amendment_id": "P02-STAGE11-R7H7-TRUE-P120-PROSPECTIVE-CONTINUATION-R1",
+    "classification": "OWNER_AUTHORIZED_PROSPECTIVE_EXECUTION_CONTROL_CORRECTION",
+    "previous_surfaces": {
+      "P500": {
+        "max_epochs": 10000,
+        "min_epochs_before_early_stop": 500,
+        "patience": 500,
+        "recipe_id": "R7H-EEGNET-LAWHERN-SMR-SOURCE-CENTERED-P01-160HZ-10000E-P500-R1",
+        "recipe_sha256": "76a601fee7b69395453f240507abc843c63722c548211f43cf2b88647ac7af09"
+      },
+      "R6_P120_FLOOR500": {
+        "max_epochs": 10000,
+        "min_epochs_before_early_stop": 500,
+        "patience": 120,
+        "recipe_id": "R7H6-EEGNET-LAWHERN-SMR-SOURCE-CENTERED-P01-160HZ-10000E-P120-PROSPECTIVE-R1",
+        "recipe_sha256": "74fa2011fa0b94a537338792ce9669350e4ca3153b5f1a3ee50ad556d312690e"
+      }
+    },
+    "reason": "The previous R6 continuation correctly changed the displayed patience to 120 but deliberately retained min_epochs_before_early_stop=500. Therefore it could not early-stop before epoch 500. The owner now requires true patience=120 for remaining/unsealed fits without restarting already-completed Stage11 work. R7 sets the active new-fit minimum stopping floor to epoch 1, while preserving all sealed P500 and R6 P120/FLOOR500 evidence with explicit provenance.",
+    "replacement": {
+      "IHARQ_preserved_differences": {
+        "P01_preprocessing": "unchanged 160Hz, 8-32Hz, 3s, float32 volts",
+        "S&R": "existing P02 training-only diagnostic challenger unchanged",
+        "class_weighting": "P02-R2 governed",
+        "dataset_protocol": "P01 subject-grouped roles and binary legal left/right task; NOT the paper's original 4-class BCI-IV-2a folds",
+        "test_visibility": "strictly after group selection sealing",
+        "validation_selection": "IHARQ validation BACC then macro-F1"
+      },
+      "architecture": {
+        "D": 2,
+        "F1": 8,
+        "F2": 16,
+        "conv_spatial_max_norm": 1.0,
+        "depthwise_kernel_length": 20,
+        "drop_prob": 0.5,
+        "dropout_type": "Dropout",
+        "final_layer_with_constraint": true,
+        "kernel_length": 40,
+        "n_outputs": 2,
+        "n_times": 480,
+        "norm_rate": 0.25,
+        "pool1_kernel_size": 5,
+        "pool2_kernel_size": 10,
+        "pool_mode": "mean",
+        "sfreq": 160.0
+      },
+      "executable_implementation": "braindecode.models.EEGNet",
+      "executable_package": "braindecode==1.6.1",
+      "model_local_input_contract": {
+        "P01_bytes_changed": false,
+        "epsilon_uv": 1e-06,
+        "fit_axes": [
+          "trials",
+          "time"
+        ],
+        "normalization": "FIT_ROLE_CHANNELWISE_MEAN_STD",
+        "numeric_unit_before_standardization": "uV",
+        "source_unit": "V",
+        "test": "FROZEN_FIT_ROLE_STATISTICS",
+        "unit_multiplier": 1000000.0,
+        "validation": "FROZEN_FIT_ROLE_STATISTICS"
+      },
+      "recipe_id": "R7H7-EEGNET-LAWHERN-SMR-SOURCE-CENTERED-P01-160HZ-10000E-TRUE-P120-R1",
+      "source_authority": {
+        "author_repo_configuration_facts": [
+          "revised EEGNet-8,2",
+          "ordinary Dropout recommended for oscillatory/SMR",
+          "SMR kernLength=32 at 128Hz",
+          "sampling-rate-dependent temporal kernels/pooling",
+          "spatial max_norm=1",
+          "classifier max_norm=0.25"
+        ],
+        "official_author_repo": "https://github.com/vlawhern/arl-eegmodels",
+        "official_model_file": "EEGModels.py",
+        "owner_authorized_horizon_extension": {
+          "interpretation": "NOT claimed as an original Lawhern stopping rule. Lawhern's 500-epoch training fact remains source context, but the owner-authorized R7 continuation uses true validation patience=120 from epoch 1 for every new/unsealed fit. Previously sealed P500 and R6 P120/FLOOR500 artifacts remain grandfathered to avoid restarting Stage11.",
+          "max_epochs": 10000,
+          "minimum_epochs_before_early_stop": 1,
+          "patience": 120
+        },
+        "paper": "Lawhern et al. 2018, EEGNet",
+        "paper_training_facts": [
+          "Adam",
+          "categorical cross-entropy",
+          "500 epochs"
+        ],
+        "paper_url": "https://arxiv.org/abs/1611.08024"
+      },
+      "training": {
+        "amp": false,
+        "batch_ladder": [
+          64,
+          32,
+          16
+        ],
+        "checkpoint_selection": [
+          "BACC_DESC",
+          "F1_MACRO_DESC",
+          "EARLIER_EPOCH"
+        ],
+        "data_parallel": false,
+        "early_stop_min_delta": 0.0,
+        "early_stop_monitor": "VALIDATION_BACC_THEN_MACRO_F1",
+        "early_stopping": true,
+        "effective_batch_target": 64,
+        "loss": "CrossEntropyLoss",
+        "lr": 0.001,
+        "max_epochs": 10000,
+        "min_epochs_before_early_stop": 1,
+        "optimizer": "Adam",
+        "patience": 120,
+        "primary_augmentation": "NONE",
+        "restore_best_validation_checkpoint": true,
+        "tf32": false,
+        "torch_compile": false,
+        "weight_decay": 0.0
+      }
+    },
+    "unchanged": [
+      "P00",
+      "P01",
+      "P01 splits",
+      "P01 windows",
+      "P01 labels",
+      "P01 low-label memberships",
+      "A0 run-cell identities",
+      "MR00..MR04 seeds",
+      "metrics",
+      "schemas",
+      "class-weight authority",
+      "S&R diagnostic scope",
+      "test isolation",
+      "thesis question",
+      "phase scope",
+      "dataset identities",
+      "subject-grouped role construction",
+      "binary legal left/right task",
+      "evaluation metric definitions",
+      "Stage09/Stage10 scientific results"
+    ]
+  },
+  "grandfathered_P500_recipe": {
+    "IHARQ_preserved_differences": {
+      "P01_preprocessing": "unchanged 160Hz, 8-32Hz, 3s, float32 volts",
+      "S&R": "existing P02 training-only diagnostic challenger unchanged",
+      "class_weighting": "P02-R2 governed",
+      "dataset_protocol": "P01 subject-grouped roles and binary legal left/right task; NOT the paper's original 4-class BCI-IV-2a folds",
+      "test_visibility": "strictly after group selection sealing",
+      "validation_selection": "IHARQ validation BACC then macro-F1"
+    },
+    "architecture": {
+      "D": 2,
+      "F1": 8,
+      "F2": 16,
+      "conv_spatial_max_norm": 1.0,
+      "depthwise_kernel_length": 20,
+      "drop_prob": 0.5,
+      "dropout_type": "Dropout",
+      "final_layer_with_constraint": true,
+      "kernel_length": 40,
+      "n_outputs": 2,
+      "n_times": 480,
+      "norm_rate": 0.25,
+      "pool1_kernel_size": 5,
+      "pool2_kernel_size": 10,
+      "pool_mode": "mean",
+      "sfreq": 160.0
+    },
+    "executable_implementation": "braindecode.models.EEGNet",
+    "executable_package": "braindecode==1.6.1",
+    "model_local_input_contract": {
+      "P01_bytes_changed": false,
+      "epsilon_uv": 1e-06,
+      "fit_axes": [
+        "trials",
+        "time"
+      ],
+      "normalization": "FIT_ROLE_CHANNELWISE_MEAN_STD",
+      "numeric_unit_before_standardization": "uV",
+      "source_unit": "V",
+      "test": "FROZEN_FIT_ROLE_STATISTICS",
+      "unit_multiplier": 1000000.0,
+      "validation": "FROZEN_FIT_ROLE_STATISTICS"
+    },
+    "recipe_id": "R7H-EEGNET-LAWHERN-SMR-SOURCE-CENTERED-P01-160HZ-10000E-P500-R1",
+    "source_authority": {
+      "author_repo_configuration_facts": [
+        "revised EEGNet-8,2",
+        "ordinary Dropout recommended for oscillatory/SMR",
+        "SMR kernLength=32 at 128Hz",
+        "sampling-rate-dependent temporal kernels/pooling",
+        "spatial max_norm=1",
+        "classifier max_norm=0.25"
+      ],
+      "official_author_repo": "https://github.com/vlawhern/arl-eegmodels",
+      "official_model_file": "EEGModels.py",
+      "owner_authorized_horizon_extension": {
+        "interpretation": "NOT claimed as an original Lawhern hyperparameter; the original 500-epoch horizon is retained as the minimum training floor, while the owner authorizes additional optimization headroom to 10000 epochs with patience 500.",
+        "max_epochs": 10000,
+        "minimum_epochs_before_early_stop": 500,
+        "patience": 500
+      },
+      "paper": "Lawhern et al. 2018, EEGNet",
+      "paper_training_facts": [
+        "Adam",
+        "categorical cross-entropy",
+        "500 epochs"
+      ],
+      "paper_url": "https://arxiv.org/abs/1611.08024"
+    },
+    "training": {
+      "amp": false,
+      "batch_ladder": [
+        64,
+        32,
+        16
+      ],
+      "checkpoint_selection": [
+        "BACC_DESC",
+        "F1_MACRO_DESC",
+        "EARLIER_EPOCH"
+      ],
+      "data_parallel": false,
+      "early_stop_min_delta": 0.0,
+      "early_stop_monitor": "VALIDATION_BACC_THEN_MACRO_F1",
+      "early_stopping": true,
+      "effective_batch_target": 64,
+      "loss": "CrossEntropyLoss",
+      "lr": 0.001,
+      "max_epochs": 10000,
+      "min_epochs_before_early_stop": 500,
+      "optimizer": "Adam",
+      "patience": 500,
+      "primary_augmentation": "NONE",
+      "restore_best_validation_checkpoint": true,
+      "tf32": false,
+      "torch_compile": false,
+      "weight_decay": 0.0
+    }
+  },
+  "grandfathered_P500_recipe_sha256": "76a601fee7b69395453f240507abc843c63722c548211f43cf2b88647ac7af09",
+  "grandfathered_R6_P120_floor500_recipe": {
+    "IHARQ_preserved_differences": {
+      "P01_preprocessing": "unchanged 160Hz, 8-32Hz, 3s, float32 volts",
+      "S&R": "existing P02 training-only diagnostic challenger unchanged",
+      "class_weighting": "P02-R2 governed",
+      "dataset_protocol": "P01 subject-grouped roles and binary legal left/right task; NOT the paper's original 4-class BCI-IV-2a folds",
+      "test_visibility": "strictly after group selection sealing",
+      "validation_selection": "IHARQ validation BACC then macro-F1"
+    },
+    "architecture": {
+      "D": 2,
+      "F1": 8,
+      "F2": 16,
+      "conv_spatial_max_norm": 1.0,
+      "depthwise_kernel_length": 20,
+      "drop_prob": 0.5,
+      "dropout_type": "Dropout",
+      "final_layer_with_constraint": true,
+      "kernel_length": 40,
+      "n_outputs": 2,
+      "n_times": 480,
+      "norm_rate": 0.25,
+      "pool1_kernel_size": 5,
+      "pool2_kernel_size": 10,
+      "pool_mode": "mean",
+      "sfreq": 160.0
+    },
+    "executable_implementation": "braindecode.models.EEGNet",
+    "executable_package": "braindecode==1.6.1",
+    "model_local_input_contract": {
+      "P01_bytes_changed": false,
+      "epsilon_uv": 1e-06,
+      "fit_axes": [
+        "trials",
+        "time"
+      ],
+      "normalization": "FIT_ROLE_CHANNELWISE_MEAN_STD",
+      "numeric_unit_before_standardization": "uV",
+      "source_unit": "V",
+      "test": "FROZEN_FIT_ROLE_STATISTICS",
+      "unit_multiplier": 1000000.0,
+      "validation": "FROZEN_FIT_ROLE_STATISTICS"
+    },
+    "recipe_id": "R7H6-EEGNET-LAWHERN-SMR-SOURCE-CENTERED-P01-160HZ-10000E-P120-PROSPECTIVE-R1",
+    "source_authority": {
+      "author_repo_configuration_facts": [
+        "revised EEGNet-8,2",
+        "ordinary Dropout recommended for oscillatory/SMR",
+        "SMR kernLength=32 at 128Hz",
+        "sampling-rate-dependent temporal kernels/pooling",
+        "spatial max_norm=1",
+        "classifier max_norm=0.25"
+      ],
+      "official_author_repo": "https://github.com/vlawhern/arl-eegmodels",
+      "official_model_file": "EEGModels.py",
+      "owner_authorized_horizon_extension": {
+        "interpretation": "NOT claimed as an original Lawhern hyperparameter; the original 500-epoch author horizon remains the minimum training floor. At this prospective continuation boundary, already-sealed P500 artifacts are preserved and only unsealed/new fits use patience 120.",
+        "max_epochs": 10000,
+        "minimum_epochs_before_early_stop": 500,
+        "patience": 120
+      },
+      "paper": "Lawhern et al. 2018, EEGNet",
+      "paper_training_facts": [
+        "Adam",
+        "categorical cross-entropy",
+        "500 epochs"
+      ],
+      "paper_url": "https://arxiv.org/abs/1611.08024"
+    },
+    "training": {
+      "amp": false,
+      "batch_ladder": [
+        64,
+        32,
+        16
+      ],
+      "checkpoint_selection": [
+        "BACC_DESC",
+        "F1_MACRO_DESC",
+        "EARLIER_EPOCH"
+      ],
+      "data_parallel": false,
+      "early_stop_min_delta": 0.0,
+      "early_stop_monitor": "VALIDATION_BACC_THEN_MACRO_F1",
+      "early_stopping": true,
+      "effective_batch_target": 64,
+      "loss": "CrossEntropyLoss",
+      "lr": 0.001,
+      "max_epochs": 10000,
+      "min_epochs_before_early_stop": 500,
+      "optimizer": "Adam",
+      "patience": 120,
+      "primary_augmentation": "NONE",
+      "restore_best_validation_checkpoint": true,
+      "tf32": false,
+      "torch_compile": false,
+      "weight_decay": 0.0
+    }
+  },
+  "grandfathered_R6_P120_floor500_recipe_sha256": "74fa2011fa0b94a537338792ce9669350e4ca3153b5f1a3ee50ad556d312690e",
+  "prospective_policy": {
+    "P00_P01_changed": false,
+    "active_min_epochs_before_early_stop": 1,
+    "active_patience": 120,
+    "active_recipe_id": "R7H7-EEGNET-LAWHERN-SMR-SOURCE-CENTERED-P01-160HZ-10000E-TRUE-P120-R1",
+    "active_recipe_sha256": "18cbe259c05bfcea6b26934118216d5a60ff14d659906e6e8e2f590ffc502866",
+    "classification": "OWNER_AUTHORIZED_PROSPECTIVE_EXECUTION_CONTROL_CORRECTION",
+    "grandfathered_recipes": {
+      "74fa2011fa0b94a537338792ce9669350e4ca3153b5f1a3ee50ad556d312690e": {
+        "min_epochs_before_early_stop": 500,
+        "note": "Prior R6 cell; patience displayed 120 but stopping floor remained 500.",
+        "patience": 120,
+        "recipe_id": "R7H6-EEGNET-LAWHERN-SMR-SOURCE-CENTERED-P01-160HZ-10000E-P120-PROSPECTIVE-R1"
+      },
+      "76a601fee7b69395453f240507abc843c63722c548211f43cf2b88647ac7af09": {
+        "min_epochs_before_early_stop": 500,
+        "patience": 500,
+        "recipe_id": "R7H-EEGNET-LAWHERN-SMR-SOURCE-CENTERED-P01-160HZ-10000E-P500-R1"
+      }
+    },
+    "interrupted_unsealed_fit_rule": "RESTART_ONLY_INTERRUPTED_UNSEALED_CANDIDATE_FROM_EPOCH_1",
+    "max_epochs": 10000,
+    "new_fit_rule": "ALL_UNSEALED_OR_NEW_FITS_USE_TRUE_P120_FROM_EPOCH_1",
+    "policy_id": "P02-STAGE11-R7H7-TRUE-P120-CONTINUATION-R1",
+    "sealed_artifact_rule": "REUSE_SHA_VERIFIED_P500_OR_R6_P120_FLOOR500_ARTIFACTS_EXACTLY",
+    "test_selection": "PROHIBITED",
+    "thesis_scope_changed": false
+  },
+  "prospective_policy_sha256": "b482d6a35e7a4e047139c7e357618f0fc5a4f172911436448b026aaf571d7462"
+}

@@ -1,0 +1,825 @@
+phase:
+  schema_id: iharq://schemas/p02/phaseconfig/v1
+  phase_id: P02
+  phase_name: Baseline Decoders
+  layer_id: L2
+  layer_name: Decoder and Baseline Measurement Spine
+  build_book_id: IHARQ-P02-L2-INTEGRATED-BUILD-BOOK-R4
+  notebook_id: IHARQ-P02-COMPLETE-EXECUTION-AND-ANALYSIS-R4
+  scientific_freeze_id: P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5
+  execution_environment: KAGGLE
+  one_notebook: true
+  alternative_scientific_modes: PROHIBITED
+  a14: ABSENT_PROHIBITED
+  preexecution_amendment_id: P02-PREEXEC-TRAINING-POLICY-AMENDMENT-R2
+data:
+  core_profile: P01-L1-OFFICIAL-RUN-FREEZE-R2
+  a4_profile: P01-L1-A4-WINDOW-FAMILY-FREEZE-R2
+  read_only: true
+  relabel: false
+  resplit: false
+  rewindow: false
+  core_window:
+    start_offset_s: 0.5
+    stop_offset_s: 3.5
+    duration_s: 3.0
+    samples: 480
+    sampling_hz: 160
+  a4_long:
+    start_offset_s: 0.0
+    stop_offset_s: 3.5
+    duration_s: 3.5
+    samples: 560
+    sampling_hz: 160
+  a4_multi:
+    observation_horizon_s: 3.5
+    member_duration_s: 2.0
+    member_count: 3
+    member_slices:
+    - - 0
+      - 320
+    - - 120
+      - 440
+    - - 240
+      - 560
+split_visibility:
+  train:
+  - train
+  selection:
+  - validation
+  evaluation:
+  - test
+  test_labels_for_selection: PROHIBITED
+budgets:
+  profile: P01-L1-LOW-CAL-OFFICIAL-R2
+  per_class:
+  - 1
+  - 2
+  - 4
+  - 8
+  - 16
+  - 32
+  seed: 20260804
+  membership: INHERITED_EXACT
+  repeat_count: 1
+seeds:
+  master_seed: 20260804
+  algorithm: SHA256_CANONICAL_UTF8_FIRST8_HEX_MOD_2P31_MINUS1_ZERO_TO_ONE
+metrics:
+  metrics:
+  - metric_id: BACC
+    name: balanced accuracy
+    role: PRIMARY
+    rule: mean per-class recall; claim-ineligible if required true class absent
+  - metric_id: F1_MACRO
+    name: macro-F1
+    role: REQUIRED_COMPLEMENTARY
+    rule: class order left_hand,right_hand; zero_division=0; absent true class=>diagnostic
+      only
+  - metric_id: ACC
+    name: accuracy
+    role: REQUIRED_SECONDARY
+    rule: correct/valid denominator
+  - metric_id: ROC_AUC
+    name: binary ROC-AUC
+    role: CONDITIONAL
+    rule: right_hand positive; both true classes and aligned finite continuous score
+      required
+  - metric_id: CONFUSION
+    name: confusion matrix
+    role: REQUIRED_SOURCE
+    rule: rows true/columns predicted; canonical class order
+  - metric_id: CLASS_SUPPORT
+    name: class support
+    role: REQUIRED_SOURCE
+    rule: valid denominator by class + exclusions/failures
+  - metric_id: PRED_COMPLETE
+    name: prediction completeness
+    role: REQUIRED_SUPPORT
+    rule: valid/expected with missing reasons
+  - metric_id: BRANCH_SUCCESS
+    name: branch terminal coverage
+    role: REQUIRED_SUPPORT
+    rule: planned/attempted/success/failed/blocked/skipped/invalid
+  - metric_id: A4_DELAY
+    name: A4 burden
+    role: REQUIRED_A4
+    rule: observation duration/member count/model evals/aggregation + batch1 latency
+      median/P95
+  not_selected:
+  - KAPPA
+  - MCC
+  - AUPRC
+  - BRIER
+  - NLL
+  - ECE
+  - CALIBRATION_SLOPE
+  - RISK_COVERAGE
+resources:
+  environment_id: P02-L2-KAGGLE-ENV-PLAN-R2
+  python: '>=3.12,<3.13'
+  target: 3.12.x
+  base_pins:
+    moabb: 1.5.0
+    mne: 1.12.1
+    numpy: 2.2.6
+    scipy: 1.15.3
+    pandas: 2.3.1
+    scikit-learn: 1.7.1
+    h5py: 3.14.0
+    pooch: 1.8.2
+    PyYAML: 6.0.2
+    pydantic: 2.11.7
+    jsonschema: 4.25.0
+    nbformat: 5.10.4
+    pytest: 8.4.1
+  p02_pins:
+    torch: 2.13.0
+    braindecode: 1.6.1
+    pyriemann: '0.12'
+  live_scientific_stage_downloads: PROHIBITED
+  external_branches: must be vendored or immutable pointer/checksum resolved before
+    Stage05
+  resource_classes:
+    GPU_GE_12_GIB: batch64 standard
+    GPU_8_TO_12_GIB: batch32 + grad accumulate
+    GPU_LT_8_GIB: EEGNet batch16; conditionals blocked unless probe pass
+    CPU_ONLY: classical/riemannian mandatory; EEGNet bounded attempt; others blocked
+      unless preflight pass
+  disk_free_min_gib: 8
+  environment_change_after_stage05: PROHIBITED
+outputs:
+  records:
+  - record: PredictionRecord
+    status: P02_R2_PHYSICAL_SCHEMA_REALIZED_AND_VALIDATED
+    producer: Prediction logger
+    action: Use frozen P02 successor schema from contracts/record_schema_freeze.yaml;
+      writer and validator are implemented; never overwrite P00/P01 records.
+    cardinality: derived from accepted run matrix × eligible evaluation windows
+    consumers: L3-L10
+  - record: ModelRegistryRecord
+    status: P02_R2_PHYSICAL_SCHEMA_REALIZED_AND_VALIDATED
+    producer: Model-family registry
+    action: Use frozen P02 successor schema from contracts/record_schema_freeze.yaml;
+      writer and validator are implemented; never overwrite P00/P01 records.
+    cardinality: one per model/checkpoint/config/seed/branch generation
+    consumers: L3-L10/repro
+  - record: BaselineMetricRecord
+    status: P02_R2_PHYSICAL_SCHEMA_REALIZED_AND_VALIDATED
+    producer: evaluation path
+    action: Use frozen P02 successor schema from contracts/record_schema_freeze.yaml;
+      writer and validator are implemented; never overwrite P00/P01 records.
+    cardinality: one per governed metric × aggregation cell
+    consumers: Analysis/L10/L0
+  - record: LowCalibrationCurveRecord
+    status: P02_R2_PHYSICAL_SCHEMA_REALIZED_AND_VALIDATED
+    producer: Low-calibration curve builder
+    action: Use frozen P02 successor schema from contracts/record_schema_freeze.yaml;
+      writer and validator are implemented; never overwrite P00/P01 records.
+    cardinality: attempted legal budget point × branch/repeat with failures retained
+    consumers: Analysis/L10
+  - record: SubjectProfileRecord
+    status: P02_R2_PHYSICAL_SCHEMA_REALIZED_AND_VALIDATED
+    producer: Subject difficulty profiler
+    action: Use frozen P02 successor schema from contracts/record_schema_freeze.yaml;
+      writer and validator are implemented; never overwrite P00/P01 records.
+    cardinality: subject/session profile where coverage sufficient
+    consumers: L5/L6/L8/L10 as allowed
+  - record: EnsembleControlRecord
+    status: P02_R2_PHYSICAL_SCHEMA_REALIZED_AND_VALIDATED
+    producer: Ensemble comparison builder
+    action: Use frozen P02 successor schema from contracts/record_schema_freeze.yaml;
+      writer and validator are implemented; never overwrite P00/P01 records.
+    cardinality: one per A4 control × matched identity/group
+    consumers: L3/L4/L10/evaluation
+  - record: FailureCaseIndex
+    status: P02_R2_PHYSICAL_SCHEMA_REALIZED_AND_VALIDATED
+    producer: cross-cutting failure index
+    action: Use frozen P02 successor schema from contracts/record_schema_freeze.yaml;
+      writer and validator are implemented; never overwrite P00/P01 records.
+    cardinality: versioned index per run/release plus linked failure rows
+    consumers: Analysis/L10/L0
+  - record: Layer2ReadinessReport
+    status: P02_R2_PHYSICAL_SCHEMA_REALIZED_AND_VALIDATED
+    producer: Downstream readiness validator
+    action: Use frozen P02 successor schema from contracts/record_schema_freeze.yaml;
+      writer and validator are implemented; never overwrite P00/P01 records.
+    cardinality: at least one final report + branch/consumer matrix
+    consumers: P03+ and release gate
+  - record: LeakageWarningRecord
+    status: OWNER_ROUTED_SUPPORT_RECORD; P02_SOURCE_EVIDENCE_ONLY
+    producer: validation path
+    action: P02 emits validated leakage/source evidence and routes it to the authorized
+      owner/profile; no unauthorized direct record family is invented.
+    cardinality: only when detected
+    consumers: all affected claims/consumers
+    path: analysis_inputs/split_leakage_validation.json + downstream handoff
+  - record: MatchedComparisonReport
+    status: OWNER_ROUTED_SUPPORT_RECORD; P02_MATCHED_SOURCE_TABLES_COMPLETE
+    producer: evaluation/export adapter
+    action: P02 emits governed common-support/matched-comparison source tables and
+      routes formal owner-compatible representation downstream; no duplicate physical
+      schema is invented.
+    cardinality: per registered comparison/common-support identity
+    consumers: Protocol/L10/L0
+    path: analysis_inputs/a4_*common_support* + comparison source tables + downstream
+      handoff
+  - record: NegativeResultNote
+    status: P02_R2_PHYSICAL_SCHEMA_REALIZED_AND_VALIDATED
+    producer: evaluation governance
+    action: Use frozen P02 successor schema from contracts/record_schema_freeze.yaml;
+      writer and validator are implemented; never overwrite P00/P01 records.
+    cardinality: per governed negative result identity
+    consumers: Analysis/L10/L0
+  - record: DiagnosticOnlyFlag
+    status: P02_R2_PHYSICAL_SCHEMA_REALIZED_AND_VALIDATED
+    producer: evaluation/validation
+    action: Use frozen P02 successor schema from contracts/record_schema_freeze.yaml;
+      writer and validator are implemented; never overwrite P00/P01 records.
+    cardinality: per affected artifact/result identity
+    consumers: all
+  support_outputs:
+  - training_logs
+  - inference_logs
+  - failure_logs
+  - checkpoint_registry
+  - model_card_sources
+  - figure_source_data
+  - table_source_data
+  - phase_handoff
+  - Protocol_handoff
+  - PhaseAnalysis_handoff
+  - Layer0_handoff
+  - EvidenceMap_handoff
+  - Layer10_source_bundle
+  - reproducibility_manifest_inputs
+gates:
+  gates:
+  - gate_id: G00
+    requirement: Current project state and authority hashes resolve
+    blocking: true
+    failure: BLOCK_PREPARATION
+  - gate_id: G01
+    requirement: P02 environment packages/resource inventory resolvable; branch-specific
+      dependencies isolated
+    blocking: true
+    failure: BLOCK_CORE or branch-specific RESOURCE/INCOMPATIBLE
+  - gate_id: G02
+    requirement: Cumulative repository manifest/checksum verification PASS
+    blocking: true
+    failure: BLOCK
+  - gate_id: G03
+    requirement: Core and A4 external pointer identities/checksums/version namespaces
+      resolve
+    blocking: true
+    failure: BLOCK affected substrate
+  - gate_id: G04
+    requirement: 3 DatasetRecords/12910 WindowRecords/Split/Preprocessing/LabelMap/Validation
+      contract validates without mutation
+    blocking: true
+    failure: BLOCK and owner-routed P01 defect
+  - gate_id: G05
+    requirement: Exact P02 R5 scientific execution freeze and owner-authorized R2
+      dynamic training-policy amendment, run families, model portfolio, metrics, seeds/repeats,
+      budgets, grids, statistics, resource caps and ablation unlock state are all
+      present and hash-verified; realized training-policy values may be selected only
+      from legal train/validation evidence under the frozen algorithm.
+    blocking: true
+    failure: BLOCK OFFICIAL RUN; no notebook-time default filling
+  - gate_id: G06
+    requirement: P02 schemas/interfaces/fixtures/imports/smoke path pass
+    blocking: true
+    failure: BLOCK
+  - gate_id: G07
+    requirement: role firewall, lineage and loaders pass
+    blocking: true
+    failure: BLOCK
+  - gate_id: G08
+    requirement: sanity controls emit expected outputs/negative-control behavior
+    blocking: true
+    failure: BLOCK core measurement spine if lower-bound/pipeline integrity absent
+  - gate_id: G09
+    requirement: classical floor has >=1 lawful classical anchor
+    blocking: true
+    failure: BLOCK scientifically useful P02
+  - gate_id: G10
+    requirement: Riemannian/robust-classical comparator present
+    blocking: true
+    failure: BLOCK minimum floor
+  - gate_id: G11
+    requirement: EEGNet compact neural executes where feasible; resource infeasibility
+      is measured and routed
+    blocking: false
+    failure: RESOURCE_BLOCKED with explicit evidence consequence
+  - gate_id: G12
+    requirement: every conditional deep/SSL branch has explicit admission terminal
+      status; no hidden omission
+    blocking: false
+    failure: branch-specific blocked/skipped; primary floor continues
+  - gate_id: G13
+    requirement: accepted model checkpoints reload and registry linkage complete
+    blocking: true
+    failure: affected model INVALID/BLOCKED
+  - gate_id: G14
+    requirement: PredictionRecord coverage/class order/score semantics/lineage valid
+    blocking: true
+    failure: affected branch consumer-ineligible
+  - gate_id: G15
+    requirement: A0 source metrics and denominators complete for eligible primary
+      branches
+    blocking: true
+    failure: BLOCK A0/evidence sufficiency
+  - gate_id: G16
+    requirement: legal budget points emitted or explicit failed/ineligible statuses
+      retained
+    blocking: true
+    failure: curve scope downgraded; no invented/interpolated point
+  - gate_id: G17
+    requirement: descriptive profiles preserve coverage and no diagnosis/routing
+    blocking: false
+    failure: diagnostic/omit unsupported profile claim
+  - gate_id: G18
+    requirement: A4 R2 exact parent matching/class order/aggregation/burden and missingness
+      rules pass
+    blocking: true
+    failure: BLOCK A4 claim-bearing control evidence
+  - gate_id: G18U
+    requirement: extra ablation runs only if Stage05 FULLY_UNLOCKED + authority-owned
+      P02 + all scientific bindings frozen
+    blocking: false
+    failure: NOT_AUTHORIZED/INCOMPATIBLE; never separate mode
+  - gate_id: G19
+    requirement: all planned/attempted/failed/skipped/blocked rows visible
+    blocking: true
+    failure: BLOCK release if negative evidence hidden
+  - gate_id: G20
+    requirement: consumer-specific readiness matrix complete
+    blocking: true
+    failure: downstream affected consumer blocked/diagnostic
+  - gate_id: G21
+    requirement: source tables carry exact lineage and limitations
+    blocking: true
+    failure: not thesis/L10-ready
+  - gate_id: G22
+    requirement: all downstream handoffs present and source-linked
+    blocking: true
+    failure: BLOCK phase documentary closure
+  - gate_id: G23
+    requirement: evidence sufficiency passes or minimal repair route emitted
+    blocking: true
+    failure: LOOPBACK only relevant scope
+  - gate_id: G24
+    requirement: manifest/checksums/path safety/secret scan/output inventory PASS
+    blocking: true
+    failure: BLOCK export/release
+inputs:
+  input_contract_id: P02-KAGGLE-INPUTS-R1
+  required:
+    cumulative_project:
+      canonical_filename: IHARQ_Cumulative_GitHub_Ready_Through_P01_R1.zip
+      sha256: dc2708ab70e7746499ae09760456825b54efcf587cae3db3410e6f72b0024542
+      required: true
+    p01_core:
+      provider: Kaggle
+      handle: csthv999z/iharq-p01-l1-derived-windows-d03f0a7c869d-20260806222242-68a91473
+      provider_version: 2
+      logical_revision: 1
+      resolver_file: IHARQ_P01_L1_DERIVED_WINDOW_DATASET_MANIFEST.json
+      manifest_sha256: dc21f418e9a1add62adb346f627d5d729735a5f1ecaa1d771f6fa5cfede627e1
+      expected_bytes: 1166652764
+      required: true
+      expected_windows: 12910
+    p01_a4:
+      provider: Kaggle
+      handle: csthv999z/iharq-p01-l1-a4-d03f0a7c-9a7c6108
+      provider_version: 1
+      logical_revision: 2
+      resolver_file: IHARQ_P01_L1_A4_DERIVED_WINDOW_DATASET_MANIFEST.json
+      manifest_sha256: 29124d59907610b1545e0a2b5d1811a4d4a2bf1df64cad49aa880f4721c47305
+      required: true
+      expected_matched_parents: 12910
+      expected_window_records: 51640
+    conditional_pretrained:
+      required: false
+      rule: IMMUTABLE_CHECKSUM_LICENSE_PREFLIGHT_OR_BLOCK
+models:
+  models:
+  - branch_id: SAN-MAJ
+    family: majority/frequency
+    category: sanity
+    status: REQUIRED
+    role: deterministic hard-label lower bound
+    admission: always if training labels legal
+    scores: hard label; prior vector separately diagnostic
+    claim: A0 lower-bound context
+    model_repeats: 1
+    low_label_claim_ready: false
+  - branch_id: SAN-STRAT
+    family: seeded stratified random
+    category: sanity
+    status: REQUIRED
+    role: stochastic chance reference
+    admission: training-role frequency vector + registered seed
+    scores: probability/prior-based stochastic output where implementation supports
+    claim: A0 chance context
+    model_repeats: 20
+    low_label_claim_ready: false
+  - branch_id: SAN-PERM
+    family: grouped full-pipeline source-event label permutation
+    category: sanity
+    status: REQUIRED_DIAGNOSTIC
+    role: pipeline/leakage negative control
+    admission: training role only; group/source-event atomicity
+    scores: native selected simple pipeline output
+    claim: diagnostic only
+    model_repeats: 1
+    low_label_claim_ready: false
+    permutation_repeats: 100
+  - branch_id: SAN-PRIOR
+    family: training-prior vector
+    category: sanity
+    status: DIAGNOSTIC_ONLY
+    role: score diagnostic; not duplicate hard-label baseline
+    admission: training-role class frequencies
+    scores: prior vector
+    claim: diagnostic only
+    model_repeats: 1
+    low_label_claim_ready: false
+  - branch_id: DIAG-LOGVAR
+    family: log-bandpower/log-variance + L2 logistic
+    category: diagnostic
+    status: DIAGNOSTIC_ONLY
+    role: spatial-attribution diagnostic
+    admission: legal train fit and score semantics
+    scores: logistic native
+    claim: diagnostic only
+    model_repeats: 1
+    low_label_claim_ready: false
+  - branch_id: CLS-CSP-LDA
+    family: CSP + shrinkage LDA
+    category: classical
+    status: SELECTED_MAXIMUM_SCOPE
+    role: claim-bearing classical anchor
+    admission: P01 compatibility + valid train fit
+    scores: labels + native posterior/decision semantics recorded
+    claim: A0/A4 eligible
+    model_repeats: 1
+    low_label_claim_ready: true
+  - branch_id: CLS-FBCSP-LR
+    family: FBCSP + L2 logistic
+    category: classical
+    status: SELECTED_MAXIMUM_SCOPE
+    role: frequency-sensitive classical anchor
+    admission: filter-bank provenance + legal train fit
+    scores: logistic scores/probabilities
+    claim: A0/A4 eligible
+    model_repeats: 1
+    low_label_claim_ready: false
+  - branch_id: RIE-TS-LR
+    family: shrinkage covariance -> tangent space -> L2 logistic
+    category: riemannian
+    status: SELECTED_MAXIMUM_SCOPE
+    role: geometry-aware score-producing anchor
+    admission: legal covariance/tangent reference train fit
+    scores: logistic scores/probabilities
+    claim: A0/A4 eligible
+    model_repeats: 1
+    low_label_claim_ready: true
+  - branch_id: RIE-EA-TS
+    family: train-safe Euclidean Alignment + tangent/logistic
+    category: riemannian
+    status: CONDITIONALLY_SELECTED
+    role: matched aligned challenger
+    admission: fit only legal train/adaptation role; matched aligned/unaligned comparison
+    scores: native terminal classifier output
+    claim: qualified A0/A4 if admitted
+    model_repeats: 1
+    low_label_claim_ready: false
+  - branch_id: RIE-MDM
+    family: MDM/FgMDM
+    category: riemannian
+    status: DIAGNOSTIC_ONLY
+    role: geometric mechanism sanity check
+    admission: score semantics explicitly distance-derived; not calibrated probability
+    scores: distance-derived simplex/labels
+    claim: diagnostic only
+    model_repeats: 1
+    low_label_claim_ready: false
+  - branch_id: DNN-EEGNET
+    family: EEGNet
+    category: compact_neural
+    status: SELECTED_MAXIMUM_SCOPE
+    role: permanent compact specialist anchor
+    admission: input/output/resource compatibility
+    scores: native logits/probabilities with exact semantics
+    claim: A0/A4 eligible
+    model_repeats: 5
+    low_label_claim_ready: true
+  - branch_id: DNN-FBCNET
+    family: FBCNet
+    category: conditional_neural
+    status: CONDITIONALLY_SELECTED
+    role: frequency-aware neural challenger
+    admission: original-author implementation or demonstrated equivalence; resource/input
+      gates
+    scores: native logits
+    claim: qualified if admitted
+    model_repeats: 5
+    low_label_claim_ready: false
+  - branch_id: DNN-SEQ
+    family: DBConformer preferred; EEG Conformer direct fallback/matched comparator
+    category: conditional_sequence
+    status: CONDITIONALLY_SELECTED_ONE_FINAL_SLOT
+    role: one modern sequence slot
+    admission: DBConformer first; if any admission gate fails use EEG Conformer; no
+      final-test selection
+    scores: native logits/probabilities semantics verified
+    claim: one claim-bearing sequence slot if admitted
+    model_repeats: 5
+    low_label_claim_ready: false
+  - branch_id: DNN-EGTC
+    family: EEG-TCNet
+    category: fallback
+    status: SCREENED_LOW_RESOURCE_FALLBACK
+    role: controlled low-resource sequence fallback
+    admission: pre-result fallback only if DBConformer and EEG Conformer are both
+      RESOURCE_BLOCKED/INCOMPATIBLE at Stage12; no human reopen or test-driven activation
+    scores: native logits
+    claim: diagnostic fallback; not permanent claim-bearing branch
+    model_repeats: 5
+    low_label_claim_ready: false
+  - branch_id: SSL-CBRAMOD
+    family: CBraMod
+    category: compact_ssl
+    status: CONDITIONALLY_SELECTED
+    role: audited compact pretrained branch
+    admission: checkpoint hash + corpus-overlap + license + channel/montage + 200-Hz
+      model-local adapter + resource + output + reload gates
+    scores: native logits
+    claim: qualified A0 and A4_MULTI variant if admitted; A4_LONG fail-closed under
+      current 700-sample adapter compatibility freeze
+    model_repeats: 5
+    low_label_claim_ready: true
+    a4_eligibility:
+      CORE: CONDITIONAL
+      A4_MULTI: CONDITIONAL
+      A4_LONG: INCOMPATIBLE_FAIL_CLOSED_UNLESS_PREVERIFIED_700_SUPPORT
+  - branch_id: SSL-REVE
+    family: REVE
+    category: compact_ssl
+    status: DIAGNOSTIC_ONLY
+    role: resource/flexible-montage reference
+    admission: documentary/bounded diagnostic only under current authority
+    scores: as declared by implementation
+    claim: diagnostic only
+    model_repeats: 1
+    low_label_claim_ready: false
+  minimum_lawful_floor:
+  - required sanity controls
+  - '>=1 classical anchor'
+  - '>=1 Riemannian/robust-classical comparator'
+  - EEGNet compact neural where measured resources permit
+  one_sequence_slot_rule: DBConformer preferred conditional; EEG Conformer direct
+    fallback/matched comparator; no final-test selection
+  portfolio_freeze_id: P02-L2-MODEL-PORTFOLIO-R2
+  stage05_behavior: VERIFY_ONLY
+training_policy:
+  training_policy_binding_id: P02-L2-TRAINING-POLICY-AUTHORITY-BINDINGS-R4-DYNAMIC-RESOLUTION
+  status: FROZEN_ALGORITHM_RESOLVED_BY_OWNER_AUTHORIZED_PREEXECUTION_AMENDMENT_R2
+  amendment_id: P02-PREEXEC-TRAINING-POLICY-AMENDMENT-R2
+  source_authority:
+    nuts_and_bolts: Primary neural branch remains unaugmented; S&R is a separate training-only
+      challenger; class weighting is training-label-derived and Protocol-governed.
+    method_selection: No correction when balanced; otherwise a predeclared training-fold-derived
+      class-weighted loss/classifier; exact trigger/formula downstream.
+    build_book_r4: EEGNet S&R challenger FULL_TRAIN only with same five seeds; no
+      new A-number and no A4/P03-primary eligibility.
+    owner_authorization: Current user instruction authorizes minimal literature-grounded
+      deterministic pre-test resolution, preferring code calibration when lawful.
+  augmentation_challenger:
+    required_by_build_book: true
+    branch_id: DNN-EEGNET
+    scope: FULL_TRAIN_ONLY
+    same_five_model_seeds: true
+    algorithm: SAME_CLASS_SEGMENTATION_RECONSTRUCTION_TRAIN_ONLY
+    primary_reference_augmentation: NONE
+    probability_resolution:
+      type: VALIDATION_ONLY_DATASET_LEVEL_GRID_SEARCH
+      candidates:
+      - 0.25
+      - 0.5
+      - 0.75
+      calibration_seeds: ALL_FIVE_FROZEN_EEGNET_MODEL_SEEDS
+      selection_aggregation: MEDIAN_ACROSS_SUCCESSFUL_SEEDS
+      primary_metric: BACC
+      secondary_metric: F1_MACRO
+      minimum_successful_seeds: 3
+      tie_break:
+      - SMALLEST_ABS_DISTANCE_TO_0P5
+      - LOWER_PROBABILITY
+      test_set_access: PROHIBITED
+      selected_value_scope: DATASET_SPECIFIC
+      selection_frozen_before_test: true
+      rationale: Compact symmetric grid around the conventional Braindecode transform-application
+        probability 0.5; task-dependent augmentation is selected on legal validation
+        evidence.
+      tie_break_reference_probability: 0.5
+    segment_count_resolution:
+      type: BRAINCDECODE_PUBLIC_API_AUTO_N_SEGMENTS
+      requested_n_segments: null
+      pinned_package: braindecode==1.6.1
+      resolver: SegmentationReconstruction(probability=<candidate>, n_segments=None,
+        random_state=<derived>).get_augmentation_params
+      fixture_fallback: DOCUMENTED_DIVISOR_RULE_ONLY_FOR_NON_SCIENTIFIC_FIXTURE
+      test_set_access: NONE
+    seed_namespace: IHARQ:P02:L2:EEGNET:SEGMENTATION_RECONSTRUCTION:R2
+    seed_derivation: SHA256(namespace|dataset_id|model_seed|model_repeat_index|epoch_index|probability_candidate)_FIRST8_HEX_MOD_2P31_MINUS1_ZERO_TO_ONE
+    donor_pool_identity: SAME_DATASET_SAME_LEGAL_TRAINING_ROLE_SAME_TASK_SAME_CLASS_EXCLUDE_TARGET_WHEN_POSSIBLE
+    run_cell_condition_identity: P02-TRAIN-AUG-SR-EEGNET-FULL-R2-VALIDATION-RESOLVED
+    run_cells_frozen: true
+    run_cell_manifest: p02_training_policy_challenger_run_cells_R2.yaml
+    run_cell_count: 15
+    reuse_primary_selected_hyperparameters: true
+    augmentation_specific_model_hyperparameter_retuning: false
+    probability_calibration_is_internal_model_selection_not_new_run_cell: true
+    a4_eligible: false
+    p03_primary_eligible: false
+    diagnostic_only: true
+    evidence_regime: FULL_TRAIN
+    budget_id: FULL_TRAIN
+  class_weighting:
+    policy: VALIDATION_SELECTED_UNIFORM_VS_BALANCED_WHEN_TRAIN_COUNTS_UNEQUAL
+    trigger:
+      type: EXACT_TRAIN_COUNT_EQUALITY_THEN_VALIDATION_POLICY_COMPARISON
+      equal_counts_action: UNIFORM_NO_EXTRA_FIT
+      unequal_counts_action: COMPARE_UNIFORM_VS_BALANCED_ON_VALIDATION
+    balanced_formula:
+      type: SKLEARN_COMPUTE_CLASS_WEIGHT_BALANCED
+      formula: n_samples / (n_classes * class_count)
+      normalization: NONE_BEYOND_SKLEARN_BALANCED_FORMULA
+      source_labels: LEGAL_FIT_ROLE_ONLY
+    eligible_branch_rule: ANY_SELECTED_BRANCH_WITH_NATIVE_OR_VERIFIED_CLASS_WEIGHT_SUPPORT
+    native_supported_branches:
+    - DIAG-LOGVAR
+    - CLS-FBCSP-LR
+    - RIE-TS-LR
+    - RIE-EA-TS
+    - DNN-EEGNET
+    - DNN-EGTC
+    - DNN-SEQ_EEGCONFORMER_FALLBACK
+    conditional_external_branch_rule: IF_COUNTS_UNEQUAL_AND_ADAPTER_DOES_NOT_DECLARE_CLASS_WEIGHT_SUPPORT_THEN_INPUT_INCOMPATIBLE_FAIL_CLOSED
+    selection:
+      stage: POST_HYPERPARAMETER_PRE_TEST_TRAINING_POLICY_CHECK
+      same_selected_hyperparameters: true
+      same_model_seed: true
+      same_train_role: true
+      same_validation_role: true
+      primary_metric: BACC
+      secondary_metric: F1_MACRO
+      tie_break: UNIFORM_NO_WEIGHT
+      test_set_access: PROHIBITED
+    low_label_equal_per_class_short_circuit: true
+    record_counts_weights_validation_metrics_and_selected_policy: true
+    unsupported_branch_action: IF_COUNTS_UNEQUAL_AND_BRANCH_HAS_NO_GOVERNED_CLASS_WEIGHT_SUPPORT_THEN_KEEP_UNWEIGHTED_ONLY_IF_WEIGHTING_IS_NOT_APPLICABLE_TO_THAT_CLASSIFIER;
+      IF_BRANCH_CLAIMS_SUPPORT_BUT_CANNOT_EXECUTE_THEN_FAIL_CLOSED
+    scope_note: Do not retrofit weighting into classifiers with no native/verified
+      class-weight mechanism (e.g. LDA/MDM); apply validation selection only where
+      the existing selected classifier/loss supports it without changing algorithm
+      family.
+  official_A0_A4_cell_count_unchanged: 1896
+  separate_training_policy_challenger_cells: 15
+  new_A_number_created: false
+  a14: ABSENT_PROHIBITED
+  freeze_critical_blockers: []
+implementation_bindings:
+  bindings_id: P02-L2-MODEL-IMPLEMENTATION-BINDINGS-R3-HF
+  status: FROZEN_RUNTIME_BINDINGS
+  DNN-FBCNET:
+    variant_name: FBCNet
+    implementation_module: null
+    implementation_equivalence: UNVERIFIED
+    license_status: null
+    checkpoint_required: false
+    rule: ORIGINAL_AUTHOR_OR_VERIFIED_EQUIVALENT_ONLY_OTHERWISE_DEPENDENCY_BLOCKED
+  DNN-SEQ:
+    allow_eegconformer_fallback: true
+    dropout: 0.25
+    dbconformer:
+      variant_name: DBConformer
+      implementation_module: null
+      license_status: null
+      checkpoint_required: false
+      rule: PREFERRED_IF_IMMUTABLE_SOURCE_LICENSE_INTERFACE_GATES_PASS
+    fallback_variant: EEGConformer
+    fallback_rule: PRE_RESULT_DIRECT_FALLBACK_IF_DBCONFORMER_NOT_ADMITTED
+  DNN-EGTC:
+    variant_name: EEGTCNet
+    fallback_activated: false
+    activation_rule: ONLY_IF_DNN_SEQ_DB_CONFORMER_AND_EEG_CONFORMER_PATH_RESOLVES_RESOURCE_BLOCKED_INPUT_INCOMPATIBLE_OR_NONCONVERGENT_PRE_RESULT
+  SSL-CBRAMOD:
+    variant_name: CBraMod
+    implementation_module: iharq.layer2_decoders.hf_cbramod_adapter
+    license_status: CAN_EXECUTE
+    checkpoint_required: true
+    checkpoint_path: null
+    rule: CHECKSUM_LICENSE_CORPUS_INPUT_RESOURCE_RELOAD_GATED
+    checkpoint_sha256: a939ace9aa1e229f08391ad8bb2d197b507ae2c519a50addf087f0151b2df5c3
+    corpus_overlap_status: PASS
+    input_compatibility_status: PASS
+    channel_montage_status: PASS
+    source_recipe_verified: true
+    sampling_adapter_verified: true
+    target_sampling_hz: 200
+    asset_resolution: HUGGING_FACE_RUNTIME_OR_PREATTACHED_FALLBACK
+    plugin_config:
+      source_sampling_hz: 160
+      target_sampling_hz: 200
+      patch_size: 200
+      pretrained_local_dir_from_checkpoint_parent: true
+      strict_patch_alignment: true
+  SSL-REVE:
+    variant_name: REVE
+    implementation_module: null
+    license_status: POINTER_ONLY_GATED_NO_REDISTRIBUTION
+    checkpoint_required: true
+    checkpoint_path: null
+    rule: DIAGNOSTIC_ONLY; KNOWN_PRETRAINING_CORPUS_OVERLAP BLOCKS CURRENT P02 EXECUTION;
+      AUTHENTICATION_CANNOT_OVERRIDE_SCIENTIFIC_GATE
+    corpus_overlap_status: BLOCKED_KNOWN_P02_OVERLAP
+    input_compatibility_status: NOT_EVALUATED_BECAUSE_OVERLAP_BLOCKS
+    channel_montage_status: NOT_EVALUATED_BECAUSE_OVERLAP_BLOCKS
+    source_recipe_verified: false
+    sampling_adapter_verified: false
+    target_sampling_hz: 200
+    asset_resolution: HF_GATED_SUPPORTED_BUT_CURRENT_P02_DOWNLOAD_PROHIBITED_BY_CORPUS_OVERLAP_GATE
+implementation_parameters:
+  implementation_parameters_id: P02-L2-IMPLEMENTATION-PARAMETERS-R2
+  status: FROZEN_IMPLEMENTATION_BEHAVIOR
+  classical:
+    FBCSP:
+      filter_order: 4
+      sampling_source: configs.phase_02.data.core_window.sampling_hz
+  metrics:
+    latency_probe_repeats: 5
+    latency_quantile: 0.95
+a4_selection:
+  selection_id: P02-A4-REPRESENTATIVE-SELECTION-R3
+  status: FROZEN_PRE_RESULT
+  unit: dataset_id × evidence_regime × budget_id × role_id
+  role_pools:
+    CLASSICAL:
+      full_train:
+      - CLS-CSP-LDA
+      - CLS-FBCSP-LR
+      low_label:
+      - CLS-CSP-LDA
+      repeat_count_of_selected_branch: from model portfolio
+    RIEMANNIAN:
+      full_train:
+      - RIE-TS-LR
+      - RIE-EA-TS
+      low_label:
+      - RIE-TS-LR
+      repeat_count_of_selected_branch: from model portfolio
+    NEURAL:
+      full_train:
+      - DNN-EEGNET
+      - DNN-FBCNET
+      - DNN-SEQ
+      low_label:
+      - DNN-EEGNET
+      admission: at least one pool branch admitted and A4-compatible
+      repeat_count_of_selected_branch: from model portfolio
+    SSL:
+      full_train:
+      - SSL-CBRAMOD
+      low_label:
+      - SSL-CBRAMOD
+      admission: CBraMod license/checkpoint/corpus/input/resource gates PASS
+      repeat_count_of_selected_branch: from model portfolio
+      A4_LONG: fail closed under current 700-sample incompatibility unless a pre-result
+        successor verifies exact support
+  excluded_from_A4_claim_bearing_roles:
+  - RIE-MDM
+  - DNN-EGTC
+  - SSL-REVE
+  - sanity/diagnostic controls
+  branch_selection_order:
+  - median_validation_BACC_desc
+  - median_validation_F1_MACRO_desc
+  - median_measured_validation_burden_asc
+  - branch_id_lexical_asc
+  seed_selection: PROHIBITED; after branch selection all frozen model repeats for
+    selected branch are carried into A4
+  ensemble_repeat_pairing:
+    R: max(model_repeat_count across admitted member roles)
+    one_repeat_member: reuse sole checkpoint for all ensemble repeat indices
+    multi_repeat_member: use same ensemble_repeat_index
+    only_one_repeat_roles: R=1
+  minimum_ensemble_roles:
+  - CLASSICAL
+  - RIEMANNIAN
+  optional_member_roles:
+  - NEURAL
+  - SSL
+  test_outcome_influence: PROHIBITED

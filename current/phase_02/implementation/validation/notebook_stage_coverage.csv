@@ -1,0 +1,27 @@
+stage_id,purpose,gate,handler,status
+00,"Identity, authorities, cumulative project-state intake",G00,s00,PASS
+01,Environment/dependency setup and measured resource inventory,G01,s01,PASS
+02,"Cumulative ZIP, manifest and checksum preflight",G02,s02,PASS
+03,Resolve external P01 core + A4 artifact pointers,G03,s03,PASS
+04,Validate P01 input contract; no relabel/resplit/rewindow,G04,s04,PASS
+05,"Verify immutable P02 R4 scientific execution freeze, owner-authorized training-policy amendment, run-family expansion, full-ablation ownership/completeness matrix and one-notebook dispatcher",G05,s05,PASS
+06,"Schema successor/profile, fixture, import and smoke validation",G06,s06,PASS
+07,Governed data loaders/cache and role firewall,G07,s07,PASS
+08,Sanity controls,G08,s08,PASS
+09,Classical anchors,G09,s09,PASS
+10,Riemannian anchors/challengers/diagnostics,G10,s10,PASS
+11,Compact neural baseline plus bounded EEGNet FULL_TRAIN S&R diagnostic training-policy challenger,G11,s11,PASS
+12,Conditional deep/SSL admission and execution,G12,s12,PASS
+13,Checkpoint round-trip + ModelRegistry closure,G13,s13,PASS
+14,Governed inference and PredictionRecord generation,G14,s14,PASS
+15,"A0 FULL EXECUTION/EVALUATION closure plus diagnostic training-policy challenger closure: terminal coverage, raw accept-all metrics, participant source tables, uncertainty/comparison evidence, figure/table/Analysis export",G15,s15,PASS
+16,Low-label/low-calibration curves,G16,s16,PASS
+17,Subject/session descriptive profiles,G17,s17,PASS
+18,"A4 FULL EXECUTION/EVALUATION: role freeze, LONG + 3-view predictions, hard/prob aggregation, fixed ordinary ensembles, parent matching, metrics/statistics/burden and evidence export",G18,s18,PASS
+18U,Same-notebook additional full-execution ablation dispatcher; current extra set empty,G18U,s18u,PASS
+19,Failure/missingness/negative-result accounting,G19,s19,PASS
+20,Downstream-readiness validation,G20,s20,PASS
+21,Figure-source and table-source datasets,G21,s21,PASS
+22,Protocol/Analysis/Layer0/EvidenceMap/Layer10/P03 handoffs,G22,s22,PASS
+23,Gate matrix and evidence-sufficiency evaluation,G23,s23,PASS
+24,Final execution bundle/checksums/secret scan/export,G24,s24,PASS

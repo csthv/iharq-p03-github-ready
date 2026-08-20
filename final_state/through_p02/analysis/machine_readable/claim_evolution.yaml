@@ -1,0 +1,63 @@
+claim_evolution:
+- claim_theme: Foundation / contract readiness
+  P00_status: Approved qualified foundation/readiness claims; non-empirical.
+  P01_status: Converted reusable contracts into concrete three-dataset Layer-1 data/split/window
+    readiness and P02 handoff.
+  P02_status: Inherited as fixed inputs and produced Layer-2 empirical evidence.
+  cumulative_candidate_claim: CC-01 / CC-02
+  evidence:
+  - P00-F-007
+  - P01-FIND-014
+  - P02-FIND-001
+  limitations:
+  - Technical readiness is not deployment/clinical effectiveness.
+- claim_theme: A0-A13 readiness and activation
+  P00_status: Readiness hooks A0-A13; A14 rejected.
+  P01_status: Layer-1 foundation readiness A0-A13; none executed in P01.
+  P02_status: A0 and A4 executed; other ablations remain downstream; A14 prohibited.
+  cumulative_candidate_claim: CC-01 plus phase-specific P02 claims
+  evidence:
+  - P00-F-009
+  - P01-FIND-008
+  - P02-FIND-001
+  - P02-FIND-009
+  limitations:
+  - Execution is phase-specific; do not retroactively treat P00/P01 as effectiveness
+    evidence.
+- claim_theme: A4 effectiveness
+  P00_status: Readiness only.
+  P01_status: Matched R2 substrate ready; effectiveness claim P01-CLM-011/v1 deferred.
+  P02_status: Governed constrained A4 executed; C1-C3 no raw p<=0.05; one specific
+    negative C4 effect; Stage18S post-hoc sensitivity.
+  cumulative_candidate_claim: CC-05
+  evidence:
+  - P01-FIND-009
+  - P01-FIND-010
+  - P02-FIND-010
+  - P02-FIND-011
+  - P02-FIND-012
+  limitations:
+  - Single repeat/deep anchors; post-hoc Stage18S.
+- claim_theme: Low-label evidence
+  P00_status: No empirical low-label evidence.
+  P01_status: Exact deterministic budget populations frozen; no performance experiment.
+  P02_status: Descriptive low-label performance shows near-chance/non-monotonic/rank-changing
+    behavior.
+  cumulative_candidate_claim: CC-04
+  evidence:
+  - P01-FIND-007
+  - P02-FIND-005
+  limitations:
+  - Single frozen subset per budget.
+- claim_theme: Clinical/deployment readiness
+  P00_status: Not established.
+  P01_status: P01-CLM-012/v1 rejected.
+  P02_status: Measurement ceiling explicitly excludes clinical/deployment/calibration/safety
+    claims.
+  cumulative_candidate_claim: No positive project-level clinical/deployment claim.
+  evidence:
+  - P02-FIND-014
+  limitations:
+  - PUBLIC_EEG_ONLY
+  - NON_CLINICAL
+  - NO_DEPLOYMENT_CLAIM

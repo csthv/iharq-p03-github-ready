@@ -1,0 +1,224 @@
+{
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "run_cell_id": "P02-A0-Lee2019_MI-DNN-FBCNET-FULL_TRAIN-MR00",
+  "dataset_id": "Lee2019_MI",
+  "branch_id": "DNN-FBCNET",
+  "resolved_variant": "FBCNet-OriginalAuthor-P01ConstrainedFilterBank",
+  "budget_id": "FULL_TRAIN",
+  "metrics": {
+    "BACC": 0.7266666666666666,
+    "F1_MACRO": 0.7242647058823529,
+    "ACC": 0.7266666666666667,
+    "CONFUSION": [
+      [
+        190,
+        110
+      ],
+      [
+        54,
+        246
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      300,
+      300
+    ],
+    "PRED_COMPLETE": 600,
+    "ROC_AUC": 0.8330777777777778,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+  },
+  "validation_selection": {
+    "ACC": 0.7,
+    "BACC": 0.7,
+    "CLASS_SUPPORT": [
+      250,
+      250
+    ],
+    "CONFUSION": [
+      [
+        172,
+        78
+      ],
+      [
+        72,
+        178
+      ]
+    ],
+    "F1_MACRO": 0.6999567937783041,
+    "PRED_COMPLETE": 500,
+    "ROC_AUC": 0.700192,
+    "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY",
+    "ROC_AUC_STATUS": "PASS"
+  },
+  "validation_burden_seconds": 465.72433066368103,
+  "model_storage_bytes": 56072,
+  "selected_candidate_id": "R6-FBCNET-AUTHOR-CENTERED-R1",
+  "selected_params": {
+    "recipe_id": "R6-FBCNET-AUTHOR-CENTERED-R1",
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "batch_size": 16,
+    "scheduler": "constant",
+    "label_smoothing": 0.0,
+    "grad_clip": null,
+    "max_epochs": 1500,
+    "patience": 200,
+    "selection": "validation_BACC",
+    "restore_best": true,
+    "branch": "DNN-FBCNET",
+    "dataset_id": "Lee2019_MI",
+    "budget_id": "FULL_TRAIN"
+  },
+  "candidate_failures": [],
+  "observed_denominator": 600,
+  "expected_denominator": 600,
+  "score_type": "SOFTMAX_PROBABILITY",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.0004983739991075709,
+    "batch1_latency_p95_s": 0.0005197416003284161,
+    "repeats": 5,
+    "latency_probe_mode": "FORWARD_ONLY_NO_METRICS"
+  },
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "class_weights": null,
+  "class_weight_calibration": {
+    "selected_policy": "UNIFORM_NO_WEIGHT",
+    "selected_weights": null,
+    "validation_metrics": {
+      "BACC": 0.7,
+      "F1_MACRO": 0.6999567937783041,
+      "ACC": 0.7,
+      "CONFUSION": [
+        [
+          172,
+          78
+        ],
+        [
+          72,
+          178
+        ]
+      ],
+      "CLASS_SUPPORT": [
+        250,
+        250
+      ],
+      "PRED_COMPLETE": 500,
+      "ROC_AUC": 0.700192,
+      "ROC_AUC_STATUS": "PASS",
+      "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+    },
+    "candidate_results": [
+      {
+        "status": "SUCCESS",
+        "policy": "UNIFORM_NO_WEIGHT",
+        "weights": null,
+        "validation_metrics": {
+          "BACC": 0.7,
+          "F1_MACRO": 0.6999567937783041,
+          "ACC": 0.7,
+          "CONFUSION": [
+            [
+              172,
+              78
+            ],
+            [
+              72,
+              178
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            250,
+            250
+          ],
+          "PRED_COMPLETE": 500,
+          "ROC_AUC": 0.700192,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+        },
+        "validation_burden_seconds": 465.72433066368103,
+        "model_storage_bytes": 56072,
+        "best_epoch": 118,
+        "epochs_completed": 318,
+        "history_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/staging_runtime/raw_outputs/stage12_r6_training_history/P02-A0-Lee2019_MI-DNN-FBCNET-FULL_TRAIN-MR00__UNIFORM_NO_WEIGHT.json",
+        "candidate_checkpoint_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/staging_runtime/raw_outputs/stage12_r6_training_history/P02-A0-Lee2019_MI-DNN-FBCNET-FULL_TRAIN-MR00__UNIFORM_NO_WEIGHT.candidate.chk",
+        "candidate_checkpoint_sha256": "2aa6c9da32fd10b7e74ba1ae3cbe3c134dc9420dffef9d7584f6f63282e2827e"
+      }
+    ],
+    "test_set_used": false
+  },
+  "r6_scientific_amendment": true,
+  "r6_max_epochs": 1500,
+  "r6_patience": 200,
+  "horizon_sufficiency": {
+    "best_by_cutoff": {
+      "100": {
+        "BACC": 0.6519999999999999,
+        "epoch": 88
+      },
+      "1000": {
+        "BACC": 0.7,
+        "epoch": 118
+      },
+      "1250": {
+        "BACC": 0.7,
+        "epoch": 118
+      },
+      "150": {
+        "BACC": 0.7,
+        "epoch": 118
+      },
+      "1500": {
+        "BACC": 0.7,
+        "epoch": 118
+      },
+      "200": {
+        "BACC": 0.7,
+        "epoch": 118
+      },
+      "250": {
+        "BACC": 0.7,
+        "epoch": 118
+      },
+      "300": {
+        "BACC": 0.7,
+        "epoch": 118
+      },
+      "400": {
+        "BACC": 0.7,
+        "epoch": 118
+      },
+      "50": {
+        "BACC": 0.6,
+        "epoch": 37
+      },
+      "500": {
+        "BACC": 0.7,
+        "epoch": 118
+      },
+      "750": {
+        "BACC": 0.7,
+        "epoch": 118
+      }
+    },
+    "epochs_completed": 318,
+    "final_best_BACC": 0.7,
+    "final_best_epoch": 118,
+    "gain_after_100": 0.04800000000000004,
+    "gain_after_1000": 0.0,
+    "gain_after_1250": 0.0,
+    "gain_after_150": 0.0,
+    "gain_after_200": 0.0,
+    "gain_after_250": 0.0,
+    "gain_after_300": 0.0,
+    "gain_after_400": 0.0,
+    "gain_after_500": 0.0,
+    "gain_after_750": 0.0,
+    "max_epochs": 1500,
+    "patience": 200,
+    "status": "PASS"
+  },
+  "test_loaded_after_group_selection_sealed": true,
+  "test_set_used_for_selection": false
+}

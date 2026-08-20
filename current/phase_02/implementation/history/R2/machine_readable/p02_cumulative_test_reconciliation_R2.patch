@@ -1,0 +1,35 @@
+--- tests/test_decisions_and_sources.py
++++ tests/test_decisions_and_sources.py
+@@
+-from pathlib import Path
+-import yaml
++from pathlib import Path
++import json, yaml
+ ROOT=Path(__file__).parents[1]
+-def test_all_sources_manifested():
+- s=yaml.safe_load((ROOT/'manifests/authority_manifest.yaml').read_text())['sources'];assert len(s)>=12;assert all(x['sha256'] for x in s)
+-def test_llm_decisions():
+- d=yaml.safe_load((ROOT/'docs/decisions/phase0_llm_decisions_R1.yaml').read_text())['decisions'];assert {x['id'] for x in d}=={'OD-001','OD-002','OD-004','OD-016','OD-018','OD-019','OD-022'};assert all(x['status'].startswith('LLM_DECISION_ACCEPTED') for x in d)
++def test_current_authorities_manifested():
++ d=json.loads((ROOT/'artifacts/cumulative_state/AuthorityManifest.json').read_text()); files=d['files']; assert d['governance']=='GOVERNANCE_V6_1_CURRENT'; assert len(files)==9; assert all(x['sha256'] and len(x['sha256'])==64 for x in files)
++def test_phase0_llm_decisions_preserved():
++ d=yaml.safe_load((ROOT/'docs/decisions/phase0_llm_decisions_R1.yaml').read_text())['decisions']; assert {x['id'] for x in d}=={'OD-001','OD-002','OD-004','OD-016','OD-018','OD-019','OD-022'}; assert all(x['status'].startswith('LLM_DECISION_ACCEPTED') for x in d)
+--- tests/test_preliminary_boundaries.py
++++ tests/test_preliminary_boundaries.py
+@@
+-from pathlib import Path
+-import yaml
++from pathlib import Path
++import json
+ ROOT=Path(__file__).parents[1]
+-def test_preliminary_labels():
+- d=yaml.safe_load((ROOT/'manifests/preliminary_closure_boundaries.yaml').read_text());assert d['layer0']=='LAYER_0_TEMPLATE_NOT_DISPOSITION';assert d['handoff']=='BLOCKED_HANDOFF_TEMPLATE'
++def test_current_phase_boundaries_are_finalized():
++ d=json.loads((ROOT/'CURRENT_PROJECT_STATUS.json').read_text()); assert d['status']=='P00_P01_MERGED_VALIDATED_READY_FOR_P02_ENTRY'; assert d['p02_entry_green_light']=='YES'; assert d['p02_execution_started'] is False; assert d['a14']=='ABSENT_PROHIBITED'; assert d['a4_effectiveness_in_p01'] is False; assert d['clinical_deployment_effectiveness_in_p01'] is False
+--- tests/test_publication_boundary.py
++++ tests/test_publication_boundary.py
+@@
+- for p in ['README.md','docs/index.md','docs/phase_00/overview.md','provenance/ROLLBACK.md','publication/file_selection_manifest.csv']:
++ for p in ['README.md','docs/index.md','docs/phase_00/overview.md','provenance/ROLLBACK.md','release_assets/predecessor_references/README.md','artifacts/cumulative_state/source_repository_intake.json']:
+    assert (ROOT/p).is_file(),p
++ assert (ROOT/'release_assets/predecessors/phase_00/IHARQ_Phase_0_GitHub_Scholarship_Ready_R2.zip').is_file()

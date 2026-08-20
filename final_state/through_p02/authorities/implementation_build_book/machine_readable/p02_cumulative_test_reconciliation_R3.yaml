@@ -1,0 +1,20 @@
+reconciliation_id: P02-CUMULATIVE-TEST-RECONCILIATION-R3
+status: FROZEN_VALID_UNIFIED_DIFF_VERIFIED
+supersedes: R2 descriptive diff which was not syntactically patch-applicable
+patch: p02_cumulative_test_reconciliation_R3.patch
+patch_sha256: 1d6b23498a80ab569896309f4eb8dc3bb21501e960f599b67b5b82b765d0de1b
+scope:
+- tests/test_decisions_and_sources.py
+- tests/test_preliminary_boundaries.py
+- tests/test_publication_boundary.py
+historical_baseline: 23 PASS / 3 FAIL due stale P00 publication-path assumptions
+verified_command: patch -p0 < p02_cumulative_test_reconciliation_R3.patch && python
+  -m pytest -q --disable-warnings
+verified_result: 26 passed in 9.40s
+post_test_hygiene: remove generated __pycache__/*.pyc then rerun cumulative/P01 verifiers
+post_cleanup_verifiers:
+  cumulative: 40/40 PASS
+  p01: 24/24 PASS
+scientific_effect: NONE
+owner_decision_required: false
+pre_notebook_rule: APPLY_AND_VERIFY_BEFORE_STAGE06

@@ -1,0 +1,41 @@
+{
+  "bundle_id": "INVALID-POLICY_UPDATE_TRACE_MISSING",
+  "records": [
+    {
+      "record_id": "IHARQ-TRANSITIONRECORD-20260802-4ad99dbfb1ee21f9",
+      "record_type": "TransitionRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L7",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "transition_id": "MOCK_TRANSITION_ID_33",
+        "state_id": "MOCK_STATE_ID_33",
+        "action_id": "MOCK_ACTION_ID_33",
+        "next_state_id": "MOCK_NEXT_STATE_ID_33",
+        "reward": "0.0",
+        "cost": "0.0"
+      },
+      "ablation_id": null
+    }
+  ],
+  "controls": {
+    "update_enabled": true,
+    "update_applied": true
+  },
+  "expected_failure_category": "policy_update_trace_missing"
+}

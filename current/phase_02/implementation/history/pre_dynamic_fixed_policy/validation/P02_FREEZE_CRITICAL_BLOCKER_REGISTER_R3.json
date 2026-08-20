@@ -1,0 +1,19 @@
+{
+  "register_id": "P02-FREEZE-CRITICAL-BLOCKER-REGISTER-R3",
+  "status": "PASS",
+  "source_predecessor": "P02-FREEZE-CRITICAL-BLOCKER-REGISTER-R2",
+  "resolution_amendment_id": "P02-PREEXEC-TRAINING-POLICY-AMENDMENT-R1",
+  "resolved": [
+    {
+      "blocker_id": "P02-BLOCK-TRAIN-AUG-001",
+      "resolution": "S&R challenger frozen: p=0.5, n_segments=4, deterministic seed namespace, same legal train/class donor pool, 15 diagnostic cells."
+    },
+    {
+      "blocker_id": "P02-BLOCK-TRAIN-WEIGHT-002",
+      "resolution": "NEVER_WEIGHT_P02_CURRENT_FROZEN_INPUTS; [1,1] weights; exact current P01 train counts frozen; changed identity fails closed."
+    }
+  ],
+  "freeze_critical_blockers": [],
+  "freeze_critical_blocker_count": 0,
+  "P00_P01_revision_required": false
+}

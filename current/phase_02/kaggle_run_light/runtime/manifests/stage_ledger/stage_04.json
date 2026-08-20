@@ -1,0 +1,54 @@
+{
+  "stage_id": "04",
+  "status": "SUCCESS",
+  "attempt_id": "3ec63b778b7d",
+  "inputs": {},
+  "input_hashes": {},
+  "outputs": {
+    "status": "PASS",
+    "core_rows": 12910,
+    "a4_parents": 12910,
+    "expected_core_rows": 12910,
+    "expected_a4_parents": 12910,
+    "parent_match": {
+      "core": 12910,
+      "a4": 12910,
+      "expected": 12910,
+      "missing_a4": [],
+      "unexpected_a4": [],
+      "status": "PASS"
+    },
+    "budget_families": 18,
+    "immutable": true,
+    "artifact": "stage_artifacts/04_p01_validation.json"
+  },
+  "output_hashes": {
+    "status": "727e9bd17b077ba162e13ba877135cc6fbc6b30f83da0b34b3e20233f1cc885f",
+    "core_rows": "f035c413db14663169bb0b13308266edc578fe67fa275dc438454b7a92c28659",
+    "a4_parents": "f035c413db14663169bb0b13308266edc578fe67fa275dc438454b7a92c28659",
+    "expected_core_rows": "f035c413db14663169bb0b13308266edc578fe67fa275dc438454b7a92c28659",
+    "expected_a4_parents": "f035c413db14663169bb0b13308266edc578fe67fa275dc438454b7a92c28659",
+    "parent_match": "74c2376d2fa35dd015676d987f800ff10b87317ff2b3f9feccd5d3aaea935679",
+    "budget_families": "4ec9599fc203d176a301536c2e091a19bc852759b255bd6818810a42c5fed14a",
+    "immutable": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+    "artifact": "d76e28e1e7953427ea0769db5896031432bd677c4bd1dd3e57e32f2ef54495ad"
+  },
+  "dependencies": [
+    "03"
+  ],
+  "elapsed_seconds": 0.045661211013793945,
+  "log_path": "logs/stage_04_3ec63b778b7d.log",
+  "heartbeat_write_errors": [],
+  "observability_status": "PASS",
+  "blockers": [],
+  "observations": [],
+  "revision_fingerprint": {
+    "notebook_revision": "R4",
+    "notebook_id": "IHARQ-P02-COMPLETE-EXECUTION-AND-ANALYSIS-R4",
+    "source_sha256": "a54bfa816acc6763c1d1042b8c65cf54ae04ec774c57ec50de86014a6730c5fa",
+    "config_sha256": "d82334535e397c681d6172694da96d3fff0143ffb1b63a18876ee1f7778f60a1",
+    "stage_plan_sha256": "043eb30e008af910d37c563e8be8c719ef881cf009aec3e34687dc97bdc34aad",
+    "scientific_freeze_sha256": "7449216c988eec14191ba85300d720547f06fbc6ac7020e9e142bf12a4b0a598",
+    "scientific_freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5"
+  }
+}

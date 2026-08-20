@@ -1,0 +1,15 @@
+artifact_id: L10-P02-FIG-008
+source_data: figure_source_data/P02_Table_failure_category_breakdown.csv
+render_script: scripts/render_layer10.py
+claim_ids:
+- P02-CLM-010/v1
+- CUM-CLM-007/v1
+finding_ids:
+- P02-FIND-013
+- CF-08
+limitations:
+- FAILURE_CLASSES_NOT_INTERCHANGEABLE
+output: figures/L10-P02-FIG-008.png
+scientific_transform: DISPLAY_ONLY
+source_data_sha256: 4f97a4abe453faf85d02b320d99ed52a152247bc7d25d12c49d6dbe16820ae8e
+output_sha256: 5a7822a4b545cdff3a92f55dad5ac691ea45ce23cf463f05e2108680a5647941

@@ -1,0 +1,140 @@
+{
+  "annex_id": "P02_LOWLABEL_64_128_256_STAGE18S_R1_a0e2462396cf",
+  "artifact_id": "P02-64-128-256-EXTENSION-ANNEX-FINAL-HANDOFF-R1",
+  "created_at_utc": "2026-08-17T19:30:53.685261+00:00",
+  "lookup_precedence": [
+    {
+      "path": "annexes/P02_LOWLABEL_64_128_256_STAGE18S_R1_a0e2462396cf/manifests/ANNEX_LOCATION_INDEX.csv",
+      "priority": 1,
+      "repo_id": "Csthv/iharq-p02-stage24-replay-github-ready-r1-20260814t060824z",
+      "revision": "c7504a1719ca7af9e44d849c0802a732099ed365",
+      "role": "P02_EXTENSION_ANNEX_INDEX"
+    },
+    {
+      "path": "phase_02/release_manifests/external_artifact_pointer_manifest_R2.json",
+      "priority": 2,
+      "repo_id": "Csthv/iharq-p02-phase02-r2-P02-L2-OFFICIAL-RUN-R4DY-20260817t182318z",
+      "revision": "7f43cf3a9ea4b2056d96b9d2135bc14eac605b90",
+      "role": "CURRENT_EXTENSION_HEAVY"
+    },
+    {
+      "path": "__IHARQ_SNAPSHOT__/WORKING_TREE_MANIFEST.jsonl",
+      "priority": 3,
+      "repo_id": "Csthv/p02-phase02-final-whole-working-20260814t052120z-b890ff92",
+      "revision": "bc14961e14f2e48690e55df3577014275f9cbf30",
+      "role": "HISTORICAL_P02_BASELINE_WHOLE_WORKING"
+    },
+    {
+      "path": "phase_02/release_manifests/external_artifact_pointer_manifest_R2.json",
+      "priority": 4,
+      "repo_id": "Csthv/iharq-p02-phase02-r2-P02-L2-OFFICIAL-RUN-R4DY-20260814t051352z",
+      "revision": "257a407b5c7ea37b6c620863ee261c010c8f197c",
+      "role": "HISTORICAL_P02_ARCHIVAL_RELEASE"
+    }
+  ],
+  "repositories": {
+    "archival_control_annex": {
+      "annex_content_revision": "1bb0d70013fddf5e475468b7925e0dd636602e59",
+      "annex_pointer_revision": "d2de83414bd5a3c452bcab7820d126999c5ff661",
+      "annex_root": "annexes/P02_LOWLABEL_64_128_256_STAGE18S_R1_a0e2462396cf",
+      "baseline_revision": "257a407b5c7ea37b6c620863ee261c010c8f197c",
+      "repo_id": "Csthv/iharq-p02-phase02-r2-P02-L2-OFFICIAL-RUN-R4DY-20260814t051352z"
+    },
+    "current_extension_release": {
+      "immutable_heavy_content_revision": "7f43cf3a9ea4b2056d96b9d2135bc14eac605b90",
+      "latest_verified_revision": "1abb59c6d8b6002d86ef72571bed46d9af028569",
+      "pointer_manifest": "phase_02/release_manifests/external_artifact_pointer_manifest_R2.json",
+      "repo_id": "Csthv/iharq-p02-phase02-r2-P02-L2-OFFICIAL-RUN-R4DY-20260817t182318z"
+    },
+    "github_ready_annex": {
+      "annex_content_revision": "c7504a1719ca7af9e44d849c0802a732099ed365",
+      "annex_pointer_revision": "84201e72d1ff8ffdd14b17cbbceec2857a14b436",
+      "annex_root": "annexes/P02_LOWLABEL_64_128_256_STAGE18S_R1_a0e2462396cf",
+      "baseline_revision": "c805487d24ab9727d86b63be74efb68b6b392476",
+      "repo_id": "Csthv/iharq-p02-stage24-replay-github-ready-r1-20260814t060824z"
+    },
+    "immutable_baseline_whole_working": {
+      "mutated": false,
+      "repo_id": "Csthv/p02-phase02-final-whole-working-20260814t052120z-b890ff92",
+      "revision": "bc14961e14f2e48690e55df3577014275f9cbf30"
+    }
+  },
+  "scientific_scope": {
+    "canonical_stage18_G18_modified": false,
+    "new_confirmatory_family_created": false,
+    "new_high_budget_axis": [
+      64,
+      128,
+      256
+    ],
+    "primary_budget_axis": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64,
+      128,
+      256
+    ],
+    "stage18S": {
+      "claim_scope": "POST_HOC_SENSITIVITY_DESCRIPTIVE",
+      "combined_successful_effect_rows": 315,
+      "groups": 108,
+      "member_receipts": 432,
+      "member_status_counts": {
+        "INPUT_INCOMPATIBLE": 54,
+        "SUCCESS": 378
+      },
+      "nine_budget_mr00_trajectories": 15,
+      "nine_budget_sequence": [
+        "1",
+        "4",
+        "8",
+        "16",
+        "32",
+        "64",
+        "128",
+        "256",
+        "FULL"
+      ],
+      "planned_cells": 324,
+      "terminal_counts": {
+        "INPUT_INCOMPATIBLE": 54,
+        "SUCCESS": 270
+      },
+      "three_repeat_anchor_budgets": [
+        "1",
+        "8",
+        "64",
+        "128",
+        "256",
+        "FULL"
+      ],
+      "three_repeat_anchor_trajectories": 90
+    }
+  },
+  "selection": {
+    "baseline_hash_reuse_files": 51,
+    "changed_or_new_bytes": 2951187413,
+    "changed_or_new_files": 4496,
+    "heavy_pointer_files": 758,
+    "light_direct_files": 3738,
+    "selection_manifest_sha256": "a0e2462396cf1a7c2fd7c7777048ae489c71eebe3ffec53c6ece7999358ec5ea",
+    "unchanged_bytes_not_uploaded": 9922808299,
+    "unchanged_files_not_uploaded": 16957
+  },
+  "stage24_receipt_repair": {
+    "path": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/manifests/P02_STAGE24_TRANSPORT_SUCCESSOR_POSTHOC_RECEIPT_R4_FIX1.json",
+    "scope": "FINAL_RECEIPT_ONLY",
+    "status": "PASS"
+  },
+  "status": "PASS",
+  "transport": {
+    "light_bytes_uploaded_to_github_ready_annex": 229214186,
+    "new_heavy_bytes_uploaded_by_annex": 0,
+    "reason_heavy_not_reuploaded": "INT27R4_REMOTE_COMPLETENESS_PASSED_BEFORE_FINAL_RECEIPT_ATTRIBUTEERROR",
+    "unchanged_bytes_uploaded_by_annex": 0
+  }
+}

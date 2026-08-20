@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "blocking": true,
+  "stage_id": "10",
+  "gate_id": "G10",
+  "planned_cells": 27,
+  "terminal_counts": {
+    "SUCCESS": 27
+  },
+  "full_train_success_by_dataset": {
+    "PhysioNetMI": [
+      "RIE-TS-LR",
+      "RIE-EA-TS",
+      "RIE-MDM"
+    ],
+    "BNCI2014_001": [
+      "RIE-TS-LR",
+      "RIE-EA-TS",
+      "RIE-MDM"
+    ],
+    "Lee2019_MI": [
+      "RIE-TS-LR",
+      "RIE-EA-TS",
+      "RIE-MDM"
+    ]
+  },
+  "issues": []
+}

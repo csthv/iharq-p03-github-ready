@@ -1,0 +1,15 @@
+environment_id: P00-LOCAL-REPRO-R3
+primary_target_python: '3.12'
+locally_verified_python: 3.13.5
+package_manager: uv
+project_lock: uv.lock
+runtime_lock: requirements-lock.txt
+platform_matrix:
+- ubuntu-python3.11
+- ubuntu-python3.12
+- ubuntu-python3.13
+github_ci_status: NOT_EXECUTED_BY_OWNER_INSTRUCTION
+runtime_snapshot: manifests/local_runtime_distribution_snapshot_R3.json
+requirements_lock_sha256: 8fab10096dc1ad278fbb0a5ea7b9034dcd4122a85b4081684f58ef0adcb5343a
+uv_lock_status: INCOMPLETE_FAIL_CLOSED
+local_runtime_lock_verified: true

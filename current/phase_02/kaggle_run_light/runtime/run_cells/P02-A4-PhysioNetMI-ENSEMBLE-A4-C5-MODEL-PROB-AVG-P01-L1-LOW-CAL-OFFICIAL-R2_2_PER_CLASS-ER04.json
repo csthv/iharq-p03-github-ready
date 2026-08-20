@@ -1,0 +1,65 @@
+{
+  "run_cell_id": "P02-A4-PhysioNetMI-ENSEMBLE-A4-C5-MODEL-PROB-AVG-P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS-ER04",
+  "ablation_id": "A4",
+  "terminal_status": "SUCCESS",
+  "prediction_partition": "records/PredictionRecord/dataset=PhysioNetMI/branch=PRE_RESULT_ROLE_MEMBERSHIP/budget=P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS/P02-A4-PhysioNetMI-ENSEMBLE-A4-C5-MODEL-PROB-AVG-P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS-ER04.jsonl",
+  "source_rows": "raw_outputs/P02-A4-PhysioNetMI-ENSEMBLE-A4-C5-MODEL-PROB-AVG-P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS-ER04.jsonl",
+  "metric_source": "metrics/P02-A4-PhysioNetMI-ENSEMBLE-A4-C5-MODEL-PROB-AVG-P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS-ER04.json",
+  "strongest_constituent_branch": "DNN-EEGNET",
+  "strongest_constituent_prediction_partition": "records/PredictionRecord/dataset=PhysioNetMI/branch=DNN-EEGNET/budget=P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS/P02-A0-PhysioNetMI-DNN-EEGNET-P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS-MR04.jsonl",
+  "strongest_constituent_checkpoint_sha256": "616bba244ae9ba235cf83bec08fe2022b147a456354b1eacb143bcfd95ebddfa",
+  "validation_selection_provenance": {
+    "selected_branch": "DNN-EEGNET",
+    "candidate_summaries": [
+      {
+        "branch_id": "DNN-EEGNET",
+        "BACC": 0.5283573317660888,
+        "F1": 0.5144361246444102,
+        "burden": 51.16874136399929
+      },
+      {
+        "branch_id": "SSL-CBRAMOD",
+        "BACC": 0.5190518170241943,
+        "F1": 0.45010569932643046,
+        "burden": 46.64103364944458
+      },
+      {
+        "branch_id": "CLS-CSP-LDA",
+        "BACC": 0.5064403957292585,
+        "F1": 0.5013541632262113,
+        "burden": 0.2940792829976999
+      },
+      {
+        "branch_id": "RIE-TS-LR",
+        "BACC": 0.5,
+        "F1": 0.3346774193548387,
+        "burden": 2.602457703997061
+      }
+    ],
+    "test_outcome_influence": "PROHIBITED"
+  },
+  "ensemble_member_branches": [
+    "CLS-CSP-LDA",
+    "RIE-TS-LR",
+    "DNN-EEGNET",
+    "SSL-CBRAMOD"
+  ],
+  "ensemble_member_checkpoint_ids": [
+    "b7536957a32276884db40467e4e63e2b456941722f6e1caf4889972f213b2e65",
+    "49538d3e9b8c934ca3834446ac79eb24fce39819f796ac630564aad0a478a69c",
+    "616bba244ae9ba235cf83bec08fe2022b147a456354b1eacb143bcfd95ebddfa",
+    "798e4a47d545579de9db474e0b5e72bafeda3d8e911b4f232b7f7c5f343c899a"
+  ],
+  "observed_denominator": 495,
+  "burden": {
+    "evidence_duration_s": 3.0,
+    "observation_horizon_s": 3.0,
+    "model_or_view_evaluations": 4,
+    "member_count": 4,
+    "aggregation_operation": "PROBABILITY_AVERAGE",
+    "batch1_latency_median_s": 0.021956100999886985,
+    "batch1_latency_p95_s": 0.024036947595232047,
+    "aggregation_latency_s": 0.0009930190008162754
+  },
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

@@ -1,0 +1,68 @@
+{
+  "artifact_id": "P02-STAGE24-FINALIZATION-REPLAY-FROM-HF-SNAPSHOT-R1",
+  "counts": {
+    "direct_release_files_before_security_filter": 14506,
+    "hf_external_files": 10122,
+    "security_exclusions": 0,
+    "source_manifest_files": 24661
+  },
+  "created_at_utc": "2026-08-14T06:07:39.369538+00:00",
+  "operation": "FINALIZATION_AND_RELEASE_ASSEMBLY_REPLAY",
+  "release_policy": {
+    "csv_json_jsonl_metric_result_files_direct": true,
+    "github_ready_contains_light_results_directly": true,
+    "large_artifacts_externalized_to_hf_source_snapshot": true,
+    "no_3gib_bundle_transport": true,
+    "target_upload_strategy": "ONE_HIGH_LEVEL_UPLOAD_FOLDER"
+  },
+  "scientific_configuration_changed": false,
+  "scientific_stage_rerun": false,
+  "source_snapshot": {
+    "artifact_id": "P02-STAGE24-REPLAY-SOURCE-HF-SNAPSHOT-R1",
+    "created_at_utc": "2026-08-14T06:07:39.368883+00:00",
+    "large_artifacts_are_referenced_not_duplicated": true,
+    "source_immutable_revision": "bc14961e14f2e48690e55df3577014275f9cbf30",
+    "source_manifest_path": "__IHARQ_SNAPSHOT__/WORKING_TREE_MANIFEST.jsonl",
+    "source_manifest_sha256": "564bbb44e67d14da8457ad83d33651ded93dfc6b89ab90f10f78a36a20b8e8f5",
+    "source_metadata_path": "__IHARQ_SNAPSHOT__/SNAPSHOT_METADATA.json",
+    "source_repo_id": "Csthv/p02-phase02-final-whole-working-20260814t052120z-b890ff92",
+    "source_repo_type": "dataset",
+    "status": "PASS"
+  },
+  "status": "PASS",
+  "training_rerun": false,
+  "validated_source_state": {
+    "stage11": {
+      "gate": "PASS",
+      "ledger": "SUCCESS",
+      "role": "CANONICAL_ACCEPTED_MAIN"
+    },
+    "stage12": {
+      "gate": "PASS",
+      "ledger": "SUCCESS",
+      "role": "CANONICAL_ACCEPTED_MAIN"
+    },
+    "stage18": {
+      "canonical_G18_modified": false,
+      "gate": "PASS",
+      "ledger": "SUCCESS"
+    },
+    "stage18S": {
+      "claim_scope": "POST_HOC_SENSITIVITY_DESCRIPTIVE",
+      "member_receipts": 216,
+      "status": "PASS",
+      "terminal_counts": {
+        "INPUT_INCOMPATIBLE": 27,
+        "SUCCESS": 135
+      }
+    },
+    "stage23": {
+      "gate": "PASS",
+      "ledger": "SUCCESS"
+    },
+    "stage24": {
+      "gate": "PASS",
+      "ledger": "SUCCESS"
+    }
+  }
+}

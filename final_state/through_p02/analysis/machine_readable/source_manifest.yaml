@@ -1,0 +1,27 @@
+report_id: IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+sources:
+- source_id: P00_ANALYSIS
+  path: /mnt/data/cumulative_phase_analysis_work/p00/IHARQ_Phase_0_Final_Whole_Stack_Advanced_Internal_Repository_R1/docs/phase_00/final_documents/06_IHARQ_Phase_0_Analysis_Evidence_Results_and_Interpretation_Report_Current.md
+  role: Principal P00 intra-phase analysis
+  sha256: d613a11796b1edc83fd9f9fa4a972c6de4520ac9a410bac1a08ac9c07e549f12
+  size_bytes: 47081
+- source_id: P01_CUMULATIVE_ANALYSIS
+  path: /mnt/data/cumulative_phase_analysis_work/p01/IHARQ_Cumulative_Phase_Evidence_Results_and_Interpretation_Report_Through_P01_Current.md
+  role: Principal P00/P01 cumulative analysis source
+  sha256: 503fe9e7245ca063096145b2b07fe315cb881a2a91063d3f9b87fef1020e074f
+  size_bytes: 152052
+- source_id: P01_LAYER0
+  path: /mnt/data/cumulative_phase_analysis_work/p01_l0/machine_readable/Layer0_Dispositions.yaml
+  role: Current P01 Layer0 dispositions
+  sha256: 99bdd0ab867effe04eaa4f4c93f5571b4df324557d819b1ea7f34c25570a480c
+  size_bytes: 26664
+- source_id: P02_ANALYSIS
+  path: /mnt/data/IHARQ_Phase_02_Evidence_Results_and_Interpretation_Report_Final_R2/IHARQ_Phase_02_Evidence_Results_and_Interpretation_Report_Final_R2.md
+  role: Finalized P02 R2 intra-phase analysis
+  sha256: 787c535acfc34979792d1e15a86047bfcf48d7870e2baa64afd6f7e08b667d22
+  size_bytes: 141008
+- source_id: PROTOCOL_THROUGH_P02
+  path: /mnt/data/IHARQ_Protocol_v1_0_Final_Through_Phase_02_R1/IHARQ_Protocol_v1_0_Final_Through_Phase_02_R1.md
+  role: Canonical execution/analysis authority
+  sha256: d993b3b4bf9dc1afc0cbb2eb3c5b173e6ec90957b039d6c6151471962876664b
+  size_bytes: 239761

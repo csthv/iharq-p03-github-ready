@@ -1,0 +1,27 @@
+gate_id,requirement,blocking,failure,runtime_stage,evidence,status
+G00,Current project state and authority hashes resolve,True,BLOCK_PREPARATION,00,gate_results/G00.json,PASS
+G01,P02 environment packages/resource inventory resolvable; branch-specific dependencies isolated,True,BLOCK_CORE or branch-specific RESOURCE/INCOMPATIBLE,01,gate_results/G01.json,PASS
+G02,Cumulative repository manifest/checksum verification PASS,True,BLOCK,02,gate_results/G02.json,PASS
+G03,Core and A4 external pointer identities/checksums/version namespaces resolve,True,BLOCK affected substrate,03,gate_results/G03.json,PASS
+G04,3 DatasetRecords/12910 WindowRecords/Split/Preprocessing/LabelMap/Validation contract validates without mutation,True,BLOCK and owner-routed P01 defect,04,gate_results/G04.json,PASS
+G05,Exact R2 config/run families/model portfolio/metrics/seeds/repeats/budgets/grids/statistics/resource caps and ablation unlock freeze all present and hash-verified,True,BLOCK OFFICIAL RUN; no notebook-time default filling,05,gate_results/G05.json,PASS
+G06,P02 schemas/interfaces/fixtures/imports/smoke path pass,True,BLOCK,06,gate_results/G06.json,PASS
+G07,"role firewall, lineage and loaders pass",True,BLOCK,07,gate_results/G07.json,PASS
+G08,sanity controls emit expected outputs/negative-control behavior,True,BLOCK core measurement spine if lower-bound/pipeline integrity absent,08,gate_results/G08.json,PASS
+G09,classical floor has >=1 lawful classical anchor,True,BLOCK scientifically useful P02,09,gate_results/G09.json,PASS
+G10,Riemannian/robust-classical comparator present,True,BLOCK minimum floor,10,gate_results/G10.json,PASS
+G11,EEGNet compact neural executes where feasible; resource infeasibility is measured and routed,False,RESOURCE_BLOCKED with explicit evidence consequence,11,gate_results/G11.json,PASS
+G12,every conditional deep/SSL branch has explicit admission terminal status; no hidden omission,False,branch-specific blocked/skipped; primary floor continues,12,gate_results/G12.json,PASS
+G13,accepted model checkpoints reload and registry linkage complete,True,affected model INVALID/BLOCKED,13,gate_results/G13.json,PASS
+G14,PredictionRecord coverage/class order/score semantics/lineage valid,True,affected branch consumer-ineligible,14,gate_results/G14.json,PASS
+G15,A0 source metrics and denominators complete for eligible primary branches,True,BLOCK A0/evidence sufficiency,15,gate_results/G15.json,PASS
+G16,legal budget points emitted or explicit failed/ineligible statuses retained,True,curve scope downgraded; no invented/interpolated point,16,gate_results/G16.json,PASS
+G17,descriptive profiles preserve coverage and no diagnosis/routing,False,diagnostic/omit unsupported profile claim,17,gate_results/G17.json,PASS
+G18,A4 R2 exact parent matching/class order/aggregation/burden and missingness rules pass,True,BLOCK A4 claim-bearing control evidence,18,gate_results/G18.json,PASS
+G18U,extra ablation runs only if Stage05 FULLY_UNLOCKED + authority-owned P02 + all scientific bindings frozen,False,NOT_AUTHORIZED/INCOMPATIBLE; never separate mode,18U,gate_results/G18U.json,PASS
+G19,all planned/attempted/failed/skipped/blocked rows visible,True,BLOCK release if negative evidence hidden,19,gate_results/G19.json,PASS
+G20,consumer-specific readiness matrix complete,True,downstream affected consumer blocked/diagnostic,20,gate_results/G20.json,PASS
+G21,source tables carry exact lineage and limitations,True,not thesis/L10-ready,21,gate_results/G21.json,PASS
+G22,all downstream handoffs present and source-linked,True,BLOCK phase documentary closure,22,gate_results/G22.json,PASS
+G23,evidence sufficiency passes or minimal repair route emitted,True,LOOPBACK only relevant scope,23,gate_results/G23.json,PASS
+G24,manifest/checksums/path safety/secret scan/output inventory PASS,True,BLOCK export/release,24,gate_results/G24.json,PASS

@@ -1,0 +1,39 @@
+{
+  "stage_id": "19",
+  "status": "SUCCESS",
+  "attempt_id": "ad394b25a08b",
+  "inputs": {},
+  "input_hashes": {},
+  "outputs": {
+    "status": "PASS",
+    "failure_evidence_aggregation": "COMPLETE",
+    "failures": 1,
+    "negative_result_notes": 6,
+    "diagnostic_flags": 0,
+    "artifact": "stage_artifacts/19_failure.json"
+  },
+  "output_hashes": {
+    "status": "727e9bd17b077ba162e13ba877135cc6fbc6b30f83da0b34b3e20233f1cc885f",
+    "failure_evidence_aggregation": "0ba9a455349c3f02ebe6f28595a29e30a4d03a954f412f2688924056e81a7067",
+    "failures": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+    "negative_result_notes": "e7f6c011776e8db7cd330b54174fd76f7d0216b612387a5ffcfb81e6f0919683",
+    "diagnostic_flags": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+    "artifact": "83997addad2c8684448d3a098fa90fe83bed5f26de791b5cb9227d73ef9a4407"
+  },
+  "dependencies": [
+    "18U"
+  ],
+  "elapsed_seconds": 0.011501312255859375,
+  "log_path": "logs/stage_19_ad394b25a08b.log",
+  "heartbeat_write_errors": [],
+  "observability_status": "PASS",
+  "blockers": [],
+  "observations": [],
+  "revision_fingerprint": {
+    "notebook_revision": "R4",
+    "source_sha256": "AUTHORING_FIXTURE_SOURCE",
+    "config_sha256": "AUTHORING_FIXTURE_CONFIG",
+    "stage_plan_sha256": "AUTHORING_FIXTURE_STAGE_PLAN",
+    "scientific_freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5"
+  }
+}

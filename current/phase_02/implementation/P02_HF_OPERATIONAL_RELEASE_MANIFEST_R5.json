@@ -1,0 +1,25 @@
+{
+  "release_id": "IHARQ-P02-L2-KAGGLE-IMPLEMENTATION-R5-HF-R1",
+  "predecessor": "R4",
+  "scientific_design_change": false,
+  "scientific_freeze": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5",
+  "notebook_id": "IHARQ-P02-COMPLETE-EXECUTION-AND-ANALYSIS-R4",
+  "notebook_file": "IHARQ_Phase_02_Complete_Execution_and_Analysis_R4_HF_R1.ipynb",
+  "hf_policy_id": "P02-HF-CONDITIONAL-ASSET-POLICY-R1",
+  "conditional_asset_changes": {
+    "CBraMod": "PUBLIC_IMMUTABLE_HF_AUTO_RETRIEVAL_WITH_HASH_VERIFICATION",
+    "REVE": "GATED_HF_SUPPORT_PRESENT_BUT_CURRENT_P02_BLOCKED_BY_KNOWN_CORPUS_OVERLAP",
+    "offline_fallback": "PRESERVED"
+  },
+  "token_policy": "KAGGLE_SECRET_THEN_ENVIRONMENT_THEN_HIDDEN_GETPASS; MEMORY_ONLY; CLEARED_AFTER_STAGE03; NO_BUNDLE_PERSISTENCE; NO_HF_LOGIN",
+  "status": "PASS_READY_FOR_GOVERNED_KAGGLE_EXECUTION",
+  "implementation_package": "IHARQ_P02_L2_Kaggle_Notebook_Implementation_Package_R5",
+  "notebook_sha256_prepackage": "4c36e340721156de2f58e03b1568f7b1072db3d31145aaba566b283305e7fecf",
+  "validation": {
+    "pytest": "82/82 PASS",
+    "static": "91/91 PASS",
+    "fixture": "26/26 PASS; 311/311 checksums",
+    "upstream": "40/40 + 24/24 PASS"
+  },
+  "freeze_critical_blockers": 0
+}

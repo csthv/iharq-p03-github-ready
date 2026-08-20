@@ -1,0 +1,127 @@
+{
+  "validation_id": "IHARQ-P02-L2-FINAL-PREEXECUTION-CHECKS-R2",
+  "status": "PASS_TECHNICAL_BLOCKED_SCIENTIFIC_FREEZE",
+  "checks": {
+    "python_ast_parse": {
+      "status": "PASS",
+      "files": 35,
+      "errors": []
+    },
+    "clean_subprocess_import": {
+      "status": "PASS",
+      "returncode": 0,
+      "stderr": ""
+    },
+    "notebook_json": {
+      "status": "PASS",
+      "stage_tags": 26,
+      "executed_code_cells": 0,
+      "blocked_before_dependency_install": true
+    },
+    "structured_parse": {
+      "status": "PASS",
+      "counts": {
+        "json": 25,
+        "yaml": 52,
+        "csv": 25,
+        "jsonl": 0,
+        "ipynb": 1
+      },
+      "errors": [],
+      "error_count": 0
+    },
+    "blocker_register": {
+      "status": "PASS",
+      "ids": [
+        "P02-BLOCK-TRAIN-AUG-001",
+        "P02-BLOCK-TRAIN-WEIGHT-002"
+      ]
+    },
+    "training_policy_fail_closed": {
+      "status": "PASS",
+      "binding_status": "BLOCKED_PENDING_P02_PROTOCOL_AND_BUILD_BOOK_SUCCESSOR"
+    },
+    "sections_1_274_exhaustion": {
+      "status": "PASS",
+      "rows": 274,
+      "not_executed": 0
+    },
+    "owner_routed_record_semantics": {
+      "status": "PASS",
+      "owner_routed": {
+        "LeakageWarningRecord": "use current authorized warning owner/profile; P02 source evidence only if owner requires",
+        "MatchedComparisonReport": "P02 emits matched source table; formal owner-compatible representation downstream"
+      },
+      "output_status": {
+        "LeakageWarningRecord": "OWNER_ROUTED_SUPPORT_RECORD; P02_SOURCE_EVIDENCE_ONLY",
+        "MatchedComparisonReport": "OWNER_ROUTED_SUPPORT_RECORD; P02_MATCHED_SOURCE_TABLES_COMPLETE"
+      }
+    },
+    "current_identity_parity": {
+      "status": "PASS",
+      "g05": "Exact R3 scientific execution freeze adopted unchanged by R4, current R2 implementation/config bindings, run families, model portfolio, metrics, seeds/repeats, budgets, grids, statistics, resource caps, training-policy authority bindings, and ablation unlock state are all present and hash-verified."
+    },
+    "transient_files": {
+      "status": "PASS",
+      "hits": [],
+      "count": 0
+    },
+    "freeze_critical_implementation_placeholders": {
+      "status": "PASS",
+      "hits": []
+    },
+    "secret_scan": {
+      "status": "PASS",
+      "hits": []
+    },
+    "portable_path_scan": {
+      "status": "PASS",
+      "hits": []
+    },
+    "authoring_tests": {
+      "status": "PASS",
+      "passed": 62
+    },
+    "fixture_real_dispatch": {
+      "status": "PASS",
+      "summary": {
+        "status": "PASS",
+        "label": "FIXTURE_NON_SCIENTIFIC_NOT_P02_EVIDENCE",
+        "scientific_evidence": false,
+        "stages": 26,
+        "stage15_a0_closure": "PASS",
+        "stage18_a4_execution": "PASS",
+        "c1_c2_c3_vs_c0_closure": "PASS",
+        "c4_c5_vs_strongest_closure": "PASS",
+        "stage18u": "PASS",
+        "late_stage_chain": "PASS",
+        "runtime_checksums": {
+          "status": "PASS",
+          "rows": 288,
+          "missing": [],
+          "mismatch": []
+        },
+        "runtime_zip": {
+          "status": "PASS",
+          "sha256": "ef52c262f8df01116a6d066c33ec8ea473be97db3ded9884b7bdd3f3a437601a",
+          "bytes": 234683,
+          "members": 289,
+          "crc": "PASS",
+          "unsafe_paths": 0
+        },
+        "fixture_bundle_path": "validation/FIXTURE_NON_SCIENTIFIC_RUNTIME_BUNDLE.zip"
+      }
+    },
+    "static_authoring_validation": {
+      "status": "PASS",
+      "pass_count": 52,
+      "fail_count": 0
+    }
+  },
+  "findings": [],
+  "technical_checks_all_pass": true,
+  "p02_kaggle_preexecution_audit": "BLOCKED",
+  "scientific_execution_started": false,
+  "fabricated_p02_evidence": false,
+  "ready_for_actual_kaggle_execution": false
+}

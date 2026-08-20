@@ -1,0 +1,109 @@
+phase_id: P02
+analysis_release_id: P02-PHASE-ANALYSIS-FINAL-R2
+corrections:
+- issue_id: P02-PA-FIN-001
+  severity: MAJOR
+  original_problem: R1 did not expose a formal expected-evidence vs actual-evidence
+    vs analyzed closure matrix.
+  correction: Added 104-row expected-evidence matrix, actual-evidence inventory, and
+    phase-completeness matrix.
+  affected_files:
+  - "report \xA729"
+  - machine_readable/P02_expected_evidence_matrix.csv
+  - P02_actual_evidence_inventory.csv
+  - P02_phase_completeness_matrix.csv
+  status: CLOSED
+- issue_id: P02-PA-FIN-002
+  severity: MAJOR
+  original_problem: Low-label narrative was scientifically correct but did not preserve
+    exact interval deltas/ranks/rank reversals required by final prompt.
+  correction: Recomputed exact 1/2/4/8/16/32 trajectories, full-training deltas, adjacent
+    changes, budget leaders and rank changes from canonical low_label_metric_source.csv.
+  affected_files:
+  - "report \xA77"
+  - three low-label table-source CSVs
+  status: CLOSED
+- issue_id: P02-PA-FIN-003
+  severity: MAJOR
+  original_problem: Stage12 A/B/C values were publication-rounded and change magnitude
+    was not fully quantified.
+  correction: Added exact source values, B-A BACC deltas and percentage-point changes,
+    exact C-confirmation mean/SD/collapse counts, and explicit validation-only boundary.
+  affected_files:
+  - "report \xA75.3"
+  - P02_Table_Stage12_validation_before_after_exact.csv
+  status: CLOSED
+- issue_id: P02-PA-FIN-004
+  severity: MAJOR
+  original_problem: Participant heterogeneity was interpreted but participant-wide
+    difficulty and exact dispersion were shallow relative to finalization prompt.
+  correction: Added exact branch dispersion and across-main-branch participant difficulty
+    summaries, with no personalization claim.
+  affected_files:
+  - "report \xA76.4"
+  - participant heterogeneity/difficulty CSVs
+  status: CLOSED
+- issue_id: P02-PA-FIN-005
+  severity: MAJOR
+  original_problem: Failure evidence was counted but final prompt required exact category/denominator/location/reason/canonical-impact
+    mapping.
+  correction: Added exact FailureCaseIndex code/branch breakdown and separated 340
+    NegativeResultNote from 309 DiagnosticOnlyFlag semantics.
+  affected_files:
+  - "report \xA712"
+  - failure table sources
+  - P02_failure_coverage_matrix.csv
+  status: CLOSED
+- issue_id: P02-PA-FIN-006
+  severity: MAJOR
+  original_problem: A4 burden discussion lacked exact source-derived latency/evaluation
+    burden values.
+  correction: Added condition-level burden table and exact descriptive burden interpretation
+    without treating it as deployment benchmarking.
+  affected_files:
+  - "report \xA710.5"
+  - P02_Table_A4_burden_summary.csv
+  status: CLOSED
+- issue_id: P02-PA-FIN-007
+  severity: MAJOR
+  original_problem: Final prompt requires A0-A13/A14, model, dataset, metric, stage
+    and failure coverage matrices.
+  correction: Added explicit coverage matrices and governed A14 rejected state.
+  affected_files:
+  - machine_readable/P02_stage_coverage_matrix.csv
+  - P02_ablation_coverage_matrix.csv
+  - P02_model_coverage_matrix.csv
+  - P02_dataset_coverage_matrix.csv
+  - P02_metric_coverage_matrix.csv
+  - P02_failure_coverage_matrix.csv
+  status: CLOSED
+- issue_id: P02-PA-FIN-008
+  severity: MAJOR
+  original_problem: Candidate claims did not expose prohibited stronger wording as
+    a first-class closure artifact.
+  correction: Added claim-readiness table and enriched candidate-claim YAML with prohibited
+    stronger wording and pending Layer0 status.
+  affected_files:
+  - "report \xA730"
+  - P02_claim_readiness.csv
+  - P02_candidate_claims.yaml
+  status: CLOSED
+- issue_id: P02-PA-FIN-009
+  severity: MAJOR
+  original_problem: Literature-dependent statements required fresh final-pass verification.
+  correction: Reverified model papers/author repositories, dataset sources, Riemannian
+    and reproducibility/foundation-model context; preserved comparability classifications.
+  affected_files:
+  - "report \xA714-15"
+  - literature/P02_literature_fresh_verification.json/.csv
+  status: CLOSED
+- issue_id: P02-PA-FIN-010
+  severity: MINOR
+  original_problem: Unresolved scientific questions were distributed across limitations
+    rather than preserved in one final register.
+  correction: Added explicit unresolved-question register with future prospective
+    tests.
+  affected_files:
+  - "report \xA731"
+  - P02_unresolved_questions.yaml
+  status: CLOSED

@@ -1,0 +1,44 @@
+status: READY_FOR_LAYER0_EVIDENCE_MAP_LAYER10_AND_P03_HANDOFF_WITH_LIMITATIONS
+layer0:
+  phase_specific_claim_sources:
+  - P00 Layer0 current dispositions
+  - P01 Layer0 current dispositions
+  - P02 candidate claims pending review
+  cumulative_candidate_claims:
+  - CC-01
+  - CC-02
+  - CC-03
+  - CC-04
+  - CC-05
+  - CC-06
+  - CC-07
+  - CC-08
+  approval_status: CUMULATIVE_CLAIMS_PENDING_REVIEW
+evidence_map:
+  trace: cumulative claim -> cumulative finding -> phase finding -> phase analysis
+    source -> Protocol/run identity -> table/figure -> limitation
+  relationship_file: finding_relationships.yaml
+  results_to_claims_file: results_to_claims.yaml
+layer10:
+  recommended_assets:
+  - CUM-FIG-01
+  - CUM-FIG-02
+  - P02 full-training model-by-dataset
+  - P02 low-label curves
+  - P02 A4 effect plot
+  - P02 Stage18S sign-consistency plot
+  warnings:
+  - Keep Stage18S post-hoc label visible
+  - Keep A4 single-repeat/deep-anchor limitation visible
+  - Keep public/non-clinical boundary visible
+P03:
+  inherit:
+  - P01 frozen data/split/window/budget identities
+  - P02 canonical predictions/checkpoints/score semantics/failure states
+  - P02 external artifact retrieval contract
+  must_carry:
+  - P02 claim ceilings
+  - A4 resource limitation
+  - low-label single-subset limitation
+  - public/non-clinical boundary
+  not_implied: P03 scientific success or deployment readiness

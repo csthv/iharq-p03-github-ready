@@ -1,0 +1,447 @@
+{
+  "artifact_id": "P02-STAGE11-R7-P01-CONSUMPTION-AUDIT-R1",
+  "authority": {
+    "P01_bytes_changed": false,
+    "P02_core_window": {
+      "duration_s": 3.0,
+      "samples": 480,
+      "sampling_hz": 160,
+      "start_offset_s": 0.5,
+      "stop_offset_s": 3.5
+    },
+    "model_local_V_to_uV_multiplier": 1000000.0,
+    "model_local_channelwise_standardization": true,
+    "preprocessing_record_id": "IHARQ-PREPROCESSINGRECORD-20260806-a11b59eeb3861a08",
+    "read_only": true,
+    "relabel": false,
+    "resplit": false,
+    "rewindow": false,
+    "scientific_freeze": "P01-L1-OFFICIAL-RUN-FREEZE-R2",
+    "signal_dtype": "float32",
+    "split_record_id": "IHARQ-SPLITRECORD-20260806-e4e371d332c61e36",
+    "window_policy": {
+      "bounds_policy": "REJECT_OUT_OF_BOUNDS",
+      "duration_samples": 480,
+      "last_window_policy": "ONE_WINDOW_PER_INCLUDED_SOURCE_EVENT",
+      "start_offset_samples": 80,
+      "stride_samples": 480
+    }
+  },
+  "budget_checks": {
+    "BNCI2014_001": [
+      {
+        "budget_per_class": 1,
+        "class_counts": {
+          "0": 1,
+          "1": 1
+        },
+        "nested": true,
+        "row_count": 2,
+        "source_role": "calibration"
+      },
+      {
+        "budget_per_class": 2,
+        "class_counts": {
+          "0": 2,
+          "1": 2
+        },
+        "nested": true,
+        "row_count": 4,
+        "source_role": "calibration"
+      },
+      {
+        "budget_per_class": 4,
+        "class_counts": {
+          "0": 4,
+          "1": 4
+        },
+        "nested": true,
+        "row_count": 8,
+        "source_role": "calibration"
+      },
+      {
+        "budget_per_class": 8,
+        "class_counts": {
+          "0": 8,
+          "1": 8
+        },
+        "nested": true,
+        "row_count": 16,
+        "source_role": "calibration"
+      },
+      {
+        "budget_per_class": 16,
+        "class_counts": {
+          "0": 16,
+          "1": 16
+        },
+        "nested": true,
+        "row_count": 32,
+        "source_role": "calibration"
+      },
+      {
+        "budget_per_class": 32,
+        "class_counts": {
+          "0": 32,
+          "1": 32
+        },
+        "nested": true,
+        "row_count": 64,
+        "source_role": "calibration"
+      }
+    ],
+    "Lee2019_MI": [
+      {
+        "budget_per_class": 1,
+        "class_counts": {
+          "0": 1,
+          "1": 1
+        },
+        "nested": true,
+        "row_count": 2,
+        "source_role": "calibration"
+      },
+      {
+        "budget_per_class": 2,
+        "class_counts": {
+          "0": 2,
+          "1": 2
+        },
+        "nested": true,
+        "row_count": 4,
+        "source_role": "calibration"
+      },
+      {
+        "budget_per_class": 4,
+        "class_counts": {
+          "0": 4,
+          "1": 4
+        },
+        "nested": true,
+        "row_count": 8,
+        "source_role": "calibration"
+      },
+      {
+        "budget_per_class": 8,
+        "class_counts": {
+          "0": 8,
+          "1": 8
+        },
+        "nested": true,
+        "row_count": 16,
+        "source_role": "calibration"
+      },
+      {
+        "budget_per_class": 16,
+        "class_counts": {
+          "0": 16,
+          "1": 16
+        },
+        "nested": true,
+        "row_count": 32,
+        "source_role": "calibration"
+      },
+      {
+        "budget_per_class": 32,
+        "class_counts": {
+          "0": 32,
+          "1": 32
+        },
+        "nested": true,
+        "row_count": 64,
+        "source_role": "calibration"
+      }
+    ],
+    "PhysioNetMI": [
+      {
+        "budget_per_class": 1,
+        "class_counts": {
+          "0": 1,
+          "1": 1
+        },
+        "nested": true,
+        "row_count": 2,
+        "source_role": "calibration"
+      },
+      {
+        "budget_per_class": 2,
+        "class_counts": {
+          "0": 2,
+          "1": 2
+        },
+        "nested": true,
+        "row_count": 4,
+        "source_role": "calibration"
+      },
+      {
+        "budget_per_class": 4,
+        "class_counts": {
+          "0": 4,
+          "1": 4
+        },
+        "nested": true,
+        "row_count": 8,
+        "source_role": "calibration"
+      },
+      {
+        "budget_per_class": 8,
+        "class_counts": {
+          "0": 8,
+          "1": 8
+        },
+        "nested": true,
+        "row_count": 16,
+        "source_role": "calibration"
+      },
+      {
+        "budget_per_class": 16,
+        "class_counts": {
+          "0": 16,
+          "1": 16
+        },
+        "nested": true,
+        "row_count": 32,
+        "source_role": "calibration"
+      },
+      {
+        "budget_per_class": 32,
+        "class_counts": {
+          "0": 32,
+          "1": 32
+        },
+        "nested": true,
+        "row_count": 64,
+        "source_role": "calibration"
+      }
+    ]
+  },
+  "created_utc": "2026-08-12T13:37:42.025716+00:00",
+  "datasets": {
+    "BNCI2014_001": {
+      "roles": {
+        "calibration": {
+          "class_counts": {
+            "0": 288,
+            "1": 288
+          },
+          "rows": 576,
+          "subjects": 2
+        },
+        "test": {
+          "class_counts": {
+            "0": 144,
+            "1": 144
+          },
+          "rows": 288,
+          "subjects": 1
+        },
+        "train": {
+          "class_counts": {
+            "0": 720,
+            "1": 720
+          },
+          "rows": 1440,
+          "subjects": 5
+        },
+        "validation": {
+          "class_counts": {
+            "0": 144,
+            "1": 144
+          },
+          "rows": 288,
+          "subjects": 1
+        }
+      },
+      "signal_probe": {
+        "calibration": {
+          "dtype": "float32",
+          "max_abs_V": 1.50213772940333e-05,
+          "p99_abs_V": 5.345948657122791e-06,
+          "rms_V": 1.7936761638364814e-06,
+          "shape": [
+            16,
+            22,
+            480
+          ]
+        },
+        "train": {
+          "dtype": "float32",
+          "max_abs_V": 1.5258119674399495e-05,
+          "p99_abs_V": 5.989133392176891e-06,
+          "rms_V": 1.9895285378004663e-06,
+          "shape": [
+            16,
+            22,
+            480
+          ]
+        },
+        "validation": {
+          "dtype": "float32",
+          "max_abs_V": 2.0399866116349585e-05,
+          "p99_abs_V": 6.839203447270849e-06,
+          "rms_V": 2.275498379381346e-06,
+          "shape": [
+            16,
+            22,
+            480
+          ]
+        }
+      },
+      "subject_role_disjoint": true
+    },
+    "Lee2019_MI": {
+      "roles": {
+        "calibration": {
+          "class_counts": {
+            "0": 550,
+            "1": 550
+          },
+          "rows": 1100,
+          "subjects": 11
+        },
+        "test": {
+          "class_counts": {
+            "0": 300,
+            "1": 300
+          },
+          "rows": 600,
+          "subjects": 6
+        },
+        "train": {
+          "class_counts": {
+            "0": 1600,
+            "1": 1600
+          },
+          "rows": 3200,
+          "subjects": 32
+        },
+        "validation": {
+          "class_counts": {
+            "0": 250,
+            "1": 250
+          },
+          "rows": 500,
+          "subjects": 5
+        }
+      },
+      "signal_probe": {
+        "calibration": {
+          "dtype": "float32",
+          "max_abs_V": 3.175799793098122e-05,
+          "p99_abs_V": 9.525398299956574e-06,
+          "rms_V": 3.1784038558678276e-06,
+          "shape": [
+            16,
+            62,
+            480
+          ]
+        },
+        "train": {
+          "dtype": "float32",
+          "max_abs_V": 2.9321759939193726e-05,
+          "p99_abs_V": 8.536058830941286e-06,
+          "rms_V": 2.827562157111399e-06,
+          "shape": [
+            16,
+            62,
+            480
+          ]
+        },
+        "validation": {
+          "dtype": "float32",
+          "max_abs_V": 7.954314787639305e-05,
+          "p99_abs_V": 1.2970161760677e-05,
+          "rms_V": 4.267826361190357e-06,
+          "shape": [
+            16,
+            62,
+            480
+          ]
+        }
+      },
+      "subject_role_disjoint": true
+    },
+    "PhysioNetMI": {
+      "roles": {
+        "calibration": {
+          "class_counts": {
+            "0": 488,
+            "1": 491
+          },
+          "rows": 979,
+          "subjects": 22
+        },
+        "test": {
+          "class_counts": {
+            "0": 253,
+            "1": 242
+          },
+          "rows": 495,
+          "subjects": 11
+        },
+        "train": {
+          "class_counts": {
+            "0": 1490,
+            "1": 1459
+          },
+          "rows": 2949,
+          "subjects": 65
+        },
+        "validation": {
+          "class_counts": {
+            "0": 249,
+            "1": 246
+          },
+          "rows": 495,
+          "subjects": 11
+        }
+      },
+      "signal_probe": {
+        "calibration": {
+          "dtype": "float32",
+          "max_abs_V": 0.0001606225996511057,
+          "p99_abs_V": 3.857909265207127e-05,
+          "rms_V": 1.2066879032222498e-05,
+          "shape": [
+            16,
+            64,
+            480
+          ]
+        },
+        "train": {
+          "dtype": "float32",
+          "max_abs_V": 9.557256271364167e-05,
+          "p99_abs_V": 2.783604966680286e-05,
+          "rms_V": 8.695984553221503e-06,
+          "shape": [
+            16,
+            64,
+            480
+          ]
+        },
+        "validation": {
+          "dtype": "float32",
+          "max_abs_V": 0.00013445047079585493,
+          "p99_abs_V": 3.542528196703641e-05,
+          "rms_V": 1.0951889907188288e-05,
+          "shape": [
+            16,
+            64,
+            480
+          ]
+        }
+      },
+      "subject_role_disjoint": true
+    }
+  },
+  "stage11_consumption_contract": {
+    "FULL_TRAIN": "exact P01 train role",
+    "LOW_LABEL": "exact inherited P01 calibration membership",
+    "five_repeats": "same data membership, independent model-init/training seeds",
+    "run_plan_changed": false,
+    "selection_role": "validation only",
+    "test_role": "first signal load only after all five selections in dataset/budget group"
+  },
+  "status": "PASS",
+  "test_signal_loaded": false
+}

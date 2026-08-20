@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "planned": 5,
+  "terminal": 5,
+  "terminal_counts": {
+    "SUCCESS": 4,
+    "CHECKPOINT_BLOCKED": 1
+  },
+  "minimum_floor": {
+    "PhysioNetMI": {
+      "classical": true,
+      "riemannian": true
+    }
+  },
+  "participant_metric_rows": 24,
+  "metric_records": 15,
+  "analysis_inputs_complete": true,
+  "p03_raw_prediction_substrate": true,
+  "prediction_record_complete": true,
+  "raw_score_semantics_complete": true,
+  "denominator_accounting_complete": true,
+  "checkpoint_provenance_complete": true,
+  "failure_negative_evidence_expected_at_stage19": true,
+  "figure_table_source_generation_stage": "21",
+  "protocol_handoff_stage": "22",
+  "phase_analysis_handoff_stage": "22",
+  "layer0_handoff_stage": "22",
+  "evidence_map_handoff_stage": "22",
+  "layer10_source_handoff_stage": "22",
+  "stage15_a0_closure": "COMPLETE",
+  "required_closure_outputs_missing": 0,
+  "training_policy_challenger_closure": {
+    "status": "PASS",
+    "planned_cells": 1,
+    "terminal_cells": 1,
+    "successful_comparisons": 1,
+    "non_success_terminal_cells": 0,
+    "incomplete_cells": [],
+    "diagnostic_only": true,
+    "condition_id": "P02-TRAIN-AUG-SR-EEGNET-FULL-R2-VALIDATION-RESOLVED",
+    "not_an_A_number": true,
+    "does_not_replace_primary_A0": true,
+    "does_not_enter_A4_selection": true,
+    "analysis_sources": [
+      "analysis_inputs/training_policy_challenger_terminal_states.jsonl",
+      "analysis_inputs/training_policy_challenger_seed_comparisons.jsonl",
+      "analysis_inputs/training_policy_challenger_participant_comparisons.jsonl",
+      "analysis_inputs/training_policy_challenger_statistics.json",
+      "analysis_inputs/training_policy_sr_probability_selection.json",
+      "analysis_inputs/training_policy_sr_probability_calibration_candidates.jsonl"
+    ]
+  }
+}

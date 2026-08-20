@@ -1,0 +1,45 @@
+{
+  "stage_id": "19",
+  "status": "SUCCESS",
+  "attempt_id": "243091602665",
+  "inputs": {},
+  "input_hashes": {},
+  "outputs": {
+    "status": "PASS",
+    "failure_evidence_aggregation": "COMPLETE",
+    "failures": 648,
+    "negative_result_notes": 340,
+    "diagnostic_flags": 309,
+    "artifact": "stage_artifacts/19_failure.json"
+  },
+  "output_hashes": {
+    "status": "727e9bd17b077ba162e13ba877135cc6fbc6b30f83da0b34b3e20233f1cc885f",
+    "failure_evidence_aggregation": "0ba9a455349c3f02ebe6f28595a29e30a4d03a954f412f2688924056e81a7067",
+    "failures": "c86a2932e1c79343a3c16fb218b9944791aaeedd3e30c87d1c7f505c0e588f7c",
+    "negative_result_notes": "9644294ac4ffb3091eef01219b3fe4fe467f05890cc56af961dce68fddbb7704",
+    "diagnostic_flags": "43c727ee4fc7250574d2ef90cfa16626388a10e1b30d36ece1c272953ad2ed9e",
+    "artifact": "83997addad2c8684448d3a098fa90fe83bed5f26de791b5cb9227d73ef9a4407"
+  },
+  "dependencies": [
+    "18U"
+  ],
+  "elapsed_seconds": 0.2722597122192383,
+  "log_path": "logs/stage_19_243091602665.log",
+  "heartbeat_write_errors": [],
+  "observability_status": "PASS",
+  "blockers": [],
+  "observations": [],
+  "revision_fingerprint": {
+    "notebook_revision": "R4",
+    "notebook_id": "IHARQ-P02-COMPLETE-EXECUTION-AND-ANALYSIS-R4",
+    "source_sha256": "a54bfa816acc6763c1d1042b8c65cf54ae04ec774c57ec50de86014a6730c5fa",
+    "config_sha256": "d82334535e397c681d6172694da96d3fff0143ffb1b63a18876ee1f7778f60a1",
+    "stage_plan_sha256": "043eb30e008af910d37c563e8be8c719ef881cf009aec3e34687dc97bdc34aad",
+    "scientific_freeze_sha256": "7449216c988eec14191ba85300d720547f06fbc6ac7020e9e142bf12a4b0a598",
+    "scientific_freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5"
+  },
+  "runtime_successor": {
+    "id": "P02-RUNTIME-SUCCESSOR-R10-STAGE18-A4-ANCHOR-BUDGET-SINGLE-REPEAT-R1",
+    "scientific_configuration_changed": false
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "binary_alias_invariant_required": true,
+  "config_changed": false,
+  "frozen_package_changed": false,
+  "generic_500k_governed_record_cap_used_for_stage16": false,
+  "hardening_id": "P03-C8-STAGE16-A3-PRODUCT-LINEAGE-HARDENING-R1",
+  "live_stage16_handler_source_sha256": "32977634d95030343d61ea6ec834177e763525f18333b2bb47affe2a466f7683",
+  "post_promotion_hook_installed": true,
+  "protocol_changed": false,
+  "required_stage16_families": [
+    "RiskCoverageCurveSource",
+    "SelectivePredictionRecord"
+  ],
+  "required_stage16_lineage_families": [
+    "RiskCoverageCurveSource",
+    "SelectivePredictionRecord"
+  ],
+  "run_id": "P03-L3-OFFICIAL-09ca82c743e0411a",
+  "schema_id": "P03Stage16ProspectiveEvidenceLineageHardeningInstallerManifest.v1",
+  "schema_version": "1.0.0",
+  "scientific_method_changed": false,
+  "stage13_successor_manifest_sha256": "cdd22aa4f6f753e55db693cae4c66d10fdd6c78f307a705a19f1e717e8218542",
+  "stage15_successor_manifest_sha256": "95b8cad65e66b8477ff42b9c672723bfb6ddb087153809702aa00ae6b1fff807",
+  "stage16_executed_by_installer": false,
+  "stage16_scientific_handler_changed": false,
+  "stage16_worker_changed": false,
+  "stage17_auto_authorization_after_stage16": false,
+  "status": "PASS",
+  "streaming_full_population_audit_installed": true
+}

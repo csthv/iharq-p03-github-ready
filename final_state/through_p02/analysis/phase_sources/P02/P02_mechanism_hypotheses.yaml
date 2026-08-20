@@ -1,0 +1,46 @@
+phase_id: P02
+analysis_release_id: P02-PHASE-ANALYSIS-FINAL-R2
+hypotheses:
+- hypothesis_id: P02-HYP-001
+  observed_pattern: Strong full-training model ordering changed across datasets and
+    participants.
+  proposed_mechanism: Differences in channel montage, sample volume, participant heterogeneity
+    and architecture inductive biases may change which representations are most useful.
+  supporting_evidence:
+  - P02-FIND-002
+  - P02-FIND-004
+  contrary_evidence: P02 did not experimentally isolate each dataset property.
+  future_test: Factorial/standardized cross-dataset representation study or participant-aware
+    model selection study.
+- hypothesis_id: P02-HYP-002
+  observed_pattern: Stage12 source-centered diagnostics rescued some collapsed configurations
+    but not every confirmation trajectory.
+  proposed_mechanism: Architectures have materially different optimization and scaling
+    requirements; a uniform training horizon can confound optimization failure with
+    model capacity.
+  supporting_evidence:
+  - P02-FIND-008
+  contrary_evidence: Not all source-centered confirmations succeeded; diagnostics
+    were validation-only.
+  future_test: Prospectively frozen model-specific vs uniform training-policy ablation.
+- hypothesis_id: P02-HYP-003
+  observed_pattern: Low-label curves were near chance and non-monotonic for many model/dataset
+    combinations.
+  proposed_mechanism: With very small fixed calibration subsets, subset composition
+    and participant shift may dominate architecture-level sample-efficiency differences.
+  supporting_evidence:
+  - P02-FIND-005
+  contrary_evidence: Only one frozen subset was evaluated, so subset variance is unmeasured.
+  future_test: Repeated low-label subset sampling under a prospective protocol.
+- hypothesis_id: P02-HYP-004
+  observed_pattern: A4 C1-C3 effects were small/heterogeneous and Stage18S showed
+    frequent sign changes.
+  proposed_mechanism: Longer windows and multi-view aggregation trade additional signal/context
+    against model mismatch, noise and participant-specific variability; net effect
+    can change with budget and seed.
+  supporting_evidence:
+  - P02-FIND-010
+  - P02-FIND-012
+  contrary_evidence: Canonical Stage18 has reduced repeats and deep budget surface.
+  future_test: Full prospective five-repeat A4 replication with dense deep-budget
+    grid.

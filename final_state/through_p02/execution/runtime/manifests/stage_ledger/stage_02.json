@@ -1,0 +1,39 @@
+{
+  "stage_id": "02",
+  "status": "SUCCESS",
+  "attempt_id": "c87fadef7bcd",
+  "inputs": {},
+  "input_hashes": {},
+  "outputs": {
+    "status": "PASS",
+    "cumulative": {
+      "status": "PASS",
+      "project_status": "P00_P01_MERGED_VALIDATED_READY_FOR_P02_ENTRY",
+      "p02_entry_readiness": "PASS"
+    },
+    "artifact": "stage_artifacts/02_cumulative.json"
+  },
+  "output_hashes": {
+    "status": "727e9bd17b077ba162e13ba877135cc6fbc6b30f83da0b34b3e20233f1cc885f",
+    "cumulative": "105a30f1151b6339fad7c4196ba8b07f36073cf22486f0e617b7b20a7a098f42",
+    "artifact": "559a157cf30009ead305e4822ba227eb6ab411a73191afb3841423c38355cb42"
+  },
+  "dependencies": [
+    "01"
+  ],
+  "elapsed_seconds": 2.7273285388946533,
+  "log_path": "logs/stage_02_c87fadef7bcd.log",
+  "heartbeat_write_errors": [],
+  "observability_status": "PASS",
+  "blockers": [],
+  "observations": [],
+  "revision_fingerprint": {
+    "notebook_revision": "R4",
+    "notebook_id": "IHARQ-P02-COMPLETE-EXECUTION-AND-ANALYSIS-R4",
+    "source_sha256": "a54bfa816acc6763c1d1042b8c65cf54ae04ec774c57ec50de86014a6730c5fa",
+    "config_sha256": "d82334535e397c681d6172694da96d3fff0143ffb1b63a18876ee1f7778f60a1",
+    "stage_plan_sha256": "043eb30e008af910d37c563e8be8c719ef881cf009aec3e34687dc97bdc34aad",
+    "scientific_freeze_sha256": "7449216c988eec14191ba85300d720547f06fbc6ac7020e9e142bf12a4b0a598",
+    "scientific_freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5"
+  }
+}

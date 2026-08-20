@@ -1,0 +1,47 @@
+{
+  "annex_id": "P02_LOWLABEL_64_128_256_STAGE18S_R1_a0e2462396cf",
+  "artifact_id": "P02-64-128-256-GITHUB-READY-DELTA-MERGE-CONTRACT-R1",
+  "baseline": {
+    "artifact_role": "FROZEN_CUMULATIVE_GITHUB_READY_THROUGH_P02_FINAL_R2",
+    "canonical_zip_name": "IHARQ_Cumulative_GitHub_Ready_Through_P02_Final_R2.zip",
+    "coverage": [
+      "P00",
+      "P01",
+      "P02_PRE_EXTENSION"
+    ],
+    "observed_supplied_zip_sha256": "8f24fdbf11971fbecb886ff214b30b8241d32e7f0baef6dd9f6cf75817fe824b",
+    "root_directory": "IHARQ_Cumulative_GitHub_Ready_Through_P02_Final_R2",
+    "root_manifest": "CURRENT_CUMULATIVE_REPOSITORY_MANIFEST.json",
+    "root_manifest_file_count": 30824,
+    "root_manifest_id": "IHARQ-CUMULATIVE-GITHUB-READY-THROUGH-P02-FINAL-R2-MANIFEST",
+    "root_manifest_sha256": "10df9886ae4c31b61499142a5f79981f61c6935a6b1b6311ac70cb070f488c4b"
+  },
+  "created_at_utc": "2026-08-17T20:04:15.635327+00:00",
+  "curated_mirror_policy": "Later synthesis must inspect the validated baseline and update every curated P02 mirror whose historical source corresponds to a changed current table/figure/handoff. Do not blindly duplicate by basename.",
+  "hash_reuse_rule": "PRESERVE_POINTER_ONLY_NO_DUPLICATE_BYTES",
+  "heavy_rule": "DO_NOT materialize heavy bytes into GitHub-ready output; preserve exact Hugging Face repo/revision/path/archive-member pointers",
+  "overlay_root_in_this_zip": "overlay",
+  "package_kind": "DELTA_ONLY_NOT_A_COMPLETE_CUMULATIVE_REPOSITORY",
+  "payload_rule": "strip DELTA_PACKAGE_ROOT/overlay/ and overlay those relative paths onto the root of the validated cumulative baseline",
+  "post_overlay_required_regeneration": [
+    "CURRENT_CUMULATIVE_REPOSITORY_MANIFEST.json",
+    "REPOSITORY_CHECKSUMS.sha256",
+    "project_state_checksums.sha256 where governed/applicable",
+    "current_artifact_index.csv",
+    "current_document_index.md where affected",
+    "root external_artifact_pointer_manifest.json/yaml composite",
+    "CURRENT_PROJECT_STATUS.json",
+    "phase_02 current release metadata",
+    "final_state/through_p02 package/checksum manifests",
+    "curated final_state table/figure mirrors where their source bytes changed"
+  ],
+  "scientific_policy": {
+    "canonical_stage18_G18_modified": false,
+    "model_rerun_required": false,
+    "new_confirmatory_family_created": false,
+    "stage18S_claim_scope": "POST_HOC_SENSITIVITY_DESCRIPTIVE"
+  },
+  "selection_manifest_sha256": "a0e2462396cf1a7c2fd7c7777048ae489c71eebe3ffec53c6ece7999358ec5ea",
+  "status": "PASS",
+  "unchanged_rule": "PRESERVE_BASELINE_BYTES_WITHOUT_DUPLICATION"
+}

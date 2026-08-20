@@ -1,0 +1,95 @@
+{
+  "run_cell_id": "P02-A0-PhysioNetMI-CLS-CSP-LDA-FULL_TRAIN-MR00",
+  "ablation_id": "A0",
+  "terminal_status": "SUCCESS",
+  "prediction_partition": "records/PredictionRecord/dataset=PhysioNetMI/branch=CLS-CSP-LDA/budget=FULL_TRAIN/P02-A0-PhysioNetMI-CLS-CSP-LDA-FULL_TRAIN-MR00.jsonl",
+  "metric_source": "metrics/P02-A0-PhysioNetMI-CLS-CSP-LDA-FULL_TRAIN-MR00.json",
+  "checkpoint_sha256": "e5a4c7955477a4000437638e51404c709e93e186e3c20810f964dcc3b2b2cdfd",
+  "observed_denominator": 495,
+  "selected_params": {
+    "n_components": 4,
+    "base_branch_id": "CLS-CSP-LDA",
+    "csp_reg": "oas",
+    "lda_solver": "lsqr",
+    "lda_shrinkage": "auto"
+  },
+  "resolved_variant": "CLS-CSP-LDA",
+  "score_type": "NATIVE_PROBABILITY",
+  "validation_burden_seconds": 15.735091344999091,
+  "model_storage_bytes": 68171,
+  "selected_candidate_id": "CAND-00",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.0006481839991465677,
+    "batch1_latency_p95_s": 0.0008430351997958496,
+    "repeats": 5
+  },
+  "permutation_provenance": null,
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "class_weights": null,
+  "class_weight_calibration": {
+    "selected_policy": "UNIFORM_NO_WEIGHT",
+    "selected_weights": null,
+    "candidate_results": [
+      {
+        "status": "SUCCESS",
+        "policy": "UNIFORM_NO_WEIGHT",
+        "weights": null,
+        "validation_metrics": {
+          "BACC": 0.6258448427857772,
+          "F1_MACRO": 0.6242753221816033,
+          "ACC": 0.6262626262626263,
+          "CONFUSION": [
+            [
+              173,
+              76
+            ],
+            [
+              109,
+              137
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            249,
+            246
+          ],
+          "PRED_COMPLETE": 495,
+          "ROC_AUC": 0.647810755215986,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "NATIVE_PROBABILITY"
+        },
+        "validation_burden_seconds": 15.735091344999091,
+        "model_storage_bytes": 68171
+      }
+    ],
+    "training_count_evidence": {
+      "counts": [
+        1490,
+        1459
+      ],
+      "exactly_equal": false,
+      "selection_required": true,
+      "weights": [
+        0.9895973154362416,
+        1.010623714873201
+      ],
+      "formula": "SKLEARN_BALANCED_n_over_Knc"
+    },
+    "test_set_used": false,
+    "selection_required": false,
+    "count_imbalance_detected": true,
+    "applicability": "NOT_APPLICABLE_TO_CLASSIFIER",
+    "applicability_reason": "NO_GOVERNED_NATIVE_OR_VERIFIED_CLASS_WEIGHT_MECHANISM",
+    "authority_action": "KEEP_UNWEIGHTED_WHEN_WEIGHTING_NOT_APPLICABLE",
+    "weight_formula": {
+      "type": "SKLEARN_COMPUTE_CLASS_WEIGHT_BALANCED",
+      "formula": "n_samples / (n_classes * class_count)",
+      "normalization": "NONE_BEYOND_SKLEARN_BALANCED_FORMULA",
+      "source_labels": "LEGAL_FIT_ROLE_ONLY"
+    },
+    "selection_stage": "POST_HYPERPARAMETER_PRE_TEST_TRAINING_POLICY_CHECK",
+    "runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R2-CANONICAL-LOW-CAL-BUDGET-ID-PARSER-LIVE-CONTINUATION"
+  },
+  "training_condition_id": "A0-RAW-ACCEPT-ALL",
+  "augmentation_provenance": null,
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

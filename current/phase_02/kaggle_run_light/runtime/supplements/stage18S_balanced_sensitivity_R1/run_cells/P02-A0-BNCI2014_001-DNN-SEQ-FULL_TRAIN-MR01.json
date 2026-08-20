@@ -1,0 +1,109 @@
+{
+  "run_cell_id": "P02-A0-BNCI2014_001-DNN-SEQ-FULL_TRAIN-MR01",
+  "ablation_id": "A0",
+  "terminal_status": "SUCCESS",
+  "prediction_partition": "records/PredictionRecord/dataset=BNCI2014_001/branch=DNN-SEQ/budget=FULL_TRAIN/P02-A0-BNCI2014_001-DNN-SEQ-FULL_TRAIN-MR01.jsonl",
+  "metric_source": "metrics/P02-A0-BNCI2014_001-DNN-SEQ-FULL_TRAIN-MR01.json",
+  "checkpoint_sha256": "a18c99904896f9e106395c348531fb3df9a903d41f67c9b48132d9fb89c51bb9",
+  "checkpoint_path": "checkpoints/P02-A0-BNCI2014_001-DNN-SEQ-FULL_TRAIN-MR01.external.external.chk",
+  "observed_denominator": 288,
+  "selected_params": {
+    "recipe_id": "R6-DBCONFORMER-AUTHOR-CENTERED-R1",
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "batch_size": 32,
+    "scheduler": "constant",
+    "label_smoothing": 0.0,
+    "grad_clip": null,
+    "max_epochs": 150,
+    "patience": 40,
+    "selection": "validation_BACC",
+    "restore_best": true,
+    "branch": "DNN-SEQ",
+    "dataset_id": "BNCI2014_001",
+    "budget_id": "FULL_TRAIN"
+  },
+  "resolved_variant": "DBConformer-OriginalAuthor-P01CompatibilityPatched",
+  "score_type": "SOFTMAX_PROBABILITY",
+  "validation_burden_seconds": 85.26492309570312,
+  "model_storage_bytes": 374188,
+  "selected_candidate_id": "R6-DBCONFORMER-AUTHOR-CENTERED-R1",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.003931196999474196,
+    "batch1_latency_p95_s": 0.004029375798563706,
+    "repeats": 5,
+    "latency_probe_mode": "FORWARD_ONLY_NO_METRICS"
+  },
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "class_weights": null,
+  "class_weight_calibration": {
+    "selected_policy": "UNIFORM_NO_WEIGHT",
+    "selected_weights": null,
+    "validation_metrics": {
+      "BACC": 0.8472222222222223,
+      "F1_MACRO": 0.8463254911472229,
+      "ACC": 0.8472222222222222,
+      "CONFUSION": [
+        [
+          111,
+          33
+        ],
+        [
+          11,
+          133
+        ]
+      ],
+      "CLASS_SUPPORT": [
+        144,
+        144
+      ],
+      "PRED_COMPLETE": 288,
+      "ROC_AUC": 0.9042727623456791,
+      "ROC_AUC_STATUS": "PASS",
+      "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+    },
+    "candidate_results": [
+      {
+        "status": "SUCCESS",
+        "policy": "UNIFORM_NO_WEIGHT",
+        "weights": null,
+        "validation_metrics": {
+          "BACC": 0.8472222222222223,
+          "F1_MACRO": 0.8463254911472229,
+          "ACC": 0.8472222222222222,
+          "CONFUSION": [
+            [
+              111,
+              33
+            ],
+            [
+              11,
+              133
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            144,
+            144
+          ],
+          "PRED_COMPLETE": 288,
+          "ROC_AUC": 0.9042727623456791,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+        },
+        "validation_burden_seconds": 85.26492309570312,
+        "model_storage_bytes": 374188,
+        "best_epoch": 65,
+        "epochs_completed": 105,
+        "history_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/staging_runtime/raw_outputs/stage12_r6_training_history/P02-A0-BNCI2014_001-DNN-SEQ-FULL_TRAIN-MR01__UNIFORM_NO_WEIGHT.json",
+        "candidate_checkpoint_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/staging_runtime/raw_outputs/stage12_r6_training_history/P02-A0-BNCI2014_001-DNN-SEQ-FULL_TRAIN-MR01__UNIFORM_NO_WEIGHT.candidate.chk",
+        "candidate_checkpoint_sha256": "a18c99904896f9e106395c348531fb3df9a903d41f67c9b48132d9fb89c51bb9"
+      }
+    ],
+    "test_set_used": false
+  },
+  "training_condition_id": "A0-RAW-ACCEPT-ALL",
+  "r6_scientific_amendment": true,
+  "test_loaded_after_group_selection_sealed": true,
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

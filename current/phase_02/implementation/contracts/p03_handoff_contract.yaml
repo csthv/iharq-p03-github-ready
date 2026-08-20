@@ -1,0 +1,15 @@
+handoff_id: P02-TO-P03-INPUT-CONTRACT-R1
+required:
+- validated PredictionRecord partitions
+- ModelRegistryRecord
+- score/logit/probability semantics
+- class order
+- A0 metrics
+- A4 membership/control identities
+- seed/config/budget/split lineage
+- Layer2ReadinessReport
+- failures/limitations/DiagnosticOnly flags
+rules:
+- P03 may calibrate/threshold/selectively predict; P02 may not
+- P03 cannot repair P02 source evidence in place
+- consumer-specific readiness required

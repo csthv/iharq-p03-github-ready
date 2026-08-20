@@ -1,0 +1,67 @@
+{
+  "config_changed": false,
+  "defect_id": "P03-C8-MAXQ-STAGE22-SCHEMA-DOCUMENT-MISCLASSIFIED-AS-GOVERNED-RECORD-R2",
+  "observed_false_positive": {
+    "document_type": "JSON_SCHEMA",
+    "misclassified_as_governed_record": true,
+    "misclassified_family_value": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "path": "artifacts/schemas/phase_03/P03HandoffManifest.schema.json",
+    "root_cause": "Generic governed-record scanner was applied to artifact schema documents in new_paths; schema field metadata was interpreted as record-family data."
+  },
+  "protocol_changed": false,
+  "recovery": {
+    "actual_governed_record_paths": [
+      "artifacts/handoffs/phase_03_to_phase_04/p03_handoff_manifest.json"
+    ],
+    "candidate_claim_count": 4,
+    "canonical_artifact_index_count": 45,
+    "claim_approval_performed": false,
+    "direct_p04_field_contract": "PASS",
+    "direct_p04_lineage": "PASS",
+    "direct_p04_payload_sha": "PASS",
+    "direct_p04_schema": "PASS",
+    "evidence_map_orphan_count": 0,
+    "explicit_comparator_count": 4,
+    "filtered_generic_record_closure": {
+      "family_counts": {
+        "P03HandoffManifest": 1
+      },
+      "field_contract_errors": 0,
+      "lineage_errors": 0,
+      "payload_sha_errors": 0,
+      "schema_errors": 0
+    },
+    "later_phase_row_count": 11,
+    "limitation_count": 21,
+    "metric_analysis_row_count": 13585,
+    "negative_result_count": 3618,
+    "schema_documents_scanned_as_records": 0,
+    "schema_documents_validated_as_schemas": 20,
+    "statistics_executed_in_stage22": false,
+    "statistics_input_row_count": 13585
+  },
+  "recovery_class": "AUDIT_ONLY_APPEND_ONLY",
+  "recovery_id": "P03-C8-STAGE22-GOVERNED-SCHEMA-SCANNER-AUDIT-RECOVERY-R2",
+  "run_id": "P03-L3-OFFICIAL-09ca82c743e0411a",
+  "schema_id": "P03Stage22PostPromotionAuditRecoveryManifest.v1",
+  "schema_version": "1.0.0",
+  "scientific_handler_changed": false,
+  "scientific_method_changed": false,
+  "scientific_stage_rerun": false,
+  "stage22_fingerprint": "5314bd711ea142dc15f850d819e3e39b025dac53b6c68e7c288b2b12b70bab33",
+  "stage22_hardening_manifest_sha256": "b251f3f134f5d4a00495bc2f08c86f0f7a4b228f6bf9098fc291f78328eca1bf",
+  "stage22_output_manifest_sha256": "e1f786ec9f7c3d46dd29a8569d4076c83a1e33493ff32fb4530c02134142862d",
+  "stage22_scientific_bytes_changed": false,
+  "stage23_executed": false,
+  "stage_id": "22",
+  "status": "PASS"
+}

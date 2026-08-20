@@ -1,0 +1,9 @@
+project_id: IHARQ-BENCHGUARD-STRETCH-C
+authority_resolution: OWNER_BY_QUESTION
+review_mode: LLM_ONLY
+human_review_used: false
+default_evidence_mode: FOUNDATION
+repository: csthv/IHARQ
+no_empirical_phase0: true
+forbidden_global_ablation_ids:
+- A14

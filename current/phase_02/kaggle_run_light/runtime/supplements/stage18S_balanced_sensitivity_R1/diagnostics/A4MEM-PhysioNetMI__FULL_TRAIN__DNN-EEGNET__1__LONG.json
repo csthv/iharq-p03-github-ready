@@ -1,0 +1,78 @@
+{
+  "status": "SUCCESS",
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "branch": "DNN-EEGNET",
+  "member": "LONG",
+  "checkpoint_sha256": "c1ae4adb89ac12c12412e304dba56c4dc513a65c98936f465003bf0f394e04ec",
+  "model_id": "DNN-EEGNET:A4-R8:PhysioNetMI__FULL_TRAIN__DNN-EEGNET__1__LONG",
+  "score_type": "SOFTMAX_PROBABILITY",
+  "checkpoint_format": "PYTORCH_STATE_DICT_WEIGHTS_ONLY",
+  "execution_device": "cuda:1",
+  "latency_summary": {
+    "batch1_latency_median_s": 0.2688612700003432,
+    "batch1_latency_p95_s": 0.2688612700003432,
+    "repeats": 1
+  },
+  "r8_policy_sha256": "a21655f9b52cfbf817b1b271f758739cf01b1e7a75e786c880ccdd1a3c58ef32",
+  "r8_runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R10-STAGE18-A4-ANCHOR-BUDGET-SINGLE-REPEAT-R1",
+  "recipe_id": "R7H7-EEGNET-LAWHERN-SMR-SOURCE-CENTERED-P01-160HZ-10000E-TRUE-P120-R1",
+  "class_weight_policy": "SKLEARN_BALANCED_TRAIN_FOLD",
+  "class_weights": [
+    0.9895973154362416,
+    1.010623714873201
+  ],
+  "class_weight_frozen_from_a0": true,
+  "matching_a0_checkpoint_sha256": "976a503cf831d2f3144a548d2600e2ce09ad2bc90adaf496fc70097f1b5132f3",
+  "test_loaded_after_checkpoint_sealed": true,
+  "test_set_used_for_selection": false,
+  "raw_train_shape": [
+    2949,
+    64,
+    560
+  ],
+  "raw_validation_shape": [
+    495,
+    64,
+    560
+  ],
+  "raw_test_shape": [
+    495,
+    64,
+    560
+  ],
+  "training_provenance": {
+    "recipe_id": "R7H7-EEGNET-LAWHERN-SMR-SOURCE-CENTERED-P01-160HZ-10000E-TRUE-P120-R1",
+    "policy_sha256": "a21655f9b52cfbf817b1b271f758739cf01b1e7a75e786c880ccdd1a3c58ef32",
+    "best_epoch": 47,
+    "epochs_completed": 167,
+    "best_validation": {
+      "BACC": 0.7819815848760897,
+      "F1_MACRO": 0.7817103844771829,
+      "ACC": 0.7818181818181819,
+      "CONFUSION": [
+        [
+          188,
+          61
+        ],
+        [
+          47,
+          199
+        ]
+      ],
+      "CLASS_SUPPORT": [
+        249,
+        246
+      ],
+      "PRED_COMPLETE": 495,
+      "ROC_AUC": 0.8171058216606262,
+      "ROC_AUC_STATUS": "PASS",
+      "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+    },
+    "class_weights": [
+      0.9895973154362416,
+      1.010623714873201
+    ],
+    "test_set_used_for_selection": false,
+    "same_gpu_virtual_cuda_rng": true
+  }
+}

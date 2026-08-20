@@ -1,0 +1,33 @@
+{
+  "adapter_id": "P03S-POSTEXT-64-128-256-STAGE23-SUPPLEMENT-NATIVE-SUFFICIENCY-HARDENING-R1-P052-IMMUTABLE-ALIAS-R1",
+  "append_only_operational_receipt_preserved": true,
+  "canonical_reference_path": "checkpoints/stage_23/receipt.json",
+  "canonical_reference_path_is_occupied": true,
+  "canonical_reference_path_operational_receipt_schema_errors": [
+    "'config_sha' is a required property",
+    "'protocol_sha' is a required property",
+    "'code_sha' is a required property",
+    "'environment_sha' is a required property",
+    "'input_manifest_sha' is a required property",
+    "'stage_fingerprint' is a required property",
+    "'attempt' is a required property",
+    "'checkpoint' is a required property",
+    "'progress' is a required property"
+  ],
+  "canonical_reference_path_operational_receipt_schema_valid": false,
+  "canonical_reference_path_operational_receipt_sha256": "0684998a7c46ed281b07ea5f506cefa62000f2941e0c159a673fd9de99db5948",
+  "governed_alias_path": "artifacts/records/phase_03/CheckpointReceipt/P03S-POSTEXT-64-128-256-STAGE23-SUPPLEMENT-NATIVE-SUFFICIENCY-HARDENING-R1/P03-PROD-052_stage_23_receipt.json",
+  "governed_alias_schema_valid": true,
+  "governed_alias_sha256": "038f22dcd287d03810f86bceaad99a26bf0a5d82abb4c81edce770a344db70f0",
+  "operational_receipt_mutated": false,
+  "package_stage24_handler_sha256": "a91a0788c4eacdb64897e7e24e2ecab838afd091c7ccd749445c21bdad7e092c",
+  "package_stage24_literal_p052_path_reference_count": 0,
+  "package_stage24_literal_p052_product_reference_count": 0,
+  "product_id": "P03-PROD-052",
+  "reason": "Accepted operational Stage23 receipt is immutable and uses the supplement execution-receipt schema; governed P052 requires canonical CheckpointReceipt.v1 fields. A separate immutable governed alias preserves both contracts without overwrite.",
+  "schema_id": "P03SStage23P052ImmutableAliasPathAdapter.v1",
+  "schema_version": "1.0.0",
+  "stage24_execution_authorized": false,
+  "stage_id": "23",
+  "status": "PASS"
+}

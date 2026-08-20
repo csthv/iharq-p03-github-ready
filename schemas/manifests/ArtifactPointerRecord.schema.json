@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/csthv/IHARQ/schemas/manifests/ArtifactPointerRecord.schema.json",
+  "title": "ArtifactPointerRecord",
+  "type": "object",
+  "required": [
+    "pointer_id",
+    "artifact_id",
+    "uri",
+    "sha256",
+    "bytes",
+    "storage_plane"
+  ],
+  "properties": {
+    "pointer_id": {
+      "type": "string"
+    },
+    "artifact_id": {
+      "type": "string"
+    },
+    "uri": {
+      "type": "string"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "bytes": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "storage_plane": {
+      "type": "string"
+    },
+    "media_type": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "x-iharq-status": "PHASE0_FOUNDATION_PROFILE"
+}

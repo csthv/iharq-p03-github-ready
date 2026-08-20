@@ -1,0 +1,48 @@
+{
+  "release_id": "P02-L2-BUILD-BOOK-RELEASE-R4",
+  "canonical_document_id": "IHARQ-P02-L2-INTEGRATED-BUILD-BOOK-R4",
+  "canonical_markdown": "IHARQ_Master_Implementation_Build_Book_Current_with_P02_L2_Integrated_Plan_R4.md",
+  "docx_derivative": "IHARQ_Master_Implementation_Build_Book_Current_with_P02_L2_Integrated_Plan_R4.docx",
+  "status": "PASS_STRETCH_COMPLETE_AUTHORITY_EXHAUSTED_DOUBLE_CHECKED_TRIPLE_CHECKED_EVALUATION_COMPLETE_ABLATION_COMPLETE_FINALIZED_FROZEN_READY_FOR_KAGGLE_NOTEBOOK_AUTHORING",
+  "scientific_execution": "NOT_STARTED",
+  "scientific_design_revision": "R3_ADOPTED_UNCHANGED_BY_R4",
+  "notebook_id": "IHARQ-P02-COMPLETE-EXECUTION-AND-ANALYSIS-R4",
+  "notebook_count": 1,
+  "alternative_execution_modes": "PROHIBITED",
+  "official_modules": 8,
+  "required_capabilities": 53,
+  "model_branches": 16,
+  "full_execution_required": [
+    "A0",
+    "A4"
+  ],
+  "planned_cells": {
+    "A0": 678,
+    "A4": 1218,
+    "total": 1896
+  },
+  "evaluations": 12,
+  "canonical_records": 12,
+  "artifact_families": 26,
+  "prompt_sections": 119,
+  "method_traceability_rows": 35,
+  "ablation_traceability_rows": 15,
+  "blocking_owner_decisions": 0,
+  "freeze_critical_unresolved_items": 0,
+  "freeze_critical_blockers": 0,
+  "A14": "ABSENT_PROHIBITED",
+  "markdown_sha256": "7bbfda273e336c25875d2f1c6d9cb070bbc24af247777dec4cffd92cd2df58cf",
+  "docx_sha256": "91f08ff027655830989eec1cf6c50b1f01f64568aad85ef6d0c1e3d2980cdea4",
+  "validation": {
+    "master": "152/152 PASS",
+    "docx_parity": "74/74 PASS",
+    "docx_pages": 112,
+    "accessibility": "0 high / 0 medium / 0 low",
+    "release_blocker_audit": "PASS"
+  },
+  "provenance": {
+    "predecessor_scientific_revision": "R3",
+    "genuine_r3_stage_plan": "history/R3/machine_readable/p02_notebook_stage_plan_R3.yaml",
+    "alias_register": "machine_readable/p02_machine_readable_alias_register_R4.json"
+  }
+}

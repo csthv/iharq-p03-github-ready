@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "blocking": true,
+  "stage_id": "09",
+  "gate_id": "G09",
+  "planned_cells": 24,
+  "terminal_counts": {
+    "SUCCESS": 21,
+    "FAILED": 3
+  },
+  "full_train_success_by_dataset": {
+    "PhysioNetMI": [
+      "CLS-CSP-LDA",
+      "CLS-FBCSP-LR"
+    ],
+    "BNCI2014_001": [
+      "CLS-CSP-LDA",
+      "CLS-FBCSP-LR"
+    ],
+    "Lee2019_MI": [
+      "CLS-CSP-LDA",
+      "CLS-FBCSP-LR"
+    ]
+  },
+  "issues": []
+}

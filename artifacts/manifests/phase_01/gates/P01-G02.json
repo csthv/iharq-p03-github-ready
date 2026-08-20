@@ -1,0 +1,17 @@
+{
+  "gate_id": "P01-G02",
+  "official_or_local_name": "source_provenance_license",
+  "status": "PASS",
+  "inputs": [],
+  "procedure_version": "P01-L1-GATE-R6",
+  "observations": {},
+  "failure_codes": [],
+  "repair_owner": "METHOD_SELECTION_AND_OWNER",
+  "affected_artifacts": [],
+  "evidence_paths": [
+    "reports/phase_01/sources/source_version_license_report.json",
+    "inputs/source_inventory.json"
+  ],
+  "manifest_entry": "manifests/phase_01/gates/P01-G02.json",
+  "blocking_effect": false
+}

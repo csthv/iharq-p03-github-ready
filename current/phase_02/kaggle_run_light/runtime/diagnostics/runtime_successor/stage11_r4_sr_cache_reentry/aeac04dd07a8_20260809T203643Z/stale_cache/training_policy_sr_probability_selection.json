@@ -1,0 +1,36 @@
+{
+  "status": "PARTIAL_BLOCKED",
+  "selection_scope": "VALIDATION_ONLY",
+  "test_set_used": false,
+  "datasets": {
+    "BNCI2014_001": {
+      "status": "BLOCKED",
+      "reason": "TrainingPolicyAuthorityError:SEGREC_PROBABILITY_SELECTION_INSUFFICIENT",
+      "test_set_used": false
+    },
+    "Lee2019_MI": {
+      "status": "BLOCKED",
+      "reason": "TrainingPolicyAuthorityError:SEGREC_PROBABILITY_SELECTION_INSUFFICIENT",
+      "test_set_used": false
+    },
+    "PhysioNetMI": {
+      "status": "BLOCKED",
+      "reason": "TrainingPolicyAuthorityError:SEGREC_PROBABILITY_SELECTION_INSUFFICIENT",
+      "test_set_used": false
+    }
+  },
+  "candidate_grid": [
+    0.25,
+    0.5,
+    0.75
+  ],
+  "segment_count_policy": {
+    "type": "BRAINCDECODE_PUBLIC_API_AUTO_N_SEGMENTS",
+    "requested_n_segments": null,
+    "pinned_package": "braindecode==1.6.1",
+    "resolver": "SegmentationReconstruction(probability=<candidate>, n_segments=None, random_state=<derived>).get_augmentation_params",
+    "fixture_fallback": "DOCUMENTED_DIVISOR_RULE_ONLY_FOR_NON_SCIENTIFIC_FIXTURE",
+    "test_set_access": "NONE"
+  },
+  "official_A0_A4_cell_count_unchanged": 1896
+}

@@ -1,0 +1,62 @@
+{
+  "policy_id": "P01-L1-KAGGLE-DUAL-PERSISTENCE-BOUNDED-STREAMING-R3",
+  "checkpoint_policy_id": "P01-L1-R26-PASS1-SUBJECT-CHECKPOINT-R1",
+  "subjects_processed": 172,
+  "recordings": 489,
+  "descriptor_index": "inputs/streaming_descriptor_index.jsonl",
+  "fit_stats_index": "inputs/streaming_pass1_fit_stats.jsonl",
+  "pass1_fit_stat_rows": 0,
+  "signals_retained_in_parent": false,
+  "reused_checkpoints": 0,
+  "generated_checkpoints": 172,
+  "checkpoint_hash_validation": true,
+  "parallelism_upper_bounds": {
+    "PhysioNetMI": 4,
+    "BNCI2014_001": 4,
+    "Lee2019_MI": 4
+  },
+  "resolved_parallelism": {
+    "PhysioNetMI": 4,
+    "BNCI2014_001": 4,
+    "Lee2019_MI": 2
+  },
+  "parallelism_evidence": {
+    "PhysioNetMI": {
+      "selected_workers": 4,
+      "cpu_count": 4,
+      "dataset_upper_bound": 4,
+      "available_memory_bytes": 31764455424,
+      "reserved_memory_bytes": 6352891084,
+      "measured_preflight_peak_rss_bytes": 572678144,
+      "guarded_per_worker_bytes": 1073741824,
+      "memory_worker_cap": 23,
+      "safety_multiplier": 1.6,
+      "scientific_scope_changed": false
+    },
+    "BNCI2014_001": {
+      "selected_workers": 4,
+      "cpu_count": 4,
+      "dataset_upper_bound": 4,
+      "available_memory_bytes": 31610241024,
+      "reserved_memory_bytes": 6322048204,
+      "measured_preflight_peak_rss_bytes": 998694912,
+      "guarded_per_worker_bytes": 1597911859,
+      "memory_worker_cap": 15,
+      "safety_multiplier": 1.6,
+      "scientific_scope_changed": false
+    },
+    "Lee2019_MI": {
+      "selected_workers": 2,
+      "cpu_count": 4,
+      "dataset_upper_bound": 4,
+      "available_memory_bytes": 31423709184,
+      "reserved_memory_bytes": 6284741836,
+      "measured_preflight_peak_rss_bytes": 6128943104,
+      "guarded_per_worker_bytes": 9806308966,
+      "memory_worker_cap": 2,
+      "safety_multiplier": 1.6,
+      "scientific_scope_changed": false
+    }
+  },
+  "cpu_count": 4
+}

@@ -1,0 +1,13 @@
+{
+  "status": "SUCCESS",
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "branch": "CLS-CSP-LDA",
+  "checkpoint_sha256": "46b6c3fb643b2657bcff3004428c7ba770b017ae740ac6ec0326cfbd32327cdc",
+  "model_id": "CLS-CSP-LDA:A4:PhysioNetMI__FULL_TRAIN__CLS-CSP-LDA__0__1",
+  "score_type": "NATIVE_PROBABILITY",
+  "latency_summary": {
+    "batch1_latency_median_s": 0.00022770800023863558,
+    "batch1_latency_p95_s": 0.00032367980129492934,
+    "repeats": 5
+  }
+}

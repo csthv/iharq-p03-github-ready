@@ -1,0 +1,130 @@
+phase_handoff:
+  handoff_id: P01-FINAL-HANDOFF-P02-READINESS-R1
+  phase_id: P01
+  phase_status: PHASE_01_SCOPE_FINALIZED_READY_FOR_P02_TRANSITION
+  scientific_execution_status: ACCEPTED
+  formal_cross_phase_repository_merge: DEFERRED_TO_OWNER_NEXT_STEP
+  source_project_state:
+    repository_predecessor: IHARQ_P01_L1_GitHub_Ready_Repository_d03f0a7c869d_20260807143013-663eab13
+    execution_bundle: IHARQ_P01_L1_Phase_Execution_Bundle_d03f0a7c869d.zip
+    execution_bundle_sha256: 09c3bb0442d79ddf110cf66fc4fe61fe63e94c7d8ed9f198f606639b4191f16e
+  prior_state:
+    completed_phases:
+    - P00
+    implemented_layers:
+    - L0
+    - L1
+    reusable_artifacts:
+    - P00 governance/record infrastructure
+    - P01 L1 public-data foundation
+    external_artifacts:
+    - P01 core derived-window Kaggle Dataset
+    - P01 A4 R2 Kaggle Dataset
+  implementation:
+    document_id: IHARQ-IBB-R10-P01-L1-INDEPENDENT-AUDIT-REPAIRED
+    phase_annex_id: IHARQ-IBB-P01-L1-ANNEX-R4
+    participating_layers:
+    - L0
+    - L1
+    - L10
+    scientific_freeze: P01-L1-OFFICIAL-RUN-FREEZE-R2
+    config_id: d03f0a7c869dd95a2a67e5a32edc501d52bfc3851d8e761ef56595d8bd1ff52f
+  kaggle:
+    notebook_id: IHARQ_Phase_01_Layer_01_R54_Matched_A4_R2_Secret_Safe_Final
+    notebook_count: 1
+    execution_bundle_id: IHARQ_P01_L1_Phase_Execution_Bundle_d03f0a7c869d
+    evidence_sufficiency: PASS
+    accepted_stages: 27/27
+    deterministic_gates: 16/16 PASS
+    regression_tests: 50/50 PASS
+    unresolved_blockers: 0
+    repair_iterations:
+    - R45
+    - R46
+    - R47
+    - R48
+    - R49
+    - R50
+    - R51-R53
+    - R54
+  protocol_v1:
+    master_id: IHARQ-PROTOCOL-V1-CUMULATIVE-THROUGH-P01-R1
+    phase_annex_id: IHARQ-PROTOCOL-V1-P01-ANNEX-R1
+    status: FROZEN
+    a4_protocol_sync: COMPLETE_FOR_FUTURE_DOWNSTREAM_USE
+  analysis:
+    report_id: IHARQ-CUMULATIVE-PHASE-EVIDENCE-RESULTS-INTERPRETATION-THROUGH-P01-R2-LAYER0-INTEGRATED
+    status: FINALIZED_FROZEN
+    direct_findings: 14
+    p01_reviewed_claims: 12
+    limitations_explicit: true
+  layer0:
+    disposition_authority: EMBEDDED_IN_CUMULATIVE_PHASE_ANALYSIS
+    p01_reviewed_claims: 12
+    approved: 2
+    approved_with_qualifications: 8
+    deferred: 1
+    rejected: 1
+    blocked: 0
+    separate_p01_derivative: docs/phase_01/layer0/IHARQ_Phase_01_Layer_0_Claim_Review_and_Disposition_Derivative.md
+  evidence_map:
+    annex_id: IHARQ-CUMULATIVE-EVIDENCE-MAP-THROUGH-P01-R1
+    release_id: P00-P01-EVIDENCE-MAP-RELEASE-R1
+    status: FINALIZED_FROZEN
+    p00_rows_preserved: 7
+    p01_rows_mapped: 12
+    broken_links: 0
+  layer10:
+    package_id: IHARQ-CUMULATIVE-LAYER10-THROUGH-P01-R1
+    release_id: P00-P01-LAYER10-RELEASE-R1
+    status: FINALIZED_FROZEN_READ_ONLY
+    source_values_changed: false
+    warning_parity: PASS
+    negative_visibility: PASS
+  p02_contract:
+    prior_handoff_id: P01-TO-P02-d03f0a7c869d
+    p01_gate_15: PASS
+    artifact_reference_counts:
+      DatasetRecord: 3
+      WindowRecord: 12910
+      SplitRecord: 1
+      PreprocessingRecord: 1
+      LabelMapRecord: 3
+      ValidationReport: 1
+    technical_data_contract_readiness: PASS
+    core_window_count: 12910
+    core_window_profile: +0.5..+3.5 s, 480 samples @160 Hz
+    a4_r2_profile: +0.0..+3.5 s, 560 samples; virtual slices 0:320, 120:440, 240:560
+    a4_parent_match: 12910/12910
+    a4_effectiveness_executed_in_p01: false
+    a14: ABSENT_PROHIBITED
+    consumer_rules:
+    - Use frozen DatasetRecord, LabelMapRecord, SplitRecord, PreprocessingRecord and
+      WindowRecord identities.
+    - Do not relabel, resplit, rewindow, overwrite or silently repair P01 records.
+    - Treat A4 R2 as a future governed control substrate, not as a demonstrated effectiveness
+      result.
+    - Preserve PUBLIC_EEG_ONLY, NON_CLINICAL and NO_DEPLOYMENT_CLAIM boundaries.
+    - Use the next unified P00+P01 repository/project-state package as the transport
+      input before beginning P02 execution.
+  external_pointers:
+  - artifact: P01 core derived windows
+    provider: Kaggle
+    provider_version: 2
+    logical_revision: 1
+    handle: csthv999z/iharq-p01-l1-derived-windows-d03f0a7c869d-20260806222242-68a91473
+    manifest_sha256: dc21f418e9a1add62adb346f627d5d729735a5f1ecaa1d771f6fa5cfede627e1
+  - artifact: P01 A4 R2 substrate
+    provider: Kaggle
+    provider_version: 1
+    logical_revision: 2
+    manifest_sha256: 29124d59907610b1545e0a2b5d1811a4d4a2bf1df64cad49aa880f4721c47305
+  open_blockers: []
+  next_phase_readiness: PASS_FROM_P01_TECHNICAL_AND_GOVERNANCE_EVIDENCE_STANDPOINT
+  transition_note: Before executing P02, perform the owner-planned unified P00+P01
+    repository/project-state merge. This is a transport/state-consolidation step,
+    not missing P01 science.
+  next_project_state:
+    zip_filename: IHARQ_Phase_01_Final_Whole_Stack_Closure_Package_R1.zip
+    zip_sha256: RECORDED_IN_DETACHED_SHA256_AFTER_PACKAGING
+    manifest_id: P01-FINAL-CLOSURE-MANIFEST-R1

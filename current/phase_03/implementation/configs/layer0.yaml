@@ -1,0 +1,8 @@
+review_mode: LLM_ONLY
+roles:
+- Evidence Sufficiency LLM
+- Claim Safety LLM
+- Adversarial Claim LLM
+quorum: 3_of_3
+deterministic_failure_override: false
+final_disposition_in_this_task: false

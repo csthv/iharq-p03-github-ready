@@ -1,0 +1,17 @@
+{
+  "gate_id": "P01-G12",
+  "official_or_local_name": "matched_keys_ablation_readiness",
+  "status": "PASS",
+  "inputs": [],
+  "procedure_version": "P01-L1-GATE-R6",
+  "observations": {},
+  "failure_codes": [],
+  "repair_owner": "PROTOCOL_AND_L1_READINESS",
+  "affected_artifacts": [],
+  "evidence_paths": [
+    "manifests/phase_01/layer1_ablation_readiness_l1_v1.json",
+    "reports/phase_01/readiness/matched_key_completeness.csv"
+  ],
+  "manifest_entry": "manifests/phase_01/gates/P01-G12.json",
+  "blocking_effect": false
+}

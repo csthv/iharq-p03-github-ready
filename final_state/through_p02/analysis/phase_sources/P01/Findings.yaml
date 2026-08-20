@@ -1,0 +1,236 @@
+report_id: IHARQ-CUMULATIVE-PHASE-EVIDENCE-RESULTS-INTERPRETATION-THROUGH-P01-R1
+canonical: true
+dominant_phase: P01
+findings:
+- finding_id: P00-F-001
+  phase: P00
+  class: REGISTERED_ENGINEERING_EXECUTION
+  denominator: '19'
+  measured_result: 19/19 registered P00 engineering cells passed with terminal PASS
+  evidence_ceiling: ENGINEERING_FOUNDATION_CONFORMANCE
+  limitation: non-empirical; Mode B
+- finding_id: P00-F-002
+  phase: P00
+  class: DETERMINISTIC_TESTING
+  denominator: '102'
+  measured_result: 102/102 deterministic tests passed
+  evidence_ceiling: ENGINEERING_FOUNDATION_CONFORMANCE
+  limitation: Python 3.13.5 verified local environment; cross-version portability
+    not established
+- finding_id: P00-F-003
+  phase: P00
+  class: POSITIVE_FIXTURE_VALIDATION
+  denominator: '19'
+  measured_result: 19/19 valid or integrated bundles accepted; false rejections 0
+  evidence_ceiling: VALIDATION_EVIDENCE
+  limitation: synthetic/non-empirical fixtures
+- finding_id: P00-F-004
+  phase: P00
+  class: NEGATIVE_VALIDATION
+  denominator: '178'
+  measured_result: 178/178 intentionally malformed categories rejected; false acceptances
+    0
+  evidence_ceiling: NEGATIVE_VALIDATION
+  limitation: validator behavior, not scientific performance
+- finding_id: P00-F-005
+  phase: P00
+  class: ARTIFACT_CLOSURE
+  denominator: 85 schemas; 35 configs; 79 record families
+  measured_result: all registered foundation inventories present and validated
+  evidence_ceiling: ARTIFACT_CLOSURE
+  limitation: foundation readiness only
+- finding_id: P00-F-006
+  phase: P00
+  class: INTEGRATION
+  denominator: 11 layers
+  measured_result: 11/11 Layer 0–10 foundation interfaces passed registered P00 integration
+    scope
+  evidence_ceiling: FOUNDATION_INTEGRATION
+  limitation: no scientific layer execution claimed
+- finding_id: P00-F-007
+  phase: P00
+  class: FUTURE_CONTRACT_READINESS
+  denominator: 16 phase-contract families
+  measured_result: P00 implemented; P01–P15 reusable contract surfaces prepared
+  evidence_ceiling: CONTRACT_READINESS
+  limitation: future empirical outputs not executed by P00
+- finding_id: P00-F-008
+  phase: P00
+  class: REPRODUCIBILITY
+  denominator: 8 bounded reproduction steps
+  measured_result: 8/8 bounded reproduction steps passed under exact local snapshot
+  evidence_ceiling: LOCAL_REPRODUCIBILITY
+  limitation: portable cross-version lock incomplete
+- finding_id: P00-F-009
+  phase: P00
+  class: EVALUATION_READINESS
+  denominator: 14 A-identities
+  measured_result: A0–A13 readiness hooks present; A14 rejected
+  evidence_ceiling: READINESS_ONLY_NOT_ACTIVATED
+  limitation: no ablation effectiveness result exists in P00
+- finding_id: P01-FIND-001
+  phase: P01
+  class: PROVENANCE_EVIDENCE
+  denominator: 3 active datasets, 172 subject groups, 453 source files; all three
+    DatasetRecords VALIDATED with frozen aggregate SHA-256 identities.
+  measured_result: P01 established exact source provenance and dataset identity for
+    the selected public EEG portfolio.
+  evidence_sources:
+  - records/datasets/*/*.json
+  - reports/phase_01/sources/source_version_license_report.json
+  limitation: PUBLIC_EEG_ONLY; source-license/redistribution restrictions apply.
+- finding_id: P01-FIND-002
+  phase: P01
+  class: VALIDATION_EVIDENCE
+  denominator: 172 subject groups assigned train/calibration/validation/test = 102/35/17/18;
+    disjointness PASS with no intersections.
+  measured_result: The frozen subject-group split satisfies the implemented disjointness
+    contract and preserves whole-subject role assignment.
+  evidence_sources:
+  - records/splits/P01-L1-SPLIT-OFFICIAL-R2/IHARQ-SPLITRECORD-20260806-e4e371d332c61e36.json
+  - reports/phase_01/splits/disjointness.json
+  limitation: This establishes contract disjointness, not universal absence of every
+    conceivable leakage mechanism.
+- finding_id: P01-FIND-003
+  phase: P01
+  class: INTEGRITY_EVIDENCE
+  denominator: 12,910 accepted parent events map one-to-one to 12,910 validated core
+    WindowRecords; 0 invalid core windows.
+  measured_result: The official Layer-1 event/window pipeline preserved the accepted-event
+    denominator under the frozen core window policy.
+  evidence_sources:
+  - records/windows/
+  - external_artifact_pointers/derived_windows_dataset.json
+  limitation: Does not imply decoder adequacy or statistical power.
+- finding_id: P01-FIND-004
+  phase: P01
+  class: INTEGRITY_EVIDENCE
+  denominator: 172 subject HDF5 shards, 12,910 windows, float32, 1,166,652,764 uploaded
+    HDF5 bytes; remote manifest hash verified.
+  measured_result: The official core derived Dataset is reproducibly identifiable
+    and retrievable under its provider version/logical revision/hash contract.
+  evidence_sources:
+  - reports/phase_01/storage/existing_core_dataset_adoption.json
+  - external_artifact_pointers/derived_windows_dataset.json
+  limitation: Private Kaggle access is required; source licenses continue to govern
+    redistribution.
+- finding_id: P01-FIND-005
+  phase: P01
+  class: VALIDATION_EVIDENCE
+  denominator: 489 quality summaries; 20 soft/provider flags; 0 hard-invalid summaries;
+    0/12,910 invalid official windows; policy ANNOTATE_NOT_REPAIR.
+  measured_result: Quality issues were surfaced as governed annotations while hard
+    validity criteria did not reject any official core window.
+  evidence_sources:
+  - reports/phase_01/quality/quality_coverage.json
+  - records/quality/
+  limitation: A soft flag is not proof of physiological corruption, and zero hard-invalid
+    cases is not a claim of artifact-free EEG.
+- finding_id: P01-FIND-006
+  phase: P01
+  class: VALIDATION_EVIDENCE
+  denominator: Split disjointness PASS and leakage_contamination status PASS with
+    zero reported issues across group, duplicate, overlap, fit-scope and budget/test-contamination
+    checks.
+  measured_result: No contract leakage was detected under the implemented deterministic
+    checks.
+  evidence_sources:
+  - reports/phase_01/splits/disjointness.json
+  - reports/phase_01/leakage/leakage_contamination.json
+  limitation: Bounded to implemented checks and frozen identities.
+- finding_id: P01-FIND-007
+  phase: P01
+  class: READINESS_EVIDENCE
+  denominator: 18 budget rows = 3 datasets × six per-class budgets {1,2,4,8,16,32};
+    all frozen under seed 20260804.
+  measured_result: P01 prepared deterministic low-calibration population identities
+    for later evaluation.
+  evidence_sources:
+  - reports/phase_01/splits/low_calibration_budgets.csv
+  limitation: No calibration-performance experiment was executed in P01.
+- finding_id: P01-FIND-008
+  phase: P01
+  class: READINESS_EVIDENCE
+  denominator: Exactly 14 readiness rows A0…A13, each FOUNDATION_READY and executed_in_p01=false;
+    A14 absence validator PASS.
+  measured_result: Layer 1 produced the matching/readiness foundation required by
+    the official A0–A13 ladder without introducing A14.
+  evidence_sources:
+  - manifests/phase_01/layer1_ablation_readiness_l1_v1.json
+  limitation: Foundation readiness is not ablation effectiveness.
+- finding_id: P01-FIND-009
+  phase: P01
+  class: READINESS_EVIDENCE
+  denominator: 12,910/12,910 matched parents; 12,910 stored 3.5 s tensors; 38,730
+    registered virtual 2 s members; 0 invalid; 172 shards.
+  measured_result: P01 established a fully matched A4 R2 Layer-1 substrate for future
+    governed evaluation.
+  evidence_sources:
+  - external_artifact_pointers/a4_window_family_dataset.json
+  - reports/phase_01/storage/a4_derived_output_storage_actual_precommit.json
+  limitation: A4 effectiveness was not executed or measured in P01; R2 arose after
+    feasibility evidence.
+- finding_id: P01-FIND-010
+  phase: P01
+  class: NEGATIVE_EVIDENCE
+  denominator: One valid released parent event (PhysioNetMI:104:0:8:event:24) had
+    only 560 post-cue samples; the 640-sample +4.0 s proposal would require 80 nonexistent
+    samples.
+  measured_result: Padding, clipping, fabrication, or event dropping would have changed
+    the comparison; the matched +3.5 s R2 design preserved the complete denominator.
+  evidence_sources:
+  - Phase_01_Notebook.ipynb (R49 A4 boundary explanation)
+  - config_snapshot/p01_l1_a4_window_family_freeze_R2.json
+  limitation: This is a design-feasibility result, not evidence that R2 performs better
+    than R1 or core.
+- finding_id: P01-FIND-011
+  phase: P01
+  class: EXECUTION_EVIDENCE
+  denominator: Accepted execution used Python 3.12.13 with exact package pins and
+    adaptive disk policy; pin mismatches and import failures were zero.
+  measured_result: Runtime compatibility/resource amendments changed execution conditions
+    but did not alter datasets, labels, split, core preprocessing, core window, or
+    core denominator.
+  evidence_sources:
+  - environment_manifest.json
+  - environment_amendment.json
+  limitation: Reproduction should use the recorded actual environment rather than
+    the original Python 3.11 intent.
+- finding_id: P01-FIND-012
+  phase: P01
+  class: EXECUTION_EVIDENCE
+  denominator: 27/27 accepted stages PASS; 16/16 P01 gates PASS; regression suite
+    50/50 PASS; 0 unresolved blockers; 13,164/13,164 execution-bundle checksum targets
+    valid.
+  measured_result: The accepted P01 execution lineage satisfies its deterministic
+    execution, validation, and package-closure contract.
+  evidence_sources:
+  - reports/phase_01/tests/stage_results.json
+  - gate_decision.json
+  - reports/phase_01/tests/phase0_and_runtime_regression.json
+  - checksums.sha256
+  limitation: Execution closure does not imply model or clinical effectiveness.
+- finding_id: P01-FIND-013
+  phase: P01
+  class: HISTORICAL_FAILED_EVIDENCE
+  denominator: Stage 07, 18 and 26 failures blocked continuation/release until targeted
+    repairs passed; earlier successful scope was reused where lawful.
+  measured_result: The execution history demonstrates fail-closed repair/reentry rather
+    than silent acceptance of known defects.
+  evidence_sources:
+  - reports/phase_01/worker_logs/
+  - reports/phase_01/repair_reentry.json
+  - reports/phase_01/runtime/r54_final_export_secret_redaction.json
+  limitation: The repair history must remain visible; it is not evidence of scientific
+    superiority.
+- finding_id: P01-FIND-014
+  phase: P01
+  class: READINESS_EVIDENCE
+  denominator: P02 handoff references the exact core/A4 pointers, split, label maps,
+    preprocessing and profile identities with mutation/leakage prohibitions.
+  measured_result: P02 can consume the frozen Layer-1 data substrate without reinterpreting
+    Layer-1 identities.
+  evidence_sources:
+  - phase2_handoff/phase_01_to_phase_02.yaml
+  - handoffs/phase_01_to_phase_02.yaml
+  limitation: Formal phase transition still follows the documentary closure sequence.

@@ -1,0 +1,65 @@
+{
+  "run_cell_id": "P02-A4-Lee2019_MI-ENSEMBLE-A4-C4-MODEL-HARD-VOTE-P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS-ER00",
+  "ablation_id": "A4",
+  "terminal_status": "SUCCESS",
+  "prediction_partition": "records/PredictionRecord/dataset=Lee2019_MI/branch=PRE_RESULT_ROLE_MEMBERSHIP/budget=P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS/P02-A4-Lee2019_MI-ENSEMBLE-A4-C4-MODEL-HARD-VOTE-P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS-ER00.jsonl",
+  "source_rows": "raw_outputs/P02-A4-Lee2019_MI-ENSEMBLE-A4-C4-MODEL-HARD-VOTE-P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS-ER00.jsonl",
+  "metric_source": "metrics/P02-A4-Lee2019_MI-ENSEMBLE-A4-C4-MODEL-HARD-VOTE-P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS-ER00.json",
+  "strongest_constituent_branch": "DNN-EEGNET",
+  "strongest_constituent_prediction_partition": "records/PredictionRecord/dataset=Lee2019_MI/branch=DNN-EEGNET/budget=P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS/P02-A0-Lee2019_MI-DNN-EEGNET-P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS-MR00.jsonl",
+  "strongest_constituent_checkpoint_sha256": "b437dde31fa6bb8a75bb64ba9bee1aa842b77908741b6107fab8e30f2745427d",
+  "validation_selection_provenance": {
+    "selected_branch": "DNN-EEGNET",
+    "candidate_summaries": [
+      {
+        "branch_id": "DNN-EEGNET",
+        "BACC": 0.52,
+        "F1": 0.4667160284888231,
+        "burden": 26.833470129999114
+      },
+      {
+        "branch_id": "SSL-CBRAMOD",
+        "BACC": 0.52,
+        "F1": 0.45219215984847083,
+        "burden": 53.242952823638916
+      },
+      {
+        "branch_id": "CLS-CSP-LDA",
+        "BACC": 0.512,
+        "F1": 0.44475796908849285,
+        "burden": 0.256947809997655
+      },
+      {
+        "branch_id": "RIE-TS-LR",
+        "BACC": 0.502,
+        "F1": 0.46157738365530576,
+        "burden": 2.2441386609971232
+      }
+    ],
+    "test_outcome_influence": "PROHIBITED"
+  },
+  "ensemble_member_branches": [
+    "CLS-CSP-LDA",
+    "RIE-TS-LR",
+    "DNN-EEGNET",
+    "SSL-CBRAMOD"
+  ],
+  "ensemble_member_checkpoint_ids": [
+    "ac671bf8005bccf10771bb52717eb5db759afd189f5450658d4d99d54ccfaa9c",
+    "f0e62fd0e4ca039b7be68744ce67af51ee0b47dd19c8670cb46ac8c031be3c66",
+    "b437dde31fa6bb8a75bb64ba9bee1aa842b77908741b6107fab8e30f2745427d",
+    "2ffbb68119969db2cbbc34977e5896640591615cd5693ff674ea9d5c6d838e94"
+  ],
+  "observed_denominator": 600,
+  "burden": {
+    "evidence_duration_s": 3.0,
+    "observation_horizon_s": 3.0,
+    "model_or_view_evaluations": 4,
+    "member_count": 4,
+    "aggregation_operation": "HARD_VOTE",
+    "batch1_latency_median_s": 0.019842503998006578,
+    "batch1_latency_p95_s": 0.02122299040092912,
+    "aggregation_latency_s": 0.0031036109994602157
+  },
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

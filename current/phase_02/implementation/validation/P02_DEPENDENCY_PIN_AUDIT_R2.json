@@ -1,0 +1,124 @@
+{
+  "validation_id": "P02-DEPENDENCY-PIN-AUDIT-R2",
+  "status": "PASS_WITH_RUNTIME_GATE",
+  "python_target": ">=3.12,<3.13",
+  "pins": [
+    {
+      "package": "moabb",
+      "version": "1.5.0",
+      "release_existence": "VERIFIED_PYPI",
+      "kaggle_resolution": "STAGE01_EXACT_PIN_GATE",
+      "authoring_local_resolution": "NOT_AUTHORITATIVE"
+    },
+    {
+      "package": "mne",
+      "version": "1.12.1",
+      "release_existence": "VERIFIED_PYPI",
+      "kaggle_resolution": "STAGE01_EXACT_PIN_GATE",
+      "authoring_local_resolution": "NOT_AUTHORITATIVE"
+    },
+    {
+      "package": "numpy",
+      "version": "2.2.6",
+      "release_existence": "VERIFIED_PYPI",
+      "kaggle_resolution": "STAGE01_EXACT_PIN_GATE",
+      "authoring_local_resolution": "NOT_AUTHORITATIVE"
+    },
+    {
+      "package": "scipy",
+      "version": "1.15.3",
+      "release_existence": "VERIFIED_PYPI",
+      "kaggle_resolution": "STAGE01_EXACT_PIN_GATE",
+      "authoring_local_resolution": "NOT_AUTHORITATIVE"
+    },
+    {
+      "package": "pandas",
+      "version": "2.3.1",
+      "release_existence": "VERIFIED_PYPI",
+      "kaggle_resolution": "STAGE01_EXACT_PIN_GATE",
+      "authoring_local_resolution": "NOT_AUTHORITATIVE"
+    },
+    {
+      "package": "scikit-learn",
+      "version": "1.7.1",
+      "release_existence": "VERIFIED_PYPI",
+      "kaggle_resolution": "STAGE01_EXACT_PIN_GATE",
+      "authoring_local_resolution": "NOT_AUTHORITATIVE"
+    },
+    {
+      "package": "h5py",
+      "version": "3.14.0",
+      "release_existence": "VERIFIED_PYPI",
+      "kaggle_resolution": "STAGE01_EXACT_PIN_GATE",
+      "authoring_local_resolution": "NOT_AUTHORITATIVE"
+    },
+    {
+      "package": "pooch",
+      "version": "1.8.2",
+      "release_existence": "VERIFIED_PYPI",
+      "kaggle_resolution": "STAGE01_EXACT_PIN_GATE",
+      "authoring_local_resolution": "NOT_AUTHORITATIVE"
+    },
+    {
+      "package": "PyYAML",
+      "version": "6.0.2",
+      "release_existence": "VERIFIED_PYPI",
+      "kaggle_resolution": "STAGE01_EXACT_PIN_GATE",
+      "authoring_local_resolution": "NOT_AUTHORITATIVE"
+    },
+    {
+      "package": "pydantic",
+      "version": "2.11.7",
+      "release_existence": "VERIFIED_PYPI",
+      "kaggle_resolution": "STAGE01_EXACT_PIN_GATE",
+      "authoring_local_resolution": "NOT_AUTHORITATIVE"
+    },
+    {
+      "package": "jsonschema",
+      "version": "4.25.0",
+      "release_existence": "VERIFIED_PYPI",
+      "kaggle_resolution": "STAGE01_EXACT_PIN_GATE",
+      "authoring_local_resolution": "NOT_AUTHORITATIVE"
+    },
+    {
+      "package": "nbformat",
+      "version": "5.10.4",
+      "release_existence": "VERIFIED_PYPI",
+      "kaggle_resolution": "STAGE01_EXACT_PIN_GATE",
+      "authoring_local_resolution": "NOT_AUTHORITATIVE"
+    },
+    {
+      "package": "pytest",
+      "version": "8.4.1",
+      "release_existence": "VERIFIED_PYPI",
+      "kaggle_resolution": "STAGE01_EXACT_PIN_GATE",
+      "authoring_local_resolution": "NOT_AUTHORITATIVE"
+    },
+    {
+      "package": "torch",
+      "version": "2.13.0",
+      "release_existence": "VERIFIED_PYPI",
+      "kaggle_resolution": "STAGE01_EXACT_PIN_GATE",
+      "authoring_local_resolution": "NOT_AUTHORITATIVE"
+    },
+    {
+      "package": "braindecode",
+      "version": "1.6.1",
+      "release_existence": "VERIFIED_PYPI",
+      "kaggle_resolution": "STAGE01_EXACT_PIN_GATE",
+      "authoring_local_resolution": "NOT_AUTHORITATIVE"
+    },
+    {
+      "package": "pyriemann",
+      "version": "0.12",
+      "release_existence": "VERIFIED_PYPI",
+      "kaggle_resolution": "STAGE01_EXACT_PIN_GATE",
+      "authoring_local_resolution": "NOT_AUTHORITATIVE"
+    }
+  ],
+  "release_existence_verified_count": 16,
+  "combined_kaggle_resolver_status": "RUNTIME_GATE_REQUIRED",
+  "local_authoring_index_limitation": "MOABB/pyRiemann unavailable on the internal authoring index; this does not establish public PyPI/Kaggle incompatibility.",
+  "network_policy": "Internet may be used only during preflight dependency materialization when exact pins are not already installed; no mutable scientific-stage checkpoint discovery/download.",
+  "scientific_execution_dependency_decisions_unresolved": 0
+}

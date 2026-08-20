@@ -1,0 +1,13 @@
+{
+  "status": "SUCCESS",
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "branch": "RIE-TS-LR",
+  "checkpoint_sha256": "8597ce09d8a98c4b043210a7643d4dbf65bb40e5da169b5514330fe605fa0b49",
+  "model_id": "RIE-TS-LR:A4:PhysioNetMI__P01-L1-LOW-CAL-OFFICIAL-R2:128_PER_CLASS__RIE-TS-LR__0__1",
+  "score_type": "NATIVE_PROBABILITY",
+  "latency_summary": {
+    "batch1_latency_median_s": 0.01738240700069582,
+    "batch1_latency_p95_s": 0.02313950880015909,
+    "repeats": 5
+  }
+}

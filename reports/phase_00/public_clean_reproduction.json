@@ -1,0 +1,20 @@
+{
+  "report_id": "P00-CORRECTED-PUBLIC-CLEAN-REPRODUCTION-R1",
+  "status": "PASS",
+  "github_ci_used": false,
+  "steps": [
+    {
+      "name": "install-editable",
+      "status": "PASS"
+    },
+    {
+      "name": "public-tests",
+      "status": "PASS",
+      "result": "26/26"
+    },
+    {
+      "name": "publication-verify",
+      "status": "PASS"
+    }
+  ]
+}

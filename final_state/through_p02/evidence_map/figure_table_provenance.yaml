@@ -1,0 +1,414 @@
+canonical_map_id: IHARQ-CUMULATIVE-EVIDENCE-MAP-THROUGH-P02-R1
+rows:
+- artifact_id: L10-CUM-FIG-001
+  artifact_type: FIGURE
+  claim_ids:
+  - CUM-CLM-001/v1
+  - CUM-CLM-002/v1
+  - CUM-CLM-008/v1
+  finding_ids:
+  - CF-01
+  - CF-02
+  - CF-12
+  source_data:
+  - layer10/figure_source_data/CUM_FIG_01_Phase_Dependency_source.csv
+  layer0_safe_caption: P00 engineering/foundation contracts enable P01’s frozen EEG substrate, which in turn enables P02 Layer-2 decoder evidence. The chain is a
+    provenance/readiness result, not clinical or deployment validation.
+  limitations:
+  - TECHNICAL_TRACEABILITY_NOT_EFFECTIVENESS
+  output_path: layer10/figures/L10-CUM-FIG-001.png
+  sha256: 04f9c990d27addba6e894720d74869500facfc1aab1769b151bbf5df317f892e
+  source_data_sha256: 174f521d0952e9858e21213bd21113a4169ab7acdbc38d675364d60eeb13a0b6
+- artifact_id: L10-CUM-FIG-002
+  artifact_type: FIGURE
+  claim_ids:
+  - CUM-CLM-005/v1
+  finding_ids:
+  - CF-05
+  - CF-06
+  source_data:
+  - layer10/figure_source_data/CUM_FIG_02_Ablation_Evolution_source.csv
+  layer0_safe_caption: A4 evolves from P01 matched-substrate feasibility into P02 constrained effectiveness testing; P02 does not establish generic C1-C3 improvement,
+    five-repeat stability, dense-budget characterization or full-grid equivalence.
+  limitations:
+  - SINGLE_REPEAT
+  - DEEP_ANCHOR_BUDGETS
+  - POST_HOC_STAGE18S
+  output_path: layer10/figures/L10-CUM-FIG-002.png
+  sha256: ad0a154d70d8c052dc71a9e678d41cd65a7a3b021a0a6a446c50d1e4c195a496
+  source_data_sha256: ab5d0119342307d5dbe26a2e4d088cd0380345571969f4156aba5df119d807c6
+- artifact_id: L10-CUM-FIG-003
+  artifact_type: FIGURE
+  claim_ids:
+  - CUM-CLM-001/v1
+  - CUM-CLM-007/v1
+  finding_ids:
+  - CF-01
+  - CF-08
+  - CF-09
+  source_data:
+  - layer10/figure_source_data/CUM_FIG_03_Evidence_Role_Evolution_source.csv
+  layer0_safe_caption: Evidence responsibilities progress from foundation validation to data-contract evidence to empirical decoder and negative-result evidence,
+    while phase provenance remains explicit.
+  limitations:
+  - EVIDENCE_CLASS_NOT_INTERCHANGEABLE
+  output_path: layer10/figures/L10-CUM-FIG-003.png
+  sha256: 793ca1fa06db1476b79d1315ccfad9df804ef3bdb4da0d0aca6d395d465e9e0c
+  source_data_sha256: 1fdb88f3d4851d596843749e3eed54fe63621a26c878d5b2f5efeefa1fb8bba6
+- artifact_id: L10-CUM-FIG-004
+  artifact_type: FIGURE
+  claim_ids: []
+  finding_ids: []
+  source_data:
+  - layer10/figure_source_data/Claim_Disposition_Counts.csv
+  layer0_safe_caption: Counts of current reviewed claim dispositions. Historical P00/P01 decisions are preserved; P02/cumulative claims are added under the same taxonomy.
+  limitations:
+  - COUNT_SUMMARY_ONLY
+  output_path: layer10/figures/L10-CUM-FIG-004.png
+  sha256: df36785e794f381f157f247712b3b649eaf437f1f483279a7bc77086079ec5a7
+  source_data_sha256: 24c7c6a71e9f0a47ea3b59bfe37d50737d69831733bf6cc06862d13838abc450
+- artifact_id: L10-P02-FIG-001
+  artifact_type: FIGURE
+  claim_ids:
+  - P02-CLM-002/v1
+  - P02-CLM-003/v1
+  - CUM-CLM-003/v1
+  finding_ids:
+  - P02-FIND-002
+  - P02-FIND-003
+  - CF-03
+  source_data:
+  - layer10/figure_source_data/P02_Table_A0_fulltrain_branch_summary.csv
+  layer0_safe_caption: Full-training descriptive ordering differs by dataset. BNCI2014_001 has one held-out test participant; no universal decoder winner is authorized.
+  limitations:
+  - BNCI_TEST_PARTICIPANTS_1
+  - DATASET_HETEROGENEITY
+  output_path: layer10/figures/L10-P02-FIG-001.png
+  sha256: ed7d0cc5ac13423ed793b1e82d185cdc2210fb69d87734110d232d10a48d05d9
+  source_data_sha256: 2f62ab327d951c7eebe2a57c7f59e448aea9080877299df94afbc10f41c043f7
+- artifact_id: L10-P02-FIG-002
+  artifact_type: FIGURE
+  claim_ids:
+  - P02-CLM-004/v1
+  - CUM-CLM-004/v1
+  finding_ids:
+  - P02-FIND-005
+  - CF-04
+  source_data:
+  - layer10/figure_source_data/P02_Table_low_label_BACC.csv
+  layer0_safe_caption: Descriptive low-label BACC under one frozen subset per budget. Rank changes do not establish repeated-subset sample-efficiency stability.
+  limitations:
+  - SINGLE_FROZEN_SUBSET
+  output_path: layer10/figures/L10-P02-FIG-002.png
+  sha256: 1f3de10676a3cbacfbfb5f2c90b4b344903e2ff425c49292ec21f0de51725392
+  source_data_sha256: 2c3d377c97853deb9c0c489e3b551e11d5fae540c89029ea489510de11e77de1
+- artifact_id: L10-P02-FIG-003
+  artifact_type: FIGURE
+  claim_ids:
+  - P02-CLM-004/v1
+  - CUM-CLM-004/v1
+  finding_ids:
+  - P02-FIND-005
+  - CF-04
+  source_data:
+  - layer10/figure_source_data/P02_Table_low_label_BACC.csv
+  layer0_safe_caption: Descriptive low-label BACC under one frozen subset per budget. Rank changes do not establish repeated-subset sample-efficiency stability.
+  limitations:
+  - SINGLE_FROZEN_SUBSET
+  output_path: layer10/figures/L10-P02-FIG-003.png
+  sha256: 10d8d20fa601d774e3ab46c817ecf63f6243eb7db657d9f187e746fb97cf1d9e
+  source_data_sha256: 2c3d377c97853deb9c0c489e3b551e11d5fae540c89029ea489510de11e77de1
+- artifact_id: L10-P02-FIG-004
+  artifact_type: FIGURE
+  claim_ids:
+  - P02-CLM-004/v1
+  - CUM-CLM-004/v1
+  finding_ids:
+  - P02-FIND-005
+  - CF-04
+  source_data:
+  - layer10/figure_source_data/P02_Table_low_label_BACC.csv
+  layer0_safe_caption: Descriptive low-label BACC under one frozen subset per budget. Rank changes do not establish repeated-subset sample-efficiency stability.
+  limitations:
+  - SINGLE_FROZEN_SUBSET
+  output_path: layer10/figures/L10-P02-FIG-004.png
+  sha256: 4882e5977574c1564a77ec27c5b0bcf3d02a4ff6075fcf1b33528417591bc3d8
+  source_data_sha256: 2c3d377c97853deb9c0c489e3b551e11d5fae540c89029ea489510de11e77de1
+- artifact_id: L10-P02-FIG-005
+  artifact_type: FIGURE
+  claim_ids:
+  - P02-CLM-005/v1
+  - P02-CLM-006/v1
+  - CUM-CLM-006/v1
+  finding_ids:
+  - P02-FIND-006
+  - P02-FIND-007
+  - CF-07
+  source_data:
+  - layer10/figure_source_data/P02_Table_training_policy_challenger_statistics.csv
+  layer0_safe_caption: Diagnostic-only paired delta BACC for the Stage-11 challenger versus canonical primary EEGNet. The challenger is not primary A0 and does not
+    show a consistent cross-dataset improvement.
+  limitations:
+  - DIAGNOSTIC_ONLY
+  output_path: layer10/figures/L10-P02-FIG-005.png
+  sha256: e332e53db035df6d82f6be592972260fc96720813e1614bdd15126959cb520c9
+  source_data_sha256: 0b2c9b948726d8691f38edb6e5bf049e2e6b5d38e84da0e88e1ac4f1527ed1d8
+- artifact_id: L10-P02-FIG-006
+  artifact_type: FIGURE
+  claim_ids:
+  - P02-CLM-007/v1
+  - CUM-CLM-005/v1
+  finding_ids:
+  - P02-FIND-009
+  - P02-FIND-010
+  - CF-05
+  source_data:
+  - layer10/figure_source_data/P02_Table_A4_role_condition_summary.csv
+  layer0_safe_caption: Governed C1-C3 role-control effects under the accepted constrained A4 scope. Across 756 statistical rows, zero reached raw p<=0.05; absence
+    of detection is not proof of zero effect.
+  limitations:
+  - SINGLE_REPEAT
+  - DEEP_ANCHOR_BUDGETS
+  output_path: layer10/figures/L10-P02-FIG-006.png
+  sha256: 60ebe794cb3629f23cbe790984506bb259d1e9525687bc20496fd75ec18e8d3a
+  source_data_sha256: c8a4958910d7db18fa1d0156f9c1883f124601927151f641a4bbbfe0439f2e9b
+- artifact_id: L10-P02-FIG-007
+  artifact_type: FIGURE
+  claim_ids:
+  - P02-CLM-009/v1
+  - CUM-CLM-005/v1
+  finding_ids:
+  - P02-FIND-012
+  - CF-06
+  source_data:
+  - layer10/figure_source_data/P02_Table_Stage18S_three_repeat_anchor_stability.csv
+  layer0_safe_caption: POST-HOC/DESCRIPTIVE/SENSITIVITY evidence only. Mixed signs reinforce the existing claim ceiling and do not modify canonical Stage18/G18.
+  limitations:
+  - POST_HOC_ONLY
+  - THREE_REPEAT_NOT_FIVE_REPEAT
+  output_path: layer10/figures/L10-P02-FIG-007.png
+  sha256: 02b2d838461643f93c7eb540edf6b82da035dd6addaa0d6a5dfd1352e71746cb
+  source_data_sha256: 9f234c9721066123a98380893e917dd32ae9656ee7aa5b850237e8e9b396564f
+- artifact_id: L10-P02-FIG-008
+  artifact_type: FIGURE
+  claim_ids:
+  - P02-CLM-010/v1
+  - CUM-CLM-007/v1
+  finding_ids:
+  - P02-FIND-013
+  - CF-08
+  source_data:
+  - layer10/figure_source_data/P02_Table_failure_category_breakdown.csv
+  layer0_safe_caption: FailureCaseIndex categories are governed non-success states and are not interchangeable with unexpected runtime crashes; NegativeResultNotes
+    and DiagnosticOnlyFlags are tracked separately.
+  limitations:
+  - FAILURE_CLASSES_NOT_INTERCHANGEABLE
+  output_path: layer10/figures/L10-P02-FIG-008.png
+  sha256: 5a7822a4b545cdff3a92f55dad5ac691ea45ce23cf463f05e2108680a5647941
+  source_data_sha256: 4f97a4abe453faf85d02b320d99ed52a152247bc7d25d12c49d6dbe16820ae8e
+- artifact_id: L10-P02-FIG-009
+  artifact_type: FIGURE
+  claim_ids:
+  - P02-CLM-002/v1
+  - CUM-CLM-003/v1
+  finding_ids:
+  - P02-FIND-004
+  - CF-11
+  source_data:
+  - layer10/figure_source_data/P02_Table_A0_participant_first_fulltrain_source.csv
+  layer0_safe_caption: Participant-first BACC distributions show substantial heterogeneity; descriptive means do not imply uniform participant benefit.
+  limitations:
+  - PARTICIPANT_HETEROGENEITY
+  output_path: layer10/figures/L10-P02-FIG-009.png
+  sha256: 444aa170a66376e8021db91c934730601679466a04ddca9a2c9f66fc908aacd5
+  source_data_sha256: 742e4362eebbd8c9e5ed2d59c0018805fe66a491737fde3b7cf1b144cd04743c
+- artifact_id: L10-P02-FIG-010
+  artifact_type: FIGURE
+  claim_ids:
+  - P02-CLM-002/v1
+  - CUM-CLM-003/v1
+  finding_ids:
+  - P02-FIND-004
+  - CF-11
+  source_data:
+  - layer10/figure_source_data/P02_Table_A0_participant_first_fulltrain_source.csv
+  layer0_safe_caption: Participant-first BACC distributions show substantial heterogeneity; descriptive means do not imply uniform participant benefit.
+  limitations:
+  - PARTICIPANT_HETEROGENEITY
+  output_path: layer10/figures/L10-P02-FIG-010.png
+  sha256: 0ab257f8e5c7db8d8be0dd27935560613981eece7449b3b85cbb0e291614ebc9
+  source_data_sha256: 742e4362eebbd8c9e5ed2d59c0018805fe66a491737fde3b7cf1b144cd04743c
+- artifact_id: L10-CUM-TBL-001
+  artifact_type: TABLE
+  claim_ids:
+  - P00-CLM-001/v2
+  - P00-CLM-002/v2
+  - P00-CLM-003/v2
+  - P00-CLM-004/v2
+  - P00-CLM-005/v2
+  - P00-CLM-006/v2
+  - P00-CLM-007/v2
+  - P01-CLM-001/v1
+  - P01-CLM-002/v1
+  - P01-CLM-003/v1
+  - P01-CLM-004/v1
+  - P01-CLM-005/v1
+  - P01-CLM-006/v1
+  - P01-CLM-007/v1
+  - P01-CLM-008/v1
+  - P01-CLM-009/v1
+  - P01-CLM-010/v1
+  - P01-CLM-011/v1
+  - P01-CLM-012/v1
+  - P02-CLM-001/v1
+  - P02-CLM-002/v1
+  - P02-CLM-003/v1
+  - P02-CLM-004/v1
+  - P02-CLM-005/v1
+  - P02-CLM-006/v1
+  - P02-CLM-007/v1
+  - P02-CLM-008/v1
+  - P02-CLM-009/v1
+  - P02-CLM-010/v1
+  - CUM-CLM-001/v1
+  - CUM-CLM-002/v1
+  - CUM-CLM-003/v1
+  - CUM-CLM-004/v1
+  - CUM-CLM-005/v1
+  - CUM-CLM-006/v1
+  - CUM-CLM-007/v1
+  - CUM-CLM-008/v1
+  finding_ids: []
+  source_data:
+  - table_source_data/L10-CUM-TBL-001.csv
+  limitations: []
+  output_path: layer10/tables/L10-CUM-TBL-001.csv
+  sha256: acf37cc40a7f0abef20a6fece522db5c9b1f04299d5bb5f897fd1ba36e7bb3e0
+- artifact_id: L10-CUM-TBL-002
+  artifact_type: TABLE
+  claim_ids: []
+  finding_ids: []
+  source_data:
+  - table_source_data/L10-CUM-TBL-002.csv
+  limitations: []
+  output_path: layer10/tables/L10-CUM-TBL-002.csv
+  sha256: 174f521d0952e9858e21213bd21113a4169ab7acdbc38d675364d60eeb13a0b6
+- artifact_id: L10-CUM-TBL-003
+  artifact_type: TABLE
+  claim_ids: []
+  finding_ids: []
+  source_data:
+  - table_source_data/L10-CUM-TBL-003.csv
+  limitations: []
+  output_path: layer10/tables/L10-CUM-TBL-003.csv
+  sha256: ab5d0119342307d5dbe26a2e4d088cd0380345571969f4156aba5df119d807c6
+- artifact_id: L10-CUM-TBL-004
+  artifact_type: TABLE
+  claim_ids: []
+  finding_ids: []
+  source_data:
+  - table_source_data/L10-CUM-TBL-004.csv
+  limitations: []
+  output_path: layer10/tables/L10-CUM-TBL-004.csv
+  sha256: ed592a9d3da7d05404b176b53df1b0ac0b30598eebb19662f0871c914ad5a6ef
+- artifact_id: L10-P02-TBL-001
+  artifact_type: TABLE
+  claim_ids:
+  - P02-CLM-001/v1
+  - P02-CLM-002/v1
+  - P02-CLM-003/v1
+  finding_ids: []
+  source_data:
+  - table_source_data/L10-P02-TBL-001.csv
+  limitations: []
+  output_path: layer10/tables/L10-P02-TBL-001.csv
+  sha256: 2f62ab327d951c7eebe2a57c7f59e448aea9080877299df94afbc10f41c043f7
+- artifact_id: L10-P02-TBL-002
+  artifact_type: TABLE
+  claim_ids:
+  - P02-CLM-004/v1
+  - CUM-CLM-004/v1
+  finding_ids: []
+  source_data:
+  - table_source_data/L10-P02-TBL-002.csv
+  limitations: []
+  output_path: layer10/tables/L10-P02-TBL-002.csv
+  sha256: 2c3d377c97853deb9c0c489e3b551e11d5fae540c89029ea489510de11e77de1
+- artifact_id: L10-P02-TBL-003
+  artifact_type: TABLE
+  claim_ids:
+  - P02-CLM-004/v1
+  - CUM-CLM-004/v1
+  finding_ids: []
+  source_data:
+  - table_source_data/L10-P02-TBL-003.csv
+  limitations: []
+  output_path: layer10/tables/L10-P02-TBL-003.csv
+  sha256: 421992f8677557cc431f99ae67af5a7fc8ebf5a1a08b8e238457a4a6fd99b6bc
+- artifact_id: L10-P02-TBL-004
+  artifact_type: TABLE
+  claim_ids:
+  - P02-CLM-005/v1
+  - P02-CLM-006/v1
+  - CUM-CLM-006/v1
+  finding_ids: []
+  source_data:
+  - table_source_data/L10-P02-TBL-004.csv
+  limitations: []
+  output_path: layer10/tables/L10-P02-TBL-004.csv
+  sha256: 9d372f66b06b406e43cf5d63f9e3d3842247b0ccc6438b37ca2d63cb48f19900
+- artifact_id: L10-P02-TBL-005
+  artifact_type: TABLE
+  claim_ids:
+  - P02-CLM-005/v1
+  - P02-CLM-006/v1
+  - CUM-CLM-006/v1
+  finding_ids: []
+  source_data:
+  - table_source_data/L10-P02-TBL-005.csv
+  limitations: []
+  output_path: layer10/tables/L10-P02-TBL-005.csv
+  sha256: 0b2c9b948726d8691f38edb6e5bf049e2e6b5d38e84da0e88e1ac4f1527ed1d8
+- artifact_id: L10-P02-TBL-006
+  artifact_type: TABLE
+  claim_ids:
+  - P02-CLM-007/v1
+  - CUM-CLM-005/v1
+  finding_ids: []
+  source_data:
+  - table_source_data/L10-P02-TBL-006.csv
+  limitations: []
+  output_path: layer10/tables/L10-P02-TBL-006.csv
+  sha256: d1ad0b94fb337e4cc75708e7a64f96b36a3025626826a5df7cbaf5bb3a24cbdb
+- artifact_id: L10-P02-TBL-007
+  artifact_type: TABLE
+  claim_ids:
+  - P02-CLM-008/v1
+  finding_ids: []
+  source_data:
+  - table_source_data/L10-P02-TBL-007.csv
+  limitations: []
+  output_path: layer10/tables/L10-P02-TBL-007.csv
+  sha256: 24ca5408cd1c361b83adb18baf9a3d663d94b67cf29d91347069ede160d9c0de
+- artifact_id: L10-P02-TBL-008
+  artifact_type: TABLE
+  claim_ids:
+  - P02-CLM-009/v1
+  - CUM-CLM-005/v1
+  finding_ids: []
+  source_data:
+  - table_source_data/L10-P02-TBL-008.csv
+  limitations: []
+  output_path: layer10/tables/L10-P02-TBL-008.csv
+  sha256: 9f234c9721066123a98380893e917dd32ae9656ee7aa5b850237e8e9b396564f
+- artifact_id: L10-P02-TBL-009
+  artifact_type: TABLE
+  claim_ids:
+  - P02-CLM-010/v1
+  - CUM-CLM-007/v1
+  finding_ids: []
+  source_data:
+  - table_source_data/L10-P02-TBL-009.csv
+  limitations: []
+  output_path: layer10/tables/L10-P02-TBL-009.csv
+  sha256: 4f97a4abe453faf85d02b320d99ed52a152247bc7d25d12c49d6dbe16820ae8e

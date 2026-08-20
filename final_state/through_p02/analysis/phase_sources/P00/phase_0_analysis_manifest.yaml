@@ -1,0 +1,66 @@
+analysis_manifest_id: P00-ANALYSIS-MANIFEST-R2
+analysis_release_id: P00-ANALYSIS-RELEASE-R2
+report_id: IHARQ-P00-PHASE-ANALYSIS-REPORT-R2
+phase_id: P00
+protocol_master_id: IHARQ-PROTOCOL-V1-MASTER-R2
+protocol_annex_id: IHARQ-PROTOCOL-V1-P00-ANNEX-R2
+timing_mode: B
+evidence_ceiling: ENGINEERING_FOUNDATION_CONFORMANCE
+implementation_snapshot_id: IHARQ_Protocol_v1_0_Final_Independent_Audit_COMPLETE_R2
+implementation_snapshot_sha256: f5eb3951a1946f09a6932821edfd703645d8b4f430abd67020d81a8cba6eb431
+execution_release_id: P00-EXECUTION-RELEASE-R2
+post_freeze_rerun_performed: true
+created_at: '2026-08-03T16:43:28.139238+03:30'
+counts:
+  requirements: 23846
+  protocol_requirements: 19026
+  schemas: 85
+  configs: 35
+  record_families: 79
+  valid_bundles: 1
+  integrated_bundles: 18
+  malformed_categories: 178
+  layers: 11
+  phases: 16
+  ablations: 14
+  registered_cells: 19
+  registered_cells_passed: 19
+  deterministic_tests: 102
+  valid_integrated_bundles: 19
+status: P00_ANALYSIS_FINAL_AUDIT_PASS_WITH_NONBLOCKING_LIMITATIONS_READY_FOR_LAYER0
+machine_files:
+- reports/phase_00_analysis/analysis_release_R2/machine_readable/phase_0_analysis_manifest.yaml
+- reports/phase_00_analysis/analysis_release_R2/machine_readable/phase_0_artifact_closure.csv
+- reports/phase_00_analysis/analysis_release_R2/machine_readable/phase_0_candidate_statement_register.csv
+- reports/phase_00_analysis/analysis_release_R2/machine_readable/phase_0_downstream_handoff.yaml
+- reports/phase_00_analysis/analysis_release_R2/machine_readable/phase_0_finding_register.csv
+- reports/phase_00_analysis/analysis_release_R2/machine_readable/phase_0_gate_results.csv
+- reports/phase_00_analysis/analysis_release_R2/machine_readable/phase_0_layer_readiness.csv
+- reports/phase_00_analysis/analysis_release_R2/machine_readable/phase_0_limitation_register.csv
+- reports/phase_00_analysis/analysis_release_R2/machine_readable/phase_0_negative_result_register.csv
+- reports/phase_00_analysis/analysis_release_R2/machine_readable/phase_0_phase_contract_readiness.csv
+- reports/phase_00_analysis/analysis_release_R2/machine_readable/phase_0_publication_asset_manifest.csv
+- reports/phase_00_analysis/analysis_release_R2/machine_readable/phase_0_repair_ledger.csv
+- reports/phase_00_analysis/analysis_release_R2/machine_readable/phase_0_requirement_traceability.csv
+- reports/phase_00_analysis/analysis_release_R2/machine_readable/phase_0_review_provenance.yaml
+- reports/phase_00_analysis/analysis_release_R2/machine_readable/phase_0_run_disposition.csv
+- reports/phase_00_analysis/analysis_release_R2/machine_readable/phase_0_source_baseline.csv
+open_nonblocking_limitations:
+- Complete registry-resolved portable uv.lock is unavailable and explicitly fail-closed.
+- Python 3.11 and 3.12 were unavailable locally; Python 3.13.5 passed.
+- Historical runs remain Mode B engineering/retrospective; Mode C no-drift was not
+  proven.
+- P00 contains no claim-bearing empirical A0-A13 cell.
+- Layer 0, Evidence Map, Layer 10 and closure remain pending.
+open_blocking_defects: []
+phase0_closed: false
+phase1_authorized: false
+report_markdown_path: docs/reports/phase_00/IHARQ_Phase_0_Analysis_Evidence_Results_and_Interpretation_Report_R2.md
+report_markdown_sha256: dd721edbbc3292465d94084c369570f168d57a90ae74d555e7d1e564aa1c4f19
+report_word_path: docs/reports/phase_00/IHARQ_Phase_0_Analysis_Evidence_Results_and_Interpretation_Report_R2.docx
+report_word_sha256: a5953f610aa372e2191035a71794057885ab011aad4d3b6c8f4493942dc63181
+local_execution_steps: 19
+deterministic_tests: 102
+analysis_validation_report: reports/phase_00_analysis/analysis_release_R2/analysis_validation_report.json
+report_machine_no_drift: reports/phase_00_analysis/analysis_release_R2/report_machine_no_drift.json
+package_integrity: PASS_LOCAL_BUILD_VERIFY_AND_CLEAN_REPRODUCTION; FINAL_ZIP_IDENTITY_DETACHED

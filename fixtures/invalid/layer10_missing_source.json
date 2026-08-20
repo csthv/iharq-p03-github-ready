@@ -1,0 +1,36 @@
+{
+  "bundle_id": "INVALID-LAYER10_MISSING_SOURCE",
+  "records": [
+    {
+      "record_id": "IHARQ-DASHBOARDMETRICRECORD-20260802-e1de6d34624d5dd2",
+      "record_type": "DashboardMetricRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L10",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "RENDERING",
+      "payload": {
+        "dashboard_metric_id": "MOCK_DASHBOARD_METRIC_ID_46",
+        "metric_entry_id": "MOCK_METRIC_ENTRY_ID_46",
+        "source_artifact_ids": [],
+        "rendering_only": true
+      },
+      "ablation_id": null
+    }
+  ],
+  "controls": {},
+  "expected_failure_category": "layer10_missing_source"
+}

@@ -1,0 +1,109 @@
+{
+  "run_cell_id": "P02-A0-Lee2019_MI-DNN-SEQ-FULL_TRAIN-MR03",
+  "ablation_id": "A0",
+  "terminal_status": "SUCCESS",
+  "prediction_partition": "records/PredictionRecord/dataset=Lee2019_MI/branch=DNN-SEQ/budget=FULL_TRAIN/P02-A0-Lee2019_MI-DNN-SEQ-FULL_TRAIN-MR03.jsonl",
+  "metric_source": "metrics/P02-A0-Lee2019_MI-DNN-SEQ-FULL_TRAIN-MR03.json",
+  "checkpoint_sha256": "0bbd1f78186bab0ad13f5da1ca52e68e72aa59258126becbd6caf06e37ae5b22",
+  "checkpoint_path": "checkpoints/P02-A0-Lee2019_MI-DNN-SEQ-FULL_TRAIN-MR03.external.external.chk",
+  "observed_denominator": 600,
+  "selected_params": {
+    "recipe_id": "R6-DBCONFORMER-AUTHOR-CENTERED-R1",
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "batch_size": 32,
+    "scheduler": "constant",
+    "label_smoothing": 0.0,
+    "grad_clip": null,
+    "max_epochs": 150,
+    "patience": 40,
+    "selection": "validation_BACC",
+    "restore_best": true,
+    "branch": "DNN-SEQ",
+    "dataset_id": "Lee2019_MI",
+    "budget_id": "FULL_TRAIN"
+  },
+  "resolved_variant": "DBConformer-OriginalAuthor-P01CompatibilityPatched",
+  "score_type": "SOFTMAX_PROBABILITY",
+  "validation_burden_seconds": 138.9401514530182,
+  "model_storage_bytes": 386988,
+  "selected_candidate_id": "R6-DBCONFORMER-AUTHOR-CENTERED-R1",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.0038262710004346445,
+    "batch1_latency_p95_s": 0.004025368399743457,
+    "repeats": 5,
+    "latency_probe_mode": "FORWARD_ONLY_NO_METRICS"
+  },
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "class_weights": null,
+  "class_weight_calibration": {
+    "selected_policy": "UNIFORM_NO_WEIGHT",
+    "selected_weights": null,
+    "validation_metrics": {
+      "BACC": 0.762,
+      "F1_MACRO": 0.7602266362013452,
+      "ACC": 0.762,
+      "CONFUSION": [
+        [
+          169,
+          81
+        ],
+        [
+          38,
+          212
+        ]
+      ],
+      "CLASS_SUPPORT": [
+        250,
+        250
+      ],
+      "PRED_COMPLETE": 500,
+      "ROC_AUC": 0.850592,
+      "ROC_AUC_STATUS": "PASS",
+      "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+    },
+    "candidate_results": [
+      {
+        "status": "SUCCESS",
+        "policy": "UNIFORM_NO_WEIGHT",
+        "weights": null,
+        "validation_metrics": {
+          "BACC": 0.762,
+          "F1_MACRO": 0.7602266362013452,
+          "ACC": 0.762,
+          "CONFUSION": [
+            [
+              169,
+              81
+            ],
+            [
+              38,
+              212
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            250,
+            250
+          ],
+          "PRED_COMPLETE": 500,
+          "ROC_AUC": 0.850592,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+        },
+        "validation_burden_seconds": 138.9401514530182,
+        "model_storage_bytes": 386988,
+        "best_epoch": 36,
+        "epochs_completed": 76,
+        "history_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/staging_runtime/raw_outputs/stage12_r6_training_history/P02-A0-Lee2019_MI-DNN-SEQ-FULL_TRAIN-MR03__UNIFORM_NO_WEIGHT.json",
+        "candidate_checkpoint_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/staging_runtime/raw_outputs/stage12_r6_training_history/P02-A0-Lee2019_MI-DNN-SEQ-FULL_TRAIN-MR03__UNIFORM_NO_WEIGHT.candidate.chk",
+        "candidate_checkpoint_sha256": "0bbd1f78186bab0ad13f5da1ca52e68e72aa59258126becbd6caf06e37ae5b22"
+      }
+    ],
+    "test_set_used": false
+  },
+  "training_condition_id": "A0-RAW-ACCEPT-ALL",
+  "r6_scientific_amendment": true,
+  "test_loaded_after_group_selection_sealed": true,
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "blocking": false,
+  "stage_id": "11",
+  "gate_id": "G11",
+  "runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R4-SR-PROBABILITY-STALE-CACHE-INVALIDATION-LIVE-CONTINUATION",
+  "primary_planned_cells": 105,
+  "challenger_planned_cells": 15,
+  "primary_terminal_counts": {
+    "SUCCESS": 105
+  },
+  "challenger_terminal_counts": {
+    "SUCCESS": 15
+  },
+  "full_train_success_by_dataset": {
+    "BNCI2014_001": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "Lee2019_MI": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "PhysioNetMI": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "known_api_defect_recurrence": [],
+  "success_metric_missing": [],
+  "denominator_mismatches": [],
+  "execution_feasibility_guard": "At least one FULL_TRAIN EEGNet success per dataset after production admission/fit compatibility was directly demonstrated. No metric threshold.",
+  "scientific_configuration_changed": false,
+  "issues": []
+}

@@ -1,0 +1,155 @@
+{
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "run_cell_id": "P02-A0-PhysioNetMI-SAN-PERM-FULL_TRAIN-MR00-PR088",
+  "dataset_id": "PhysioNetMI",
+  "branch_id": "SAN-PERM",
+  "resolved_variant": "SAN-PERM",
+  "budget_id": "FULL_TRAIN",
+  "metrics": {
+    "BACC": 0.4989220265900108,
+    "F1_MACRO": 0.4954419963601999,
+    "ACC": 0.501010101010101,
+    "CONFUSION": [
+      [
+        150,
+        103
+      ],
+      [
+        144,
+        98
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      253,
+      242
+    ],
+    "PRED_COMPLETE": 495,
+    "ROC_AUC": 0.5145363081044001,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "NATIVE_PROBABILITY"
+  },
+  "validation_selection": {
+    "BACC": 0.5056567734352042,
+    "F1_MACRO": 0.5003522562942638,
+    "ACC": 0.5050505050505051,
+    "CONFUSION": [
+      [
+        101,
+        148
+      ],
+      [
+        97,
+        149
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      249,
+      246
+    ],
+    "PRED_COMPLETE": 495,
+    "ROC_AUC": 0.49565742645378263,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "NATIVE_PROBABILITY"
+  },
+  "validation_burden_seconds": 15.620777554999222,
+  "model_storage_bytes": 68715,
+  "selected_candidate_id": "CAND-02",
+  "selected_params": {
+    "n_components": 8,
+    "base_branch_id": "CLS-CSP-LDA",
+    "csp_reg": "oas",
+    "lda_solver": "lsqr",
+    "lda_shrinkage": "auto"
+  },
+  "candidate_failures": [],
+  "observed_denominator": 495,
+  "expected_denominator": 495,
+  "score_type": "NATIVE_PROBABILITY",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.0008166590014297981,
+    "batch1_latency_p95_s": 0.0008952098003646824,
+    "repeats": 5
+  },
+  "permutation_provenance": {
+    "performed": true,
+    "scope": "LEGAL_FIT_ROLE_SOURCE_EVENTS_ONLY",
+    "permutation_seed": 1141034669,
+    "aux_repeat_index": 88,
+    "label_count": 2949,
+    "class_support_before": [
+      1490,
+      1459
+    ],
+    "class_support_after": [
+      1490,
+      1459
+    ],
+    "validation_labels_permuted": false,
+    "test_labels_permuted": false
+  },
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "class_weights": null,
+  "class_weight_calibration": {
+    "selected_policy": "UNIFORM_NO_WEIGHT",
+    "selected_weights": null,
+    "candidate_results": [
+      {
+        "status": "SUCCESS",
+        "policy": "UNIFORM_NO_WEIGHT",
+        "weights": null,
+        "validation_metrics": {
+          "BACC": 0.5056567734352042,
+          "F1_MACRO": 0.5003522562942638,
+          "ACC": 0.5050505050505051,
+          "CONFUSION": [
+            [
+              101,
+              148
+            ],
+            [
+              97,
+              149
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            249,
+            246
+          ],
+          "PRED_COMPLETE": 495,
+          "ROC_AUC": 0.49565742645378263,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "NATIVE_PROBABILITY"
+        },
+        "validation_burden_seconds": 15.620777554999222,
+        "model_storage_bytes": 68715
+      }
+    ],
+    "training_count_evidence": {
+      "counts": [
+        1490,
+        1459
+      ],
+      "exactly_equal": false,
+      "selection_required": true,
+      "weights": [
+        0.9895973154362416,
+        1.010623714873201
+      ],
+      "formula": "SKLEARN_BALANCED_n_over_Knc"
+    },
+    "test_set_used": false,
+    "selection_required": false,
+    "count_imbalance_detected": true,
+    "applicability": "NOT_APPLICABLE_TO_CLASSIFIER",
+    "applicability_reason": "NO_GOVERNED_NATIVE_OR_VERIFIED_CLASS_WEIGHT_MECHANISM",
+    "authority_action": "KEEP_UNWEIGHTED_WHEN_WEIGHTING_NOT_APPLICABLE",
+    "weight_formula": {
+      "type": "SKLEARN_COMPUTE_CLASS_WEIGHT_BALANCED",
+      "formula": "n_samples / (n_classes * class_count)",
+      "normalization": "NONE_BEYOND_SKLEARN_BALANCED_FORMULA",
+      "source_labels": "LEGAL_FIT_ROLE_ONLY"
+    },
+    "selection_stage": "POST_HYPERPARAMETER_PRE_TEST_TRAINING_POLICY_CHECK",
+    "runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R1-CLASS-WEIGHT-APPLICABILITY-LIVE-CONTINUATION"
+  }
+}

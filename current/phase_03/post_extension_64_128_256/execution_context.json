@@ -1,0 +1,33 @@
+{
+  "authoring_fixture": false,
+  "canonical_p03_mutated": false,
+  "canonical_p03_run_id": "P03-L3-OFFICIAL-09ca82c743e0411a",
+  "code_sha256": "c8c3ce9ce3ed39361cf1372fd094c0ed5bb19f0bc664384fa150c68ed7943c0b",
+  "config_path": "/kaggle/working/iharq_p03_l3/post_extension_supplements/P03-L3-POSTEXT-64-128-256-R1-1833e865bcb88ff8/control/p03_postextension_64_128_256_supplement_R1.yaml",
+  "config_sha256": "2e5ebd6fc62f4c9ca3ed0102914f64142de9e1206be0b6e6b3e32cad90f1d742",
+  "created_at_utc": "2026-08-17T23:03:30.933074+00:00",
+  "environment_sha256": "67dc3d67c8e0b6b664688c6aa1d2cbcb2b612386422a26d153e45966c070f700",
+  "package_root": "/kaggle/working/iharq_p03_l3/_c8g_runtime_companion",
+  "protocol_path": "/kaggle/working/iharq_p03_l3/_c8g_runtime_companion/machine_readable/P03_EXECUTION_FREEZE.yaml",
+  "protocol_sha256": "dc46b87cb802d1a6a3ab0efd3dc6db6be5c3b5c7125c54e95a9cdbea8eef797d",
+  "repository_root": "/kaggle/working/iharq_p03_l3/repository",
+  "run_id": "P03-L3-POSTEXT-64-128-256-R1-1833e865bcb88ff8",
+  "run_root": "/kaggle/working/iharq_p03_l3/post_extension_supplements/P03-L3-POSTEXT-64-128-256-R1-1833e865bcb88ff8",
+  "source_manifest_sha256": "0e4d987bf078bb7a4753e2defe5c2acc94a6f96a69daaa845b7df80f0eb30aa2",
+  "stage07_all_in_cell_child_execution_amendment": {
+    "amendment_id": "P03S07R1-3-ALL-IN-CELL-FRESH-CHILD-REPLAY-BRIDGE-R1",
+    "canonical_p03_mutated": false,
+    "checkpoint_bytes_mutated": false,
+    "embedded_worker_sha256": "d998b4a13e1b94b3f9e2ca53fddaa63a5ef629c8395a9edb81f174652d0489d1",
+    "kernel_restart_performed": false,
+    "model_retraining_performed": false,
+    "parent_kernel_scientific_handlers_allowed": false,
+    "runtime_dependency_on_mnt_data": false,
+    "same_kaggle_session": true,
+    "scientific_algorithm_changed": false,
+    "scientific_handlers_07_19_execution_mode": "FRESH_CHILD_PROCESS_EXACT_ACCEPTED_ENVIRONMENT",
+    "smoke_receipt": "/kaggle/working/iharq_p03_l3/post_extension_supplements/P03-L3-POSTEXT-64-128-256-R1-1833e865bcb88ff8/control/P03S07R1_3_FOUR_FAMILY_CHILD_SMOKE.json",
+    "status": "PASS"
+  },
+  "supplement_mode": "POST_HOC_POST_UPSTREAM_EXTENSION"
+}

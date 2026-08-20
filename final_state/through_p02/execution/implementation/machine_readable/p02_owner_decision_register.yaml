@@ -1,0 +1,25 @@
+build_book_blocking_owner_decisions: 0
+official_execution_blocking_owner_decisions: 0
+stage05_behavior: VERIFY_ONLY
+closed_decisions:
+- decision_id: OD-P02-PROTO-01
+  status: CLOSED_R4
+  binding: see p02_planned_scientific_execution_freeze_R5.yaml repeats/seeds
+- decision_id: OD-P02-PROTO-02
+  status: CLOSED_R4
+  binding: exact grids/caps/resource limits frozen
+- decision_id: OD-P02-PROTO-03
+  status: CLOSED_R4
+  binding: 95%/10000/BCa-fallback/Wilcoxon/Friedman/Holm frozen
+- decision_id: OD-P02-TRAIN-AUG-01
+  status: CLOSED_R5_AMENDMENT_R2
+  binding: Predeclared dataset-level validation-only S&R probability selection over
+    [0.25,0.5,0.75]; Braindecode n_segments=None auto-resolution; final 15 diagnostic
+    cells; no test selection.
+- decision_id: OD-P02-TRAIN-WEIGHT-01
+  status: CLOSED_R5_AMENDMENT_R2
+  binding: Equal fit-role counts -> uniform; unequal -> sklearn-balanced fit-label
+    vector and validation-only uniform-vs-weighted selection for native/verified supported
+    classifiers; no arbitrary threshold; no test selection.
+current_scientific_freeze: P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5
+preexecution_amendment_id: P02-PREEXEC-TRAINING-POLICY-AMENDMENT-R2

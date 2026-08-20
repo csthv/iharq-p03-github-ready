@@ -1,0 +1,21 @@
+{
+  "run_cell_id": "P02-A4-BNCI2014_001-CLASSICAL-A4-C3-MULTI-PROB-AVG-P01-L1-LOW-CAL-OFFICIAL-R2:256_PER_CLASS-MR00",
+  "ablation_id": "A4",
+  "terminal_status": "SUCCESS",
+  "resolved_branch": "CLS-CSP-LDA",
+  "prediction_partition": "records/PredictionRecord/dataset=BNCI2014_001/branch=CLASSICAL_VALIDATION_SELECTED/budget=P01-L1-LOW-CAL-OFFICIAL-R2:256_PER_CLASS/P02-A4-BNCI2014_001-CLASSICAL-A4-C3-MULTI-PROB-AVG-P01-L1-LOW-CAL-OFFICIAL-R2:256_PER_CLASS-MR00.jsonl",
+  "metric_source": "metrics/P02-A4-BNCI2014_001-CLASSICAL-A4-C3-MULTI-PROB-AVG-P01-L1-LOW-CAL-OFFICIAL-R2:256_PER_CLASS-MR00.json",
+  "source_rows": "raw_outputs/P02-A4-BNCI2014_001-CLASSICAL-A4-C3-MULTI-PROB-AVG-P01-L1-LOW-CAL-OFFICIAL-R2:256_PER_CLASS-MR00.jsonl",
+  "observed_denominator": 288,
+  "burden": {
+    "evidence_duration_s": 2.0,
+    "observation_horizon_s": 3.5,
+    "model_or_view_evaluations": 3,
+    "member_count": 3,
+    "aggregation_operation": "PROBABILITY_AVERAGE",
+    "batch1_latency_median_s": 0.0025995819978561485,
+    "batch1_latency_p95_s": 0.0028861151989985952,
+    "aggregation_latency_s": 0.0008183979989553336
+  },
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

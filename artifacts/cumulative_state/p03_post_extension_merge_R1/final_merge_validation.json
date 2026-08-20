@@ -1,0 +1,38 @@
+{
+  "added_file_count_excluding_self_references": 3529,
+  "baseline_files_expected": 34653,
+  "baseline_files_unpreserved": 0,
+  "canonical_vs_extension_overwrite_performed": false,
+  "claim_approval_by_merge": false,
+  "coverage": [
+    "P00",
+    "P01",
+    "P02",
+    "P03"
+  ],
+  "external_heavy_artifacts_duplicated_by_merge": false,
+  "future_consumer_documents_authored_by_merge": false,
+  "generated_at_utc": "2026-08-19T05:04:58.329735+00:00",
+  "p03_canonical_artifact_files_promoted": 1820,
+  "p03_final_state_files_promoted": 17,
+  "p03_post_extension_files_scope_separated": 1272,
+  "p03_release_metadata_files_preserved": 7,
+  "p03_source_files_expected": 3447,
+  "p03_source_files_preserved": 3447,
+  "preimage_archive": "history/p03_merge_preimages_R1/",
+  "replaced_file_count_excluding_self_references": 14,
+  "repository_manifest_and_checksums_regenerated": true,
+  "root_implementation_promotion": {
+    "ADDED_FROM_P03_ACCEPTED_IMPLEMENTATION": 56,
+    "ALREADY_IDENTICAL": 241,
+    "CUMULATIVE_METADATA_REFRESH_P03": 1,
+    "PROMOTED_WITH_CUMULATIVE_NONEXECUTION_COMPATIBILITY_SHIM": 1,
+    "REPLACED_WITH_P03_ACCEPTED_IMPLEMENTATION": 1
+  },
+  "scientific_execution_performed_by_merge": false,
+  "source_preservation_audit": "artifacts/cumulative_state/p03_post_extension_merge_R1/source_preservation_audit.json",
+  "source_to_cumulative_map": "artifacts/cumulative_state/p03_post_extension_merge_R1/SOURCE_TO_CUMULATIVE_PATH_MAP.csv",
+  "status": "PASS",
+  "test_selection_by_merge": false,
+  "threshold_retuning_or_reselection_by_merge": false
+}

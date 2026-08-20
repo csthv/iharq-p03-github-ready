@@ -1,0 +1,68 @@
+{
+  "A0_cells": 786,
+  "A4_cells": 1740,
+  "artifact_id": "P02-INTEGRATED-1-TO-256-DOWNSTREAM-ANNOTATION-R2",
+  "created_at_utc": "2026-08-17T18:06:07.830507+00:00",
+  "integrated_sufficiency_artifact": "/kaggle/working/iharq_p02_integrated_1_256_R1/stage_artifacts/23_integrated_1_256_sufficiency_R2.json",
+  "presentation_policy": "SAME_CANONICAL_FILENAMES_AND_PATH_FAMILY_WITH_UNIFIED_CURRENT_STATE",
+  "primary_budget_axis_per_class": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256
+  ],
+  "provenance_policy": "DO_NOT_HIDE_LATER_OWNER_AUTHORIZED_INTEGRATION",
+  "reuse": {
+    "low_label_64_128_256_A0_numeric_results_retrained": false,
+    "original_A0_and_A4": true,
+    "stage18S_predecessor_1_8_FULL_recomputed": false,
+    "stage18S_predecessor_4_16_32_recomputed": false
+  },
+  "stage18S": {
+    "canonical_G18_modified": false,
+    "canonical_stage18_modified": false,
+    "claim_scope": "POST_HOC_SENSITIVITY_DESCRIPTIVE",
+    "combined_successful_effect_rows": 315,
+    "groups": 108,
+    "member_receipts": 432,
+    "member_status_counts": {
+      "INPUT_INCOMPATIBLE": 54,
+      "SUCCESS": 378
+    },
+    "new_confirmatory_test_family_created": false,
+    "nine_budget_mr00_trajectories": 15,
+    "nine_budget_sequence": [
+      "1",
+      "4",
+      "8",
+      "16",
+      "32",
+      "64",
+      "128",
+      "256",
+      "FULL"
+    ],
+    "participant_effect_rows": 1890,
+    "planned_cells": 324,
+    "terminal_counts": {
+      "INPUT_INCOMPATIBLE": 54,
+      "SUCCESS": 270
+    },
+    "three_repeat_anchor_budgets": [
+      "1",
+      "8",
+      "64",
+      "128",
+      "256",
+      "FULL"
+    ],
+    "three_repeat_anchor_trajectories": 90
+  },
+  "status": "PASS",
+  "total_A0_A4": 2526
+}

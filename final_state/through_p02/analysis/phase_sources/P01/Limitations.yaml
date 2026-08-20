@@ -1,0 +1,120 @@
+report_id: IHARQ-CUMULATIVE-PHASE-EVIDENCE-RESULTS-INTERPRETATION-THROUGH-P01-R1
+limitations:
+- limitation_id: P00-LIM-001
+  origin_phase: P00
+  description: Portable registry-resolved cross-version dependency lock remained incomplete;
+    portability beyond the exact verified local snapshot is not established.
+  blocking: false
+  status: HISTORICAL_ACTIVE_BOUNDARY
+- limitation_id: P00-LIM-002
+  origin_phase: P00
+  description: P00 reproduction is bound to the exact verified local Python 3.13.5
+    environment; Python 3.11/3.12 were unavailable in that local analysis environment.
+  blocking: false
+  status: HISTORICAL_ACTIVE_BOUNDARY
+- limitation_id: P00-LIM-003
+  origin_phase: P00
+  description: P00 evidence is local-snapshot engineering/reproducibility evidence,
+    not universal environment portability.
+  blocking: false
+  status: HISTORICAL_ACTIVE_BOUNDARY
+- limitation_id: P00-LIM-004
+  origin_phase: P00
+  description: P00 is non-empirical Mode B administrative/foundation evidence and
+    cannot establish scientific effectiveness.
+  blocking: false
+  status: HISTORICAL_ACTIVE_BOUNDARY
+- limitation_id: P00-LIM-L0-001
+  origin_phase: P00
+  description: P00 Layer 0, Evidence Map, and basic read-only Layer 10 package were
+    completed under the historical P00 workflow; later project workflow is governed
+    by current Governance V6.1 and the cumulative project state.
+  blocking: false
+  status: HISTORICAL_WORKFLOW_BOUNDARY
+- limitation_id: PUBLIC_EEG_ONLY
+  scope: P01 and downstream inherited
+  description: The empirical substrate is public benchmark/research EEG, not a clinical
+    or deployment population.
+  evidence_consequence: Supports public-data provenance and benchmark data-contract
+    claims only.
+  claim_consequence: No clinical generalization or deployment claims.
+  blocking: false
+  downstream: P02-P15; Layer 0
+  origin_phase: P01
+- limitation_id: NON_CLINICAL
+  scope: Project/P01
+  description: No clinical cohort, clinical endpoint, or treatment outcome is present.
+  evidence_consequence: Evidence is non-clinical.
+  claim_consequence: Clinical benefit/effectiveness claims prohibited.
+  blocking: false
+  downstream: All claim-bearing outputs
+  origin_phase: P01
+- limitation_id: NO_DEPLOYMENT_CLAIM
+  scope: Project/P01
+  description: P01 does not evaluate deployed real-world control, operational safety,
+    or medical-device behavior.
+  evidence_consequence: Execution validity cannot be extrapolated to deployment safety.
+  claim_consequence: Deployment/safety claims prohibited.
+  blocking: false
+  downstream: Layer 0 and later deployment-related phases
+  origin_phase: P01
+- limitation_id: PRIVATE_KAGGLE_EXTERNAL_ARTIFACT_ACCESS
+  scope: P01 external persistence
+  description: Core and A4 numerical HDF5 artifacts are private Kaggle Datasets.
+  evidence_consequence: Reproduction requires authorized access plus exact provider
+    revision and manifest-hash verification.
+  claim_consequence: No effect on scientific content, but constrains independent retrieval.
+  blocking: false
+  downstream: P02-P15 reproducibility
+  origin_phase: P01
+- limitation_id: A4_R2_RETROSPECTIVE_FEASIBILITY_ORIGIN_NOT_CONFIRMATORY_IN_P01
+  scope: A4
+  description: A4 R2 was introduced after a real +4.0 s boundary infeasibility was
+    observed.
+  evidence_consequence: R2 is frozen prospectively for future downstream use but is
+    not an originally preregistered P01 effectiveness condition.
+  claim_consequence: No A4 effectiveness claim from P01.
+  blocking: false
+  downstream: P02 A4 and Layer 0
+  origin_phase: P01
+- limitation_id: ACTUAL_RUNTIME_PYTHON_3_12_13_WITH_COMPATIBILITY_AMENDMENT
+  scope: Execution environment
+  description: Build Book intended Python 3.11, while accepted Kaggle execution used
+    Python 3.12.13 under a documented compatibility amendment.
+  evidence_consequence: Exact reproduction should use actual captured environment
+    or validate equivalence.
+  claim_consequence: No scientific claim consequence when science/config remains unchanged.
+  blocking: false
+  downstream: Reproduction
+  origin_phase: P01
+- limitation_id: ADAPTIVE_DISK_RESOURCE_AMENDMENT
+  scope: Execution resources
+  description: Governed amendment P01-L1-KAGGLE-ADAPTIVE-DISK-R1 replaced the legacy
+    60 GiB preflight with an adaptive measured requirement with 6.0 GiB effective
+    minimum; observed free disk was 18.94 GiB.
+  evidence_consequence: Resource policy differs from pre-run intent but was recorded
+    and fail-safe.
+  claim_consequence: No scientific claim consequence.
+  blocking: false
+  downstream: Reproduction
+  origin_phase: P01
+- limitation_id: SOURCE_LICENSE_REDISTRIBUTION_CONSTRAINTS
+  scope: Dataset persistence
+  description: Source-specific licenses, especially BNCI CC BY-ND, constrain redistribution
+    of raw/derived signal bytes.
+  evidence_consequence: Bundle carries metadata/hashes/pointers rather than unrestricted
+    raw-data redistribution.
+  claim_consequence: No performance consequence; affects artifact distribution.
+  blocking: false
+  downstream: Repository/release packaging
+  origin_phase: P01
+- limitation_id: BINARY_MI_BRANCH_SCOPE
+  scope: P01 task
+  description: P01 official supervised denominator is left-hand versus right-hand
+    imagery only; rest, feet, tongue, execution, technical and unlabeled online/test
+    events are excluded as defined per source.
+  evidence_consequence: Results describe the frozen binary task only.
+  claim_consequence: No claims about excluded tasks/classes.
+  blocking: false
+  downstream: P02-P15
+  origin_phase: P01

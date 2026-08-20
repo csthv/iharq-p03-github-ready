@@ -1,0 +1,974 @@
+register_id: P00-EXPECTED-OUTPUT-CLOSURE-R2
+row_count: 51
+rows:
+- output_id: OUT-001
+  official_or_local_name: Repository skeleton
+  canonical_type_or_profile: directory
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: directory
+  required_path_or_path_class: .
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: .
+  observed_identity: Repository skeleton
+  observed_hash: 9323691608769f4749405dfd9e8f3ddb19fd8471d5ea90ffa4474a9ba7e4c123
+  observed_validation: directory content hash; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-002
+  official_or_local_name: Source modules
+  canonical_type_or_profile: python package
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: python package
+  required_path_or_path_class: src/iharq
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: src/iharq
+  observed_identity: Source modules
+  observed_hash: ea3dedc9af7411c1544820f23d36c4cc99c1270ca6dde00428dffa8a6ad6938f
+  observed_validation: directory content hash; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-003
+  official_or_local_name: Schema catalog
+  canonical_type_or_profile: yaml
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: yaml
+  required_path_or_path_class: catalogs/final_schema_catalog.yaml
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: catalogs/final_schema_catalog.yaml
+  observed_identity: Schema catalog
+  observed_hash: d9daa156b47450212ee4c0c6b8fb99113123240f496d77a291c7153d965ded21
+  observed_validation: present; nonempty; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-004
+  official_or_local_name: 85 schema files
+  canonical_type_or_profile: json schema
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: json schema
+  required_path_or_path_class: schemas
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: schemas
+  observed_identity: 85 schema files
+  observed_hash: d6117841448516117d961a53ea2b7d57902b107e61e813d684b67ca29826f42b
+  observed_validation: directory content hash; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-005
+  official_or_local_name: 35 configuration profiles
+  canonical_type_or_profile: yaml
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: yaml
+  required_path_or_path_class: configs
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: configs
+  observed_identity: 35 configuration profiles
+  observed_hash: 99f9b23c16980c24573b6271a174b905511df0c41a581253c9cbf87626e78055
+  observed_validation: directory content hash; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-006
+  official_or_local_name: 79 record-family profiles
+  canonical_type_or_profile: yaml
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: yaml
+  required_path_or_path_class: catalogs/final_record_family_coverage_matrix.yaml
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: catalogs/final_record_family_coverage_matrix.yaml
+  observed_identity: 79 record-family profiles
+  observed_hash: 417195626d6ddd0605ea68ac8046deeded22b7e56b4cce006544db8631de258c
+  observed_validation: present; nonempty; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-007
+  official_or_local_name: P00-P15 phase contracts
+  canonical_type_or_profile: yaml
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: yaml
+  required_path_or_path_class: contracts/phases
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: contracts/phases
+  observed_identity: P00-P15 phase contracts
+  observed_hash: 374d35778b57391279c7640de25a3751867281f1501d2f35bbcba8875ae9e5fe
+  observed_validation: directory content hash; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-008
+  official_or_local_name: L0-L10 foundation matrix
+  canonical_type_or_profile: yaml
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: yaml
+  required_path_or_path_class: catalogs/final_all_layer_artifact_matrix.yaml
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: catalogs/final_all_layer_artifact_matrix.yaml
+  observed_identity: L0-L10 foundation matrix
+  observed_hash: afe7d0fb5ee7099fa54c9e04fcc81bbd9d29c4f833482204f885f26e5cb8c70e
+  observed_validation: present; nonempty; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-009
+  official_or_local_name: Stable identity and canonical hashing implementation
+  canonical_type_or_profile: python
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: python
+  required_path_or_path_class: src/iharq/canonical.py
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: src/iharq/canonical.py
+  observed_identity: Stable identity and canonical hashing implementation
+  observed_hash: 3471db07e717be1b17cbd84153e1262f0610671d8f3a3c69126a0e0a47a1b75c
+  observed_validation: present; nonempty; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-010
+  official_or_local_name: Valid fixture inventory
+  canonical_type_or_profile: json
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: json
+  required_path_or_path_class: fixtures/valid
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: fixtures/valid
+  observed_identity: Valid fixture inventory
+  observed_hash: 3c2ff59d532936414f0e037b9dec3dd97535092599b433e994e796d7ae3e0e24
+  observed_validation: directory content hash; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-011
+  official_or_local_name: Integrated fixture inventory
+  canonical_type_or_profile: json
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: json
+  required_path_or_path_class: fixtures/integrated
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: fixtures/integrated
+  observed_identity: Integrated fixture inventory
+  observed_hash: ca50ac8ef4694e431a147a7394edc92d81beea2d9e287cfe93994186e16ca1c3
+  observed_validation: directory content hash; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-012
+  official_or_local_name: Malformed fixture inventory
+  canonical_type_or_profile: json
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: json
+  required_path_or_path_class: fixtures/invalid
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: fixtures/invalid
+  observed_identity: Malformed fixture inventory
+  observed_hash: 19da55a8867603aac74e2248882754a071598cff72da8f0d542200923b3d4ce7
+  observed_validation: directory content hash; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-013
+  official_or_local_name: Deterministic tests
+  canonical_type_or_profile: python
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: python
+  required_path_or_path_class: tests
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: tests
+  observed_identity: Deterministic tests
+  observed_hash: 54460125635b24b132f51ba9e8eefbccc3c0b9265ccdf6cbb1b4f236fa9d6d3c
+  observed_validation: directory content hash; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-014
+  official_or_local_name: Protocol v1.0 Master
+  canonical_type_or_profile: markdown
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: markdown
+  required_path_or_path_class: docs/authorities/protocol_v1_0/master/IHARQ_Protocol_v1_0_Master_R2.md
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: docs/authorities/protocol_v1_0/master/IHARQ_Protocol_v1_0_Master_R2.md
+  observed_identity: Protocol v1.0 Master
+  observed_hash: 938fcaab2be30d2e59ccc5082a9c3cc6c2ccc3e8889b352099aa514b96e046d4
+  observed_validation: present; nonempty; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-015
+  official_or_local_name: P00 Protocol Annex
+  canonical_type_or_profile: markdown
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: markdown
+  required_path_or_path_class: docs/authorities/protocol_v1_0/phases/P00/IHARQ_Protocol_v1_0_Phase_00_Annex_R2.md
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: docs/authorities/protocol_v1_0/phases/P00/IHARQ_Protocol_v1_0_Phase_00_Annex_R2.md
+  observed_identity: P00 Protocol Annex
+  observed_hash: a0dbabfc1c5be739955696f8b5d32d9cdbdedf563a1c9225d9767599bbfbd7b5
+  observed_validation: present; nonempty; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-016
+  official_or_local_name: Protocol final independent audit
+  canonical_type_or_profile: markdown
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: markdown
+  required_path_or_path_class: docs/authorities/protocol_v1_0/final_independent_audit_R2/reports/IHARQ_Protocol_v1_0_Final_Independent_Audit_Report_R2.md
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: docs/authorities/protocol_v1_0/final_independent_audit_R2/reports/IHARQ_Protocol_v1_0_Final_Independent_Audit_Report_R2.md
+  observed_identity: Protocol final independent audit
+  observed_hash: 43ad5b04ac5aff825cf30ed36ae8a8f8ed636f0ff5a3a51a5717a5a04ea29ff7
+  observed_validation: present; nonempty; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-017
+  official_or_local_name: P00 execution release
+  canonical_type_or_profile: directory
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: directory
+  required_path_or_path_class: reports/phase_00_analysis/execution_release_R2
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: reports/phase_00_analysis/execution_release_R2
+  observed_identity: P00 execution release
+  observed_hash: 915d08a2812c7db18e5c2793e37fd7ea95ba21034ecc5be7fe92b0375b321959
+  observed_validation: directory content hash; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-018
+  official_or_local_name: Phase Analysis report completeness successor
+  canonical_type_or_profile: markdown
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: markdown
+  required_path_or_path_class: docs/reports/phase_00/IHARQ_Phase_0_Analysis_Evidence_Results_and_Interpretation_Report_R4_FINAL_DOUBLE_CHECK_COMPLETENESS.md
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: docs/reports/phase_00/IHARQ_Phase_0_Analysis_Evidence_Results_and_Interpretation_Report_R4_FINAL_DOUBLE_CHECK_COMPLETENESS.md
+  observed_identity: Phase Analysis report completeness successor
+  observed_hash: 05cfa89ff5506393607346165216a9d5b39d2c621b4f04c0d7787365b159f67f
+  observed_validation: present; nonempty; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-019
+  official_or_local_name: Phase Analysis completeness audit
+  canonical_type_or_profile: markdown
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: markdown
+  required_path_or_path_class: docs/reports/phase_00/IHARQ_Phase_0_Analysis_Completeness_Independent_Audit_Report_R3.md
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: docs/reports/phase_00/IHARQ_Phase_0_Analysis_Completeness_Independent_Audit_Report_R3.md
+  observed_identity: Phase Analysis completeness audit
+  observed_hash: c2e6849020fb308c18ade1ef8a68aa438fbaa297fd592432cc6299ca9ef73f99
+  observed_validation: present; nonempty; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-020
+  official_or_local_name: Layer 0 final disposition
+  canonical_type_or_profile: markdown
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: markdown
+  required_path_or_path_class: docs/layer0/phase_00/IHARQ_Phase_0_Layer_0_Final_Disposition_Report_R2.md
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: docs/layer0/phase_00/IHARQ_Phase_0_Layer_0_Final_Disposition_Report_R2.md
+  observed_identity: Layer 0 final disposition
+  observed_hash: c9f0ef892979e1204fd72b42396c4a2f3181f290bea51111a1559c305ea3fc70
+  observed_validation: present; nonempty; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-021
+  official_or_local_name: Allowed/prohibited wording catalog
+  canonical_type_or_profile: markdown
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: markdown
+  required_path_or_path_class: docs/layer0/phase_00/IHARQ_Phase_0_Allowed_and_Prohibited_Wording_Catalog_R1.md
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: docs/layer0/phase_00/IHARQ_Phase_0_Allowed_and_Prohibited_Wording_Catalog_R1.md
+  observed_identity: Allowed/prohibited wording catalog
+  observed_hash: 2ca27a8502a935ce186ff841a5e58b9d4de24e37decc7df5411ca4dfdef98b5f
+  observed_validation: present; nonempty; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-022
+  official_or_local_name: Claim/limitation/warning register
+  canonical_type_or_profile: markdown
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: markdown
+  required_path_or_path_class: docs/layer0/phase_00/IHARQ_Phase_0_Claim_Limitation_and_Warning_Register_R2.md
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: docs/layer0/phase_00/IHARQ_Phase_0_Claim_Limitation_and_Warning_Register_R2.md
+  observed_identity: Claim/limitation/warning register
+  observed_hash: 937f04e7b1f87ba389a2ad85d0f8150c823760f5b41d003d81de246a33ce525f
+  observed_validation: present; nonempty; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-023
+  official_or_local_name: Report correction decision
+  canonical_type_or_profile: markdown
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: markdown
+  required_path_or_path_class: docs/layer0/phase_00/IHARQ_Phase_0_Report_Correction_Decision_R1.md
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: docs/layer0/phase_00/IHARQ_Phase_0_Report_Correction_Decision_R1.md
+  observed_identity: Report correction decision
+  observed_hash: 04d5eeb5cc0939571226f6b1fe8113db3166546f45503ea2e67fbeb157191689
+  observed_validation: present; nonempty; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-024
+  official_or_local_name: Evidence Map annex
+  canonical_type_or_profile: markdown
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: markdown
+  required_path_or_path_class: docs/evidence_map/phase_00/IHARQ_Phase_0_Paper_and_Thesis_Evidence_Map_Annex_R2.md
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: docs/evidence_map/phase_00/IHARQ_Phase_0_Paper_and_Thesis_Evidence_Map_Annex_R2.md
+  observed_identity: Evidence Map annex
+  observed_hash: ece1471edf1e117770e7cd3966a61267fd51a726a72630929fd70a1a06a80fd6
+  observed_validation: present; nonempty; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-025
+  official_or_local_name: Evidence Map machine matrix
+  canonical_type_or_profile: csv
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: csv
+  required_path_or_path_class: reports/evidence_map/phase_00/claim_evidence_matrix.csv
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: reports/evidence_map/phase_00/claim_evidence_matrix.csv
+  observed_identity: Evidence Map machine matrix
+  observed_hash: c826b1d2c7dc52feaa5575b6acf890a473048e6e73e8ab30db200a0ab665fde0
+  observed_validation: present; nonempty; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-026
+  official_or_local_name: Layer 10 package report
+  canonical_type_or_profile: markdown
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: markdown
+  required_path_or_path_class: docs/layer10/phase_00/IHARQ_Phase_0_Basic_Layer_10_Read_Only_Package_Report_R2.md
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: docs/layer10/phase_00/IHARQ_Phase_0_Basic_Layer_10_Read_Only_Package_Report_R2.md
+  observed_identity: Layer 10 package report
+  observed_hash: 1f177dafa8a5051c5e65c1fbc58d3bd1cd656e9741f20861ac0f4831ffee31cb
+  observed_validation: present; nonempty; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-027
+  official_or_local_name: Layer 10 views
+  canonical_type_or_profile: directory
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: directory
+  required_path_or_path_class: docs/layer10/phase_00/views
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: docs/layer10/phase_00/views
+  observed_identity: Layer 10 views
+  observed_hash: c06a77a89d79bef69b29ed9a70a7b580cd37ba76cbd5483366b5b3a698796efe
+  observed_validation: directory content hash; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-028
+  official_or_local_name: Layer 10 cards
+  canonical_type_or_profile: directory
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: directory
+  required_path_or_path_class: docs/layer10/phase_00/cards
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: docs/layer10/phase_00/cards
+  observed_identity: Layer 10 cards
+  observed_hash: 34c6fc0704e5c0b4d6793c59068186441b4aef1dbe31b0ebff65f8214d8f0492
+  observed_validation: directory content hash; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-029
+  official_or_local_name: Layer 10 exports
+  canonical_type_or_profile: directory
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: directory
+  required_path_or_path_class: reports/layer10/phase_00/exports
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: reports/layer10/phase_00/exports
+  observed_identity: Layer 10 exports
+  observed_hash: 318f1d28770904833c059adcb45c69f9816153461566561feb57214b462f655d
+  observed_validation: directory content hash; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-030
+  official_or_local_name: Reproduction/provenance guide
+  canonical_type_or_profile: markdown
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: markdown
+  required_path_or_path_class: docs/layer10/phase_00/IHARQ_Phase_0_Reproduction_and_Provenance_Guide_R1.md
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: docs/layer10/phase_00/IHARQ_Phase_0_Reproduction_and_Provenance_Guide_R1.md
+  observed_identity: Reproduction/provenance guide
+  observed_hash: c2a65b192ba011c1f65a8d5c100c7c47c3a7509ea3103e22186bd32f9218f5e8
+  observed_validation: present; nonempty; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-031
+  official_or_local_name: L0/EvidenceMap/L10 final audit
+  canonical_type_or_profile: markdown
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: markdown
+  required_path_or_path_class: docs/reports/phase_00/IHARQ_Phase_0_L0_EvidenceMap_L10_Final_Independent_Audit_Report_R2.md
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: docs/reports/phase_00/IHARQ_Phase_0_L0_EvidenceMap_L10_Final_Independent_Audit_Report_R2.md
+  observed_identity: L0/EvidenceMap/L10 final audit
+  observed_hash: e16794022634a439cd8f0029cd54db0362fcb33ec75a46424c1c62b24132bbe5
+  observed_validation: present; nonempty; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-032
+  official_or_local_name: Independent source ledger
+  canonical_type_or_profile: yaml
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: yaml
+  required_path_or_path_class: reports/phase_00_final_double_check/independent_source_intake_and_supersession_ledger.yaml
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: reports/phase_00_final_double_check/independent_source_intake_and_supersession_ledger.yaml
+  observed_identity: Independent source ledger
+  observed_hash: 837cde39e85ec9b5c2287abae6ce5da9af8f7e3968b5c703ada7b037f0f25dd6
+  observed_validation: present; nonempty; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-033
+  official_or_local_name: Independent requirement matrix
+  canonical_type_or_profile: csv
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: csv
+  required_path_or_path_class: reports/phase_00_final_double_check/independent_phase_0_requirement_matrix.csv
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: reports/phase_00_final_double_check/independent_phase_0_requirement_matrix.csv
+  observed_identity: Independent requirement matrix
+  observed_hash: 36f50b0482eeb2dbc9a356d5bbd5b4da0a84b17acada387638184c746c684126
+  observed_validation: present; nonempty; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-034
+  official_or_local_name: Responsibility closure matrix
+  canonical_type_or_profile: csv
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: csv
+  required_path_or_path_class: reports/phase_00_final_double_check/phase_0_responsibility_closure_matrix.csv
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: reports/phase_00_final_double_check/phase_0_responsibility_closure_matrix.csv
+  observed_identity: Responsibility closure matrix
+  observed_hash: 95849483d80b388a093fb17966181f19f5fbf364076e9e3aa86e8484c814336b
+  observed_validation: present; nonempty; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-035
+  official_or_local_name: L0-L10 responsibility matrix
+  canonical_type_or_profile: csv
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: csv
+  required_path_or_path_class: reports/phase_00_final_double_check/phase_0_layer_responsibility_matrix.csv
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: reports/phase_00_final_double_check/phase_0_layer_responsibility_matrix.csv
+  observed_identity: L0-L10 responsibility matrix
+  observed_hash: 2a429895921c7cc564866847b92e9efa780a70c0b663146f6ee3e84e77218c41
+  observed_validation: present; nonempty; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-036
+  official_or_local_name: Expected output closure register
+  canonical_type_or_profile: yaml
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: yaml
+  required_path_or_path_class: reports/phase_00_final_double_check/phase_0_expected_output_and_artifact_closure.yaml
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: reports/phase_00_final_double_check/phase_0_expected_output_and_artifact_closure.yaml
+  observed_identity: Expected output closure register
+  observed_hash: BOUND_BY_FINAL_SELF_EXCLUDING_PACKAGE_MANIFEST
+  observed_validation: present; nonempty; final bytes bound by self-excluding package
+    manifest
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-037
+  official_or_local_name: A0-A13 readiness matrix
+  canonical_type_or_profile: yaml
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: yaml
+  required_path_or_path_class: reports/phase_00_final_double_check/phase_0_ablation_readiness_manifest.yaml
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: reports/phase_00_final_double_check/phase_0_ablation_readiness_manifest.yaml
+  observed_identity: A0-A13 readiness matrix
+  observed_hash: 453398279e044311bbf25762edb75b69bd1da7f611d717dec231c44bd8cedd0c
+  observed_validation: present; nonempty; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-038
+  official_or_local_name: Analysis coverage audit
+  canonical_type_or_profile: yaml
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: yaml
+  required_path_or_path_class: reports/phase_00_final_double_check/phase_0_ablation_analysis_report_coverage_audit.yaml
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: reports/phase_00_final_double_check/phase_0_ablation_analysis_report_coverage_audit.yaml
+  observed_identity: Analysis coverage audit
+  observed_hash: 1b8485cfd138a0e61fdffc0d8a85ab5c027440bebdfe63d3f39388698639e3ad
+  observed_validation: present; nonempty; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-039
+  official_or_local_name: Final current Markdown distribution
+  canonical_type_or_profile: directory
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: directory
+  required_path_or_path_class: docs/phase_00/final_documents
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: docs/phase_00/final_documents
+  observed_identity: Final current Markdown distribution
+  observed_hash: 48ba761b7011aef5803c3b18b72a23f212bcd94e3c34f1eafdd5b35f12dff163
+  observed_validation: directory content hash; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-040
+  official_or_local_name: Independent closure report
+  canonical_type_or_profile: markdown
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: markdown
+  required_path_or_path_class: docs/reports/phase_00/IHARQ_Phase_0_Final_Whole_Stack_Independent_Double_Check_Report_R2.md
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: docs/reports/phase_00/IHARQ_Phase_0_Final_Whole_Stack_Independent_Double_Check_Report_R2.md
+  observed_identity: Independent closure report
+  observed_hash: a6cef633d77ec2f07dd6cf8f3fa34fb617c495e72dd25c195f90a74425bbf795
+  observed_validation: present; nonempty; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-041
+  official_or_local_name: Independent Phase 1 handoff
+  canonical_type_or_profile: markdown
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: markdown
+  required_path_or_path_class: docs/handoffs/IHARQ_Phase_0_to_Phase_1_Independent_Double_Check_Handoff_R2.md
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: docs/handoffs/IHARQ_Phase_0_to_Phase_1_Independent_Double_Check_Handoff_R2.md
+  observed_identity: Independent Phase 1 handoff
+  observed_hash: fb3ba747c26b2bfd7556d9e87e3e04c3e8c860f8b5a094c751b9d9df88e83dc3
+  observed_validation: present; nonempty; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-042
+  official_or_local_name: Machine-readable final handoff
+  canonical_type_or_profile: yaml
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: yaml
+  required_path_or_path_class: reports/phase_00_final_double_check/final_double_check_handoff.yaml
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: reports/phase_00_final_double_check/final_double_check_handoff.yaml
+  observed_identity: Machine-readable final handoff
+  observed_hash: 10576bba494d95b52add44adeb7f88286afb044e668a4b17e8551dbecc571ddf
+  observed_validation: present; nonempty; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-043
+  official_or_local_name: Independent validator
+  canonical_type_or_profile: python
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: python
+  required_path_or_path_class: scripts/run_phase0_final_independent_double_check.py
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: scripts/run_phase0_final_independent_double_check.py
+  observed_identity: Independent validator
+  observed_hash: df8f02cf16673b887be1d43f48f978ba4f1df17a7783f5cb0455367cedf35555
+  observed_validation: present; nonempty; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-044
+  official_or_local_name: Independent validator tests
+  canonical_type_or_profile: directory
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: directory
+  required_path_or_path_class: tests
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: tests
+  observed_identity: Independent validator tests
+  observed_hash: 54460125635b24b132f51ba9e8eefbccc3c0b9265ccdf6cbb1b4f236fa9d6d3c
+  observed_validation: directory content hash; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-045
+  official_or_local_name: 39-case adversarial fixtures
+  canonical_type_or_profile: directory
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: directory
+  required_path_or_path_class: fixtures/invalid/final_double_check
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: fixtures/invalid/final_double_check
+  observed_identity: 39-case adversarial fixtures
+  observed_hash: 5af7c31a1dfabe7fe633445b3473294fc3e76ef4b1bba2423e567a17c413ac7b
+  observed_validation: directory content hash; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-046
+  official_or_local_name: Environment and clean reproduction report
+  canonical_type_or_profile: json
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: json
+  required_path_or_path_class: reports/phase_00_final_double_check/environment_and_clean_reproduction_report.json
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: reports/phase_00_final_double_check/environment_and_clean_reproduction_report.json
+  observed_identity: Environment and clean reproduction report
+  observed_hash: 13c3e46c7542384defe949c2bdf2f9ab231e8e90196eb9872eb886a918d708c7
+  observed_validation: present; nonempty; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-047
+  official_or_local_name: Security/integrity report
+  canonical_type_or_profile: json
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: json
+  required_path_or_path_class: reports/phase_00_final_double_check/security_integrity_package_audit.json
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: reports/phase_00_final_double_check/security_integrity_package_audit.json
+  observed_identity: Security/integrity report
+  observed_hash: 59885e09353eb9fb556b419e805c98bc39b1a3cac5dd548b6f5b2216b31d84b6
+  observed_validation: present; nonempty; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-048
+  official_or_local_name: Defect/repair/successor ledger
+  canonical_type_or_profile: yaml
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: yaml
+  required_path_or_path_class: reports/phase_00_final_double_check/defect_repair_successor_invalidation_ledger.yaml
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: reports/phase_00_final_double_check/defect_repair_successor_invalidation_ledger.yaml
+  observed_identity: Defect/repair/successor ledger
+  observed_hash: 5946fa9203b9bccabd92139f3c876420d62e9b5b870a3184f5183f6d458942a7
+  observed_validation: present; nonempty; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-049
+  official_or_local_name: Independent P0-GATE-18 specification
+  canonical_type_or_profile: yaml
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: yaml
+  required_path_or_path_class: reports/phase_00_final_double_check/independent_p0_gate_18.yaml
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: reports/phase_00_final_double_check/independent_p0_gate_18.yaml
+  observed_identity: Independent P0-GATE-18 specification
+  observed_hash: e0818af24f62b0f01b2b9e228f397ba86bda83798da5b63758de1d33228638ed
+  observed_validation: present; nonempty; registered; tested
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-050
+  official_or_local_name: Final repository manifest
+  canonical_type_or_profile: json
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: json
+  required_path_or_path_class: manifests/phase0_final_independent_double_check_package_content_manifest_R2.json
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: manifests/phase0_final_independent_double_check_package_content_manifest_R2.json
+  observed_identity: Final repository manifest
+  observed_hash: BOUND_BY_FINAL_SELF_EXCLUDING_PACKAGE_MANIFEST
+  observed_validation: present; nonempty; final bytes bound by self-excluding package
+    manifest
+  closure_status: CREATED_AND_VALIDATED
+  defect_or_limitation_id: ''
+- output_id: OUT-051
+  official_or_local_name: External immutable publication
+  canonical_type_or_profile: external transaction
+  governing_sources: GOV-V4;ARCH-T29-R1;PLAN-R41;PLAY-R41
+  producer: P00 lawful owner
+  consumers: P01-P15;publication/closure
+  required_format: external transaction
+  required_path_or_path_class: NOT_PERFORMED
+  required_fields_or_contents: nonempty;traceable;validated
+  required_status_and_lifecycle: CURRENT_VALIDATED or lawfully deferred
+  required_validator_or_test: independent double-check suite
+  required_manifest_or_hash: required for current artifacts
+  required_report_location: independent executive report
+  observed_path: NOT_PERFORMED_BY_THIS_PROMPT
+  observed_identity: External publication/release operation
+  observed_hash: ''
+  observed_validation: lawfully deferred external transaction
+  closure_status: CREATED_WITH_NONBLOCKING_LIMITATION
+  defect_or_limitation_id: LIM-PUBLICATION-001

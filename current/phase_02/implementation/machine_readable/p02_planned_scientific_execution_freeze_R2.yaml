@@ -1,0 +1,210 @@
+freeze_id: P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R2
+status: FROZEN_FOR_NOTEBOOK_IMPLEMENTATION
+stage05_behavior: VERIFY_ONLY
+master_seed: 20260804
+seed_derivation:
+  algorithm: SHA256_CANONICAL_UTF8_FIRST8_HEX_MOD_2P31_MINUS1_ZERO_TO_ONE
+  fields:
+  - master_seed
+  - phase_id
+  - dataset_id
+  - run_family_id
+  - budget_id
+  - budget_repeat_id
+  - model_repeat_index
+  - purpose
+  purposes:
+  - MODEL_INIT
+  - SAMPLER
+  - AUGMENT
+  - DATALOADER
+  - PERMUTATION
+  - STAT_BOOTSTRAP
+  - STAT_TEST
+  - CHECKPOINT_TIEBREAK
+repeats:
+  deterministic_classical_riemannian: 1
+  neural_sequence_ssl: 5
+  san_strat: 20
+  san_perm: 100
+  budget_repeat_count: 1
+  budget_repeat_id: P01_FROZEN_SINGLE_SUBSET
+budgets:
+  profile: P01-L1-LOW-CAL-OFFICIAL-R2
+  per_class:
+  - 1
+  - 2
+  - 4
+  - 8
+  - 16
+  - 32
+  source_role: calibration
+  seed: 20260804
+  membership: INHERITED_EXACT
+  new_membership_generation: PROHIBITED
+  limitation: SINGLE_FROZEN_SUBSET_LIMITATION
+metrics:
+  primary: BACC
+  complementary: F1_MACRO
+  secondary: ACC
+  conditional:
+  - ROC_AUC
+  required_source:
+  - CONFUSION
+  - CLASS_SUPPORT
+  - PRED_COMPLETE
+  - BRANCH_SUCCESS
+  - A4_DELAY
+  not_selected:
+  - KAPPA
+  - MCC
+  - AUPRC
+  - BRIER
+  - NLL
+  - ECE
+  - CALIBRATION_SLOPE
+  - RISK_COVERAGE
+statistics:
+  confidence_level: 0.95
+  bootstrap_resamples: 10000
+  bootstrap_unit: participant_cluster
+  bootstrap_primary: BCa
+  bootstrap_fallback: percentile
+  two_method: paired_wilcoxon_two_sided
+  multi_method: friedman_then_predeclared_paired_wilcoxon
+  multiplicity: Holm_within_confirmatory_family
+  min_complete_participants: 5
+  effect_sizes:
+  - paired_median_difference
+  - matched_pairs_rank_biserial
+  - kendall_W_for_friedman
+  cross_dataset: dataset_stratified_no_confirmatory_meta_analysis
+hyperparameters:
+  CSP_LDA:
+    csp_components:
+    - 4
+    - 6
+    - 8
+    csp_reg: oas
+    lda_solver: lsqr
+    lda_shrinkage: auto
+  FBCSP_LR:
+    bands_hz:
+    - - 8
+      - 12
+    - - 12
+      - 16
+    - - 16
+      - 20
+    - - 20
+      - 24
+    - - 24
+      - 28
+    - - 28
+      - 32
+    components_per_band:
+    - 2
+    - 4
+    C:
+    - 0.1
+    - 1
+    - 10
+    penalty: l2
+    max_iter: 2000
+  TS_LR:
+    covariance: oas
+    tangent_metric: riemann
+    C:
+    - 0.1
+    - 1
+    - 10
+    penalty: l2
+    max_iter: 2000
+  EA_TS:
+    inherits: selected_TS_LR
+    extra_search: false
+  MDM:
+    metric: riemann
+    diagnostic: true
+  EEGNET:
+    lr:
+    - 0.001
+    - 0.0003
+    weight_decay:
+    - 0
+    - 0.0001
+    dropout:
+    - 0.25
+    - 0.5
+  FBCNET:
+    lr:
+    - 0.001
+    - 0.0003
+    weight_decay:
+    - 0
+    - 0.0001
+    architecture_search: false
+    equivalence_gate: true
+  SEQUENCE_SLOT:
+    preferred: DBConformer
+    fallback: EEGConformer
+    lr:
+    - 0.0003
+    - 0.0001
+    weight_decay:
+    - 0.0001
+    - 0.001
+    selection_before_results: true
+  CBRAMOD:
+    source_recipe_required: true
+    guessed_recipe: PROHIBITED
+  REVE:
+    diagnostic_source_recipe_only: true
+candidate_caps:
+  max_successful_per_family: 8
+  max_attempted_per_family: 12
+  family_tuning_minutes: 60
+  classical_candidate_minutes: 10
+  neural_candidate_minutes: 30
+  neural_final_fit_minutes: 45
+neural_training:
+  optimizer: AdamW
+  max_epochs: 100
+  early_stop_metric: validation_BACC
+  patience: 12
+  min_delta: 0.0
+  restore_best: true
+  batch_ladder:
+  - 64
+  - 32
+  - 16
+  effective_batch_target: 64
+  primary_augmentation: NONE
+  diagnostic_augmentation: EEGNet_SEGMENTATION_RECONSTRUCTION_FULL_TRAIN_ONLY
+ablation:
+  direct:
+  - A0
+  - A4
+  additional_dispatcher: 18U_SAME_NOTEBOOK
+  A14: ABSENT_PROHIBITED
+  result_dependent_unlock: PROHIBITED
+a4:
+  representatives: validation_selected_one_per_role
+  ensemble_member_cap: 4
+  candidate_combinations:
+  - classical+riemannian
+  - classical+compact_neural
+  - riemannian+compact_neural
+  - classical+riemannian+compact_neural
+  - best_non_ssl+eligible_ssl
+  vote: fixed_plurality_majority
+  probability_average: equal_weight_native_probability_only
+  cross_model_raw_scores: PROHIBITED
+  latency_warmup: 10
+  latency_timed_iterations: 100
+  batch1_primary: true
+  cbramod_core_200hz_samples: 600
+  cbramod_a4_multi_200hz_samples: 400
+  cbramod_a4_long_200hz_samples: 700
+  cbramod_a4_long_status: INCOMPATIBLE_FAIL_CLOSED_UNLESS_PREVERIFIED_EXACT_700_SUPPORT
+owner_decisions_remaining: 0

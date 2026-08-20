@@ -1,0 +1,51 @@
+{
+  "record_id": "IHARQ-WINDOWRECORD-20260806-f5647121838a602d",
+  "record_type": "WindowRecord",
+  "schema_version": "1.0-p01",
+  "authority_status": "REGISTRY_REFERENCED",
+  "owner_layer": "L1",
+  "phase_id": "P01",
+  "config_id": "d03f0a7c869dd95a2a67e5a32edc501d52bfc3851d8e761ef56595d8bd1ff52f",
+  "source_ids": [
+    "IHARQ-DATASETRECORD-20260806-66309cda68771bef",
+    "IHARQ-LABELMAPRECORD-20260806-4379781a3b5f5ea9",
+    "IHARQ-PREPROCESSINGRECORD-20260806-a11b59eeb3861a08",
+    "IHARQ-SPLITRECORD-20260806-e4e371d332c61e36"
+  ],
+  "evidence_mode": "IMPLEMENTATION",
+  "limitation_tags": [
+    "NON_CLINICAL",
+    "NO_DEPLOYMENT_CLAIM",
+    "PUBLIC_EEG_ONLY"
+  ],
+  "lifecycle_status": "VALIDATED",
+  "fixture": false,
+  "fixture_tags": [],
+  "evidence_role": "PRIMARY",
+  "payload": {
+    "window_id": "window:81698e921f4bb10f7bcd",
+    "parent_event_id": "PhysioNetMI:33:0:8:event:6",
+    "dataset_id": "PhysioNetMI",
+    "subject_id": "33",
+    "session_id": "0",
+    "run_id": "8",
+    "split_record_id": "IHARQ-SPLITRECORD-20260806-e4e371d332c61e36",
+    "preprocessing_record_id": "IHARQ-PREPROCESSINGRECORD-20260806-a11b59eeb3861a08",
+    "label_map_record_id": "IHARQ-LABELMAPRECORD-20260806-4379781a3b5f5ea9",
+    "original_source_event_sample": 4592,
+    "resampled_event_sample": 4592,
+    "start_offset_samples": 80,
+    "start_sample": 4672,
+    "stop_sample": 5152,
+    "duration_samples": 480,
+    "stride_samples": 480,
+    "overlap_group_id": "PhysioNetMI:33:0:8:event:6",
+    "normalized_label": "right_hand",
+    "original_label": "run_4_8_12:T2",
+    "role": "train",
+    "signal_pointer": "external_artifact_pointers/window_to_shard.jsonl#window_id=window:81698e921f4bb10f7bcd",
+    "channel_mask_id": null
+  },
+  "ablation_id": null,
+  "semantic_hash": "f5647121838a602dd16f9a7268417d23e567b8d464a0f9cef4f93be4bff17ac3"
+}

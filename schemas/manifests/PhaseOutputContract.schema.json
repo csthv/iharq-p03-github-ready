@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/csthv/IHARQ/schemas/manifests/PhaseOutputContract.schema.json",
+  "title": "PhaseOutputContract",
+  "type": "object",
+  "required": [
+    "contract_id",
+    "phase_id",
+    "required_outputs",
+    "terminal_states",
+    "limitations_required"
+  ],
+  "properties": {
+    "contract_id": {
+      "type": "string"
+    },
+    "phase_id": {
+      "type": "string"
+    },
+    "required_outputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "terminal_states": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "limitations_required": {
+      "const": true
+    }
+  },
+  "additionalProperties": false,
+  "x-iharq-status": "PHASE0_FOUNDATION_PROFILE"
+}

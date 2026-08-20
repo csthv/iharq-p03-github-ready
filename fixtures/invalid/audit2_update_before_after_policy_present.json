@@ -1,0 +1,1096 @@
+{
+  "bundle_id": "P00-AUDIT2-INVALID-UPDATE_BEFORE_AFTER_POLICY_PRESENT",
+  "records": [
+    {
+      "record_id": "IHARQ-UNCERTAINTYRECORD-20260803-813af18c4929ef1e",
+      "record_type": "UncertaintyRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L3",
+      "phase_id": "P00",
+      "config_id": "P00-AUDIT2-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "FOUNDATION_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "uncertainty_id": "U-A2-001",
+        "source_prediction_id": "PRED-A2-001",
+        "method_id": "CONF-SET",
+        "value": "0.31"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-THRESHOLDREGISTRYRECORD-20260803-d1814be6754fdc1a",
+      "record_type": "ThresholdRegistryRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L3",
+      "phase_id": "P00",
+      "config_id": "P00-AUDIT2-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-UNCERTAINTYRECORD-20260803-813af18c4929ef1e"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "FOUNDATION_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "threshold_id": "TH-A2-001",
+        "metric_entry_id": "METRIC-A2-001",
+        "value": "0.70",
+        "selection_split_id": "SPLIT-MOCK-CAL",
+        "validity_status": "VALID",
+        "operating_point_id": "OP-A2-001"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-EVIDENCEREQUESTRECORD-20260803-855369efb8bde484",
+      "record_type": "EvidenceRequestRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "SOURCE_REFERENCED_LOCAL_PROFILE",
+      "owner_layer": "L4",
+      "phase_id": "P00",
+      "config_id": "P00-AUDIT2-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-UNCERTAINTYRECORD-20260803-813af18c4929ef1e",
+        "IHARQ-THRESHOLDREGISTRYRECORD-20260803-d1814be6754fdc1a"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "FOUNDATION_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "evidence_request_id": "REQ-A2-001",
+        "source_prediction_id": "PRED-A2-001",
+        "source_uncertainty_id": "U-A2-001",
+        "source_threshold_id": "TH-A2-001",
+        "requested_evidence": [
+          "INDEPENDENT_CORROBORATION",
+          "FRESHNESS_CHECK"
+        ],
+        "request_status": "SATISFIED",
+        "reason_code": "UNCERTAINTY_ABOVE_ACCEPTANCE_BAND",
+        "rule_id": "IHARQ-RULE-A2-001",
+        "requested_at": "2026-08-03T00:00:00Z",
+        "abstention_allowed": true,
+        "required_limitations": [
+          "PUBLIC_DATA_ONLY"
+        ]
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-EVIDENCEQUALITYRECORD-20260803-e6df3535af5ecc10",
+      "record_type": "EvidenceQualityRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L4",
+      "phase_id": "P00",
+      "config_id": "P00-AUDIT2-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-EVIDENCEREQUESTRECORD-20260803-855369efb8bde484"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "FOUNDATION_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "evidence_quality_id": "EQ-A2-001",
+        "request_id": "REQ-A2-001",
+        "producer_id": "EVIDENCE-PRODUCER-A2",
+        "variant_id": "VARIANT-A2-01",
+        "source_evidence_ids": [
+          "EVID-A2-01",
+          "EVID-A2-02"
+        ],
+        "quality_status": "PARTIAL",
+        "compatibility_status": "COMPATIBLE",
+        "freshness_status": "CURRENT",
+        "corroboration_status": "CORROBORATED",
+        "insufficiency_reasons": [
+          "COVERAGE_INCOMPLETE"
+        ],
+        "quality_score": "0.62",
+        "producer_owner": "L4",
+        "variant_lineage_id": "VAR-LINEAGE-A2-001"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-IHARQDECISIONRECORD-20260803-ebd96133e2e58527",
+      "record_type": "IHARQDecisionRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L4",
+      "phase_id": "P00",
+      "config_id": "P00-AUDIT2-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-EVIDENCEREQUESTRECORD-20260803-855369efb8bde484",
+        "IHARQ-EVIDENCEQUALITYRECORD-20260803-e6df3535af5ecc10",
+        "IHARQ-UNCERTAINTYRECORD-20260803-813af18c4929ef1e"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "FOUNDATION_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "iharq_decision_id": "DEC-A2-001",
+        "request_id": "REQ-A2-001",
+        "evidence_quality_ids": [
+          "EQ-A2-001"
+        ],
+        "source_prediction_id": "PRED-A2-001",
+        "source_uncertainty_id": "U-A2-001",
+        "decision_status": "DEFERRED",
+        "action": "DEFER",
+        "reason_codes": [
+          "EVIDENCE_PARTIAL",
+          "UNCERTAINTY_ELEVATED"
+        ],
+        "fallback_action": "ESCALATE",
+        "method_id": "IHARQ-METHOD-A2-001",
+        "rule_id": "IHARQ-RULE-A2-001",
+        "trace_id": "TRACE-A2-001",
+        "explanation_id": "EXPL-A2-001",
+        "abstained": false,
+        "limitation_summary": "Mock foundation decision only; no scientific effectiveness evidence."
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-REGIMESTATERECORD-20260803-939ae17a3cbf49c8",
+      "record_type": "RegimeStateRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L5",
+      "phase_id": "P00",
+      "config_id": "P00-AUDIT2-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-IHARQDECISIONRECORD-20260803-ebd96133e2e58527"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "FOUNDATION_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "regime_state_id": "REG-A2-001",
+        "sequence_id": "SEQ-A2-001",
+        "window_id": "WIN-A2-001",
+        "time_index": 1,
+        "timestamp": "2026-08-03T00:01:00Z",
+        "regime": "DEGRADED",
+        "trust_state": "CAUTION",
+        "previous_state_id": null,
+        "transition_evidence_ids": [
+          "IHARQ-IHARQDECISIONRECORD-20260803-ebd96133e2e58527"
+        ],
+        "persistence_count": 1,
+        "hysteresis_state": "ENTERING",
+        "silent_reset": false
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-TEMPORALTRUSTRECORD-20260803-15895297850fb603",
+      "record_type": "TemporalTrustRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "SOURCE_REFERENCED_LOCAL_PROFILE",
+      "owner_layer": "L5",
+      "phase_id": "P00",
+      "config_id": "P00-AUDIT2-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-REGIMESTATERECORD-20260803-939ae17a3cbf49c8"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "FOUNDATION_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "temporal_trust_id": "TT-A2-001",
+        "regime_state_id": "REG-A2-001",
+        "sequence_id": "SEQ-A2-001",
+        "window_start": "2026-08-03T00:00:00Z",
+        "window_end": "2026-08-03T00:02:00Z",
+        "trust_score": "0.48",
+        "history_record_ids": [
+          "IHARQ-REGIMESTATERECORD-20260803-939ae17a3cbf49c8"
+        ],
+        "chronology_status": "VALID",
+        "reuse_status": "CURRENT_SEQUENCE_ONLY",
+        "recovery_provenance_id": null
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-WARNINGRECORD-20260803-87c1b90e1862db85",
+      "record_type": "WarningRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "SOURCE_REFERENCED_LOCAL_PROFILE",
+      "owner_layer": "L5",
+      "phase_id": "P00",
+      "config_id": "P00-AUDIT2-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-TEMPORALTRUSTRECORD-20260803-15895297850fb603"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "FOUNDATION_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "warning_id": "WARN-A2-001",
+        "state_id": "REG-A2-001",
+        "warning_type": "COOLDOWN",
+        "reason_code": "PERSISTENT_DEGRADED_TRUST",
+        "severity": "HIGH",
+        "issued_at": "2026-08-03T00:02:00Z",
+        "action": "COOLDOWN",
+        "recovery_provenance_ids": [
+          "IHARQ-TEMPORALTRUSTRECORD-20260803-15895297850fb603"
+        ],
+        "cooldown_until": "2026-08-03T00:07:00Z",
+        "recovery_status": "PENDING"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-READINESSCONTEXTRECORD-20260803-e43e75acbe1aa617",
+      "record_type": "ReadinessContextRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L6",
+      "phase_id": "P00",
+      "config_id": "P00-AUDIT2-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-EVIDENCEQUALITYRECORD-20260803-e6df3535af5ecc10",
+        "IHARQ-IHARQDECISIONRECORD-20260803-ebd96133e2e58527",
+        "IHARQ-TEMPORALTRUSTRECORD-20260803-15895297850fb603",
+        "IHARQ-WARNINGRECORD-20260803-87c1b90e1862db85"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "SIMULATION_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "readiness_context_id": "CTX-A2-001",
+        "evidence_quality_id": "EQ-A2-001",
+        "iharq_decision_id": "DEC-A2-001",
+        "temporal_trust_id": "TT-A2-001",
+        "legal_actions": [
+          "DEFER",
+          "ESCALATE",
+          "SAFE_STOP"
+        ],
+        "budget": "10.0",
+        "cost_version": "COST-A2-R1",
+        "reward_version": "REWARD-A2-R1",
+        "policy_mode": "ADAPTIVE_TRAINING",
+        "update_eligibility": "ELIGIBLE",
+        "simulation_status": "SIMULATION_ONLY",
+        "adverse_outcome_ids": [],
+        "action_constraints": {
+          "accept_forbidden": true,
+          "safe_stop_available": true
+        }
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-DEFERRALRECORD-20260803-7a61dea331661eec",
+      "record_type": "DeferralRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L6",
+      "phase_id": "P00",
+      "config_id": "P00-AUDIT2-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-READINESSCONTEXTRECORD-20260803-e43e75acbe1aa617"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "SIMULATION_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "deferral_id": "DEF-A2-001",
+        "context_id": "CTX-A2-001",
+        "reason_code": "TEMPORAL_TRUST_CAUTION",
+        "deferral_status": "ESCALATED",
+        "escalation_target": "REVIEW_QUEUE_MOCK",
+        "budget_remaining": "9.5",
+        "source_evidence_ids": [
+          "IHARQ-EVIDENCEQUALITYRECORD-20260803-e6df3535af5ecc10",
+          "IHARQ-TEMPORALTRUSTRECORD-20260803-15895297850fb603"
+        ],
+        "simulation_status": "SIMULATION_ONLY"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-POLICYACTIONRECORD-20260803-c4dbec9e077ee047",
+      "record_type": "PolicyActionRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L6",
+      "phase_id": "P00",
+      "config_id": "P00-AUDIT2-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-READINESSCONTEXTRECORD-20260803-e43e75acbe1aa617",
+        "IHARQ-DEFERRALRECORD-20260803-7a61dea331661eec"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "SIMULATION_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "policy_action_id": "ACT-A2-001",
+        "context_id": "CTX-A2-001",
+        "action": "ESCALATE",
+        "policy_id": "POLICY-A2-BEFORE",
+        "policy_mode": "ADAPTIVE_TRAINING",
+        "cost": "0.5",
+        "expected_reward": "0.1",
+        "budget_after": "9.5",
+        "constraint_status": "LEGAL",
+        "update_eligible": true,
+        "simulation_status": "SIMULATION_ONLY"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-SESSIONRECORD-20260803-38f66e882f3dc856",
+      "record_type": "SessionRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "SOURCE_REFERENCED_LOCAL_PROFILE",
+      "owner_layer": "L1",
+      "phase_id": "P00",
+      "config_id": "P00-AUDIT2-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-POLICYACTIONRECORD-20260803-c4dbec9e077ee047"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "SIMULATION_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "session_id": "SIMSESSION-A2-001",
+        "subject_id": "MOCK-SUBJECT-A2",
+        "acquired_at": "2026-08-03T00:03:00Z",
+        "environment_id": "ENV-A2-001",
+        "session_role": "SIMULATION_CONTEXT"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-POLICYRECORD-20260803-cd13cfde0cd4c1aa",
+      "record_type": "PolicyRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "SOURCE_REFERENCED_LOCAL_PROFILE",
+      "owner_layer": "L6",
+      "phase_id": "P00",
+      "config_id": "P00-AUDIT2-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-POLICYACTIONRECORD-20260803-c4dbec9e077ee047"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "SIMULATION_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "policy_id": "POLICY-A2-BEFORE",
+        "policy_version": "1",
+        "mode": "ADAPTIVE_TRAINING",
+        "policy_mode": "ADAPTIVE_TRAINING",
+        "config_hash": "CONFIG-HASH-A2",
+        "reward_version": "REWARD-A2-R1",
+        "cost_version": "COST-A2-R1",
+        "update_status": "UPDATABLE",
+        "simulation_status": "SIMULATION_ONLY"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-STATERECORD-20260803-f6071e6d93fe4ee7",
+      "record_type": "StateRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L7",
+      "phase_id": "P00",
+      "config_id": "P00-AUDIT2-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-SESSIONRECORD-20260803-38f66e882f3dc856",
+        "IHARQ-READINESSCONTEXTRECORD-20260803-e43e75acbe1aa617",
+        "IHARQ-POLICYRECORD-20260803-cd13cfde0cd4c1aa"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "SIMULATION_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "state_id": "STATE-A2-001",
+        "episode_id": "EP-A2-001",
+        "session_id": "SIMSESSION-A2-001",
+        "time_index": 0,
+        "environment_id": "ENV-A2-001",
+        "state_payload": {
+          "readiness": "DEFER",
+          "trust": "CAUTION"
+        },
+        "terminal_status": "ACTIVE",
+        "simulation_config_id": "SIMCFG-A2-001"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-STATERECORD-20260803-c4da2d5b721a9e86",
+      "record_type": "StateRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L7",
+      "phase_id": "P00",
+      "config_id": "P00-AUDIT2-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-STATERECORD-20260803-f6071e6d93fe4ee7",
+        "IHARQ-POLICYACTIONRECORD-20260803-c4dbec9e077ee047"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "SIMULATION_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "state_id": "STATE-A2-002",
+        "episode_id": "EP-A2-001",
+        "session_id": "SIMSESSION-A2-001",
+        "time_index": 1,
+        "environment_id": "ENV-A2-001",
+        "state_payload": {
+          "readiness": "ESCALATED",
+          "trust": "CAUTION"
+        },
+        "terminal_status": "TERMINAL",
+        "simulation_config_id": "SIMCFG-A2-001"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-TRANSITIONRECORD-20260803-843bf549c18eb651",
+      "record_type": "TransitionRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L7",
+      "phase_id": "P00",
+      "config_id": "P00-AUDIT2-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-STATERECORD-20260803-f6071e6d93fe4ee7",
+        "IHARQ-STATERECORD-20260803-c4da2d5b721a9e86",
+        "IHARQ-POLICYACTIONRECORD-20260803-c4dbec9e077ee047"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "SIMULATION_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "transition_id": "TRANS-A2-001",
+        "state_id": "STATE-A2-001",
+        "action_id": "ACT-A2-001",
+        "next_state_id": "STATE-A2-002",
+        "episode_id": "EP-A2-001",
+        "session_id": "SIMSESSION-A2-001",
+        "time_index": 0,
+        "reward": "0.1",
+        "cost": "0.5",
+        "reward_version": "REWARD-A2-R1",
+        "cost_version": "COST-A2-R1",
+        "terminal_status": "TERMINAL",
+        "safety_event_ids": [
+          "SAFETY-A2-001"
+        ],
+        "simulation_status": "SIMULATION_ONLY"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-EPISODERECORD-20260803-76e06e17ae481039",
+      "record_type": "EpisodeRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "SOURCE_REFERENCED_LOCAL_PROFILE",
+      "owner_layer": "L7",
+      "phase_id": "P00",
+      "config_id": "P00-AUDIT2-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-SESSIONRECORD-20260803-38f66e882f3dc856",
+        "IHARQ-POLICYRECORD-20260803-cd13cfde0cd4c1aa",
+        "IHARQ-TRANSITIONRECORD-20260803-843bf549c18eb651"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "SIMULATION_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "episode_id": "EP-A2-001",
+        "session_id": "SIMSESSION-A2-001",
+        "policy_id": "POLICY-A2-BEFORE",
+        "environment_id": "ENV-A2-001",
+        "transition_ids": [
+          "TRANS-A2-001"
+        ],
+        "started_at": "2026-08-03T00:03:00Z",
+        "ended_at": "2026-08-03T00:04:00Z",
+        "terminal_reason": "ESCALATED",
+        "validity_status": "VALID",
+        "simulation_status": "SIMULATION_ONLY"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-ROLLOUTRECORD-20260803-67a3aed4b398e727",
+      "record_type": "RolloutRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "SOURCE_REFERENCED_LOCAL_PROFILE",
+      "owner_layer": "L7",
+      "phase_id": "P00",
+      "config_id": "P00-AUDIT2-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-SESSIONRECORD-20260803-38f66e882f3dc856",
+        "IHARQ-EPISODERECORD-20260803-76e06e17ae481039",
+        "IHARQ-TRANSITIONRECORD-20260803-843bf549c18eb651",
+        "IHARQ-POLICYRECORD-20260803-cd13cfde0cd4c1aa"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "SIMULATION_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "rollout_id": "ROLLOUT-A2-001",
+        "session_id": "SIMSESSION-A2-001",
+        "episode_ids": [
+          "EP-A2-001"
+        ],
+        "policy_id": "POLICY-A2-BEFORE",
+        "policy_mode": "ADAPTIVE_TRAINING",
+        "transition_ids": [
+          "TRANS-A2-001"
+        ],
+        "seed": 20260803,
+        "simulator_config_id": "SIMCFG-A2-001",
+        "update_mode": "ENABLED",
+        "frozen_status": "NOT_APPLICABLE",
+        "output_class": "ADAPTIVE",
+        "simulation_status": "SIMULATION_ONLY"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-POLICYRECORD-20260803-0ea6177daa1e23bc",
+      "record_type": "PolicyRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "SOURCE_REFERENCED_LOCAL_PROFILE",
+      "owner_layer": "L6",
+      "phase_id": "P00",
+      "config_id": "P00-AUDIT2-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-POLICYRECORD-20260803-cd13cfde0cd4c1aa",
+        "IHARQ-TRANSITIONRECORD-20260803-843bf549c18eb651"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "SIMULATION_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "policy_id": "POLICY-A2-AFTER",
+        "policy_version": "2",
+        "mode": "ADAPTIVE_TRAINING",
+        "policy_mode": "ADAPTIVE_TRAINING",
+        "config_hash": "CONFIG-HASH-A2",
+        "reward_version": "REWARD-A2-R1",
+        "cost_version": "COST-A2-R1",
+        "update_status": "UPDATABLE",
+        "simulation_status": "SIMULATION_ONLY"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-POLICYUPDATETRACE-20260803-5a8b02dfaaadd550",
+      "record_type": "PolicyUpdateTrace",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L7",
+      "phase_id": "P00",
+      "config_id": "P00-AUDIT2-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-TRANSITIONRECORD-20260803-843bf549c18eb651",
+        "IHARQ-POLICYRECORD-20260803-cd13cfde0cd4c1aa",
+        "IHARQ-POLICYRECORD-20260803-0ea6177daa1e23bc"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "SIMULATION_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "policy_update_trace_id": "UPD-A2-001",
+        "source_transition_id": "TRANS-A2-001",
+        "before_policy_id": "POLICY-A2-BEFORE",
+        "after_policy_id": "POLICY-A2-AFTER",
+        "policy_id": "POLICY-A2-AFTER",
+        "reward_version": "REWARD-A2-R1",
+        "cost_version": "COST-A2-R1",
+        "config_id": "P00-AUDIT2-CONFIG-R1",
+        "seed": 20260803,
+        "update_reason": "MOCK_ADAPTIVE_UPDATE",
+        "limitation_tags": [
+          "SIMULATION_ONLY",
+          "NON_EMPIRICAL"
+        ],
+        "simulation_status": "SIMULATION_ONLY"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-SAFETYEVENTRECORD-20260803-b20efcbbdc93deb1",
+      "record_type": "SafetyEventRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L9",
+      "phase_id": "P00",
+      "config_id": "P00-AUDIT2-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-TRANSITIONRECORD-20260803-843bf549c18eb651"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "EMBODIMENT_PROXY_ONLY",
+        "SIMULATION_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "safety_event_id": "SAFETY-A2-001",
+        "state_id": "STATE-A2-002",
+        "severity": "CAUTION",
+        "reason_code": "ESCALATION_REQUIRED"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-CLAIMSTATEMENTRECORD-20260803-f65d709dbea68fc0",
+      "record_type": "ClaimStatementRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "AUDIT_PROMPT_LOCAL_PROFILE",
+      "owner_layer": "L0",
+      "phase_id": "P00",
+      "config_id": "P00-AUDIT2-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-POLICYUPDATETRACE-20260803-5a8b02dfaaadd550",
+        "IHARQ-ROLLOUTRECORD-20260803-67a3aed4b398e727"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "NON_CLAIM_BEARING"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "GOVERNANCE",
+      "payload": {
+        "statement_id": "STMT-A2-001",
+        "claim_version": "1",
+        "evidence_maturity": "FOUNDATION",
+        "sufficiency": "CONDITIONALLY_SUFFICIENT",
+        "scope": "L4-L7_PHASE0_FOUNDATION",
+        "claim_ceiling": "INFRASTRUCTURE_ONLY",
+        "proposed_wording": "The local L4-L7 Phase 0 foundation fixture passed its registered conformance checks.",
+        "permitted_wording": [
+          "Local L4-L7 foundation conformance passed."
+        ],
+        "prohibited_wording": [
+          "IHARQ improves reliability.",
+          "The policy is safe.",
+          "The system is deployment ready."
+        ],
+        "mandatory_qualifications": [
+          "MOCK",
+          "NON_EMPIRICAL",
+          "NON_CLAIM_BEARING",
+          "SIMULATION_ONLY"
+        ],
+        "claim_class": "FOUNDATION"
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-LAYER0DISPOSITIONRECORD-20260803-40ea4cfdfefcd712",
+      "record_type": "Layer0DispositionRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "SOURCE_REFERENCED_LOCAL_PROFILE",
+      "owner_layer": "L0",
+      "phase_id": "P00",
+      "config_id": "P00-AUDIT2-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-CLAIMSTATEMENTRECORD-20260803-f65d709dbea68fc0",
+        "IHARQ-POLICYUPDATETRACE-20260803-5a8b02dfaaadd550"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "NON_CLAIM_BEARING"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "GOVERNANCE",
+      "payload": {
+        "layer0_disposition_id": "L0D-A2-001",
+        "statement_id": "STMT-A2-001",
+        "status": "QUALIFICATION_REQUIRED",
+        "limitations": "Foundation/mock/simulation-only; no scientific effectiveness, safety, deployment, or clinical claim.",
+        "review_roles": [
+          "Authority Reconstruction LLM",
+          "Implementation Evidence LLM",
+          "Adversarial Red-Team LLM",
+          "Gate and Reproducibility LLM",
+          "Final Governance LLM"
+        ],
+        "claim_version": "1",
+        "evidence_maturity": "FOUNDATION",
+        "sufficiency": "CONDITIONALLY_SUFFICIENT",
+        "scope": "L4-L7_PHASE0_FOUNDATION",
+        "claim_ceiling": "INFRASTRUCTURE_ONLY",
+        "permitted_wording": [
+          "Local foundation conformance passed"
+        ],
+        "prohibited_wording": [
+          "IHARQ improves reliability",
+          "Policy is safe",
+          "Deployment ready"
+        ],
+        "mandatory_qualifications": [
+          "MOCK",
+          "NON_EMPIRICAL",
+          "SIMULATION_ONLY"
+        ],
+        "review_mode": "LLM_ONLY",
+        "review_provenance": [
+          "AUDIT2-PASS-01",
+          "AUDIT2-PASS-02",
+          "AUDIT2-PASS-03",
+          "AUDIT2-PASS-04",
+          "AUDIT2-PASS-05"
+        ],
+        "layer10_handoff_fields": {
+          "warning": "NO_SCIENTIFIC_RESULTS"
+        }
+      },
+      "ablation_id": null
+    },
+    {
+      "record_id": "IHARQ-DASHBOARDMETRICRECORD-20260803-a3b172163a98ca9b",
+      "record_type": "DashboardMetricRecord",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L10",
+      "phase_id": "P00",
+      "config_id": "P00-AUDIT2-CONFIG-R1",
+      "source_ids": [
+        "IHARQ-LAYER0DISPOSITIONRECORD-20260803-40ea4cfdfefcd712",
+        "IHARQ-ROLLOUTRECORD-20260803-67a3aed4b398e727",
+        "IHARQ-POLICYUPDATETRACE-20260803-5a8b02dfaaadd550"
+      ],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY",
+        "NON_CLAIM_BEARING"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "RENDERING",
+      "payload": {
+        "dashboard_metric_id": "DASH-A2-001",
+        "metric_entry_id": "FOUNDATION_STATUS_A2",
+        "source_artifact_ids": [
+          "IHARQ-LAYER0DISPOSITIONRECORD-20260803-40ea4cfdfefcd712",
+          "IHARQ-ROLLOUTRECORD-20260803-67a3aed4b398e727",
+          "IHARQ-POLICYUPDATETRACE-20260803-5a8b02dfaaadd550"
+        ],
+        "rendering_only": true
+      },
+      "ablation_id": null
+    }
+  ],
+  "controls": {
+    "expected_config_id": "P00-AUDIT2-CONFIG-R1",
+    "chronology_valid": true,
+    "manifest_complete": true,
+    "lifecycle_transition_valid": true,
+    "claim_evidence_links_resolve": true,
+    "evidence_request_links_resolve": true,
+    "evidence_quality_compatible": true,
+    "iharq_reason_action_valid": true,
+    "iharq_fallback_supported": true,
+    "iharq_trace_explanation_present": true,
+    "l4_limitations_preserved": true,
+    "temporal_predecessor_present": true,
+    "temporal_windows_compatible": true,
+    "temporal_transition_valid": true,
+    "recovery_provenance_present": true,
+    "silent_reset_absent": true,
+    "temporal_reuse_valid": true,
+    "readiness_boundary_valid": true,
+    "readiness_evidence_links_resolve": true,
+    "legal_action_constraints_respected": true,
+    "cost_reward_budget_present": true,
+    "policy_mode_present": true,
+    "update_eligibility_valid": true,
+    "adaptive_frozen_separated": true,
+    "transition_links_resolve": true,
+    "session_episode_rollout_links_resolve": true,
+    "reward_cost_versions_resolve": true,
+    "safety_event_links_resolve": true,
+    "trajectory_lineage_resolves": true,
+    "simulation_limitations_preserved": true,
+    "update_enabled": true,
+    "update_applied": true,
+    "update_before_after_policy_present": false,
+    "update_source_transition_present": true,
+    "update_reward_config_seed_present": true,
+    "update_limitation_present": true,
+    "update_simulation_status_present": true,
+    "frozen": false,
+    "mutation_count": 0,
+    "disabled_update_audit": true,
+    "frozen_status_present": true,
+    "adaptive_frozen_outputs_distinct": true,
+    "layer10_mode_warning_present": true,
+    "uncertainty_abstention_distinct": true,
+    "layer0_noninterference": true,
+    "l10_interface_resolves": true,
+    "record_hashes": {
+      "IHARQ-UNCERTAINTYRECORD-20260803-813af18c4929ef1e": "53126adc1531bb373964a570ac92292499f0e260faccd75bac1f693fc1153219",
+      "IHARQ-THRESHOLDREGISTRYRECORD-20260803-d1814be6754fdc1a": "02241877c60adada899fe9515a53eacb79662cee15d0920ccb2df77697d81b28",
+      "IHARQ-EVIDENCEREQUESTRECORD-20260803-855369efb8bde484": "72a0bc527ebad4b286735fb6ed5c60f55633dea6fd15d98d4e8bf4de2cb39db5",
+      "IHARQ-EVIDENCEQUALITYRECORD-20260803-e6df3535af5ecc10": "1a067286747cbd8a0bb9b6c0e83d930e63d2783c58e32b4bc6477dddbc83e606",
+      "IHARQ-IHARQDECISIONRECORD-20260803-ebd96133e2e58527": "4f7a89f8d57de6503e80ee2102299ee58a98474f706e123125c1b2a4e82c8c81",
+      "IHARQ-REGIMESTATERECORD-20260803-939ae17a3cbf49c8": "c4d7482131caa6e9e15dcb4e0bff80eaad84287aa3e070b73217eee86693018a",
+      "IHARQ-TEMPORALTRUSTRECORD-20260803-15895297850fb603": "58601a3633f3ff31f10294dd28138f03ea18085a1b4480d4c4217d180327e3d3",
+      "IHARQ-WARNINGRECORD-20260803-87c1b90e1862db85": "5c450e00febe334043051e401d5bdb38d677692b768167320c01d913f0c79410",
+      "IHARQ-READINESSCONTEXTRECORD-20260803-e43e75acbe1aa617": "4730fe121b2e7deb419fce233eafa9c108cca05c3719ee7533731d62df81fe0a",
+      "IHARQ-DEFERRALRECORD-20260803-7a61dea331661eec": "cccfa0a1c8fa86a36ac5e43a6cb0468872409a708d90cfa09a771ae656cfd651",
+      "IHARQ-POLICYACTIONRECORD-20260803-c4dbec9e077ee047": "194ed0a3b82dedfa8fd46fbf6fec8489f9e6a9c2e710566d9e8b8248b6f55704",
+      "IHARQ-SESSIONRECORD-20260803-38f66e882f3dc856": "f8e7b69c459e4bbfe661a3fe4e205fa4da23b95c1a1822e11dab93faa922a91a",
+      "IHARQ-POLICYRECORD-20260803-cd13cfde0cd4c1aa": "6000c8c1f19e6e8fb05bcc19786115948aac25464b28b838045bddf9b2e7b8c2",
+      "IHARQ-STATERECORD-20260803-f6071e6d93fe4ee7": "008fdea1f1a076924042a1c48df97e73904a8c1eb86f6cd4757dcdd8926fff3d",
+      "IHARQ-STATERECORD-20260803-c4da2d5b721a9e86": "d4953567999e6e6919eb0e6e3ade1a019283584133d4de5ceeb26fd1f7660d38",
+      "IHARQ-TRANSITIONRECORD-20260803-843bf549c18eb651": "66dc9976eb0de68efe7946ee711c65cca50472bbfc81f73f48d088d2911b904e",
+      "IHARQ-EPISODERECORD-20260803-76e06e17ae481039": "3d2d587cb6e029a6faa3ead0d368e4a80ae289f3721c100cc297256c915f711a",
+      "IHARQ-ROLLOUTRECORD-20260803-67a3aed4b398e727": "a4543910e7d515c83247b2e584bb17b4ea9df032940df8f38252a9c3982f0f84",
+      "IHARQ-POLICYRECORD-20260803-0ea6177daa1e23bc": "1da834d704117940cbddb2dd2a018500f742463182014551f70885b7db077eb6",
+      "IHARQ-POLICYUPDATETRACE-20260803-5a8b02dfaaadd550": "595f28540a16c45338555103dcea57f4d4ec802156b05a94c9933f27c1741569",
+      "IHARQ-SAFETYEVENTRECORD-20260803-b20efcbbdc93deb1": "13d31a19eb2b43cdea97e31b49130ffaef674f0620a3d9c66717c761a0354949",
+      "IHARQ-CLAIMSTATEMENTRECORD-20260803-f65d709dbea68fc0": "236e5d6b8c35c1ebdef21945085d3b863fe0f5e9d831d1124e2148e0d4376bf4",
+      "IHARQ-LAYER0DISPOSITIONRECORD-20260803-40ea4cfdfefcd712": "d6f33bf2f84abb317b3ffd2c461faac978f9757c01fefbf91bb4056991036543",
+      "IHARQ-DASHBOARDMETRICRECORD-20260803-a3b172163a98ca9b": "2547ad3e78d3cb3fa3390aa27efae03e99e0ffe8ca19fe314f05dd2d7db0d8b4"
+    }
+  }
+}

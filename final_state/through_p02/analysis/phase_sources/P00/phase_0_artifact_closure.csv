@@ -1,0 +1,11 @@
+artifact_family,expected,discovered,validated,accepted,failed,excluded,status,evidence
+requirements,23846,23846,23846,23846,0,0,PASS,catalogs/final_requirement_ledger.csv
+protocol_requirements,19026,19026,19026,19026,0,0,PASS,protocol_requirement_completeness_matrix_R2.csv
+schemas,85,85,85,85,0,0,PASS,catalogs/final_schema_catalog.yaml
+config_profiles,35,35,35,35,0,0,PASS,catalogs/final_config_catalog.yaml
+record_families,79,79,79,79,0,0,PASS,catalogs/final_record_family_coverage_matrix.yaml
+valid_integrated_bundles,19,19,19,19,0,0,PASS,fixtures/valid; fixtures/integrated
+malformed_categories,178,178,178,178,0,0,PASS,fixtures/invalid
+layer_foundations,11,11,11,11,0,0,PASS,catalogs/final_all_layer_artifact_matrix.yaml
+phase_contracts,16,16,16,16,0,0,PASS,catalogs/final_all_phase_artifact_contract_matrix.yaml
+registered_cells,19,19,19,19,0,0,PASS,execution_release_manifest.json

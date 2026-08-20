@@ -1,0 +1,113 @@
+{
+  "policy": {
+    "policy_id": "P01-L1-KAGGLE-DUAL-PERSISTENCE-BOUNDED-STREAMING-R3",
+    "runtime_revision": "R34",
+    "policy_kind": "RESOURCE_AND_PERSISTENCE_IMPLEMENTATION_AMENDMENT_ONLY",
+    "scientific_freeze_unchanged": "P01-L1-OFFICIAL-RUN-FREEZE-R2",
+    "controlling_authority": "IHARQ-IBB-R10-P01-L1-INDEPENDENT-AUDIT-REPAIRED",
+    "annex": "IHARQ-IBB-P01-L1-ANNEX-R4",
+    "passes": {
+      "pass_1": "SUBJECT_SCOPED_METADATA_EVENT_PROVENANCE_AND_RAW_FIT_STAT_SUMMARY",
+      "pass_2a": "DETERMINISTIC_COMBINATION_OF_PASS1_FIT_STATISTICS",
+      "pass_2b": "SUBJECT_SCOPED_TRANSFORM_QUALITY_WINDOW_MATERIALIZATION_AND_UPLOAD"
+    },
+    "maximum_concurrent_source_subjects": 8,
+    "disposable_subject_processes": true,
+    "child_rss_hard_limit_gib": 24.0,
+    "minimum_disk_free_gib": 4.0,
+    "progress_interval_seconds": 120,
+    "derived_window_storage": "PRIVATE_KAGGLE_DATASET_LOSSLESS_HDF5_SUBJECT_SHARDS",
+    "derived_kaggle_username": "csthv999z",
+    "derived_dataset_slug_prefix": "iharq-p01-l1-core",
+    "derived_dataset_version": 1,
+    "derived_dataset_private": true,
+    "local_raw_signal_retention": false,
+    "local_preprocessed_signal_retention": false,
+    "local_window_array_retention_after_upload": false,
+    "no_scientific_scope_reduction": true,
+    "active_sources_unchanged": [
+      "PhysioNetMI",
+      "BNCI2014_001",
+      "Lee2019_MI"
+    ],
+    "labels_splits_budgets_preprocessing_windows_unchanged": true,
+    "official_joint_event_resampling_enforced": true,
+    "official_window_offset_and_one_window_policy_enforced": true,
+    "official_float32_window_dtype_enforced": true,
+    "finalization_stage_ordering_corrected": true,
+    "all_p01_gates_and_handoffs_preserved": true,
+    "dual_persistence": {
+      "compact_output": "GITHUB_READY_REPOSITORY_ZIP",
+      "large_numerical_output": "PRIVATE_KAGGLE_DERIVED_DATASET",
+      "manual_huggingface_roundtrip_required": false,
+      "manual_future_kaggle_reupload_required": false
+    },
+    "github_ready_repository_max_gib": 0.95,
+    "github_ready_excludes_large_arrays": true,
+    "storage_forecast_compression_ratio_lower": 0.55,
+    "storage_forecast_compression_ratio_upper": 1.1,
+    "storage_forecast_safety_multiplier": 1.25
+  },
+  "installed_at_unix": 1786113990.0359333,
+  "execution_attempt_id": "20260807143013-663eab13",
+  "derived_dataset_handle": "csthv999z/iharq-p01-l1-core-d03f0a7c869d-20260807143013-663eab13",
+  "source_resolution_file": "/kaggle/working/iharq_p01_l1/streaming_runtime/source_resolution_r26.json",
+  "patched_surfaces": [
+    "Layer1Pipeline.load_sources",
+    "Layer1Pipeline.split_budget_preprocess:R35_AUTHORITATIVE_EVENT_ROW_SCHEMA",
+    "StageRunner.stage_13",
+    "StageRunner.stage_14",
+    "StageRunner.stage_15",
+    "StageRunner.stage_26"
+  ],
+  "authoritative_stage_order_retained": [
+    "24",
+    "25"
+  ],
+  "downstream_contract_closure": {
+    "joint_event_resampling": true,
+    "eeg_only_channel_selection": true,
+    "float32_output_dtype": true,
+    "window_start_offset_samples": 80,
+    "window_duration_samples": 480,
+    "window_stride_samples": 480,
+    "one_window_per_included_event": true,
+    "invalid_windows_preserved_and_block_commit": true,
+    "quality_hard_invalid_blocks_stage14": true,
+    "stage24_no_premature_finalization": true,
+    "stage26_complete_identity_before_finalization": true,
+    "compact_bundle_packaged": true,
+    "github_ready_repository_packaged": true
+  },
+  "preservation": {
+    "all_three_sources": true,
+    "all_subjects_sessions_runs": true,
+    "all_labels": true,
+    "split_budget_profiles": true,
+    "stage11_authoritative_event_row_contract": true,
+    "preprocessing_operations": true,
+    "quality_annotation": true,
+    "window_identity_and_sample_hash": true,
+    "canonical_records": true,
+    "validation_and_leakage": true,
+    "cards_manifests_readiness": true,
+    "p01_gates": true,
+    "phase2_and_later_handoffs": true,
+    "negative_evidence": true,
+    "final_bundle": true
+  },
+  "resource_properties": {
+    "parent_retains_signal_arrays": false,
+    "maximum_subject_processes": 8,
+    "subject_process_disposable": true,
+    "stage07_parallelism": "REAL_PREFLIGHT_MEASURED_RSS_ADAPTIVE",
+    "temporary_shard_deleted_after_blob_upload": true,
+    "exact_float32_storage_forecast_before_materialization": true,
+    "actual_storage_report_after_upload": true
+  },
+  "persistence_outputs": {
+    "compact_github_ready_repository": true,
+    "large_private_kaggle_dataset": true,
+    "future_phase_reader_in_dataset": true
+  }
+}

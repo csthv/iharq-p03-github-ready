@@ -1,0 +1,90 @@
+amendment_id: P02-PREEXEC-TRAINING-POLICY-AMENDMENT-R1
+status: OWNER_AUTHORIZED_PREEXECUTION_FREEZE
+scope: P02_L2_ONLY
+authority_effect: EXECUTION_CONTROLLING_OVERLAY_PENDING_FUTURE_PROTOCOL_AND_BUILD_BOOK_SYNC
+historical_mutation:
+  P00: false
+  P01: false
+scientific_design_preservation:
+  primary_EEGNet_no_augmentation: true
+  A0_A4_ownership_unchanged: true
+  A14: ABSENT_PROHIBITED
+  downstream_ownership_unchanged: true
+blocker_resolutions:
+  P02-BLOCK-TRAIN-AUG-001:
+    status: RESOLVED
+    condition_id: P02-TRAIN-AUG-SR-EEGNET-FULL-R1
+    classification: DIAGNOSTIC_TRAINING_POLICY_CHALLENGER_NOT_A_NUMBER
+    branch_id: DNN-EEGNET
+    evidence_regime: FULL_TRAIN_ONLY
+    datasets:
+    - PhysioNetMI
+    - BNCI2014_001
+    - Lee2019_MI
+    probability: 0.5
+    segment_count: 4
+    same_five_model_seeds: true
+    cell_count: 15
+    seed_namespace: IHARQ:P02:L2:EEGNET:SEGMENTATION_RECONSTRUCTION:R1
+    seed_derivation: SHA256(namespace|dataset_id|model_seed|model_repeat_index|epoch_index)_FIRST8_HEX_MOD_2P31_MINUS1_ZERO_TO_ONE
+    donor_pool_identity: SAME_DATASET_SAME_LEGAL_TRAINING_ROLE_SAME_TASK_SAME_CLASS_EXCLUDE_TARGET_WHEN_POSSIBLE
+    application_semantics: INDEPENDENT_PER_TARGET_TRAINING_TRIAL_PER_EPOCH_AT_PROBABILITY_0P5
+    segment_semantics: 4_CONTIGUOUS_TEMPORAL_SEGMENTS_PRESERVE_ORIGINAL_SEGMENT_ORDER
+    hyperparameter_rule: REUSE_VALIDATION_SELECTED_PRIMARY_EEGNET_PARAMS_FOR_SAME_DATASET_AND_MODEL_SEED;
+      NO_CHALLENGER_RETUNING
+    validation_test_rule: IDENTICAL_TO_MATCHED_PRIMARY_EEGNET_CELL; NO_AUGMENTATION_OUTSIDE_TRAIN_ROLE
+    persistence_rule: SYNTHETIC_TENSORS_EPHEMERAL; NO_WINDOWRECORD_CREATION_OR_OVERWRITE
+    A4_selection_eligibility: false
+    P03_primary_substrate_eligibility: false
+    claim_status: DIAGNOSTIC_ONLY
+    run_cell_manifest: machine_readable/p02_training_policy_challenger_run_cells_R1.yaml
+    budget_id: FULL_TRAIN
+  P02-BLOCK-TRAIN-WEIGHT-002:
+    status: RESOLVED
+    policy: NEVER_WEIGHT_P02_CURRENT_FROZEN_INPUTS
+    class_weights:
+    - 1.0
+    - 1.0
+    rationale: Current P02 governed training distributions are approximately/exactly
+      balanced; preserve unweighted baseline comparability and avoid unnecessary cost-sensitive
+      training.
+    expected_training_label_counts:
+      PhysioNetMI:
+        left_hand: 1490
+        right_hand: 1459
+      BNCI2014_001:
+        left_hand: 720
+        right_hand: 720
+      Lee2019_MI:
+        left_hand: 1600
+        right_hand: 1600
+    low_label_rule: P01 frozen budgets are equal-per-class; no class weighting
+    eligible_branches: ALL_P02_SUPERVISED_BRANCHES_UNWEIGHTED_FOR_CURRENT_FREEZE
+    reopen_on_input_identity_or_count_change: true
+    reopen_action: FAIL_CLOSED_BEFORE_SCIENCE_AND_REQUIRE_PROTOCOL_SUCCESSOR; DO_NOT_AUTO_ACTIVATE_WEIGHTS
+    future_formula_if_reopened: NOT_AUTHORIZED_BY_THIS_AMENDMENT
+external_method_verification:
+  segmentation_reconstruction: Braindecode S&R implements label-preserving segment
+    mixing with explicit probability, n_segments, and RNG; cites Lotte 2015.
+  augmentation_probability_rationale: Braindecode S&R requires an explicit probability
+    but prescribes no universal optimum. P02 freezes 0.5 as a conservative project-specific
+    moderate application rate to avoid an additional tuning search; Braindecode official
+    EEG augmentation examples demonstrate 0.5 as a conventional stochastic-transform
+    probability for other transforms, while comparative EEG literature reports no
+    single best augmentation across tasks.
+  segment_count_rationale: 4 is the only IHARQ-bounded S&R configuration already technically
+    validated; owner authorization promotes it only for this diagnostic P02 challenger.
+  class_weighting_rationale: Standard libraries expose weights for imbalanced training
+    sets; current frozen P02 counts do not justify changing the baseline loss. Explicit
+    no-weight is phase-specific, not a universal threshold.
+future_document_sync_required: true
+documents_to_sync:
+- single cumulative Protocol v1.0 P02 annex/current authority
+- P02/L2 Implementation Build Book successor
+- P02 scientific-freeze/run-matrix derivatives
+- Nuts-and-Bolts Protocol-sync marker
+- Phase Analysis training-policy diagnostic section if executed
+- Evidence Map/Layer10 only if governed diagnostic evidence is used
+documents_not_requiring_retroactive_change:
+- P00 authority/execution
+- P01 authority/execution

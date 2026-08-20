@@ -1,0 +1,75 @@
+risks:
+- risk_id: R-P02-01
+  risk: Kaggle GPU/runtime variability
+  probability: MEDIUM
+  impact: HIGH for conditional neural branches
+  detection: Stage01 measured resource inventory
+  mitigation: adaptive branch gates, checkpointing, classical floor
+  fallback: RESOURCE_BLOCKED optional branch; no silent omission
+  blocking: core only if minimum floor infeasible
+  owner: Build Book/runtime
+- risk_id: R-P02-02
+  risk: pretrained checkpoint/license/corpus-overlap ambiguity
+  probability: MEDIUM
+  impact: HIGH for SSL claim eligibility
+  detection: Stage12 provenance audit
+  mitigation: checksum/license/corpus audit before load
+  fallback: CBraMod skipped; specialist-only portfolio valid
+  blocking: branch-specific
+  owner: M07/Protocol claim boundary
+- risk_id: R-P02-03
+  risk: class-order/score semantic mismatch
+  probability: MEDIUM
+  impact: CRITICAL downstream
+  detection: Stage13/14 semantic validators
+  mitigation: typed score semantics and class mapping
+  fallback: label-only A0 or consumer-specific ineligible
+  blocking: affected consumer
+  owner: M02/M05
+- risk_id: R-P02-04
+  risk: P00 foundation schemas hard-coded to P00
+  probability: CERTAIN current gap
+  impact: HIGH
+  detection: schema/config audit
+  mitigation: Implement exact R2 P02PhaseConfig/schema successor freeze before notebook
+    scientific stage
+  fallback: none for official P02; must repair before run
+  blocking: RESOLVED_BY_WP02_BEFORE_STAGE05
+  owner: WP02
+- risk_id: R-P02-05
+  risk: cumulative repo legacy P00 tests reference historical moved paths
+  probability: CERTAIN current gap
+  impact: LOW scientific / MEDIUM CI
+  detection: pytest 23 pass / 3 fail
+  mitigation: Apply tested p02_cumulative_test_reconciliation_R3.patch; verified 26/26
+    PASS
+  fallback: current 40/40 cumulative +24/24 P01 verifiers remain authority
+  blocking: RESOLVED_PRE_KAGGLE_CI
+  owner: WP12
+- risk_id: R-P02-06
+  risk: A4 unmatched parent/score incompatibility
+  probability: MEDIUM
+  impact: HIGH
+  detection: matched key/class order/score validator
+  mitigation: hard vote fallback when legal; unsupported if lineage absent
+  fallback: unsupported A4 cell retained
+  blocking: for affected A4 comparison
+  owner: M06
+- risk_id: R-P02-07
+  risk: low-budget missing class/support
+  probability: MEDIUM
+  impact: MEDIUM
+  detection: budget eligibility checks
+  mitigation: use P01 nested subsets only
+  fallback: INELIGIBLE_DIAGNOSTIC_ONLY point; never borrow test/validation
+  blocking: cell-specific
+  owner: M03
+- risk_id: R-P02-08
+  risk: result-dependent model/ablation selection
+  probability: LOW if gates enforced
+  impact: CRITICAL validity
+  detection: config hash + Stage05 freeze + test-label audit
+  mitigation: all roles/unlocks frozen pre-result
+  fallback: invalidate affected evidence and rerun
+  blocking: 'YES'
+  owner: Protocol/Build Book

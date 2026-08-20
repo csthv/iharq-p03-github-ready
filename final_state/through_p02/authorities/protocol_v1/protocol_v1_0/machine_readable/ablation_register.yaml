@@ -1,0 +1,135 @@
+register_id: IHARQ-PROTOCOL-V1-CUMULATIVE-ABLATION-REGISTER-THROUGH-P02-R1
+canonical_protocol_id: IHARQ-PROTOCOL-V1-CUMULATIVE-THROUGH-P02-R1
+entries:
+- ablation_id: A0
+  official_identity: Raw Decoder / Accept-All Raw Decoder Reference
+  historical_p01_recorded_identity: Raw Decoder / Accept-All Raw Decoder Reference
+  historical_label_difference: false
+  p00: FOUNDATION_IDENTITY_ONLY; NOT_ACTIVE; NO_EMPIRICAL_CELL
+  p01: FOUNDATION_READY_NOT_EXECUTED
+  p02: APPLICABLE_EXECUTED
+  current_status_after_p02: EXECUTED
+  limitation_or_consequence: 678 terminal cells; complete with explicit non-success states
+- ablation_id: A1
+  official_identity: Calibrated Decoder / Calibration Visibility
+  historical_p01_recorded_identity: Calibrated Decoder / Calibration Visibility
+  historical_label_difference: false
+  p00: FOUNDATION_IDENTITY_ONLY; NOT_ACTIVE; NO_EMPIRICAL_CELL
+  p01: FOUNDATION_READY_NOT_EXECUTED
+  p02: NOT_APPLICABLE_WITH_REASON
+  current_status_after_p02: NOT_YET_ACTIVE_AFTER_P02
+  limitation_or_consequence: Downstream L3 calibration visibility
+- ablation_id: A2
+  official_identity: Simple Registered Threshold / Confidence-Threshold Baseline
+  historical_p01_recorded_identity: Simple Registered Threshold / Confidence-Threshold Baseline
+  historical_label_difference: false
+  p00: FOUNDATION_IDENTITY_ONLY; NOT_ACTIVE; NO_EMPIRICAL_CELL
+  p01: FOUNDATION_READY_NOT_EXECUTED
+  p02: NOT_APPLICABLE_WITH_REASON
+  current_status_after_p02: NOT_YET_ACTIVE_AFTER_P02
+  limitation_or_consequence: Downstream L3 registered threshold baseline
+- ablation_id: A3
+  official_identity: Uncertainty and Selective Prediction
+  historical_p01_recorded_identity: Uncertainty and Selective Prediction
+  historical_label_difference: false
+  p00: FOUNDATION_IDENTITY_ONLY; NOT_ACTIVE; NO_EMPIRICAL_CELL
+  p01: FOUNDATION_READY_NOT_EXECUTED
+  p02: NOT_APPLICABLE_WITH_REASON
+  current_status_after_p02: NOT_YET_ACTIVE_AFTER_P02
+  limitation_or_consequence: Downstream L3 uncertainty/selective prediction
+- ablation_id: A4
+  official_identity: Longer-Window, Multi-Window Voting/Averaging and Ordinary Ensemble Controls
+  historical_p01_recorded_identity: Longer-Window, Multi-Window Voting/Averaging and Ordinary Ensemble Controls
+  historical_label_difference: false
+  p00: FOUNDATION_IDENTITY_ONLY; NOT_ACTIVE; NO_EMPIRICAL_CELL
+  p01: FOUNDATION_READY_NOT_EXECUTED
+  p02: APPLICABLE_EXECUTED_WITH_RECORDED_DEVIATION
+  current_status_after_p02: EXECUTED_WITH_RECORDED_DEVIATION
+  limitation_or_consequence: C0–C5 preserved; single refit repeat + deep anchors; no full-grid equivalence
+- ablation_id: A5
+  official_identity: IHARQ-lite / Rule-Based Evidence Verification
+  historical_p01_recorded_identity: IHARQ-lite / Rule-Based Evidence Verification
+  historical_label_difference: false
+  p00: FOUNDATION_IDENTITY_ONLY; NOT_ACTIVE; NO_EMPIRICAL_CELL
+  p01: FOUNDATION_READY_NOT_EXECUTED
+  p02: NOT_APPLICABLE_WITH_REASON
+  current_status_after_p02: NOT_YET_ACTIVE_AFTER_P02
+  limitation_or_consequence: Downstream evidence verification
+- ablation_id: A6
+  official_identity: IHARQ + Evidence-Quality Estimator
+  historical_p01_recorded_identity: IHARQ + Evidence-Quality Estimator
+  historical_label_difference: false
+  p00: FOUNDATION_IDENTITY_ONLY; NOT_ACTIVE; NO_EMPIRICAL_CELL
+  p01: FOUNDATION_READY_NOT_EXECUTED
+  p02: NOT_APPLICABLE_WITH_REASON
+  current_status_after_p02: NOT_YET_ACTIVE_AFTER_P02
+  limitation_or_consequence: Downstream evidence-quality estimation
+- ablation_id: A7
+  official_identity: IHARQ + RegimeRisk Temporal Trust
+  historical_p01_recorded_identity: IHARQ + RegimeRisk Temporal Trust
+  historical_label_difference: false
+  p00: FOUNDATION_IDENTITY_ONLY; NOT_ACTIVE; NO_EMPIRICAL_CELL
+  p01: FOUNDATION_READY_NOT_EXECUTED
+  p02: NOT_APPLICABLE_WITH_REASON
+  current_status_after_p02: NOT_YET_ACTIVE_AFTER_P02
+  limitation_or_consequence: Downstream temporal trust
+- ablation_id: A8
+  official_identity: Learning-to-defer / Deferral Comparison
+  historical_p01_recorded_identity: Learning-to-defer / Deferral Comparison
+  historical_label_difference: false
+  p00: FOUNDATION_IDENTITY_ONLY; NOT_ACTIVE; NO_EMPIRICAL_CELL
+  p01: FOUNDATION_READY_NOT_EXECUTED
+  p02: NOT_APPLICABLE_WITH_REASON
+  current_status_after_p02: NOT_YET_ACTIVE_AFTER_P02
+  limitation_or_consequence: Downstream deferral comparison
+- ablation_id: A9
+  official_identity: Supervised Adaptive-IHARQ / Adaptive Readiness Policy
+  historical_p01_recorded_identity: Supervised Adaptive-IHARQ / Adaptive Readiness Policy
+  historical_label_difference: false
+  p00: FOUNDATION_IDENTITY_ONLY; NOT_ACTIVE; NO_EMPIRICAL_CELL
+  p01: FOUNDATION_READY_NOT_EXECUTED
+  p02: NOT_APPLICABLE_WITH_REASON
+  current_status_after_p02: NOT_YET_ACTIVE_AFTER_P02
+  limitation_or_consequence: Downstream supervised adaptive policy
+- ablation_id: A10
+  official_identity: Contextual Bandit / Simulation-Bounded Immediate-Reward Adaptation
+  historical_p01_recorded_identity: Contextual Bandit / Simulation-Bounded Immediate-Reward Adaptation
+  historical_label_difference: false
+  p00: FOUNDATION_IDENTITY_ONLY; NOT_ACTIVE; NO_EMPIRICAL_CELL
+  p01: FOUNDATION_READY_NOT_EXECUTED
+  p02: NOT_APPLICABLE_WITH_REASON
+  current_status_after_p02: NOT_YET_ACTIVE_AFTER_P02
+  limitation_or_consequence: Downstream simulation-bounded bandit
+- ablation_id: A11
+  official_identity: Reinforcement-Learning Policy / Simulation-Bounded Sequential Policy Learning
+  historical_p01_recorded_identity: Reinforcement-Learning Policy / Simulation-Bounded Sequential Policy Learning
+  historical_label_difference: false
+  p00: FOUNDATION_IDENTITY_ONLY; NOT_ACTIVE; NO_EMPIRICAL_CELL
+  p01: FOUNDATION_READY_NOT_EXECUTED
+  p02: NOT_APPLICABLE_WITH_REASON
+  current_status_after_p02: NOT_YET_ACTIVE_AFTER_P02
+  limitation_or_consequence: Downstream sequential policy learning
+- ablation_id: A12
+  official_identity: StressForge Stress Tests / Controlled Stress Robustness
+  historical_p01_recorded_identity: StressForge Stress Tests / Controlled Stress Robustness
+  historical_label_difference: false
+  p00: FOUNDATION_IDENTITY_ONLY; NOT_ACTIVE; NO_EMPIRICAL_CELL
+  p01: FOUNDATION_READY_NOT_EXECUTED
+  p02: NOT_APPLICABLE_WITH_REASON
+  current_status_after_p02: NOT_YET_ACTIVE_AFTER_P02
+  limitation_or_consequence: Downstream stress robustness
+- ablation_id: A13
+  official_identity: Layer 9 MyoSuite/OpenSim/static-replay Embodiment Demo
+  historical_p01_recorded_identity: Layer 9 Simulation-Only Embodiment Demo
+  historical_label_difference: true
+  p00: FOUNDATION_IDENTITY_ONLY; NOT_ACTIVE; NO_EMPIRICAL_CELL
+  p01: FOUNDATION_READY_NOT_EXECUTED
+  p02: NOT_APPLICABLE_WITH_REASON
+  current_status_after_p02: NOT_YET_ACTIVE_AFTER_P02
+  limitation_or_consequence: Downstream embodiment/static replay
+a14:
+  status: PROHIBITED_ABSENT
+  selector: false
+  run: false
+  result: false
+  claim: false

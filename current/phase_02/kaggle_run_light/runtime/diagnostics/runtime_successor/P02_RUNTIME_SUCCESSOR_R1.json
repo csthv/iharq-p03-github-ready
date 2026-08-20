@@ -1,0 +1,203 @@
+{
+  "runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R1-CLASS-WEIGHT-APPLICABILITY-LIVE-CONTINUATION",
+  "base_package_root": "/kaggle/working/IHARQ_P02_L2_Kaggle_Notebook_Implementation_Package_R5",
+  "base_revision_fingerprint": {
+    "notebook_revision": "R4",
+    "notebook_id": "IHARQ-P02-COMPLETE-EXECUTION-AND-ANALYSIS-R4",
+    "source_sha256": "a54bfa816acc6763c1d1042b8c65cf54ae04ec774c57ec50de86014a6730c5fa",
+    "config_sha256": "d82334535e397c681d6172694da96d3fff0143ffb1b63a18876ee1f7778f60a1",
+    "stage_plan_sha256": "043eb30e008af910d37c563e8be8c719ef881cf009aec3e34687dc97bdc34aad",
+    "scientific_freeze_sha256": "7449216c988eec14191ba85300d720547f06fbc6ac7020e9e142bf12a4b0a598",
+    "scientific_freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5"
+  },
+  "reason": "R5 routed unequal-count class-weight selection to intrinsically non-weightable Stage-08/CSP-LDA/MDM branches, contrary to the R2 applicability/scope rule.",
+  "class_weight_repair": {
+    "non_applicable_unweighted_branches": [
+      "CLS-CSP-LDA",
+      "RIE-MDM",
+      "SAN-MAJ",
+      "SAN-PERM",
+      "SAN-PRIOR",
+      "SAN-STRAT"
+    ],
+    "supported_or_conditional_branches": "UNCHANGED_ORIGINAL_RESOLVER",
+    "test_set_access_changed": false,
+    "scientific_configuration_changed": false,
+    "method_family_changed": false
+  },
+  "quality_neutral_speed_optimizations": [
+    "DATASET_ROLE_ROW_INDEX",
+    "FROZEN_BUDGET_MEMBERSHIP_MEMOIZATION",
+    "P01_CORE_ROLE_ARRAY_RAM_REUSE",
+    "LOW_LABEL_SUBSET_FROM_CACHED_CALIBRATION_ROLE",
+    "DEFERRED_A4_LONG_ROLE_ARRAY_RAM_REUSE",
+    "CUDA_UNUSED_CACHE_CLEANUP_BEFORE_NEURAL_STAGES"
+  ],
+  "explicitly_not_enabled": [
+    "MIXED_PRECISION",
+    "TF32_POLICY_CHANGE",
+    "TORCH_COMPILE",
+    "MULTI_GPU_CONCURRENT_FITTING",
+    "CANDIDATE_PRUNING",
+    "REPEAT_REDUCTION",
+    "GRID_REDUCTION",
+    "BATCH_POLICY_CHANGE",
+    "CSP_DECOMPOSITION_REUSE_ACROSS_TIMED_CANDIDATES",
+    "TIMED_FIT_LOGGING_SUPPRESSION"
+  ],
+  "reason_for_not_altering_fit_algorithms": "validation_burden_seconds is a frozen candidate tie-break after BACC/F1; changing timed fit execution could change model selection.",
+  "function_code_hashes": {
+    "class_weight_resolver": "bd17cdd613241ee43279b963e39d38a353c3d05b84c304e1e7e67de750394816",
+    "core_cached_loader": "ce2f709d8273c2b8256f693b25f8d2956df931e2d9a71d53e6ee5e5a6efa84eb",
+    "a4_cached_loader": "2d9711579e812a8ad8fc85e4ba086a7e0ef6bc944d94a04e785d358e7871a235",
+    "budget_membership_memo": "1cdd99bc1eba1f2491b4fb7d086f9a675d021ad3c1da535d9a9ac1d547b841ec"
+  },
+  "core_cache_prewarm": {
+    "status": "PASS",
+    "loaded": [
+      {
+        "dataset_id": "PhysioNetMI",
+        "role": "train",
+        "rows": 2949,
+        "shape": [
+          2949,
+          64,
+          480
+        ],
+        "bytes": 362396712
+      },
+      {
+        "dataset_id": "PhysioNetMI",
+        "role": "calibration",
+        "rows": 979,
+        "shape": [
+          979,
+          64,
+          480
+        ],
+        "bytes": 120307352
+      },
+      {
+        "dataset_id": "PhysioNetMI",
+        "role": "validation",
+        "rows": 495,
+        "shape": [
+          495,
+          64,
+          480
+        ],
+        "bytes": 60829560
+      },
+      {
+        "dataset_id": "PhysioNetMI",
+        "role": "test",
+        "rows": 495,
+        "shape": [
+          495,
+          64,
+          480
+        ],
+        "bytes": 60829560
+      },
+      {
+        "dataset_id": "BNCI2014_001",
+        "role": "train",
+        "rows": 1440,
+        "shape": [
+          1440,
+          22,
+          480
+        ],
+        "bytes": 60837120
+      },
+      {
+        "dataset_id": "BNCI2014_001",
+        "role": "calibration",
+        "rows": 576,
+        "shape": [
+          576,
+          22,
+          480
+        ],
+        "bytes": 24334848
+      },
+      {
+        "dataset_id": "BNCI2014_001",
+        "role": "validation",
+        "rows": 288,
+        "shape": [
+          288,
+          22,
+          480
+        ],
+        "bytes": 12167424
+      },
+      {
+        "dataset_id": "BNCI2014_001",
+        "role": "test",
+        "rows": 288,
+        "shape": [
+          288,
+          22,
+          480
+        ],
+        "bytes": 12167424
+      },
+      {
+        "dataset_id": "Lee2019_MI",
+        "role": "train",
+        "rows": 3200,
+        "shape": [
+          3200,
+          62,
+          480
+        ],
+        "bytes": 380953600
+      },
+      {
+        "dataset_id": "Lee2019_MI",
+        "role": "calibration",
+        "rows": 1100,
+        "shape": [
+          1100,
+          62,
+          480
+        ],
+        "bytes": 130952800
+      },
+      {
+        "dataset_id": "Lee2019_MI",
+        "role": "validation",
+        "rows": 500,
+        "shape": [
+          500,
+          62,
+          480
+        ],
+        "bytes": 59524000
+      },
+      {
+        "dataset_id": "Lee2019_MI",
+        "role": "test",
+        "rows": 600,
+        "shape": [
+          600,
+          62,
+          480
+        ],
+        "bytes": 71428800
+      }
+    ],
+    "skipped": [],
+    "cache_bytes": 1356729200,
+    "cache_gib": 1.2635525315999985,
+    "available_ram_gib_after": 27.736446380615234
+  },
+  "P00_P01_mutated": false,
+  "labels_modified": false,
+  "splits_modified": false,
+  "signals_modified": false,
+  "seeds_modified": false,
+  "frozen_run_cells_modified": false,
+  "scientific_configuration_changed": false
+}

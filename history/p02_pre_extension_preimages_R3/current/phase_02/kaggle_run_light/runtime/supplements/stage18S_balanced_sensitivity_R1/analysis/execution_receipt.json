@@ -1,0 +1,39 @@
+{
+  "artifact_id": "P02-STAGE18S-BALANCED-SENSITIVITY-EXECUTION-R1",
+  "supplement_id": "P02-STAGE18S-BALANCED-SENSITIVITY-R1",
+  "created_at_utc": "2026-08-14T03:34:40.416634+00:00",
+  "status": "PASS",
+  "elapsed_seconds": 9357.895220518112,
+  "planned_cells": 162,
+  "planned_groups": 54,
+  "terminal_counts": {
+    "INPUT_INCOMPATIBLE": 27,
+    "SUCCESS": 135
+  },
+  "member_receipts": 216,
+  "member_status_counts": {
+    "INPUT_INCOMPATIBLE": 27,
+    "SUCCESS": 189
+  },
+  "retry_archives": {
+    "member_files": 0,
+    "run_cell_files": 0
+  },
+  "transport": {
+    "max_slots_per_gpu": 6,
+    "max_workers": 12,
+    "single_model_multi_gpu": false,
+    "same_cache_group_on_multiple_workers": false,
+    "same_gpu_virtual_cuda_rng": true,
+    "adaptive_resource_guards": true,
+    "automatic_resource_backoff": true,
+    "final_gpu_slot_caps": {
+      "0": 6,
+      "1": 6
+    },
+    "gpu_backoff_events": {}
+  },
+  "canonical_stage18_byte_identity_preserved": true,
+  "scientific_recipe_changed": false,
+  "test_outcome_used_for_selection": false
+}

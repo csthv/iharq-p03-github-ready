@@ -1,0 +1,60 @@
+selection_id: P02-A4-REPRESENTATIVE-SELECTION-R3
+status: FROZEN_PRE_RESULT
+unit: dataset_id × evidence_regime × budget_id × role_id
+role_pools:
+  CLASSICAL:
+    full_train:
+    - CLS-CSP-LDA
+    - CLS-FBCSP-LR
+    low_label:
+    - CLS-CSP-LDA
+    repeat_count_of_selected_branch: from model portfolio
+  RIEMANNIAN:
+    full_train:
+    - RIE-TS-LR
+    - RIE-EA-TS
+    low_label:
+    - RIE-TS-LR
+    repeat_count_of_selected_branch: from model portfolio
+  NEURAL:
+    full_train:
+    - DNN-EEGNET
+    - DNN-FBCNET
+    - DNN-SEQ
+    low_label:
+    - DNN-EEGNET
+    admission: at least one pool branch admitted and A4-compatible
+    repeat_count_of_selected_branch: from model portfolio
+  SSL:
+    full_train:
+    - SSL-CBRAMOD
+    low_label:
+    - SSL-CBRAMOD
+    admission: CBraMod license/checkpoint/corpus/input/resource gates PASS
+    repeat_count_of_selected_branch: from model portfolio
+    A4_LONG: fail closed under current 700-sample incompatibility unless a pre-result
+      successor verifies exact support
+excluded_from_A4_claim_bearing_roles:
+- RIE-MDM
+- DNN-EGTC
+- SSL-REVE
+- sanity/diagnostic controls
+branch_selection_order:
+- median_validation_BACC_desc
+- median_validation_F1_MACRO_desc
+- median_measured_validation_burden_asc
+- branch_id_lexical_asc
+seed_selection: PROHIBITED; after branch selection all frozen model repeats for selected
+  branch are carried into A4
+ensemble_repeat_pairing:
+  R: max(model_repeat_count across admitted member roles)
+  one_repeat_member: reuse sole checkpoint for all ensemble repeat indices
+  multi_repeat_member: use same ensemble_repeat_index
+  only_one_repeat_roles: R=1
+minimum_ensemble_roles:
+- CLASSICAL
+- RIEMANNIAN
+optional_member_roles:
+- NEURAL
+- SSL
+test_outcome_influence: PROHIBITED

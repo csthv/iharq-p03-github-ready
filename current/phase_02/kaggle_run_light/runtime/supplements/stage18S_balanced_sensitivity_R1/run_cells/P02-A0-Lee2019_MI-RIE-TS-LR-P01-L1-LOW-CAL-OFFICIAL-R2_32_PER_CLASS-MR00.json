@@ -1,0 +1,76 @@
+{
+  "run_cell_id": "P02-A0-Lee2019_MI-RIE-TS-LR-P01-L1-LOW-CAL-OFFICIAL-R2:32_PER_CLASS-MR00",
+  "ablation_id": "A0",
+  "terminal_status": "SUCCESS",
+  "prediction_partition": "records/PredictionRecord/dataset=Lee2019_MI/branch=RIE-TS-LR/budget=P01-L1-LOW-CAL-OFFICIAL-R2:32_PER_CLASS/P02-A0-Lee2019_MI-RIE-TS-LR-P01-L1-LOW-CAL-OFFICIAL-R2:32_PER_CLASS-MR00.jsonl",
+  "metric_source": "metrics/P02-A0-Lee2019_MI-RIE-TS-LR-P01-L1-LOW-CAL-OFFICIAL-R2:32_PER_CLASS-MR00.json",
+  "checkpoint_sha256": "c00dcac9a21103ab09794197002e126db413d5f6a4a4ab605fe69a721eff8e15",
+  "observed_denominator": 600,
+  "selected_params": {
+    "C": 10,
+    "covariance": "oas",
+    "tangent_metric": "riemann",
+    "max_iter": 2000
+  },
+  "resolved_variant": "RIE-TS-LR",
+  "score_type": "NATIVE_PROBABILITY",
+  "validation_burden_seconds": 2.7379696239986515,
+  "model_storage_bytes": 47386,
+  "selected_candidate_id": "CAND-02",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.009330640001280699,
+    "batch1_latency_p95_s": 0.009584736200486077,
+    "repeats": 5
+  },
+  "permutation_provenance": null,
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "class_weights": null,
+  "class_weight_calibration": {
+    "selected_policy": "UNIFORM_NO_WEIGHT",
+    "selected_weights": null,
+    "candidate_results": [
+      {
+        "status": "SUCCESS",
+        "policy": "UNIFORM_NO_WEIGHT",
+        "weights": null,
+        "validation_metrics": {
+          "BACC": 0.508,
+          "F1_MACRO": 0.5038001645931162,
+          "ACC": 0.508,
+          "CONFUSION": [
+            [
+              150,
+              100
+            ],
+            [
+              146,
+              104
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            250,
+            250
+          ],
+          "PRED_COMPLETE": 500,
+          "ROC_AUC": 0.5677760000000001,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "NATIVE_PROBABILITY"
+        },
+        "validation_burden_seconds": 2.7379696239986515,
+        "model_storage_bytes": 47386
+      }
+    ],
+    "training_count_evidence": {
+      "counts": [
+        32,
+        32
+      ],
+      "exactly_equal": true,
+      "selection_required": false
+    },
+    "test_set_used": false
+  },
+  "training_condition_id": "A0-RAW-ACCEPT-ALL",
+  "augmentation_provenance": null,
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

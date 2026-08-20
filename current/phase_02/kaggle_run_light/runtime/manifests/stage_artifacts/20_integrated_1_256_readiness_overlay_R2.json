@@ -1,0 +1,60 @@
+{
+  "A0_cells": 786,
+  "A4_cells": 1740,
+  "G20_sha256": "60fcd69d50ea0cdd7e87ad8c67ae84d828838434dc3fd39abef5b1f85934ec75",
+  "artifact_id": "P02-INT20R2-INTEGRATED-1-256-READINESS-OVERLAY",
+  "canonical_stage20_mutated_by_overlay": false,
+  "canonical_stage20_reused_or_completed": true,
+  "created_at_utc": "2026-08-17T18:05:40.017706+00:00",
+  "new_A0_terminal_counts": {
+    "SUCCESS": 108
+  },
+  "new_A4_terminal_counts": {
+    "CONDITIONAL_SKIP": 270,
+    "SUCCESS": 252
+  },
+  "next": "INT-21R2",
+  "stage18S": {
+    "combined_successful_effect_rows": 315,
+    "groups": 108,
+    "member_receipts": 432,
+    "member_status_counts": {
+      "INPUT_INCOMPATIBLE": 54,
+      "SUCCESS": 378
+    },
+    "nine_budget_mr00_trajectories": 15,
+    "nine_budget_sequence": [
+      "1",
+      "4",
+      "8",
+      "16",
+      "32",
+      "64",
+      "128",
+      "256",
+      "FULL"
+    ],
+    "planned_cells": 324,
+    "terminal_counts": {
+      "INPUT_INCOMPATIBLE": 54,
+      "SUCCESS": 270
+    },
+    "three_repeat_anchor_budgets": [
+      "1",
+      "8",
+      "64",
+      "128",
+      "256",
+      "FULL"
+    ],
+    "three_repeat_anchor_trajectories": 90
+  },
+  "stage20_ledger_sha256": "c5ac0997d678caa480f926ef5b755611ab4ae31916ff2d340e685b580a6407b4",
+  "stage20_readiness_record": {
+    "bytes": 1859,
+    "path": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/records/Layer2ReadinessReport/dataset=ALL/branch=READINESS/budget=ALL/P02-L2-READINESS-P03.jsonl",
+    "rows": 1,
+    "sha256": "8d1e6ce1cdfd5925011c44ca1d1db517344c2090aa90db1cf393cf734ca66187"
+  },
+  "status": "PASS"
+}

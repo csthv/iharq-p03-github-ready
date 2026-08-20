@@ -1,0 +1,37 @@
+{
+  "stage_id": "18U",
+  "status": "SUCCESS",
+  "attempt_id": "121bbb32d5ce",
+  "inputs": {},
+  "input_hashes": {},
+  "outputs": {
+    "status": "PASS",
+    "decision": "NO_ADDITIONAL_FULL_EXECUTION_ABLATION_UNLOCKED",
+    "authority_check": true,
+    "contract_check": true,
+    "artifact": "stage_artifacts/18U_unlock.json"
+  },
+  "output_hashes": {
+    "status": "727e9bd17b077ba162e13ba877135cc6fbc6b30f83da0b34b3e20233f1cc885f",
+    "decision": "4e7a225ac6c7bcd04761abb79ca12c51665a23c53ca8c37f1f66c27e633c464c",
+    "authority_check": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+    "contract_check": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+    "artifact": "2e174068bfdd85581c75a06db2c1e38e5286c9dd3648e55a2c33fea863133971"
+  },
+  "dependencies": [
+    "18"
+  ],
+  "elapsed_seconds": 0.008464336395263672,
+  "log_path": "logs/stage_18U_121bbb32d5ce.log",
+  "heartbeat_write_errors": [],
+  "observability_status": "PASS",
+  "blockers": [],
+  "observations": [],
+  "revision_fingerprint": {
+    "notebook_revision": "R4",
+    "source_sha256": "AUTHORING_FIXTURE_SOURCE",
+    "config_sha256": "AUTHORING_FIXTURE_CONFIG",
+    "stage_plan_sha256": "AUTHORING_FIXTURE_STAGE_PLAN",
+    "scientific_freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "build_book_gap": {
+    "record_contract_GroupBudgetAuditTable_present": false,
+    "record_contract_SparseSupportWarning_present": false,
+    "repair": "APPEND_ONLY_ARTIFACT_LEVEL_SCHEMAS_AND_GOVERNED_RECORDS",
+    "repository_GroupBudgetAuditTable_schema_present": false,
+    "repository_SparseSupportWarning_schema_present": false
+  },
+  "canonical_products_after_successful_stage19": {
+    "P03-PROD-033": {
+      "family": "GroupBudgetAuditTable",
+      "schema_id": "GroupBudgetAuditTable.v1"
+    },
+    "P03-PROD-034": {
+      "family": "SparseSupportWarning",
+      "schema_id": "SparseSupportWarning.v1"
+    }
+  },
+  "config_changed": false,
+  "hardening_id": "P03-C8-STAGE19-GROUPBUDGET-EVIDENCE-HARDENING-R1",
+  "independent_preexecution_replay": {
+    "expected_diagnostic_rows": 0,
+    "expected_eligible_rows": 3800,
+    "expected_group_budget_rows": 3800,
+    "expected_sparse_warnings": 0,
+    "group_field_counts": {
+      "branch_id": 285,
+      "budget_id": 285,
+      "calibration_method_id": 285,
+      "dataset_id": 285,
+      "model_id": 285,
+      "session_id": 380,
+      "split_id": 285,
+      "subject_id": 1710
+    },
+    "groups": 285,
+    "sparse_metric_fabrication_count": 0,
+    "warning_group_field_counts": {},
+    "workers": 4
+  },
+  "maxq_fix_id": "P03-C8-MAXQ-STAGE19-GROUPBUDGET-HARDENED-AUDIT-R1",
+  "protocol_changed": false,
+  "protocol_contract": {
+    "evaluation_role": "test",
+    "group_fields": [
+      "dataset_id",
+      "subject_id",
+      "session_id",
+      "model_id",
+      "branch_id",
+      "budget_id",
+      "split_id",
+      "calibration_method_id"
+    ],
+    "group_profile_id": "P03-OFFICIAL-GROUP-AUDIT-R1",
+    "metric_profile_id": "P03-OFFICIAL-METRICS-R1",
+    "minimum_support": 10,
+    "nll_epsilon": 1e-12,
+    "sparse_group_policy": "retain_with_explicit_insufficiency_status"
+  },
+  "repository_mutated": false,
+  "run_id": "P03-L3-OFFICIAL-09ca82c743e0411a",
+  "schema_id": "P03Stage19GroupBudgetProspectiveHardeningInstallerManifest.v1",
+  "schema_version": "1.0.0",
+  "scientific_handler_changed": false,
+  "scientific_handler_module": "iharq.layer3_calibration_uncertainty.stages",
+  "scientific_handler_sha256": "a9a55de6d3f02ded89ac02908a5b1c1d8e35323d64f707508cdb9881a7b70d29",
+  "scientific_method_changed": false,
+  "scientific_prohibitions": {
+    "model_or_calibrator_fitting": true,
+    "posthoc_group_creation": true,
+    "sparse_metric_imputation": true,
+    "test_driven_selection": true,
+    "threshold_retuning": true
+  },
+  "stage18_final_disposition": "ACCEPT/FREEZE",
+  "stage19_executed": false,
+  "stage20_executed": false,
+  "stage_id": "19",
+  "status": "PASS"
+}

@@ -1,0 +1,81 @@
+{
+  "status": "SUCCESS",
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "branch": "SSL-CBRAMOD",
+  "member": 2,
+  "checkpoint_sha256": "ca800b231a93a6d21647d34f79663cb13d3c6a57fc902f24964f6c7514fb0d58",
+  "model_id": "SSL-CBRAMOD:A4-R8:Lee2019_MI__P01-L1-LOW-CAL-OFFICIAL-R2:128_PER_CLASS__SSL-CBRAMOD__1__2",
+  "score_type": "SOFTMAX_PROBABILITY",
+  "checkpoint_format": "EXTERNAL_GOVERNED_INTERFACE",
+  "execution_device": "cuda:1",
+  "latency_summary": {
+    "batch1_latency_median_s": 0.50664357200003,
+    "batch1_latency_p95_s": 0.50664357200003,
+    "repeats": 1
+  },
+  "r8_policy_sha256": "a21655f9b52cfbf817b1b271f758739cf01b1e7a75e786c880ccdd1a3c58ef32",
+  "r8_runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R10-STAGE18-A4-ANCHOR-BUDGET-SINGLE-REPEAT-R1",
+  "recipe_id": "R6-CBRAMOD-SOURCE-CENTERED-R1",
+  "class_weight_policy": "UNIFORM_NO_WEIGHT_EXACT_BALANCED_TRAIN",
+  "class_weights": null,
+  "class_weight_frozen_from_a0": true,
+  "matching_a0_checkpoint_sha256": "5864e81e8fff2fa5d368b99045b7e4a101a00621d5ad93475ac03b22cf568a87",
+  "test_loaded_after_checkpoint_sealed": true,
+  "test_set_used_for_selection": false,
+  "raw_train_shape": [
+    256,
+    62,
+    320
+  ],
+  "raw_validation_shape": [
+    500,
+    62,
+    320
+  ],
+  "raw_test_shape": [
+    600,
+    62,
+    320
+  ],
+  "training_provenance": {
+    "recipe_id": "R6-CBRAMOD-SOURCE-CENTERED-R1",
+    "best_epoch": 20,
+    "epochs_completed": 60,
+    "best_validation": {
+      "BACC": 0.558,
+      "F1_MACRO": 0.5578567455855696,
+      "ACC": 0.558,
+      "CONFUSION": [
+        [
+          144,
+          106
+        ],
+        [
+          115,
+          135
+        ]
+      ],
+      "CLASS_SUPPORT": [
+        250,
+        250
+      ],
+      "PRED_COMPLETE": 500,
+      "ROC_AUC": 0.5667199999999999,
+      "ROC_AUC_STATUS": "PASS",
+      "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+    },
+    "elapsed_seconds": 343.28058314323425,
+    "prepared_train_shape": [
+      256,
+      62,
+      400
+    ],
+    "prepared_validation_shape": [
+      500,
+      62,
+      400
+    ],
+    "test_set_used_for_selection": false,
+    "same_gpu_virtual_cuda_rng": true
+  }
+}

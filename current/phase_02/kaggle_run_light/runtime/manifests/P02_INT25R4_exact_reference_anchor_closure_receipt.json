@@ -1,0 +1,82 @@
+{
+  "A0_terminals_mutated": false,
+  "A4_terminals_mutated": false,
+  "artifact_id": "P02-INT25R4-EXACT-REFERENCE-ANCHOR-UNIFIED-PRESENTATION-CLOSURE",
+  "checkpoint_regenerated": false,
+  "created_at_utc": "2026-08-17T18:06:13.761758+00:00",
+  "current_P02_table_count": 17,
+  "downstream_revision": "R12_FROM_INT20_ONWARD",
+  "exact_predecessor_reference_preserved": true,
+  "existing_unaffected_current_tables_deleted": false,
+  "historical_1_to_32_BACC_rows_verified": 72,
+  "integrated_low_label_BACC_rows": 108,
+  "integrated_low_label_metric_source_rows": 324,
+  "model_training_performed": false,
+  "prediction_regenerated": false,
+  "primary_budget_axis": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256
+  ],
+  "reference_low_label_BACC_sha256": "2c3d377c97853deb9c0c489e3b551e11d5fae540c89029ea489510de11e77de1",
+  "reference_mirror": "/kaggle/working/_IHARQ_CANONICAL_P02_ANALYSIS_REFERENCE_MIRROR_R1/analysis/table_source_data/p02",
+  "reference_table_count": 2,
+  "required_current_tables": [
+    "P02_Table_A4_C4_C5_statistics.csv",
+    "P02_Table_A4_burden_summary.csv",
+    "P02_Table_A4_role_condition_summary.csv",
+    "P02_Table_A4_role_control_statistics.csv",
+    "P02_Table_Stage18S_nine_budget_sensitivity.csv",
+    "P02_Table_Stage18S_six_budget_sensitivity.csv",
+    "P02_Table_Stage18S_three_repeat_anchor_stability.csv",
+    "P02_Table_low_label_BACC.csv",
+    "P02_Table_low_label_budget_deltas.csv",
+    "P02_Table_low_label_budget_leaders_and_rank_changes.csv",
+    "P02_Table_low_label_exact_deltas_and_ranks.csv",
+    "P02_Table_low_label_interval_deltas.csv"
+  ],
+  "scientific_history_preserved": true,
+  "stage18S": {
+    "combined_successful_effect_rows": 315,
+    "groups": 108,
+    "member_receipts": 432,
+    "member_status_counts": {
+      "INPUT_INCOMPATIBLE": 54,
+      "SUCCESS": 378
+    },
+    "nine_budget_mr00_trajectories": 15,
+    "nine_budget_sequence": [
+      "1",
+      "4",
+      "8",
+      "16",
+      "32",
+      "64",
+      "128",
+      "256",
+      "FULL"
+    ],
+    "planned_cells": 324,
+    "terminal_counts": {
+      "INPUT_INCOMPATIBLE": 54,
+      "SUCCESS": 270
+    },
+    "three_repeat_anchor_budgets": [
+      "1",
+      "8",
+      "64",
+      "128",
+      "256",
+      "FULL"
+    ],
+    "three_repeat_anchor_trajectories": 90
+  },
+  "stage18S_terminals_mutated": false,
+  "status": "PASS"
+}

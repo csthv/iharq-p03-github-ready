@@ -1,0 +1,25 @@
+{
+  "artifact_id": "P02-STAGE18S-R1-SIX-WORKER-TRANSPORT",
+  "supplement_id": "P02-STAGE18S-BALANCED-SENSITIVITY-R1",
+  "planned_run_cell_id": "P02-A4S-R1-Lee2019_MI-SSL-A4-C1-LONG-3P5S-P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS-MR00",
+  "parent_canonical_run_cell_id": "P02-A4-Lee2019_MI-SSL-A4-C1-LONG-3P5S-P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS-MR00",
+  "gpu_id": 0,
+  "slot_id": 0,
+  "gpu_name": "Tesla T4",
+  "phase": "COMPLETED",
+  "scheduler_revision": "STAGE18S_R1_3_SIX_SLOTS_PER_GPU_ADAPTIVE_RAMPED",
+  "dedicated_cuda_stream": true,
+  "virtualized_per_fit_cuda_rng": true,
+  "single_model_multi_gpu": false,
+  "same_cache_group_on_multiple_workers": false,
+  "scientific_recipe_changed": false,
+  "stage18_policy_sha256": "a21655f9b52cfbf817b1b271f758739cf01b1e7a75e786c880ccdd1a3c58ef32",
+  "group": [
+    "Lee2019_MI",
+    "P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS",
+    "SSL",
+    0
+  ],
+  "selected_branch": "SSL-CBRAMOD",
+  "terminal_status": "INPUT_INCOMPATIBLE"
+}

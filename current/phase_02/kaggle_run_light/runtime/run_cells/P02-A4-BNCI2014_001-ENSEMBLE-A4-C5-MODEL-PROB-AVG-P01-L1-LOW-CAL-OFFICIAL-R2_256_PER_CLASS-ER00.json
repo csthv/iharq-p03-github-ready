@@ -1,0 +1,65 @@
+{
+  "run_cell_id": "P02-A4-BNCI2014_001-ENSEMBLE-A4-C5-MODEL-PROB-AVG-P01-L1-LOW-CAL-OFFICIAL-R2:256_PER_CLASS-ER00",
+  "ablation_id": "A4",
+  "terminal_status": "SUCCESS",
+  "prediction_partition": "records/PredictionRecord/dataset=BNCI2014_001/branch=PRE_RESULT_ROLE_MEMBERSHIP/budget=P01-L1-LOW-CAL-OFFICIAL-R2:256_PER_CLASS/P02-A4-BNCI2014_001-ENSEMBLE-A4-C5-MODEL-PROB-AVG-P01-L1-LOW-CAL-OFFICIAL-R2:256_PER_CLASS-ER00.jsonl",
+  "source_rows": "raw_outputs/P02-A4-BNCI2014_001-ENSEMBLE-A4-C5-MODEL-PROB-AVG-P01-L1-LOW-CAL-OFFICIAL-R2:256_PER_CLASS-ER00.jsonl",
+  "metric_source": "metrics/P02-A4-BNCI2014_001-ENSEMBLE-A4-C5-MODEL-PROB-AVG-P01-L1-LOW-CAL-OFFICIAL-R2:256_PER_CLASS-ER00.json",
+  "strongest_constituent_branch": "DNN-EEGNET",
+  "strongest_constituent_prediction_partition": "records/PredictionRecord/dataset=BNCI2014_001/branch=DNN-EEGNET/budget=P01-L1-LOW-CAL-OFFICIAL-R2:256_PER_CLASS/P02-A0-BNCI2014_001-DNN-EEGNET-P01-L1-LOW-CAL-OFFICIAL-R2:256_PER_CLASS-MR00.jsonl",
+  "strongest_constituent_checkpoint_sha256": "8747ff7fad68a82764153e0ab99256e854cf175cfafacf3e37e2aba4dee5f96b",
+  "validation_selection_provenance": {
+    "selected_branch": "DNN-EEGNET",
+    "candidate_summaries": [
+      {
+        "branch_id": "DNN-EEGNET",
+        "BACC": 0.8472222222222223,
+        "F1": 0.8463254911472229,
+        "burden": 18.590774319998673
+      },
+      {
+        "branch_id": "CLS-CSP-LDA",
+        "BACC": 0.7638888888888888,
+        "F1": 0.7552856500224921,
+        "burden": 0.6757587869997224
+      },
+      {
+        "branch_id": "RIE-TS-LR",
+        "BACC": 0.7534722222222223,
+        "F1": 0.7426726904345419,
+        "burden": 1.1615120740007114
+      },
+      {
+        "branch_id": "SSL-CBRAMOD",
+        "BACC": 0.6180555555555556,
+        "F1": 0.6175945149920332,
+        "burden": 466.6212878227234
+      }
+    ],
+    "test_outcome_influence": "PROHIBITED"
+  },
+  "ensemble_member_branches": [
+    "CLS-CSP-LDA",
+    "RIE-TS-LR",
+    "DNN-EEGNET",
+    "SSL-CBRAMOD"
+  ],
+  "ensemble_member_checkpoint_ids": [
+    "9e2544f7c1fedf49addf5cb0ca191b44a4071cff04bde479c0ed1b734acb9b2b",
+    "5be3dc1c7f00e70a49abf8a1eecd5d117100bfa797f826da94e64b3f41522afd",
+    "8747ff7fad68a82764153e0ab99256e854cf175cfafacf3e37e2aba4dee5f96b",
+    "0d7f0f0fbfc9fe2b71f597a5a97af7ead0e996ae6de167e6ff96cc717a84f837"
+  ],
+  "observed_denominator": 288,
+  "burden": {
+    "evidence_duration_s": 3.0,
+    "observation_horizon_s": 3.0,
+    "model_or_view_evaluations": 4,
+    "member_count": 4,
+    "aggregation_operation": "PROBABILITY_AVERAGE",
+    "batch1_latency_median_s": 0.005383072999393335,
+    "batch1_latency_p95_s": 0.005843903799541294,
+    "aggregation_latency_s": 0.00015985099889803678
+  },
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

@@ -1,0 +1,29 @@
+core_profile: P01-L1-OFFICIAL-RUN-FREEZE-R2
+a4_profile: P01-L1-A4-WINDOW-FAMILY-FREEZE-R2
+read_only: true
+relabel: false
+resplit: false
+rewindow: false
+core_window:
+  start_offset_s: 0.5
+  stop_offset_s: 3.5
+  duration_s: 3.0
+  samples: 480
+  sampling_hz: 160
+a4_long:
+  start_offset_s: 0.0
+  stop_offset_s: 3.5
+  duration_s: 3.5
+  samples: 560
+  sampling_hz: 160
+a4_multi:
+  observation_horizon_s: 3.5
+  member_duration_s: 2.0
+  member_count: 3
+  member_slices:
+  - - 0
+    - 320
+  - - 120
+    - 440
+  - - 240
+    - 560

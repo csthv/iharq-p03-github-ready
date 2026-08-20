@@ -1,0 +1,71 @@
+{
+  "run_cell_id": "P02-A0-BNCI2014_001-DIAG-LOGVAR-FULL_TRAIN-MR00",
+  "ablation_id": "A0",
+  "terminal_status": "SUCCESS",
+  "prediction_partition": "records/PredictionRecord/dataset=BNCI2014_001/branch=DIAG-LOGVAR/budget=FULL_TRAIN/P02-A0-BNCI2014_001-DIAG-LOGVAR-FULL_TRAIN-MR00.jsonl",
+  "metric_source": "metrics/P02-A0-BNCI2014_001-DIAG-LOGVAR-FULL_TRAIN-MR00.json",
+  "checkpoint_sha256": "c4752ad5515ffe64e277af85718c2e5a9c0cf525664e2fbd256b4c37989cabd1",
+  "observed_denominator": 288,
+  "selected_params": {},
+  "resolved_variant": "DIAG-LOGVAR",
+  "score_type": "NATIVE_PROBABILITY",
+  "validation_burden_seconds": 0.0648864700001468,
+  "model_storage_bytes": 924,
+  "selected_candidate_id": "CAND-00",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.00032326100017598947,
+    "batch1_latency_p95_s": 0.0003885720001562731,
+    "repeats": 5
+  },
+  "permutation_provenance": null,
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "class_weights": null,
+  "class_weight_calibration": {
+    "selected_policy": "UNIFORM_NO_WEIGHT",
+    "selected_weights": null,
+    "candidate_results": [
+      {
+        "status": "SUCCESS",
+        "policy": "UNIFORM_NO_WEIGHT",
+        "weights": null,
+        "validation_metrics": {
+          "BACC": 0.5104166666666666,
+          "F1_MACRO": 0.3560724989296418,
+          "ACC": 0.5104166666666666,
+          "CONFUSION": [
+            [
+              144,
+              0
+            ],
+            [
+              141,
+              3
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            144,
+            144
+          ],
+          "PRED_COMPLETE": 288,
+          "ROC_AUC": 0.8493923611111112,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "NATIVE_PROBABILITY"
+        },
+        "validation_burden_seconds": 0.0648864700001468,
+        "model_storage_bytes": 924
+      }
+    ],
+    "training_count_evidence": {
+      "counts": [
+        720,
+        720
+      ],
+      "exactly_equal": true,
+      "selection_required": false
+    },
+    "test_set_used": false
+  },
+  "training_condition_id": "A0-RAW-ACCEPT-ALL",
+  "augmentation_provenance": null,
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

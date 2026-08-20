@@ -1,0 +1,58 @@
+phase_handoff:
+  handoff_id: P03-P04-CANONICAL-HANDOFF-f396048e0f596f7d969e
+  producer_phase: P03
+  producer_layer: L3
+  consumer_phase: P04
+  status: READY_WITH_EXPLICIT_LIMITATIONS
+  terminal_status: SUCCESS
+  canonical_handoff: artifacts/handoffs/phase_03_to_phase_04/p03_handoff_manifest.json
+  artifact_index: artifacts/handoffs/phase_03_to_phase_04/artifact_index.csv
+  checksum_ledger: artifacts/handoffs/phase_03_to_phase_04/checksums.sha256
+  current_phase_state: final_state/through_p03/
+  canonical_execution_receipts: current/phase_03/canonical_execution/
+  post_extension_annex: current/phase_03/post_extension_64_128_256/
+  implementation: current/phase_03/implementation/
+  run_id: P03-L3-OFFICIAL-09ca82c743e0411a
+  protocol_snapshot_id: IHARQ-P03-L3-OFFICIAL-STRETCH-C-EXECUTION-FREEZE-R1
+  limitations:
+  - P02-LIM-01
+  - P02-LIM-02
+  - P02-LIM-03
+  - P02-LIM-04
+  - P02-LIM-05
+  - P02-LIM-06
+  - P02-LIM-07
+  - P02-LIM-08
+  - P02-LIM-09
+  - P02-LIM-10
+  - P02-LIM-11
+  - P02-LIM-12
+  - P02-LIM-13
+  - P02-LIM-14
+  - P03-LIM-SELECTIVE-NO-LEGAL-RULE-R1
+  - P03-LIM-MEMBER-DISAGREEMENT-UNAVAILABLE-R1
+  - P03-LIM-GENUINE-LOGITS-R1
+  - P03-LIM-BINARY-UNCERTAINTY-ALIAS-R1
+  - P03-LIM-CONFORMAL-PROXY-R1
+  - P03-LIM-SPARSE-SUPPORT-POLICY-R1
+  - P03-LIM-FAILED-ATTEMPT-PRESERVATION-R1
+  blockers: []
+  allowed_uses:
+  - evidence verification using frozen L3 outputs
+  prohibited_uses:
+  - retuning, evaluation truth, safety inference, upstream mutation
+  p03_heavy_repository: Csthv/iharq-p03-postext-64-128-256-r1-heavy-1833e865bcb88ff8
+  p03_heavy_immutable_revision: 2b5b465fafdcd4c590d24e90ee0932571d7658a9
+  p03_external_pointer_manifest: current/phase_03/release_metadata/EXTERNAL_ARTIFACT_POINTERS.jsonl
+  p03_cross_repository_location_index: current/phase_03/release_metadata/PHASE03_CROSS_REPOSITORY_LOCATION_INDEX.jsonl
+  historical_p02_to_p03_handoff: artifacts/handoffs/phase_02_to_phase_03/
+  rules:
+  - P04 MUST consume the frozen P03 handoff without retuning, upstream mutation, or
+    safety inference.
+  - P04 MUST preserve P02 and P03 limitations and provenance boundaries.
+  - P04 MUST distinguish canonical P03 evidence from the post-extension 64/128/256
+    annex.
+  - Candidate P03 claim inputs remain candidate-only; this merge performs no claim
+    approval.
+  - External heavy artifacts MUST be resolved by repository, immutable revision, path/member
+    identity, and checksum as specified by P03 release metadata.

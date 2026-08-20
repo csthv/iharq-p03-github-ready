@@ -1,0 +1,119 @@
+{
+  "stage_id": "15",
+  "status": "SUCCESS",
+  "attempt_id": "0cedb7522386",
+  "inputs": {},
+  "input_hashes": {},
+  "outputs": {
+    "status": "PASS",
+    "planned": 678,
+    "terminal": 678,
+    "terminal_counts": {
+      "SUCCESS": 657,
+      "FAILED": 3,
+      "CONDITIONAL_SKIP": 15,
+      "DEPENDENCY_BLOCKED": 3
+    },
+    "minimum_floor": {
+      "BNCI2014_001": {
+        "classical": true,
+        "riemannian": true
+      },
+      "Lee2019_MI": {
+        "classical": true,
+        "riemannian": true
+      },
+      "PhysioNetMI": {
+        "classical": true,
+        "riemannian": true
+      }
+    },
+    "participant_metric_rows": 3942,
+    "metric_records": 2625,
+    "analysis_inputs_complete": true,
+    "p03_raw_prediction_substrate": true,
+    "prediction_record_complete": true,
+    "raw_score_semantics_complete": true,
+    "denominator_accounting_complete": true,
+    "checkpoint_provenance_complete": true,
+    "failure_negative_evidence_expected_at_stage19": true,
+    "figure_table_source_generation_stage": "21",
+    "protocol_handoff_stage": "22",
+    "phase_analysis_handoff_stage": "22",
+    "layer0_handoff_stage": "22",
+    "evidence_map_handoff_stage": "22",
+    "layer10_source_handoff_stage": "22",
+    "stage15_a0_closure": "COMPLETE",
+    "required_closure_outputs_missing": 0,
+    "training_policy_challenger_closure": {
+      "status": "PASS",
+      "planned_cells": 15,
+      "terminal_cells": 15,
+      "successful_comparisons": 15,
+      "non_success_terminal_cells": 0,
+      "incomplete_cells": [],
+      "diagnostic_only": true,
+      "condition_id": "P02-TRAIN-AUG-SR-EEGNET-FULL-R2-VALIDATION-RESOLVED",
+      "not_an_A_number": true,
+      "does_not_replace_primary_A0": true,
+      "does_not_enter_A4_selection": true,
+      "analysis_sources": [
+        "analysis_inputs/training_policy_challenger_terminal_states.jsonl",
+        "analysis_inputs/training_policy_challenger_seed_comparisons.jsonl",
+        "analysis_inputs/training_policy_challenger_participant_comparisons.jsonl",
+        "analysis_inputs/training_policy_challenger_statistics.json",
+        "analysis_inputs/training_policy_sr_probability_selection.json",
+        "analysis_inputs/training_policy_sr_probability_calibration_candidates.jsonl"
+      ]
+    },
+    "artifact": "stage_artifacts/15_a0_and_training_policy_closure.json"
+  },
+  "output_hashes": {
+    "status": "727e9bd17b077ba162e13ba877135cc6fbc6b30f83da0b34b3e20233f1cc885f",
+    "planned": "cebe3d9d614ba5c19f633566104315854a11353a333bf96f16b5afa0e90abdc4",
+    "terminal": "cebe3d9d614ba5c19f633566104315854a11353a333bf96f16b5afa0e90abdc4",
+    "terminal_counts": "e65d68ad17a7f8afbaae26e6d2b17dc80b031060bcee861a1580a3a8bfc01d8b",
+    "minimum_floor": "af65845959022f15487a1524435cd9955499733fb31d3ccdc822a7c4fff39adb",
+    "participant_metric_rows": "7c2355534ecc3a59cd73d88e363d9be9f597807c5229b4daaf8e9f719dfa8b42",
+    "metric_records": "63727ee4cff30e597899af01a4a355ea91e54c9a055e1da18e25b89dfa90352c",
+    "analysis_inputs_complete": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+    "p03_raw_prediction_substrate": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+    "prediction_record_complete": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+    "raw_score_semantics_complete": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+    "denominator_accounting_complete": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+    "checkpoint_provenance_complete": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+    "failure_negative_evidence_expected_at_stage19": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+    "figure_table_source_generation_stage": "6f8f349216adc47cfd723001f3dfbfc11179e1b36c31ce51c85056026f3d85b9",
+    "protocol_handoff_stage": "b16781f85251cf7a5bab973eb0927776b89a75f8def28c649ae65e01b3db5e28",
+    "phase_analysis_handoff_stage": "b16781f85251cf7a5bab973eb0927776b89a75f8def28c649ae65e01b3db5e28",
+    "layer0_handoff_stage": "b16781f85251cf7a5bab973eb0927776b89a75f8def28c649ae65e01b3db5e28",
+    "evidence_map_handoff_stage": "b16781f85251cf7a5bab973eb0927776b89a75f8def28c649ae65e01b3db5e28",
+    "layer10_source_handoff_stage": "b16781f85251cf7a5bab973eb0927776b89a75f8def28c649ae65e01b3db5e28",
+    "stage15_a0_closure": "0ba9a455349c3f02ebe6f28595a29e30a4d03a954f412f2688924056e81a7067",
+    "required_closure_outputs_missing": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+    "training_policy_challenger_closure": "5ae90aa51fc3b9160697aa486df53368e5a3113c234067fd353d88ccc902a0bb",
+    "artifact": "7fcf3f99141359c1b8e10697e29fb739eb3b08045c88209f5f74f17e1ea1ce94"
+  },
+  "dependencies": [
+    "14"
+  ],
+  "elapsed_seconds": 39.88797640800476,
+  "log_path": "logs/stage_15_0cedb7522386.log",
+  "heartbeat_write_errors": [],
+  "observability_status": "PASS",
+  "blockers": [],
+  "observations": [],
+  "revision_fingerprint": {
+    "notebook_revision": "R4",
+    "notebook_id": "IHARQ-P02-COMPLETE-EXECUTION-AND-ANALYSIS-R4",
+    "source_sha256": "a54bfa816acc6763c1d1042b8c65cf54ae04ec774c57ec50de86014a6730c5fa",
+    "config_sha256": "d82334535e397c681d6172694da96d3fff0143ffb1b63a18876ee1f7778f60a1",
+    "stage_plan_sha256": "043eb30e008af910d37c563e8be8c719ef881cf009aec3e34687dc97bdc34aad",
+    "scientific_freeze_sha256": "7449216c988eec14191ba85300d720547f06fbc6ac7020e9e142bf12a4b0a598",
+    "scientific_freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5"
+  },
+  "runtime_successor": {
+    "id": "P02-RUNTIME-SUCCESSOR-R7H7-STAGE11-EEGNET-AUTHOR-CENTERED-10000E-TRUE-P120-CONTINUATION",
+    "scientific_configuration_changed": false
+  }
+}

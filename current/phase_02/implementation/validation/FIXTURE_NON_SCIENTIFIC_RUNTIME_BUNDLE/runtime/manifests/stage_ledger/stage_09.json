@@ -1,0 +1,41 @@
+{
+  "stage_id": "09",
+  "status": "SUCCESS",
+  "attempt_id": "4754078f3821",
+  "inputs": {},
+  "input_hashes": {},
+  "outputs": {
+    "status": "PASS",
+    "attempted": 1,
+    "branches": [
+      "CLS-CSP-LDA"
+    ],
+    "terminal_counts": {
+      "SUCCESS": 1
+    },
+    "artifact": "stage_artifacts/09_family.json"
+  },
+  "output_hashes": {
+    "status": "727e9bd17b077ba162e13ba877135cc6fbc6b30f83da0b34b3e20233f1cc885f",
+    "attempted": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+    "branches": "44a22fbc1feb40b9ace8b366dd17432cef15f75c13c92564624b2a15687ff6f9",
+    "terminal_counts": "53f0ab7932f6baa104fcb4e538316e361ffe1e8192ba531c0865bdb4839f74cd",
+    "artifact": "291ba2d6e426dfd03e44c4ec455b1399bfc70cb41e70267441b75cb6626788a4"
+  },
+  "dependencies": [
+    "08"
+  ],
+  "elapsed_seconds": 2.3937344551086426,
+  "log_path": "logs/stage_09_4754078f3821.log",
+  "heartbeat_write_errors": [],
+  "observability_status": "PASS",
+  "blockers": [],
+  "observations": [],
+  "revision_fingerprint": {
+    "notebook_revision": "R4",
+    "source_sha256": "AUTHORING_FIXTURE_SOURCE",
+    "config_sha256": "AUTHORING_FIXTURE_CONFIG",
+    "stage_plan_sha256": "AUTHORING_FIXTURE_STAGE_PLAN",
+    "scientific_freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5"
+  }
+}

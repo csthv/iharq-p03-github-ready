@@ -1,0 +1,22 @@
+{
+  "disjointness": {
+    "status": "PASS",
+    "intersections": [],
+    "counts": {
+      "calibration": 35,
+      "train": 102,
+      "test": 18,
+      "validation": 17
+    }
+  },
+  "role_coverage": {
+    "status": "PASS",
+    "counts": {
+      "train": 102,
+      "calibration": 35,
+      "validation": 17,
+      "test": 18
+    },
+    "missing_roles": []
+  }
+}

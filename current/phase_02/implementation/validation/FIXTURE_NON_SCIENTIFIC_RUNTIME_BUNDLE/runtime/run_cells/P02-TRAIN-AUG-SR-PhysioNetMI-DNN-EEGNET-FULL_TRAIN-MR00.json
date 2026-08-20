@@ -1,0 +1,49 @@
+{
+  "run_cell_id": "P02-TRAIN-AUG-SR-PhysioNetMI-DNN-EEGNET-FULL_TRAIN-MR00",
+  "ablation_id": "TRAINING_POLICY_DIAGNOSTIC",
+  "terminal_status": "SUCCESS",
+  "prediction_partition": "records/PredictionRecord/dataset=PhysioNetMI/branch=DNN-EEGNET/budget=FULL_TRAIN/P02-TRAIN-AUG-SR-PhysioNetMI-DNN-EEGNET-FULL_TRAIN-MR00.jsonl",
+  "metric_source": "metrics/P02-TRAIN-AUG-SR-PhysioNetMI-DNN-EEGNET-FULL_TRAIN-MR00.json",
+  "checkpoint_sha256": "d5b5146238f0e0274bc58dde3289ff675ffc6381435c61fa1a79115c380b8e81",
+  "observed_denominator": 24,
+  "selected_params": {
+    "lr": 0.0003,
+    "weight_decay": 0.0001,
+    "dropout": 0.5
+  },
+  "resolved_variant": "FIXTURE_NEURAL_SURROGATE_NOT_P02_EVIDENCE",
+  "score_type": "NATIVE_PROBABILITY",
+  "validation_burden_seconds": 0.00984183699983987,
+  "model_storage_bytes": 1156,
+  "selected_candidate_id": "CAND-00",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.00012511500062828418,
+    "batch1_latency_p95_s": 0.0001822548005293356,
+    "repeats": 5
+  },
+  "permutation_provenance": null,
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "class_weights": null,
+  "class_weight_calibration": {
+    "selected_policy": "UNIFORM_NO_WEIGHT",
+    "selected_weights": null,
+    "test_set_used": false,
+    "selection_required": false
+  },
+  "training_condition_id": "P02-TRAIN-AUG-SR-EEGNET-FULL-R2-VALIDATION-RESOLVED",
+  "augmentation_provenance": {
+    "enabled": true,
+    "fixture": true,
+    "condition_id": "P02-TRAIN-AUG-SR-EEGNET-FULL-R2-VALIDATION-RESOLVED",
+    "probability": 0.5,
+    "segment_resolution": {
+      "status": "PASS",
+      "n_segments": 20,
+      "resolver_source": "FIXTURE_DOCUMENTED_FALLBACK",
+      "n_times": 480,
+      "fixture": true
+    },
+    "donor_segment_count": 560
+  },
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

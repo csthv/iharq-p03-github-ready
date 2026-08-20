@@ -1,0 +1,171 @@
+{
+  "package_id": "IHARQ-POST-PHASE-ANALYSIS-GOVERNANCE-THROUGH-P02-R1",
+  "checks": [
+    {
+      "check": "structured parse",
+      "status": "PASS",
+      "detail": "88 files; []"
+    },
+    {
+      "check": "37 Layer0 claims",
+      "status": "PASS",
+      "detail": "Counter({'APPROVED_WITH_QUALIFICATIONS': 33, 'APPROVED': 2, 'DEFERRED': 1, 'REJECTED': 1})"
+    },
+    {
+      "check": "10 P02 claims",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "8 cumulative claims",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "claim set parity",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "disposition parity",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "reviewed text parity",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "layer0/claim_boundaries.yaml coverage",
+      "status": "PASS",
+      "detail": "37"
+    },
+    {
+      "check": "layer0/claim_evidence_handoff.yaml coverage",
+      "status": "PASS",
+      "detail": "37"
+    },
+    {
+      "check": "layer0/prohibited_stronger_wording.yaml coverage",
+      "status": "PASS",
+      "detail": "37"
+    },
+    {
+      "check": "49 unique findings",
+      "status": "PASS",
+      "detail": "Counter({'P01': 14, 'P02': 14, 'CUMULATIVE_P00_P02': 12, 'P00': 9})"
+    },
+    {
+      "check": "finding text complete",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "phase finding counts",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "claim finding FK",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "relationship finding FK",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "38 P02 inputs exact",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "all P02 findings mapped",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 104/104 evidence dispositioned",
+      "status": "PASS",
+      "detail": "{'total_requirements': 104, 'fully_analyzed': 72, 'partially_analyzed': 0, 'missing': 0, 'not_applicable': 32, 'total_dispositioned': 104}"
+    },
+    {
+      "check": "P02 analytic dimensions complete",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "preferred external exact",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "archival external exact",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "dual credential classes",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "14 figure hashes/source exact",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "13 table hashes/source exact",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "Layer10 claims resolve",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "figure captions complete",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "27 figure/table provenance rows",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "source authority copies exact",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "A0 leaders exact",
+      "status": "PASS",
+      "detail": "{'BNCI2014_001': ('CLS-CSP-LDA', 0.6388888888888888, 1), 'Lee2019_MI': ('DNN-SEQ', 0.7949999999999999, 6), 'PhysioNetMI': ('DNN-SEQ', 0.6497245179063361, 11)}"
+    },
+    {
+      "check": "Layer0 dispositions exact",
+      "status": "PASS",
+      "detail": "Counter({'APPROVED_WITH_QUALIFICATIONS': 33, 'APPROVED': 2, 'DEFERRED': 1, 'REJECTED': 1})"
+    },
+    {
+      "check": "no literal secret hits",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "no direct doc/docx",
+      "status": "PASS",
+      "detail": "[]"
+    }
+  ],
+  "summary": {
+    "total": 32,
+    "pass": 32,
+    "fail": 0
+  },
+  "parse_failures": []
+}

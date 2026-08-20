@@ -1,0 +1,206 @@
+{
+  "DNN-EGTC": {
+    "activation_rule": "ONLY_IF_DNN_SEQ_DB_CONFORMER_AND_EEG_CONFORMER_PATH_RESOLVES_RESOURCE_BLOCKED_INPUT_INCOMPATIBLE_OR_NONCONVERGENT_PRE_RESULT",
+    "fallback_activated": false,
+    "variant_name": "EEGTCNet"
+  },
+  "DNN-FBCNET": {
+    "checkpoint_required": false,
+    "class_weight_support_verified": true,
+    "implementation_equivalence": "ORIGINAL_AUTHOR",
+    "implementation_module": "iharq_stage12_external_adapters",
+    "license_status": "CAN_EXECUTE",
+    "module_sha256": "add69c0a0f8843366d6d9ed1fb16746f61d43a6d588b04f07193484e0555386a",
+    "plugin_config": {
+      "adapter_kind": "FBCNET_ORIGINAL_AUTHOR_P01",
+      "bands_hz": [
+        [
+          8,
+          12
+        ],
+        [
+          12,
+          16
+        ],
+        [
+          16,
+          20
+        ],
+        [
+          20,
+          24
+        ],
+        [
+          24,
+          28
+        ],
+        [
+          28,
+          32
+        ]
+      ],
+      "canonical_upstream_bandpass_hz": [
+        8.0,
+        32.0
+      ],
+      "data_parallel_max_gpus": 2,
+      "data_parallel_min_samples": 256,
+      "do_weight_norm": true,
+      "filt_allowance_hz": 2.0,
+      "filt_type": "filter",
+      "filter_chunk_trials": 128,
+      "filterbank_policy_id": "P02-R5-P01-INBAND-FBCNET-FB-8-32-R1",
+      "m": 32,
+      "n_bands": 6,
+      "network_source_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/frozen_sources/FBCNet/de1bbdd8a54cb1e466830e3d47070e0e56761a37/codes/centralRepo/networks.py",
+      "network_source_sha256": "48b0b46f36d70a8ea337fa1e82cb84d5eed593c35bbb860672dcd3569c751d92",
+      "original_author_default_filterbank_hz": [
+        [
+          4,
+          8
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          12,
+          16
+        ],
+        [
+          16,
+          20
+        ],
+        [
+          20,
+          24
+        ],
+        [
+          24,
+          28
+        ],
+        [
+          28,
+          32
+        ],
+        [
+          32,
+          36
+        ],
+        [
+          36,
+          40
+        ]
+      ],
+      "out_of_P01_information_not_reconstructed": [
+        [
+          4,
+          8
+        ],
+        [
+          32,
+          36
+        ],
+        [
+          36,
+          40
+        ]
+      ],
+      "preparation_cache_max_gib": 18.0,
+      "source_sampling_hz": 160,
+      "stride_factor": 4,
+      "temporal_layer": "LogVarLayer",
+      "transform_source_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/frozen_sources/FBCNet/de1bbdd8a54cb1e466830e3d47070e0e56761a37/codes/centralRepo/transforms.py",
+      "transform_source_sha256": "0b719004e94d04f6a38e01820b468d65e9ba4c95f8696a1680c6fce638609a48",
+      "use_data_parallel": true
+    },
+    "python_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/python",
+    "rule": "ORIGINAL_AUTHOR_ARCHITECTURE_PLUS_DECLARED_P01_CONSTRAINED_INBAND_FILTERBANK",
+    "variant_name": "FBCNet"
+  },
+  "DNN-SEQ": {
+    "allow_eegconformer_fallback": true,
+    "dbconformer": {
+      "checkpoint_required": false,
+      "class_weight_support_verified": true,
+      "implementation_module": "iharq_stage12_external_adapters",
+      "license_status": "CAN_EXECUTE",
+      "module_sha256": "add69c0a0f8843366d6d9ed1fb16746f61d43a6d588b04f07193484e0555386a",
+      "plugin_config": {
+        "adapter_kind": "DBCONFORMER_ORIGINAL_AUTHOR_P01",
+        "branch": "all",
+        "canonical_time_samples": 480,
+        "chn_atten_flag": true,
+        "compatibility_patch_manifest": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/DBCONFORMER_P01_COMPATIBILITY_PATCH_R1.json",
+        "emb_size": 40,
+        "gate_flag": false,
+        "original_source_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/frozen_sources/DBConformer/02cf63206087045c5cd0e8fa882831102e6fd01b/models/DBConformer.py",
+        "original_source_sha256": "b891d8ba28b3ef5064106065e4a2c9bd1e346fe29b6d68cc50c91dbf6cfa4bd1",
+        "patch_size": 125,
+        "patched_source_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/compiled_sources/DBConformer_P01_Compat_R1.py",
+        "patched_source_sha256": "c108942e1a07023d84eded2cf2b1de8e6c2d77954f5a12558a3bb4245dab387a",
+        "posemb_flag": true,
+        "source_sampling_hz": 160,
+        "spa_dim": 16,
+        "transformer_depth_chn": 2,
+        "transformer_depth_tem": 2
+      },
+      "python_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/python",
+      "rule": "PREFERRED_ORIGINAL_AUTHOR_ARCHITECTURE_WITH_PREDECLARED_RUNTIME_P01_COMPATIBILITY_PATCHES",
+      "variant_name": "DBConformer"
+    },
+    "dropout": 0.25,
+    "fallback_rule": "PRE_RESULT_DIRECT_FALLBACK_IF_DBCONFORMER_NOT_ADMITTED",
+    "fallback_variant": "EEGConformer"
+  },
+  "SSL-CBRAMOD": {
+    "asset_resolution": "HUGGING_FACE_RUNTIME_OR_PREATTACHED_FALLBACK",
+    "channel_montage_status": "PASS",
+    "checkpoint_path": "/kaggle/working/iharq_p02_run/_hf_runtime/SSL-CBRAMOD/model.safetensors",
+    "checkpoint_required": true,
+    "checkpoint_sha256": "a939ace9aa1e229f08391ad8bb2d197b507ae2c519a50addf087f0151b2df5c3",
+    "class_weight_support_verified": true,
+    "corpus_overlap_status": "PASS",
+    "implementation_module": "iharq_stage12_external_adapters",
+    "input_compatibility_status": "PASS",
+    "license_status": "CAN_EXECUTE",
+    "module_sha256": "add69c0a0f8843366d6d9ed1fb16746f61d43a6d588b04f07193484e0555386a",
+    "plugin_config": {
+      "adapter_kind": "CBRAMOD_GOVERNED_P02",
+      "checkpoint_sha256": "a939ace9aa1e229f08391ad8bb2d197b507ae2c519a50addf087f0151b2df5c3",
+      "data_parallel_max_gpus": 2,
+      "data_parallel_min_samples": 256,
+      "hf_repo_id": "braindecode/cbramod-pretrained",
+      "hf_revision": "584cdc415913739a05d84bf0c1cb3db397764507",
+      "patch_size": 200,
+      "preparation_cache_max_gib": 18.0,
+      "pretrained_local_dir": "/kaggle/working/iharq_p02_run/_hf_runtime/SSL-CBRAMOD",
+      "pretrained_local_dir_from_checkpoint_parent": true,
+      "source_sampling_hz": 160,
+      "strict_patch_alignment": true,
+      "target_sampling_hz": 200,
+      "use_data_parallel": true
+    },
+    "python_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/python",
+    "rule": "CHECKSUM_LICENSE_CORPUS_INPUT_RESOURCE_RELOAD_GATED",
+    "sampling_adapter_verified": true,
+    "source_recipe_verified": true,
+    "target_sampling_hz": 200,
+    "variant_name": "CBraMod"
+  },
+  "SSL-REVE": {
+    "asset_resolution": "HF_GATED_SUPPORTED_BUT_CURRENT_P02_DOWNLOAD_PROHIBITED_BY_CORPUS_OVERLAP_GATE",
+    "channel_montage_status": "NOT_EVALUATED_BECAUSE_OVERLAP_BLOCKS",
+    "checkpoint_path": null,
+    "checkpoint_required": true,
+    "corpus_overlap_status": "BLOCKED_KNOWN_P02_OVERLAP",
+    "implementation_module": null,
+    "input_compatibility_status": "NOT_EVALUATED_BECAUSE_OVERLAP_BLOCKS",
+    "license_status": "POINTER_ONLY_GATED_NO_REDISTRIBUTION",
+    "rule": "DIAGNOSTIC_ONLY; KNOWN_PRETRAINING_CORPUS_OVERLAP BLOCKS CURRENT P02 EXECUTION; AUTHENTICATION_CANNOT_OVERRIDE_SCIENTIFIC_GATE",
+    "sampling_adapter_verified": false,
+    "source_recipe_verified": false,
+    "target_sampling_hz": 200,
+    "variant_name": "REVE"
+  }
+}

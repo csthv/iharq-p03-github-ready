@@ -1,0 +1,159 @@
+{
+  "policy": {
+    "policy_id": "P01-L1-KAGGLE-THREE-SOURCE-DATASETS-R6",
+    "policy_kind": "THREE_ATTACHED_KAGGLE_SOURCE_DATASETS_ONLY",
+    "runtime_revision": "R26",
+    "runtime_compatibility_revision": "R34-BNCI-EXACT-NATIVE-LOAD-CHECKSUM-AND-DOWNSTREAM-CONTRACT-CLOSURE",
+    "scientific_freeze_unchanged": "P01-L1-OFFICIAL-RUN-FREEZE-R2",
+    "active_sources": [
+      "PhysioNetMI",
+      "BNCI2014_001",
+      "Lee2019_MI"
+    ],
+    "physionet_public_handle": "gamalasran/physionet-eeg-motor-movement-imagery",
+    "source_manifest_filename": "IHARQ_P01_L1_SOURCE_DATASET_MANIFEST.json",
+    "required_file_counts": {
+      "PhysioNetMI": 327,
+      "BNCI2014_001": 18,
+      "Lee2019_MI": 108
+    },
+    "moabb_downloader_used": false,
+    "moabb_downloader_fallback_allowed": false,
+    "source_network_download_allowed": false,
+    "moabb_final_resolution_and_loading": true,
+    "loading_remains_sequential": true,
+    "loading_parallelism_scope": "BOUNDED_CROSS_SUBJECT_ONLY",
+    "checksum_verification_unchanged": true,
+    "exact_subject_provenance_unchanged": true,
+    "subject_88_special_handling_unchanged": true,
+    "ordinal_prefix_resolution_supported": true
+  },
+  "installed_at_unix": 1786113376.4724898,
+  "child_mode": false,
+  "source_report": {
+    "status": "PASS",
+    "input_root": "/kaggle/input",
+    "source_counts": {
+      "PhysioNetMI": 327,
+      "BNCI2014_001": 18,
+      "Lee2019_MI": 108
+    },
+    "private_manifests": [
+      {
+        "source_id": "BNCI2014_001",
+        "dataset_handle": "csthv999z/iharq-p01-l1-bnci2014-001-source",
+        "manifest": "/kaggle/input/datasets/csthv999z/iharq-p01-l1-bnci2014-001-source/IHARQ_P01_L1_SOURCE_DATASET_MANIFEST.json",
+        "file_count": 18,
+        "bytes": 779873919,
+        "aggregate_sha256": "04a5390f8f36eaadbc0c480ec9377ce1b99caf0b7ab53bad9fda12347995bc49",
+        "ordinal_prefixed_files": 18,
+        "verification_strategy": "ONE_SCAN_BOUNDED_PARALLEL_SHA256",
+        "hash_workers": 4
+      },
+      {
+        "source_id": "Lee2019_MI",
+        "dataset_handle": "csthv999z/iharq-p01-l1-lee2019-mi-source",
+        "manifest": "/kaggle/input/datasets/csthv999z/iharq-p01-l1-lee2019-mi-source/IHARQ_P01_L1_SOURCE_DATASET_MANIFEST.json",
+        "file_count": 108,
+        "bytes": 64847432285,
+        "aggregate_sha256": "3a07b2f302da949efd418a0712d5a9427df34dcb8b027ca553fae8e67a849f78",
+        "ordinal_prefixed_files": 108,
+        "verification_strategy": "ONE_SCAN_BOUNDED_PARALLEL_SHA256",
+        "hash_workers": 4
+      }
+    ],
+    "source_resolution_file": "/kaggle/working/iharq_p01_l1/streaming_runtime/source_resolution_r26.json",
+    "physionet_public_dataset_required": "gamalasran/physionet-eeg-motor-movement-imagery",
+    "source_network_download_allowed": false,
+    "moabb_downloader_allowed": false,
+    "private_source_bytes_sha256_verified": true,
+    "ordinal_prefix_resolution_supported": true
+  },
+  "compatibility": {
+    "status": "PATCHED",
+    "revision": "R34",
+    "original_parameters": [
+      "cache_config",
+      "process_pipeline",
+      "self",
+      "subjects"
+    ],
+    "unsupported_keywords_filtered": true,
+    "subject_key_aliasing": true,
+    "mapping_contents_and_iteration_unchanged": true,
+    "keys_view_alias_membership": true,
+    "single_subject_single_result_fallback": true,
+    "installation_self_test": "PASS"
+  },
+  "source_contracts": {
+    "PhysioNetMI": {
+      "subjects": "1-109",
+      "runs": [
+        4,
+        8,
+        12
+      ]
+    },
+    "BNCI2014_001": {
+      "subjects": "1-9",
+      "sessions": [
+        "T",
+        "E"
+      ],
+      "unsupported_constructor_keywords_filtered": true,
+      "module_level_attached_router": true,
+      "optional_metadata_compatibility": "NO_IMPUTATION_SIGNAL_PRESERVING",
+      "project_adapter_load": {
+        "status": "PATCHED",
+        "revision": "R34",
+        "adapter_classes": [
+          "iharq.layer1_data_protocol.adapters.bnci2014_001.MOABBBNCI2014001Adapter"
+        ],
+        "moabb_native_subject_conversion": true,
+        "moabb_default_annotation_transform_reapplied": true,
+        "frozen_session_selection_preserved": true,
+        "exact_source_provenance_preserved": true,
+        "signals_or_labels_modified": false,
+        "installation_self_test": "PASS"
+      }
+    },
+    "Lee2019_MI": {
+      "subjects": "1-54",
+      "sessions": [
+        1,
+        2
+      ],
+      "train_run": true,
+      "test_run": false
+    }
+  },
+  "downloader_guard": {
+    "status": "PASS",
+    "guarded_functions": [
+      "moabb.datasets.download.data_dl",
+      "moabb.datasets.physionet_mi.data_dl"
+    ]
+  },
+  "patched_adapter_classes": [
+    "iharq.layer1_data_protocol.adapters.bnci2014_001.MOABBBNCI2014001Adapter",
+    "iharq.layer1_data_protocol.adapters.lee2019_mi.MOABBLee2019MIAdapter",
+    "iharq.layer1_data_protocol.adapters.physionet_mi.MOABBPhysionetMIAdapter"
+  ],
+  "quality_boundary": {
+    "same_active_sources": true,
+    "same_subjects": true,
+    "same_sessions": true,
+    "same_physionet_runs": true,
+    "same_moabb_native_signal_conversion": true,
+    "same_moabb_default_annotation_transform": true,
+    "bnci_empty_processed_mapping_bypassed": true,
+    "moabb_subject_key_representation_compatibility": true,
+    "moabb_mapping_contents_and_iteration_unchanged": true,
+    "same_stage07_checksum_inventory": true,
+    "same_exact_subject_provenance": true,
+    "same_subject88_handling": true,
+    "same_preprocessing_splits_budgets_windows": true,
+    "same_records_cards_manifests_gates_handoffs": true,
+    "source_network_downloading_removed": true
+  }
+}

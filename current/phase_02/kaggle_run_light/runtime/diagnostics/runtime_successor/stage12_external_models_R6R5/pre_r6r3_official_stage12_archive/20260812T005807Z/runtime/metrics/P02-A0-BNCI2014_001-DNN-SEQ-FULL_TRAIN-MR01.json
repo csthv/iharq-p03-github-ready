@@ -1,0 +1,126 @@
+{
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "run_cell_id": "P02-A0-BNCI2014_001-DNN-SEQ-FULL_TRAIN-MR01",
+  "dataset_id": "BNCI2014_001",
+  "branch_id": "DNN-SEQ",
+  "resolved_variant": "DBConformer-OriginalAuthor-P01CompatibilityPatched-R6AuthorCentered",
+  "budget_id": "FULL_TRAIN",
+  "metrics": {
+    "BACC": 0.5381944444444444,
+    "F1_MACRO": 0.5340996168582375,
+    "ACC": 0.5381944444444444,
+    "CONFUSION": [
+      [
+        64,
+        80
+      ],
+      [
+        53,
+        91
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      144,
+      144
+    ],
+    "PRED_COMPLETE": 288,
+    "ROC_AUC": 0.5595100308641975,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+  },
+  "validation_selection": {
+    "BACC": 0.8576388888888888,
+    "F1_MACRO": 0.8557449147883452,
+    "ACC": 0.8576388888888888,
+    "CONFUSION": [
+      [
+        107,
+        37
+      ],
+      [
+        4,
+        140
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      144,
+      144
+    ],
+    "PRED_COMPLETE": 288,
+    "ROC_AUC": 0.9137249228395061,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+  },
+  "validation_burden_seconds": 125.5556683850009,
+  "model_storage_bytes": 374188,
+  "selected_candidate_id": "CAND-00",
+  "selected_params": {
+    "recipe_id": "R6-DBCONFORMER-ORIGINAL-AUTHOR-P01-COMPAT",
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "batch_size": 32,
+    "label_smoothing": 0.0,
+    "grad_clip": null,
+    "scheduler": "constant",
+    "input_scale": 1.0,
+    "use_data_parallel": false
+  },
+  "candidate_failures": [],
+  "observed_denominator": 288,
+  "expected_denominator": 288,
+  "score_type": "SOFTMAX_PROBABILITY",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.01121344999410212,
+    "batch1_latency_p95_s": 0.020146232799743303,
+    "repeats": 5
+  },
+  "permutation_provenance": null,
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "class_weights": null,
+  "class_weight_calibration": {
+    "selected_policy": "UNIFORM_NO_WEIGHT",
+    "selected_weights": null,
+    "candidate_results": [
+      {
+        "status": "SUCCESS",
+        "policy": "UNIFORM_NO_WEIGHT",
+        "weights": null,
+        "validation_metrics": {
+          "BACC": 0.8576388888888888,
+          "F1_MACRO": 0.8557449147883452,
+          "ACC": 0.8576388888888888,
+          "CONFUSION": [
+            [
+              107,
+              37
+            ],
+            [
+              4,
+              140
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            144,
+            144
+          ],
+          "PRED_COMPLETE": 288,
+          "ROC_AUC": 0.9137249228395061,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+        },
+        "validation_burden_seconds": 125.5556683850009,
+        "model_storage_bytes": 374188
+      }
+    ],
+    "training_count_evidence": {
+      "counts": [
+        720,
+        720
+      ],
+      "exactly_equal": true,
+      "selection_required": false
+    },
+    "test_set_used": false
+  }
+}

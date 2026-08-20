@@ -1,0 +1,13 @@
+build_book_blocking_owner_decisions: 0
+official_execution_blocking_owner_decisions: 0
+stage05_behavior: VERIFY_ONLY
+closed_decisions:
+- decision_id: OD-P02-PROTO-01
+  status: CLOSED_R2
+  binding: see p02_planned_scientific_execution_freeze_R3.yaml repeats/seeds
+- decision_id: OD-P02-PROTO-02
+  status: CLOSED_R2
+  binding: exact grids/caps/resource limits frozen
+- decision_id: OD-P02-PROTO-03
+  status: CLOSED_R2
+  binding: 95%/10000/BCa-fallback/Wilcoxon/Friedman/Holm frozen

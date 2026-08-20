@@ -1,0 +1,27 @@
+{
+  "window_count": 12910,
+  "event_count": 12910,
+  "invalid_window_count": 0,
+  "invalid_windows": [],
+  "roles": [
+    "calibration",
+    "test",
+    "train",
+    "validation"
+  ],
+  "start_offset_samples": 80,
+  "duration_samples": 480,
+  "stride_samples": 480,
+  "duration_seconds": 3.0,
+  "stride_seconds": 3.0,
+  "last_window_policy": "ONE_WINDOW_PER_INCLUDED_SOURCE_EVENT",
+  "bounds_policy": "REJECT_OUT_OF_BOUNDS",
+  "event_resampling": "MNE_POLYPHASE_JOINT_EVENTS",
+  "signal_dtype": "float32",
+  "overlap_group": "PARENT_EVENT",
+  "storage": "ADOPTED_PRIVATE_KAGGLE_DATASET_LOSSLESS_HDF5_SUBJECT_SHARDS",
+  "dataset_handle": "csthv999z/iharq-p01-l1-derived-windows-d03f0a7c869d-20260806222242-68a91473",
+  "provider_dataset_version": 2,
+  "logical_immutable_revision": 1,
+  "manifest_sha256": "dc21f418e9a1add62adb346f627d5d729735a5f1ecaa1d771f6fa5cfede627e1"
+}

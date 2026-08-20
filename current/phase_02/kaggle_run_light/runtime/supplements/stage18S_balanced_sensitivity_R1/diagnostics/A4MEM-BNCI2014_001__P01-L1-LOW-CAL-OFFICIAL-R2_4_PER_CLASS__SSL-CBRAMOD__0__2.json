@@ -1,0 +1,81 @@
+{
+  "status": "SUCCESS",
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "branch": "SSL-CBRAMOD",
+  "member": 2,
+  "checkpoint_sha256": "71a2f0b9186ef4bbd8be4d760de719a746b34368ede9d4788cd9293e36c11375",
+  "model_id": "SSL-CBRAMOD:A4-R8:BNCI2014_001__P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS__SSL-CBRAMOD__0__2",
+  "score_type": "SOFTMAX_PROBABILITY",
+  "checkpoint_format": "EXTERNAL_GOVERNED_INTERFACE",
+  "execution_device": "cuda:0",
+  "latency_summary": {
+    "batch1_latency_median_s": 0.10611133500060532,
+    "batch1_latency_p95_s": 0.10611133500060532,
+    "repeats": 1
+  },
+  "r8_policy_sha256": "a21655f9b52cfbf817b1b271f758739cf01b1e7a75e786c880ccdd1a3c58ef32",
+  "r8_runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R10-STAGE18-A4-ANCHOR-BUDGET-SINGLE-REPEAT-R1",
+  "recipe_id": "R6-CBRAMOD-SOURCE-CENTERED-R1",
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "class_weights": null,
+  "class_weight_frozen_from_a0": true,
+  "matching_a0_checkpoint_sha256": "7721d4e3658b2f05cac302850f62edf9e5756ce47be84a59f9145fa43cf27c37",
+  "test_loaded_after_checkpoint_sealed": true,
+  "test_set_used_for_selection": false,
+  "raw_train_shape": [
+    8,
+    22,
+    320
+  ],
+  "raw_validation_shape": [
+    288,
+    22,
+    320
+  ],
+  "raw_test_shape": [
+    288,
+    22,
+    320
+  ],
+  "training_provenance": {
+    "recipe_id": "R6-CBRAMOD-SOURCE-CENTERED-R1",
+    "best_epoch": 6,
+    "epochs_completed": 46,
+    "best_validation": {
+      "BACC": 0.5590277777777778,
+      "F1_MACRO": 0.5545107974130057,
+      "ACC": 0.5590277777777778,
+      "CONFUSION": [
+        [
+          66,
+          78
+        ],
+        [
+          49,
+          95
+        ]
+      ],
+      "CLASS_SUPPORT": [
+        144,
+        144
+      ],
+      "PRED_COMPLETE": 288,
+      "ROC_AUC": 0.5412326388888888,
+      "ROC_AUC_STATUS": "PASS",
+      "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+    },
+    "elapsed_seconds": 38.6544303894043,
+    "prepared_train_shape": [
+      8,
+      22,
+      400
+    ],
+    "prepared_validation_shape": [
+      288,
+      22,
+      400
+    ],
+    "test_set_used_for_selection": false,
+    "same_gpu_virtual_cuda_rng": true
+  }
+}

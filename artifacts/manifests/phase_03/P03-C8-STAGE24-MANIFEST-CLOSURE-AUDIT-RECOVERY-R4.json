@@ -1,0 +1,69 @@
+{
+  "A3_independent_ranking_information": false,
+  "NO_LEGAL_THRESHOLD_preserved": true,
+  "canonical_product_count": 6,
+  "claim_approval_performed": false,
+  "classification": "POST_PROMOTION_AUDIT_FALSE_POSITIVE",
+  "config_changed": false,
+  "corrected_closure": {
+    "intentional_control_files_only": true,
+    "manifest_entry_count": 15728,
+    "manifest_nonphysical_paths": 0,
+    "per_file_byte_sha_errors": 0,
+    "semantic_manifest_sha256": "cee49f5d0aa39b5118a565dc514341842ed4968a2745ca6e5d98f88a62f434e5"
+  },
+  "created_at_utc": "2026-08-16T21:53:37.500856Z",
+  "defect_id": "P03-C8-STAGE24-RECURSIVE-CONTROL-FILE-MANIFEST-CHECKER-R4",
+  "final_phase_sufficiency": true,
+  "final_state_file_count": 15739,
+  "immutable_external_revision": "60487529b43206abf0a7c01a219b30d3a31741ab",
+  "independent_closeout_pending": true,
+  "original_false_positive": {
+    "checker": "P24H_manifest_closure R3",
+    "intentional_control_omission_count": 6,
+    "intentional_control_omission_paths": [
+      "final_export_bundle/artifacts/handoffs/phase_03_to_phase_04/checksums.sha256",
+      "final_export_bundle/artifacts/implementation_amendments/phase_03/P03-L3-EXEC-TRANSPORT-AMEND-NO-RULE-SPAWN-R2/checksums.sha256",
+      "final_export_bundle/artifacts/implementation_amendments/phase_03/P03-L3-IMPL-AMEND-NO-RULE-R1/checksums.sha256",
+      "final_export_bundle/artifacts/layer10_source_bundle/phase_03/checksums.sha256",
+      "final_export_bundle/checksums.sha256",
+      "final_export_bundle/package_manifest.json"
+    ],
+    "nested_stage_manifest_count": 24,
+    "wrong_rule_1": "excluded nested copied stage_manifest.json files by basename",
+    "wrong_rule_2": "counted recursively excluded package_manifest.json/checksums.sha256 control files"
+  },
+  "post_materialization_literal_secrets": 0,
+  "protocol_changed": false,
+  "recovered_hardening_manifest_sha256": "0014a5557ccafa12bfbbbf85b2220c3eecb482b3e6d4b2f083ff1001d87670ad",
+  "recovery_id": "P03-C8-STAGE24-MANIFEST-CLOSURE-AUDIT-RECOVERY-R4",
+  "remote_revision_verified": true,
+  "remote_verification": {
+    "hash_verification_modes": {
+      "GIT_BLOB_SHA1": 11114,
+      "LFS_SHA256": 4615
+    },
+    "hash_verified": true,
+    "immutable_revision": "60487529b43206abf0a7c01a219b30d3a31741ab",
+    "object_count": 15729,
+    "path": "phase_03/layer_03/P03-L3-OFFICIAL-09ca82c743e0411a",
+    "path_set_verified": true,
+    "repo_info_revision_verified": true,
+    "repository": "Csthv/iharq-p03-phase03-l3-execution",
+    "size_verified": true,
+    "total_bytes": 4353115259
+  },
+  "run_id": "P03-L3-OFFICIAL-09ca82c743e0411a",
+  "scientific_method_changed": false,
+  "stage14_23_bytes_changed": false,
+  "stage24_attempt": 1,
+  "stage24_executor_called_by_recovery": false,
+  "stage24_fingerprint": "403a5dcdbab976f988a5b07cdfc02b90fb63ce833b539d110b8e206cb022a1b3",
+  "stage24_handler_sha256": "a91a0788c4eacdb64897e7e24e2ecab838afd091c7ccd749445c21bdad7e092c",
+  "stage24_output_manifest_sha256": "cee49f5d0aa39b5118a565dc514341842ed4968a2745ca6e5d98f88a62f434e5",
+  "stage24_raw_bytes_changed": false,
+  "stage24_scientific_stage_rerun": false,
+  "stage_id": "24",
+  "status": "PASS",
+  "test_used_for_selection": false
+}

@@ -1,0 +1,49 @@
+{
+  "artifact_id": "P02-STAGE11-R7-COLLAPSE-DIAGNOSTIC-R1",
+  "challenger_count": 15,
+  "claim_bearing_gate": false,
+  "created_utc": "2026-08-13T15:00:17.278502+00:00",
+  "full_train_by_dataset": {
+    "BNCI2014_001": {
+      "exact_BACC_0p5_count": 0,
+      "individual_BACC": [
+        0.6458333333333334,
+        0.5972222222222222,
+        0.6041666666666666,
+        0.6458333333333333,
+        0.5520833333333334
+      ],
+      "mean_BACC": 0.6090277777777777,
+      "sd_BACC": 0.039099134056275665
+    },
+    "Lee2019_MI": {
+      "exact_BACC_0p5_count": 0,
+      "individual_BACC": [
+        0.7383333333333333,
+        0.735,
+        0.7383333333333333,
+        0.7566666666666666,
+        0.74
+      ],
+      "mean_BACC": 0.7416666666666666,
+      "sd_BACC": 0.008579691784155817
+    },
+    "PhysioNetMI": {
+      "exact_BACC_0p5_count": 0,
+      "individual_BACC": [
+        0.6442687747035574,
+        0.6296263025512037,
+        0.6046532518864535,
+        0.6393280632411067,
+        0.622709306503773
+      ],
+      "mean_BACC": 0.628117139777219,
+      "sd_BACC": 0.015561461882235271
+    }
+  },
+  "low_label_count": 90,
+  "low_label_exact_BACC_0p5_count": 4,
+  "no_posthoc_performance_threshold": true,
+  "primary_count": 105,
+  "primary_exact_BACC_0p5_count": 4
+}

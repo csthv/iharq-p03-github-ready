@@ -1,0 +1,70 @@
+limitations:
+- limitation_id: P02-LIM-01
+  tag: PUBLIC_BENCHMARK_BINARY_MI_RESEARCH_ONLY
+  status_after_P02: PERSISTING_NONBLOCKING
+  downstream_claim_impact: Carry into downstream interpretation; do not silently broaden
+    scope.
+- limitation_id: P02-LIM-02
+  tag: INHERITED_P01_DATA_SPLIT_PREPROCESS_WINDOW_SCOPE
+  status_after_P02: PERSISTING_NONBLOCKING
+  downstream_claim_impact: Carry into downstream interpretation; do not silently broaden
+    scope.
+- limitation_id: P02-LIM-03
+  tag: ONE_FROZEN_LOW_LABEL_SUBSET_PER_BUDGET
+  status_after_P02: PERSISTING_NONBLOCKING
+  downstream_claim_impact: Do not infer repeated-subset sample-efficiency stability.
+- limitation_id: P02-LIM-04
+  tag: NON_SUCCESS_TERMINALS_PRESERVED
+  status_after_P02: PERSISTING_NONBLOCKING
+  downstream_claim_impact: Carry into downstream interpretation; do not silently broaden
+    scope.
+- limitation_id: P02-LIM-05
+  tag: POST_OBSERVATION_STAGE11_STAGE12_AMENDMENTS
+  status_after_P02: PERSISTING_NONBLOCKING
+  downstream_claim_impact: Carry into downstream interpretation; do not silently broaden
+    scope.
+- limitation_id: P02-LIM-06
+  tag: STAGE11_MIXED_GRANDFATHERED_LINEAGE
+  status_after_P02: PERSISTING_NONBLOCKING
+  downstream_claim_impact: Carry into downstream interpretation; do not silently broaden
+    scope.
+- limitation_id: P02-LIM-07
+  tag: A4_SINGLE_REFIT_REPEAT_AND_DEEP_ANCHOR_BUDGETS_ONLY
+  status_after_P02: PERSISTING_NONBLOCKING
+  downstream_claim_impact: No five-repeat stability, dense deep-budget curve, or full-grid-equivalence
+    claim.
+- limitation_id: P02-LIM-08
+  tag: STAGE18S_POST_HOC_DESCRIPTIVE_ONLY
+  status_after_P02: PERSISTING_NONBLOCKING
+  downstream_claim_impact: Keep Stage18S post-hoc/descriptive; never use as confirmatory
+    replacement for Stage18.
+- limitation_id: P02-LIM-09
+  tag: CONDITIONAL_SCORE_SEMANTICS
+  status_after_P02: PERSISTING_NONBLOCKING
+  downstream_claim_impact: Carry into downstream interpretation; do not silently broaden
+    scope.
+- limitation_id: P02-LIM-10
+  tag: POST_RESTART_NOTEBOOK_RECONSTRUCTION
+  status_after_P02: PERSISTING_NONBLOCKING
+  downstream_claim_impact: Carry into downstream interpretation; do not silently broaden
+    scope.
+- limitation_id: P02-LIM-11
+  tag: PRIVATE_HF_REMOTE_ACCESS_REQUIRES_AUTHORIZATION
+  status_after_P02: PERSISTING_NONBLOCKING
+  downstream_claim_impact: Resolve symbolic credential class at runtime; never hardcode
+    or assume one token.
+- limitation_id: P02-LIM-12
+  tag: DUAL_SYMBOLIC_HF_CREDENTIAL_CLASSES
+  status_after_P02: PERSISTING_NONBLOCKING
+  downstream_claim_impact: Resolve symbolic credential class at runtime; never hardcode
+    or assume one token.
+- limitation_id: P02-LIM-13
+  tag: RECORDED_RUNTIME_ENVIRONMENT_BOUND
+  status_after_P02: PERSISTING_NONBLOCKING
+  downstream_claim_impact: Carry into downstream interpretation; do not silently broaden
+    scope.
+- limitation_id: P02-LIM-14
+  tag: DOWNSTREAM_CALIBRATION_POLICY_STRESS_EMBODIMENT_UNTESTED_BY_P02
+  status_after_P02: PERSISTING_NONBLOCKING
+  downstream_claim_impact: P03+ must test calibration/selective/uncertainty behavior;
+    P02 does not establish it.

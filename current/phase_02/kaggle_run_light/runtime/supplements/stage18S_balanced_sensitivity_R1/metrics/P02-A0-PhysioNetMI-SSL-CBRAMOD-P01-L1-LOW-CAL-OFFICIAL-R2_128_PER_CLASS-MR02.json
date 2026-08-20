@@ -1,0 +1,89 @@
+{
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "run_cell_id": "P02-A0-PhysioNetMI-SSL-CBRAMOD-P01-L1-LOW-CAL-OFFICIAL-R2:128_PER_CLASS-MR02",
+  "dataset_id": "PhysioNetMI",
+  "branch_id": "SSL-CBRAMOD",
+  "resolved_variant": "CBraMod-HF-Braindecode-GovernedP02-R6Scale1e4",
+  "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:128_PER_CLASS",
+  "budget_repeat_id": "P01_FROZEN_SINGLE_SUBSET",
+  "model_repeat_index": 2,
+  "metrics": {
+    "BACC": 0.4836507366151635,
+    "F1_MACRO": 0.48268654636661323,
+    "ACC": 0.48484848484848486,
+    "CONFUSION": [
+      [
+        136,
+        117
+      ],
+      [
+        138,
+        104
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      253,
+      242
+    ],
+    "PRED_COMPLETE": 495,
+    "ROC_AUC": 0.49408747917551366,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+  },
+  "validation_selection": {
+    "BACC": 0.5350426094622391,
+    "F1_MACRO": 0.5339669908635425,
+    "ACC": 0.5353535353535354,
+    "CONFUSION": [
+      [
+        146,
+        103
+      ],
+      [
+        127,
+        119
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      249,
+      246
+    ],
+    "PRED_COMPLETE": 495,
+    "ROC_AUC": 0.5120318673066249,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+  },
+  "validation_burden_seconds": 178.94258761405945,
+  "model_storage_bytes": 20003208,
+  "selected_candidate_id": "R6-CBRAMOD-SOURCE-CENTERED-R1",
+  "selected_params": {
+    "recipe_id": "R6-CBRAMOD-SOURCE-CENTERED-R1",
+    "optimizer": "AdamW",
+    "body_lr": 0.0001,
+    "head_lr": 0.0005,
+    "weight_decay": 0.05,
+    "batch_size": 64,
+    "scheduler": "cosine",
+    "eta_min": 1e-06,
+    "label_smoothing": 0.1,
+    "grad_clip": 1.0,
+    "input_scale": 10000.0,
+    "source_sampling_hz": 160,
+    "target_sampling_hz": 200,
+    "max_epochs": 150,
+    "patience": 40,
+    "selection": "validation_BACC",
+    "restore_best": true
+  },
+  "candidate_failures": [],
+  "observed_denominator": 495,
+  "expected_denominator": 495,
+  "score_type": "SOFTMAX_PROBABILITY",
+  "class_weight_policy": "UNIFORM_NO_WEIGHT_EXACT_BALANCED_TRAIN",
+  "test_loaded_after_group_selection_sealed": true,
+  "test_set_used_for_selection": false,
+  "evidence_class": "P02_POST_HOC_LOW_LABEL_EXTENSION_R1",
+  "integration_source_run_cell_id": "P02S-LLX-R1-A0-PhysioNetMI-SSL-CBRAMOD-128PC-MR02",
+  "integration_source_config_sha256": "67807d9959d98c6a138288dc2c3f12377e0acb8bfce9d76f333485a0cb0a760e",
+  "integration_revision": "P02-INTEGRATED-LOW-LABEL-1-TO-256-R1"
+}

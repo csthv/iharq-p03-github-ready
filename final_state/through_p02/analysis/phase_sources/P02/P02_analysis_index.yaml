@@ -1,0 +1,95 @@
+phase_id: P02
+layer_id: L2
+analysis_release_id: P02-PHASE-ANALYSIS-FINAL-R2
+run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+protocol_authority: IHARQ Protocol v1.0 Final Through Phase 02 R1 + P02 Annex R2
+canonical_analysis_input_count: 38
+analysis_units:
+- analysis_id: P02-A0-CLOSURE
+  scope: A0 run/terminal/evidence closure
+  sources:
+  - a0_completion.json
+  - a0_closure_source_manifest.json
+  statistical_rule: accounting/validation; no new inference
+- analysis_id: P02-A0-FULLTRAIN
+  scope: dataset x model x participant; full training
+  sources:
+  - a0_participant_metrics.csv
+  - a0_statistics.json
+  statistical_rule: participant-first; Friedman then paired Wilcoxon/Holm where eligible
+- analysis_id: P02-A0-SECONDARY
+  scope: BACC/macro-F1/ACC/conditional ROC_AUC corroboration
+  sources:
+  - a0_participant_metrics.csv
+  statistical_rule: descriptive under metric hierarchy; BACC remains primary
+- analysis_id: P02-PARTICIPANT-SESSION
+  scope: participant/session heterogeneity
+  sources:
+  - subject_profile_summary.json
+  - subject_profile_metric_source.csv
+  - session_profile_metric_source.csv
+  statistical_rule: descriptive; no personalization claim
+- analysis_id: P02-LOWLABEL
+  scope: 3 datasets x 4 models x 6 budgets x governed metrics
+  sources:
+  - low_label_curve_summary.json
+  - low_label_metric_source.csv
+  statistical_rule: descriptive under one frozen subset; no interpolation
+- analysis_id: P02-STAGE11-HISTORY
+  scope: EEGNet primary lineage and diagnostic challenger
+  sources:
+  - training_policy_challenger_completion.json
+  - training_policy_challenger_statistics.json
+  - training_policy_challenger_*
+  statistical_rule: diagnostic participant Wilcoxon/bootstrap; cannot replace primary
+    A0
+- analysis_id: P02-STAGE12-DIAGNOSTIC
+  scope: author/source-centered validation-only A/B/C diagnostics
+  sources:
+  - runtime diagnostics stage12 job summaries and Protocol runtime-successor record
+  statistical_rule: validation-only diagnostic; non-claim-bearing test inference
+- analysis_id: P02-A4-CLOSURE
+  scope: A4 C0-C5 terminal/accounting and resource deviation
+  sources:
+  - a4_completion.json
+  - stage18_resource_constrained_anchor_budget_deviation.json
+  statistical_rule: scope/closure accounting
+- analysis_id: P02-A4-ROLE
+  scope: C1-C3 vs C0 role controls
+  sources:
+  - a4_role_control_statistics.json
+  - a4_role_control_participant_comparisons.csv
+  statistical_rule: paired participant Wilcoxon + Holm family
+- analysis_id: P02-A4-C45
+  scope: C4/C5 vs validation-selected strongest constituent
+  sources:
+  - a4_c4_c5_statistics.json
+  - a4_c4_c5_participant_comparisons.csv
+  statistical_rule: paired participant Wilcoxon + Holm family
+- analysis_id: P02-A4-BURDEN
+  scope: evaluation horizon/member-evaluation burden
+  sources:
+  - a4_burden_source.csv
+  statistical_rule: descriptive practical-significance context
+- analysis_id: P02-STAGE18S
+  scope: post-hoc repeat/budget sensitivity
+  sources:
+  - stage18S_R1_*
+  statistical_rule: descriptive only; never merged into canonical G18
+- analysis_id: P02-FAILURE-NEGATIVE
+  scope: failures, negative notes, diagnostic flags
+  sources:
+  - failure_negative_summary.json
+  statistical_rule: preservation/accounting
+- analysis_id: P02-DOWNSTREAM
+  scope: readiness and P03 handoff
+  sources:
+  - runtime/manifests/stage_artifacts/20_readiness.json
+  - runtime/manifests/record_partitions/Layer2ReadinessReport/P02-L2-READINESS-P03.json
+  statistical_rule: readiness boundary; no new effectiveness inference
+- analysis_id: P02-LITERATURE
+  scope: original-model, dataset, reproducibility, low-label/foundation context
+  sources:
+  - machine_readable/P02_literature_references.json
+  - machine_readable/P02_literature_comparison.csv
+  statistical_rule: external contextual evidence; no naive numeric equivalence

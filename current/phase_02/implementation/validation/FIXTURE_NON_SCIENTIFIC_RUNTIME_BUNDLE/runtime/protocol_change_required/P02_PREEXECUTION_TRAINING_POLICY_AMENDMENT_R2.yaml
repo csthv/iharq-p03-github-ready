@@ -1,0 +1,106 @@
+training_policy_binding_id: P02-L2-TRAINING-POLICY-AUTHORITY-BINDINGS-R4-DYNAMIC-RESOLUTION
+status: FROZEN_ALGORITHM_RESOLVED_BY_OWNER_AUTHORIZED_PREEXECUTION_AMENDMENT_R2
+amendment_id: P02-PREEXEC-TRAINING-POLICY-AMENDMENT-R2
+source_authority:
+  nuts_and_bolts: Primary neural branch remains unaugmented; S&R is a separate training-only
+    challenger; class weighting is training-label-derived and Protocol-governed.
+  method_selection: No correction when balanced; otherwise a predeclared training-fold-derived
+    class-weighted loss/classifier; exact trigger/formula downstream.
+  build_book_r4: EEGNet S&R challenger FULL_TRAIN only with same five seeds; no new
+    A-number and no A4/P03-primary eligibility.
+  owner_authorization: Current user instruction authorizes minimal literature-grounded
+    deterministic pre-test resolution, preferring code calibration when lawful.
+augmentation_challenger:
+  required_by_build_book: true
+  branch_id: DNN-EEGNET
+  scope: FULL_TRAIN_ONLY
+  same_five_model_seeds: true
+  algorithm: SAME_CLASS_SEGMENTATION_RECONSTRUCTION_TRAIN_ONLY
+  primary_reference_augmentation: NONE
+  probability_resolution:
+    type: VALIDATION_ONLY_DATASET_LEVEL_GRID_SEARCH
+    candidates:
+    - 0.25
+    - 0.5
+    - 0.75
+    calibration_seeds: ALL_FIVE_FROZEN_EEGNET_MODEL_SEEDS
+    selection_aggregation: MEDIAN_ACROSS_SUCCESSFUL_SEEDS
+    primary_metric: BACC
+    secondary_metric: F1_MACRO
+    minimum_successful_seeds: 3
+    tie_break:
+    - SMALLEST_ABS_DISTANCE_TO_0P5
+    - LOWER_PROBABILITY
+    test_set_access: PROHIBITED
+    selected_value_scope: DATASET_SPECIFIC
+    selection_frozen_before_test: true
+    rationale: Compact symmetric grid around the conventional Braindecode transform-application
+      probability 0.5; task-dependent augmentation is selected on legal validation
+      evidence.
+    tie_break_reference_probability: 0.5
+  segment_count_resolution:
+    type: BRAINCDECODE_PUBLIC_API_AUTO_N_SEGMENTS
+    requested_n_segments: null
+    pinned_package: braindecode==1.6.1
+    resolver: SegmentationReconstruction(probability=<candidate>, n_segments=None,
+      random_state=<derived>).get_augmentation_params
+    fixture_fallback: DOCUMENTED_DIVISOR_RULE_ONLY_FOR_NON_SCIENTIFIC_FIXTURE
+    test_set_access: NONE
+  seed_namespace: IHARQ:P02:L2:EEGNET:SEGMENTATION_RECONSTRUCTION:R2
+  seed_derivation: SHA256(namespace|dataset_id|model_seed|model_repeat_index|epoch_index|probability_candidate)_FIRST8_HEX_MOD_2P31_MINUS1_ZERO_TO_ONE
+  donor_pool_identity: SAME_DATASET_SAME_LEGAL_TRAINING_ROLE_SAME_TASK_SAME_CLASS_EXCLUDE_TARGET_WHEN_POSSIBLE
+  run_cell_condition_identity: P02-TRAIN-AUG-SR-EEGNET-FULL-R2-VALIDATION-RESOLVED
+  run_cells_frozen: true
+  run_cell_manifest: p02_training_policy_challenger_run_cells_R2.yaml
+  run_cell_count: 15
+  reuse_primary_selected_hyperparameters: true
+  augmentation_specific_model_hyperparameter_retuning: false
+  probability_calibration_is_internal_model_selection_not_new_run_cell: true
+  a4_eligible: false
+  p03_primary_eligible: false
+  diagnostic_only: true
+  evidence_regime: FULL_TRAIN
+  budget_id: FULL_TRAIN
+class_weighting:
+  policy: VALIDATION_SELECTED_UNIFORM_VS_BALANCED_WHEN_TRAIN_COUNTS_UNEQUAL
+  trigger:
+    type: EXACT_TRAIN_COUNT_EQUALITY_THEN_VALIDATION_POLICY_COMPARISON
+    equal_counts_action: UNIFORM_NO_EXTRA_FIT
+    unequal_counts_action: COMPARE_UNIFORM_VS_BALANCED_ON_VALIDATION
+  balanced_formula:
+    type: SKLEARN_COMPUTE_CLASS_WEIGHT_BALANCED
+    formula: n_samples / (n_classes * class_count)
+    normalization: NONE_BEYOND_SKLEARN_BALANCED_FORMULA
+    source_labels: LEGAL_FIT_ROLE_ONLY
+  eligible_branch_rule: ANY_SELECTED_BRANCH_WITH_NATIVE_OR_VERIFIED_CLASS_WEIGHT_SUPPORT
+  native_supported_branches:
+  - DIAG-LOGVAR
+  - CLS-FBCSP-LR
+  - RIE-TS-LR
+  - RIE-EA-TS
+  - DNN-EEGNET
+  - DNN-EGTC
+  - DNN-SEQ_EEGCONFORMER_FALLBACK
+  conditional_external_branch_rule: IF_COUNTS_UNEQUAL_AND_ADAPTER_DOES_NOT_DECLARE_CLASS_WEIGHT_SUPPORT_THEN_INPUT_INCOMPATIBLE_FAIL_CLOSED
+  selection:
+    stage: POST_HYPERPARAMETER_PRE_TEST_TRAINING_POLICY_CHECK
+    same_selected_hyperparameters: true
+    same_model_seed: true
+    same_train_role: true
+    same_validation_role: true
+    primary_metric: BACC
+    secondary_metric: F1_MACRO
+    tie_break: UNIFORM_NO_WEIGHT
+    test_set_access: PROHIBITED
+  low_label_equal_per_class_short_circuit: true
+  record_counts_weights_validation_metrics_and_selected_policy: true
+  unsupported_branch_action: IF_COUNTS_UNEQUAL_AND_BRANCH_HAS_NO_GOVERNED_CLASS_WEIGHT_SUPPORT_THEN_KEEP_UNWEIGHTED_ONLY_IF_WEIGHTING_IS_NOT_APPLICABLE_TO_THAT_CLASSIFIER;
+    IF_BRANCH_CLAIMS_SUPPORT_BUT_CANNOT_EXECUTE_THEN_FAIL_CLOSED
+  scope_note: Do not retrofit weighting into classifiers with no native/verified class-weight
+    mechanism (e.g. LDA/MDM); apply validation selection only where the existing selected
+    classifier/loss supports it without changing algorithm family.
+official_A0_A4_cell_count_unchanged: 1896
+separate_training_policy_challenger_cells: 15
+new_A_number_created: false
+a14: ABSENT_PROHIBITED
+freeze_critical_blockers: []

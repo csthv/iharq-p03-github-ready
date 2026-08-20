@@ -1,0 +1,12 @@
+{
+  "artifact_id": "P02-STAGE12-UPSTREAM-REVALIDATION-REQUIRED-AFTER-STAGE11-R7",
+  "created_utc": "2026-08-13T15:00:30.178716+00:00",
+  "new_stage11_execution_policy_sha256": "b482d6a35e7a4e047139c7e357618f0fc5a4f172911436448b026aaf571d7462",
+  "new_stage11_runtime_successor": "P02-RUNTIME-SUCCESSOR-R7H7-STAGE11-EEGNET-AUTHOR-CENTERED-10000E-TRUE-P120-CONTINUATION",
+  "reason": "UPSTREAM_STAGE11_REPLACED_BY_R7H_AUTHOR_CENTERED_10000E_P500_SUCCESSOR",
+  "required_next_action": "Audit whether Stage12 computations depend on Stage11 outputs; if not, rebase/revalidate Stage12 provenance and restore G12 without retraining the preserved Stage12 scientific artifacts.",
+  "stage12_retraining_implied": false,
+  "stage12_scientific_artifact_count": 963,
+  "stage12_scientific_artifacts_byte_identical": true,
+  "status": "REVALIDATION_REQUIRED"
+}

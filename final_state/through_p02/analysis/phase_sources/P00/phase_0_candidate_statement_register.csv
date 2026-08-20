@@ -1,0 +1,8 @@
+candidate_statement_id,candidate_statement,finding_ids,layer0_status,claim_ceiling,mandatory_limitations
+P00-CS-001,"Under the exact registered local snapshot and Python 3.13.5 environment, all 19 registered Phase 0 engineering cells passed.",P00-F-001,PENDING_LAYER0,ENGINEERING_FOUNDATION_CONFORMANCE,non-empirical; Mode B; exact local environment
+P00-CS-002,The complete registered deterministic suite passed 102 of 102 tests in the frozen local environment.,P00-F-002,PENDING_LAYER0,ENGINEERING_FOUNDATION_CONFORMANCE,no cross-version portability claim
+P00-CS-003,All 19 valid or integrated bundles were accepted and all 178 intentionally malformed categories were rejected.,P00-F-003;P00-F-004,PENDING_LAYER0,VALIDATION_EVIDENCE,fixtures are non-empirical
+P00-CS-004,"The frozen package contains validated foundation catalogs for 85 schemas, 35 configuration profiles, and 79 record-family profiles.",P00-F-005,PENDING_LAYER0,ARTIFACT_CLOSURE,presence and validation do not establish scientific effectiveness
+P00-CS-005,All eleven layer foundations passed the registered Phase 0 integration scope.,P00-F-006,PENDING_LAYER0,FOUNDATION_INTEGRATION,no later-phase scientific execution claimed
+P00-CS-006,The P00 foundation is implemented and P01-P15 reusable contract surfaces are ready for later governed annexes.,P00-F-007,PENDING_LAYER0,CONTRACT_READINESS,future outputs not executed
+P00-CS-007,The package reproduced from a clean isolated copy under the exact verified local dependency snapshot.,P00-F-008,PENDING_LAYER0,LOCAL_REPRODUCIBILITY,portable uv.lock incomplete; Python 3.11/3.12 unverified

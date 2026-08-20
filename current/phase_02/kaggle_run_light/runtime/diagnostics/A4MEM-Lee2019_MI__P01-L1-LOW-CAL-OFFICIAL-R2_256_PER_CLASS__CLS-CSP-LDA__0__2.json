@@ -1,0 +1,13 @@
+{
+  "status": "SUCCESS",
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "branch": "CLS-CSP-LDA",
+  "checkpoint_sha256": "eb11643968f35d91ecbf434cf8ea7f5c8c34962713a4c105765224bf1098a600",
+  "model_id": "CLS-CSP-LDA:A4:Lee2019_MI__P01-L1-LOW-CAL-OFFICIAL-R2:256_PER_CLASS__CLS-CSP-LDA__0__2",
+  "score_type": "NATIVE_PROBABILITY",
+  "latency_summary": {
+    "batch1_latency_median_s": 0.0007778720009810058,
+    "batch1_latency_p95_s": 0.0010100958010298199,
+    "repeats": 5
+  }
+}

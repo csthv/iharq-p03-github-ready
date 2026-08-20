@@ -1,0 +1,30 @@
+layer: L4
+phase: P00
+foundation_only: true
+evidence_request_statuses:
+- OPEN
+- SATISFIED
+- INSUFFICIENT
+- BLOCKED
+- INVALID
+quality_statuses:
+- SUFFICIENT
+- PARTIAL
+- INSUFFICIENT
+- INCOMPATIBLE
+- INVALID
+- DIAGNOSTIC_ONLY
+actions:
+- ACCEPT
+- ABSTAIN
+- DEFER
+- ESCALATE
+- SAFE_FALLBACK
+- BLOCK
+fallbacks:
+- NONE
+- ABSTAIN
+- DEFER
+- ESCALATE
+- SAFE_STOP
+real_iharq_execution: false

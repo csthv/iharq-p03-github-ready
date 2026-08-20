@@ -1,0 +1,36 @@
+{
+  "records": [
+    {
+      "record_id": "IHARQ-NEGATIVERESULTNOTE-20260802-f3782d815c81ebc9",
+      "record_type": "NegativeResultNote",
+      "schema_version": "1.0-foundation",
+      "authority_status": "REGISTRY_REFERENCED",
+      "owner_layer": "L0",
+      "phase_id": "P00",
+      "config_id": "P00-CONFIG-R1",
+      "source_ids": [],
+      "evidence_mode": "CONFORMANCE",
+      "limitation_tags": [
+        "MOCK_ONLY"
+      ],
+      "lifecycle_status": "VALIDATED",
+      "fixture": true,
+      "fixture_tags": [
+        "MOCK",
+        "NON_EMPIRICAL",
+        "NON_CLAIM_BEARING"
+      ],
+      "evidence_role": "PRIMARY",
+      "payload": {
+        "negative_result_note_id": "MOCK_NEGATIVE_RESULT_NOTE_ID_50",
+        "source_artifact_ids": [],
+        "statement": "MOCK_STATEMENT_50",
+        "limitations": "MOCK_LIMITATIONS_50"
+      },
+      "ablation_id": null
+    }
+  ],
+  "controls": {},
+  "bundle_id": "INVALID-LAYER0_PRIMARY_MEASUREMENT",
+  "expected_failure_category": "layer0_primary_measurement"
+}

@@ -1,0 +1,179 @@
+manifest_id: P00-EVIDENCE-MAP-MANIFEST-R1
+annex_id: IHARQ-P00-EVIDENCE-MAP-ANNEX-R2
+layer0_release_id: P00-LAYER0-RELEASE-R2
+analysis_release_id: P00-ANALYSIS-RELEASE-R2
+active_claim_versions: 7
+rows:
+- claim_id: P00-CLM-001
+  claim_version: v2
+  source_candidate_statement_id: P00-CS-001
+  layer0_disposition: APPROVE_WITH_QUALIFICATIONS
+  allowed_wording: Under the exact registered local snapshot and verified Python 3.13.5 environment, all
+    19 registered Phase 0 engineering/foundation conformance cells passed; this is non-empirical Mode
+    B evidence and does not establish scientific effectiveness or Phase 0 closure.
+  allowed_wording_sha256: acd0d4ddf5f6e53ad0e26a8898dcd23f12d6b9c1ec772fd97c8497478db735bf
+  finding_ids: P00-F-001
+  execution_release_id: P00-EXECUTION-RELEASE-R2
+  analysis_release_id: P00-ANALYSIS-RELEASE-R2
+  test_ids: PYTEST-102-OF-102
+  gate_ids: P0-GATE-01;P0-GATE-02;P0-GATE-03;P0-GATE-04;P0-GATE-05;P0-GATE-06;P0-GATE-07;P0-GATE-08;P0-GATE-09;P0-GATE-10;P0-GATE-11;P0-GATE-12;P0-GATE-13_FOUNDATION;P0-GATE-14_FOUNDATION;P0-GATE-15;P0-GATE-16_IMPLEMENTATION;P0-GATE-17_LOCAL
+  report_section: IHARQ-P00-PHASE-ANALYSIS-REPORT-R3-LAYER0-CORRECTED
+  evidence_mode: ENGINEERING_FOUNDATION_CONFORMANCE
+  claim_ceiling: ENGINEERING_FOUNDATION_CONFORMANCE
+  denominator: '19'
+  limitations: P00-LIM-002;P00-LIM-003;P00-LIM-004;P00-LIM-L0-001
+  adverse_negative_links: P00-N-003;P00-N-004;P00-N-009
+  manuscript_thesis_placement: Phase 0 foundation/reproducibility appendix — item 1
+  layer10_slots: ClaimBoundaryView;P00PhaseStatusView;claim_card_01
+  lifecycle_status: ACTIVE_QUALIFIED
+  refresh_triggers: source snapshot changes;analysis release superseded;denominator changes;limitation
+    changes
+  withdrawal_triggers: evidence link invalid;blocking defect opens;claim wording exceeds ceiling
+- claim_id: P00-CLM-002
+  claim_version: v2
+  source_candidate_statement_id: P00-CS-002
+  layer0_disposition: APPROVE_WITH_QUALIFICATIONS
+  allowed_wording: In the frozen local Python 3.13.5 environment, the complete registered deterministic
+    suite passed 102 of 102 tests; cross-version portability is not established.
+  allowed_wording_sha256: fd0433bb7a4e3f05b2af29a85d881663fc5e8869dd9172921564a76e9865d3a3
+  finding_ids: P00-F-002
+  execution_release_id: P00-EXECUTION-RELEASE-R2
+  analysis_release_id: P00-ANALYSIS-RELEASE-R2
+  test_ids: PYTEST-102-OF-102
+  gate_ids: P0-GATE-01;P0-GATE-02;P0-GATE-03;P0-GATE-04;P0-GATE-05;P0-GATE-06;P0-GATE-07;P0-GATE-08;P0-GATE-09;P0-GATE-10;P0-GATE-11;P0-GATE-12;P0-GATE-13_FOUNDATION;P0-GATE-14_FOUNDATION;P0-GATE-15;P0-GATE-16_IMPLEMENTATION;P0-GATE-17_LOCAL
+  report_section: IHARQ-P00-PHASE-ANALYSIS-REPORT-R3-LAYER0-CORRECTED
+  evidence_mode: ENGINEERING_FOUNDATION_CONFORMANCE
+  claim_ceiling: ENGINEERING_FOUNDATION_CONFORMANCE
+  denominator: '102'
+  limitations: P00-LIM-001;P00-LIM-002;P00-LIM-003;P00-LIM-004
+  adverse_negative_links: P00-N-002;P00-N-003;P00-N-004
+  manuscript_thesis_placement: Phase 0 foundation/reproducibility appendix — item 2
+  layer10_slots: ClaimBoundaryView;P00PhaseStatusView;claim_card_02
+  lifecycle_status: ACTIVE_QUALIFIED
+  refresh_triggers: source snapshot changes;analysis release superseded;denominator changes;limitation
+    changes
+  withdrawal_triggers: evidence link invalid;blocking defect opens;claim wording exceeds ceiling
+- claim_id: P00-CLM-003
+  claim_version: v2
+  source_candidate_statement_id: P00-CS-003
+  layer0_disposition: APPROVE_WITH_QUALIFICATIONS
+  allowed_wording: Within the registered non-empirical fixture inventory, all 19 valid or integrated bundles
+    were accepted and all 178 intentionally malformed categories were rejected as expected, with zero
+    false valid rejections and zero false malformed acceptances.
+  allowed_wording_sha256: 7167fef067a3ff78ef3b13cd57020f6a1f6d97bd0702adf8b93bb90193556fc9
+  finding_ids: P00-F-003;P00-F-004
+  execution_release_id: P00-EXECUTION-RELEASE-R2
+  analysis_release_id: P00-ANALYSIS-RELEASE-R2
+  test_ids: PYTEST-102-OF-102
+  gate_ids: P0-GATE-01;P0-GATE-02;P0-GATE-03;P0-GATE-04;P0-GATE-05;P0-GATE-06;P0-GATE-07;P0-GATE-08;P0-GATE-09;P0-GATE-10;P0-GATE-11;P0-GATE-12;P0-GATE-13_FOUNDATION;P0-GATE-14_FOUNDATION;P0-GATE-15;P0-GATE-16_IMPLEMENTATION;P0-GATE-17_LOCAL
+  report_section: IHARQ-P00-PHASE-ANALYSIS-REPORT-R3-LAYER0-CORRECTED
+  evidence_mode: ENGINEERING_FOUNDATION_CONFORMANCE
+  claim_ceiling: VALIDATION_EVIDENCE
+  denominator: 19; 178
+  limitations: P00-LIM-004;P00-LIM-L0-001
+  adverse_negative_links: P00-N-001
+  manuscript_thesis_placement: Phase 0 foundation/reproducibility appendix — item 3
+  layer10_slots: ClaimBoundaryView;P00PhaseStatusView;claim_card_03
+  lifecycle_status: ACTIVE_QUALIFIED
+  refresh_triggers: source snapshot changes;analysis release superseded;denominator changes;limitation
+    changes
+  withdrawal_triggers: evidence link invalid;blocking defect opens;claim wording exceeds ceiling
+- claim_id: P00-CLM-004
+  claim_version: v2
+  source_candidate_statement_id: P00-CS-004
+  layer0_disposition: APPROVE_WITH_QUALIFICATIONS
+  allowed_wording: The frozen Phase 0 package contains and validates the registered foundation inventories
+    of 85 schemas, 35 configuration profiles, and 79 record-family profiles; inventory closure does not
+    establish later-phase scientific effectiveness.
+  allowed_wording_sha256: 306cc07bda684fd312de578c48d4f3933df2c6ca5dfb93bf16c664cd49b088dc
+  finding_ids: P00-F-005
+  execution_release_id: P00-EXECUTION-RELEASE-R2
+  analysis_release_id: P00-ANALYSIS-RELEASE-R2
+  test_ids: PYTEST-102-OF-102
+  gate_ids: P0-GATE-01;P0-GATE-02;P0-GATE-03;P0-GATE-04;P0-GATE-05;P0-GATE-06;P0-GATE-07;P0-GATE-08;P0-GATE-09;P0-GATE-10;P0-GATE-11;P0-GATE-12;P0-GATE-13_FOUNDATION;P0-GATE-14_FOUNDATION;P0-GATE-15;P0-GATE-16_IMPLEMENTATION;P0-GATE-17_LOCAL
+  report_section: IHARQ-P00-PHASE-ANALYSIS-REPORT-R3-LAYER0-CORRECTED
+  evidence_mode: ENGINEERING_FOUNDATION_CONFORMANCE
+  claim_ceiling: ARTIFACT_CLOSURE
+  denominator: 85 schemas; 35 configs; 79 record families
+  limitations: P00-LIM-004;P00-LIM-L0-001
+  adverse_negative_links: ''
+  manuscript_thesis_placement: Phase 0 foundation/reproducibility appendix — item 4
+  layer10_slots: ClaimBoundaryView;P00PhaseStatusView;claim_card_04
+  lifecycle_status: ACTIVE_QUALIFIED
+  refresh_triggers: source snapshot changes;analysis release superseded;denominator changes;limitation
+    changes
+  withdrawal_triggers: evidence link invalid;blocking defect opens;claim wording exceeds ceiling
+- claim_id: P00-CLM-005
+  claim_version: v2
+  source_candidate_statement_id: P00-CS-005
+  layer0_disposition: APPROVE_WITH_QUALIFICATIONS
+  allowed_wording: All eleven Layer 0–10 foundation interfaces passed the registered Phase 0 integration
+    scope; no later-phase scientific execution or effectiveness result is claimed.
+  allowed_wording_sha256: 193811b063a515c08dff31d75363d0ac90b1fe2f02d406b80380d19cd5134e5f
+  finding_ids: P00-F-006
+  execution_release_id: P00-EXECUTION-RELEASE-R2
+  analysis_release_id: P00-ANALYSIS-RELEASE-R2
+  test_ids: PYTEST-102-OF-102
+  gate_ids: P0-GATE-01;P0-GATE-02;P0-GATE-03;P0-GATE-04;P0-GATE-05;P0-GATE-06;P0-GATE-07;P0-GATE-08;P0-GATE-09;P0-GATE-10;P0-GATE-11;P0-GATE-12;P0-GATE-13_FOUNDATION;P0-GATE-14_FOUNDATION;P0-GATE-15;P0-GATE-16_IMPLEMENTATION;P0-GATE-17_LOCAL
+  report_section: IHARQ-P00-PHASE-ANALYSIS-REPORT-R3-LAYER0-CORRECTED
+  evidence_mode: ENGINEERING_FOUNDATION_CONFORMANCE
+  claim_ceiling: FOUNDATION_INTEGRATION
+  denominator: 11 layers; registered chain fixtures
+  limitations: P00-LIM-003;P00-LIM-004;P00-LIM-L0-001
+  adverse_negative_links: P00-N-004;P00-N-009
+  manuscript_thesis_placement: Phase 0 foundation/reproducibility appendix — item 5
+  layer10_slots: ClaimBoundaryView;P00PhaseStatusView;claim_card_05
+  lifecycle_status: ACTIVE_QUALIFIED
+  refresh_triggers: source snapshot changes;analysis release superseded;denominator changes;limitation
+    changes
+  withdrawal_triggers: evidence link invalid;blocking defect opens;claim wording exceeds ceiling
+- claim_id: P00-CLM-006
+  claim_version: v2
+  source_candidate_statement_id: P00-CS-006
+  layer0_disposition: APPROVE_WITH_QUALIFICATIONS
+  allowed_wording: The P00 implementation foundation is complete within its registered local scope, and
+    P01–P15 reusable contract surfaces are ready for later governed annex creation and execution; future
+    empirical outputs have not been produced.
+  allowed_wording_sha256: 0805b095d02bcee3927473ab56190df49d15cba101b5fc99b808a0459adf29b2
+  finding_ids: P00-F-007
+  execution_release_id: P00-EXECUTION-RELEASE-R2
+  analysis_release_id: P00-ANALYSIS-RELEASE-R2
+  test_ids: PYTEST-102-OF-102
+  gate_ids: P0-GATE-01;P0-GATE-02;P0-GATE-03;P0-GATE-04;P0-GATE-05;P0-GATE-06;P0-GATE-07;P0-GATE-08;P0-GATE-09;P0-GATE-10;P0-GATE-11;P0-GATE-12;P0-GATE-13_FOUNDATION;P0-GATE-14_FOUNDATION;P0-GATE-15;P0-GATE-16_IMPLEMENTATION;P0-GATE-17_LOCAL
+  report_section: IHARQ-P00-PHASE-ANALYSIS-REPORT-R3-LAYER0-CORRECTED
+  evidence_mode: ENGINEERING_FOUNDATION_CONFORMANCE
+  claim_ceiling: CONTRACT_READINESS
+  denominator: '16'
+  limitations: P00-LIM-003;P00-LIM-004;P00-LIM-L0-001
+  adverse_negative_links: P00-N-004;P00-N-009
+  manuscript_thesis_placement: Phase 0 foundation/reproducibility appendix — item 6
+  layer10_slots: ClaimBoundaryView;P00PhaseStatusView;claim_card_06
+  lifecycle_status: ACTIVE_QUALIFIED
+  refresh_triggers: source snapshot changes;analysis release superseded;denominator changes;limitation
+    changes
+  withdrawal_triggers: evidence link invalid;blocking defect opens;claim wording exceeds ceiling
+- claim_id: P00-CLM-007
+  claim_version: v2
+  source_candidate_statement_id: P00-CS-007
+  layer0_disposition: APPROVE_WITH_QUALIFICATIONS
+  allowed_wording: The package reproduced from a clean isolated copy under the exact verified Python 3.13.5
+    and 22-distribution local dependency snapshot; portable cross-version reproducibility is not established.
+  allowed_wording_sha256: d5e1b1e0a9eeea91e1f03ddddbd056b5d10f3bcc6a10595d105833caaeb4aab5
+  finding_ids: P00-F-008
+  execution_release_id: P00-EXECUTION-RELEASE-R2
+  analysis_release_id: P00-ANALYSIS-RELEASE-R2
+  test_ids: PYTEST-102-OF-102
+  gate_ids: P0-GATE-01;P0-GATE-02;P0-GATE-03;P0-GATE-04;P0-GATE-05;P0-GATE-06;P0-GATE-07;P0-GATE-08;P0-GATE-09;P0-GATE-10;P0-GATE-11;P0-GATE-12;P0-GATE-13_FOUNDATION;P0-GATE-14_FOUNDATION;P0-GATE-15;P0-GATE-16_IMPLEMENTATION;P0-GATE-17_LOCAL
+  report_section: IHARQ-P00-PHASE-ANALYSIS-REPORT-R3-LAYER0-CORRECTED
+  evidence_mode: ENGINEERING_FOUNDATION_CONFORMANCE
+  claim_ceiling: LOCAL_REPRODUCIBILITY
+  denominator: '8'
+  limitations: P00-LIM-001;P00-LIM-002;P00-LIM-003
+  adverse_negative_links: P00-N-002;P00-N-003;P00-N-006
+  manuscript_thesis_placement: Phase 0 foundation/reproducibility appendix — item 7
+  layer10_slots: ClaimBoundaryView;P00PhaseStatusView;claim_card_07
+  lifecycle_status: ACTIVE_QUALIFIED
+  refresh_triggers: source snapshot changes;analysis release superseded;denominator changes;limitation
+    changes
+  withdrawal_triggers: evidence link invalid;blocking defect opens;claim wording exceeds ceiling
+release_id: P00-EVIDENCE-MAP-RELEASE-R2

@@ -1,0 +1,10 @@
+environment_id: PYTHON-3.13-PHASE0-R1
+python_version: '3.13'
+manager: uv
+lockfile: uv.lock
+requirements_lock: requirements-lock.txt
+status: LOCAL_AND_CI_TEMPLATE_READY
+executed_locally: true
+github_ci_executed: false
+platform: ubuntu-latest
+secrets_policy: ENVIRONMENT_REFERENCES_ONLY

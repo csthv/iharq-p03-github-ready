@@ -1,0 +1,29 @@
+manifest_id: IHARQ-CUMULATIVE-PROJECT-STATE-THROUGH-P02-POST-EXTENSION-R3
+generated_at: '2026-08-17T20:30:45.598141+00:00'
+status: PASS_READY_FOR_P03_INTAKE_POST_P02_64_128_256_EXTENSION
+coverage:
+- P00
+- P01
+- P02
+current_status_file: CURRENT_PROJECT_STATUS.json
+current_handoff_file: phase_handoff.yaml
+stage24_replay_manifest_preserved_at: history/repository_state_pre_p02_final_merge_R2/project_state_manifest.yaml
+p02_release_metadata: current/phase_02/release_metadata/
+final_documentary_state: final_state/through_p02/
+root_layer2_source: src/iharq/layer2_decoders/
+root_layer2_source_origin: current/phase_02/implementation/src/iharq/layer2_decoders/
+phase_environments:
+  P00: environments/phase_00/
+  P01: environments/phase_01/
+  P02: environments/phase_02/
+external_artifact_pointer_manifest: external_artifact_pointer_manifest.yaml
+limitations: artifacts/handoffs/phase_02_to_phase_03/persistent_limitations.yaml
+blockers: []
+scientific_mutation_by_merge: false
+p02_extension_annex_id: P02_LOWLABEL_64_128_256_STAGE18S_R1_a0e2462396cf
+p02_extension_addendum: final_state/through_p02/analysis/P02_64_128_256_Extension_Addendum_R1.md
+p02_extension_handoff: artifacts/handoffs/phase_02_to_phase_03/P02_64_128_256_EXTENSION_ANNEX_HANDOFF_R1.json
+p02_extension_location_index: artifacts/handoffs/phase_02_to_phase_03/P02_64_128_256_EXTENSION_ANNEX_LOCATION_INDEX.jsonl
+current_heavy_extension_repo: Csthv/iharq-p02-phase02-r2-P02-L2-OFFICIAL-RUN-R4DY-20260817t182318z
+current_heavy_extension_revision: 7f43cf3a9ea4b2056d96b9d2135bc14eac605b90
+canonical_stage18_G18_modified: false

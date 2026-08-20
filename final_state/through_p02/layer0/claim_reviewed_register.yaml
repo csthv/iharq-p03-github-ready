@@ -1,0 +1,1456 @@
+layer0_id: IHARQ-CUMULATIVE-LAYER0-THROUGH-P02-R1
+reviewed_claims:
+- prior_claim_id: P00-CLM-001/v2
+  source_candidate_claim_id: P00-CS-001
+  origin_phase: P00
+  prior_layer0_release_id: P00-LAYER0-RELEASE-R2
+  disposition: APPROVED_WITH_QUALIFICATIONS
+  reviewed_text: Under the exact registered local snapshot and verified Python 3.13.5 environment, all 19 registered Phase 0 engineering/foundation
+    conformance cells passed; this is non-empirical Mode B evidence and does not establish scientific effectiveness or Phase 0 closure.
+  finding_ids:
+  - P00-F-001
+  claim_ceiling: ENGINEERING_FOUNDATION_CONFORMANCE
+  mandatory_limitations:
+  - P00-LIM-002
+  - P00-LIM-003
+  - P00-LIM-004
+  - P00-LIM-L0-001
+  current_validity: PRESERVED_PRIOR_DISPOSITION
+  p01_invalidation: false
+  cumulative_status: ACTIVE_QUALIFIED_CURRENT
+  historical_disposition_preserved: true
+  p02_effect: NO_CHANGE
+  current_cumulative_status: ACTIVE_QUALIFIED_CURRENT
+- prior_claim_id: P00-CLM-002/v2
+  source_candidate_claim_id: P00-CS-002
+  origin_phase: P00
+  prior_layer0_release_id: P00-LAYER0-RELEASE-R2
+  disposition: APPROVED_WITH_QUALIFICATIONS
+  reviewed_text: In the frozen local Python 3.13.5 environment, the complete registered deterministic suite passed 102 of 102 tests; cross-version
+    portability is not established.
+  finding_ids:
+  - P00-F-002
+  claim_ceiling: ENGINEERING_FOUNDATION_CONFORMANCE
+  mandatory_limitations:
+  - P00-LIM-001
+  - P00-LIM-002
+  - P00-LIM-003
+  - P00-LIM-004
+  current_validity: PRESERVED_PRIOR_DISPOSITION
+  p01_invalidation: false
+  cumulative_status: ACTIVE_QUALIFIED_CURRENT
+  historical_disposition_preserved: true
+  p02_effect: NO_CHANGE
+  current_cumulative_status: ACTIVE_QUALIFIED_CURRENT
+- prior_claim_id: P00-CLM-003/v2
+  source_candidate_claim_id: P00-CS-003
+  origin_phase: P00
+  prior_layer0_release_id: P00-LAYER0-RELEASE-R2
+  disposition: APPROVED_WITH_QUALIFICATIONS
+  reviewed_text: Within the registered non-empirical fixture inventory, all 19 valid or integrated bundles were accepted and all 178 intentionally
+    malformed categories were rejected as expected, with zero false valid rejections and zero false malformed acceptances.
+  finding_ids:
+  - P00-F-003
+  - P00-F-004
+  claim_ceiling: VALIDATION_EVIDENCE
+  mandatory_limitations:
+  - P00-LIM-004
+  - P00-LIM-L0-001
+  current_validity: PRESERVED_PRIOR_DISPOSITION
+  p01_invalidation: false
+  cumulative_status: ACTIVE_QUALIFIED_CURRENT
+  historical_disposition_preserved: true
+  p02_effect: NO_CHANGE
+  current_cumulative_status: ACTIVE_QUALIFIED_CURRENT
+- prior_claim_id: P00-CLM-004/v2
+  source_candidate_claim_id: P00-CS-004
+  origin_phase: P00
+  prior_layer0_release_id: P00-LAYER0-RELEASE-R2
+  disposition: APPROVED_WITH_QUALIFICATIONS
+  reviewed_text: The frozen Phase 0 package contains and validates the registered foundation inventories of 85 schemas, 35 configuration profiles,
+    and 79 record-family profiles; inventory closure does not establish later-phase scientific effectiveness.
+  finding_ids:
+  - P00-F-005
+  claim_ceiling: ARTIFACT_CLOSURE
+  mandatory_limitations:
+  - P00-LIM-004
+  - P00-LIM-L0-001
+  current_validity: PRESERVED_PRIOR_DISPOSITION
+  p01_invalidation: false
+  cumulative_status: ACTIVE_QUALIFIED_CURRENT
+  historical_disposition_preserved: true
+  p02_effect: NO_CHANGE
+  current_cumulative_status: ACTIVE_QUALIFIED_CURRENT
+- prior_claim_id: P00-CLM-005/v2
+  source_candidate_claim_id: P00-CS-005
+  origin_phase: P00
+  prior_layer0_release_id: P00-LAYER0-RELEASE-R2
+  disposition: APPROVED_WITH_QUALIFICATIONS
+  reviewed_text: All eleven Layer 0–10 foundation interfaces passed the registered Phase 0 integration scope; no later-phase scientific execution
+    or effectiveness result is claimed.
+  finding_ids:
+  - P00-F-006
+  claim_ceiling: FOUNDATION_INTEGRATION
+  mandatory_limitations:
+  - P00-LIM-003
+  - P00-LIM-004
+  - P00-LIM-L0-001
+  current_validity: PRESERVED_PRIOR_DISPOSITION
+  p01_invalidation: false
+  cumulative_status: ACTIVE_QUALIFIED_CURRENT
+  historical_disposition_preserved: true
+  p02_effect: NO_CHANGE
+  current_cumulative_status: ACTIVE_QUALIFIED_CURRENT
+- prior_claim_id: P00-CLM-006/v2
+  source_candidate_claim_id: P00-CS-006
+  origin_phase: P00
+  prior_layer0_release_id: P00-LAYER0-RELEASE-R2
+  disposition: APPROVED_WITH_QUALIFICATIONS
+  reviewed_text: The P00 implementation foundation is complete within its registered local scope, and P01–P15 reusable contract surfaces are ready
+    for later governed annex creation and execution; future empirical outputs have not been produced.
+  finding_ids:
+  - P00-F-007
+  claim_ceiling: CONTRACT_READINESS
+  mandatory_limitations:
+  - P00-LIM-003
+  - P00-LIM-004
+  - P00-LIM-L0-001
+  current_validity: PRESERVED_PRIOR_DISPOSITION
+  p01_invalidation: false
+  cumulative_status: ACTIVE_QUALIFIED_CURRENT
+  historical_disposition_preserved: true
+  p02_effect: NO_CHANGE
+  current_cumulative_status: ACTIVE_QUALIFIED_CURRENT
+- prior_claim_id: P00-CLM-007/v2
+  source_candidate_claim_id: P00-CS-007
+  origin_phase: P00
+  prior_layer0_release_id: P00-LAYER0-RELEASE-R2
+  disposition: APPROVED_WITH_QUALIFICATIONS
+  reviewed_text: The package reproduced from a clean isolated copy under the exact verified Python 3.13.5 and 22-distribution local dependency
+    snapshot; portable cross-version reproducibility is not established.
+  finding_ids:
+  - P00-F-008
+  claim_ceiling: LOCAL_REPRODUCIBILITY
+  mandatory_limitations:
+  - P00-LIM-001
+  - P00-LIM-002
+  - P00-LIM-003
+  current_validity: PRESERVED_PRIOR_DISPOSITION
+  p01_invalidation: false
+  cumulative_status: ACTIVE_QUALIFIED_CURRENT
+  historical_disposition_preserved: true
+  p02_effect: NO_CHANGE
+  current_cumulative_status: ACTIVE_QUALIFIED_CURRENT
+- reviewed_claim_id: P01-CLM-001/v1
+  source_candidate_claim_id: P01-CLAIM-CAND-001
+  layer0_disposition_id: P01-L0-DISP-001
+  origin_phase: P01
+  original_text: Phase 1 established a checksum-bound, provenance-traceable three-dataset public EEG foundation for the IHARQ binary motor-imagery
+    branch.
+  disposition: APPROVED_WITH_QUALIFICATIONS
+  reviewed_text: Within the frozen P01 binary motor-imagery branch, Phase 1 established a checksum-bound, provenance-traceable foundation over
+    the three activated public EEG datasets.
+  safe_short_text: P01 established a checksum-bound three-dataset public EEG foundation.
+  evidence_class: PROVENANCE_EVIDENCE
+  support_level: SUPPORTED_WITH_QUALIFICATION
+  finding_ids:
+  - P01-FIND-001
+  protocol_analysis_ids:
+  - P01-AC-001-SOURCE-INVENTORY
+  run_ids:
+  - P01-STAGE-05
+  - P01-STAGE-06
+  - P01-STAGE-07
+  record_ids: &id001
+  - IHARQ-DATASETRECORD-20260806-66309cda68771bef
+  - IHARQ-DATASETRECORD-20260806-42c424800627b6ee
+  - IHARQ-DATASETRECORD-20260806-adb91f25a65e588e
+  evidence_paths:
+  - records/datasets/BNCI2014_001/IHARQ-DATASETRECORD-20260806-42c424800627b6ee.json
+  - records/datasets/Lee2019_MI/IHARQ-DATASETRECORD-20260806-adb91f25a65e588e.json
+  - records/datasets/PhysioNetMI/IHARQ-DATASETRECORD-20260806-66309cda68771bef.json
+  - reports/phase_01/sources/source_version_license_report.json
+  claim_ceiling: DATA_PROVENANCE_REPRODUCIBILITY
+  source_claim_ceiling: Data provenance and reproducibility only
+  mandatory_limitations:
+  - PUBLIC_EEG_ONLY
+  - NON_CLINICAL
+  - BINARY_MI_BRANCH_SCOPE
+  source_limitation_tags:
+  - PUBLIC_EEG_ONLY
+  - NON_CLINICAL
+  forbidden_wording:
+  - P01 established a clinically representative or deployment-ready EEG foundation.
+  evidence_map_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  future_reconsideration: Re-review only if source identities or task scope change.
+  priority: HIGH
+  historical_disposition_preserved: true
+  p02_effect: NO_CHANGE
+  current_cumulative_status: ACTIVE_HISTORICAL
+- reviewed_claim_id: P01-CLM-002/v1
+  source_candidate_claim_id: P01-CLAIM-CAND-002
+  layer0_disposition_id: P01-L0-DISP-002
+  origin_phase: P01
+  original_text: The frozen P01 split is subject-grouped and passed the implemented disjointness and leakage checks.
+  disposition: APPROVED_WITH_QUALIFICATIONS
+  reviewed_text: The frozen P01 split assigned 172 subject groups wholly and disjointly across train, calibration, validation, and test roles
+    and passed the implemented registered leakage/disjointness checks; this does not prove that every conceivable leakage mechanism is impossible.
+  safe_short_text: P01 subject split passed the registered disjointness/leakage checks.
+  evidence_class: VALIDATION_EVIDENCE
+  support_level: SUPPORTED_WITH_QUALIFICATION
+  finding_ids:
+  - P01-FIND-002
+  - P01-FIND-006
+  protocol_analysis_ids:
+  - P01-AC-002-SPLIT
+  - P01-AC-005-LEAKAGE
+  run_ids:
+  - P01-STAGE-11
+  - P01-STAGE-17
+  record_ids:
+  - IHARQ-SPLITRECORD-20260806-e4e371d332c61e36
+  evidence_paths:
+  - records/splits/P01-L1-SPLIT-OFFICIAL-R2/IHARQ-SPLITRECORD-20260806-e4e371d332c61e36.json
+  - reports/phase_01/splits/disjointness.json
+  - reports/phase_01/leakage/leakage_contamination.json
+  claim_ceiling: IMPLEMENTED_SPLIT_AND_LEAKAGE_CHECKS
+  source_claim_ceiling: Contract leakage/disjointness correctness
+  mandatory_limitations:
+  - IMPLEMENTED_CHECKS_ONLY
+  source_limitation_tags:
+  - IMPLEMENTED_CHECKS_ONLY
+  forbidden_wording:
+  - P01 proves that leakage is impossible.
+  evidence_map_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  future_reconsideration: Refresh if split identity, visibility rules, or leakage checks change.
+  priority: HIGH
+  historical_disposition_preserved: true
+  p02_effect: NO_CHANGE
+  current_cumulative_status: ACTIVE_HISTORICAL
+- reviewed_claim_id: P01-CLM-003/v1
+  source_candidate_claim_id: P01-CLAIM-CAND-003
+  layer0_disposition_id: P01-L0-DISP-003
+  origin_phase: P01
+  original_text: 'The official Layer-1 pipeline conserved the complete accepted-event denominator: 12,910 accepted events produced 12,910 valid
+    core windows.'
+  disposition: APPROVED
+  reviewed_text: Under the frozen official core-window policy, all 12,910 accepted events yielded 12,910 valid core windows, with 0/12,910 invalid
+    official core windows.
+  safe_short_text: 12,910/12,910 accepted events yielded valid official core windows.
+  evidence_class: INTEGRITY_EVIDENCE
+  support_level: DIRECT
+  finding_ids:
+  - P01-FIND-003
+  protocol_analysis_ids:
+  - P01-AC-003-DENOMINATOR
+  run_ids:
+  - P01-STAGE-13
+  - P01-STAGE-14
+  - P01-STAGE-16
+  record_ids:
+  - IHARQ-SPLITRECORD-20260806-e4e371d332c61e36
+  - IHARQ-PREPROCESSINGRECORD-20260806-a11b59eeb3861a08
+  evidence_paths:
+  - records/windows/
+  - external_artifact_pointers/derived_windows_dataset.json
+  claim_ceiling: DATA_MATERIALIZATION_CLOSURE
+  source_claim_ceiling: Data materialization closure
+  mandatory_limitations:
+  - NO_MODEL_EFFECT_INFERENCE
+  source_limitation_tags:
+  - NO_MODEL_EFFECT_INFERENCE
+  forbidden_wording:
+  - Denominator closure proves the dataset will yield strong decoder performance.
+  evidence_map_eligibility: ELIGIBLE_FOR_EVIDENCE_MAP
+  layer10_eligibility: ELIGIBLE
+  future_reconsideration: Refresh only if accepted-event or core-window identity changes.
+  priority: HIGH
+  historical_disposition_preserved: true
+  p02_effect: NO_CHANGE
+  current_cumulative_status: ACTIVE_HISTORICAL
+- reviewed_claim_id: P01-CLM-004/v1
+  source_candidate_claim_id: P01-CLAIM-CAND-004
+  layer0_disposition_id: P01-L0-DISP-004
+  origin_phase: P01
+  original_text: The official core numerical Dataset was persisted as 172 lossless HDF5 subject shards and verified by immutable provider/version/manifest
+    identities.
+  disposition: APPROVED_WITH_QUALIFICATIONS
+  reviewed_text: The official P01 core numerical artifact was persisted as 172 lossless HDF5 subject shards covering 12,910 windows and was verified
+    under its Kaggle provider-version/logical-revision/manifest-hash identity contract.
+  safe_short_text: 'P01 core data: 172 verified lossless HDF5 subject shards.'
+  evidence_class: INTEGRITY_EVIDENCE
+  support_level: SUPPORTED_WITH_QUALIFICATION
+  finding_ids:
+  - P01-FIND-004
+  protocol_analysis_ids:
+  - P01-AC-006-EXTERNAL
+  run_ids:
+  - P01-STAGE-14
+  - P01-STAGE-15
+  - P01-STAGE-20
+  record_ids:
+  - P01-L1-DERIVED-WINDOWS-d03f0a7c869dd95a-20260806222242-68a91473
+  - IHARQ-SPLITRECORD-20260806-e4e371d332c61e36
+  - IHARQ-PREPROCESSINGRECORD-20260806-a11b59eeb3861a08
+  evidence_paths:
+  - reports/phase_01/storage/existing_core_dataset_adoption.json
+  - external_artifact_pointers/derived_windows_dataset.json
+  claim_ceiling: RETRIEVAL_STORAGE_INTEGRITY_REPRODUCIBILITY
+  source_claim_ceiling: Retrieval/storage reproducibility
+  mandatory_limitations:
+  - PRIVATE_KAGGLE_EXTERNAL_ARTIFACT_ACCESS
+  - SOURCE_LICENSE_REDISTRIBUTION_CONSTRAINTS
+  source_limitation_tags:
+  - PRIVATE_KAGGLE_EXTERNAL_ARTIFACT_ACCESS
+  - SOURCE_LICENSE_REDISTRIBUTION_CONSTRAINTS
+  forbidden_wording:
+  - The core Dataset is universally public and independently downloadable without access or license constraints.
+  evidence_map_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  future_reconsideration: Refresh if provider version, logical revision, manifest hash, or access policy changes.
+  priority: MEDIUM
+  historical_disposition_preserved: true
+  p02_effect: NO_CHANGE
+  current_cumulative_status: ACTIVE_HISTORICAL
+- reviewed_claim_id: P01-CLM-005/v1
+  source_candidate_claim_id: P01-CLAIM-CAND-005
+  layer0_disposition_id: P01-L0-DISP-005
+  origin_phase: P01
+  original_text: P01 quality processing followed an annotate-not-repair policy; 20 soft/provider flags were preserved while no hard-invalid summary
+    or official core window was observed.
+  disposition: APPROVED_WITH_QUALIFICATIONS
+  reviewed_text: 'P01 applied the ANNOTATE_NOT_REPAIR quality policy across 489 quality summaries: 20 soft/provider flags were retained, 0/489
+    summaries were hard-invalid, and 0/12,910 official core windows were invalid under the registered criteria.'
+  safe_short_text: P01 retained 20 soft flags; hard-invalid summaries and invalid core windows were zero under registered criteria.
+  evidence_class: VALIDATION_EVIDENCE
+  support_level: SUPPORTED_WITH_QUALIFICATION
+  finding_ids:
+  - P01-FIND-005
+  protocol_analysis_ids:
+  - P01-AC-004-QUALITY
+  run_ids:
+  - P01-STAGE-13
+  - P01-STAGE-16
+  record_ids:
+  - records/quality/ (489 governed quality summaries)
+  evidence_paths:
+  - reports/phase_01/quality/quality_coverage.json
+  - records/quality/
+  claim_ceiling: QUALITY_ANNOTATION_AND_HARD_VALIDITY_CLOSURE
+  source_claim_ceiling: Quality annotation and hard-validity closure
+  mandatory_limitations:
+  - SOFT_FLAG_NOT_EQUIVALENT_TO_CORRUPTION
+  source_limitation_tags:
+  - SOFT_FLAG_NOT_EQUIVALENT_TO_CORRUPTION
+  forbidden_wording:
+  - All P01 EEG was flawless or artifact-free.
+  evidence_map_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  future_reconsideration: Refresh if quality rules, summaries, or invalidity criteria change.
+  priority: MEDIUM
+  historical_disposition_preserved: true
+  p02_effect: NO_CHANGE
+  current_cumulative_status: ACTIVE_HISTORICAL
+- reviewed_claim_id: P01-CLM-006/v1
+  source_candidate_claim_id: P01-CLAIM-CAND-006
+  layer0_disposition_id: P01-L0-DISP-006
+  origin_phase: P01
+  original_text: P01 established the Layer-1 readiness foundation for all official A0–A13 identities while preserving A14 as absent/prohibited.
+  disposition: APPROVED_WITH_QUALIFICATIONS
+  reviewed_text: P01 established Layer-1 foundation readiness for each official A0-A13 identity; none of these ablation-effectiveness experiments
+    was executed in P01, and A14 remained absent/prohibited.
+  safe_short_text: A0-A13 Layer-1 foundations are ready; A14 is absent/prohibited.
+  evidence_class: READINESS_EVIDENCE
+  support_level: READINESS_ONLY
+  finding_ids:
+  - P01-FIND-008
+  protocol_analysis_ids:
+  - P01-AC-007-ABLATION-READINESS
+  run_ids:
+  - P01-STAGE-18
+  record_ids:
+  - A0-A13 readiness manifest
+  evidence_paths:
+  - manifests/phase_01/layer1_ablation_readiness_l1_v1.json
+  claim_ceiling: FOUNDATION_READINESS_ONLY
+  source_claim_ceiling: Foundation readiness only
+  mandatory_limitations:
+  - NO_ABLATION_EFFECTIVENESS_IN_P01
+  source_limitation_tags:
+  - NO_ABLATION_EFFECTIVENESS_IN_P01
+  forbidden_wording:
+  - P01 demonstrated that A0-A13 ablations are effective.
+  evidence_map_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  future_reconsideration: Effectiveness claims require the relevant downstream governed experiments.
+  priority: HIGH
+  historical_disposition_preserved: true
+  p02_effect: STRENGTHENING_EVIDENCE
+  current_cumulative_status: ACTIVE_QUALIFIED_WITH_P02_REALIZED_DOWNSTREAM_USE
+- reviewed_claim_id: P01-CLM-007/v1
+  source_candidate_claim_id: P01-CLAIM-CAND-007
+  layer0_disposition_id: P01-L0-DISP-007
+  origin_phase: P01
+  original_text: P01 established a 12,910-event fully matched A4 R2 data substrate for future governed evaluation, without padding, clipping,
+    fabrication, or parent-event loss.
+  disposition: APPROVED_WITH_QUALIFICATIONS
+  reviewed_text: 'P01 established a fully matched A4 R2 Layer-1 data substrate for future governed evaluation: 12,910/12,910 parent events are
+    represented without padding, clipping, fabricated samples, or parent-event loss. A4 R2 arose after the +4.0 s feasibility failure and was
+    not evaluated for decoder effectiveness in P01.'
+  safe_short_text: 'A4 R2 substrate: 12,910/12,910 matched parents; effectiveness not evaluated in P01.'
+  evidence_class: READINESS_EVIDENCE
+  support_level: READINESS_ONLY
+  finding_ids:
+  - P01-FIND-009
+  - P01-FIND-010
+  protocol_analysis_ids:
+  - P01-AC-008-A4
+  run_ids:
+  - P01-STAGE-14
+  - P01-STAGE-15
+  - P01-STAGE-18
+  record_ids:
+  - P01-L1-A4-DERIVED-WINDOWS-4cd080393345e8aa-20260807143013-663eab13
+  - P01-L1-A4-WINDOW-FAMILY-FREEZE-R2
+  evidence_paths:
+  - external_artifact_pointers/a4_window_family_dataset.json
+  - reports/phase_01/storage/a4_derived_output_storage_actual_precommit.json
+  - config_snapshot/p01_l1_a4_window_family_freeze_R2.json
+  - Phase_01_Notebook.ipynb (R49 A4 boundary explanation)
+  claim_ceiling: FUTURE_A4_SUBSTRATE_READINESS
+  source_claim_ceiling: Future A4 substrate readiness; not A4 effectiveness
+  mandatory_limitations:
+  - A4_R2_RETROSPECTIVE_FEASIBILITY_ORIGIN_NOT_CONFIRMATORY_IN_P01
+  - A4_EFFECTIVENESS_NOT_EXECUTED
+  source_limitation_tags:
+  - A4_R2_RETROSPECTIVE_FEASIBILITY_ORIGIN_NOT_CONFIRMATORY_IN_P01
+  forbidden_wording:
+  - A4 R2 improves accuracy, AUROC, robustness, or decoder performance.
+  evidence_map_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  future_reconsideration: A matched downstream decoder experiment under the frozen A4 R2 contract is required for performance/effect claims.
+  priority: HIGH
+  historical_disposition_preserved: true
+  p02_effect: STRENGTHENING_EVIDENCE
+  current_cumulative_status: ACTIVE_QUALIFIED_WITH_P02_REALIZED_DOWNSTREAM_USE
+- reviewed_claim_id: P01-CLM-008/v1
+  source_candidate_claim_id: P01-CLAIM-CAND-008
+  layer0_disposition_id: P01-L0-DISP-008
+  origin_phase: P01
+  original_text: The accepted P01 execution closed all 27 stages, 16 deterministic gates, and 50 regression tests with zero unresolved blockers.
+  disposition: APPROVED
+  reviewed_text: The accepted P01 execution completed 27/27 registered stages, 16/16 deterministic P01 gates, and 50/50 regression tests with
+    0 unresolved blockers; final execution-bundle integrity checks also closed.
+  safe_short_text: P01 execution closed 27/27 stages, 16/16 gates, 50/50 tests, with 0 blockers.
+  evidence_class: EXECUTION_EVIDENCE
+  support_level: DIRECT
+  finding_ids:
+  - P01-FIND-012
+  protocol_analysis_ids:
+  - P01-AC-010-GATES-REPAIRS
+  run_ids:
+  - P01-STAGE-04
+  - P01-STAGE-23
+  - P01-STAGE-24
+  - P01-STAGE-26
+  record_ids:
+  - P01-G01...P01-G16
+  - stage_results 00...26
+  evidence_paths:
+  - reports/phase_01/tests/stage_results.json
+  - gate_decision.json
+  - reports/phase_01/tests/phase0_and_runtime_regression.json
+  - reports/phase_01/repair_reentry.json
+  - checksums.sha256
+  claim_ceiling: EXECUTION_REPRODUCIBILITY_CLOSURE
+  source_claim_ceiling: Execution/reproducibility closure
+  mandatory_limitations:
+  - NO_EFFECTIVENESS_INFERENCE
+  source_limitation_tags:
+  - NO_EFFECTIVENESS_INFERENCE
+  forbidden_wording:
+  - Because all gates passed, P01 proved scientific or clinical effectiveness.
+  evidence_map_eligibility: ELIGIBLE_FOR_EVIDENCE_MAP
+  layer10_eligibility: ELIGIBLE
+  future_reconsideration: Refresh if accepted execution lineage or package integrity identity changes.
+  priority: HIGH
+  historical_disposition_preserved: true
+  p02_effect: NO_CHANGE
+  current_cumulative_status: ACTIVE_HISTORICAL
+- reviewed_claim_id: P01-CLM-009/v1
+  source_candidate_claim_id: P01-CLAIM-CAND-009
+  layer0_disposition_id: P01-L0-DISP-009
+  origin_phase: P01
+  original_text: P01 runtime compatibility and resource amendments preserved the frozen scientific core data contract while recording the actual
+    Python 3.12.13 environment.
+  disposition: APPROVED_WITH_QUALIFICATIONS
+  reviewed_text: The accepted P01 run used Python 3.12.13 under a documented compatibility amendment and the governed adaptive-disk policy P01-L1-KAGGLE-ADAPTIVE-DISK-R1;
+    the accepted records show no change to the frozen datasets, labels, subject split, core preprocessing, core window policy, or 12,910-event
+    denominator attributable to these runtime/resource amendments.
+  safe_short_text: P01 ran on Python 3.12.13 with governed compatibility/resource amendments and no recorded core-contract change.
+  evidence_class: EXECUTION_EVIDENCE
+  support_level: SUPPORTED_WITH_QUALIFICATION
+  finding_ids:
+  - P01-FIND-011
+  protocol_analysis_ids:
+  - P01-AC-009-ENVIRONMENT
+  run_ids:
+  - P01-STAGE-01
+  - P01-STAGE-03
+  record_ids:
+  - P01-L1-KAGGLE-ENV-FREEZE-R5
+  - P01-L1-KAGGLE-ADAPTIVE-DISK-R1
+  evidence_paths:
+  - environment_manifest.json
+  - environment_amendment.json
+  claim_ceiling: EXECUTION_REPRODUCIBILITY
+  source_claim_ceiling: Execution reproducibility
+  mandatory_limitations:
+  - ACTUAL_RUNTIME_PYTHON_3_12_13_WITH_COMPATIBILITY_AMENDMENT
+  - ADAPTIVE_DISK_RESOURCE_AMENDMENT
+  source_limitation_tags:
+  - ACTUAL_RUNTIME_PYTHON_3_12_13_WITH_COMPATIBILITY_AMENDMENT
+  - ADAPTIVE_DISK_RESOURCE_AMENDMENT
+  forbidden_wording:
+  - Environment differences could have no effect whatsoever or are universally irrelevant.
+  evidence_map_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  future_reconsideration: Refresh if runtime equivalence, package pins, or resource policy changes.
+  priority: MEDIUM
+  historical_disposition_preserved: true
+  p02_effect: NO_CHANGE
+  current_cumulative_status: ACTIVE_HISTORICAL
+- reviewed_claim_id: P01-CLM-010/v1
+  source_candidate_claim_id: P01-CLAIM-CAND-010
+  layer0_disposition_id: P01-L0-DISP-010
+  origin_phase: P01
+  original_text: P01 provides a frozen technical data contract that P02 can consume without silent relabeling, rewindowing, split mutation, denominator
+    substitution, or test leakage.
+  disposition: APPROVED_WITH_QUALIFICATIONS
+  reviewed_text: P01 freezes a technical Layer-1 data contract that P02 may consume using the recorded dataset, label-map, split, preprocessing,
+    core-window, and external-artifact identities; silent relabeling, rewindowing, split mutation, denominator substitution, or test-visibility
+    leakage is prohibited. This is technical readiness, not evidence of P02 scientific success.
+  safe_short_text: P02 may consume the frozen P01 Layer-1 data contract without silent identity mutation.
+  evidence_class: READINESS_EVIDENCE
+  support_level: READINESS_ONLY
+  finding_ids:
+  - P01-FIND-014
+  protocol_analysis_ids:
+  - P01-AC-003-DENOMINATOR
+  - P01-AC-005-LEAKAGE
+  - P01-AC-006-EXTERNAL
+  - P01-AC-007-ABLATION-READINESS
+  - P01-AC-010-GATES-REPAIRS
+  run_ids:
+  - P01-STAGE-22
+  - P01-STAGE-23
+  - P01-STAGE-26
+  record_ids:
+  - IHARQ-DATASETRECORD-20260806-66309cda68771bef
+  - IHARQ-DATASETRECORD-20260806-42c424800627b6ee
+  - IHARQ-DATASETRECORD-20260806-adb91f25a65e588e
+  - IHARQ-LABELMAPRECORD-20260806-4379781a3b5f5ea9
+  - IHARQ-LABELMAPRECORD-20260806-587dcfff81307768
+  - IHARQ-LABELMAPRECORD-20260806-b551cfd20335896c
+  - IHARQ-SPLITRECORD-20260806-e4e371d332c61e36
+  - IHARQ-PREPROCESSINGRECORD-20260806-a11b59eeb3861a08
+  - P01-L1-DERIVED-WINDOWS-d03f0a7c869dd95a-20260806222242-68a91473
+  - P01-L1-A4-DERIVED-WINDOWS-4cd080393345e8aa-20260807143013-663eab13
+  evidence_paths:
+  - handoffs/phase_01_to_phase_02.yaml
+  - phase2_handoff/phase_01_to_phase_02.yaml
+  claim_ceiling: DOWNSTREAM_TECHNICAL_DATA_CONTRACT_READINESS
+  source_claim_ceiling: Downstream technical readiness
+  mandatory_limitations:
+  - DOCUMENTARY_CLOSURE_SEQUENCE_REMAINS
+  source_limitation_tags:
+  - DOCUMENTARY_CLOSURE_SEQUENCE_REMAINS
+  forbidden_wording:
+  - P01 proves that P02 will succeed scientifically or that downstream models will perform well.
+  evidence_map_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  future_reconsideration: Refresh if any upstream frozen identity or handoff contract changes.
+  priority: HIGH
+  historical_disposition_preserved: true
+  p02_effect: STRENGTHENING_EVIDENCE
+  current_cumulative_status: ACTIVE_QUALIFIED_WITH_P02_REALIZED_DOWNSTREAM_USE
+- reviewed_claim_id: P01-CLM-011/v1
+  source_candidate_claim_id: P01-CLAIM-CAND-011
+  layer0_disposition_id: P01-L0-DISP-011
+  origin_phase: P01
+  original_text: A4 R2 improves decoder performance relative to the core window.
+  disposition: DEFERRED
+  reviewed_text: P01 did not evaluate whether A4 R2 improves decoder performance relative to the core window; that effectiveness question remains
+    deferred to a future governed matched downstream experiment.
+  safe_short_text: A4 performance benefit was not evaluated in P01.
+  evidence_class: READINESS_EVIDENCE
+  support_level: UNSUPPORTED_CURRENTLY
+  finding_ids:
+  - P01-FIND-009
+  protocol_analysis_ids:
+  - P01-AC-008-A4
+  run_ids:
+  - P01-STAGE-14
+  - P01-STAGE-15
+  record_ids:
+  - P01-L1-A4-DERIVED-WINDOWS-4cd080393345e8aa-20260807143013-663eab13
+  - P01-L1-A4-WINDOW-FAMILY-FREEZE-R2
+  evidence_paths:
+  - external_artifact_pointers/a4_window_family_dataset.json
+  - config_snapshot/p01_l1_a4_window_family_freeze_R2.json
+  claim_ceiling: NOT_CLAIMABLE_FROM_P01
+  source_claim_ceiling: Not claimable from P01
+  mandatory_limitations:
+  - A4_EFFECTIVENESS_NOT_EXECUTED
+  - A4_R2_RETROSPECTIVE_FEASIBILITY_ORIGIN_NOT_CONFIRMATORY_IN_P01
+  source_limitation_tags:
+  - A4_EFFECTIVENESS_NOT_EXECUTED
+  forbidden_wording:
+  - A4 R2 improves decoder performance relative to the core window.
+  evidence_map_eligibility: DEFERRED_NOT_CURRENTLY_MAPPABLE_AS_SUPPORTED
+  layer10_eligibility: NEGATIVE_OR_DEFERRED_REGISTER_ONLY
+  future_reconsideration: Reconsider only after a Protocol-authorized matched A4 effectiveness experiment with downstream model evidence.
+  priority: HIGH
+  historical_disposition_preserved: true
+  p02_effect: SUPERSESSION
+  current_cumulative_status: HISTORICAL_DEFERRED_CLAIM_RESOLVED_BY_P02_GENERIC_IMPROVEMENT_NOT_SUPPORTED_UNDER_EXECUTED_SCOPE
+  current_resolution_claims:
+  - P02-CLM-007/v1
+  - CUM-CLM-005/v1
+- reviewed_claim_id: P01-CLM-012/v1
+  source_candidate_claim_id: P01-CLAIM-CAND-012
+  layer0_disposition_id: P01-L0-DISP-012
+  origin_phase: P01
+  original_text: The P01 data foundation demonstrates clinical effectiveness or deployment safety.
+  disposition: REJECTED
+  reviewed_text: P01 is a public, non-clinical data-foundation and execution-validation phase; it does not establish clinical effectiveness, patient
+    benefit, deployment safety, or medical-device readiness.
+  safe_short_text: P01 does not establish clinical effectiveness or deployment safety.
+  evidence_class: EXECUTION_EVIDENCE
+  support_level: PROHIBITED_BY_EVIDENCE_SCOPE
+  finding_ids:
+  - P01-FIND-001
+  - P01-FIND-012
+  protocol_analysis_ids:
+  - P01-AC-001-SOURCE-INVENTORY
+  - P01-AC-010-GATES-REPAIRS
+  run_ids:
+  - P01-STAGE-06
+  - P01-STAGE-26
+  record_ids: *id001
+  evidence_paths:
+  - reports/phase_01/sources/source_version_license_report.json
+  - gate_decision.json
+  claim_ceiling: NOT_CLAIMABLE_FROM_P01
+  source_claim_ceiling: Not claimable from P01
+  mandatory_limitations:
+  - PUBLIC_EEG_ONLY
+  - NON_CLINICAL
+  - NO_DEPLOYMENT_CLAIM
+  source_limitation_tags:
+  - NON_CLINICAL
+  - NO_DEPLOYMENT_CLAIM
+  forbidden_wording:
+  - The P01 data foundation demonstrates clinical effectiveness or deployment safety.
+  evidence_map_eligibility: REJECTED_DO_NOT_MAP_AS_SUPPORTED
+  layer10_eligibility: NEGATIVE_OR_FORBIDDEN_REGISTER_ONLY
+  future_reconsideration: A future claim would require appropriately governed clinical/deployment evidence from later phases; P01 itself cannot
+    support it.
+  priority: HIGH
+  historical_disposition_preserved: true
+  p02_effect: STRENGTHENING_EVIDENCE
+  current_cumulative_status: REJECTED_SCOPE_BOUNDARY_REMAINS_ACTIVE_THROUGH_P02
+- reviewed_claim_id: P02-CLM-001/v1
+  source_candidate_claim_id: P02-CLAIM-CAND-001
+  layer0_disposition_id: P02-L0-DISP-001
+  origin_phase: P02
+  original_text: Under the frozen P01 subject-grouped binary motor-imagery protocol, P02 established a complete multi-family raw decoder/baseline
+    measurement spine across three public EEG datasets.
+  disposition: APPROVED_WITH_QUALIFICATIONS
+  reviewed_text: Under the frozen P01 subject-grouped binary motor-imagery protocol, P02 established a complete multi-family raw accept-all decoder/baseline
+    measurement spine across the three activated public EEG datasets; this is Layer-2 measurement evidence and does not establish calibration,
+    abstention, clinical effectiveness, safety, or deployment readiness.
+  safe_short_text: Under the frozen P01 subject-grouped binary motor-imagery protocol, P02 established a complete multi-family raw accept-all
+    decoder/baseline measurement spine across the three activated public EEG datasets; this is Layer-2 measurement evidence and does not establish
+    calibration, abstention, clinical effectiveness, safety, or deployment readiness.
+  evidence_class: LAYER2_MEASUREMENT_CLOSURE
+  support_level: SUPPORTED
+  finding_ids:
+  - P02-FIND-001
+  protocol_analysis_ids:
+  - P02_PROTOCOL_V1_AUTHORIZED_ANALYSIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  evidence_paths:
+  - analysis_inputs/a0_completion.json
+  - analysis_inputs/a0_participant_metrics.csv
+  numeric_support:
+    A0_terminal_cells: 678
+    SUCCESS: 657
+    FAILED: 3
+    CONDITIONAL_SKIP: 15
+    DEPENDENCY_BLOCKED: 3
+    datasets: 3
+  claim_ceiling: SUPPORTED
+  mandatory_limitations:
+  - PUBLIC_EEG_ONLY
+  - NO_CALIBRATION_POLICY_CLAIM
+  qualification: Raw accept-all decoder evidence only; not clinical or safety evidence.
+  forbidden_wording:
+  - Do not call P02 calibration-, threshold-, abstention-, safety-, or deployment-ready.
+  post_hoc_status: 'NO'
+  evidence_map_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  future_reconsideration: Re-review only if the governed evidence scope changes or additional confirmatory evidence is added.
+  priority: MEDIUM
+- reviewed_claim_id: P02-CLM-002/v1
+  source_candidate_claim_id: P02-CLAIM-CAND-002
+  layer0_disposition_id: P02-L0-DISP-002
+  origin_phase: P02
+  original_text: 'Decoder-family performance was dataset-dependent rather than universally ordered: DBConformer was descriptively strongest at
+    full training on Lee2019_MI and PhysioNetMI, while CSP-LDA led the single-participant BNCI2014_001 test split.'
+  disposition: APPROVED_WITH_QUALIFICATIONS
+  reviewed_text: 'Within full-training A0, descriptive decoder ordering was dataset-dependent: CSP-LDA led the single-participant BNCI2014_001
+    test split, while DBConformer had the highest participant-first mean BACC on Lee2019_MI and PhysioNetMI. These rankings are descriptive and
+    do not establish a universal winning decoder.'
+  safe_short_text: 'Within full-training A0, descriptive decoder ordering was dataset-dependent: CSP-LDA led the single-participant BNCI2014_001
+    test split, while DBConformer had the highest participant-first mean BACC on Lee2019_MI and PhysioNetMI.'
+  evidence_class: DESCRIPTIVE_MODEL_HETEROGENEITY
+  support_level: SUPPORTED_WITH_QUALIFICATION
+  finding_ids:
+  - P02-FIND-002
+  - P02-FIND-003
+  protocol_analysis_ids:
+  - P02_PROTOCOL_V1_AUTHORIZED_ANALYSIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  evidence_paths:
+  - table_sources/P02_Table_A0_fulltrain_branch_summary.csv
+  numeric_support:
+    full_training_descriptive_leaders:
+      BNCI2014_001:
+        branch_id: CLS-CSP-LDA
+        participant_first_mean_BACC: 0.6388888888888888
+        participants: 1
+      Lee2019_MI:
+        branch_id: DNN-SEQ
+        participant_first_mean_BACC: 0.795
+        participants: 6
+      PhysioNetMI:
+        branch_id: DNN-SEQ
+        participant_first_mean_BACC: 0.649724517906336
+        participants: 11
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  mandatory_limitations:
+  - DATASET_HETEROGENEITY
+  - BNCI_TEST_PARTICIPANTS_1
+  qualification: Descriptive rankings; no universal winner; BNCI inferential n=1.
+  forbidden_wording:
+  - Do not claim one decoder is universally best across datasets or participants.
+  post_hoc_status: 'NO'
+  evidence_map_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  future_reconsideration: Re-review only if the governed evidence scope changes or additional confirmatory evidence is added.
+  priority: HIGH
+- reviewed_claim_id: P02-CLM-003/v1
+  source_candidate_claim_id: P02-CLAIM-CAND-003
+  layer0_disposition_id: P02-L0-DISP-003
+  origin_phase: P02
+  original_text: PhysioNetMI exhibited statistically detectable overall decoder heterogeneity under the governed A0 comparison, but no individual
+    alternative-versus-CSP-LDA contrast survived Holm correction.
+  disposition: APPROVED_WITH_QUALIFICATIONS
+  reviewed_text: On PhysioNetMI full-training A0, the governed Friedman comparison detected overall decoder heterogeneity (statistic 20.544, p=0.00451,
+    Kendall W=0.267), while no individual alternative-versus-CSP-LDA contrast survived Holm correction; the omnibus result therefore does not
+    identify a statistically supported pairwise winner.
+  safe_short_text: On PhysioNetMI full-training A0, the governed Friedman comparison detected overall decoder heterogeneity (statistic 20.
+  evidence_class: GOVERNED_STATISTICAL_RESULT
+  support_level: SUPPORTED_WITH_QUALIFICATION
+  finding_ids:
+  - P02-FIND-003
+  protocol_analysis_ids:
+  - P02_PROTOCOL_V1_AUTHORIZED_ANALYSIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  evidence_paths:
+  - analysis_inputs/a0_statistics.json
+  numeric_support:
+    PhysioNetMI_Friedman_statistic: 20.544
+    p_value: 0.00451
+    Kendall_W: 0.267
+    Lee2019_MI_Friedman_p: 0.148
+    Holm_significant_alt_vs_CSP_LDA: 0
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  mandatory_limitations:
+  - MULTIPLICITY
+  - PARTICIPANT_HETEROGENEITY
+  qualification: Global omnibus heterogeneity is not evidence that a specific decoder is superior.
+  forbidden_wording:
+  - Do not convert omnibus heterogeneity into a significant pairwise winner claim.
+  post_hoc_status: 'NO'
+  evidence_map_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  future_reconsideration: Re-review only if the governed evidence scope changes or additional confirmatory evidence is added.
+  priority: HIGH
+- reviewed_claim_id: P02-CLM-004/v1
+  source_candidate_claim_id: P02-CLAIM-CAND-004
+  layer0_disposition_id: P02-L0-DISP-004
+  origin_phase: P02
+  original_text: Extreme low-label decoding remained difficult and non-monotonic under the single frozen subset design; P02 does not support a
+    universal sample-efficiency ordering among CSP-LDA, tangent-space, EEGNet and CBraMod.
+  disposition: APPROVED_WITH_QUALIFICATIONS
+  reviewed_text: Across the governed 1, 2, 4, 8, 16 and 32 labels/class P02 low-label surface, performance was difficult, non-monotonic and rank-changing
+    under one frozen subset per budget; the evidence does not support a stable or universal sample-efficiency ordering among the evaluated branches.
+  safe_short_text: Across the governed 1, 2, 4, 8, 16 and 32 labels/class P02 low-label surface, performance was difficult, non-monotonic and
+    rank-changing under one frozen subset per budget; the evidence does not support a stable or universal sample-efficiency ordering among the
+    evaluated branches.
+  evidence_class: DESCRIPTIVE_LOW_LABEL
+  support_level: SUPPORTED_WITH_QUALIFICATION
+  finding_ids:
+  - P02-FIND-005
+  protocol_analysis_ids:
+  - P02_PROTOCOL_V1_AUTHORIZED_ANALYSIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  evidence_paths:
+  - analysis_inputs/low_label_curve_summary.json
+  - analysis_inputs/low_label_metric_source.csv
+  numeric_support:
+    governed_low_label_budgets_per_class:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 16
+    - 32
+    leader_changes:
+      BNCI2014_001: 4
+      Lee2019_MI: 4
+      PhysioNetMI: 6
+    design: single frozen subset per budget
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  mandatory_limitations:
+  - SINGLE_FROZEN_SUBSET
+  - NO_LOW_LABEL_REPEAT_STABILITY
+  qualification: One frozen subset per budget; descriptive only.
+  forbidden_wording:
+  - Do not claim stable sample-efficiency ordering or subset-robust low-label behavior.
+  post_hoc_status: 'NO'
+  evidence_map_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  future_reconsideration: Re-review only if the governed evidence scope changes or additional confirmatory evidence is added.
+  priority: MEDIUM
+- reviewed_claim_id: P02-CLM-005/v1
+  source_candidate_claim_id: P02-CLAIM-CAND-005
+  layer0_disposition_id: P02-L0-DISP-005
+  origin_phase: P02
+  original_text: The Phase-02 training-correction history demonstrates that optimization/training-policy fidelity can materially affect whether
+    an EEG architecture appears collapsed or viable, so optimization failure should not automatically be interpreted as architectural incapacity.
+  disposition: APPROVED_WITH_QUALIFICATIONS
+  reviewed_text: The preserved P02 training-correction history shows that model viability and optimization behavior under the implemented configurations
+    depended materially on training-policy choice. This supports treating inadequate optimization as distinct from demonstrated architectural
+    incapacity, but does not establish universal test-set gains, architecture superiority, or theoretical invalidity of the earlier generic policy.
+  safe_short_text: The preserved P02 training-correction history shows that model viability and optimization behavior under the implemented configurations
+    depended materially on training-policy choice.
+  evidence_class: METHODOLOGICAL_CORRECTION
+  support_level: SUPPORTED_WITH_QUALIFICATION
+  finding_ids:
+  - P02-FIND-006
+  - P02-FIND-008
+  protocol_analysis_ids:
+  - P02_PROTOCOL_V1_AUTHORIZED_ANALYSIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  evidence_paths:
+  - runtime/diagnostics/runtime_successor/stage11_maximum_analysis/stage11_source_centered_recipe.json
+  - machine_readable P02 Protocol run matrix
+  numeric_support:
+    Stage12_validation_only_examples:
+    - dataset_id: BNCI2014_001
+      branch_id: DNN-FBCNET
+      A_BACC: 0.5
+      B_BACC: 0.7222222222222222
+      absolute_delta_BACC: 0.2222222222222222
+      claim_bearing: false
+    - dataset_id: PhysioNetMI
+      branch_id: DNN-FBCNET
+      A_BACC: 0.6395092565383486
+      B_BACC: 0.6601038299539622
+      absolute_delta_BACC: 0.0205945734156136
+      claim_bearing: false
+    - dataset_id: PhysioNetMI
+      branch_id: DNN-SEQ
+      A_BACC: 0.6985502987559996
+      B_BACC: 0.7167940052894505
+      absolute_delta_BACC: 0.0182437065334508
+      claim_bearing: false
+    - dataset_id: PhysioNetMI
+      branch_id: SSL-CBRAMOD
+      A_BACC: 0.5
+      B_BACC: 0.6384072876873348
+      absolute_delta_BACC: 0.1384072876873348
+      claim_bearing: false
+    test_role_loaded: false
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  mandatory_limitations:
+  - POST_OBSERVATION_AMENDMENT
+  - DIAGNOSTIC_VALIDATION_EVIDENCE
+  qualification: Mechanistic interpretation; source diagnostics are not a direct claim of test-set performance improvement for every model.
+  forbidden_wording:
+  - Do not claim architecture superiority or theoretical invalidity of the original uniform policy.
+  post_hoc_status: 'NO'
+  evidence_map_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  future_reconsideration: Re-review only if the governed evidence scope changes or additional confirmatory evidence is added.
+  priority: HIGH
+- reviewed_claim_id: P02-CLM-006/v1
+  source_candidate_claim_id: P02-CLAIM-CAND-006
+  layer0_disposition_id: P02-L0-DISP-006
+  origin_phase: P02
+  original_text: The Stage-11 S&R diagnostic challenger did not yield a consistent participant-level BACC improvement over the canonical primary
+    EEGNet across the three datasets.
+  disposition: APPROVED_WITH_QUALIFICATIONS
+  reviewed_text: The Stage-11 S&R diagnostic challenger did not yield a consistent participant-level BACC improvement over the canonical primary
+    EEGNet across BNCI2014_001, Lee2019_MI and PhysioNetMI; it remains diagnostic-only and does not replace primary A0 evidence.
+  safe_short_text: The Stage-11 S&R diagnostic challenger did not yield a consistent participant-level BACC improvement over the canonical primary
+    EEGNet across BNCI2014_001, Lee2019_MI and PhysioNetMI; it remains diagnostic-only and does not replace primary A0 evidence.
+  evidence_class: DIAGNOSTIC_NEGATIVE_RESULT
+  support_level: SUPPORTED
+  finding_ids:
+  - P02-FIND-007
+  protocol_analysis_ids:
+  - P02_PROTOCOL_V1_AUTHORIZED_ANALYSIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  evidence_paths:
+  - analysis_inputs/training_policy_challenger_statistics.json
+  numeric_support:
+    diagnostic_challenger:
+    - dataset_id: BNCI2014_001
+      n: 5
+      median_delta_BACC: -0.0347222222222222
+      ci_low: -0.0763888888888889
+      ci_high: -0.0347222222222221
+      p_value: 0.125
+      rank_biserial: -0.8666666666666667
+    - dataset_id: Lee2019_MI
+      n: 30
+      median_delta_BACC: 0.01
+      ci_low: -0.005
+      ci_high: 0.025
+      p_value: 0.2309220325143355
+      rank_biserial: 0.2586206896551724
+    - dataset_id: PhysioNetMI
+      n: 55
+      median_delta_BACC: 0.0
+      ci_low: -0.0343477914915631
+      ci_high: 0.0029761904761905
+      p_value: 0.455185419014922
+      rank_biserial: -0.1190130624092888
+  claim_ceiling: SUPPORTED
+  mandatory_limitations:
+  - DIAGNOSTIC_ONLY
+  qualification: Not an A-number and not a replacement for primary A0.
+  forbidden_wording:
+  - Do not claim the Stage11 challenger improved EEGNet generally.
+  post_hoc_status: DIAGNOSTIC_ONLY
+  evidence_map_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  future_reconsideration: Re-review only if the governed evidence scope changes or additional confirmatory evidence is added.
+  priority: MEDIUM
+- reviewed_claim_id: P02-CLM-007/v1
+  source_candidate_claim_id: P02-CLAIM-CAND-007
+  layer0_disposition_id: P02-L0-DISP-007
+  origin_phase: P02
+  original_text: Within the canonical resource-constrained A4 execution, the C1-C3 longer/multi-view role controls did not produce statistically
+    detectable improvements after the governed paired testing procedure.
+  disposition: APPROVED_WITH_QUALIFICATIONS
+  reviewed_text: Within the canonical resource-constrained A4 scope, none of the 756 governed C1-C3 role-control statistical rows reached raw
+    p<=0.05. This is an absence of statistically detected improvement under the executed scope, not proof that the true effect is zero and not
+    evidence of five-repeat or dense-budget stability.
+  safe_short_text: Within the canonical resource-constrained A4 scope, none of the 756 governed C1-C3 role-control statistical rows reached raw
+    p<=0.
+  evidence_class: GOVERNED_ABLATION_NEGATIVE_NULL_RESULT
+  support_level: SUPPORTED_WITH_QUALIFICATION
+  finding_ids:
+  - P02-FIND-009
+  - P02-FIND-010
+  protocol_analysis_ids:
+  - P02_PROTOCOL_V1_AUTHORIZED_ANALYSIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  evidence_paths:
+  - analysis_inputs/a4_completion.json
+  - analysis_inputs/stage18_resource_constrained_anchor_budget_deviation.json
+  numeric_support:
+    governed_C1_C3_statistical_rows: 756
+    raw_p_le_0_05: 0
+    scope: single canonical refit repeat / governed deep anchor budgets
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  mandatory_limitations:
+  - SINGLE_REPEAT
+  - DEEP_ANCHOR_BUDGETS
+  qualification: Absence of detected effects is not proof of zero effect; canonical deep scope is reduced.
+  forbidden_wording:
+  - Do not claim zero A4 effect, five-repeat stability, dense deep-budget characterization, or full-grid equivalence.
+  post_hoc_status: 'NO'
+  evidence_map_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  future_reconsideration: Re-review only if the governed evidence scope changes or additional confirmatory evidence is added.
+  priority: HIGH
+- reviewed_claim_id: P02-CLM-008/v1
+  source_candidate_claim_id: P02-CLAIM-CAND-008
+  layer0_disposition_id: P02-L0-DISP-008
+  origin_phase: P02
+  original_text: 'A hard-vote model ensemble was not uniformly beneficial: one governed PhysioNetMI full-training comparison showed a Holm-significant
+    disadvantage relative to the validation-selected strongest constituent.'
+  disposition: APPROVED_WITH_QUALIFICATIONS
+  reviewed_text: 'A hard-vote ensemble was not uniformly beneficial: one governed PhysioNetMI full-training C4 comparison at repeat 4 showed a
+    Holm-significant disadvantage relative to the validation-selected EEGNet constituent (median delta BACC -0.0435; Holm p=0.0371). This cell-specific
+    negative result does not establish that ensembles are generally inferior.'
+  safe_short_text: 'A hard-vote ensemble was not uniformly beneficial: one governed PhysioNetMI full-training C4 comparison at repeat 4 showed
+    a Holm-significant disadvantage relative to the validation-selected EEGNet constituent (median delta BACC -0.'
+  evidence_class: CELL_SPECIFIC_NEGATIVE_ABLATION_RESULT
+  support_level: SUPPORTED_WITH_QUALIFICATION
+  finding_ids:
+  - P02-FIND-011
+  protocol_analysis_ids:
+  - P02_PROTOCOL_V1_AUTHORIZED_ANALYSIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  evidence_paths:
+  - analysis_inputs/a4_c4_c5_statistics.json
+  numeric_support:
+    Holm_significant_rows: 1
+    significant_rows:
+    - comparison_id: P02-A4-PhysioNetMI-ENSEMBLE-A4-C4-MODEL-HARD-VOTE-FULL_TRAIN-ER04:VS_STRONGEST
+      dataset_id: PhysioNetMI
+      condition_id: A4-C4-MODEL-HARD-VOTE
+      budget_id: FULL_TRAIN
+      repeat: 4
+      strongest_constituent_branch: DNN-EEGNET
+      closure_status: COMPLETE
+      n: 11.0
+      median_delta_BACC: -0.0434782608695651
+      p_value: 0.0185546875
+      holm_adjusted_p: 0.037109375
+      rank_biserial: -0.7878787878787878
+      ci_low: -0.1304347826086956
+      ci_high: -0.0119047619047618
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  mandatory_limitations:
+  - CELL_SPECIFIC_EFFECT
+  qualification: Do not generalize from one corrected comparison to all ensembles.
+  forbidden_wording:
+  - Do not claim ensembles are generally inferior; one corrected comparison was negative.
+  post_hoc_status: 'NO'
+  evidence_map_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  future_reconsideration: Re-review only if the governed evidence scope changes or additional confirmatory evidence is added.
+  priority: MEDIUM
+- reviewed_claim_id: P02-CLM-009/v1
+  source_candidate_claim_id: P02-CLAIM-CAND-009
+  layer0_disposition_id: P02-L0-DISP-009
+  origin_phase: P02
+  original_text: Post-hoc Stage18S sensitivity evidence indicates that A4 effect direction can change across repeats and budgets, reinforcing
+    the Protocol restriction against five-repeat stability or dense-budget response claims from canonical Stage18.
+  disposition: APPROVED_WITH_QUALIFICATIONS
+  reviewed_text: Post-hoc Stage18S sensitivity evidence shows that A4 effect direction can change across descriptive repeats and budgets (22/45
+    anchor trajectories mixed-sign; all 15 six-budget MR00 trajectories changed sign at least once). This supports the existing claim ceiling
+    but remains POST_HOC/DESCRIPTIVE/SENSITIVITY evidence and does not modify canonical Stage18/G18.
+  safe_short_text: Post-hoc Stage18S sensitivity evidence shows that A4 effect direction can change across descriptive repeats and budgets (22/45
+    anchor trajectories mixed-sign; all 15 six-budget MR00 trajectories changed sign at least once).
+  evidence_class: POST_HOC_SENSITIVITY
+  support_level: POST_HOC_ONLY
+  finding_ids:
+  - P02-FIND-012
+  protocol_analysis_ids:
+  - P02_PROTOCOL_V1_AUTHORIZED_ANALYSIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  evidence_paths:
+  - analysis_inputs/stage18S_R1_decision_support_summary.json
+  - analysis_inputs/stage18S_R1_three_repeat_anchor_stability.csv
+  - analysis_inputs/stage18S_R1_six_budget_mr00_sensitivity.csv
+  numeric_support:
+    three_repeat_anchor_trajectories: 45
+    all_negative: 7
+    mixed: 22
+    all_positive: 16
+    six_budget_trajectories: 15
+    six_budget_with_sign_flip: 15
+  claim_ceiling: POST_HOC_ONLY
+  mandatory_limitations:
+  - POST_HOC_ONLY
+  - THREE_REPEAT_NOT_FIVE_REPEAT
+  qualification: Descriptive/post-hoc only; does not modify canonical G18.
+  forbidden_wording:
+  - Do not present Stage18S as confirmatory or as modifying G18.
+  post_hoc_status: POST_HOC_DESCRIPTIVE_SENSITIVITY
+  evidence_map_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  future_reconsideration: Re-review only if the governed evidence scope changes or additional confirmatory evidence is added.
+  priority: HIGH
+- reviewed_claim_id: P02-CLM-010/v1
+  source_candidate_claim_id: P02-CLAIM-CAND-010
+  layer0_disposition_id: P02-L0-DISP-010
+  origin_phase: P02
+  original_text: P02 provides a fail-closed, provenance-rich Layer-2 evidence substrate for downstream phases while preserving unsuccessful, incompatible,
+    skipped and diagnostic outcomes rather than retaining successful models only.
+  disposition: APPROVED_WITH_QUALIFICATIONS
+  reviewed_text: P02 provides a fail-closed, provenance-rich Layer-2 evidence substrate for downstream use while preserving successful and non-success
+    outcomes, including 648 FailureCaseIndex records, 340 NegativeResultNotes and 309 DiagnosticOnlyFlags. This is technical evidence readiness,
+    not deployment readiness or future-phase scientific success.
+  safe_short_text: P02 provides a fail-closed, provenance-rich Layer-2 evidence substrate for downstream use while preserving successful and non-success
+    outcomes, including 648 FailureCaseIndex records, 340 NegativeResultNotes and 309 DiagnosticOnlyFlags.
+  evidence_class: REPRODUCIBILITY_NEGATIVE_EVIDENCE
+  support_level: SUPPORTED
+  finding_ids:
+  - P02-FIND-013
+  - P02-FIND-014
+  protocol_analysis_ids:
+  - P02_PROTOCOL_V1_AUTHORIZED_ANALYSIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  evidence_paths:
+  - analysis_inputs/failure_negative_summary.json
+  - negative_and_failed_results/
+  numeric_support:
+    FailureCaseIndex: 648
+    NegativeResultNote: 340
+    DiagnosticOnlyFlag: 309
+    failure_terminal_breakdown:
+      CONDITIONAL_SKIP: 591
+      NOT_APPLICABLE_REPEAT_SLOT: 42
+      INPUT_INCOMPATIBLE: 9
+      FAILED: 3
+      DEPENDENCY_BLOCKED: 3
+  claim_ceiling: SUPPORTED
+  mandatory_limitations:
+  - DOWNSTREAM_SCIENCE_NOT_EXECUTED
+  qualification: Technical readiness is not deployment readiness.
+  forbidden_wording:
+  - Do not equate technical evidence readiness with deployment readiness.
+  post_hoc_status: 'NO'
+  evidence_map_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  future_reconsideration: Re-review only if the governed evidence scope changes or additional confirmatory evidence is added.
+  priority: MEDIUM
+- reviewed_claim_id: CUM-CLM-001/v1
+  source_candidate_claim_id: CC-01
+  layer0_disposition_id: CUM-L0-DISP-001
+  origin_phase: CUMULATIVE_P00_P02
+  original_text: IHARQ P00-P02 forms a governed evidence chain in which validated foundation contracts, a frozen provenance-traceable EEG substrate,
+    and Layer-2 decoder evidence remain linked by explicit identities and handoffs.
+  disposition: APPROVED_WITH_QUALIFICATIONS
+  reviewed_text: Through P02, IHARQ has a governed evidence chain linking validated foundation contracts, the frozen P01 provenance-traceable
+    EEG substrate, and P02 Layer-2 decoder evidence through explicit identities, manifests and handoffs; this traceability does not by itself
+    establish clinical or deployment effectiveness.
+  safe_short_text: Through P02, IHARQ has a governed evidence chain linking validated foundation contracts, the frozen P01 provenance-traceable
+    EEG substrate, and P02 Layer-2 decoder evidence through explicit identities, manifests and handoffs; this traceability does not by itself
+    establish clinical or deployment effectiveness.
+  evidence_class: CROSS_PHASE_SYNTHESIS
+  support_level: SUPPORTED_WITH_QUALIFICATION
+  finding_ids:
+  - CF-01
+  - CF-02
+  - CF-09
+  supporting_phases:
+  - P00
+  - P01
+  - P02
+  protocol_analysis_ids:
+  - CUMULATIVE_PHASE_ANALYSIS_AUTHORIZED_SYNTHESIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  evidence_paths:
+  - machine_readable/cumulative_findings.yaml
+  - machine_readable/results_to_claims.yaml
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  mandatory_limitations:
+  - Technical traceability is not scientific/clinical effectiveness by itself.
+  qualification: Technical traceability is not scientific/clinical effectiveness by itself.
+  forbidden_wording:
+  - Do not state that the complete project is deployment-ready or clinically validated.
+  post_hoc_status: 'NO'
+  evidence_map_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  priority: HIGH
+- reviewed_claim_id: CUM-CLM-002/v1
+  source_candidate_claim_id: CC-02
+  layer0_disposition_id: CUM-L0-DISP-002
+  origin_phase: CUMULATIVE_P00_P02
+  original_text: The P02 decoder results are evaluated on the frozen P01 subject-grouped, denominator-conserving binary motor-imagery data contract
+    rather than on a phase-local redefinition of labels, split or core windows.
+  disposition: APPROVED_WITH_QUALIFICATIONS
+  reviewed_text: The P02 decoder analyses consume the frozen P01 subject-grouped, denominator-conserving binary motor-imagery data contract rather
+    than a P02-local redefinition of labels, split or core windows, subject to the scope of the implemented registered integrity and leakage checks.
+  safe_short_text: The P02 decoder analyses consume the frozen P01 subject-grouped, denominator-conserving binary motor-imagery data contract
+    rather than a P02-local redefinition of labels, split or core windows, subject to the scope of the implemented registered integrity and leakage
+    checks.
+  evidence_class: CROSS_PHASE_SYNTHESIS
+  support_level: SUPPORTED
+  finding_ids:
+  - CF-02
+  supporting_phases:
+  - P01
+  - P02
+  protocol_analysis_ids:
+  - CUMULATIVE_PHASE_ANALYSIS_AUTHORIZED_SYNTHESIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  evidence_paths:
+  - machine_readable/cumulative_findings.yaml
+  - machine_readable/results_to_claims.yaml
+  claim_ceiling: SUPPORTED
+  mandatory_limitations:
+  - Bounded to the implemented registered leakage/disjointness checks.
+  qualification: Bounded to the implemented registered leakage/disjointness checks.
+  forbidden_wording:
+  - Do not claim that every conceivable leakage mechanism is impossible.
+  post_hoc_status: 'NO'
+  evidence_map_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  priority: MEDIUM
+- reviewed_claim_id: CUM-CLM-003/v1
+  source_candidate_claim_id: CC-03
+  layer0_disposition_id: CUM-L0-DISP-003
+  origin_phase: CUMULATIVE_P00_P02
+  original_text: Across the three governed P02 datasets, decoder-family performance is context-dependent rather than universally ordered, and
+    participant-level heterogeneity further limits global winner claims.
+  disposition: APPROVED_WITH_QUALIFICATIONS
+  reviewed_text: Across the three governed P02 datasets, decoder-family ordering is context-dependent rather than universally ordered, and participant
+    heterogeneity on the multi-participant datasets limits any global winner claim; BNCI2014_001 is descriptive at the participant-inference level
+    because its held-out P02 test set contains one participant.
+  safe_short_text: Across the three governed P02 datasets, decoder-family ordering is context-dependent rather than universally ordered, and participant
+    heterogeneity on the multi-participant datasets limits any global winner claim; BNCI2014_001 is descriptive at the participant-inference level
+    because its held-out P02 test set contains one participant.
+  evidence_class: CROSS_PHASE_SYNTHESIS
+  support_level: SUPPORTED_WITH_QUALIFICATION
+  finding_ids:
+  - CF-03
+  - CF-11
+  supporting_phases:
+  - P01
+  - P02
+  protocol_analysis_ids:
+  - CUMULATIVE_PHASE_ANALYSIS_AUTHORIZED_SYNTHESIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  evidence_paths:
+  - machine_readable/cumulative_findings.yaml
+  - machine_readable/results_to_claims.yaml
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  mandatory_limitations:
+  - BNCI held-out test participant n=1; no universal rank claim.
+  qualification: BNCI held-out test participant n=1; no universal rank claim.
+  forbidden_wording:
+  - Do not claim DBConformer, CSP-LDA or any other decoder is universally best.
+  post_hoc_status: 'NO'
+  evidence_map_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  priority: HIGH
+- reviewed_claim_id: CUM-CLM-004/v1
+  source_candidate_claim_id: CC-04
+  layer0_disposition_id: CUM-L0-DISP-004
+  origin_phase: CUMULATIVE_P00_P02
+  original_text: The deterministic low-label populations prepared in P01 exposed difficult, non-monotonic and rank-changing P02 low-label behavior;
+    the completed evidence does not support a universal sample-efficiency ordering.
+  disposition: APPROVED_WITH_QUALIFICATIONS
+  reviewed_text: The deterministic low-label populations prepared in P01 expose difficult, non-monotonic and rank-changing P02 behavior across
+    the governed 1-32 labels/class surface; one frozen subset per budget prevents a stable repeated-subset sample-efficiency claim.
+  safe_short_text: The deterministic low-label populations prepared in P01 expose difficult, non-monotonic and rank-changing P02 behavior across
+    the governed 1-32 labels/class surface; one frozen subset per budget prevents a stable repeated-subset sample-efficiency claim.
+  evidence_class: CROSS_PHASE_SYNTHESIS
+  support_level: SUPPORTED_WITH_QUALIFICATION
+  finding_ids:
+  - CF-04
+  supporting_phases:
+  - P01
+  - P02
+  protocol_analysis_ids:
+  - CUMULATIVE_PHASE_ANALYSIS_AUTHORIZED_SYNTHESIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  evidence_paths:
+  - machine_readable/cumulative_findings.yaml
+  - machine_readable/results_to_claims.yaml
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  mandatory_limitations:
+  - Single frozen subset per budget; no repeated-subset stability.
+  qualification: Single frozen subset per budget; no repeated-subset stability.
+  forbidden_wording:
+  - Do not claim stable low-label resilience or universal sample-efficiency superiority.
+  post_hoc_status: 'NO'
+  evidence_map_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  priority: MEDIUM
+- reviewed_claim_id: CUM-CLM-005/v1
+  source_candidate_claim_id: CC-05
+  layer0_disposition_id: CUM-L0-DISP-005
+  origin_phase: CUMULATIVE_P00_P02
+  original_text: P01 resolved the A4 data-feasibility problem by freezing a fully matched R2 substrate, while P02 found no generic statistically
+    detectable C1-C3 improvement under the accepted constrained A4 execution and observed additional repeat/budget sign sensitivity post hoc.
+  disposition: APPROVED_WITH_QUALIFICATIONS
+  reviewed_text: P01 resolved A4 data-feasibility by freezing a fully matched R2 substrate. Under P02’s accepted constrained A4 execution, no
+    generic C1-C3 statistically detected improvement was observed, and post-hoc Stage18S further shows repeat/budget sign sensitivity. These results
+    do not establish zero effect, five-repeat stability, dense-budget behavior, or full original-grid equivalence.
+  safe_short_text: P01 resolved A4 data-feasibility by freezing a fully matched R2 substrate.
+  evidence_class: CROSS_PHASE_SYNTHESIS
+  support_level: SUPPORTED_WITH_QUALIFICATION
+  finding_ids:
+  - CF-05
+  - CF-06
+  supporting_phases:
+  - P01
+  - P02
+  protocol_analysis_ids:
+  - CUMULATIVE_PHASE_ANALYSIS_AUTHORIZED_SYNTHESIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  evidence_paths:
+  - machine_readable/cumulative_findings.yaml
+  - machine_readable/results_to_claims.yaml
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  mandatory_limitations:
+  - Single canonical refit repeat, deep anchor budgets, Stage18S post-hoc.
+  qualification: Single canonical refit repeat, deep anchor budgets, Stage18S post-hoc.
+  forbidden_wording:
+  - Do not claim A4 has zero effect, is five-repeat stable, or is fully equivalent to the originally planned dense grid.
+  post_hoc_status: MIXED_SOURCE_WITH_POST_HOC_COMPONENT
+  evidence_map_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  priority: HIGH
+- reviewed_claim_id: CUM-CLM-006/v1
+  source_candidate_claim_id: CC-06
+  layer0_disposition_id: CUM-L0-DISP-006
+  origin_phase: CUMULATIVE_P00_P02
+  original_text: The P02 correction history indicates that architecture-specific training-policy fidelity can materially affect whether a decoder
+    appears collapsed or viable, while upstream P00/P01 data and identity foundations remained stable.
+  disposition: APPROVED_WITH_QUALIFICATIONS
+  reviewed_text: The P02 correction history shows that apparent model viability under the implemented configurations depended on training-policy
+    choice while the inherited P00/P01 data and identity foundations remained unchanged; this supports a reproduction/optimization-sensitivity
+    interpretation, not universal architecture superiority or guaranteed gains from source-aligned settings.
+  safe_short_text: The P02 correction history shows that apparent model viability under the implemented configurations depended on training-policy
+    choice while the inherited P00/P01 data and identity foundations remained unchanged; this supports a reproduction/optimization-sensitivity
+    interpretation, not universal architecture superiority or guaranteed gains from source-aligned settings.
+  evidence_class: CROSS_PHASE_SYNTHESIS
+  support_level: SUPPORTED_WITH_QUALIFICATION
+  finding_ids:
+  - CF-07
+  supporting_phases:
+  - P00
+  - P01
+  - P02
+  protocol_analysis_ids:
+  - CUMULATIVE_PHASE_ANALYSIS_AUTHORIZED_SYNTHESIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  evidence_paths:
+  - machine_readable/cumulative_findings.yaml
+  - machine_readable/results_to_claims.yaml
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  mandatory_limitations:
+  - Diagnostic/validation evidence does not establish universal test-set gains or architecture superiority.
+  qualification: Diagnostic/validation evidence does not establish universal test-set gains or architecture superiority.
+  forbidden_wording:
+  - Do not claim the original uniform policy was theoretically invalid or that source-aligned settings universally improve every model.
+  post_hoc_status: 'NO'
+  evidence_map_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  priority: HIGH
+- reviewed_claim_id: CUM-CLM-007/v1
+  source_candidate_claim_id: CC-07
+  layer0_disposition_id: CUM-L0-DISP-007
+  origin_phase: CUMULATIVE_P00_P02
+  original_text: Across P00-P02, fail-closed validation and explicit preservation of negative/superseded evidence materially improve the interpretability
+    and reproducibility of the project history.
+  disposition: APPROVED_WITH_QUALIFICATIONS
+  reviewed_text: Across P00-P02, fail-closed validation and explicit retention of failures, supersessions, null/negative results and diagnostic
+    states provide an auditable project history in which non-success evidence remains available for interpretation; this process does not guarantee
+    scientific correctness or deployment safety.
+  safe_short_text: Across P00-P02, fail-closed validation and explicit retention of failures, supersessions, null/negative results and diagnostic
+    states provide an auditable project history in which non-success evidence remains available for interpretation; this process does not guarantee
+    scientific correctness or deployment safety.
+  evidence_class: CROSS_PHASE_SYNTHESIS
+  support_level: SUPPORTED_WITH_QUALIFICATION
+  finding_ids:
+  - CF-08
+  - CF-09
+  supporting_phases:
+  - P00
+  - P01
+  - P02
+  protocol_analysis_ids:
+  - CUMULATIVE_PHASE_ANALYSIS_AUTHORIZED_SYNTHESIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  evidence_paths:
+  - machine_readable/cumulative_findings.yaml
+  - machine_readable/results_to_claims.yaml
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  mandatory_limitations:
+  - Different negative-evidence classes are not quantitatively interchangeable.
+  qualification: Different negative-evidence classes are not quantitatively interchangeable.
+  forbidden_wording:
+  - Do not claim that fail-closed process guarantees scientific correctness or deployment safety.
+  post_hoc_status: 'NO'
+  evidence_map_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  priority: HIGH
+- reviewed_claim_id: CUM-CLM-008/v1
+  source_candidate_claim_id: CC-08
+  layer0_disposition_id: CUM-L0-DISP-008
+  origin_phase: CUMULATIVE_P00_P02
+  original_text: At the end of P02, the project is technically ready to hand canonical Layer-2 evidence into P03 and downstream governance while
+    carrying forward explicit scope, stability, access and non-clinical limitations.
+  disposition: APPROVED_WITH_QUALIFICATIONS
+  reviewed_text: At the end of P02, canonical Layer-2 evidence is technically ready for governed downstream consumption, including P03, while
+    explicit scope, repeat/stability, access and non-clinical limitations remain mandatory handoff constraints; this does not imply future-phase
+    scientific success.
+  safe_short_text: At the end of P02, canonical Layer-2 evidence is technically ready for governed downstream consumption, including P03, while
+    explicit scope, repeat/stability, access and non-clinical limitations remain mandatory handoff constraints; this does not imply future-phase
+    scientific success.
+  evidence_class: CROSS_PHASE_SYNTHESIS
+  support_level: SUPPORTED
+  finding_ids:
+  - CF-12
+  supporting_phases:
+  - P01
+  - P02
+  protocol_analysis_ids:
+  - CUMULATIVE_PHASE_ANALYSIS_AUTHORIZED_SYNTHESIS
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  record_ids: []
+  evidence_paths:
+  - machine_readable/cumulative_findings.yaml
+  - machine_readable/results_to_claims.yaml
+  claim_ceiling: SUPPORTED
+  mandatory_limitations:
+  - Downstream science is not yet executed.
+  qualification: Downstream science is not yet executed.
+  forbidden_wording:
+  - Do not equate technical handoff readiness with future scientific success.
+  post_hoc_status: 'NO'
+  evidence_map_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  layer10_eligibility: ELIGIBLE_WITH_QUALIFICATION
+  priority: MEDIUM

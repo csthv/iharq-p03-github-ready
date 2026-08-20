@@ -1,0 +1,105 @@
+{
+  "validation_id": "IHARQ-CUMULATIVE-GITHUB-READY-THROUGH-P02-FINAL-R2-VALIDATION",
+  "coverage": [
+    "P00",
+    "P01",
+    "P02"
+  ],
+  "status": "PASS_READY_FOR_P03_INTAKE_WITH_EXPLICIT_NONBLOCKING_LIMITATIONS",
+  "scientific_execution_changed_by_merge": false,
+  "source_archives": [
+    {
+      "role": "CUMULATIVE_THROUGH_P01_PREDECESSOR",
+      "path": "IHARQ_Cumulative_GitHub_Ready_Through_P01_R1(20260814-191220).zip",
+      "sha256": "dc2708ab70e7746499ae09760456825b54efcf587cae3db3410e6f72b0024542",
+      "entries": 13802
+    },
+    {
+      "role": "CUMULATIVE_THROUGH_P02_STAGE24_REPLAY_BASE",
+      "path": "IHARQ_Cumulative_GitHub_Ready_Through_P02_Stage24Replay_R1(1).zip",
+      "sha256": "4e779859fc5ab2c07cb1cdb079f1e9d08cfe41641142d51e093f6c3936bfec81",
+      "entries": 27080
+    }
+  ],
+  "source_preservation": {
+    "p01_source_files": 13802,
+    "p01_unpreserved": 0,
+    "p02_source_files": 27080,
+    "p02_unpreserved": 0,
+    "p02_unchanged_original_path": 27061,
+    "p02_intentionally_modified_current_paths_preserved_in_history": 19
+  },
+  "overlap": {
+    "p01_files": 13802,
+    "p02_files": 27080,
+    "common": 13802,
+    "identical": 13799,
+    "changed": 3,
+    "missing_from_p02": 0,
+    "added_in_p02": 13278
+  },
+  "root_integration_tests": {
+    "pytest": "32/32 PASS",
+    "compileall": "PASS"
+  },
+  "p02_preserved_source_validation": {
+    "authoring_validation_id": "P02-KAGGLE-PREEXECUTION-FINAL-VALIDATION-R5-HF-R1",
+    "status": "PASS",
+    "pytest": "82/82 PASS",
+    "static_authoring": "91/91 PASS",
+    "hf_secret_scan": "PASS",
+    "current_session_hf_test_spotcheck": "8/8 PASS",
+    "note": "A fresh full 82-test P02 runtime rerun was attempted but long-running synthetic fixture tests exceeded the interactive command window; closure relies on the preserved frozen 82/82 validation plus successful merge-specific tests rather than treating timeout as a scientific failure."
+  },
+  "stage24_replay": {
+    "status": "PASS",
+    "scientific_stage_rerun": false,
+    "source_G24": "PASS"
+  },
+  "whole_phase_closure_source": {
+    "checks": {
+      "total": 38,
+      "pass": 38,
+      "fail": 0
+    },
+    "closure_status": "GREEN_LIGHT_WITH_EXPLICIT_NONBLOCKING_LIMITATIONS",
+    "unresolved_required_artifacts": 0,
+    "downstream_blockers": 0
+  },
+  "merge_boundary_structured_parse": {
+    "checked": 48,
+    "failures": 0,
+    "status": "PASS"
+  },
+  "layer2_root_promotion": {
+    "status": "PASS",
+    "functional_modules_byte_identical_except_declared_init_compatibility_shim": true,
+    "scientific_logic_changed": false
+  },
+  "current_state": {
+    "completed": [
+      "P00",
+      "P01",
+      "P02"
+    ],
+    "p03_execution_started": false,
+    "next_step": "P03_INTAKE_REUSE_INVALIDATION_ENVIRONMENT_CONFIG_PROTOCOL_FREEZE"
+  },
+  "blockers": [],
+  "major_issues": [],
+  "nonblocking_limitations": [
+    "A4 resource-constrained single-repeat/anchor-budget evidence ceiling",
+    "Stage18S remains post-hoc descriptive sensitivity evidence",
+    "low-label analysis uses one frozen subset per budget",
+    "BNCI2014_001 has one held-out P02 test participant for participant-level inference",
+    "public-benchmark/non-clinical scope",
+    "private heavy-artifact retrieval requires authorized symbolic credential classes"
+  ],
+  "security": {
+    "secret_scan_status": "PASS",
+    "scanned_text_files": 30750,
+    "literal_secret_hits": 0,
+    "pyc_files": 0
+  },
+  "current_artifact_index_local_rows_rehashed": 13290
+}

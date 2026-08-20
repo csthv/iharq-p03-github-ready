@@ -1,0 +1,21 @@
+{
+  "run_cell_id": "P02-A4S-R1-Lee2019_MI-NEURAL-A4-C1-LONG-3P5S-P01-L1-LOW-CAL-OFFICIAL-R2:64_PER_CLASS-MR01",
+  "ablation_id": "A4",
+  "terminal_status": "SUCCESS",
+  "resolved_branch": "DNN-EEGNET",
+  "prediction_partition": "records/PredictionRecord/dataset=Lee2019_MI/branch=NEURAL_VALIDATION_SELECTED/budget=P01-L1-LOW-CAL-OFFICIAL-R2:64_PER_CLASS/P02-A4S-R1-Lee2019_MI-NEURAL-A4-C1-LONG-3P5S-P01-L1-LOW-CAL-OFFICIAL-R2:64_PER_CLASS-MR01.jsonl",
+  "metric_source": "metrics/P02-A4S-R1-Lee2019_MI-NEURAL-A4-C1-LONG-3P5S-P01-L1-LOW-CAL-OFFICIAL-R2:64_PER_CLASS-MR01.json",
+  "source_rows": "raw_outputs/P02-A4S-R1-Lee2019_MI-NEURAL-A4-C1-LONG-3P5S-P01-L1-LOW-CAL-OFFICIAL-R2:64_PER_CLASS-MR01.jsonl",
+  "observed_denominator": 600,
+  "burden": {
+    "evidence_duration_s": 3.5,
+    "observation_horizon_s": 3.5,
+    "model_or_view_evaluations": 1,
+    "member_count": 1,
+    "aggregation_operation": "DIRECT_LONG",
+    "batch1_latency_median_s": 0.060698279999996885,
+    "batch1_latency_p95_s": 0.060698279999996885,
+    "aggregation_latency_s": 0.0
+  },
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

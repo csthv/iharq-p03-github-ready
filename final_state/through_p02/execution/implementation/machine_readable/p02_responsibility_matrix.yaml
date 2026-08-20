@@ -1,0 +1,73 @@
+phase: P02
+layer: L2
+official_modules:
+- id: L2-M01
+  name: Baseline trainer
+  role: Train/run sanity, classical, Riemannian, compact neural, conditional deep/SSL,
+    and the model sources needed by A0/A4 under frozen L1 inputs.
+  inputs: Layer1 records; model configs; budget configs; seed policy; environment/resource
+    gates
+  outputs: checkpoints; training logs; model-registry inputs; branch terminal ledger
+  a: A0/A4
+  owner: L2/P02
+- id: L2-M02
+  name: Prediction logger
+  role: Emit immutable prediction-level evidence with native score/logit/probability
+    semantics and class order.
+  inputs: accepted models/checkpoints; WindowRecord; SplitRecord; LabelMapRecord
+  outputs: PredictionRecord; inference logs; score-availability ledger
+  a: A0 source; A1-A13 downstream source
+  owner: L2/P02
+- id: L2-M03
+  name: Low-calibration curve builder
+  role: Construct budget-aware performance curves using inherited legal P01 budget
+    membership; retain failed/ineligible points.
+  inputs: PredictionRecord; budget profile; metric dictionary
+  outputs: LowCalibrationCurveRecord; curve source tables
+  a: A0/A4 context
+  owner: L2/P02
+- id: L2-M04
+  name: Subject difficulty profiler
+  role: Describe participant/session heterogeneity without diagnosis, routing, or
+    decision-time hard-subject labels.
+  inputs: PredictionRecord; BaselineMetricRecord; subject/session metadata
+  outputs: SubjectProfileRecord; descriptive source tables
+  a: A0/A4 context
+  owner: L2/P02
+- id: L2-M05
+  name: Model-family registry
+  role: Bind family, branch, implementation, config, transform, checkpoint, class-order,
+    score semantics, environment, status, and provenance.
+  inputs: configs; trained artifacts; logs; failures
+  outputs: ModelRegistryRecord; checkpoint registry; model-card source bundle
+  a: A0/A4 provenance
+  owner: L2/P02
+- id: L2-M06
+  name: Ensemble comparison builder
+  role: Build ordinary longer-window, multi-window vote/average, and fixed ordinary
+    ensemble controls without IHARQ/policy logic.
+  inputs: matched PredictionRecord families; A4 R2 windows; model registry; control
+    config
+  outputs: EnsembleControlRecord; disagreement tables; A4 metrics; burden notes
+  a: A4 direct
+  owner: L2/P02
+- id: L2-M07
+  name: Compact SSL adapter
+  role: Qualify and wrap compact pretrained/foundation branches under the same input/output/provenance
+    contract; fail closed on license/checkpoint/overlap incompatibility.
+  inputs: P01 windows; pretrained checkpoint; adapter config; provenance/license data
+  outputs: PredictionRecord; ModelRegistryRecord; admission/failure evidence
+  a: A0/A4 variant when admitted
+  owner: L2/P02
+- id: L2-M08
+  name: Downstream readiness validator
+  role: Produce per-branch/per-consumer compatibility and missing-field status for
+    P03 and later layers.
+  inputs: all P02 records, registry, warnings, score/class-order coverage
+  outputs: Layer2ReadinessReport; compatibility matrix; handoff
+  a: A0-A13 consumption readiness
+  owner: L2/P02
+claim_boundaries:
+- PUBLIC_EEG_ONLY
+- NON_CLINICAL
+- NO_DEPLOYMENT_CLAIM

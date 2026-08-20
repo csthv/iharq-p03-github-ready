@@ -1,0 +1,20 @@
+gate_id,result,protocol_cell_or_field,observed_evidence,limitation,repair_or_rerun_rule
+P0-GATE-01,PASS,registered P00 analysis/conformance scope,P00-EXECUTION-RELEASE-R1 and analysis release,NONE,rerun affected registered cells after material source/config/schema/test change
+P0-GATE-02,PASS,registered P00 analysis/conformance scope,P00-EXECUTION-RELEASE-R1 and analysis release,NONE,rerun affected registered cells after material source/config/schema/test change
+P0-GATE-03,PASS,registered P00 analysis/conformance scope,P00-EXECUTION-RELEASE-R1 and analysis release,NONE,rerun affected registered cells after material source/config/schema/test change
+P0-GATE-04,PASS,registered P00 analysis/conformance scope,P00-EXECUTION-RELEASE-R1 and analysis release,NONE,rerun affected registered cells after material source/config/schema/test change
+P0-GATE-05,PASS,registered P00 analysis/conformance scope,P00-EXECUTION-RELEASE-R1 and analysis release,NONE,rerun affected registered cells after material source/config/schema/test change
+P0-GATE-06,PASS,registered P00 analysis/conformance scope,P00-EXECUTION-RELEASE-R1 and analysis release,NONE,rerun affected registered cells after material source/config/schema/test change
+P0-GATE-07,PASS,registered P00 analysis/conformance scope,P00-EXECUTION-RELEASE-R1 and analysis release,NONE,rerun affected registered cells after material source/config/schema/test change
+P0-GATE-08,PASS,registered P00 analysis/conformance scope,P00-EXECUTION-RELEASE-R1 and analysis release,NONE,rerun affected registered cells after material source/config/schema/test change
+P0-GATE-09,PASS,registered P00 analysis/conformance scope,P00-EXECUTION-RELEASE-R1 and analysis release,NONE,rerun affected registered cells after material source/config/schema/test change
+P0-GATE-10,PASS,registered P00 analysis/conformance scope,P00-EXECUTION-RELEASE-R1 and analysis release,NONE,rerun affected registered cells after material source/config/schema/test change
+P0-GATE-11,PASS,registered P00 analysis/conformance scope,P00-EXECUTION-RELEASE-R1 and analysis release,NONE,rerun affected registered cells after material source/config/schema/test change
+P0-GATE-12,PASS,registered P00 analysis/conformance scope,P00-EXECUTION-RELEASE-R1 and analysis release,NONE,rerun affected registered cells after material source/config/schema/test change
+P0-GATE-13_FOUNDATION,PASS,registered P00 analysis/conformance scope,P00-EXECUTION-RELEASE-R1 and analysis release,NONE,rerun affected registered cells after material source/config/schema/test change
+P0-GATE-14_FOUNDATION,PASS,registered P00 analysis/conformance scope,P00-EXECUTION-RELEASE-R1 and analysis release,NONE,rerun affected registered cells after material source/config/schema/test change
+P0-GATE-15,PASS,registered P00 analysis/conformance scope,P00-EXECUTION-RELEASE-R1 and analysis release,NONE,rerun affected registered cells after material source/config/schema/test change
+P0-GATE-16_IMPLEMENTATION,PASS_WITH_NONBLOCKING_LIMITATIONS,registered P00 analysis/conformance scope,P00-EXECUTION-RELEASE-R1 and analysis release,portable uv.lock incomplete; Python 3.11/3.12 unavailable,rerun affected registered cells after material source/config/schema/test change
+P0-GATE-17_LOCAL,PASS,registered P00 analysis/conformance scope,P00-EXECUTION-RELEASE-R1 and analysis release,NONE,rerun affected registered cells after material source/config/schema/test change
+P0-GATE-18,DEFERRED_TO_LATER_GOVERNED_PHASE0_CLOSURE,registered P00 analysis/conformance scope,P00-EXECUTION-RELEASE-R1 and analysis release,owned by later closure workflow,rerun affected registered cells after material source/config/schema/test change
+GITHUB_CI,NOT_APPLICABLE_BY_ACCEPTED_WORKFLOW_STRATEGY,publication strategy,LOCAL_FIRST_SINGLE_PUBLICATION,not a current gate,none until later owner-authorized publication

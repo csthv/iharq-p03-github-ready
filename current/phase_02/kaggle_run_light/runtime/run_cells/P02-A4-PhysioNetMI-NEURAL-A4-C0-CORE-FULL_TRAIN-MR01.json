@@ -1,0 +1,21 @@
+{
+  "run_cell_id": "P02-A4-PhysioNetMI-NEURAL-A4-C0-CORE-FULL_TRAIN-MR01",
+  "ablation_id": "A4",
+  "terminal_status": "SUCCESS",
+  "resolved_branch": "DNN-EEGNET",
+  "prediction_partition": "records/PredictionRecord/dataset=PhysioNetMI/branch=DNN-EEGNET/budget=FULL_TRAIN/P02-A0-PhysioNetMI-DNN-EEGNET-FULL_TRAIN-MR01.jsonl",
+  "metric_source": "metrics/P02-A0-PhysioNetMI-DNN-EEGNET-FULL_TRAIN-MR01.json",
+  "checkpoint_sha256": "976a503cf831d2f3144a548d2600e2ce09ad2bc90adaf496fc70097f1b5132f3",
+  "observed_denominator": 495,
+  "burden": {
+    "evidence_duration_s": 3.0,
+    "observation_horizon_s": 3.0,
+    "model_or_view_evaluations": 1,
+    "member_count": 1,
+    "aggregation_operation": "DIRECT_CORE",
+    "batch1_latency_median_s": 0.0012774360002367757,
+    "batch1_latency_p95_s": 0.0019588640010624655,
+    "aggregation_latency_s": 0.0
+  },
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

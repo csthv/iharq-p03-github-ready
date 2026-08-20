@@ -1,0 +1,99 @@
+{
+  "run_cell_id": "P02-TRAIN-AUG-SR-PhysioNetMI-DNN-EEGNET-FULL_TRAIN-MR04",
+  "ablation_id": "TRAINING_POLICY_DIAGNOSTIC",
+  "terminal_status": "SUCCESS",
+  "prediction_partition": "records/PredictionRecord/dataset=PhysioNetMI/branch=DNN-EEGNET/budget=FULL_TRAIN/P02-TRAIN-AUG-SR-PhysioNetMI-DNN-EEGNET-FULL_TRAIN-MR04.jsonl",
+  "metric_source": "metrics/P02-TRAIN-AUG-SR-PhysioNetMI-DNN-EEGNET-FULL_TRAIN-MR04.json",
+  "checkpoint_sha256": "f1de60f659dfb01d3b573e83b6b9e3649f01dd26cad7c89bdf68287b1bbecc56",
+  "observed_denominator": 495,
+  "expected_denominator": 495,
+  "selected_params": {
+    "recipe_id": "R7H7-EEGNET-LAWHERN-SMR-SOURCE-CENTERED-P01-160HZ-10000E-TRUE-P120-R1",
+    "recipe_sha256": "18cbe259c05bfcea6b26934118216d5a60ff14d659906e6e8e2f590ffc502866",
+    "lr": 0.001,
+    "optimizer": "Adam",
+    "weight_decay": 0.0,
+    "dropout": 0.5,
+    "epochs_max": 10000,
+    "patience": 120,
+    "min_epochs_before_early_stop": 1,
+    "training_policy_label": "TRUE_P120_FLOOR1_R7",
+    "kernel_length": 40,
+    "depthwise_kernel_length": 20,
+    "pool1_kernel_size": 5,
+    "pool2_kernel_size": 10
+  },
+  "resolved_variant": "EEGNet-R7-LAWHERN-SMR-P01-160HZ",
+  "score_type": "SOFTMAX_PROBABILITY",
+  "validation_burden_seconds": 311.3412211350005,
+  "model_storage_bytes": 17755,
+  "selected_candidate_id": "R7H7-EEGNET-LAWHERN-SMR-SOURCE-CENTERED-P01-160HZ-10000E-TRUE-P120-R1",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.001213941999594681,
+    "batch1_latency_p95_s": 0.0017831184013630261,
+    "repeats": 5,
+    "latency_probe_mode": "FORWARD_ONLY_NO_METRICS"
+  },
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "class_weights": null,
+  "class_weight_calibration": {
+    "selected_policy": "UNIFORM_NO_WEIGHT",
+    "selected_weights": null,
+    "candidate_results": [
+      {
+        "status": "SUCCESS",
+        "policy": "UNIFORM_NO_WEIGHT",
+        "weights": null,
+        "validation_metrics": {
+          "BACC": 0.7391027524733078,
+          "F1_MACRO": 0.7386729636708151,
+          "ACC": 0.7393939393939394,
+          "CONFUSION": [
+            [
+              196,
+              53
+            ],
+            [
+              76,
+              170
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            249,
+            246
+          ],
+          "PRED_COMPLETE": 495,
+          "ROC_AUC": 0.7829692754758872,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+        },
+        "elapsed_seconds": 311.3412211350005,
+        "recipe_sha256": "18cbe259c05bfcea6b26934118216d5a60ff14d659906e6e8e2f590ffc502866",
+        "recipe_id": "R7H7-EEGNET-LAWHERN-SMR-SOURCE-CENTERED-P01-160HZ-10000E-TRUE-P120-R1",
+        "early_stopping_patience": 120,
+        "epochs_completed": 162
+      }
+    ],
+    "test_set_used": false
+  },
+  "training_condition_id": "P02-TRAIN-AUG-SR-EEGNET-FULL-R2-VALIDATION-RESOLVED",
+  "source_centered_recipe_sha256": "18cbe259c05bfcea6b26934118216d5a60ff14d659906e6e8e2f590ffc502866",
+  "source_centered_recipe_id": "R7H7-EEGNET-LAWHERN-SMR-SOURCE-CENTERED-P01-160HZ-10000E-TRUE-P120-R1",
+  "prospective_policy_sha256": "b482d6a35e7a4e047139c7e357618f0fc5a4f172911436448b026aaf571d7462",
+  "input_statistics": {
+    "source_unit": "V",
+    "unit_multiplier": 1000000.0,
+    "mean_uv_min": -0.0022088692602375767,
+    "mean_uv_max": 0.0015866623028156842,
+    "std_uv_min": 7.5582010088004745,
+    "std_uv_max": 19.344363704104072,
+    "channel_count": 64,
+    "fit_samples": 2949,
+    "test_statistics_used": false
+  },
+  "best_epoch": 42,
+  "comparison_reference": "P02-A0-PhysioNetMI-DNN-EEGNET-FULL_TRAIN-MR04",
+  "augmentation_probability": 0.25,
+  "augmentation_condition_id": "P02-TRAIN-AUG-SR-EEGNET-FULL-R2-VALIDATION-RESOLVED",
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

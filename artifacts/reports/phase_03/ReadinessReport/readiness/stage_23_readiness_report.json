@@ -1,0 +1,111 @@
+{
+  "artifact_id": "P03-PROD-055-7de4d2842874396019ec",
+  "created_at_utc": "2026-08-16T21:01:39.501500Z",
+  "facets": {
+    "consumer": {
+      "canonical_P03_PROD_048_bound": true,
+      "canonical_P03_PROD_062_reused": true,
+      "canonical_P03_PROD_063_reused": true,
+      "downstream_handoffs_created": true
+    },
+    "data": {
+      "P02_contract_validated": true,
+      "class_order_complete": true,
+      "score_semantics_complete": true
+    },
+    "evidence": {
+      "failure_denominator_complete": true,
+      "limitation_count": 21,
+      "member_disagreement_all_groups_accounted": true,
+      "negative_result_count": 3618
+    },
+    "execution": {
+      "prior_stages_complete": 23,
+      "products_expected_final": 65,
+      "products_pre_export_realized": 59,
+      "resource_reduction_applied": false
+    },
+    "science": {
+      "A0_inherited": true,
+      "A1_complete": true,
+      "A2_A3_design_identity_distinct": true,
+      "A2_complete": true,
+      "A2_explicit_no_rule_groups": 91,
+      "A2_successful_rule_groups": 194,
+      "A3_complete": true,
+      "A3_explicit_no_rule_children": 273,
+      "A3_independent_ranking_information": false,
+      "A3_successful_rule_children": 582,
+      "A4_inherited": true
+    },
+    "security": {
+      "final_security_clearance": false,
+      "leakage_guards_pass": true,
+      "raw_literal_secrets_reported": 0,
+      "secret_scan_pending_stage24": true
+    }
+  },
+  "hardening_id": "P03-C8-STAGE23-SUFFICIENCY-PARITY-EVIDENCE-HARDENING-R2",
+  "limitations": [
+    "Raw A2_A3_distinct is interpreted as design identity only.",
+    "Final checksum and secret-scan closure are pending Stage24."
+  ],
+  "payload_sha256": "3b66a17a1e8b618989a4633afe9e28972721a14e46cc0c63e9ef6099d5e475b7",
+  "product_id": "P03-PROD-055",
+  "raw_readiness": {
+    "A0_inherited": true,
+    "A14_absent": true,
+    "A1_complete": true,
+    "A2_A3_distinct": true,
+    "A2_complete": true,
+    "A2_explicit_no_rule_groups": 91,
+    "A2_successful_rule_groups": 194,
+    "A3_complete": true,
+    "A3_explicit_no_rule_children": 273,
+    "A3_successful_rule_children": 582,
+    "A4_disagreement_all_groups_accounted": true,
+    "A4_disagreement_eligible_groups": 0,
+    "A4_disagreement_ineligible_groups": 285,
+    "A4_inherited": true,
+    "P02_contract_validated": true,
+    "class_order_complete": true,
+    "implementation_amendment_id": "P03-L3-IMPL-AMEND-NO-RULE-R1",
+    "leakage_guards_pass": true,
+    "literal_secrets": 0,
+    "products_expected": 65,
+    "products_pre_export_realized": 59,
+    "score_semantics_complete": true,
+    "status": "READY"
+  },
+  "run_id": "P03-L3-OFFICIAL-09ca82c743e0411a",
+  "schema_id": "ReadinessReport.v1",
+  "schema_version": "1.0.0",
+  "semantic_qualification": {
+    "A2_A3_design_identity_distinct": true,
+    "A2_A3_raw_distinct_field_interpretation": "Distinct ablation identities only; not independent uncertainty ranking evidence.",
+    "A3_independent_ranking_information": false,
+    "binary_uncertainty_alias_limitation_preserved": true,
+    "candidate_claims_approved": false,
+    "checksums_pending_stage24": true,
+    "final_phase_sufficiency": false,
+    "final_phase_sufficiency_pending_stage24": true,
+    "no_legal_threshold_preserved": true,
+    "secret_scan_pending_stage24": true,
+    "stage23_sufficiency_scope": "PRE_EXPORT",
+    "test_used_for_selection": false
+  },
+  "source_artifact_ids": [
+    "STAGE23-RAW-READINESS",
+    "P03-PROD-048",
+    "P03-PROD-062",
+    "P03-PROD-063"
+  ],
+  "source_sha256s": [
+    "942d7c246f455a8600175fc1f07ba40303c30cbdd6cae8dccb22c22458b21c66",
+    "dacec8269c6b127499d0fdc3b565be8d2b2bb96f97430839eb09b181018f1bae",
+    "af5a78021474731997d4a8f0cc11ff4ca430ab3271fd741ef8ffd61ab434ee59",
+    "4e6b9117d070c1a0737b72ffabdc72a2c5ba5b2704bfa92e2bdb053e1a3a49a0"
+  ],
+  "stage_id": "23",
+  "status": "READY"
+}

@@ -1,0 +1,97 @@
+{
+  "stage_id": "03",
+  "status": "SUCCESS",
+  "attempt_id": "5b6834384730",
+  "inputs": {},
+  "input_hashes": {},
+  "outputs": {
+    "status": "PASS",
+    "resolved": {
+      "cumulative_zip": "/kaggle/working/iharq_p02_transport/IHARQ_Cumulative_GitHub_Ready_Through_P01_R1.zip",
+      "core_root": "/kaggle/input/datasets/csthv999z/iharq-p01-l1-derived-windows-d03f0a7c869d-20260806222242-68a91473",
+      "a4_root": "/kaggle/input/datasets/csthv999z/iharq-p01-l1-a4-d03f0a7c-9a7c6108",
+      "status": "PASS"
+    },
+    "conditional_assets": {
+      "status": "PASS",
+      "pre_attached": {
+        "status": "NOT_ATTACHED",
+        "manifest": null,
+        "branches": {}
+      },
+      "huggingface": {
+        "policy_id": "P02-HF-CONDITIONAL-ASSET-POLICY-R1",
+        "status": "PASS",
+        "token": {
+          "credential_required": false,
+          "credential_available": true,
+          "credential_source_type": "INTERACTIVE_GETPASS_MEMORY_ONLY",
+          "credential_value": "REDACTED"
+        },
+        "branches": {
+          "SSL-CBRAMOD": {
+            "status": "VERIFIED",
+            "repo_id": "braindecode/cbramod-pretrained",
+            "revision": "584cdc415913739a05d84bf0c1cb3db397764507",
+            "gated": false,
+            "download_attempted": true,
+            "token_used": true,
+            "files": {
+              "model.safetensors": {
+                "sha256": "a939ace9aa1e229f08391ad8bb2d197b507ae2c519a50addf087f0151b2df5c3",
+                "bytes": 19717952,
+                "required": true
+              },
+              "config.json": {
+                "sha256": "0fb13cd51defc99b95f84e9c6a517802b6c85e6b4cf8bbec20a78b7bcbcabd1d",
+                "bytes": 164,
+                "required": true
+              }
+            },
+            "cache_policy": "EPHEMERAL_EXCLUDED_FROM_EXECUTION_BUNDLE",
+            "license_status": "CAN_EXECUTE",
+            "corpus_overlap_status": "PASS"
+          },
+          "SSL-REVE": {
+            "status": "BLOCKED_KNOWN_P02_PRETRAINING_CORPUS_OVERLAP",
+            "repo_id": "brain-bzh/reve-base",
+            "gated": true,
+            "download_attempted": false,
+            "token_used": false,
+            "reason": "REVE open pretraining corpus cites Schalk/PhysioNet and Lee2019/OpenBMI, overlapping current P02 PhysioNetMI and Lee2019_MI."
+          }
+        }
+      },
+      "resolution_order": [
+        "PRE_ATTACHED_VERIFIED_ASSET",
+        "HUGGING_FACE_GOVERNED_RETRIEVAL"
+      ],
+      "token_value_persisted": false
+    },
+    "artifact": "stage_artifacts/03_pointers.json"
+  },
+  "output_hashes": {
+    "status": "727e9bd17b077ba162e13ba877135cc6fbc6b30f83da0b34b3e20233f1cc885f",
+    "resolved": "166d07817bcfae22d46184c007917872fcf2cd87af6bb29128d1b03099dc4f20",
+    "conditional_assets": "33cbd86cfc124922d80487ea74d6fd4c78f405c367d3730fa1ad22cbdae7dbd4",
+    "artifact": "ae8982bfff7ba24b31184dccc32bbaa472596272e75d56943c3f6fab6033a92f"
+  },
+  "dependencies": [
+    "02"
+  ],
+  "elapsed_seconds": 4.355316877365112,
+  "log_path": "logs/stage_03_5b6834384730.log",
+  "heartbeat_write_errors": [],
+  "observability_status": "PASS",
+  "blockers": [],
+  "observations": [],
+  "revision_fingerprint": {
+    "notebook_revision": "R4",
+    "notebook_id": "IHARQ-P02-COMPLETE-EXECUTION-AND-ANALYSIS-R4",
+    "source_sha256": "a54bfa816acc6763c1d1042b8c65cf54ae04ec774c57ec50de86014a6730c5fa",
+    "config_sha256": "d82334535e397c681d6172694da96d3fff0143ffb1b63a18876ee1f7778f60a1",
+    "stage_plan_sha256": "043eb30e008af910d37c563e8be8c719ef881cf009aec3e34687dc97bdc34aad",
+    "scientific_freeze_sha256": "7449216c988eec14191ba85300d720547f06fbc6ac7020e9e142bf12a4b0a598",
+    "scientific_freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5"
+  }
+}

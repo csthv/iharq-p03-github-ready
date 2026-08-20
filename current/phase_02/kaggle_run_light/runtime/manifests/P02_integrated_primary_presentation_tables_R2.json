@@ -1,0 +1,118 @@
+{
+  "artifact_id": "P02-INTEGRATED-PRIMARY-PRESENTATION-TABLES-R2",
+  "created_at_utc": "2026-08-17T18:06:13.762343+00:00",
+  "historical_reference_anchor": {
+    "path": "/kaggle/working/_IHARQ_CANONICAL_P02_ANALYSIS_REFERENCE_MIRROR_R1/analysis/table_source_data/p02/P02_Table_low_label_BACC.csv",
+    "sha256": "2c3d377c97853deb9c0c489e3b551e11d5fae540c89029ea489510de11e77de1"
+  },
+  "legacy_filenames_preserved": true,
+  "machine_provenance_discloses_later_integration": true,
+  "primary_budget_axis": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256
+  ],
+  "stage18S_actual_anchor_budgets": [
+    "1",
+    "8",
+    "64",
+    "128",
+    "256",
+    "FULL"
+  ],
+  "stage18S_legacy_six_budget_filename_contains_nine_budget_integrated_content": true,
+  "status": "PASS",
+  "tables": [
+    {
+      "bytes": 6031,
+      "filename": "P02_Table_A0_fulltrain_branch_summary.csv",
+      "sha256": "2f62ab327d951c7eebe2a57c7f59e448aea9080877299df94afbc10f41c043f7"
+    },
+    {
+      "bytes": 79418,
+      "filename": "P02_Table_A4_C4_C5_statistics.csv",
+      "sha256": "73d7cf0d136c0a9ba55b238f32fbcf08cff85114497ce10397803a0f961c0990"
+    },
+    {
+      "bytes": 746,
+      "filename": "P02_Table_A4_burden_summary.csv",
+      "sha256": "654e02536988454bc1c6134b5058b55c50c52d77623c87b3a09af0b35a168382"
+    },
+    {
+      "bytes": 3521,
+      "filename": "P02_Table_A4_role_condition_summary.csv",
+      "sha256": "a3095d00f2907a40c64623cb68e51ae94f5728584ae4ec1235af43cd8f4fc148"
+    },
+    {
+      "bytes": 231858,
+      "filename": "P02_Table_A4_role_control_statistics.csv",
+      "sha256": "b18e959824964fc49593de7e87f54ab18c9bb5499cd7a7884afaf16dea2cf97c"
+    },
+    {
+      "bytes": 754,
+      "filename": "P02_Table_Stage18S_high_budget_64_128_256_summary.csv",
+      "sha256": "954e2a8650d17501187d99691cc5199e147e9633fb16e66c414aab5585098715"
+    },
+    {
+      "bytes": 4456,
+      "filename": "P02_Table_Stage18S_nine_budget_sensitivity.csv",
+      "sha256": "e3245685c598ea7855ac19c951b056ad746936de944db204430fac4dda42be92"
+    },
+    {
+      "bytes": 848,
+      "filename": "P02_Table_Stage18S_six_anchor_stability_by_budget.csv",
+      "sha256": "a34fb04e68ab62cca2658ae828684bfce723dda58acb2c068bb5044a04b72dde"
+    },
+    {
+      "bytes": 4456,
+      "filename": "P02_Table_Stage18S_six_budget_sensitivity.csv",
+      "sha256": "e3245685c598ea7855ac19c951b056ad746936de944db204430fac4dda42be92"
+    },
+    {
+      "bytes": 25437,
+      "filename": "P02_Table_Stage18S_three_repeat_anchor_stability.csv",
+      "sha256": "e804fc4145a7cc94ec097306a02c97cc476715e2196854e0654b8b9ef819b9a5"
+    },
+    {
+      "bytes": 255,
+      "filename": "P02_Table_failure_category_breakdown.csv",
+      "sha256": "00c7079dfed566079a941af3312d04620849e9ffe176b79eb75c8fd177b05ef6"
+    },
+    {
+      "bytes": 121,
+      "filename": "P02_Table_failure_code_summary.csv",
+      "sha256": "9536db6233d613677aa446efc85c5c505a497da57ddd749edcb6b3c74be71ddf"
+    },
+    {
+      "bytes": 34182,
+      "filename": "P02_Table_low_label_BACC.csv",
+      "sha256": "5ea883b5b607e8ca6a5555500db6155258a2a0367fb3747bb8709218efdc4af9"
+    },
+    {
+      "bytes": 4666,
+      "filename": "P02_Table_low_label_budget_deltas.csv",
+      "sha256": "8c138c5e0e2994cae20a2d5dd7a3f0c0e5b33f6cdf2e5f4024aaf70be1839685"
+    },
+    {
+      "bytes": 1916,
+      "filename": "P02_Table_low_label_budget_leaders_and_rank_changes.csv",
+      "sha256": "bd5c8b9e2970a8b4a9f6ba9b8ec9a6a0d5830be134a3d48b91bee63b06d43c6b"
+    },
+    {
+      "bytes": 42418,
+      "filename": "P02_Table_low_label_exact_deltas_and_ranks.csv",
+      "sha256": "e68061e048c630eb74bb8d1e3afc71a0ee5a65accad21eee97cd48f20ffdbd49"
+    },
+    {
+      "bytes": 11547,
+      "filename": "P02_Table_low_label_interval_deltas.csv",
+      "sha256": "6b717df23fcc3f51d96d2a3a99fdc8438410b27fc39d90ba02f97af35719656e"
+    }
+  ]
+}

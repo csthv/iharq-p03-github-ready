@@ -1,0 +1,479 @@
+freeze_id: P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5
+status: FROZEN_FOR_KAGGLE_EXECUTION_WITH_OWNER_AUTHORIZED_DYNAMIC_PRETEST_TRAINING_POLICY_RESOLUTION
+stage05_behavior: VERIFY_ONLY
+master_seed: 20260804
+seed_derivation:
+  algorithm: SHA256_CANONICAL_UTF8_FIRST8_HEX_MOD_2P31_MINUS1_ZERO_TO_ONE
+  fields:
+  - master_seed
+  - phase_id
+  - dataset_id
+  - run_family_id
+  - budget_id
+  - budget_repeat_id
+  - model_repeat_index
+  - purpose
+  - aux_repeat_index
+  purposes:
+  - MODEL_INIT
+  - SAMPLER
+  - AUGMENT
+  - DATALOADER
+  - PERMUTATION
+  - STAT_BOOTSTRAP
+  - STAT_TEST
+  - CHECKPOINT_TIEBREAK
+  aux_repeat_semantics:
+    default: 0
+    SAN_PERM: 0..99 permutation_repeat_index
+    other: 0 unless a frozen auxiliary stochastic repetition is explicitly declared
+repeats:
+  deterministic_classical_riemannian: 1
+  neural_sequence_ssl: 5
+  san_strat: 20
+  san_perm: 100
+  budget_repeat_count: 1
+  budget_repeat_id: P01_FROZEN_SINGLE_SUBSET
+budgets:
+  profile: P01-L1-LOW-CAL-OFFICIAL-R2
+  per_class:
+  - 1
+  - 2
+  - 4
+  - 8
+  - 16
+  - 32
+  source_role: calibration
+  seed: 20260804
+  membership: INHERITED_EXACT
+  new_membership_generation: PROHIBITED
+  limitation: SINGLE_FROZEN_SUBSET_LIMITATION
+metrics:
+  primary: BACC
+  complementary: F1_MACRO
+  secondary: ACC
+  conditional:
+  - ROC_AUC
+  required_source:
+  - CONFUSION
+  - CLASS_SUPPORT
+  - PRED_COMPLETE
+  - BRANCH_SUCCESS
+  - A4_DELAY
+  not_selected:
+  - KAPPA
+  - MCC
+  - AUPRC
+  - BRIER
+  - NLL
+  - ECE
+  - CALIBRATION_SLOPE
+  - RISK_COVERAGE
+statistics:
+  confidence_level: 0.95
+  bootstrap_resamples: 10000
+  bootstrap_unit: participant_cluster
+  bootstrap_primary: BCa
+  bootstrap_fallback: percentile
+  two_method: paired_wilcoxon_two_sided
+  multi_method: friedman_then_predeclared_paired_wilcoxon
+  multiplicity: Holm_within_confirmatory_family
+  min_complete_participants: 5
+  effect_sizes:
+  - paired_median_difference
+  - matched_pairs_rank_biserial
+  - kendall_W_for_friedman
+  cross_dataset: dataset_stratified_no_confirmatory_meta_analysis
+hyperparameters:
+  CSP_LDA:
+    csp_components:
+    - 4
+    - 6
+    - 8
+    csp_reg: oas
+    lda_solver: lsqr
+    lda_shrinkage: auto
+  FBCSP_LR:
+    bands_hz:
+    - - 8
+      - 12
+    - - 12
+      - 16
+    - - 16
+      - 20
+    - - 20
+      - 24
+    - - 24
+      - 28
+    - - 28
+      - 32
+    components_per_band:
+    - 2
+    - 4
+    C:
+    - 0.1
+    - 1
+    - 10
+    penalty: l2
+    max_iter: 2000
+  TS_LR:
+    covariance: oas
+    tangent_metric: riemann
+    C:
+    - 0.1
+    - 1
+    - 10
+    penalty: l2
+    max_iter: 2000
+  EA_TS:
+    inherits: selected_TS_LR
+    extra_search: false
+  MDM:
+    metric: riemann
+    diagnostic: true
+  EEGNET:
+    lr:
+    - 0.001
+    - 0.0003
+    weight_decay:
+    - 0
+    - 0.0001
+    dropout:
+    - 0.25
+    - 0.5
+  FBCNET:
+    lr:
+    - 0.001
+    - 0.0003
+    weight_decay:
+    - 0
+    - 0.0001
+    architecture_search: false
+    equivalence_gate: true
+  SEQUENCE_SLOT:
+    preferred: DBConformer
+    fallback: EEGConformer
+    lr:
+    - 0.0003
+    - 0.0001
+    weight_decay:
+    - 0.0001
+    - 0.001
+    selection_before_results: true
+  CBRAMOD:
+    source_recipe_required: true
+    guessed_recipe: PROHIBITED
+  REVE:
+    diagnostic_source_recipe_only: true
+candidate_caps:
+  max_successful_per_family: 8
+  max_attempted_per_family: 12
+  family_tuning_minutes: 60
+  classical_candidate_minutes: 10
+  neural_candidate_minutes: 30
+  neural_final_fit_minutes: 45
+neural_training:
+  optimizer: AdamW
+  max_epochs: 100
+  early_stop_metric: validation_BACC
+  patience: 12
+  min_delta: 0.0
+  restore_best: true
+  batch_ladder:
+  - 64
+  - 32
+  - 16
+  effective_batch_target: 64
+  primary_augmentation: NONE
+  diagnostic_augmentation: P02-TRAIN-AUG-SR-EEGNET-FULL-R2-VALIDATION-RESOLVED
+ablation:
+  full_execution_required:
+  - A0
+  - A4
+  full_execution_buildbook_complete:
+  - A0
+  - A4
+  additional_dispatcher: 18U_SAME_NOTEBOOK
+  A14: ABSENT_PROHIBITED
+  result_dependent_unlock: PROHIBITED
+  downstream_confirmatory_execution_prohibited:
+  - A1
+  - A2
+  - A3
+  - A5
+  - A6
+  - A7
+  - A8
+  - A9
+  - A10
+  - A11
+  - A12
+  - A13
+  full_execution_planned_run_cell_manifest: p02_full_ablation_planned_run_cells_R3.yaml
+a4:
+  ablation_id: A4
+  p02_state: FULL_EXECUTION_REQUIRED_IN_P02
+  scientific_question: Do authorized ordinary longer/multi-window/ensemble controls
+    change raw decoder performance versus matched CORE and what burden do they impose?
+  input_family: P01-L1-A4-WINDOW-FAMILY-FREEZE-R2
+  long_profile: A4_LONG_MATCHED_3P5S_R2
+  multi_profile: A4_MULTI_3X2S_UNIFORM_0P75S_R2
+  virtual_views:
+  - 0:320
+  - 120:440
+  - 240:560
+  matched_parents: 12910/12910
+  conditions:
+  - condition_id: A4-C0-CORE
+    name: matched CORE A0 reference
+    mandatory: REQUIRED
+    rule: reuse matched A0 CORE predictions
+  - condition_id: A4-C1-LONG-3P5S
+    name: 3.5-s long window
+    mandatory: REQUIRED_WHERE_EXACT_INPUT_SUPPORTED
+    rule: refit exact A4_LONG representation; frozen hyperparams/seed; no pad/crop
+  - condition_id: A4-C2-MULTI-HARD-VOTE
+    name: three-view hard vote
+    mandatory: REQUIRED
+    rule: V0/V1/V2 view predictions -> deterministic parent-level majority vote
+  - condition_id: A4-C3-MULTI-PROB-AVG
+    name: three-view probability average
+    mandatory: CONDITIONALLY_REQUIRED
+    rule: only genuine aligned probabilities; else NOT_APPLICABLE_SCORE_SEMANTICS
+  - condition_id: A4-C4-MODEL-HARD-VOTE
+    name: fixed ordinary model ensemble hard vote
+    mandatory: REQUIRED_WHEN_CLASSICAL_AND_RIEMANNIAN_REPRESENTATIVES_SUCCESS
+    rule: pre-result fixed role membership; no learned gating/weights
+  - condition_id: A4-C5-MODEL-PROB-AVG
+    name: fixed ordinary model ensemble probability average
+    mandatory: CONDITIONALLY_REQUIRED
+    rule: only genuine aligned probabilities; else NOT_APPLICABLE_SCORE_SEMANTICS
+  datasets:
+  - PhysioNetMI
+  - BNCI2014_001
+  - Lee2019_MI
+  split_id: P01-L1-SPLIT-OFFICIAL-R2
+  budgets:
+  - FULL_TRAIN
+  - 1
+  - 2
+  - 4
+  - 8
+  - 16
+  - 32
+  representative_roles:
+  - classical
+  - riemannian
+  - compact_neural_if_admitted
+  - compact_ssl_if_admitted
+  minimum_fixed_model_ensemble:
+  - classical
+  - riemannian
+  representative_selection: validation BACC -> macro-F1 -> lower validation burden
+    -> lexical branch_id; frozen before test
+  run_cell_template: P02-A4-{dataset_id}-{role_id}-{branch_id}-{condition_id}-{evidence_regime}-{budget_id}-{model_repeat_index}-{seed_id}
+  parent_matching_key:
+  - dataset_id
+  - subject_id
+  - session_or_run_id
+  - source_event_id
+  - split_role=test
+  - budget_id
+  - budget_repeat_id
+  - role_id
+  - model_repeat_index
+  - config_hash
+  metrics:
+  - BACC
+  - F1_MACRO
+  - ACC
+  - ROC_AUC_CONDITIONAL
+  - CONFUSION
+  - CLASS_SUPPORT
+  - PRED_COMPLETE
+  - A4_DELAY
+  statistics: paired participant-level deltas; 95% participant-cluster 10000 BCa;
+    Wilcoxon/Friedman+Holm where supported
+  burden_fields:
+  - evidence_duration
+  - observation_horizon
+  - model_or_view_evaluations
+  - member_count
+  - aggregation_operation
+  - batch1_latency_median
+  - batch1_latency_p95
+  records:
+  - PredictionRecord
+  - ModelRegistryRecord
+  - EnsembleControlRecord
+  - BaselineMetricRecord
+  - MatchedComparisonReport
+  - FailureCaseIndex
+  kaggle_stage: '18'
+  gate: G18
+  terminal_completion: EXECUTED_RESULTS_PRESERVED_ANALYSIS_INPUTS_COMPLETE
+owner_decisions_remaining: 0
+a0:
+  ablation_id: A0
+  p02_state: FULL_EXECUTION_REQUIRED_IN_P02
+  scientific_question: What raw accept-all decoder evidence is produced under frozen
+    P01 inputs without calibration/rejection/abstention?
+  reference_condition: A0-RAW-ACCEPT-ALL
+  datasets:
+  - PhysioNetMI
+  - BNCI2014_001
+  - Lee2019_MI
+  split_id: P01-L1-SPLIT-OFFICIAL-R2
+  window_profile: CORE
+  budgets:
+  - FULL_TRAIN
+  - 1
+  - 2
+  - 4
+  - 8
+  - 16
+  - 32
+  expected_test_denominator_by_dataset:
+    PhysioNetMI: 495
+    BNCI2014_001: 288
+    Lee2019_MI: 600
+    TOTAL: 1383
+  model_scope: all planned P02 portfolio branches with terminal outcome; minimum successful
+    floor = >=1 classical + >=1 Riemannian per dataset
+  fit_scope: FULL_TRAIN=train; LOW_LABEL=exact inherited calibration budget subset
+    only
+  selection_scope: validation/inner roles only; never test
+  evaluation_scope: test after selection
+  matching_key:
+  - dataset_id
+  - split_id
+  - CORE
+  - evidence_regime
+  - budget_id
+  - budget_repeat_id
+  - branch_id
+  - model_repeat_index
+  - config_hash
+  - seed_id
+  metrics:
+  - BACC
+  - F1_MACRO
+  - ACC
+  - ROC_AUC_CONDITIONAL
+  - CONFUSION
+  - CLASS_SUPPORT
+  - PRED_COMPLETE
+  - BRANCH_SUCCESS
+  statistics: 95% participant-cluster; 10000 BCa/bootstrap fallback; paired Wilcoxon/Friedman+Holm
+    for predeclared comparisons
+  records:
+  - ModelRegistryRecord
+  - PredictionRecord
+  - BaselineMetricRecord
+  - MatchedComparisonReport
+  - FailureCaseIndex
+  kaggle_stage: '15'
+  gate: G15
+  terminal_completion: EXECUTED_RESULTS_PRESERVED_ANALYSIS_INPUTS_COMPLETE
+full_ablation_undefined_counts:
+  implementation: 0
+  run_cells: 0
+  metrics: 0
+  comparisons: 0
+  analysis_outputs: 0
+  deferred_to_phase_analysis: 0
+  missing_from_kaggle_plan: 0
+preexecution_amendment_id: P02-PREEXEC-TRAINING-POLICY-AMENDMENT-R2
+training_policy_resolution:
+  augmentation_challenger:
+    required_by_build_book: true
+    branch_id: DNN-EEGNET
+    scope: FULL_TRAIN_ONLY
+    same_five_model_seeds: true
+    algorithm: SAME_CLASS_SEGMENTATION_RECONSTRUCTION_TRAIN_ONLY
+    primary_reference_augmentation: NONE
+    probability_resolution:
+      type: VALIDATION_ONLY_DATASET_LEVEL_GRID_SEARCH
+      candidates:
+      - 0.25
+      - 0.5
+      - 0.75
+      calibration_seeds: ALL_FIVE_FROZEN_EEGNET_MODEL_SEEDS
+      selection_aggregation: MEDIAN_ACROSS_SUCCESSFUL_SEEDS
+      primary_metric: BACC
+      secondary_metric: F1_MACRO
+      minimum_successful_seeds: 3
+      tie_break:
+      - SMALLEST_ABS_DISTANCE_TO_0P5
+      - LOWER_PROBABILITY
+      test_set_access: PROHIBITED
+      selected_value_scope: DATASET_SPECIFIC
+      selection_frozen_before_test: true
+      rationale: Compact symmetric grid around the conventional Braindecode transform-application
+        probability 0.5; task-dependent augmentation is selected on legal validation
+        evidence.
+      tie_break_reference_probability: 0.5
+    segment_count_resolution:
+      type: BRAINCDECODE_PUBLIC_API_AUTO_N_SEGMENTS
+      requested_n_segments: null
+      pinned_package: braindecode==1.6.1
+      resolver: SegmentationReconstruction(probability=<candidate>, n_segments=None,
+        random_state=<derived>).get_augmentation_params
+      fixture_fallback: DOCUMENTED_DIVISOR_RULE_ONLY_FOR_NON_SCIENTIFIC_FIXTURE
+      test_set_access: NONE
+    seed_namespace: IHARQ:P02:L2:EEGNET:SEGMENTATION_RECONSTRUCTION:R2
+    seed_derivation: SHA256(namespace|dataset_id|model_seed|model_repeat_index|epoch_index|probability_candidate)_FIRST8_HEX_MOD_2P31_MINUS1_ZERO_TO_ONE
+    donor_pool_identity: SAME_DATASET_SAME_LEGAL_TRAINING_ROLE_SAME_TASK_SAME_CLASS_EXCLUDE_TARGET_WHEN_POSSIBLE
+    run_cell_condition_identity: P02-TRAIN-AUG-SR-EEGNET-FULL-R2-VALIDATION-RESOLVED
+    run_cells_frozen: true
+    run_cell_manifest: p02_training_policy_challenger_run_cells_R2.yaml
+    run_cell_count: 15
+    reuse_primary_selected_hyperparameters: true
+    augmentation_specific_model_hyperparameter_retuning: false
+    probability_calibration_is_internal_model_selection_not_new_run_cell: true
+    a4_eligible: false
+    p03_primary_eligible: false
+    diagnostic_only: true
+    evidence_regime: FULL_TRAIN
+    budget_id: FULL_TRAIN
+  class_weighting:
+    policy: VALIDATION_SELECTED_UNIFORM_VS_BALANCED_WHEN_TRAIN_COUNTS_UNEQUAL
+    trigger:
+      type: EXACT_TRAIN_COUNT_EQUALITY_THEN_VALIDATION_POLICY_COMPARISON
+      equal_counts_action: UNIFORM_NO_EXTRA_FIT
+      unequal_counts_action: COMPARE_UNIFORM_VS_BALANCED_ON_VALIDATION
+    balanced_formula:
+      type: SKLEARN_COMPUTE_CLASS_WEIGHT_BALANCED
+      formula: n_samples / (n_classes * class_count)
+      normalization: NONE_BEYOND_SKLEARN_BALANCED_FORMULA
+      source_labels: LEGAL_FIT_ROLE_ONLY
+    eligible_branch_rule: ANY_SELECTED_BRANCH_WITH_NATIVE_OR_VERIFIED_CLASS_WEIGHT_SUPPORT
+    native_supported_branches:
+    - DIAG-LOGVAR
+    - CLS-FBCSP-LR
+    - RIE-TS-LR
+    - RIE-EA-TS
+    - DNN-EEGNET
+    - DNN-EGTC
+    - DNN-SEQ_EEGCONFORMER_FALLBACK
+    conditional_external_branch_rule: IF_COUNTS_UNEQUAL_AND_ADAPTER_DOES_NOT_DECLARE_CLASS_WEIGHT_SUPPORT_THEN_INPUT_INCOMPATIBLE_FAIL_CLOSED
+    selection:
+      stage: POST_HYPERPARAMETER_PRE_TEST_TRAINING_POLICY_CHECK
+      same_selected_hyperparameters: true
+      same_model_seed: true
+      same_train_role: true
+      same_validation_role: true
+      primary_metric: BACC
+      secondary_metric: F1_MACRO
+      tie_break: UNIFORM_NO_WEIGHT
+      test_set_access: PROHIBITED
+    low_label_equal_per_class_short_circuit: true
+    record_counts_weights_validation_metrics_and_selected_policy: true
+    unsupported_branch_action: IF_COUNTS_UNEQUAL_AND_BRANCH_HAS_NO_GOVERNED_CLASS_WEIGHT_SUPPORT_THEN_KEEP_UNWEIGHTED_ONLY_IF_WEIGHTING_IS_NOT_APPLICABLE_TO_THAT_CLASSIFIER;
+      IF_BRANCH_CLAIMS_SUPPORT_BUT_CANNOT_EXECUTE_THEN_FAIL_CLOSED
+    scope_note: Do not retrofit weighting into classifiers with no native/verified
+      class-weight mechanism (e.g. LDA/MDM); apply validation selection only where
+      the existing selected classifier/loss supports it without changing algorithm
+      family.
+  official_A0_A4_cell_count_unchanged: 1896
+  separate_training_policy_challenger_cells: 15

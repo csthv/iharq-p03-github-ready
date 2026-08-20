@@ -1,0 +1,190 @@
+{
+  "stage_id": "01",
+  "status": "SUCCESS",
+  "attempt_id": "d4ab0101ea08",
+  "inputs": {},
+  "input_hashes": {},
+  "outputs": {
+    "status": "PASS",
+    "resources": {
+      "python": "3.12.13",
+      "cpu_count": 4,
+      "disk_total_gib": 19.518142700195312,
+      "disk_free_gib": 19.49448013305664,
+      "ram_probe_status": "PASS",
+      "cuda_probe_status": "PASS",
+      "ram_total_gib": 31.347736358642578,
+      "ram_available_gib": 29.438579559326172,
+      "cuda_available": true,
+      "gpu_name": "Tesla T4",
+      "vram_total_gib": 14.56219482421875,
+      "status": "PASS",
+      "disk_requirement_gib": 8.0,
+      "recommended_neural_batch_size": 64,
+      "effective_batch_target": 64
+    },
+    "environment": {
+      "status": "PASS",
+      "packages": [
+        {
+          "distribution": "moabb",
+          "expected": "1.5.0",
+          "actual": "1.5.0",
+          "probe_status": "PASS",
+          "status": "PASS"
+        },
+        {
+          "distribution": "mne",
+          "expected": "1.12.1",
+          "actual": "1.12.1",
+          "probe_status": "PASS",
+          "status": "PASS"
+        },
+        {
+          "distribution": "numpy",
+          "expected": "2.2.6",
+          "actual": "2.2.6",
+          "probe_status": "PASS",
+          "status": "PASS"
+        },
+        {
+          "distribution": "scipy",
+          "expected": "1.15.3",
+          "actual": "1.15.3",
+          "probe_status": "PASS",
+          "status": "PASS"
+        },
+        {
+          "distribution": "pandas",
+          "expected": "2.3.1",
+          "actual": "2.3.1",
+          "probe_status": "PASS",
+          "status": "PASS"
+        },
+        {
+          "distribution": "scikit-learn",
+          "expected": "1.7.1",
+          "actual": "1.7.1",
+          "probe_status": "PASS",
+          "status": "PASS"
+        },
+        {
+          "distribution": "h5py",
+          "expected": "3.14.0",
+          "actual": "3.14.0",
+          "probe_status": "PASS",
+          "status": "PASS"
+        },
+        {
+          "distribution": "pooch",
+          "expected": "1.8.2",
+          "actual": "1.8.2",
+          "probe_status": "PASS",
+          "status": "PASS"
+        },
+        {
+          "distribution": "PyYAML",
+          "expected": "6.0.2",
+          "actual": "6.0.2",
+          "probe_status": "PASS",
+          "status": "PASS"
+        },
+        {
+          "distribution": "pydantic",
+          "expected": "2.11.7",
+          "actual": "2.11.7",
+          "probe_status": "PASS",
+          "status": "PASS"
+        },
+        {
+          "distribution": "jsonschema",
+          "expected": "4.25.0",
+          "actual": "4.25.0",
+          "probe_status": "PASS",
+          "status": "PASS"
+        },
+        {
+          "distribution": "nbformat",
+          "expected": "5.10.4",
+          "actual": "5.10.4",
+          "probe_status": "PASS",
+          "status": "PASS"
+        },
+        {
+          "distribution": "pytest",
+          "expected": "8.4.1",
+          "actual": "8.4.1",
+          "probe_status": "PASS",
+          "status": "PASS"
+        },
+        {
+          "distribution": "torch",
+          "expected": "2.13.0",
+          "actual": "2.13.0",
+          "probe_status": "PASS",
+          "status": "PASS"
+        },
+        {
+          "distribution": "braindecode",
+          "expected": "1.6.1",
+          "actual": "1.6.1",
+          "probe_status": "PASS",
+          "status": "PASS"
+        },
+        {
+          "distribution": "pyriemann",
+          "expected": "0.12",
+          "actual": "0.12",
+          "probe_status": "PASS",
+          "status": "PASS"
+        },
+        {
+          "distribution": "huggingface-hub",
+          "expected": "1.24.0",
+          "actual": "1.24.0",
+          "probe_status": "PASS",
+          "status": "PASS"
+        },
+        {
+          "distribution": "safetensors",
+          "expected": "0.8.0",
+          "actual": "0.8.0",
+          "probe_status": "PASS",
+          "status": "PASS"
+        }
+      ],
+      "python": "3.12.13"
+    },
+    "credentials": {
+      "credential_required": true,
+      "credential_available": true,
+      "credential_source_type": "ENVIRONMENT_SECRET_PROVIDER"
+    },
+    "artifact": "stage_artifacts/01_environment.json"
+  },
+  "output_hashes": {
+    "status": "727e9bd17b077ba162e13ba877135cc6fbc6b30f83da0b34b3e20233f1cc885f",
+    "resources": "a2e50f16849089f9e41057c46c5ac57f7b2e024f2f8e0cb56c8a04ed8f03f561",
+    "environment": "9dcecb5e42c1a90475157d9b3ce64209b0e921a0b88172ba22b0d11223f19f9b",
+    "credentials": "2793dcc16a62b1bef8ce81dd225afc1528c6eefff6cefd5311ab893f13876a64",
+    "artifact": "2a9a1a02dd96cd249b5c11329fea49c03f59cb657a33eb2b547e37fae311fd3c"
+  },
+  "dependencies": [
+    "00"
+  ],
+  "elapsed_seconds": 0.031076669692993164,
+  "log_path": "logs/stage_01_d4ab0101ea08.log",
+  "heartbeat_write_errors": [],
+  "observability_status": "PASS",
+  "blockers": [],
+  "observations": [],
+  "revision_fingerprint": {
+    "notebook_revision": "R4",
+    "notebook_id": "IHARQ-P02-COMPLETE-EXECUTION-AND-ANALYSIS-R4",
+    "source_sha256": "a54bfa816acc6763c1d1042b8c65cf54ae04ec774c57ec50de86014a6730c5fa",
+    "config_sha256": "d82334535e397c681d6172694da96d3fff0143ffb1b63a18876ee1f7778f60a1",
+    "stage_plan_sha256": "043eb30e008af910d37c563e8be8c719ef881cf009aec3e34687dc97bdc34aad",
+    "scientific_freeze_sha256": "7449216c988eec14191ba85300d720547f06fbc6ac7020e9e142bf12a4b0a598",
+    "scientific_freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5"
+  }
+}

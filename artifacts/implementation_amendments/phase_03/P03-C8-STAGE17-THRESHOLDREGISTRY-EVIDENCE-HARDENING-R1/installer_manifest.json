@@ -1,0 +1,69 @@
+{
+  "canonical_index_path": "artifacts/manifests/phase_03/threshold_registry_index.json",
+  "canonical_products_after_successful_stage17": [
+    "P03-PROD-030:ThresholdRegistryRecord",
+    "P03-PROD-031:ThresholdRegistryIndex"
+  ],
+  "canonical_record_root": "artifacts/records/phase_03/ThresholdRegistryRecord/P03-C8-STAGE17-THRESHOLDREGISTRY-EVIDENCE-HARDENING-R1",
+  "config_changed": false,
+  "expected_ablation_feature_counts": {
+    "A2:confidence": 194,
+    "A3:confidence": 194,
+    "A3:normalized_entropy": 194,
+    "A3:top1_top2_margin": 194
+  },
+  "expected_explicit_no_rule_skips": 364,
+  "expected_terminal_children_accounted": 1140,
+  "expected_threshold_records": 776,
+  "hardening_id": "P03-C8-STAGE17-THRESHOLDREGISTRY-EVIDENCE-HARDENING-R1",
+  "labels_exported": false,
+  "lineage_parents": {
+    "Stage13_UncertaintyRecord": 855,
+    "Stage15_A2_SelectivePredictionRecord": 194,
+    "Stage16_A3_SelectivePredictionRecord": 582,
+    "Stage16_A3_SelectivePredictionRecord_family_manifest_sha256": "e78c2f82ea24685930dcd1134974e520d00221ff35674c9e9ccc09d5884b14f1"
+  },
+  "maxq_fix_id": "P03-C8-MAXQ-STAGE17-THRESHOLDREGISTRY-HARDENED-AUDIT-R1",
+  "mutable_latest_prohibited": true,
+  "permitted_consumers": [
+    "P04",
+    "P05",
+    "P06",
+    "P07",
+    "P08",
+    "P09",
+    "P10",
+    "P11",
+    "P12",
+    "P13",
+    "P14",
+    "P15"
+  ],
+  "preexecution_selftests": {
+    "full_exact_resolution_count": 776,
+    "full_thresholdstore_registration_count": 776,
+    "negative_resolution_fail_closed": true,
+    "synthetic_governed_record_contract": true,
+    "synthetic_governed_record_payload_sha": true,
+    "synthetic_governed_record_schema": true
+  },
+  "protocol_changed": false,
+  "run_id": "P03-L3-OFFICIAL-09ca82c743e0411a",
+  "schema_id": "P03Stage17ThresholdRegistryProspectiveHardeningInstallerManifest.v1",
+  "schema_version": "1.0.0",
+  "scientific_handler_changed": false,
+  "scientific_handler_module": "iharq_p03_l3_norule_runtime_amendment_r1",
+  "scientific_handler_sha256": "6d92716b5762cbd99e28ff083a81b69df90e9da7ee5f891e12c82cd87a498c38",
+  "scientific_method_changed": false,
+  "scientific_worker_changed": false,
+  "selection_role": "threshold_validation",
+  "stage16_high_boundary": {
+    "independent_forensic_summary_sha256": "638144c637506d322dcdbd559c107d08dead8cd7989298e4bfbb538e0c16aecd",
+    "r5_receipt_sha256": "ef4c2c9f6128c73266464262c4d8a76ae814a65b468ab6c64d675f236118b10f",
+    "raw_curve_sha256": "62ab9ae320efc8d54372167e830811e20b201a9866d4884b0e8ea49a18c6ddfa"
+  },
+  "stage17_executed": false,
+  "stage18_executed": false,
+  "stage_id": "17",
+  "status": "PASS"
+}

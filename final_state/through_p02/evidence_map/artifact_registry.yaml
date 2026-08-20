@@ -1,0 +1,704 @@
+canonical_map_id: IHARQ-CUMULATIVE-EVIDENCE-MAP-THROUGH-P02-R1
+artifacts:
+- artifact_id: AUTH-ART-001
+  phase: CUMULATIVE
+  producer: IHARQ
+  artifact_type: PROTOCOL_AUTHORITY
+  canonical_status: CURRENT_OR_PRESERVED_PREDECESSOR
+  path_or_pointer: /mnt/data/IHARQ_Protocol_v1_0_Final_Through_Phase_02_R1/IHARQ_Protocol_v1_0_Final_Through_Phase_02_R1.md
+  sha256: d993b3b4bf9dc1afc0cbb2eb3c5b173e6ec90957b039d6c6151471962876664b
+  size_bytes: 239761
+  analysis_role: PROTOCOL_AUTHORITY
+  consumer:
+  - Layer0
+  - EvidenceMap
+  - Layer10
+- artifact_id: AUTH-ART-002
+  phase: CUMULATIVE
+  producer: IHARQ
+  artifact_type: CUMULATIVE_PHASE_ANALYSIS
+  canonical_status: CURRENT_OR_PRESERVED_PREDECESSOR
+  path_or_pointer: /mnt/data/IHARQ_Cumulative_Phase_Evidence_Results_and_Interpretation_Through_P02_Final_R1/IHARQ_Cumulative_Phase_Evidence_Results_and_Interpretation_Through_P02_Final_R1.md
+  sha256: 7167255b64e9e33e140978a2117caebab630ba99f2f7660d2077c0e60cbdffed
+  size_bytes: 319072
+  analysis_role: CUMULATIVE_PHASE_ANALYSIS
+  consumer:
+  - Layer0
+  - EvidenceMap
+  - Layer10
+- artifact_id: AUTH-ART-003
+  phase: CUMULATIVE
+  producer: IHARQ
+  artifact_type: P02_PHASE_ANALYSIS
+  canonical_status: CURRENT_OR_PRESERVED_PREDECESSOR
+  path_or_pointer: /mnt/data/IHARQ_Phase_02_Evidence_Results_and_Interpretation_Report_Final_R2/IHARQ_Phase_02_Evidence_Results_and_Interpretation_Report_Final_R2.md
+  sha256: 787c535acfc34979792d1e15a86047bfcf48d7870e2baa64afd6f7e08b667d22
+  size_bytes: 141008
+  analysis_role: P02_PHASE_ANALYSIS
+  consumer:
+  - Layer0
+  - EvidenceMap
+  - Layer10
+- artifact_id: AUTH-ART-004
+  phase: CUMULATIVE
+  producer: IHARQ
+  artifact_type: PREDECESSOR_EVIDENCE_MAP
+  canonical_status: CURRENT_OR_PRESERVED_PREDECESSOR
+  path_or_pointer: /mnt/data/IHARQ_Cumulative_Evidence_Map_Through_P01_Final(2).zip
+  sha256: f5d435a4429fb0a376cca6958c66924208cea0a4fbbd09c281e6aa3c173221aa
+  size_bytes: 182718
+  analysis_role: PREDECESSOR_EVIDENCE_MAP
+  consumer:
+  - Layer0
+  - EvidenceMap
+  - Layer10
+- artifact_id: AUTH-ART-005
+  phase: CUMULATIVE
+  producer: IHARQ
+  artifact_type: PREDECESSOR_LAYER10
+  canonical_status: CURRENT_OR_PRESERVED_PREDECESSOR
+  path_or_pointer: /mnt/data/IHARQ_Cumulative_Layer10_Through_P01_Final(2).zip
+  sha256: 02377e2e67ea553efe6bb3e43b95c9351d32b3efe5283674807b47549f65f632
+  size_bytes: 2413405
+  analysis_role: PREDECESSOR_LAYER10
+  consumer:
+  - Layer0
+  - EvidenceMap
+  - Layer10
+- artifact_id: P02-ANALYSIS-INPUT-001
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/a0_completion.json
+  sha256: 2e925e6e5fa223a518777f8b9cfa565b897c89ea9cfcdc2ae9bc54c32df1eb7e
+  size_bytes: 1029
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-002
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/a0_closure_source_manifest.json
+  sha256: 4d1d0ab5494e8a0a040cd5443f4cbba339cc1e4b009df0ca9e06df765837f1c6
+  size_bytes: 525
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-003
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/a0_participant_metrics.csv
+  sha256: 6497ec474de6ba4750377af268ae79b0c13f25813006aa687505d3ee3d82fccd
+  size_bytes: 732426
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-004
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/a0_statistics.json
+  sha256: 06200e70d3a1af4a4f4a12d35f03998a4681c7c0cab983199ee96eab7a947390
+  size_bytes: 15913
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-005
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/a4_completion.json
+  sha256: 0489a31df63523e5df1264fd2c1cf1738b6978ca4bc91fada20fab26a0cfcb90
+  size_bytes: 1245
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-006
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/a4_participant_metrics.csv
+  sha256: be0b5814900ead978ec6393e62bf06c22446cf9ce26747d6c15a46f28163b51c
+  size_bytes: 847399
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-007
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/a4_role_control_statistics.json
+  sha256: 2a2ea0c4f0b8c0d98caaec28544907de07112b74ea6c5e22874b02012b046688
+  size_bytes: 613986
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-008
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/a4_role_control_participant_comparisons.csv
+  sha256: 75cc212bc1f971e3b52a84181b9760708da03051d647fd8f8e6ef17b0420583d
+  size_bytes: 180508
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-009
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/a4_c4_c5_statistics.json
+  sha256: d713c65a0d90a4628e763ac8e1f47c2706868bb9ce61813a32fd0e46d0c35f18
+  size_bytes: 379930
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-010
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/a4_c4_c5_comparison_artifacts.jsonl
+  sha256: 82337c19356ea1cd57ac9f43d84bcac7583f640ff709b537212ea12153654c7d
+  size_bytes: 448075
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-011
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/a4_c4_c5_participant_comparisons.csv
+  sha256: 0559b86009e53f7e859634edf065516c0344e9b7471a54a9c3d954b5e2db40e9
+  size_bytes: 201170
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-012
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/a4_burden_source.csv
+  sha256: c56dc18edc73e0b606fd2f806fe39e40433b7fa30d1a95729f7ae7184f102406
+  size_bytes: 301185
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-013
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/low_label_curve_summary.json
+  sha256: 4ab8f190fdf84ef956614cea458b35fcf2b5b10c4d415953a2b77683572924d7
+  size_bytes: 1661
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-014
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/low_label_metric_source.csv
+  sha256: 0123b1513da263b8c468024a1d28532d1fbc52e5faffb2bdc00e285b5213f901
+  size_bytes: 28686
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-015
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/subject_profile_summary.json
+  sha256: 2b27818f56a4f9116c358eb21a509302506ca06bf7afce7dbd76d466e372f977
+  size_bytes: 179
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-016
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/subject_profile_metric_source.csv
+  sha256: 6497ec474de6ba4750377af268ae79b0c13f25813006aa687505d3ee3d82fccd
+  size_bytes: 732426
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-017
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/session_profile_metric_source.csv
+  sha256: 28e6416ddf80967582d32f5f047ec3c1239a240b01aff7507754537269ea397a
+  size_bytes: 785609
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-018
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/failure_negative_summary.json
+  sha256: 678b0675cc24a5ab264523909f1b25b23a545f7a7e5aaa4c93e0bac1d65850ae
+  size_bytes: 186
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-019
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/figure_table_source_manifest.json
+  sha256: 4b6e51d6f47006a477655dc48f427762474536514d094d4973a347edeea51f0b
+  size_bytes: 191
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-020
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/training_policy_challenger_completion.json
+  sha256: bdb5061233ec7a07abad1c16cdab9a2948dbe1b585845153618f31933a64abcd
+  size_bytes: 839
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-021
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/training_policy_challenger_statistics.json
+  sha256: 50c1c285493eeff60e1486cf324964e5b91a98e19ff00594bd4583e40af3ec0e
+  size_bytes: 1574
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-022
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/training_policy_challenger_participant_comparisons.jsonl
+  sha256: 9c8e2fb4587b62a6ce02f355acf75332a40d9e5e7174352b8a8c953460f4b0ee
+  size_bytes: 30402
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-023
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/training_policy_challenger_seed_comparisons.jsonl
+  sha256: 8bc89f18e36cab89b95d85c9b14c95b154bb4ee0276d5947eafa4e2bf021e590
+  size_bytes: 14479
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-024
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/training_policy_challenger_terminal_states.jsonl
+  sha256: d48e48e21db9c0a61dc2b4b41b9bce9627b7ca4beff02a012cf50a7533e00a7a
+  size_bytes: 3345
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-025
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/training_policy_sr_probability_calibration_candidates.jsonl
+  sha256: dc55adb57a81de640f401b2e422df768efb714d2b49ff9e1f4d41901cdb03d39
+  size_bytes: 59552
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-026
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/training_policy_sr_probability_selection.json
+  sha256: a9d885ba537c0213c95107bae09df161059a9645891cdfaf92e57478cc441ace
+  size_bytes: 6344
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-027
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/stage18_resource_constrained_anchor_budget_deviation.json
+  sha256: facc51d381f45ef9d924442b5190276d3ab723741ee34f60a686657aebde91f3
+  size_bytes: 3045
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-028
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/stage18S_balanced_sensitivity_R1_preexecution_freeze.json
+  sha256: 79187cfab12fcdc18187aed259733024abd4093a1d8327017e976fa9272775b5
+  size_bytes: 3095
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-029
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/stage18S_R1_combined_cell_effects.csv
+  sha256: e612a630e027cf01b041b2f4b35eef8879d9e4b85edd4031ae9b4cc970c99f32
+  size_bytes: 69010
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-030
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/stage18S_R1_participant_paired_effects.csv
+  sha256: cc6d349bdb69b3dc89deb5c675e4c65e3d2f8ccbc5bc78282b2894baf9ae14bc
+  size_bytes: 161029
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-031
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/stage18S_R1_three_repeat_anchor_stability.csv
+  sha256: 4490e4b1b24e53b2b4728487f54194b7608b4f3f4b6890c34f8b0edd27d0bce2
+  size_bytes: 13938
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-032
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/stage18S_R1_six_budget_mr00_sensitivity.csv
+  sha256: 3c1ddee8a5d6bacf1577c37d6775eef509ea920d59e4f766aa9ac0a4d4558686
+  size_bytes: 4075
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-033
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/stage18S_R1_member_training_provenance.csv
+  sha256: 48af59807df7f3586e9eb614223df8efeccd2ea71aaafc0380d586c2a5831723
+  size_bytes: 38250
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-034
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/stage18S_R1_training_provenance_summary.csv
+  sha256: 4216d07d415122c968cf392432f5a8537acdd0cbeeffafe8418d4758d6a5714c
+  size_bytes: 273
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-035
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/protocol_change_required/P02_PREEXECUTION_TRAINING_POLICY_AMENDMENT_R2.yaml
+  sha256: 9c909274fe27f6290f4d72b3717d69ea3af7830e4a506df421f1ddf3021b8afe
+  size_bytes: 5084
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-036
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/handoffs/stage18S_R1_sensitivity_evidence.json
+  sha256: c82185d89f47f2d1a2ae55f04c6c4053f057f89ef929faaabfbddfe24aef91fb
+  size_bytes: 1021
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-037
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/manifests/stage_artifacts/20_readiness.json
+  sha256: 76acc5f8bad25c0caa4a07e9de9ee938e50944ee8f6cad3d703039f38d09c564
+  size_bytes: 1042
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P02-ANALYSIS-INPUT-038
+  phase: P02
+  producer: P02 accepted execution
+  artifact_type: ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/manifests/record_partitions/Layer2ReadinessReport/P02-L2-READINESS-P03.json
+  sha256: 449827c9a6d6ef31d191a9eebf66283ccdc7df7be8e40f7880786aa9b4179df9
+  size_bytes: 850
+  run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  analysis_role: P02 Phase Analysis / Evidence Map
+  consumer:
+  - EvidenceMap
+  - Layer10 where selected
+- artifact_id: P01-L1-DERIVED-WINDOWS-d03f0a7c869dd95a-20260806222242-68a91473
+  phase: P01
+  producer: P01
+  artifact_type: EXTERNAL_NUMERICAL_DATASET
+  canonical_status: VALID_VERIFIED_POINTER
+  provider: Kaggle
+  path_or_pointer: csthv999z/iharq-p01-l1-derived-windows-d03f0a7c869d-20260806222242-68a91473
+  manifest_sha256: dc21f418e9a1add62adb346f627d5d729735a5f1ecaa1d771f6fa5cfede627e1
+  consumer:
+  - P02-P15
+  access: PRIVATE
+  credential_class: provider-specific P01 access; not rewritten by P02 HF contract
+- artifact_id: P01-L1-A4-DERIVED-WINDOWS-4cd080393345e8aa-20260807143013-663eab13
+  phase: P01
+  producer: P01
+  artifact_type: EXTERNAL_NUMERICAL_DATASET
+  canonical_status: VALID_VERIFIED_POINTER
+  provider: Kaggle
+  path_or_pointer: csthv999z/iharq-p01-l1-a4-d03f0a7c-9a7c6108
+  manifest_sha256: 29124d59907610b1545e0a2b5d1811a4d4a2bf1df64cad49aa880f4721c47305
+  consumer:
+  - P02-P15
+  access: PRIVATE
+  credential_class: provider-specific P01 access; not rewritten by P02 HF contract
+- artifact_id: P02-STAGE24-REPLAY-SOURCE-HF-SNAPSHOT-R1
+  phase: P02
+  producer: P02 Stage24
+  artifact_type: EXTERNAL_WORKSPACE_SNAPSHOT
+  canonical_status: PREFERRED_CONTINUATION_SOURCE
+  provider: Hugging Face
+  path_or_pointer: Csthv/p02-phase02-final-whole-working-20260814t052120z-b890ff92
+  immutable_revision: bc14961e14f2e48690e55df3577014275f9cbf30
+  manifest_path: __IHARQ_SNAPSHOT__/WORKING_TREE_MANIFEST.jsonl
+  manifest_sha256: 564bbb44e67d14da8457ad83d33651ded93dfc6b89ab90f10f78a36a20b8e8f5
+  per_object_index: release_metadata/all_artifact_location_index.csv
+  per_object_index_sha256: 540a0c3d4cbc686645ab1fccf088205c02c32a5c34e4b238c91f9c4ec119c12f
+  credential_class: IHARQ_HF_TOKEN_P02
+  retrieval_instructions:
+  - pin exact immutable revision
+  - verify working-tree manifest SHA-256
+  - resolve exact required path
+  - verify object bytes/SHA-256 against manifest/artifact-location index
+  remote_audit: REMOTE_NOT_ACCESSIBLE_PRIVATE
+  consumer:
+  - P03
+  - P04
+  - P05
+  - P06
+  - P07
+  - P08
+  - P09
+  - P10
+  - P11
+  - P12
+  - P13
+  - P14
+  - P15
+  - reproduction
+- artifact_id: P02-STAGE24-ARCHIVAL-CHUNKED-RELEASE-R2
+  phase: P02
+  producer: P02 Stage24
+  artifact_type: EXTERNAL_ARCHIVAL_RELEASE
+  canonical_status: ARCHIVAL_FALLBACK
+  provider: Hugging Face
+  path_or_pointer: Csthv/iharq-p02-phase02-r2-P02-L2-OFFICIAL-RUN-R4DY-20260814t051352z
+  immutable_revision: 257a407b5c7ea37b6c620863ee261c010c8f197c
+  content_revision: bc88dccd6518aa7b172697be1ef98344997f27ff
+  manifest_revision: c60c0505faa8076090439277ed1d8ef8c86734b7
+  credential_class: IHARQ_HF_TOKEN_P02
+  retrieval_instructions:
+  - authenticate with IHARQ_HF_TOKEN_P02
+  - pin exact final release revision; use recorded content/manifest revisions for release reconstruction
+  - resolve exact uploaded object path
+  - verify object size and SHA-256 against this contract and Stage24 receipts
+  - do not substitute mutable latest
+  remote_audit: REMOTE_NOT_ACCESSIBLE_PRIVATE
+  consumer:
+  - P03
+  - P04
+  - P05
+  - P06
+  - P07
+  - P08
+  - P09
+  - P10
+  - P11
+  - P12
+  - P13
+  - P14
+  - P15
+  - reproduction
+  - archival reconstruction
+  uploaded_objects:
+  - path: phase_02/execution_bundle_packages/execution_bundle_package_0001.zip
+    size_bytes: 519305980
+    sha256: c380edff3afe44137afea8a3bb70699bb3a3885c3363198eebf93aad66f23805
+    artifact_id: P02-STAGE24-ARCHIVE-OBJECT-01
+  - path: phase_02/heavy_packages/heavy_artifacts_package_0001.zip
+    size_bytes: 2894348079
+    sha256: 5032ab8785b36044d8f8d1635c02fbb10bfca714bb9ecb16223c3d2cf76f1dcf
+    artifact_id: P02-STAGE24-ARCHIVE-OBJECT-02
+  - path: phase_02/heavy_packages/heavy_artifacts_package_0002.zip
+    size_bytes: 2893314005
+    sha256: c596b502ff154c494cdcfa047826617354962f8209c2fbcffe71f79671ed4296
+    artifact_id: P02-STAGE24-ARCHIVE-OBJECT-03
+  - path: phase_02/heavy_packages/heavy_artifacts_package_0003.zip
+    size_bytes: 2898992543
+    sha256: b0778b61170d6998102bf9c471b2133697e61cafbddc16ab67e52dad40f48bf2
+    artifact_id: P02-STAGE24-ARCHIVE-OBJECT-04
+  - path: phase_02/heavy_packages/heavy_artifacts_package_0004.zip
+    size_bytes: 763895568
+    sha256: 0b0263c867fea1edd4362deee1d7607f9713ec4135ebda4a441729b6ca4273ef
+    artifact_id: P02-STAGE24-ARCHIVE-OBJECT-05
+  - path: phase_02/release_manifests/execution_bundle_multipart_manifest_R2.json
+    size_bytes: 3797
+    sha256: 8f68c1a298414eabd413b0ae6acb49ab35c2524fb63963420376a23d1e698a48
+    artifact_id: P02-STAGE24-ARCHIVE-OBJECT-06
+  - path: phase_02/release_manifests/external_artifact_pointer_manifest_R2.json
+    size_bytes: 7791281
+    sha256: 765e4d1e4dd12bdc85c4e7435405f04a0bf00ee65d79fa6444e2bdf47e64698b
+    artifact_id: P02-STAGE24-ARCHIVE-OBJECT-07
+  - path: phase_02/release_manifests/external_artifact_pointer_manifest_R2.yaml
+    size_bytes: 6775406
+    sha256: b6b2581cc00ee89669b4924c709f7c7e313afcae1425dc81349f7ffad80e979c
+    artifact_id: P02-STAGE24-ARCHIVE-OBJECT-08
+  - path: phase_02/release_packages/cumulative_project_state/IHARQ_Project_State_After_Phase_02_R2.zip
+    size_bytes: 118117660
+    sha256: b4f1d12b0fb37faf908a3eadd2d6a43d52efbe7a2601220a030ffd6858b9b8cc
+    artifact_id: P02-STAGE24-ARCHIVE-OBJECT-09
+  - path: phase_02/release_packages/github_ready/IHARQ_Cumulative_GitHub_Ready_Through_P02_R2.zip
+    size_bytes: 118118899
+    sha256: 2052eff12f5ec4054305577de7557049db45a52118e65d9300b318761c406839
+    artifact_id: P02-STAGE24-ARCHIVE-OBJECT-10
+credential_classes:
+  pre_p02:
+    secret_name: IHARQ_HF_TOKEN_PRE_P02
+    scope: P00/P01 and pre-P02 private Hugging Face assets
+    literal_value_prohibited: true
+  p02:
+    secret_name: IHARQ_HF_TOKEN_P02
+    scope: P02 full-workspace snapshot and P02 archival release
+    literal_value_prohibited: true
+single_hf_token_assumption_prohibited: true

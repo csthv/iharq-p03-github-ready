@@ -1,0 +1,21 @@
+{
+  "run_cell_id": "P02-A4-BNCI2014_001-SSL-A4-C0-CORE-FULL_TRAIN-MR01",
+  "ablation_id": "A4",
+  "terminal_status": "SUCCESS",
+  "resolved_branch": "SSL-CBRAMOD",
+  "prediction_partition": "records/PredictionRecord/dataset=BNCI2014_001/branch=SSL-CBRAMOD/budget=FULL_TRAIN/P02-A0-BNCI2014_001-SSL-CBRAMOD-FULL_TRAIN-MR01.jsonl",
+  "metric_source": "metrics/P02-A0-BNCI2014_001-SSL-CBRAMOD-FULL_TRAIN-MR01.json",
+  "checkpoint_sha256": "1486ff27d5a94ad2f1d0321b1833f5438358284a4d5b8f2d76d69ec277a66566",
+  "observed_denominator": 288,
+  "burden": {
+    "evidence_duration_s": 3.0,
+    "observation_horizon_s": 3.0,
+    "model_or_view_evaluations": 1,
+    "member_count": 1,
+    "aggregation_operation": "DIRECT_CORE",
+    "batch1_latency_median_s": 0.009924398000293877,
+    "batch1_latency_p95_s": 0.010112490000028628,
+    "aggregation_latency_s": 0.0
+  },
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

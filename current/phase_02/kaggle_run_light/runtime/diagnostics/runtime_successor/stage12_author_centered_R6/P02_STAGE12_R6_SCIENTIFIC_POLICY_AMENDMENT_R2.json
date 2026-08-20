@@ -1,0 +1,92 @@
+{
+  "DNN_EGTC": "CONDITIONAL_SKIP_WHILE_DBCONFORMER_ADMITTED",
+  "P01_usage": {
+    "FULL_TRAIN": "exact train role only",
+    "LOW_LABEL": "exact frozen calibration-role nested budget membership only",
+    "P01_bytes_mutated": false,
+    "test": "final evaluation only after candidate policy is frozen",
+    "validation": "selection/early-stopping only"
+  },
+  "REVE": "BLOCKED_KNOWN_P02_OVERLAP_PRESERVED",
+  "REVE_R6_terminal_surface": "EXPLICIT_SCIENTIFIC_OVERLAP_DEPENDENCY_BLOCK",
+  "REVE_legacy_admission_probe": {
+    "interpretation": "LEGACY_TECHNICAL_FAIL_CLOSED_IS_COMPATIBLE_WITH_SEPARATE_FROZEN_SCIENTIFIC_OVERLAP_BLOCK",
+    "legacy_admission": {
+      "reason": "IMMUTABLE_IMPLEMENTATION_MODULE_NOT_ATTACHED",
+      "resolved_variant": "REVE",
+      "status": "DEPENDENCY_BLOCKED"
+    },
+    "scientific_authority": "BLOCKED_KNOWN_P02_OVERLAP"
+  },
+  "artifact_id": "P02-STAGE12-R6-SCIENTIFIC-POLICY-AMENDMENT-R2",
+  "candidate_policy": "ONE_PREDECLARED_AUTHOR_CENTERED_RECIPE_PER_ACTIVE_EXTERNAL_BRANCH",
+  "change_authority": "USER_AUTHORIZED_POST_STAGE12_VALIDATION_ONLY_FORENSIC_REPAIR",
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "created_utc": "2026-08-10T17:40:20.696614+00:00",
+  "diagnostic_mode_C_promoted": false,
+  "diagnostic_mode_C_role": "NON_CLAIM_BEARING_REPAIR_EVIDENCE_ONLY",
+  "early_stop_metric": "validation_BACC",
+  "max_epochs": 150,
+  "min_delta": 0.0,
+  "parent_runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R5R-STAGE12-RESOURCE-OPTIMIZED-EXTERNAL-MODEL-LIVE-CONTINUATION",
+  "patience": 40,
+  "primary_augmentation": "NONE",
+  "recipes": {
+    "DNN-FBCNET": {
+      "batch_size": 16,
+      "grad_clip": null,
+      "input_scale": 1.0,
+      "label_smoothing": 0.0,
+      "lr": 0.001,
+      "optimizer": "Adam",
+      "recipe_id": "R6-FBCNET-ORIGINAL-AUTHOR-P01-COMPAT",
+      "scheduler": "constant",
+      "use_data_parallel": false,
+      "weight_decay": 0.0
+    },
+    "DNN-SEQ": {
+      "batch_size": 32,
+      "grad_clip": null,
+      "input_scale": 1.0,
+      "label_smoothing": 0.0,
+      "lr": 0.001,
+      "optimizer": "Adam",
+      "recipe_id": "R6-DBCONFORMER-ORIGINAL-AUTHOR-P01-COMPAT",
+      "scheduler": "constant",
+      "use_data_parallel": false,
+      "weight_decay": 0.0
+    },
+    "SSL-CBRAMOD": {
+      "batch_size": 64,
+      "body_lr": 0.0001,
+      "data_parallel_max_gpus": 2,
+      "data_parallel_min_samples": 256,
+      "eta_min": 1e-06,
+      "grad_clip": 1.0,
+      "head_lr": 0.0005,
+      "input_scale": 10000.0,
+      "label_smoothing": 0.1,
+      "lr": 0.0001,
+      "optimizer": "AdamW",
+      "recipe_id": "R6-CBRAMOD-SOURCE-CENTERED-P01-VOLTS-TO-AUTHOR-SCALE",
+      "scheduler": "cosine",
+      "use_data_parallel": true,
+      "weight_decay": 0.05
+    }
+  },
+  "resource_policy": {
+    "AMP": false,
+    "CBraMod_DataParallel": "up to 2 GPUs, same global batch 64, only when training n>=256",
+    "DBConformer_DataParallel": false,
+    "FBCNet_DataParallel": false,
+    "TF32_policy_changed": false,
+    "global_batch_enlarged_to_fill_VRAM": false,
+    "precision_changed": false,
+    "prep_cache": "4_GiB_LRU",
+    "reason_not_enlarged": "Global batch is part of the optimization recipe; enlarging it would change scientific training dynamics. GPU memory headroom alone is not authority to change batch.",
+    "torch_compile": false
+  },
+  "restore_best": true,
+  "runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R6-STAGE12-AUTHOR-CENTERED-TRAINING-AND-CBRAMOD-SCALE-REPAIR",
+  "scientific_configuration_changed": true
+}

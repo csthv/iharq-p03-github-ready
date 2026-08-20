@@ -1,0 +1,635 @@
+{
+  "validation_id": "P02-AUTHORING-STATIC-VALIDATION-R5-HF-CONDITIONAL-ASSETS",
+  "status": "PASS",
+  "checks_total": 91,
+  "checks_pass": 91,
+  "checks_fail": 0,
+  "structured_counts": {
+    "json": 36,
+    "yaml": 56,
+    "csv": 27
+  },
+  "rows": [
+    {
+      "check": "exists:README.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:requirements-kaggle.txt",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:notebook/IHARQ_Phase_02_Complete_Execution_and_Analysis_R4_HF_R1.ipynb",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:src/iharq/layer2_decoders/hf_assets.py",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:src/iharq/layer2_decoders/hf_cbramod_adapter.py",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:configs/phase_02/models/huggingface_assets.yaml",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:docs/HUGGINGFACE_CONDITIONAL_ASSET_POLICY_R1.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:docs/KAGGLE_RUN_GUIDE_R5_HF.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:P02_HF_OPERATIONAL_RELEASE_MANIFEST_R5.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:P02_KAGGLE_PREEXECUTION_AUDIT_FINAL_CERTIFICATION_R4.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:notebook/IHARQ_Phase_02_Complete_Execution_and_Analysis_R4.ipynb",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:src/iharq/layer2_decoders/orchestration.py",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:src/iharq/layer2_decoders/training_policy.py",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:src/iharq/layer2_decoders/scientific.py",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:configs/phase_02/phase.yaml",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:configs/phase_02/training_policy_authority_bindings.yaml",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:contracts/P02_PREEXECUTION_TRAINING_POLICY_AMENDMENT_R2.yaml",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:docs/P02_FUTURE_PROTOCOL_BUILD_BOOK_SYNC_NOTE_R2.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:docs/P02_TRAINING_POLICY_EXTERNAL_EVIDENCE_NOTE_R2.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:machine_readable/p02_planned_scientific_execution_freeze_R5.yaml",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:machine_readable/p02_training_policy_challenger_run_cells_R2.yaml",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:machine_readable/p02_full_ablation_planned_run_cells_R3.yaml",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:machine_readable/p02_notebook_stage_plan_R4.yaml",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:validation/P02_FREEZE_CRITICAL_BLOCKER_REGISTER_R4.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:validation/P02_TRAINING_POLICY_BLOCKER_RESOLUTION_REGISTER_R4.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:validation/P02_TRAINING_POLICY_SOURCE_EXHAUSTION_R2.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:validation/P02_OTHER_SAME_CLASS_FREEZE_GAP_AUDIT_R4.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:validation/P02_TRAINING_POLICY_CODE_OWNERSHIP_AUDIT_R2.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:validation/P02_EXPANDED_FINAL_READINESS_R4.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:validation/P02_UPSTREAM_STATE_REVALIDATION_R4.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:validation/P02_AUDIT_SECTIONS_1_274_EXHAUSTION_R4.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:validation/P02_AUDIT_SECTIONS_1_274_EVIDENCE_LEDGER_R4.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:validation/P02_PROMPT_275_323_TRACEABILITY.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:validation/P02_STAGE_RUNTIME_IMPLEMENTATION_TRACEABILITY.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:validation/P02_A4_COMPARISON_TRACEABILITY.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:validation/P02_STAGE_TO_BUNDLE_TRACEABILITY.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:validation/full_stage_graph_synthetic_integration.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:validation/FIXTURE_NON_SCIENTIFIC_RUNTIME_BUNDLE.zip",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:validation/synthetic_test_results.txt",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exists:execution_bundle_schema/README.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "training_policy_binding",
+      "status": "PASS",
+      "detail": {
+        "status": "PASS",
+        "missing": [],
+        "blockers": []
+      }
+    },
+    {
+      "check": "sr_primary_unaugmented",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "sr_grid_frozen",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "sr_segments_auto",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "sr_final_cells_policy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "class_weight_algorithm",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "class_weight_scope_no_retrofit",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "scientific_freeze_R5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "freeze_binding_sync",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "full_ablation_1896",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "diagnostic_cells_15",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "production_handlers_26",
+      "status": "PASS",
+      "detail": [
+        "00",
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "18U",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24"
+      ]
+    },
+    {
+      "check": "branch_routing_16",
+      "status": "PASS",
+      "detail": {
+        "SAN-MAJ": "08",
+        "SAN-STRAT": "08",
+        "SAN-PERM": "08",
+        "SAN-PRIOR": "08",
+        "DIAG-LOGVAR": "08",
+        "CLS-CSP-LDA": "09",
+        "CLS-FBCSP-LR": "09",
+        "RIE-TS-LR": "10",
+        "RIE-EA-TS": "10",
+        "RIE-MDM": "10",
+        "DNN-EEGNET": "11",
+        "DNN-FBCNET": "12",
+        "DNN-SEQ": "12",
+        "DNN-EGTC": "12",
+        "SSL-CBRAMOD": "12",
+        "SSL-REVE": "12"
+      }
+    },
+    {
+      "check": "stage_plan_26",
+      "status": "PASS",
+      "detail": [
+        "00",
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "18U",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24"
+      ]
+    },
+    {
+      "check": "stage_plan_R5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "blockers_zero",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "blocker_resolution_R4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "source_exhaustion",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "same_class_gap_scan",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "code_ownership",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "readiness",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "upstream",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "sections_1_274",
+      "status": "PASS",
+      "detail": 274
+    },
+    {
+      "check": "evidence_1_274",
+      "status": "PASS",
+      "detail": 274
+    },
+    {
+      "check": "sections_275_323",
+      "status": "PASS",
+      "detail": 49
+    },
+    {
+      "check": "pytest_82",
+      "status": "PASS",
+      "detail": "........................................................................ [ 87%]\n..........                                                               [100%]\n82 passed, 8 warnings in 25.21s\n"
+    },
+    {
+      "check": "fixture_26",
+      "status": "PASS",
+      "detail": {
+        "status": "PASS",
+        "label": "FIXTURE_NON_SCIENTIFIC_NOT_P02_EVIDENCE",
+        "scientific_evidence": false,
+        "stages": 26,
+        "stage15_a0_closure": "PASS",
+        "stage15_training_policy_closure": "PASS",
+        "future_protocol_sync_artifacts": "PASS",
+        "stage18_a4_execution": "PASS",
+        "c1_c2_c3_vs_c0_closure": "PASS",
+        "c4_c5_vs_strongest_closure": "PASS",
+        "stage18u": "PASS",
+        "late_stage_chain": "PASS",
+        "runtime_checksums": {
+          "status": "PASS",
+          "rows": 311,
+          "missing": [],
+          "mismatch": []
+        },
+        "runtime_zip": {
+          "status": "PASS",
+          "sha256": "80a60ad89125d4bd58178119d94dfa07c240a29c2d36abb45ae633911098a9b6",
+          "bytes": 273050,
+          "members": 312,
+          "crc": "PASS",
+          "unsafe_paths": 0
+        },
+        "fixture_bundle_path": "validation/FIXTURE_NON_SCIENTIFIC_RUNTIME_BUNDLE.zip"
+      }
+    },
+    {
+      "check": "fixture_zip_crc",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "fixture_zip_paths",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "fixture_dynamic_artifacts",
+      "status": "PASS",
+      "detail": [
+        "protocol_change_required/P02_PREEXECUTION_TRAINING_POLICY_AMENDMENT_R2.yaml",
+        "protocol_change_required/P02_FUTURE_PROTOCOL_BUILD_BOOK_SYNC_NOTE_R2.md",
+        "protocol_change_required/P02_TRAINING_POLICY_EXTERNAL_EVIDENCE_NOTE_R2.md",
+        "analysis_inputs/training_policy_sr_probability_selection.json",
+        "analysis_inputs/training_policy_sr_probability_calibration_candidates.jsonl",
+        "analysis_inputs/training_policy_challenger_completion.json"
+      ]
+    },
+    {
+      "check": "fixture_sr_selector_success",
+      "status": "PASS",
+      "detail": {
+        "status": "PASS",
+        "selection_scope": "VALIDATION_ONLY",
+        "test_set_used": false,
+        "datasets": {
+          "PhysioNetMI": {
+            "status": "PASS",
+            "selected_probability": 0.5,
+            "candidate_summaries": [
+              {
+                "probability": 0.25,
+                "status": "ELIGIBLE",
+                "successful_seeds": 1,
+                "median_validation_BACC": 0.5,
+                "median_validation_F1_MACRO": 0.49650349650349646
+              },
+              {
+                "probability": 0.5,
+                "status": "ELIGIBLE",
+                "successful_seeds": 1,
+                "median_validation_BACC": 0.625,
+                "median_validation_F1_MACRO": 0.6190476190476191
+              },
+              {
+                "probability": 0.75,
+                "status": "ELIGIBLE",
+                "successful_seeds": 1,
+                "median_validation_BACC": 0.5,
+                "median_validation_F1_MACRO": 0.49650349650349646
+              }
+            ],
+            "selection_scope": "VALIDATION_ONLY",
+            "test_set_used": false,
+            "tie_break": [
+              "BACC",
+              "F1_MACRO",
+              "PROXIMITY_TO_0P5",
+              "LOWER_PROBABILITY"
+            ]
+          }
+        },
+        "candidate_grid": [
+          0.25,
+          0.5,
+          0.75
+        ],
+        "segment_count_policy": {
+          "type": "BRAINCDECODE_PUBLIC_API_AUTO_N_SEGMENTS",
+          "requested_n_segments": null,
+          "pinned_package": "braindecode==1.6.1",
+          "resolver": "SegmentationReconstruction(probability=<candidate>, n_segments=None, random_state=<derived>).get_augmentation_params",
+          "fixture_fallback": "DOCUMENTED_DIVISOR_RULE_ONLY_FOR_NON_SCIENTIFIC_FIXTURE",
+          "test_set_access": "NONE"
+        },
+        "official_A0_A4_cell_count_unchanged": 1896
+      }
+    },
+    {
+      "check": "huggingface_policy_id",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "huggingface_cbramod_governed",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "huggingface_reve_science_gate_beats_auth",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "huggingface_direct_token_no_login",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "huggingface_notebook_hidden_secret",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "huggingface_notebook_unexecuted",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "notebook_stage_cells_26",
+      "status": "PASS",
+      "detail": 26
+    },
+    {
+      "check": "notebook_unexecuted",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "notebook_unique_ids",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "notebook_R5_R2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "notebook_governance_dynamic",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "notebook_governance_ids",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "notebook_blocker_register_R4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "protocol_sync_dynamic",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "structured_parse",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "check": "security_scan",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "current_transient_paths_zero",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "check": "current_placeholders_zero",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "check": "current_fixed_policy_stale_refs_zero",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "check": "transient_files_zero",
+      "status": "PASS",
+      "detail": []
+    }
+  ],
+  "freeze_critical_blockers": 0
+}

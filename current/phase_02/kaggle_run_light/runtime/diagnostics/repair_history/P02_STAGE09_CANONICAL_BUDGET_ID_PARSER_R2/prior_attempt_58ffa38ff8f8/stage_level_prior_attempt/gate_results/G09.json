@@ -1,0 +1,10 @@
+{
+  "gate_id": "G09",
+  "stage_id": "09",
+  "status": "FAIL",
+  "evidence": "stage_ledger/stage_09.json",
+  "blockers": [
+    "ValueError:invalid literal for int() with base 10: 'P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS'"
+  ],
+  "observability_status": "PASS"
+}

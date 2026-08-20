@@ -1,0 +1,43 @@
+reuse:
+- item: P01 core data/split/preprocessing/window records
+  decision: REUSE_EXISTING_IMPLEMENTATION_AND_ARTIFACT
+  reason: immutable accepted P01 input
+- item: P01 A4 R2 substrate
+  decision: REUSE_EXISTING_IMPLEMENTATION_AND_ARTIFACT
+  reason: exact matched substrate; P02 evaluates ordinary controls
+- item: P00/P01 manifest/checksum/ID utilities
+  decision: REUSE_IMPLEMENTATION_WITH_NEW_PHASE_CONFIG
+  reason: infrastructure reusable
+- item: Layer2 package stub
+  decision: EXTEND_EXISTING_IMPLEMENTATION
+  reason: currently scientific execution disabled
+- item: PhaseConfig model
+  decision: EXTEND_EXISTING_IMPLEMENTATION
+  reason: currently Literal[P00] and no_empirical_execution=True
+- item: P02 config
+  decision: EXTEND_EXISTING_IMPLEMENTATION
+  reason: template-ready; stale P00 result_values text and empty artifact IDs
+- item: P02 record schemas
+  decision: CREATE/EXTEND SUCCESSOR PROFILES
+  reason: current physical schemas P00-locked; LowCalibration/SubjectProfile absent
+    physically
+gaps:
+- risk_id: R-P02-04
+  risk: P00 foundation schemas hard-coded to P00
+  probability: CERTAIN current gap
+  impact: HIGH
+  detection: schema/config audit
+  mitigation: immutable P02 successor/generalization; preserve P00 profiles
+  fallback: none for official P02; must repair before run
+  blocking: YES pre-run
+  owner: WP02
+- risk_id: R-P02-05
+  risk: cumulative repo legacy P00 tests reference historical moved paths
+  probability: CERTAIN current gap
+  impact: LOW scientific / MEDIUM CI
+  detection: pytest 23 pass / 3 fail
+  mitigation: make tests cumulative-aware or scope historical tests to predecessor
+    snapshot
+  fallback: current 40/40 cumulative +24/24 P01 verifiers remain authority
+  blocking: NO notebook design; fix before P02 CI freeze
+  owner: WP12

@@ -1,0 +1,806 @@
+document_id: IHARQ-PROTOCOL-V1-P02-RUN-MATRIX-R2
+protocol_annex_id: IHARQ-PROTOCOL-V1-P02-ANNEX-R2
+supersedes: IHARQ-PROTOCOL-V1-P02-RUN-MATRIX-R1
+phase_id: P02
+primary_layer: L2
+primary_layer_name: Decoder and Baseline Measurement Spine
+run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+identity:
+  run_config_sha256: 9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13
+  scientific_freeze_id: P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5
+  scientific_freeze_sha256: 7449216c988eec14191ba85300d720547f06fbc6ac7020e9e142bf12a4b0a598
+  notebook_logical_id: IHARQ-P02-COMPLETE-EXECUTION-AND-ANALYSIS-R4
+  runtime_revision_source_sha256_fingerprint: a54bfa816acc6763c1d1042b8c65cf54ae04ec774c57ec50de86014a6730c5fa
+  runtime_revision_config_sha256: d82334535e397c681d6172694da96d3fff0143ffb1b63a18876ee1f7778f60a1
+  stage_plan_sha256: 043eb30e008af910d37c563e8be8c719ef881cf009aec3e34687dc97bdc34aad
+  owner_supplied_post_restart_continuation_notebook_sha256: 498b837ffaabc945160cd2b8482528c17ed85e978501119a19c88073d72b543a
+  packaged_implementation_notebook_sha256: 4c36e340721156de2f58e03b1568f7b1072db3d31145aaba566b283305e7fecf
+  notebook_semantics: OWNER_SUPPLIED_NOTEBOOK_IS_POST_RESTART_CONTINUATION; STAGES_00_18_RECONSTRUCTED_FROM_CANONICAL_LEDGER_ARTIFACTS
+build_book:
+  id: IHARQ-P02-L2-INTEGRATED-BUILD-BOOK-R4
+  canonical_markdown_sha256: 7bbfda273e336c25875d2f1c6d9cb070bbc24af247777dec4cffd92cd2df58cf
+data:
+  datasets:
+  - dataset_id: PhysioNetMI
+    dataset_record_id: IHARQ-DATASETRECORD-20260806-66309cda68771bef
+    semantic_sha256: 66309cda68771bef9bd7a3aebdac819d91201cedca79ab112ea993fb61f558cf
+  - dataset_id: BNCI2014_001
+    dataset_record_id: IHARQ-DATASETRECORD-20260806-42c424800627b6ee
+    semantic_sha256: 42c424800627b6ee0be7f47ad602ba49cf4c24a632c1fa69c8c750a4ba77e163
+  - dataset_id: Lee2019_MI
+    dataset_record_id: IHARQ-DATASETRECORD-20260806-adb91f25a65e588e
+    semantic_sha256: adb91f25a65e588ece06884a9598cc92bd932e91c4babc3cacb98c82901596f1
+  split:
+    profile_id: P01-L1-SPLIT-OFFICIAL-R2
+    record_id: IHARQ-SPLITRECORD-20260806-e4e371d332c61e36
+    semantic_sha256: e4e371d332c61e36699f07cb6bed6d0820e14b22d5685dc353d89c1de144c148
+    subject_counts:
+      train: 102
+      calibration: 35
+      validation: 17
+      test: 18
+    window_counts:
+      train: 7589
+      calibration: 2655
+      validation: 1283
+      test: 1383
+  preprocessing:
+    record_id: IHARQ-PREPROCESSINGRECORD-20260806-a11b59eeb3861a08
+    semantic_sha256: a11b59eeb3861a0801cd0540702dca2f0e96b9a55fe8d50d078ea2b3a48acb8c
+  core_window:
+    profile_id: P01-L1-WINDOW-OFFICIAL-R2
+    interval_seconds:
+    - 0.5
+    - 3.5
+    samples: 480
+    sampling_hz: 160
+    accepted_parents: 12910
+  a4_window_family:
+    profile_id: P01-L1-A4-WINDOW-FAMILY-FREEZE-R2
+    long_profile_id: A4_LONG_MATCHED_3P5S_R2
+    long_interval_seconds:
+    - 0.0
+    - 3.5
+    samples: 560
+    views:
+    - - 0
+      - 320
+    - - 120
+      - 440
+    - - 240
+      - 560
+    matched_parents: 12910
+  low_label:
+    profile_id: P01-L1-LOW-CAL-OFFICIAL-R2
+    per_class_budgets:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 16
+    - 32
+    membership: INHERITED_EXACT_SINGLE_FROZEN_SUBSET
+seeds:
+  master_seed: 20260804
+  derivation: sha256(canonical_utf8_identity); first_8_hex unsigned; mod_(2^31-1); 0->1
+  purposes:
+  - MODEL_INIT
+  - SAMPLER
+  - AUGMENT
+  - DATALOADER
+  - PERMUTATION
+  - STAT_BOOTSTRAP
+  - STAT_TEST
+  - CHECKPOINT_TIEBREAK
+record_families:
+- PredictionRecord
+- ModelRegistryRecord
+- BaselineMetricRecord
+- LowCalibrationCurveRecord
+- SubjectProfileRecord
+- EnsembleControlRecord
+- FailureCaseIndex
+- Layer2ReadinessReport
+- NegativeResultNote
+- DiagnosticOnlyFlag
+owner_routed_record_families:
+- LeakageWarningRecord
+- MatchedComparisonReport
+branches:
+- branch_id: SAN-MAJ
+  family_role: sanity
+  terminal_accounting: 3 S
+  executed_scope: FULL only; deterministic
+  configuration_summary: training-frequency majority hard label; prior vector separate
+  a4_status: 'No'
+- branch_id: SAN-STRAT
+  family_role: sanity
+  terminal_accounting: 60 S
+  executed_scope: FULL; 20 repeats/dataset
+  configuration_summary: seeded stratified random using train-role frequencies
+  a4_status: 'No'
+- branch_id: SAN-PERM
+  family_role: sanity diagnostic
+  terminal_accounting: 300 S
+  executed_scope: 100 grouped permutations/dataset
+  configuration_summary: group/source-event atomic full-pipeline label permutation; base simple pipeline
+  a4_status: 'No'
+- branch_id: SAN-PRIOR
+  family_role: sanity diagnostic
+  terminal_accounting: 3 S
+  executed_scope: FULL only
+  configuration_summary: training-prior probability vector
+  a4_status: 'No'
+- branch_id: DIAG-LOGVAR
+  family_role: diagnostic
+  terminal_accounting: 3 S
+  executed_scope: FULL only
+  configuration_summary: log-bandpower/log-variance + L2 logistic
+  a4_status: 'No'
+- branch_id: CLS-CSP-LDA
+  family_role: classical
+  terminal_accounting: 18 S / 3 F
+  executed_scope: FULL + six low-label budgets; deterministic
+  configuration_summary: CSP OAS; shrinkage LDA `lsqr/auto`; validation-selected CSP components 4/6/8
+  a4_status: Yes; FULL pool + low-label
+- branch_id: CLS-FBCSP-LR
+  family_role: classical
+  terminal_accounting: 3 S
+  executed_scope: FULL primary
+  configuration_summary: "bands 8\u201312/12\u201316/16\u201320/20\u201324/24\u201328/28\u201332; order 4; CSP 4 OAS; L2 LR max_iter 2000; validation\
+    \ C in {1,10}"
+  a4_status: Yes; FULL pool
+- branch_id: RIE-TS-LR
+  family_role: Riemannian
+  terminal_accounting: 21 S
+  executed_scope: FULL + six low-label budgets; deterministic
+  configuration_summary: OAS covariance -> Riemann tangent -> L2 LR max_iter 2000; validation C in {0.1,1,10}
+  a4_status: Yes; FULL + low-label
+- branch_id: RIE-EA-TS
+  family_role: Riemannian
+  terminal_accounting: 3 S
+  executed_scope: FULL admitted
+  configuration_summary: train-safe Euclidean Alignment + tangent LR; validation C observed in {0.1,1}
+  a4_status: Yes when admitted; FULL pool
+- branch_id: RIE-MDM
+  family_role: Riemannian diagnostic
+  terminal_accounting: 3 S
+  executed_scope: FULL diagnostic
+  configuration_summary: MDM/FgMDM distance-derived semantics, not calibrated probability
+  a4_status: 'No'
+- branch_id: DNN-EEGNET
+  family_role: compact neural
+  terminal_accounting: 105 S
+  executed_scope: FULL + six low-label budgets; 5 seeds
+  configuration_summary: EEGNet/Lawhern-centered P01-compatible variant; Adam lr .001, dropout .5, kernels 40/20, pools 5/10; Stage11 mixed accepted
+    stopping recipes
+  a4_status: Yes; FULL + low-label
+- branch_id: DNN-FBCNET
+  family_role: conditional neural
+  terminal_accounting: 15 S
+  executed_scope: FULL; 5 seeds
+  configuration_summary: 'FBCNet author-centered: batch16 Adam .001 wd0 constant; max1500/pat200 restore-best validation BACC'
+  a4_status: Yes if admitted; FULL pool
+- branch_id: DNN-SEQ
+  family_role: conditional sequence
+  terminal_accounting: 15 S
+  executed_scope: FULL; 5 seeds
+  configuration_summary: DBConformer preferred admitted slot; batch32 Adam .001 wd0 constant max150/pat40 restore-best
+  a4_status: Yes if admitted; FULL pool
+- branch_id: DNN-EGTC
+  family_role: fallback
+  terminal_accounting: 15 CS
+  executed_scope: fallback slots explicit
+  configuration_summary: EEG-TCNet fallback not activated because sequence slot admitted
+  a4_status: No in accepted run
+- branch_id: SSL-CBRAMOD
+  family_role: compact SSL
+  terminal_accounting: 105 S
+  executed_scope: FULL + six low-label budgets; 5 seeds
+  configuration_summary: "AdamW body1e-4/head5e-4 wd.05, label smoothing .1, input scale 10000, 160\u2192200 adapter, cosine eta_min1e-6, clip1,\
+    \ max150/pat40; audited checkpoint"
+  a4_status: Qualified A4; LONG fail-closed
+- branch_id: SSL-REVE
+  family_role: SSL diagnostic
+  terminal_accounting: 3 DB
+  executed_scope: FULL diagnostic attempts
+  configuration_summary: known P02 overlap/dependency block preserved
+  a4_status: 'No'
+stages:
+- stage_id: '00'
+  attempt_id: 634837763ab9
+  status: SUCCESS
+  observability_status: PASS
+  blockers: []
+  runtime_successor: null
+- stage_id: '01'
+  attempt_id: d4ab0101ea08
+  status: SUCCESS
+  observability_status: PASS
+  blockers: []
+  runtime_successor: null
+- stage_id: '02'
+  attempt_id: c87fadef7bcd
+  status: SUCCESS
+  observability_status: PASS
+  blockers: []
+  runtime_successor: null
+- stage_id: '03'
+  attempt_id: 5b6834384730
+  status: SUCCESS
+  observability_status: PASS
+  blockers: []
+  runtime_successor: null
+- stage_id: '04'
+  attempt_id: 3ec63b778b7d
+  status: SUCCESS
+  observability_status: PASS
+  blockers: []
+  runtime_successor: null
+- stage_id: '05'
+  attempt_id: 39df114163ce
+  status: SUCCESS
+  observability_status: PASS
+  blockers: []
+  runtime_successor: null
+- stage_id: '06'
+  attempt_id: 879c816b6a5b
+  status: SUCCESS
+  observability_status: PASS
+  blockers: []
+  runtime_successor: null
+- stage_id: '07'
+  attempt_id: f96233a7477e
+  status: SUCCESS
+  observability_status: PASS
+  blockers: []
+  runtime_successor: null
+- stage_id: 08
+  attempt_id: 83b1345dfb42
+  status: SUCCESS
+  observability_status: PASS
+  blockers: []
+  runtime_successor:
+    archive_status: PRIOR_FAILURES_ARCHIVED_AND_122_RETRIED
+    id: P02-RUNTIME-SUCCESSOR-R1-CLASS-WEIGHT-APPLICABILITY-LIVE-CONTINUATION
+    prior_attempt_id: 43e766d443bc
+    scientific_configuration_changed: false
+    semantic_gate_artifact: stage_artifacts/08_semantic_gate_successor_R1.json
+- stage_id: 09
+  attempt_id: c31206f11c83
+  status: SUCCESS
+  observability_status: PASS
+  blockers: []
+  runtime_successor:
+    id: P02-RUNTIME-SUCCESSOR-R2-CANONICAL-LOW-CAL-BUDGET-ID-PARSER-LIVE-CONTINUATION
+    scientific_configuration_changed: false
+    semantic_audit: diagnostics/runtime_successor/G09_SEMANTIC_AUDIT_R1.json
+- stage_id: '10'
+  attempt_id: 8e4ca693efde
+  status: SUCCESS
+  observability_status: PASS
+  blockers: []
+  runtime_successor:
+    id: P02-RUNTIME-SUCCESSOR-R2-CANONICAL-LOW-CAL-BUDGET-ID-PARSER-LIVE-CONTINUATION
+    scientific_configuration_changed: false
+    semantic_audit: diagnostics/runtime_successor/G10_SEMANTIC_AUDIT_R1.json
+- stage_id: '11'
+  attempt_id: 77533b224dad
+  status: SUCCESS
+  observability_status: PASS
+  blockers: []
+  runtime_successor: null
+- stage_id: '12'
+  attempt_id: b9d3bbee230b
+  status: SUCCESS
+  observability_status: PASS
+  blockers: []
+  runtime_successor:
+    FBCNet_author_horizon_provenance:
+      IHARQ_preserved_differences:
+        class_weight_policy: P02_R2_GOVERNED
+        continue_after_earlystop: false
+        selection_metric: validation_BACC
+        split_authority: P01_SUBJECT_GROUPED_ROLES
+        test_visibility: STRICTLY_AFTER_SELECTION
+      author_batch_size: 16
+      author_load_best_model: true
+      author_lr: 0.001
+      author_max_epochs: 1500
+      author_no_decrease_epochs: 200
+      source_commit: de1bbdd8a54cb1e466830e3d47070e0e56761a37
+      source_file: codes/classify/cv.py
+      source_repository: ravikiran-mane/FBCNet
+    P00_P01_mutated: false
+    P01_consumption_audit: diagnostics/runtime_successor/stage12_external_models_R6R5/P02_STAGE12_R6R5_P01_CONSUMPTION_AUDIT_R1.json
+    amendment_reason: 'PREDECLARED_R6R4_MODEL_SPECIFIC_HORIZON: FBCNET_1500_200_MATCHING_ORIGINAL_AUTHOR_HORIZON_AND_NODECREASE_WINDOW; DBCONFORMER_AND_CBRAMOD_RETAIN_150_40'
+    artifact_id: P02-STAGE12-R6R5-FBCNET-AUTHOR-HORIZON-R1
+    author_centered_recipes:
+      DNN-FBCNET:
+        batch_size: 16
+        grad_clip: null
+        label_smoothing: 0.0
+        lr: 0.001
+        max_epochs: 1500
+        optimizer: Adam
+        patience: 200
+        recipe_id: R6-FBCNET-AUTHOR-CENTERED-R1
+        restore_best: true
+        scheduler: constant
+        selection: validation_BACC
+        weight_decay: 0.0
+      DNN-SEQ:
+        batch_size: 32
+        grad_clip: null
+        label_smoothing: 0.0
+        lr: 0.001
+        max_epochs: 150
+        optimizer: Adam
+        patience: 40
+        recipe_id: R6-DBCONFORMER-AUTHOR-CENTERED-R1
+        restore_best: true
+        scheduler: constant
+        selection: validation_BACC
+        weight_decay: 0.0
+      SSL-CBRAMOD:
+        batch_size: 64
+        body_lr: 0.0001
+        eta_min: 1.0e-06
+        grad_clip: 1.0
+        head_lr: 0.0005
+        input_scale: 10000.0
+        label_smoothing: 0.1
+        max_epochs: 150
+        optimizer: AdamW
+        patience: 40
+        recipe_id: R6-CBRAMOD-SOURCE-CENTERED-R1
+        restore_best: true
+        scheduler: cosine
+        selection: validation_BACC
+        source_sampling_hz: 160
+        target_sampling_hz: 200
+        weight_decay: 0.05
+    id: P02-RUNTIME-SUCCESSOR-R6R5-STAGE12-FBCNET-AUTHOR-HORIZON-1500-200
+    model_specific_horizon_policy:
+      DNN-FBCNET:
+        max_epochs: 1500
+        patience: 200
+        reason: PREDECLARED_R6R5_ORIGINAL_AUTHOR_HORIZON_AND_NODECREASE_WINDOW
+      DNN-SEQ:
+        max_epochs: 150
+        patience: 40
+        reason: AUTHOR_CENTERED_R6R3_HORIZON_RETAINED
+      SSL-CBRAMOD:
+        max_epochs: 150
+        patience: 40
+        reason: SOURCE_CENTERED_R6R3_HORIZON_RETAINED
+    pre_r6_archive: diagnostics/runtime_successor/stage12_external_models_R6R5/pre_r6r3_official_stage12_archive/20260812T005807Z
+    scientific_configuration_changed: true
+    scientific_training_policy_amendment: true
+    semantic_audit: diagnostics/runtime_successor/G12_R6R3_SEMANTIC_AUDIT.json
+    staged_closure_audit: diagnostics/runtime_successor/stage12_external_models_R6R5/G12_R6R5_STAGED_CLOSURE_AUDIT_R1.json
+    test_set_used_for_hyperparameter_selection: false
+- stage_id: '13'
+  attempt_id: 01b2fde44053
+  status: SUCCESS
+  observability_status: PASS
+  blockers: []
+  runtime_successor:
+    id: P02-RUNTIME-SUCCESSOR-R7H7-STAGE11-EEGNET-AUTHOR-CENTERED-10000E-TRUE-P120-CONTINUATION
+    scientific_configuration_changed: false
+- stage_id: '14'
+  attempt_id: 6f67192684bf
+  status: SUCCESS
+  observability_status: PASS
+  blockers: []
+  runtime_successor:
+    id: P02-RUNTIME-SUCCESSOR-R7H7-STAGE11-EEGNET-AUTHOR-CENTERED-10000E-TRUE-P120-CONTINUATION
+    scientific_configuration_changed: false
+- stage_id: '15'
+  attempt_id: 0cedb7522386
+  status: SUCCESS
+  observability_status: PASS
+  blockers: []
+  runtime_successor:
+    id: P02-RUNTIME-SUCCESSOR-R7H7-STAGE11-EEGNET-AUTHOR-CENTERED-10000E-TRUE-P120-CONTINUATION
+    scientific_configuration_changed: false
+- stage_id: '16'
+  attempt_id: bb462cca110e
+  status: SUCCESS
+  observability_status: PASS
+  blockers: []
+  runtime_successor:
+    id: P02-RUNTIME-SUCCESSOR-R7H7-STAGE11-EEGNET-AUTHOR-CENTERED-10000E-TRUE-P120-CONTINUATION
+    scientific_configuration_changed: false
+    semantic_audit: diagnostics/runtime_successor/G16_SEMANTIC_AUDIT_R1.json
+- stage_id: '17'
+  attempt_id: 785dd4d86f13
+  status: SUCCESS
+  observability_status: PASS
+  blockers: []
+  runtime_successor:
+    id: P02-RUNTIME-SUCCESSOR-R7H7-STAGE11-EEGNET-AUTHOR-CENTERED-10000E-TRUE-P120-CONTINUATION
+    scientific_configuration_changed: false
+- stage_id: '18'
+  attempt_id: a91f9d90814c
+  status: SUCCESS
+  observability_status: PASS
+  blockers: []
+  runtime_successor:
+    ablation_conditions_removed: false
+    anchor_budget_deep_claim_authorized: true
+    completed_A0_artifacts_mutated: false
+    deep_anchor_budget_ids:
+    - P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS
+    - P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS
+    - FULL_TRAIN
+    deep_budget_grid_reduced: true
+    dense_deep_budget_curve_claim_authorized: false
+    execution_transport_revision: R10.3_DUAL_GPU_DIFFERENT_ABLATION_CELLS
+    external_first_checkpoint_route: true
+    full_buildbook_replication_equivalence: false
+    id: P02-RUNTIME-SUCCESSOR-R10-STAGE18-A4-ANCHOR-BUDGET-SINGLE-REPEAT-R1
+    multi_seed_stability_claim_authorized: false
+    policy_sha256: a21655f9b52cfbf817b1b271f758739cf01b1e7a75e786c880ccdd1a3c58ef32
+    protocol_deviation_from_buildbook: true
+    protocol_deviation_id: P02-STAGE18-RESOURCE-CONSTRAINED-ANCHOR-BUDGET-SINGLE-REPEAT-R1
+    refit_repeat_indices_executed:
+    - 0
+    scientific_change_scope: A4_AUTHOR_SOURCE_REFIT_PLUS_SINGLE_REPEAT_PLUS_DEEP_ANCHOR_BUDGET_REDUCTION;R10_3_TRANSPORT_FIXES
+    scientific_configuration_changed: true
+    semantic_audit: diagnostics/runtime_successor/G18_R6R3_SEMANTIC_AUDIT.json
+    single_model_multi_gpu: false
+    test_outcome_influence: PROHIBITED
+- stage_id: 18U
+  attempt_id: 6c35912e38f7
+  status: SUCCESS
+  observability_status: PASS
+  blockers: []
+  runtime_successor:
+    id: P02-RUNTIME-SUCCESSOR-R10-STAGE18-A4-ANCHOR-BUDGET-SINGLE-REPEAT-R1
+    scientific_configuration_changed: false
+- stage_id: '19'
+  attempt_id: '243091602665'
+  status: SUCCESS
+  observability_status: PASS
+  blockers: []
+  runtime_successor:
+    id: P02-RUNTIME-SUCCESSOR-R10-STAGE18-A4-ANCHOR-BUDGET-SINGLE-REPEAT-R1
+    scientific_configuration_changed: false
+- stage_id: '20'
+  attempt_id: b5a19c3412a2
+  status: SUCCESS
+  observability_status: PASS
+  blockers: []
+  runtime_successor:
+    id: P02-RUNTIME-SUCCESSOR-R10-STAGE18-A4-ANCHOR-BUDGET-SINGLE-REPEAT-R1
+    scientific_configuration_changed: false
+- stage_id: '21'
+  attempt_id: 3d6646e74d1e
+  status: SUCCESS
+  observability_status: PASS
+  blockers: []
+  runtime_successor:
+    id: P02-RUNTIME-SUCCESSOR-R10-STAGE18-A4-ANCHOR-BUDGET-SINGLE-REPEAT-R1
+    scientific_configuration_changed: false
+- stage_id: '22'
+  attempt_id: 6bad6ea9c5ff
+  status: SUCCESS
+  observability_status: PASS
+  blockers: []
+  runtime_successor:
+    id: P02-RUNTIME-SUCCESSOR-R10-STAGE18-A4-ANCHOR-BUDGET-SINGLE-REPEAT-R1
+    scientific_configuration_changed: false
+- stage_id: '23'
+  attempt_id: 0e3f7416ac5e
+  status: SUCCESS
+  observability_status: PASS
+  blockers: []
+  runtime_successor:
+    id: P02-RUNTIME-SUCCESSOR-R10-STAGE18-A4-ANCHOR-BUDGET-SINGLE-REPEAT-R1
+    scientific_configuration_changed: false
+- stage_id: '24'
+  attempt_id: 5027e6f7359e
+  status: SUCCESS
+  observability_status: PASS
+  blockers: []
+  runtime_successor:
+    id: P02-RUNTIME-SUCCESSOR-R10-STAGE18-A4-ANCHOR-BUDGET-SINGLE-REPEAT-R1
+    scientific_configuration_changed: false
+gates:
+- gate_id: G00
+  stage_id: '00'
+  status: PASS
+  observability_status: PASS
+  blockers: []
+  evidence: stage_ledger/stage_00.json
+  runtime_successor_id: null
+- gate_id: G01
+  stage_id: '01'
+  status: PASS
+  observability_status: PASS
+  blockers: []
+  evidence: stage_ledger/stage_01.json
+  runtime_successor_id: null
+- gate_id: G02
+  stage_id: '02'
+  status: PASS
+  observability_status: PASS
+  blockers: []
+  evidence: stage_ledger/stage_02.json
+  runtime_successor_id: null
+- gate_id: G03
+  stage_id: '03'
+  status: PASS
+  observability_status: PASS
+  blockers: []
+  evidence: stage_ledger/stage_03.json
+  runtime_successor_id: null
+- gate_id: G04
+  stage_id: '04'
+  status: PASS
+  observability_status: PASS
+  blockers: []
+  evidence: stage_ledger/stage_04.json
+  runtime_successor_id: null
+- gate_id: G05
+  stage_id: '05'
+  status: PASS
+  observability_status: PASS
+  blockers: []
+  evidence: stage_ledger/stage_05.json
+  runtime_successor_id: null
+- gate_id: G06
+  stage_id: '06'
+  status: PASS
+  observability_status: PASS
+  blockers: []
+  evidence: stage_ledger/stage_06.json
+  runtime_successor_id: null
+- gate_id: G07
+  stage_id: '07'
+  status: PASS
+  observability_status: PASS
+  blockers: []
+  evidence: stage_ledger/stage_07.json
+  runtime_successor_id: null
+- gate_id: G08
+  stage_id: 08
+  status: PASS
+  observability_status: PASS
+  blockers: []
+  evidence: stage_artifacts/08_semantic_gate_successor_R1.json
+  runtime_successor_id: P02-RUNTIME-SUCCESSOR-R1-CLASS-WEIGHT-APPLICABILITY-LIVE-CONTINUATION
+- gate_id: G09
+  stage_id: 09
+  status: PASS
+  observability_status: ''
+  blockers: []
+  evidence: diagnostics/runtime_successor/G09_SEMANTIC_AUDIT_R1.json
+  runtime_successor_id: P02-RUNTIME-SUCCESSOR-R2-CANONICAL-LOW-CAL-BUDGET-ID-PARSER-LIVE-CONTINUATION
+- gate_id: G10
+  stage_id: '10'
+  status: PASS
+  observability_status: ''
+  blockers: []
+  evidence: diagnostics/runtime_successor/G10_SEMANTIC_AUDIT_R1.json
+  runtime_successor_id: P02-RUNTIME-SUCCESSOR-R2-CANONICAL-LOW-CAL-BUDGET-ID-PARSER-LIVE-CONTINUATION
+- gate_id: G11
+  stage_id: '11'
+  status: PASS
+  observability_status: PASS
+  blockers: []
+  evidence: stage_ledger/stage_11.json
+  runtime_successor_id: P02-RUNTIME-SUCCESSOR-R7H7-STAGE11-EEGNET-AUTHOR-CENTERED-10000E-TRUE-P120-CONTINUATION
+- gate_id: G12
+  stage_id: '12'
+  status: PASS
+  observability_status: PASS
+  blockers: []
+  evidence: stage_ledger/stage_12.json
+  runtime_successor_id: P02-RUNTIME-SUCCESSOR-R6R5-STAGE12-FBCNET-AUTHOR-HORIZON-1500-200
+- gate_id: G13
+  stage_id: '13'
+  status: PASS
+  observability_status: PASS
+  blockers: []
+  evidence: stage_ledger/stage_13.json
+  runtime_successor_id: P02-RUNTIME-SUCCESSOR-R7H7-STAGE11-EEGNET-AUTHOR-CENTERED-10000E-TRUE-P120-CONTINUATION
+- gate_id: G14
+  stage_id: '14'
+  status: PASS
+  observability_status: PASS
+  blockers: []
+  evidence: stage_ledger/stage_14.json
+  runtime_successor_id: P02-RUNTIME-SUCCESSOR-R7H7-STAGE11-EEGNET-AUTHOR-CENTERED-10000E-TRUE-P120-CONTINUATION
+- gate_id: G15
+  stage_id: '15'
+  status: PASS
+  observability_status: PASS
+  blockers: []
+  evidence: stage_ledger/stage_15.json
+  runtime_successor_id: P02-RUNTIME-SUCCESSOR-R7H7-STAGE11-EEGNET-AUTHOR-CENTERED-10000E-TRUE-P120-CONTINUATION
+- gate_id: G16
+  stage_id: '16'
+  status: PASS
+  observability_status: PASS
+  blockers: []
+  evidence: diagnostics/runtime_successor/G16_SEMANTIC_AUDIT_R1.json
+  runtime_successor_id: P02-RUNTIME-SUCCESSOR-R7H7-STAGE11-EEGNET-AUTHOR-CENTERED-10000E-TRUE-P120-CONTINUATION
+- gate_id: G17
+  stage_id: '17'
+  status: PASS
+  observability_status: PASS
+  blockers: []
+  evidence: stage_ledger/stage_17.json
+  runtime_successor_id: P02-RUNTIME-SUCCESSOR-R7H7-STAGE11-EEGNET-AUTHOR-CENTERED-10000E-TRUE-P120-CONTINUATION
+- gate_id: G18
+  stage_id: '18'
+  status: PASS
+  observability_status: PASS
+  blockers: []
+  evidence: stage_ledger/stage_18.json
+  runtime_successor_id: P02-RUNTIME-SUCCESSOR-R10-STAGE18-A4-ANCHOR-BUDGET-SINGLE-REPEAT-R1
+- gate_id: G18U
+  stage_id: 18U
+  status: PASS
+  observability_status: PASS
+  blockers: []
+  evidence: stage_ledger/stage_18U.json
+  runtime_successor_id: P02-RUNTIME-SUCCESSOR-R10-STAGE18-A4-ANCHOR-BUDGET-SINGLE-REPEAT-R1
+- gate_id: G19
+  stage_id: '19'
+  status: PASS
+  observability_status: PASS
+  blockers: []
+  evidence: stage_ledger/stage_19.json
+  runtime_successor_id: P02-RUNTIME-SUCCESSOR-R10-STAGE18-A4-ANCHOR-BUDGET-SINGLE-REPEAT-R1
+- gate_id: G20
+  stage_id: '20'
+  status: PASS
+  observability_status: PASS
+  blockers: []
+  evidence: stage_ledger/stage_20.json
+  runtime_successor_id: P02-RUNTIME-SUCCESSOR-R10-STAGE18-A4-ANCHOR-BUDGET-SINGLE-REPEAT-R1
+- gate_id: G21
+  stage_id: '21'
+  status: PASS
+  observability_status: PASS
+  blockers: []
+  evidence: stage_ledger/stage_21.json
+  runtime_successor_id: P02-RUNTIME-SUCCESSOR-R10-STAGE18-A4-ANCHOR-BUDGET-SINGLE-REPEAT-R1
+- gate_id: G22
+  stage_id: '22'
+  status: PASS
+  observability_status: PASS
+  blockers: []
+  evidence: stage_ledger/stage_22.json
+  runtime_successor_id: P02-RUNTIME-SUCCESSOR-R10-STAGE18-A4-ANCHOR-BUDGET-SINGLE-REPEAT-R1
+- gate_id: G23
+  stage_id: '23'
+  status: PASS
+  observability_status: PASS
+  blockers: []
+  evidence: stage_ledger/stage_23.json
+  runtime_successor_id: P02-RUNTIME-SUCCESSOR-R10-STAGE18-A4-ANCHOR-BUDGET-SINGLE-REPEAT-R1
+- gate_id: G24
+  stage_id: '24'
+  status: PASS
+  observability_status: PASS
+  blockers: []
+  evidence: stage_ledger/stage_24.json
+  runtime_successor_id: P02-RUNTIME-SUCCESSOR-R10-STAGE18-A4-ANCHOR-BUDGET-SINGLE-REPEAT-R1
+a0:
+  planned_terminal_cells: 678
+  terminal_cells: 678
+  terminal_counts:
+    SUCCESS: 657
+    FAILED: 3
+    CONDITIONAL_SKIP: 15
+    DEPENDENCY_BLOCKED: 3
+  checkpoints_success: 672
+  checkpoint_roundtrip_failures: 0
+  prediction_partitions: 672
+  participant_rows: 3942
+  metric_records: 2625
+stage11:
+  attempt_id: 77533b224dad
+  artifact_id: P02-STAGE11-R7H7-EEGNET-AUTHOR-CENTERED-10000E-TRUE-P120-CONTINUATION-R1
+  runtime_successor_id: P02-RUNTIME-SUCCESSOR-R7H7-STAGE11-EEGNET-AUTHOR-CENTERED-10000E-TRUE-P120-CONTINUATION
+  classification: POST_OBSERVATION_SCIENTIFIC_AMENDMENT
+  primary_cells: 105
+  challenger_cells: 15
+  sr_calibration_fits: 45
+  recipe_counts:
+    76a601fee7b69395453f240507abc843c63722c548211f43cf2b88647ac7af09: 101
+    74fa2011fa0b94a537338792ce9669350e4ca3153b5f1a3ee50ad556d312690e: 4
+    18cbe259c05bfcea6b26934118216d5a60ff14d659906e6e8e2f590ffc502866: 15
+  primary_recipe_distribution: 101_P500_PLUS_4_R6_P120_FLOOR500; R7_TRUE_P120_15_DIAGNOSTIC_CHALLENGERS
+  test_used_for_selection: false
+  performance_threshold_gate: false
+stage12:
+  attempt_id: b9d3bbee230b
+  amendment_id: P02-STAGE12-R6-SCIENTIFIC-POLICY-AMENDMENT-R2
+  change_authority: USER_AUTHORIZED_POST_STAGE12_VALIDATION_ONLY_FORENSIC_REPAIR
+  runtime_successor_id: P02-RUNTIME-SUCCESSOR-R6R5-STAGE12-FBCNET-AUTHOR-HORIZON-1500-200
+  terminal_counts:
+    SUCCESS: 135
+    CONDITIONAL_SKIP: 15
+    DEPENDENCY_BLOCKED: 3
+  attempted: 153
+  test_used_for_hyperparameter_selection: false
+  P00_P01_mutated: false
+a4:
+  protocol_deviation_id: P02-STAGE18-RESOURCE-CONSTRAINED-ANCHOR-BUDGET-SINGLE-REPEAT-R1
+  reason: KAGGLE_WALL_CLOCK_CONSTRAINT_OWNER_DECISION
+  planned_cells: 1218
+  terminal_counts:
+    SUCCESS: 591
+    CONDITIONAL_SKIP: 576
+    INPUT_INCOMPATIBLE: 9
+    NOT_APPLICABLE_REPEAT_SLOT: 42
+  conditions:
+  - A4-C0-CORE
+  - A4-C1-LONG-3P5S
+  - A4-C2-MULTI-HARD-VOTE
+  - A4-C3-MULTI-PROB-AVG
+  - A4-C4-MODEL-HARD-VOTE
+  - A4-C5-MODEL-PROB-AVG
+  datasets_preserved:
+  - BNCI2014_001
+  - Lee2019_MI
+  - PhysioNetMI
+  roles_preserved:
+  - CLASSICAL
+  - NEURAL
+  - RIEMANNIAN
+  - SSL
+  original_repeat_indices:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  executed_repeat_indices:
+  - 0
+  skipped_repeat_indices:
+  - 1
+  - 2
+  - 3
+  - 4
+  deep_anchor_budget_ids:
+  - P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS
+  - P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS
+  - FULL_TRAIN
+  full_buildbook_replication_equivalence: false
+  five_repeat_stability_authorized: false
+  dense_deep_budget_curve_authorized: false
+  anchor_budget_claim_authorized: true
+stage18S:
+  supplement_id: P02-STAGE18S-BALANCED-SENSITIVITY-R1
+  preexecution_freeze_id: P02-STAGE18S-BALANCED-SENSITIVITY-SCIENTIFIC-FREEZE-R1
+  plan_sha256: 543d896dcc4ff0f66045ead0d8705e24bb4750d1611d15a401538ecaef6bc7c1
+  post_hoc: true
+  canonical_stage18_immutable: true
+  planned_cells: 162
+  terminal_counts:
+    SUCCESS: 135
+    INPUT_INCOMPATIBLE: 27
+  member_receipts: 216
+  descriptive_repeats_at_anchors:
+  - 0
+  - 1
+  - 2
+  intermediate_mr00_budgets:
+  - 4
+  - 16
+  - 32
+  intentionally_not_executed_budget: 2
+  five_repeat_stability_claim: false
+  full_buildbook_replication_equivalence: false
+evidence_sufficiency:
+  G23: PASS
+  G24: PASS
+  missing: []
+  unresolved_blockers: 0
+  status: SUFFICIENT_FOR_PROTOCOL_AND_PHASE_REPORT_WITH_EXPLICIT_RESOURCE_CONSTRAINED_A4_LIMITS

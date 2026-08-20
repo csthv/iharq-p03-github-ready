@@ -1,0 +1,16 @@
+{
+  "gate_id": "P01-G15",
+  "official_or_local_name": "phase2_compatibility",
+  "status": "PASS",
+  "inputs": [],
+  "procedure_version": "P01-L1-GATE-R6",
+  "observations": {},
+  "failure_codes": [],
+  "repair_owner": "BUILD_BOOK_AND_P02_CONSUMER",
+  "affected_artifacts": [],
+  "evidence_paths": [
+    "phase2_handoff/phase_01_to_phase_02.yaml"
+  ],
+  "manifest_entry": "manifests/phase_01/gates/P01-G15.json",
+  "blocking_effect": false
+}

@@ -1,0 +1,57 @@
+{
+  "run_cell_id": "P02-A4-PhysioNetMI-ENSEMBLE-A4-C5-MODEL-PROB-AVG-FULL_TRAIN-ER00",
+  "ablation_id": "A4",
+  "terminal_status": "SUCCESS",
+  "prediction_partition": "records/PredictionRecord/dataset=PhysioNetMI/branch=PRE_RESULT_ROLE_MEMBERSHIP/budget=FULL_TRAIN/P02-A4-PhysioNetMI-ENSEMBLE-A4-C5-MODEL-PROB-AVG-FULL_TRAIN-ER00.jsonl",
+  "source_rows": "raw_outputs/P02-A4-PhysioNetMI-ENSEMBLE-A4-C5-MODEL-PROB-AVG-FULL_TRAIN-ER00.jsonl",
+  "metric_source": "metrics/P02-A4-PhysioNetMI-ENSEMBLE-A4-C5-MODEL-PROB-AVG-FULL_TRAIN-ER00.json",
+  "strongest_constituent_branch": "CLS-CSP-LDA",
+  "strongest_constituent_prediction_partition": "records/PredictionRecord/dataset=PhysioNetMI/branch=CLS-CSP-LDA/budget=FULL_TRAIN/P02-A0-PhysioNetMI-CLS-CSP-LDA-FULL_TRAIN-MR00.jsonl",
+  "strongest_constituent_checkpoint_sha256": "b2969fda0e777201f0e8d63b6fdabe6f679e02c333793485207ca970175662fc",
+  "validation_selection_provenance": {
+    "selected_branch": "CLS-CSP-LDA",
+    "candidate_summaries": [
+      {
+        "branch_id": "CLS-CSP-LDA",
+        "BACC": 0.5,
+        "F1": 0.49650349650349646,
+        "burden": 0.01596931499989296
+      },
+      {
+        "branch_id": "DNN-EEGNET",
+        "BACC": 0.5,
+        "F1": 0.4857142857142857,
+        "burden": 0.004683787001340534
+      },
+      {
+        "branch_id": "RIE-TS-LR",
+        "BACC": 0.5,
+        "F1": 0.4857142857142857,
+        "burden": 0.0052598410002246965
+      }
+    ],
+    "test_outcome_influence": "PROHIBITED"
+  },
+  "ensemble_member_branches": [
+    "CLS-CSP-LDA",
+    "RIE-TS-LR",
+    "DNN-EEGNET"
+  ],
+  "ensemble_member_checkpoint_ids": [
+    "b2969fda0e777201f0e8d63b6fdabe6f679e02c333793485207ca970175662fc",
+    "4c1e74b2b473aa30bae9bf09ceff3c96b561a0f672e5dda05591f4da23df157a",
+    "cea6e98849a49537435d423c69590095665e3b706fa4b3f56818156cad461834"
+  ],
+  "observed_denominator": 24,
+  "burden": {
+    "evidence_duration_s": 3.0,
+    "observation_horizon_s": 3.0,
+    "model_or_view_evaluations": 3,
+    "member_count": 3,
+    "aggregation_operation": "PROBABILITY_AVERAGE",
+    "batch1_latency_median_s": 0.0005219930008024676,
+    "batch1_latency_p95_s": 0.0007025361999694723,
+    "aggregation_latency_s": 9.13559997570701e-05
+  },
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

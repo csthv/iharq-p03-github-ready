@@ -1,0 +1,21 @@
+{
+  "run_cell_id": "P02-A4S-R1-Lee2019_MI-SSL-A4-C2-MULTI-HARD-VOTE-P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS-MR00",
+  "ablation_id": "A4",
+  "terminal_status": "SUCCESS",
+  "resolved_branch": "SSL-CBRAMOD",
+  "prediction_partition": "records/PredictionRecord/dataset=Lee2019_MI/branch=SSL_VALIDATION_SELECTED/budget=P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS/P02-A4S-R1-Lee2019_MI-SSL-A4-C2-MULTI-HARD-VOTE-P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS-MR00.jsonl",
+  "metric_source": "metrics/P02-A4S-R1-Lee2019_MI-SSL-A4-C2-MULTI-HARD-VOTE-P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS-MR00.json",
+  "source_rows": "raw_outputs/P02-A4S-R1-Lee2019_MI-SSL-A4-C2-MULTI-HARD-VOTE-P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS-MR00.jsonl",
+  "observed_denominator": 600,
+  "burden": {
+    "evidence_duration_s": 2.0,
+    "observation_horizon_s": 3.5,
+    "model_or_view_evaluations": 3,
+    "member_count": 3,
+    "aggregation_operation": "HARD_VOTE",
+    "batch1_latency_median_s": 0.3735159379975812,
+    "batch1_latency_p95_s": 0.3735159379975812,
+    "aggregation_latency_s": 0.039905046000058064
+  },
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

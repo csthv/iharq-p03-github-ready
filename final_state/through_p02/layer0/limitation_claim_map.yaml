@@ -1,0 +1,398 @@
+layer0_id: IHARQ-CUMULATIVE-LAYER0-THROUGH-P02-R1
+rows:
+- limitation_id: P00-LIM-002
+  claim_id: P00-CLM-001/v2
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: P00-LIM-003
+  claim_id: P00-CLM-001/v2
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: P00-LIM-004
+  claim_id: P00-CLM-001/v2
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: P00-LIM-L0-001
+  claim_id: P00-CLM-001/v2
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: P00-LIM-001
+  claim_id: P00-CLM-002/v2
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: P00-LIM-002
+  claim_id: P00-CLM-002/v2
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: P00-LIM-003
+  claim_id: P00-CLM-002/v2
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: P00-LIM-004
+  claim_id: P00-CLM-002/v2
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: P00-LIM-004
+  claim_id: P00-CLM-003/v2
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: P00-LIM-L0-001
+  claim_id: P00-CLM-003/v2
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: P00-LIM-004
+  claim_id: P00-CLM-004/v2
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: P00-LIM-L0-001
+  claim_id: P00-CLM-004/v2
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: P00-LIM-003
+  claim_id: P00-CLM-005/v2
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: P00-LIM-004
+  claim_id: P00-CLM-005/v2
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: P00-LIM-L0-001
+  claim_id: P00-CLM-005/v2
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: P00-LIM-003
+  claim_id: P00-CLM-006/v2
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: P00-LIM-004
+  claim_id: P00-CLM-006/v2
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: P00-LIM-L0-001
+  claim_id: P00-CLM-006/v2
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: P00-LIM-001
+  claim_id: P00-CLM-007/v2
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: P00-LIM-002
+  claim_id: P00-CLM-007/v2
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: P00-LIM-003
+  claim_id: P00-CLM-007/v2
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: PUBLIC_EEG_ONLY
+  claim_id: P01-CLM-001/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: NON_CLINICAL
+  claim_id: P01-CLM-001/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: BINARY_MI_BRANCH_SCOPE
+  claim_id: P01-CLM-001/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: IMPLEMENTED_CHECKS_ONLY
+  claim_id: P01-CLM-002/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: NO_MODEL_EFFECT_INFERENCE
+  claim_id: P01-CLM-003/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: PRIVATE_KAGGLE_EXTERNAL_ARTIFACT_ACCESS
+  claim_id: P01-CLM-004/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: SOURCE_LICENSE_REDISTRIBUTION_CONSTRAINTS
+  claim_id: P01-CLM-004/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: SOFT_FLAG_NOT_EQUIVALENT_TO_CORRUPTION
+  claim_id: P01-CLM-005/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: NO_ABLATION_EFFECTIVENESS_IN_P01
+  claim_id: P01-CLM-006/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: A4_R2_RETROSPECTIVE_FEASIBILITY_ORIGIN_NOT_CONFIRMATORY_IN_P01
+  claim_id: P01-CLM-007/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: A4_EFFECTIVENESS_NOT_EXECUTED
+  claim_id: P01-CLM-007/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: NO_EFFECTIVENESS_INFERENCE
+  claim_id: P01-CLM-008/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: ACTUAL_RUNTIME_PYTHON_3_12_13_WITH_COMPATIBILITY_AMENDMENT
+  claim_id: P01-CLM-009/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: ADAPTIVE_DISK_RESOURCE_AMENDMENT
+  claim_id: P01-CLM-009/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: DOCUMENTARY_CLOSURE_SEQUENCE_REMAINS
+  claim_id: P01-CLM-010/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: A4_EFFECTIVENESS_NOT_EXECUTED
+  claim_id: P01-CLM-011/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: A4_R2_RETROSPECTIVE_FEASIBILITY_ORIGIN_NOT_CONFIRMATORY_IN_P01
+  claim_id: P01-CLM-011/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: PUBLIC_EEG_ONLY
+  claim_id: P01-CLM-012/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: NON_CLINICAL
+  claim_id: P01-CLM-012/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: NO_DEPLOYMENT_CLAIM
+  claim_id: P01-CLM-012/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: PUBLIC_EEG_ONLY
+  claim_id: P02-CLM-001/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: NO_CALIBRATION_POLICY_CLAIM
+  claim_id: P02-CLM-001/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: DATASET_HETEROGENEITY
+  claim_id: P02-CLM-002/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: BNCI_TEST_PARTICIPANTS_1
+  claim_id: P02-CLM-002/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: MULTIPLICITY
+  claim_id: P02-CLM-003/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: PARTICIPANT_HETEROGENEITY
+  claim_id: P02-CLM-003/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: SINGLE_FROZEN_SUBSET
+  claim_id: P02-CLM-004/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: NO_LOW_LABEL_REPEAT_STABILITY
+  claim_id: P02-CLM-004/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: POST_OBSERVATION_AMENDMENT
+  claim_id: P02-CLM-005/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: DIAGNOSTIC_VALIDATION_EVIDENCE
+  claim_id: P02-CLM-005/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: DIAGNOSTIC_ONLY
+  claim_id: P02-CLM-006/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: SINGLE_REPEAT
+  claim_id: P02-CLM-007/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: DEEP_ANCHOR_BUDGETS
+  claim_id: P02-CLM-007/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: CELL_SPECIFIC_EFFECT
+  claim_id: P02-CLM-008/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: POST_HOC_ONLY
+  claim_id: P02-CLM-009/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: THREE_REPEAT_NOT_FIVE_REPEAT
+  claim_id: P02-CLM-009/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: DOWNSTREAM_SCIENCE_NOT_EXECUTED
+  claim_id: P02-CLM-010/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: Technical traceability is not scientific/clinical effectiveness by itself.
+  claim_id: CUM-CLM-001/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: Bounded to the implemented registered leakage/disjointness checks.
+  claim_id: CUM-CLM-002/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: BNCI held-out test participant n=1; no universal rank claim.
+  claim_id: CUM-CLM-003/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: Single frozen subset per budget; no repeated-subset stability.
+  claim_id: CUM-CLM-004/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: Single canonical refit repeat, deep anchor budgets, Stage18S post-hoc.
+  claim_id: CUM-CLM-005/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: Diagnostic/validation evidence does not establish universal test-set gains or architecture superiority.
+  claim_id: CUM-CLM-006/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: Different negative-evidence classes are not quantitatively interchangeable.
+  claim_id: CUM-CLM-007/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED
+- limitation_id: Downstream science is not yet executed.
+  claim_id: CUM-CLM-008/v1
+  effect: QUALIFIES_OR_BOUNDS_CLAIM
+  required_propagation:
+  - EVIDENCE_MAP
+  - LAYER10_IF_CLAIM_USED

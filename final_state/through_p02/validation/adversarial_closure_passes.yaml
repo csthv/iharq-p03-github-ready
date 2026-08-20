@@ -1,0 +1,29 @@
+passes:
+- adversary: A_MISSING_P02_OUTPUT
+  result: PASS
+  basis: 30 expected product families dispositioned; 104/104 P02 analysis expectations
+    previously closed; runtime/schema/handoffs inspected.
+- adversary: B_ANALYSIS_LOST_RESULT
+  result: PASS
+  basis: Cumulative analysis preserves finalized P02 R2 source and passed preservation
+    validation; key A0/A4/Stage11/12/18S/failure numbers parity checked.
+- adversary: C_EVIDENCE_MAP_LOSS
+  result: PASS
+  basis: 37 claims, 49 findings, 69 evidence nodes; orphan claim/evidence reports
+    zero; P02 completeness true.
+- adversary: D_LAYER10_OVERCLAIM
+  result: PASS
+  basis: Prior 39/39 downstream validation includes three-way claim parity and visual
+    QA; current captions/registries preserved.
+- adversary: E_EARLIER_PHASE_BROKEN
+  result: PASS
+  basis: P00/P01 predecessor archives and IDs preserved; cumulative harmony matrix
+    PASS.
+- adversary: F_NEXT_PHASE_CANNOT_START
+  result: PASS_WITH_LIMITATIONS
+  basis: P03 contract, Layer2ReadinessReport PASS, 1,014 prediction partition manifests,
+    672 model registry partitions, dual-credential external retrieval contract available.
+- adversary: G_FUTURE_PAPER_CANNOT_BE_WRITTEN
+  result: PASS
+  basis: Protocol + cumulative analysis + governed claims + Evidence Map + reproducible
+    Layer10 figures/tables/source data are bundled.

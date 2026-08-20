@@ -1,0 +1,451 @@
+matrix_id: P02-L2-SUBMODULE-CAPABILITY-MATRIX-R4
+note: These are required implementation capabilities/submodules; they do not create
+  additional official Layer-2 modules.
+official_module_count: 8
+required_capability_count: 53
+missing_required_capabilities: 0
+capabilities:
+- capability_id: M01-C01
+  module_id: L2-M01
+  capability: portfolio resolver
+  required_behavior: Resolve all 16 branch identities/status/admission paths before
+    run expansion.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M01-C02
+  module_id: L2-M01
+  capability: split-safe transform fitter
+  required_behavior: Fit CSP/filter-bank/covariance/alignment/normalization/learned
+    transforms only on lawful roles.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M01-C03
+  module_id: L2-M01
+  capability: classical trainer
+  required_behavior: Train CSP-LDA and FBCSP-LR under frozen grids and budgets.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M01-C04
+  module_id: L2-M01
+  capability: Riemannian trainer
+  required_behavior: Train TS-LR, conditional EA-TS and diagnostic MDM under train-safe
+    references.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M01-C05
+  module_id: L2-M01
+  capability: neural trainer
+  required_behavior: Train EEGNet and conditionally admitted neural/sequence branches
+    with frozen early stopping/checkpoint rules.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M01-C06
+  module_id: L2-M01
+  capability: sanity/negative-control executor
+  required_behavior: Execute majority, stratified and grouped permutation controls
+    with explicit terminal evidence.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M01-C07
+  module_id: L2-M01
+  capability: checkpoint lifecycle manager
+  required_behavior: Save/hash/reload accepted checkpoints and route failures to terminal
+    ledger.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M02-C01
+  module_id: L2-M02
+  capability: prediction batcher
+  required_behavior: Perform deterministic inference over eligible evaluation windows.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M02-C02
+  module_id: L2-M02
+  capability: score-semantic adapter
+  required_behavior: Preserve native logits/probabilities/decision scores without
+    fabrication.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M02-C03
+  module_id: L2-M02
+  capability: class-order enforcer
+  required_behavior: Freeze left_hand/right_hand class order and positive-class identity.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M02-C04
+  module_id: L2-M02
+  capability: lineage binder
+  required_behavior: Bind dataset/subject/session/event/window/split/budget/model/checkpoint/config/seed
+    IDs.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M02-C05
+  module_id: L2-M02
+  capability: PredictionRecord writer
+  required_behavior: Serialize schema-valid prediction records with validity/missingness
+    fields.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M02-C06
+  module_id: L2-M02
+  capability: coverage auditor
+  required_behavior: Account for every eligible prediction denominator and score availability.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M02-C07
+  module_id: L2-M02
+  capability: inference failure router
+  required_behavior: Preserve failed/missing score cases instead of silently dropping
+    them.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M03-C01
+  module_id: L2-M03
+  capability: inherited-budget loader
+  required_behavior: Load exact P01 per-class budget membership without resampling.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M03-C02
+  module_id: L2-M03
+  capability: budget eligibility validator
+  required_behavior: Detect sparse/ineligible budget cells and preserve status.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M03-C03
+  module_id: L2-M03
+  capability: budget metric aggregator
+  required_behavior: Compute frozen metrics for lawful low-label branch/budget cells.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M03-C04
+  module_id: L2-M03
+  capability: curve constructor
+  required_behavior: Construct ordered 1/2/4/8/16/32-per-class source curves.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M03-C05
+  module_id: L2-M03
+  capability: curve record writer
+  required_behavior: Emit LowCalibrationCurveRecord and source tables.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M03-C06
+  module_id: L2-M03
+  capability: single-subset limitation propagator
+  required_behavior: Carry SINGLE_FROZEN_SUBSET_LIMITATION into analysis/Layer10 outputs.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M04-C01
+  module_id: L2-M04
+  capability: participant metric aggregator
+  required_behavior: Aggregate per-participant decoder evidence without treating windows
+    as independent replicates.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M04-C02
+  module_id: L2-M04
+  capability: session metric aggregator
+  required_behavior: Produce descriptive session-level summaries where IDs support
+    them.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M04-C03
+  module_id: L2-M04
+  capability: coverage threshold checker
+  required_behavior: Mark insufficient participant/session evidence diagnostic-only.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M04-C04
+  module_id: L2-M04
+  capability: difficulty descriptor
+  required_behavior: Describe heterogeneity without diagnosis/routing/decision-time
+    hard-subject labels.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M04-C05
+  module_id: L2-M04
+  capability: profile record writer
+  required_behavior: Emit SubjectProfileRecord with lineage and limitations.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M04-C06
+  module_id: L2-M04
+  capability: profile source exporter
+  required_behavior: Export participant/session table/figure source data.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M05-C01
+  module_id: L2-M05
+  capability: model identity allocator
+  required_behavior: Create stable branch/model/checkpoint/config/seed identities.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M05-C02
+  module_id: L2-M05
+  capability: implementation provenance capture
+  required_behavior: Record implementation/version/transform/input representation
+    provenance.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M05-C03
+  module_id: L2-M05
+  capability: score/class-order registry
+  required_behavior: Bind score type, probability/logit availability and class order.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M05-C04
+  module_id: L2-M05
+  capability: checkpoint registry
+  required_behavior: Bind checkpoint SHA-256/size/environment/reload result.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M05-C05
+  module_id: L2-M05
+  capability: branch lifecycle registry
+  required_behavior: Record REQUIRED/CONDITIONAL/FALLBACK/DIAGNOSTIC terminal state.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M05-C06
+  module_id: L2-M05
+  capability: model-card source exporter
+  required_behavior: Export read-only card source material without creating primary
+    evidence in Layer10.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M06-C01
+  module_id: L2-M06
+  capability: A4 parent matcher
+  required_behavior: Match core and A4 R2 conditions by exact parent/source-event
+    identity.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M06-C02
+  module_id: L2-M06
+  capability: long-window comparator
+  required_behavior: Evaluate A4-C1 against A4-C0 on matched common support.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M06-C03
+  module_id: L2-M06
+  capability: multi-window hard voter
+  required_behavior: Execute A4-C2 with frozen class-order/tie rule.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M06-C04
+  module_id: L2-M06
+  capability: multi-window probability averager
+  required_behavior: Execute A4-C3 only when native probability semantics are valid.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M06-C05
+  module_id: L2-M06
+  capability: model hard voter
+  required_behavior: Execute A4-C4 using frozen validation-selected representatives.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M06-C06
+  module_id: L2-M06
+  capability: model probability averager
+  required_behavior: Execute A4-C5 under probability availability/common support.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M06-C07
+  module_id: L2-M06
+  capability: matched comparison/statistics engine
+  required_behavior: Compute matched deltas, intervals/tests/effect source data and
+    missingness.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M06-C08
+  module_id: L2-M06
+  capability: burden/disagreement exporter
+  required_behavior: Emit latency/window-burden/disagreement source data and EnsembleControlRecord.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M07-C01
+  module_id: L2-M07
+  capability: checkpoint provenance verifier
+  required_behavior: Verify exact pretrained source/revision/checksum before admission.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M07-C02
+  module_id: L2-M07
+  capability: license/corpus-overlap verifier
+  required_behavior: Fail closed on license or unresolved benchmark overlap.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M07-C03
+  module_id: L2-M07
+  capability: channel/montage adapter
+  required_behavior: Validate channel/montage mapping without silent signal invention.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M07-C04
+  module_id: L2-M07
+  capability: sampling/input adapter
+  required_behavior: Apply only frozen model-local resampling/input-shape transformations.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M07-C05
+  module_id: L2-M07
+  capability: trainable-component controller
+  required_behavior: Freeze trainable/frozen components and adapter behavior.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M07-C06
+  module_id: L2-M07
+  capability: SSL prediction/registry adapter
+  required_behavior: Emit ordinary PredictionRecord/ModelRegistryRecord or explicit
+    blocked/incompatible evidence.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M08-C01
+  module_id: L2-M08
+  capability: schema completeness validator
+  required_behavior: Validate all required P02 record families and foreign keys.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M08-C02
+  module_id: L2-M08
+  capability: P03 score readiness validator
+  required_behavior: Check raw score/logit/probability/class-order fields without
+    reverse engineering.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M08-C03
+  module_id: L2-M08
+  capability: downstream compatibility matrix
+  required_behavior: Compute per-consumer readiness rather than global success inference.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M08-C04
+  module_id: L2-M08
+  capability: negative/failure visibility validator
+  required_behavior: Ensure failed/skipped/blocked rows remain in denominators/accounting.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M08-C05
+  module_id: L2-M08
+  capability: evidence sufficiency validator
+  required_behavior: Require A0/A4/evaluation/analysis-source closure before release.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M08-C06
+  module_id: L2-M08
+  capability: handoff generator
+  required_behavior: Emit Protocol/Analysis/Layer0/EvidenceMap/Layer10/P03 handoff
+    surfaces.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY
+- capability_id: M08-C07
+  module_id: L2-M08
+  capability: release/bundle validator
+  required_behavior: Verify manifest/checksums/path safety/secret scan/output inventory.
+  implementation: src/iharq/layer2_decoders
+  test: mapped by p02_test_catalog_R3.yaml + R4 traceability
+  gate: module/evidence gate from p02_gate_matrix_R3.yaml
+  status: MAPPED_REQUIRED_CAPABILITY

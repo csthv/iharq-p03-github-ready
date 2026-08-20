@@ -1,0 +1,14 @@
+negative_id,type,status,population,result,evidence,impact
+P00-N-001,EXPECTED_MALFORMED_REJECTION,FAILED_AS_EXPECTED,178,178 malformed categories rejected,fixtures/invalid and negative tests,supports fail-closed validation
+P00-N-002,PORTABLE_LOCK_UNAVAILABLE,UNVERIFIED_PORTABILITY,1,complete registry-resolved uv.lock unavailable,uv.lock fail-closed validator,cross-version portability not claimed
+P00-N-003,PYTHON_VERSION_UNAVAILABLE,NOT_RUN,2,Python 3.11 and 3.12 unavailable locally,environment catalog,compatibility limited to verified Python 3.13.5
+P00-N-004,HISTORICAL_MODE_C_NOT_PROVEN,MODE_B,1,historical runs remain engineering/retrospective Mode B,timing_mode_audit_R2.yaml,no confirmatory/prospective upgrade
+P00-N-005,MONOLITHIC_RUNNER_TIMEOUT,REPAIRED,1,single-call cell runner exceeded tool window; bounded cell execution passed,preserved execution transcript and per-cell logs,no cell coverage lost
+P00-N-006,CLEAN_REPRODUCTION_WRAPPER_TIMEOUT,REPAIRED,1,monolithic reproduction exceeded tool window; isolated bounded reproduction passed,clean_reproduction_report.json,runner evidence split; contract preserved
+P00-N-007,GITHUB_CI,NOT_APPLICABLE,1,not attempted under local-first strategy,publication strategy,not a gate or failure
+P00-N-008,KAGGLE,NOT_REQUIRED_NOT_RUN,1,no Kaggle run performed,P00 non-empirical scope,none
+P00-N-009,P0_GATE_18,DEFERRED,1,final closure gate deferred,gate profile,Phase 0 not closed
+P00-N-010,STALE_ANALYSIS_PACKAGE_HASH,REPAIRED,1,R1 analysis-package manifest contained one stale file identity,final independent audit defect P00-AUD-DEF-001,R1 retained as history; R2 manifest regenerated
+P00-N-011,STALE_PUBLICATION_ASSET_HASHES,REPAIRED,3,R1 publication asset manifest contained three stale hash/size rows,final independent audit defect P00-AUD-DEF-002,R2 self-excluding asset manifest regenerated
+P00-N-012,TERMINAL_MANIFEST_STATUS_DRIFT,REPAIRED,1,R1 Appendix M showed terminal manifest check FAIL while summary/handoff stated PASS,final independent audit drift audit,R2 preserves failure as repair history and records final pass separately
+P00-N-013,README_POINTER_STALE_AFTER_SUCCESSOR_EDIT,REPAIRED,1,R2 README edit invalidated governed pointer checksum,initial R2 pytest failure,pointer regenerated and full suite rerun

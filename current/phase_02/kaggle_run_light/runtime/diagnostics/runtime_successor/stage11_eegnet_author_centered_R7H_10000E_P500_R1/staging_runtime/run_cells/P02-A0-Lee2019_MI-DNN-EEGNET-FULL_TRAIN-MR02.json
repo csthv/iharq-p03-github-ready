@@ -1,0 +1,109 @@
+{
+  "run_cell_id": "P02-A0-Lee2019_MI-DNN-EEGNET-FULL_TRAIN-MR02",
+  "ablation_id": "A0",
+  "terminal_status": "SUCCESS",
+  "prediction_partition": "records/PredictionRecord/dataset=Lee2019_MI/branch=DNN-EEGNET/budget=FULL_TRAIN/P02-A0-Lee2019_MI-DNN-EEGNET-FULL_TRAIN-MR02.jsonl",
+  "metric_source": "metrics/P02-A0-Lee2019_MI-DNN-EEGNET-FULL_TRAIN-MR02.json",
+  "checkpoint_sha256": "63ee7b1d08db4aa81c97e28d64998dbe0b680e0ec7444083961f221d4106748c",
+  "observed_denominator": 600,
+  "expected_denominator": 600,
+  "selected_params": {
+    "recipe_id": "R7H-EEGNET-LAWHERN-SMR-SOURCE-CENTERED-P01-160HZ-10000E-P500-R1",
+    "lr": 0.001,
+    "optimizer": "Adam",
+    "weight_decay": 0.0,
+    "dropout": 0.5,
+    "epochs_max": 10000,
+    "patience": 500,
+    "min_epochs_before_early_stop": 500,
+    "kernel_length": 40,
+    "depthwise_kernel_length": 20,
+    "pool1_kernel_size": 5,
+    "pool2_kernel_size": 10
+  },
+  "resolved_variant": "EEGNet-R7-LAWHERN-SMR-P01-160HZ",
+  "score_type": "SOFTMAX_PROBABILITY",
+  "validation_burden_seconds": 955.7233784619966,
+  "model_storage_bytes": 17627,
+  "selected_candidate_id": "R7H-EEGNET-LAWHERN-SMR-SOURCE-CENTERED-P01-160HZ-10000E-P500-R1",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.0013629829991259612,
+    "batch1_latency_p95_s": 0.0017822928013629278,
+    "repeats": 5,
+    "latency_probe_mode": "FORWARD_ONLY_NO_METRICS"
+  },
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "class_weights": null,
+  "class_weight_calibration": {
+    "selected_policy": "UNIFORM_NO_WEIGHT",
+    "selected_weights": null,
+    "candidate_results": [
+      {
+        "actual_batch_size": 64,
+        "best_epoch": 102,
+        "candidate_checkpoint_bytes": 17627,
+        "candidate_checkpoint_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage11_eegnet_author_centered_R7H_10000E_P500_R1/staging_runtime/raw_outputs/stage11_r7_training_history/P02-A0-Lee2019_MI-DNN-EEGNET-FULL_TRAIN-MR02__primary__UNIFORM_NO_WEIGHT.candidate.state_dict.pt",
+        "candidate_checkpoint_sha256": "63ee7b1d08db4aa81c97e28d64998dbe0b680e0ec7444083961f221d4106748c",
+        "elapsed_seconds": 955.7233784619966,
+        "gradient_accumulation": 1,
+        "input_statistics": {
+          "channel_count": 62,
+          "fit_samples": 3200,
+          "mean_uv_max": 0.002102302206139303,
+          "mean_uv_min": -0.00253803434411313,
+          "source_unit": "V",
+          "std_uv_max": 7.855912283818203,
+          "std_uv_min": 3.15136852664103,
+          "test_statistics_used": false,
+          "unit_multiplier": 1000000.0
+        },
+        "policy": "UNIFORM_NO_WEIGHT",
+        "status": "SUCCESS",
+        "validation_metrics": {
+          "ACC": 0.788,
+          "BACC": 0.788,
+          "CLASS_SUPPORT": [
+            250,
+            250
+          ],
+          "CONFUSION": [
+            [
+              227,
+              23
+            ],
+            [
+              83,
+              167
+            ]
+          ],
+          "F1_MACRO": 0.7849025974025974,
+          "PRED_COMPLETE": 500,
+          "ROC_AUC": 0.775792,
+          "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY",
+          "ROC_AUC_STATUS": "PASS"
+        },
+        "weights": null
+      }
+    ],
+    "test_set_used": false
+  },
+  "training_condition_id": "A0-RAW-ACCEPT-ALL",
+  "source_centered_recipe_sha256": "76a601fee7b69395453f240507abc843c63722c548211f43cf2b88647ac7af09",
+  "source_centered_recipe_id": "R7H-EEGNET-LAWHERN-SMR-SOURCE-CENTERED-P01-160HZ-10000E-P500-R1",
+  "input_statistics": {
+    "channel_count": 62,
+    "fit_samples": 3200,
+    "mean_uv_max": 0.002102302206139303,
+    "mean_uv_min": -0.00253803434411313,
+    "source_unit": "V",
+    "std_uv_max": 7.855912283818203,
+    "std_uv_min": 3.15136852664103,
+    "test_statistics_used": false,
+    "unit_multiplier": 1000000.0
+  },
+  "best_epoch": 102,
+  "comparison_reference": null,
+  "augmentation_probability": null,
+  "augmentation_condition_id": null,
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

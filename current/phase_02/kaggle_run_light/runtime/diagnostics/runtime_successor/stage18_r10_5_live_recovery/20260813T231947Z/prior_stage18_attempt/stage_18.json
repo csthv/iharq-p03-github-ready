@@ -1,0 +1,31 @@
+{
+  "stage_id": "18",
+  "status": "FAILED",
+  "attempt_id": "418ca336e4b7",
+  "inputs": {},
+  "input_hashes": {},
+  "outputs": {},
+  "output_hashes": {},
+  "dependencies": [
+    "17"
+  ],
+  "elapsed_seconds": 2252.1116065979004,
+  "log_path": "logs/stage_18_418ca336e4b7.log",
+  "heartbeat_write_errors": [],
+  "observability_status": "PASS",
+  "blockers": [
+    "ValueError:invalid literal for int() with base 10: 'P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS'"
+  ],
+  "observations": [
+    "Traceback (most recent call last):\n  File \"/kaggle/working/IHARQ_P02_L2_Kaggle_Notebook_Implementation_Package_R5/src/iharq/layer2_decoders/stage_runner.py\", line 35, in run\n    try:out=fn();status='SUCCESS'\n            ^^^^\n  File \"/kaggle/working/IHARQ_P02_L2_Kaggle_Notebook_Implementation_Package_R5/src/iharq/layer2_decoders/kaggle_entry.py\", line 15, in <lambda>\n    sid=str(s);r=self.runner.run(sid,lambda:HANDLERS[sid](self.ctx),self.reuse);self.results.append(r)\n                                            ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/working/IHARQ_P02_L2_Kaggle_Notebook_Implementation_Package_R5/src/iharq/layer2_decoders/orchestration.py\", line 195, in s18\n    t=execute_ensemble(c,ctx.state['store'],ctx.state['core'],reps,ctx.state['schema'],ctx.state['config_hash'],ctx.state['config']['data']) if c['condition_id'] in {'A4-C4-MODEL-HARD-VOTE','A4-C5-MODEL-PROB-AVG'} else execute_role(c,ctx.state['store'],ctx.state['core'],ctx.state['a4'],reps,ctx.state['schema'],ctx.state['config_hash'],ctx.state['runtime_freeze'],ctx.state['config']['data'],ctx.fixture,ctx.state.get('implementation_bindings'),{'batch_size':int(ctx.state.get('resource_profile',{}).get('recommended_neural_batch_size',16 if ctx.fixture else 64))});terms.append(t)\n                                                                                                                                                                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_2693/1640822738.py\", line 2656, in R10_4_A4_execute_role\n    return _R10_PARENT_EXECUTE_ROLE(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/working/IHARQ_P02_L2_Kaggle_Notebook_Implementation_Package_R5/src/iharq/layer2_decoders/a4.py\", line 86, in execute_role\n    if cond=='A4-C1-LONG-3P5S':parts=[_fit_member(c,store,core,a4,b,None,schema_path,config_sha,freeze,fixture,implementation_bindings,runtime_overrides)]\n                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_2693/1640822738.py\", line 764, in R8_A4_fit_member\n    return _R8_PARENT_FIT_MEMBER(c,store,core,a4,b,member,schema_path,config_sha,freeze,fixture,implementation_bindings,runtime_overrides)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/working/IHARQ_P02_L2_Kaggle_Notebook_Implementation_Package_R5/src/iharq/layer2_decoders/a4.py\", line 51, in _fit_member\n    tr=_train(a4,core,ds,budget,freeze);va=a4.rows(dataset_id=ds,role='validation');te=a4.rows(dataset_id=ds,role='test');X,y,_=a4.load_rows(tr,member);Xv,yv,_=a4.load_rows(va,member);Xt,yt,rows=a4.load_rows(te,member);p=_params(store,ds,b,budget,rep);pp={**dict((implementation_bindings or {}).get(b,{}) or {}),**p,**dict(runtime_overrides or {}),**({'fixture_non_scientific_adapter':True} if fixture and b.startswith('RIE-') else {})};m=make_adapter(b,int(c['seed_id']),X.shape[-1],X.shape[1],pp)\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/working/IHARQ_P02_L2_Kaggle_Notebook_Implementation_Package_R5/src/iharq/layer2_decoders/a4.py\", line 43, in _train\n    seed=int(freeze['budgets']['seed']);ids=frozen_budget_memberships(core,budgets=freeze['budgets']['per_class'],seed=seed)[f'{ds}:budget-{int(budget)}-seed-{seed}'];return [r for r in a4.rows(dataset_id=ds,role='calibration') if r['event_id'] in ids]\n                                                                                                                                            ^^^^^^^^^^^\nValueError: invalid literal for int() with base 10: 'P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS'\n"
+  ],
+  "revision_fingerprint": {
+    "notebook_revision": "R4",
+    "notebook_id": "IHARQ-P02-COMPLETE-EXECUTION-AND-ANALYSIS-R4",
+    "source_sha256": "a54bfa816acc6763c1d1042b8c65cf54ae04ec774c57ec50de86014a6730c5fa",
+    "config_sha256": "d82334535e397c681d6172694da96d3fff0143ffb1b63a18876ee1f7778f60a1",
+    "stage_plan_sha256": "043eb30e008af910d37c563e8be8c719ef881cf009aec3e34687dc97bdc34aad",
+    "scientific_freeze_sha256": "7449216c988eec14191ba85300d720547f06fbc6ac7020e9e142bf12a4b0a598",
+    "scientific_freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5"
+  }
+}

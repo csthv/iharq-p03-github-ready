@@ -1,0 +1,437 @@
+{
+  "supplement_id": "P02-STAGE18S-BALANCED-SENSITIVITY-R1",
+  "rows": [
+    {
+      "dataset_id": "BNCI2014_001",
+      "budget_id": "FULL_TRAIN",
+      "role_id": "NEURAL",
+      "model_repeat_index": 1,
+      "selected_branch": "DNN-EEGNET",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "BNCI2014_001",
+      "budget_id": "FULL_TRAIN",
+      "role_id": "NEURAL",
+      "model_repeat_index": 2,
+      "selected_branch": "DNN-EEGNET",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "BNCI2014_001",
+      "budget_id": "FULL_TRAIN",
+      "role_id": "SSL",
+      "model_repeat_index": 1,
+      "selected_branch": "SSL-CBRAMOD",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "BNCI2014_001",
+      "budget_id": "FULL_TRAIN",
+      "role_id": "SSL",
+      "model_repeat_index": 2,
+      "selected_branch": "SSL-CBRAMOD",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "BNCI2014_001",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS",
+      "role_id": "NEURAL",
+      "model_repeat_index": 0,
+      "selected_branch": "DNN-EEGNET",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "BNCI2014_001",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS",
+      "role_id": "SSL",
+      "model_repeat_index": 0,
+      "selected_branch": "SSL-CBRAMOD",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "BNCI2014_001",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS",
+      "role_id": "NEURAL",
+      "model_repeat_index": 1,
+      "selected_branch": "DNN-EEGNET",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "BNCI2014_001",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS",
+      "role_id": "NEURAL",
+      "model_repeat_index": 2,
+      "selected_branch": "DNN-EEGNET",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "BNCI2014_001",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS",
+      "role_id": "SSL",
+      "model_repeat_index": 1,
+      "selected_branch": "SSL-CBRAMOD",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "BNCI2014_001",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS",
+      "role_id": "SSL",
+      "model_repeat_index": 2,
+      "selected_branch": "SSL-CBRAMOD",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "BNCI2014_001",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:32_PER_CLASS",
+      "role_id": "NEURAL",
+      "model_repeat_index": 0,
+      "selected_branch": "DNN-EEGNET",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "BNCI2014_001",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:32_PER_CLASS",
+      "role_id": "SSL",
+      "model_repeat_index": 0,
+      "selected_branch": "SSL-CBRAMOD",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "BNCI2014_001",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS",
+      "role_id": "NEURAL",
+      "model_repeat_index": 0,
+      "selected_branch": "DNN-EEGNET",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "BNCI2014_001",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS",
+      "role_id": "SSL",
+      "model_repeat_index": 0,
+      "selected_branch": "SSL-CBRAMOD",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "BNCI2014_001",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS",
+      "role_id": "NEURAL",
+      "model_repeat_index": 1,
+      "selected_branch": "DNN-EEGNET",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "BNCI2014_001",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS",
+      "role_id": "NEURAL",
+      "model_repeat_index": 2,
+      "selected_branch": "DNN-EEGNET",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "BNCI2014_001",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS",
+      "role_id": "SSL",
+      "model_repeat_index": 1,
+      "selected_branch": "SSL-CBRAMOD",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "BNCI2014_001",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS",
+      "role_id": "SSL",
+      "model_repeat_index": 2,
+      "selected_branch": "SSL-CBRAMOD",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "Lee2019_MI",
+      "budget_id": "FULL_TRAIN",
+      "role_id": "NEURAL",
+      "model_repeat_index": 1,
+      "selected_branch": "DNN-EEGNET",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "Lee2019_MI",
+      "budget_id": "FULL_TRAIN",
+      "role_id": "NEURAL",
+      "model_repeat_index": 2,
+      "selected_branch": "DNN-EEGNET",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "Lee2019_MI",
+      "budget_id": "FULL_TRAIN",
+      "role_id": "SSL",
+      "model_repeat_index": 1,
+      "selected_branch": "SSL-CBRAMOD",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "Lee2019_MI",
+      "budget_id": "FULL_TRAIN",
+      "role_id": "SSL",
+      "model_repeat_index": 2,
+      "selected_branch": "SSL-CBRAMOD",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "Lee2019_MI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS",
+      "role_id": "NEURAL",
+      "model_repeat_index": 0,
+      "selected_branch": "DNN-EEGNET",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "Lee2019_MI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS",
+      "role_id": "SSL",
+      "model_repeat_index": 0,
+      "selected_branch": "SSL-CBRAMOD",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "Lee2019_MI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS",
+      "role_id": "NEURAL",
+      "model_repeat_index": 1,
+      "selected_branch": "DNN-EEGNET",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "Lee2019_MI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS",
+      "role_id": "NEURAL",
+      "model_repeat_index": 2,
+      "selected_branch": "DNN-EEGNET",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "Lee2019_MI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS",
+      "role_id": "SSL",
+      "model_repeat_index": 1,
+      "selected_branch": "SSL-CBRAMOD",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "Lee2019_MI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS",
+      "role_id": "SSL",
+      "model_repeat_index": 2,
+      "selected_branch": "SSL-CBRAMOD",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "Lee2019_MI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:32_PER_CLASS",
+      "role_id": "NEURAL",
+      "model_repeat_index": 0,
+      "selected_branch": "DNN-EEGNET",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "Lee2019_MI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:32_PER_CLASS",
+      "role_id": "SSL",
+      "model_repeat_index": 0,
+      "selected_branch": "SSL-CBRAMOD",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "Lee2019_MI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS",
+      "role_id": "NEURAL",
+      "model_repeat_index": 0,
+      "selected_branch": "DNN-EEGNET",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "Lee2019_MI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS",
+      "role_id": "SSL",
+      "model_repeat_index": 0,
+      "selected_branch": "SSL-CBRAMOD",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "Lee2019_MI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS",
+      "role_id": "NEURAL",
+      "model_repeat_index": 1,
+      "selected_branch": "DNN-EEGNET",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "Lee2019_MI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS",
+      "role_id": "NEURAL",
+      "model_repeat_index": 2,
+      "selected_branch": "DNN-EEGNET",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "Lee2019_MI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS",
+      "role_id": "SSL",
+      "model_repeat_index": 1,
+      "selected_branch": "SSL-CBRAMOD",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "Lee2019_MI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS",
+      "role_id": "SSL",
+      "model_repeat_index": 2,
+      "selected_branch": "SSL-CBRAMOD",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "PhysioNetMI",
+      "budget_id": "FULL_TRAIN",
+      "role_id": "NEURAL",
+      "model_repeat_index": 1,
+      "selected_branch": "DNN-EEGNET",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "PhysioNetMI",
+      "budget_id": "FULL_TRAIN",
+      "role_id": "NEURAL",
+      "model_repeat_index": 2,
+      "selected_branch": "DNN-EEGNET",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "PhysioNetMI",
+      "budget_id": "FULL_TRAIN",
+      "role_id": "SSL",
+      "model_repeat_index": 1,
+      "selected_branch": "SSL-CBRAMOD",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "PhysioNetMI",
+      "budget_id": "FULL_TRAIN",
+      "role_id": "SSL",
+      "model_repeat_index": 2,
+      "selected_branch": "SSL-CBRAMOD",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "PhysioNetMI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS",
+      "role_id": "NEURAL",
+      "model_repeat_index": 0,
+      "selected_branch": "DNN-EEGNET",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "PhysioNetMI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS",
+      "role_id": "SSL",
+      "model_repeat_index": 0,
+      "selected_branch": "SSL-CBRAMOD",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "PhysioNetMI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS",
+      "role_id": "NEURAL",
+      "model_repeat_index": 1,
+      "selected_branch": "DNN-EEGNET",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "PhysioNetMI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS",
+      "role_id": "NEURAL",
+      "model_repeat_index": 2,
+      "selected_branch": "DNN-EEGNET",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "PhysioNetMI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS",
+      "role_id": "SSL",
+      "model_repeat_index": 1,
+      "selected_branch": "SSL-CBRAMOD",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "PhysioNetMI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS",
+      "role_id": "SSL",
+      "model_repeat_index": 2,
+      "selected_branch": "SSL-CBRAMOD",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "PhysioNetMI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:32_PER_CLASS",
+      "role_id": "NEURAL",
+      "model_repeat_index": 0,
+      "selected_branch": "DNN-EEGNET",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "PhysioNetMI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:32_PER_CLASS",
+      "role_id": "SSL",
+      "model_repeat_index": 0,
+      "selected_branch": "SSL-CBRAMOD",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "PhysioNetMI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS",
+      "role_id": "NEURAL",
+      "model_repeat_index": 0,
+      "selected_branch": "DNN-EEGNET",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "PhysioNetMI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS",
+      "role_id": "SSL",
+      "model_repeat_index": 0,
+      "selected_branch": "SSL-CBRAMOD",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "PhysioNetMI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS",
+      "role_id": "NEURAL",
+      "model_repeat_index": 1,
+      "selected_branch": "DNN-EEGNET",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "PhysioNetMI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS",
+      "role_id": "NEURAL",
+      "model_repeat_index": 2,
+      "selected_branch": "DNN-EEGNET",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "PhysioNetMI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS",
+      "role_id": "SSL",
+      "model_repeat_index": 1,
+      "selected_branch": "SSL-CBRAMOD",
+      "test_outcome_influence": "PROHIBITED"
+    },
+    {
+      "dataset_id": "PhysioNetMI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS",
+      "role_id": "SSL",
+      "model_repeat_index": 2,
+      "selected_branch": "SSL-CBRAMOD",
+      "test_outcome_influence": "PROHIBITED"
+    }
+  ]
+}

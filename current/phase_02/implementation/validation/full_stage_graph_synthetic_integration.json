@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "label": "FIXTURE_NON_SCIENTIFIC_NOT_P02_EVIDENCE",
+  "scientific_evidence": false,
+  "stages": 26,
+  "stage15_a0_closure": "PASS",
+  "stage15_training_policy_closure": "PASS",
+  "future_protocol_sync_artifacts": "PASS",
+  "stage18_a4_execution": "PASS",
+  "c1_c2_c3_vs_c0_closure": "PASS",
+  "c4_c5_vs_strongest_closure": "PASS",
+  "stage18u": "PASS",
+  "late_stage_chain": "PASS",
+  "runtime_checksums": {
+    "status": "PASS",
+    "rows": 311,
+    "missing": [],
+    "mismatch": []
+  },
+  "runtime_zip": {
+    "status": "PASS",
+    "sha256": "80a60ad89125d4bd58178119d94dfa07c240a29c2d36abb45ae633911098a9b6",
+    "bytes": 273050,
+    "members": 312,
+    "crc": "PASS",
+    "unsafe_paths": 0
+  },
+  "fixture_bundle_path": "validation/FIXTURE_NON_SCIENTIFIC_RUNTIME_BUNDLE.zip"
+}

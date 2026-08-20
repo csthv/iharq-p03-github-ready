@@ -1,0 +1,38 @@
+{
+  "register_id": "P02-L2-NOTEBOOK-IMPLEMENTATION-R3-MACHINE-READABLE-PROVENANCE",
+  "status": "PASS",
+  "current_aliases": [
+    {
+      "alias": "machine_readable/p02_notebook_stage_plan.yaml",
+      "canonical": "machine_readable/p02_notebook_stage_plan_R4.yaml",
+      "relationship": "BYTE_IDENTICAL_CURRENT_ALIAS",
+      "alias_sha256": "1a3455aa87020a21292d35121617580985e61b54f7b5cd109515cd2567945238",
+      "canonical_sha256": "1a3455aa87020a21292d35121617580985e61b54f7b5cd109515cd2567945238",
+      "byte_identical": true
+    },
+    {
+      "alias": "machine_readable/p02_requirement_traceability.csv",
+      "scientific_predecessor_equivalent": "machine_readable/p02_requirement_traceability_R3.csv",
+      "relationship": "R3_SCIENTIFIC_TRACEABILITY_RETAINED; R4 finalization adds dedicated R4 matrices",
+      "byte_identical": false
+    }
+  ],
+  "history": [
+    {
+      "path": "history/R3/machine_readable/p02_notebook_stage_plan_R3.yaml",
+      "identity": "IHARQ-P02-COMPLETE-EXECUTION-AND-ANALYSIS-R3"
+    },
+    {
+      "path": "history/R2/machine_readable/p02_cumulative_test_reconciliation_R2.patch",
+      "status": "HISTORICAL_INVALID_DESCRIPTIVE_PATCH_SUPERSEDED_BY_R3"
+    },
+    {
+      "path": "machine_readable/p02_cumulative_test_reconciliation_R3.patch",
+      "status": "CURRENT_TESTED_STANDARD_UNIFIED_DIFF"
+    }
+  ],
+  "stale_current_R2_reconciliation_references": 0,
+  "current_stage_plan_identity": "IHARQ-P02-COMPLETE-EXECUTION-AND-ANALYSIS-R4",
+  "current_scientific_freeze": "machine_readable/p02_planned_scientific_execution_freeze_R4.yaml",
+  "preexecution_amendment": "contracts/P02_PREEXECUTION_TRAINING_POLICY_AMENDMENT_R1.yaml"
+}

@@ -1,0 +1,263 @@
+{
+  "P01_mutated": false,
+  "expected_band_hz": [
+    8.0,
+    32.0
+  ],
+  "expected_sampling_hz": 160,
+  "expected_window_samples": 480,
+  "full_train_exact": {
+    "BNCI2014_001": true,
+    "Lee2019_MI": true,
+    "PhysioNetMI": true
+  },
+  "leakage_checks": {
+    "FULL_TRAIN_train_only": "PASS",
+    "low_label_calibration_only": "PASS",
+    "low_label_nested": "PASS",
+    "subject_role_disjointness": "PASS",
+    "test_used_for_fit_or_selection": false,
+    "window_role_disjointness": "PASS"
+  },
+  "low_label": {
+    "BNCI2014_001": {
+      "P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS": {
+        "calibration_only": true,
+        "left_hand": 16,
+        "nested_prefix": true,
+        "right_hand": 16,
+        "rows": 32
+      },
+      "P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS": {
+        "calibration_only": true,
+        "left_hand": 1,
+        "nested_prefix": true,
+        "right_hand": 1,
+        "rows": 2
+      },
+      "P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS": {
+        "calibration_only": true,
+        "left_hand": 2,
+        "nested_prefix": true,
+        "right_hand": 2,
+        "rows": 4
+      },
+      "P01-L1-LOW-CAL-OFFICIAL-R2:32_PER_CLASS": {
+        "calibration_only": true,
+        "left_hand": 32,
+        "nested_prefix": true,
+        "right_hand": 32,
+        "rows": 64
+      },
+      "P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS": {
+        "calibration_only": true,
+        "left_hand": 4,
+        "nested_prefix": true,
+        "right_hand": 4,
+        "rows": 8
+      },
+      "P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS": {
+        "calibration_only": true,
+        "left_hand": 8,
+        "nested_prefix": true,
+        "right_hand": 8,
+        "rows": 16
+      }
+    },
+    "Lee2019_MI": {
+      "P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS": {
+        "calibration_only": true,
+        "left_hand": 16,
+        "nested_prefix": true,
+        "right_hand": 16,
+        "rows": 32
+      },
+      "P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS": {
+        "calibration_only": true,
+        "left_hand": 1,
+        "nested_prefix": true,
+        "right_hand": 1,
+        "rows": 2
+      },
+      "P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS": {
+        "calibration_only": true,
+        "left_hand": 2,
+        "nested_prefix": true,
+        "right_hand": 2,
+        "rows": 4
+      },
+      "P01-L1-LOW-CAL-OFFICIAL-R2:32_PER_CLASS": {
+        "calibration_only": true,
+        "left_hand": 32,
+        "nested_prefix": true,
+        "right_hand": 32,
+        "rows": 64
+      },
+      "P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS": {
+        "calibration_only": true,
+        "left_hand": 4,
+        "nested_prefix": true,
+        "right_hand": 4,
+        "rows": 8
+      },
+      "P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS": {
+        "calibration_only": true,
+        "left_hand": 8,
+        "nested_prefix": true,
+        "right_hand": 8,
+        "rows": 16
+      }
+    },
+    "PhysioNetMI": {
+      "P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS": {
+        "calibration_only": true,
+        "left_hand": 16,
+        "nested_prefix": true,
+        "right_hand": 16,
+        "rows": 32
+      },
+      "P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS": {
+        "calibration_only": true,
+        "left_hand": 1,
+        "nested_prefix": true,
+        "right_hand": 1,
+        "rows": 2
+      },
+      "P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS": {
+        "calibration_only": true,
+        "left_hand": 2,
+        "nested_prefix": true,
+        "right_hand": 2,
+        "rows": 4
+      },
+      "P01-L1-LOW-CAL-OFFICIAL-R2:32_PER_CLASS": {
+        "calibration_only": true,
+        "left_hand": 32,
+        "nested_prefix": true,
+        "right_hand": 32,
+        "rows": 64
+      },
+      "P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS": {
+        "calibration_only": true,
+        "left_hand": 4,
+        "nested_prefix": true,
+        "right_hand": 4,
+        "rows": 8
+      },
+      "P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS": {
+        "calibration_only": true,
+        "left_hand": 8,
+        "nested_prefix": true,
+        "right_hand": 8,
+        "rows": 16
+      }
+    }
+  },
+  "roles": {
+    "BNCI2014_001": {
+      "calibration": {
+        "subjects": 2,
+        "windows": 576
+      },
+      "test": {
+        "subjects": 1,
+        "windows": 288
+      },
+      "train": {
+        "subjects": 5,
+        "windows": 1440
+      },
+      "validation": {
+        "subjects": 1,
+        "windows": 288
+      }
+    },
+    "Lee2019_MI": {
+      "calibration": {
+        "subjects": 11,
+        "windows": 1100
+      },
+      "test": {
+        "subjects": 6,
+        "windows": 600
+      },
+      "train": {
+        "subjects": 32,
+        "windows": 3200
+      },
+      "validation": {
+        "subjects": 5,
+        "windows": 500
+      }
+    },
+    "PhysioNetMI": {
+      "calibration": {
+        "subjects": 22,
+        "windows": 979
+      },
+      "test": {
+        "subjects": 11,
+        "windows": 495
+      },
+      "train": {
+        "subjects": 65,
+        "windows": 2949
+      },
+      "validation": {
+        "subjects": 11,
+        "windows": 495
+      }
+    }
+  },
+  "sample_signal_guard": {
+    "BNCI2014_001": {
+      "abs_median": 1.118758859774971e-06,
+      "dtype": "float32",
+      "row_ids": [
+        "window_record_id:IHARQ-WINDOWRECORD-20260806-66186a683fd5a94e",
+        "window_record_id:IHARQ-WINDOWRECORD-20260806-fb7223abcf969cd3",
+        "window_record_id:IHARQ-WINDOWRECORD-20260806-b8013e41635a175f",
+        "window_record_id:IHARQ-WINDOWRECORD-20260806-f5bdd29193231329"
+      ],
+      "sha256": "3fa314f14b9f215bb6a06bde7d3a5b05f215d17c497d9d335c1827dbc29bb232",
+      "shape": [
+        4,
+        22,
+        480
+      ]
+    },
+    "Lee2019_MI": {
+      "abs_median": 1.8641351857695554e-06,
+      "dtype": "float32",
+      "row_ids": [
+        "window_record_id:IHARQ-WINDOWRECORD-20260806-9d36f6c3bec64a4f",
+        "window_record_id:IHARQ-WINDOWRECORD-20260806-03a66f8b51794814",
+        "window_record_id:IHARQ-WINDOWRECORD-20260806-fea764505a149b69",
+        "window_record_id:IHARQ-WINDOWRECORD-20260806-d84cc520c5561f26"
+      ],
+      "sha256": "95c62d53e7cfc51dff3c4af81b77d2a8d199863a4bb5128163a8880d5df03843",
+      "shape": [
+        4,
+        62,
+        480
+      ]
+    },
+    "PhysioNetMI": {
+      "abs_median": 4.9488689910504036e-06,
+      "dtype": "float32",
+      "row_ids": [
+        "window_record_id:IHARQ-WINDOWRECORD-20260806-fd2ae453cad160d7",
+        "window_record_id:IHARQ-WINDOWRECORD-20260806-dda408189f921c73",
+        "window_record_id:IHARQ-WINDOWRECORD-20260806-9408defc50f40522",
+        "window_record_id:IHARQ-WINDOWRECORD-20260806-0ee6b132d4a22c9f"
+      ],
+      "sha256": "6e29625069a24dfe5a6f13222f12627458f5c8b24382469bb791dc0184dfe54d",
+      "shape": [
+        4,
+        64,
+        480
+      ]
+    }
+  },
+  "status": "PASS"
+}

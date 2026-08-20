@@ -1,0 +1,48 @@
+{
+  "stage_id": "08",
+  "status": "SUCCESS",
+  "attempt_id": "43e766d443bc",
+  "inputs": {},
+  "input_hashes": {},
+  "outputs": {
+    "status": "PASS",
+    "attempted": 369,
+    "branches": [
+      "DIAG-LOGVAR",
+      "SAN-MAJ",
+      "SAN-PERM",
+      "SAN-PRIOR",
+      "SAN-STRAT"
+    ],
+    "terminal_counts": {
+      "SUCCESS": 247,
+      "INPUT_INCOMPATIBLE": 122
+    },
+    "artifact": "stage_artifacts/08_family.json"
+  },
+  "output_hashes": {
+    "status": "727e9bd17b077ba162e13ba877135cc6fbc6b30f83da0b34b3e20233f1cc885f",
+    "attempted": "5f193b350c8aba4883dedf97367ef3080821470661d0a2e1faf420a300cb5ca8",
+    "branches": "ac06ad2c7520196b478091d26ea587fe66b3041953c2c39725ecd1bc36b2dffa",
+    "terminal_counts": "908fde59102a72765c4cff3454bc58fb5bfcf5c29882654c0eccdc602e2a0f68",
+    "artifact": "850cc492a928e37ad826922cb279ed92b06302db6fba367759e6d47c5b0c19e3"
+  },
+  "dependencies": [
+    "07"
+  ],
+  "elapsed_seconds": 13086.960790395737,
+  "log_path": "logs/stage_08_43e766d443bc.log",
+  "heartbeat_write_errors": [],
+  "observability_status": "PASS",
+  "blockers": [],
+  "observations": [],
+  "revision_fingerprint": {
+    "notebook_revision": "R4",
+    "notebook_id": "IHARQ-P02-COMPLETE-EXECUTION-AND-ANALYSIS-R4",
+    "source_sha256": "a54bfa816acc6763c1d1042b8c65cf54ae04ec774c57ec50de86014a6730c5fa",
+    "config_sha256": "d82334535e397c681d6172694da96d3fff0143ffb1b63a18876ee1f7778f60a1",
+    "stage_plan_sha256": "043eb30e008af910d37c563e8be8c719ef881cf009aec3e34687dc97bdc34aad",
+    "scientific_freeze_sha256": "7449216c988eec14191ba85300d720547f06fbc6ac7020e9e142bf12a4b0a598",
+    "scientific_freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5"
+  }
+}

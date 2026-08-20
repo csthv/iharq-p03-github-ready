@@ -1,0 +1,125 @@
+ablations:
+- ablation_id: A0
+  official_identity: Raw Decoder / Accept-All Raw Decoder Reference
+  P00: FOUNDATION_READY
+  P01: FOUNDATION_READY
+  P02: EXECUTED_COMPLETE
+  current_cumulative_status: EXECUTED_COMPLETE
+  current_interpretation: Baseline spine established; model/dataset heterogeneity
+    and low-label results interpreted
+  current_limitation: BNCI n=1 inferential restriction; low-label single-subset
+- ablation_id: A1
+  official_identity: Calibrated Decoder / Calibration Visibility
+  P00: FOUNDATION_READY
+  P01: FOUNDATION_READY
+  P02: NOT_APPLICABLE_TO_P02 / DOWNSTREAM
+  current_cumulative_status: FOUNDATION_READY_FOR_DOWNSTREAM
+  current_interpretation: Downstream responsibility; P02 supplies raw evidence only
+  current_limitation: Do not infer calibration from P02
+- ablation_id: A2
+  official_identity: Simple Registered Threshold / Confidence-Threshold Baseline
+  P00: FOUNDATION_READY
+  P01: FOUNDATION_READY
+  P02: NOT_APPLICABLE_TO_P02 / DOWNSTREAM
+  current_cumulative_status: FOUNDATION_READY_FOR_DOWNSTREAM
+  current_interpretation: Downstream responsibility
+  current_limitation: Do not infer threshold effectiveness from P02
+- ablation_id: A3
+  official_identity: Uncertainty and Selective Prediction
+  P00: FOUNDATION_READY
+  P01: FOUNDATION_READY
+  P02: NOT_APPLICABLE_TO_P02 / DOWNSTREAM
+  current_cumulative_status: FOUNDATION_READY_FOR_DOWNSTREAM
+  current_interpretation: Downstream responsibility
+  current_limitation: Do not infer selective risk/abstention from P02
+- ablation_id: A4
+  official_identity: Longer-Window, Multi-Window Voting/Averaging and Ordinary Ensemble
+    Controls
+  P00: FOUNDATION_READY
+  P01: FOUNDATION_READY + MATCHED_R2_SUBSTRATE
+  P02: EXECUTED_RESOURCE_CONSTRAINED + STAGE18S_POST_HOC
+  current_cumulative_status: EXECUTED_WITH_EXPLICIT_LIMITATIONS
+  current_interpretation: Resource-constrained canonical A4 plus post-hoc Stage18S
+    analyzed
+  current_limitation: No five-repeat stability/dense deep-budget/full-grid equivalence
+- ablation_id: A5
+  official_identity: IHARQ-lite / Rule-Based Evidence Verification
+  P00: FOUNDATION_READY
+  P01: FOUNDATION_READY
+  P02: NOT_APPLICABLE_TO_P02 / DOWNSTREAM
+  current_cumulative_status: FOUNDATION_READY_FOR_DOWNSTREAM
+  current_interpretation: Downstream
+  current_limitation: No P02 claim
+- ablation_id: A6
+  official_identity: IHARQ + Evidence-Quality Estimator
+  P00: FOUNDATION_READY
+  P01: FOUNDATION_READY
+  P02: NOT_APPLICABLE_TO_P02 / DOWNSTREAM
+  current_cumulative_status: FOUNDATION_READY_FOR_DOWNSTREAM
+  current_interpretation: Downstream
+  current_limitation: No P02 claim
+- ablation_id: A7
+  official_identity: IHARQ + RegimeRisk Temporal Trust
+  P00: FOUNDATION_READY
+  P01: FOUNDATION_READY
+  P02: NOT_APPLICABLE_TO_P02 / DOWNSTREAM
+  current_cumulative_status: FOUNDATION_READY_FOR_DOWNSTREAM
+  current_interpretation: Downstream
+  current_limitation: No temporal robustness claim
+- ablation_id: A8
+  official_identity: Learning-to-defer / Deferral Comparison
+  P00: FOUNDATION_READY
+  P01: FOUNDATION_READY
+  P02: NOT_APPLICABLE_TO_P02 / DOWNSTREAM
+  current_cumulative_status: FOUNDATION_READY_FOR_DOWNSTREAM
+  current_interpretation: Downstream
+  current_limitation: No deferral claim
+- ablation_id: A9
+  official_identity: Supervised Adaptive-IHARQ / Adaptive Readiness Policy
+  P00: FOUNDATION_READY
+  P01: FOUNDATION_READY
+  P02: NOT_APPLICABLE_TO_P02 / DOWNSTREAM
+  current_cumulative_status: FOUNDATION_READY_FOR_DOWNSTREAM
+  current_interpretation: Downstream
+  current_limitation: No readiness-policy effectiveness claim
+- ablation_id: A10
+  official_identity: Contextual Bandit / Simulation-Bounded Immediate-Reward Adaptation
+  P00: FOUNDATION_READY
+  P01: FOUNDATION_READY
+  P02: NOT_APPLICABLE_TO_P02 / DOWNSTREAM
+  current_cumulative_status: FOUNDATION_READY_FOR_DOWNSTREAM
+  current_interpretation: Downstream
+  current_limitation: No bandit claim
+- ablation_id: A11
+  official_identity: Reinforcement-Learning Policy / Simulation-Bounded Sequential
+    Policy Learning
+  P00: FOUNDATION_READY
+  P01: FOUNDATION_READY
+  P02: NOT_APPLICABLE_TO_P02 / DOWNSTREAM
+  current_cumulative_status: FOUNDATION_READY_FOR_DOWNSTREAM
+  current_interpretation: Downstream
+  current_limitation: No RL-policy claim
+- ablation_id: A12
+  official_identity: StressForge Stress Tests / Controlled Stress Robustness
+  P00: FOUNDATION_READY
+  P01: FOUNDATION_READY
+  P02: NOT_APPLICABLE_TO_P02 / DOWNSTREAM
+  current_cumulative_status: FOUNDATION_READY_FOR_DOWNSTREAM
+  current_interpretation: Downstream
+  current_limitation: No stress-robustness claim
+- ablation_id: A13
+  official_identity: Layer 9 MyoSuite/OpenSim/static-replay Embodiment Demo
+  P00: FOUNDATION_READY
+  P01: FOUNDATION_READY
+  P02: NOT_APPLICABLE_TO_P02 / DOWNSTREAM
+  current_cumulative_status: FOUNDATION_READY_FOR_DOWNSTREAM
+  current_interpretation: Downstream
+  current_limitation: No embodiment claim
+- ablation_id: A14
+  official_identity: Rejected / prohibited
+  P00: REJECTED/PROHIBITED
+  P01: ABSENT/PROHIBITED
+  P02: ABSENT/PROHIBITED
+  current_cumulative_status: PROHIBITED
+  current_interpretation: Retains governed rejected state
+  current_limitation: Must not be introduced

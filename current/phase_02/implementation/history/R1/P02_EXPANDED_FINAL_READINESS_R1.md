@@ -1,0 +1,83 @@
+# P02 Expanded Final Readiness Matrix
+
+- **26-stage real runtime dispatcher:** 26 / 26
+- **runtime stages remaining stub-only:** 0
+- **runtime stages remaining metadata-only:** 0
+- **A0 model-family runtime routing:** PASS
+- **Stage-15 A0 closure:** PASS
+- **A0 closure evidence completeness:** PASS
+- **Stage-18 A4 runtime execution:** PASS
+- **validation-selected A4 representative routing:** PASS
+- **A4 C0 vs C1 closure:** PASS
+- **A4 C2 vs C0 closure:** PASS
+- **A4 C3 vs C0 closure:** PASS
+- **A4 C4 vs strongest constituent:** PASS
+- **A4 C5 vs strongest constituent:** PASS
+- **C4/C5 participant-level inference:** PASS
+- **C4/C5 frozen statistical contract:** PASS
+- **C4/C5 common support:** PASS
+- **C4/C5 failure/missingness accounting:** PASS
+- **C4/C5 figure source export:** PASS
+- **C4/C5 table source export:** PASS
+- **C4/C5 Phase Analysis handoff:** PASS
+- **C4/C5 Layer 10 source readiness:** PASS
+- **Stage 18U implementation:** PASS
+- **failure evidence runtime aggregation:** PASS
+- **readiness runtime aggregation:** PASS
+- **figure-source runtime generation:** PASS
+- **table-source runtime generation:** PASS
+- **handoff runtime generation:** PASS
+- **final runtime bundle generation:** PASS
+- **full stage-graph synthetic integration:** PASS
+- **known-defect regression audit:** PASS
+- **repair regression audit:** PASS
+
+## Strict zero-defect invariants
+- `KNOWN_P02_IMPLEMENTATION_DEFECTS_UNREPAIRED = 0`
+- `P02_RUNTIME_STAGES_STUB_ONLY = 0`
+- `P02_RUNTIME_STAGES_METADATA_ONLY = 0`
+- `P02_RUNTIME_STAGES_WITHOUT_REAL_STAGE_HANDLER = 0`
+- `STAGE_DISPATCH_TARGETS_WITHOUT_PRODUCTION_IMPLEMENTATION = 0`
+- `A0_RUN_CELLS_NOT_ROUTED_TO_REAL_MODEL_STAGE = 0`
+- `MODEL_BRANCHES_WITH_UNRESOLVED_RUNTIME_ROUTING = 0`
+- `STAGE15_A0_REQUIRED_CLOSURE_OUTPUTS_MISSING = 0`
+- `A0_COMPLETION_WITHOUT_EXPLICIT_CLOSURE = 0`
+- `A4_CONDITIONS_WITHOUT_RUNTIME_HANDLER = 0`
+- `A4_SELECTED_REPRESENTATIVES_NOT_CONSUMED_BY_STAGE18 = 0`
+- `A4_C4_INFERENTIAL_CLOSURE_INCOMPLETE = 0`
+- `A4_C5_INFERENTIAL_CLOSURE_INCOMPLETE = 0`
+- `A4_STRONGEST_CONSTITUENT_TEST_SET_SELECTION = 0`
+- `A4_C4_C5_STATISTICS_NOT_USING_FROZEN_CONTRACT = 0`
+- `A4_C4_C5_UNMATCHED_INFERENCE = 0`
+- `A4_C4_C5_SILENT_ENSEMBLE_MEMBERSHIP_MUTATION = 0`
+- `A4_C4_C5_REQUIRED_ARTIFACTS_NOT_EXPORTABLE = 0`
+- `A4_C4_C5_COMPARISON_DEFERRED_TO_PHASE_ANALYSIS = 0`
+- `A4_C4_C5_LAYER10_SCIENTIFIC_RECOMPUTATION_REQUIRED = 0`
+- `STAGE18U_STUB_ONLY = 0`
+- `FAILURE_EVIDENCE_AGGREGATION_STAGE_MISSING = 0`
+- `READINESS_VALIDATOR_ACCEPTS_METADATA_ONLY = 0`
+- `FIGURE_SOURCE_STAGE_NOT_WIRED_TO_RUNTIME = 0`
+- `TABLE_SOURCE_STAGE_NOT_WIRED_TO_RUNTIME = 0`
+- `HANDOFF_GENERATORS_NOT_WIRED_TO_RUNTIME = 0`
+- `FINAL_RUNTIME_BUNDLE_STAGE_STUB_ONLY = 0`
+- `FINAL_RUNTIME_BUNDLE_GENERATION_NOT_IMPLEMENTED = 0`
+- `LOW_LEVEL_IMPLEMENTATION_NOT_CONNECTED_TO_RUNTIME = 0`
+- `RUNTIME_DISPATCH_TARGETS_RESOLVING_TO_STUBS = 0`
+- `STAGES_WITH_INCOMPLETE_RUNTIME_TRACEABILITY = 0`
+- `A4_REQUIRED_COMPARISON_FAMILIES_UNMAPPED = 0`
+- `A4_C4_C5_MULTIPLICITY_TREATMENT_UNDEFINED = 0`
+- `A4_C4_C5_RESULT_CARDINALITY_MISMATCH = 0`
+- `A4_C4_C5_BROKEN_EVIDENCE_IDENTITIES = 0`
+- `A4_UNRELATED_VALID_EVIDENCE_INVALIDATED_BY_C4_C5_FAILURE = 0`
+- `STAGE_RESULTS_WITHOUT_BUNDLE_TRACE = 0`
+- `BROKEN_P02_RUNTIME_ORCHESTRATION_LINKS = 0`
+- `REPAIR_INDUCED_REGRESSIONS = 0`
+
+## Pre-PASS questions
+- Q1_26_stages_real: **YES**
+- Q2_A0_678_routed_and_closed: **YES**
+- Q3_A4_1218_routed_and_closed: **YES**
+- Q4_C4_C5_vs_validation_selected_strongest: **YES**
+- Q5_C4_C5_exported_not_deferred: **YES**
+- Q6_Stage18U_real: **YES**
+- Q7_late_stages_consume_runtime_outputs: **YES**

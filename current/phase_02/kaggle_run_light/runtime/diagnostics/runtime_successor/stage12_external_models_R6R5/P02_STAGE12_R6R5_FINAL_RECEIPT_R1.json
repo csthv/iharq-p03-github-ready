@@ -1,0 +1,427 @@
+{
+  "AMP": false,
+  "FBCNet_author_horizon_provenance": {
+    "IHARQ_preserved_differences": {
+      "class_weight_policy": "P02_R2_GOVERNED",
+      "continue_after_earlystop": false,
+      "selection_metric": "validation_BACC",
+      "split_authority": "P01_SUBJECT_GROUPED_ROLES",
+      "test_visibility": "STRICTLY_AFTER_SELECTION"
+    },
+    "author_batch_size": 16,
+    "author_load_best_model": true,
+    "author_lr": 0.001,
+    "author_max_epochs": 1500,
+    "author_no_decrease_epochs": 200,
+    "source_commit": "de1bbdd8a54cb1e466830e3d47070e0e56761a37",
+    "source_file": "codes/classify/cv.py",
+    "source_repository": "ravikiran-mane/FBCNet"
+  },
+  "G12": "/kaggle/working/iharq_p02_run/gate_results/G12.json",
+  "G12_sha256": "0661b563e91b7379348d7c042cebf8ac0fb1b3b4a31abbc3789d09d0516a6d1c",
+  "G12_status": "PASS",
+  "P00_P01_mutated": false,
+  "P01_consumption_audit": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/P02_STAGE12_R6R5_P01_CONSUMPTION_AUDIT_R1.json",
+  "R6_recipes": {
+    "DNN-FBCNET": {
+      "batch_size": 16,
+      "grad_clip": null,
+      "label_smoothing": 0.0,
+      "lr": 0.001,
+      "max_epochs": 1500,
+      "optimizer": "Adam",
+      "patience": 200,
+      "recipe_id": "R6-FBCNET-AUTHOR-CENTERED-R1",
+      "restore_best": true,
+      "scheduler": "constant",
+      "selection": "validation_BACC",
+      "weight_decay": 0.0
+    },
+    "DNN-SEQ": {
+      "batch_size": 32,
+      "grad_clip": null,
+      "label_smoothing": 0.0,
+      "lr": 0.001,
+      "max_epochs": 150,
+      "optimizer": "Adam",
+      "patience": 40,
+      "recipe_id": "R6-DBCONFORMER-AUTHOR-CENTERED-R1",
+      "restore_best": true,
+      "scheduler": "constant",
+      "selection": "validation_BACC",
+      "weight_decay": 0.0
+    },
+    "SSL-CBRAMOD": {
+      "batch_size": 64,
+      "body_lr": 0.0001,
+      "eta_min": 1e-06,
+      "grad_clip": 1.0,
+      "head_lr": 0.0005,
+      "input_scale": 10000.0,
+      "label_smoothing": 0.1,
+      "max_epochs": 150,
+      "optimizer": "AdamW",
+      "patience": 40,
+      "recipe_id": "R6-CBRAMOD-SOURCE-CENTERED-R1",
+      "restore_best": true,
+      "scheduler": "cosine",
+      "selection": "validation_BACC",
+      "source_sampling_hz": 160,
+      "target_sampling_hz": 200,
+      "weight_decay": 0.05
+    }
+  },
+  "RAM_cleanup": {
+    "after": {
+      "created_utc": "2026-08-11T22:49:08.984901+00:00",
+      "cuda": [
+        {
+          "allocated_gib": 0.09973955154418945,
+          "free_gib": 14.21368408203125,
+          "gpu": 0,
+          "name": "Tesla T4",
+          "reserved_gib": 0.201171875,
+          "total_gib": 14.56219482421875
+        },
+        {
+          "allocated_gib": 0.0,
+          "free_gib": 14.45977783203125,
+          "gpu": 1,
+          "name": "Tesla T4",
+          "reserved_gib": 0.0,
+          "total_gib": 14.56219482421875
+        }
+      ],
+      "label": "after_r6_cleanup",
+      "process_rss_gib": 3.0330429077148438,
+      "system_available_gib": 27.407272338867188,
+      "system_total_gib": 31.347740173339844,
+      "system_used_percent": 12.6
+    },
+    "before": {
+      "created_utc": "2026-08-11T22:49:08.270299+00:00",
+      "cuda": [
+        {
+          "allocated_gib": 0.1836104393005371,
+          "free_gib": 10.73907470703125,
+          "gpu": 0,
+          "name": "Tesla T4",
+          "reserved_gib": 3.67578125,
+          "total_gib": 14.56219482421875
+        },
+        {
+          "allocated_gib": 0.0,
+          "free_gib": 14.45977783203125,
+          "gpu": 1,
+          "name": "Tesla T4",
+          "reserved_gib": 0.0,
+          "total_gib": 14.56219482421875
+        }
+      ],
+      "label": "before_r6_cleanup",
+      "process_rss_gib": 3.649066925048828,
+      "system_available_gib": 26.828990936279297,
+      "system_total_gib": 31.347740173339844,
+      "system_used_percent": 14.4
+    },
+    "external_preparation_cache_clear": [
+      {
+        "entries_cleared": 0,
+        "module": "iharq_stage12_external_adapters"
+      }
+    ],
+    "known_large_globals_removed": [],
+    "malloc_trim_called": true
+  },
+  "TF32": false,
+  "accepted_stage08_11_byte_identical": true,
+  "accepted_stage08_11_sha256": {
+    "08": "a78f86b2fc09443744d818b21fcc0b6084ec53ffeb6dbf5f05d818a989fd6e2d",
+    "09": "1f0f5c2ee8ef83c300bcd3232594cc360c0a44e12812a3d171e3fb6cde6fa388",
+    "10": "1be44b97b389a7aeaf8c88d267aa075159c1623ff6df3b0ffd8cb29af84e91ff",
+    "11": "6321ea2027415ce361382d36a1008103a3ca53507aa7e7fafaeed5d0948c48a3"
+  },
+  "archive_manifest": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/pre_r6r3_official_stage12_archive/20260812T005807Z/ARCHIVE_MANIFEST.json",
+  "artifact_id": "P02-STAGE12-R6R5-FBCNET-AUTHOR-HORIZON-R1",
+  "branch_terminal_counts": {
+    "DNN-EGTC": {
+      "CONDITIONAL_SKIP": 15
+    },
+    "DNN-FBCNET": {
+      "SUCCESS": 15
+    },
+    "DNN-SEQ": {
+      "SUCCESS": 15
+    },
+    "SSL-CBRAMOD": {
+      "SUCCESS": 105
+    },
+    "SSL-REVE": {
+      "DEPENDENCY_BLOCKED": 3
+    }
+  },
+  "created_utc": "2026-08-12T00:58:32.700911+00:00",
+  "final_memory": {
+    "created_utc": "2026-08-12T00:58:32.701112+00:00",
+    "cuda": [
+      {
+        "allocated_gib": 0.09973955154418945,
+        "free_gib": 14.21173095703125,
+        "gpu": 0,
+        "name": "Tesla T4",
+        "reserved_gib": 0.201171875,
+        "total_gib": 14.56219482421875
+      },
+      {
+        "allocated_gib": 0.0,
+        "free_gib": 14.45977783203125,
+        "gpu": 1,
+        "name": "Tesla T4",
+        "reserved_gib": 0.0,
+        "total_gib": 14.56219482421875
+      }
+    ],
+    "label": "r6_complete",
+    "process_rss_gib": 3.1171531677246094,
+    "system_available_gib": 27.256229400634766,
+    "system_total_gib": 31.347740173339844,
+    "system_used_percent": 13.1
+  },
+  "model_admission_probes": [
+    {
+      "admission": {
+        "admission_authority": "R5R_QUALIFIED_SUBSTRATE_REHYDRATED",
+        "implementation_equivalence": "ORIGINAL_AUTHOR",
+        "resolved_variant": "FBCNet-OriginalAuthor-P01ConstrainedFilterBank",
+        "status": "ADMITTED"
+      },
+      "branch": "DNN-FBCNET",
+      "dataset_id": "PhysioNetMI",
+      "n_chans": 64,
+      "n_times": 480,
+      "plugin_class": "iharq_stage12_external_adapters.IHARQFBCNetOriginalAuthorAdapter",
+      "resolved_variant": "FBCNet-OriginalAuthor-P01ConstrainedFilterBank",
+      "seed": 758574837
+    },
+    {
+      "admission": {
+        "admission_authority": "R5R_QUALIFIED_SUBSTRATE_REHYDRATED",
+        "implementation_equivalence": "ORIGINAL_AUTHOR",
+        "resolved_variant": "FBCNet-OriginalAuthor-P01ConstrainedFilterBank",
+        "status": "ADMITTED"
+      },
+      "branch": "DNN-FBCNET",
+      "dataset_id": "BNCI2014_001",
+      "n_chans": 22,
+      "n_times": 480,
+      "plugin_class": "iharq_stage12_external_adapters.IHARQFBCNetOriginalAuthorAdapter",
+      "resolved_variant": "FBCNet-OriginalAuthor-P01ConstrainedFilterBank",
+      "seed": 843793861
+    },
+    {
+      "admission": {
+        "admission_authority": "R5R_QUALIFIED_SUBSTRATE_REHYDRATED",
+        "implementation_equivalence": "ORIGINAL_AUTHOR",
+        "resolved_variant": "FBCNet-OriginalAuthor-P01ConstrainedFilterBank",
+        "status": "ADMITTED"
+      },
+      "branch": "DNN-FBCNET",
+      "dataset_id": "Lee2019_MI",
+      "n_chans": 62,
+      "n_times": 480,
+      "plugin_class": "iharq_stage12_external_adapters.IHARQFBCNetOriginalAuthorAdapter",
+      "resolved_variant": "FBCNet-OriginalAuthor-P01ConstrainedFilterBank",
+      "seed": 830511967
+    },
+    {
+      "admission": {
+        "admission_authority": "R5R_QUALIFIED_SUBSTRATE_REHYDRATED",
+        "fallback_used": false,
+        "preferred_sequence_slot": true,
+        "resolved_variant": "DBConformer-OriginalAuthor-P01CompatibilityPatched",
+        "status": "ADMITTED"
+      },
+      "branch": "DNN-SEQ",
+      "dataset_id": "PhysioNetMI",
+      "n_chans": 64,
+      "n_times": 480,
+      "plugin_class": "iharq_stage12_external_adapters.IHARQDBConformerOriginalAuthorAdapter",
+      "resolved_variant": "DBConformer-OriginalAuthor-P01CompatibilityPatched",
+      "seed": 881493230
+    },
+    {
+      "admission": {
+        "admission_authority": "R5R_QUALIFIED_SUBSTRATE_REHYDRATED",
+        "fallback_used": false,
+        "preferred_sequence_slot": true,
+        "resolved_variant": "DBConformer-OriginalAuthor-P01CompatibilityPatched",
+        "status": "ADMITTED"
+      },
+      "branch": "DNN-SEQ",
+      "dataset_id": "BNCI2014_001",
+      "n_chans": 22,
+      "n_times": 480,
+      "plugin_class": "iharq_stage12_external_adapters.IHARQDBConformerOriginalAuthorAdapter",
+      "resolved_variant": "DBConformer-OriginalAuthor-P01CompatibilityPatched",
+      "seed": 1529732860
+    },
+    {
+      "admission": {
+        "admission_authority": "R5R_QUALIFIED_SUBSTRATE_REHYDRATED",
+        "fallback_used": false,
+        "preferred_sequence_slot": true,
+        "resolved_variant": "DBConformer-OriginalAuthor-P01CompatibilityPatched",
+        "status": "ADMITTED"
+      },
+      "branch": "DNN-SEQ",
+      "dataset_id": "Lee2019_MI",
+      "n_chans": 62,
+      "n_times": 480,
+      "plugin_class": "iharq_stage12_external_adapters.IHARQDBConformerOriginalAuthorAdapter",
+      "resolved_variant": "DBConformer-OriginalAuthor-P01CompatibilityPatched",
+      "seed": 1276818886
+    },
+    {
+      "admission": {
+        "admission_authority": "R5R_QUALIFIED_SUBSTRATE_REHYDRATED",
+        "checkpoint_sha256": "a939ace9aa1e229f08391ad8bb2d197b507ae2c519a50addf087f0151b2df5c3",
+        "corpus_overlap_status": "PASS",
+        "resolved_variant": "CBraMod-HF-Braindecode-GovernedP02-R6Scale1e4",
+        "status": "ADMITTED"
+      },
+      "branch": "SSL-CBRAMOD",
+      "dataset_id": "PhysioNetMI",
+      "n_chans": 64,
+      "n_times": 480,
+      "plugin_class": "iharq_stage12_r6_adapter_patch.IHARQCBraModR6ScaledAdapter",
+      "resolved_variant": "CBraMod-HF-Braindecode-GovernedP02-R6Scale1e4",
+      "seed": 2066603508
+    },
+    {
+      "admission": {
+        "admission_authority": "R5R_QUALIFIED_SUBSTRATE_REHYDRATED",
+        "checkpoint_sha256": "a939ace9aa1e229f08391ad8bb2d197b507ae2c519a50addf087f0151b2df5c3",
+        "corpus_overlap_status": "PASS",
+        "resolved_variant": "CBraMod-HF-Braindecode-GovernedP02-R6Scale1e4",
+        "status": "ADMITTED"
+      },
+      "branch": "SSL-CBRAMOD",
+      "dataset_id": "BNCI2014_001",
+      "n_chans": 22,
+      "n_times": 480,
+      "plugin_class": "iharq_stage12_r6_adapter_patch.IHARQCBraModR6ScaledAdapter",
+      "resolved_variant": "CBraMod-HF-Braindecode-GovernedP02-R6Scale1e4",
+      "seed": 1534795089
+    },
+    {
+      "admission": {
+        "admission_authority": "R5R_QUALIFIED_SUBSTRATE_REHYDRATED",
+        "checkpoint_sha256": "a939ace9aa1e229f08391ad8bb2d197b507ae2c519a50addf087f0151b2df5c3",
+        "corpus_overlap_status": "PASS",
+        "resolved_variant": "CBraMod-HF-Braindecode-GovernedP02-R6Scale1e4",
+        "status": "ADMITTED"
+      },
+      "branch": "SSL-CBRAMOD",
+      "dataset_id": "Lee2019_MI",
+      "n_chans": 62,
+      "n_times": 480,
+      "plugin_class": "iharq_stage12_r6_adapter_patch.IHARQCBraModR6ScaledAdapter",
+      "resolved_variant": "CBraMod-HF-Braindecode-GovernedP02-R6Scale1e4",
+      "seed": 247862164
+    }
+  ],
+  "model_specific_horizon_policy": {
+    "DNN-FBCNET": {
+      "max_epochs": 1500,
+      "patience": 200,
+      "reason": "PREDECLARED_R6R5_ORIGINAL_AUTHOR_HORIZON_AND_NODECREASE_WINDOW"
+    },
+    "DNN-SEQ": {
+      "max_epochs": 150,
+      "patience": 40,
+      "reason": "AUTHOR_CENTERED_R6R3_HORIZON_RETAINED"
+    },
+    "SSL-CBRAMOD": {
+      "max_epochs": 150,
+      "patience": 40,
+      "reason": "SOURCE_CENTERED_R6R3_HORIZON_RETAINED"
+    }
+  },
+  "persistent_preparation_cache_gib": 0.0,
+  "planned_cells": 153,
+  "pre_r6r3_official_stage12_archive": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/pre_r6r3_official_stage12_archive/20260812T005807Z",
+  "promotion_copy_count": 966,
+  "runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R6R5-STAGE12-FBCNET-AUTHOR-HORIZON-1500-200",
+  "source_access_audit": {
+    "CBraMod_admission_gates": {
+      "channel_montage_status": "PASS",
+      "corpus_overlap_status": "PASS",
+      "input_compatibility_status": "PASS",
+      "sampling_adapter_verified": true,
+      "source_recipe_verified": true
+    },
+    "EEGTC": {
+      "fallback_activated": false,
+      "status": "CONDITIONAL_FALLBACK_NOT_ACTIVATED"
+    },
+    "REVE": {
+      "corpus_overlap_status": "BLOCKED_KNOWN_P02_OVERLAP",
+      "status": "SCIENTIFICALLY_BLOCKED"
+    },
+    "checks": [
+      {
+        "component": "shared_external_adapter",
+        "path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/python/iharq_stage12_external_adapters.py",
+        "sha256": "add69c0a0f8843366d6d9ed1fb16746f61d43a6d588b04f07193484e0555386a",
+        "status": "PASS"
+      },
+      {
+        "component": "FBCNet.networks.py",
+        "path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/frozen_sources/FBCNet/de1bbdd8a54cb1e466830e3d47070e0e56761a37/codes/centralRepo/networks.py",
+        "sha256": "48b0b46f36d70a8ea337fa1e82cb84d5eed593c35bbb860672dcd3569c751d92",
+        "status": "PASS"
+      },
+      {
+        "component": "FBCNet.transforms.py",
+        "path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/frozen_sources/FBCNet/de1bbdd8a54cb1e466830e3d47070e0e56761a37/codes/centralRepo/transforms.py",
+        "sha256": "0b719004e94d04f6a38e01820b468d65e9ba4c95f8696a1680c6fce638609a48",
+        "status": "PASS"
+      },
+      {
+        "component": "DBConformer.original",
+        "path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/frozen_sources/DBConformer/02cf63206087045c5cd0e8fa882831102e6fd01b/models/DBConformer.py",
+        "sha256": "b891d8ba28b3ef5064106065e4a2c9bd1e346fe29b6d68cc50c91dbf6cfa4bd1",
+        "status": "PASS"
+      },
+      {
+        "component": "DBConformer.P01_compat",
+        "path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/compiled_sources/DBConformer_P01_Compat_R1.py",
+        "sha256": "c108942e1a07023d84eded2cf2b1de8e6c2d77954f5a12558a3bb4245dab387a",
+        "status": "PASS"
+      },
+      {
+        "component": "CBraMod.pretrained_checkpoint",
+        "path": "/kaggle/working/iharq_p02_run/_hf_runtime/SSL-CBRAMOD/model.safetensors",
+        "sha256": "a939ace9aa1e229f08391ad8bb2d197b507ae2c519a50addf087f0151b2df5c3",
+        "status": "PASS"
+      }
+    ],
+    "created_utc": "2026-08-11T22:49:08.213685+00:00",
+    "status": "PASS"
+  },
+  "stage12_accepted": true,
+  "stage12_ledger": "/kaggle/working/iharq_p02_run/stage_ledger/stage_12.json",
+  "stage12_ledger_sha256": "7f0cc80bf882aabe5ac1fff50dcfb9c64b65aecbfe7e631a39a106b9c01176ac",
+  "staged_audit": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/G12_R6R5_STAGED_CLOSURE_AUDIT_R1.json",
+  "status": "PASS",
+  "successful_models": 135,
+  "terminal_counts": {
+    "CONDITIONAL_SKIP": 15,
+    "DEPENDENCY_BLOCKED": 3,
+    "SUCCESS": 135
+  },
+  "test_set_used_for_hyperparameter_selection": false,
+  "torch_compile": false,
+  "wall": "2:09:18",
+  "wall_seconds": 7758.193227529526
+}

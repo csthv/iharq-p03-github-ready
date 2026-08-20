@@ -1,0 +1,961 @@
+canonical_map_id: IHARQ-CUMULATIVE-EVIDENCE-MAP-THROUGH-P02-R1
+findings:
+- finding_id: P00-F-001
+  phase: P00
+  text: 19/19 registered P00 engineering cells passed with terminal PASS
+  analysis_source: phase_sources/P00/P00_Phase_Analysis_Current.md
+  metrics: []
+  datasets: []
+  models: []
+  budgets: []
+  ablation_ids: []
+  run_ids:
+  - P00-EXECUTION-RELEASE-R2
+  source_artifacts:
+  - P00_ANALYSIS_RELEASE:P00-ANALYSIS-RELEASE-R2
+  candidate_or_reviewed_claim_ids:
+  - P00-CLM-001/v2
+- finding_id: P00-F-002
+  phase: P00
+  text: 102/102 deterministic tests passed
+  analysis_source: phase_sources/P00/P00_Phase_Analysis_Current.md
+  metrics: []
+  datasets: []
+  models: []
+  budgets: []
+  ablation_ids: []
+  run_ids:
+  - P00-EXECUTION-RELEASE-R2
+  source_artifacts:
+  - P00_ANALYSIS_RELEASE:P00-ANALYSIS-RELEASE-R2
+  candidate_or_reviewed_claim_ids:
+  - P00-CLM-002/v2
+- finding_id: P00-F-003
+  phase: P00
+  text: 19/19 valid or integrated bundles accepted; false rejections 0
+  analysis_source: phase_sources/P00/P00_Phase_Analysis_Current.md
+  metrics: []
+  datasets: []
+  models: []
+  budgets: []
+  ablation_ids: []
+  run_ids:
+  - P00-EXECUTION-RELEASE-R2
+  source_artifacts:
+  - P00_ANALYSIS_RELEASE:P00-ANALYSIS-RELEASE-R2
+  candidate_or_reviewed_claim_ids:
+  - P00-CLM-003/v2
+- finding_id: P00-F-004
+  phase: P00
+  text: 178/178 intentionally malformed categories rejected; false acceptances 0
+  analysis_source: phase_sources/P00/P00_Phase_Analysis_Current.md
+  metrics: []
+  datasets: []
+  models: []
+  budgets: []
+  ablation_ids: []
+  run_ids:
+  - P00-EXECUTION-RELEASE-R2
+  source_artifacts:
+  - P00_ANALYSIS_RELEASE:P00-ANALYSIS-RELEASE-R2
+  candidate_or_reviewed_claim_ids:
+  - P00-CLM-003/v2
+- finding_id: P00-F-005
+  phase: P00
+  text: all registered foundation inventories present and validated
+  analysis_source: phase_sources/P00/P00_Phase_Analysis_Current.md
+  metrics: []
+  datasets: []
+  models: []
+  budgets: []
+  ablation_ids: []
+  run_ids:
+  - P00-EXECUTION-RELEASE-R2
+  source_artifacts:
+  - P00_ANALYSIS_RELEASE:P00-ANALYSIS-RELEASE-R2
+  candidate_or_reviewed_claim_ids:
+  - P00-CLM-004/v2
+- finding_id: P00-F-006
+  phase: P00
+  text: 11/11 Layer 0–10 foundation interfaces passed registered P00 integration scope
+  analysis_source: phase_sources/P00/P00_Phase_Analysis_Current.md
+  metrics: []
+  datasets: []
+  models: []
+  budgets: []
+  ablation_ids: []
+  run_ids:
+  - P00-EXECUTION-RELEASE-R2
+  source_artifacts:
+  - P00_ANALYSIS_RELEASE:P00-ANALYSIS-RELEASE-R2
+  candidate_or_reviewed_claim_ids:
+  - P00-CLM-005/v2
+- finding_id: P00-F-007
+  phase: P00
+  text: P00 implemented; P01–P15 reusable contract surfaces prepared
+  analysis_source: phase_sources/P00/P00_Phase_Analysis_Current.md
+  metrics: []
+  datasets: []
+  models: []
+  budgets: []
+  ablation_ids: []
+  run_ids:
+  - P00-EXECUTION-RELEASE-R2
+  source_artifacts:
+  - P00_ANALYSIS_RELEASE:P00-ANALYSIS-RELEASE-R2
+  candidate_or_reviewed_claim_ids:
+  - P00-CLM-006/v2
+- finding_id: P00-F-008
+  phase: P00
+  text: 8/8 bounded reproduction steps passed under exact local snapshot
+  analysis_source: phase_sources/P00/P00_Phase_Analysis_Current.md
+  metrics: []
+  datasets: []
+  models: []
+  budgets: []
+  ablation_ids: []
+  run_ids:
+  - P00-EXECUTION-RELEASE-R2
+  source_artifacts:
+  - P00_ANALYSIS_RELEASE:P00-ANALYSIS-RELEASE-R2
+  candidate_or_reviewed_claim_ids:
+  - P00-CLM-007/v2
+- finding_id: P00-F-009
+  phase: P00
+  text: A0–A13 readiness hooks present; A14 rejected
+  analysis_source: phase_sources/P00/P00_Phase_Analysis_Current.md
+  metrics: []
+  datasets: []
+  models: []
+  budgets: []
+  ablation_ids: []
+  run_ids:
+  - P00-EXECUTION-RELEASE-R2
+  source_artifacts:
+  - P00_ANALYSIS_RELEASE:P00-ANALYSIS-RELEASE-R2
+  candidate_or_reviewed_claim_ids: []
+- finding_id: P01-FIND-001
+  phase: P01
+  text: P01 established exact source provenance and dataset identity for the selected public EEG portfolio.
+  analysis_source: phase_sources/P01/P01_Cumulative_Phase_Analysis_Through_P01_Current.md
+  metrics: []
+  datasets: []
+  models: []
+  budgets: []
+  ablation_ids: []
+  run_ids: []
+  source_artifacts: []
+  candidate_or_reviewed_claim_ids:
+  - P01-CLM-001/v1
+  - P01-CLM-012/v1
+- finding_id: P01-FIND-002
+  phase: P01
+  text: The frozen subject-group split satisfies the implemented disjointness contract and preserves whole-subject role assignment.
+  analysis_source: phase_sources/P01/P01_Cumulative_Phase_Analysis_Through_P01_Current.md
+  metrics: []
+  datasets: []
+  models: []
+  budgets: []
+  ablation_ids: []
+  run_ids: []
+  source_artifacts: []
+  candidate_or_reviewed_claim_ids:
+  - P01-CLM-002/v1
+- finding_id: P01-FIND-003
+  phase: P01
+  text: The official Layer-1 event/window pipeline preserved the accepted-event denominator under the frozen core window policy.
+  analysis_source: phase_sources/P01/P01_Cumulative_Phase_Analysis_Through_P01_Current.md
+  metrics: []
+  datasets: []
+  models: []
+  budgets: []
+  ablation_ids: []
+  run_ids: []
+  source_artifacts: []
+  candidate_or_reviewed_claim_ids:
+  - P01-CLM-003/v1
+- finding_id: P01-FIND-004
+  phase: P01
+  text: The official core derived Dataset is reproducibly identifiable and retrievable under its provider version/logical revision/hash contract.
+  analysis_source: phase_sources/P01/P01_Cumulative_Phase_Analysis_Through_P01_Current.md
+  metrics: []
+  datasets: []
+  models: []
+  budgets: []
+  ablation_ids: []
+  run_ids: []
+  source_artifacts: []
+  candidate_or_reviewed_claim_ids:
+  - P01-CLM-004/v1
+- finding_id: P01-FIND-005
+  phase: P01
+  text: Quality issues were surfaced as governed annotations while hard validity criteria did not reject any official core window.
+  analysis_source: phase_sources/P01/P01_Cumulative_Phase_Analysis_Through_P01_Current.md
+  metrics: []
+  datasets: []
+  models: []
+  budgets: []
+  ablation_ids: []
+  run_ids: []
+  source_artifacts: []
+  candidate_or_reviewed_claim_ids:
+  - P01-CLM-005/v1
+- finding_id: P01-FIND-006
+  phase: P01
+  text: No contract leakage was detected under the implemented deterministic checks.
+  analysis_source: phase_sources/P01/P01_Cumulative_Phase_Analysis_Through_P01_Current.md
+  metrics: []
+  datasets: []
+  models: []
+  budgets: []
+  ablation_ids: []
+  run_ids: []
+  source_artifacts: []
+  candidate_or_reviewed_claim_ids:
+  - P01-CLM-002/v1
+- finding_id: P01-FIND-007
+  phase: P01
+  text: P01 prepared deterministic low-calibration population identities for later evaluation.
+  analysis_source: phase_sources/P01/P01_Cumulative_Phase_Analysis_Through_P01_Current.md
+  metrics: []
+  datasets: []
+  models: []
+  budgets: []
+  ablation_ids: []
+  run_ids: []
+  source_artifacts: []
+  candidate_or_reviewed_claim_ids: []
+- finding_id: P01-FIND-008
+  phase: P01
+  text: Layer 1 produced the matching/readiness foundation required by the official A0–A13 ladder without introducing A14.
+  analysis_source: phase_sources/P01/P01_Cumulative_Phase_Analysis_Through_P01_Current.md
+  metrics: []
+  datasets: []
+  models: []
+  budgets: []
+  ablation_ids: []
+  run_ids: []
+  source_artifacts: []
+  candidate_or_reviewed_claim_ids:
+  - P01-CLM-006/v1
+- finding_id: P01-FIND-009
+  phase: P01
+  text: P01 established a fully matched A4 R2 Layer-1 substrate for future governed evaluation.
+  analysis_source: phase_sources/P01/P01_Cumulative_Phase_Analysis_Through_P01_Current.md
+  metrics: []
+  datasets: []
+  models: []
+  budgets: []
+  ablation_ids: []
+  run_ids: []
+  source_artifacts: []
+  candidate_or_reviewed_claim_ids:
+  - P01-CLM-007/v1
+  - P01-CLM-011/v1
+- finding_id: P01-FIND-010
+  phase: P01
+  text: Padding, clipping, fabrication, or event dropping would have changed the comparison; the matched +3.5 s R2 design preserved the complete
+    denominator.
+  analysis_source: phase_sources/P01/P01_Cumulative_Phase_Analysis_Through_P01_Current.md
+  metrics: []
+  datasets: []
+  models: []
+  budgets: []
+  ablation_ids: []
+  run_ids: []
+  source_artifacts: []
+  candidate_or_reviewed_claim_ids:
+  - P01-CLM-007/v1
+- finding_id: P01-FIND-011
+  phase: P01
+  text: Runtime compatibility/resource amendments changed execution conditions but did not alter datasets, labels, split, core preprocessing,
+    core window, or core denominator.
+  analysis_source: phase_sources/P01/P01_Cumulative_Phase_Analysis_Through_P01_Current.md
+  metrics: []
+  datasets: []
+  models: []
+  budgets: []
+  ablation_ids: []
+  run_ids: []
+  source_artifacts: []
+  candidate_or_reviewed_claim_ids:
+  - P01-CLM-009/v1
+- finding_id: P01-FIND-012
+  phase: P01
+  text: The accepted P01 execution lineage satisfies its deterministic execution, validation, and package-closure contract.
+  analysis_source: phase_sources/P01/P01_Cumulative_Phase_Analysis_Through_P01_Current.md
+  metrics: []
+  datasets: []
+  models: []
+  budgets: []
+  ablation_ids: []
+  run_ids: []
+  source_artifacts: []
+  candidate_or_reviewed_claim_ids:
+  - P01-CLM-008/v1
+  - P01-CLM-012/v1
+- finding_id: P01-FIND-013
+  phase: P01
+  text: The execution history demonstrates fail-closed repair/reentry rather than silent acceptance of known defects.
+  analysis_source: phase_sources/P01/P01_Cumulative_Phase_Analysis_Through_P01_Current.md
+  metrics: []
+  datasets: []
+  models: []
+  budgets: []
+  ablation_ids: []
+  run_ids: []
+  source_artifacts: []
+  candidate_or_reviewed_claim_ids: []
+- finding_id: P01-FIND-014
+  phase: P01
+  text: P02 can consume the frozen Layer-1 data substrate without reinterpreting Layer-1 identities.
+  analysis_source: phase_sources/P01/P01_Cumulative_Phase_Analysis_Through_P01_Current.md
+  metrics: []
+  datasets: []
+  models: []
+  budgets: []
+  ablation_ids: []
+  run_ids: []
+  source_artifacts: []
+  candidate_or_reviewed_claim_ids:
+  - P01-CLM-010/v1
+- finding_id: P02-FIND-001
+  phase: P02
+  text: 'P02 closed the first governed Layer-2 decoder/baseline measurement spine over the frozen P01 data substrate: A0 reached 678/678 terminal
+    cells and preserved raw prediction, score, checkpoint, failure, and participant-level evidence.'
+  analysis_source: P02-PHASE-ANALYSIS-FINAL-R2
+  metrics:
+  - BACC
+  - F1_MACRO
+  - ACC
+  - conditional ROC_AUC
+  datasets:
+  - BNCI2014_001
+  - Lee2019_MI
+  - PhysioNetMI
+  models:
+  - all P02 A0 branches
+  budgets: []
+  ablation_ids:
+  - A0
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  source_artifacts:
+  - analysis_inputs/a0_completion.json
+  - analysis_inputs/a0_participant_metrics.csv
+  statistical_support: Execution/evidence closure; performance inference handled in later findings.
+  limitations:
+  - Non-clinical; no calibration/threshold/abstention claims.
+  candidate_or_reviewed_claim_ids:
+  - P02-CLM-001/v1
+- finding_id: P02-FIND-002
+  phase: P02
+  text: Full-training decoder ordering was dataset-dependent. CSP-LDA led BNCI2014_001 descriptively (BACC 0.639; one held-out participant), whereas
+    DBConformer/DNN-SEQ had the highest participant-first mean BACC on Lee2019_MI (0.795) and PhysioNetMI (0.650).
+  analysis_source: P02-PHASE-ANALYSIS-FINAL-R2
+  metrics:
+  - BACC
+  datasets:
+  - BNCI2014_001
+  - Lee2019_MI
+  - PhysioNetMI
+  models:
+  - CLS-CSP-LDA
+  - DNN-SEQ
+  budgets: []
+  ablation_ids:
+  - A0
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  source_artifacts:
+  - table_sources/P02_Table_A0_fulltrain_branch_summary.csv
+  statistical_support: Descriptive rankings; BNCI inferential n=1.
+  limitations:
+  - Ranking is descriptive and heterogeneous across datasets.
+  candidate_or_reviewed_claim_ids:
+  - P02-CLM-002/v1
+- finding_id: P02-FIND-003
+  phase: P02
+  text: The governed A0 omnibus test detected model-family heterogeneity on PhysioNetMI (Friedman statistic 20.544, p=0.00451, Kendall W=0.267)
+    but not on Lee2019_MI (p=0.148); no pairwise alternative-versus-CSP-LDA comparison survived Holm correction on Lee2019_MI or PhysioNetMI.
+  analysis_source: P02-PHASE-ANALYSIS-FINAL-R2
+  metrics:
+  - BACC
+  datasets:
+  - Lee2019_MI
+  - PhysioNetMI
+  models:
+  - eight A0 comparison branches
+  budgets: []
+  ablation_ids:
+  - A0
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  source_artifacts:
+  - analysis_inputs/a0_statistics.json
+  statistical_support: Friedman omnibus; paired Wilcoxon; Holm; participant unit.
+  limitations:
+  - Does not establish a universal winning decoder.
+  candidate_or_reviewed_claim_ids:
+  - P02-CLM-002/v1
+  - P02-CLM-003/v1
+- finding_id: P02-FIND-004
+  phase: P02
+  text: 'Participant heterogeneity was substantial in the multi-participant datasets: several leading full-training branches spanned near-chance
+    to very high participant BACC, so pooled means conceal materially different individual outcomes.'
+  analysis_source: P02-PHASE-ANALYSIS-FINAL-R2
+  metrics:
+  - BACC
+  datasets:
+  - Lee2019_MI
+  - PhysioNetMI
+  models:
+  - multiple
+  budgets: []
+  ablation_ids:
+  - A0
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  source_artifacts:
+  - analysis_inputs/subject_profile_metric_source.csv
+  - figures/P02_Figure_02_Lee2019_MI_participant_distribution.png
+  - figures/P02_Figure_02_PhysioNetMI_participant_distribution.png
+  statistical_support: Participant-first descriptive distributions.
+  limitations:
+  - P02 does not test a personalization policy.
+  candidate_or_reviewed_claim_ids: []
+- finding_id: P02-FIND-005
+  phase: P02
+  text: The frozen low-label analysis did not show a smooth universal sample-efficiency curve. At 1-32 labels/class most aggregate BACC points
+    remained near chance, model ranking changed with budget and dataset, and CSP-LDA at 1/class was explicitly non-success on all three datasets.
+  analysis_source: P02-PHASE-ANALYSIS-FINAL-R2
+  metrics:
+  - BACC
+  datasets:
+  - BNCI2014_001
+  - Lee2019_MI
+  - PhysioNetMI
+  models:
+  - CLS-CSP-LDA
+  - RIE-TS-LR
+  - DNN-EEGNET
+  - SSL-CBRAMOD
+  budgets: []
+  ablation_ids:
+  - A0
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  source_artifacts:
+  - analysis_inputs/low_label_curve_summary.json
+  - analysis_inputs/low_label_metric_source.csv
+  statistical_support: Descriptive; exact single frozen subset per budget.
+  limitations:
+  - One frozen subset; no repeated subset sampling; no interpolation.
+  candidate_or_reviewed_claim_ids:
+  - P02-CLM-004/v1
+- finding_id: P02-FIND-006
+  phase: P02
+  text: 'Stage 11 required an explicit prospective stopping-rule correction: previously sealed EEGNet fits were grandfathered, while only remaining/unsealed
+    fits adopted TRUE_P120/FLOOR1. The canonical primary lineage therefore remains mixed (101 P500, 4 R6 P120/FLOOR500); 15 R7 TRUE_P120/FLOOR1
+    fits belong to a diagnostic challenger and do not replace the primary A0 evidence.'
+  analysis_source: P02-PHASE-ANALYSIS-FINAL-R2
+  metrics:
+  - BACC
+  - F1_MACRO
+  datasets:
+  - BNCI2014_001
+  - Lee2019_MI
+  - PhysioNetMI
+  models:
+  - DNN-EEGNET
+  budgets: []
+  ablation_ids:
+  - A0
+  - diagnostic training-policy challenger
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  source_artifacts:
+  - runtime/diagnostics/runtime_successor/stage11_maximum_analysis/stage11_source_centered_recipe.json
+  - machine_readable P02 Protocol run matrix
+  statistical_support: Execution provenance / amendment evidence.
+  limitations:
+  - Mixed recipe lineage prevents a false all-R7 primary interpretation.
+  candidate_or_reviewed_claim_ids:
+  - P02-CLM-005/v1
+- finding_id: P02-FIND-007
+  phase: P02
+  text: 'The Stage 11 diagnostic S&R challenger did not provide evidence of a consistent test-set advantage over the canonical primary EEGNet:
+    median paired ΔBACC was -0.0347 on BNCI2014_001, +0.010 on Lee2019_MI, and 0.000 on PhysioNetMI, with Wilcoxon p values 0.125, 0.231 and 0.455
+    respectively.'
+  analysis_source: P02-PHASE-ANALYSIS-FINAL-R2
+  metrics:
+  - BACC
+  datasets:
+  - BNCI2014_001
+  - Lee2019_MI
+  - PhysioNetMI
+  models:
+  - DNN-EEGNET
+  budgets: []
+  ablation_ids:
+  - diagnostic-only; not an A-number
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  source_artifacts:
+  - analysis_inputs/training_policy_challenger_statistics.json
+  statistical_support: Participant-paired Wilcoxon and 10,000-resample bootstrap.
+  limitations:
+  - Does not rewrite primary A0 or enter A4 selection.
+  candidate_or_reviewed_claim_ids:
+  - P02-CLM-006/v1
+- finding_id: P02-FIND-008
+  phase: P02
+  text: 'Stage 12 diagnostics demonstrate architecture-specific optimization sensitivity rather than a universal training recipe: source/author-centered
+    candidate B removed targeted A-collapse for BNCI FBCNet and PhysioNet CBraMod in validation diagnostics, but BNCI FBCNet C-confirmation still
+    collapsed in 5/5 confirmation seeds.'
+  analysis_source: P02-PHASE-ANALYSIS-FINAL-R2
+  metrics:
+  - validation BACC
+  datasets:
+  - BNCI2014_001
+  - PhysioNetMI
+  models:
+  - DNN-FBCNET
+  - DNN-SEQ
+  - SSL-CBRAMOD
+  budgets: []
+  ablation_ids:
+  - none; diagnostic/amendment evidence
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  source_artifacts:
+  - runtime/diagnostics/stage12_R6_ABC_author_adaptive_R1/job_summaries/*.json
+  statistical_support: Diagnostic validation-only evidence; test role not loaded.
+  limitations:
+  - Claim-bearing test inference comes from canonical A0, not the A/B/C diagnostic search.
+  candidate_or_reviewed_claim_ids:
+  - P02-CLM-005/v1
+- finding_id: P02-FIND-009
+  phase: P02
+  text: 'A4 completed all six governed condition identities across all three datasets, but under an explicit resource-constrained single-repeat/deep-anchor
+    deviation: 1,218 terminal cells comprised 591 SUCCESS, 576 CONDITIONAL_SKIP, 9 INPUT_INCOMPATIBLE and 42 NOT_APPLICABLE_REPEAT_SLOT.'
+  analysis_source: P02-PHASE-ANALYSIS-FINAL-R2
+  metrics:
+  - BACC
+  - burden/delay
+  datasets:
+  - BNCI2014_001
+  - Lee2019_MI
+  - PhysioNetMI
+  models:
+  - classical
+  - neural
+  - Riemannian
+  - SSL roles plus C4/C5 ensembles
+  budgets: []
+  ablation_ids:
+  - A4
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  source_artifacts:
+  - analysis_inputs/a4_completion.json
+  - analysis_inputs/stage18_resource_constrained_anchor_budget_deviation.json
+  statistical_support: Closure/evidence accounting.
+  limitations:
+  - No five-repeat stability; reduced deep budget grid; not full Build Book equivalence.
+  candidate_or_reviewed_claim_ids:
+  - P02-CLM-007/v1
+- finding_id: P02-FIND-010
+  phase: P02
+  text: Across the 756 governed C1-C3 role-control statistical rows, no comparison reached raw p<=0.05; condition effects were generally small,
+    heterogeneous in sign, and dependent on dataset/role/budget.
+  analysis_source: P02-PHASE-ANALYSIS-FINAL-R2
+  metrics:
+  - paired ΔBACC
+  datasets:
+  - BNCI2014_001
+  - Lee2019_MI
+  - PhysioNetMI
+  models:
+  - CLASSICAL
+  - NEURAL
+  - RIEMANNIAN
+  - SSL roles
+  budgets: []
+  ablation_ids:
+  - A4
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  source_artifacts:
+  - analysis_inputs/a4_role_control_statistics.json
+  statistical_support: Paired Wilcoxon with Holm within the frozen A4 role-control family.
+  limitations:
+  - Deep roles restricted to anchor budgets/repeat0 in canonical Stage18.
+  candidate_or_reviewed_claim_ids:
+  - P02-CLM-007/v1
+- finding_id: P02-FIND-011
+  phase: P02
+  text: 'Within the governed C4/C5 ensemble-versus-strongest-constituent family, one comparison survived Holm correction: on PhysioNetMI full
+    training at ensemble repeat 4, the hard-vote ensemble underperformed validation-selected EEGNet by median ΔBACC -0.0435 (raw p=0.0186; Holm
+    p=0.0371; rank-biserial -0.788; 95% bootstrap CI -0.1304 to -0.0119).'
+  analysis_source: P02-PHASE-ANALYSIS-FINAL-R2
+  metrics:
+  - BACC
+  datasets:
+  - PhysioNetMI
+  models:
+  - A4-C4 hard-vote ensemble
+  - DNN-EEGNET constituent
+  budgets: []
+  ablation_ids:
+  - A4
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  source_artifacts:
+  - analysis_inputs/a4_c4_c5_statistics.json
+  statistical_support: Paired Wilcoxon; Holm; 10,000-resample participant-cluster bootstrap.
+  limitations:
+  - Does not imply ensembles are generally inferior across datasets/budgets/repeats.
+  candidate_or_reviewed_claim_ids:
+  - P02-CLM-008/v1
+- finding_id: P02-FIND-012
+  phase: P02
+  text: 'Stage 18S shows that A4 effect direction is sensitive to repeat and supervision budget: 22/45 three-repeat anchor trajectories were MIXED
+    and all 15 six-budget MR00 trajectories changed sign at least once.'
+  analysis_source: P02-PHASE-ANALYSIS-FINAL-R2
+  metrics:
+  - ΔBACC
+  datasets:
+  - BNCI2014_001
+  - Lee2019_MI
+  - PhysioNetMI
+  models:
+  - NEURAL
+  - SSL descriptive roles
+  budgets: []
+  ablation_ids:
+  - A4 supplemental sensitivity
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  source_artifacts:
+  - analysis_inputs/stage18S_R1_decision_support_summary.json
+  - analysis_inputs/stage18S_R1_three_repeat_anchor_stability.csv
+  - analysis_inputs/stage18S_R1_six_budget_mr00_sensitivity.csv
+  statistical_support: Post-hoc descriptive only.
+  limitations:
+  - Not confirmatory; does not modify G18 or create five-repeat evidence.
+  candidate_or_reviewed_claim_ids:
+  - P02-CLM-009/v1
+- finding_id: P02-FIND-013
+  phase: P02
+  text: 'Negative evidence is a first-class P02 result: the release preserves 648 failure/non-success records, 340 NegativeResultNotes and 309
+    DiagnosticOnlyFlags, including branch dependency blocks, conditional skips, input incompatibilities and not-applicable repeat slots.'
+  analysis_source: P02-PHASE-ANALYSIS-FINAL-R2
+  metrics:
+  - terminal status / provenance
+  datasets:
+  - all
+  models:
+  - all
+  budgets: []
+  ablation_ids:
+  - A0
+  - A4
+  - diagnostics
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  source_artifacts:
+  - analysis_inputs/failure_negative_summary.json
+  - negative_and_failed_results/
+  statistical_support: Complete terminal-state preservation.
+  limitations:
+  - Counts include governed non-success states that should not be conflated with unexpected runtime crashes.
+  candidate_or_reviewed_claim_ids:
+  - P02-CLM-010/v1
+- finding_id: P02-FIND-014
+  phase: P02
+  text: 'P02 is evidence-sufficient for its governed Layer-2 scope and downstream handoff, but its evidence ceiling remains a measurement ceiling:
+    it supports decoder/baseline, low-label descriptive, ordinary A4 control and readiness claims, not calibrated uncertainty, threshold/abstention
+    policy, clinical safety, temporal robustness, stress robustness or embodiment claims.'
+  analysis_source: P02-PHASE-ANALYSIS-FINAL-R2
+  metrics:
+  - governed P02 metrics
+  datasets:
+  - all
+  models:
+  - all
+  budgets: []
+  ablation_ids:
+  - A0
+  - A4
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  source_artifacts:
+  - Protocol v1.0 analysis contract
+  - runtime/manifests/stage_artifacts/20_readiness.json
+  statistical_support: Protocol claim ceiling + gate closure.
+  limitations:
+  - Downstream layers must carry P02 limitations forward.
+  candidate_or_reviewed_claim_ids:
+  - P02-CLM-010/v1
+- finding_id: CF-01
+  phase: CUMULATIVE_P00_P02
+  text: Across P00-P02, IHARQ progressed from validated non-empirical engineering contracts to a provenance-locked Layer-1 EEG substrate and then
+    to a governed Layer-2 empirical decoder/baseline evidence spine without silently redefining phase identities or upstream data contracts.
+  analysis_source: IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  metrics: []
+  datasets: []
+  models: []
+  budgets: []
+  ablation_ids: []
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  source_artifacts:
+  - P00-F-006
+  - P00-F-007
+  - P01-FIND-014
+  - P02-FIND-001
+  - P02-FIND-014
+  limitations:
+  - Technical/evidence-chain closure is not clinical or deployment validation.
+  candidate_or_reviewed_claim_ids:
+  - CUM-CLM-001/v1
+- finding_id: CF-02
+  phase: CUMULATIVE_P00_P02
+  text: The P02 empirical results are interpretable against a stable upstream substrate because P01 froze a subject-grouped disjoint split, conserved
+    all 12,910 accepted events into 12,910 valid core windows, and handed those identities forward; P02 did not require silent relabeling, rewindowing
+    or denominator substitution.
+  analysis_source: IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  metrics: []
+  datasets: []
+  models: []
+  budgets: []
+  ablation_ids: []
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  source_artifacts:
+  - P01-FIND-002
+  - P01-FIND-003
+  - P01-FIND-006
+  - P01-FIND-014
+  - P02-FIND-001
+  limitations:
+  - The implemented leakage checks are bounded; they do not prove every conceivable leakage mechanism impossible.
+  candidate_or_reviewed_claim_ids:
+  - CUM-CLM-001/v1
+  - CUM-CLM-002/v1
+- finding_id: CF-03
+  phase: CUMULATIVE_P00_P02
+  text: The transition from a three-dataset Layer-1 foundation to P02 decoder evaluation exposed dataset-dependent model ordering rather than
+    a universal decoder hierarchy; full-training leaders and inferential strength differed materially across BNCI2014_001, Lee2019_MI and PhysioNetMI.
+  analysis_source: IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  metrics: []
+  datasets: []
+  models: []
+  budgets: []
+  ablation_ids: []
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  source_artifacts:
+  - P01-FIND-001
+  - P02-FIND-002
+  - P02-FIND-003
+  - P02-FIND-004
+  limitations:
+  - BNCI2014_001 has one held-out P02 test participant; no universal rank claim is authorized.
+  candidate_or_reviewed_claim_ids:
+  - CUM-CLM-003/v1
+- finding_id: CF-04
+  phase: CUMULATIVE_P00_P02
+  text: 'P01 low-label readiness became an empirical P02 stress test: the exact frozen 1/2/4/8/16/32-per-class populations were usable downstream,
+    but P02 observed near-chance, non-monotonic and rank-changing low-label behavior rather than a stable universal sample-efficiency ordering.'
+  analysis_source: IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  metrics: []
+  datasets: []
+  models: []
+  budgets: []
+  ablation_ids: []
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  source_artifacts:
+  - P01-FIND-007
+  - P02-FIND-005
+  limitations:
+  - One frozen subset per budget; repeated-subset stability is not established.
+  candidate_or_reviewed_claim_ids:
+  - CUM-CLM-004/v1
+- finding_id: CF-05
+  phase: CUMULATIVE_P00_P02
+  text: 'A4 evolved in two scientifically distinct steps: P01 discovered that the original +4.0 s proposal could not preserve the full parent-event
+    denominator and froze a matched +3.5 s R2 substrate; P02 then evaluated the resulting A4 family and found no generic statistically detectable
+    C1-C3 improvement under its governed resource-constrained scope.'
+  analysis_source: IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  metrics: []
+  datasets: []
+  models: []
+  budgets: []
+  ablation_ids:
+  - A4
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  source_artifacts:
+  - P01-FIND-009
+  - P01-FIND-010
+  - P02-FIND-009
+  - P02-FIND-010
+  limitations:
+  - P02 canonical A4 uses one refit repeat and deep anchor budgets; absence of detected effects is not proof of zero effect.
+  candidate_or_reviewed_claim_ids:
+  - CUM-CLM-005/v1
+- finding_id: CF-06
+  phase: CUMULATIVE_P00_P02
+  text: The P01-deferred question of whether A4 R2 itself improves decoder performance is no longer simply untested after P02; instead it is qualified
+    by predominantly null/heterogeneous control evidence, one specific negative hard-vote ensemble result, and post-hoc Stage 18S sign sensitivity.
+  analysis_source: IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  metrics: []
+  datasets: []
+  models: []
+  budgets: []
+  ablation_ids:
+  - A4
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  source_artifacts:
+  - P01-FIND-009
+  - P02-FIND-010
+  - P02-FIND-011
+  - P02-FIND-012
+  limitations:
+  - No five-repeat stability or dense deep-budget response claim; Stage 18S is post-hoc.
+  candidate_or_reviewed_claim_ids:
+  - CUM-CLM-005/v1
+- finding_id: CF-07
+  phase: CUMULATIVE_P00_P02
+  text: Because P00/P01 stabilized schemas, data identities, splits and windows before P02 model execution, the Stage 11/12 correction history
+    is best interpreted as a P02-local training/optimization fidelity issue rather than evidence that upstream data foundations were invalid.
+  analysis_source: IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  metrics: []
+  datasets: []
+  models: []
+  budgets: []
+  ablation_ids: []
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  source_artifacts:
+  - P00-F-005
+  - P01-FIND-003
+  - P01-FIND-014
+  - P02-FIND-006
+  - P02-FIND-008
+  limitations:
+  - Stage 12 before/after diagnostics are validation-only and do not establish universal test-set improvement.
+  candidate_or_reviewed_claim_ids:
+  - CUM-CLM-006/v1
+- finding_id: CF-08
+  phase: CUMULATIVE_P00_P02
+  text: 'Fail-closed behavior is a cumulative methodological property rather than a single-phase anecdote: P00 rejected malformed fixtures, P01
+    blocked and repaired material stage failures, and P02 preserved failed, skipped, incompatible, superseded and diagnostic outcomes alongside
+    successes.'
+  analysis_source: IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  metrics: []
+  datasets: []
+  models: []
+  budgets: []
+  ablation_ids: []
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  source_artifacts:
+  - P00-F-004
+  - P01-FIND-013
+  - P02-FIND-013
+  limitations:
+  - Engineering rejection evidence and scientific negative results are different evidence classes and must not be numerically pooled.
+  candidate_or_reviewed_claim_ids:
+  - CUM-CLM-007/v1
+- finding_id: CF-09
+  phase: CUMULATIVE_P00_P02
+  text: Reproducibility matured from exact local-snapshot foundation evidence in P00, through immutable dataset/split/window identities and execution
+    closure in P01, to model/run/checkpoint/prediction provenance and preserved external P02 workspace/release identities.
+  analysis_source: IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  metrics: []
+  datasets: []
+  models: []
+  budgets: []
+  ablation_ids: []
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  source_artifacts:
+  - P00-F-008
+  - P01-FIND-004
+  - P01-FIND-011
+  - P01-FIND-012
+  - P02-FIND-013
+  - P02-FIND-014
+  limitations:
+  - Cross-environment portability and private external-artifact access remain bounded rather than universally solved.
+  candidate_or_reviewed_claim_ids:
+  - CUM-CLM-001/v1
+  - CUM-CLM-007/v1
+- finding_id: CF-10
+  phase: CUMULATIVE_P00_P02
+  text: The scientific evidence ceiling expanded phase by phase—from P00 engineering/readiness evidence, to P01 data-integrity/readiness evidence,
+    to P02 empirical decoder and governed A4 evidence—but later empirical breadth did not erase the project-wide public-benchmark, non-clinical
+    and non-deployment boundary.
+  analysis_source: IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  metrics: []
+  datasets: []
+  models: []
+  budgets: []
+  ablation_ids:
+  - A4
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  source_artifacts:
+  - P00-F-009
+  - P01-FIND-008
+  - P02-FIND-001
+  - P02-FIND-014
+  limitations:
+  - No clinical effectiveness, deployment safety, calibrated decision policy, stress robustness or embodiment claim is supported through P02.
+  candidate_or_reviewed_claim_ids: []
+- finding_id: CF-11
+  phase: CUMULATIVE_P00_P02
+  text: 'Participant and dataset heterogeneity become scientifically visible only once the project reaches P02 empirical decoding: upstream integrity
+    enables fair measurement, but does not make individual EEG decoding outcomes homogeneous.'
+  analysis_source: IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  metrics: []
+  datasets: []
+  models: []
+  budgets: []
+  ablation_ids: []
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  source_artifacts:
+  - P01-FIND-002
+  - P01-FIND-003
+  - P02-FIND-002
+  - P02-FIND-004
+  limitations:
+  - P02 does not test a personalization policy or cross-session adaptation mechanism.
+  candidate_or_reviewed_claim_ids:
+  - CUM-CLM-003/v1
+- finding_id: CF-12
+  phase: CUMULATIVE_P00_P02
+  text: 'At the end of P02 the project has a traceable technical continuation point for P03: frozen upstream data identities, canonical P02 predictions/checkpoints/failure
+    semantics and explicit claim restrictions can be inherited without treating technical readiness as downstream scientific success.'
+  analysis_source: IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+  metrics: []
+  datasets: []
+  models: []
+  budgets: []
+  ablation_ids: []
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  source_artifacts:
+  - P01-FIND-014
+  - P02-FIND-013
+  - P02-FIND-014
+  limitations:
+  - P03 and later scientific outcomes are not part of the completed evidence through P02.
+  candidate_or_reviewed_claim_ids:
+  - CUM-CLM-008/v1

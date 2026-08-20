@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "runtime_evidence_checked": true,
+  "prediction_partitions": 11,
+  "a0": true,
+  "a4": true,
+  "c4c5": true,
+  "p03": {
+    "status": "PASS",
+    "missing_prediction_fields": [],
+    "missing_support_fields": [],
+    "required_prediction_fields": [
+      "budget_id",
+      "budget_repeat_id",
+      "checkpoint_id",
+      "class_order",
+      "dataset_id",
+      "model_id",
+      "model_seed",
+      "model_variant",
+      "score_semantics",
+      "score_type",
+      "score_vector",
+      "session_id",
+      "source_event_id",
+      "split_id",
+      "split_role",
+      "subject_id",
+      "window_id",
+      "y_pred"
+    ],
+    "required_support_fields": [
+      "ablation_id",
+      "aggregation_identity",
+      "condition_id",
+      "config_sha256",
+      "failure_missingness_status",
+      "metric_dictionary_reference",
+      "run_cell_id",
+      "scientific_freeze_id"
+    ]
+  },
+  "readiness_record": "records/Layer2ReadinessReport/dataset=ALL/branch=READINESS/budget=ALL/P02-L2-READINESS-P03.jsonl"
+}

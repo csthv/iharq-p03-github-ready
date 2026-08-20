@@ -1,0 +1,56 @@
+{
+  "config_changed": false,
+  "gate_id": "G03-16-A3",
+  "hardening_id": "P03-C8-STAGE16-A3-PRODUCT-LINEAGE-HARDENING-R2",
+  "hardening_reason": "PROSPECTIVELY_MATERIALIZE_P03_PROD_028_029_AND_COMPLETE_LINEAGE",
+  "lineage": {
+    "curve_records_with_nonempty_sha_and_parent_lineage": 719756,
+    "selective_records_with_nonempty_sha_and_parent_lineage": 582,
+    "stage13_successor_id": "P03-C8-STAGE13-UNCERTAINTYRECORD-SEMANTIC-LINEAGE-SUCCESSOR-R1",
+    "stage13_successor_manifest_sha256": "cdd22aa4f6f753e55db693cae4c66d10fdd6c78f307a705a19f1e717e8218542"
+  },
+  "products": {
+    "P03-PROD-028": {
+      "family_manifest_sha256": "1ce20a3d9233428eae5f10cab25c20a1abc5fed022adf9ceebd046de1d337207",
+      "family_root": "artifacts/records/phase_03/RiskCoverageCurveSource/P03-C8-STAGE16-A3-PRODUCT-LINEAGE-HARDENING-R2",
+      "record_count": 719756,
+      "record_family": "RiskCoverageCurveSource"
+    },
+    "P03-PROD-029": {
+      "family_manifest_sha256": "e78c2f82ea24685930dcd1134974e520d00221ff35674c9e9ccc09d5884b14f1",
+      "family_root": "artifacts/records/phase_03/SelectivePredictionRecord/P03-C8-STAGE16-A3-PRODUCT-LINEAGE-HARDENING-R2",
+      "record_count": 582,
+      "record_family": "SelectivePredictionRecord"
+    }
+  },
+  "protocol_changed": false,
+  "run_id": "P03-L3-OFFICIAL-09ca82c743e0411a",
+  "schema_id": "P03Stage16ProspectiveProductLineageHardeningManifest.v1",
+  "schema_version": "1.0.0",
+  "scientific_handler_changed": false,
+  "scientific_invariance": {
+    "binary_alias_curve_mismatch_count": 0,
+    "binary_alias_rule_application_mismatch_count": 0,
+    "confidence_lawful_repeated_full_acceptance_rows": 570,
+    "no_rule_application_fabrication_count": 0,
+    "no_rule_mask_file_count": 0,
+    "selective_scientific_field_change_count": 0,
+    "test_used_for_selection": false
+  },
+  "scientific_method_changed": false,
+  "scientific_worker_changed": false,
+  "stage16_raw": {
+    "curve_point_count": 719756,
+    "no_rule_count": 273,
+    "other_ineligible_count": 0,
+    "raw_curve_sha256": "62ab9ae320efc8d54372167e830811e20b201a9866d4884b0e8ea49a18c6ddfa",
+    "raw_rule_ledger_sha256": "44f533535757155584cc6349bf8b9dd769a7004b89741b29f9797a85b8d5aff4",
+    "raw_selective_jsonl_sha256": "34b65a4b01de568b7480ad241c9a145177c4c8e09643293b2384fe5d91fe1923",
+    "rule_candidate_count": 855,
+    "stage16_output_manifest_sha256": "5df62c77a64027bc895aeedac89aba2b4026702f61a1294f2678820c972a78fe",
+    "success_count": 582
+  },
+  "stage16_stage_artifacts_mutated_by_hook": false,
+  "stage_id": "16",
+  "status": "PASS"
+}

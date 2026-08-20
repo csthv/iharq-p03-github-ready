@@ -1,0 +1,14 @@
+ledger_id: P00-ABSOLUTE-PATH-EXCEPTION-LEDGER-R1
+rule: No executable/config/manifest path may depend on the original workspace. Immutable
+  authority quotations and preserved historical logs may contain documentary path
+  strings only.
+exceptions:
+- scope: docs/authorities/06_method_selection/Method_Selection_L0_to_L10_R2.md
+  classification: IMMUTABLE_SOURCE_CONTENT
+  executable_dependency: false
+- scope: docs/authorities/07_nuts_and_bolts/Nuts_and_Bolts_L0_to_L10_R2.md
+  classification: IMMUTABLE_SOURCE_CONTENT
+  executable_dependency: false
+- scope: reports/**
+  classification: PRESERVED_HISTORICAL_EVIDENCE
+  executable_dependency: false

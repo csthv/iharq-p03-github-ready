@@ -1,0 +1,55 @@
+config_sha256: 2eda0689ab42e93c91b3ef9b76e0168d1c13d1feb3d1a552beaade91105ab7c3
+limitation_tables:
+- path: artifacts/negative_and_failed_results/phase_03/limitation_register.yaml
+  role: limitation_register
+  row_count: 21
+  sha256: 4e0c950fa4e8d1331e4d43be0d5e6af800bcced6c8e62c256a89a0e8b46106e3
+manual_notebook_scraping_required: false
+metric_tables:
+- path: artifacts/phase_analysis_handoff/phase_03/metrics/metric_analysis_rows.jsonl
+  role: normalized_metric_analysis
+  row_count: 13585
+  sha256: 3e7167373f9d97386773783e1be8637c2e340f7c8347d6a811961377715603f7
+negative_tables:
+- path: artifacts/negative_and_failed_results/phase_03/negative_results/P03-C8-STAGE20-NEGATIVE-EVIDENCE-HARDENING-R1/negative_result_notes.jsonl
+  role: negative_result_notes
+  row_count: 3618
+  sha256: 20d4dc59d9338a2c3d19a2df8802d81c1e2ee83d22e933bbda678759e2ac1bdd
+- path: artifacts/negative_and_failed_results/phase_03/failure_ledger.jsonl
+  role: failure_ledger
+  row_count: 3618
+  sha256: e425d330d04b460e8630ecc7d88d45b5c83f735cb5b2f79716fa67aa04bd06d3
+product_id: P03-PROD-062
+protocol_sha256: dc46b87cb802d1a6a3ab0efd3dc6db6be5c3b5c7125c54e95a9cdbea8eef797d
+run_id: P03-L3-OFFICIAL-09ca82c743e0411a
+schema_id: PhaseAnalysisInputIndex.v1
+schema_version: 1.0.0
+source_tables:
+- path: artifacts/layer10_source_bundle/phase_03/figure_source_data/figure_source_dataset_manifest.json
+  role: figure_source_manifest
+  sha256: db77ab3b1ae5605457416431ba1053f3a446fd95e89ac278dbb77065d96cb9df
+- path: artifacts/layer10_source_bundle/phase_03/table_source_data/table_source_dataset_manifest.json
+  role: table_source_manifest
+  sha256: 779d710a037689ded5c5fd82598774eef6a4b3de95dddaf3274bfb88dd8411ce
+- path: artifacts/records/phase_03/CalibrationDashboardMetricRecord/P03-C8-STAGE21-DOCUMENTARY-HANDOFF-EVIDENCE-HARDENING-R2/family_manifest.json
+  role: dashboard_manifest
+  sha256: e5bfe477dfaf5704064e7241bb11d79c306f02c69d6633fb66dad3d295a66f04
+- path: artifacts/layer10_source_bundle/phase_03/cards/reliability_card_source_manifest.json
+  role: reliability_card_manifest
+  sha256: d93a4a105aadf299fcd594517067d0d3ce49df191fae288bd64999559e49151f
+- path: artifacts/layer10_source_bundle/phase_03/layer10_source_manifest.json
+  role: layer10_source_manifest
+  sha256: a593e4d2e35bba007f9c129b142320301e2530edec9c8b5724262a8788c4a22d
+- path: artifacts/layer0_handoff/phase_03/claim_evidence_input.yaml
+  role: claim_evidence_input
+  sha256: 4e6b9117d070c1a0737b72ffabdc72a2c5ba5b2704bfa92e2bdb053e1a3a49a0
+stage21_raw_index_path: stage_artifacts/stage_22/phase_analysis_input_index.json
+stage21_raw_index_sha256: 82f3768e3311eed488a0651330cf7a767a5054770c80f3b39d4a4dc7863b3dd0
+statistics_executed_in_stage22: false
+statistics_tables:
+- path: artifacts/phase_analysis_handoff/phase_03/statistics/statistics_input_table.jsonl
+  role: normalized_statistics_input
+  row_count: 13585
+  sha256: b43221bf4b1c7b763557d55a48cb4ecf87efade5795626ad72c2216eb8b2c1eb
+test_used_for_selection: false
+uncertainty_invented_in_stage22: false

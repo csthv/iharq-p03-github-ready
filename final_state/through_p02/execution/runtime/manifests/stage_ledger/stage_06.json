@@ -1,0 +1,45 @@
+{
+  "stage_id": "06",
+  "status": "SUCCESS",
+  "attempt_id": "879c816b6a5b",
+  "inputs": {},
+  "input_hashes": {},
+  "outputs": {
+    "status": "PASS",
+    "schemas": 10,
+    "config_hash": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+    "read_only_syntax_compile": "PASS",
+    "syntax_files": 34,
+    "clean_subprocess_import": "PASS",
+    "worker_import_probe": "NOT_USED_NO_ISOLATED_WORKER",
+    "artifact": "stage_artifacts/06_schema_import.json"
+  },
+  "output_hashes": {
+    "status": "727e9bd17b077ba162e13ba877135cc6fbc6b30f83da0b34b3e20233f1cc885f",
+    "schemas": "4a44dc15364204a80fe80e9039455cc1608281820fe2b24f1e5233ade6af1dd5",
+    "config_hash": "d96bf4def09e92a1bbb8be688b039f660f8ee797431ec85b7b7f507541b99204",
+    "read_only_syntax_compile": "727e9bd17b077ba162e13ba877135cc6fbc6b30f83da0b34b3e20233f1cc885f",
+    "syntax_files": "86e50149658661312a9e0b35558d84f6c6d3da797f552a9657fe0558ca40cdef",
+    "clean_subprocess_import": "727e9bd17b077ba162e13ba877135cc6fbc6b30f83da0b34b3e20233f1cc885f",
+    "worker_import_probe": "ca04351b29fc258b90230ccb743508a6c93f919036aa46842d23a08e46375a54",
+    "artifact": "6b12a9427fc5ef5e6493c5d66a6cb128507c276399b5380726198ba7139fe8da"
+  },
+  "dependencies": [
+    "05"
+  ],
+  "elapsed_seconds": 1.407226324081421,
+  "log_path": "logs/stage_06_879c816b6a5b.log",
+  "heartbeat_write_errors": [],
+  "observability_status": "PASS",
+  "blockers": [],
+  "observations": [],
+  "revision_fingerprint": {
+    "notebook_revision": "R4",
+    "notebook_id": "IHARQ-P02-COMPLETE-EXECUTION-AND-ANALYSIS-R4",
+    "source_sha256": "a54bfa816acc6763c1d1042b8c65cf54ae04ec774c57ec50de86014a6730c5fa",
+    "config_sha256": "d82334535e397c681d6172694da96d3fff0143ffb1b63a18876ee1f7778f60a1",
+    "stage_plan_sha256": "043eb30e008af910d37c563e8be8c719ef881cf009aec3e34687dc97bdc34aad",
+    "scientific_freeze_sha256": "7449216c988eec14191ba85300d720547f06fbc6ac7020e9e142bf12a4b0a598",
+    "scientific_freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "run_cell_id": "P02-A4-BNCI2014_001-NEURAL-A4-C1-LONG-3P5S-P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS-MR04",
+  "ablation_id": "A4",
+  "terminal_status": "CONDITIONAL_SKIP",
+  "reason": "STAGE18_RESOURCE_CONSTRAINED_SINGLE_REPEAT_ALL_REFIT_ROLES",
+  "reduction_dimension": "REPEAT_DEPTH",
+  "protocol_deviation_id": "P02-STAGE18-RESOURCE-CONSTRAINED-ANCHOR-BUDGET-SINGLE-REPEAT-R1",
+  "protocol_deviation_from_buildbook": true,
+  "full_buildbook_replication_equivalence": false,
+  "intended_original_repeat_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "executed_repeat_indices": [
+    0
+  ],
+  "deep_anchor_budget_ids": [
+    "P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS",
+    "P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS",
+    "FULL_TRAIN"
+  ],
+  "omitted_repeat_index": 4,
+  "omitted_budget_id": null,
+  "scientific_training_performed": false,
+  "prediction_regenerated": false,
+  "test_signal_loaded": false,
+  "ablation_condition_removed": false,
+  "dataset_removed": false,
+  "model_family_removed": false,
+  "reporting_scope": "RESOURCE_CONSTRAINED_ANCHOR_BUDGET_SINGLE_REPEAT_A4_ABLATION",
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

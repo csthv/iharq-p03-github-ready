@@ -1,0 +1,41 @@
+review_mode: LLM_ONLY
+human_review_used: false
+decisions:
+- id: OD-001
+  status: LLM_DECISION_ACCEPTED
+  decision: JSON Schema Draft 2020-12 wire profiles, Pydantic v2 runtime envelope/adapters, JSON Lines for append-only streams,
+    Arrow/Parquet deferred until large/tabular artifacts exist. Registry semantics remain controlling.
+  migration: Existing 0.1-local representative profiles are superseded by generated 1.0-foundation profiles; no canonical
+    Registry status is silently promoted.
+- id: OD-002
+  status: LLM_DECISION_ACCEPTED
+  decision: GitHub is the source/small-artifact control plane; external artifact stores activate only for large artifacts;
+    pointer manifests are implemented. No release is created in this task.
+  migration: Prior publication-blocker records are preserved as historical evidence and not treated as current truth.
+- id: OD-004
+  status: LLM_DECISION_ACCEPTED
+  decision: ClaimEvidenceMatrix is the relational governance object; ClaimEvidenceManifest is its serialized distribution/index
+    view.
+  migration: ClaimEvidenceClosureWrapper is retained only as a deprecated migration alias and is not the final interface.
+- id: OD-016
+  status: LLM_DECISION_ACCEPTED
+  decision: 'Layer 0 uses LLM-only 3-of-3 role quorum: Evidence Sufficiency, Claim Safety, and Adversarial Claim. Deterministic
+    failures cannot be overridden; no human quorum is required.'
+  migration: All human-review-required language is superseded for this project-local workflow, while no institutional/clinical/regulatory
+    approval is implied.
+- id: OD-018
+  status: LLM_DECISION_ACCEPTED_WITH_LOCAL_EXECUTION_LIMITATION
+  decision: uv is the package manager; Python 3.12 is primary frozen target; 3.11/3.12/3.13 are configured compatibility targets;
+    local execution available only on Python 3.13.5.
+  migration: A project uv.lock plus exact local requirements lock are supplied. Full registry-resolved uv lock and cross-version
+    CI remain pending because this task forbids GitHub execution and the sandbox is offline.
+- id: OD-019
+  status: LLM_DECISION_ACCEPTED
+  decision: Typer CLI, YAML authoring, JSON machine snapshots, Pydantic strict config with unknown-key rejection, versioned
+    command contracts.
+  migration: Existing CLI commands are expanded with dry-run/safeguards/error codes.
+- id: OD-022
+  status: LLM_DECISION_ACCEPTED
+  decision: RFC 8785-compatible restricted JCS domain with UTF-16 property ordering, UTF-8 bytes, SHA-256, no Unicode normalization,
+    safe integers only, decimals represented as governed strings, nonfinite/negative-zero rejection.
+  migration: Prior sorted-key hashes become legacy local hashes and descendants must be regenerated before acceptance.

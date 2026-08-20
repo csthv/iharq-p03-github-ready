@@ -1,0 +1,22 @@
+{
+  "manifest_type": "InputManifest",
+  "input_manifest_id": "IHARQ-P02-ENTRY-INPUT-MANIFEST-FROM-P00-P01-R1",
+  "phase": "P02",
+  "authority_manifest": "artifacts/cumulative_state/AuthorityManifest.json",
+  "repository_manifest": "CURRENT_CUMULATIVE_REPOSITORY_MANIFEST.json",
+  "environment_manifest": "artifacts/cumulative_state/EnvironmentManifest.json",
+  "config_snapshot": "artifacts/cumulative_state/ConfigSnapshot.json",
+  "source_lineage_required": true,
+  "limitations_required": true,
+  "no_fabricated_inputs": true,
+  "p01_records": {
+    "DatasetRecord": 3,
+    "WindowRecord": 12910,
+    "SplitRecord": 1,
+    "PreprocessingRecord": 1,
+    "LabelMapRecord": 3,
+    "ValidationReport": 1
+  },
+  "p01_handoff": "artifacts/phase_closure/IHARQ_Phase_01_Final_Handoff_and_Phase2_Readiness_R1.yaml",
+  "p02_input_contract": "contracts/phases/p02/input_contract.yaml"
+}

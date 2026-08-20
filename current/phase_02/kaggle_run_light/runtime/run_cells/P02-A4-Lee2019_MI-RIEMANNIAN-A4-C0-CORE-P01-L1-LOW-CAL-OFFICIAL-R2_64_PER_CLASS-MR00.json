@@ -1,0 +1,21 @@
+{
+  "run_cell_id": "P02-A4-Lee2019_MI-RIEMANNIAN-A4-C0-CORE-P01-L1-LOW-CAL-OFFICIAL-R2:64_PER_CLASS-MR00",
+  "ablation_id": "A4",
+  "terminal_status": "SUCCESS",
+  "resolved_branch": "RIE-TS-LR",
+  "prediction_partition": "records/PredictionRecord/dataset=Lee2019_MI/branch=RIE-TS-LR/budget=P01-L1-LOW-CAL-OFFICIAL-R2:64_PER_CLASS/P02-A0-Lee2019_MI-RIE-TS-LR-P01-L1-LOW-CAL-OFFICIAL-R2:64_PER_CLASS-MR00.jsonl",
+  "metric_source": "metrics/P02-A0-Lee2019_MI-RIE-TS-LR-P01-L1-LOW-CAL-OFFICIAL-R2:64_PER_CLASS-MR00.json",
+  "checkpoint_sha256": "96ef47bbaea0748eb97c6d1be374810469f9713c7d65419f09744d362c43c741",
+  "observed_denominator": 600,
+  "burden": {
+    "evidence_duration_s": 3.0,
+    "observation_horizon_s": 3.0,
+    "model_or_view_evaluations": 1,
+    "member_count": 1,
+    "aggregation_operation": "DIRECT_CORE",
+    "batch1_latency_median_s": 0.009245580000424525,
+    "batch1_latency_p95_s": 0.009464905400454882,
+    "aggregation_latency_s": 0.0
+  },
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

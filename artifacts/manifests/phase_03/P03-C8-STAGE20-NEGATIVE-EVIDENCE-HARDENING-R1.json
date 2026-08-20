@@ -1,0 +1,61 @@
+{
+  "config_changed": false,
+  "gate_id": "G03-20-NEGATIVE",
+  "hardening_id": "P03-C8-STAGE20-NEGATIVE-EVIDENCE-HARDENING-R1",
+  "negative_evidence_invariants": {
+    "failed_attempts_deleted": 0,
+    "inherited_negative_preserved": 971,
+    "no_rule_rows_preserved": 364,
+    "planned_equals_success_plus_explicit_non_success": true,
+    "scientific_outcome_change_count": 0,
+    "sparse_rows_preserved": 0,
+    "test_used_for_selection": false
+  },
+  "products": {
+    "P03-PROD-035": {
+      "path": "artifacts/negative_and_failed_results/phase_03/failure_ledger.jsonl",
+      "product": "P03FailureLedger",
+      "record_count": 3618,
+      "schema_id": "FailureLedger.v1",
+      "sha256": "e425d330d04b460e8630ecc7d88d45b5c83f735cb5b2f79716fa67aa04bd06d3"
+    },
+    "P03-PROD-036": {
+      "product": "NegativeResultNote",
+      "record_count": 3618,
+      "records_sha256": "20d4dc59d9338a2c3d19a2df8802d81c1e2ee83d22e933bbda678759e2ac1bdd",
+      "root": "artifacts/negative_and_failed_results/phase_03/negative_results/P03-C8-STAGE20-NEGATIVE-EVIDENCE-HARDENING-R1",
+      "schema_id": "NegativeResultNote.v1"
+    },
+    "P03-PROD-037": {
+      "limitation_count": 21,
+      "path": "artifacts/negative_and_failed_results/phase_03/limitation_register.yaml",
+      "product": "LimitationRegister",
+      "register_sha256": "828c085eea3f826a7031368103739437b27339fea21eb59bd49d039fd7248787",
+      "schema_id": "LimitationRegister.v1",
+      "sha256": "4e0c950fa4e8d1331e4d43be0d5e6af800bcced6c8e62c256a89a0e8b46106e3"
+    }
+  },
+  "protocol_changed": false,
+  "raw_stage20": {
+    "a2_no_rule_count": 91,
+    "a3_no_rule_count": 273,
+    "denominator_complete": true,
+    "failure_taxonomy_summary_sha256": "c0026fb83dd84bb242b3bdf1c9e3028ea371ac8e0ec9c9626f6c05aeb35d8a87",
+    "inherited_contract_receipt_sha256": "ee864adec5874e0221d2cf61f182b4302d3cd2755990a7f7effb4dae7f84b0e7",
+    "inherited_negative_sha256": "00861de7fed1629963f9af7f180e9d8096282a4f0c1a2386007070e7af66a0d8",
+    "inherited_p02_negative_count": 971,
+    "negative_result_count": 3618,
+    "negative_result_notes_sha256": "15b9caf4d091435fbf76fe7d7117e1d5d36e5e4f66ec71b503990c55a7c63aea",
+    "output_manifest_sha256": "29bc5c761291c593670380c14233799a987d547a02d044a427998aee0b2edc95",
+    "preserved_stage_failure_count": 3
+  },
+  "repository_mutated": false,
+  "run_id": "P03-L3-OFFICIAL-09ca82c743e0411a",
+  "schema_id": "P03Stage20NegativeEvidenceProspectiveHardeningManifest.v1",
+  "schema_version": "1.0.0",
+  "scientific_handler_changed": false,
+  "scientific_method_changed": false,
+  "stage20_stage_artifacts_mutated_by_hook": false,
+  "stage_id": "20",
+  "status": "PASS"
+}

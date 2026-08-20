@@ -1,0 +1,113 @@
+{
+  "blocked_operations": [],
+  "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS",
+  "config_sha256": "2eda0689ab42e93c91b3ef9b76e0168d1c13d1feb3d1a552beaade91105ab7c3",
+  "correction_profile_id": "P03-C8-STAGE08-GOVERNED-SERIALIZATION-SUCCESSOR-R1",
+  "correction_reason": "STAGE08_RAW_SPLIT_INTEGRITY_ROWS_OMITTED_GOVERNED_RECORD_ENVELOPE_AND_FAMILY_REQUIRED_FIELDS",
+  "created_at_utc": "2026-08-15T21:15:42Z",
+  "dataset_id": "BNCI2014_001",
+  "event_overlap_count": 0,
+  "failure_code": null,
+  "field_visibility": {
+    "calibration": [
+      "scores",
+      "labels"
+    ],
+    "decision_time_projection": [
+      "scores"
+    ],
+    "test": [
+      "scores",
+      "labels"
+    ],
+    "threshold_validation": [
+      "scores",
+      "labels"
+    ]
+  },
+  "field_visibility_profile_id": null,
+  "field_visibility_semantic_sha256": "1ad3a09600a262f9464b2918f98cb17c15d592f80f3ba0a0b21b3b0a09dfe2ef",
+  "group_id": "GROUP-199f031460f7228734dd",
+  "hash_overlap_applicability": "NOT_APPLICABLE_NO_HASH_IDENTITY_FIELD",
+  "hash_overlap_count": 0,
+  "illegal_use_attempts": [],
+  "invalidated_by": [],
+  "layer_id": "L3",
+  "leakage_profile": {
+    "identity_fields": [
+      "window_id",
+      "source_event_id"
+    ],
+    "role_field": "split_role"
+  },
+  "lifecycle_status": "ACTIVE",
+  "limitations": [
+    "Stage07 canonical-group metadata exposes no hash-identity field; hash_overlap_count is the observed count over available hash fields (0). The frozen active leakage identity fields are window_id and source_event_id.",
+    "No separately frozen field_visibility_profile_id was resolved from the current runtime package/schema; field_visibility_profile_id is null and the exact frozen field_visibility map plus semantic SHA are embedded."
+  ],
+  "lineage_parent_ids": [
+    "GROUP-199f031460f7228734dd",
+    "IHARQ-SPLITRECORD-20260806-e4e371d332c61e36",
+    "ModelRegistryRecord:01687e161c174d68621161bc"
+  ],
+  "model_id": "CLS-CSP-LDA:CLS-CSP-LDA:P02-A0-BNCI2014_001-CLS-CSP-LDA-P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS-MR00",
+  "overlap_counts": {
+    "source_event_id": 0,
+    "window_id": 0
+  },
+  "overlap_details": {
+    "source_event_id": [],
+    "window_id": []
+  },
+  "payload_sha256": "2dcc2cbbdfc99a0e18b3747f872b51936427c6074279eaaf500eab033c80a051",
+  "phase_id": "P03",
+  "predecessor_serialization_status": "PRESERVED_NONCONFORMANT_GOVERNED_RECORD_SERIALIZATION",
+  "producer_module": "L3-M06",
+  "protocol_snapshot_id": "IHARQ-P03-L3-OFFICIAL-STRETCH-C-EXECUTION-FREEZE-R1",
+  "raw_session_label_overlap_count": 2,
+  "raw_session_label_overlap_is_identity_leakage": false,
+  "raw_stage08_collection_sha256": "2302d8592020599951444f280ee2693e0be493cc35891cc1e3ea23ff9c0a9c9b",
+  "raw_stage08_row_semantic_sha256": "98d88a7937f242e798613c7c857c0add11c66216e0cf0b42365436a59649ecaa",
+  "record_id": "P03-SplitIntegrityReport-9435fe64a2c21ca4276c",
+  "report_id": "P03-SPLIT-INTEGRITY-b091adf37f5ef4c7389ed1a4",
+  "role_map": {
+    "evaluate": [
+      "test"
+    ],
+    "fit_calibrator": [
+      "calibration"
+    ],
+    "select_calibrator": [
+      "threshold_validation"
+    ],
+    "select_threshold": [
+      "threshold_validation"
+    ]
+  },
+  "run_id": "P03-L3-OFFICIAL-09ca82c743e0411a",
+  "schema_id": "SplitIntegrityReport.v1",
+  "schema_version": "1.0.0",
+  "scientific_change": false,
+  "session_overlap_count": 0,
+  "source_artifact_ids": [
+    "P03-PROD-013",
+    "IHARQ-SPLITRECORD-20260806-e4e371d332c61e36",
+    "GROUP-199f031460f7228734dd",
+    "P02-A0-BNCI2014_001-CLS-CSP-LDA-P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS-MR00"
+  ],
+  "source_sha256s": [
+    "2302d8592020599951444f280ee2693e0be493cc35891cc1e3ea23ff9c0a9c9b",
+    "e4e371d332c61e36699f07cb6bed6d0820e14b22d5685dc353d89c1de144c148",
+    "9c98d671d4cfaf669268b154558144dff0d255569bfc788ac19d1a631c417e80",
+    "deff2e90a5f7748e981fc34a6676bfa0085a26a501b58822d032eec21bbb6ee8",
+    "e1a5e53e9d6aa22db2aa738af911d793cb4204d6baa978162264653cc40aff87"
+  ],
+  "split_profile_id": "P01-L1-SPLIT-OFFICIAL-R2",
+  "split_record_id": "IHARQ-SPLITRECORD-20260806-e4e371d332c61e36",
+  "status": "PASS",
+  "subject_overlap_count": 0,
+  "supersedes": [],
+  "terminal_status": "SUCCESS",
+  "validation_status": "PASS",
+  "window_overlap_count": 0
+}

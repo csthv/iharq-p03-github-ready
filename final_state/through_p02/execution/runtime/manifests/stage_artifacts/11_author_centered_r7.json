@@ -1,0 +1,252 @@
+{
+  "P01_mutated": false,
+  "accepted_recipe_sha256s": [
+    "18cbe259c05bfcea6b26934118216d5a60ff14d659906e6e8e2f590ffc502866",
+    "74fa2011fa0b94a537338792ce9669350e4ca3153b5f1a3ee50ad556d312690e",
+    "76a601fee7b69395453f240507abc843c63722c548211f43cf2b88647ac7af09"
+  ],
+  "analysis_root": "diagnostics/runtime_successor/stage11_maximum_analysis",
+  "artifact_id": "P02-STAGE11-R7H7-EEGNET-AUTHOR-CENTERED-10000E-TRUE-P120-CONTINUATION-R1",
+  "challenger_cells": 15,
+  "challenger_terminal_counts": {
+    "SUCCESS": 15
+  },
+  "execution_policy_id": "P02-STAGE11-R7H7-TRUE-P120-CONTINUATION-R1",
+  "execution_policy_sha256": "b482d6a35e7a4e047139c7e357618f0fc5a4f172911436448b026aaf571d7462",
+  "observed_recipe_counts": {
+    "18cbe259c05bfcea6b26934118216d5a60ff14d659906e6e8e2f590ffc502866": 15,
+    "74fa2011fa0b94a537338792ce9669350e4ca3153b5f1a3ee50ad556d312690e": 4,
+    "76a601fee7b69395453f240507abc843c63722c548211f43cf2b88647ac7af09": 101
+  },
+  "performance_threshold_gate": false,
+  "predecessor_archive": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage11_eegnet_author_centered_R7H_10000E_P500_R1/predecessor_archive/stage11_predecessor_20260813T150017Z",
+  "primary_cells": 105,
+  "primary_terminal_counts": {
+    "SUCCESS": 105
+  },
+  "runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R7H7-STAGE11-EEGNET-AUTHOR-CENTERED-10000E-TRUE-P120-CONTINUATION",
+  "sr_probability_calibration_fits": 45,
+  "sr_probability_selection": {
+    "BNCI2014_001": {
+      "candidates": [
+        {
+          "individual_BACC": [
+            0.8958333333333333,
+            0.9166666666666667,
+            0.9131944444444444,
+            0.9027777777777778,
+            0.9027777777777777
+          ],
+          "individual_F1_MACRO": [
+            0.8957881024750325,
+            0.9166505884622805,
+            0.9130172153427967,
+            0.9027730889799855,
+            0.9027590198726606
+          ],
+          "median_BACC": 0.9027777777777778,
+          "median_F1_MACRO": 0.9027730889799855,
+          "probability": 0.25,
+          "successful_seeds": 5
+        },
+        {
+          "individual_BACC": [
+            0.8888888888888888,
+            0.9097222222222222,
+            0.9166666666666667,
+            0.9131944444444444,
+            0.90625
+          ],
+          "individual_F1_MACRO": [
+            0.8888030888030888,
+            0.909613248998117,
+            0.9166626476971305,
+            0.9131850244167119,
+            0.9062217344637538
+          ],
+          "median_BACC": 0.9097222222222222,
+          "median_F1_MACRO": 0.909613248998117,
+          "probability": 0.5,
+          "successful_seeds": 5
+        },
+        {
+          "individual_BACC": [
+            0.8819444444444444,
+            0.9270833333333334,
+            0.8993055555555556,
+            0.9201388888888888,
+            0.9097222222222222
+          ],
+          "individual_F1_MACRO": [
+            0.8818019409975375,
+            0.9270824542155456,
+            0.8993043415357536,
+            0.920130222463375,
+            0.9097222222222222
+          ],
+          "median_BACC": 0.9097222222222222,
+          "median_F1_MACRO": 0.9097222222222222,
+          "probability": 0.75,
+          "successful_seeds": 5
+        }
+      ],
+      "selected_before_test": true,
+      "selected_probability": 0.75,
+      "status": "PASS"
+    },
+    "Lee2019_MI": {
+      "candidates": [
+        {
+          "individual_BACC": [
+            0.77,
+            0.8,
+            0.78,
+            0.796,
+            0.784
+          ],
+          "individual_F1_MACRO": [
+            0.7695935630452118,
+            0.7991774307563781,
+            0.7797744890768146,
+            0.7954468883861963,
+            0.7835011867342356
+          ],
+          "median_BACC": 0.784,
+          "median_F1_MACRO": 0.7835011867342356,
+          "probability": 0.25,
+          "successful_seeds": 5
+        },
+        {
+          "individual_BACC": [
+            0.788,
+            0.772,
+            0.78,
+            0.77,
+            0.774
+          ],
+          "individual_F1_MACRO": [
+            0.786028034364705,
+            0.7711762344439984,
+            0.7794919494515364,
+            0.7695122880014109,
+            0.7728871470204
+          ],
+          "median_BACC": 0.774,
+          "median_F1_MACRO": 0.7728871470204,
+          "probability": 0.5,
+          "successful_seeds": 5
+        },
+        {
+          "individual_BACC": [
+            0.754,
+            0.774,
+            0.77,
+            0.76,
+            0.758
+          ],
+          "individual_F1_MACRO": [
+            0.7538335915078593,
+            0.7738471206535618,
+            0.7694235588972431,
+            0.7599846390168971,
+            0.7579525587015055
+          ],
+          "median_BACC": 0.76,
+          "median_F1_MACRO": 0.7599846390168971,
+          "probability": 0.75,
+          "successful_seeds": 5
+        }
+      ],
+      "selected_before_test": true,
+      "selected_probability": 0.25,
+      "status": "PASS"
+    },
+    "PhysioNetMI": {
+      "candidates": [
+        {
+          "individual_BACC": [
+            0.7370947203447937,
+            0.734866294446077,
+            0.7411597609952003,
+            0.7308992065824272,
+            0.7391027524733078
+          ],
+          "individual_F1_MACRO": [
+            0.7367021276595744,
+            0.7334344592844722,
+            0.7408546561088933,
+            0.7298844208116392,
+            0.7386729636708151
+          ],
+          "median_BACC": 0.7370947203447937,
+          "median_F1_MACRO": 0.7367021276595744,
+          "probability": 0.25,
+          "successful_seeds": 5
+        },
+        {
+          "individual_BACC": [
+            0.7226956606915467,
+            0.7369722793613478,
+            0.7408414144382407,
+            0.7287932216671564,
+            0.7532079537662847
+          ],
+          "individual_F1_MACRO": [
+            0.7208213775529108,
+            0.7360541427399507,
+            0.738855183328937,
+            0.7272345955192947,
+            0.7526864987058939
+          ],
+          "median_BACC": 0.7369722793613478,
+          "median_F1_MACRO": 0.7360541427399507,
+          "probability": 0.5,
+          "successful_seeds": 5
+        },
+        {
+          "individual_BACC": [
+            0.7248261338035067,
+            0.7452003134489176,
+            0.7370212557547262,
+            0.7411597609952003,
+            0.7187530610245861
+          ],
+          "individual_F1_MACRO": [
+            0.7237088354072956,
+            0.744903802107192,
+            0.7363396486167563,
+            0.7408546561088933,
+            0.7175272291352774
+          ],
+          "median_BACC": 0.7370212557547262,
+          "median_F1_MACRO": 0.7363396486167563,
+          "probability": 0.75,
+          "successful_seeds": 5
+        }
+      ],
+      "selected_before_test": true,
+      "selected_probability": 0.25,
+      "status": "PASS"
+    }
+  },
+  "status": "PASS",
+  "test_used_for_selection": false,
+  "total_stage11_terminals": 120,
+  "training_policy_legend": {
+    "P120_FLOOR500_R6": {
+      "min_epochs_before_early_stop": 500,
+      "patience": 120,
+      "recipe_sha256": "74fa2011fa0b94a537338792ce9669350e4ca3153b5f1a3ee50ad556d312690e"
+    },
+    "P500_FLOOR500": {
+      "min_epochs_before_early_stop": 500,
+      "patience": 500,
+      "recipe_sha256": "76a601fee7b69395453f240507abc843c63722c548211f43cf2b88647ac7af09"
+    },
+    "TRUE_P120_FLOOR1_R7": {
+      "min_epochs_before_early_stop": 1,
+      "patience": 120,
+      "recipe_sha256": "18cbe259c05bfcea6b26934118216d5a60ff14d659906e6e8e2f590ffc502866"
+    }
+  }
+}

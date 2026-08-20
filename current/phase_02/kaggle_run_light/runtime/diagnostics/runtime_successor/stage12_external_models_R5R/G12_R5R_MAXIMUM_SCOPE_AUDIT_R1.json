@@ -1,0 +1,66 @@
+{
+  "DNN_SEQ_pre_result_resolution": "DBConformer",
+  "EEGTC_fallback_activated": false,
+  "P00_P01_mutated": false,
+  "REVE_claim_bearing": false,
+  "REVE_scientific_authority": "BLOCKED_KNOWN_P02_OVERLAP",
+  "accepted_stage_08_11_byte_identical": true,
+  "accepted_stage_08_11_sha256": {
+    "08": "a78f86b2fc09443744d818b21fcc0b6084ec53ffeb6dbf5f05d818a989fd6e2d",
+    "09": "1f0f5c2ee8ef83c300bcd3232594cc360c0a44e12812a3d171e3fb6cde6fa388",
+    "10": "1be44b97b389a7aeaf8c88d267aa075159c1623ff6df3b0ffd8cb29af84e91ff",
+    "11": "6321ea2027415ce361382d36a1008103a3ca53507aa7e7fafaeed5d0948c48a3"
+  },
+  "artifact_id": "P02-G12-R5R-MAXIMUM-SCOPE-AUDIT-R1",
+  "blocking": false,
+  "branch_counts": {
+    "DNN-EGTC": 15,
+    "DNN-FBCNET": 15,
+    "DNN-SEQ": 15,
+    "SSL-CBRAMOD": 105,
+    "SSL-REVE": 3
+  },
+  "branch_terminal_counts": {
+    "DNN-EGTC": {
+      "CONDITIONAL_SKIP": 15
+    },
+    "DNN-FBCNET": {
+      "SUCCESS": 15
+    },
+    "DNN-SEQ": {
+      "SUCCESS": 15
+    },
+    "SSL-CBRAMOD": {
+      "SUCCESS": 105
+    },
+    "SSL-REVE": {
+      "DEPENDENCY_BLOCKED": 3
+    }
+  },
+  "created_utc": "2026-08-10T10:59:37.024081+00:00",
+  "denominator_mismatch": [],
+  "gate_id": "G12",
+  "issues": [],
+  "missing_checkpoint_artifact": [],
+  "missing_checkpoint_identity": [],
+  "missing_metrics": [],
+  "missing_terminal_ids": [],
+  "obsolete_prepromotion_blocks": [],
+  "planned_cells": 153,
+  "promotion_receipt": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/P02_STAGE12_R5R_CONTROLLED_PROMOTION_R1.json",
+  "resource_execution_successor": true,
+  "runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R5R-STAGE12-RESOURCE-OPTIMIZED-EXTERNAL-MODEL-LIVE-CONTINUATION",
+  "scientific_configuration_changed": false,
+  "stage12_ledger": "/kaggle/working/iharq_p02_run/stage_ledger/stage_12.json",
+  "stage12_ledger_sha256": "25c8d9b1fb858a8cd71d455148d733fb6631b4ca0c6e7b7ab8ca52ca58a29a30",
+  "stage12_wall_seconds_this_launch": 8068.849896430969,
+  "stage12_wall_this_launch": "2:14:28",
+  "stage_id": "12",
+  "status": "PASS",
+  "terminal_counts": {
+    "CONDITIONAL_SKIP": 15,
+    "DEPENDENCY_BLOCKED": 3,
+    "SUCCESS": 135
+  },
+  "wrong_resolved_variant": []
+}

@@ -1,0 +1,85 @@
+{
+  "stage_id": "16",
+  "status": "SUCCESS",
+  "attempt_id": "bb462cca110e",
+  "inputs": {},
+  "input_hashes": {},
+  "outputs": {
+    "status": "PASS",
+    "records": 36,
+    "source_rows": 216,
+    "aggregate_curve_points_attempted": 216,
+    "planned_low_label_run_cells": 216,
+    "terminal_counts": {
+      "FAILED": 3,
+      "SUCCESS": 213
+    },
+    "point_status_counts": {
+      "EXPLICIT_NON_SUCCESS": 9,
+      "VALID": 207
+    },
+    "all_legal_budgets_accounted": true,
+    "explicit_non_success_retained": true,
+    "single_frozen_subset_limitation": true,
+    "repair_id": "P02-STAGE16-LOW-LABEL-INHERITED-BUDGET-IDENTITY-REPAIR-R1",
+    "repair_scope": "DERIVED_EVIDENCE_ONLY",
+    "scientific_training_performed": false,
+    "prediction_regenerated": false,
+    "scientific_configuration_changed": false,
+    "test_outcome_used_for_model_selection": false,
+    "artifact": "stage_artifacts/16_low_label.json"
+  },
+  "output_hashes": {
+    "status": "727e9bd17b077ba162e13ba877135cc6fbc6b30f83da0b34b3e20233f1cc885f",
+    "records": "76a50887d8f1c2e9301755428990ad81479ee21c25b43215cf524541e0503269",
+    "source_rows": "0f4121d0ef1df4c86854c7ebb47ae1c93de8aec8f944035eeaa6495dd71a0678",
+    "aggregate_curve_points_attempted": "0f4121d0ef1df4c86854c7ebb47ae1c93de8aec8f944035eeaa6495dd71a0678",
+    "planned_low_label_run_cells": "0f4121d0ef1df4c86854c7ebb47ae1c93de8aec8f944035eeaa6495dd71a0678",
+    "terminal_counts": "03b02fe19a7545dae306be91a31d4bd193efcbe8ae7765a63d0032e5c9fbc30e",
+    "point_status_counts": "5af102c2cccb261ac923c22fa35c028a8b230b4978e0d11629344c1d78f21f28",
+    "all_legal_budgets_accounted": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+    "explicit_non_success_retained": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+    "single_frozen_subset_limitation": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+    "repair_id": "9e7559c22f555ca11d02758811fb6f9a049b0d994f5a7bde370deb33c790518d",
+    "repair_scope": "5e53cd2e7b86155122563fc1d5fbca46b0ea76793ffad9808249eb0e516da8b3",
+    "scientific_training_performed": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
+    "prediction_regenerated": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
+    "scientific_configuration_changed": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
+    "test_outcome_used_for_model_selection": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
+    "artifact": "70ba41f4ed329c9cdd9a8a75754630d82137fcb686b1aeb769e42ab5d72829ad"
+  },
+  "dependencies": [
+    "15"
+  ],
+  "elapsed_seconds": 0.11756348609924316,
+  "log_path": "logs/stage_16_bb462cca110e.log",
+  "heartbeat_write_errors": [],
+  "observability_status": "PASS",
+  "blockers": [],
+  "observations": [],
+  "revision_fingerprint": {
+    "notebook_revision": "R4",
+    "notebook_id": "IHARQ-P02-COMPLETE-EXECUTION-AND-ANALYSIS-R4",
+    "source_sha256": "a54bfa816acc6763c1d1042b8c65cf54ae04ec774c57ec50de86014a6730c5fa",
+    "config_sha256": "d82334535e397c681d6172694da96d3fff0143ffb1b63a18876ee1f7778f60a1",
+    "stage_plan_sha256": "043eb30e008af910d37c563e8be8c719ef881cf009aec3e34687dc97bdc34aad",
+    "scientific_freeze_sha256": "7449216c988eec14191ba85300d720547f06fbc6ac7020e9e142bf12a4b0a598",
+    "scientific_freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5"
+  },
+  "runtime_successor": {
+    "id": "P02-RUNTIME-SUCCESSOR-R7H7-STAGE11-EEGNET-AUTHOR-CENTERED-10000E-TRUE-P120-CONTINUATION",
+    "scientific_configuration_changed": false,
+    "semantic_audit": "diagnostics/runtime_successor/G16_SEMANTIC_AUDIT_R1.json"
+  },
+  "stage16_runtime_repair": {
+    "status": "PASS",
+    "repair_id": "P02-STAGE16-LOW-LABEL-INHERITED-BUDGET-IDENTITY-REPAIR-R2-CLOSURE",
+    "repair_scope": "DERIVED_EVIDENCE_ONLY",
+    "scientific_configuration_changed": false,
+    "scientific_training_performed": false,
+    "prediction_regenerated": false,
+    "upstream_science_byte_identical": true,
+    "semantic_audit": "diagnostics/runtime_successor/G16_SEMANTIC_AUDIT_R1.json",
+    "receipt": "diagnostics/runtime_successor/stage16_low_label_budget_identity_repair_R2/P02_STAGE16_LOW_LABEL_REPAIR_R2_CLOSURE.json"
+  }
+}

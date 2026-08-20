@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "slots": 1218,
+  "terminal_counts": {
+    "SUCCESS": 591,
+    "CONDITIONAL_SKIP": 576,
+    "INPUT_INCOMPATIBLE": 9,
+    "NOT_APPLICABLE_REPEAT_SLOT": 42
+  },
+  "representative_groups": 21,
+  "c4_vs_strongest": "COMPLETE",
+  "c5_vs_strongest": "COMPLETE",
+  "closure": {
+    "status": "PASS",
+    "planned": 1218,
+    "terminal_counts": {
+      "SUCCESS": 591,
+      "CONDITIONAL_SKIP": 576,
+      "INPUT_INCOMPATIBLE": 9,
+      "NOT_APPLICABLE_REPEAT_SLOT": 42
+    },
+    "participant_rows": 3546,
+    "role_control_expected": 756,
+    "role_control_closure_rows": 756,
+    "role_control_incomplete": 0,
+    "c4_c5_expected": 210,
+    "c4_c5_closure_rows": 210,
+    "c4_c5_incomplete": 0,
+    "burden_rows": 1218,
+    "burden_source_complete": true,
+    "phase_analysis_source_complete": true,
+    "layer10_recomputation_required": false
+  }
+}

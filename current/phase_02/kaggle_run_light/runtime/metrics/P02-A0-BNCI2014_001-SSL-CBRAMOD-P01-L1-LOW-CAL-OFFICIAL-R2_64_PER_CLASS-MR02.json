@@ -1,0 +1,93 @@
+{
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "run_cell_id": "P02-A0-BNCI2014_001-SSL-CBRAMOD-P01-L1-LOW-CAL-OFFICIAL-R2:64_PER_CLASS-MR02",
+  "dataset_id": "BNCI2014_001",
+  "branch_id": "SSL-CBRAMOD",
+  "resolved_variant": "CBraMod-HF-Braindecode-GovernedP02-R6Scale1e4",
+  "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:64_PER_CLASS",
+  "budget_repeat_id": "P01_FROZEN_SINGLE_SUBSET",
+  "model_repeat_index": 2,
+  "metrics": {
+    "BACC": 0.5381944444444444,
+    "F1_MACRO": 0.5365797592402153,
+    "ACC": 0.5381944444444444,
+    "CONFUSION": [
+      [
+        86,
+        58
+      ],
+      [
+        75,
+        69
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      144,
+      144
+    ],
+    "PRED_COMPLETE": 288,
+    "ROC_AUC": 0.533227237654321,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+  },
+  "validation_selection": {
+    "BACC": 0.6180555555555556,
+    "F1_MACRO": 0.616557734204793,
+    "ACC": 0.6180555555555556,
+    "CONFUSION": [
+      [
+        98,
+        46
+      ],
+      [
+        64,
+        80
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      144,
+      144
+    ],
+    "PRED_COMPLETE": 288,
+    "ROC_AUC": 0.6222993827160493,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+  },
+  "validation_burden_seconds": 151.19218015670776,
+  "model_storage_bytes": 19801608,
+  "selected_candidate_id": "R6-CBRAMOD-SOURCE-CENTERED-R1",
+  "selected_params": {
+    "recipe_id": "R6-CBRAMOD-SOURCE-CENTERED-R1",
+    "optimizer": "AdamW",
+    "body_lr": 0.0001,
+    "head_lr": 0.0005,
+    "weight_decay": 0.05,
+    "batch_size": 64,
+    "scheduler": "cosine",
+    "eta_min": 1e-06,
+    "label_smoothing": 0.1,
+    "grad_clip": 1.0,
+    "input_scale": 10000.0,
+    "source_sampling_hz": 160,
+    "target_sampling_hz": 200,
+    "max_epochs": 150,
+    "patience": 40,
+    "selection": "validation_BACC",
+    "restore_best": true
+  },
+  "candidate_failures": [],
+  "observed_denominator": 288,
+  "expected_denominator": 288,
+  "score_type": "SOFTMAX_PROBABILITY",
+  "class_weight_policy": "UNIFORM_NO_WEIGHT_EXACT_BALANCED_TRAIN",
+  "test_loaded_after_group_selection_sealed": true,
+  "test_set_used_for_selection": false,
+  "evidence_class": "P02_POST_HOC_LOW_LABEL_EXTENSION_R1",
+  "transport_scheduler": "LLX05S_DUAL_GPU_12SLOT_R1",
+  "transport_gpu": 0,
+  "same_gpu_virtual_cuda_rng": true,
+  "scientific_recipe_changed": false,
+  "integration_source_run_cell_id": "P02S-LLX-R1-A0-BNCI2014_001-SSL-CBRAMOD-64PC-MR02",
+  "integration_source_config_sha256": "67807d9959d98c6a138288dc2c3f12377e0acb8bfce9d76f333485a0cb0a760e",
+  "integration_revision": "P02-INTEGRATED-LOW-LABEL-1-TO-256-R1"
+}

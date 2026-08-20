@@ -1,0 +1,60 @@
+{
+  "artifact_id": "P02-INT24R2-DOWNSTREAM-ANNOTATION-REFRESH",
+  "canonical_handoffs_modified": false,
+  "created_at_utc": "2026-08-17T18:06:07.836558+00:00",
+  "next": "INT-25R4",
+  "published_files": [
+    "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/handoffs/P02_integrated_1_to_256_annotation_R1.json",
+    "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/handoffs/P02_integrated_1_to_256_annotation_R2.json",
+    "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/protocol_v1_handoff/P02_integrated_1_to_256_annotation_R1.json",
+    "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/protocol_v1_handoff/P02_integrated_1_to_256_annotation_R2.json",
+    "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/layer0_handoff/P02_integrated_1_to_256_annotation_R1.json",
+    "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/layer0_handoff/P02_integrated_1_to_256_annotation_R2.json",
+    "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/evidence_map_handoff/P02_integrated_1_to_256_annotation_R1.json",
+    "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/evidence_map_handoff/P02_integrated_1_to_256_annotation_R2.json",
+    "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/layer10_source_bundle/P02_integrated_1_to_256_annotation_R1.json",
+    "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/layer10_source_bundle/P02_integrated_1_to_256_annotation_R2.json"
+  ],
+  "scientific_run_cells_modified": false,
+  "stage18S_contract": {
+    "canonical_G18_modified": false,
+    "canonical_stage18_modified": false,
+    "claim_scope": "POST_HOC_SENSITIVITY_DESCRIPTIVE",
+    "combined_successful_effect_rows": 315,
+    "groups": 108,
+    "member_receipts": 432,
+    "member_status_counts": {
+      "INPUT_INCOMPATIBLE": 54,
+      "SUCCESS": 378
+    },
+    "new_confirmatory_test_family_created": false,
+    "nine_budget_mr00_trajectories": 15,
+    "nine_budget_sequence": [
+      "1",
+      "4",
+      "8",
+      "16",
+      "32",
+      "64",
+      "128",
+      "256",
+      "FULL"
+    ],
+    "participant_effect_rows": 1890,
+    "planned_cells": 324,
+    "terminal_counts": {
+      "INPUT_INCOMPATIBLE": 54,
+      "SUCCESS": 270
+    },
+    "three_repeat_anchor_budgets": [
+      "1",
+      "8",
+      "64",
+      "128",
+      "256",
+      "FULL"
+    ],
+    "three_repeat_anchor_trajectories": 90
+  },
+  "status": "PASS"
+}

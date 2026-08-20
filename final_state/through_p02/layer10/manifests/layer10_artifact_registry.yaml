@@ -1,0 +1,325 @@
+layer10_id: IHARQ-CUMULATIVE-LAYER10-THROUGH-P02-R1
+release_id: P00-P02-LAYER10-RELEASE-R1
+predecessor_layer10_id: IHARQ-CUMULATIVE-LAYER10-THROUGH-P01-R1
+prior_p00_p01_package_preserved_as: preserved_prior/IHARQ_Cumulative_Layer10_Through_P01_Final(2).zip
+artifacts:
+- artifact_id: L10-CUM-FIG-001
+  artifact_type: FIGURE
+  phase: CUMULATIVE
+  source_claim_ids:
+  - CUM-CLM-001/v1
+  - CUM-CLM-002/v1
+  - CUM-CLM-008/v1
+  limitations:
+  - TECHNICAL_TRACEABILITY_NOT_EFFECTIVENESS
+  lifecycle: CURRENT
+  export_paths:
+  - figures/L10-CUM-FIG-001.png
+- artifact_id: L10-CUM-FIG-002
+  artifact_type: FIGURE
+  phase: CUMULATIVE
+  source_claim_ids:
+  - CUM-CLM-005/v1
+  limitations:
+  - SINGLE_REPEAT
+  - DEEP_ANCHOR_BUDGETS
+  - POST_HOC_STAGE18S
+  lifecycle: CURRENT
+  export_paths:
+  - figures/L10-CUM-FIG-002.png
+- artifact_id: L10-CUM-FIG-003
+  artifact_type: FIGURE
+  phase: CUMULATIVE
+  source_claim_ids:
+  - CUM-CLM-001/v1
+  - CUM-CLM-007/v1
+  limitations:
+  - EVIDENCE_CLASS_NOT_INTERCHANGEABLE
+  lifecycle: CURRENT
+  export_paths:
+  - figures/L10-CUM-FIG-003.png
+- artifact_id: L10-CUM-FIG-004
+  artifact_type: FIGURE
+  phase: CUMULATIVE
+  source_claim_ids: []
+  limitations:
+  - COUNT_SUMMARY_ONLY
+  lifecycle: CURRENT
+  export_paths:
+  - figures/L10-CUM-FIG-004.png
+- artifact_id: L10-P02-FIG-001
+  artifact_type: FIGURE
+  phase: P02
+  source_claim_ids:
+  - P02-CLM-002/v1
+  - P02-CLM-003/v1
+  - CUM-CLM-003/v1
+  limitations:
+  - BNCI_TEST_PARTICIPANTS_1
+  - DATASET_HETEROGENEITY
+  lifecycle: CURRENT
+  export_paths:
+  - figures/L10-P02-FIG-001.png
+- artifact_id: L10-P02-FIG-002
+  artifact_type: FIGURE
+  phase: P02
+  source_claim_ids:
+  - P02-CLM-004/v1
+  - CUM-CLM-004/v1
+  limitations:
+  - SINGLE_FROZEN_SUBSET
+  lifecycle: CURRENT
+  export_paths:
+  - figures/L10-P02-FIG-002.png
+- artifact_id: L10-P02-FIG-003
+  artifact_type: FIGURE
+  phase: P02
+  source_claim_ids:
+  - P02-CLM-004/v1
+  - CUM-CLM-004/v1
+  limitations:
+  - SINGLE_FROZEN_SUBSET
+  lifecycle: CURRENT
+  export_paths:
+  - figures/L10-P02-FIG-003.png
+- artifact_id: L10-P02-FIG-004
+  artifact_type: FIGURE
+  phase: P02
+  source_claim_ids:
+  - P02-CLM-004/v1
+  - CUM-CLM-004/v1
+  limitations:
+  - SINGLE_FROZEN_SUBSET
+  lifecycle: CURRENT
+  export_paths:
+  - figures/L10-P02-FIG-004.png
+- artifact_id: L10-P02-FIG-005
+  artifact_type: FIGURE
+  phase: P02
+  source_claim_ids:
+  - P02-CLM-005/v1
+  - P02-CLM-006/v1
+  - CUM-CLM-006/v1
+  limitations:
+  - DIAGNOSTIC_ONLY
+  lifecycle: CURRENT
+  export_paths:
+  - figures/L10-P02-FIG-005.png
+- artifact_id: L10-P02-FIG-006
+  artifact_type: FIGURE
+  phase: P02
+  source_claim_ids:
+  - P02-CLM-007/v1
+  - CUM-CLM-005/v1
+  limitations:
+  - SINGLE_REPEAT
+  - DEEP_ANCHOR_BUDGETS
+  lifecycle: CURRENT
+  export_paths:
+  - figures/L10-P02-FIG-006.png
+- artifact_id: L10-P02-FIG-007
+  artifact_type: FIGURE
+  phase: P02
+  source_claim_ids:
+  - P02-CLM-009/v1
+  - CUM-CLM-005/v1
+  limitations:
+  - POST_HOC_ONLY
+  - THREE_REPEAT_NOT_FIVE_REPEAT
+  lifecycle: CURRENT
+  export_paths:
+  - figures/L10-P02-FIG-007.png
+- artifact_id: L10-P02-FIG-008
+  artifact_type: FIGURE
+  phase: P02
+  source_claim_ids:
+  - P02-CLM-010/v1
+  - CUM-CLM-007/v1
+  limitations:
+  - FAILURE_CLASSES_NOT_INTERCHANGEABLE
+  lifecycle: CURRENT
+  export_paths:
+  - figures/L10-P02-FIG-008.png
+- artifact_id: L10-P02-FIG-009
+  artifact_type: FIGURE
+  phase: P02
+  source_claim_ids:
+  - P02-CLM-002/v1
+  - CUM-CLM-003/v1
+  limitations:
+  - PARTICIPANT_HETEROGENEITY
+  lifecycle: CURRENT
+  export_paths:
+  - figures/L10-P02-FIG-009.png
+- artifact_id: L10-P02-FIG-010
+  artifact_type: FIGURE
+  phase: P02
+  source_claim_ids:
+  - P02-CLM-002/v1
+  - CUM-CLM-003/v1
+  limitations:
+  - PARTICIPANT_HETEROGENEITY
+  lifecycle: CURRENT
+  export_paths:
+  - figures/L10-P02-FIG-010.png
+- artifact_id: L10-CUM-TBL-001
+  artifact_type: TABLE
+  phase: CUMULATIVE
+  source_claim_ids:
+  - P00-CLM-001/v2
+  - P00-CLM-002/v2
+  - P00-CLM-003/v2
+  - P00-CLM-004/v2
+  - P00-CLM-005/v2
+  - P00-CLM-006/v2
+  - P00-CLM-007/v2
+  - P01-CLM-001/v1
+  - P01-CLM-002/v1
+  - P01-CLM-003/v1
+  - P01-CLM-004/v1
+  - P01-CLM-005/v1
+  - P01-CLM-006/v1
+  - P01-CLM-007/v1
+  - P01-CLM-008/v1
+  - P01-CLM-009/v1
+  - P01-CLM-010/v1
+  - P01-CLM-011/v1
+  - P01-CLM-012/v1
+  - P02-CLM-001/v1
+  - P02-CLM-002/v1
+  - P02-CLM-003/v1
+  - P02-CLM-004/v1
+  - P02-CLM-005/v1
+  - P02-CLM-006/v1
+  - P02-CLM-007/v1
+  - P02-CLM-008/v1
+  - P02-CLM-009/v1
+  - P02-CLM-010/v1
+  - CUM-CLM-001/v1
+  - CUM-CLM-002/v1
+  - CUM-CLM-003/v1
+  - CUM-CLM-004/v1
+  - CUM-CLM-005/v1
+  - CUM-CLM-006/v1
+  - CUM-CLM-007/v1
+  - CUM-CLM-008/v1
+  limitations: []
+  lifecycle: CURRENT
+  export_paths:
+  - tables/L10-CUM-TBL-001.csv
+- artifact_id: L10-CUM-TBL-002
+  artifact_type: TABLE
+  phase: CUMULATIVE
+  source_claim_ids: []
+  limitations: []
+  lifecycle: CURRENT
+  export_paths:
+  - tables/L10-CUM-TBL-002.csv
+- artifact_id: L10-CUM-TBL-003
+  artifact_type: TABLE
+  phase: CUMULATIVE
+  source_claim_ids: []
+  limitations: []
+  lifecycle: CURRENT
+  export_paths:
+  - tables/L10-CUM-TBL-003.csv
+- artifact_id: L10-CUM-TBL-004
+  artifact_type: TABLE
+  phase: CUMULATIVE
+  source_claim_ids: []
+  limitations: []
+  lifecycle: CURRENT
+  export_paths:
+  - tables/L10-CUM-TBL-004.csv
+- artifact_id: L10-P02-TBL-001
+  artifact_type: TABLE
+  phase: P02
+  source_claim_ids:
+  - P02-CLM-001/v1
+  - P02-CLM-002/v1
+  - P02-CLM-003/v1
+  limitations: []
+  lifecycle: CURRENT
+  export_paths:
+  - tables/L10-P02-TBL-001.csv
+- artifact_id: L10-P02-TBL-002
+  artifact_type: TABLE
+  phase: P02
+  source_claim_ids:
+  - P02-CLM-004/v1
+  - CUM-CLM-004/v1
+  limitations: []
+  lifecycle: CURRENT
+  export_paths:
+  - tables/L10-P02-TBL-002.csv
+- artifact_id: L10-P02-TBL-003
+  artifact_type: TABLE
+  phase: P02
+  source_claim_ids:
+  - P02-CLM-004/v1
+  - CUM-CLM-004/v1
+  limitations: []
+  lifecycle: CURRENT
+  export_paths:
+  - tables/L10-P02-TBL-003.csv
+- artifact_id: L10-P02-TBL-004
+  artifact_type: TABLE
+  phase: P02
+  source_claim_ids:
+  - P02-CLM-005/v1
+  - P02-CLM-006/v1
+  - CUM-CLM-006/v1
+  limitations: []
+  lifecycle: CURRENT
+  export_paths:
+  - tables/L10-P02-TBL-004.csv
+- artifact_id: L10-P02-TBL-005
+  artifact_type: TABLE
+  phase: P02
+  source_claim_ids:
+  - P02-CLM-005/v1
+  - P02-CLM-006/v1
+  - CUM-CLM-006/v1
+  limitations: []
+  lifecycle: CURRENT
+  export_paths:
+  - tables/L10-P02-TBL-005.csv
+- artifact_id: L10-P02-TBL-006
+  artifact_type: TABLE
+  phase: P02
+  source_claim_ids:
+  - P02-CLM-007/v1
+  - CUM-CLM-005/v1
+  limitations: []
+  lifecycle: CURRENT
+  export_paths:
+  - tables/L10-P02-TBL-006.csv
+- artifact_id: L10-P02-TBL-007
+  artifact_type: TABLE
+  phase: P02
+  source_claim_ids:
+  - P02-CLM-008/v1
+  limitations: []
+  lifecycle: CURRENT
+  export_paths:
+  - tables/L10-P02-TBL-007.csv
+- artifact_id: L10-P02-TBL-008
+  artifact_type: TABLE
+  phase: P02
+  source_claim_ids:
+  - P02-CLM-009/v1
+  - CUM-CLM-005/v1
+  limitations: []
+  lifecycle: CURRENT
+  export_paths:
+  - tables/L10-P02-TBL-008.csv
+- artifact_id: L10-P02-TBL-009
+  artifact_type: TABLE
+  phase: P02
+  source_claim_ids:
+  - P02-CLM-010/v1
+  - CUM-CLM-007/v1
+  limitations: []
+  lifecycle: CURRENT
+  export_paths:
+  - tables/L10-P02-TBL-009.csv

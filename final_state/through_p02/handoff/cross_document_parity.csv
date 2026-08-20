@@ -1,0 +1,9 @@
+scientific_item,protocol,analysis,layer0,evidence_map,layer10,handoff,consistency
+Accepted run identity,P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d,same,support provenance,same provenance,source registry,P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d,PASS
+Config SHA-256,9e181d2e...ce13,same,support provenance,same,source registry,9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13,PASS
+Scientific freeze,P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5,same,support provenance,same,source registry,P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5,PASS
+A0 closure,678 terminal; 657 SUCCESS / 3 FAILED / 15 CONDITIONAL_SKIP / 3 DEPENDENCY_BLOCKED,deeply analyzed,bounded decoder claims,A0 mapped,A0 figures/tables,A0 inputs linked,PASS
+A4 closure,1218 terminal; 591 SUCCESS / 576 CONDITIONAL_SKIP / 9 INPUT_INCOMPATIBLE / 42 N/A repeat slots,deeply analyzed,resource-bounded claims,A4+deviation+Stage18S mapped,A4/limitation views,A4 evidence linked,PASS
+Stage18S status,post-hoc descriptive only,same,same boundary,separate supplement,visible limitation,separate release handoff,PASS
+Dual credentials,IHARQ_HF_TOKEN_PRE_P02 + IHARQ_HF_TOKEN_P02,limitation/context,not claim-bearing,external provenance,not embedded,explicit dual classes,PASS
+P03 readiness,Layer2ReadinessReport in analysis contract,downstream-ready with limits,limitations propagated,readiness evidence,presentation only,compatibility PASS; no missing fields,PASS

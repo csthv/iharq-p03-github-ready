@@ -1,0 +1,84 @@
+{
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "run_cell_id": "P02-A0-PhysioNetMI-CLS-CSP-LDA-P01-L1-LOW-CAL-OFFICIAL-R2:64_PER_CLASS-MR00",
+  "dataset_id": "PhysioNetMI",
+  "branch_id": "CLS-CSP-LDA",
+  "resolved_variant": "CLS-CSP-LDA",
+  "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:64_PER_CLASS",
+  "budget_repeat_id": "P01_FROZEN_SINGLE_SUBSET",
+  "model_repeat_index": 0,
+  "metrics": {
+    "BACC": 0.5157204455623428,
+    "F1_MACRO": 0.5150545359545424,
+    "ACC": 0.5151515151515151,
+    "CONFUSION": [
+      [
+        124,
+        129
+      ],
+      [
+        111,
+        131
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      253,
+      242
+    ],
+    "PRED_COMPLETE": 495,
+    "ROC_AUC": 0.5233724234802207,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "NATIVE_PROBABILITY"
+  },
+  "validation_selection": {
+    "ACC": 0.509090909090909,
+    "BACC": 0.5096483494955432,
+    "CLASS_SUPPORT": [
+      249,
+      246
+    ],
+    "CONFUSION": [
+      [
+        104,
+        145
+      ],
+      [
+        98,
+        148
+      ]
+    ],
+    "F1_MACRO": 0.5051812299199059,
+    "PRED_COMPLETE": 495,
+    "ROC_AUC": 0.5066771149639208,
+    "ROC_AUC_SCORE_TYPE": "NATIVE_PROBABILITY",
+    "ROC_AUC_STATUS": "PASS"
+  },
+  "validation_burden_seconds": 1.056863391000661,
+  "model_storage_bytes": 68171,
+  "selected_candidate_id": "CAND-00",
+  "selected_params": {
+    "base_branch_id": "CLS-CSP-LDA",
+    "csp_reg": "oas",
+    "lda_shrinkage": "auto",
+    "lda_solver": "lsqr",
+    "n_components": 4
+  },
+  "checkpoint_format": "TRUSTED_PROJECT_PICKLE_PINNED_ENVIRONMENT",
+  "candidate_failures": [],
+  "observed_denominator": 495,
+  "expected_denominator": 495,
+  "score_type": "NATIVE_PROBABILITY",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.0007238739999593236,
+    "batch1_latency_p95_s": 0.0008811440002318705,
+    "repeats": 5
+  },
+  "class_weight_policy": "UNIFORM_NO_WEIGHT_EXACT_BALANCED_TRAIN",
+  "class_weights": null,
+  "test_loaded_after_group_selection_sealed": true,
+  "test_set_used_for_selection": false,
+  "evidence_class": "P02_POST_HOC_LOW_LABEL_EXTENSION_R1",
+  "integration_source_run_cell_id": "P02S-LLX-R1-A0-PhysioNetMI-CLS-CSP-LDA-64PC-MR00",
+  "integration_source_config_sha256": "67807d9959d98c6a138288dc2c3f12377e0acb8bfce9d76f333485a0cb0a760e",
+  "integration_revision": "P02-INTEGRATED-LOW-LABEL-1-TO-256-R1"
+}

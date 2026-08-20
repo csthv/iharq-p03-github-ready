@@ -1,0 +1,114 @@
+{
+  "run_cell_id": "P02-A0-BNCI2014_001-SSL-CBRAMOD-FULL_TRAIN-MR00",
+  "ablation_id": "A0",
+  "terminal_status": "SUCCESS",
+  "prediction_partition": "records/PredictionRecord/dataset=BNCI2014_001/branch=SSL-CBRAMOD/budget=FULL_TRAIN/P02-A0-BNCI2014_001-SSL-CBRAMOD-FULL_TRAIN-MR00.jsonl",
+  "metric_source": "metrics/P02-A0-BNCI2014_001-SSL-CBRAMOD-FULL_TRAIN-MR00.json",
+  "checkpoint_sha256": "d2a1277feb9801fc933aabef3434ca91e20a19a6e7e90902330a257604c66a3b",
+  "checkpoint_path": "checkpoints/P02-A0-BNCI2014_001-SSL-CBRAMOD-FULL_TRAIN-MR00.external.external.chk",
+  "observed_denominator": 288,
+  "selected_params": {
+    "recipe_id": "R6-CBRAMOD-SOURCE-CENTERED-R1",
+    "optimizer": "AdamW",
+    "body_lr": 0.0001,
+    "head_lr": 0.0005,
+    "weight_decay": 0.05,
+    "batch_size": 64,
+    "scheduler": "cosine",
+    "eta_min": 1e-06,
+    "label_smoothing": 0.1,
+    "grad_clip": 1.0,
+    "input_scale": 10000.0,
+    "source_sampling_hz": 160,
+    "target_sampling_hz": 200,
+    "max_epochs": 150,
+    "patience": 40,
+    "selection": "validation_BACC",
+    "restore_best": true,
+    "branch": "SSL-CBRAMOD",
+    "dataset_id": "BNCI2014_001",
+    "budget_id": "FULL_TRAIN"
+  },
+  "resolved_variant": "CBraMod-HF-Braindecode-GovernedP02-R6Scale1e4",
+  "score_type": "SOFTMAX_PROBABILITY",
+  "validation_burden_seconds": 177.06361556053162,
+  "model_storage_bytes": 19801608,
+  "selected_candidate_id": "R6-CBRAMOD-SOURCE-CENTERED-R1",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.009856008997303434,
+    "batch1_latency_p95_s": 0.010448505402018781,
+    "repeats": 5,
+    "latency_probe_mode": "FORWARD_ONLY_NO_METRICS"
+  },
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "class_weights": null,
+  "class_weight_calibration": {
+    "selected_policy": "UNIFORM_NO_WEIGHT",
+    "selected_weights": null,
+    "validation_metrics": {
+      "BACC": 0.8298611111111112,
+      "F1_MACRO": 0.8295137420718817,
+      "ACC": 0.8298611111111112,
+      "CONFUSION": [
+        [
+          113,
+          31
+        ],
+        [
+          18,
+          126
+        ]
+      ],
+      "CLASS_SUPPORT": [
+        144,
+        144
+      ],
+      "PRED_COMPLETE": 288,
+      "ROC_AUC": 0.8954475308641976,
+      "ROC_AUC_STATUS": "PASS",
+      "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+    },
+    "candidate_results": [
+      {
+        "status": "SUCCESS",
+        "policy": "UNIFORM_NO_WEIGHT",
+        "weights": null,
+        "validation_metrics": {
+          "BACC": 0.8298611111111112,
+          "F1_MACRO": 0.8295137420718817,
+          "ACC": 0.8298611111111112,
+          "CONFUSION": [
+            [
+              113,
+              31
+            ],
+            [
+              18,
+              126
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            144,
+            144
+          ],
+          "PRED_COMPLETE": 288,
+          "ROC_AUC": 0.8954475308641976,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+        },
+        "validation_burden_seconds": 177.06361556053162,
+        "model_storage_bytes": 19801608,
+        "best_epoch": 9,
+        "epochs_completed": 49,
+        "history_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/staging_runtime/raw_outputs/stage12_r6_training_history/P02-A0-BNCI2014_001-SSL-CBRAMOD-FULL_TRAIN-MR00__UNIFORM_NO_WEIGHT.json",
+        "candidate_checkpoint_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/staging_runtime/raw_outputs/stage12_r6_training_history/P02-A0-BNCI2014_001-SSL-CBRAMOD-FULL_TRAIN-MR00__UNIFORM_NO_WEIGHT.candidate.chk",
+        "candidate_checkpoint_sha256": "5f7e505dbbfb0bb85f3646e596e1862d92e3de065ec6484c9f0837130ac61caf"
+      }
+    ],
+    "test_set_used": false
+  },
+  "training_condition_id": "A0-RAW-ACCEPT-ALL",
+  "r6_scientific_amendment": true,
+  "test_loaded_after_group_selection_sealed": true,
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

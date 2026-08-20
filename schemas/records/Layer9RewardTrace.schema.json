@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/csthv/IHARQ/schemas/records/Layer9RewardTrace.schema.json",
+  "title": "Layer9RewardTrace Phase 0 foundation profile",
+  "type": "object",
+  "required": [
+    "record_id",
+    "record_type",
+    "schema_version",
+    "authority_status",
+    "owner_layer",
+    "phase_id",
+    "config_id",
+    "source_ids",
+    "evidence_mode",
+    "limitation_tags",
+    "lifecycle_status",
+    "fixture",
+    "fixture_tags",
+    "evidence_role",
+    "payload"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "pattern": "^IHARQ-[A-Z][A-Z0-9_]*-[0-9]{8}-[0-9a-f]{16}$"
+    },
+    "schema_version": {
+      "const": "1.0-foundation"
+    },
+    "phase_id": {
+      "const": "P00"
+    },
+    "config_id": {
+      "type": "string"
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "evidence_mode": {
+      "enum": [
+        "FOUNDATION",
+        "IMPLEMENTATION",
+        "CONFORMANCE",
+        "VALIDATION",
+        "REPRODUCIBILITY_READINESS"
+      ]
+    },
+    "limitation_tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "lifecycle_status": {
+      "enum": [
+        "CREATED",
+        "VALIDATED",
+        "ACCEPTED",
+        "DIAGNOSTIC_ONLY",
+        "BLOCKED",
+        "SUPERSEDED",
+        "INVALIDATED"
+      ]
+    },
+    "fixture": {
+      "type": "boolean"
+    },
+    "fixture_tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "evidence_role": {
+      "enum": [
+        "PRIMARY",
+        "DERIVED",
+        "GOVERNANCE",
+        "RENDERING",
+        "PACKAGING"
+      ]
+    },
+    "ablation_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "record_type": {
+      "const": "Layer9RewardTrace"
+    },
+    "authority_status": {
+      "const": "REGISTRY_REFERENCED"
+    },
+    "owner_layer": {
+      "const": "L9"
+    },
+    "payload": {
+      "type": "object",
+      "required": [
+        "reward_trace_id",
+        "transition_id",
+        "components"
+      ],
+      "properties": {
+        "reward_trace_id": {
+          "type": "string"
+        },
+        "transition_id": {
+          "type": "string"
+        },
+        "components": {
+          "type": "array"
+        },
+        "trajectory_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reward_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "cost_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "total_reward": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false,
+  "x-iharq-authority-status": "REGISTRY_REFERENCED"
+}

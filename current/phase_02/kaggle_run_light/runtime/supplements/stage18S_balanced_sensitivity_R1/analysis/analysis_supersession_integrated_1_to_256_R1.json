@@ -1,0 +1,192 @@
+{
+  "artifact_id": "P02-STAGE18S-R1-INTEGRATED-1-256-ANALYSIS-SUPERSESSION-R1",
+  "canonical_G18_modified": false,
+  "canonical_stage18_modified": false,
+  "created_at_utc": "2026-08-17T17:19:59.066914+00:00",
+  "current_contract": {
+    "combined_effect_rows": 315,
+    "nine_budget_mr00_trajectories": 15,
+    "participant_effect_rows": 1890,
+    "three_repeat_anchor_trajectories": 90
+  },
+  "file_actions": [
+    {
+      "destination": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/supplements/stage18S_balanced_sensitivity_R1/analysis/combined_cell_effects.csv",
+      "logical_role": "SUPPLEMENT_ANALYSIS_CURRENT:combined_cell_effects.csv",
+      "mode": "SUPERSEDED_WITH_HISTORY_PRESERVED",
+      "predecessor_archive": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/supplements/stage18S_balanced_sensitivity_R1/analysis/history/pre_integrated_1_to_256/combined_cell_effects.csv.pre_1_to_256.e612a630e027cf01",
+      "predecessor_sha256": "e612a630e027cf01b041b2f4b35eef8879d9e4b85edd4031ae9b4cc970c99f32",
+      "successor_sha256": "c7a5e9f69341825407b48d9dc82d9157b2be0e9b9e184512ae5163d64b215ed6"
+    },
+    {
+      "destination": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/supplements/stage18S_balanced_sensitivity_R1/analysis/three_repeat_anchor_stability.csv",
+      "logical_role": "SUPPLEMENT_ANALYSIS_CURRENT:three_repeat_anchor_stability.csv",
+      "mode": "SUPERSEDED_WITH_HISTORY_PRESERVED",
+      "predecessor_archive": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/supplements/stage18S_balanced_sensitivity_R1/analysis/history/pre_integrated_1_to_256/three_repeat_anchor_stability.csv.pre_1_to_256.4490e4b1b24e53b2",
+      "predecessor_sha256": "4490e4b1b24e53b2b4728487f54194b7608b4f3f4b6890c34f8b0edd27d0bce2",
+      "successor_sha256": "9e6db2cd15d86591967783be6b96d25a8dc80bad24b0d501113077cd409ca473"
+    },
+    {
+      "destination": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/supplements/stage18S_balanced_sensitivity_R1/analysis/six_budget_mr00_sensitivity.csv",
+      "logical_role": "SUPPLEMENT_ANALYSIS_CURRENT:six_budget_mr00_sensitivity.csv",
+      "mode": "SUPERSEDED_WITH_HISTORY_PRESERVED",
+      "predecessor_archive": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/supplements/stage18S_balanced_sensitivity_R1/analysis/history/pre_integrated_1_to_256/six_budget_mr00_sensitivity.csv.pre_1_to_256.3c1ddee8a5d6bacf",
+      "predecessor_sha256": "3c1ddee8a5d6bacf1577c37d6775eef509ea920d59e4f766aa9ac0a4d4558686",
+      "successor_sha256": "e3245685c598ea7855ac19c951b056ad746936de944db204430fac4dda42be92"
+    },
+    {
+      "destination": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/supplements/stage18S_balanced_sensitivity_R1/analysis/nine_budget_mr00_sensitivity.csv",
+      "logical_role": "SUPPLEMENT_ANALYSIS_CURRENT:nine_budget_mr00_sensitivity.csv",
+      "mode": "NEW_CURRENT_FILE",
+      "successor_sha256": "e3245685c598ea7855ac19c951b056ad746936de944db204430fac4dda42be92"
+    },
+    {
+      "destination": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/supplements/stage18S_balanced_sensitivity_R1/analysis/participant_paired_effects.csv",
+      "logical_role": "SUPPLEMENT_ANALYSIS_CURRENT:participant_paired_effects.csv",
+      "mode": "SUPERSEDED_WITH_HISTORY_PRESERVED",
+      "predecessor_archive": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/supplements/stage18S_balanced_sensitivity_R1/analysis/history/pre_integrated_1_to_256/participant_paired_effects.csv.pre_1_to_256.cc6d349bdb69b3dc",
+      "predecessor_sha256": "cc6d349bdb69b3dc89deb5c675e4c65e3d2f8ccbc5bc78282b2894baf9ae14bc",
+      "successor_sha256": "26c3ff0058244cb02cfb51f8556b8319a23f19270cff1337e4a8a667e02b027e"
+    },
+    {
+      "destination": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/supplements/stage18S_balanced_sensitivity_R1/analysis/member_training_provenance.csv",
+      "logical_role": "SUPPLEMENT_ANALYSIS_CURRENT:member_training_provenance.csv",
+      "mode": "SUPERSEDED_WITH_HISTORY_PRESERVED",
+      "predecessor_archive": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/supplements/stage18S_balanced_sensitivity_R1/analysis/history/pre_integrated_1_to_256/member_training_provenance.csv.pre_1_to_256.48af59807df7f358",
+      "predecessor_sha256": "48af59807df7f3586e9eb614223df8efeccd2ea71aaafc0380d586c2a5831723",
+      "successor_sha256": "1d453b281b2558ed9819889ad42f623b26ee6facd5d9714a9d36bf16c49b5b95"
+    },
+    {
+      "destination": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/supplements/stage18S_balanced_sensitivity_R1/analysis/training_provenance_summary.csv",
+      "logical_role": "SUPPLEMENT_ANALYSIS_CURRENT:training_provenance_summary.csv",
+      "mode": "SUPERSEDED_WITH_HISTORY_PRESERVED",
+      "predecessor_archive": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/supplements/stage18S_balanced_sensitivity_R1/analysis/history/pre_integrated_1_to_256/training_provenance_summary.csv.pre_1_to_256.4216d07d415122c9",
+      "predecessor_sha256": "4216d07d415122c968cf392432f5a8537acdd0cbeeffafe8418d4758d6a5714c",
+      "successor_sha256": "9695dda9cc234cf8b3f53109044effc335397f0c5793c9ef3df97aa1754dad50"
+    },
+    {
+      "destination": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/supplements/stage18S_balanced_sensitivity_R1/analysis/training_provenance_summary_by_member.csv",
+      "logical_role": "SUPPLEMENT_ANALYSIS_CURRENT:training_provenance_summary_by_member.csv",
+      "mode": "NEW_CURRENT_FILE",
+      "successor_sha256": "ca304caf04bafaaaa7e7126bb1661ac9bf98f41c44df51f980ab152a2449c1c1"
+    },
+    {
+      "destination": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/supplements/stage18S_balanced_sensitivity_R1/analysis/high_budget_64_128_256_summary.csv",
+      "logical_role": "SUPPLEMENT_ANALYSIS_CURRENT:high_budget_64_128_256_summary.csv",
+      "mode": "NEW_CURRENT_FILE",
+      "successor_sha256": "954e2a8650d17501187d99691cc5199e147e9633fb16e66c414aab5585098715"
+    },
+    {
+      "destination": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/supplements/stage18S_balanced_sensitivity_R1/analysis/high_budget_role_condition_summary.csv",
+      "logical_role": "SUPPLEMENT_ANALYSIS_CURRENT:high_budget_role_condition_summary.csv",
+      "mode": "NEW_CURRENT_FILE",
+      "successor_sha256": "03f8998f2566add4dcde6aa7f09ff3f07cdbd3cca103a848d4bf7d3d191eff17"
+    },
+    {
+      "destination": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/supplements/stage18S_balanced_sensitivity_R1/analysis/six_anchor_stability_by_budget.csv",
+      "logical_role": "SUPPLEMENT_ANALYSIS_CURRENT:six_anchor_stability_by_budget.csv",
+      "mode": "NEW_CURRENT_FILE",
+      "successor_sha256": "a34fb04e68ab62cca2658ae828684bfce723dda58acb2c068bb5044a04b72dde"
+    },
+    {
+      "destination": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/supplements/stage18S_balanced_sensitivity_R1/analysis/decision_support_summary.json",
+      "logical_role": "SUPPLEMENT_ANALYSIS_CURRENT:decision_support_summary.json",
+      "mode": "SUPERSEDED_WITH_HISTORY_PRESERVED",
+      "predecessor_archive": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/supplements/stage18S_balanced_sensitivity_R1/analysis/history/pre_integrated_1_to_256/decision_support_summary.json.pre_1_to_256.245340d52d400ddf",
+      "predecessor_sha256": "245340d52d400ddff7095500f4425d971ed6f1b1ae97cf7ba8d06eb1d230e6af",
+      "successor_sha256": "925eaca4c360bfb284d3a78b1003330907bd2a9593fcbe584ed36eb7717e5f77"
+    },
+    {
+      "destination": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/analysis_inputs/stage18S_R1_combined_cell_effects.csv",
+      "logical_role": "RUNTIME_ANALYSIS_CURRENT:stage18S_R1_combined_cell_effects.csv",
+      "mode": "NEW_CURRENT_FILE",
+      "successor_sha256": "c7a5e9f69341825407b48d9dc82d9157b2be0e9b9e184512ae5163d64b215ed6"
+    },
+    {
+      "destination": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/analysis_inputs/stage18S_R1_three_repeat_anchor_stability.csv",
+      "logical_role": "RUNTIME_ANALYSIS_CURRENT:stage18S_R1_three_repeat_anchor_stability.csv",
+      "mode": "NEW_CURRENT_FILE",
+      "successor_sha256": "9e6db2cd15d86591967783be6b96d25a8dc80bad24b0d501113077cd409ca473"
+    },
+    {
+      "destination": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/analysis_inputs/stage18S_R1_six_budget_mr00_sensitivity.csv",
+      "logical_role": "RUNTIME_ANALYSIS_CURRENT:stage18S_R1_six_budget_mr00_sensitivity.csv",
+      "mode": "NEW_CURRENT_FILE",
+      "successor_sha256": "e3245685c598ea7855ac19c951b056ad746936de944db204430fac4dda42be92"
+    },
+    {
+      "destination": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/analysis_inputs/stage18S_R1_nine_budget_mr00_sensitivity.csv",
+      "logical_role": "RUNTIME_ANALYSIS_CURRENT:stage18S_R1_nine_budget_mr00_sensitivity.csv",
+      "mode": "NEW_CURRENT_FILE",
+      "successor_sha256": "e3245685c598ea7855ac19c951b056ad746936de944db204430fac4dda42be92"
+    },
+    {
+      "destination": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/analysis_inputs/stage18S_R1_participant_paired_effects.csv",
+      "logical_role": "RUNTIME_ANALYSIS_CURRENT:stage18S_R1_participant_paired_effects.csv",
+      "mode": "NEW_CURRENT_FILE",
+      "successor_sha256": "26c3ff0058244cb02cfb51f8556b8319a23f19270cff1337e4a8a667e02b027e"
+    },
+    {
+      "destination": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/analysis_inputs/stage18S_R1_member_training_provenance.csv",
+      "logical_role": "RUNTIME_ANALYSIS_CURRENT:stage18S_R1_member_training_provenance.csv",
+      "mode": "NEW_CURRENT_FILE",
+      "successor_sha256": "1d453b281b2558ed9819889ad42f623b26ee6facd5d9714a9d36bf16c49b5b95"
+    },
+    {
+      "destination": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/analysis_inputs/stage18S_R1_training_provenance_summary.csv",
+      "logical_role": "RUNTIME_ANALYSIS_CURRENT:stage18S_R1_training_provenance_summary.csv",
+      "mode": "NEW_CURRENT_FILE",
+      "successor_sha256": "9695dda9cc234cf8b3f53109044effc335397f0c5793c9ef3df97aa1754dad50"
+    },
+    {
+      "destination": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/analysis_inputs/stage18S_R1_training_provenance_summary_by_member.csv",
+      "logical_role": "RUNTIME_ANALYSIS_CURRENT:stage18S_R1_training_provenance_summary_by_member.csv",
+      "mode": "NEW_CURRENT_FILE",
+      "successor_sha256": "ca304caf04bafaaaa7e7126bb1661ac9bf98f41c44df51f980ab152a2449c1c1"
+    },
+    {
+      "destination": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/analysis_inputs/stage18S_R1_high_budget_64_128_256_summary.csv",
+      "logical_role": "RUNTIME_ANALYSIS_CURRENT:stage18S_R1_high_budget_64_128_256_summary.csv",
+      "mode": "NEW_CURRENT_FILE",
+      "successor_sha256": "954e2a8650d17501187d99691cc5199e147e9633fb16e66c414aab5585098715"
+    },
+    {
+      "destination": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/analysis_inputs/stage18S_R1_high_budget_role_condition_summary.csv",
+      "logical_role": "RUNTIME_ANALYSIS_CURRENT:stage18S_R1_high_budget_role_condition_summary.csv",
+      "mode": "NEW_CURRENT_FILE",
+      "successor_sha256": "03f8998f2566add4dcde6aa7f09ff3f07cdbd3cca103a848d4bf7d3d191eff17"
+    },
+    {
+      "destination": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/analysis_inputs/stage18S_R1_six_anchor_stability_by_budget.csv",
+      "logical_role": "RUNTIME_ANALYSIS_CURRENT:stage18S_R1_six_anchor_stability_by_budget.csv",
+      "mode": "NEW_CURRENT_FILE",
+      "successor_sha256": "a34fb04e68ab62cca2658ae828684bfce723dda58acb2c068bb5044a04b72dde"
+    },
+    {
+      "destination": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/analysis_inputs/stage18S_R1_decision_support_summary.json",
+      "logical_role": "RUNTIME_ANALYSIS_CURRENT:stage18S_R1_decision_support_summary.json",
+      "mode": "NEW_CURRENT_FILE",
+      "successor_sha256": "925eaca4c360bfb284d3a78b1003330907bd2a9593fcbe584ed36eb7717e5f77"
+    },
+    {
+      "destination": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/supplements/stage18S_balanced_sensitivity_R1/analysis/supplement_gate.json",
+      "logical_role": "SUPPLEMENT_GATE_CURRENT",
+      "mode": "SUPERSEDED_WITH_HISTORY_PRESERVED",
+      "predecessor_archive": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/supplements/stage18S_balanced_sensitivity_R1/analysis/history/pre_integrated_1_to_256/supplement_gate.json.pre_1_to_256.9862c96a48e79e0f",
+      "predecessor_sha256": "9862c96a48e79e0fc7d1c92e79d57fd5b3064ef3d5cf9223a18122f5606ce7b3",
+      "successor_sha256": "102adbd6bbf1fbb725c9db815b292fd339da84058d407a9501887aadfb7355fc"
+    },
+    {
+      "destination": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/handoffs/stage18S_R1_sensitivity_evidence.json",
+      "logical_role": "STAGE18S_HANDOFF_CURRENT",
+      "mode": "NEW_CURRENT_FILE",
+      "successor_sha256": "feaf52cd83a521ef6a4c2857f0af79f7fef68ebaf1777738d9f18cef0a109fdf"
+    }
+  ],
+  "new_confirmatory_test_family_created": false,
+  "predecessor_analysis_bytes_preserved_when_different": true,
+  "predecessor_science_deleted": false,
+  "reason": "Stage18S scientific surface expanded from predecessor 1/4/8/16/32/FULL sensitivity to integrated 1/4/8/16/32/64/128/256/FULL sensitivity with three-repeat anchors at 1/8/64/128/256/FULL.",
+  "scientific_configuration_changed_by_analysis_cell": false,
+  "status": "PASS"
+}

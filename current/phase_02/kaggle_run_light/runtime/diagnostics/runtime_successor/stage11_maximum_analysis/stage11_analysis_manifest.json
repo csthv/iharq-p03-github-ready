@@ -1,0 +1,85 @@
+{
+  "analysis_only_after_staged_closure": true,
+  "artifact_id": "P02-STAGE11-R7-ANALYSIS-MANIFEST-R1",
+  "created_utc": "2026-08-13T15:00:17.288283+00:00",
+  "files": [
+    {
+      "bytes": 474,
+      "relative_path": "stage11_ACC_mean_matrix.csv",
+      "sha256": "4d797a885d22c0fa88c0b81d9edb0ec30e52eb58b31611810ddf26473ca94fe5"
+    },
+    {
+      "bytes": 476,
+      "relative_path": "stage11_AUC_mean_matrix.csv",
+      "sha256": "e593b2e55e572d35be5450c278529e69f41cfcbac8c44616db39b549ac1d0254"
+    },
+    {
+      "bytes": 478,
+      "relative_path": "stage11_BACC_mean_matrix.csv",
+      "sha256": "5a75aabe081ba14dc4d98c1f673164d0b5329d1b73235639f010547ede758873"
+    },
+    {
+      "bytes": 531,
+      "relative_path": "stage11_BACC_sd_matrix.csv",
+      "sha256": "84dab1ce76e4fd95bedcc72576043481e6fc64b51fd36ecfb2c4c214585f47cd"
+    },
+    {
+      "bytes": 499,
+      "relative_path": "stage11_F1_mean_matrix.csv",
+      "sha256": "c631f068e9fd762308a54e028e3d1c4af3edca084a55af053a9a35b615fc49ec"
+    },
+    {
+      "bytes": 326,
+      "relative_path": "stage11_FULL_TRAIN_BACC_repeats.csv",
+      "sha256": "003a463ea27e8f2213f384b3be96b0f5938805bfdf9fab05cdb28e5b4534b8c3"
+    },
+    {
+      "bytes": 3787,
+      "relative_path": "stage11_aggregate_metrics.csv",
+      "sha256": "beef00ddc9f2f7f82f9f0e2a3924ad329dc16398439cc6727c08050b8d300860"
+    },
+    {
+      "bytes": 5130,
+      "relative_path": "stage11_challenger_run_metrics.csv",
+      "sha256": "20b79ef0b47be3cbbcbfdda51bc978599dffde2b32d5eb17e604639e18bd2e41"
+    },
+    {
+      "bytes": 2020,
+      "relative_path": "stage11_challenger_terminal_diagnostic.csv",
+      "sha256": "d7954e0ed26dc1327fbb87b70f8ad52c35fa2e39969c7a7a2b29ff9409e15c7f"
+    },
+    {
+      "bytes": 1283,
+      "relative_path": "stage11_collapse_diagnostic.json",
+      "sha256": "6ad90769d99fbe8f6ce7e29e1fb8897c76d1111ba7ddae90facae97329e250ee"
+    },
+    {
+      "bytes": 43497,
+      "relative_path": "stage11_primary_run_metrics.csv",
+      "sha256": "57a73e864bada686a229dacdf6d271de186aa51b1d75093c89ca1451c5267900"
+    },
+    {
+      "bytes": 2387,
+      "relative_path": "stage11_selected_candidate_matrix.csv",
+      "sha256": "a78f925d265fb9d1097a3794df8f8600b942debdadf89fdef7017057f6f708b5"
+    },
+    {
+      "bytes": 18048,
+      "relative_path": "stage11_source_centered_recipe.json",
+      "sha256": "c81b51d462789cd542624a1c5d112b25622bcd18229e9353065536e3b1603a3f"
+    },
+    {
+      "bytes": 4707,
+      "relative_path": "stage11_sr_probability_calibration.csv",
+      "sha256": "ef35623d197389c5070d719f6c02613c290aae502b14a65bf937f0fd81f3a1da"
+    },
+    {
+      "bytes": 102,
+      "relative_path": "stage11_sr_probability_selection.csv",
+      "sha256": "435e3e3924ea22c6758e5a7a7da5d2941f27e2db23ef2d3bd3ee7878132e6051"
+    }
+  ],
+  "performance_threshold_gate": false,
+  "scientific_results_recomputed": true,
+  "status": "PASS"
+}

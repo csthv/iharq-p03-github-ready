@@ -1,0 +1,59 @@
+{
+  "config_changed": false,
+  "gate_id": "G03-17-THRESHOLD",
+  "hardening_id": "P03-C8-STAGE17-THRESHOLDREGISTRY-EVIDENCE-HARDENING-R1",
+  "lineage": {
+    "governed_threshold_records_with_nonempty_source_sha": 776,
+    "governed_threshold_records_with_two_direct_governed_parents": 776,
+    "stage13_uncertainty_parent_count": 855,
+    "stage15_a2_selective_parent_count": 194,
+    "stage16_a3_selective_parent_count": 582
+  },
+  "negative_terminal_preservation": {
+    "skip_count": 364,
+    "skip_ledger_path": "artifacts/reports/phase_03/threshold_registry/P03-C8-STAGE17-THRESHOLDREGISTRY-EVIDENCE-HARDENING-R1/threshold_registry_no_rule_skips.jsonl",
+    "skip_ledger_sha256": "dd959fdd0101e4421361e0eb089f359d081b5200ed56c822abe1af1242f805e2",
+    "synthetic_thresholds_created_for_no_rule_children": 0
+  },
+  "products": {
+    "P03-PROD-030": {
+      "family_manifest_sha256": "da69e8838ac3e9d99512758be3272992651a2d53d2e7daa1a1be6f9b233a87ba",
+      "family_root": "artifacts/records/phase_03/ThresholdRegistryRecord/P03-C8-STAGE17-THRESHOLDREGISTRY-EVIDENCE-HARDENING-R1",
+      "record_count": 776,
+      "record_family": "ThresholdRegistryRecord"
+    },
+    "P03-PROD-031": {
+      "active_count": 776,
+      "path": "artifacts/manifests/phase_03/threshold_registry_index.json",
+      "sha256": "16c897a69b8045b0f6640bdd757ab95e84dd26613afe48b245a9ca89f5223a5f"
+    }
+  },
+  "protocol_changed": false,
+  "raw_stage17": {
+    "raw_registry_event_log_sha256": "6326810afe2941cd0d1fcd075e122d47fb0bd492d0e2e9b444da4ca30745be2c",
+    "raw_registry_index_sha256": "19a907e0ff0dcc9bae205445810931e2b8ed04940236aec662e762e742bca64d",
+    "raw_skip_ledger_sha256": "dd959fdd0101e4421361e0eb089f359d081b5200ed56c822abe1af1242f805e2",
+    "raw_threshold_records_sha256": "be9cdd55bcf18fa068a2c0ca80f6c517675046742146afbf8a6241003460a33b",
+    "skip_count": 364,
+    "stage17_output_manifest_sha256": "7e0c903599d55bfef2b791a48d96d393bf238daf9cfaa50121aefd9e7d2c18d0",
+    "threshold_record_count": 776
+  },
+  "registry_invariants": {
+    "exact_match_resolution_fail_closed": true,
+    "mutable_latest_prohibited": true,
+    "operational_current_status": "ACTIVE",
+    "selection_role": "threshold_validation",
+    "test_selected_threshold_count": 0,
+    "unique_exact_registry_keys": 776,
+    "unique_threshold_ids": 776
+  },
+  "run_id": "P03-L3-OFFICIAL-09ca82c743e0411a",
+  "schema_id": "P03Stage17ThresholdRegistryProspectiveHardeningManifest.v1",
+  "schema_version": "1.0.0",
+  "scientific_handler_changed": false,
+  "scientific_method_changed": false,
+  "scientific_worker_changed": false,
+  "stage17_stage_artifacts_mutated_by_hook": false,
+  "stage_id": "17",
+  "status": "PASS"
+}

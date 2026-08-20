@@ -1,0 +1,44 @@
+{
+  "PhysioNetMI": {
+    "unknown": [],
+    "excluded": [
+      "run_4_8_12:T0"
+    ],
+    "observed": [
+      "run_4_8_12:T0",
+      "run_4_8_12:T1",
+      "run_4_8_12:T2"
+    ],
+    "status": "VALIDATED"
+  },
+  "BNCI2014_001": {
+    "unknown": [],
+    "excluded": [
+      "1023",
+      "1072",
+      "276",
+      "277",
+      "32766",
+      "768",
+      "771",
+      "772",
+      "783"
+    ],
+    "observed": [
+      "769",
+      "770",
+      "771",
+      "772"
+    ],
+    "status": "VALIDATED"
+  },
+  "Lee2019_MI": {
+    "unknown": [],
+    "excluded": [],
+    "observed": [
+      "left_hand",
+      "right_hand"
+    ],
+    "status": "VALIDATED"
+  }
+}

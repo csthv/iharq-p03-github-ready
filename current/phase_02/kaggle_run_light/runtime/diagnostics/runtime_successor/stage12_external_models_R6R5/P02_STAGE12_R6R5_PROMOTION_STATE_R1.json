@@ -1,0 +1,26 @@
+{
+  "archive_manifest": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/pre_r6r3_official_stage12_archive/20260812T005807Z/ARCHIVE_MANIFEST.json",
+  "archive_root": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/pre_r6r3_official_stage12_archive/20260812T005807Z",
+  "artifact_id": "P02-STAGE12-R6R3-PROMOTION-STATE-R1",
+  "completed_utc": "2026-08-12T00:58:32.702926+00:00",
+  "confirmed_predecessor_class_weight_failures": [
+    "P02-A0-PhysioNetMI-DNN-FBCNET-FULL_TRAIN-MR00",
+    "P02-A0-PhysioNetMI-DNN-FBCNET-FULL_TRAIN-MR01",
+    "P02-A0-PhysioNetMI-DNN-FBCNET-FULL_TRAIN-MR02",
+    "P02-A0-PhysioNetMI-DNN-FBCNET-FULL_TRAIN-MR03",
+    "P02-A0-PhysioNetMI-DNN-FBCNET-FULL_TRAIN-MR04"
+  ],
+  "created_utc": "2026-08-12T00:58:09.831292+00:00",
+  "entry_stage12_accepted": false,
+  "entry_stage12_partial": true,
+  "entry_stage12_terminal_counts": {
+    "FAILED": 5,
+    "SUCCESS": 15
+  },
+  "final_receipt": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/P02_STAGE12_R6R5_FINAL_RECEIPT_R1.json",
+  "final_receipt_sha256": "beeea00968ba8a61430658b664b7c32a4441fc9afd87e03f88a99755607041a3",
+  "staged_audit": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/G12_R6R5_STAGED_CLOSURE_AUDIT_R1.json",
+  "staged_audit_sha256": "10f77b1d1ee65bc6ee720d6a08841e641584ab94bcfaa6a90e3d5424962855ed",
+  "status": "PROMOTION_COMPLETE",
+  "updated_utc": "2026-08-12T00:58:09.831303+00:00"
+}

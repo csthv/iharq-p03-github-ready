@@ -1,0 +1,73 @@
+phase_id: P02
+layer_id: L2
+analysis_release_id: P02-PHASE-ANALYSIS-FINAL-R2
+finalization_prompt:
+  path: /mnt/data/md‎‏(20260814-162328).mdmarkdown چسبانده شد
+  role: final analytical closure instructions
+  inspection: FULL_TEXT_READ
+project_sources:
+- source: Governance V6.1
+  role: workflow/document-stack rules
+  inspection: FULL_TEXT / relevant authority role checked
+- source: Seven core authorities
+  role: architecture, registry, evidence plan, Protocol v0.1, playbook, method selection,
+    nuts-and-bolts
+  inspection: archive-inventoried; relevant requirements used
+- source: P00 final whole-stack package
+  role: prior project state and P00 continuity
+  inspection: relevant context used
+- source: P01 notebook
+  role: prior execution context
+  inspection: relevant continuity used
+- source: P00/P01 cumulative Protocol
+  role: prior Protocol lineage
+  inspection: relevant precedent used
+- source: P00/P01 cumulative Phase Analysis
+  role: analysis continuity and document-family precedent
+  inspection: full analytical context used
+- source: P00/P01 Layer0-embedded analysis
+  role: prior governed claim context
+  inspection: relevant context used
+- source: P00/P01 Evidence Map
+  role: traceability continuity
+  inspection: relevant context used
+- source: P00/P01 Layer10
+  role: presentation/reproducibility continuity
+  inspection: relevant context used
+- source: P00/P01 cumulative GitHub state
+  role: prior project state
+  inspection: relevant state used
+- source: P02 Build Book R4
+  role: expected P02 implementation/scientific scope
+  inspection: requirements used
+- source: P02 executed notebook
+  role: execution history and corrections
+  inspection: complete execution history previously reconstructed; used here via finalized
+    Protocol and source diagnostics
+- source: P02 final project state
+  role: canonical runtime evidence
+  inspection: canonical analysis inputs and supporting records machine-parsed
+- source: P02 Protocol Annex R2
+  role: exact P02 execution/analysis authority
+  inspection: full-text primary authority
+- source: Cumulative Protocol through P02
+  role: current cumulative Protocol authority
+  inspection: full-text primary authority
+- source: P02 Phase Analysis R1
+  role: document under finalization
+  inspection: full-text finalization base
+canonical_quantitative_surface:
+  contract: machine_readable/P02_canonical_analysis_inputs.yaml
+  count: 38
+  inspection: all paths, sizes, hashes and analytical roles verified
+supporting_evidence:
+- Stage11 source-centered recipe/provenance
+- Stage12 validation-only A/B/C job summaries
+- FailureCaseIndex
+- NegativeResultNote
+- DiagnosticOnlyFlag
+external_literature:
+  inspection: FRESH_WEB_VERIFICATION_2026-08-14
+  artifact: literature/P02_literature_fresh_verification.json
+  policy: primary/original/author-controlled sources prioritized; numerical comparability
+    bounded

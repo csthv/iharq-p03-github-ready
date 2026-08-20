@@ -1,0 +1,26 @@
+{
+  "artifact_id": "P02-STAGE18S-R1-DECISION-SUPPORT-SUMMARY",
+  "supplement_id": "P02-STAGE18S-BALANCED-SENSITIVITY-R1",
+  "created_at_utc": "2026-08-14T03:35:03.621286+00:00",
+  "status": "PASS",
+  "claim_scope": "POST_HOC_SENSITIVITY_DESCRIPTIVE",
+  "three_repeat_anchor_trajectories": 45,
+  "anchor_sign_consistency_counts": {
+    "ALL_NEGATIVE": 7,
+    "ALL_POSITIVE": 16,
+    "MIXED": 22
+  },
+  "median_repeat_sd_delta_BACC": 0.015898986690282405,
+  "p90_repeat_sd_delta_BACC": 0.03686022839268904,
+  "six_budget_mr00_trajectories": 15,
+  "mr00_trajectories_with_sign_flip": 15,
+  "mr00_sign_flip_fraction": 1.0,
+  "participant_effect_rows": 1080,
+  "training_provenance_issues": 0,
+  "interpretation_rules": {
+    "three_repeat_results_are_descriptive_not_five_repeat_confirmatory": true,
+    "budget_probe_is_post_hoc": true,
+    "do_not_merge_into_canonical_G18": true,
+    "do_not_claim_full_buildbook_equivalence": true
+  }
+}

@@ -1,0 +1,17 @@
+profile_id: P01-L1-LOW-CAL-OFFICIAL-R2
+budgets_per_class:
+- 1
+- 2
+- 4
+- 8
+- 16
+- 32
+seed: 20260804
+source_role: calibration
+normalized_classes:
+- left_hand
+- right_hand
+selection_algorithm: SHA256_RANK_BY_DATASET_SUBJECT_SESSION_RUN_SOURCE_EVENT_WITH_NESTED_PREFIX_SUBSETS
+nested_subsets: true
+insufficient_class_behavior: MARK_AFFECTED_BUDGET_INELIGIBLE_DIAGNOSTIC_ONLY; NEVER
+  BORROW_FROM_VALIDATION_OR_TEST

@@ -1,0 +1,64 @@
+dataset_id: PhysioNetMI
+aliases:
+- PhysioNetMI
+- EEGMMI
+- EEG Motor Movement/Imagery Dataset
+authority_status: PRIMARY_SELECTED
+scientific_role: source/rest/provenance anchor
+active_for_run: true
+active_disposition: ACTIVE_FOR_P01_OFFICIAL_RUN
+exact_revision: 1.0.0
+citation: 'Schalk G. EEG Motor Movement/Imagery Dataset (version 1.0.0). PhysioNet.
+  2009. DOI 10.13026/C28G6P; associated instrumentation paper: Schalk et al., BCI2000,
+  IEEE TBME 2004.'
+license: Open Data Commons Attribution License 1.0 (ODC-By-1.0)
+access_method: MOABB_1_5_0_OFFICIAL_PHYSIONET_DOWNLOAD
+official_reference: https://physionet.org/content/eegmmidb/1.0.0/; https://doi.org/10.13026/C28G6P
+published_checksum: PROVIDER_SHA256SUMS_TXT_AVAILABLE_AT_DATASET_ROOT
+checksum_policy: VERIFY_EACH_DOWNLOADED_FILE_AGAINST_PHYSIONET_SHA256SUMS_TXT_THEN_INDEPENDENTLY_RECOMPUTE_AND_FREEZE_AGGREGATE
+expected_checksum: COMPUTE_OR_VERIFY_PER_FROZEN_POLICY
+adapter: MOABBPhysionetMIAdapter
+cache_path: source_cache/PhysioNetMI
+redistribution_allowed: YES_WITH_ODC_BY_1_0_ATTRIBUTION; RAW_BYTES_EXCLUDED_FROM_PHASE_BUNDLE
+source_native_preprocessing:
+- provider signal as distributed; preserve EDF+ annotations and channel order
+limitations:
+- Run context is mandatory for T1/T2 semantics
+- Executed-movement and baseline runs are excluded from the official binary MI branch
+- Subject 88 rate exception must be recorded and resampled deterministically
+- MOABB bulk loading across subject 88 and 160 Hz subjects is prohibited; per-subject
+  acquisition is mandatory.
+adapter_options:
+  moabb_class: PhysionetMI
+  subjects: 1-109
+  runs:
+  - 4
+  - 8
+  - 12
+  accept_terms: false
+  internet_required: true
+  load_policy: ONE_SUBJECT_PER_GET_DATA_CALL
+  subject_88_policy: LOAD_SUBJECT_88_SEPARATELY_AT_128_HZ; JOINTLY_RESAMPLE_ITS_SIGNAL_AND_EVENTS_TO_160_HZ;
+    DO_NOT_BULK_LOAD_WITH_160_HZ SUBJECTS
+  official_reference: https://physionet.org/content/eegmmidb/1.0.0/; https://doi.org/10.13026/C28G6P
+  checksum_policy: VERIFY_EACH_DOWNLOADED_FILE_AGAINST_PHYSIONET_SHA256SUMS_TXT_THEN_INDEPENDENTLY_RECOMPUTE_AND_FREEZE_AGGREGATE
+  published_checksum: PROVIDER_SHA256SUMS_TXT_AVAILABLE_AT_DATASET_ROOT
+  expected_event_inventory:
+  - 'T0: rest/no action'
+  - 'T1: left-hand imagery in runs 4/8/12'
+  - 'T2: right-hand imagery in runs 4/8/12'
+  sampling_and_channel_profile:
+    eeg_channels: 64
+    nominal_sampling_hz: 160
+    subject_88_sampling_hz: 128
+    format: EDF+
+  source_native_preprocessing:
+  - provider signal as distributed; preserve EDF+ annotations and channel order
+  limitations:
+  - Run context is mandatory for T1/T2 semantics
+  - Executed-movement and baseline runs are excluded from the official binary MI branch
+  - Subject 88 rate exception must be recorded and resampled deterministically
+  - MOABB bulk loading across subject 88 and 160 Hz subjects is prohibited; per-subject
+    acquisition is mandatory.
+  allow_byte_equivalent_attachment_fallback: false
+  acquisition_contract: MOABB_1_5_0_OFFICIAL_PROVIDER_DOWNLOAD_ONLY

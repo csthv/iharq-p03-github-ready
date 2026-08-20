@@ -1,0 +1,205 @@
+{
+  "allowed_uses": [
+    "evidence verification using frozen L3 outputs"
+  ],
+  "artifact_count": 45,
+  "artifact_index_path": "artifacts/handoffs/phase_03_to_phase_04/artifact_index.csv",
+  "blockers": [],
+  "checksum_ledger_path": "artifacts/handoffs/phase_03_to_phase_04/checksums.sha256",
+  "config_identity": {
+    "sha256": "2eda0689ab42e93c91b3ef9b76e0168d1c13d1feb3d1a552beaade91105ab7c3"
+  },
+  "config_sha256": "2eda0689ab42e93c91b3ef9b76e0168d1c13d1feb3d1a552beaade91105ab7c3",
+  "consumer_smoke_receipt": {
+    "artifact_index_count": 45,
+    "consumer_id": "P04",
+    "method": "schema validation + canonical fresh JSON reload",
+    "status": "PASS"
+  },
+  "created_at_utc": "2026-08-15T21:15:42Z",
+  "destination": "P04",
+  "environment_identity": {
+    "sha256": "67dc3d67c8e0b6b664688c6aa1d2cbcb2b612386422a26d153e45966c070f700"
+  },
+  "evidence_map_seed_ids": [
+    "P03-CAND-CALIBRATION-RELIABILITY-R1",
+    "P03-CAND-SELECTIVE-TRANSPORT-R1",
+    "P03-CAND-BINARY-UQ-ALIAS-R1",
+    "P03-CAND-NEGATIVE-DENOMINATOR-R1"
+  ],
+  "external_pointer_ids": [],
+  "failure_code": null,
+  "handoff_id": "P03-P04-CANONICAL-HANDOFF-f396048e0f596f7d969e",
+  "handoff_status": "READY_WITH_EXPLICIT_LIMITATIONS",
+  "invalidated_by": [],
+  "layer0_boundary_ids": [
+    "P03-CANDIDATE-CLAIM-NO-APPROVAL-R1"
+  ],
+  "layer_id": "L3",
+  "lifecycle_status": "ACTIVE",
+  "limitation_ids": [
+    "P02-LIM-01",
+    "P02-LIM-02",
+    "P02-LIM-03",
+    "P02-LIM-04",
+    "P02-LIM-05",
+    "P02-LIM-06",
+    "P02-LIM-07",
+    "P02-LIM-08",
+    "P02-LIM-09",
+    "P02-LIM-10",
+    "P02-LIM-11",
+    "P02-LIM-12",
+    "P02-LIM-13",
+    "P02-LIM-14",
+    "P03-LIM-SELECTIVE-NO-LEGAL-RULE-R1",
+    "P03-LIM-MEMBER-DISAGREEMENT-UNAVAILABLE-R1",
+    "P03-LIM-GENUINE-LOGITS-R1",
+    "P03-LIM-BINARY-UNCERTAINTY-ALIAS-R1",
+    "P03-LIM-CONFORMAL-PROXY-R1",
+    "P03-LIM-SPARSE-SUPPORT-POLICY-R1",
+    "P03-LIM-FAILED-ATTEMPT-PRESERVATION-R1"
+  ],
+  "limitations": [
+    "P02-LIM-01",
+    "P02-LIM-02",
+    "P02-LIM-03",
+    "P02-LIM-04",
+    "P02-LIM-05",
+    "P02-LIM-06",
+    "P02-LIM-07",
+    "P02-LIM-08",
+    "P02-LIM-09",
+    "P02-LIM-10",
+    "P02-LIM-11",
+    "P02-LIM-12",
+    "P02-LIM-13",
+    "P02-LIM-14",
+    "P03-LIM-SELECTIVE-NO-LEGAL-RULE-R1",
+    "P03-LIM-MEMBER-DISAGREEMENT-UNAVAILABLE-R1",
+    "P03-LIM-GENUINE-LOGITS-R1",
+    "P03-LIM-BINARY-UNCERTAINTY-ALIAS-R1",
+    "P03-LIM-CONFORMAL-PROXY-R1",
+    "P03-LIM-SPARSE-SUPPORT-POLICY-R1",
+    "P03-LIM-FAILED-ATTEMPT-PRESERVATION-R1"
+  ],
+  "lineage_parent_ids": [
+    "P03-PROD-038",
+    "P03-PROD-045",
+    "P03-PROD-046",
+    "P03-PROD-047",
+    "P03-PROD-062",
+    "P03-PROD-063"
+  ],
+  "payload_sha256": "d5d90604866173c809a704210052fc019961bd1de094c4d8096346ae29bcc3f0",
+  "phase_id": "P03",
+  "producer_module": "L3-M08",
+  "prohibited_uses": [
+    "retuning, evaluation truth, safety inference, upstream mutation"
+  ],
+  "protocol_identity": {
+    "sha256": "dc46b87cb802d1a6a3ab0efd3dc6db6be5c3b5c7125c54e95a9cdbea8eef797d",
+    "snapshot_id": "IHARQ-P03-L3-OFFICIAL-STRETCH-C-EXECUTION-FREEZE-R1"
+  },
+  "protocol_snapshot_id": "IHARQ-P03-L3-OFFICIAL-STRETCH-C-EXECUTION-FREEZE-R1",
+  "readiness_facets": {
+    "claim_inputs_candidate_only": true,
+    "limitation_rows": 21,
+    "metric_analysis_normalized_rows": 13585,
+    "negative_result_rows": 3618,
+    "stage21_final_disposition": "ACCEPT/FREEZE",
+    "stage22_raw_handoffs_reproduced": true,
+    "statistics_executed_in_stage22": false,
+    "statistics_input_rows": 13585
+  },
+  "record_family_versions": {
+    "CalibrationDashboardMetricRecord": {
+      "schema_path": "schemas/candidates/p03/CalibrationDashboardMetricRecord.schema.json",
+      "status": "CANDIDATE_REGISTRY_PATCH_REQUIRED"
+    },
+    "CalibrationEligibilityTable": {
+      "schema_path": "schemas/candidates/p03/CalibrationEligibilityTable.schema.json",
+      "status": "CANDIDATE_REGISTRY_PATCH_REQUIRED"
+    },
+    "CalibrationRecord": {
+      "schema_path": "schemas/records/p03/CalibrationRecord.schema.json",
+      "status": "GOVERNED_P03_PROFILE"
+    },
+    "HighConfidenceWrongTable": {
+      "schema_path": "schemas/records/p03/HighConfidenceWrongTable.schema.json",
+      "status": "GOVERNED_P03_PROFILE"
+    },
+    "Layer3MatchedOperatingPointTable": {
+      "schema_path": "schemas/records/p03/Layer3MatchedOperatingPointTable.schema.json",
+      "status": "GOVERNED_P03_PROFILE"
+    },
+    "LeakageWarningRecord": {
+      "schema_path": "schemas/records/p03/LeakageWarningRecord.schema.json",
+      "status": "GOVERNED_P03_PROFILE"
+    },
+    "P03HandoffManifest": {
+      "schema_path": "schemas/records/p03/P03HandoffManifest.schema.json",
+      "status": "GOVERNED_P03_PROFILE"
+    },
+    "P03IntakeLedger": {
+      "schema_path": "schemas/records/p03/P03IntakeLedger.schema.json",
+      "status": "GOVERNED_P03_PROFILE"
+    },
+    "ReliabilityAuditReport": {
+      "schema_path": "schemas/records/p03/ReliabilityAuditReport.schema.json",
+      "status": "GOVERNED_P03_PROFILE"
+    },
+    "RiskCoverageCurveSource": {
+      "schema_path": "schemas/records/p03/RiskCoverageCurveSource.schema.json",
+      "status": "GOVERNED_P03_PROFILE"
+    },
+    "SelectivePredictionRecord": {
+      "schema_path": "schemas/records/p03/SelectivePredictionRecord.schema.json",
+      "status": "GOVERNED_P03_PROFILE"
+    },
+    "SplitIntegrityReport": {
+      "schema_path": "schemas/records/p03/SplitIntegrityReport.schema.json",
+      "status": "GOVERNED_P03_PROFILE"
+    },
+    "ThresholdRegistryRecord": {
+      "schema_path": "schemas/records/p03/ThresholdRegistryRecord.schema.json",
+      "status": "GOVERNED_P03_PROFILE"
+    },
+    "UncertaintyRecord": {
+      "schema_path": "schemas/records/p03/UncertaintyRecord.schema.json",
+      "status": "GOVERNED_P03_PROFILE"
+    }
+  },
+  "record_id": "P03-P03HandoffManifest-c30ef80dce466b6126f1",
+  "run_id": "P03-L3-OFFICIAL-09ca82c743e0411a",
+  "run_identity": {
+    "run_id": "P03-L3-OFFICIAL-09ca82c743e0411a",
+    "source_manifest_sha256": "2753878607d1573b8d95fa8424cf25f666705f6b962353ecc27e64d7850e3017"
+  },
+  "schema_id": "P03HandoffManifest.v1",
+  "schema_version": "1.0.0",
+  "source_artifact_ids": [
+    "P03-PROD-038",
+    "P03-PROD-039",
+    "P03-PROD-040",
+    "P03-PROD-045",
+    "P03-PROD-046",
+    "P03-PROD-047",
+    "P03-PROD-062",
+    "P03-PROD-063"
+  ],
+  "source_sha256s": [
+    "a8a7caa15722a0eabecda8339967d74e55ddf322c04c129dba8673fcfec0f7c1",
+    "bdf19ab7c456a50af1596c761655749a73c6a87f1aff12da40b54025f7a3ab08",
+    "3e7167373f9d97386773783e1be8637c2e340f7c8347d6a811961377715603f7",
+    "b43221bf4b1c7b763557d55a48cb4ecf87efade5795626ad72c2216eb8b2c1eb",
+    "a593e4d2e35bba007f9c129b142320301e2530edec9c8b5724262a8788c4a22d",
+    "087812be5e68900e5674766a69197ae3af1d800d22a2b2e72230d89d9a029b2c",
+    "a5e0adf43f3cfeff8f275eb5a5d582f6e378957c25ab8d743893a0b455a00e90",
+    "af5a78021474731997d4a8f0cc11ff4ca430ab3271fd741ef8ffd61ab434ee59",
+    "4e6b9117d070c1a0737b72ffabdc72a2c5ba5b2704bfa92e2bdb053e1a3a49a0",
+    "e1f786ec9f7c3d46dd29a8569d4076c83a1e33493ff32fb4530c02134142862d"
+  ],
+  "supersedes": [],
+  "terminal_status": "SUCCESS"
+}

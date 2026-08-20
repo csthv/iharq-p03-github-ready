@@ -1,0 +1,37 @@
+{
+  "merge_id": "IHARQ-CUMULATIVE-P00-P01-GITHUB-MERGE-R1",
+  "generated_date": "2026-08-08",
+  "sources": [
+    {
+      "phase": "P00",
+      "artifact": "IHARQ_Phase_0_GitHub_Scholarship_Ready_R2.zip",
+      "sha256": "3dcbe3e82ec7254ce1bd40568b36409d56050538e69a7264f8f1e431be019ef0",
+      "size_bytes": 9135095,
+      "published_expected_sha256": "3dcbe3e82ec7254ce1bd40568b36409d56050538e69a7264f8f1e431be019ef0",
+      "role": "CLEAN_GITHUB_PREDECESSOR"
+    },
+    {
+      "phase": "P00",
+      "artifact": "IHARQ_Phase_0_GitHub_Release_Assets_R2.zip",
+      "sha256": "db09e25436252af1739e2d1e8bc8996ae85c24a8f6728e757a9e67e100282619",
+      "size_bytes": 27326109,
+      "role": "P00_RELEASE_ASSETS_PROVENANCE"
+    },
+    {
+      "phase": "P01",
+      "artifact": "IHARQ_P01_Finalized_GitHub_Ready_R2.zip",
+      "sha256": "e367d9849684b9e71cedc793da0be0eea02c934fece67513de1fee08a167f2b7",
+      "size_bytes": 51140079,
+      "expected_sha256": "e367d9849684b9e71cedc793da0be0eea02c934fece67513de1fee08a167f2b7",
+      "role": "FINALIZED_P01_GITHUB_PREDECESSOR"
+    }
+  ],
+  "path_overlap": {
+    "common_paths": 70,
+    "byte_identical": 62,
+    "different": 8,
+    "only_p00": 518,
+    "only_p01": 13266
+  },
+  "transient_exclusions": 112
+}

@@ -1,0 +1,51 @@
+{
+  "stage_id": "23",
+  "status": "SUCCESS",
+  "attempt_id": "d0d83fe9ab61",
+  "inputs": {},
+  "input_hashes": {},
+  "outputs": {
+    "status": "PASS",
+    "evidence_sufficiency": {
+      "status": "PASS",
+      "missing": []
+    },
+    "state": {
+      "a0_complete": true,
+      "a4_complete": true,
+      "a4_role_controls_complete": true,
+      "c4_c5_complete": true,
+      "a4_burden_complete": true,
+      "failure_evidence": true,
+      "training_policy_challenger_complete": true,
+      "figure_table_sources": true,
+      "handoffs": true,
+      "p03_complete": true,
+      "readiness_record": true,
+      "security_pass": true
+    },
+    "artifact": "stage_artifacts/23_sufficiency.json"
+  },
+  "output_hashes": {
+    "status": "727e9bd17b077ba162e13ba877135cc6fbc6b30f83da0b34b3e20233f1cc885f",
+    "evidence_sufficiency": "5ed6c9312fda100cc9d2ff645d4a70a63d4a2d12ee708e38bf22e40c6dd7dcc1",
+    "state": "a608538ccfb1841669be99461d1a2e905c20632bcd26ee2c102d0e8b29986788",
+    "artifact": "6a971f08471f417c384792b5ff9a0278f776d75a4052fe3ea9457daeb63e29c0"
+  },
+  "dependencies": [
+    "22"
+  ],
+  "elapsed_seconds": 0.045623779296875,
+  "log_path": "logs/stage_23_d0d83fe9ab61.log",
+  "heartbeat_write_errors": [],
+  "observability_status": "PASS",
+  "blockers": [],
+  "observations": [],
+  "revision_fingerprint": {
+    "notebook_revision": "R4",
+    "source_sha256": "AUTHORING_FIXTURE_SOURCE",
+    "config_sha256": "AUTHORING_FIXTURE_CONFIG",
+    "stage_plan_sha256": "AUTHORING_FIXTURE_STAGE_PLAN",
+    "scientific_freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5"
+  }
+}

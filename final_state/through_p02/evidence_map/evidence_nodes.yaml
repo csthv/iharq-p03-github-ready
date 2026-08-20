@@ -1,0 +1,1083 @@
+canonical_map_id: IHARQ-CUMULATIVE-EVIDENCE-MAP-THROUGH-P02-R1
+evidence_nodes:
+- evidence_id: P00P01-EVID-001
+  phase: P00
+  evidence_type: PRESERVED_PREDECESSOR_CLAIM_SUPPORT
+  canonical_status: PRESERVED_CURRENT_OR_HISTORICAL
+  analysis_role: ENGINEERING_FOUNDATION_CONFORMANCE
+  paths_or_pointers:
+  - P00_EVIDENCE_MAP_PREDECESSOR_ROW:P00-CLM-001/v2
+  - P00_ANALYSIS_RELEASE:P00-ANALYSIS-RELEASE-R2
+  run_ids:
+  - P00-EXECUTION-RELEASE-R2
+  record_ids: []
+  claim_ids:
+  - P00-CLM-001/v2
+  limitations:
+  - P00-LIM-002
+  - P00-LIM-003
+  - P00-LIM-004
+  - P00-LIM-L0-001
+  disposition: MAPPED
+- evidence_id: P00P01-EVID-002
+  phase: P00
+  evidence_type: PRESERVED_PREDECESSOR_CLAIM_SUPPORT
+  canonical_status: PRESERVED_CURRENT_OR_HISTORICAL
+  analysis_role: ENGINEERING_FOUNDATION_CONFORMANCE
+  paths_or_pointers:
+  - P00_EVIDENCE_MAP_PREDECESSOR_ROW:P00-CLM-002/v2
+  - P00_ANALYSIS_RELEASE:P00-ANALYSIS-RELEASE-R2
+  run_ids:
+  - P00-EXECUTION-RELEASE-R2
+  record_ids: []
+  claim_ids:
+  - P00-CLM-002/v2
+  limitations:
+  - P00-LIM-001
+  - P00-LIM-002
+  - P00-LIM-003
+  - P00-LIM-004
+  disposition: MAPPED
+- evidence_id: P00P01-EVID-003
+  phase: P00
+  evidence_type: PRESERVED_PREDECESSOR_CLAIM_SUPPORT
+  canonical_status: PRESERVED_CURRENT_OR_HISTORICAL
+  analysis_role: ENGINEERING_FOUNDATION_CONFORMANCE
+  paths_or_pointers:
+  - P00_EVIDENCE_MAP_PREDECESSOR_ROW:P00-CLM-003/v2
+  - P00_ANALYSIS_RELEASE:P00-ANALYSIS-RELEASE-R2
+  run_ids:
+  - P00-EXECUTION-RELEASE-R2
+  record_ids: []
+  claim_ids:
+  - P00-CLM-003/v2
+  limitations:
+  - P00-LIM-004
+  - P00-LIM-L0-001
+  disposition: MAPPED
+- evidence_id: P00P01-EVID-004
+  phase: P00
+  evidence_type: PRESERVED_PREDECESSOR_CLAIM_SUPPORT
+  canonical_status: PRESERVED_CURRENT_OR_HISTORICAL
+  analysis_role: ENGINEERING_FOUNDATION_CONFORMANCE
+  paths_or_pointers:
+  - P00_EVIDENCE_MAP_PREDECESSOR_ROW:P00-CLM-004/v2
+  - P00_ANALYSIS_RELEASE:P00-ANALYSIS-RELEASE-R2
+  run_ids:
+  - P00-EXECUTION-RELEASE-R2
+  record_ids: []
+  claim_ids:
+  - P00-CLM-004/v2
+  limitations:
+  - P00-LIM-004
+  - P00-LIM-L0-001
+  disposition: MAPPED
+- evidence_id: P00P01-EVID-005
+  phase: P00
+  evidence_type: PRESERVED_PREDECESSOR_CLAIM_SUPPORT
+  canonical_status: PRESERVED_CURRENT_OR_HISTORICAL
+  analysis_role: ENGINEERING_FOUNDATION_CONFORMANCE
+  paths_or_pointers:
+  - P00_EVIDENCE_MAP_PREDECESSOR_ROW:P00-CLM-005/v2
+  - P00_ANALYSIS_RELEASE:P00-ANALYSIS-RELEASE-R2
+  run_ids:
+  - P00-EXECUTION-RELEASE-R2
+  record_ids: []
+  claim_ids:
+  - P00-CLM-005/v2
+  limitations:
+  - P00-LIM-003
+  - P00-LIM-004
+  - P00-LIM-L0-001
+  disposition: MAPPED
+- evidence_id: P00P01-EVID-006
+  phase: P00
+  evidence_type: PRESERVED_PREDECESSOR_CLAIM_SUPPORT
+  canonical_status: PRESERVED_CURRENT_OR_HISTORICAL
+  analysis_role: ENGINEERING_FOUNDATION_CONFORMANCE
+  paths_or_pointers:
+  - P00_EVIDENCE_MAP_PREDECESSOR_ROW:P00-CLM-006/v2
+  - P00_ANALYSIS_RELEASE:P00-ANALYSIS-RELEASE-R2
+  run_ids:
+  - P00-EXECUTION-RELEASE-R2
+  record_ids: []
+  claim_ids:
+  - P00-CLM-006/v2
+  limitations:
+  - P00-LIM-003
+  - P00-LIM-004
+  - P00-LIM-L0-001
+  disposition: MAPPED
+- evidence_id: P00P01-EVID-007
+  phase: P00
+  evidence_type: PRESERVED_PREDECESSOR_CLAIM_SUPPORT
+  canonical_status: PRESERVED_CURRENT_OR_HISTORICAL
+  analysis_role: ENGINEERING_FOUNDATION_CONFORMANCE
+  paths_or_pointers:
+  - P00_EVIDENCE_MAP_PREDECESSOR_ROW:P00-CLM-007/v2
+  - P00_ANALYSIS_RELEASE:P00-ANALYSIS-RELEASE-R2
+  run_ids:
+  - P00-EXECUTION-RELEASE-R2
+  record_ids: []
+  claim_ids:
+  - P00-CLM-007/v2
+  limitations:
+  - P00-LIM-001
+  - P00-LIM-002
+  - P00-LIM-003
+  disposition: MAPPED
+- evidence_id: P00P01-EVID-008
+  phase: P01
+  evidence_type: PRESERVED_PREDECESSOR_CLAIM_SUPPORT
+  canonical_status: PRESERVED_CURRENT_OR_HISTORICAL
+  analysis_role: PROVENANCE_EVIDENCE
+  paths_or_pointers:
+  - records/datasets/BNCI2014_001/IHARQ-DATASETRECORD-20260806-42c424800627b6ee.json
+  - records/datasets/Lee2019_MI/IHARQ-DATASETRECORD-20260806-adb91f25a65e588e.json
+  - records/datasets/PhysioNetMI/IHARQ-DATASETRECORD-20260806-66309cda68771bef.json
+  - reports/phase_01/sources/source_version_license_report.json
+  run_ids:
+  - P01-STAGE-05
+  - P01-STAGE-06
+  - P01-STAGE-07
+  record_ids:
+  - IHARQ-DATASETRECORD-20260806-66309cda68771bef
+  - IHARQ-DATASETRECORD-20260806-42c424800627b6ee
+  - IHARQ-DATASETRECORD-20260806-adb91f25a65e588e
+  claim_ids:
+  - P01-CLM-001/v1
+  limitations:
+  - PUBLIC_EEG_ONLY
+  - NON_CLINICAL
+  - BINARY_MI_BRANCH_SCOPE
+  disposition: MAPPED
+- evidence_id: P00P01-EVID-009
+  phase: P01
+  evidence_type: PRESERVED_PREDECESSOR_CLAIM_SUPPORT
+  canonical_status: PRESERVED_CURRENT_OR_HISTORICAL
+  analysis_role: VALIDATION_EVIDENCE
+  paths_or_pointers:
+  - records/splits/P01-L1-SPLIT-OFFICIAL-R2/IHARQ-SPLITRECORD-20260806-e4e371d332c61e36.json
+  - reports/phase_01/splits/disjointness.json
+  - reports/phase_01/leakage/leakage_contamination.json
+  run_ids:
+  - P01-STAGE-11
+  - P01-STAGE-17
+  record_ids:
+  - IHARQ-SPLITRECORD-20260806-e4e371d332c61e36
+  claim_ids:
+  - P01-CLM-002/v1
+  limitations:
+  - IMPLEMENTED_CHECKS_ONLY
+  disposition: MAPPED
+- evidence_id: P00P01-EVID-010
+  phase: P01
+  evidence_type: PRESERVED_PREDECESSOR_CLAIM_SUPPORT
+  canonical_status: PRESERVED_CURRENT_OR_HISTORICAL
+  analysis_role: INTEGRITY_EVIDENCE
+  paths_or_pointers:
+  - records/windows/
+  - external_artifact_pointers/derived_windows_dataset.json
+  run_ids:
+  - P01-STAGE-13
+  - P01-STAGE-14
+  - P01-STAGE-16
+  record_ids:
+  - IHARQ-SPLITRECORD-20260806-e4e371d332c61e36
+  - IHARQ-PREPROCESSINGRECORD-20260806-a11b59eeb3861a08
+  claim_ids:
+  - P01-CLM-003/v1
+  limitations:
+  - NO_MODEL_EFFECT_INFERENCE
+  disposition: MAPPED
+- evidence_id: P00P01-EVID-011
+  phase: P01
+  evidence_type: PRESERVED_PREDECESSOR_CLAIM_SUPPORT
+  canonical_status: PRESERVED_CURRENT_OR_HISTORICAL
+  analysis_role: INTEGRITY_EVIDENCE
+  paths_or_pointers:
+  - reports/phase_01/storage/existing_core_dataset_adoption.json
+  - external_artifact_pointers/derived_windows_dataset.json
+  run_ids:
+  - P01-STAGE-14
+  - P01-STAGE-15
+  - P01-STAGE-20
+  record_ids:
+  - P01-L1-DERIVED-WINDOWS-d03f0a7c869dd95a-20260806222242-68a91473
+  - IHARQ-SPLITRECORD-20260806-e4e371d332c61e36
+  - IHARQ-PREPROCESSINGRECORD-20260806-a11b59eeb3861a08
+  claim_ids:
+  - P01-CLM-004/v1
+  limitations:
+  - PRIVATE_KAGGLE_EXTERNAL_ARTIFACT_ACCESS
+  - SOURCE_LICENSE_REDISTRIBUTION_CONSTRAINTS
+  disposition: MAPPED
+- evidence_id: P00P01-EVID-012
+  phase: P01
+  evidence_type: PRESERVED_PREDECESSOR_CLAIM_SUPPORT
+  canonical_status: PRESERVED_CURRENT_OR_HISTORICAL
+  analysis_role: VALIDATION_EVIDENCE
+  paths_or_pointers:
+  - reports/phase_01/quality/quality_coverage.json
+  - records/quality/
+  run_ids:
+  - P01-STAGE-13
+  - P01-STAGE-16
+  record_ids: []
+  claim_ids:
+  - P01-CLM-005/v1
+  limitations:
+  - SOFT_FLAG_NOT_EQUIVALENT_TO_CORRUPTION
+  disposition: MAPPED
+- evidence_id: P00P01-EVID-013
+  phase: P01
+  evidence_type: PRESERVED_PREDECESSOR_CLAIM_SUPPORT
+  canonical_status: PRESERVED_CURRENT_OR_HISTORICAL
+  analysis_role: READINESS_EVIDENCE
+  paths_or_pointers:
+  - manifests/phase_01/layer1_ablation_readiness_l1_v1.json
+  run_ids:
+  - P01-STAGE-18
+  record_ids: []
+  claim_ids:
+  - P01-CLM-006/v1
+  limitations:
+  - NO_ABLATION_EFFECTIVENESS_IN_P01
+  disposition: MAPPED
+- evidence_id: P00P01-EVID-014
+  phase: P01
+  evidence_type: PRESERVED_PREDECESSOR_CLAIM_SUPPORT
+  canonical_status: PRESERVED_CURRENT_OR_HISTORICAL
+  analysis_role: READINESS_EVIDENCE
+  paths_or_pointers:
+  - external_artifact_pointers/a4_window_family_dataset.json
+  - reports/phase_01/storage/a4_derived_output_storage_actual_precommit.json
+  - config_snapshot/p01_l1_a4_window_family_freeze_R2.json
+  run_ids:
+  - P01-STAGE-14
+  - P01-STAGE-15
+  - P01-STAGE-18
+  record_ids:
+  - P01-L1-A4-DERIVED-WINDOWS-4cd080393345e8aa-20260807143013-663eab13
+  - P01-L1-A4-WINDOW-FAMILY-FREEZE-R2
+  claim_ids:
+  - P01-CLM-007/v1
+  limitations:
+  - A4_R2_RETROSPECTIVE_FEASIBILITY_ORIGIN_NOT_CONFIRMATORY_IN_P01
+  - A4_EFFECTIVENESS_NOT_EXECUTED
+  disposition: MAPPED
+- evidence_id: P00P01-EVID-015
+  phase: P01
+  evidence_type: PRESERVED_PREDECESSOR_CLAIM_SUPPORT
+  canonical_status: PRESERVED_CURRENT_OR_HISTORICAL
+  analysis_role: EXECUTION_EVIDENCE
+  paths_or_pointers:
+  - reports/phase_01/tests/stage_results.json
+  - gate_decision.json
+  - reports/phase_01/tests/phase0_and_runtime_regression.json
+  - reports/phase_01/repair_reentry.json
+  - checksums.sha256
+  run_ids:
+  - P01-STAGE-04
+  - P01-STAGE-23
+  - P01-STAGE-24
+  - P01-STAGE-26
+  record_ids: []
+  claim_ids:
+  - P01-CLM-008/v1
+  limitations:
+  - NO_EFFECTIVENESS_INFERENCE
+  disposition: MAPPED
+- evidence_id: P00P01-EVID-016
+  phase: P01
+  evidence_type: PRESERVED_PREDECESSOR_CLAIM_SUPPORT
+  canonical_status: PRESERVED_CURRENT_OR_HISTORICAL
+  analysis_role: EXECUTION_EVIDENCE
+  paths_or_pointers:
+  - environment_manifest.json
+  - environment_amendment.json
+  run_ids:
+  - P01-STAGE-01
+  - P01-STAGE-03
+  record_ids:
+  - P01-L1-KAGGLE-ENV-FREEZE-R5
+  - P01-L1-KAGGLE-ADAPTIVE-DISK-R1
+  claim_ids:
+  - P01-CLM-009/v1
+  limitations:
+  - ACTUAL_RUNTIME_PYTHON_3_12_13_WITH_COMPATIBILITY_AMENDMENT
+  - ADAPTIVE_DISK_RESOURCE_AMENDMENT
+  disposition: MAPPED
+- evidence_id: P00P01-EVID-017
+  phase: P01
+  evidence_type: PRESERVED_PREDECESSOR_CLAIM_SUPPORT
+  canonical_status: PRESERVED_CURRENT_OR_HISTORICAL
+  analysis_role: READINESS_EVIDENCE
+  paths_or_pointers:
+  - handoffs/phase_01_to_phase_02.yaml
+  - phase2_handoff/phase_01_to_phase_02.yaml
+  run_ids:
+  - P01-STAGE-22
+  - P01-STAGE-23
+  - P01-STAGE-26
+  record_ids:
+  - IHARQ-DATASETRECORD-20260806-66309cda68771bef
+  - IHARQ-DATASETRECORD-20260806-42c424800627b6ee
+  - IHARQ-DATASETRECORD-20260806-adb91f25a65e588e
+  - IHARQ-LABELMAPRECORD-20260806-4379781a3b5f5ea9
+  - IHARQ-LABELMAPRECORD-20260806-587dcfff81307768
+  - IHARQ-LABELMAPRECORD-20260806-b551cfd20335896c
+  - IHARQ-SPLITRECORD-20260806-e4e371d332c61e36
+  - IHARQ-PREPROCESSINGRECORD-20260806-a11b59eeb3861a08
+  - P01-L1-DERIVED-WINDOWS-d03f0a7c869dd95a-20260806222242-68a91473
+  - P01-L1-A4-DERIVED-WINDOWS-4cd080393345e8aa-20260807143013-663eab13
+  claim_ids:
+  - P01-CLM-010/v1
+  limitations:
+  - DOCUMENTARY_CLOSURE_SEQUENCE_REMAINS
+  disposition: MAPPED
+- evidence_id: P00P01-EVID-018
+  phase: P01
+  evidence_type: PRESERVED_PREDECESSOR_CLAIM_SUPPORT
+  canonical_status: PRESERVED_CURRENT_OR_HISTORICAL
+  analysis_role: UNSUPPORTED_CURRENTLY
+  paths_or_pointers:
+  - external_artifact_pointers/a4_window_family_dataset.json
+  - config_snapshot/p01_l1_a4_window_family_freeze_R2.json
+  run_ids:
+  - P01-STAGE-14
+  - P01-STAGE-15
+  record_ids:
+  - P01-L1-A4-DERIVED-WINDOWS-4cd080393345e8aa-20260807143013-663eab13
+  - P01-L1-A4-WINDOW-FAMILY-FREEZE-R2
+  claim_ids:
+  - P01-CLM-011/v1
+  limitations:
+  - A4_EFFECTIVENESS_NOT_EXECUTED
+  - A4_R2_RETROSPECTIVE_FEASIBILITY_ORIGIN_NOT_CONFIRMATORY_IN_P01
+  disposition: MAPPED
+- evidence_id: P00P01-EVID-019
+  phase: P01
+  evidence_type: PRESERVED_PREDECESSOR_CLAIM_SUPPORT
+  canonical_status: PRESERVED_CURRENT_OR_HISTORICAL
+  analysis_role: PROHIBITED_BY_EVIDENCE_SCOPE
+  paths_or_pointers:
+  - reports/phase_01/sources/source_version_license_report.json
+  - gate_decision.json
+  run_ids:
+  - P01-STAGE-06
+  - P01-STAGE-26
+  record_ids:
+  - IHARQ-DATASETRECORD-20260806-66309cda68771bef
+  - IHARQ-DATASETRECORD-20260806-42c424800627b6ee
+  - IHARQ-DATASETRECORD-20260806-adb91f25a65e588e
+  claim_ids:
+  - P01-CLM-012/v1
+  limitations:
+  - PUBLIC_EEG_ONLY
+  - NON_CLINICAL
+  - NO_DEPLOYMENT_CLAIM
+  disposition: MAPPED
+- evidence_id: P02-EVID-001
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/a0_completion.json
+  size_bytes: 1029
+  sha256: 2e925e6e5fa223a518777f8b9cfa565b897c89ea9cfcdc2ae9bc54c32df1eb7e
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids:
+  - P02-FIND-001
+  claim_ids:
+  - P02-CLM-001/v1
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: MAPPED_TO_FINDING_OR_SUPPORTING_ANALYSIS
+- evidence_id: P02-EVID-002
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/a0_closure_source_manifest.json
+  size_bytes: 525
+  sha256: 4d1d0ab5494e8a0a040cd5443f4cbba339cc1e4b009df0ca9e06df765837f1c6
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids: []
+  claim_ids: []
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: SUPPORTING_ANALYSIS_CONTRACT_OR_DIAGNOSTIC
+- evidence_id: P02-EVID-003
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/a0_participant_metrics.csv
+  size_bytes: 732426
+  sha256: 6497ec474de6ba4750377af268ae79b0c13f25813006aa687505d3ee3d82fccd
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids:
+  - P02-FIND-001
+  claim_ids:
+  - P02-CLM-001/v1
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: MAPPED_TO_FINDING_OR_SUPPORTING_ANALYSIS
+- evidence_id: P02-EVID-004
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/a0_statistics.json
+  size_bytes: 15913
+  sha256: 06200e70d3a1af4a4f4a12d35f03998a4681c7c0cab983199ee96eab7a947390
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids:
+  - P02-FIND-003
+  claim_ids:
+  - P02-CLM-003/v1
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: MAPPED_TO_FINDING_OR_SUPPORTING_ANALYSIS
+- evidence_id: P02-EVID-005
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/a4_completion.json
+  size_bytes: 1245
+  sha256: 0489a31df63523e5df1264fd2c1cf1738b6978ca4bc91fada20fab26a0cfcb90
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids:
+  - P02-FIND-009
+  claim_ids:
+  - P02-CLM-007/v1
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: MAPPED_TO_FINDING_OR_SUPPORTING_ANALYSIS
+- evidence_id: P02-EVID-006
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/a4_participant_metrics.csv
+  size_bytes: 847399
+  sha256: be0b5814900ead978ec6393e62bf06c22446cf9ce26747d6c15a46f28163b51c
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids: []
+  claim_ids: []
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: SUPPORTING_ANALYSIS_CONTRACT_OR_DIAGNOSTIC
+- evidence_id: P02-EVID-007
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/a4_role_control_statistics.json
+  size_bytes: 613986
+  sha256: 2a2ea0c4f0b8c0d98caaec28544907de07112b74ea6c5e22874b02012b046688
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids:
+  - P02-FIND-010
+  claim_ids: []
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: MAPPED_TO_FINDING_OR_SUPPORTING_ANALYSIS
+- evidence_id: P02-EVID-008
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/a4_role_control_participant_comparisons.csv
+  size_bytes: 180508
+  sha256: 75cc212bc1f971e3b52a84181b9760708da03051d647fd8f8e6ef17b0420583d
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids: []
+  claim_ids: []
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: SUPPORTING_ANALYSIS_CONTRACT_OR_DIAGNOSTIC
+- evidence_id: P02-EVID-009
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/a4_c4_c5_statistics.json
+  size_bytes: 379930
+  sha256: d713c65a0d90a4628e763ac8e1f47c2706868bb9ce61813a32fd0e46d0c35f18
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids:
+  - P02-FIND-011
+  claim_ids:
+  - P02-CLM-008/v1
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: MAPPED_TO_FINDING_OR_SUPPORTING_ANALYSIS
+- evidence_id: P02-EVID-010
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/a4_c4_c5_comparison_artifacts.jsonl
+  size_bytes: 448075
+  sha256: 82337c19356ea1cd57ac9f43d84bcac7583f640ff709b537212ea12153654c7d
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids: []
+  claim_ids: []
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: SUPPORTING_ANALYSIS_CONTRACT_OR_DIAGNOSTIC
+- evidence_id: P02-EVID-011
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/a4_c4_c5_participant_comparisons.csv
+  size_bytes: 201170
+  sha256: 0559b86009e53f7e859634edf065516c0344e9b7471a54a9c3d954b5e2db40e9
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids: []
+  claim_ids: []
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: SUPPORTING_ANALYSIS_CONTRACT_OR_DIAGNOSTIC
+- evidence_id: P02-EVID-012
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/a4_burden_source.csv
+  size_bytes: 301185
+  sha256: c56dc18edc73e0b606fd2f806fe39e40433b7fa30d1a95729f7ae7184f102406
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids: []
+  claim_ids: []
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: SUPPORTING_ANALYSIS_CONTRACT_OR_DIAGNOSTIC
+- evidence_id: P02-EVID-013
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/low_label_curve_summary.json
+  size_bytes: 1661
+  sha256: 4ab8f190fdf84ef956614cea458b35fcf2b5b10c4d415953a2b77683572924d7
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids:
+  - P02-FIND-005
+  claim_ids:
+  - P02-CLM-004/v1
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: MAPPED_TO_FINDING_OR_SUPPORTING_ANALYSIS
+- evidence_id: P02-EVID-014
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/low_label_metric_source.csv
+  size_bytes: 28686
+  sha256: 0123b1513da263b8c468024a1d28532d1fbc52e5faffb2bdc00e285b5213f901
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids:
+  - P02-FIND-005
+  claim_ids:
+  - P02-CLM-004/v1
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: MAPPED_TO_FINDING_OR_SUPPORTING_ANALYSIS
+- evidence_id: P02-EVID-015
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/subject_profile_summary.json
+  size_bytes: 179
+  sha256: 2b27818f56a4f9116c358eb21a509302506ca06bf7afce7dbd76d466e372f977
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids: []
+  claim_ids: []
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: SUPPORTING_ANALYSIS_CONTRACT_OR_DIAGNOSTIC
+- evidence_id: P02-EVID-016
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/subject_profile_metric_source.csv
+  size_bytes: 732426
+  sha256: 6497ec474de6ba4750377af268ae79b0c13f25813006aa687505d3ee3d82fccd
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids:
+  - P02-FIND-004
+  claim_ids: []
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: MAPPED_TO_FINDING_OR_SUPPORTING_ANALYSIS
+- evidence_id: P02-EVID-017
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/session_profile_metric_source.csv
+  size_bytes: 785609
+  sha256: 28e6416ddf80967582d32f5f047ec3c1239a240b01aff7507754537269ea397a
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids: []
+  claim_ids: []
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: SUPPORTING_ANALYSIS_CONTRACT_OR_DIAGNOSTIC
+- evidence_id: P02-EVID-018
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/failure_negative_summary.json
+  size_bytes: 186
+  sha256: 678b0675cc24a5ab264523909f1b25b23a545f7a7e5aaa4c93e0bac1d65850ae
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids:
+  - P02-FIND-013
+  claim_ids:
+  - P02-CLM-010/v1
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: MAPPED_TO_FINDING_OR_SUPPORTING_ANALYSIS
+- evidence_id: P02-EVID-019
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/figure_table_source_manifest.json
+  size_bytes: 191
+  sha256: 4b6e51d6f47006a477655dc48f427762474536514d094d4973a347edeea51f0b
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids: []
+  claim_ids: []
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: SUPPORTING_ANALYSIS_CONTRACT_OR_DIAGNOSTIC
+- evidence_id: P02-EVID-020
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/training_policy_challenger_completion.json
+  size_bytes: 839
+  sha256: bdb5061233ec7a07abad1c16cdab9a2948dbe1b585845153618f31933a64abcd
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids: []
+  claim_ids: []
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: SUPPORTING_ANALYSIS_CONTRACT_OR_DIAGNOSTIC
+- evidence_id: P02-EVID-021
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/training_policy_challenger_statistics.json
+  size_bytes: 1574
+  sha256: 50c1c285493eeff60e1486cf324964e5b91a98e19ff00594bd4583e40af3ec0e
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids:
+  - P02-FIND-007
+  claim_ids:
+  - P02-CLM-006/v1
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: MAPPED_TO_FINDING_OR_SUPPORTING_ANALYSIS
+- evidence_id: P02-EVID-022
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/training_policy_challenger_participant_comparisons.jsonl
+  size_bytes: 30402
+  sha256: 9c8e2fb4587b62a6ce02f355acf75332a40d9e5e7174352b8a8c953460f4b0ee
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids: []
+  claim_ids: []
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: SUPPORTING_ANALYSIS_CONTRACT_OR_DIAGNOSTIC
+- evidence_id: P02-EVID-023
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/training_policy_challenger_seed_comparisons.jsonl
+  size_bytes: 14479
+  sha256: 8bc89f18e36cab89b95d85c9b14c95b154bb4ee0276d5947eafa4e2bf021e590
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids: []
+  claim_ids: []
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: SUPPORTING_ANALYSIS_CONTRACT_OR_DIAGNOSTIC
+- evidence_id: P02-EVID-024
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/training_policy_challenger_terminal_states.jsonl
+  size_bytes: 3345
+  sha256: d48e48e21db9c0a61dc2b4b41b9bce9627b7ca4beff02a012cf50a7533e00a7a
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids: []
+  claim_ids: []
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: SUPPORTING_ANALYSIS_CONTRACT_OR_DIAGNOSTIC
+- evidence_id: P02-EVID-025
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/training_policy_sr_probability_calibration_candidates.jsonl
+  size_bytes: 59552
+  sha256: dc55adb57a81de640f401b2e422df768efb714d2b49ff9e1f4d41901cdb03d39
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids: []
+  claim_ids: []
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: SUPPORTING_ANALYSIS_CONTRACT_OR_DIAGNOSTIC
+- evidence_id: P02-EVID-026
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/training_policy_sr_probability_selection.json
+  size_bytes: 6344
+  sha256: a9d885ba537c0213c95107bae09df161059a9645891cdfaf92e57478cc441ace
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids: []
+  claim_ids: []
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: SUPPORTING_ANALYSIS_CONTRACT_OR_DIAGNOSTIC
+- evidence_id: P02-EVID-027
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/stage18_resource_constrained_anchor_budget_deviation.json
+  size_bytes: 3045
+  sha256: facc51d381f45ef9d924442b5190276d3ab723741ee34f60a686657aebde91f3
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids:
+  - P02-FIND-009
+  claim_ids:
+  - P02-CLM-007/v1
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: MAPPED_TO_FINDING_OR_SUPPORTING_ANALYSIS
+- evidence_id: P02-EVID-028
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/stage18S_balanced_sensitivity_R1_preexecution_freeze.json
+  size_bytes: 3095
+  sha256: 79187cfab12fcdc18187aed259733024abd4093a1d8327017e976fa9272775b5
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids: []
+  claim_ids: []
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: SUPPORTING_ANALYSIS_CONTRACT_OR_DIAGNOSTIC
+- evidence_id: P02-EVID-029
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/stage18S_R1_combined_cell_effects.csv
+  size_bytes: 69010
+  sha256: e612a630e027cf01b041b2f4b35eef8879d9e4b85edd4031ae9b4cc970c99f32
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids: []
+  claim_ids: []
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: SUPPORTING_ANALYSIS_CONTRACT_OR_DIAGNOSTIC
+- evidence_id: P02-EVID-030
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/stage18S_R1_participant_paired_effects.csv
+  size_bytes: 161029
+  sha256: cc6d349bdb69b3dc89deb5c675e4c65e3d2f8ccbc5bc78282b2894baf9ae14bc
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids: []
+  claim_ids: []
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: SUPPORTING_ANALYSIS_CONTRACT_OR_DIAGNOSTIC
+- evidence_id: P02-EVID-031
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/stage18S_R1_three_repeat_anchor_stability.csv
+  size_bytes: 13938
+  sha256: 4490e4b1b24e53b2b4728487f54194b7608b4f3f4b6890c34f8b0edd27d0bce2
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids:
+  - P02-FIND-012
+  claim_ids:
+  - P02-CLM-009/v1
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: MAPPED_TO_FINDING_OR_SUPPORTING_ANALYSIS
+- evidence_id: P02-EVID-032
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/stage18S_R1_six_budget_mr00_sensitivity.csv
+  size_bytes: 4075
+  sha256: 3c1ddee8a5d6bacf1577c37d6775eef509ea920d59e4f766aa9ac0a4d4558686
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids:
+  - P02-FIND-012
+  claim_ids:
+  - P02-CLM-009/v1
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: MAPPED_TO_FINDING_OR_SUPPORTING_ANALYSIS
+- evidence_id: P02-EVID-033
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/stage18S_R1_member_training_provenance.csv
+  size_bytes: 38250
+  sha256: 48af59807df7f3586e9eb614223df8efeccd2ea71aaafc0380d586c2a5831723
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids: []
+  claim_ids: []
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: SUPPORTING_ANALYSIS_CONTRACT_OR_DIAGNOSTIC
+- evidence_id: P02-EVID-034
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/analysis_inputs/stage18S_R1_training_provenance_summary.csv
+  size_bytes: 273
+  sha256: 4216d07d415122c968cf392432f5a8537acdd0cbeeffafe8418d4758d6a5714c
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids: []
+  claim_ids: []
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: SUPPORTING_ANALYSIS_CONTRACT_OR_DIAGNOSTIC
+- evidence_id: P02-EVID-035
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/protocol_change_required/P02_PREEXECUTION_TRAINING_POLICY_AMENDMENT_R2.yaml
+  size_bytes: 5084
+  sha256: 9c909274fe27f6290f4d72b3717d69ea3af7830e4a506df421f1ddf3021b8afe
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids: []
+  claim_ids: []
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: SUPPORTING_ANALYSIS_CONTRACT_OR_DIAGNOSTIC
+- evidence_id: P02-EVID-036
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/handoffs/stage18S_R1_sensitivity_evidence.json
+  size_bytes: 1021
+  sha256: c82185d89f47f2d1a2ae55f04c6c4053f057f89ef929faaabfbddfe24aef91fb
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids: []
+  claim_ids: []
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: SUPPORTING_ANALYSIS_CONTRACT_OR_DIAGNOSTIC
+- evidence_id: P02-EVID-037
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/manifests/stage_artifacts/20_readiness.json
+  size_bytes: 1042
+  sha256: 76acc5f8bad25c0caa4a07e9de9ee938e50944ee8f6cad3d703039f38d09c564
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids:
+  - P02-FIND-014
+  claim_ids: []
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: MAPPED_TO_FINDING_OR_SUPPORTING_ANALYSIS
+- evidence_id: P02-EVID-038
+  phase: P02
+  evidence_type: CANONICAL_PHASE_ANALYSIS_INPUT
+  canonical_status: CANONICAL
+  path_or_pointer: runtime/manifests/record_partitions/Layer2ReadinessReport/P02-L2-READINESS-P03.json
+  size_bytes: 850
+  sha256: 449827c9a6d6ef31d191a9eebf66283ccdc7df7be8e40f7880786aa9b4179df9
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  finding_ids: []
+  claim_ids: []
+  analysis_role: PHASE_ANALYSIS_INPUT
+  disposition: SUPPORTING_ANALYSIS_CONTRACT_OR_DIAGNOSTIC
+- evidence_id: CUM-EVID-001
+  phase: CUMULATIVE_P00_P02
+  evidence_type: CROSS_PHASE_SYNTHESIS_NODE
+  canonical_status: CURRENT
+  path_or_pointer: machine_readable/cumulative_findings.yaml
+  finding_ids:
+  - CF-01
+  claim_ids:
+  - CUM-CLM-001/v1
+  source_phase_findings:
+  - P00-F-006
+  - P00-F-007
+  - P01-FIND-014
+  - P02-FIND-001
+  - P02-FIND-014
+  disposition: MAPPED
+- evidence_id: CUM-EVID-002
+  phase: CUMULATIVE_P00_P02
+  evidence_type: CROSS_PHASE_SYNTHESIS_NODE
+  canonical_status: CURRENT
+  path_or_pointer: machine_readable/cumulative_findings.yaml
+  finding_ids:
+  - CF-02
+  claim_ids:
+  - CUM-CLM-001/v1
+  - CUM-CLM-002/v1
+  source_phase_findings:
+  - P01-FIND-002
+  - P01-FIND-003
+  - P01-FIND-006
+  - P01-FIND-014
+  - P02-FIND-001
+  disposition: MAPPED
+- evidence_id: CUM-EVID-003
+  phase: CUMULATIVE_P00_P02
+  evidence_type: CROSS_PHASE_SYNTHESIS_NODE
+  canonical_status: CURRENT
+  path_or_pointer: machine_readable/cumulative_findings.yaml
+  finding_ids:
+  - CF-03
+  claim_ids:
+  - CUM-CLM-003/v1
+  source_phase_findings:
+  - P01-FIND-001
+  - P02-FIND-002
+  - P02-FIND-003
+  - P02-FIND-004
+  disposition: MAPPED
+- evidence_id: CUM-EVID-004
+  phase: CUMULATIVE_P00_P02
+  evidence_type: CROSS_PHASE_SYNTHESIS_NODE
+  canonical_status: CURRENT
+  path_or_pointer: machine_readable/cumulative_findings.yaml
+  finding_ids:
+  - CF-04
+  claim_ids:
+  - CUM-CLM-004/v1
+  source_phase_findings:
+  - P01-FIND-007
+  - P02-FIND-005
+  disposition: MAPPED
+- evidence_id: CUM-EVID-005
+  phase: CUMULATIVE_P00_P02
+  evidence_type: CROSS_PHASE_SYNTHESIS_NODE
+  canonical_status: CURRENT
+  path_or_pointer: machine_readable/cumulative_findings.yaml
+  finding_ids:
+  - CF-05
+  claim_ids:
+  - CUM-CLM-005/v1
+  source_phase_findings:
+  - P01-FIND-009
+  - P01-FIND-010
+  - P02-FIND-009
+  - P02-FIND-010
+  disposition: MAPPED
+- evidence_id: CUM-EVID-006
+  phase: CUMULATIVE_P00_P02
+  evidence_type: CROSS_PHASE_SYNTHESIS_NODE
+  canonical_status: CURRENT
+  path_or_pointer: machine_readable/cumulative_findings.yaml
+  finding_ids:
+  - CF-06
+  claim_ids:
+  - CUM-CLM-005/v1
+  source_phase_findings:
+  - P01-FIND-009
+  - P02-FIND-010
+  - P02-FIND-011
+  - P02-FIND-012
+  disposition: MAPPED
+- evidence_id: CUM-EVID-007
+  phase: CUMULATIVE_P00_P02
+  evidence_type: CROSS_PHASE_SYNTHESIS_NODE
+  canonical_status: CURRENT
+  path_or_pointer: machine_readable/cumulative_findings.yaml
+  finding_ids:
+  - CF-07
+  claim_ids:
+  - CUM-CLM-006/v1
+  source_phase_findings:
+  - P00-F-005
+  - P01-FIND-003
+  - P01-FIND-014
+  - P02-FIND-006
+  - P02-FIND-008
+  disposition: MAPPED
+- evidence_id: CUM-EVID-008
+  phase: CUMULATIVE_P00_P02
+  evidence_type: CROSS_PHASE_SYNTHESIS_NODE
+  canonical_status: CURRENT
+  path_or_pointer: machine_readable/cumulative_findings.yaml
+  finding_ids:
+  - CF-08
+  claim_ids:
+  - CUM-CLM-007/v1
+  source_phase_findings:
+  - P00-F-004
+  - P01-FIND-013
+  - P02-FIND-013
+  disposition: MAPPED
+- evidence_id: CUM-EVID-009
+  phase: CUMULATIVE_P00_P02
+  evidence_type: CROSS_PHASE_SYNTHESIS_NODE
+  canonical_status: CURRENT
+  path_or_pointer: machine_readable/cumulative_findings.yaml
+  finding_ids:
+  - CF-09
+  claim_ids:
+  - CUM-CLM-001/v1
+  - CUM-CLM-007/v1
+  source_phase_findings:
+  - P00-F-008
+  - P01-FIND-004
+  - P01-FIND-011
+  - P01-FIND-012
+  - P02-FIND-013
+  - P02-FIND-014
+  disposition: MAPPED
+- evidence_id: CUM-EVID-010
+  phase: CUMULATIVE_P00_P02
+  evidence_type: CROSS_PHASE_SYNTHESIS_NODE
+  canonical_status: CURRENT
+  path_or_pointer: machine_readable/cumulative_findings.yaml
+  finding_ids:
+  - CF-10
+  claim_ids: []
+  source_phase_findings:
+  - P00-F-009
+  - P01-FIND-008
+  - P02-FIND-001
+  - P02-FIND-014
+  disposition: MAPPED
+- evidence_id: CUM-EVID-011
+  phase: CUMULATIVE_P00_P02
+  evidence_type: CROSS_PHASE_SYNTHESIS_NODE
+  canonical_status: CURRENT
+  path_or_pointer: machine_readable/cumulative_findings.yaml
+  finding_ids:
+  - CF-11
+  claim_ids:
+  - CUM-CLM-003/v1
+  source_phase_findings:
+  - P01-FIND-002
+  - P01-FIND-003
+  - P02-FIND-002
+  - P02-FIND-004
+  disposition: MAPPED
+- evidence_id: CUM-EVID-012
+  phase: CUMULATIVE_P00_P02
+  evidence_type: CROSS_PHASE_SYNTHESIS_NODE
+  canonical_status: CURRENT
+  path_or_pointer: machine_readable/cumulative_findings.yaml
+  finding_ids:
+  - CF-12
+  claim_ids:
+  - CUM-CLM-008/v1
+  source_phase_findings:
+  - P01-FIND-014
+  - P02-FIND-013
+  - P02-FIND-014
+  disposition: MAPPED

@@ -1,0 +1,144 @@
+cumulative_report_id: IHARQ-CUMULATIVE-PHASE-EVIDENCE-RESULTS-INTERPRETATION-THROUGH-P01-R1
+status: READY_AFTER_P01_LAYER0
+p00_state: ALREADY_MAPPED_CURRENT_QUALIFIED_CLAIMS
+p00_evidence_map_release_id: P00-EVIDENCE-MAP-RELEASE-R2
+p01_handoff:
+  report_id: IHARQ-P01-EVIDENCE-RESULTS-INTERPRETATION-REPORT-R1
+  status: READY
+  rows:
+  - finding_id: P01-FIND-001
+    candidate_claim_ids:
+    - P01-CLAIM-CAND-001
+    - P01-CLAIM-CAND-012
+    evidence_sources:
+    - records/datasets/*/*.json
+    - reports/phase_01/sources/source_version_license_report.json
+    limitation: PUBLIC_EEG_ONLY; source-license/redistribution restrictions apply.
+    table_source: REPORT_TABLES_BY_FINDING
+    figure_source: RECOMMENDATIONS_BY_FINDING
+  - finding_id: P01-FIND-002
+    candidate_claim_ids:
+    - P01-CLAIM-CAND-002
+    evidence_sources:
+    - records/splits/P01-L1-SPLIT-OFFICIAL-R2/IHARQ-SPLITRECORD-20260806-e4e371d332c61e36.json
+    - reports/phase_01/splits/disjointness.json
+    limitation: This establishes contract disjointness, not universal absence of every
+      conceivable leakage mechanism.
+    table_source: REPORT_TABLES_BY_FINDING
+    figure_source: RECOMMENDATIONS_BY_FINDING
+  - finding_id: P01-FIND-003
+    candidate_claim_ids:
+    - P01-CLAIM-CAND-003
+    evidence_sources:
+    - records/windows/
+    - external_artifact_pointers/derived_windows_dataset.json
+    limitation: Does not imply decoder adequacy or statistical power.
+    table_source: REPORT_TABLES_BY_FINDING
+    figure_source: RECOMMENDATIONS_BY_FINDING
+  - finding_id: P01-FIND-004
+    candidate_claim_ids:
+    - P01-CLAIM-CAND-004
+    evidence_sources:
+    - reports/phase_01/storage/existing_core_dataset_adoption.json
+    - external_artifact_pointers/derived_windows_dataset.json
+    limitation: Private Kaggle access is required; source licenses continue to govern
+      redistribution.
+    table_source: REPORT_TABLES_BY_FINDING
+    figure_source: RECOMMENDATIONS_BY_FINDING
+  - finding_id: P01-FIND-005
+    candidate_claim_ids:
+    - P01-CLAIM-CAND-005
+    evidence_sources:
+    - reports/phase_01/quality/quality_coverage.json
+    - records/quality/
+    limitation: A soft flag is not proof of physiological corruption, and zero hard-invalid
+      cases is not a claim of artifact-free EEG.
+    table_source: REPORT_TABLES_BY_FINDING
+    figure_source: RECOMMENDATIONS_BY_FINDING
+  - finding_id: P01-FIND-006
+    candidate_claim_ids:
+    - P01-CLAIM-CAND-002
+    evidence_sources:
+    - reports/phase_01/splits/disjointness.json
+    - reports/phase_01/leakage/leakage_contamination.json
+    limitation: Bounded to implemented checks and frozen identities.
+    table_source: REPORT_TABLES_BY_FINDING
+    figure_source: RECOMMENDATIONS_BY_FINDING
+  - finding_id: P01-FIND-007
+    candidate_claim_ids: []
+    evidence_sources:
+    - reports/phase_01/splits/low_calibration_budgets.csv
+    limitation: No calibration-performance experiment was executed in P01.
+    table_source: REPORT_TABLES_BY_FINDING
+    figure_source: RECOMMENDATIONS_BY_FINDING
+  - finding_id: P01-FIND-008
+    candidate_claim_ids:
+    - P01-CLAIM-CAND-006
+    evidence_sources:
+    - manifests/phase_01/layer1_ablation_readiness_l1_v1.json
+    limitation: Foundation readiness is not ablation effectiveness.
+    table_source: REPORT_TABLES_BY_FINDING
+    figure_source: RECOMMENDATIONS_BY_FINDING
+  - finding_id: P01-FIND-009
+    candidate_claim_ids:
+    - P01-CLAIM-CAND-007
+    - P01-CLAIM-CAND-011
+    evidence_sources:
+    - external_artifact_pointers/a4_window_family_dataset.json
+    - reports/phase_01/storage/a4_derived_output_storage_actual_precommit.json
+    limitation: A4 effectiveness was not executed or measured in P01; R2 arose after
+      feasibility evidence.
+    table_source: REPORT_TABLES_BY_FINDING
+    figure_source: RECOMMENDATIONS_BY_FINDING
+  - finding_id: P01-FIND-010
+    candidate_claim_ids:
+    - P01-CLAIM-CAND-007
+    evidence_sources:
+    - Phase_01_Notebook.ipynb (R49 A4 boundary explanation)
+    - config_snapshot/p01_l1_a4_window_family_freeze_R2.json
+    limitation: This is a design-feasibility result, not evidence that R2 performs
+      better than R1 or core.
+    table_source: REPORT_TABLES_BY_FINDING
+    figure_source: RECOMMENDATIONS_BY_FINDING
+  - finding_id: P01-FIND-011
+    candidate_claim_ids:
+    - P01-CLAIM-CAND-009
+    evidence_sources:
+    - environment_manifest.json
+    - environment_amendment.json
+    limitation: Reproduction should use the recorded actual environment rather than
+      the original Python 3.11 intent.
+    table_source: REPORT_TABLES_BY_FINDING
+    figure_source: RECOMMENDATIONS_BY_FINDING
+  - finding_id: P01-FIND-012
+    candidate_claim_ids:
+    - P01-CLAIM-CAND-008
+    - P01-CLAIM-CAND-012
+    evidence_sources:
+    - reports/phase_01/tests/stage_results.json
+    - gate_decision.json
+    - reports/phase_01/tests/phase0_and_runtime_regression.json
+    - checksums.sha256
+    limitation: Execution closure does not imply model or clinical effectiveness.
+    table_source: REPORT_TABLES_BY_FINDING
+    figure_source: RECOMMENDATIONS_BY_FINDING
+  - finding_id: P01-FIND-013
+    candidate_claim_ids: []
+    evidence_sources:
+    - reports/phase_01/worker_logs/
+    - reports/phase_01/repair_reentry.json
+    - reports/phase_01/runtime/r54_final_export_secret_redaction.json
+    limitation: The repair history must remain visible; it is not evidence of scientific
+      superiority.
+    table_source: REPORT_TABLES_BY_FINDING
+    figure_source: RECOMMENDATIONS_BY_FINDING
+  - finding_id: P01-FIND-014
+    candidate_claim_ids:
+    - P01-CLAIM-CAND-010
+    evidence_sources:
+    - phase2_handoff/phase_01_to_phase_02.yaml
+    - handoffs/phase_01_to_phase_02.yaml
+    limitation: Formal phase transition still follows the documentary closure sequence.
+    table_source: REPORT_TABLES_BY_FINDING
+    figure_source: RECOMMENDATIONS_BY_FINDING
+  note: Final manuscript/paper/thesis locations remain Evidence Map authority.

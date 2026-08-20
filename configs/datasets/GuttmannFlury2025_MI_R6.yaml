@@ -1,0 +1,65 @@
+dataset_id: GuttmannFlury2025_MI
+aliases:
+- GuttmannFlury2025_MI
+authority_status: SCREENED_CURRENT_DELTA_CANDIDATE
+scientific_role: current-delta three-session MI candidate
+active_for_run: false
+active_disposition: SCREENED_NOT_PROMOTED
+exact_revision: Zenodo v1 DOI 10.5281/zenodo.18970793, published 2026-03-12; re-hosted
+  from Synapse DOI 10.7303/syn64005218; MOABB 1.5.0 BDF conversion
+citation: Guttmann-Flury and colleagues. Three-session motor imagery/motor execution
+  EEG dataset. Scientific Data. 2025. DOI 10.1038/s41597-025-04861-9.
+license: 'Dataset release: CC0 1.0 Universal; associated article publication license
+  is separate'
+access_method: NOT_ACTIVE_FOR_P01_OFFICIAL_RUN
+official_reference: https://zenodo.org/records/18970793; https://doi.org/10.5281/zenodo.18970793;
+  https://doi.org/10.7303/syn64005218; https://moabb.neurotechx.com/docs/generated/moabb.datasets.GuttmannFlury2025_MI.html;
+  https://doi.org/10.1038/s41597-025-04861-9
+published_checksum: NOT_APPLICABLE_TO_INACTIVE_SOURCE
+checksum_policy: COMPUTE_AND_FREEZE_ONLY_IF_ACTIVATED_BY_VERSIONED_AMENDMENT
+expected_checksum: NOT_APPLICABLE_TO_ACTIVE_RUN
+adapter: NOT_APPLICABLE_TO_ACTIVE_RUN
+cache_path: source_cache/GuttmannFlury2025_MI
+redistribution_allowed: CC0_1_0_SOURCE; NOT DOWNLOADED IN CURRENT RUN
+source_native_preprocessing:
+- Neuroscan CSV re-host converted to 24-bit BDF with source sidecars retained
+- source reference right mastoid M1; original event/sync metadata retained
+limitations:
+- Not active in the official P01 run
+- Any later promotion must preserve 62 EEG + 2 mastoid + 1 EOG + 1 STIM taxonomy
+- Variable one-to-three-session structure and MI-only event semantics require explicit
+  reconciliation
+- Zenodo dataset release is CC0; publication licensing is a separate surface
+adapter_options:
+  activation_condition: Future source-card/channel/protocol reconciliation and explicit
+    Method Selection-compatible promotion
+  official_reference: https://zenodo.org/records/18970793; https://doi.org/10.5281/zenodo.18970793;
+    https://doi.org/10.7303/syn64005218; https://moabb.neurotechx.com/docs/generated/moabb.datasets.GuttmannFlury2025_MI.html;
+    https://doi.org/10.1038/s41597-025-04861-9
+  checksum_policy: COMPUTE_AND_FREEZE_ONLY_IF_ACTIVATED_BY_VERSIONED_AMENDMENT
+  published_checksum: NOT_APPLICABLE_TO_INACTIVE_SOURCE
+  expected_event_inventory:
+  - left_hand_mi
+  - right_hand_mi
+  - motor-execution labels excluded from MI-only future branch
+  sampling_and_channel_profile:
+    scalp_eeg_channels: 62
+    mastoid_channels: 2
+    eog_channels: 1
+    stim_channels: 1
+    total_channels: 66
+    sampling_hz: 1000
+    reference: right mastoid M1
+    line_frequency_hz: 50
+    format: BDF converted from Neuroscan CSV
+  source_native_preprocessing:
+  - Neuroscan CSV re-host converted to 24-bit BDF with source sidecars retained
+  - source reference right mastoid M1; original event/sync metadata retained
+  limitations:
+  - Not active in the official P01 run
+  - Any later promotion must preserve 62 EEG + 2 mastoid + 1 EOG + 1 STIM taxonomy
+  - Variable one-to-three-session structure and MI-only event semantics require explicit
+    reconciliation
+  - Zenodo dataset release is CC0; publication licensing is a separate surface
+  allow_byte_equivalent_attachment_fallback: false
+  acquisition_contract: MOABB_1_5_0_OFFICIAL_PROVIDER_DOWNLOAD_ONLY

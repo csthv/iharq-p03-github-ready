@@ -1,0 +1,46 @@
+protocol_id: P01-L1-SPLIT-OFFICIAL-R2
+split_unit: SUBJECT
+group_keys:
+- dataset_id
+- subject_id
+roles:
+- train
+- calibration
+- validation
+- test
+ratios:
+  train: 0.6
+  calibration: 0.2
+  validation: 0.1
+  test: 0.1
+seed: 20260804
+allocation_algorithm: SHA256_RANK_SUBJECT_GROUPS_WITH_LARGEST_REMAINDER_AND_MINIMUM_ONE_GROUP_PER_ROLE
+tie_break_order:
+- test
+- validation
+- calibration
+- train
+expected_group_counts:
+  PhysioNetMI:
+    train: 65
+    calibration: 22
+    validation: 11
+    test: 11
+  BNCI2014_001:
+    train: 5
+    calibration: 2
+    validation: 1
+    test: 1
+  Lee2019_MI:
+    train: 32
+    calibration: 11
+    validation: 5
+    test: 6
+constraints:
+- all sessions/runs/events/windows of a subject remain in one role
+- source-event atomicity
+- no window-level split
+- all four roles nonempty
+- membership and attrition reconcile
+purge_embargo: SOURCE_EVENT_ATOMICITY_PLUS_OVERLAP_GROUP_DISJOINTNESS; no additional
+  temporal embargo for one nonoverlapping window/event

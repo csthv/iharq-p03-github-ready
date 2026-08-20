@@ -1,0 +1,111 @@
+{
+  "run_cell_id": "P02-A0-PhysioNetMI-SAN-PERM-FULL_TRAIN-MR00-PR072",
+  "ablation_id": "A0",
+  "terminal_status": "SUCCESS",
+  "prediction_partition": "records/PredictionRecord/dataset=PhysioNetMI/branch=SAN-PERM/budget=FULL_TRAIN/P02-A0-PhysioNetMI-SAN-PERM-FULL_TRAIN-MR00-PR072.jsonl",
+  "metric_source": "metrics/P02-A0-PhysioNetMI-SAN-PERM-FULL_TRAIN-MR00-PR072.json",
+  "checkpoint_sha256": "8e306cea8c565c3ec6de51ff8dd740f3bb53b291de8de26059165018ea4ea6d3",
+  "observed_denominator": 495,
+  "selected_params": {
+    "n_components": 4,
+    "base_branch_id": "CLS-CSP-LDA",
+    "csp_reg": "oas",
+    "lda_solver": "lsqr",
+    "lda_shrinkage": "auto"
+  },
+  "resolved_variant": "SAN-PERM",
+  "score_type": "NATIVE_PROBABILITY",
+  "validation_burden_seconds": 15.675121767999372,
+  "model_storage_bytes": 68171,
+  "selected_candidate_id": "CAND-00",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.0007741209992673248,
+    "batch1_latency_p95_s": 0.0008157342002959922,
+    "repeats": 5
+  },
+  "permutation_provenance": {
+    "performed": true,
+    "scope": "LEGAL_FIT_ROLE_SOURCE_EVENTS_ONLY",
+    "permutation_seed": 213938878,
+    "aux_repeat_index": 72,
+    "label_count": 2949,
+    "class_support_before": [
+      1490,
+      1459
+    ],
+    "class_support_after": [
+      1490,
+      1459
+    ],
+    "validation_labels_permuted": false,
+    "test_labels_permuted": false
+  },
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "class_weights": null,
+  "class_weight_calibration": {
+    "selected_policy": "UNIFORM_NO_WEIGHT",
+    "selected_weights": null,
+    "candidate_results": [
+      {
+        "status": "SUCCESS",
+        "policy": "UNIFORM_NO_WEIGHT",
+        "weights": null,
+        "validation_metrics": {
+          "BACC": 0.5179988245665589,
+          "F1_MACRO": 0.5084327437268614,
+          "ACC": 0.5171717171717172,
+          "CONFUSION": [
+            [
+              95,
+              154
+            ],
+            [
+              85,
+              161
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            249,
+            246
+          ],
+          "PRED_COMPLETE": 495,
+          "ROC_AUC": 0.5089626799882456,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "NATIVE_PROBABILITY"
+        },
+        "validation_burden_seconds": 15.675121767999372,
+        "model_storage_bytes": 68171
+      }
+    ],
+    "training_count_evidence": {
+      "counts": [
+        1490,
+        1459
+      ],
+      "exactly_equal": false,
+      "selection_required": true,
+      "weights": [
+        0.9895973154362416,
+        1.010623714873201
+      ],
+      "formula": "SKLEARN_BALANCED_n_over_Knc"
+    },
+    "test_set_used": false,
+    "selection_required": false,
+    "count_imbalance_detected": true,
+    "applicability": "NOT_APPLICABLE_TO_CLASSIFIER",
+    "applicability_reason": "NO_GOVERNED_NATIVE_OR_VERIFIED_CLASS_WEIGHT_MECHANISM",
+    "authority_action": "KEEP_UNWEIGHTED_WHEN_WEIGHTING_NOT_APPLICABLE",
+    "weight_formula": {
+      "type": "SKLEARN_COMPUTE_CLASS_WEIGHT_BALANCED",
+      "formula": "n_samples / (n_classes * class_count)",
+      "normalization": "NONE_BEYOND_SKLEARN_BALANCED_FORMULA",
+      "source_labels": "LEGAL_FIT_ROLE_ONLY"
+    },
+    "selection_stage": "POST_HYPERPARAMETER_PRE_TEST_TRAINING_POLICY_CHECK",
+    "runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R1-CLASS-WEIGHT-APPLICABILITY-LIVE-CONTINUATION"
+  },
+  "training_condition_id": "A0-RAW-ACCEPT-ALL",
+  "augmentation_provenance": null,
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

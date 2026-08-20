@@ -1,0 +1,31 @@
+template_id: P02-PROTOCOL-BUILD-BOOK-TRAINING-POLICY-RESOLUTION-TEMPLATE-R2
+purpose: Owner-authorized resolution of the only remaining pre-execution scientific-freeze
+  blockers. Values are intentionally null until governed approval.
+augmentation_challenger:
+  probability: null
+  segment_count: null
+  seed_namespace: null
+  condition_id: null
+  eligible_branch: DNN-EEGNET
+  scope: FULL_TRAIN_ONLY
+  same_model_seeds: 5
+  donor_pool: same_class_same_legal_training_pool
+  run_cell_identities: null
+class_weighting:
+  imbalance_trigger_type: null
+  imbalance_trigger_value: null
+  weight_formula: null
+  normalization: null
+  applies_to_branches: null
+required_regeneration:
+- P02 Protocol v1.0 P02 annex/current cumulative Protocol
+- P02 Build Book successor
+- p02_planned_scientific_execution_freeze successor
+- planned run-cell manifest if augmentation cell is admitted
+- phase/config semantic hash
+- notebook/package traceability and tests
+forbidden:
+- derive from final/test outcomes
+- promote bounded technical check to scientific freeze
+- choose notebook-local default
+- rerun or mutate P01

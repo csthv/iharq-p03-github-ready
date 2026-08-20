@@ -1,0 +1,22 @@
+manifest_id: IHARQ-CUMULATIVE-PROJECT-STATE-THROUGH-P02-FINAL-R2
+generated_at: '2026-08-14T22:49:00+03:30'
+status: PASS_READY_FOR_P03_INTAKE
+coverage:
+- P00
+- P01
+- P02
+current_status_file: CURRENT_PROJECT_STATUS.json
+current_handoff_file: phase_handoff.yaml
+stage24_replay_manifest_preserved_at: history/repository_state_pre_p02_final_merge_R2/project_state_manifest.yaml
+p02_release_metadata: current/phase_02/release_metadata/
+final_documentary_state: final_state/through_p02/
+root_layer2_source: src/iharq/layer2_decoders/
+root_layer2_source_origin: current/phase_02/implementation/src/iharq/layer2_decoders/
+phase_environments:
+  P00: environments/phase_00/
+  P01: environments/phase_01/
+  P02: environments/phase_02/
+external_artifact_pointer_manifest: external_artifact_pointer_manifest.yaml
+limitations: artifacts/handoffs/phase_02_to_phase_03/persistent_limitations.yaml
+blockers: []
+scientific_mutation_by_merge: false

@@ -1,0 +1,34 @@
+decision_id: P00-GITHUB-CI-OUT-OF-SCOPE-NO-GATE-R2
+revision: R2
+status: CURRENT_CONTROLLING
+scope: P00 — Repository, Configuration, and Record Schema
+github_ci_required: false
+github_ci_gate_exists: false
+github_hosted_tests_required: false
+github_ci_executed: false
+github_ci_simulated: false
+github_publication_performed: false
+local_deterministic_validation_required: true
+controlling_evidence:
+- local deterministic pytest regression
+- schema/config/contract validation
+- valid and malformed fixture validation
+- local clean reproduction
+- manifests and SHA-256 verification
+- executable adversarial mutation validation
+p0_gate_17_local: PASS
+external_ci_policy: OUT_OF_SCOPE_NOT_A_GATE_NOT_EXECUTED
+publication_requires_github_ci: false
+publication_verification_requirement: VERIFY_PUBLISHED_BYTES_POINTERS_AND_MANIFEST_ONLY
+rationale: Owner explicitly removed GitHub CI from P00 scope. Phase 0 is a local-first
+  engineering-foundation phase; no GitHub-hosted test run is intended or required.
+  Historical GitHub-CI-gated records remain superseded provenance only.
+noninterference:
+  implementation_evidence_changed: false
+  scientific_findings_changed: false
+  protocol_timing_changed: false
+  claim_ceiling_changed: false
+active_github_workflow_policy: RETIRED_TOMBSTONE_MANUAL_ONLY_PERMANENTLY_SKIPPED_NO_TEST_COMMANDS
+automatic_github_triggers_present: false
+github_test_commands_present: false
+historical_workflow_path_retained_for_provenance: .github/workflows/phase0-ci.yml

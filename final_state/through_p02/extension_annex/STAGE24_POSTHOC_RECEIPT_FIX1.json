@@ -1,0 +1,45 @@
+{
+  "artifact_id": "P02-STAGE24-TRANSPORT-SUCCESSOR-POSTHOC-RECEIPT-R4-FIX1",
+  "canonical_stage18_G18_modified": false,
+  "created_at_utc": "2026-08-17T19:26:06.036161+00:00",
+  "extension_release": {
+    "cumulative_project_state_package_objects": [
+      "phase_02/release_packages/cumulative_project_state/IHARQ_Project_State_After_Phase_02_R2_part_0001_of_0004.zip",
+      "phase_02/release_packages/cumulative_project_state/IHARQ_Project_State_After_Phase_02_R2_part_0002_of_0004.zip",
+      "phase_02/release_packages/cumulative_project_state/IHARQ_Project_State_After_Phase_02_R2_part_0003_of_0004.zip",
+      "phase_02/release_packages/cumulative_project_state/IHARQ_Project_State_After_Phase_02_R2_part_0004_of_0004.zip"
+    ],
+    "execution_manifest": "phase_02/release_manifests/execution_bundle_multipart_manifest_R2.json",
+    "github_ready_package_objects": [
+      "phase_02/release_packages/github_ready/IHARQ_Cumulative_GitHub_Ready_Through_P02_R2_part_0001_of_0004.zip",
+      "phase_02/release_packages/github_ready/IHARQ_Cumulative_GitHub_Ready_Through_P02_R2_part_0002_of_0004.zip",
+      "phase_02/release_packages/github_ready/IHARQ_Cumulative_GitHub_Ready_Through_P02_R2_part_0003_of_0004.zip",
+      "phase_02/release_packages/github_ready/IHARQ_Cumulative_GitHub_Ready_Through_P02_R2_part_0004_of_0004.zip"
+    ],
+    "heavy_remote_objects_verified": 47,
+    "immutable_heavy_content_revision": "7f43cf3a9ea4b2056d96b9d2135bc14eac605b90",
+    "latest_verified_revision": "1abb59c6d8b6002d86ef72571bed46d9af028569",
+    "pointer_manifest": "phase_02/release_manifests/external_artifact_pointer_manifest_R2.json",
+    "remote_completeness": "PASS",
+    "repo_id": "Csthv/iharq-p02-phase02-r2-P02-L2-OFFICIAL-RUN-R4DY-20260817t182318z",
+    "repo_type": "dataset"
+  },
+  "governed_stage24": {
+    "G24": "PASS",
+    "attempt_id": "139957319083",
+    "status": "SUCCESS"
+  },
+  "metric_recomputed_by_this_repair": false,
+  "model_training_repeated": false,
+  "original_failure": {
+    "expression": "stage24_accepted.get('attempt_id')",
+    "reason": "_accepted('24') returned bool",
+    "remote_upload_effect": "NONE",
+    "scientific_effect": "NONE",
+    "type": "AttributeError"
+  },
+  "repair_scope": "FINAL_RECEIPT_ONLY_AFTER_REMOTE_COMPLETENESS_ALREADY_PASSED",
+  "stage18S_claim_scope": "POST_HOC_SENSITIVITY_DESCRIPTIVE",
+  "status": "PASS",
+  "upload_repeated_by_this_repair": false
+}

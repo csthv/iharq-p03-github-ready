@@ -1,0 +1,60 @@
+{
+  "annex_id": "P02_LOWLABEL_64_128_256_STAGE18S_R1_a0e2462396cf",
+  "artifact_id": "IHARQ-P02-POST-EXTENSION-FINAL-MERGE-VALIDATION-R3",
+  "canonical_stage18_G18_modified": false,
+  "composite_external_pointer_items": 10880,
+  "curated_final_state_tables_added": 3,
+  "curated_final_state_tables_refreshed_or_added": 16,
+  "curated_final_state_tables_updated": 13,
+  "delta_current_path_additions": 3621,
+  "delta_current_path_additions_materialized": 3619,
+  "delta_current_path_replacements": 130,
+  "delta_overlay_files": 3751,
+  "delta_overlay_files_materialized_current": 3749,
+  "delta_overlay_files_total": 3751,
+  "excluded_transient_inventory": "artifacts/cumulative_state/p02_post_extension_merge_R3/EXCLUDED_TRANSIENT_SOURCE_FILES.csv",
+  "generated_at_utc": "2026-08-17T20:30:45.598141+00:00",
+  "heavy_bytes_embedded_by_merge": 0,
+  "heavy_pointer_items_current_extension": 758,
+  "intentionally_excluded_transient_bytecode_files": 2,
+  "low_label_bacc_rows": 108,
+  "low_label_budget_axis": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256
+  ],
+  "low_label_metric_rows": 324,
+  "preimage_files_preserved": 162,
+  "pytest": {
+    "returncode": 0,
+    "stderr": "Spreadsheet runtime warmup failed during python startup\nTraceback (most recent call last):\n  File \"/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py\", line 26, in warm_spreadsheet_runtime_on_startup\n  File \"/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py\", line 772, in warm_spreadsheet_runtime\n  File \"/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/connection.py\", line 37, in get_or_create_client\n  File \"/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/daemon.py\", line 124, in start_daemon\nTimeoutError: Timed out waiting for artifact tool daemon socket. Set ARTIFACT_TOOL_RPC_DAEMON_STARTUP_TIMEOUT_S=<seconds> to increase the limit.\n",
+    "stdout": "\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m                                         [100%]\u001b[0m\n\u001b[32m\u001b[32m\u001b[1m32 passed\u001b[0m\u001b[32m in 10.08s\u001b[0m\u001b[0m\n"
+  },
+  "python_compile_failures": [],
+  "source_validation": {
+    "baseline": {
+      "crc": "PASS",
+      "manifest_file_count": 30824,
+      "manifest_sha256": "10df9886ae4c31b61499142a5f79981f61c6935a6b1b6311ac70cb070f488c4b",
+      "zip_sha256": "8f24fdbf11971fbecb886ff214b30b8241d32e7f0baef6dd9f6cf75817fe824b"
+    },
+    "delta": {
+      "crc": "PASS",
+      "declared_rows": 3743,
+      "hash_reuse": 51,
+      "heavy_pointers": 758,
+      "overlay_files": 3751,
+      "zip_sha256": "81c80dca93a0ef75f73c7381584c87b01a9392b977bc58577d7f0a389fac0f3f"
+    }
+  },
+  "stage18S_claim_scope": "POST_HOC_SENSITIVITY_DESCRIPTIVE",
+  "stage18s_successful_cell_metrics_rows": 270,
+  "status": "PASS_CONTENT_TREE_VALIDATED_PRE_ARCHIVE",
+  "total_added_inventory_rows_after_hygiene": 3622
+}

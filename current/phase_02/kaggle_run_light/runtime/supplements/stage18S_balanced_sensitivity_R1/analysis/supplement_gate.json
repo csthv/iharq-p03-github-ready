@@ -1,0 +1,52 @@
+{
+  "actual_budget_count_per_mr00_trajectory": 9,
+  "artifact_id": "P02-STAGE18S-R1-INTEGRATED-1-256-SUPPLEMENT-GATE-R2",
+  "canonical_G18_modified": false,
+  "canonical_stage18_modified": false,
+  "claim_scope": "POST_HOC_SENSITIVITY_DESCRIPTIVE",
+  "combined_successful_effect_rows": 315,
+  "created_at_utc": "2026-08-17T17:19:59.066914+00:00",
+  "execution_receipt_status": "PASS",
+  "int16a_forensic_audit_status": "PASS",
+  "int16a_quality_report_sha256": "542e6208bd49ee6774f6dc5e4f142bdf2a21cbb3ecfccbcb372c8494cf7307c0",
+  "member_receipts": 432,
+  "member_status_counts": {
+    "INPUT_INCOMPATIBLE": 54,
+    "SUCCESS": 378
+  },
+  "new_confirmatory_test_family_created": false,
+  "nine_budget_mr00_trajectories": 15,
+  "nine_budget_sequence": [
+    "1",
+    "4",
+    "8",
+    "16",
+    "32",
+    "64",
+    "128",
+    "256",
+    "FULL"
+  ],
+  "participant_effect_rows": 1890,
+  "planned_cells": 324,
+  "planned_groups": 108,
+  "ready_for_downstream_preservation": true,
+  "six_budget_field_retained_for_compatibility_only": true,
+  "six_budget_mr00_trajectories": 15,
+  "status": "PASS",
+  "supplement_id": "P02-STAGE18S-BALANCED-SENSITIVITY-R1",
+  "terminal_counts": {
+    "INPUT_INCOMPATIBLE": 54,
+    "SUCCESS": 270
+  },
+  "three_repeat_anchor_budgets": [
+    "1",
+    "8",
+    "64",
+    "128",
+    "256",
+    "FULL"
+  ],
+  "three_repeat_anchor_trajectories": 90,
+  "training_provenance_issues": 0
+}

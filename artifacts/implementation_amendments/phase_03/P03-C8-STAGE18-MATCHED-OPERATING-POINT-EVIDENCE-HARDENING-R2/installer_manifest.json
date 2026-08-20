@@ -1,0 +1,54 @@
+{
+  "a2_direct_subscript_guard": {
+    "a2_terminal_rows": 285,
+    "guard": "set(a2_results) == set(group_ids)",
+    "safe_after_full_denominator_guard": true
+  },
+  "canonical_product_after_successful_stage18": {
+    "product_id": "P03-PROD-032",
+    "record_family": "Layer3MatchedOperatingPointTable",
+    "root": "artifacts/records/phase_03/Layer3MatchedOperatingPointTable/P03-C8-STAGE18-MATCHED-OPERATING-POINT-EVIDENCE-HARDENING-R2"
+  },
+  "config_changed": false,
+  "expected_feature_status_counts": {
+    "confidence:COMPARABLE": 194,
+    "confidence:INELIGIBLE": 91,
+    "normalized_entropy:COMPARABLE": 194,
+    "normalized_entropy:INELIGIBLE": 91,
+    "top1_top2_margin:COMPARABLE": 194,
+    "top1_top2_margin:INELIGIBLE": 91
+  },
+  "expected_full_denominator": {
+    "comparable_matches": 582,
+    "expanded_rows": 2565,
+    "groups": 285,
+    "ineligible_matches": 273,
+    "structural_matches": 855,
+    "unmatched": 0
+  },
+  "hardening_id": "P03-C8-STAGE18-MATCHED-OPERATING-POINT-EVIDENCE-HARDENING-R2",
+  "maxq_fix_id": "P03-C8-MAXQ-STAGE18-MATCHED-OPERATING-POINT-HARDENED-AUDIT-R2",
+  "negative_result_preservation": {
+    "no_rule_group_count": 91,
+    "no_rule_matched_set_count": 273,
+    "synthetic_all_reject": 0,
+    "synthetic_no_rule_metrics": 0
+  },
+  "protocol_changed": false,
+  "run_id": "P03-L3-OFFICIAL-09ca82c743e0411a",
+  "schema_id": "P03Stage18MatchedOperatingPointProspectiveHardeningInstallerManifest.v1",
+  "schema_version": "1.0.0",
+  "scientific_handler_changed": false,
+  "scientific_handler_module": "iharq_p03_l3_norule_runtime_amendment_r1",
+  "scientific_handler_sha256": "6c4ef93093d5e77ae63eb945639ffbc3f74a2ca52d818a461b1dc19d970c2b4a",
+  "scientific_method_changed": false,
+  "scientific_prohibitions": {
+    "posthoc_feature_winner_selection": true,
+    "test_driven_threshold_selection": true,
+    "threshold_retuning": true
+  },
+  "stage18_executed": false,
+  "stage19_executed": false,
+  "stage_id": "18",
+  "status": "PASS"
+}

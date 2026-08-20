@@ -1,0 +1,8 @@
+layer: L7
+phase: P00
+foundation_only: true
+simulation_status: SIMULATION_ONLY
+update_enabled_profile: configs/policy/update_enabled.yaml
+frozen_profile: configs/policy/frozen_evaluation.yaml
+scientific_simulation: false
+adaptive_frozen_outputs_must_be_distinct: true

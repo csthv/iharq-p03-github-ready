@@ -1,0 +1,224 @@
+{
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "run_cell_id": "P02-A0-BNCI2014_001-DNN-FBCNET-FULL_TRAIN-MR02",
+  "dataset_id": "BNCI2014_001",
+  "branch_id": "DNN-FBCNET",
+  "resolved_variant": "FBCNet-OriginalAuthor-P01ConstrainedFilterBank",
+  "budget_id": "FULL_TRAIN",
+  "metrics": {
+    "BACC": 0.48958333333333337,
+    "F1_MACRO": 0.4800486349065989,
+    "ACC": 0.4895833333333333,
+    "CONFUSION": [
+      [
+        90,
+        54
+      ],
+      [
+        93,
+        51
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      144,
+      144
+    ],
+    "PRED_COMPLETE": 288,
+    "ROC_AUC": 0.4683641975308642,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+  },
+  "validation_selection": {
+    "ACC": 0.7708333333333334,
+    "BACC": 0.7708333333333333,
+    "CLASS_SUPPORT": [
+      144,
+      144
+    ],
+    "CONFUSION": [
+      [
+        103,
+        41
+      ],
+      [
+        25,
+        119
+      ]
+    ],
+    "F1_MACRO": 0.7701238390092879,
+    "PRED_COMPLETE": 288,
+    "ROC_AUC": 0.8289448302469136,
+    "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY",
+    "ROC_AUC_STATUS": "PASS"
+  },
+  "validation_burden_seconds": 142.95108342170715,
+  "model_storage_bytes": 25352,
+  "selected_candidate_id": "R6-FBCNET-AUTHOR-CENTERED-R1",
+  "selected_params": {
+    "recipe_id": "R6-FBCNET-AUTHOR-CENTERED-R1",
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "batch_size": 16,
+    "scheduler": "constant",
+    "label_smoothing": 0.0,
+    "grad_clip": null,
+    "max_epochs": 1500,
+    "patience": 200,
+    "selection": "validation_BACC",
+    "restore_best": true,
+    "branch": "DNN-FBCNET",
+    "dataset_id": "BNCI2014_001",
+    "budget_id": "FULL_TRAIN"
+  },
+  "candidate_failures": [],
+  "observed_denominator": 288,
+  "expected_denominator": 288,
+  "score_type": "SOFTMAX_PROBABILITY",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.0006646830001955095,
+    "batch1_latency_p95_s": 0.0008378355999411724,
+    "repeats": 5,
+    "latency_probe_mode": "FORWARD_ONLY_NO_METRICS"
+  },
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "class_weights": null,
+  "class_weight_calibration": {
+    "selected_policy": "UNIFORM_NO_WEIGHT",
+    "selected_weights": null,
+    "validation_metrics": {
+      "BACC": 0.7708333333333333,
+      "F1_MACRO": 0.7701238390092879,
+      "ACC": 0.7708333333333334,
+      "CONFUSION": [
+        [
+          103,
+          41
+        ],
+        [
+          25,
+          119
+        ]
+      ],
+      "CLASS_SUPPORT": [
+        144,
+        144
+      ],
+      "PRED_COMPLETE": 288,
+      "ROC_AUC": 0.8289448302469136,
+      "ROC_AUC_STATUS": "PASS",
+      "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+    },
+    "candidate_results": [
+      {
+        "status": "SUCCESS",
+        "policy": "UNIFORM_NO_WEIGHT",
+        "weights": null,
+        "validation_metrics": {
+          "BACC": 0.7708333333333333,
+          "F1_MACRO": 0.7701238390092879,
+          "ACC": 0.7708333333333334,
+          "CONFUSION": [
+            [
+              103,
+              41
+            ],
+            [
+              25,
+              119
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            144,
+            144
+          ],
+          "PRED_COMPLETE": 288,
+          "ROC_AUC": 0.8289448302469136,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+        },
+        "validation_burden_seconds": 142.95108342170715,
+        "model_storage_bytes": 25352,
+        "best_epoch": 181,
+        "epochs_completed": 381,
+        "history_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/staging_runtime/raw_outputs/stage12_r6_training_history/P02-A0-BNCI2014_001-DNN-FBCNET-FULL_TRAIN-MR02__UNIFORM_NO_WEIGHT.json",
+        "candidate_checkpoint_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/staging_runtime/raw_outputs/stage12_r6_training_history/P02-A0-BNCI2014_001-DNN-FBCNET-FULL_TRAIN-MR02__UNIFORM_NO_WEIGHT.candidate.chk",
+        "candidate_checkpoint_sha256": "323ed57ec0a4c84de8a5f94141cca782a1ae24ffb7d5b6ef1b04120d5c972248"
+      }
+    ],
+    "test_set_used": false
+  },
+  "r6_scientific_amendment": true,
+  "r6_max_epochs": 1500,
+  "r6_patience": 200,
+  "horizon_sufficiency": {
+    "best_by_cutoff": {
+      "100": {
+        "BACC": 0.7361111111111112,
+        "epoch": 86
+      },
+      "1000": {
+        "BACC": 0.7708333333333333,
+        "epoch": 181
+      },
+      "1250": {
+        "BACC": 0.7708333333333333,
+        "epoch": 181
+      },
+      "150": {
+        "BACC": 0.7569444444444444,
+        "epoch": 104
+      },
+      "1500": {
+        "BACC": 0.7708333333333333,
+        "epoch": 181
+      },
+      "200": {
+        "BACC": 0.7708333333333333,
+        "epoch": 181
+      },
+      "250": {
+        "BACC": 0.7708333333333333,
+        "epoch": 181
+      },
+      "300": {
+        "BACC": 0.7708333333333333,
+        "epoch": 181
+      },
+      "400": {
+        "BACC": 0.7708333333333333,
+        "epoch": 181
+      },
+      "50": {
+        "BACC": 0.6631944444444444,
+        "epoch": 27
+      },
+      "500": {
+        "BACC": 0.7708333333333333,
+        "epoch": 181
+      },
+      "750": {
+        "BACC": 0.7708333333333333,
+        "epoch": 181
+      }
+    },
+    "epochs_completed": 381,
+    "final_best_BACC": 0.7708333333333333,
+    "final_best_epoch": 181,
+    "gain_after_100": 0.0347222222222221,
+    "gain_after_1000": 0.0,
+    "gain_after_1250": 0.0,
+    "gain_after_150": 0.01388888888888884,
+    "gain_after_200": 0.0,
+    "gain_after_250": 0.0,
+    "gain_after_300": 0.0,
+    "gain_after_400": 0.0,
+    "gain_after_500": 0.0,
+    "gain_after_750": 0.0,
+    "max_epochs": 1500,
+    "patience": 200,
+    "status": "PASS"
+  },
+  "test_loaded_after_group_selection_sealed": true,
+  "test_set_used_for_selection": false
+}

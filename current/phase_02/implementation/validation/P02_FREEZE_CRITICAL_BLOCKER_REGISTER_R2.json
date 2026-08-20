@@ -1,0 +1,20 @@
+{
+  "audit_id": "IHARQ-P02-L2-PREEXECUTION-BLOCKER-REGISTER-R2",
+  "status": "BLOCKED",
+  "ordinary_implementation_defects_unrepaired": 0,
+  "freeze_critical_authority_blockers": [
+    {
+      "blocker_id": "P02-BLOCK-TRAIN-AUG-001",
+      "owner": "P02_PROTOCOL_AND_BUILD_BOOK",
+      "reason": "EEGNet diagnostic augmentation is required to execute, but probability, segment count, seed namespace, exact condition identity and run-cell binding are not frozen."
+    },
+    {
+      "blocker_id": "P02-BLOCK-TRAIN-WEIGHT-002",
+      "owner": "P02_PROTOCOL_AND_BUILD_BOOK",
+      "reason": "Class-weight policy lacks the Protocol-owned imbalance trigger and exact weight formula; PhysioNetMI full-training labels are not exactly balanced."
+    }
+  ],
+  "scientific_execution_started": false,
+  "fabricated_evidence": false,
+  "next_required_action": "Create governed P02 Protocol/Build-Book successor freezing augmentation challenger parameters/run-cell identity and class-weight trigger/formula; regenerate affected R3/R4 scientific-freeze/run-cell derivatives before Kaggle execution."
+}

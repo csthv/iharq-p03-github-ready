@@ -1,0 +1,44 @@
+{
+  "index_id": "P01-FINAL-ARTIFACT-INDEX-R1",
+  "phase_id": "P01",
+  "status": "PASS",
+  "scientific_execution": {
+    "bundle_id": "IHARQ_P01_L1_Phase_Execution_Bundle_d03f0a7c869d",
+    "sha256": "09c3bb0442d79ddf110cf66fc4fe61fe63e94c7d8ed9f198f606639b4191f16e",
+    "decision": "ACCEPTED",
+    "stages": "27/27",
+    "gates": "16/16 PASS",
+    "tests": "50/50 PASS"
+  },
+  "core_dataset": {
+    "handle": "csthv999z/iharq-p01-l1-derived-windows-d03f0a7c869d-20260806222242-68a91473",
+    "provider_version": 2,
+    "logical_revision": 1,
+    "manifest_sha256": "dc21f418e9a1add62adb346f627d5d729735a5f1ecaa1d771f6fa5cfede627e1",
+    "windows": 12910,
+    "subject_shards": 172
+  },
+  "a4_r2": {
+    "family": "P01-L1-A4-WINDOW-FAMILY-FREEZE-R2",
+    "provider_version": 1,
+    "logical_revision": 2,
+    "manifest_sha256": "29124d59907610b1545e0a2b5d1811a4d4a2bf1df64cad49aa880f4721c47305",
+    "matched_parents": "12910/12910",
+    "effectiveness_executed_in_p01": false
+  },
+  "p02_handoff": {
+    "historical_handoff_id": "P01-TO-P02-d03f0a7c869d",
+    "current_handoff_id": "P01-FINAL-HANDOFF-P02-READINESS-R1",
+    "compatibility_gate": "P01-G15 PASS",
+    "record_counts": {
+      "DatasetRecord": 3,
+      "WindowRecord": 12910,
+      "SplitRecord": 1,
+      "PreprocessingRecord": 1,
+      "LabelMapRecord": 3,
+      "ValidationReport": 1
+    }
+  },
+  "large_arrays_in_repo": false,
+  "raw_eeg_in_repo": false
+}

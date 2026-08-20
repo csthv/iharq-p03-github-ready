@@ -1,0 +1,111 @@
+{
+  "artifact_id": "P01-L1-A4-STORAGE-ACTUAL-4cd080393345e8aa-20260807143013-663eab13",
+  "status": "PRECOMMIT_ALL_A4_SHARD_TOKENS_OBTAINED",
+  "base_scientific_freeze": "P01-L1-OFFICIAL-RUN-FREEZE-R2",
+  "a4_window_family": {
+    "window_family_id": "P01-L1-A4-WINDOW-FAMILY-FREEZE-R2",
+    "protocol_status": "DATA_READY_PROTOCOL_SYNC_REQUIRED",
+    "target_sampling_hz": 160,
+    "materialized_profile": {
+      "profile_id": "A4_LONG_MATCHED_3P5S_R2",
+      "event_anchor": "MI_CUE_ONSET",
+      "start_offset_samples": 0,
+      "duration_samples": 560,
+      "duration_seconds": "3.5",
+      "view_kind": "MATERIALIZED"
+    },
+    "multi_window_profile": {
+      "profile_id": "A4_MULTI_3X2S_UNIFORM_0P75S_R2",
+      "member_count": 3,
+      "member_duration_samples": 320,
+      "member_duration_seconds": "2.0",
+      "member_stride_samples": 120,
+      "member_stride_seconds": "0.75",
+      "member_slices": [
+        {
+          "member_index": 1,
+          "condition_id": "A4_MULTI_3X2S_M1_R2",
+          "slice_start": 0,
+          "slice_stop": 320,
+          "start_offset_seconds": "0.0",
+          "stop_offset_seconds": "2.0"
+        },
+        {
+          "member_index": 2,
+          "condition_id": "A4_MULTI_3X2S_M2_R2",
+          "slice_start": 120,
+          "slice_stop": 440,
+          "start_offset_seconds": "0.75",
+          "stop_offset_seconds": "2.75"
+        },
+        {
+          "member_index": 3,
+          "condition_id": "A4_MULTI_3X2S_M3_R2",
+          "slice_start": 240,
+          "slice_stop": 560,
+          "start_offset_seconds": "1.5",
+          "stop_offset_seconds": "3.5"
+        }
+      ],
+      "view_kind": "REGISTERED_VIRTUAL_SLICE",
+      "storage_rule": "VIEWS_REFERENCE_THE_LOSSLESS_MATCHED_3P5S_EVENT_TENSOR; OVERLAPPING_NUMERICAL_BYTES_ARE_NOT_DUPLICATED"
+    }
+  },
+  "base_config_id": "d03f0a7c869dd95a2a67e5a32edc501d52bfc3851d8e761ef56595d8bd1ff52f",
+  "a4_config_id": "4cd080393345e8aa215280fc51736b5b6fb42693da8120c259e5de7316427518",
+  "core_dataset_handle": "csthv999z/iharq-p01-l1-derived-windows-d03f0a7c869d-20260806222242-68a91473",
+  "core_provider_dataset_version": 2,
+  "a4_dataset_handle": "csthv999z/iharq-p01-l1-a4-d03f0a7c-9a7c6108",
+  "subject_shards": 172,
+  "resumed_subjects": 0,
+  "newly_materialized_subjects": 172,
+  "resume_checkpoint_root": "/kaggle/working/iharq_p01_l1/streaming_runtime/r48_a4_materialize_resume/4cd080393345e8aa",
+  "checkpoint_cleanup_rule": "DELETE_ONLY_AFTER_REMOTE_DATASET_MANIFEST_VERIFICATION",
+  "materialized_matched3p5s_events": 12910,
+  "a4_window_records": 51640,
+  "a4_groups": 12910,
+  "virtual_multi_views": 38730,
+  "invalid_window_count": 0,
+  "signal_dtype": "float32",
+  "logical_materialized_float32_bytes": 1582730240,
+  "logical_materialized_float32_gib": 1.474,
+  "actual_hdf5_uploaded_bytes": 1357362334,
+  "actual_hdf5_uploaded_gib": 1.264,
+  "actual_compression_ratio": 0.8576081379477528,
+  "overlap_storage_policy": "STORE_MATCHED_3P5S_ONCE_AND_REGISTER_3X2S_UNIFORM_0P75S_VIEWS",
+  "dataset_totals": [
+    {
+      "dataset_id": "BNCI2014_001",
+      "subjects": 9,
+      "shards": 9,
+      "materialized_events": 2592,
+      "window_records": 10368,
+      "logical_stored_bytes": 127733760,
+      "actual_hdf5_bytes": 110044193,
+      "logical_stored_gib": 0.119,
+      "actual_hdf5_gib": 0.102
+    },
+    {
+      "dataset_id": "Lee2019_MI",
+      "subjects": 54,
+      "shards": 54,
+      "materialized_events": 5400,
+      "window_records": 21600,
+      "logical_stored_bytes": 749952000,
+      "actual_hdf5_bytes": 641723091,
+      "logical_stored_gib": 0.698,
+      "actual_hdf5_gib": 0.598
+    },
+    {
+      "dataset_id": "PhysioNetMI",
+      "subjects": 109,
+      "shards": 109,
+      "materialized_events": 4918,
+      "window_records": 19672,
+      "logical_stored_bytes": 705044480,
+      "actual_hdf5_bytes": 605595050,
+      "logical_stored_gib": 0.657,
+      "actual_hdf5_gib": 0.564
+    }
+  ]
+}

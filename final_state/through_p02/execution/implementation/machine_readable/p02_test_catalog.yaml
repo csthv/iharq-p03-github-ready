@@ -1,0 +1,88 @@
+tests:
+- test_id: T-CFG-01
+  kind: unit
+  target: P02 config parser
+  expected: P02 accepted, P00 compatibility preserved
+  gate: G05
+- test_id: T-SEED-01
+  kind: unit
+  target: seed derivation
+  expected: same semantic run identity -> same derived seed; distinct identity ->
+    distinct deterministic seed
+  gate: G05
+- test_id: T-BUD-01
+  kind: unit
+  target: budget loader
+  expected: exact nested P01 membership; no window-level resampling
+  gate: G04
+- test_id: T-MOD-01
+  kind: unit
+  target: model builder
+  expected: every portfolio branch resolves to role/status/admission gate
+  gate: G06
+- test_id: T-SCORE-01
+  kind: unit
+  target: score semantics
+  expected: class order and native output type explicit; no fabricated probability
+  gate: G14
+- test_id: T-MET-01
+  kind: golden
+  target: accuracy/balanced accuracy/F1/AUC/confusion
+  expected: matches independent fixture expectations including undefined cases
+  gate: G15
+- test_id: T-ENS-01
+  kind: golden
+  target: majority vote/probability average
+  expected: fixed class order and tie policy
+  gate: G18
+- test_id: T-A4-01
+  kind: integration
+  target: A4 parent matching
+  expected: no unmatched row in paired comparison; missing retained
+  gate: G18
+- test_id: T-ABL-01
+  kind: governance
+  target: ablation unlock
+  expected: A0/A4 execute; A1-A3/A5-A13 do not without authority; A14 impossible
+  gate: G18U
+- test_id: T-LEAK-01
+  kind: negative
+  target: test label firewall
+  expected: selection/fit attempt using test rejected
+  gate: G07
+- test_id: T-CHK-01
+  kind: checkpoint
+  target: save/reload/predict
+  expected: equivalent inference within frozen tolerance
+  gate: G13
+- test_id: T-REC-01
+  kind: schema
+  target: all L2 records
+  expected: P02 successor schema + lineage + status valid
+  gate: G06
+- test_id: T-FAIL-01
+  kind: negative
+  target: failed branch
+  expected: failure remains visible and excluded only with reason
+  gate: G19
+- test_id: T-READY-01
+  kind: integration
+  target: consumer readiness
+  expected: per-consumer fail-closed, not global success inference
+  gate: G20
+- test_id: T-BUNDLE-01
+  kind: bundle
+  target: checksums/path safety/manifest/secret scan
+  expected: all PASS
+  gate: G24
+- test_id: T-REPRO-01
+  kind: reproduction
+  target: deterministic classical branch
+  expected: clean reload/re-execution reproduces source outputs within tolerance
+  gate: G24
+repo_baseline_test_observation:
+  original_inherited_suite: 23 PASS / 3 FAIL
+  failure_class: legacy P00 publication-path assumptions
+  reconciliation_patch: p02_cumulative_test_reconciliation_R3.patch
+  verified_disposable_copy: 26 PASS / 0 FAIL
+  required_pre_notebook: APPLY_AND_VERIFY

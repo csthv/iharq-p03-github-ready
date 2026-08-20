@@ -1,0 +1,38 @@
+{
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "metrics": {
+    "BACC": 0.49,
+    "F1_MACRO": 0.4897959183673469,
+    "ACC": 0.49,
+    "CONFUSION": [
+      [
+        141,
+        159
+      ],
+      [
+        147,
+        153
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      300,
+      300
+    ],
+    "PRED_COMPLETE": 600,
+    "ROC_AUC": null,
+    "ROC_AUC_STATUS": "NOT_AVAILABLE_NO_CONTINUOUS_SCORE"
+  },
+  "validation_selected_branch": "SSL-CBRAMOD",
+  "observed_denominator": 600,
+  "condition_id": "A4-C2-MULTI-HARD-VOTE",
+  "burden": {
+    "evidence_duration_s": 2.0,
+    "observation_horizon_s": 3.5,
+    "model_or_view_evaluations": 3,
+    "member_count": 3,
+    "aggregation_operation": "HARD_VOTE",
+    "batch1_latency_median_s": 1.9537424030004331,
+    "batch1_latency_p95_s": 1.9537424030004331,
+    "aggregation_latency_s": 0.006091745999583509
+  }
+}

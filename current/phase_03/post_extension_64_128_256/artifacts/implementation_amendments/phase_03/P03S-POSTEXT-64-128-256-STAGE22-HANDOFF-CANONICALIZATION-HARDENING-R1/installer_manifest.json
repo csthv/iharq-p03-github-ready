@@ -1,0 +1,54 @@
+{
+  "canonical_algorithm_profile": "P03-C8-STAGE22-HANDOFF-CANONICALIZATION-HARDENING-R1",
+  "canonical_inputs": {
+    "artifact_index_count": 35,
+    "candidate_claim_count": 4,
+    "explicit_comparator_count": 4,
+    "later_phase_rows": 11,
+    "limitation_rows": 7,
+    "metric_analysis_rows": 5148,
+    "negative_result_rows": 1016,
+    "statistics_input_rows": 5148
+  },
+  "canonical_products_after_stage22": {
+    "P03-PROD-046": "artifacts/layer0_handoff/phase_03/layer0_claim_handoff.yaml",
+    "P03-PROD-047": "artifacts/evidence_map_handoff/phase_03/evidence_map_handoff.yaml",
+    "P03-PROD-048": "artifacts/handoffs/phase_03_to_phase_04/p03_handoff_manifest.json",
+    "P03-PROD-049": "artifacts/manifests/phase_03/later_phase_handoff.csv",
+    "P03-PROD-050": "artifacts/protocol_v1_handoff/phase_03/protocol_actual_run_annex_input.yaml",
+    "P03-PROD-062": "artifacts/phase_analysis_handoff/phase_03/index.yaml",
+    "P03-PROD-063": "artifacts/layer0_handoff/phase_03/claim_evidence_input.yaml"
+  },
+  "config_changed": false,
+  "expected_raw": {
+    "consumer_handoff_count": 18,
+    "product_count": 7,
+    "raw_descriptor_count": 24
+  },
+  "hardening_id": "P03S-POSTEXT-64-128-256-STAGE22-HANDOFF-CANONICALIZATION-HARDENING-R1",
+  "maxq_fix_id": "P03S-POSTEXT-STAGE22-CANONICAL-HANDOFF-SURFACE-R1",
+  "prohibitions": {
+    "claim_approval": true,
+    "claim_strengthening": true,
+    "inferential_statistics": true,
+    "model_or_calibrator_fitting": true,
+    "negative_result_deletion": true,
+    "new_scientific_estimation": true,
+    "test_driven_selection": true,
+    "threshold_retuning": true
+  },
+  "protocol_changed": false,
+  "repository_mutated": false,
+  "run_id": "P03-L3-POSTEXT-64-128-256-R1-1833e865bcb88ff8",
+  "schema_id": "P03Stage22HandoffCanonicalizationInstallerManifest.v1",
+  "schema_version": "1.0.0",
+  "scientific_handler_changed": false,
+  "scientific_handler_module": "iharq.layer3_calibration_uncertainty.stages",
+  "scientific_handler_sha256": "167a7d3c6a72fc0d52c9f92036a79156f182492f1b0f83eae6017c3155c56ba3",
+  "scientific_method_changed": false,
+  "stage21_final_disposition": "ACCEPT/FREEZE",
+  "stage22_executed": false,
+  "stage23_executed": false,
+  "stage_id": "22",
+  "status": "PASS"
+}

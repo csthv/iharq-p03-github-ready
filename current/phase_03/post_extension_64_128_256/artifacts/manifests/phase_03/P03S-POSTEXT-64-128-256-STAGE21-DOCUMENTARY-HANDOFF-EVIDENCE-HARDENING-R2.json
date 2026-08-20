@@ -1,0 +1,69 @@
+{
+  "canonical_algorithm_profile": "P03-C8-STAGE21-DOCUMENTARY-HANDOFF-EVIDENCE-HARDENING-R2",
+  "config_changed": false,
+  "hardening_id": "P03S-POSTEXT-64-128-256-STAGE21-DOCUMENTARY-HANDOFF-EVIDENCE-HARDENING-R2",
+  "invariants": {
+    "claim_approval_performed": false,
+    "layer10_recomputation": "PROHIBITED",
+    "scientific_recomputation": false,
+    "stage21_raw_payloads_exactly_reproduced": true,
+    "statistics_executed": false,
+    "test_used_for_selection": false,
+    "uncertainty_invented": false
+  },
+  "products": {
+    "P03-PROD-038": {
+      "path": "artifacts/manifests/phase_03/artifact_traceability.csv",
+      "row_count": 24,
+      "sha256": "5dd079bff4b861b66d7cc5019c08fb5beff6789aff62b95592c911d442cd9441"
+    },
+    "P03-PROD-039": {
+      "root": "artifacts/phase_analysis_handoff/phase_03/metrics",
+      "row_count": 5148,
+      "sha256": "c2c63c346b89b030f63fb166b48be996e8c0ef4c2e6226972fff224447111700"
+    },
+    "P03-PROD-040": {
+      "inferential_statistics_executed": false,
+      "root": "artifacts/phase_analysis_handoff/phase_03/statistics",
+      "row_count": 5148,
+      "sha256": "4e08c3c08defb14aa8b29cf60fdf9c8856e6f8f7324bd0fdf72bd84e9ecea285"
+    },
+    "P03-PROD-041": {
+      "manifest_sha256": "a89cc58a2d49b923cb41277c7b6e7c78eed296045880754a87bb24a4ee4d0f25",
+      "root": "artifacts/layer10_source_bundle/phase_03/figure_source_data",
+      "source_file_count": 2
+    },
+    "P03-PROD-042": {
+      "manifest_sha256": "ece1667ec001ba6b9dccce74cf67630febcf37ba707c7d1d5928395ba2f77d01",
+      "root": "artifacts/layer10_source_bundle/phase_03/table_source_data",
+      "source_file_count": 2
+    },
+    "P03-PROD-043": {
+      "record_count": 324,
+      "records_sha256": "81d556cb23d0ffde088d4acdf1f7f71e93f630e2f2efe83567bd1165b20b3f2c",
+      "root": "artifacts/records/phase_03/CalibrationDashboardMetricRecord/P03S-POSTEXT-64-128-256-STAGE21-DOCUMENTARY-HANDOFF-EVIDENCE-HARDENING-R2"
+    },
+    "P03-PROD-044": {
+      "record_count": 108,
+      "records_sha256": "e411aa8ce6257acb1e3017710945bd4f048986e0348ab4032eca6f7300e774ba",
+      "root": "artifacts/layer10_source_bundle/phase_03/cards"
+    },
+    "P03-PROD-045": {
+      "file_count": 12,
+      "manifest_sha256": "d08348524d62be2e8ccc09b1b8ca7de951a1c694c2bb72544de8afe906b9ae07",
+      "root": "artifacts/layer10_source_bundle/phase_03"
+    }
+  },
+  "protocol_changed": false,
+  "repository_mutated": false,
+  "run_id": "P03-L3-POSTEXT-64-128-256-R1-1833e865bcb88ff8",
+  "schema_id": "P03Stage21DocumentaryHandoffHardeningManifest.v1",
+  "schema_version": "1.0.0",
+  "scientific_handler_changed": false,
+  "scientific_handler_sha256": "081b7972b6065ccaf211e2207b4ef81c50cd291892bab56c8bee3128ae4910b7",
+  "scientific_method_changed": false,
+  "stage21_output_manifest_sha256": "3fe80ba37387d06b19a1e7467e53d76ce63d4d84030c7f4c7eed41a16d5042b9",
+  "stage21_scientific_bytes_changed": false,
+  "stage_id": "21",
+  "status": "PASS"
+}

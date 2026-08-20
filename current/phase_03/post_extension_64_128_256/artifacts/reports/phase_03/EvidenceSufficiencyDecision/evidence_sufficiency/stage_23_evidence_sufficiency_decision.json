@@ -1,0 +1,216 @@
+{
+  "artifact_id": "P03-PROD-056-eb16289550f6dc04cf5b",
+  "created_at_utc": "2026-08-18T19:25:20.972660+00:00",
+  "evidence": {
+    "a2_no_legal_threshold_count": 37,
+    "a2_success_count": 71,
+    "a3_no_legal_threshold_count": 111,
+    "a3_success_count": 213,
+    "lawful_not_applicable_prior_stage_count": 7,
+    "limitation_count": 7,
+    "negative_result_count": 1016,
+    "p048_sha256": "da063e215bef02cdef682400b0d5a50c4a47289e1fc701cdf4e3aeadbeae091a",
+    "p062_sha256": "0f27184dc3cd4e72f1fd1960e01b3b5986556bdf583d7c28e8db49e9cd5baffe",
+    "p063_sha256": "4d90fd1248a36abeecd2951920868d181e1e425b462b757a5f82722c69edbd78",
+    "physical_prior_stage_count": 16,
+    "pre_export_accounted_product_count": 59,
+    "pre_export_out_of_scope_product_count": 10,
+    "pre_export_realized_product_count": 49,
+    "prior_stage_accounted_count": 23,
+    "stage23_governed_checkpoint_receipt_path_adapted": true,
+    "stage23_operational_checkpoint_receipt_sha256": "0684998a7c46ed281b07ea5f506cefa62000f2941e0c159a673fd9de99db5948"
+  },
+  "final_phase_sufficiency": false,
+  "final_phase_sufficiency_pending_stage24": true,
+  "gate_id": "G03-23-SUFFICIENCY",
+  "hardening_id": "P03S-POSTEXT-64-128-256-STAGE23-SUPPLEMENT-NATIVE-SUFFICIENCY-HARDENING-R1",
+  "insufficiency": {
+    "blocking_defects_within_postext_scope": [],
+    "canonical_full_run_parity_blockers": {
+      "missing_physical_stage_receipts": [
+        "00",
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06"
+      ],
+      "out_of_scope_product_ids": [
+        "P03-PROD-001",
+        "P03-PROD-002",
+        "P03-PROD-003",
+        "P03-PROD-004",
+        "P03-PROD-005",
+        "P03-PROD-006",
+        "P03-PROD-007",
+        "P03-PROD-008",
+        "P03-PROD-009",
+        "P03-PROD-010"
+      ],
+      "stage04_intake_not_materialized": true
+    },
+    "pending_non_stage23_closure": [
+      "Stage24 checksum closure",
+      "Stage24 secret scan",
+      "Stage24 complete export/bundle closure",
+      "Stage24 cross-authority artifact-obligation audit",
+      "Post-Stage24 two-new-Hugging-Face-repository release authorization"
+    ]
+  },
+  "limitations": [
+    "This decision is supplement-scoped pre-export sufficiency, not canonical full-run Stage23 parity.",
+    "Final Phase-3 supplement package closure remains pending Stage24."
+  ],
+  "loopback": {
+    "owner": null,
+    "policy": "Minimum lawful affected-scope repair only if a real in-scope defect is found.",
+    "required_now": false,
+    "stage": null
+  },
+  "payload_sha256": "eb16289550f6dc04cf5b08b3219ba5117363865d5be9eae6d236d8d21673a815",
+  "product_id": "P03-PROD-056",
+  "raw_sufficiency": {
+    "A0_status": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT",
+    "A1_denominator_complete": true,
+    "A2_denominator_complete": true,
+    "A3_denominator_complete": true,
+    "A4_status": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT",
+    "all_canonical_prior_stages_terminal": false,
+    "all_in_scope_prior_stages_terminal": true,
+    "candidate_claims_approved": false,
+    "canonical_full_product_universe_realized": false,
+    "canonical_full_run_stage23_parity": false,
+    "canonical_pre_stage24_product_universe_accounted": true,
+    "checksums_pending_stage_24": true,
+    "downstream_handoffs_created": true,
+    "every_in_scope_required_artifact_produced_or_lawfully_terminal": true,
+    "exact_canonical_stage23_handler_portable": false,
+    "failures_persisted": true,
+    "final_phase_sufficiency": false,
+    "final_phase_sufficiency_pending_stage24": true,
+    "member_disagreement_denominator_accounted": true,
+    "out_of_scope_prior_stages": [
+      "00",
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06"
+    ],
+    "out_of_scope_prior_stages_explicitly_accounted": true,
+    "out_of_scope_product_ids": [
+      "P03-PROD-001",
+      "P03-PROD-002",
+      "P03-PROD-003",
+      "P03-PROD-004",
+      "P03-PROD-005",
+      "P03-PROD-006",
+      "P03-PROD-007",
+      "P03-PROD-008",
+      "P03-PROD-009",
+      "P03-PROD-010"
+    ],
+    "preupload_full_artifact_obligation_audit_pending_stage24": true,
+    "publication_contract": {
+      "contract_id": "P03S-POSTEXT-STAGE24-RELEASE-POLICY-R1",
+      "direct_github_upload_permitted": false,
+      "external_artifact_pointer_product_id": "P03-PROD-061",
+      "external_pointer_minimum_fields": [
+        "provider",
+        "repository_id",
+        "immutable_revision",
+        "object_path",
+        "bytes",
+        "sha256",
+        "role",
+        "credential_class"
+      ],
+      "final_upload_requires_separate_explicit_authorization": true,
+      "network_upload_authorized_now": false,
+      "new_huggingface_repository_count_required": 2,
+      "preupload_audit_must_cover": [
+        "all 65 P03 expected product IDs with realized or lawful out-of-scope disposition",
+        "all P04-P15 and documentary downstream consumer contracts",
+        "Protocol / Phase Analysis / Layer0 / Evidence Map / Layer10 / Paper-Thesis handoff requirements",
+        "canonical artifact/interface registry requirements",
+        "execution/evidence plan requirements",
+        "experiment/ablation/evaluation protocol requirements",
+        "complete phase execution playbook requirements",
+        "Layers0-to-10 design/rationale/nuts-and-bolts authority requirements",
+        "P03 implementation build-book product/artifact coverage requirements",
+        "actual accepted Stage07-Stage24 manifests, receipts, hardening and limitations",
+        "GitHub-ready metric/calculation/numerical-result completeness",
+        "heavy-artifact pointer immutable revision and checksum closure",
+        "secret scan and credential-safety closure"
+      ],
+      "preupload_full_artifact_obligation_audit_required": true,
+      "previous_phase3_huggingface_repository_reuse_permitted": false,
+      "release_provider": "HuggingFace",
+      "repositories": {
+        "github_ready_archive_repository": {
+          "contains_github_ready_tree": true,
+          "must_be_new": true,
+          "must_include_all_metrics_calculations_and_numerical_results": true,
+          "must_include_machine_readable_heavy_artifact_pointers": true,
+          "payload_form": "ZIP"
+        },
+        "heavy_artifact_repository": {
+          "metrics_or_calculations_may_exist_only_here": false,
+          "must_be_new": true,
+          "must_have_object_manifest_and_checksums": true,
+          "role": "HEAVY_ARTIFACTS_ONLY"
+        }
+      },
+      "stage24_expected_product_ids": [
+        "P03-PROD-058",
+        "P03-PROD-059",
+        "P03-PROD-060",
+        "P03-PROD-061",
+        "P03-PROD-064",
+        "P03-PROD-065"
+      ],
+      "status": "LOCKED_FOR_FUTURE_STAGE24_AND_RELEASE_GATES"
+    },
+    "required_output_missing": [],
+    "scope": "POSTEXT_SUPPLEMENT_PRE_EXPORT",
+    "secret_scan_pending_stage_24": true,
+    "status": "PASS",
+    "test_used_for_selection": false
+  },
+  "requirements": [
+    "all in-scope stages 07-22 terminal COMPLETE",
+    "stages 00-06 explicitly out-of-scope and not fabricated",
+    "all in-scope required products realized or lawfully terminal",
+    "P001-P010 explicitly out-of-scope and not fabricated",
+    "A1/A2/A3 denominator closure",
+    "A0/A4 explicitly not applicable to post-extension supplement",
+    "member-disagreement conditional denominator accounted",
+    "failure/negative denominator complete",
+    "downstream P04/later handoffs created",
+    "governed PhaseAnalysisInputIndex and ClaimEvidenceInput available",
+    "TEST not used for selection",
+    "candidate claims remain unapproved",
+    "Stage24 cross-authority artifact-obligation audit remains mandatory before release"
+  ],
+  "run_id": "P03-L3-POSTEXT-64-128-256-R1-1833e865bcb88ff8",
+  "schema_id": "EvidenceSufficiencyDecision.v1",
+  "schema_version": "1.0.0",
+  "scope": "PRE_EXPORT",
+  "source_artifact_ids": [
+    "STAGE23-RAW-SUFFICIENCY",
+    "P03-PROD-048",
+    "P03-PROD-062",
+    "P03-PROD-063"
+  ],
+  "source_sha256s": [
+    "f77938b92fe50ab028d0ee3bd3343f607474b5acdc5afc99865ef30abc2621d3",
+    "da063e215bef02cdef682400b0d5a50c4a47289e1fc701cdf4e3aeadbeae091a",
+    "0f27184dc3cd4e72f1fd1960e01b3b5986556bdf583d7c28e8db49e9cd5baffe",
+    "4d90fd1248a36abeecd2951920868d181e1e425b462b757a5f82722c69edbd78"
+  ],
+  "stage_id": "23",
+  "status": "PASS",
+  "supplement_scope": "POSTEXT_SUPPLEMENT_PRE_EXPORT"
+}

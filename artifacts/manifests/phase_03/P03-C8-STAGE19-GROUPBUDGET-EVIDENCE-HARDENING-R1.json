@@ -1,0 +1,63 @@
+{
+  "config_changed": false,
+  "gate_id": "G03-19-GROUP",
+  "hardening_id": "P03-C8-STAGE19-GROUPBUDGET-EVIDENCE-HARDENING-R1",
+  "products": {
+    "P03-PROD-033": {
+      "diagnostic_only_count": 0,
+      "eligible_count": 3800,
+      "family": "GroupBudgetAuditTable",
+      "family_manifest_sha256": "4295b8768c97eb811ba148903e711acffac56f3eabe24f56abcd0eafec53ebc8",
+      "family_root": "artifacts/reports/phase_03/GroupBudgetAuditTable/group_budget/P03-C8-STAGE19-GROUPBUDGET-EVIDENCE-HARDENING-R1",
+      "record_count": 3800,
+      "schema_id": "GroupBudgetAuditTable.v1",
+      "schema_sha256": "06229d9272306e77aa9ce51f51570ffaf5768e0f1221d3476bee1c9a8b35e11b"
+    },
+    "P03-PROD-034": {
+      "family": "SparseSupportWarning",
+      "family_manifest_sha256": "c8fa42399ca7dbcf77f463d42bd1e3c3bf9c93e33abf807b33a993740e6edf39",
+      "family_root": "artifacts/negative_and_failed_results/phase_03/sparse_support/P03-C8-STAGE19-GROUPBUDGET-EVIDENCE-HARDENING-R1",
+      "record_count": 0,
+      "schema_id": "SparseSupportWarning.v1",
+      "schema_sha256": "41fbc243e12daf45baf0a7a46a8c9e3f40ed94d1cb931978655d30bc45c4684a"
+    }
+  },
+  "protocol_changed": false,
+  "raw_stage19": {
+    "group_budget_csv_sha256": "64895c333f8d143a6b598e8b90e95223e9ff5cc16b5ca539a732fcc7fb57434b",
+    "group_budget_rows": 3800,
+    "group_budget_rows_sha256": "eb8fb6ece4e6eb790f9452fca08cc6617e8a1b90631a54d89b43593c8673d080",
+    "output_manifest_sha256": "8f6d150192d403974531ab2006bb26b8b9ff723062ae0b833fe546cd89fcc785",
+    "sparse_support_warnings": 0,
+    "sparse_support_warnings_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "repository_mutated": false,
+  "run_id": "P03-L3-OFFICIAL-09ca82c743e0411a",
+  "schema_id": "P03Stage19GroupBudgetProspectiveHardeningManifest.v1",
+  "schema_version": "1.0.0",
+  "scientific_handler_changed": false,
+  "scientific_invariants": {
+    "evaluation_role": "test",
+    "group_fields": [
+      "dataset_id",
+      "subject_id",
+      "session_id",
+      "model_id",
+      "branch_id",
+      "budget_id",
+      "split_id",
+      "calibration_method_id"
+    ],
+    "group_profile_id": "P03-OFFICIAL-GROUP-AUDIT-R1",
+    "metric_profile_id": "P03-OFFICIAL-METRICS-R1",
+    "minimum_support": 10,
+    "nll_epsilon": 1e-12,
+    "posthoc_group_creation": false,
+    "sparse_metrics_fabricated": 0,
+    "test_used_for_selection": false
+  },
+  "scientific_method_changed": false,
+  "stage19_stage_artifacts_mutated_by_hook": false,
+  "stage_id": "19",
+  "status": "PASS"
+}

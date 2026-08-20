@@ -1,0 +1,783 @@
+closure_ledger:
+- closure_item_id: C001
+  phase: P00-P02
+  layer: project
+  authority_source: Governance + Protocol
+  expected_product_or_obligation: Single cumulative Protocol authority
+  producer: Protocol
+  consumer: P03+
+  expected_artifact: authorities/protocol_v1/IHARQ_Protocol_v1_0_Final_Through_Phase_02_R1.md
+  actual_artifact: authorities/protocol_v1/IHARQ_Protocol_v1_0_Final_Through_Phase_02_R1.md
+  scientific_role: execution/analysis authority
+  analysis_role: analysis boundary
+  claim_role: claim ceiling
+  evidence_map_role: protocol identities
+  layer10_role: scope authority
+  downstream_role: phase intake
+  status: COMPLETE
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C002
+  phase: P00-P02
+  layer: project
+  authority_source: Phase Analysis lifecycle
+  expected_product_or_obligation: Cumulative scientific analysis
+  producer: Analysis
+  consumer: Layer0/Paper/P03
+  expected_artifact: analysis/IHARQ_Cumulative_Phase_Evidence_Results_and_Interpretation_Through_P02_Final_R1.md
+  actual_artifact: analysis/IHARQ_Cumulative_Phase_Evidence_Results_and_Interpretation_Through_P02_Final_R1.md
+  scientific_role: scientific memory
+  analysis_role: primary analysis
+  claim_role: candidate claims
+  evidence_map_role: findings source
+  layer10_role: figure/table interpretation
+  downstream_role: paper/phase context
+  status: COMPLETE
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C003
+  phase: P00-P02
+  layer: L0
+  authority_source: Governance
+  expected_product_or_obligation: Cumulative claim governance
+  producer: Layer0
+  consumer: EvidenceMap/Layer10
+  expected_artifact: layer0/Layer_0_Claim_Governance_Through_P02.md
+  actual_artifact: layer0/Layer_0_Claim_Governance_Through_P02.md
+  scientific_role: claim safety
+  analysis_role: claim review
+  claim_role: governed dispositions
+  evidence_map_role: claim root
+  layer10_role: caption ceiling
+  downstream_role: all consumers
+  status: COMPLETE
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C004
+  phase: P00-P02
+  layer: EvidenceMap
+  authority_source: Governance
+  expected_product_or_obligation: Cumulative provenance graph
+  producer: EvidenceMap
+  consumer: Layer10/Paper/P03
+  expected_artifact: evidence_map/evidence_map.yaml
+  actual_artifact: evidence_map/evidence_map.yaml
+  scientific_role: traceability
+  analysis_role: evidence linking
+  claim_role: claim support
+  evidence_map_role: primary graph
+  layer10_role: render source
+  downstream_role: all consumers
+  status: COMPLETE
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C005
+  phase: P00-P02
+  layer: L10
+  authority_source: Governance
+  expected_product_or_obligation: Cumulative reproducible presentation
+  producer: Layer10
+  consumer: Paper/Thesis
+  expected_artifact: layer10/Layer_10_Artifact_Package_Through_P02.md
+  actual_artifact: layer10/Layer_10_Artifact_Package_Through_P02.md
+  scientific_role: presentation
+  analysis_role: no new analysis
+  claim_role: Layer0-bounded
+  evidence_map_role: mapped artifacts
+  layer10_role: primary role
+  downstream_role: publication
+  status: COMPLETE
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C006
+  phase: P02
+  layer: L2
+  authority_source: Build Book + Protocol
+  expected_product_or_obligation: PredictionRecord substrate
+  producer: P02 L2
+  consumer: P03 L3
+  expected_artifact: execution/runtime/manifests/record_partitions/PredictionRecord
+  actual_artifact: execution/runtime/manifests/record_partitions/PredictionRecord
+  scientific_role: raw prediction substrate
+  analysis_role: analysis source
+  claim_role: non-claim data
+  evidence_map_role: evidence nodes
+  layer10_role: source data where used
+  downstream_role: calibration/uncertainty
+  status: COMPLETE
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C007
+  phase: P02
+  layer: L2
+  authority_source: Build Book + Protocol
+  expected_product_or_obligation: ModelRegistryRecord and checkpoint lineage
+  producer: P02 L2
+  consumer: P03/reproduction
+  expected_artifact: execution/runtime/manifests/record_partitions/ModelRegistryRecord
+  actual_artifact: execution/runtime/manifests/record_partitions/ModelRegistryRecord
+  scientific_role: model lineage
+  analysis_role: model identity
+  claim_role: non-claim data
+  evidence_map_role: artifact provenance
+  layer10_role: source identity
+  downstream_role: P03 model metadata
+  status: COMPLETE
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C008
+  phase: P02
+  layer: L2
+  authority_source: Build Book + Protocol
+  expected_product_or_obligation: P03 consumer readiness report
+  producer: P02 L2
+  consumer: P03
+  expected_artifact: execution/runtime/records/Layer2ReadinessReport/dataset=ALL/branch=READINESS/budget=ALL/P02-L2-READINESS-P03.jsonl
+  actual_artifact: execution/runtime/records/Layer2ReadinessReport/dataset=ALL/branch=READINESS/budget=ALL/P02-L2-READINESS-P03.jsonl
+  scientific_role: readiness
+  analysis_role: not analysis
+  claim_role: non-claim
+  evidence_map_role: readiness evidence
+  layer10_role: not presentation-critical
+  downstream_role: P03 gate input
+  status: COMPLETE
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C009
+  phase: P02
+  layer: L2
+  authority_source: Protocol
+  expected_product_or_obligation: A0 evidence and statistics
+  producer: P02 L2
+  consumer: Analysis/L0/EM/L10/P03
+  expected_artifact: execution/runtime/analysis_inputs/a0_completion.json
+  actual_artifact: execution/runtime/analysis_inputs/a0_completion.json
+  scientific_role: baseline decoder evidence
+  analysis_role: primary result
+  claim_role: qualified claims
+  evidence_map_role: A0 mapping
+  layer10_role: A0 figures/tables
+  downstream_role: baseline context
+  status: COMPLETE
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C010
+  phase: P02
+  layer: L2
+  authority_source: Protocol
+  expected_product_or_obligation: A4 evidence/controls/resource deviation
+  producer: P02 L2
+  consumer: Analysis/L0/EM/L10
+  expected_artifact: execution/runtime/analysis_inputs/a4_completion.json
+  actual_artifact: execution/runtime/analysis_inputs/a4_completion.json
+  scientific_role: ablation evidence
+  analysis_role: primary ablation
+  claim_role: bounded claims
+  evidence_map_role: A4 mapping
+  layer10_role: A4 views
+  downstream_role: future context
+  status: COMPLETE
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C011
+  phase: P02
+  layer: L2
+  authority_source: Protocol amendment history
+  expected_product_or_obligation: Stage 11/12 correction lineage
+  producer: P02 L2
+  consumer: Analysis/L0/EM
+  expected_artifact: execution/runtime/analysis_inputs/training_policy_challenger_completion.json
+  actual_artifact: execution/runtime/analysis_inputs/training_policy_challenger_completion.json
+  scientific_role: methodological evidence
+  analysis_role: diagnostic+accepted history
+  claim_role: bounded methodological claim
+  evidence_map_role: provenance chain
+  layer10_role: correction figure/table
+  downstream_role: reproduction
+  status: COMPLETE
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C012
+  phase: P02
+  layer: L2
+  authority_source: Protocol
+  expected_product_or_obligation: Stage18S post-hoc sensitivity
+  producer: P02 L2
+  consumer: Analysis/L0/EM/L10
+  expected_artifact: execution/runtime/analysis_inputs/stage18S_R1_decision_support_summary.json
+  actual_artifact: execution/runtime/analysis_inputs/stage18S_R1_decision_support_summary.json
+  scientific_role: post-hoc sensitivity
+  analysis_role: descriptive only
+  claim_role: post-hoc only
+  evidence_map_role: supplement map
+  layer10_role: limitation-aware view
+  downstream_role: future design
+  status: COMPLETE
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C013
+  phase: P02
+  layer: L2
+  authority_source: Protocol
+  expected_product_or_obligation: Failure/negative/diagnostic evidence
+  producer: P02 L2
+  consumer: Analysis/L0/EM/L10
+  expected_artifact: execution/runtime/analysis_inputs/failure_negative_summary.json
+  actual_artifact: execution/runtime/analysis_inputs/failure_negative_summary.json
+  scientific_role: negative evidence
+  analysis_role: failure analysis
+  claim_role: negative claim boundary
+  evidence_map_role: negative nodes
+  layer10_role: negative displays
+  downstream_role: consumer warning
+  status: COMPLETE
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C014
+  phase: P02
+  layer: L2
+  authority_source: Build Book
+  expected_product_or_obligation: Frozen record schemas
+  producer: P02 L2
+  consumer: P03+
+  expected_artifact: execution/implementation/contracts/record_schema_freeze.yaml
+  actual_artifact: execution/implementation/contracts/record_schema_freeze.yaml
+  scientific_role: schema authority
+  analysis_role: support
+  claim_role: non-claim
+  evidence_map_role: artifact schema
+  layer10_role: source schema
+  downstream_role: loader contract
+  status: COMPLETE
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C015
+  phase: P02
+  layer: L2
+  authority_source: Stage20/22/23/24
+  expected_product_or_obligation: Consumer/documentary/export closure
+  producer: P02
+  consumer: P03+
+  expected_artifact: execution/runtime/manifests/stage_artifacts
+  actual_artifact: execution/runtime/manifests/stage_artifacts
+  scientific_role: readiness/export
+  analysis_role: support
+  claim_role: non-claim
+  evidence_map_role: provenance
+  layer10_role: source support
+  downstream_role: fresh-session intake
+  status: COMPLETE
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C016
+  phase: P02
+  layer: external
+  authority_source: Protocol external contract
+  expected_product_or_obligation: Heavy-artifact immutable retrieval
+  producer: P02
+  consumer: P03-P15/reproduction
+  expected_artifact: authorities/protocol_v1/protocol_v1_0/machine_readable/external_artifact_access_contract.yaml
+  actual_artifact: authorities/protocol_v1/protocol_v1_0/machine_readable/external_artifact_access_contract.yaml
+  scientific_role: storage provenance
+  analysis_role: support
+  claim_role: non-claim
+  evidence_map_role: artifact pointer
+  layer10_role: source pointer
+  downstream_role: heavy retrieval
+  status: COMPLETE
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C017
+  phase: P00-P02
+  layer: handoff
+  authority_source: Current closure prompt
+  expected_product_or_obligation: Producer-consumer handoff contract
+  producer: Closure
+  consumer: P03+
+  expected_artifact: handoff/downstream_readiness.yaml
+  actual_artifact: handoff/downstream_readiness.yaml
+  scientific_role: handoff
+  analysis_role: support
+  claim_role: claim limits carried
+  evidence_map_role: links
+  layer10_role: warnings
+  downstream_role: primary downstream index
+  status: COMPLETE_AFTER_CORRECTION
+  defect_if_any: Prior packages lacked one final unified whole-phase consumer index
+  correction_required: Created canonical downstream readiness and producer-consumer
+    artifacts
+- closure_item_id: C018
+  phase: P00-P02
+  layer: LAYER0
+  authority_source: Governance V6.1 + prior package convention + current downstream
+    prompt
+  expected_product_or_obligation: Human-readable current claim governance
+  producer: Layer0
+  consumer: EvidenceMap
+  expected_artifact: layer0/Layer_0_Claim_Governance_Through_P02.md
+  actual_artifact: layer0/Layer_0_Claim_Governance_Through_P02.md
+  scientific_role: downstream governance artifact
+  analysis_role: support
+  claim_role: governed
+  evidence_map_role: mapped
+  layer10_role: render/support
+  downstream_role: downstream
+  status: INHERITED_UNCHANGED
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C019
+  phase: P00-P02
+  layer: LAYER0
+  authority_source: Governance V6.1 + prior package convention + current downstream
+    prompt
+  expected_product_or_obligation: Reviewed disposition register
+  producer: Layer0
+  consumer: EvidenceMap
+  expected_artifact: layer0/claim_dispositions.yaml
+  actual_artifact: layer0/claim_dispositions.yaml
+  scientific_role: downstream governance artifact
+  analysis_role: support
+  claim_role: governed
+  evidence_map_role: mapped
+  layer10_role: render/support
+  downstream_role: downstream
+  status: INHERITED_UNCHANGED
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C020
+  phase: P00-P02
+  layer: LAYER0
+  authority_source: Governance V6.1 + prior package convention + current downstream
+    prompt
+  expected_product_or_obligation: Claim scope/boundary register
+  producer: Layer0
+  consumer: EvidenceMap/Layer10
+  expected_artifact: layer0/claim_boundaries.yaml
+  actual_artifact: layer0/claim_boundaries.yaml
+  scientific_role: downstream governance artifact
+  analysis_role: support
+  claim_role: governed
+  evidence_map_role: mapped
+  layer10_role: render/support
+  downstream_role: downstream
+  status: INHERITED_UNCHANGED
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C021
+  phase: P00-P02
+  layer: LAYER0
+  authority_source: Governance V6.1 + prior package convention + current downstream
+    prompt
+  expected_product_or_obligation: Governed claim-to-finding handoff
+  producer: Layer0
+  consumer: EvidenceMap
+  expected_artifact: layer0/claim_evidence_handoff.yaml
+  actual_artifact: layer0/claim_evidence_handoff.yaml
+  scientific_role: downstream governance artifact
+  analysis_role: support
+  claim_role: governed
+  evidence_map_role: mapped
+  layer10_role: render/support
+  downstream_role: downstream
+  status: INHERITED_UNCHANGED
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C022
+  phase: P00-P02
+  layer: LAYER0
+  authority_source: Governance V6.1 + prior package convention + current downstream
+    prompt
+  expected_product_or_obligation: Unsafe stronger wording register
+  producer: Layer0
+  consumer: EvidenceMap/Layer10
+  expected_artifact: layer0/prohibited_stronger_wording.yaml
+  actual_artifact: layer0/prohibited_stronger_wording.yaml
+  scientific_role: downstream governance artifact
+  analysis_role: support
+  claim_role: governed
+  evidence_map_role: mapped
+  layer10_role: render/support
+  downstream_role: downstream
+  status: INHERITED_UNCHANGED
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C023
+  phase: P00-P02
+  layer: LAYER0
+  authority_source: Governance V6.1 + prior package convention + current downstream
+    prompt
+  expected_product_or_obligation: Limitation-to-claim mapping
+  producer: Layer0
+  consumer: EvidenceMap/Layer10
+  expected_artifact: layer0/limitation_claim_map.yaml
+  actual_artifact: layer0/limitation_claim_map.yaml
+  scientific_role: downstream governance artifact
+  analysis_role: support
+  claim_role: governed
+  evidence_map_role: mapped
+  layer10_role: render/support
+  downstream_role: downstream
+  status: INHERITED_UNCHANGED
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C024
+  phase: P00-P02
+  layer: EVIDENCE_MAP
+  authority_source: Governance V6.1 + prior package convention + current downstream
+    prompt
+  expected_product_or_obligation: Primary human-readable provenance map
+  producer: EvidenceMap
+  consumer: Layer10/Paper
+  expected_artifact: evidence_map/IHARQ_Cumulative_Evidence_Map_Through_P02.md
+  actual_artifact: evidence_map/IHARQ_Cumulative_Evidence_Map_Through_P02.md
+  scientific_role: downstream governance artifact
+  analysis_role: support
+  claim_role: governed
+  evidence_map_role: mapped
+  layer10_role: render/support
+  downstream_role: downstream
+  status: INHERITED_UNCHANGED
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C025
+  phase: P00-P02
+  layer: EVIDENCE_MAP
+  authority_source: Governance V6.1 + prior package convention + current downstream
+    prompt
+  expected_product_or_obligation: Structured provenance graph
+  producer: EvidenceMap
+  consumer: Layer10/Paper
+  expected_artifact: evidence_map/evidence_map.yaml
+  actual_artifact: evidence_map/evidence_map.yaml
+  scientific_role: downstream governance artifact
+  analysis_role: support
+  claim_role: governed
+  evidence_map_role: mapped
+  layer10_role: render/support
+  downstream_role: downstream
+  status: INHERITED_UNCHANGED
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C026
+  phase: P00-P02
+  layer: EVIDENCE_MAP
+  authority_source: Governance V6.1 + prior package convention + current downstream
+    prompt
+  expected_product_or_obligation: Claim-centric mapping
+  producer: EvidenceMap
+  consumer: Layer10
+  expected_artifact: evidence_map/claims.yaml
+  actual_artifact: evidence_map/claims.yaml
+  scientific_role: downstream governance artifact
+  analysis_role: support
+  claim_role: governed
+  evidence_map_role: mapped
+  layer10_role: render/support
+  downstream_role: downstream
+  status: INHERITED_UNCHANGED
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C027
+  phase: P00-P02
+  layer: EVIDENCE_MAP
+  authority_source: Governance V6.1 + prior package convention + current downstream
+    prompt
+  expected_product_or_obligation: Finding-centric mapping
+  producer: EvidenceMap
+  consumer: Layer10/Paper
+  expected_artifact: evidence_map/findings.yaml
+  actual_artifact: evidence_map/findings.yaml
+  scientific_role: downstream governance artifact
+  analysis_role: support
+  claim_role: governed
+  evidence_map_role: mapped
+  layer10_role: render/support
+  downstream_role: downstream
+  status: INHERITED_UNCHANGED
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C028
+  phase: P00-P02
+  layer: EVIDENCE_MAP
+  authority_source: Governance V6.1 + prior package convention + current downstream
+    prompt
+  expected_product_or_obligation: Limitation graph
+  producer: EvidenceMap
+  consumer: Layer10/Layer0
+  expected_artifact: evidence_map/limitations.yaml
+  actual_artifact: evidence_map/limitations.yaml
+  scientific_role: downstream governance artifact
+  analysis_role: support
+  claim_role: governed
+  evidence_map_role: mapped
+  layer10_role: render/support
+  downstream_role: downstream
+  status: INHERITED_UNCHANGED
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C029
+  phase: P00-P02
+  layer: EVIDENCE_MAP
+  authority_source: Governance V6.1 + prior package convention + current downstream
+    prompt
+  expected_product_or_obligation: Metric/statistic/source evidence nodes
+  producer: EvidenceMap
+  consumer: Layer10/Reproduction
+  expected_artifact: evidence_map/evidence_nodes.yaml
+  actual_artifact: evidence_map/evidence_nodes.yaml
+  scientific_role: downstream governance artifact
+  analysis_role: support
+  claim_role: governed
+  evidence_map_role: mapped
+  layer10_role: render/support
+  downstream_role: downstream
+  status: INHERITED_UNCHANGED
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C030
+  phase: P00-P02
+  layer: EVIDENCE_MAP
+  authority_source: Governance V6.1 + prior package convention + current downstream
+    prompt
+  expected_product_or_obligation: Artifact provenance registry
+  producer: EvidenceMap
+  consumer: Reproduction
+  expected_artifact: evidence_map/artifact_registry.yaml
+  actual_artifact: evidence_map/artifact_registry.yaml
+  scientific_role: downstream governance artifact
+  analysis_role: support
+  claim_role: governed
+  evidence_map_role: mapped
+  layer10_role: render/support
+  downstream_role: downstream
+  status: INHERITED_UNCHANGED
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C031
+  phase: P00-P02
+  layer: EVIDENCE_MAP
+  authority_source: Governance V6.1 + prior package convention + current downstream
+    prompt
+  expected_product_or_obligation: Cross-phase/provenance relationships
+  producer: EvidenceMap
+  consumer: Layer10/Paper
+  expected_artifact: evidence_map/relationships.yaml
+  actual_artifact: evidence_map/relationships.yaml
+  scientific_role: downstream governance artifact
+  analysis_role: support
+  claim_role: governed
+  evidence_map_role: mapped
+  layer10_role: render/support
+  downstream_role: downstream
+  status: INHERITED_UNCHANGED
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C032
+  phase: P00-P02
+  layer: EVIDENCE_MAP
+  authority_source: Governance V6.1 + prior package convention + current downstream
+    prompt
+  expected_product_or_obligation: External literature separated from project evidence
+  producer: EvidenceMap
+  consumer: Layer0/Paper
+  expected_artifact: evidence_map/literature_evidence.yaml
+  actual_artifact: evidence_map/literature_evidence.yaml
+  scientific_role: downstream governance artifact
+  analysis_role: support
+  claim_role: governed
+  evidence_map_role: mapped
+  layer10_role: render/support
+  downstream_role: downstream
+  status: INHERITED_UNCHANGED
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C033
+  phase: P00-P02
+  layer: EVIDENCE_MAP
+  authority_source: Governance V6.1 + prior package convention + current downstream
+    prompt
+  expected_product_or_obligation: Two-way figure/table links
+  producer: EvidenceMap
+  consumer: Layer10
+  expected_artifact: evidence_map/figure_table_provenance.yaml
+  actual_artifact: evidence_map/figure_table_provenance.yaml
+  scientific_role: downstream governance artifact
+  analysis_role: support
+  claim_role: governed
+  evidence_map_role: mapped
+  layer10_role: render/support
+  downstream_role: downstream
+  status: INHERITED_UNCHANGED
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C034
+  phase: P00-P02
+  layer: LAYER10
+  authority_source: Governance V6.1 + prior package convention + current downstream
+    prompt
+  expected_product_or_obligation: Human-readable Layer10 package report
+  producer: Layer10
+  consumer: Paper/P03
+  expected_artifact: layer10/Layer_10_Artifact_Package_Through_P02.md
+  actual_artifact: layer10/Layer_10_Artifact_Package_Through_P02.md
+  scientific_role: downstream governance artifact
+  analysis_role: support
+  claim_role: governed
+  evidence_map_role: mapped
+  layer10_role: render/support
+  downstream_role: downstream
+  status: INHERITED_UNCHANGED
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C035
+  phase: P00-P02
+  layer: LAYER10
+  authority_source: Governance V6.1 + prior package convention + current downstream
+    prompt
+  expected_product_or_obligation: Claim-safe curated figures
+  producer: Layer10
+  consumer: Paper/Thesis
+  expected_artifact: layer10/figures/
+  actual_artifact: layer10/figures/
+  scientific_role: downstream governance artifact
+  analysis_role: support
+  claim_role: governed
+  evidence_map_role: mapped
+  layer10_role: render/support
+  downstream_role: downstream
+  status: INHERITED_UNCHANGED
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C036
+  phase: P00-P02
+  layer: LAYER10
+  authority_source: Governance V6.1 + prior package convention + current downstream
+    prompt
+  expected_product_or_obligation: Exact governed tables
+  producer: Layer10
+  consumer: Paper/Thesis
+  expected_artifact: layer10/tables/
+  actual_artifact: layer10/tables/
+  scientific_role: downstream governance artifact
+  analysis_role: support
+  claim_role: governed
+  evidence_map_role: mapped
+  layer10_role: render/support
+  downstream_role: downstream
+  status: INHERITED_UNCHANGED
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C037
+  phase: P00-P02
+  layer: LAYER10
+  authority_source: Governance V6.1 + prior package convention + current downstream
+    prompt
+  expected_product_or_obligation: Machine-readable figure sources
+  producer: Layer10
+  consumer: Reproduction
+  expected_artifact: layer10/figure_source_data/
+  actual_artifact: layer10/figure_source_data/
+  scientific_role: downstream governance artifact
+  analysis_role: support
+  claim_role: governed
+  evidence_map_role: mapped
+  layer10_role: render/support
+  downstream_role: downstream
+  status: INHERITED_UNCHANGED
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C038
+  phase: P00-P02
+  layer: LAYER10
+  authority_source: Governance V6.1 + prior package convention + current downstream
+    prompt
+  expected_product_or_obligation: Machine-readable table sources
+  producer: Layer10
+  consumer: Reproduction
+  expected_artifact: layer10/table_source_data/
+  actual_artifact: layer10/table_source_data/
+  scientific_role: downstream governance artifact
+  analysis_role: support
+  claim_role: governed
+  evidence_map_role: mapped
+  layer10_role: render/support
+  downstream_role: downstream
+  status: INHERITED_UNCHANGED
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C039
+  phase: P00-P02
+  layer: LAYER10
+  authority_source: Governance V6.1 + prior package convention + current downstream
+    prompt
+  expected_product_or_obligation: Deterministic render specifications
+  producer: Layer10
+  consumer: Reproduction
+  expected_artifact: layer10/render_specs/
+  actual_artifact: layer10/render_specs/
+  scientific_role: downstream governance artifact
+  analysis_role: support
+  claim_role: governed
+  evidence_map_role: mapped
+  layer10_role: render/support
+  downstream_role: downstream
+  status: INHERITED_UNCHANGED
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C040
+  phase: P00-P02
+  layer: LAYER10
+  authority_source: Governance V6.1 + prior package convention + current downstream
+    prompt
+  expected_product_or_obligation: Deterministic render script
+  producer: Layer10
+  consumer: Reproduction
+  expected_artifact: layer10/scripts/render_layer10.py
+  actual_artifact: layer10/scripts/render_layer10.py
+  scientific_role: downstream governance artifact
+  analysis_role: support
+  claim_role: governed
+  evidence_map_role: mapped
+  layer10_role: render/support
+  downstream_role: downstream
+  status: INHERITED_UNCHANGED
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C041
+  phase: P00-P02
+  layer: LAYER10
+  authority_source: Governance V6.1 + prior package convention + current downstream
+    prompt
+  expected_product_or_obligation: Layer0-safe captions/warnings
+  producer: Layer10
+  consumer: Paper/Thesis
+  expected_artifact: layer10/captions/captions.yaml
+  actual_artifact: layer10/captions/captions.yaml
+  scientific_role: downstream governance artifact
+  analysis_role: support
+  claim_role: governed
+  evidence_map_role: mapped
+  layer10_role: render/support
+  downstream_role: downstream
+  status: INHERITED_UNCHANGED
+  defect_if_any: ''
+  correction_required: ''
+- closure_item_id: C042
+  phase: P00-P02
+  layer: LAYER10
+  authority_source: Governance V6.1 + prior package convention + current downstream
+    prompt
+  expected_product_or_obligation: Current artifact registry
+  producer: Layer10
+  consumer: EvidenceMap/Reproduction
+  expected_artifact: layer10/manifests/layer10_artifact_registry.yaml
+  actual_artifact: layer10/manifests/layer10_artifact_registry.yaml
+  scientific_role: downstream governance artifact
+  analysis_role: support
+  claim_role: governed
+  evidence_map_role: mapped
+  layer10_role: render/support
+  downstream_role: downstream
+  status: INHERITED_UNCHANGED
+  defect_if_any: ''
+  correction_required: ''

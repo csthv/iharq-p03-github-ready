@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "records": 36,
+  "source_rows": 216,
+  "aggregate_curve_points_attempted": 216,
+  "planned_low_label_run_cells": 216,
+  "terminal_counts": {
+    "FAILED": 3,
+    "SUCCESS": 213
+  },
+  "point_status_counts": {
+    "EXPLICIT_NON_SUCCESS": 9,
+    "VALID": 207
+  },
+  "all_legal_budgets_accounted": true,
+  "explicit_non_success_retained": true,
+  "single_frozen_subset_limitation": true,
+  "repair_id": "P02-STAGE16-LOW-LABEL-INHERITED-BUDGET-IDENTITY-REPAIR-R1",
+  "repair_scope": "DERIVED_EVIDENCE_ONLY",
+  "scientific_training_performed": false,
+  "prediction_regenerated": false,
+  "scientific_configuration_changed": false,
+  "test_outcome_used_for_model_selection": false
+}

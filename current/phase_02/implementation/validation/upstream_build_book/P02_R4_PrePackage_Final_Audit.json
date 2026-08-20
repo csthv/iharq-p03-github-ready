@@ -1,0 +1,55 @@
+{
+  "audit_id": "P02-L2-R4-PREPACKAGE-FINAL-AUDIT",
+  "status": "PASS",
+  "checks": {
+    "master_152_152": true,
+    "docx_parity_74_74": true,
+    "docx_visual_112_pages": true,
+    "release_blocker_zero": true,
+    "live_pytest_26_26": true,
+    "cumulative_verifier_40_40": true,
+    "p01_verifier_24_24": true,
+    "p01_execution_bundle_13164": true,
+    "alias_provenance": true,
+    "markdown_hash_manifest": true,
+    "docx_hash_manifest": true,
+    "method_traceability_35": true,
+    "evaluation_traceability_12": true,
+    "ablation_traceability_15": true,
+    "artifact_traceability_26": true,
+    "prompt_exhaustion_119": true,
+    "capabilities_53": true,
+    "structured_parse": true,
+    "secret_values_zero": true,
+    "transient_paths_zero": true,
+    "placeholders_zero": true,
+    "root_predecessor_duplicate_absent": true,
+    "mislabeled_r3_stage_plan_absent_current": true,
+    "genuine_r3_stage_plan_preserved_history": true
+  },
+  "failed_checks": [],
+  "structured_counts": {
+    "json": 65,
+    "yaml": 39,
+    "csv": 9,
+    "jsonl": 0
+  },
+  "structured_errors": [],
+  "secret_value_hits": [],
+  "transient_path_hits": [],
+  "unresolved_placeholder_hits": [],
+  "traceability_counts": {
+    "method": 35,
+    "evaluation": 12,
+    "ablation": 15,
+    "artifact": 26,
+    "prompt_sections": 119,
+    "required_capabilities": 53
+  },
+  "canonical_hashes": {
+    "markdown": "7bbfda273e336c25875d2f1c6d9cb070bbc24af247777dec4cffd92cd2df58cf",
+    "docx": "91f08ff027655830989eec1cf6c50b1f01f64568aad85ef6d0c1e3d2980cdea4"
+  },
+  "package_file_count_before_audit_and_checksums": 131,
+  "freeze_critical_blockers": 0
+}

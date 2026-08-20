@@ -1,0 +1,83 @@
+{
+  "comparability_counts": {
+    "COMPARABLE": 582,
+    "INELIGIBLE": 273
+  },
+  "comparable_match_count": 582,
+  "expanded_raw_row_count": 2565,
+  "feature_counts": {
+    "confidence": 285,
+    "normalized_entropy": 285,
+    "top1_top2_margin": 285
+  },
+  "hardening_id": "P03-C8-STAGE18-MATCHED-OPERATING-POINT-EVIDENCE-HARDENING-R2",
+  "ineligible_match_count": 273,
+  "partition_count": 6,
+  "partitions": [
+    {
+      "bytes": 1391048,
+      "comparability_status": "COMPARABLE",
+      "feature_id": "confidence",
+      "path": "records/comparability=COMPARABLE/feature=confidence/records.jsonl",
+      "record_count": 194,
+      "sha256": "5a5e9da4ee7a02a50bae98bd4fcbdce106656d26db13923fd8deee2b213b8c5d"
+    },
+    {
+      "bytes": 1392600,
+      "comparability_status": "COMPARABLE",
+      "feature_id": "normalized_entropy",
+      "path": "records/comparability=COMPARABLE/feature=normalized_entropy/records.jsonl",
+      "record_count": 194,
+      "sha256": "89a9a82928d864b0878468a4bf0f1aaf77da043d80522e329acf9fb17c981a83"
+    },
+    {
+      "bytes": 1392212,
+      "comparability_status": "COMPARABLE",
+      "feature_id": "top1_top2_margin",
+      "path": "records/comparability=COMPARABLE/feature=top1_top2_margin/records.jsonl",
+      "record_count": 194,
+      "sha256": "1b66741e38fca0b461c518169f4c2a8bb428c8fecd422381435e8aaf232f121f"
+    },
+    {
+      "bytes": 589605,
+      "comparability_status": "INELIGIBLE",
+      "feature_id": "confidence",
+      "path": "records/comparability=INELIGIBLE/feature=confidence/records.jsonl",
+      "record_count": 91,
+      "sha256": "92a0e54b7f34039c38679deb7d3254733f4ecbaeed2e4133bfd39bf908a5e8d6"
+    },
+    {
+      "bytes": 590333,
+      "comparability_status": "INELIGIBLE",
+      "feature_id": "normalized_entropy",
+      "path": "records/comparability=INELIGIBLE/feature=normalized_entropy/records.jsonl",
+      "record_count": 91,
+      "sha256": "a5350898d459f0be1c54b760dbbe91ca1edee7a56beb87681abf785e9f37f5ef"
+    },
+    {
+      "bytes": 590151,
+      "comparability_status": "INELIGIBLE",
+      "feature_id": "top1_top2_margin",
+      "path": "records/comparability=INELIGIBLE/feature=top1_top2_margin/records.jsonl",
+      "record_count": 91,
+      "sha256": "fa2d6255756cc2053dc880f44e5ba3930510226cdccf7ffb843d62bfe7a33a8a"
+    }
+  ],
+  "posthoc_feature_winner_count": 0,
+  "product_id": "P03-PROD-032",
+  "raw_stage18_matched_sha256": "b39024a4486bfad3ee4876d9388f783f430cd8baf23be108eca4f9aa6cda84f8",
+  "raw_stage18_rows_sha256": "9a8f0ed74281f7a63794c542d45fd537f4498d3000ad896ede24edcf8b93aba1",
+  "record_count": 855,
+  "record_family": "Layer3MatchedOperatingPointTable",
+  "run_id": "P03-L3-OFFICIAL-09ca82c743e0411a",
+  "schema_id": "P03Stage18Layer3MatchedOperatingPointTableMaterializationManifest.v1",
+  "schema_version": "1.0.0",
+  "scientific_match_change_count": 0,
+  "stage18_output_manifest_sha256": "ec399eac3ea9acdbafcc531e6763f985670ab6f4c1369e67575075779e28d062",
+  "stage_id": "18",
+  "status": "PASS",
+  "structural_match_count": 855,
+  "synthetic_no_rule_metric_count": 0,
+  "test_selected_threshold_count": 0,
+  "unmatched_count": 0
+}

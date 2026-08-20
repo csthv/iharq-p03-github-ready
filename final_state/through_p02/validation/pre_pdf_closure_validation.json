@@ -1,0 +1,160 @@
+{
+  "checks": [
+    {
+      "check": "source archive CRC/unsafe",
+      "status": "PASS",
+      "detail": "[{'file': 'IHARQ_Clean_Final_Seven_Documents_Layers0_to_10_R1_20260801_COMPLETE(20260814-122103).zip', 'bytes': 7751613, 'sha256': 'beb00f47e4a790242d62405dcca799647d849c8dc2ff043c5196cee372607128', 'members': 7, 'crc': 'PASS', 'unsafe_paths': 0}, {'file': 'IHARQ_P02_L2_Implementation_Build_Book_Package_R4(20260814-123109).zip', 'bytes': 601035, 'sha256': '2d19167370b70772fe9533e627f85ef83f1e1b68ae33f878955eef1348c9f31e', 'members': 133, 'crc': 'PASS', 'unsafe_paths': 0}, {'file': 'IHARQ_Protocol_v1_0_Final_Through_Phase_02_R1.zip', 'bytes': 996281, 'sha256': '9c02ad7e0043b09569993686d37ae09fb53e51045911eaaaf8f2a092039d9178', 'members': 33, 'crc': 'PASS', 'unsafe_paths': 0}, {'file': 'IHARQ_Cumulative_Phase_Evidence_Results_and_Interpretation_Through_P02_Final_R1.zip', 'bytes': 3123359, 'sha256': 'f7fd4858c558f01f6e96a9075615228cfaba216985093f97a668be8afa59b099', 'members': 124, 'crc': 'PASS', 'unsafe_paths': 0}, {'file': 'IHARQ_Post_Phase_Analysis_Governance_Through_P02_Final_R1.zip', 'bytes': 4876426, 'sha256': '9ed1756b8f74fa29f0a7fc7b25118c84d87803d14a1d5f98da4f4dfe43e6d8a6', 'members': 124, 'crc': 'PASS', 'unsafe_paths': 0}, {'file': 'IHARQ_Cumulative_GitHub_Ready_Through_P02_Stage24Replay_R1.zip', 'bytes': 118731595, 'sha256': '4e779859fc5ab2c07cb1cdb079f1e9d08cfe41641142d51e093f6c3936bfec81', 'members': 27080, 'crc': 'PASS', 'unsafe_paths': 0}]"
+    },
+    {
+      "check": "cumulative Protocol validation source passes",
+      "status": "PASS",
+      "detail": "PASS"
+    },
+    {
+      "check": "cumulative Phase Analysis validation source passes",
+      "status": "PASS",
+      "detail": "FINALIZED_WITH_EXPLICIT_NONBLOCKING_LIMITATIONS"
+    },
+    {
+      "check": "post-governance validation 39/39",
+      "status": "PASS",
+      "detail": "{'total': 39, 'pass': 39, 'fail': 0}"
+    },
+    {
+      "check": "P02 runtime accepted identity",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Stage20 P03 readiness PASS",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Layer2ReadinessReport PASS",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Prediction partitions count 1014",
+      "status": "PASS",
+      "detail": "1014"
+    },
+    {
+      "check": "Prediction partition required field coverage",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "check": "ModelRegistry partitions count 672",
+      "status": "PASS",
+      "detail": "672"
+    },
+    {
+      "check": "ModelRegistry partition schema coverage",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "check": "Stage22 handoff PASS",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Stage23 sufficiency PASS",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Stage24 bundle PASS",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "runtime bundle content complete",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "dual HF credentials preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "preferred P02 workspace pinned",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "archival P02 source pinned",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 pointer reconciliation has zero unmatched",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "post-governance Evidence Map current counts",
+      "status": "PASS",
+      "detail": "{'claims': 37, 'findings': 49, 'limitations': 54, 'evidence_nodes': 69, 'artifacts': 47, 'relationships': 146, 'figures': 14, 'tables': 13}"
+    },
+    {
+      "check": "P02 downstream completeness booleans true",
+      "status": "PASS",
+      "detail": "{'expected_scientific_outputs_dispositioned': True, 'all_major_findings_mapped': True, 'all_candidate_claims_layer0_reviewed': True, 'all_datasets_mapped': True, 'all_models_mapped': True, 'all_budgets_mapped': True, 'all_metrics_mapped': True, 'A0_mapped': True, 'A4_mapped': True, 'stage11_12_mapped': True, 'author_aligned_correction_mapped': True, 'resource_constraint_mapped': True, 'stage18S_mapped_if_applicable': True, 'failure_evidence_mapped': True, 'negative_evidence_mapped': True, 'statistics_mapped': True, 'limitations_mapped': True, 'Layer10_representation_sufficient': True}"
+    },
+    {
+      "check": "all closure ledger material items dispositioned",
+      "status": "PASS",
+      "detail": "Counter({'INHERITED_UNCHANGED': 25, 'COMPLETE': 16, 'COMPLETE_AFTER_CORRECTION': 1})"
+    },
+    {
+      "check": "all expected P02 product rows ready",
+      "status": "PASS",
+      "detail": "30"
+    },
+    {
+      "check": "producer-consumer rows ready",
+      "status": "PASS",
+      "detail": "27"
+    },
+    {
+      "check": "cross-document parity all PASS",
+      "status": "PASS",
+      "detail": "8"
+    },
+    {
+      "check": "P00-P02 harmony all PASS",
+      "status": "PASS",
+      "detail": "7"
+    },
+    {
+      "check": "structured parse audit pre-manifest",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "check": "literal secret scan",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "check": "no DOC/DOCX direct files",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "Layer2 expected product rows ready",
+      "status": "PASS",
+      "detail": "21"
+    }
+  ],
+  "summary": {
+    "total": 30,
+    "pass": 30,
+    "fail": 0
+  },
+  "blockers": []
+}

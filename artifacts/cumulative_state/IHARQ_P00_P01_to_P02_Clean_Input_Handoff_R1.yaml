@@ -1,0 +1,50 @@
+cumulative_handoff:
+  handoff_id: IHARQ-P00-P01-TO-P02-CLEAN-INPUT-HANDOFF-R1
+  project_state: P00_P01_MERGED_VALIDATED_READY_FOR_P02_ENTRY
+  completed_phases:
+  - P00
+  - P01
+  p02_entry_readiness: PASS
+  p02_execution_started: false
+  p02_execution_authorization: REQUIRES_P02_SPECIFIC_PRE_RUN_IMPLEMENTATION_AND_PROTOCOL_FREEZE
+  upstream:
+    p00_github_predecessor_sha256: 3dcbe3e82ec7254ce1bd40568b36409d56050538e69a7264f8f1e431be019ef0
+    p01_github_predecessor_sha256: e367d9849684b9e71cedc793da0be0eea02c934fece67513de1fee08a167f2b7
+    p01_final_handoff: P01-FINAL-HANDOFF-P02-READINESS-R1
+  required_manifests:
+    AuthorityManifest: artifacts/cumulative_state/AuthorityManifest.json
+    RepositoryManifest: CURRENT_CUMULATIVE_REPOSITORY_MANIFEST.json
+    EnvironmentManifest: artifacts/cumulative_state/EnvironmentManifest.json
+    ConfigSnapshot: artifacts/cumulative_state/ConfigSnapshot.json
+    InputManifest: artifacts/cumulative_state/InputManifest.json
+  p01_data_contract:
+    DatasetRecord: 3
+    WindowRecord: 12910
+    SplitRecord: 1
+    PreprocessingRecord: 1
+    LabelMapRecord: 3
+    ValidationReport: 1
+    core_windows: 12910
+    a4_parent_match: 12910/12910
+    p01_gate_15: PASS
+  external_artifacts:
+  - artifact: P01 core derived windows
+    provider: Kaggle
+    provider_version: 2
+    logical_revision: 1
+    handle: csthv999z/iharq-p01-l1-derived-windows-d03f0a7c869d-20260806222242-68a91473
+    manifest_sha256: dc21f418e9a1add62adb346f627d5d729735a5f1ecaa1d771f6fa5cfede627e1
+  - artifact: P01 A4 R2 substrate
+    provider: Kaggle
+    provider_version: 1
+    logical_revision: 2
+    manifest_sha256: 29124d59907610b1545e0a2b5d1811a4d4a2bf1df64cad49aa880f4721c47305
+  consumer_rules:
+  - Preserve P01 DatasetRecord/LabelMapRecord/SplitRecord/PreprocessingRecord/WindowRecord
+    identities.
+  - Do not relabel, resplit, rewindow, overwrite or silently repair P01 records.
+  - Treat A4 R2 as future governed control substrate; P01 did not establish A4 effectiveness.
+  - A14 remains ABSENT_PROHIBITED.
+  - Preserve PUBLIC_EEG_ONLY, NON_CLINICAL and NO_DEPLOYMENT_CLAIM boundaries.
+  - Freeze P02 implementation, analysis contract and runtime before P02 execution.
+  open_blockers: []

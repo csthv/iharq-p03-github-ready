@@ -1,0 +1,198 @@
+{
+  "audit_id": "P02-R4-SOURCE-UTILIZATION",
+  "status": "PASS",
+  "mandatory_source_families_reviewed": 21,
+  "mandatory_source_families_total": 21,
+  "MANDATORY_SOURCE_FAMILIES_NOT_REVIEWED": 0,
+  "sources": [
+    {
+      "source_family": "Governance V6.1",
+      "path": "docs/authorities/current/00_IHARQ_Document_Stack_Governance_and_Creation_Guide_V6_1.md",
+      "exists": true,
+      "sha256": "c811373c19a7c2c3f6d72cf2aed984e02ffcb07bb448cfc3bdbdf26a35a4f1d9",
+      "reviewed": true,
+      "used_for": "workflow, one-notebook/full-scope, repair/evidence sequence",
+      "result": "USED"
+    },
+    {
+      "source_family": "Master Architecture Specification",
+      "path": "docs/authorities/current/01_Master_Architecture_Specification_FINAL_T29_LAYOUT_CORRECTED_R1.pdf",
+      "exists": true,
+      "sha256": "ae374c9de061bc5179c9223e7d646c70cf0d98c414007ab6baf95cd68c814f9b",
+      "reviewed": true,
+      "used_for": "P02/L2 identity, modules, boundaries, A0/A4 ownership, Module B I/O",
+      "result": "USED"
+    },
+    {
+      "source_family": "Canonical Artifact/Record/Interface Registry",
+      "path": "docs/authorities/current/02_Canonical_Artifact_Record_and_Interface_Registry_FINAL_R44.md",
+      "exists": true,
+      "sha256": "bdb309f76b9b525ea89cfa56c79a9b7989348e3509febac9ae9fffe7858d1f87",
+      "reviewed": true,
+      "used_for": "records, IDs, producers/consumers, ablation ownership",
+      "result": "USED"
+    },
+    {
+      "source_family": "Execution and Evidence Plan",
+      "path": "docs/authorities/current/03_Execution_and_Evidence_Plan_FINAL_R41.md",
+      "exists": true,
+      "sha256": "f31de3453b331d909a8cccbf951a2df61ef7ca38b71df4bde8be95040095da82",
+      "reviewed": true,
+      "used_for": "P02 evidence, sufficiency, downstream outputs",
+      "result": "USED"
+    },
+    {
+      "source_family": "Experiment/Ablation/Evaluation Protocol v0.1",
+      "path": "docs/authorities/current/04_Experiment_Ablation_and_Evaluation_Protocol_FINAL_R42.md",
+      "exists": true,
+      "sha256": "8b7a393b860bd49a34a794db5c2b80af7f127bc318a112bc7ed3c375ce704813",
+      "reviewed": true,
+      "used_for": "fairness, splits, A0-A13, metrics/statistics/failure",
+      "result": "USED"
+    },
+    {
+      "source_family": "Complete Phase Execution Playbook",
+      "path": "docs/authorities/current/05_Complete_Phase_Execution_Playbook_FINAL_R41.md",
+      "exists": true,
+      "sha256": "176f46950b86db8cd5c23789893955336c818a6fcd10ed36d6c66e096faccc87",
+      "reviewed": true,
+      "used_for": "P02 operational stages, gates, handoffs",
+      "result": "USED"
+    },
+    {
+      "source_family": "Method Selection and Design Rationale Register",
+      "path": "docs/authorities/current/06_Integrated_Layers0_to_10_Method_Selection_and_Design_Rationale_Register_FINAL_R2.md",
+      "exists": true,
+      "sha256": "b036b02ac65b3bc2595513f4ca8a8137a6273f914e46e1cf6180515e57726749",
+      "reviewed": true,
+      "used_for": "selected model/method/control/metric/status decisions",
+      "result": "USED"
+    },
+    {
+      "source_family": "Detailed Design and Nuts-and-Bolts",
+      "path": "docs/authorities/current/07_Integrated_Layers0_to_10_Detailed_Design_and_Nuts_and_Bolts_Specification_FINAL_R2.md",
+      "exists": true,
+      "sha256": "4f47c6f511e646b2127cc79f14a5f632b00f5112582a049b46c735e78ded638c",
+      "reviewed": true,
+      "used_for": "method implementation behavior, I/O, fitting, failures",
+      "result": "USED"
+    },
+    {
+      "source_family": "Previous/current Implementation Build Books",
+      "path": "docs/phase_01/implementation/IHARQ_Master_Implementation_Build_Book_Current_with_P01_L1_Annex_R4.md",
+      "exists": true,
+      "sha256": "05d5bb6d5b9ea2ae331c26c3f18056231361fd815e800cabd6e2ae86b7c9978b",
+      "reviewed": true,
+      "used_for": "repository/config/test/manifest conventions and upstream implementation",
+      "result": "USED"
+    },
+    {
+      "source_family": "Cumulative Protocol v1.0 through P01",
+      "path": "docs/phase_01/protocol/IHARQ_Experiment_Ablation_Evaluation_Protocol_v1_0_Current.md",
+      "exists": true,
+      "sha256": "0f4048e39ff1447e9e60d45c4f1e3b345fb3ac369abafb4f32db4ebd0ca655a3",
+      "reviewed": true,
+      "used_for": "actual frozen P01 datasets/splits/preprocessing/windows/A4/limitations",
+      "result": "USED"
+    },
+    {
+      "source_family": "Phase Analysis through P01",
+      "path": "docs/phase_01/analysis/IHARQ_Cumulative_Phase_Evidence_Results_and_Interpretation_Report_Through_P01_Current.md",
+      "exists": true,
+      "sha256": "4cafbd1858043d78193d8a17e33e341530a5693285ca9803034036c51f70bb7c",
+      "reviewed": true,
+      "used_for": "accepted execution, repairs, limitations, downstream readiness",
+      "result": "USED"
+    },
+    {
+      "source_family": "Layer 0 through P01",
+      "path": "docs/phase_01/layer0/IHARQ_Phase_01_Layer_0_Claim_Review_and_Disposition_Derivative.md",
+      "exists": true,
+      "sha256": "780e69467b8efa56dddefd8d37c9e19289690bb6cd15a43c39e31bf5b21e832d",
+      "reviewed": true,
+      "used_for": "claim ceilings, prohibited/qualified wording",
+      "result": "USED"
+    },
+    {
+      "source_family": "Evidence Map through P01",
+      "path": "docs/phase_01/evidence_map/IHARQ_Cumulative_Paper_and_Thesis_Evidence_Map_Through_P01_Current.md",
+      "exists": true,
+      "sha256": "17e8165e5db9fafcc2be9a0618dd8a0f87728a7ef81ed163bb9387f3797f95f8",
+      "reviewed": true,
+      "used_for": "claim\u2192evidence/artifact/limitation lineage",
+      "result": "USED"
+    },
+    {
+      "source_family": "Layer 10 through P01",
+      "path": "docs/phase_01/layer10/IHARQ_Cumulative_Layer10_Through_P01_Current.md",
+      "exists": true,
+      "sha256": "ca066c1b61cd632dd3370e03b9d04d62a1f46a6af92263e6687bf8a8f7702ff2",
+      "reviewed": true,
+      "used_for": "read-only figure/table/provenance/warning conventions",
+      "result": "USED"
+    },
+    {
+      "source_family": "P00 execution evidence",
+      "path": "reports/phase_00/final_audit_summaries/local_test_execution_summary.json",
+      "exists": true,
+      "sha256": "c8ad7d75321fa20c47b1590c92a5dc8b3492b45f49fb7417b176484f25e15d9d",
+      "reviewed": true,
+      "used_for": "P00 actual engineering test/runtime evidence and lessons",
+      "result": "USED"
+    },
+    {
+      "source_family": "P01 execution bundle",
+      "path": "IHARQ_P01_L1_Phase_Execution_Bundle_d03f0a7c869d.zip",
+      "exists": true,
+      "sha256": "09c3bb0442d79ddf110cf66fc4fe61fe63e94c7d8ed9f198f606639b4191f16e",
+      "reviewed": true,
+      "used_for": "accepted P01 execution evidence, gates/tests/manifests/checksums",
+      "result": "USED"
+    },
+    {
+      "source_family": "Prior Kaggle notebook",
+      "path": "notebooks/IHARQ_Phase_01_Layer_01_R54_Matched_A4_R2_Secret_Safe_Final.ipynb",
+      "exists": true,
+      "sha256": "24f3cc58de04ebe74e9b3d28f46b55fe82fccb1f0ac5b7e8eaf5e0f38fe6b638",
+      "reviewed": true,
+      "used_for": "working stage/resource/artifact/security patterns; not mechanically duplicated",
+      "result": "USED"
+    },
+    {
+      "source_family": "P01\u2192P02 handoff",
+      "path": "artifacts/phase_closure/IHARQ_Phase_01_Final_Handoff_and_Phase2_Readiness_R1.yaml",
+      "exists": true,
+      "sha256": "58183e5f06843886bd165418e575b8fd4d02fd83e0f5f48ecff00d515d0ae3b9",
+      "reviewed": true,
+      "used_for": "freeze-critical downstream input contract",
+      "result": "USED"
+    },
+    {
+      "source_family": "Cumulative project ZIP through P01",
+      "path": "IHARQ_Cumulative_GitHub_Ready_Through_P01_R1(2).zip",
+      "exists": true,
+      "sha256": "dc2708ab70e7746499ae09760456825b54efcf587cae3db3410e6f72b0024542",
+      "reviewed": true,
+      "used_for": "controlling continuation state, manifests/code/configs/tests/artifacts",
+      "result": "USED"
+    },
+    {
+      "source_family": "Current R3 Build Book predecessor",
+      "path": "IHARQ_Master_Implementation_Build_Book_Current_with_P02_L2_Integrated_Plan_R3.md",
+      "exists": true,
+      "sha256": "b654abfb4ffa53518ab1fc7f4ab1ef1aaf60614130963850b495c59c1207f747",
+      "reviewed": true,
+      "used_for": "predecessor implementation contract subject to R4 independent audit",
+      "result": "USED"
+    },
+    {
+      "source_family": "R4 finalization master prompt",
+      "path": "md\u200e\u200f(20260808-133430).mdmarkdown \u0686\u0633\u0628\u0627\u0646\u062f\u0647 \u0634\u062f",
+      "exists": true,
+      "sha256": "75a40add857b4a98001a5b7288ef287b177d67590560c179abbc44bc255f3068",
+      "reviewed": true,
+      "used_for": "controlling final audit/freeze specification",
+      "result": "USED"
+    }
+  ]
+}

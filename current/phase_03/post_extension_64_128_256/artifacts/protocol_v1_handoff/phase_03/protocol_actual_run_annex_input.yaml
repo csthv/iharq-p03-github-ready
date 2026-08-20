@@ -1,0 +1,204 @@
+code_identity:
+  sha256: c8c3ce9ce3ed39361cf1372fd094c0ed5bb19f0bc664384fa150c68ed7943c0b
+config_identity:
+  sha256: 2e5ebd6fc62f4c9ca3ed0102914f64142de9e1206be0b6e6b3e32cad90f1d742
+deviations:
+  claim_scope_narrowed_to_supplement_denominator: true
+  implementation_amendments:
+  - P03S-POSTEXT-64-128-256-STAGE18-MATCHED-OPERATING-POINT-EVIDENCE-HARDENING-R1_1
+  - P03S-POSTEXT-64-128-256-STAGE19-GROUPBUDGET-EVIDENCE-HARDENING-R1_1
+  - P03S-POSTEXT-64-128-256-STAGE20-NEGATIVE-EVIDENCE-HARDENING-R1_1
+  - P03S-POSTEXT-64-128-256-STAGE21-DOCUMENTARY-HANDOFF-EVIDENCE-HARDENING-R2
+  - P03S-POSTEXT-64-128-256-STAGE22-HANDOFF-CANONICALIZATION-HARDENING-R1
+  post_result_changes_must_remain_explicit: true
+  preserved_failed_attempt_count: 0
+  preserved_failed_attempt_paths: []
+  scientific_method_changed: false
+  scientific_protocol_changed: false
+  stage04_postext_disposition:
+    canonical_stage04_copied: false
+    reason: Stage04 intake is outside the post-extension supplement scope; no canonical
+      Stage04 artifact is copied or fabricated.
+    stage_id: '04'
+    status: NOT_APPLICABLE_POSTEXT_SUPPLEMENT
+    synthetic_stage04_created: false
+    terminal_status: NOT_MATERIALIZED
+environment_identity:
+  sha256: 67dc3d67c8e0b6b664688c6aa1d2cbcb2b612386422a26d153e45966c070f700
+gates:
+- attempt: null
+  gate_id: null
+  output_manifest_sha256: 9ff7f98b07ecf5e0313970b3078fe5bf75d8008ff9e674f74d5bc66c55459d67
+  receipt_sha256: 5282a0b7599b43375d19dae63f33a34a3efe812c4a1cd38134f5566daaa86a41
+  stage_fingerprint: null
+  stage_id: '07'
+  status: COMPLETE
+- attempt: null
+  gate_id: null
+  output_manifest_sha256: c0cbcf89be6aced50f87d8e6c30bf1f67282bc119280b97e1374e4151e182e61
+  receipt_sha256: 544718e603e1db71113a631191ac3a6f8a2b5d40f9929c26068268b18055b146
+  stage_fingerprint: null
+  stage_id: 08
+  status: COMPLETE
+- attempt: null
+  gate_id: null
+  output_manifest_sha256: 7f72805e0c79ecaf3717e63a4ca33734ee416ec6ba635c1cdc33a0e97428d51e
+  receipt_sha256: e9c71d95f6675314fc53da716fed40dc59054110936568b1d889ccd6b6c41f9d
+  stage_fingerprint: null
+  stage_id: 09
+  status: COMPLETE
+- attempt: null
+  gate_id: null
+  output_manifest_sha256: 7b00c94d1f5edca60114deeb6efa009369a5e0738f02a5957ca45a8fa1067ba0
+  receipt_sha256: aced7bd29c83486a422156b8530232334deb252eb781c1041ee78586d16a1890
+  stage_fingerprint: null
+  stage_id: '10'
+  status: COMPLETE
+- attempt: null
+  gate_id: null
+  output_manifest_sha256: 12129b1c0a6255a7a363d7c97134d56d0f9faf1c2a58d27d3c238c26c531342f
+  receipt_sha256: f91a989bb12a1c5e320ebfbe21205cf5a7ad184886aac96aa94f9b1038342df0
+  stage_fingerprint: null
+  stage_id: '11'
+  status: COMPLETE
+- attempt: null
+  gate_id: null
+  output_manifest_sha256: 4440013c6d118bcaa8c1e8286fde580ab1a5b489c117b6bc6a71c253b08e4347
+  receipt_sha256: f9887c376ac3386de03fc1ba582d92d44f5d77d234ec30479d0dd2a097d5659e
+  stage_fingerprint: null
+  stage_id: '12'
+  status: COMPLETE
+- attempt: null
+  gate_id: null
+  output_manifest_sha256: ab93d52ec18b6e67192192a68d6862c34654e1290757e00d7661a040c1227cc2
+  receipt_sha256: 2336c01e4a8352a1e8ce5ef4bfc2e038c9ffab26dcfcba132613009d66028e6f
+  stage_fingerprint: null
+  stage_id: '13'
+  status: COMPLETE
+- attempt: null
+  gate_id: null
+  output_manifest_sha256: 40651951514c1f31177e8d08a7a600108560ad7149d86a002ae6228fae4e50b5
+  receipt_sha256: 18731ede79a859946e0202586a6217eca414e730070b07ca180863c9d41f06cc
+  stage_fingerprint: null
+  stage_id: '14'
+  status: COMPLETE
+- attempt: null
+  gate_id: null
+  output_manifest_sha256: b1db0ef2e96613420d07db8ebdeab119db15a516a9693d715e1d66d0f5cd51e0
+  receipt_sha256: a644230567a2415c12a45be4d40baefa30fd47007d19ffdfafa768792feddc7b
+  stage_fingerprint: null
+  stage_id: '15'
+  status: COMPLETE
+- attempt: null
+  gate_id: null
+  output_manifest_sha256: 42a04119c4808a471ef9792d88eb9c91c9ba6fdf658cad7e3abc8811ea916c2b
+  receipt_sha256: 09cd4066d04baa7157030de52f8b3df2df47a35340d6930e210fd1365a64bf32
+  stage_fingerprint: null
+  stage_id: '16'
+  status: COMPLETE
+- attempt: null
+  gate_id: null
+  output_manifest_sha256: 472831fcbaa65c58df9c52bc2d90adc20b078f562d270d1c682ad009205031ee
+  receipt_sha256: 555ec9b356f4fc3a68d2d42682056f68d76fd773da2068d799e623e6847080b0
+  stage_fingerprint: null
+  stage_id: '17'
+  status: COMPLETE
+- attempt: null
+  gate_id: null
+  output_manifest_sha256: f11f76a542a79de7bc2fc78852db1a9b54f2991c49a56d42f72ea453ca754657
+  receipt_sha256: cfd95ac6820eb95c28a0ba411db1edfe95caf743ee0917e3f3a32e5e116d5965
+  stage_fingerprint: null
+  stage_id: '18'
+  status: COMPLETE
+- attempt: null
+  gate_id: null
+  output_manifest_sha256: fe42c59b6cdae4e1ef5ccce298e3de08bbdd8177baa1a14026a49e1d493d941d
+  receipt_sha256: 449f0c52a092f2f8da720406270db9fd5dafa4233dd311ace38f54c283626f2a
+  stage_fingerprint: null
+  stage_id: '19'
+  status: COMPLETE
+- attempt: null
+  gate_id: null
+  output_manifest_sha256: 2f35e17af762628d151fd75a0b4b6846da3b8816a2d180eb3b267a0751f508b1
+  receipt_sha256: 364396f658104b05527a4607957f84af5284039a3fef2efdca22fa188756b83a
+  stage_fingerprint: null
+  stage_id: '20'
+  status: COMPLETE
+- attempt: null
+  gate_id: null
+  output_manifest_sha256: 3fe80ba37387d06b19a1e7467e53d76ce63d4d84030c7f4c7eed41a16d5042b9
+  receipt_sha256: 7d240e286a8e49ec63e056ee6063018d3192739f83fa3bb2017746af6e969dc9
+  stage_fingerprint: null
+  stage_id: '21'
+  status: COMPLETE
+- attempt: null
+  gate_id: null
+  output_manifest_sha256: 03e50e2ff2df329eb84f58b8cfd853bca45113f978955596554ab54f966951f5
+  receipt_sha256: faf287ac29871888fb83936fa964f4f8caae00043e87a9845b35d683b1fbfa52
+  stage_fingerprint: null
+  stage_id: '22'
+  status: COMPLETE
+product_id: P03-PROD-050
+protocol_identity:
+  sha256: dc46b87cb802d1a6a3ab0efd3dc6db6be5c3b5c7125c54e95a9cdbea8eef797d
+  snapshot_id: IHARQ-P03-L3-OFFICIAL-STRETCH-C-EXECUTION-FREEZE-R1
+run_identity:
+  run_id: P03-L3-POSTEXT-64-128-256-R1-1833e865bcb88ff8
+  source_manifest_sha256: 0e4d987bf078bb7a4753e2defe5c2acc94a6f96a69daaa845b7df80f0eb30aa2
+schema_id: ProtocolActualRunAnnexInput.v1
+schema_version: 1.0.0
+source_sha256s:
+- 07f33080b944a99f1fc942d3bf30fc72670ffc107a50221e69ca2e5a22ca2ef1
+- 03e50e2ff2df329eb84f58b8cfd853bca45113f978955596554ab54f966951f5
+- 5bbc0285c30f9b4add7d7e1779b28c1d016dea54371bec1bc0767d9035aa757e
+stage22_raw_protocol_input_path: stage_artifacts/stage_22/protocol_actual_run_annex_input.json
+stage22_raw_protocol_input_sha256: 07f33080b944a99f1fc942d3bf30fc72670ffc107a50221e69ca2e5a22ca2ef1
+terminals:
+- failure: null
+  stage_id: '07'
+  terminal_status: COMPLETE
+- failure: null
+  stage_id: 08
+  terminal_status: COMPLETE
+- failure: null
+  stage_id: 09
+  terminal_status: COMPLETE
+- failure: null
+  stage_id: '10'
+  terminal_status: COMPLETE
+- failure: null
+  stage_id: '11'
+  terminal_status: COMPLETE
+- failure: null
+  stage_id: '12'
+  terminal_status: COMPLETE
+- failure: null
+  stage_id: '13'
+  terminal_status: COMPLETE
+- failure: null
+  stage_id: '14'
+  terminal_status: COMPLETE
+- failure: null
+  stage_id: '15'
+  terminal_status: COMPLETE
+- failure: null
+  stage_id: '16'
+  terminal_status: COMPLETE
+- failure: null
+  stage_id: '17'
+  terminal_status: COMPLETE
+- failure: null
+  stage_id: '18'
+  terminal_status: COMPLETE
+- failure: null
+  stage_id: '19'
+  terminal_status: COMPLETE
+- failure: null
+  stage_id: '20'
+  terminal_status: COMPLETE
+- failure: null
+  stage_id: '21'
+  terminal_status: COMPLETE
+- failure: null
+  stage_id: '22'
+  terminal_status: COMPLETE

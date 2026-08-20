@@ -1,0 +1,157 @@
+{
+  "status": "PASS",
+  "resources": {
+    "python": "3.13.5",
+    "cpu_count": 5,
+    "disk_total_gib": 62.44486618041992,
+    "disk_free_gib": 35.97197723388672,
+    "ram_probe_status": "PASS",
+    "cuda_probe_status": "PASS",
+    "ram_total_gib": 5.931419372558594,
+    "ram_available_gib": 4.8937835693359375,
+    "cuda_available": false,
+    "gpu_name": null,
+    "vram_total_gib": 0,
+    "status": "PASS",
+    "disk_requirement_gib": 0.1,
+    "recommended_neural_batch_size": 16,
+    "effective_batch_target": 64
+  },
+  "environment": {
+    "status": "MISMATCH",
+    "packages": [
+      {
+        "distribution": "moabb",
+        "expected": "1.5.0",
+        "actual": null,
+        "probe_status": "NOT_INSTALLED",
+        "status": "MISMATCH"
+      },
+      {
+        "distribution": "mne",
+        "expected": "1.12.1",
+        "actual": "1.11.0",
+        "probe_status": "PASS",
+        "status": "MISMATCH"
+      },
+      {
+        "distribution": "numpy",
+        "expected": "2.2.6",
+        "actual": "2.3.5",
+        "probe_status": "PASS",
+        "status": "MISMATCH"
+      },
+      {
+        "distribution": "scipy",
+        "expected": "1.15.3",
+        "actual": "1.17.0",
+        "probe_status": "PASS",
+        "status": "MISMATCH"
+      },
+      {
+        "distribution": "pandas",
+        "expected": "2.3.1",
+        "actual": "2.2.3",
+        "probe_status": "PASS",
+        "status": "MISMATCH"
+      },
+      {
+        "distribution": "scikit-learn",
+        "expected": "1.7.1",
+        "actual": "1.8.0",
+        "probe_status": "PASS",
+        "status": "MISMATCH"
+      },
+      {
+        "distribution": "h5py",
+        "expected": "3.14.0",
+        "actual": "3.15.1",
+        "probe_status": "PASS",
+        "status": "MISMATCH"
+      },
+      {
+        "distribution": "pooch",
+        "expected": "1.8.2",
+        "actual": "1.9.0",
+        "probe_status": "PASS",
+        "status": "MISMATCH"
+      },
+      {
+        "distribution": "PyYAML",
+        "expected": "6.0.2",
+        "actual": "6.0.3",
+        "probe_status": "PASS",
+        "status": "MISMATCH"
+      },
+      {
+        "distribution": "pydantic",
+        "expected": "2.11.7",
+        "actual": "2.13.4",
+        "probe_status": "PASS",
+        "status": "MISMATCH"
+      },
+      {
+        "distribution": "jsonschema",
+        "expected": "4.25.0",
+        "actual": "4.26.0",
+        "probe_status": "PASS",
+        "status": "MISMATCH"
+      },
+      {
+        "distribution": "nbformat",
+        "expected": "5.10.4",
+        "actual": "5.10.4",
+        "probe_status": "PASS",
+        "status": "PASS"
+      },
+      {
+        "distribution": "pytest",
+        "expected": "8.4.1",
+        "actual": "9.0.2",
+        "probe_status": "PASS",
+        "status": "MISMATCH"
+      },
+      {
+        "distribution": "torch",
+        "expected": "2.13.0",
+        "actual": "2.10.0+cpu",
+        "probe_status": "PASS",
+        "status": "MISMATCH"
+      },
+      {
+        "distribution": "braindecode",
+        "expected": "1.6.1",
+        "actual": null,
+        "probe_status": "NOT_INSTALLED",
+        "status": "MISMATCH"
+      },
+      {
+        "distribution": "pyriemann",
+        "expected": "0.12",
+        "actual": null,
+        "probe_status": "NOT_INSTALLED",
+        "status": "MISMATCH"
+      },
+      {
+        "distribution": "huggingface-hub",
+        "expected": "1.24.0",
+        "actual": "1.16.1",
+        "probe_status": "PASS",
+        "status": "MISMATCH"
+      },
+      {
+        "distribution": "safetensors",
+        "expected": "0.8.0",
+        "actual": "0.7.0",
+        "probe_status": "PASS",
+        "status": "MISMATCH"
+      }
+    ],
+    "python": "3.13.5"
+  },
+  "credentials": {
+    "credential_required": true,
+    "credential_available": true,
+    "credential_source_type": "ENVIRONMENT_SECRET_PROVIDER"
+  }
+}

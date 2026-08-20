@@ -1,0 +1,123 @@
+{
+  "artifact_id": "P02-INT22R2-INTEGRATED-1-256-HANDOFF-OVERLAY",
+  "canonical_handoff_inventory": {
+    "evidence_map_handoff.yaml": [
+      {
+        "bytes": 1093,
+        "path": "/kaggle/working/iharq_p02_integrated_1_256_R1/history/pre_integration_1_32/runtime/handoffs/evidence_map_handoff.yaml",
+        "sha256": "997c7db1df9d227e491decd3908a13abe98889b9931b4de8c0050cba9bfc4c96"
+      },
+      {
+        "bytes": 1106,
+        "path": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/handoffs/evidence_map_handoff.yaml",
+        "sha256": "679d32ee132517d3b705e2483493a96d2ad8c0f5e8a09217be0f6c50dbdd7850"
+      }
+    ],
+    "layer0_handoff.yaml": [
+      {
+        "bytes": 1094,
+        "path": "/kaggle/working/iharq_p02_integrated_1_256_R1/history/pre_integration_1_32/runtime/handoffs/layer0_handoff.yaml",
+        "sha256": "58c65dca9757054ec606f842a9c6cc71f80468f1c30cf2bb3ce91e735048c318"
+      },
+      {
+        "bytes": 1107,
+        "path": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/handoffs/layer0_handoff.yaml",
+        "sha256": "e7d3a0098a39c142a68ee5fabfe05aabb9289cfbb63996770037143d6b110a6d"
+      }
+    ],
+    "layer10_source_handoff.yaml": [
+      {
+        "bytes": 1115,
+        "path": "/kaggle/working/iharq_p02_integrated_1_256_R1/history/pre_integration_1_32/runtime/handoffs/layer10_source_handoff.yaml",
+        "sha256": "d78b76b893bb238402f86193d55d05231653b8d43ee1b1b8cad82c42051d2cc9"
+      },
+      {
+        "bytes": 1128,
+        "path": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/handoffs/layer10_source_handoff.yaml",
+        "sha256": "636e929851625971d717369167cd59450371fac88a83a013ca04ae3271420bc3"
+      }
+    ],
+    "p03_handoff.yaml": [
+      {
+        "bytes": 1102,
+        "path": "/kaggle/working/iharq_p02_integrated_1_256_R1/history/pre_integration_1_32/runtime/handoffs/p03_handoff.yaml",
+        "sha256": "bf72e07073b571e9f2ad14f9a8e021da3ca8a3cd1c3844d55276509a776b3389"
+      },
+      {
+        "bytes": 1115,
+        "path": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/handoffs/p03_handoff.yaml",
+        "sha256": "4fb2fab043de7a8b196be3b465bd9e7942e3546467b12e19d60b6d5f526a5598"
+      }
+    ],
+    "phase_analysis_handoff.yaml": [
+      {
+        "bytes": 1099,
+        "path": "/kaggle/working/iharq_p02_integrated_1_256_R1/history/pre_integration_1_32/runtime/handoffs/phase_analysis_handoff.yaml",
+        "sha256": "f36acf6317a607c3c97e6dc5486bfd3b86b56feb71b42c677df504f4cd79513b"
+      },
+      {
+        "bytes": 1112,
+        "path": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/handoffs/phase_analysis_handoff.yaml",
+        "sha256": "66ba9c8a3e8e6f80e9461c0886e0f3656776968fa0272a0fe0d5b72f5eee4ee4"
+      }
+    ],
+    "protocol_v1_handoff.yaml": [
+      {
+        "bytes": 1108,
+        "path": "/kaggle/working/iharq_p02_integrated_1_256_R1/history/pre_integration_1_32/runtime/handoffs/protocol_v1_handoff.yaml",
+        "sha256": "24c563da09d525f65d22da89fd6f9db19ba4a9ee8e037a70fb2c96c630c7bcc4"
+      },
+      {
+        "bytes": 1121,
+        "path": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/handoffs/protocol_v1_handoff.yaml",
+        "sha256": "d1343403f48349ca601dbc83f2923966c286925d23ec09424c33c116debe60d0"
+      }
+    ]
+  },
+  "canonical_handoffs_mutated": false,
+  "canonical_stage22_accepted": true,
+  "created_at_utc": "2026-08-17T18:06:00.317626+00:00",
+  "integration_annotations_published": [
+    "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/handoffs/P02_integrated_1_to_256_annotation_R1.json",
+    "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/handoffs/P02_integrated_1_to_256_annotation_R2.json",
+    "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/protocol_v1_handoff/P02_integrated_1_to_256_annotation_R1.json",
+    "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/protocol_v1_handoff/P02_integrated_1_to_256_annotation_R2.json",
+    "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/layer0_handoff/P02_integrated_1_to_256_annotation_R1.json",
+    "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/layer0_handoff/P02_integrated_1_to_256_annotation_R2.json",
+    "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/evidence_map_handoff/P02_integrated_1_to_256_annotation_R1.json",
+    "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/evidence_map_handoff/P02_integrated_1_to_256_annotation_R2.json",
+    "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/layer10_source_bundle/P02_integrated_1_to_256_annotation_R1.json",
+    "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/layer10_source_bundle/P02_integrated_1_to_256_annotation_R2.json"
+  ],
+  "next": "INT-23R2",
+  "stage18S_handoff": {
+    "analysis_contract": {
+      "combined_successful_effect_rows": 315,
+      "nine_budget_mr00_trajectories": 15,
+      "nine_budget_sequence": [
+        "1",
+        "4",
+        "8",
+        "16",
+        "32",
+        "64",
+        "128",
+        "256",
+        "FULL"
+      ],
+      "participant_effect_rows": 1890,
+      "three_repeat_anchor_budgets": [
+        "1",
+        "8",
+        "64",
+        "128",
+        "256",
+        "FULL"
+      ],
+      "three_repeat_anchor_trajectories": 90
+    },
+    "path": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/handoffs/stage18S_R1_sensitivity_evidence.json",
+    "sha256": "feaf52cd83a521ef6a4c2857f0af79f7fef68ebaf1777738d9f18cef0a109fdf"
+  },
+  "status": "PASS"
+}

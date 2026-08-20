@@ -1,0 +1,128 @@
+{
+  "verification_date": "2026-08-14",
+  "policy": "Primary/original sources prioritized; external performance is not treated as directly comparable unless protocol alignment is sufficient.",
+  "references": [
+    {
+      "reference_id": "LIT-EEGNET",
+      "title": "EEGNet: a compact convolutional neural network for EEG-based brain-computer interfaces",
+      "authors": "Lawhern et al.",
+      "year": 2018,
+      "venue": "Journal of Neural Engineering 15(5):056013",
+      "doi": "10.1088/1741-2552/aace8c",
+      "authoritative_code": "vlawhern/arl-eegmodels",
+      "model_or_topic": "EEGNet",
+      "comparison_role": "architecture/training provenance",
+      "comparability": "METHODOLOGICAL_REFERENCE_ONLY",
+      "verification": "Freshly reverified 2026-08-14 against PubMed and ARL author repository."
+    },
+    {
+      "reference_id": "LIT-FBCNET",
+      "title": "FBCNet: A Multi-view Convolutional Neural Network for Brain-Computer Interface",
+      "authors": "Mane et al.",
+      "year": 2021,
+      "venue": "arXiv extended version / author toolbox lineage",
+      "doi_or_identifier": "arXiv:2104.01233",
+      "authoritative_code": "ravikiran-mane/FBCNet",
+      "model_or_topic": "FBCNet",
+      "comparison_role": "architecture/training provenance",
+      "comparability": "METHODOLOGICAL_REFERENCE_ONLY",
+      "verification": "Freshly reverified 2026-08-14 against author repository and publication metadata."
+    },
+    {
+      "reference_id": "LIT-DBCONF",
+      "title": "DBConformer: Dual-Branch Convolutional Transformer for EEG Decoding",
+      "authors": "Wang et al.",
+      "year": 2026,
+      "venue": "IEEE Journal of Biomedical and Health Informatics 30(5):4134-4147",
+      "doi": "10.1109/JBHI.2025.3622725",
+      "authoritative_code": "wzwvv/DBConformer",
+      "model_or_topic": "DBConformer",
+      "comparison_role": "architecture/evaluation-regime context",
+      "comparability": "METHODOLOGICAL_REFERENCE_ONLY",
+      "verification": "Freshly reverified 2026-08-14 against PubMed and author repository."
+    },
+    {
+      "reference_id": "LIT-CBRAMOD",
+      "title": "CBraMod: A Criss-Cross Brain Foundation Model for EEG Decoding",
+      "authors": "Wang et al.",
+      "year": 2025,
+      "venue": "ICLR 2025",
+      "canonical_identifier": "ICLR/OpenReview; arXiv:2412.07236",
+      "authoritative_code": "wjq-learning/CBraMod",
+      "model_or_topic": "CBraMod",
+      "comparison_role": "foundation-model context",
+      "comparability": "METHODOLOGICAL_REFERENCE_ONLY",
+      "verification": "Freshly reverified 2026-08-14 against ICLR proceedings and author repository."
+    },
+    {
+      "reference_id": "LIT-OPENBMI",
+      "title": "EEG dataset and OpenBMI toolbox for three BCI paradigms: an investigation into BCI illiteracy",
+      "authors": "Lee et al.",
+      "year": 2019,
+      "venue": "GigaScience 8(5):giz002",
+      "doi": "10.1093/gigascience/giz002",
+      "model_or_topic": "Lee2019_MI/OpenBMI dataset",
+      "comparison_role": "dataset canonical reference",
+      "comparability": "DATASET_REFERENCE",
+      "verification": "Freshly reverified 2026-08-14 against PubMed/PMC."
+    },
+    {
+      "reference_id": "LIT-PHYSIONET",
+      "title": "EEG Motor Movement/Imagery Dataset v1.0.0",
+      "authors": "Goldberger/PhysioNet dataset lineage; experimental design McFarland/Wolpaw",
+      "year": 2009,
+      "venue": "PhysioNet",
+      "doi": "10.13026/C28G6P",
+      "model_or_topic": "PhysioNetMI dataset",
+      "comparison_role": "dataset canonical reference",
+      "comparability": "DATASET_REFERENCE",
+      "verification": "Freshly reverified 2026-08-14 against official PhysioNet dataset page."
+    },
+    {
+      "reference_id": "LIT-BCIIV2A",
+      "title": "BCI Competition IV Data Set 2a",
+      "authors": "Graz BCI group / Competition IV organizers",
+      "year": 2008,
+      "venue": "BCI Competition IV",
+      "canonical_identifier": "official BCI Competition IV dataset 2a",
+      "model_or_topic": "BNCI2014_001 source lineage",
+      "comparison_role": "dataset canonical reference",
+      "comparability": "DATASET_REFERENCE",
+      "verification": "Freshly reverified 2026-08-14 against official BCI Competition IV site."
+    },
+    {
+      "reference_id": "LIT-RIEMANN",
+      "title": "Multiclass brain-computer interface classification by Riemannian geometry",
+      "authors": "Barachant et al.",
+      "year": 2012,
+      "venue": "IEEE Transactions on Biomedical Engineering 59(4):920-928",
+      "doi": "10.1109/TBME.2011.2172210",
+      "model_or_topic": "Riemannian covariance methods",
+      "comparison_role": "classical/Riemannian methodological context",
+      "comparability": "METHODOLOGICAL_REFERENCE_ONLY",
+      "verification": "Freshly reverified 2026-08-14 against PubMed."
+    },
+    {
+      "reference_id": "LIT-MOABB",
+      "title": "The largest EEG-based BCI reproducibility study for open science: the MOABB benchmark",
+      "authors": "Chevallier et al.",
+      "year": 2024,
+      "venue": "open reproducibility benchmark / arXiv:2404.15319",
+      "model_or_topic": "multi-dataset reproducible benchmarking",
+      "comparison_role": "benchmark context",
+      "comparability": "CONTEXTUAL_ONLY",
+      "verification": "Freshly reverified 2026-08-14; used only as contextual benchmark, not numerical comparator."
+    },
+    {
+      "reference_id": "LIT-EEGFM2026",
+      "title": "EEG Foundation Models: Progresses, Benchmarking, and Open Problems",
+      "authors": "Liu et al.",
+      "year": 2026,
+      "venue": "arXiv:2601.17883",
+      "model_or_topic": "EEG foundation model benchmarking",
+      "comparison_role": "recent context for specialist-vs-foundation performance",
+      "comparability": "CONTEXTUAL_ONLY",
+      "verification": "Freshly reverified 2026-08-14; not used to claim direct numeric equivalence."
+    }
+  ]
+}

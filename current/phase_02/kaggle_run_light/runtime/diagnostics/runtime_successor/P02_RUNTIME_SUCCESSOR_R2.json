@@ -1,0 +1,288 @@
+{
+  "runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R2-CANONICAL-LOW-CAL-BUDGET-ID-PARSER-LIVE-CONTINUATION",
+  "parent_runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R1-CLASS-WEIGHT-APPLICABILITY-LIVE-CONTINUATION",
+  "reason": "R5 scientific.train_rows and A4 _train attempted int(budget_id) even though the frozen P01/P02 run matrix uses canonical P01-L1-LOW-CAL-OFFICIAL-R2:<N>_PER_CLASS identifiers.",
+  "affected_boundary": "LOW_CALIBRATION_BUDGET_IDENTIFIER_RESOLUTION_ONLY",
+  "canonical_budget_prefix": "P01-L1-LOW-CAL-OFFICIAL-R2",
+  "allowed_per_class_budgets": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32
+  ],
+  "budget_seed": 20260804,
+  "parser_tests": [
+    {
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS",
+      "resolved_per_class": 1,
+      "status": "PASS"
+    },
+    {
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS",
+      "resolved_per_class": 2,
+      "status": "PASS"
+    },
+    {
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS",
+      "resolved_per_class": 4,
+      "status": "PASS"
+    },
+    {
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS",
+      "resolved_per_class": 8,
+      "status": "PASS"
+    },
+    {
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS",
+      "resolved_per_class": 16,
+      "status": "PASS"
+    },
+    {
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:32_PER_CLASS",
+      "resolved_per_class": 32,
+      "status": "PASS"
+    }
+  ],
+  "unauthorized_budget_rejection": "PASS",
+  "membership_test_count": 18,
+  "membership_tests": [
+    {
+      "dataset_id": "PhysioNetMI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS",
+      "per_class": 1,
+      "rows": 2,
+      "left_hand": 1,
+      "right_hand": 1,
+      "event_membership": "EXACT_MATCH",
+      "role": "calibration",
+      "a4_parent_membership": "EXACT_MATCH",
+      "status": "PASS"
+    },
+    {
+      "dataset_id": "PhysioNetMI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS",
+      "per_class": 2,
+      "rows": 4,
+      "left_hand": 2,
+      "right_hand": 2,
+      "event_membership": "EXACT_MATCH",
+      "role": "calibration",
+      "a4_parent_membership": "EXACT_MATCH",
+      "status": "PASS"
+    },
+    {
+      "dataset_id": "PhysioNetMI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS",
+      "per_class": 4,
+      "rows": 8,
+      "left_hand": 4,
+      "right_hand": 4,
+      "event_membership": "EXACT_MATCH",
+      "role": "calibration",
+      "a4_parent_membership": "EXACT_MATCH",
+      "status": "PASS"
+    },
+    {
+      "dataset_id": "PhysioNetMI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS",
+      "per_class": 8,
+      "rows": 16,
+      "left_hand": 8,
+      "right_hand": 8,
+      "event_membership": "EXACT_MATCH",
+      "role": "calibration",
+      "a4_parent_membership": "EXACT_MATCH",
+      "status": "PASS"
+    },
+    {
+      "dataset_id": "PhysioNetMI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS",
+      "per_class": 16,
+      "rows": 32,
+      "left_hand": 16,
+      "right_hand": 16,
+      "event_membership": "EXACT_MATCH",
+      "role": "calibration",
+      "a4_parent_membership": "EXACT_MATCH",
+      "status": "PASS"
+    },
+    {
+      "dataset_id": "PhysioNetMI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:32_PER_CLASS",
+      "per_class": 32,
+      "rows": 64,
+      "left_hand": 32,
+      "right_hand": 32,
+      "event_membership": "EXACT_MATCH",
+      "role": "calibration",
+      "a4_parent_membership": "EXACT_MATCH",
+      "status": "PASS"
+    },
+    {
+      "dataset_id": "BNCI2014_001",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS",
+      "per_class": 1,
+      "rows": 2,
+      "left_hand": 1,
+      "right_hand": 1,
+      "event_membership": "EXACT_MATCH",
+      "role": "calibration",
+      "a4_parent_membership": "EXACT_MATCH",
+      "status": "PASS"
+    },
+    {
+      "dataset_id": "BNCI2014_001",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS",
+      "per_class": 2,
+      "rows": 4,
+      "left_hand": 2,
+      "right_hand": 2,
+      "event_membership": "EXACT_MATCH",
+      "role": "calibration",
+      "a4_parent_membership": "EXACT_MATCH",
+      "status": "PASS"
+    },
+    {
+      "dataset_id": "BNCI2014_001",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS",
+      "per_class": 4,
+      "rows": 8,
+      "left_hand": 4,
+      "right_hand": 4,
+      "event_membership": "EXACT_MATCH",
+      "role": "calibration",
+      "a4_parent_membership": "EXACT_MATCH",
+      "status": "PASS"
+    },
+    {
+      "dataset_id": "BNCI2014_001",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS",
+      "per_class": 8,
+      "rows": 16,
+      "left_hand": 8,
+      "right_hand": 8,
+      "event_membership": "EXACT_MATCH",
+      "role": "calibration",
+      "a4_parent_membership": "EXACT_MATCH",
+      "status": "PASS"
+    },
+    {
+      "dataset_id": "BNCI2014_001",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS",
+      "per_class": 16,
+      "rows": 32,
+      "left_hand": 16,
+      "right_hand": 16,
+      "event_membership": "EXACT_MATCH",
+      "role": "calibration",
+      "a4_parent_membership": "EXACT_MATCH",
+      "status": "PASS"
+    },
+    {
+      "dataset_id": "BNCI2014_001",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:32_PER_CLASS",
+      "per_class": 32,
+      "rows": 64,
+      "left_hand": 32,
+      "right_hand": 32,
+      "event_membership": "EXACT_MATCH",
+      "role": "calibration",
+      "a4_parent_membership": "EXACT_MATCH",
+      "status": "PASS"
+    },
+    {
+      "dataset_id": "Lee2019_MI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS",
+      "per_class": 1,
+      "rows": 2,
+      "left_hand": 1,
+      "right_hand": 1,
+      "event_membership": "EXACT_MATCH",
+      "role": "calibration",
+      "a4_parent_membership": "EXACT_MATCH",
+      "status": "PASS"
+    },
+    {
+      "dataset_id": "Lee2019_MI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS",
+      "per_class": 2,
+      "rows": 4,
+      "left_hand": 2,
+      "right_hand": 2,
+      "event_membership": "EXACT_MATCH",
+      "role": "calibration",
+      "a4_parent_membership": "EXACT_MATCH",
+      "status": "PASS"
+    },
+    {
+      "dataset_id": "Lee2019_MI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS",
+      "per_class": 4,
+      "rows": 8,
+      "left_hand": 4,
+      "right_hand": 4,
+      "event_membership": "EXACT_MATCH",
+      "role": "calibration",
+      "a4_parent_membership": "EXACT_MATCH",
+      "status": "PASS"
+    },
+    {
+      "dataset_id": "Lee2019_MI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS",
+      "per_class": 8,
+      "rows": 16,
+      "left_hand": 8,
+      "right_hand": 8,
+      "event_membership": "EXACT_MATCH",
+      "role": "calibration",
+      "a4_parent_membership": "EXACT_MATCH",
+      "status": "PASS"
+    },
+    {
+      "dataset_id": "Lee2019_MI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS",
+      "per_class": 16,
+      "rows": 32,
+      "left_hand": 16,
+      "right_hand": 16,
+      "event_membership": "EXACT_MATCH",
+      "role": "calibration",
+      "a4_parent_membership": "EXACT_MATCH",
+      "status": "PASS"
+    },
+    {
+      "dataset_id": "Lee2019_MI",
+      "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:32_PER_CLASS",
+      "per_class": 32,
+      "rows": 64,
+      "left_hand": 32,
+      "right_hand": 32,
+      "event_membership": "EXACT_MATCH",
+      "role": "calibration",
+      "a4_parent_membership": "EXACT_MATCH",
+      "status": "PASS"
+    }
+  ],
+  "patched_functions": {
+    "scientific.train_rows": "e3f29711c0da2866b1115889dc77e889725a8b7da8911fa96bf2a12434429e6d",
+    "a4._train": "e413645f73e5fa98e00ab2340bfcc7f16118f3113372a19d528e946386ff2e87",
+    "canonical_budget_parser": "d0b4a90bcc7652d11eb6e9d2436407296f8c71ecd83fdbd3dad2579cf820f61a"
+  },
+  "future_paths_protected": [
+    "STAGE09_CLASSICAL_LOW_CAL",
+    "STAGE10_RIEMANNIAN_LOW_CAL",
+    "STAGE11_EEGNET_LOW_CAL",
+    "STAGE12_DEEP_SSL_LOW_CAL",
+    "STAGE18_A4_LOW_CAL"
+  ],
+  "P00_P01_mutated": false,
+  "labels_modified": false,
+  "splits_modified": false,
+  "signals_modified": false,
+  "seeds_modified": false,
+  "budget_memberships_modified": false,
+  "scientific_configuration_changed": false,
+  "test_set_used_for_repair_decision": false
+}

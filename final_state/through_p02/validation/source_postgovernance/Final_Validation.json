@@ -1,0 +1,58 @@
+{
+  "package_id": "IHARQ-POST-PHASE-ANALYSIS-GOVERNANCE-THROUGH-P02-R1",
+  "layer0_status": "FINALIZED",
+  "evidence_map_status": "FINALIZED",
+  "layer10_status": "FINALIZED",
+  "overall_status": "FINALIZED_WITH_EXPLICIT_NONBLOCKING_LIMITATIONS",
+  "checks": [
+    {
+      "check": "pre-PDF deterministic suite",
+      "status": "PASS",
+      "detail": "{'total': 32, 'pass': 32, 'fail': 0}"
+    },
+    {
+      "check": "Layer0 PDF visual QA 12/12",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "EvidenceMap PDF visual QA 11/11",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Layer10 PDF visual QA 6/6",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PDF literal secret scan",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "three-way disposition parity",
+      "status": "PASS",
+      "detail": "37 claims"
+    },
+    {
+      "check": "direct current DOCX count zero",
+      "status": "PASS",
+      "detail": "historical nested predecessor ZIPs excluded from direct current-file count"
+    }
+  ],
+  "summary": {
+    "total": 39,
+    "pass": 39,
+    "fail": 0
+  },
+  "blockers": [],
+  "major_issues": [],
+  "remaining_nonblocking_scientific_limitations": [
+    "P02 A4 does not establish five-repeat stability, dense deep-budget response, or full original-grid replication equivalence.",
+    "P02 low-label evidence uses one frozen subset per budget; repeated-subset stability/sample-efficiency claims remain bounded.",
+    "BNCI2014_001 contributes one held-out P02 test participant for participant-level inference.",
+    "Stage 18S is post-hoc descriptive sensitivity evidence and remains non-confirmatory.",
+    "The completed evidence through P02 remains public-benchmark/non-clinical and does not establish deployment or medical safety."
+  ]
+}

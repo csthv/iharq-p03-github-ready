@@ -1,0 +1,230 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/csthv/IHARQ/schemas/records/ReadinessContextRecord.schema.json",
+  "title": "ReadinessContextRecord Phase 0 foundation profile",
+  "type": "object",
+  "required": [
+    "record_id",
+    "record_type",
+    "schema_version",
+    "authority_status",
+    "owner_layer",
+    "phase_id",
+    "config_id",
+    "source_ids",
+    "evidence_mode",
+    "limitation_tags",
+    "lifecycle_status",
+    "fixture",
+    "fixture_tags",
+    "evidence_role",
+    "payload"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "pattern": "^IHARQ-[A-Z][A-Z0-9_]*-[0-9]{8}-[0-9a-f]{16}$"
+    },
+    "record_type": {
+      "const": "ReadinessContextRecord"
+    },
+    "schema_version": {
+      "const": "1.0-foundation"
+    },
+    "authority_status": {
+      "const": "REGISTRY_REFERENCED"
+    },
+    "owner_layer": {
+      "const": "L6"
+    },
+    "phase_id": {
+      "const": "P00"
+    },
+    "config_id": {
+      "type": "string"
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "evidence_mode": {
+      "enum": [
+        "FOUNDATION",
+        "IMPLEMENTATION",
+        "CONFORMANCE",
+        "VALIDATION",
+        "REPRODUCIBILITY_READINESS"
+      ]
+    },
+    "limitation_tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "lifecycle_status": {
+      "enum": [
+        "CREATED",
+        "VALIDATED",
+        "ACCEPTED",
+        "DIAGNOSTIC_ONLY",
+        "BLOCKED",
+        "SUPERSEDED",
+        "INVALIDATED"
+      ]
+    },
+    "fixture": {
+      "type": "boolean"
+    },
+    "fixture_tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "evidence_role": {
+      "enum": [
+        "PRIMARY",
+        "DERIVED",
+        "GOVERNANCE",
+        "RENDERING",
+        "PACKAGING"
+      ]
+    },
+    "payload": {
+      "anyOf": [
+        {
+          "type": "object",
+          "required": [
+            "readiness_context_id",
+            "evidence_ids",
+            "legal_actions",
+            "budget"
+          ],
+          "properties": {
+            "readiness_context_id": {
+              "type": "string"
+            },
+            "evidence_ids": {
+              "type": "array"
+            },
+            "legal_actions": {
+              "type": "array"
+            },
+            "budget": {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          },
+          "additionalProperties": true
+        },
+        {
+          "type": "object",
+          "required": [
+            "readiness_context_id",
+            "evidence_quality_id",
+            "iharq_decision_id",
+            "temporal_trust_id",
+            "legal_actions",
+            "budget",
+            "cost_version",
+            "reward_version",
+            "policy_mode",
+            "update_eligibility",
+            "simulation_status"
+          ],
+          "properties": {
+            "readiness_context_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "evidence_quality_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "iharq_decision_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "temporal_trust_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "legal_actions": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "ACCEPT",
+                  "DEFER",
+                  "ESCALATE",
+                  "SAFE_STOP",
+                  "ABSTAIN"
+                ]
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "budget": {
+              "type": "string",
+              "pattern": "^-?(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+            },
+            "cost_version": {
+              "type": "string",
+              "minLength": 1
+            },
+            "reward_version": {
+              "type": "string",
+              "minLength": 1
+            },
+            "policy_mode": {
+              "enum": [
+                "ADAPTIVE_TRAINING",
+                "FROZEN_EVALUATION",
+                "RULE_BASED",
+                "DIAGNOSTIC_ONLY"
+              ]
+            },
+            "update_eligibility": {
+              "enum": [
+                "ELIGIBLE",
+                "INELIGIBLE",
+                "DISABLED",
+                "NOT_APPLICABLE"
+              ]
+            },
+            "simulation_status": {
+              "const": "SIMULATION_ONLY"
+            },
+            "adverse_outcome_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "uniqueItems": true
+            },
+            "action_constraints": {
+              "type": "object"
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "ablation_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "x-iharq-authority-status": "REGISTRY_REFERENCED"
+}

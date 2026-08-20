@@ -1,0 +1,281 @@
+phase_id: P02
+analysis_release_id: P02-PHASE-ANALYSIS-FINAL-R2
+traceability:
+- finding_id: P02-FIND-001
+  analysis_sources:
+  - analysis_inputs/a0_completion.json
+  - analysis_inputs/a0_participant_metrics.csv
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  metrics:
+  - BACC
+  - F1_MACRO
+  - ACC
+  - conditional ROC_AUC
+  interpretation: 'P02 closed the first governed Layer-2 decoder/baseline measurement
+    spine over the frozen P01 data substrate: A0 reached 678/678 terminal cells and
+    preserved raw prediction, score, checkpoint, failure, and participant-level evidence.'
+  candidate_claim_ids:
+  - P02-CLAIM-CAND-001
+  limitations:
+  - Non-clinical; no calibration/threshold/abstention claims.
+  figure_ids: []
+  table_ids: []
+- finding_id: P02-FIND-002
+  analysis_sources:
+  - table_sources/P02_Table_A0_fulltrain_branch_summary.csv
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  metrics:
+  - BACC
+  interpretation: Full-training decoder ordering was dataset-dependent. CSP-LDA led
+    BNCI2014_001 descriptively (BACC 0.639; one held-out participant), whereas DBConformer/DNN-SEQ
+    had the highest participant-first mean BACC on Lee2019_MI (0.795) and PhysioNetMI
+    (0.650).
+  candidate_claim_ids:
+  - P02-CLAIM-CAND-002
+  limitations:
+  - Ranking is descriptive and heterogeneous across datasets.
+  figure_ids:
+  - P02_Figure_01_A0_fulltrain_model_by_dataset
+  table_ids:
+  - P02_Table_A0_fulltrain_branch_summary
+  - P02_Table_A0_secondary_metric_leaders
+- finding_id: P02-FIND-003
+  analysis_sources:
+  - analysis_inputs/a0_statistics.json
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  metrics:
+  - BACC
+  interpretation: The governed A0 omnibus test detected model-family heterogeneity
+    on PhysioNetMI (Friedman statistic 20.544, p=0.00451, Kendall W=0.267) but not
+    on Lee2019_MI (p=0.148); no pairwise alternative-versus-CSP-LDA comparison survived
+    Holm correction on Lee2019_MI or PhysioNetMI.
+  candidate_claim_ids:
+  - P02-CLAIM-CAND-002
+  - P02-CLAIM-CAND-003
+  limitations:
+  - Does not establish a universal winning decoder.
+  figure_ids:
+  - P02_Figure_01_A0_fulltrain_model_by_dataset
+  table_ids:
+  - P02_Table_A0_fulltrain_branch_summary
+- finding_id: P02-FIND-004
+  analysis_sources:
+  - analysis_inputs/subject_profile_metric_source.csv
+  - figures/P02_Figure_02_Lee2019_MI_participant_distribution.png
+  - figures/P02_Figure_02_PhysioNetMI_participant_distribution.png
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  metrics:
+  - BACC
+  interpretation: 'Participant heterogeneity was substantial in the multi-participant
+    datasets: several leading full-training branches spanned near-chance to very high
+    participant BACC, so pooled means conceal materially different individual outcomes.'
+  candidate_claim_ids: []
+  limitations:
+  - P02 does not test a personalization policy.
+  figure_ids:
+  - P02_Figure_02_Lee2019_MI_participant_distribution
+  - P02_Figure_02_PhysioNetMI_participant_distribution
+  table_ids:
+  - P02_Table_A0_participant_first_fulltrain_source
+- finding_id: P02-FIND-005
+  analysis_sources:
+  - analysis_inputs/low_label_curve_summary.json
+  - analysis_inputs/low_label_metric_source.csv
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  metrics:
+  - BACC
+  interpretation: The frozen low-label analysis did not show a smooth universal sample-efficiency
+    curve. At 1-32 labels/class most aggregate BACC points remained near chance, model
+    ranking changed with budget and dataset, and CSP-LDA at 1/class was explicitly
+    non-success on all three datasets.
+  candidate_claim_ids:
+  - P02-CLAIM-CAND-004
+  limitations:
+  - One frozen subset; no repeated subset sampling; no interpolation.
+  figure_ids:
+  - P02_Figure_03_low_label_BNCI2014_001
+  - P02_Figure_03_low_label_Lee2019_MI
+  - P02_Figure_03_low_label_PhysioNetMI
+  table_ids:
+  - P02_Table_low_label_BACC
+  - P02_Table_low_label_budget_deltas
+- finding_id: P02-FIND-006
+  analysis_sources:
+  - runtime/diagnostics/runtime_successor/stage11_maximum_analysis/stage11_source_centered_recipe.json
+  - machine_readable P02 Protocol run matrix
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  metrics:
+  - BACC
+  - F1_MACRO
+  interpretation: 'Stage 11 required an explicit prospective stopping-rule correction:
+    previously sealed EEGNet fits were grandfathered, while only remaining/unsealed
+    fits adopted TRUE_P120/FLOOR1. The canonical primary lineage therefore remains
+    mixed (101 P500, 4 R6 P120/FLOOR500); 15 R7 TRUE_P120/FLOOR1 fits belong to a
+    diagnostic challenger and do not replace the primary A0 evidence.'
+  candidate_claim_ids:
+  - P02-CLAIM-CAND-005
+  limitations:
+  - Mixed recipe lineage prevents a false all-R7 primary interpretation.
+  figure_ids: []
+  table_ids: []
+- finding_id: P02-FIND-007
+  analysis_sources:
+  - analysis_inputs/training_policy_challenger_statistics.json
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  metrics:
+  - BACC
+  interpretation: 'The Stage 11 diagnostic S&R challenger did not provide evidence
+    of a consistent test-set advantage over the canonical primary EEGNet: median paired
+    ΔBACC was -0.0347 on BNCI2014_001, +0.010 on Lee2019_MI, and 0.000 on PhysioNetMI,
+    with Wilcoxon p values 0.125, 0.231 and 0.455 respectively.'
+  candidate_claim_ids:
+  - P02-CLAIM-CAND-006
+  limitations:
+  - Does not rewrite primary A0 or enter A4 selection.
+  figure_ids:
+  - P02_Figure_04_training_policy_challenger_effect
+  table_ids:
+  - P02_Table_training_policy_challenger_statistics
+- finding_id: P02-FIND-008
+  analysis_sources:
+  - runtime/diagnostics/stage12_R6_ABC_author_adaptive_R1/job_summaries/*.json
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  metrics:
+  - validation BACC
+  interpretation: 'Stage 12 diagnostics demonstrate architecture-specific optimization
+    sensitivity rather than a universal training recipe: source/author-centered candidate
+    B removed targeted A-collapse for BNCI FBCNet and PhysioNet CBraMod in validation
+    diagnostics, but BNCI FBCNet C-confirmation still collapsed in 5/5 confirmation
+    seeds.'
+  candidate_claim_ids:
+  - P02-CLAIM-CAND-005
+  limitations:
+  - Claim-bearing test inference comes from canonical A0, not the A/B/C diagnostic
+    search.
+  figure_ids: []
+  table_ids: []
+- finding_id: P02-FIND-009
+  analysis_sources:
+  - analysis_inputs/a4_completion.json
+  - analysis_inputs/stage18_resource_constrained_anchor_budget_deviation.json
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  metrics:
+  - BACC
+  - burden/delay
+  interpretation: 'A4 completed all six governed condition identities across all three
+    datasets, but under an explicit resource-constrained single-repeat/deep-anchor
+    deviation: 1,218 terminal cells comprised 591 SUCCESS, 576 CONDITIONAL_SKIP, 9
+    INPUT_INCOMPATIBLE and 42 NOT_APPLICABLE_REPEAT_SLOT.'
+  candidate_claim_ids:
+  - P02-CLAIM-CAND-007
+  limitations:
+  - No five-repeat stability; reduced deep budget grid; not full Build Book equivalence.
+  figure_ids: []
+  table_ids:
+  - P02_Table_A4_role_condition_summary
+- finding_id: P02-FIND-010
+  analysis_sources:
+  - analysis_inputs/a4_role_control_statistics.json
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  metrics:
+  - paired ΔBACC
+  interpretation: Across the 756 governed C1-C3 role-control statistical rows, no
+    comparison reached raw p<=0.05; condition effects were generally small, heterogeneous
+    in sign, and dependent on dataset/role/budget.
+  candidate_claim_ids:
+  - P02-CLAIM-CAND-007
+  limitations:
+  - Deep roles restricted to anchor budgets/repeat0 in canonical Stage18.
+  figure_ids:
+  - P02_Figure_05_A4_role_control_effects
+  table_ids:
+  - P02_Table_A4_role_control_statistics
+  - P02_Table_A4_role_condition_summary
+- finding_id: P02-FIND-011
+  analysis_sources:
+  - analysis_inputs/a4_c4_c5_statistics.json
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  metrics:
+  - BACC
+  interpretation: 'Within the governed C4/C5 ensemble-versus-strongest-constituent
+    family, one comparison survived Holm correction: on PhysioNetMI full training
+    at ensemble repeat 4, the hard-vote ensemble underperformed validation-selected
+    EEGNet by median ΔBACC -0.0435 (raw p=0.0186; Holm p=0.0371; rank-biserial -0.788;
+    95% bootstrap CI -0.1304 to -0.0119).'
+  candidate_claim_ids:
+  - P02-CLAIM-CAND-008
+  limitations:
+  - Does not imply ensembles are generally inferior across datasets/budgets/repeats.
+  figure_ids: []
+  table_ids:
+  - P02_Table_A4_C4_C5_statistics
+- finding_id: P02-FIND-012
+  analysis_sources:
+  - analysis_inputs/stage18S_R1_decision_support_summary.json
+  - analysis_inputs/stage18S_R1_three_repeat_anchor_stability.csv
+  - analysis_inputs/stage18S_R1_six_budget_mr00_sensitivity.csv
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  metrics:
+  - ΔBACC
+  interpretation: 'Stage 18S shows that A4 effect direction is sensitive to repeat
+    and supervision budget: 22/45 three-repeat anchor trajectories were MIXED and
+    all 15 six-budget MR00 trajectories changed sign at least once.'
+  candidate_claim_ids:
+  - P02-CLAIM-CAND-009
+  limitations:
+  - Not confirmatory; does not modify G18 or create five-repeat evidence.
+  figure_ids:
+  - P02_Figure_06_Stage18S_sign_consistency
+  table_ids:
+  - P02_Table_Stage18S_three_repeat_anchor_stability
+  - P02_Table_Stage18S_six_budget_sensitivity
+- finding_id: P02-FIND-013
+  analysis_sources:
+  - analysis_inputs/failure_negative_summary.json
+  - negative_and_failed_results/
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  metrics:
+  - terminal status / provenance
+  interpretation: 'Negative evidence is a first-class P02 result: the release preserves
+    648 failure/non-success records, 340 NegativeResultNotes and 309 DiagnosticOnlyFlags,
+    including branch dependency blocks, conditional skips, input incompatibilities
+    and not-applicable repeat slots.'
+  candidate_claim_ids:
+  - P02-CLAIM-CAND-010
+  limitations:
+  - Counts include governed non-success states that should not be conflated with unexpected
+    runtime crashes.
+  figure_ids: []
+  table_ids: []
+- finding_id: P02-FIND-014
+  analysis_sources:
+  - Protocol v1.0 analysis contract
+  - runtime/manifests/stage_artifacts/20_readiness.json
+  run_ids:
+  - P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+  metrics:
+  - governed P02 metrics
+  interpretation: 'P02 is evidence-sufficient for its governed Layer-2 scope and downstream
+    handoff, but its evidence ceiling remains a measurement ceiling: it supports decoder/baseline,
+    low-label descriptive, ordinary A4 control and readiness claims, not calibrated
+    uncertainty, threshold/abstention policy, clinical safety, temporal robustness,
+    stress robustness or embodiment claims.'
+  candidate_claim_ids:
+  - P02-CLAIM-CAND-010
+  limitations:
+  - Downstream layers must carry P02 limitations forward.
+  figure_ids: []
+  table_ids: []

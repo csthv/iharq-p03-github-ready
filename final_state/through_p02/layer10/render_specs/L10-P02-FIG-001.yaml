@@ -1,0 +1,18 @@
+artifact_id: L10-P02-FIG-001
+source_data: figure_source_data/P02_Table_A0_fulltrain_branch_summary.csv
+render_script: scripts/render_layer10.py
+claim_ids:
+- P02-CLM-002/v1
+- P02-CLM-003/v1
+- CUM-CLM-003/v1
+finding_ids:
+- P02-FIND-002
+- P02-FIND-003
+- CF-03
+limitations:
+- BNCI_TEST_PARTICIPANTS_1
+- DATASET_HETEROGENEITY
+output: figures/L10-P02-FIG-001.png
+scientific_transform: DISPLAY_ONLY
+source_data_sha256: 2f62ab327d951c7eebe2a57c7f59e448aea9080877299df94afbc10f41c043f7
+output_sha256: ed7d0cc5ac13423ed793b1e82d185cdc2210fb69d87734110d232d10a48d05d9

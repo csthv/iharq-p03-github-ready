@@ -1,0 +1,1079 @@
+{
+  "artifact_id": "P03-PROD-053-87dade42906ebc04a804",
+  "complete_count": 23,
+  "created_at_utc": "2026-08-16T21:01:39.500595Z",
+  "hardening_id": "P03-C8-STAGE23-SUFFICIENCY-PARITY-EVIDENCE-HARDENING-R2",
+  "payload_sha256": "dcc6956eff8b3431461828af29dd4b5a88fdc110727aee1ebd37b277c70493ca",
+  "product_id": "P03-PROD-053",
+  "run_id": "P03-L3-OFFICIAL-09ca82c743e0411a",
+  "schema_id": "StageLedger.v1",
+  "schema_version": "1.0.0",
+  "source_artifact_ids": [
+    "STAGE23-RAW-STAGE-LEDGER"
+  ],
+  "source_sha256s": [
+    "2a314f0300fe6528624dc1bacfb0c4f967025f0cb6dd7bea5ba47c32542e2884"
+  ],
+  "source_stage23_sha256": "2a314f0300fe6528624dc1bacfb0c4f967025f0cb6dd7bea5ba47c32542e2884",
+  "stage_id": "23",
+  "stages": [
+    {
+      "attempt": 1,
+      "gate_id": "G03-00-AUTHORITY",
+      "inputs": {
+        "code_sha": "aa3668558596b20f17010f2ee7f7994bc1059a31b1301025ffaaaab1ce3478a9",
+        "config_sha": "2eda0689ab42e93c91b3ef9b76e0168d1c13d1feb3d1a552beaade91105ab7c3",
+        "environment_sha": "67dc3d67c8e0b6b664688c6aa1d2cbcb2b612386422a26d153e45966c070f700",
+        "input_manifest_sha": "2753878607d1573b8d95fa8424cf25f666705f6b962353ecc27e64d7850e3017",
+        "protocol_sha": "dc46b87cb802d1a6a3ab0efd3dc6db6be5c3b5c7125c54e95a9cdbea8eef797d"
+      },
+      "outputs": {
+        "checkpoint": {
+          "manifest_sha256": "8c83dad509d53af6f847afbe5e65e9508e97d0ec24ae09fd46eef9b3045aba4f",
+          "promoted_path": "/kaggle/working/iharq_p03_l3/current/phase_03/kaggle_run/P03-L3-OFFICIAL-09ca82c743e0411a/stage_artifacts/stage_00",
+          "state": "COMPLETE"
+        },
+        "output_manifest_sha": "8c83dad509d53af6f847afbe5e65e9508e97d0ec24ae09fd46eef9b3045aba4f",
+        "stage_fingerprint": "e137420b8c24dbd6fa7aada178c8d41571a5b54bc687530ab0089a1ce3e38501"
+      },
+      "resources": {
+        "checkpoint_state": "COMPLETE",
+        "completed_work_units": 1,
+        "cpu_count": 4,
+        "elapsed_seconds": 0.0354079969997656,
+        "error_count": 0,
+        "eta_seconds": 0.0,
+        "last_completed": "stage_result.json",
+        "max_rss_kib": 2587220,
+        "percent": 100.0,
+        "pid": 143,
+        "total_work_units": 1
+      },
+      "stage_id": "00",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": "2026-08-15T20:58:09Z",
+        "start_time": "2026-08-15T20:58:09Z"
+      }
+    },
+    {
+      "attempt": 1,
+      "gate_id": "G03-01-REPOSITORY",
+      "inputs": {
+        "code_sha": "aa3668558596b20f17010f2ee7f7994bc1059a31b1301025ffaaaab1ce3478a9",
+        "config_sha": "2eda0689ab42e93c91b3ef9b76e0168d1c13d1feb3d1a552beaade91105ab7c3",
+        "environment_sha": "67dc3d67c8e0b6b664688c6aa1d2cbcb2b612386422a26d153e45966c070f700",
+        "input_manifest_sha": "2753878607d1573b8d95fa8424cf25f666705f6b962353ecc27e64d7850e3017",
+        "protocol_sha": "dc46b87cb802d1a6a3ab0efd3dc6db6be5c3b5c7125c54e95a9cdbea8eef797d"
+      },
+      "outputs": {
+        "checkpoint": {
+          "manifest_sha256": "0d91836544e19386f68e0f70d61885c19d2d5f09d7a828a20ef081f42edbf92f",
+          "promoted_path": "/kaggle/working/iharq_p03_l3/current/phase_03/kaggle_run/P03-L3-OFFICIAL-09ca82c743e0411a/stage_artifacts/stage_01",
+          "state": "COMPLETE"
+        },
+        "output_manifest_sha": "0d91836544e19386f68e0f70d61885c19d2d5f09d7a828a20ef081f42edbf92f",
+        "stage_fingerprint": "337f20db8ce177d3657ef46a0ac0bcb8152206f4bf99bf2cc6599975bfcfa229"
+      },
+      "resources": {
+        "checkpoint_state": "COMPLETE",
+        "completed_work_units": 1,
+        "cpu_count": 4,
+        "elapsed_seconds": 0.219972812999913,
+        "error_count": 0,
+        "eta_seconds": 0.0,
+        "last_completed": "stage_result.json",
+        "max_rss_kib": 2587220,
+        "percent": 100.0,
+        "pid": 143,
+        "total_work_units": 1
+      },
+      "stage_id": "01",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": "2026-08-15T20:58:16Z",
+        "start_time": "2026-08-15T20:58:16Z"
+      }
+    },
+    {
+      "attempt": 1,
+      "gate_id": "G03-02-ENVIRONMENT",
+      "inputs": {
+        "code_sha": "aa3668558596b20f17010f2ee7f7994bc1059a31b1301025ffaaaab1ce3478a9",
+        "config_sha": "2eda0689ab42e93c91b3ef9b76e0168d1c13d1feb3d1a552beaade91105ab7c3",
+        "environment_sha": "67dc3d67c8e0b6b664688c6aa1d2cbcb2b612386422a26d153e45966c070f700",
+        "input_manifest_sha": "2753878607d1573b8d95fa8424cf25f666705f6b962353ecc27e64d7850e3017",
+        "protocol_sha": "dc46b87cb802d1a6a3ab0efd3dc6db6be5c3b5c7125c54e95a9cdbea8eef797d"
+      },
+      "outputs": {
+        "checkpoint": {
+          "manifest_sha256": "a80d8b6da2fe2d270e1aff2c0aa9b9d0c3a9d6b89bbfff0e00403584fed43797",
+          "promoted_path": "/kaggle/working/iharq_p03_l3/current/phase_03/kaggle_run/P03-L3-OFFICIAL-09ca82c743e0411a/stage_artifacts/stage_02",
+          "state": "COMPLETE"
+        },
+        "output_manifest_sha": "a80d8b6da2fe2d270e1aff2c0aa9b9d0c3a9d6b89bbfff0e00403584fed43797",
+        "stage_fingerprint": "583ff2ff722cead38205db087ca0649b6eebcf39d7b3b8616002690fb2573af3"
+      },
+      "resources": {
+        "checkpoint_state": "COMPLETE",
+        "completed_work_units": 1,
+        "cpu_count": 4,
+        "elapsed_seconds": 0.14388412000016615,
+        "error_count": 0,
+        "eta_seconds": 0.0,
+        "last_completed": "stage_result.json",
+        "max_rss_kib": 2587220,
+        "percent": 100.0,
+        "pid": 143,
+        "total_work_units": 1
+      },
+      "stage_id": "02",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": "2026-08-15T20:58:24Z",
+        "start_time": "2026-08-15T20:58:24Z"
+      }
+    },
+    {
+      "attempt": 1,
+      "gate_id": "G03-03-RETRIEVAL",
+      "inputs": {
+        "code_sha": "aa3668558596b20f17010f2ee7f7994bc1059a31b1301025ffaaaab1ce3478a9",
+        "config_sha": "2eda0689ab42e93c91b3ef9b76e0168d1c13d1feb3d1a552beaade91105ab7c3",
+        "environment_sha": "67dc3d67c8e0b6b664688c6aa1d2cbcb2b612386422a26d153e45966c070f700",
+        "input_manifest_sha": "2753878607d1573b8d95fa8424cf25f666705f6b962353ecc27e64d7850e3017",
+        "protocol_sha": "dc46b87cb802d1a6a3ab0efd3dc6db6be5c3b5c7125c54e95a9cdbea8eef797d"
+      },
+      "outputs": {
+        "checkpoint": {
+          "manifest_sha256": "f3b937cae0835dcd44a09ab1ff57d7c76b8d6b00af5994f61aede64dad88c3d9",
+          "promoted_path": "/kaggle/working/iharq_p03_l3/current/phase_03/kaggle_run/P03-L3-OFFICIAL-09ca82c743e0411a/stage_artifacts/stage_03",
+          "state": "COMPLETE"
+        },
+        "output_manifest_sha": "f3b937cae0835dcd44a09ab1ff57d7c76b8d6b00af5994f61aede64dad88c3d9",
+        "stage_fingerprint": "ad5bd49aa0a502b3dc86bf1bd965841f35eb37cff1c53e4574f0e244c1f6b4d2"
+      },
+      "resources": {
+        "checkpoint_state": "COMPLETE",
+        "completed_work_units": 1,
+        "cpu_count": 4,
+        "elapsed_seconds": 67.86322651899991,
+        "error_count": 0,
+        "eta_seconds": 0.0,
+        "last_completed": "stage_result.json",
+        "max_rss_kib": 2636856,
+        "percent": 100.0,
+        "pid": 143,
+        "total_work_units": 1
+      },
+      "stage_id": "03",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": "2026-08-15T20:59:54Z",
+        "start_time": "2026-08-15T20:58:46Z"
+      }
+    },
+    {
+      "attempt": 1,
+      "gate_id": "G03-04-HANDOFF",
+      "inputs": {
+        "code_sha": "aa3668558596b20f17010f2ee7f7994bc1059a31b1301025ffaaaab1ce3478a9",
+        "config_sha": "2eda0689ab42e93c91b3ef9b76e0168d1c13d1feb3d1a552beaade91105ab7c3",
+        "environment_sha": "67dc3d67c8e0b6b664688c6aa1d2cbcb2b612386422a26d153e45966c070f700",
+        "input_manifest_sha": "2753878607d1573b8d95fa8424cf25f666705f6b962353ecc27e64d7850e3017",
+        "protocol_sha": "dc46b87cb802d1a6a3ab0efd3dc6db6be5c3b5c7125c54e95a9cdbea8eef797d"
+      },
+      "outputs": {
+        "checkpoint": {
+          "manifest_sha256": "8ebbf5661bd32435eb44cf947aa30efb31fc57a547e3141daebcbcd56817eb48",
+          "promoted_path": "/kaggle/working/iharq_p03_l3/current/phase_03/kaggle_run/P03-L3-OFFICIAL-09ca82c743e0411a/stage_artifacts/stage_04",
+          "state": "COMPLETE"
+        },
+        "output_manifest_sha": "8ebbf5661bd32435eb44cf947aa30efb31fc57a547e3141daebcbcd56817eb48",
+        "stage_fingerprint": "501466aa0ae02855a8f51075eba5526ec8562c33ac724b3fe7517ea8df4a9acf"
+      },
+      "resources": {
+        "checkpoint_state": "COMPLETE",
+        "completed_work_units": 1,
+        "cpu_count": 4,
+        "elapsed_seconds": 0.21006750700007615,
+        "error_count": 0,
+        "eta_seconds": 0.0,
+        "last_completed": "stage_result.json",
+        "max_rss_kib": 2636856,
+        "percent": 100.0,
+        "pid": 143,
+        "total_work_units": 1
+      },
+      "stage_id": "04",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": "2026-08-15T21:00:09Z",
+        "start_time": "2026-08-15T21:00:09Z"
+      }
+    },
+    {
+      "attempt": 1,
+      "gate_id": "G03-05-FREEZE",
+      "inputs": {
+        "code_sha": "aa3668558596b20f17010f2ee7f7994bc1059a31b1301025ffaaaab1ce3478a9",
+        "config_sha": "2eda0689ab42e93c91b3ef9b76e0168d1c13d1feb3d1a552beaade91105ab7c3",
+        "environment_sha": "67dc3d67c8e0b6b664688c6aa1d2cbcb2b612386422a26d153e45966c070f700",
+        "input_manifest_sha": "2753878607d1573b8d95fa8424cf25f666705f6b962353ecc27e64d7850e3017",
+        "protocol_sha": "dc46b87cb802d1a6a3ab0efd3dc6db6be5c3b5c7125c54e95a9cdbea8eef797d"
+      },
+      "outputs": {
+        "checkpoint": {
+          "manifest_sha256": "2db61cdb0f5a8246cb57ed6f333607500a6303d8e1558e1898019996c461aea6",
+          "promoted_path": "/kaggle/working/iharq_p03_l3/current/phase_03/kaggle_run/P03-L3-OFFICIAL-09ca82c743e0411a/stage_artifacts/stage_05",
+          "state": "COMPLETE"
+        },
+        "output_manifest_sha": "2db61cdb0f5a8246cb57ed6f333607500a6303d8e1558e1898019996c461aea6",
+        "stage_fingerprint": "3ff5dcf35c716557508818668c198d76d82803332de1d3e92f8b39eb372adab1"
+      },
+      "resources": {
+        "checkpoint_state": "COMPLETE",
+        "completed_work_units": 1,
+        "cpu_count": 4,
+        "elapsed_seconds": 0.07482208600004014,
+        "error_count": 0,
+        "eta_seconds": 0.0,
+        "last_completed": "stage_result.json",
+        "max_rss_kib": 2636856,
+        "percent": 100.0,
+        "pid": 143,
+        "total_work_units": 1
+      },
+      "stage_id": "05",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": "2026-08-15T21:00:18Z",
+        "start_time": "2026-08-15T21:00:18Z"
+      }
+    },
+    {
+      "attempt": 1,
+      "gate_id": "G03-06-COMPONENT",
+      "inputs": {
+        "code_sha": "aa3668558596b20f17010f2ee7f7994bc1059a31b1301025ffaaaab1ce3478a9",
+        "config_sha": "2eda0689ab42e93c91b3ef9b76e0168d1c13d1feb3d1a552beaade91105ab7c3",
+        "environment_sha": "67dc3d67c8e0b6b664688c6aa1d2cbcb2b612386422a26d153e45966c070f700",
+        "input_manifest_sha": "2753878607d1573b8d95fa8424cf25f666705f6b962353ecc27e64d7850e3017",
+        "protocol_sha": "dc46b87cb802d1a6a3ab0efd3dc6db6be5c3b5c7125c54e95a9cdbea8eef797d"
+      },
+      "outputs": {
+        "checkpoint": {
+          "manifest_sha256": "a7faa9d5037a72b7ef83fefd8b11aaddf258a29ac7f08a7c11843fa8d1a5a189",
+          "promoted_path": "/kaggle/working/iharq_p03_l3/current/phase_03/kaggle_run/P03-L3-OFFICIAL-09ca82c743e0411a/stage_artifacts/stage_06",
+          "state": "COMPLETE"
+        },
+        "output_manifest_sha": "a7faa9d5037a72b7ef83fefd8b11aaddf258a29ac7f08a7c11843fa8d1a5a189",
+        "stage_fingerprint": "0cbc8bf5f9961c3b2409c90e1535b5060d4b9d9b1d36608850de61f26d4be6ef"
+      },
+      "resources": {
+        "checkpoint_state": "COMPLETE",
+        "completed_work_units": 1,
+        "cpu_count": 4,
+        "elapsed_seconds": 1.1228243789996668,
+        "error_count": 0,
+        "eta_seconds": 0.0,
+        "last_completed": "stage_result.json",
+        "max_rss_kib": 2636856,
+        "percent": 100.0,
+        "pid": 143,
+        "total_work_units": 1
+      },
+      "stage_id": "06",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": "2026-08-15T21:00:33Z",
+        "start_time": "2026-08-15T21:00:32Z"
+      }
+    },
+    {
+      "attempt": 2,
+      "gate_id": "G03-07-JOIN",
+      "inputs": {
+        "code_sha": "aa3668558596b20f17010f2ee7f7994bc1059a31b1301025ffaaaab1ce3478a9",
+        "config_sha": "2eda0689ab42e93c91b3ef9b76e0168d1c13d1feb3d1a552beaade91105ab7c3",
+        "environment_sha": "67dc3d67c8e0b6b664688c6aa1d2cbcb2b612386422a26d153e45966c070f700",
+        "input_manifest_sha": "2753878607d1573b8d95fa8424cf25f666705f6b962353ecc27e64d7850e3017",
+        "protocol_sha": "dc46b87cb802d1a6a3ab0efd3dc6db6be5c3b5c7125c54e95a9cdbea8eef797d"
+      },
+      "outputs": {
+        "checkpoint": {
+          "manifest_sha256": "c30cf02de76271f71e7ba5a653aef2cb513963524b1662e6c637259321825a45",
+          "promoted_path": "/kaggle/working/iharq_p03_l3/current/phase_03/kaggle_run/P03-L3-OFFICIAL-09ca82c743e0411a/stage_artifacts/stage_07",
+          "state": "COMPLETE"
+        },
+        "output_manifest_sha": "c30cf02de76271f71e7ba5a653aef2cb513963524b1662e6c637259321825a45",
+        "stage_fingerprint": "0d099ec6ec9d4a70c1ed9e81a82f84daf71c3a623179f44fc2615f293fee9d07"
+      },
+      "resources": {
+        "checkpoint_state": "COMPLETE",
+        "completed_work_units": 1,
+        "cpu_count": 4,
+        "elapsed_seconds": 1394.3726685319998,
+        "error_count": 0,
+        "eta_seconds": 0.0,
+        "last_completed": "stage_result.json",
+        "max_rss_kib": 3106904,
+        "percent": 100.0,
+        "pid": 2386,
+        "total_work_units": 1
+      },
+      "stage_id": "07",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": "2026-08-15T21:38:57Z",
+        "start_time": "2026-08-15T21:15:43Z"
+      }
+    },
+    {
+      "attempt": 1,
+      "gate_id": "G03-08-LEAKAGE",
+      "inputs": {
+        "code_sha": "aa3668558596b20f17010f2ee7f7994bc1059a31b1301025ffaaaab1ce3478a9",
+        "config_sha": "2eda0689ab42e93c91b3ef9b76e0168d1c13d1feb3d1a552beaade91105ab7c3",
+        "environment_sha": "67dc3d67c8e0b6b664688c6aa1d2cbcb2b612386422a26d153e45966c070f700",
+        "input_manifest_sha": "2753878607d1573b8d95fa8424cf25f666705f6b962353ecc27e64d7850e3017",
+        "protocol_sha": "dc46b87cb802d1a6a3ab0efd3dc6db6be5c3b5c7125c54e95a9cdbea8eef797d"
+      },
+      "outputs": {
+        "checkpoint": {
+          "manifest_sha256": "1315ff9cc49121414ed1db946eeac0788326150fc1542b8207c33afc7949327e",
+          "promoted_path": "/kaggle/working/iharq_p03_l3/current/phase_03/kaggle_run/P03-L3-OFFICIAL-09ca82c743e0411a/stage_artifacts/stage_08",
+          "state": "COMPLETE"
+        },
+        "output_manifest_sha": "1315ff9cc49121414ed1db946eeac0788326150fc1542b8207c33afc7949327e",
+        "stage_fingerprint": "e3f9bb714b56a39a24f3c2da38dcb019d989d6b2c47c0f170e7029140b632d4f"
+      },
+      "resources": {
+        "checkpoint_state": "COMPLETE",
+        "completed_work_units": 1,
+        "cpu_count": 4,
+        "elapsed_seconds": 5.480931592000161,
+        "error_count": 0,
+        "eta_seconds": 0.0,
+        "last_completed": "stage_result.json",
+        "max_rss_kib": 3106904,
+        "percent": 100.0,
+        "pid": 2386,
+        "total_work_units": 1
+      },
+      "stage_id": "08",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": "2026-08-15T22:09:02Z",
+        "start_time": "2026-08-15T22:08:56Z"
+      }
+    },
+    {
+      "attempt": 1,
+      "gate_id": "G03-09-ELIGIBILITY",
+      "inputs": {
+        "code_sha": "aa3668558596b20f17010f2ee7f7994bc1059a31b1301025ffaaaab1ce3478a9",
+        "config_sha": "2eda0689ab42e93c91b3ef9b76e0168d1c13d1feb3d1a552beaade91105ab7c3",
+        "environment_sha": "67dc3d67c8e0b6b664688c6aa1d2cbcb2b612386422a26d153e45966c070f700",
+        "input_manifest_sha": "2753878607d1573b8d95fa8424cf25f666705f6b962353ecc27e64d7850e3017",
+        "protocol_sha": "dc46b87cb802d1a6a3ab0efd3dc6db6be5c3b5c7125c54e95a9cdbea8eef797d"
+      },
+      "outputs": {
+        "checkpoint": {
+          "manifest_sha256": "d291adbace5c3228c4456e7158da54704c996edcb52ad07e1d124788d15d8aed",
+          "promoted_path": "/kaggle/working/iharq_p03_l3/current/phase_03/kaggle_run/P03-L3-OFFICIAL-09ca82c743e0411a/stage_artifacts/stage_09",
+          "state": "COMPLETE"
+        },
+        "output_manifest_sha": "d291adbace5c3228c4456e7158da54704c996edcb52ad07e1d124788d15d8aed",
+        "stage_fingerprint": "bedc2f1592b33205c0df1990c5f969c59f6342696bdd299ca157b40f736b14d8"
+      },
+      "resources": {
+        "checkpoint_state": "COMPLETE",
+        "completed_work_units": 1,
+        "cpu_count": 4,
+        "elapsed_seconds": 4.9813571510003385,
+        "error_count": 0,
+        "eta_seconds": 0.0,
+        "last_completed": "stage_result.json",
+        "max_rss_kib": 3106904,
+        "percent": 100.0,
+        "pid": 2386,
+        "total_work_units": 1
+      },
+      "stage_id": "09",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": "2026-08-15T22:47:41Z",
+        "start_time": "2026-08-15T22:47:36Z"
+      }
+    },
+    {
+      "attempt": 1,
+      "gate_id": "G03-10-IDENTITY",
+      "inputs": {
+        "code_sha": "aa3668558596b20f17010f2ee7f7994bc1059a31b1301025ffaaaab1ce3478a9",
+        "config_sha": "2eda0689ab42e93c91b3ef9b76e0168d1c13d1feb3d1a552beaade91105ab7c3",
+        "environment_sha": "67dc3d67c8e0b6b664688c6aa1d2cbcb2b612386422a26d153e45966c070f700",
+        "input_manifest_sha": "2753878607d1573b8d95fa8424cf25f666705f6b962353ecc27e64d7850e3017",
+        "protocol_sha": "dc46b87cb802d1a6a3ab0efd3dc6db6be5c3b5c7125c54e95a9cdbea8eef797d"
+      },
+      "outputs": {
+        "checkpoint": {
+          "manifest_sha256": "c7dd973a35d9870b4d50364faebe0541cd4f303499034052ebedfac4fe15269e",
+          "promoted_path": "/kaggle/working/iharq_p03_l3/current/phase_03/kaggle_run/P03-L3-OFFICIAL-09ca82c743e0411a/stage_artifacts/stage_10",
+          "state": "COMPLETE"
+        },
+        "output_manifest_sha": "c7dd973a35d9870b4d50364faebe0541cd4f303499034052ebedfac4fe15269e",
+        "stage_fingerprint": "c11501e3ed251504c819b06fe0ef7cc03c0f297757a4d1f4d94236877d99bfa0"
+      },
+      "resources": {
+        "checkpoint_state": "COMPLETE",
+        "completed_work_units": 1,
+        "cpu_count": 4,
+        "elapsed_seconds": 6.726482009000392,
+        "error_count": 0,
+        "eta_seconds": 0.0,
+        "last_completed": "stage_result.json",
+        "max_rss_kib": 3106904,
+        "percent": 100.0,
+        "pid": 2386,
+        "total_work_units": 1
+      },
+      "stage_id": "10",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": "2026-08-15T23:13:25Z",
+        "start_time": "2026-08-15T23:13:19Z"
+      }
+    },
+    {
+      "attempt": 1,
+      "gate_id": "G03-11-CALIBRATION",
+      "inputs": {
+        "code_sha": "aa3668558596b20f17010f2ee7f7994bc1059a31b1301025ffaaaab1ce3478a9",
+        "config_sha": "2eda0689ab42e93c91b3ef9b76e0168d1c13d1feb3d1a552beaade91105ab7c3",
+        "environment_sha": "67dc3d67c8e0b6b664688c6aa1d2cbcb2b612386422a26d153e45966c070f700",
+        "input_manifest_sha": "2753878607d1573b8d95fa8424cf25f666705f6b962353ecc27e64d7850e3017",
+        "protocol_sha": "dc46b87cb802d1a6a3ab0efd3dc6db6be5c3b5c7125c54e95a9cdbea8eef797d"
+      },
+      "outputs": {
+        "checkpoint": {
+          "manifest_sha256": "9b9c1c8aa24562b005706c62ec93f237f40041a8d4d61bf922d93ac86f94262a",
+          "promoted_path": "/kaggle/working/iharq_p03_l3/current/phase_03/kaggle_run/P03-L3-OFFICIAL-09ca82c743e0411a/stage_artifacts/stage_11",
+          "state": "COMPLETE"
+        },
+        "output_manifest_sha": "9b9c1c8aa24562b005706c62ec93f237f40041a8d4d61bf922d93ac86f94262a",
+        "stage_fingerprint": "e3b0b8eadb3a9cc9a279fb928182a55d6cf2bd2f80357805b6f40e0c9cb4563b"
+      },
+      "resources": {
+        "checkpoint_state": "COMPLETE",
+        "completed_work_units": 1,
+        "cpu_count": 4,
+        "elapsed_seconds": 836.3667289660007,
+        "error_count": 0,
+        "eta_seconds": 0.0,
+        "last_completed": "stage_result.json",
+        "max_rss_kib": 3106904,
+        "percent": 100.0,
+        "pid": 2386,
+        "total_work_units": 1
+      },
+      "stage_id": "11",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": "2026-08-15T23:42:12Z",
+        "start_time": "2026-08-15T23:28:16Z"
+      }
+    },
+    {
+      "attempt": 1,
+      "gate_id": "G03-12-RELIABILITY",
+      "inputs": {
+        "code_sha": "aa3668558596b20f17010f2ee7f7994bc1059a31b1301025ffaaaab1ce3478a9",
+        "config_sha": "2eda0689ab42e93c91b3ef9b76e0168d1c13d1feb3d1a552beaade91105ab7c3",
+        "environment_sha": "67dc3d67c8e0b6b664688c6aa1d2cbcb2b612386422a26d153e45966c070f700",
+        "input_manifest_sha": "2753878607d1573b8d95fa8424cf25f666705f6b962353ecc27e64d7850e3017",
+        "protocol_sha": "dc46b87cb802d1a6a3ab0efd3dc6db6be5c3b5c7125c54e95a9cdbea8eef797d"
+      },
+      "outputs": {
+        "checkpoint": {
+          "manifest_sha256": "3a36cc9ececc7d198146ef347a4326e6313e68bf2f16c7da360be8fbc6e05ee7",
+          "promoted_path": "/kaggle/working/iharq_p03_l3/current/phase_03/kaggle_run/P03-L3-OFFICIAL-09ca82c743e0411a/stage_artifacts/stage_12",
+          "state": "COMPLETE"
+        },
+        "output_manifest_sha": "3a36cc9ececc7d198146ef347a4326e6313e68bf2f16c7da360be8fbc6e05ee7",
+        "stage_fingerprint": "b7c52c196b834a2f4dac14bbef7061fdfe824592554e3fb7848584a5025ab354"
+      },
+      "resources": {
+        "checkpoint_state": "COMPLETE",
+        "completed_work_units": 1,
+        "cpu_count": 4,
+        "elapsed_seconds": 6.934529506001127,
+        "error_count": 0,
+        "eta_seconds": 0.0,
+        "last_completed": "stage_result.json",
+        "max_rss_kib": 3106904,
+        "percent": 100.0,
+        "pid": 2386,
+        "total_work_units": 1
+      },
+      "stage_id": "12",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": "2026-08-16T00:16:53Z",
+        "start_time": "2026-08-16T00:16:46Z"
+      }
+    },
+    {
+      "attempt": 1,
+      "gate_id": "G03-13-UNCERTAINTY",
+      "inputs": {
+        "code_sha": "aa3668558596b20f17010f2ee7f7994bc1059a31b1301025ffaaaab1ce3478a9",
+        "config_sha": "2eda0689ab42e93c91b3ef9b76e0168d1c13d1feb3d1a552beaade91105ab7c3",
+        "environment_sha": "67dc3d67c8e0b6b664688c6aa1d2cbcb2b612386422a26d153e45966c070f700",
+        "input_manifest_sha": "2753878607d1573b8d95fa8424cf25f666705f6b962353ecc27e64d7850e3017",
+        "protocol_sha": "dc46b87cb802d1a6a3ab0efd3dc6db6be5c3b5c7125c54e95a9cdbea8eef797d"
+      },
+      "outputs": {
+        "checkpoint": {
+          "manifest_sha256": "4822927710a89ad18fab86df124f4c9b26c56763a207ac198313eea35246d53e",
+          "promoted_path": "/kaggle/working/iharq_p03_l3/current/phase_03/kaggle_run/P03-L3-OFFICIAL-09ca82c743e0411a/stage_artifacts/stage_13",
+          "state": "COMPLETE"
+        },
+        "output_manifest_sha": "4822927710a89ad18fab86df124f4c9b26c56763a207ac198313eea35246d53e",
+        "stage_fingerprint": "a7b86b36ad6878cac63e010b3cc537b62dee8e30b3a65a6bd23ee8edecb4746c"
+      },
+      "resources": {
+        "checkpoint_state": "COMPLETE",
+        "completed_work_units": 1,
+        "cpu_count": 4,
+        "elapsed_seconds": 26.177088106000156,
+        "error_count": 0,
+        "eta_seconds": 0.0,
+        "last_completed": "stage_result.json",
+        "max_rss_kib": 3106904,
+        "percent": 100.0,
+        "pid": 2386,
+        "total_work_units": 1
+      },
+      "stage_id": "13",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": "2026-08-16T00:52:59Z",
+        "start_time": "2026-08-16T00:52:33Z"
+      }
+    },
+    {
+      "attempt": 3,
+      "gate_id": "G03-14-A2-SELECT",
+      "inputs": {
+        "code_sha": "aa3668558596b20f17010f2ee7f7994bc1059a31b1301025ffaaaab1ce3478a9",
+        "config_sha": "2eda0689ab42e93c91b3ef9b76e0168d1c13d1feb3d1a552beaade91105ab7c3",
+        "environment_sha": "67dc3d67c8e0b6b664688c6aa1d2cbcb2b612386422a26d153e45966c070f700",
+        "input_manifest_sha": "2753878607d1573b8d95fa8424cf25f666705f6b962353ecc27e64d7850e3017",
+        "protocol_sha": "dc46b87cb802d1a6a3ab0efd3dc6db6be5c3b5c7125c54e95a9cdbea8eef797d"
+      },
+      "outputs": {
+        "checkpoint": {
+          "manifest_sha256": "782898ec7a05a0ef925a07d56d256fb80517b77e26af7b4727fcd427d5ae0729",
+          "promoted_path": "/kaggle/working/iharq_p03_l3/current/phase_03/kaggle_run/P03-L3-OFFICIAL-09ca82c743e0411a/stage_artifacts/stage_14",
+          "state": "COMPLETE"
+        },
+        "output_manifest_sha": "782898ec7a05a0ef925a07d56d256fb80517b77e26af7b4727fcd427d5ae0729",
+        "stage_fingerprint": "f5041be6b2d677863a9bf320466a9b290453d8b8435fac78b27e3920b364f280"
+      },
+      "resources": {
+        "checkpoint_state": "COMPLETE",
+        "completed_work_units": 1,
+        "cpu_count": 4,
+        "elapsed_seconds": 8.968630721999943,
+        "error_count": 0,
+        "eta_seconds": 0.0,
+        "last_completed": "stage_result.json",
+        "max_rss_kib": 925344,
+        "percent": 100.0,
+        "pid": 286,
+        "total_work_units": 1
+      },
+      "stage_id": "14",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": "2026-08-16T14:58:56Z",
+        "start_time": "2026-08-16T14:58:47Z"
+      }
+    },
+    {
+      "attempt": 1,
+      "gate_id": "G03-15-A2-APPLY",
+      "inputs": {
+        "code_sha": "aa3668558596b20f17010f2ee7f7994bc1059a31b1301025ffaaaab1ce3478a9",
+        "config_sha": "2eda0689ab42e93c91b3ef9b76e0168d1c13d1feb3d1a552beaade91105ab7c3",
+        "environment_sha": "67dc3d67c8e0b6b664688c6aa1d2cbcb2b612386422a26d153e45966c070f700",
+        "input_manifest_sha": "2753878607d1573b8d95fa8424cf25f666705f6b962353ecc27e64d7850e3017",
+        "protocol_sha": "dc46b87cb802d1a6a3ab0efd3dc6db6be5c3b5c7125c54e95a9cdbea8eef797d"
+      },
+      "outputs": {
+        "checkpoint": {
+          "manifest_sha256": "7e19715ebfa3fec1cbf59fc9383772a8af8f6625ed70d4c89f540de7bbca4727",
+          "promoted_path": "/kaggle/working/iharq_p03_l3/current/phase_03/kaggle_run/P03-L3-OFFICIAL-09ca82c743e0411a/stage_artifacts/stage_15",
+          "state": "COMPLETE"
+        },
+        "output_manifest_sha": "7e19715ebfa3fec1cbf59fc9383772a8af8f6625ed70d4c89f540de7bbca4727",
+        "stage_fingerprint": "882fa64d85f4db37e722eac50abc55ef4dc68492106f41b1090d9305be55e0d7"
+      },
+      "resources": {
+        "checkpoint_state": "COMPLETE",
+        "completed_work_units": 1,
+        "cpu_count": 4,
+        "elapsed_seconds": 6.025565779998942,
+        "error_count": 0,
+        "eta_seconds": 0.0,
+        "last_completed": "stage_result.json",
+        "max_rss_kib": 925344,
+        "percent": 100.0,
+        "pid": 286,
+        "total_work_units": 1
+      },
+      "stage_id": "15",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": "2026-08-16T15:46:59Z",
+        "start_time": "2026-08-16T15:46:53Z"
+      }
+    },
+    {
+      "attempt": 1,
+      "gate_id": "G03-16-A3",
+      "inputs": {
+        "code_sha": "aa3668558596b20f17010f2ee7f7994bc1059a31b1301025ffaaaab1ce3478a9",
+        "config_sha": "2eda0689ab42e93c91b3ef9b76e0168d1c13d1feb3d1a552beaade91105ab7c3",
+        "environment_sha": "67dc3d67c8e0b6b664688c6aa1d2cbcb2b612386422a26d153e45966c070f700",
+        "input_manifest_sha": "2753878607d1573b8d95fa8424cf25f666705f6b962353ecc27e64d7850e3017",
+        "protocol_sha": "dc46b87cb802d1a6a3ab0efd3dc6db6be5c3b5c7125c54e95a9cdbea8eef797d"
+      },
+      "outputs": {
+        "checkpoint": {
+          "manifest_sha256": "5df62c77a64027bc895aeedac89aba2b4026702f61a1294f2678820c972a78fe",
+          "promoted_path": "/kaggle/working/iharq_p03_l3/current/phase_03/kaggle_run/P03-L3-OFFICIAL-09ca82c743e0411a/stage_artifacts/stage_16",
+          "state": "COMPLETE"
+        },
+        "output_manifest_sha": "5df62c77a64027bc895aeedac89aba2b4026702f61a1294f2678820c972a78fe",
+        "stage_fingerprint": "17220f618ddd6b34f5cec4f9f6c4c3a80465332ca46d94d06826f72e15244d4a"
+      },
+      "resources": {
+        "checkpoint_state": "COMPLETE",
+        "completed_work_units": 1,
+        "cpu_count": 4,
+        "elapsed_seconds": 33.4933458480009,
+        "error_count": 0,
+        "eta_seconds": 0.0,
+        "last_completed": "stage_result.json",
+        "max_rss_kib": 925344,
+        "percent": 100.0,
+        "pid": 286,
+        "total_work_units": 1
+      },
+      "stage_id": "16",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": "2026-08-16T16:39:30Z",
+        "start_time": "2026-08-16T16:38:56Z"
+      }
+    },
+    {
+      "attempt": 1,
+      "gate_id": "G03-17-THRESHOLD",
+      "inputs": {
+        "code_sha": "aa3668558596b20f17010f2ee7f7994bc1059a31b1301025ffaaaab1ce3478a9",
+        "config_sha": "2eda0689ab42e93c91b3ef9b76e0168d1c13d1feb3d1a552beaade91105ab7c3",
+        "environment_sha": "67dc3d67c8e0b6b664688c6aa1d2cbcb2b612386422a26d153e45966c070f700",
+        "input_manifest_sha": "2753878607d1573b8d95fa8424cf25f666705f6b962353ecc27e64d7850e3017",
+        "protocol_sha": "dc46b87cb802d1a6a3ab0efd3dc6db6be5c3b5c7125c54e95a9cdbea8eef797d"
+      },
+      "outputs": {
+        "checkpoint": {
+          "manifest_sha256": "7e0c903599d55bfef2b791a48d96d393bf238daf9cfaa50121aefd9e7d2c18d0",
+          "promoted_path": "/kaggle/working/iharq_p03_l3/current/phase_03/kaggle_run/P03-L3-OFFICIAL-09ca82c743e0411a/stage_artifacts/stage_17",
+          "state": "COMPLETE"
+        },
+        "output_manifest_sha": "7e0c903599d55bfef2b791a48d96d393bf238daf9cfaa50121aefd9e7d2c18d0",
+        "stage_fingerprint": "ba7584d7d8d5e995ff90ac34f37531cbac64bc96c56ecc52a6d3a298592b4a8b"
+      },
+      "resources": {
+        "checkpoint_state": "COMPLETE",
+        "completed_work_units": 1,
+        "cpu_count": 4,
+        "elapsed_seconds": 41.48891446200287,
+        "error_count": 0,
+        "eta_seconds": 0.0,
+        "last_completed": "stage_result.json",
+        "max_rss_kib": 1400168,
+        "percent": 100.0,
+        "pid": 359,
+        "total_work_units": 1
+      },
+      "stage_id": "17",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": "2026-08-16T17:44:36Z",
+        "start_time": "2026-08-16T17:43:55Z"
+      }
+    },
+    {
+      "attempt": 1,
+      "gate_id": "G03-18-MATCHED",
+      "inputs": {
+        "code_sha": "aa3668558596b20f17010f2ee7f7994bc1059a31b1301025ffaaaab1ce3478a9",
+        "config_sha": "2eda0689ab42e93c91b3ef9b76e0168d1c13d1feb3d1a552beaade91105ab7c3",
+        "environment_sha": "67dc3d67c8e0b6b664688c6aa1d2cbcb2b612386422a26d153e45966c070f700",
+        "input_manifest_sha": "2753878607d1573b8d95fa8424cf25f666705f6b962353ecc27e64d7850e3017",
+        "protocol_sha": "dc46b87cb802d1a6a3ab0efd3dc6db6be5c3b5c7125c54e95a9cdbea8eef797d"
+      },
+      "outputs": {
+        "checkpoint": {
+          "manifest_sha256": "ec399eac3ea9acdbafcc531e6763f985670ab6f4c1369e67575075779e28d062",
+          "promoted_path": "/kaggle/working/iharq_p03_l3/current/phase_03/kaggle_run/P03-L3-OFFICIAL-09ca82c743e0411a/stage_artifacts/stage_18",
+          "state": "COMPLETE"
+        },
+        "output_manifest_sha": "ec399eac3ea9acdbafcc531e6763f985670ab6f4c1369e67575075779e28d062",
+        "stage_fingerprint": "d8d806ed27baac34308bbc32c478870095a0ab05caec11b7ec10eed107edda25"
+      },
+      "resources": {
+        "checkpoint_state": "COMPLETE",
+        "completed_work_units": 1,
+        "cpu_count": 4,
+        "elapsed_seconds": 5.720588108997617,
+        "error_count": 0,
+        "eta_seconds": 0.0,
+        "last_completed": "stage_result.json",
+        "max_rss_kib": 1400168,
+        "percent": 100.0,
+        "pid": 359,
+        "total_work_units": 1
+      },
+      "stage_id": "18",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": "2026-08-16T18:28:53Z",
+        "start_time": "2026-08-16T18:28:48Z"
+      }
+    },
+    {
+      "attempt": 1,
+      "gate_id": "G03-19-GROUP",
+      "inputs": {
+        "code_sha": "aa3668558596b20f17010f2ee7f7994bc1059a31b1301025ffaaaab1ce3478a9",
+        "config_sha": "2eda0689ab42e93c91b3ef9b76e0168d1c13d1feb3d1a552beaade91105ab7c3",
+        "environment_sha": "67dc3d67c8e0b6b664688c6aa1d2cbcb2b612386422a26d153e45966c070f700",
+        "input_manifest_sha": "2753878607d1573b8d95fa8424cf25f666705f6b962353ecc27e64d7850e3017",
+        "protocol_sha": "dc46b87cb802d1a6a3ab0efd3dc6db6be5c3b5c7125c54e95a9cdbea8eef797d"
+      },
+      "outputs": {
+        "checkpoint": {
+          "manifest_sha256": "8f6d150192d403974531ab2006bb26b8b9ff723062ae0b833fe546cd89fcc785",
+          "promoted_path": "/kaggle/working/iharq_p03_l3/current/phase_03/kaggle_run/P03-L3-OFFICIAL-09ca82c743e0411a/stage_artifacts/stage_19",
+          "state": "COMPLETE"
+        },
+        "output_manifest_sha": "8f6d150192d403974531ab2006bb26b8b9ff723062ae0b833fe546cd89fcc785",
+        "stage_fingerprint": "c93c2cf454fdb318e845c4cd7489d469b8d74863da74d9e1edb94ebabfd78022"
+      },
+      "resources": {
+        "checkpoint_state": "COMPLETE",
+        "completed_work_units": 1,
+        "cpu_count": 4,
+        "elapsed_seconds": 6.413122736998048,
+        "error_count": 0,
+        "eta_seconds": 0.0,
+        "last_completed": "stage_result.json",
+        "max_rss_kib": 1400168,
+        "percent": 100.0,
+        "pid": 359,
+        "total_work_units": 1
+      },
+      "stage_id": "19",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": "2026-08-16T18:41:52Z",
+        "start_time": "2026-08-16T18:41:46Z"
+      }
+    },
+    {
+      "attempt": 1,
+      "gate_id": "G03-20-NEGATIVE",
+      "inputs": {
+        "code_sha": "aa3668558596b20f17010f2ee7f7994bc1059a31b1301025ffaaaab1ce3478a9",
+        "config_sha": "2eda0689ab42e93c91b3ef9b76e0168d1c13d1feb3d1a552beaade91105ab7c3",
+        "environment_sha": "67dc3d67c8e0b6b664688c6aa1d2cbcb2b612386422a26d153e45966c070f700",
+        "input_manifest_sha": "2753878607d1573b8d95fa8424cf25f666705f6b962353ecc27e64d7850e3017",
+        "protocol_sha": "dc46b87cb802d1a6a3ab0efd3dc6db6be5c3b5c7125c54e95a9cdbea8eef797d"
+      },
+      "outputs": {
+        "checkpoint": {
+          "manifest_sha256": "29bc5c761291c593670380c14233799a987d547a02d044a427998aee0b2edc95",
+          "promoted_path": "/kaggle/working/iharq_p03_l3/current/phase_03/kaggle_run/P03-L3-OFFICIAL-09ca82c743e0411a/stage_artifacts/stage_20",
+          "state": "COMPLETE"
+        },
+        "output_manifest_sha": "29bc5c761291c593670380c14233799a987d547a02d044a427998aee0b2edc95",
+        "stage_fingerprint": "18e8d390c909c009ed73a0dd089c88ab2538a4bc104a8483e6b479267cde0535"
+      },
+      "resources": {
+        "checkpoint_state": "COMPLETE",
+        "completed_work_units": 1,
+        "cpu_count": 4,
+        "elapsed_seconds": 0.4438740709992999,
+        "error_count": 0,
+        "eta_seconds": 0.0,
+        "last_completed": "stage_result.json",
+        "max_rss_kib": 1400168,
+        "percent": 100.0,
+        "pid": 359,
+        "total_work_units": 1
+      },
+      "stage_id": "20",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": "2026-08-16T19:35:40Z",
+        "start_time": "2026-08-16T19:35:40Z"
+      }
+    },
+    {
+      "attempt": 1,
+      "gate_id": "G03-21-SOURCES",
+      "inputs": {
+        "code_sha": "aa3668558596b20f17010f2ee7f7994bc1059a31b1301025ffaaaab1ce3478a9",
+        "config_sha": "2eda0689ab42e93c91b3ef9b76e0168d1c13d1feb3d1a552beaade91105ab7c3",
+        "environment_sha": "67dc3d67c8e0b6b664688c6aa1d2cbcb2b612386422a26d153e45966c070f700",
+        "input_manifest_sha": "2753878607d1573b8d95fa8424cf25f666705f6b962353ecc27e64d7850e3017",
+        "protocol_sha": "dc46b87cb802d1a6a3ab0efd3dc6db6be5c3b5c7125c54e95a9cdbea8eef797d"
+      },
+      "outputs": {
+        "checkpoint": {
+          "manifest_sha256": "de0d00a367af460016f45c5524b4ced2318f5b3e081876b0ded170786fcb4498",
+          "promoted_path": "/kaggle/working/iharq_p03_l3/current/phase_03/kaggle_run/P03-L3-OFFICIAL-09ca82c743e0411a/stage_artifacts/stage_21",
+          "state": "COMPLETE"
+        },
+        "output_manifest_sha": "de0d00a367af460016f45c5524b4ced2318f5b3e081876b0ded170786fcb4498",
+        "stage_fingerprint": "6da8e80a37ff6c6cefdd9b5606131de5352194f9942be939d8577c7919e102a2"
+      },
+      "resources": {
+        "checkpoint_state": "COMPLETE",
+        "completed_work_units": 1,
+        "cpu_count": 4,
+        "elapsed_seconds": 0.9249624449985276,
+        "error_count": 0,
+        "eta_seconds": 0.0,
+        "last_completed": "stage_result.json",
+        "max_rss_kib": 1863128,
+        "percent": 100.0,
+        "pid": 140,
+        "total_work_units": 1
+      },
+      "stage_id": "21",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": "2026-08-16T20:21:00Z",
+        "start_time": "2026-08-16T20:20:59Z"
+      }
+    },
+    {
+      "attempt": 1,
+      "gate_id": "G03-22-HANDOFFS",
+      "inputs": {
+        "code_sha": "aa3668558596b20f17010f2ee7f7994bc1059a31b1301025ffaaaab1ce3478a9",
+        "config_sha": "2eda0689ab42e93c91b3ef9b76e0168d1c13d1feb3d1a552beaade91105ab7c3",
+        "environment_sha": "67dc3d67c8e0b6b664688c6aa1d2cbcb2b612386422a26d153e45966c070f700",
+        "input_manifest_sha": "2753878607d1573b8d95fa8424cf25f666705f6b962353ecc27e64d7850e3017",
+        "protocol_sha": "dc46b87cb802d1a6a3ab0efd3dc6db6be5c3b5c7125c54e95a9cdbea8eef797d"
+      },
+      "outputs": {
+        "checkpoint": {
+          "manifest_sha256": "e1f786ec9f7c3d46dd29a8569d4076c83a1e33493ff32fb4530c02134142862d",
+          "promoted_path": "/kaggle/working/iharq_p03_l3/current/phase_03/kaggle_run/P03-L3-OFFICIAL-09ca82c743e0411a/stage_artifacts/stage_22",
+          "state": "COMPLETE"
+        },
+        "output_manifest_sha": "e1f786ec9f7c3d46dd29a8569d4076c83a1e33493ff32fb4530c02134142862d",
+        "stage_fingerprint": "5314bd711ea142dc15f850d819e3e39b025dac53b6c68e7c288b2b12b70bab33"
+      },
+      "resources": {
+        "checkpoint_state": "COMPLETE",
+        "completed_work_units": 1,
+        "cpu_count": 4,
+        "elapsed_seconds": 0.25772018499992555,
+        "error_count": 0,
+        "eta_seconds": 0.0,
+        "last_completed": "stage_result.json",
+        "max_rss_kib": 2441992,
+        "percent": 100.0,
+        "pid": 140,
+        "total_work_units": 1
+      },
+      "stage_id": "22",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": "2026-08-16T20:36:13Z",
+        "start_time": "2026-08-16T20:36:12Z"
+      }
+    }
+  ]
+}

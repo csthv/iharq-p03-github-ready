@@ -1,0 +1,19 @@
+{
+  "correction_id": "P03S-POSTEXT-64-128-256-PRE14-EVIDENCE-HARDENING-R1_1-S13-UNCERTAINTY",
+  "current_run_blocking_after_successor": false,
+  "current_run_resolution": "APPEND_ONLY_OUTPUT_SUCCESSOR_CANONICALIZATION",
+  "frozen_code_mutated": false,
+  "future_code_revision_action": "REPLACE_MORE_CONFIDENT_DIRECTION_TOKENS_WITH_CANONICAL_IS_BETTER_TOKENS",
+  "future_patch_active_in_current_run": false,
+  "mapping": {
+    "higher_is_more_confident": "higher_is_better",
+    "lower_is_more_confident": "lower_is_better"
+  },
+  "producer_function": "extract_uncertainty",
+  "producer_source_path": "/kaggle/working/iharq_p03_l3/repository/src/iharq/layer3_calibration_uncertainty/uncertainty.py",
+  "producer_source_sha256": "a01d56e86991fba0110e414a2406fbd55236674856053def5b2c8c9d25cf62a1",
+  "run_id": "P03-L3-POSTEXT-64-128-256-R1-1833e865bcb88ff8",
+  "schema_id": "P03SStage13ProducerVocabularyDeviation.v1",
+  "schema_version": "1.0.0",
+  "scientific_feature_values_changed": false
+}

@@ -1,0 +1,621 @@
+matrix_id: P00-RESPONSIBILITY-CLOSURE-R2
+rows:
+- responsibility_id: RSP-01
+  governing_sources:
+  - GOV-V4
+  - ARCH-T29-R1
+  - REG-R44
+  - PLAN-R41
+  - PROT0-R42
+  - PLAY-R41
+  - MSEL-R2
+  - NB-R2
+  exact_source_locations:
+  - independent requirement matrix
+  responsibility_owner: Implementation
+  participating_layers:
+  - L0-L10
+  required_behavior: Repository and package structure
+  required_inputs:
+  - current authority stack
+  required_outputs: &id001
+  - repository skeleton
+  - package manifest
+  required_tests_or_gates: &id002
+  - tests/test_repository_structure.py
+  protocol_binding: IHARQ-PROTOCOL-V1-P00-ANNEX-R2
+  analysis_reporting_requirement: Analysis R4 section 31/32
+  downstream_consumer: P01-P15 or publication owner
+  observed_implementation_paths: *id001
+  observed_artifacts: *id001
+  observed_evidence: *id002
+  status: PASS
+  defect_or_limitation_id: ''
+- responsibility_id: RSP-02
+  governing_sources:
+  - GOV-V4
+  - ARCH-T29-R1
+  - REG-R44
+  - PLAN-R41
+  - PROT0-R42
+  - PLAY-R41
+  - MSEL-R2
+  - NB-R2
+  exact_source_locations:
+  - independent requirement matrix
+  responsibility_owner: Registry
+  participating_layers:
+  - L0-L10
+  required_behavior: Canonical and local schema realization
+  required_inputs:
+  - current authority stack
+  required_outputs: &id003
+  - schemas/
+  - schema catalog
+  required_tests_or_gates: &id004
+  - tests/test_schema_validation.py
+  protocol_binding: IHARQ-PROTOCOL-V1-P00-ANNEX-R2
+  analysis_reporting_requirement: Analysis R4 section 31/32
+  downstream_consumer: P01-P15 or publication owner
+  observed_implementation_paths: *id003
+  observed_artifacts: *id003
+  observed_evidence: *id004
+  status: PASS
+  defect_or_limitation_id: ''
+- responsibility_id: RSP-03
+  governing_sources:
+  - GOV-V4
+  - ARCH-T29-R1
+  - REG-R44
+  - PLAN-R41
+  - PROT0-R42
+  - PLAY-R41
+  - MSEL-R2
+  - NB-R2
+  exact_source_locations:
+  - independent requirement matrix
+  responsibility_owner: Registry/Nuts-and-Bolts
+  participating_layers:
+  - L0-L10
+  required_behavior: Configuration hierarchy and semantic hashing
+  required_inputs:
+  - current authority stack
+  required_outputs: &id005
+  - configs/
+  - config catalog
+  required_tests_or_gates: &id006
+  - tests/test_config_resolution.py
+  - tests/test_canonical.py
+  protocol_binding: IHARQ-PROTOCOL-V1-P00-ANNEX-R2
+  analysis_reporting_requirement: Analysis R4 section 31/32
+  downstream_consumer: P01-P15 or publication owner
+  observed_implementation_paths: *id005
+  observed_artifacts: *id005
+  observed_evidence: *id006
+  status: PASS
+  defect_or_limitation_id: ''
+- responsibility_id: RSP-04
+  governing_sources:
+  - GOV-V4
+  - ARCH-T29-R1
+  - REG-R44
+  - PLAN-R41
+  - PROT0-R42
+  - PLAY-R41
+  - MSEL-R2
+  - NB-R2
+  exact_source_locations:
+  - independent requirement matrix
+  responsibility_owner: Registry
+  participating_layers:
+  - L0-L10
+  required_behavior: Stable IDs, serialization, lineage, lifecycle, supersession,
+    and manifests
+  required_inputs:
+  - current authority stack
+  required_outputs: &id007
+  - src/iharq/canonical.py
+  - manifests/
+  required_tests_or_gates: &id008
+  - tests/test_canonical.py
+  - tests/test_lineage_lifecycle.py
+  protocol_binding: IHARQ-PROTOCOL-V1-P00-ANNEX-R2
+  analysis_reporting_requirement: Analysis R4 section 31/32
+  downstream_consumer: P01-P15 or publication owner
+  observed_implementation_paths: *id007
+  observed_artifacts: *id007
+  observed_evidence: *id008
+  status: PASS
+  defect_or_limitation_id: ''
+- responsibility_id: RSP-05
+  governing_sources:
+  - GOV-V4
+  - ARCH-T29-R1
+  - REG-R44
+  - PLAN-R41
+  - PROT0-R42
+  - PLAY-R41
+  - MSEL-R2
+  - NB-R2
+  exact_source_locations:
+  - independent requirement matrix
+  responsibility_owner: Architecture/Plan
+  participating_layers:
+  - L0-L10
+  required_behavior: Valid and malformed fail-closed fixtures
+  required_inputs:
+  - current authority stack
+  required_outputs: &id009
+  - fixtures/valid
+  - fixtures/integrated
+  - fixtures/invalid
+  required_tests_or_gates: &id010
+  - tests/test_valid_fixtures.py
+  - tests/test_negative_fixtures.py
+  protocol_binding: IHARQ-PROTOCOL-V1-P00-ANNEX-R2
+  analysis_reporting_requirement: Analysis R4 section 31/32
+  downstream_consumer: P01-P15 or publication owner
+  observed_implementation_paths: *id009
+  observed_artifacts: *id009
+  observed_evidence: *id010
+  status: PASS
+  defect_or_limitation_id: ''
+- responsibility_id: RSP-06
+  governing_sources:
+  - GOV-V4
+  - ARCH-T29-R1
+  - REG-R44
+  - PLAN-R41
+  - PROT0-R42
+  - PLAY-R41
+  - MSEL-R2
+  - NB-R2
+  exact_source_locations:
+  - independent requirement matrix
+  responsibility_owner: Plan/Playbook
+  participating_layers:
+  - L0-L10
+  required_behavior: Deterministic unit/schema/contract/integration/negative/reproduction
+    tests
+  required_inputs:
+  - current authority stack
+  required_outputs: &id011
+  - tests/
+  - scripts/
+  required_tests_or_gates: &id012
+  - pytest full suite
+  protocol_binding: IHARQ-PROTOCOL-V1-P00-ANNEX-R2
+  analysis_reporting_requirement: Analysis R4 section 31/32
+  downstream_consumer: P01-P15 or publication owner
+  observed_implementation_paths: *id011
+  observed_artifacts: *id011
+  observed_evidence: *id012
+  status: PASS
+  defect_or_limitation_id: ''
+- responsibility_id: RSP-07
+  governing_sources:
+  - GOV-V4
+  - ARCH-T29-R1
+  - REG-R44
+  - PLAN-R41
+  - PROT0-R42
+  - PLAY-R41
+  - MSEL-R2
+  - NB-R2
+  exact_source_locations:
+  - independent requirement matrix
+  responsibility_owner: Architecture/Plan
+  participating_layers:
+  - L0-L10
+  required_behavior: Layers 0-10 Phase 0 foundation contracts
+  required_inputs:
+  - current authority stack
+  required_outputs: &id013
+  - catalogs/final_all_layer_artifact_matrix.yaml
+  required_tests_or_gates: &id014
+  - official layer audits 1-3
+  protocol_binding: IHARQ-PROTOCOL-V1-P00-ANNEX-R2
+  analysis_reporting_requirement: Analysis R4 section 31/32
+  downstream_consumer: P01-P15 or publication owner
+  observed_implementation_paths: *id013
+  observed_artifacts: *id013
+  observed_evidence: *id014
+  status: PASS
+  defect_or_limitation_id: ''
+- responsibility_id: RSP-08
+  governing_sources:
+  - GOV-V4
+  - ARCH-T29-R1
+  - REG-R44
+  - PLAN-R41
+  - PROT0-R42
+  - PLAY-R41
+  - MSEL-R2
+  - NB-R2
+  exact_source_locations:
+  - independent requirement matrix
+  responsibility_owner: Plan
+  participating_layers:
+  - L0-L10
+  required_behavior: P00 execution and P01-P15 contract readiness
+  required_inputs:
+  - current authority stack
+  required_outputs: &id015
+  - contracts/phases/
+  required_tests_or_gates: &id016
+  - tests/test_final_implementation_completeness.py
+  protocol_binding: IHARQ-PROTOCOL-V1-P00-ANNEX-R2
+  analysis_reporting_requirement: Analysis R4 section 31/32
+  downstream_consumer: P01-P15 or publication owner
+  observed_implementation_paths: *id015
+  observed_artifacts: *id015
+  observed_evidence: *id016
+  status: PASS
+  defect_or_limitation_id: ''
+- responsibility_id: RSP-09
+  governing_sources:
+  - GOV-V4
+  - ARCH-T29-R1
+  - REG-R44
+  - PLAN-R41
+  - PROT0-R42
+  - PLAY-R41
+  - MSEL-R2
+  - NB-R2
+  exact_source_locations:
+  - independent requirement matrix
+  responsibility_owner: Protocol
+  participating_layers:
+  - L1-L10
+  required_behavior: A0-A13 readiness and future activation hooks
+  required_inputs:
+  - current authority stack
+  required_outputs: &id017
+  - catalogs/final_ablation_readiness_matrix.yaml
+  required_tests_or_gates: &id018
+  - tests/test_phase0_ablation_readiness_and_unlocks.py
+  protocol_binding: IHARQ-PROTOCOL-V1-P00-ANNEX-R2
+  analysis_reporting_requirement: Analysis R4 section 31/32
+  downstream_consumer: P01-P15 or publication owner
+  observed_implementation_paths: *id017
+  observed_artifacts: *id017
+  observed_evidence: *id018
+  status: PASS
+  defect_or_limitation_id: ''
+- responsibility_id: RSP-10
+  governing_sources:
+  - GOV-V4
+  - ARCH-T29-R1
+  - REG-R44
+  - PLAN-R41
+  - PROT0-R42
+  - PLAY-R41
+  - MSEL-R2
+  - NB-R2
+  exact_source_locations:
+  - independent requirement matrix
+  responsibility_owner: Protocol/Architecture
+  participating_layers:
+  - L0-L10
+  required_behavior: A14 prohibition and fail-closed rejection
+  required_inputs:
+  - current authority stack
+  required_outputs: &id019
+  - fixtures/invalid/a14.json
+  required_tests_or_gates: &id020
+  - tests/test_phase0_ablation_readiness_and_unlocks.py
+  protocol_binding: IHARQ-PROTOCOL-V1-P00-ANNEX-R2
+  analysis_reporting_requirement: Analysis R4 section 31/32
+  downstream_consumer: P01-P15 or publication owner
+  observed_implementation_paths: *id019
+  observed_artifacts: *id019
+  observed_evidence: *id020
+  status: PASS
+  defect_or_limitation_id: ''
+- responsibility_id: RSP-11
+  governing_sources:
+  - GOV-V4
+  - ARCH-T29-R1
+  - REG-R44
+  - PLAN-R41
+  - PROT0-R42
+  - PLAY-R41
+  - MSEL-R2
+  - NB-R2
+  exact_source_locations:
+  - independent requirement matrix
+  responsibility_owner: Protocol
+  participating_layers:
+  - L0
+  required_behavior: Protocol v1.0 Master and P00 Annex
+  required_inputs:
+  - current authority stack
+  required_outputs: &id021
+  - docs/authorities/protocol_v1_0/
+  required_tests_or_gates: &id022
+  - tests/test_protocol_v1_package.py
+  protocol_binding: IHARQ-PROTOCOL-V1-P00-ANNEX-R2
+  analysis_reporting_requirement: Analysis R4 section 31/32
+  downstream_consumer: P01-P15 or publication owner
+  observed_implementation_paths: *id021
+  observed_artifacts: *id021
+  observed_evidence: *id022
+  status: PASS
+  defect_or_limitation_id: ''
+- responsibility_id: RSP-12
+  governing_sources:
+  - GOV-V4
+  - ARCH-T29-R1
+  - REG-R44
+  - PLAN-R41
+  - PROT0-R42
+  - PLAY-R41
+  - MSEL-R2
+  - NB-R2
+  exact_source_locations:
+  - independent requirement matrix
+  responsibility_owner: Protocol/Analysis
+  participating_layers:
+  - L0-L10
+  required_behavior: Registered Phase 0 execution release
+  required_inputs:
+  - current authority stack
+  required_outputs: &id023
+  - reports/phase_00_analysis/execution_release_R2/
+  required_tests_or_gates: &id024
+  - 19 registered cells
+  protocol_binding: IHARQ-PROTOCOL-V1-P00-ANNEX-R2
+  analysis_reporting_requirement: Analysis R4 section 31/32
+  downstream_consumer: P01-P15 or publication owner
+  observed_implementation_paths: *id023
+  observed_artifacts: *id023
+  observed_evidence: *id024
+  status: PASS
+  defect_or_limitation_id: ''
+- responsibility_id: RSP-13
+  governing_sources:
+  - GOV-V4
+  - ARCH-T29-R1
+  - REG-R44
+  - PLAN-R41
+  - PROT0-R42
+  - PLAY-R41
+  - MSEL-R2
+  - NB-R2
+  exact_source_locations:
+  - independent requirement matrix
+  responsibility_owner: Analysis
+  participating_layers:
+  - L0-L10
+  required_behavior: Phase 0 analysis release and report
+  required_inputs:
+  - current authority stack
+  required_outputs: &id025
+  - analysis R4 successor
+  required_tests_or_gates: &id026
+  - tests/test_phase0_analysis_ablation_coverage.py
+  protocol_binding: IHARQ-PROTOCOL-V1-P00-ANNEX-R2
+  analysis_reporting_requirement: Analysis R4 section 31/32
+  downstream_consumer: P01-P15 or publication owner
+  observed_implementation_paths: *id025
+  observed_artifacts: *id025
+  observed_evidence: *id026
+  status: PASS
+  defect_or_limitation_id: ''
+- responsibility_id: RSP-14
+  governing_sources:
+  - GOV-V4
+  - ARCH-T29-R1
+  - REG-R44
+  - PLAN-R41
+  - PROT0-R42
+  - PLAY-R41
+  - MSEL-R2
+  - NB-R2
+  exact_source_locations:
+  - independent requirement matrix
+  responsibility_owner: Layer 0
+  participating_layers:
+  - L0
+  required_behavior: Layer 0 disposition and wording governance
+  required_inputs:
+  - current authority stack
+  required_outputs: &id027
+  - docs/layer0/phase_00/
+  required_tests_or_gates: &id028
+  - Layer0 audit
+  protocol_binding: IHARQ-PROTOCOL-V1-P00-ANNEX-R2
+  analysis_reporting_requirement: Analysis R4 section 31/32
+  downstream_consumer: P01-P15 or publication owner
+  observed_implementation_paths: *id027
+  observed_artifacts: *id027
+  observed_evidence: *id028
+  status: PASS
+  defect_or_limitation_id: ''
+- responsibility_id: RSP-15
+  governing_sources:
+  - GOV-V4
+  - ARCH-T29-R1
+  - REG-R44
+  - PLAN-R41
+  - PROT0-R42
+  - PLAY-R41
+  - MSEL-R2
+  - NB-R2
+  exact_source_locations:
+  - independent requirement matrix
+  responsibility_owner: Evidence Map
+  participating_layers:
+  - L0
+  - L10
+  required_behavior: Evidence Map claim-chain closure
+  required_inputs:
+  - current authority stack
+  required_outputs: &id029
+  - docs/evidence_map/phase_00/
+  - reports/evidence_map/phase_00/
+  required_tests_or_gates: &id030
+  - Evidence Map audit
+  protocol_binding: IHARQ-PROTOCOL-V1-P00-ANNEX-R2
+  analysis_reporting_requirement: Analysis R4 section 31/32
+  downstream_consumer: P01-P15 or publication owner
+  observed_implementation_paths: *id029
+  observed_artifacts: *id029
+  observed_evidence: *id030
+  status: PASS
+  defect_or_limitation_id: ''
+- responsibility_id: RSP-16
+  governing_sources:
+  - GOV-V4
+  - ARCH-T29-R1
+  - REG-R44
+  - PLAN-R41
+  - PROT0-R42
+  - PLAY-R41
+  - MSEL-R2
+  - NB-R2
+  exact_source_locations:
+  - independent requirement matrix
+  responsibility_owner: Layer 10
+  participating_layers:
+  - L10
+  required_behavior: Basic P00 Layer 10 read-only package
+  required_inputs:
+  - current authority stack
+  required_outputs: &id031
+  - docs/layer10/phase_00/
+  - reports/layer10/phase_00/
+  required_tests_or_gates: &id032
+  - Layer10 source-value audit
+  protocol_binding: IHARQ-PROTOCOL-V1-P00-ANNEX-R2
+  analysis_reporting_requirement: Analysis R4 section 31/32
+  downstream_consumer: P01-P15 or publication owner
+  observed_implementation_paths: *id031
+  observed_artifacts: *id031
+  observed_evidence: *id032
+  status: PASS
+  defect_or_limitation_id: ''
+- responsibility_id: RSP-17
+  governing_sources:
+  - GOV-V4
+  - ARCH-T29-R1
+  - REG-R44
+  - PLAN-R41
+  - PROT0-R42
+  - PLAY-R41
+  - MSEL-R2
+  - NB-R2
+  exact_source_locations:
+  - independent requirement matrix
+  responsibility_owner: Implementation/Reproduction
+  participating_layers:
+  - L10
+  required_behavior: Environment, lock, manifests, checksums, clean reproduction
+  required_inputs:
+  - current authority stack
+  required_outputs: &id033
+  - requirements-lock.txt
+  - manifests/
+  required_tests_or_gates: &id034
+  - clean reproduction
+  protocol_binding: IHARQ-PROTOCOL-V1-P00-ANNEX-R2
+  analysis_reporting_requirement: Analysis R4 section 31/32
+  downstream_consumer: P01-P15 or publication owner
+  observed_implementation_paths: *id033
+  observed_artifacts: *id033
+  observed_evidence: *id034
+  status: PASS
+  defect_or_limitation_id: ''
+- responsibility_id: RSP-18
+  governing_sources:
+  - GOV-V4
+  - ARCH-T29-R1
+  - REG-R44
+  - PLAN-R41
+  - PROT0-R42
+  - PLAY-R41
+  - MSEL-R2
+  - NB-R2
+  exact_source_locations:
+  - independent requirement matrix
+  responsibility_owner: Governance
+  participating_layers:
+  - L0-L10
+  required_behavior: Current-versus-history organization
+  required_inputs:
+  - current authority stack
+  required_outputs: &id035
+  - docs/phase_00/final_documents
+  - history directories
+  required_tests_or_gates: &id036
+  - final document byte identity
+  protocol_binding: IHARQ-PROTOCOL-V1-P00-ANNEX-R2
+  analysis_reporting_requirement: Analysis R4 section 31/32
+  downstream_consumer: P01-P15 or publication owner
+  observed_implementation_paths: *id035
+  observed_artifacts: *id035
+  observed_evidence: *id036
+  status: PASS
+  defect_or_limitation_id: ''
+- responsibility_id: RSP-19
+  governing_sources:
+  - GOV-V4
+  - ARCH-T29-R1
+  - REG-R44
+  - PLAN-R41
+  - PROT0-R42
+  - PLAY-R41
+  - MSEL-R2
+  - NB-R2
+  exact_source_locations:
+  - independent requirement matrix
+  responsibility_owner: Governance/Playbook
+  participating_layers:
+  - L0
+  - L10
+  required_behavior: Phase 0 closure and Phase 1 handoff readiness
+  required_inputs:
+  - current authority stack
+  required_outputs: &id037
+  - closure report
+  - handoff
+  required_tests_or_gates: &id038
+  - gate18 validator
+  protocol_binding: IHARQ-PROTOCOL-V1-P00-ANNEX-R2
+  analysis_reporting_requirement: Analysis R4 section 31/32
+  downstream_consumer: P01-P15 or publication owner
+  observed_implementation_paths: *id037
+  observed_artifacts: *id037
+  observed_evidence: *id038
+  status: PASS
+  defect_or_limitation_id: ''
+- responsibility_id: RSP-20
+  governing_sources:
+  - GOV-V4
+  - ARCH-T29-R1
+  - REG-R44
+  - PLAN-R41
+  - PROT0-R42
+  - PLAY-R41
+  - MSEL-R2
+  - NB-R2
+  exact_source_locations:
+  - independent requirement matrix
+  responsibility_owner: Publication owner
+  participating_layers:
+  - L10
+  required_behavior: Immutable external publication transaction
+  required_inputs:
+  - current authority stack
+  required_outputs: &id039
+  - publication successor not present
+  required_tests_or_gates: &id040
+  - not executed by contract
+  protocol_binding: IHARQ-PROTOCOL-V1-P00-ANNEX-R2
+  analysis_reporting_requirement: Analysis R4 section 31/32
+  downstream_consumer: P01-P15 or publication owner
+  observed_implementation_paths: *id039
+  observed_artifacts: *id039
+  observed_evidence: *id040
+  status: PASS_WITH_NONBLOCKING_LIMITATION
+  defect_or_limitation_id: P00-IND-LIM-PUBLICATION

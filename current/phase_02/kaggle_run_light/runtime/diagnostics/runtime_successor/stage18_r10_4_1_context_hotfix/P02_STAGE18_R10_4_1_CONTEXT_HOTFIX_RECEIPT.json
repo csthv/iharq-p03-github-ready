@@ -1,0 +1,15 @@
+{
+  "artifact_id": "P02-STAGE18-R10-4-1-GPU1-CONTEXT-HOTFIX-R1",
+  "created_at_utc": "2026-08-13T21:20:54.661238+00:00",
+  "status": "PASS",
+  "root_cause": "GPU1_WORKER_USED_SESSION_CTX_DIRECT_ATTRIBUTES_INSTEAD_OF_CTX_STATE",
+  "correct_context_contract": "SESSION.ctx.state[...]",
+  "scientific_policy_changed": false,
+  "per_fit_training_recipe_changed": false,
+  "budget_policy_changed": false,
+  "repeat_policy_changed": false,
+  "test_isolation_changed": false,
+  "existing_stage18_terminals_preserved": 31,
+  "stage18_accepted": false,
+  "next_action": "RERUN_ONLY_EXISTING_STAGE18_R10_4_EXECUTION_CELL"
+}

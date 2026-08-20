@@ -1,0 +1,437 @@
+{
+  "artifact_id": "P02-STAGE12-R6-P01-CONSUMPTION-AUDIT-R1",
+  "authority": {
+    "CBraMod_scale_scope": "MODEL_LOCAL_ONLY_P01_BYTES_UNCHANGED",
+    "CBraMod_source_centered_input_scale": 10000.0,
+    "P02_core_window": {
+      "duration_s": 3.0,
+      "samples": 480,
+      "sampling_hz": 160,
+      "start_offset_s": 0.5,
+      "stop_offset_s": 3.5
+    },
+    "event_resampling": "MNE_POLYPHASE_JOINT_EVENTS",
+    "preprocessing_record_id": "IHARQ-PREPROCESSINGRECORD-20260806-a11b59eeb3861a08",
+    "read_only": true,
+    "relabel": false,
+    "resplit": false,
+    "rewindow": false,
+    "scientific_freeze": "P01-L1-OFFICIAL-RUN-FREEZE-R2",
+    "signal_dtype": "float32",
+    "split_record_id": "IHARQ-SPLITRECORD-20260806-e4e371d332c61e36",
+    "window_policy": {
+      "bounds_policy": "REJECT_OUT_OF_BOUNDS",
+      "duration_samples": 480,
+      "last_window_policy": "ONE_WINDOW_PER_INCLUDED_SOURCE_EVENT",
+      "start_offset_samples": 80,
+      "stride_samples": 480
+    }
+  },
+  "budget_checks": {
+    "BNCI2014_001": [
+      {
+        "budget_per_class": 1,
+        "class_counts": {
+          "0": 1,
+          "1": 1
+        },
+        "nested_prefix": true,
+        "row_count": 2
+      },
+      {
+        "budget_per_class": 2,
+        "class_counts": {
+          "0": 2,
+          "1": 2
+        },
+        "nested_prefix": true,
+        "row_count": 4
+      },
+      {
+        "budget_per_class": 4,
+        "class_counts": {
+          "0": 4,
+          "1": 4
+        },
+        "nested_prefix": true,
+        "row_count": 8
+      },
+      {
+        "budget_per_class": 8,
+        "class_counts": {
+          "0": 8,
+          "1": 8
+        },
+        "nested_prefix": true,
+        "row_count": 16
+      },
+      {
+        "budget_per_class": 16,
+        "class_counts": {
+          "0": 16,
+          "1": 16
+        },
+        "nested_prefix": true,
+        "row_count": 32
+      },
+      {
+        "budget_per_class": 32,
+        "class_counts": {
+          "0": 32,
+          "1": 32
+        },
+        "nested_prefix": true,
+        "row_count": 64
+      }
+    ],
+    "Lee2019_MI": [
+      {
+        "budget_per_class": 1,
+        "class_counts": {
+          "0": 1,
+          "1": 1
+        },
+        "nested_prefix": true,
+        "row_count": 2
+      },
+      {
+        "budget_per_class": 2,
+        "class_counts": {
+          "0": 2,
+          "1": 2
+        },
+        "nested_prefix": true,
+        "row_count": 4
+      },
+      {
+        "budget_per_class": 4,
+        "class_counts": {
+          "0": 4,
+          "1": 4
+        },
+        "nested_prefix": true,
+        "row_count": 8
+      },
+      {
+        "budget_per_class": 8,
+        "class_counts": {
+          "0": 8,
+          "1": 8
+        },
+        "nested_prefix": true,
+        "row_count": 16
+      },
+      {
+        "budget_per_class": 16,
+        "class_counts": {
+          "0": 16,
+          "1": 16
+        },
+        "nested_prefix": true,
+        "row_count": 32
+      },
+      {
+        "budget_per_class": 32,
+        "class_counts": {
+          "0": 32,
+          "1": 32
+        },
+        "nested_prefix": true,
+        "row_count": 64
+      }
+    ],
+    "PhysioNetMI": [
+      {
+        "budget_per_class": 1,
+        "class_counts": {
+          "0": 1,
+          "1": 1
+        },
+        "nested_prefix": true,
+        "row_count": 2
+      },
+      {
+        "budget_per_class": 2,
+        "class_counts": {
+          "0": 2,
+          "1": 2
+        },
+        "nested_prefix": true,
+        "row_count": 4
+      },
+      {
+        "budget_per_class": 4,
+        "class_counts": {
+          "0": 4,
+          "1": 4
+        },
+        "nested_prefix": true,
+        "row_count": 8
+      },
+      {
+        "budget_per_class": 8,
+        "class_counts": {
+          "0": 8,
+          "1": 8
+        },
+        "nested_prefix": true,
+        "row_count": 16
+      },
+      {
+        "budget_per_class": 16,
+        "class_counts": {
+          "0": 16,
+          "1": 16
+        },
+        "nested_prefix": true,
+        "row_count": 32
+      },
+      {
+        "budget_per_class": 32,
+        "class_counts": {
+          "0": 32,
+          "1": 32
+        },
+        "nested_prefix": true,
+        "row_count": 64
+      }
+    ]
+  },
+  "created_utc": "2026-08-11T22:49:11.622606+00:00",
+  "datasets": {
+    "BNCI2014_001": {
+      "roles": {
+        "calibration": {
+          "class_counts": {
+            "0": 288,
+            "1": 288
+          },
+          "rows": 576,
+          "subjects": 2
+        },
+        "test": {
+          "class_counts": {
+            "0": 144,
+            "1": 144
+          },
+          "rows": 288,
+          "subjects": 1
+        },
+        "train": {
+          "class_counts": {
+            "0": 720,
+            "1": 720
+          },
+          "rows": 1440,
+          "subjects": 5
+        },
+        "validation": {
+          "class_counts": {
+            "0": 144,
+            "1": 144
+          },
+          "rows": 288,
+          "subjects": 1
+        }
+      },
+      "signal_probe": {
+        "calibration": {
+          "dtype": "float32",
+          "max_abs": 1.50213772940333e-05,
+          "p99_abs": 5.345948657122791e-06,
+          "rms": 1.7936761638364814e-06,
+          "shape": [
+            16,
+            22,
+            480
+          ],
+          "volt_scale_plausible": true
+        },
+        "train": {
+          "dtype": "float32",
+          "max_abs": 1.5258119674399495e-05,
+          "p99_abs": 5.989133392176891e-06,
+          "rms": 1.9895285378004663e-06,
+          "shape": [
+            16,
+            22,
+            480
+          ],
+          "volt_scale_plausible": true
+        },
+        "validation": {
+          "dtype": "float32",
+          "max_abs": 2.0399866116349585e-05,
+          "p99_abs": 6.839203447270849e-06,
+          "rms": 2.275498379381346e-06,
+          "shape": [
+            16,
+            22,
+            480
+          ],
+          "volt_scale_plausible": true
+        }
+      },
+      "subject_role_disjoint": true
+    },
+    "Lee2019_MI": {
+      "roles": {
+        "calibration": {
+          "class_counts": {
+            "0": 550,
+            "1": 550
+          },
+          "rows": 1100,
+          "subjects": 11
+        },
+        "test": {
+          "class_counts": {
+            "0": 300,
+            "1": 300
+          },
+          "rows": 600,
+          "subjects": 6
+        },
+        "train": {
+          "class_counts": {
+            "0": 1600,
+            "1": 1600
+          },
+          "rows": 3200,
+          "subjects": 32
+        },
+        "validation": {
+          "class_counts": {
+            "0": 250,
+            "1": 250
+          },
+          "rows": 500,
+          "subjects": 5
+        }
+      },
+      "signal_probe": {
+        "calibration": {
+          "dtype": "float32",
+          "max_abs": 3.175799793098122e-05,
+          "p99_abs": 9.525398299956574e-06,
+          "rms": 3.1784038558678276e-06,
+          "shape": [
+            16,
+            62,
+            480
+          ],
+          "volt_scale_plausible": true
+        },
+        "train": {
+          "dtype": "float32",
+          "max_abs": 2.9321759939193726e-05,
+          "p99_abs": 8.536058830941286e-06,
+          "rms": 2.827562157111399e-06,
+          "shape": [
+            16,
+            62,
+            480
+          ],
+          "volt_scale_plausible": true
+        },
+        "validation": {
+          "dtype": "float32",
+          "max_abs": 7.954314787639305e-05,
+          "p99_abs": 1.2970161760677e-05,
+          "rms": 4.267826361190357e-06,
+          "shape": [
+            16,
+            62,
+            480
+          ],
+          "volt_scale_plausible": true
+        }
+      },
+      "subject_role_disjoint": true
+    },
+    "PhysioNetMI": {
+      "roles": {
+        "calibration": {
+          "class_counts": {
+            "0": 488,
+            "1": 491
+          },
+          "rows": 979,
+          "subjects": 22
+        },
+        "test": {
+          "class_counts": {
+            "0": 253,
+            "1": 242
+          },
+          "rows": 495,
+          "subjects": 11
+        },
+        "train": {
+          "class_counts": {
+            "0": 1490,
+            "1": 1459
+          },
+          "rows": 2949,
+          "subjects": 65
+        },
+        "validation": {
+          "class_counts": {
+            "0": 249,
+            "1": 246
+          },
+          "rows": 495,
+          "subjects": 11
+        }
+      },
+      "signal_probe": {
+        "calibration": {
+          "dtype": "float32",
+          "max_abs": 0.0001606225996511057,
+          "p99_abs": 3.857909265207127e-05,
+          "rms": 1.2066879032222498e-05,
+          "shape": [
+            16,
+            64,
+            480
+          ],
+          "volt_scale_plausible": true
+        },
+        "train": {
+          "dtype": "float32",
+          "max_abs": 9.557256271364167e-05,
+          "p99_abs": 2.783604966680286e-05,
+          "rms": 8.695984553221503e-06,
+          "shape": [
+            16,
+            64,
+            480
+          ],
+          "volt_scale_plausible": true
+        },
+        "validation": {
+          "dtype": "float32",
+          "max_abs": 0.00013445047079585493,
+          "p99_abs": 3.542528196703641e-05,
+          "rms": 1.0951889907188288e-05,
+          "shape": [
+            16,
+            64,
+            480
+          ],
+          "volt_scale_plausible": true
+        }
+      },
+      "subject_role_disjoint": true
+    }
+  },
+  "stage12_consumption_contract": {
+    "CBraMod_low_label_only": true,
+    "FULL_TRAIN": "exact P01 train role",
+    "LOW_LABEL": "exact inherited P01 calibration budget subset only",
+    "run_plan_changed": false,
+    "selection_role": "validation only",
+    "test_role": "loaded only after all selection checkpoints in a group are sealed"
+  },
+  "test_signal_loaded": false
+}

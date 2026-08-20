@@ -1,0 +1,29 @@
+canonical_map_id: IHARQ-CUMULATIVE-EVIDENCE-MAP-THROUGH-P02-R1
+release_id: P00-P02-EVIDENCE-MAP-RELEASE-R1
+generated_at: '2026-08-14T21:30:00+03:30'
+coverage:
+- P00
+- P01
+- P02
+source_layer0_id: IHARQ-CUMULATIVE-LAYER0-THROUGH-P02-R1
+source_protocol_id: IHARQ-PROTOCOL-V1-CUMULATIVE-THROUGH-P02-R1
+source_phase_analysis_id: IHARQ-CUMULATIVE-PHASE-ANALYSIS-THROUGH-P02-FINAL-R1
+counts:
+  claims: 37
+  findings: 49
+  limitations: 54
+  evidence_nodes: 69
+  artifacts: 47
+  relationships: 146
+  figures: 14
+  tables: 13
+files:
+  claims: claims.yaml
+  findings: findings.yaml
+  limitations: limitations.yaml
+  evidence_nodes: evidence_nodes.yaml
+  artifacts: artifact_registry.yaml
+  relationships: relationships.yaml
+  literature: literature_evidence.yaml
+  figure_table_provenance: figure_table_provenance.yaml
+status: FINALIZED

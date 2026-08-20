@@ -1,0 +1,62 @@
+handoff_id: IHARQ-P00-P02-FINAL-CUMULATIVE-HANDOFF-R1
+coverage:
+- P00
+- P01
+- P02
+closing_phase: P02
+closing_layer: L2
+canonical_protocol_id: IHARQ-PROTOCOL-V1-CUMULATIVE-THROUGH-P02-R1
+accepted_run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+config_sha256: 9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13
+scientific_freeze_id: P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5
+immediate_next_governed_phase:
+  phase_id: P03
+  official_name: Calibration and Uncertainty
+  participating_layers:
+  - L0
+  - L1
+  - L2
+  - L3
+  - L10
+  ablation_bindings:
+  - A1
+  - A2
+  - A3
+  note: P03 intake must resolve reuse/validation against this handoff; no P03 scientific
+    result is asserted here.
+p03_input_contract:
+  handoff_id: P02-TO-P03-INPUT-CONTRACT-R1
+  required:
+  - validated PredictionRecord partitions
+  - ModelRegistryRecord
+  - score/logit/probability semantics
+  - class order
+  - A0 metrics
+  - A4 membership/control identities
+  - seed/config/budget/split lineage
+  - Layer2ReadinessReport
+  - failures/limitations/DiagnosticOnly flags
+  rules:
+  - P03 may calibrate/threshold/selectively predict; P02 may not
+  - P03 cannot repair P02 source evidence in place
+  - consumer-specific readiness required
+p03_runtime_readiness:
+  status: PASS
+  prediction_partitions: 1014
+  missing_prediction_fields: []
+  missing_support_fields: []
+  readiness_record: records/Layer2ReadinessReport/dataset=ALL/branch=READINESS/budget=ALL/P02-L2-READINESS-P03.jsonl
+  compatibility_status: PASS
+  blocking_reasons: []
+stage_closure:
+  stage20: PASS
+  stage22: PASS
+  stage23: PASS
+  stage24: PASS
+  runtime_manifest_status: FINALIZED_FOR_EXTERNALIZED_MULTIPART_EXPORT
+external_artifact_contract: external_artifact_retrieval.yaml
+producer_consumer_matrix: producer_consumer_matrix.yaml
+persistent_limitations: persistent_limitations.yaml
+canonical_artifact_index: canonical_artifact_index.yaml
+readiness_status: READY_WITH_EXPLICIT_LIMITATIONS
+blockers: []

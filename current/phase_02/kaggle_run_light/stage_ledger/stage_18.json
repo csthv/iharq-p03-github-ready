@@ -1,0 +1,98 @@
+{
+  "stage_id": "18",
+  "status": "SUCCESS",
+  "attempt_id": "a91f9d90814c",
+  "inputs": {},
+  "input_hashes": {},
+  "outputs": {
+    "status": "PASS",
+    "slots": 1218,
+    "terminal_counts": {
+      "SUCCESS": 591,
+      "CONDITIONAL_SKIP": 576,
+      "INPUT_INCOMPATIBLE": 9,
+      "NOT_APPLICABLE_REPEAT_SLOT": 42
+    },
+    "representative_groups": 21,
+    "c4_vs_strongest": "COMPLETE",
+    "c5_vs_strongest": "COMPLETE",
+    "closure": {
+      "status": "PASS",
+      "planned": 1218,
+      "terminal_counts": {
+        "SUCCESS": 591,
+        "CONDITIONAL_SKIP": 576,
+        "INPUT_INCOMPATIBLE": 9,
+        "NOT_APPLICABLE_REPEAT_SLOT": 42
+      },
+      "participant_rows": 3546,
+      "role_control_expected": 756,
+      "role_control_closure_rows": 756,
+      "role_control_incomplete": 0,
+      "c4_c5_expected": 210,
+      "c4_c5_closure_rows": 210,
+      "c4_c5_incomplete": 0,
+      "burden_rows": 1218,
+      "burden_source_complete": true,
+      "phase_analysis_source_complete": true,
+      "layer10_recomputation_required": false
+    },
+    "artifact": "stage_artifacts/18_a4.json"
+  },
+  "output_hashes": {
+    "status": "727e9bd17b077ba162e13ba877135cc6fbc6b30f83da0b34b3e20233f1cc885f",
+    "slots": "f5efb6e05e55f7eda6e88bec2eec69e6e2919cce997d7da9e6723e71b3021a87",
+    "terminal_counts": "f8caf9ba55d7bf2f3047684c382de25de3ebe2dfb97bfe1be8236b9d697ed73b",
+    "representative_groups": "6f4b6612125fb3a0daecd2799dfd6c9c299424fd920f9b308110a2c1fbd8f443",
+    "c4_vs_strongest": "0ba9a455349c3f02ebe6f28595a29e30a4d03a954f412f2688924056e81a7067",
+    "c5_vs_strongest": "0ba9a455349c3f02ebe6f28595a29e30a4d03a954f412f2688924056e81a7067",
+    "closure": "539779aa74a238c5398522b299b13913dc5651eefc0f73a909a597011178c51e",
+    "artifact": "3f7ab645f160ebe147c60664be252788f06aef6cd14655b901e7f3b5a567b579"
+  },
+  "dependencies": [
+    "17"
+  ],
+  "elapsed_seconds": 1044.7626295089722,
+  "log_path": "logs/stage_18_a91f9d90814c.log",
+  "heartbeat_write_errors": [],
+  "observability_status": "PASS",
+  "blockers": [],
+  "observations": [],
+  "revision_fingerprint": {
+    "notebook_revision": "R4",
+    "notebook_id": "IHARQ-P02-COMPLETE-EXECUTION-AND-ANALYSIS-R4",
+    "source_sha256": "a54bfa816acc6763c1d1042b8c65cf54ae04ec774c57ec50de86014a6730c5fa",
+    "config_sha256": "d82334535e397c681d6172694da96d3fff0143ffb1b63a18876ee1f7778f60a1",
+    "stage_plan_sha256": "043eb30e008af910d37c563e8be8c719ef881cf009aec3e34687dc97bdc34aad",
+    "scientific_freeze_sha256": "7449216c988eec14191ba85300d720547f06fbc6ac7020e9e142bf12a4b0a598",
+    "scientific_freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5"
+  },
+  "runtime_successor": {
+    "id": "P02-RUNTIME-SUCCESSOR-R10-STAGE18-A4-ANCHOR-BUDGET-SINGLE-REPEAT-R1",
+    "scientific_configuration_changed": true,
+    "semantic_audit": "diagnostics/runtime_successor/G18_R6R3_SEMANTIC_AUDIT.json",
+    "scientific_change_scope": "A4_AUTHOR_SOURCE_REFIT_PLUS_SINGLE_REPEAT_PLUS_DEEP_ANCHOR_BUDGET_REDUCTION;R10_3_TRANSPORT_FIXES",
+    "policy_sha256": "a21655f9b52cfbf817b1b271f758739cf01b1e7a75e786c880ccdd1a3c58ef32",
+    "completed_A0_artifacts_mutated": false,
+    "test_outcome_influence": "PROHIBITED",
+    "protocol_deviation_from_buildbook": true,
+    "protocol_deviation_id": "P02-STAGE18-RESOURCE-CONSTRAINED-ANCHOR-BUDGET-SINGLE-REPEAT-R1",
+    "full_buildbook_replication_equivalence": false,
+    "ablation_conditions_removed": false,
+    "refit_repeat_indices_executed": [
+      0
+    ],
+    "deep_anchor_budget_ids": [
+      "P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS",
+      "P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS",
+      "FULL_TRAIN"
+    ],
+    "deep_budget_grid_reduced": true,
+    "multi_seed_stability_claim_authorized": false,
+    "dense_deep_budget_curve_claim_authorized": false,
+    "anchor_budget_deep_claim_authorized": true,
+    "execution_transport_revision": "R10.3_DUAL_GPU_DIFFERENT_ABLATION_CELLS",
+    "single_model_multi_gpu": false,
+    "external_first_checkpoint_route": true
+  }
+}

@@ -1,0 +1,8 @@
+record_family,category,count,denominator,location,reason,canonical_impact,scientific_interpretation,status
+FailureCaseIndex,CONDITIONAL_SKIP,591,648,A0/A4 by affected_ids,governed fallback/expensive A4 non-execution slots,preserved; does not disappear from denominator/accounting,§12,FULLY_ANALYZED
+FailureCaseIndex,NOT_APPLICABLE_REPEAT_SLOT,42,648,A0/A4 by affected_ids,resource-deviation repeat slots intentionally not applicable,preserved; does not disappear from denominator/accounting,§12,FULLY_ANALYZED
+FailureCaseIndex,INPUT_INCOMPATIBLE,9,648,A0/A4 by affected_ids,governed A4 representation/input incompatibility,preserved; does not disappear from denominator/accounting,§12,FULLY_ANALYZED
+FailureCaseIndex,FAILED,3,648,A0/A4 by affected_ids,three CSP-LDA 1/class low-label cells,preserved; does not disappear from denominator/accounting,§12,FULLY_ANALYZED
+FailureCaseIndex,DEPENDENCY_BLOCKED,3,648,A0/A4 by affected_ids,SSL-REVE overlap/dependency block,preserved; does not disappear from denominator/accounting,§12,FULLY_ANALYZED
+NegativeResultNote,NO_CONFIRMED_POSITIVE_EFFECT,340,340,A4 governed comparisons,null/non-positive comparison evidence,preserved; not equivalence proof,§10/§12,FULLY_ANALYZED
+DiagnosticOnlyFlag,DIAGNOSTIC_BRANCH,309,309,sanity/diagnostic branches,diagnostic-only evidence boundary,cannot silently become claim-bearing,§5/§12,FULLY_ANALYZED

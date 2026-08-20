@@ -1,0 +1,82 @@
+{
+  "artifact_id": "P02-STAGE24-MAX3G-HF-RELEASE-R2.2",
+  "canonical_upstream": {
+    "stage11": {
+      "source_sha256": "65a506adb6fa6ce20c2ecd11f9f72cf91341c17565d446b4258344e0701f30c2",
+      "status": "CANONICAL_ACCEPTED_MAIN"
+    },
+    "stage12": {
+      "source_sha256": "12c8196a581fee0571508003a90805a936664dc35418055dacb6426f51e75d75",
+      "status": "CANONICAL_ACCEPTED_MAIN"
+    },
+    "stage18": {
+      "G18": "PASS_UNCHANGED",
+      "stage18S": "PASS_POST_HOC_SENSITIVITY_DESCRIPTIVE"
+    }
+  },
+  "created_at_utc": "2026-08-14T05:19:34.193781+00:00",
+  "cumulative_project_state": {
+    "bytes": 118117660,
+    "local_deleted_after_upload": true,
+    "remote_path": "phase_02/release_packages/cumulative_project_state/IHARQ_Project_State_After_Phase_02_R2.zip",
+    "sha256": "b4f1d12b0fb37faf908a3eadd2d6a43d52efbe7a2601220a030ffd6858b9b8cc",
+    "source_bytes": 826871216,
+    "source_files": 20743,
+    "transport": "SINGLE_ZIP"
+  },
+  "disk_after_release": {
+    "free_gib": 3.7,
+    "total_gib": 19.518,
+    "used_gib": 15.802
+  },
+  "execution_bundle": {
+    "external_pointer_remote": "phase_02/release_manifests/external_artifact_pointer_manifest_R2.yaml",
+    "manifest_remote": "phase_02/release_manifests/execution_bundle_multipart_manifest_R2.json",
+    "parts": [
+      {
+        "bytes": 519305980,
+        "max_3gib_compliant": true,
+        "remote_path": "phase_02/execution_bundle_packages/execution_bundle_package_0001.zip",
+        "sha256": "c380edff3afe44137afea8a3bb70699bb3a3885c3363198eebf93aad66f23805",
+        "source_bytes": 513869408,
+        "source_files": 13122,
+        "transport_kind": "ZIP_PACKAGE"
+      }
+    ],
+    "transport": "EXTERNALIZED_MULTIPART"
+  },
+  "github_ready_derivative": {
+    "bytes": 118118899,
+    "local_deleted_after_upload": true,
+    "remote_path": "phase_02/release_packages/github_ready/IHARQ_Cumulative_GitHub_Ready_Through_P02_R2.zip",
+    "sha256": "2052eff12f5ec4054305577de7557049db45a52118e65d9300b318761c406839",
+    "source_bytes": 826872695,
+    "source_files": 20745,
+    "transport": "SINGLE_ZIP"
+  },
+  "github_ready_uploaded_to_hf": true,
+  "governed_stage24": {
+    "G24": "PASS",
+    "accepted": true,
+    "attempt_id": "5027e6f7359e"
+  },
+  "hugging_face": {
+    "content_revision": "bc88dccd6518aa7b172697be1ef98344997f27ff",
+    "execution_bundle_packages": 1,
+    "final_release_revision": "257a407b5c7ea37b6c620863ee261c010c8f197c",
+    "hard_max_package_bytes": 3221225472,
+    "heavy_packages": 4,
+    "heavy_source_bytes": 9448804258,
+    "heavy_source_files": 3968,
+    "manifest_revision": "c60c0505faa8076090439277ed1d8ef8c86734b7",
+    "private": true,
+    "remote_completeness": "PASS",
+    "repo_id": "Csthv/iharq-p02-phase02-r2-P02-L2-OFFICIAL-RUN-R4DY-20260814t051352z",
+    "repo_type": "dataset"
+  },
+  "local_release_zip_policy": "DELETED_AFTER_CONFIRMED_HF_UPLOAD",
+  "pre_g24_receipt": "/kaggle/working/iharq_p02_run/stage_artifacts/23B_pre_stage24_release_readiness_R1.json",
+  "reason_for_successor": "ORIGINAL_STAGE24_MONOLITHIC_ZIP_FAILED_ENOSPC",
+  "scientific_configuration_changed": false,
+  "status": "PASS"
+}

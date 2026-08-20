@@ -1,0 +1,8 @@
+profile_id: P00-L7-UPDATE-ENABLED-R1
+policy_mode: ADAPTIVE_TRAINING
+update_enabled: true
+requires_policy_update_trace: true
+requires_before_after_policy_ids: true
+requires_source_transition: true
+requires_reward_cost_config_seed: true
+simulation_status: SIMULATION_ONLY

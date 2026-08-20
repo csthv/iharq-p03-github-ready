@@ -1,0 +1,85 @@
+manifest_id: IHARQ-CUMULATIVE-AUTHORITY-MANIFEST-THROUGH-P02-R2
+coverage:
+- P00
+- P01
+- P02
+status: CURRENT_CUMULATIVE
+sources:
+- role: GOVERNANCE
+  path: docs/authorities/current/00_IHARQ_Document_Stack_Governance_and_Creation_Guide_V6_1.md
+  sha256: c811373c19a7c2c3f6d72cf2aed984e02ffcb07bb448cfc3bdbdf26a35a4f1d9
+  bytes: 35089
+  canonical: true
+- role: ARCHITECTURE
+  path: docs/authorities/current/01_Master_Architecture_Specification_FINAL_T29_LAYOUT_CORRECTED_R1.pdf
+  sha256: ae374c9de061bc5179c9223e7d646c70cf0d98c414007ab6baf95cd68c814f9b
+  bytes: 1868024
+  canonical: true
+- role: REGISTRY
+  path: docs/authorities/current/02_Canonical_Artifact_Record_and_Interface_Registry_FINAL_R44.md
+  sha256: bdb309f76b9b525ea89cfa56c79a9b7989348e3509febac9ae9fffe7858d1f87
+  bytes: 2250836
+  canonical: true
+- role: EXECUTION_PLAN
+  path: docs/authorities/current/03_Execution_and_Evidence_Plan_FINAL_R41.md
+  sha256: f31de3453b331d909a8cccbf951a2df61ef7ca38b71df4bde8be95040095da82
+  bytes: 2209626
+  canonical: true
+- role: EVAL_PROTOCOL_BASE
+  path: docs/authorities/current/04_Experiment_Ablation_and_Evaluation_Protocol_FINAL_R42.md
+  sha256: 8b7a393b860bd49a34a794db5c2b80af7f127bc318a112bc7ed3c375ce704813
+  bytes: 1650906
+  canonical: true
+- role: PLAYBOOK
+  path: docs/authorities/current/05_Complete_Phase_Execution_Playbook_FINAL_R41.md
+  sha256: 176f46950b86db8cd5c23789893955336c818a6fcd10ed36d6c66e096faccc87
+  bytes: 2300203
+  canonical: true
+- role: METHOD_SELECTION
+  path: docs/authorities/current/06_Integrated_Layers0_to_10_Method_Selection_and_Design_Rationale_Register_FINAL_R2.md
+  sha256: b036b02ac65b3bc2595513f4ca8a8137a6273f914e46e1cf6180515e57726749
+  bytes: 10716865
+  canonical: true
+- role: NUTS_AND_BOLTS
+  path: docs/authorities/current/07_Integrated_Layers0_to_10_Detailed_Design_and_Nuts_and_Bolts_Specification_FINAL_R2.md
+  sha256: 4f47c6f511e646b2127cc79f14a5f632b00f5112582a049b46c735e78ded638c
+  bytes: 9251125
+  canonical: true
+- role: PROTOCOL_V1_THROUGH_P02
+  path: final_state/through_p02/authorities/protocol_v1/IHARQ_Protocol_v1_0_Final_Through_Phase_02_R1.md
+  sha256: d993b3b4bf9dc1afc0cbb2eb3c5b173e6ec90957b039d6c6151471962876664b
+  bytes: 239761
+  canonical: true
+- role: CUMULATIVE_PHASE_ANALYSIS_THROUGH_P02
+  path: final_state/through_p02/analysis/IHARQ_Cumulative_Phase_Evidence_Results_and_Interpretation_Through_P02_Final_R1.md
+  sha256: 7167255b64e9e33e140978a2117caebab630ba99f2f7660d2077c0e60cbdffed
+  bytes: 319072
+  canonical: true
+- role: LAYER0_THROUGH_P02
+  path: final_state/through_p02/layer0/Layer_0_Claim_Governance_Through_P02.md
+  sha256: d3f7eedf88cdf3dfc41a4b2c1e54a603c515fda4c98818b3c46f40eefd4d3059
+  bytes: 23541
+  canonical: true
+- role: EVIDENCE_MAP_THROUGH_P02
+  path: final_state/through_p02/evidence_map/IHARQ_Cumulative_Evidence_Map_Through_P02.md
+  sha256: 24af22901da003fb02d586dad76f4dfd982ebafe7e47f2b0ceab998480b09934
+  bytes: 21638
+  canonical: true
+- role: LAYER10_THROUGH_P02
+  path: final_state/through_p02/layer10/Layer_10_Artifact_Package_Through_P02.md
+  sha256: d1fb7b3d1ff9157558462fbf28df289151209659fa3438e19021c1b175840bce
+  bytes: 9483
+  canonical: true
+- role: WHOLE_PHASE_CLOSURE
+  path: final_state/through_p02/validation/final_phase_closure_report.md
+  sha256: fefcf0488b0fa295c12213f9613cc599a3ca20ccddd6cc45952318b0dcd8dc7a
+  bytes: 14148
+  canonical: true
+- role: P02_STAGE24_REPLAY
+  path: current/phase_02/release_metadata/G24_REPLAY.json
+  sha256: d6a5e8f791a8f12fccce6a1dccb1c8c84c712e31bfae5d4c1dd876f3cc5a7b36
+  bytes: 267
+  canonical: true
+historical_authority_manifests:
+- history/phase_00/github_ready_R2/manifests/authority_manifest.yaml
+- artifacts/cumulative_state/AuthorityManifest.json

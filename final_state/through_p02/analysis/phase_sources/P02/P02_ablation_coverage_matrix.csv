@@ -1,0 +1,16 @@
+ablation_id,official_identity,owner,applicable_to_P02,foundation_inherited,executed_in_P02,analysis_location,result_interpreted,claim_impact_or_limitation,analysis_present,status
+A0,Raw Decoder / Accept-All Raw Decoder Reference,L2,True,False,True,§6,Baseline spine established; model/dataset heterogeneity and low-label results interpreted,BNCI n=1 inferential restriction; low-label single-subset,True,FULLY_ANALYZED
+A1,Calibrated Decoder / Calibration Visibility,L3 C1,False,False,False,§22,Downstream responsibility; P02 supplies raw evidence only,Do not infer calibration from P02,True,NOT_APPLICABLE
+A2,Simple Registered Threshold / Confidence-Threshold Baseline,L3 C2,False,False,False,§22,Downstream responsibility,Do not infer threshold effectiveness from P02,True,NOT_APPLICABLE
+A3,Uncertainty and Selective Prediction,L3 C2,False,False,False,§22,Downstream responsibility,Do not infer selective risk/abstention from P02,True,NOT_APPLICABLE
+A4,"Longer-Window, Multi-Window Voting/Averaging and Ordinary Ensemble Controls",L2,True,False,True,§10-11,Resource-constrained canonical A4 plus post-hoc Stage18S analyzed,No five-repeat stability/dense deep-budget/full-grid equivalence,True,FULLY_ANALYZED
+A5,IHARQ-lite / Rule-Based Evidence Verification,L4,False,False,False,§22,Downstream,No P02 claim,True,NOT_APPLICABLE
+A6,IHARQ + Evidence-Quality Estimator,L4/L6,False,False,False,§22,Downstream,No P02 claim,True,NOT_APPLICABLE
+A7,IHARQ + RegimeRisk Temporal Trust,L5,False,False,False,§22,Downstream,No temporal robustness claim,True,NOT_APPLICABLE
+A8,Learning-to-defer / Deferral Comparison,L6/L7,False,False,False,§22,Downstream,No deferral claim,True,NOT_APPLICABLE
+A9,Supervised Adaptive-IHARQ / Adaptive Readiness Policy,downstream,False,False,False,§22,Downstream,No readiness-policy effectiveness claim,True,NOT_APPLICABLE
+A10,Contextual Bandit / Simulation-Bounded Immediate-Reward Adaptation,downstream,False,False,False,§22,Downstream,No bandit claim,True,NOT_APPLICABLE
+A11,Reinforcement-Learning Policy / Simulation-Bounded Sequential Policy Learning,downstream,False,False,False,§22,Downstream,No RL-policy claim,True,NOT_APPLICABLE
+A12,StressForge Stress Tests / Controlled Stress Robustness,downstream,False,False,False,§22,Downstream,No stress-robustness claim,True,NOT_APPLICABLE
+A13,Layer 9 MyoSuite/OpenSim/static-replay Embodiment Demo,L9,False,False,False,§22,Downstream,No embodiment claim,True,NOT_APPLICABLE
+A14,Rejected / prohibited,REJECTED,False,False,False,§2/appendix,Retains governed rejected state,Must not be introduced,True,NOT_APPLICABLE

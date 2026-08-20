@@ -1,0 +1,6 @@
+limitation_id,category,description,scope,blocking,treatment
+P00-LIM-001,DEPENDENCY_PORTABILITY,Complete registry-resolved portable uv.lock is unavailable and explicitly fail-closed.,cross-version or fresh-registry portability,NO,use exact verified local 22-distribution lock; do not claim portable resolution
+P00-LIM-002,RUNTIME_MATRIX,Python 3.11 and 3.12 were unavailable locally; Python 3.13.5 passed.,cross-version compatibility,NO,limit reproduction claim to Python 3.13.5
+P00-LIM-003,TIMING,Historical runs remain Mode B engineering/retrospective; Mode C no-drift was not proven.,evidence classification,NO,no prospective or confirmatory upgrade
+P00-LIM-004,NON_EMPIRICAL_SCOPE,P00 contains no claim-bearing empirical A0-A13 cell.,scientific interpretation,NO,restrict findings to engineering/foundation conformance
+P00-LIM-005,DOWNSTREAM_GOVERNANCE,"Layer 0, Evidence Map, Layer 10 and closure remain pending.",claim authorization and publication,NO_FOR_REPORT; YES_FOR_PHASE_CLOSURE,candidate statements remain pending Layer 0

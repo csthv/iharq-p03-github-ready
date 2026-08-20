@@ -1,0 +1,26 @@
+{
+  "architecture_search_changed": false,
+  "artifact_id": "P02-STAGE12-DBCONFORMER-P01-COMPAT-PATCH-R1",
+  "original_sha256": "b891d8ba28b3ef5064106065e4a2c9bd1e346fe29b6d68cc50c91dbf6cfa4bd1",
+  "original_source": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/frozen_sources/DBConformer/02cf63206087045c5cd0e8fa882831102e6fd01b/models/DBConformer.py",
+  "patched_sha256": "c108942e1a07023d84eded2cf2b1de8e6c2d77954f5a12558a3bb4245dab387a",
+  "patched_source": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/compiled_sources/DBConformer_P01_Compat_R1.py",
+  "patches": [
+    {
+      "from": "from timm.models.layers import trunc_normal_",
+      "id": "TIMM_TRUNC_NORMAL_IMPORT_COMPATIBILITY",
+      "reason": "Pinned timm top-level import fails through torchvision; no package upgrade permitted.",
+      "scope": "INITIALIZATION_API_ONLY",
+      "to": "from torch.nn.init import trunc_normal_  # IHARQ R5 runtime-compatibility substitution; initialization API only"
+    },
+    {
+      "P01_mutated": false,
+      "id": "P01_CANONICAL_WINDOW_NO_EXTRA_ENDPOINT",
+      "reason": "P01 480-sample canonical windows contain no dataset-specific 1001st endpoint to drop.",
+      "scope": "INPUT_ENDPOINT_HANDLING_ONLY"
+    }
+  ],
+  "scientific_configuration_changed": false,
+  "test_result_used": false,
+  "training_grid_changed": false
+}

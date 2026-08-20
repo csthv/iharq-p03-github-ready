@@ -1,0 +1,63 @@
+{
+  "stage_id": "07",
+  "status": "SUCCESS",
+  "attempt_id": "f96233a7477e",
+  "inputs": {},
+  "input_hashes": {},
+  "outputs": {
+    "status": "PASS",
+    "role_counts": {
+      "calibration": 2655,
+      "train": 7589,
+      "test": 1383,
+      "validation": 1283
+    },
+    "label_contract": [
+      "left_hand",
+      "right_hand"
+    ],
+    "unique_events": 12910,
+    "unique_windows": 12910,
+    "subject_role_overlap_count": 0,
+    "implemented_checks": [
+      "role_presence",
+      "binary_label_contract",
+      "event_id_uniqueness",
+      "window_id_uniqueness",
+      "dataset_scoped_subject_role_disjointness"
+    ],
+    "test_selection": "PROHIBITED",
+    "leakage_statement": "NO_CONTRACT_LEAKAGE_DETECTED_UNDER_IMPLEMENTED_CHECKS",
+    "artifact": "stage_artifacts/07_loader.json"
+  },
+  "output_hashes": {
+    "status": "727e9bd17b077ba162e13ba877135cc6fbc6b30f83da0b34b3e20233f1cc885f",
+    "role_counts": "a75f1aa8fe672ab9a1fbaccc28977294688dd83c1a63d899eb933761ebbe0889",
+    "label_contract": "ea817898d6a9e3c8c4e5ed09a4488c2a447864ffe8384415941d72d3b30b3b8f",
+    "unique_events": "f035c413db14663169bb0b13308266edc578fe67fa275dc438454b7a92c28659",
+    "unique_windows": "f035c413db14663169bb0b13308266edc578fe67fa275dc438454b7a92c28659",
+    "subject_role_overlap_count": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+    "implemented_checks": "ebb6b61fb9cfdcf65651329d61042daccd36dfa3c25afcdc3a945bd2a4feb142",
+    "test_selection": "e333a7380882e2ed84ccf8f4fc474b4f92b66cc34c66bce507fca4f855d4ff54",
+    "leakage_statement": "1efa651a90f93342377b2031675628f14c70d10a9eea43c7e99f826435bb01f4",
+    "artifact": "0b8f3d6b1519b12edcdb8c8bde8cc43f47c596b4822a59589b3b45ce3d74b88a"
+  },
+  "dependencies": [
+    "06"
+  ],
+  "elapsed_seconds": 0.024358034133911133,
+  "log_path": "logs/stage_07_f96233a7477e.log",
+  "heartbeat_write_errors": [],
+  "observability_status": "PASS",
+  "blockers": [],
+  "observations": [],
+  "revision_fingerprint": {
+    "notebook_revision": "R4",
+    "notebook_id": "IHARQ-P02-COMPLETE-EXECUTION-AND-ANALYSIS-R4",
+    "source_sha256": "a54bfa816acc6763c1d1042b8c65cf54ae04ec774c57ec50de86014a6730c5fa",
+    "config_sha256": "d82334535e397c681d6172694da96d3fff0143ffb1b63a18876ee1f7778f60a1",
+    "stage_plan_sha256": "043eb30e008af910d37c563e8be8c719ef881cf009aec3e34687dc97bdc34aad",
+    "scientific_freeze_sha256": "7449216c988eec14191ba85300d720547f06fbc6ac7020e9e142bf12a4b0a598",
+    "scientific_freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5"
+  }
+}

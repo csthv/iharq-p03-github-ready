@@ -1,0 +1,33 @@
+{
+  "artifact_id": "P02-STAGE12-UPSTREAM-PROVENANCE-REVALIDATION-AFTER-STAGE11-R7-R1",
+  "basis": "EXACT_STAGE12_SOURCE_DEPENDENCY_AUDIT_PLUS_BYTE_IDENTITY",
+  "canonical_stage11_runtime_successor": "P02-RUNTIME-SUCCESSOR-R7H7-STAGE11-EEGNET-AUTHOR-CENTERED-10000E-TRUE-P120-CONTINUATION",
+  "continuation_metadata": "/kaggle/working/_IHARQ_CONTINUATION_META_20260812T005832Z/CHECKPOINT_METADATA.json",
+  "created_utc": "2026-08-13T16:27:13.026479+00:00",
+  "marker": "IHARQ_P02_STAGE12_REVALIDATED_AFTER_STAGE11_R7_R1",
+  "source_revalidation_required_receipt": "diagnostics/runtime_successor/stage11_eegnet_author_centered_R7H_10000E_P500_R1/P02_STAGE12_REVALIDATION_REQUIRED_AFTER_STAGE11_R7.json",
+  "stage12_canonical_success_by_branch": {
+    "DNN-FBCNET": 15,
+    "DNN-SEQ": 15,
+    "SSL-CBRAMOD": 105
+  },
+  "stage12_r6r5_closure_audit": "diagnostics/runtime_successor/stage12_external_models_R6R5/G12_R6R5_STAGED_CLOSURE_AUDIT_R1.json",
+  "stage12_retraining": false,
+  "stage12_scientific_artifact_count": 963,
+  "stage12_scientific_artifacts_byte_identical_after_stage11_r7": true,
+  "stage12_scientific_configuration_changed": false,
+  "stage12_scientific_rewrite": false,
+  "stage12_source": "/kaggle/working/_IHARQ_CONTINUATION_META_20260812T005832Z/resume_scripts/IHARQ_P02_STAGE12_R6R5_RESUME_EXACT.py",
+  "stage12_source_sha256": "12c8196a581fee0571508003a90805a936664dc35418055dacb6426f51e75d75",
+  "stage12_stage11_dependency": "ACCEPTANCE_PREREQUISITE_ONLY",
+  "stage12_stage11_textual_mentions": 1,
+  "stage12_terminal_count": 153,
+  "stage12_terminal_counts": {
+    "CONDITIONAL_SKIP": 15,
+    "DEPENDENCY_BLOCKED": 3,
+    "SUCCESS": 135
+  },
+  "stage12_terminal_schema_field": "terminal_status",
+  "status": "PASS",
+  "test_set_reused_for_selection": false
+}

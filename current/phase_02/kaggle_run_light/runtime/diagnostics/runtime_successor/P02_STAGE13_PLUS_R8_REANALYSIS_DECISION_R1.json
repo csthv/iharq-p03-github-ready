@@ -1,0 +1,22 @@
+{
+  "accepted_stage11_source_sha256": "65a506adb6fa6ce20c2ecd11f9f72cf91341c17565d446b4258344e0701f30c2",
+  "accepted_stage12_source_sha256": "12c8196a581fee0571508003a90805a936664dc35418055dacb6426f51e75d75",
+  "artifact_id": "P02-R8-STAGE13-PLUS-REANALYSIS-DECISION-R1",
+  "basis": [
+    "accepted canonical Stage11 R7H7 corrected execution",
+    "accepted canonical Stage12 R6R5 corrected execution",
+    "P02/L2 Build Book R4 Stage13-24 ownership/artifact/gate contracts",
+    "packaged Stage13-24 implementation source"
+  ],
+  "decisions": {
+    "13": "HARDEN_CLOSURE_ONLY_NO_SCIENTIFIC_CHANGE",
+    "14": "HARDEN_PREDICTION_CLOSURE_ONLY_NO_SCIENTIFIC_CHANGE",
+    "15_17": "KEEP_SCIENCE_UNCHANGED_CONSUME_CORRECTED_A0",
+    "18": "PROSPECTIVE_AUTHOR_SOURCE_ALIGNED_A4_REFIT_SUCCESSOR",
+    "18U": "KEEP_FROZEN_EMPTY_UNLOCK_DISPATCHER",
+    "19_24": "KEEP_NO_NEW_SCIENCE_EVIDENCE_READINESS_HANDOFF_FINALIZATION"
+  },
+  "quality_guard": "NO_REQUIRED_ARTIFACT_GATE_RECORD_ABLATION_STATISTIC_OR_HANDOFF_REMOVED",
+  "status": "PASS",
+  "test_outcome_driven_design": false
+}

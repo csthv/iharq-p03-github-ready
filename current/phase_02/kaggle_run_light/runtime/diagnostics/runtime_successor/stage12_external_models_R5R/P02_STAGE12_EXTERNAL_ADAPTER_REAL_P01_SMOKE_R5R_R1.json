@@ -1,0 +1,589 @@
+{
+  "CBraMod_checkpoint": {
+    "channel_montage_status": "PASS",
+    "corpus_overlap_status": "PASS",
+    "input_compatibility_status": "PASS",
+    "path": "/kaggle/working/iharq_p02_run/_hf_runtime/SSL-CBRAMOD/model.safetensors",
+    "sampling_adapter_verified": true,
+    "sha256": "a939ace9aa1e229f08391ad8bb2d197b507ae2c519a50addf087f0151b2df5c3",
+    "source_recipe_verified": true
+  },
+  "DBConformer_compatibility_source": {
+    "architecture_search_changed": false,
+    "artifact_id": "P02-STAGE12-DBCONFORMER-P01-COMPAT-PATCH-R1",
+    "original_sha256": "b891d8ba28b3ef5064106065e4a2c9bd1e346fe29b6d68cc50c91dbf6cfa4bd1",
+    "original_source": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/frozen_sources/DBConformer/02cf63206087045c5cd0e8fa882831102e6fd01b/models/DBConformer.py",
+    "patched_sha256": "c108942e1a07023d84eded2cf2b1de8e6c2d77954f5a12558a3bb4245dab387a",
+    "patched_source": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/compiled_sources/DBConformer_P01_Compat_R1.py",
+    "patches": [
+      {
+        "from": "from timm.models.layers import trunc_normal_",
+        "id": "TIMM_TRUNC_NORMAL_IMPORT_COMPATIBILITY",
+        "reason": "Pinned timm top-level import fails through torchvision; no package upgrade permitted.",
+        "scope": "INITIALIZATION_API_ONLY",
+        "to": "from torch.nn.init import trunc_normal_  # IHARQ R5 runtime-compatibility substitution; initialization API only"
+      },
+      {
+        "P01_mutated": false,
+        "id": "P01_CANONICAL_WINDOW_NO_EXTRA_ENDPOINT",
+        "reason": "P01 480-sample canonical windows contain no dataset-specific 1001st endpoint to drop.",
+        "scope": "INPUT_ENDPOINT_HANDLING_ONLY"
+      }
+    ],
+    "scientific_configuration_changed": false,
+    "test_result_used": false,
+    "training_grid_changed": false
+  },
+  "FBCNet_filterbank_resolution": {
+    "P01_mutated": false,
+    "bands_hz": [
+      [
+        8,
+        12
+      ],
+      [
+        12,
+        16
+      ],
+      [
+        16,
+        20
+      ],
+      [
+        20,
+        24
+      ],
+      [
+        24,
+        28
+      ],
+      [
+        28,
+        32
+      ]
+    ],
+    "original_author_default_bands_hz": [
+      [
+        4,
+        8
+      ],
+      [
+        8,
+        12
+      ],
+      [
+        12,
+        16
+      ],
+      [
+        16,
+        20
+      ],
+      [
+        20,
+        24
+      ],
+      [
+        24,
+        28
+      ],
+      [
+        28,
+        32
+      ],
+      [
+        32,
+        36
+      ],
+      [
+        36,
+        40
+      ]
+    ],
+    "outside_P01_information_reconstructed": false,
+    "policy": "REUSE_ALREADY_FROZEN_P01_INBAND_8_32_PARTITION",
+    "test_result_used": false
+  },
+  "P00_P01_mutated": false,
+  "REVE": {
+    "download_attempted": false,
+    "official_cells": 3,
+    "scientific_gate_overridden": false,
+    "status": "BLOCKED_KNOWN_P02_PRETRAINING_CORPUS_OVERLAP"
+  },
+  "adapter_module": {
+    "entrypoint": "build_iharq_adapter",
+    "path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/python/iharq_stage12_external_adapters.py",
+    "sha256": "add69c0a0f8843366d6d9ed1fb16746f61d43a6d588b04f07193484e0555386a",
+    "syntax_compile": "PASS"
+  },
+  "artifact_id": "P02-STAGE12-EXTERNAL-ADAPTER-REAL-P01-SMOKE-R5R-R1",
+  "branch_batch_resolution": {
+    "DNN-FBCNET": 64,
+    "DNN-SEQ": 64,
+    "SSL-CBRAMOD": 64
+  },
+  "candidate_admission_surface": {
+    "DNN-FBCNET": {
+      "resolved_variant": "FBCNet",
+      "status": "ADMITTED"
+    },
+    "DNN-SEQ": {
+      "resolved_variant": "DBConformer",
+      "status": "ADMITTED"
+    },
+    "SSL-CBRAMOD": {
+      "resolved_variant": "CBraMod",
+      "status": "ADMITTED"
+    }
+  },
+  "candidate_bindings_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/P02_STAGE12_CANDIDATE_IMPLEMENTATION_BINDINGS_R5R.json",
+  "created_utc": "2026-08-10T08:44:44.036492+00:00",
+  "frozen_hyperparameter_grid_changed": false,
+  "frozen_training_policy_changed": false,
+  "integration_patch_requirements_before_promotion": {
+    "external_seed_shape_injection": {
+      "reason": "External.build_iharq_adapter currently receives branch/checkpoint/config but not the run-cell seed and live n_chans/n_times. Promotion must inject those per make_adapter call.",
+      "required": true
+    },
+    "sequence_external_safe_checkpoint_routing": {
+      "reason": "SequenceSlot owns an External delegate; governed checkpointing must follow delegate.plugin instead of falling through to generic pickle.",
+      "required": true
+    },
+    "ssl_neural_training_policy_routing": {
+      "reason": "CBraMod must receive the frozen AdamW/epoch/validation/batch/early-stop policy on GPU, not the generic m.fit(X,y) route.",
+      "required": false
+    }
+  },
+  "live_implementation_bindings_changed": false,
+  "live_runtime_successor_promoted": false,
+  "package_versions_changed": false,
+  "parent_successor_id": "P02-RUNTIME-SUCCESSOR-R4-SR-PROBABILITY-STALE-CACHE-INVALIDATION-LIVE-CONTINUATION",
+  "post_smoke_stage12_terminals": 0,
+  "preexisting_stage12_terminals": 0,
+  "preparation_cache_max_gib_requested": 18.0,
+  "real_P01_smoke_results": [
+    {
+      "attempts": [
+        {
+          "batch_size": 64,
+          "max_gpu_allocated_gib": 0.19324350357055664,
+          "status": "PASS"
+        }
+      ],
+      "batch_size": 64,
+      "branch": "DNN-FBCNET",
+      "checkpoint_payload_bytes": 64201,
+      "checkpoint_payload_sha256": "ebee22023139ceaa762a2d6c65a4bdf0fe2e049c6ae01a2ca2b7124e231d7c3a",
+      "checkpoint_roundtrip_prediction_equivalence": "PASS",
+      "cpu_gpu_score_max_abs_diff": 0.0,
+      "dataset_id": "PhysioNetMI",
+      "effective_batch_target": 64,
+      "elapsed_seconds": 4.39350065099984,
+      "gradient_accumulation": 1,
+      "max_gpu_allocated_gib": 0.19324350357055664,
+      "prediction_domain": "PASS",
+      "prepared_probe_shape": [
+        2,
+        1,
+        64,
+        480,
+        6
+      ],
+      "raw_train_shape": [
+        64,
+        64,
+        480
+      ],
+      "raw_validation_shape": [
+        16,
+        64,
+        480
+      ],
+      "scientific_metric_emitted": false,
+      "score_shape": [
+        8,
+        2
+      ],
+      "score_simplex": "PASS",
+      "seed": 758574837,
+      "status": "PASS",
+      "test_signal_loaded": false
+    },
+    {
+      "attempts": [
+        {
+          "batch_size": 64,
+          "max_gpu_allocated_gib": 0.16391658782958984,
+          "status": "PASS"
+        }
+      ],
+      "batch_size": 64,
+      "branch": "DNN-FBCNET",
+      "checkpoint_payload_bytes": 31945,
+      "checkpoint_payload_sha256": "7322addad559d27d34baa92f3f2a4d2353818df7cbcc8adf8e5bb2d992faa2f7",
+      "checkpoint_roundtrip_prediction_equivalence": "PASS",
+      "cpu_gpu_score_max_abs_diff": 5.329070518200751e-15,
+      "dataset_id": "BNCI2014_001",
+      "effective_batch_target": 64,
+      "elapsed_seconds": 0.16530909500011148,
+      "gradient_accumulation": 1,
+      "max_gpu_allocated_gib": 0.16391658782958984,
+      "prediction_domain": "PASS",
+      "prepared_probe_shape": [
+        2,
+        1,
+        22,
+        480,
+        6
+      ],
+      "raw_train_shape": [
+        64,
+        22,
+        480
+      ],
+      "raw_validation_shape": [
+        16,
+        22,
+        480
+      ],
+      "scientific_metric_emitted": false,
+      "score_shape": [
+        8,
+        2
+      ],
+      "score_simplex": "PASS",
+      "seed": 843793861,
+      "status": "PASS",
+      "test_signal_loaded": false
+    },
+    {
+      "attempts": [
+        {
+          "batch_size": 64,
+          "max_gpu_allocated_gib": 0.19128894805908203,
+          "status": "PASS"
+        }
+      ],
+      "batch_size": 64,
+      "branch": "DNN-FBCNET",
+      "checkpoint_payload_bytes": 62665,
+      "checkpoint_payload_sha256": "93336cacd0b10821780556766d631c97e693c92b0f5aa99be880d4b94bcd1b7c",
+      "checkpoint_roundtrip_prediction_equivalence": "PASS",
+      "cpu_gpu_score_max_abs_diff": 4.263256414560601e-13,
+      "dataset_id": "Lee2019_MI",
+      "effective_batch_target": 64,
+      "elapsed_seconds": 0.38831292100007886,
+      "gradient_accumulation": 1,
+      "max_gpu_allocated_gib": 0.19128894805908203,
+      "prediction_domain": "PASS",
+      "prepared_probe_shape": [
+        2,
+        1,
+        62,
+        480,
+        6
+      ],
+      "raw_train_shape": [
+        64,
+        62,
+        480
+      ],
+      "raw_validation_shape": [
+        16,
+        62,
+        480
+      ],
+      "scientific_metric_emitted": false,
+      "score_shape": [
+        8,
+        2
+      ],
+      "score_simplex": "PASS",
+      "seed": 830511967,
+      "status": "PASS",
+      "test_signal_loaded": false
+    },
+    {
+      "attempts": [
+        {
+          "batch_size": 64,
+          "max_gpu_allocated_gib": 0.14746856689453125,
+          "status": "PASS"
+        }
+      ],
+      "batch_size": 64,
+      "branch": "DNN-SEQ",
+      "checkpoint_payload_bytes": 416975,
+      "checkpoint_payload_sha256": "83f9de966a29c341da5ba49b4606faa2f7695078f726b06d27583a8047e9e1af",
+      "checkpoint_roundtrip_prediction_equivalence": "PASS",
+      "cpu_gpu_score_max_abs_diff": 2.9802322387695312e-08,
+      "dataset_id": "PhysioNetMI",
+      "effective_batch_target": 64,
+      "elapsed_seconds": 0.3173221370000192,
+      "gradient_accumulation": 1,
+      "max_gpu_allocated_gib": 0.14746856689453125,
+      "prediction_domain": "PASS",
+      "prepared_probe_shape": [
+        2,
+        1,
+        64,
+        480
+      ],
+      "raw_train_shape": [
+        64,
+        64,
+        480
+      ],
+      "raw_validation_shape": [
+        16,
+        64,
+        480
+      ],
+      "scientific_metric_emitted": false,
+      "score_shape": [
+        8,
+        2
+      ],
+      "score_simplex": "PASS",
+      "seed": 881493230,
+      "status": "PASS",
+      "test_signal_loaded": false
+    },
+    {
+      "attempts": [
+        {
+          "batch_size": 64,
+          "max_gpu_allocated_gib": 0.06621217727661133,
+          "status": "PASS"
+        }
+      ],
+      "batch_size": 64,
+      "branch": "DNN-SEQ",
+      "checkpoint_payload_bytes": 403535,
+      "checkpoint_payload_sha256": "89a1077236f852d0ee2b97fc3c6188c27d4057e1dd7117cf0dd23e558fa89b8b",
+      "checkpoint_roundtrip_prediction_equivalence": "PASS",
+      "cpu_gpu_score_max_abs_diff": 5.960464477539063e-08,
+      "dataset_id": "BNCI2014_001",
+      "effective_batch_target": 64,
+      "elapsed_seconds": 0.11788656199996694,
+      "gradient_accumulation": 1,
+      "max_gpu_allocated_gib": 0.06621217727661133,
+      "prediction_domain": "PASS",
+      "prepared_probe_shape": [
+        2,
+        1,
+        22,
+        480
+      ],
+      "raw_train_shape": [
+        64,
+        22,
+        480
+      ],
+      "raw_validation_shape": [
+        16,
+        22,
+        480
+      ],
+      "scientific_metric_emitted": false,
+      "score_shape": [
+        8,
+        2
+      ],
+      "score_simplex": "PASS",
+      "seed": 1529732860,
+      "status": "PASS",
+      "test_signal_loaded": false
+    },
+    {
+      "attempts": [
+        {
+          "batch_size": 64,
+          "max_gpu_allocated_gib": 0.14241552352905273,
+          "status": "PASS"
+        }
+      ],
+      "batch_size": 64,
+      "branch": "DNN-SEQ",
+      "checkpoint_payload_bytes": 416335,
+      "checkpoint_payload_sha256": "ee39b380466b2ce724aca2b0a1f70e968a779d59e878529cf3e647afb4e32656",
+      "checkpoint_roundtrip_prediction_equivalence": "PASS",
+      "cpu_gpu_score_max_abs_diff": 5.960464477539063e-08,
+      "dataset_id": "Lee2019_MI",
+      "effective_batch_target": 64,
+      "elapsed_seconds": 0.12610093700004654,
+      "gradient_accumulation": 1,
+      "max_gpu_allocated_gib": 0.14241552352905273,
+      "prediction_domain": "PASS",
+      "prepared_probe_shape": [
+        2,
+        1,
+        62,
+        480
+      ],
+      "raw_train_shape": [
+        64,
+        62,
+        480
+      ],
+      "raw_validation_shape": [
+        16,
+        62,
+        480
+      ],
+      "scientific_metric_emitted": false,
+      "score_shape": [
+        8,
+        2
+      ],
+      "score_simplex": "PASS",
+      "seed": 1276818886,
+      "status": "PASS",
+      "test_signal_loaded": false
+    },
+    {
+      "attempts": [
+        {
+          "batch_size": 64,
+          "max_gpu_allocated_gib": 2.3959274291992188,
+          "status": "PASS"
+        }
+      ],
+      "batch_size": 64,
+      "branch": "SSL-CBRAMOD",
+      "checkpoint_payload_bytes": 20066645,
+      "checkpoint_payload_sha256": "c412c4e2f5c0d50b4b3861ccefa6a202a61f4ba66072aa6619c8b1dcd5e2ad93",
+      "checkpoint_roundtrip_prediction_equivalence": "PASS",
+      "cpu_gpu_score_max_abs_diff": 1.1920928955078125e-07,
+      "dataset_id": "PhysioNetMI",
+      "effective_batch_target": 64,
+      "elapsed_seconds": 4.283396230000108,
+      "gradient_accumulation": 1,
+      "max_gpu_allocated_gib": 2.3959274291992188,
+      "prediction_domain": "PASS",
+      "prepared_probe_shape": [
+        2,
+        64,
+        600
+      ],
+      "raw_train_shape": [
+        64,
+        64,
+        480
+      ],
+      "raw_validation_shape": [
+        16,
+        64,
+        480
+      ],
+      "scientific_metric_emitted": false,
+      "score_shape": [
+        8,
+        2
+      ],
+      "score_simplex": "PASS",
+      "seed": 2066603508,
+      "status": "PASS",
+      "test_signal_loaded": false
+    },
+    {
+      "attempts": [
+        {
+          "batch_size": 64,
+          "max_gpu_allocated_gib": 0.8971037864685059,
+          "status": "PASS"
+        }
+      ],
+      "batch_size": 64,
+      "branch": "SSL-CBRAMOD",
+      "checkpoint_payload_bytes": 19865045,
+      "checkpoint_payload_sha256": "7e057348df3d44efb766893340a484eb7cc61ded4c337a50287186dd48ee6c2d",
+      "checkpoint_roundtrip_prediction_equivalence": "PASS",
+      "cpu_gpu_score_max_abs_diff": 1.1920928955078125e-07,
+      "dataset_id": "BNCI2014_001",
+      "effective_batch_target": 64,
+      "elapsed_seconds": 0.8910787919999166,
+      "gradient_accumulation": 1,
+      "max_gpu_allocated_gib": 0.8971037864685059,
+      "prediction_domain": "PASS",
+      "prepared_probe_shape": [
+        2,
+        22,
+        600
+      ],
+      "raw_train_shape": [
+        64,
+        22,
+        480
+      ],
+      "raw_validation_shape": [
+        16,
+        22,
+        480
+      ],
+      "scientific_metric_emitted": false,
+      "score_shape": [
+        8,
+        2
+      ],
+      "score_simplex": "PASS",
+      "seed": 1534795089,
+      "status": "PASS",
+      "test_signal_loaded": false
+    },
+    {
+      "attempts": [
+        {
+          "batch_size": 64,
+          "max_gpu_allocated_gib": 2.3658299446105957,
+          "status": "PASS"
+        }
+      ],
+      "batch_size": 64,
+      "branch": "SSL-CBRAMOD",
+      "checkpoint_payload_bytes": 20057045,
+      "checkpoint_payload_sha256": "e73111663c30e5b8f3db46585c1d5752bed9218321e7bfe048c18658b6fdc40a",
+      "checkpoint_roundtrip_prediction_equivalence": "PASS",
+      "cpu_gpu_score_max_abs_diff": 8.940696716308594e-08,
+      "dataset_id": "Lee2019_MI",
+      "effective_batch_target": 64,
+      "elapsed_seconds": 1.1780211739999231,
+      "gradient_accumulation": 1,
+      "max_gpu_allocated_gib": 2.3658299446105957,
+      "prediction_domain": "PASS",
+      "prepared_probe_shape": [
+        2,
+        62,
+        600
+      ],
+      "raw_train_shape": [
+        64,
+        62,
+        480
+      ],
+      "raw_validation_shape": [
+        16,
+        62,
+        480
+      ],
+      "scientific_metric_emitted": false,
+      "score_shape": [
+        8,
+        2
+      ],
+      "score_simplex": "PASS",
+      "seed": 247862164,
+      "status": "PASS",
+      "test_signal_loaded": false
+    }
+  ],
+  "resource_execution_successor": "R5R",
+  "safe_next_action": "CONTROLLED_PROMOTION_AND_FBCNET_PREDECESSOR_TERMINAL_SUPERSESSION",
+  "scientific_metric_emitted": false,
+  "stage12_terminal_state_unchanged": true,
+  "status": "PASS",
+  "successor_candidate_id": "P02-RUNTIME-SUCCESSOR-R5R-STAGE12-RESOURCE-OPTIMIZED-EXTERNAL-MODEL-LIVE-CONTINUATION",
+  "test_signal_loaded": false,
+  "use_data_parallel_requested": true
+}

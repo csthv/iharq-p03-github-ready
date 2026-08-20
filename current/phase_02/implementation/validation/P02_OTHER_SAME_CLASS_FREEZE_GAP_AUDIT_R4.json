@@ -1,0 +1,23 @@
+{
+  "audit_id": "P02-OTHER-SAME-CLASS-FREEZE-GAP-AUDIT-R4",
+  "status": "PASS",
+  "execution_surfaces_scanned": [
+    "src",
+    "configs/phase_02",
+    "contracts/P02_PREEXECUTION_TRAINING_POLICY_AMENDMENT_R2.yaml",
+    "machine_readable/p02_planned_scientific_execution_freeze_R5.yaml",
+    "machine_readable/p02_training_policy_challenger_run_cells_R2.yaml",
+    "notebook/IHARQ_Phase_02_Complete_Execution_and_Analysis_R4.ipynb"
+  ],
+  "scientific_freeze_gap_hits": [],
+  "other_same_class_freeze_gaps_found": 0,
+  "runtime_conditional_terminal_states_not_misclassified": [
+    "RESOURCE_BLOCKED",
+    "LICENSE_BLOCKED",
+    "CHECKPOINT_BLOCKED",
+    "CORPUS_OVERLAP_UNRESOLVED",
+    "INPUT_INCOMPATIBLE",
+    "DEPENDENCY_BLOCKED"
+  ],
+  "note": "Conditional external-asset/resource availability is a measured runtime terminal condition, not an unresolved scientific policy."
+}

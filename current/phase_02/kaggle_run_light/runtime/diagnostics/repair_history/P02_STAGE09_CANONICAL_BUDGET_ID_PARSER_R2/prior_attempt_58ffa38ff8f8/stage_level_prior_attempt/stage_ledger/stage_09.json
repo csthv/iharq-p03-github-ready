@@ -1,0 +1,31 @@
+{
+  "stage_id": "09",
+  "status": "FAILED",
+  "attempt_id": "58ffa38ff8f8",
+  "inputs": {},
+  "input_hashes": {},
+  "outputs": {},
+  "output_hashes": {},
+  "dependencies": [
+    "08"
+  ],
+  "elapsed_seconds": 96.22675943374634,
+  "log_path": "logs/stage_09_58ffa38ff8f8.log",
+  "heartbeat_write_errors": [],
+  "observability_status": "PASS",
+  "blockers": [
+    "ValueError:invalid literal for int() with base 10: 'P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS'"
+  ],
+  "observations": [
+    "Traceback (most recent call last):\n  File \"/kaggle/working/IHARQ_P02_L2_Kaggle_Notebook_Implementation_Package_R5/src/iharq/layer2_decoders/stage_runner.py\", line 35, in run\n    try:out=fn();status='SUCCESS'\n            ^^^^\n  File \"/kaggle/working/IHARQ_P02_L2_Kaggle_Notebook_Implementation_Package_R5/src/iharq/layer2_decoders/kaggle_entry.py\", line 15, in <lambda>\n    sid=str(s);r=self.runner.run(sid,lambda:HANDLERS[sid](self.ctx),self.reuse);self.results.append(r)\n                                            ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/working/IHARQ_P02_L2_Kaggle_Notebook_Implementation_Package_R5/src/iharq/layer2_decoders/orchestration.py\", line 231, in s09\n    def s09(ctx): return family(ctx,'09')\n                         ^^^^^^^^^^^^^^^^\n  File \"/kaggle/working/IHARQ_P02_L2_Kaggle_Notebook_Implementation_Package_R5/src/iharq/layer2_decoders/orchestration.py\", line 122, in family\n    t=execute_cell(c,ctx.state['core'],ctx.state['runtime_freeze'],ctx.state['store'],ctx.state['schema'],ctx.state['config_hash'],ctx.fixture,ctx.state.get('implementation_bindings'),ov,ctx.state['config']['data'],ctx.state['config']['implementation_parameters']);ts.append(t)\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/working/IHARQ_P02_L2_Kaggle_Notebook_Implementation_Package_R5/src/iharq/layer2_decoders/scientific.py\", line 115, in execute_cell\n    ds=c['dataset_id'];b=c['branch_slot'];budget=c['budget_id'];seed=int(c['seed_id']);tr=train_rows(core,ds,budget,freeze);va=core.rows(dataset_id=ds,role='validation');te=core.rows(dataset_id=ds,role='test');X,y,_=core.load_rows(tr);Xv,yv,_=core.load_rows(va);Xt,yt,meta=core.load_rows(te);cands=[];fails=[]\n                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/working/IHARQ_P02_L2_Kaggle_Notebook_Implementation_Package_R5/src/iharq/layer2_decoders/scientific.py\", line 31, in train_rows\n    ids=frozen_budget_memberships(core,budgets=freeze['budgets']['per_class'],seed=int(freeze['budgets']['seed']))[f'{ds}:budget-{int(budget)}-seed-{freeze[\"budgets\"][\"seed\"]}'];return [r for r in core.rows(dataset_id=ds,role='calibration') if r['event_id'] in ids]\n                                                                                                                                  ^^^^^^^^^^^\nValueError: invalid literal for int() with base 10: 'P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS'\n"
+  ],
+  "revision_fingerprint": {
+    "notebook_revision": "R4",
+    "notebook_id": "IHARQ-P02-COMPLETE-EXECUTION-AND-ANALYSIS-R4",
+    "source_sha256": "a54bfa816acc6763c1d1042b8c65cf54ae04ec774c57ec50de86014a6730c5fa",
+    "config_sha256": "d82334535e397c681d6172694da96d3fff0143ffb1b63a18876ee1f7778f60a1",
+    "stage_plan_sha256": "043eb30e008af910d37c563e8be8c719ef881cf009aec3e34687dc97bdc34aad",
+    "scientific_freeze_sha256": "7449216c988eec14191ba85300d720547f06fbc6ac7020e9e142bf12a4b0a598",
+    "scientific_freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5"
+  }
+}

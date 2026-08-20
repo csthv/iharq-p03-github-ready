@@ -1,0 +1,56 @@
+{
+  "artifact_id": "P01-L1-DERIVED-STORAGE-ACTUAL-d03f0a7c869dd95a-20260806222242-68a91473",
+  "policy_id": "P01-L1-KAGGLE-DUAL-PERSISTENCE-BOUNDED-STREAMING-R3",
+  "scientific_freeze": "P01-L1-OFFICIAL-RUN-FREEZE-R2",
+  "status": "PRECOMMIT_ALL_SHARD_TOKENS_OBTAINED",
+  "quality_records": 20,
+  "quality_summaries": 489,
+  "windows_materialized": 12910,
+  "invalid_window_count": 0,
+  "invalid_windows_path": "negative_and_failed_results/invalid_windows_streaming.json",
+  "signal_dtype": "float32",
+  "shards_uploaded": 172,
+  "logical_float32_window_bytes": 1356625920,
+  "logical_float32_window_gib": 1.263,
+  "actual_hdf5_uploaded_bytes": 1166652764,
+  "actual_hdf5_uploaded_gib": 1.087,
+  "actual_compression_ratio": 0.8599664408593933,
+  "derived_dataset_handle": "csthv999z/iharq-p01-l1-derived-windows-d03f0a7c869d-20260806222242-68a91473",
+  "execution_attempt_id": "20260806222242-68a91473",
+  "forecast_report": "reports/phase_01/storage/derived_output_storage_forecast.json",
+  "dataset_totals": [
+    {
+      "dataset_id": "BNCI2014_001",
+      "subjects": 9,
+      "shards": 9,
+      "windows": 2592,
+      "logical_window_bytes": 109486080,
+      "actual_hdf5_bytes": 94383874,
+      "logical_window_gib": 0.102,
+      "actual_hdf5_gib": 0.088,
+      "compression_ratio": 0.8620627754688085
+    },
+    {
+      "dataset_id": "Lee2019_MI",
+      "subjects": 54,
+      "shards": 54,
+      "windows": 5400,
+      "logical_window_bytes": 642816000,
+      "actual_hdf5_bytes": 551899499,
+      "logical_window_gib": 0.599,
+      "actual_hdf5_gib": 0.514,
+      "compression_ratio": 0.858565279955695
+    },
+    {
+      "dataset_id": "PhysioNetMI",
+      "subjects": 109,
+      "shards": 109,
+      "windows": 4918,
+      "logical_window_bytes": 604323840,
+      "actual_hdf5_bytes": 520369391,
+      "logical_window_gib": 0.563,
+      "actual_hdf5_gib": 0.485,
+      "compression_ratio": 0.8610770526610368
+    }
+  ]
+}

@@ -1,0 +1,479 @@
+{
+  "method": "REAL_BASELINE_RECONSTRUCTION_DEEP_COPY_MUTATION_SHARED_INVARIANT_VALIDATION_PRIMARY_REASON_ASSERTION",
+  "fixture_count": 39,
+  "passed_count": 39,
+  "failed_count": 0,
+  "baseline_clean_for_all": true,
+  "all_mutations_applied": true,
+  "results": [
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-01_MISSING_FINAL_MARKDOWN",
+      "mutation": "01_missing_final_markdown",
+      "expected_error_code": "FINAL_DOCUMENT_MISSING",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "FINAL_DOCUMENT_MISSING"
+      ],
+      "primary_error_code": "FINAL_DOCUMENT_MISSING",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-02_TRUNCATED_FINAL_DOCUMENT",
+      "mutation": "02_truncated_final_document",
+      "expected_error_code": "FINAL_DOCUMENT_TRUNCATED",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "FINAL_DOCUMENT_TRUNCATED"
+      ],
+      "primary_error_code": "FINAL_DOCUMENT_TRUNCATED",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-03_DISTRIBUTION_HASH_MISMATCH",
+      "mutation": "03_distribution_hash_mismatch",
+      "expected_error_code": "DISTRIBUTION_CANONICAL_HASH_MISMATCH",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "DISTRIBUTION_CANONICAL_HASH_MISMATCH"
+      ],
+      "primary_error_code": "DISTRIBUTION_CANONICAL_HASH_MISMATCH",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-04_HISTORICAL_MARKED_CURRENT",
+      "mutation": "04_historical_marked_current",
+      "expected_error_code": "HISTORICAL_DOCUMENT_MARKED_CURRENT",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "HISTORICAL_DOCUMENT_MARKED_CURRENT"
+      ],
+      "primary_error_code": "HISTORICAL_DOCUMENT_MARKED_CURRENT",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-05_CONFLICTING_SUCCESSORS",
+      "mutation": "05_conflicting_successors",
+      "expected_error_code": "CONFLICTING_CURRENT_SUCCESSORS",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "CONFLICTING_CURRENT_SUCCESSORS"
+      ],
+      "primary_error_code": "CONFLICTING_CURRENT_SUCCESSORS",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-06_MISSING_SCHEMA_CONFIG_TEST",
+      "mutation": "06_missing_schema_config_test",
+      "expected_error_code": "REQUIRED_IMPLEMENTATION_FILE_MISSING",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "REQUIRED_IMPLEMENTATION_FILE_MISSING"
+      ],
+      "primary_error_code": "REQUIRED_IMPLEMENTATION_FILE_MISSING",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-07_FALSE_TEST_COUNT",
+      "mutation": "07_false_test_count",
+      "expected_error_code": "FALSE_PASSING_TEST_COUNT",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "FALSE_PASSING_TEST_COUNT"
+      ],
+      "primary_error_code": "FALSE_PASSING_TEST_COUNT",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-08_INVALID_FIXTURE_ACCEPTED",
+      "mutation": "08_invalid_fixture_accepted",
+      "expected_error_code": "MALFORMED_FIXTURE_FALSE_ACCEPT",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "MALFORMED_FIXTURE_FALSE_ACCEPT"
+      ],
+      "primary_error_code": "MALFORMED_FIXTURE_FALSE_ACCEPT",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-09_VALID_FIXTURE_REJECTED",
+      "mutation": "09_valid_fixture_rejected",
+      "expected_error_code": "VALID_FIXTURE_FALSE_REJECT",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "VALID_FIXTURE_FALSE_REJECT"
+      ],
+      "primary_error_code": "VALID_FIXTURE_FALSE_REJECT",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-10_A14_ARTIFACT",
+      "mutation": "10_a14_artifact",
+      "expected_error_code": "A14_ACTIVATION_VIOLATION",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "A14_ACTIVATION_VIOLATION"
+      ],
+      "primary_error_code": "A14_ACTIVATION_VIOLATION",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-11_PROTOCOL_TIMING_UPGRADE",
+      "mutation": "11_protocol_timing_upgrade",
+      "expected_error_code": "PROTOCOL_TIMING_UPGRADE_UNSUPPORTED",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "PROTOCOL_TIMING_UPGRADE_UNSUPPORTED"
+      ],
+      "primary_error_code": "PROTOCOL_TIMING_UPGRADE_UNSUPPORTED",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-12_STALE_EXECUTION_RELEASE",
+      "mutation": "12_stale_execution_release",
+      "expected_error_code": "STALE_EXECUTION_RELEASE_IN_ANALYSIS",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "STALE_EXECUTION_RELEASE_IN_ANALYSIS"
+      ],
+      "primary_error_code": "STALE_EXECUTION_RELEASE_IN_ANALYSIS",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-13_ANALYSIS_COUNT_CHANGED_LAYER0",
+      "mutation": "13_analysis_count_changed_layer0",
+      "expected_error_code": "LAYER0_NONINTERFERENCE_VIOLATION",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "LAYER0_NONINTERFERENCE_VIOLATION"
+      ],
+      "primary_error_code": "LAYER0_NONINTERFERENCE_VIOLATION",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-14_STALE_CLAIM_VERSION",
+      "mutation": "14_stale_claim_version",
+      "expected_error_code": "EVIDENCE_MAP_STALE_CLAIM_VERSION",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "EVIDENCE_MAP_STALE_CLAIM_VERSION"
+      ],
+      "primary_error_code": "EVIDENCE_MAP_STALE_CLAIM_VERSION",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-15_BLOCKED_CLAIM_LAYER10",
+      "mutation": "15_blocked_claim_layer10",
+      "expected_error_code": "LAYER10_BLOCKED_CLAIM_PRESENTED",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "LAYER10_BLOCKED_CLAIM_PRESENTED"
+      ],
+      "primary_error_code": "LAYER10_BLOCKED_CLAIM_PRESENTED",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-16_LAYER10_VALUE_DRIFT",
+      "mutation": "16_layer10_value_drift",
+      "expected_error_code": "LAYER10_SOURCE_VALUE_DRIFT",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "LAYER10_SOURCE_VALUE_DRIFT"
+      ],
+      "primary_error_code": "LAYER10_SOURCE_VALUE_DRIFT",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-17_MISSING_CARD_LIMITATION",
+      "mutation": "17_missing_card_limitation",
+      "expected_error_code": "LAYER10_WARNING_OR_LIMITATION_MISSING",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "LAYER10_WARNING_OR_LIMITATION_MISSING"
+      ],
+      "primary_error_code": "LAYER10_WARNING_OR_LIMITATION_MISSING",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-18_FALSE_PUBLICATION_COMPLETE",
+      "mutation": "18_false_publication_complete",
+      "expected_error_code": "PUBLICATION_FALSELY_MARKED_COMPLETE",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "PUBLICATION_FALSELY_MARKED_COMPLETE"
+      ],
+      "primary_error_code": "PUBLICATION_FALSELY_MARKED_COMPLETE",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-19_GATE18_FALSE_PASS",
+      "mutation": "19_gate18_false_pass",
+      "expected_error_code": "P0_GATE18_FALSE_PASS",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "P0_GATE18_FALSE_PASS"
+      ],
+      "primary_error_code": "P0_GATE18_FALSE_PASS",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-20_PHASE0_CLOSED_GATE_BLOCKED",
+      "mutation": "20_phase0_closed_gate_blocked",
+      "expected_error_code": "PHASE0_CLOSED_WITH_GATE_BLOCKED",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "PHASE0_CLOSED_WITH_GATE_BLOCKED"
+      ],
+      "primary_error_code": "PHASE0_CLOSED_WITH_GATE_BLOCKED",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-21_PHASE1_AUTHORIZED_PHASE0_OPEN",
+      "mutation": "21_phase1_authorized_phase0_open",
+      "expected_error_code": "PHASE1_AUTHORIZED_WHILE_PHASE0_OPEN",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "PHASE1_AUTHORIZED_WHILE_PHASE0_OPEN"
+      ],
+      "primary_error_code": "PHASE1_AUTHORIZED_WHILE_PHASE0_OPEN",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-22_MANIFEST_OMITS_CURRENT",
+      "mutation": "22_manifest_omits_current",
+      "expected_error_code": "MANIFEST_CURRENT_ARTIFACT_OMITTED",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "MANIFEST_CURRENT_ARTIFACT_OMITTED"
+      ],
+      "primary_error_code": "MANIFEST_CURRENT_ARTIFACT_OMITTED",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-23_UNTRACKED_CURRENT_FILE",
+      "mutation": "23_untracked_current_file",
+      "expected_error_code": "UNTRACKED_CURRENT_FILE",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "UNTRACKED_CURRENT_FILE"
+      ],
+      "primary_error_code": "UNTRACKED_CURRENT_FILE",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-24_BROKEN_SOURCE_HASH",
+      "mutation": "24_broken_source_hash",
+      "expected_error_code": "SOURCE_HASH_BROKEN",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "SOURCE_HASH_BROKEN"
+      ],
+      "primary_error_code": "SOURCE_HASH_BROKEN",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-25_ABSOLUTE_LOCAL_PATH",
+      "mutation": "25_absolute_local_path",
+      "expected_error_code": "ABSOLUTE_PATH_BREAKS_REPRODUCTION",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "ABSOLUTE_PATH_BREAKS_REPRODUCTION"
+      ],
+      "primary_error_code": "ABSOLUTE_PATH_BREAKS_REPRODUCTION",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-26_CACHE_SECRET_TRANSIENT",
+      "mutation": "26_cache_secret_transient",
+      "expected_error_code": "FORBIDDEN_TRANSIENT_OR_SECRET_IN_PACKAGE",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "FORBIDDEN_TRANSIENT_OR_SECRET_IN_PACKAGE"
+      ],
+      "primary_error_code": "FORBIDDEN_TRANSIENT_OR_SECRET_IN_PACKAGE",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-27_OMITTED_PHASE0_RESPONSIBILITY",
+      "mutation": "27_omitted_phase0_responsibility",
+      "expected_error_code": "PHASE0_RESPONSIBILITY_OMITTED",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "PHASE0_RESPONSIBILITY_OMITTED"
+      ],
+      "primary_error_code": "PHASE0_RESPONSIBILITY_OMITTED",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-28_LAYER_ROLE_UNDISPOSITIONED",
+      "mutation": "28_layer_role_undispositioned",
+      "expected_error_code": "LAYER_PHASE0_ROLE_UNDISPOSITIONED",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "LAYER_PHASE0_ROLE_UNDISPOSITIONED"
+      ],
+      "primary_error_code": "LAYER_PHASE0_ROLE_UNDISPOSITIONED",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-29_EXPECTED_OUTPUT_MISSING_REGISTER",
+      "mutation": "29_expected_output_missing_register",
+      "expected_error_code": "EXPECTED_OUTPUT_NOT_DERIVED_FROM_AUTHORITIES",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "EXPECTED_OUTPUT_NOT_DERIVED_FROM_AUTHORITIES"
+      ],
+      "primary_error_code": "EXPECTED_OUTPUT_NOT_DERIVED_FROM_AUTHORITIES",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-30_OUTPUT_WITHOUT_VALIDATOR_HASH",
+      "mutation": "30_output_without_validator_hash",
+      "expected_error_code": "EXPECTED_OUTPUT_MISSING_VALIDATOR",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "EXPECTED_OUTPUT_MISSING_VALIDATOR"
+      ],
+      "primary_error_code": "EXPECTED_OUTPUT_MISSING_VALIDATOR",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-31_ABLATION_ROW_MISSING",
+      "mutation": "31_ablation_row_missing",
+      "expected_error_code": "ABLATION_READINESS_ROW_MISSING",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "ABLATION_READINESS_ROW_MISSING"
+      ],
+      "primary_error_code": "ABLATION_READINESS_ROW_MISSING",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-32_ABLATION_IDENTITY_COLLAPSED",
+      "mutation": "32_ablation_identity_collapsed",
+      "expected_error_code": "ABLATION_IDENTITY_COLLAPSED",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "ABLATION_IDENTITY_COLLAPSED"
+      ],
+      "primary_error_code": "ABLATION_IDENTITY_COLLAPSED",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-33_ABLATION_FALSE_EXECUTED",
+      "mutation": "33_ablation_false_executed",
+      "expected_error_code": "ABLATION_FALSELY_MARKED_EXECUTED",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "ABLATION_FALSELY_MARKED_EXECUTED"
+      ],
+      "primary_error_code": "ABLATION_FALSELY_MARKED_EXECUTED",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-34_ABLATION_UNLOCK_CONDITIONS_MISSING",
+      "mutation": "34_ablation_unlock_conditions_missing",
+      "expected_error_code": "ABLATION_REMAINING_CONDITIONS_OMITTED",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "ABLATION_REMAINING_CONDITIONS_OMITTED"
+      ],
+      "primary_error_code": "ABLATION_REMAINING_CONDITIONS_OMITTED",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-35_UNLOCKED_ABLATION_OMITTED_ANALYSIS",
+      "mutation": "35_unlocked_ablation_omitted_analysis",
+      "expected_error_code": "ABLATION_PHASE_ANALYSIS_EXPLANATION_MISSING",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "ABLATION_PHASE_ANALYSIS_EXPLANATION_MISSING"
+      ],
+      "primary_error_code": "ABLATION_PHASE_ANALYSIS_EXPLANATION_MISSING",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-36_FABRICATED_ABLATION_RESULTS",
+      "mutation": "36_fabricated_ablation_results",
+      "expected_error_code": "NONEXECUTED_ABLATION_RESULT_FABRICATED",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "NONEXECUTED_ABLATION_RESULT_FABRICATED"
+      ],
+      "primary_error_code": "NONEXECUTED_ABLATION_RESULT_FABRICATED",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-37_A14_ANY_SURFACE",
+      "mutation": "37_a14_any_surface",
+      "expected_error_code": "A14_ACTIVATION_VIOLATION",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "A14_ACTIVATION_VIOLATION"
+      ],
+      "primary_error_code": "A14_ACTIVATION_VIOLATION",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-38_ANALYSIS_OUTPUT_LAYER_COVERAGE_MISSING",
+      "mutation": "38_analysis_output_layer_coverage_missing",
+      "expected_error_code": "PHASE_ANALYSIS_EXPECTED_OUTPUT_COVERAGE_INCOMPLETE",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "PHASE_ANALYSIS_EXPECTED_OUTPUT_COVERAGE_INCOMPLETE"
+      ],
+      "primary_error_code": "PHASE_ANALYSIS_EXPECTED_OUTPUT_COVERAGE_INCOMPLETE",
+      "pass": true
+    },
+    {
+      "fixture_id": "P00-FINAL-DOUBLE-CHECK-39_PHASE1_WITH_INCOMPLETE_OUTPUTS",
+      "mutation": "39_phase1_with_incomplete_outputs",
+      "expected_error_code": "PHASE1_AUTHORIZED_WITH_INCOMPLETE_P00_OUTPUTS",
+      "baseline_clean": true,
+      "mutation_applied": true,
+      "detected_error_codes": [
+        "PHASE1_AUTHORIZED_WITH_INCOMPLETE_P00_OUTPUTS"
+      ],
+      "primary_error_code": "PHASE1_AUTHORIZED_WITH_INCOMPLETE_P00_OUTPUTS",
+      "pass": true
+    }
+  ],
+  "status": "PASS"
+}

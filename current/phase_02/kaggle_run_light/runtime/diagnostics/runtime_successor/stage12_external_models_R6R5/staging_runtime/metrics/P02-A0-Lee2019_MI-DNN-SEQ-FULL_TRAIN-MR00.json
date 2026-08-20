@@ -1,0 +1,180 @@
+{
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "run_cell_id": "P02-A0-Lee2019_MI-DNN-SEQ-FULL_TRAIN-MR00",
+  "dataset_id": "Lee2019_MI",
+  "branch_id": "DNN-SEQ",
+  "resolved_variant": "DBConformer-OriginalAuthor-P01CompatibilityPatched",
+  "budget_id": "FULL_TRAIN",
+  "metrics": {
+    "BACC": 0.8116666666666666,
+    "F1_MACRO": 0.8110236220472441,
+    "ACC": 0.8116666666666666,
+    "CONFUSION": [
+      [
+        226,
+        74
+      ],
+      [
+        39,
+        261
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      300,
+      300
+    ],
+    "PRED_COMPLETE": 600,
+    "ROC_AUC": 0.8887999999999999,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+  },
+  "validation_selection": {
+    "ACC": 0.748,
+    "BACC": 0.748,
+    "CLASS_SUPPORT": [
+      250,
+      250
+    ],
+    "CONFUSION": [
+      [
+        210,
+        40
+      ],
+      [
+        86,
+        164
+      ]
+    ],
+    "F1_MACRO": 0.7458488647915961,
+    "PRED_COMPLETE": 500,
+    "ROC_AUC": 0.7987200000000001,
+    "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY",
+    "ROC_AUC_STATUS": "PASS"
+  },
+  "validation_burden_seconds": 181.959810256958,
+  "model_storage_bytes": 386988,
+  "selected_candidate_id": "R6-DBCONFORMER-AUTHOR-CENTERED-R1",
+  "selected_params": {
+    "recipe_id": "R6-DBCONFORMER-AUTHOR-CENTERED-R1",
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "batch_size": 32,
+    "scheduler": "constant",
+    "label_smoothing": 0.0,
+    "grad_clip": null,
+    "max_epochs": 150,
+    "patience": 40,
+    "selection": "validation_BACC",
+    "restore_best": true,
+    "branch": "DNN-SEQ",
+    "dataset_id": "Lee2019_MI",
+    "budget_id": "FULL_TRAIN"
+  },
+  "candidate_failures": [],
+  "observed_denominator": 600,
+  "expected_denominator": 600,
+  "score_type": "SOFTMAX_PROBABILITY",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.0037818599994352553,
+    "batch1_latency_p95_s": 0.003925595198961673,
+    "repeats": 5,
+    "latency_probe_mode": "FORWARD_ONLY_NO_METRICS"
+  },
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "class_weights": null,
+  "class_weight_calibration": {
+    "selected_policy": "UNIFORM_NO_WEIGHT",
+    "selected_weights": null,
+    "validation_metrics": {
+      "BACC": 0.748,
+      "F1_MACRO": 0.7458488647915961,
+      "ACC": 0.748,
+      "CONFUSION": [
+        [
+          210,
+          40
+        ],
+        [
+          86,
+          164
+        ]
+      ],
+      "CLASS_SUPPORT": [
+        250,
+        250
+      ],
+      "PRED_COMPLETE": 500,
+      "ROC_AUC": 0.7987200000000001,
+      "ROC_AUC_STATUS": "PASS",
+      "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+    },
+    "candidate_results": [
+      {
+        "status": "SUCCESS",
+        "policy": "UNIFORM_NO_WEIGHT",
+        "weights": null,
+        "validation_metrics": {
+          "BACC": 0.748,
+          "F1_MACRO": 0.7458488647915961,
+          "ACC": 0.748,
+          "CONFUSION": [
+            [
+              210,
+              40
+            ],
+            [
+              86,
+              164
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            250,
+            250
+          ],
+          "PRED_COMPLETE": 500,
+          "ROC_AUC": 0.7987200000000001,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+        },
+        "validation_burden_seconds": 181.959810256958,
+        "model_storage_bytes": 386988,
+        "best_epoch": 59,
+        "epochs_completed": 99,
+        "history_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/staging_runtime/raw_outputs/stage12_r6_training_history/P02-A0-Lee2019_MI-DNN-SEQ-FULL_TRAIN-MR00__UNIFORM_NO_WEIGHT.json",
+        "candidate_checkpoint_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/staging_runtime/raw_outputs/stage12_r6_training_history/P02-A0-Lee2019_MI-DNN-SEQ-FULL_TRAIN-MR00__UNIFORM_NO_WEIGHT.candidate.chk",
+        "candidate_checkpoint_sha256": "9ea4f57b76824d809c3ba9fb693cf78caaad28bd051342e9764cb94250baeaa6"
+      }
+    ],
+    "test_set_used": false
+  },
+  "r6_scientific_amendment": true,
+  "r6_max_epochs": 150,
+  "r6_patience": 40,
+  "horizon_sufficiency": {
+    "best_by_cutoff": {
+      "100": {
+        "BACC": 0.748,
+        "epoch": 59
+      },
+      "150": {
+        "BACC": 0.748,
+        "epoch": 59
+      },
+      "50": {
+        "BACC": 0.746,
+        "epoch": 35
+      }
+    },
+    "epochs_completed": 99,
+    "final_best_BACC": 0.748,
+    "final_best_epoch": 59,
+    "gain_after_100": 0.0,
+    "gain_after_150": 0.0,
+    "max_epochs": 150,
+    "patience": 40,
+    "status": "PASS"
+  },
+  "test_loaded_after_group_selection_sealed": true,
+  "test_set_used_for_selection": false
+}

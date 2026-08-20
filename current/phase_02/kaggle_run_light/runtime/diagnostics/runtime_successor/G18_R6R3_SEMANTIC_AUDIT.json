@@ -1,0 +1,91 @@
+{
+  "artifact_id": "P02-STAGE18-R10-A4-ANCHOR-BUDGET-SINGLE-REPEAT-R1",
+  "status": "PASS",
+  "runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R10-STAGE18-A4-ANCHOR-BUDGET-SINGLE-REPEAT-R1",
+  "policy_sha256": "a21655f9b52cfbf817b1b271f758739cf01b1e7a75e786c880ccdd1a3c58ef32",
+  "protocol_deviation_from_buildbook": true,
+  "protocol_deviation_id": "P02-STAGE18-RESOURCE-CONSTRAINED-ANCHOR-BUDGET-SINGLE-REPEAT-R1",
+  "full_buildbook_replication_equivalence": false,
+  "ablation_conditions_removed": false,
+  "planned_a4_cells": 1218,
+  "declared_reduced_run_cells": 576,
+  "repeat_reduced_run_cells": 504,
+  "deep_budget_reduced_run_cells": 72,
+  "executable_refit_run_cells": 180,
+  "executable_deep_refit_run_cells": 54,
+  "deep_anchor_budget_ids": [
+    "P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS",
+    "P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS",
+    "FULL_TRAIN"
+  ],
+  "original_unique_deep_member_fits_estimate": 840,
+  "reduced_unique_deep_member_fits_estimate": 72,
+  "deep_member_receipts": 72,
+  "completed_A0_artifacts_mutated": false,
+  "new_hyperparameter_grid": false,
+  "per_fit_training_recipe_changed": false,
+  "test_outcome_influence": "PROHIBITED",
+  "multi_seed_stability_claim_authorized": false,
+  "dense_deep_budget_curve_claim_authorized": false,
+  "anchor_budget_deep_claim_authorized": true,
+  "cbramod_a4_long_rule": "INPUT_INCOMPATIBLE_FAIL_CLOSED_NO_PAD_NO_CROP",
+  "deviation_receipt": "analysis_inputs/stage18_resource_constrained_anchor_budget_deviation.json",
+  "issues": [],
+  "execution_transport_revision": "R10.5_TWO_SLOTS_PER_GPU",
+  "dual_gpu_available": true,
+  "gpu_names": [
+    "Tesla T4",
+    "Tesla T4"
+  ],
+  "single_model_multi_gpu": false,
+  "gpu0_completed_ablation_cells": 2,
+  "gpu1_completed_ablation_cells": 48,
+  "gpu1_transport_used": true,
+  "dual_gpu_fallback_is_non_scientific": true,
+  "compatible_partial_terminals_resumed": 44,
+  "external_first_checkpoint_route": true,
+  "checkpoint_route_probe": {
+    "status": "PASS",
+    "reason": null,
+    "checkpoint_sha256": "7ccbbe6a323f1780830d62db5e802f5ed7ebda60cd82224395f8cfca56578a62",
+    "checkpoint_bytes": 37,
+    "path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage18_r10_3_checkpoint_route_probe/dummy.external.external.chk",
+    "checkpoint_format": "EXTERNAL_GOVERNED_INTERFACE"
+  },
+  "checkpoint_reference_updates": [
+    "iharq.layer2_decoders.a4.save_roundtrip",
+    "iharq.layer2_decoders.scientific.save_roundtrip"
+  ],
+  "failed_attempt_files_archived_before_retry": 14,
+  "scientific_policy_sha256_unchanged": "a21655f9b52cfbf817b1b271f758739cf01b1e7a75e786c880ccdd1a3c58ef32",
+  "slots_per_gpu": 2,
+  "worker_topology": [
+    {
+      "gpu_id": 0,
+      "slot_id": 0
+    },
+    {
+      "gpu_id": 1,
+      "slot_id": 0
+    },
+    {
+      "gpu_id": 0,
+      "slot_id": 1
+    },
+    {
+      "gpu_id": 1,
+      "slot_id": 1
+    }
+  ],
+  "same_cache_group_multi_worker": false,
+  "virtualized_per_fit_cuda_rng": true,
+  "canonical_low_cal_budget_parser_restored": true,
+  "retried_prior_run_cell_terminals": 30,
+  "retried_prior_deep_member_receipts": 27,
+  "completed_transport_by_gpu_slot": {
+    "gpu0_slot0": 11,
+    "gpu0_slot1": 11,
+    "gpu1_slot0": 4,
+    "gpu1_slot1": 4
+  }
+}

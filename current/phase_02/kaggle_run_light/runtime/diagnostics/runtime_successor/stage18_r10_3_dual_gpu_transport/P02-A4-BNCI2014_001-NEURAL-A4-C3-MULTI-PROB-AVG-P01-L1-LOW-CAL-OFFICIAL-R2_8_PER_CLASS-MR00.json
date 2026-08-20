@@ -1,0 +1,20 @@
+{
+  "artifact_id": "P02-STAGE18-R10-3-DUAL-GPU-TRANSPORT-R1",
+  "planned_run_cell_id": "P02-A4-BNCI2014_001-NEURAL-A4-C3-MULTI-PROB-AVG-P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS-MR00",
+  "gpu_id": 1,
+  "gpu_name": "Tesla T4",
+  "mode": "GPU1_PERSISTENT_REVERSE_GROUP_WORKER_R10_4_1",
+  "phase": "COMPLETED",
+  "single_model_multi_gpu": false,
+  "same_run_cell_on_multiple_gpus": false,
+  "scientific_configuration_changed": false,
+  "policy_sha256": "a21655f9b52cfbf817b1b271f758739cf01b1e7a75e786c880ccdd1a3c58ef32",
+  "scheduler_revision": "R10.4.1_CONTEXT_FIXED",
+  "cache_group": [
+    "BNCI2014_001",
+    "P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS",
+    "NEURAL",
+    0
+  ],
+  "terminal_status": "FAILED"
+}

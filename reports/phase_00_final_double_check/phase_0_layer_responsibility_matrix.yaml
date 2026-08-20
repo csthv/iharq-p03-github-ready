@@ -1,0 +1,344 @@
+matrix_id: P00-L0-L10-RESPONSIBILITY-R2
+rows:
+- layer_id: L0
+  official_name: Claim Safety and Scope Governance
+  phase0_role: Foundation schemas, interfaces, configs, fixtures, validators, lifecycle
+    and future-activation readiness only
+  required_foundation_capabilities: &id001
+  - NegativeResultNote
+  - DiagnosticStatusRecord
+  - ClaimEvidenceMatrix
+  - Layer0DispositionRecord
+  - ClaimStatementRecord
+  required_records_or_artifacts: *id001
+  required_interfaces:
+  - src/iharq/layer0_claim_governance
+  required_configs:
+  - configs/layers/phase0_foundations.yaml
+  required_validators_and_tests:
+  - G-L0
+  - pytest regression
+  expected_phase0_outputs:
+  - foundation package
+  - schema profiles
+  - fail-closed validators
+  - future-phase handoff
+  downstream_phases:
+  - P01
+  completion_evidence:
+  - src/iharq/layer0_claim_governance
+  - catalogs/final_all_layer_artifact_matrix.yaml
+  scientific_execution: false
+  status: PASS
+- layer_id: L1
+  official_name: Data and Split Protocol
+  phase0_role: Foundation schemas, interfaces, configs, fixtures, validators, lifecycle
+    and future-activation readiness only
+  required_foundation_capabilities: &id002
+  - DatasetRecord
+  - SubjectRecord
+  - SessionRecord
+  - TrialRecord
+  - WindowRecord
+  - SplitRecord
+  - PreprocessingRecord
+  - LabelMapRecord
+  - ArtifactFlagRecord
+  - ValidationReport
+  - Layer1Manifest
+  required_records_or_artifacts: *id002
+  required_interfaces:
+  - src/iharq/layer1_data_protocol
+  required_configs:
+  - configs/layers/phase0_foundations.yaml
+  required_validators_and_tests:
+  - G-L1
+  - pytest regression
+  expected_phase0_outputs:
+  - foundation package
+  - schema profiles
+  - fail-closed validators
+  - future-phase handoff
+  downstream_phases:
+  - P01
+  completion_evidence:
+  - src/iharq/layer1_data_protocol
+  - catalogs/final_all_layer_artifact_matrix.yaml
+  scientific_execution: false
+  status: PASS
+- layer_id: L2
+  official_name: Decoder and Baseline Models
+  phase0_role: Foundation schemas, interfaces, configs, fixtures, validators, lifecycle
+    and future-activation readiness only
+  required_foundation_capabilities: &id003
+  - ModelRegistryRecord
+  - CheckpointRecord
+  - PredictionRecord
+  - BaselineMetricRecord
+  - EnsembleControlRecord
+  - DecoderProfileRecord
+  - FailureCaseIndex
+  - Layer2ReadinessReport
+  required_records_or_artifacts: *id003
+  required_interfaces:
+  - src/iharq/layer2_decoders
+  required_configs:
+  - configs/layers/phase0_foundations.yaml
+  required_validators_and_tests:
+  - G-L2
+  - pytest regression
+  expected_phase0_outputs:
+  - foundation package
+  - schema profiles
+  - fail-closed validators
+  - future-phase handoff
+  downstream_phases:
+  - P02
+  completion_evidence:
+  - src/iharq/layer2_decoders
+  - catalogs/final_all_layer_artifact_matrix.yaml
+  scientific_execution: false
+  status: PASS
+- layer_id: L3
+  official_name: Calibration, Uncertainty, and Selective Prediction
+  phase0_role: Foundation schemas, interfaces, configs, fixtures, validators, lifecycle
+    and future-activation readiness only
+  required_foundation_capabilities: &id004
+  - CalibrationRecord
+  - UncertaintyRecord
+  - SelectivePredictionRecord
+  - ThresholdRegistryRecord
+  - ReliabilityAuditReport
+  - SplitIntegrityReport
+  - LeakageWarningRecord
+  - CalibrationEligibilityTable
+  - HighConfidenceWrongTable
+  - CalibrationDashboardMetricRecord
+  - Layer3MatchedOperatingPointTable
+  required_records_or_artifacts: *id004
+  required_interfaces:
+  - src/iharq/layer3_calibration_uncertainty
+  required_configs:
+  - configs/layers/phase0_foundations.yaml
+  required_validators_and_tests:
+  - G-L3
+  - pytest regression
+  expected_phase0_outputs:
+  - foundation package
+  - schema profiles
+  - fail-closed validators
+  - future-phase handoff
+  downstream_phases:
+  - P03
+  completion_evidence:
+  - src/iharq/layer3_calibration_uncertainty
+  - catalogs/final_all_layer_artifact_matrix.yaml
+  scientific_execution: false
+  status: PASS
+- layer_id: L4
+  official_name: IHARQ Evidence Verification
+  phase0_role: Foundation schemas, interfaces, configs, fixtures, validators, lifecycle
+    and future-activation readiness only
+  required_foundation_capabilities: &id005
+  - EvidenceRequestRecord
+  - EvidenceQualityRecord
+  - IHARQDecisionRecord
+  required_records_or_artifacts: *id005
+  required_interfaces:
+  - src/iharq/layer4_iharq
+  required_configs:
+  - configs/layers/phase0_foundations.yaml
+  required_validators_and_tests:
+  - G-L4
+  - pytest regression
+  expected_phase0_outputs:
+  - foundation package
+  - schema profiles
+  - fail-closed validators
+  - future-phase handoff
+  downstream_phases:
+  - P04
+  completion_evidence:
+  - src/iharq/layer4_iharq
+  - catalogs/final_all_layer_artifact_matrix.yaml
+  scientific_execution: false
+  status: PASS
+- layer_id: L5
+  official_name: RegimeRisk Temporal Trust
+  phase0_role: Foundation schemas, interfaces, configs, fixtures, validators, lifecycle
+    and future-activation readiness only
+  required_foundation_capabilities: &id006
+  - RegimeStateRecord
+  - TemporalTrustRecord
+  - WarningRecord
+  required_records_or_artifacts: *id006
+  required_interfaces:
+  - src/iharq/layer5_regimerisk
+  required_configs:
+  - configs/layers/phase0_foundations.yaml
+  required_validators_and_tests:
+  - G-L5
+  - pytest regression
+  expected_phase0_outputs:
+  - foundation package
+  - schema profiles
+  - fail-closed validators
+  - future-phase handoff
+  downstream_phases:
+  - P05
+  completion_evidence:
+  - src/iharq/layer5_regimerisk
+  - catalogs/final_all_layer_artifact_matrix.yaml
+  scientific_execution: false
+  status: PASS
+- layer_id: L6
+  official_name: Adaptive Readiness and Policy
+  phase0_role: Foundation schemas, interfaces, configs, fixtures, validators, lifecycle
+    and future-activation readiness only
+  required_foundation_capabilities: &id007
+  - ReadinessContextRecord
+  - DeferralRecord
+  - PolicyActionRecord
+  - PolicyRecord
+  required_records_or_artifacts: *id007
+  required_interfaces:
+  - src/iharq/layer6_readiness_policy
+  required_configs:
+  - configs/layers/phase0_foundations.yaml
+  required_validators_and_tests:
+  - G-L6
+  - pytest regression
+  expected_phase0_outputs:
+  - foundation package
+  - schema profiles
+  - fail-closed validators
+  - future-phase handoff
+  downstream_phases:
+  - P06
+  completion_evidence:
+  - src/iharq/layer6_readiness_policy
+  - catalogs/final_all_layer_artifact_matrix.yaml
+  scientific_execution: false
+  status: PASS
+- layer_id: L7
+  official_name: Closed-Loop Learning and Control
+  phase0_role: Foundation schemas, interfaces, configs, fixtures, validators, lifecycle
+    and future-activation readiness only
+  required_foundation_capabilities: &id008
+  - PolicyUpdateTrace
+  - StateRecord
+  - TransitionRecord
+  - EpisodeRecord
+  - RolloutRecord
+  required_records_or_artifacts: *id008
+  required_interfaces:
+  - src/iharq/layer7_closed_loop
+  required_configs:
+  - configs/layers/phase0_foundations.yaml
+  required_validators_and_tests:
+  - G-L7
+  - pytest regression
+  expected_phase0_outputs:
+  - foundation package
+  - schema profiles
+  - fail-closed validators
+  - future-phase handoff
+  downstream_phases:
+  - P07
+  completion_evidence:
+  - src/iharq/layer7_closed_loop
+  - catalogs/final_all_layer_artifact_matrix.yaml
+  scientific_execution: false
+  status: PASS
+- layer_id: L8
+  official_name: StressForge Controlled Stress
+  phase0_role: Foundation schemas, interfaces, configs, fixtures, validators, lifecycle
+    and future-activation readiness only
+  required_foundation_capabilities: &id009
+  - StressProfileRecord
+  - StressApplicationRecord
+  - MatchedStressPairRecord
+  required_records_or_artifacts: *id009
+  required_interfaces:
+  - src/iharq/layer8_stressforge
+  required_configs:
+  - configs/layers/phase0_foundations.yaml
+  required_validators_and_tests:
+  - G-L8
+  - pytest regression
+  expected_phase0_outputs:
+  - foundation package
+  - schema profiles
+  - fail-closed validators
+  - future-phase handoff
+  downstream_phases:
+  - P08
+  completion_evidence:
+  - src/iharq/layer8_stressforge
+  - catalogs/final_all_layer_artifact_matrix.yaml
+  scientific_execution: false
+  status: PASS
+- layer_id: L9
+  official_name: Embodiment Proxy and Simulation
+  phase0_role: Foundation schemas, interfaces, configs, fixtures, validators, lifecycle
+    and future-activation readiness only
+  required_foundation_capabilities: &id010
+  - EmbodimentStateRecord
+  - EmbodimentOutcomeRecord
+  - SafetyEventRecord
+  - Layer9RewardTrace
+  - Layer9EmbodimentDemoManifest
+  required_records_or_artifacts: *id010
+  required_interfaces:
+  - src/iharq/layer9_embodiment
+  required_configs:
+  - configs/layers/phase0_foundations.yaml
+  required_validators_and_tests:
+  - G-L9
+  - pytest regression
+  expected_phase0_outputs:
+  - foundation package
+  - schema profiles
+  - fail-closed validators
+  - future-phase handoff
+  downstream_phases:
+  - P09
+  completion_evidence:
+  - src/iharq/layer9_embodiment
+  - catalogs/final_all_layer_artifact_matrix.yaml
+  scientific_execution: false
+  status: PASS
+- layer_id: L10
+  official_name: Reproducibility, Evidence Presentation, and Read-Only Views
+  phase0_role: Foundation schemas, interfaces, configs, fixtures, validators, lifecycle
+    and future-activation readiness only
+  required_foundation_capabilities: &id011
+  - MetricDictionaryEntry
+  - MetricDictionary
+  - DashboardMetricRecord
+  - ViewDefinition
+  - CardDefinition
+  - MatchedComparisonReport
+  - ClaimEvidenceManifest
+  - ReproductionManifest
+  - PhaseHandoffRecord
+  required_records_or_artifacts: *id011
+  required_interfaces:
+  - src/iharq/layer10_reproducibility
+  required_configs:
+  - configs/layers/phase0_foundations.yaml
+  required_validators_and_tests:
+  - G-L10
+  - pytest regression
+  expected_phase0_outputs:
+  - foundation package
+  - schema profiles
+  - fail-closed validators
+  - future-phase handoff
+  downstream_phases:
+  - ALL_PHASE_CLOSURES
+  completion_evidence:
+  - src/iharq/layer10_reproducibility
+  - catalogs/final_all_layer_artifact_matrix.yaml
+  scientific_execution: false
+  status: PASS

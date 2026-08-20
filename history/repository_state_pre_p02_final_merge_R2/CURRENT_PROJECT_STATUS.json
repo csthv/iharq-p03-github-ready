@@ -1,0 +1,33 @@
+{
+  "a14": "ABSENT_PROHIBITED",
+  "a4_effectiveness_in_p01": false,
+  "clinical_deployment_effectiveness_in_p01": false,
+  "completed_phase_scopes": [
+    "P00",
+    "P01"
+  ],
+  "current_handoff": "artifacts/cumulative_state/IHARQ_P00_P01_to_P02_Clean_Input_Handoff_R1.yaml",
+  "documentary_blockers": 0,
+  "final_github_publication": "DEFERRED_UNTIL_WHOLE_PROJECT_COMPLETION",
+  "p00_current_role": "PRESERVED_ENGINEERING_FOUNDATION; HISTORICAL_V4_TRANSITION_STATUS_SUPERSEDED_BY_CURRENT_V6_1_WORKFLOW",
+  "p01_current_role": "FINALIZED_ACCEPTED_DATA_PROTOCOL_FOUNDATION_AND_P02_HANDOFF",
+  "p02_G24": "PASS",
+  "p02_entry_green_light": "YES",
+  "p02_execution_complete": true,
+  "p02_execution_condition": "FREEZE_P02_SPECIFIC_IMPLEMENTATION_PROTOCOL_ANALYSIS_AND_ENVIRONMENT_BEFORE_EXECUTION",
+  "p02_execution_started": false,
+  "p02_heavy_artifacts": {
+    "immutable_revision": "bc14961e14f2e48690e55df3577014275f9cbf30",
+    "pointer_manifest": "external_artifact_pointer_manifest.yaml",
+    "repo_id": "Csthv/p02-phase02-final-whole-working-20260814t052120z-b890ff92",
+    "storage": "HF_SOURCE_SNAPSHOT_EXTERNAL_POINTERS"
+  },
+  "p02_stage11": "CANONICAL_ACCEPTED_MAIN",
+  "p02_stage12": "CANONICAL_ACCEPTED_MAIN",
+  "p02_stage18": "CANONICAL_G18_PASS_UNCHANGED",
+  "p02_stage18S": "PASS_POST_HOC_SENSITIVITY_DESCRIPTIVE",
+  "p02_stage24_replay": "PASS",
+  "project_state_id": "IHARQ-CUMULATIVE-GITHUB-READY-THROUGH-P02-STAGE24-REPLAY-R1",
+  "scientific_blockers": 0,
+  "status": "P00_P01_MERGED_VALIDATED_READY_FOR_P02_ENTRY"
+}

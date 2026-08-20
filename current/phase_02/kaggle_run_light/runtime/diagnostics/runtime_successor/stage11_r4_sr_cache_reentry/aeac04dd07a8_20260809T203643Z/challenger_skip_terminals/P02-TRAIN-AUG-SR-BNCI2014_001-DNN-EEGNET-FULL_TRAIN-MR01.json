@@ -1,0 +1,13 @@
+{
+  "run_cell_id": "P02-TRAIN-AUG-SR-BNCI2014_001-DNN-EEGNET-FULL_TRAIN-MR01",
+  "ablation_id": "TRAINING_POLICY_DIAGNOSTIC",
+  "terminal_status": "CONDITIONAL_SKIP",
+  "reason": "S&R_PROBABILITY_SELECTION_NOT_AVAILABLE",
+  "selection_evidence": {
+    "status": "BLOCKED",
+    "reason": "TrainingPolicyAuthorityError:SEGREC_PROBABILITY_SELECTION_INSUFFICIENT",
+    "test_set_used": false
+  },
+  "comparison_reference": "P02-A0-BNCI2014_001-DNN-EEGNET-FULL_TRAIN-MR01",
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

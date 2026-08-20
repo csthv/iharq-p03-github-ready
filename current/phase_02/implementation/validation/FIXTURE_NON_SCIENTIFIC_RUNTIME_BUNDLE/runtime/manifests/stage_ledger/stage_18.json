@@ -1,0 +1,62 @@
+{
+  "stage_id": "18",
+  "status": "SUCCESS",
+  "attempt_id": "a0fbedfcdba7",
+  "inputs": {},
+  "input_hashes": {},
+  "outputs": {
+    "status": "PASS",
+    "slots": 8,
+    "terminal_counts": {
+      "SUCCESS": 8
+    },
+    "representative_groups": 1,
+    "c4_vs_strongest": "COMPLETE",
+    "c5_vs_strongest": "COMPLETE",
+    "closure": {
+      "status": "PASS",
+      "planned": 8,
+      "terminal_counts": {
+        "SUCCESS": 8
+      },
+      "participant_rows": 48,
+      "role_control_expected": 4,
+      "role_control_closure_rows": 4,
+      "role_control_incomplete": 0,
+      "c4_c5_expected": 2,
+      "c4_c5_closure_rows": 2,
+      "c4_c5_incomplete": 0,
+      "burden_rows": 8,
+      "burden_source_complete": true,
+      "phase_analysis_source_complete": true,
+      "layer10_recomputation_required": false
+    },
+    "artifact": "stage_artifacts/18_a4.json"
+  },
+  "output_hashes": {
+    "status": "727e9bd17b077ba162e13ba877135cc6fbc6b30f83da0b34b3e20233f1cc885f",
+    "slots": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
+    "terminal_counts": "c8c2bc69f8477da8cbdfc24bf30e4bedddba65a3d004aef206d56f446c8c01ea",
+    "representative_groups": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+    "c4_vs_strongest": "0ba9a455349c3f02ebe6f28595a29e30a4d03a954f412f2688924056e81a7067",
+    "c5_vs_strongest": "0ba9a455349c3f02ebe6f28595a29e30a4d03a954f412f2688924056e81a7067",
+    "closure": "1df39abdbd625f97489c65ccaa7069741bc7e7bc6474cad2eeee935e54e916e9",
+    "artifact": "3f7ab645f160ebe147c60664be252788f06aef6cd14655b901e7f3b5a567b579"
+  },
+  "dependencies": [
+    "17"
+  ],
+  "elapsed_seconds": 1.5812206268310547,
+  "log_path": "logs/stage_18_a0fbedfcdba7.log",
+  "heartbeat_write_errors": [],
+  "observability_status": "PASS",
+  "blockers": [],
+  "observations": [],
+  "revision_fingerprint": {
+    "notebook_revision": "R4",
+    "source_sha256": "AUTHORING_FIXTURE_SOURCE",
+    "config_sha256": "AUTHORING_FIXTURE_CONFIG",
+    "stage_plan_sha256": "AUTHORING_FIXTURE_STAGE_PLAN",
+    "scientific_freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5"
+  }
+}

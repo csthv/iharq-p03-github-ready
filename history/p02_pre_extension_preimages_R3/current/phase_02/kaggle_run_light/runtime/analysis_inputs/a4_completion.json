@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "planned": 1218,
+  "terminal_counts": {
+    "SUCCESS": 591,
+    "CONDITIONAL_SKIP": 576,
+    "INPUT_INCOMPATIBLE": 9,
+    "NOT_APPLICABLE_REPEAT_SLOT": 42
+  },
+  "participant_rows": 3546,
+  "role_control_expected": 756,
+  "role_control_closure_rows": 756,
+  "role_control_incomplete": 0,
+  "c4_c5_expected": 210,
+  "c4_c5_closure_rows": 210,
+  "c4_c5_incomplete": 0,
+  "burden_rows": 1218,
+  "burden_source_complete": true,
+  "phase_analysis_source_complete": true,
+  "layer10_recomputation_required": false,
+  "protocol_deviation_from_buildbook": true,
+  "protocol_deviation_id": "P02-STAGE18-RESOURCE-CONSTRAINED-ANCHOR-BUDGET-SINGLE-REPEAT-R1",
+  "full_buildbook_replication_equivalence": false,
+  "resource_constrained_single_repeat": true,
+  "deep_budget_grid_reduced": true,
+  "deep_anchor_budget_ids": [
+    "P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS",
+    "P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS",
+    "FULL_TRAIN"
+  ],
+  "multi_seed_stability_claim_authorized": false,
+  "dense_deep_budget_curve_claim_authorized": false,
+  "anchor_budget_deep_claim_authorized": true,
+  "declared_reduced_run_cells": 576,
+  "protocol_deviation_source": "analysis_inputs/stage18_resource_constrained_anchor_budget_deviation.json"
+}

@@ -1,0 +1,251 @@
+notebook_id: IHARQ-P02-COMPLETE-EXECUTION-AND-ANALYSIS-R4
+filename: IHARQ_Phase_02_Complete_Execution_and_Analysis_R4.ipynb
+notebook_count: 1
+alternative_modes: PROHIBITED
+stages:
+- stage: '00'
+  purpose: Identity, authorities, cumulative project-state intake
+  modules: all governance
+  inputs: cumulative ZIP
+  outputs: authority intake + run identity
+  gate: G00
+- stage: '01'
+  purpose: Environment/dependency setup and measured resource inventory
+  modules: M01/M05/M07/M08
+  inputs: environment plan
+  outputs: environment report
+  gate: G01
+- stage: '02'
+  purpose: Cumulative ZIP, manifest and checksum preflight
+  modules: M08
+  inputs: project ZIP
+  outputs: verified intake ledger
+  gate: G02
+- stage: '03'
+  purpose: Resolve external P01 core + A4 artifact pointers
+  modules: M08
+  inputs: pointer records
+  outputs: resolved immutable artifact map
+  gate: G03
+- stage: '04'
+  purpose: Validate P01 input contract; no relabel/resplit/rewindow
+  modules: M08
+  inputs: P01 records/shards
+  outputs: input validation report
+  gate: G04
+- stage: '05'
+  purpose: Verify immutable P02 R4 scientific execution freeze, owner-authorized training-policy
+    amendment, run-family expansion, full-ablation ownership/completeness matrix and
+    one-notebook dispatcher
+  modules: M01/M05/M08
+  inputs: Build Book R4 + p02_planned_scientific_execution_freeze_R4.yaml + p02_ablation_ownership_matrix_R3.yaml
+    + p02_full_ablation_planned_run_cells_R3.yaml
+  outputs: verified config hash + R4 scientific freeze + resolved training-policy
+    binding + run matrix + ablation unlock freeze
+  gate: G05
+- stage: '06'
+  purpose: Schema successor/profile, fixture, import and smoke validation
+  modules: all
+  inputs: schemas/code
+  outputs: schema validation + smoke evidence
+  gate: G06
+- stage: '07'
+  purpose: Governed data loaders/cache and role firewall
+  modules: M01/M02
+  inputs: HDF5 + manifests
+  outputs: loader/cache evidence
+  gate: G07
+- stage: 08
+  purpose: Sanity controls
+  modules: M01/M05
+  inputs: core inputs
+  outputs: sanity models/logs
+  gate: G08
+- stage: 09
+  purpose: Classical anchors
+  modules: M01/M05
+  inputs: core inputs
+  outputs: CSP/FBCSP checkpoints/logs
+  gate: G09
+- stage: '10'
+  purpose: Riemannian anchors/challengers/diagnostics
+  modules: M01/M05
+  inputs: core inputs
+  outputs: TS/EA/MDM artifacts
+  gate: G10
+- stage: '11'
+  purpose: Compact neural baseline plus bounded EEGNet FULL_TRAIN S&R diagnostic training-policy
+    challenger
+  modules: M01/M05
+  inputs: core inputs
+  outputs: primary EEGNet checkpoints + separately identified diagnostic S&R challenger
+    checkpoints/evidence
+  gate: G11
+- stage: '12'
+  purpose: Conditional deep/SSL admission and execution
+  modules: M01/M05/M07
+  inputs: gates/checkpoints
+  outputs: admitted branch artifacts or explicit block
+  gate: G12
+- stage: '13'
+  purpose: Checkpoint round-trip + ModelRegistry closure
+  modules: M05
+  inputs: all branch artifacts
+  outputs: ModelRegistryRecord + reload evidence
+  gate: G13
+- stage: '14'
+  purpose: Governed inference and PredictionRecord generation
+  modules: M02
+  inputs: accepted checkpoints + windows
+  outputs: PredictionRecord partitions
+  gate: G14
+- stage: '15'
+  purpose: 'A0 FULL EXECUTION/EVALUATION closure plus diagnostic training-policy challenger
+    closure: terminal coverage, raw accept-all metrics, participant source tables,
+    uncertainty/comparison evidence, figure/table/Analysis export'
+  modules: M02/M03/M04/M05
+  inputs: PredictionRecords
+  outputs: A0 metric/source artifacts + diagnostic training-policy challenger completion/statistical
+    evidence
+  gate: G15
+- stage: '16'
+  purpose: Low-label/low-calibration curves
+  modules: M03
+  inputs: budgeted records
+  outputs: LowCalibrationCurveRecord
+  gate: G16
+- stage: '17'
+  purpose: Subject/session descriptive profiles
+  modules: M04
+  inputs: prediction/metric records
+  outputs: SubjectProfileRecord
+  gate: G17
+- stage: '18'
+  purpose: 'A4 FULL EXECUTION/EVALUATION: role freeze, LONG + 3-view predictions,
+    hard/prob aggregation, fixed ordinary ensembles, parent matching, metrics/statistics/burden
+    and evidence export'
+  modules: M06
+  inputs: A4 R2 + matched model outputs
+  outputs: EnsembleControlRecord + A4 evidence
+  gate: G18
+- stage: 18U
+  purpose: Same-notebook additional full-execution ablation dispatcher; current extra
+    set empty
+  modules: mapped owner modules
+  inputs: Stage05 frozen unlock matrix
+  outputs: executed extra ablation records or NOT_AUTHORIZED rows
+  gate: G18U
+- stage: '19'
+  purpose: Failure/missingness/negative-result accounting
+  modules: cross-cutting
+  inputs: all branch ledgers
+  outputs: FailureCaseIndex + NegativeResultNote + diagnostics
+  gate: G19
+- stage: '20'
+  purpose: Downstream-readiness validation
+  modules: M08
+  inputs: all records
+  outputs: Layer2ReadinessReport
+  gate: G20
+- stage: '21'
+  purpose: Figure-source and table-source datasets
+  modules: source builders
+  inputs: validated evidence
+  outputs: analysis/L10 source tables
+  gate: G21
+- stage: '22'
+  purpose: Protocol/Analysis/Layer0/EvidenceMap/Layer10/P03 handoffs
+  modules: M08
+  inputs: validated bundle
+  outputs: governed handoff packets + pre-execution training-policy amendment/synchronization
+    references
+  gate: G22
+- stage: '23'
+  purpose: Gate matrix and evidence-sufficiency evaluation
+  modules: M08
+  inputs: all validation
+  outputs: gate_decision + insufficiency route
+  gate: G23
+- stage: '24'
+  purpose: Final execution bundle/checksums/secret scan/export
+  modules: release
+  inputs: all outputs
+  outputs: immutable P02 bundle including Protocol-change-required amendment/sync
+    artifacts
+  gate: G24
+ablation_unlock_policy:
+  policy_id: P02-L2-FULLY-UNLOCKED-ABLATION-SINGLE-NOTEBOOK-R1
+  governing_principle: No alternate execution modes. Any ablation/control that becomes
+    fully unlocked for P02 under valid authority is executed inside the same comprehensive
+    P02 Kaggle notebook and emits analysis-ready evidence.
+  current_directly_unlocked:
+  - A0
+  - A4
+  current_not_unlocked:
+  - A1
+  - A2
+  - A3
+  - A5
+  - A6
+  - A7
+  - A8
+  - A9
+  - A10
+  - A11
+  - A12
+  - A13
+  prohibited:
+  - A14
+  fully_unlocked_criteria:
+  - P02/L2 ownership is present in current authority OR a formally accepted authority
+    successor explicitly assigns execution to P02 before the affected official run
+    stage.
+  - Required upstream records/artifacts are valid, version-pinned and joinable.
+  - Estimand, metric dictionary entries, matched-comparison keys, denominators, visibility
+    rules, seed/repetition policy and failure handling are frozen by their owners.
+  - Required implementation/schema paths exist and pass tests.
+  - License, checkpoint provenance, corpus-overlap and resource gates pass where applicable.
+  - Execution does not absorb another layer scientific responsibility and does not
+    use final-test outcomes to unlock itself.
+  - The ablation is not A14.
+  activation_time: Stage 05 freezes the ablation unlock matrix before official scientific
+    result stages. Result-dependent unlocking is prohibited. A later authority successor
+    requires controlled re-entry from Stage 05 in the same notebook lineage, not a
+    second mode/notebook.
+  notebook_behavior: 'Stage 05 emits p02_ablation_unlock_matrix_frozen.yaml; Stages
+    15/18 execute A0/A4. A generic authority-approved additional-ablation executor
+    remains in the same notebook after A4 and before negative-result accounting; it
+    runs only rows whose p02_state is FULL_EXECUTION_REQUIRED_IN_P02 and whose complete
+    implementation/run/evaluation/evidence bindings passed Stage05 before results.
+    Current expected extra rows: none.'
+  analysis_handoff: Every executed unlocked ablation must emit its run cells, matched-comparison
+    source tables, negative/failed rows, metric rows, limitation tags, and Protocol/Phase-Analysis/Layer0/EvidenceMap/Layer10
+    handoff entries.
+stage05_scientific_decision_authority: NONE_VERIFY_ONLY
+full_ablation_execution_stages:
+  A0:
+    stage: '15'
+    substeps:
+    - 15A terminal run coverage
+    - 15B raw metric source tables
+    - 15C participant uncertainty/comparisons
+    - 15D evidence/handoff export
+  A4:
+    stage: '18'
+    substeps:
+    - 18A validation-only role freeze
+    - 18B LONG/view model fit+inference
+    - 18C hard/probability aggregation
+    - 18D matched CORE comparison+burden+statistics
+    - 18E evidence/handoff export
+full_p02_ablations_without_kaggle_stage: 0
+full_execution_required_current:
+- A0
+- A4
+notebook_behavior: Stage 05 emits the frozen ownership/completeness matrix. Stages
+  15/18 execute current FULL_EXECUTION_REQUIRED_IN_P02 ablations A0/A4. Stage18U may
+  execute an additional ablation only after a pre-result authority successor assigns
+  FULL_EXECUTION_REQUIRED_IN_P02 and every implementation/run/evaluation/evidence
+  binding passes Stage05. No second mode/notebook.
+build_book_revision: R4
+scientific_execution_freeze: P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R4

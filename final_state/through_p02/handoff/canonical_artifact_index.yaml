@@ -1,0 +1,87 @@
+artifacts:
+- artifact_id: PROTOCOL-CUM-P02
+  path: authorities/protocol_v1/IHARQ_Protocol_v1_0_Final_Through_Phase_02_R1.md
+  type: MARKDOWN
+  coverage: P00-P02
+  status: CANONICAL
+  producer: Protocol
+  consumers:
+  - P03+
+  - Analysis
+  - Layer0
+  - EvidenceMap
+- artifact_id: ANALYSIS-CUM-P02
+  path: analysis/IHARQ_Cumulative_Phase_Evidence_Results_and_Interpretation_Through_P02_Final_R1.md
+  type: MARKDOWN
+  coverage: P00-P02
+  status: CANONICAL
+  producer: PhaseAnalysis
+  consumers:
+  - Layer0
+  - EvidenceMap
+  - Paper
+  - P03 context
+- artifact_id: LAYER0-CUM-P02
+  path: layer0/Layer_0_Claim_Governance_Through_P02.md
+  type: MARKDOWN
+  coverage: P00-P02
+  status: CANONICAL
+  producer: Layer0
+  consumers:
+  - EvidenceMap
+  - Layer10
+  - Paper
+- artifact_id: EVIDMAP-CUM-P02
+  path: evidence_map/IHARQ_Cumulative_Evidence_Map_Through_P02.md
+  type: MARKDOWN
+  coverage: P00-P02
+  status: CANONICAL
+  producer: EvidenceMap
+  consumers:
+  - Layer10
+  - Paper
+  - P03 provenance
+- artifact_id: LAYER10-CUM-P02
+  path: layer10/Layer_10_Artifact_Package_Through_P02.md
+  type: MARKDOWN
+  coverage: P00-P02
+  status: CANONICAL_PRESENTATION
+  producer: Layer10
+  consumers:
+  - Paper
+  - Thesis
+- artifact_id: P02-NOTEBOOK-FINAL
+  path: execution/P02_Final_Executed_Notebook_SANITIZED.ipynb
+  type: IPYNB
+  coverage: P02
+  status: HISTORICAL_EXECUTION_SOURCE_SECURITY_SANITIZED_TRANSPORT_DERIVATIVE
+  producer: P02
+  consumers:
+  - reproduction/audit
+  notes: Original executed notebook SHA and redaction count are preserved in provenance/notebook_transport_redaction.json;
+    only literal credential strings were replaced.
+- artifact_id: P02-READINESS
+  path: execution/runtime/records/Layer2ReadinessReport/dataset=ALL/branch=READINESS/budget=ALL/P02-L2-READINESS-P03.jsonl
+  type: JSONL
+  coverage: P02->P03
+  status: CANONICAL
+  producer: P02 L2
+  consumers:
+  - P03
+- artifact_id: P02-RECORD-SCHEMA
+  path: execution/implementation/contracts/record_schema_freeze.yaml
+  type: YAML
+  coverage: P02
+  status: CANONICAL
+  producer: P02 L2
+  consumers:
+  - P03+
+- artifact_id: EXT-ACCESS
+  path: handoff/external_artifact_retrieval.yaml
+  type: YAML
+  coverage: P00-P02
+  status: CANONICAL_HANDOFF
+  producer: Closure
+  consumers:
+  - P03-P15
+  - reproduction

@@ -1,0 +1,80 @@
+{
+  "family": "A0_MODEL_COMPARISON",
+  "pairwise_rows": [
+    {
+      "comparison_id": "A0:PhysioNetMI:DNN-EEGNET:VS:CLS-CSP-LDA",
+      "dataset_id": "PhysioNetMI",
+      "alternative": "DNN-EEGNET",
+      "reference": "CLS-CSP-LDA",
+      "matched_participants": 6,
+      "wilcoxon": {
+        "status": "PASS",
+        "n": 6,
+        "p_value": 0.0625,
+        "statistic": 0.0,
+        "median_difference": 0.25,
+        "rank_biserial": 1.0
+      },
+      "bootstrap": {
+        "status": "PASS",
+        "n": 6,
+        "estimate": 0.25,
+        "low": 0.125,
+        "high": 0.375,
+        "level": 0.95,
+        "method": "PERCENTILE_FALLBACK_DEGENERATE_ACCELERATION",
+        "resamples": 10000
+      },
+      "holm_adjusted_p": 0.125
+    },
+    {
+      "comparison_id": "A0:PhysioNetMI:RIE-TS-LR:VS:CLS-CSP-LDA",
+      "dataset_id": "PhysioNetMI",
+      "alternative": "RIE-TS-LR",
+      "reference": "CLS-CSP-LDA",
+      "matched_participants": 6,
+      "wilcoxon": {
+        "status": "PASS",
+        "n": 6,
+        "p_value": 0.125,
+        "statistic": 0.0,
+        "median_difference": 0.25,
+        "rank_biserial": 1.0
+      },
+      "bootstrap": {
+        "status": "PASS",
+        "n": 6,
+        "estimate": 0.25,
+        "low": 0.0,
+        "high": 0.375,
+        "level": 0.95,
+        "method": "PERCENTILE_FALLBACK_DEGENERATE_ACCELERATION",
+        "resamples": 10000
+      },
+      "holm_adjusted_p": 0.125
+    }
+  ],
+  "omnibus_rows": [
+    {
+      "dataset_id": "PhysioNetMI",
+      "branches": [
+        "CLS-CSP-LDA",
+        "DNN-EEGNET",
+        "RIE-TS-LR"
+      ],
+      "matched_participants": 6,
+      "friedman": {
+        "status": "PASS",
+        "n": 6,
+        "k": 3,
+        "statistic": 8.4,
+        "p_value": 0.014995576820477707,
+        "kendall_W": 0.7000000000000001
+      },
+      "participant_unit": true
+    }
+  ],
+  "participant_unit": true,
+  "friedman_effect_size": "KENDALL_W",
+  "multiplicity": "HOLM_WITHIN_DATASET_REFERENCE_POSTHOC"
+}

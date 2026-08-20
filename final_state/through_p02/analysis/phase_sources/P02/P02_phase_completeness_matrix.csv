@@ -1,0 +1,14 @@
+P02_responsibility,Expected_evidence,Actual_evidence,Analysis_section,Numeric_verification,Interpretation,Claim,Limitation,Status
+Canonical identity/configuration,Protocol v1 run/freeze/stage identity,Run matrix + 38-input contract,§2 + Appendix A,verified,identity context,N/A,None,PASS
+Datasets/splits/preprocessing,3 datasets + frozen P01 split/preprocess,Protocol data contract,§3,verified,dataset-specific + cross-dataset,claims scope-bounded,Dataset scope,PASS
+Models,16 branches dispositioned,A0/model registry/terminal accounting,§4/§6/§9/§12,verified,winner + unsuccessful families,model claims qualified,model adaptation,PASS
+Budgets,"1,2,4,8,16,32 + FULL where applicable",low_label inputs + A0 fulltrain,§7,verified,exact trajectories/deltas/rank changes,sample-efficiency claims bounded,single frozen subset,PASS
+Participants,18 test participants across datasets per split; participant-first evidence,A0 participant metrics/subject profile,§6.4/§13,verified,heterogeneity/distribution,no personalization efficacy claim,BNCI n=1,PASS
+A0,678 terminal cells,A0 completion/statistics/metrics,§6,verified,complete scientific interpretation,claims C1-C4,dataset/statistical scope,PASS
+Stage11,mixed canonical recipe lineage + 15 diagnostic challengers,Stage11 evidence + challenger stats,§5.2/§11,verified,exact history and participant effects,diagnostic-only boundary,post-observation amendment,PASS
+Stage12,author/source-centered correction + validation diagnostics,Stage12 amendment + diagnostics,§5.3/§11,verified,exact A/B/C deltas,optimization-fidelity claim only,validation-only non-claim-bearing diagnostics,PASS
+A4,1218 terminal; six conditions; resource deviation,A4 completion/statistics/deviation,§10,verified,null/heterogeneous controls + burden,anchor/single-repeat ceiling,compute limitation,PASS
+Stage18S,post-hoc sensitivity supplement,Stage18S inputs,§11,verified,sign instability analyzed,POST_HOC_ONLY,not five-repeat confirmatory,PASS
+Failures/negative evidence,648/340/309 record families,failure/negative/diagnostic records,§12,verified,category-specific interpretation,negative claims bounded,terminal semantics heterogeneous,PASS
+Literature,original models/datasets + benchmark context,fresh primary-source verification,§14-15,verified,fair comparability categories,no leaderboard/novelty overclaim,protocol mismatch across studies,PASS
+Findings/claims/handoffs,"14 findings, 10 candidate claims, 4 hypotheses",MR findings/claims/traceability,§16-27,verified,claim safety + reuse,Layer0 pending,no approval here,PASS

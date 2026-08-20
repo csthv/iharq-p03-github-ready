@@ -1,0 +1,41 @@
+gate_id: P0-GATE-18
+official_name: Phase 0 immutable publication, pointer verification, closure, and downstream
+  handoff gate
+authority_sources:
+- GOV-V4 sections 48, 64, 73, 79, 83, 85
+- PLAN-R41 Phase 0 definition of done
+- PLAY-R41 Phase 0 handoff and closure
+entry_requirements:
+- P0-GATE-01-17 accepted
+- Protocol accepted
+- execution and Analysis accepted
+- Layer0 complete
+- Evidence Map accepted
+- Layer10 package complete
+- final independent audit and clean reproduction pass
+required_documents:
+- 18-file current Markdown distribution
+- closure report
+- Phase1 handoff
+required_machine_artifacts:
+- package manifest
+- detached SHA-256
+- publication pointer manifest
+required_tests:
+- full deterministic suite
+- clean reproduction
+- adversarial closure suite
+publication_dependency: MANDATORY_BEFORE_FORMAL_PASS
+external_repository_dependency: One owner-authorized immutable publication batch and
+  verified pointers
+allowed_nonblocking_limitations:
+- exact local Python 3.13.5 only
+- portable uv.lock incomplete
+- Python 3.11/3.12 unverified
+- Mode B non-empirical evidence
+closure_effect: Gate PASS permits formal PHASE0_CLOSED successor.
+phase1_effect: Formal Phase0 closure permits Phase1 authorization subject to P01 entry
+  conditions.
+independent_result: READY_TO_PASS_AFTER_PUBLICATION
+reason: All local technical/documentary prerequisites pass; publication was explicitly
+  prohibited and remains unperformed.

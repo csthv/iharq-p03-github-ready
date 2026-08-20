@@ -1,0 +1,21 @@
+--- frozen/extract_uncertainty
++++ future_candidate/extract_uncertainty
+@@ -7,14 +7,14 @@
+ ) -> dict[str, Any]:
+     epsilon = float(feature_profile["entropy_epsilon"])
+     features: dict[str, dict[str, Any]] = {
+-        "confidence": {"values": confidence(probabilities, probability_atol=probability_atol), "family": "confidence", "direction": "higher_is_more_confident", "decision_time_eligible": True, "alias_of_feature_id": None},
+-        "normalized_entropy": {"values": normalized_entropy(probabilities, epsilon=epsilon, probability_atol=probability_atol), "family": "entropy", "direction": "lower_is_more_confident", "decision_time_eligible": True, "alias_of_feature_id": None},
+-        "top1_top2_margin": {"values": top1_top2_margin(probabilities, probability_atol=probability_atol), "family": "margin", "direction": "higher_is_more_confident", "decision_time_eligible": True, "alias_of_feature_id": None},
++        "confidence": {"values": confidence(probabilities, probability_atol=probability_atol), "family": "confidence", "direction": "higher_is_better", "decision_time_eligible": True, "alias_of_feature_id": None},
++        "normalized_entropy": {"values": normalized_entropy(probabilities, epsilon=epsilon, probability_atol=probability_atol), "family": "entropy", "direction": "lower_is_better", "decision_time_eligible": True, "alias_of_feature_id": None},
++        "top1_top2_margin": {"values": top1_top2_margin(probabilities, probability_atol=probability_atol), "family": "margin", "direction": "higher_is_better", "decision_time_eligible": True, "alias_of_feature_id": None},
+     }
+     conditional = []
+     if bool(feature_profile.get("disagreement_enabled")):
+         if member_probabilities is None:
+             conditional.append({"feature_id": "member_disagreement", "status": "INELIGIBLE", "reason": "ALIGNED_A4_MEMBERS_UNAVAILABLE"})
+         else:
+-            features["member_disagreement"] = {"values": aligned_member_disagreement(member_probabilities, probability_atol=probability_atol), "family": "disagreement", "direction": "lower_is_more_confident", "decision_time_eligible": True, "alias_of_feature_id": None}
++            features["member_disagreement"] = {"values": aligned_member_disagreement(member_probabilities, probability_atol=probability_atol), "family": "disagreement", "direction": "lower_is_better", "decision_time_eligible": True, "alias_of_feature_id": None}
+     return {"features": features, "conditional_attempts": conditional}

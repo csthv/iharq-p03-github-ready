@@ -1,0 +1,172 @@
+layer10_id: IHARQ-CUMULATIVE-LAYER10-THROUGH-P02-R1
+captions:
+  L10-CUM-FIG-001:
+    title: Governed phase progression through P02
+    claim_ids:
+    - CUM-CLM-001/v1
+    - CUM-CLM-002/v1
+    - CUM-CLM-008/v1
+    finding_ids:
+    - CF-01
+    - CF-02
+    - CF-12
+    caption: P00 engineering/foundation contracts enable P01’s frozen EEG substrate, which in turn enables P02 Layer-2 decoder evidence. The chain
+      is a provenance/readiness result, not clinical or deployment validation.
+    limitations:
+    - TECHNICAL_TRACEABILITY_NOT_EFFECTIVENESS
+  L10-CUM-FIG-002:
+    title: Ablation evidence evolution
+    claim_ids:
+    - CUM-CLM-005/v1
+    finding_ids:
+    - CF-05
+    - CF-06
+    caption: A4 evolves from P01 matched-substrate feasibility into P02 constrained effectiveness testing; P02 does not establish generic C1-C3
+      improvement, five-repeat stability, dense-budget characterization or full-grid equivalence.
+    limitations:
+    - SINGLE_REPEAT
+    - DEEP_ANCHOR_BUDGETS
+    - POST_HOC_STAGE18S
+  L10-CUM-FIG-003:
+    title: Evidence role evolution
+    claim_ids:
+    - CUM-CLM-001/v1
+    - CUM-CLM-007/v1
+    finding_ids:
+    - CF-01
+    - CF-08
+    - CF-09
+    caption: Evidence responsibilities progress from foundation validation to data-contract evidence to empirical decoder and negative-result
+      evidence, while phase provenance remains explicit.
+    limitations:
+    - EVIDENCE_CLASS_NOT_INTERCHANGEABLE
+  L10-CUM-FIG-004:
+    title: Layer 0 disposition summary
+    claim_ids: []
+    finding_ids: []
+    caption: Counts of current reviewed claim dispositions. Historical P00/P01 decisions are preserved; P02/cumulative claims are added under
+      the same taxonomy.
+    limitations:
+    - COUNT_SUMMARY_ONLY
+  L10-P02-FIG-001:
+    title: P02 A0 full-training performance by dataset
+    claim_ids:
+    - P02-CLM-002/v1
+    - P02-CLM-003/v1
+    - CUM-CLM-003/v1
+    finding_ids:
+    - P02-FIND-002
+    - P02-FIND-003
+    - CF-03
+    caption: Full-training descriptive ordering differs by dataset. BNCI2014_001 has one held-out test participant; no universal decoder winner
+      is authorized.
+    limitations:
+    - BNCI_TEST_PARTICIPANTS_1
+    - DATASET_HETEROGENEITY
+  L10-P02-FIG-002:
+    title: Low-label BACC - BNCI2014_001
+    claim_ids:
+    - P02-CLM-004/v1
+    - CUM-CLM-004/v1
+    finding_ids:
+    - P02-FIND-005
+    - CF-04
+    caption: Descriptive low-label BACC under one frozen subset per budget. Rank changes do not establish repeated-subset sample-efficiency stability.
+    limitations:
+    - SINGLE_FROZEN_SUBSET
+  L10-P02-FIG-003:
+    title: Low-label BACC - Lee2019_MI
+    claim_ids:
+    - P02-CLM-004/v1
+    - CUM-CLM-004/v1
+    finding_ids:
+    - P02-FIND-005
+    - CF-04
+    caption: Descriptive low-label BACC under one frozen subset per budget. Rank changes do not establish repeated-subset sample-efficiency stability.
+    limitations:
+    - SINGLE_FROZEN_SUBSET
+  L10-P02-FIG-004:
+    title: Low-label BACC - PhysioNetMI
+    claim_ids:
+    - P02-CLM-004/v1
+    - CUM-CLM-004/v1
+    finding_ids:
+    - P02-FIND-005
+    - CF-04
+    caption: Descriptive low-label BACC under one frozen subset per budget. Rank changes do not establish repeated-subset sample-efficiency stability.
+    limitations:
+    - SINGLE_FROZEN_SUBSET
+  L10-P02-FIG-005:
+    title: Stage 11 diagnostic challenger effect
+    claim_ids:
+    - P02-CLM-005/v1
+    - P02-CLM-006/v1
+    - CUM-CLM-006/v1
+    finding_ids:
+    - P02-FIND-006
+    - P02-FIND-007
+    - CF-07
+    caption: Diagnostic-only paired delta BACC for the Stage-11 challenger versus canonical primary EEGNet. The challenger is not primary A0 and
+      does not show a consistent cross-dataset improvement.
+    limitations:
+    - DIAGNOSTIC_ONLY
+  L10-P02-FIG-006:
+    title: A4 C1-C3 role-control effect directions
+    claim_ids:
+    - P02-CLM-007/v1
+    - CUM-CLM-005/v1
+    finding_ids:
+    - P02-FIND-009
+    - P02-FIND-010
+    - CF-05
+    caption: Governed C1-C3 role-control effects under the accepted constrained A4 scope. Across 756 statistical rows, zero reached raw p<=0.05;
+      absence of detection is not proof of zero effect.
+    limitations:
+    - SINGLE_REPEAT
+    - DEEP_ANCHOR_BUDGETS
+  L10-P02-FIG-007:
+    title: Stage18S sign consistency
+    claim_ids:
+    - P02-CLM-009/v1
+    - CUM-CLM-005/v1
+    finding_ids:
+    - P02-FIND-012
+    - CF-06
+    caption: POST-HOC/DESCRIPTIVE/SENSITIVITY evidence only. Mixed signs reinforce the existing claim ceiling and do not modify canonical Stage18/G18.
+    limitations:
+    - POST_HOC_ONLY
+    - THREE_REPEAT_NOT_FIVE_REPEAT
+  L10-P02-FIG-008:
+    title: P02 governed non-success categories
+    claim_ids:
+    - P02-CLM-010/v1
+    - CUM-CLM-007/v1
+    finding_ids:
+    - P02-FIND-013
+    - CF-08
+    caption: FailureCaseIndex categories are governed non-success states and are not interchangeable with unexpected runtime crashes; NegativeResultNotes
+      and DiagnosticOnlyFlags are tracked separately.
+    limitations:
+    - FAILURE_CLASSES_NOT_INTERCHANGEABLE
+  L10-P02-FIG-009:
+    title: Lee2019_MI participant heterogeneity
+    claim_ids:
+    - P02-CLM-002/v1
+    - CUM-CLM-003/v1
+    finding_ids:
+    - P02-FIND-004
+    - CF-11
+    caption: Participant-first BACC distributions show substantial heterogeneity; descriptive means do not imply uniform participant benefit.
+    limitations:
+    - PARTICIPANT_HETEROGENEITY
+  L10-P02-FIG-010:
+    title: PhysioNetMI participant heterogeneity
+    claim_ids:
+    - P02-CLM-002/v1
+    - CUM-CLM-003/v1
+    finding_ids:
+    - P02-FIND-004
+    - CF-11
+    caption: Participant-first BACC distributions show substantial heterogeneity; descriptive means do not imply uniform participant benefit.
+    limitations:
+    - PARTICIPANT_HETEROGENEITY

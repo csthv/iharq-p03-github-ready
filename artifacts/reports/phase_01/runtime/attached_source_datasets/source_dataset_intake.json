@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "input_root": "/kaggle/input",
+  "source_counts": {
+    "PhysioNetMI": 327,
+    "BNCI2014_001": 18,
+    "Lee2019_MI": 108
+  },
+  "private_manifests": [
+    {
+      "source_id": "BNCI2014_001",
+      "dataset_handle": "csthv999z/iharq-p01-l1-bnci2014-001-source",
+      "manifest": "/kaggle/input/datasets/csthv999z/iharq-p01-l1-bnci2014-001-source/IHARQ_P01_L1_SOURCE_DATASET_MANIFEST.json",
+      "file_count": 18,
+      "bytes": 779873919,
+      "aggregate_sha256": "04a5390f8f36eaadbc0c480ec9377ce1b99caf0b7ab53bad9fda12347995bc49",
+      "ordinal_prefixed_files": 18,
+      "verification_strategy": "ONE_SCAN_BOUNDED_PARALLEL_SHA256",
+      "hash_workers": 4
+    },
+    {
+      "source_id": "Lee2019_MI",
+      "dataset_handle": "csthv999z/iharq-p01-l1-lee2019-mi-source",
+      "manifest": "/kaggle/input/datasets/csthv999z/iharq-p01-l1-lee2019-mi-source/IHARQ_P01_L1_SOURCE_DATASET_MANIFEST.json",
+      "file_count": 108,
+      "bytes": 64847432285,
+      "aggregate_sha256": "3a07b2f302da949efd418a0712d5a9427df34dcb8b027ca553fae8e67a849f78",
+      "ordinal_prefixed_files": 108,
+      "verification_strategy": "ONE_SCAN_BOUNDED_PARALLEL_SHA256",
+      "hash_workers": 4
+    }
+  ],
+  "source_resolution_file": "/kaggle/working/iharq_p01_l1/streaming_runtime/source_resolution_r26.json",
+  "physionet_public_dataset_required": "gamalasran/physionet-eeg-motor-movement-imagery",
+  "source_network_download_allowed": false,
+  "moabb_downloader_allowed": false,
+  "private_source_bytes_sha256_verified": true,
+  "ordinal_prefix_resolution_supported": true
+}

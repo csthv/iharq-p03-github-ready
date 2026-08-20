@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "planned": 5,
+  "terminal": 5,
+  "terminal_counts": {
+    "SUCCESS": 4,
+    "CHECKPOINT_BLOCKED": 1
+  },
+  "minimum_floor": {
+    "PhysioNetMI": {
+      "classical": true,
+      "riemannian": true
+    }
+  },
+  "participant_metric_rows": 24,
+  "metric_records": 15,
+  "analysis_inputs_complete": true,
+  "p03_raw_prediction_substrate": true,
+  "prediction_record_complete": true,
+  "raw_score_semantics_complete": true,
+  "denominator_accounting_complete": true,
+  "checkpoint_provenance_complete": true,
+  "failure_negative_evidence_expected_at_stage19": true,
+  "figure_table_source_generation_stage": "21",
+  "protocol_handoff_stage": "22",
+  "phase_analysis_handoff_stage": "22",
+  "layer0_handoff_stage": "22",
+  "evidence_map_handoff_stage": "22",
+  "layer10_source_handoff_stage": "22"
+}

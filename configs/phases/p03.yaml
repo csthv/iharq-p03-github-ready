@@ -1,0 +1,335 @@
+config_id: IHARQ-P03-L3-KAGGLE-EXECUTION-CONFIG-R2-C7-GPU-REPLAY-CORRECTED
+phase_id: P03
+layer_id: L3
+authority:
+  controlling_build_book: IHARQ-P03-L3-IMPLEMENTATION-BUILD-BOOK-R2
+  notebook_id: IHARQ-P03-L3-KAGGLE-NOTEBOOK-R2
+  upstream_state: FINAL_CUMULATIVE_THROUGH_P02_R2
+paths:
+  runtime_root: current/phase_03/kaggle_run
+  input_search_roots:
+  - /kaggle/input
+  p02_materialization_root: /kaggle/working/iharq_p03_l3/external/p02_bc14961e14f2
+  authoring_fixture_root: tests/fixtures/authoring_fixture
+inputs:
+  p02:
+    provider: Hugging Face private dataset
+    repository_role: PREFERRED_PRACTICAL_P02_CONTINUATION_SUBSTRATE
+    repo_type: dataset
+    private: true
+    repo_id: Csthv/p02-phase02-final-whole-working-20260814t052120z-b890ff92
+    revision: bc14961e14f2e48690e55df3577014275f9cbf30
+    manifest_path: __IHARQ_SNAPSHOT__/WORKING_TREE_MANIFEST.jsonl
+    manifest_sha256: 564bbb44e67d14da8457ad83d33651ded93dfc6b89ab90f10f78a36a20b8e8f5
+    snapshot_metadata_path: __IHARQ_SNAPSHOT__/SNAPSHOT_METADATA.json
+    source_manifest_file_count: 24661
+    object_index_filename: all_artifact_location_index.csv
+    object_index_size_bytes: 10191241
+    object_index_sha256: 540a0c3d4cbc686645ab1fccf088205c02c32a5c34e4b238c91f9c4ec119c12f
+    object_index_source: BUNDLED_CUMULATIVE_P02_RELEASE_METADATA
+    local_object_index_path: current/phase_02/release_metadata/all_artifact_location_index.csv
+    credential_symbol: IHARQ_HF_TOKEN_P02
+    runtime_root: iharq_p02_run/runtime
+    readiness_path: iharq_p02_run/runtime/records/Layer2ReadinessReport/dataset=ALL/branch=READINESS/budget=ALL/P02-L2-READINESS-P03.jsonl
+    prediction_manifest_prefix: iharq_p02_run/runtime/manifests/record_partitions/PredictionRecord/
+    prediction_record_prefix: iharq_p02_run/runtime/records/PredictionRecord/
+    model_registry_prefix: iharq_p02_run/runtime/records/ModelRegistryRecord/
+    ensemble_control_manifest_prefix: iharq_p02_run/runtime/manifests/record_partitions/EnsembleControlRecord/
+    ensemble_control_record_prefix: iharq_p02_run/runtime/records/EnsembleControlRecord/
+    a0_completion_path: iharq_p02_run/runtime/analysis_inputs/a0_completion.json
+    a4_completion_path: iharq_p02_run/runtime/analysis_inputs/a4_completion.json
+    baseline_metric_path: iharq_p02_run/runtime/records/BaselineMetricRecord/a0.jsonl
+    diagnostic_only_path: iharq_p02_run/runtime/records/DiagnosticOnlyFlag/diagnostics.jsonl
+    failure_case_path: iharq_p02_run/runtime/records/FailureCaseIndex/failures.jsonl
+    downstream_readiness_contract_path: artifacts/handoffs/phase_02_to_phase_03/downstream_readiness.yaml
+    persistent_limitations_path: artifacts/handoffs/phase_02_to_phase_03/persistent_limitations.yaml
+    required_exact_objects:
+      iharq_p02_run/runtime/records/Layer2ReadinessReport/dataset=ALL/branch=READINESS/budget=ALL/P02-L2-READINESS-P03.jsonl:
+        bytes: 1826
+        sha256: 1df39fb42d39e9d0b7dcee948bb938b17ba7350d581d3fbc0a9c2c34501d79a2
+      iharq_p02_run/runtime/analysis_inputs/a0_completion.json:
+        bytes: 1029
+        sha256: 2e925e6e5fa223a518777f8b9cfa565b897c89ea9cfcdc2ae9bc54c32df1eb7e
+      iharq_p02_run/runtime/analysis_inputs/a4_completion.json:
+        bytes: 1245
+        sha256: 0489a31df63523e5df1264fd2c1cf1738b6978ca4bc91fada20fab26a0cfcb90
+      iharq_p02_run/runtime/records/BaselineMetricRecord/a0.jsonl:
+        bytes: 2592918
+        sha256: ccda9519421fee00125a75dd3ef487b45f6d052b4451739d4b4fe5c4c549fc7b
+      iharq_p02_run/runtime/records/DiagnosticOnlyFlag/diagnostics.jsonl:
+        bytes: 244638
+        sha256: d826e6d74a1af70b3c114699a7f39e686e4c42c5a7ea87aa9517b9bbad149886
+      iharq_p02_run/runtime/records/FailureCaseIndex/failures.jsonl:
+        bytes: 732300
+        sha256: e74fd834df16e7ece7c55b959af8fdd7f6627115bde5e6fe4e8e3cab9848e04c
+    p01_core_paths:
+    - _iharq_p02_hf_checkpoint_post_s11/inputs/p01_core/IHARQ_P01_L1_DERIVED_WINDOW_DATASET_MANIFEST.json
+    - _iharq_p02_hf_checkpoint_post_s11/inputs/p01_core/IHARQ_P01_L1_WINDOW_INDEX.jsonl
+    - _iharq_p02_hf_checkpoint_post_s11/inputs/p01_core/IHARQ_P01_L1_WINDOW_TO_SHARD_INDEX.jsonl
+    download_max_workers: 8
+    integrity_hash_workers: 4
+    accepted_run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d
+    accepted_config_sha256: 9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13
+    accepted_scientific_freeze_id: P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5
+    prediction_partition_count: 1014
+    model_registry_success_count: 672
+    ensemble_control_count: 342
+    baseline_metric_record_count: 2625
+    diagnostic_only_record_count: 309
+    failure_case_record_count: 648
+    required_readiness_record: P02-L2-READINESS-P03.jsonl
+    retrieval_policy: HF_EXACT_REVISION_REQUIRED_OBJECT_MATERIALIZATION
+    kaggle_p02_dataset_expected: false
+    mutable_latest_prohibited: true
+    immutable: true
+    required_local_control_objects:
+      current/phase_02/release_metadata/all_artifact_location_index.csv:
+        bytes: 10191241
+        sha256: 540a0c3d4cbc686645ab1fccf088205c02c32a5c34e4b238c91f9c4ec119c12f
+      artifacts/handoffs/phase_02_to_phase_03/downstream_readiness.yaml:
+        bytes: 1957
+        sha256: 1d1b20302024632a1b5bfb70b7251b097a45d25a97125390e7d8a9c8bb6453b1
+      artifacts/handoffs/phase_02_to_phase_03/persistent_limitations.yaml:
+        bytes: 3141
+        sha256: ecd152f8979b778af2a71c391535a74036c5705a06895d292cff2218a42f238d
+    local_control_source: BUNDLED_CUMULATIVE_P02_HANDOFF_AUTHORITIES
+    local_control_root: COMPANION_PACKAGE_ROOT
+    replay_materialization:
+      enabled: true
+      policy_id: P03-C6-P02-CHECKPOINT-INFERENCE-REPLAY-RESTORATION-R2
+      expected_model_count: 285
+      expected_population_sha256: 639c7784a74c6e6c13a27b35d2206bea270c038d5094f81f49e5b6553b636d13
+      eligible_score_types:
+      - NATIVE_PROBABILITY
+      - SOFTMAX_PROBABILITY
+      semantic_diagnostic_score_types:
+      - TRAIN_PRIOR_PROBABILITY
+      - DISTANCE_DERIVED_SIMPLEX
+      - HARD_LABEL_ONLY
+      p01_core_prefix: _iharq_p02_hf_checkpoint_post_s11/inputs/p01_core/
+      p01_core_file_count: 180
+      run_cell_prefix: iharq_p02_run/runtime/run_cells/
+      checkpoint_prefix: iharq_p02_run/runtime/checkpoints/
+      external_source_prefix: iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/
+      external_source_file_count: 25
+      external_adapter_sha256: add69c0a0f8843366d6d9ed1fb16746f61d43a6d588b04f07193484e0555386a
+      cbramod_asset_prefix: iharq_p02_run/_hf_runtime/SSL-CBRAMOD/
+      cbramod_asset_file_count: 2
+      cbramod_asset_sha256: a939ace9aa1e229f08391ad8bb2d197b507ae2c519a50addf087f0151b2df5c3
+      score_load_batch_size: 512
+      low_label_membership_seed: 20260804
+      source_roles:
+        calibration_fit: calibration
+        threshold_selection: validation
+        evaluation: test
+      p02_test_predictions_immutable: true
+      p02_test_probability_numeric_closure:
+        policy_id: P03-C7-P02-TEST-FLOAT-SIMPLEX-CLOSURE-R1
+        source_probability_atol: 1.0e-05
+        canonical_probability_atol: 1.0e-08
+        operation: FLOAT64_ROW_RENORMALIZATION_IN_P03_VIEW_ONLY
+        source_records_mutated: false
+        learned_or_calibration_transformation: false
+      model_retraining_prohibited: true
+      replay_cache_scope: CURRENT_P03_RUN_EXACT_FINGERPRINT
+      checkpoint_restoration_policy_id: P03-C6-EXACT-ACCEPTED-CHECKPOINT-RESTORATION-R2
+      eegnet_restoration: EXACT_P02_WRAPPER_STATE_DICT_WITH_CHECKPOINTED_NORMALIZATION_BUFFERS_STRICT
+      external_checkpoint_rehydration: IN_MEMORY_EXPLICIT_LOCATOR_REBIND_WITH_STATE_DICT_PRESERVED;CBRAMOD_USES_EXACT_ACCEPTED_R6_SCALED_ADAPTER_PATCH
+      accepted_checkpoint_bytes_mutated: false
+      p02_scientific_configuration_mutated: false
+      restoration_smoke_required_before_official_context: false
+      cbramod_adapter_patch_prefix: iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/python/
+      cbramod_adapter_patch_file_count: 1
+      cbramod_adapter_patch_sha256: 2591d7166463efe086ed77c2710768b9fa5c5df025949f5a42be1a92322f6b88
+      gpu_inference:
+        policy_id: P03-C7-GPU-DETERMINISTIC-REPLAY-INFERENCE-R1
+        enabled: true
+        required: true
+        scope: P03_OWNED_CALIBRATION_VALIDATION_CHECKPOINT_REPLAY_ONLY
+        strategy: DATA_PARALLEL_IF_MULTI_GPU_ELSE_SINGLE_GPU
+        cpu_reference_authority_preserved: true
+        scientific_hyperparameters_changed: false
+        checkpoint_bytes_mutated: false
+        model_retraining: false
+        automatic_mixed_precision: false
+        tf32: false
+        cudnn_benchmark: false
+        cudnn_deterministic: true
+        data_parallel_if_multiple_gpus: true
+        use_all_visible_gpus: true
+        minimum_gpu_count: 1
+        outer_load_batch_size: 512
+        family_inference_batch_size:
+          DNN-EEGNET: 2048
+          DNN-FBCNET: 256
+          DNN-SEQ: 512
+          SSL-CBRAMOD: 128
+        minimum_oom_backoff_batch_size: 16
+        oom_backoff_factor: 2
+        record_hardware_in_environment_fingerprint: true
+        fail_if_gpu_unavailable: true
+        runtime_profile_id: P03-C7G-KAGGLE-CUDA128-NATIVE-R2
+        cpu_gpu_parity_smoke_required: true
+        cpu_gpu_parity_atol: 1.0e-05
+        cpu_gpu_parity_rtol: 1.0e-05
+      restoration_smoke_required_before_stage07: true
+      restoration_smoke_policy_id: P03-C7-GPU-REPRESENTATIVE-DEEP-SSL-PREFLIGHT-R1
+  p01:
+    core_manifest_sha256: dc21f418e9a1add62adb346f627d5d729735a5f1ecaa1d771f6fa5cfede627e1
+    a4_manifest_sha256: 29124d59907610b1545e0a2b5d1811a4d4a2bf1df64cad49aa880f4721c47305
+    scientific_freeze_id: P01-L1-OFFICIAL-RUN-FREEZE-R2
+    immutable: true
+score_semantics:
+  class_order:
+  - left_hand
+  - right_hand
+  probability_atol: 1.0e-08
+  legal_log_probability_transform: false
+  p02_to_p03:
+    NATIVE_PROBABILITY: probability
+    PROBABILITY: probability
+    LOG_PROBABILITY: log_probability
+    NATIVE_LOGITS: logit
+    LOGITS: logit
+    LOGIT: logit
+    DECISION_FUNCTION: logit
+    HARD_LABEL_ONLY: hard_label
+    SOFTMAX_PROBABILITY: probability
+    NATIVE_SOFTMAX_PROBABILITY: probability
+    PROBABILITY_AVERAGE: probability
+    HARD_VOTE: hard_label
+environment:
+  python_exact: 3.12.13
+  exact_direct_pins:
+    moabb: 1.5.0
+    mne: 1.12.1
+    numpy: 2.2.6
+    scipy: 1.15.3
+    pandas: 2.3.1
+    scikit-learn: 1.7.1
+    h5py: 3.14.0
+    pooch: 1.8.2
+    PyYAML: 6.0.2
+    pydantic: 2.11.7
+    jsonschema: 4.25.0
+    nbformat: 5.10.4
+    pytest: 8.4.1
+    typer: 0.27.1
+    huggingface-hub: 1.24.0
+    torch: 2.10.0+cu128
+    torchaudio: 2.10.0+cu128
+    torchvision: 0.25.0+cu128
+    braindecode: 1.6.1
+    pyriemann: '0.12'
+    safetensors: 0.8.0
+  import_names:
+    moabb: moabb
+    mne: mne
+    numpy: numpy
+    scipy: scipy
+    pandas: pandas
+    scikit-learn: sklearn
+    h5py: h5py
+    pooch: pooch
+    PyYAML: yaml
+    pydantic: pydantic
+    jsonschema: jsonschema
+    nbformat: nbformat
+    pytest: pytest
+    typer: typer
+    huggingface-hub: huggingface_hub
+    torch: torch
+    braindecode: braindecode
+    pyriemann: pyriemann
+    safetensors: safetensors
+    torchaudio: torchaudio
+    torchvision: torchvision
+  deterministic_environment:
+    PYTHONHASHSEED: '20260804'
+    OMP_NUM_THREADS: '1'
+    MKL_NUM_THREADS: '1'
+    OPENBLAS_NUM_THREADS: '1'
+    TYPER_USE_RICH: '0'
+    MPLBACKEND: Agg
+    MPLCONFIGDIR: /kaggle/working/iharq_p03_l3/.cache/matplotlib
+    XDG_CACHE_HOME: /kaggle/working/iharq_p03_l3/.cache/xdg
+    JOBLIB_TEMP_FOLDER: /kaggle/working/iharq_p03_l3/.cache/joblib
+    HF_HOME: /kaggle/working/iharq_p03_l3/.cache/huggingface
+    HF_HUB_CACHE: /kaggle/working/iharq_p03_l3/.cache/huggingface/hub
+    CUDA_DEVICE_ORDER: PCI_BUS_ID
+    PYTORCH_CUDA_ALLOC_CONF: expandable_segments:True
+  package_install_offline_only: false
+  governed_hf_input_network_required: true
+  wheel_cache_manifest: wheel_cache/P03_WHEEL_CACHE_MANIFEST.json
+  replay_dependency_install_policy: PRESERVE_KAGGLE_CUDA128_STACK_INSTALL_EXACT_NONCUDA_PROJECT_PINS_BEFORE_CONTEXT
+  gpu_native_runtime_profile:
+    profile_id: P03-C7G-KAGGLE-CUDA128-NATIVE-R2
+    torch: 2.10.0+cu128
+    torchaudio: 2.10.0+cu128
+    torchvision: 0.25.0+cu128
+    policy: MUST_BE_PREINSTALLED_AND_NEVER_REPLACED_BY_BOOTSTRAP
+execution:
+  scientific_worker_processes: 1
+  numerical_threads: 1
+  persistent_worker_stages:
+  - '07'
+  - 08
+  - 09
+  - '10'
+  - '11'
+  - '12'
+  - '13'
+  - '14'
+  - '15'
+  - '16'
+  - '17'
+  - '18'
+  - '19'
+  - '20'
+  heartbeat_seconds: 120
+  default_timeout_seconds: 7200
+  extended_timeout_seconds:
+    '11': 14400
+    '16': 14400
+    '19': 14400
+    '07': 36000
+  enforce_exact_environment_for_authoring_fixture: false
+  official_fast_or_reduced_mode: prohibited
+  partition_streaming: true
+  atomic_promotion: true
+  checkpoint_identity_fields:
+  - source_manifest_sha256
+  - config_sha256
+  - protocol_sha256
+  - code_sha256
+  - environment_sha256
+  stage07_replay_checkpointing: true
+  stage07_replay_cache_resume: true
+  gpu_acceleration_policy_id: P03-C7-GPU-DETERMINISTIC-REPLAY-INFERENCE-R1
+  gpu_parallelism: INTRA_WORKER_DATA_PARALLEL_ALL_VISIBLE_GPUS
+  gpu_required_for_official_run: true
+  scientific_worker_start_method: spawn
+  cuda_process_transport: SPAWN_CUDA_SAFE
+  cuda_fork_prohibited: true
+  worker_transport_policy_id: P03-C8-CUDA-SAFE-SPAWN-WORKER-R1
+external_storage:
+  provider: Hugging Face private dataset
+  repository: Csthv/iharq-p03-phase03-l3-execution
+  path: phase_03/layer_03/{run_id}
+  access_class: PRIVATE_GOVERNED
+  credential_symbol: IHARQ_HF_TOKEN_P02
+  mutable_latest_prohibited: true
+  external_first_low_disk: true
+  upload_required_for_official: true
+  upload_commit_message: IHARQ P03 L3 governed immutable execution export
+security:
+  literal_credentials_prohibited: true
+  credential_symbols:
+  - IHARQ_HF_TOKEN_P02
+  - IHARQ_HF_TOKEN_P03
+  logs_redact_environment_values: true
+  primary_shared_hf_credential_symbol: IHARQ_HF_TOKEN_P02
+  primary_shared_hf_credential_roles:
+  - P02_EXACT_REVISION_READ
+  - P03_IMMUTABLE_EXPORT_WRITE
+  optional_compatible_credential_symbol: IHARQ_HF_TOKEN_P03

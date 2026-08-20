@@ -1,0 +1,16 @@
+"""Authority-locked non-scientific constants for P03/L3."""
+
+from __future__ import annotations
+
+PHASE_ID = "P03"
+LAYER_ID = "L3"
+PACKAGE_VERSION = "0.3.0.p03-notebook-r2-c5-replay"
+BUILD_BOOK_ID = "IHARQ-P03-L3-IMPLEMENTATION-BUILD-BOOK-R2"
+NOTEBOOK_ID = "IHARQ-P03-L3-KAGGLE-NOTEBOOK-R2-C5-REPLAY-CORRECTED"
+PYTHON_EXACT = "3.12.13"
+OFFICIAL_STAGE_IDS = tuple(f"{i:02d}" for i in range(25))
+SCIENTIFIC_WORKER_STAGES = tuple(f"{i:02d}" for i in range(7, 21))
+DEFAULT_TIMEOUT_SECONDS = 7200
+EXTENDED_TIMEOUTS_SECONDS = {"07": 36000, "11": 14400, "16": 14400, "19": 14400}
+HEARTBEAT_SECONDS = 120
+

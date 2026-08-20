@@ -1,0 +1,285 @@
+{
+  "record_id": "IHARQ-DATASETRECORD-20260806-42c424800627b6ee",
+  "record_type": "DatasetRecord",
+  "schema_version": "1.0-p01",
+  "authority_status": "REGISTRY_REFERENCED",
+  "owner_layer": "L1",
+  "phase_id": "P01",
+  "config_id": "d03f0a7c869dd95a2a67e5a32edc501d52bfc3851d8e761ef56595d8bd1ff52f",
+  "source_ids": [],
+  "evidence_mode": "IMPLEMENTATION",
+  "limitation_tags": [
+    "NON_CLINICAL",
+    "NO_DEPLOYMENT_CLAIM",
+    "PUBLIC_EEG_ONLY"
+  ],
+  "lifecycle_status": "VALIDATED",
+  "fixture": false,
+  "fixture_tags": [],
+  "evidence_role": "PRIMARY",
+  "payload": {
+    "dataset_id": "BNCI2014_001",
+    "aliases": [
+      "BNCI2014_001",
+      "BCI Competition IV-2a",
+      "BNCI 001-2014"
+    ],
+    "authority_status": "PRIMARY_SELECTED",
+    "scientific_role": "standard four-class MI benchmark companion; official P01 binary left/right branch",
+    "source_revision": "001-2014 provider file set A01T/A01E through A09T/A09E",
+    "citation": "Tangermann M, Müller KR, Aertsen A, et al. Review of the BCI Competition IV. Frontiers in Neuroscience. 2012;6:55. DOI 10.3389/fnins.2012.00055.",
+    "license": "Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0)",
+    "access_method": "MOABB_1_5_0_OFFICIAL_BNCI_DOWNLOAD",
+    "official_reference": "https://bnci-horizon-2020.eu/database/data-sets; https://moabb.neurotechx.com/docs/generated/moabb.datasets.BNCI2014_001.html; https://doi.org/10.3389/fnins.2012.00055",
+    "published_checksum": "NO_SINGLE_PROVIDER_WIDE_PUBLISHED_SHA256",
+    "checksum_policy": "COMPUTE_SHA256_PER_GDF/MAT_FILE_AND_FREEZE_AGGREGATE_BEFORE_ADMISSION",
+    "observed_aggregate_sha256": "04a5390f8f36eaadbc0c480ec9377ce1b99caf0b7ab53bad9fda12347995bc49",
+    "redistribution_allowed": "NO_DERIVATIVE_REDISTRIBUTION; RAW_BYTES_EXCLUDED; ONLY METADATA/HASHES/RECORDS EXPORTED",
+    "subjects": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "sessions": [
+      "0train",
+      "1test"
+    ],
+    "runs": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "event_count": 5184,
+    "channel_sets": [
+      "Fz|FC3|FC1|FCz|FC2|FC4|C5|C3|C1|Cz|C2|C4|C6|CP3|CP1|CPz|CP2|CP4|P1|Pz|P2|POz|EOG1|EOG2|EOG3|STI"
+    ],
+    "sampling_hz": [
+      "250.0"
+    ],
+    "metadata_completeness": {
+      "missing_count": 0,
+      "missing": []
+    },
+    "source_inventory": {
+      "files": [
+        {
+          "relative_path": "A01E.mat",
+          "runtime_path_class": "KAGGLE_INPUT",
+          "runtime_path": "/kaggle/input/datasets/csthv999z/iharq-p01-l1-bnci2014-001-source/002_A01E.mat",
+          "sha256": "53d415f39c3d7b0c88b894d7b08d99bcdfe855ede63831d3691af1a45607fb62",
+          "bytes": 43772146,
+          "canonical_filename": "A01E.mat",
+          "physical_filename": "002_A01E.mat",
+          "ordinal_prefix_resolved": true
+        },
+        {
+          "relative_path": "A01T.mat",
+          "runtime_path_class": "KAGGLE_INPUT",
+          "runtime_path": "/kaggle/input/datasets/csthv999z/iharq-p01-l1-bnci2014-001-source/001_A01T.mat",
+          "sha256": "054f02e70cf9c4ada1517e9b9864f45407939c1062c6793516585c6f511d0325",
+          "bytes": 42806453,
+          "canonical_filename": "A01T.mat",
+          "physical_filename": "001_A01T.mat",
+          "ordinal_prefix_resolved": true
+        },
+        {
+          "relative_path": "A02E.mat",
+          "runtime_path_class": "KAGGLE_INPUT",
+          "runtime_path": "/kaggle/input/datasets/csthv999z/iharq-p01-l1-bnci2014-001-source/004_A02E.mat",
+          "sha256": "d63c454005d3a9b41d8440629482e855afc823339bdd0b5721842a7ee9cc7b12",
+          "bytes": 44218409,
+          "canonical_filename": "A02E.mat",
+          "physical_filename": "004_A02E.mat",
+          "ordinal_prefix_resolved": true
+        },
+        {
+          "relative_path": "A02T.mat",
+          "runtime_path_class": "KAGGLE_INPUT",
+          "runtime_path": "/kaggle/input/datasets/csthv999z/iharq-p01-l1-bnci2014-001-source/003_A02T.mat",
+          "sha256": "5ddd5cb520b1692c3ba1363f48d98f58f0e46f3699ee50d749947950fc39db27",
+          "bytes": 43068077,
+          "canonical_filename": "A02T.mat",
+          "physical_filename": "003_A02T.mat",
+          "ordinal_prefix_resolved": true
+        },
+        {
+          "relative_path": "A03E.mat",
+          "runtime_path_class": "KAGGLE_INPUT",
+          "runtime_path": "/kaggle/input/datasets/csthv999z/iharq-p01-l1-bnci2014-001-source/006_A03E.mat",
+          "sha256": "d4229267ec7624fa8bd3af5cbebac17f415f7c722de6cb676748f8cb3b717d97",
+          "bytes": 42316292,
+          "canonical_filename": "A03E.mat",
+          "physical_filename": "006_A03E.mat",
+          "ordinal_prefix_resolved": true
+        },
+        {
+          "relative_path": "A03T.mat",
+          "runtime_path_class": "KAGGLE_INPUT",
+          "runtime_path": "/kaggle/input/datasets/csthv999z/iharq-p01-l1-bnci2014-001-source/005_A03T.mat",
+          "sha256": "7e731ee8b681d5da6ecb11ae1d4e64b1653c7f15aad5d6b7620b25ce53141e80",
+          "bytes": 44057065,
+          "canonical_filename": "A03T.mat",
+          "physical_filename": "005_A03T.mat",
+          "ordinal_prefix_resolved": true
+        },
+        {
+          "relative_path": "A04E.mat",
+          "runtime_path_class": "KAGGLE_INPUT",
+          "runtime_path": "/kaggle/input/datasets/csthv999z/iharq-p01-l1-bnci2014-001-source/008_A04E.mat",
+          "sha256": "81916dff2c12997974ba50ffc311da006ea66e525010d010765f0047e771c86a",
+          "bytes": 41730824,
+          "canonical_filename": "A04E.mat",
+          "physical_filename": "008_A04E.mat",
+          "ordinal_prefix_resolved": true
+        },
+        {
+          "relative_path": "A04T.mat",
+          "runtime_path_class": "KAGGLE_INPUT",
+          "runtime_path": "/kaggle/input/datasets/csthv999z/iharq-p01-l1-bnci2014-001-source/007_A04T.mat",
+          "sha256": "15850d81b95fc88cc8b9589eb9b713d49fa071e28adaf32d675b3eaa30591d6e",
+          "bytes": 37150377,
+          "canonical_filename": "A04T.mat",
+          "physical_filename": "007_A04T.mat",
+          "ordinal_prefix_resolved": true
+        },
+        {
+          "relative_path": "A05E.mat",
+          "runtime_path_class": "KAGGLE_INPUT",
+          "runtime_path": "/kaggle/input/datasets/csthv999z/iharq-p01-l1-bnci2014-001-source/010_A05E.mat",
+          "sha256": "8b357470865610c28b2f1d351beac247a56a856f02b2859d650736eb2ef77808",
+          "bytes": 44392496,
+          "canonical_filename": "A05E.mat",
+          "physical_filename": "010_A05E.mat",
+          "ordinal_prefix_resolved": true
+        },
+        {
+          "relative_path": "A05T.mat",
+          "runtime_path_class": "KAGGLE_INPUT",
+          "runtime_path": "/kaggle/input/datasets/csthv999z/iharq-p01-l1-bnci2014-001-source/009_A05T.mat",
+          "sha256": "77387d3b669f4ed9a7c1dac4dcba4c2c40c8910bae20fb961bb7cf5a94912950",
+          "bytes": 42452392,
+          "canonical_filename": "A05T.mat",
+          "physical_filename": "009_A05T.mat",
+          "ordinal_prefix_resolved": true
+        },
+        {
+          "relative_path": "A06E.mat",
+          "runtime_path_class": "KAGGLE_INPUT",
+          "runtime_path": "/kaggle/input/datasets/csthv999z/iharq-p01-l1-bnci2014-001-source/012_A06E.mat",
+          "sha256": "bf67a40621b74b6af7a986c2f6edfff7fc2bbbca237aadd07b575893032998d1",
+          "bytes": 43395510,
+          "canonical_filename": "A06E.mat",
+          "physical_filename": "012_A06E.mat",
+          "ordinal_prefix_resolved": true
+        },
+        {
+          "relative_path": "A06T.mat",
+          "runtime_path_class": "KAGGLE_INPUT",
+          "runtime_path": "/kaggle/input/datasets/csthv999z/iharq-p01-l1-bnci2014-001-source/011_A06T.mat",
+          "sha256": "4dc3be1b0d60279134d1220323c73c68cf73799339a7fb224087a3c560a9a7e2",
+          "bytes": 44581256,
+          "canonical_filename": "A06T.mat",
+          "physical_filename": "011_A06T.mat",
+          "ordinal_prefix_resolved": true
+        },
+        {
+          "relative_path": "A07E.mat",
+          "runtime_path_class": "KAGGLE_INPUT",
+          "runtime_path": "/kaggle/input/datasets/csthv999z/iharq-p01-l1-bnci2014-001-source/014_A07E.mat",
+          "sha256": "b9aaec73dcee002fab84ee98e938039a67bf6a3cbf4fc86d5d8df198cfe4c323",
+          "bytes": 42242294,
+          "canonical_filename": "A07E.mat",
+          "physical_filename": "014_A07E.mat",
+          "ordinal_prefix_resolved": true
+        },
+        {
+          "relative_path": "A07T.mat",
+          "runtime_path_class": "KAGGLE_INPUT",
+          "runtime_path": "/kaggle/input/datasets/csthv999z/iharq-p01-l1-bnci2014-001-source/013_A07T.mat",
+          "sha256": "43b6bbef0be78f0ac2b66cb2d9679091f1f5b7f0a5d4ebef73d2c7cc8e11aa96",
+          "bytes": 42809746,
+          "canonical_filename": "A07T.mat",
+          "physical_filename": "013_A07T.mat",
+          "ordinal_prefix_resolved": true
+        },
+        {
+          "relative_path": "A08E.mat",
+          "runtime_path_class": "KAGGLE_INPUT",
+          "runtime_path": "/kaggle/input/datasets/csthv999z/iharq-p01-l1-bnci2014-001-source/016_A08E.mat",
+          "sha256": "0eedbd89790c7d621c8eef68065ddecf80d437bbbcf60321d9253e2305f294f7",
+          "bytes": 46282127,
+          "canonical_filename": "A08E.mat",
+          "physical_filename": "016_A08E.mat",
+          "ordinal_prefix_resolved": true
+        },
+        {
+          "relative_path": "A08T.mat",
+          "runtime_path_class": "KAGGLE_INPUT",
+          "runtime_path": "/kaggle/input/datasets/csthv999z/iharq-p01-l1-bnci2014-001-source/015_A08T.mat",
+          "sha256": "7a4b3bd602d5bc307d3f4527fca2cf076659e94aca584dd64f6286fd413a82f2",
+          "bytes": 45032065,
+          "canonical_filename": "A08T.mat",
+          "physical_filename": "015_A08T.mat",
+          "ordinal_prefix_resolved": true
+        },
+        {
+          "relative_path": "A09E.mat",
+          "runtime_path_class": "KAGGLE_INPUT",
+          "runtime_path": "/kaggle/input/datasets/csthv999z/iharq-p01-l1-bnci2014-001-source/018_A09E.mat",
+          "sha256": "5d79649a42df9d51215def8ffbdaf1c3f76c54b88b9bbaae721e8c6fd972cc36",
+          "bytes": 44780912,
+          "canonical_filename": "A09E.mat",
+          "physical_filename": "018_A09E.mat",
+          "ordinal_prefix_resolved": true
+        },
+        {
+          "relative_path": "A09T.mat",
+          "runtime_path_class": "KAGGLE_INPUT",
+          "runtime_path": "/kaggle/input/datasets/csthv999z/iharq-p01-l1-bnci2014-001-source/017_A09T.mat",
+          "sha256": "b28d8a262c779c8cad9cc80ee6aa9c5691cfa6617c03befe490a090347ebd15c",
+          "bytes": 44785478,
+          "canonical_filename": "A09T.mat",
+          "physical_filename": "017_A09T.mat",
+          "ordinal_prefix_resolved": true
+        }
+      ],
+      "count": 18,
+      "aggregate_sha256": "04a5390f8f36eaadbc0c480ec9377ce1b99caf0b7ab53bad9fda12347995bc49",
+      "observed_checksum": "04a5390f8f36eaadbc0c480ec9377ce1b99caf0b7ab53bad9fda12347995bc49",
+      "expected_checksum": "04a5390f8f36eaadbc0c480ec9377ce1b99caf0b7ab53bad9fda12347995bc49",
+      "checksum_status": "COMPUTED_AND_FROZEN_FOR_RUN",
+      "manifest_path": "/kaggle/input/datasets/csthv999z/iharq-p01-l1-bnci2014-001-source/IHARQ_P01_L1_SOURCE_DATASET_MANIFEST.json",
+      "verification_strategy": "ONE_SCAN_BOUNDED_PARALLEL_SHA256",
+      "hash_workers": 4,
+      "declared_expected_checksum": "compute_or_verify_per_frozen_policy",
+      "checksum_evidence_status": "COMPUTED_AND_FROZEN_FOR_RUN_FROM_SHA256_VERIFIED_SOURCE_DATASET_MANIFEST",
+      "checksum_policy_resolution": {
+        "mode": "FROZEN_OBSERVED_AGGREGATE_UNDER_DECLARED_POLICY",
+        "physical_files_verified_against_source_dataset_manifest": true,
+        "aggregate_sha256": "04a5390f8f36eaadbc0c480ec9377ce1b99caf0b7ab53bad9fda12347995bc49",
+        "scientific_scope_changed": false
+      }
+    },
+    "source_native_preprocessing": [
+      "0.5-100 Hz provider acquisition filter",
+      "50 Hz notch filter"
+    ],
+    "limitations": [
+      "Feet and tongue are preserved as excluded source labels in the official binary branch",
+      "EOG channels are metadata/quality channels and not model input",
+      "CC BY-ND restrictions prohibit redistributed derived raw-signal variants"
+    ],
+    "admission_status": "ADMITTED"
+  },
+  "ablation_id": null,
+  "semantic_hash": "42c424800627b6ee0be7f47ad602ba49cf4c24a632c1fa69c8c750a4ba77e163"
+}

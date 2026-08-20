@@ -1,0 +1,46 @@
+{
+  "artifact_id": "P02-STAGE16-LOW-LABEL-INHERITED-BUDGET-IDENTITY-REPAIR-R2-CLOSURE",
+  "created_at_utc": "2026-08-13T17:09:54.372773+00:00",
+  "status": "PASS",
+  "repair_scope": "DERIVED_EVIDENCE_ONLY",
+  "scientific_training_performed": false,
+  "prediction_regenerated": false,
+  "checkpoint_reselected": false,
+  "hyperparameters_changed": false,
+  "scientific_configuration_changed": false,
+  "test_outcome_used_for_model_selection": false,
+  "stage15_or_earlier_science_mutated": false,
+  "curve_records": 36,
+  "expected_curve_records": 36,
+  "aggregate_curve_points": 216,
+  "expected_aggregate_curve_points": 216,
+  "planned_low_label_run_cells": 216,
+  "terminal_counts": {
+    "FAILED": 3,
+    "SUCCESS": 213
+  },
+  "inherited_budget_ids": {
+    "1": "P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS",
+    "2": "P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS",
+    "4": "P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS",
+    "8": "P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS",
+    "16": "P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS",
+    "32": "P01-L1-LOW-CAL-OFFICIAL-R2:32_PER_CLASS"
+  },
+  "single_frozen_subset_limitation": true,
+  "explicit_failure_accounting": true,
+  "no_interpolation": true,
+  "semantic_audit": "diagnostics/runtime_successor/G16_SEMANTIC_AUDIT_R1.json",
+  "outputs": {
+    "LowCalibrationCurveRecord": "records/LowCalibrationCurveRecord/curves.jsonl",
+    "curve_source_table": "analysis_inputs/low_label_metric_source.csv",
+    "curve_summary": "analysis_inputs/low_label_curve_summary.json"
+  },
+  "output_sha256": {
+    "LowCalibrationCurveRecord": "1f51a24d0233eca972cc0f905cb437d6122dba91916d2cb3354372d19ed7c13b",
+    "curve_source_table": "0123b1513da263b8c468024a1d28532d1fbc52e5faffb2bdc00e285b5213f901",
+    "curve_summary": "4ab8f190fdf84ef956614cea458b35fcf2b5b10c4d415953a2b77683572924d7",
+    "semantic_audit": "d90df167ac8b080f9067373d95c970eeec715daebfc81e678e2231ca960b71bf"
+  },
+  "runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R7H7-STAGE11-EEGNET-AUTHOR-CENTERED-10000E-TRUE-P120-CONTINUATION"
+}

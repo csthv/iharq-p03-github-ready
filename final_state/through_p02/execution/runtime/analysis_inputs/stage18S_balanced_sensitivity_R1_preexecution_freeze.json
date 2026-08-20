@@ -1,0 +1,100 @@
+{
+  "artifact_id": "P02-STAGE18S-BALANCED-SENSITIVITY-SCIENTIFIC-FREEZE-R1",
+  "supplement_id": "P02-STAGE18S-BALANCED-SENSITIVITY-R1",
+  "revision": "R1-THREE-REPEAT-ANCHORS-PLUS-4-16-32-MR00",
+  "created_at_utc": "2026-08-14T00:27:59.280466+00:00",
+  "status": "FROZEN_BEFORE_SUPPLEMENT_EXECUTION",
+  "canonical_stage18_status": "SUCCESS",
+  "canonical_g18_status": "PASS",
+  "canonical_stage18_immutable": true,
+  "canonical_a4_terminal_files_protected": 1218,
+  "stage18_policy_sha256": "a21655f9b52cfbf817b1b271f758739cf01b1e7a75e786c880ccdd1a3c58ef32",
+  "plan_sha256": "543d896dcc4ff0f66045ead0d8705e24bb4750d1611d15a401538ecaef6bc7c1",
+  "planned_cells": 162,
+  "planned_groups": 54,
+  "scope": {
+    "datasets": [
+      "BNCI2014_001",
+      "Lee2019_MI",
+      "PhysioNetMI"
+    ],
+    "roles": [
+      "NEURAL",
+      "SSL"
+    ],
+    "conditions": [
+      "A4-C1-LONG-3P5S",
+      "A4-C2-MULTI-HARD-VOTE",
+      "A4-C3-MULTI-PROB-AVG"
+    ],
+    "anchor_repeat_extension": {
+      "budgets": [
+        "FULL_TRAIN",
+        "P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS",
+        "P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS"
+      ],
+      "additional_repeats": [
+        1,
+        2
+      ],
+      "combined_with_existing_canonical_repeat": [
+        0
+      ],
+      "resulting_descriptive_repeats": [
+        0,
+        1,
+        2
+      ]
+    },
+    "intermediate_budget_probe": {
+      "budgets": [
+        "P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS",
+        "P01-L1-LOW-CAL-OFFICIAL-R2:32_PER_CLASS",
+        "P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS"
+      ],
+      "repeat": [
+        0
+      ]
+    },
+    "intentionally_not_executed": {
+      "budget": "P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS",
+      "reason": "BOUNDED_COMPUTE_BALANCED_SENSITIVITY_DESIGN"
+    }
+  },
+  "claim_scope": {
+    "post_hoc_sensitivity_evidence": true,
+    "retroactive_confirmatory_claim": false,
+    "full_buildbook_replication_equivalence": false,
+    "five_repeat_stability_claim": false,
+    "three_repeat_anchor_sensitivity_descriptive": true,
+    "six_point_mr00_budget_sensitivity_descriptive": true,
+    "test_outcome_used_for_model_or_checkpoint_selection": false,
+    "note": "Supplement scope was chosen after canonical Stage18 results existed; therefore it is sensitivity evidence, not a pre-Stage18 confirmatory plan."
+  },
+  "scientific_training_policy": {
+    "same_stage18_model_recipes": true,
+    "same_class_weight_policy": true,
+    "same_validation_selection": true,
+    "same_restore_best": true,
+    "same_checkpoint_before_test_firewall": true,
+    "same_cbramod_long_fail_closed": true,
+    "hyperparameter_search_added": false
+  },
+  "transport": {
+    "max_slots_per_gpu": 3,
+    "max_workers": 6,
+    "single_model_multi_gpu": false,
+    "same_cache_group_on_multiple_workers": false,
+    "same_gpu_virtual_cuda_rng": true,
+    "adaptive_resource_guards": true
+  },
+  "expected_terminal_counts": {
+    "SUCCESS": 135,
+    "INPUT_INCOMPATIBLE": 27
+  },
+  "expected_member_receipts": 216,
+  "expected_member_status_counts": {
+    "SUCCESS": 189,
+    "INPUT_INCOMPATIBLE": 27
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "CBraMod": {
+    "admission": {
+      "resolved_variant": "CBraMod",
+      "status": "ADMITTED"
+    },
+    "checkpoint_path": "/kaggle/working/iharq_p02_run/_hf_runtime/SSL-CBRAMOD/model.safetensors",
+    "checkpoint_sha256": "a939ace9aa1e229f08391ad8bb2d197b507ae2c519a50addf087f0151b2df5c3",
+    "official_stage12_cells": 105,
+    "status": "CURRENT_BINDING_ALREADY_QUALIFIED"
+  },
+  "DBConformer": {
+    "commit": "02cf63206087045c5cd0e8fa882831102e6fd01b",
+    "license": "POLYFORM_NONCOMMERCIAL_1_0_0_ACADEMIC_NONCOMMERCIAL",
+    "official_stage12_cells": 15,
+    "preferred_sequence_slot": true,
+    "repository": "wzwvv/DBConformer",
+    "source_checks": "PASS",
+    "source_files": {
+      "DBConformer_CV.py": {
+        "bytes": 11908,
+        "path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/frozen_sources/DBConformer/02cf63206087045c5cd0e8fa882831102e6fd01b/DBConformer_CV.py",
+        "sha256": "899df00bb6aad42a4f4be0ca6796d6322a8c0194366ca4e8bb47432ad31d1075",
+        "source_url": "https://raw.githubusercontent.com/wzwvv/DBConformer/02cf63206087045c5cd0e8fa882831102e6fd01b/DBConformer_CV.py"
+      },
+      "README.md": {
+        "bytes": 10416,
+        "path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/frozen_sources/DBConformer/02cf63206087045c5cd0e8fa882831102e6fd01b/README.md",
+        "sha256": "129f17c797753587ed6911cf1f4dcdc87fad2c3135f2edac85044440719311fa",
+        "source_url": "https://raw.githubusercontent.com/wzwvv/DBConformer/02cf63206087045c5cd0e8fa882831102e6fd01b/README.md"
+      },
+      "models/DBConformer.py": {
+        "bytes": 14592,
+        "path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/frozen_sources/DBConformer/02cf63206087045c5cd0e8fa882831102e6fd01b/models/DBConformer.py",
+        "sha256": "b891d8ba28b3ef5064106065e4a2c9bd1e346fe29b6d68cc50c91dbf6cfa4bd1",
+        "source_url": "https://raw.githubusercontent.com/wzwvv/DBConformer/02cf63206087045c5cd0e8fa882831102e6fd01b/models/DBConformer.py"
+      },
+      "utils/network.py": {
+        "bytes": 20285,
+        "path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/frozen_sources/DBConformer/02cf63206087045c5cd0e8fa882831102e6fd01b/utils/network.py",
+        "sha256": "a44645e840444dd43b07cfe39748e33fe8b9bb4615a0d02243608f93be07c419",
+        "source_url": "https://raw.githubusercontent.com/wzwvv/DBConformer/02cf63206087045c5cd0e8fa882831102e6fd01b/utils/network.py"
+      }
+    },
+    "source_identity": "ORIGINAL_AUTHOR"
+  },
+  "FBCNet": {
+    "commit": "de1bbdd8a54cb1e466830e3d47070e0e56761a37",
+    "license": "MIT",
+    "official_stage12_cells": 15,
+    "repository": "ravikiran-mane/FBCNet",
+    "representation_gate": {
+      "P01_constrained_filterbank": [
+        [
+          8,
+          12
+        ],
+        [
+          12,
+          16
+        ],
+        [
+          16,
+          20
+        ],
+        [
+          20,
+          24
+        ],
+        [
+          24,
+          28
+        ],
+        [
+          28,
+          32
+        ]
+      ],
+      "canonical_P01_passband_hz": [
+        8.0,
+        32.0
+      ],
+      "forbidden": [
+        "pretend 4-8 Hz survived P01",
+        "pretend 32-40 Hz survived P01",
+        "test-driven selection"
+      ]
+    },
+    "source_checks": "PASS",
+    "source_files": {
+      "LICENSE": {
+        "bytes": 1071,
+        "path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/frozen_sources/FBCNet/de1bbdd8a54cb1e466830e3d47070e0e56761a37/LICENSE",
+        "sha256": "d49139077118be986cf33d2548d7d852155e539e45520ea79d9b370c7d2eb146",
+        "source_url": "https://raw.githubusercontent.com/ravikiran-mane/FBCNet/de1bbdd8a54cb1e466830e3d47070e0e56761a37/LICENSE"
+      },
+      "README.md": {
+        "bytes": 2648,
+        "path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/frozen_sources/FBCNet/de1bbdd8a54cb1e466830e3d47070e0e56761a37/README.md",
+        "sha256": "0c2b102f8dc10cff77efc579587251d031923a41e4687b5b3860b8d5345cb247",
+        "source_url": "https://raw.githubusercontent.com/ravikiran-mane/FBCNet/de1bbdd8a54cb1e466830e3d47070e0e56761a37/README.md"
+      },
+      "codes/centralRepo/networks.py": {
+        "bytes": 12126,
+        "path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/frozen_sources/FBCNet/de1bbdd8a54cb1e466830e3d47070e0e56761a37/codes/centralRepo/networks.py",
+        "sha256": "48b0b46f36d70a8ea337fa1e82cb84d5eed593c35bbb860672dcd3569c751d92",
+        "source_url": "https://raw.githubusercontent.com/ravikiran-mane/FBCNet/de1bbdd8a54cb1e466830e3d47070e0e56761a37/codes/centralRepo/networks.py"
+      },
+      "codes/centralRepo/transforms.py": {
+        "bytes": 9317,
+        "path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/frozen_sources/FBCNet/de1bbdd8a54cb1e466830e3d47070e0e56761a37/codes/centralRepo/transforms.py",
+        "sha256": "0b719004e94d04f6a38e01820b468d65e9ba4c95f8696a1680c6fce638609a48",
+        "source_url": "https://raw.githubusercontent.com/ravikiran-mane/FBCNet/de1bbdd8a54cb1e466830e3d47070e0e56761a37/codes/centralRepo/transforms.py"
+      },
+      "codes/classify/ho.py": {
+        "bytes": 14480,
+        "path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/frozen_sources/FBCNet/de1bbdd8a54cb1e466830e3d47070e0e56761a37/codes/classify/ho.py",
+        "sha256": "689e54b7bf3fff535223f6a3374ca0602a73927de7d4a6cfd7b127f9d6b7fe37",
+        "source_url": "https://raw.githubusercontent.com/ravikiran-mane/FBCNet/de1bbdd8a54cb1e466830e3d47070e0e56761a37/codes/classify/ho.py"
+      }
+    },
+    "source_identity": "ORIGINAL_AUTHOR"
+  },
+  "P00_P01_mutated": false,
+  "REVE": {
+    "architecture_only_diagnostic_allowed_separately": true,
+    "claim_bearing_eligible": false,
+    "official_execution_status": "SCIENTIFICALLY_BLOCKED_BY_KNOWN_PRETRAINING_CORPUS_OVERLAP",
+    "official_stage12_role": "DIAGNOSTIC_ONLY_GATED",
+    "planned_cells": 3
+  },
+  "artifact_id": "P02-STAGE12-R5R-EXTERNAL-MODEL-SOURCE-FREEZE-R1",
+  "budgets_changed": false,
+  "created_utc": "2026-08-10T08:44:15.674738+00:00",
+  "hyperparameter_grids_changed": false,
+  "labels_changed": false,
+  "metrics_changed": false,
+  "neural_training_policy_changed": false,
+  "package_versions_changed": false,
+  "parent_runtime_successor": "P02-RUNTIME-SUCCESSOR-R4-SR-PROBABILITY-STALE-CACHE-INVALIDATION-LIVE-CONTINUATION",
+  "pre_result": true,
+  "resource_execution_successor": "R5R",
+  "resource_policy": {
+    "allowed_by_user": true,
+    "data_parallel_max_gpus": 2,
+    "prep_cache_max_gib": 18.0,
+    "scientific_hyperparameters_changed": false,
+    "use_data_parallel": true
+  },
+  "seeds_changed": false,
+  "source_tree_files": 9,
+  "source_tree_manifest_sha256": "1564cab56551d01e23c4ad17e83e77a7accf705bfc06ba6186282724a325ed28",
+  "splits_changed": false,
+  "stage12_existing_terminal_evidence": {
+    "count": 0,
+    "fresh_boundary": true,
+    "originals_deleted": false,
+    "originals_modified": false
+  },
+  "successor_candidate_id": "P02-RUNTIME-SUCCESSOR-R5R-STAGE12-RESOURCE-OPTIMIZED-EXTERNAL-MODEL-LIVE-CONTINUATION"
+}

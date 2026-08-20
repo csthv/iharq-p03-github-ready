@@ -1,0 +1,24 @@
+build_book_blocking_owner_decisions: 0
+official_execution_blocking_owner_decisions: 0
+stage05_behavior: VERIFY_ONLY
+closed_decisions:
+- decision_id: OD-P02-PROTO-01
+  status: CLOSED_R4
+  binding: see p02_planned_scientific_execution_freeze_R4.yaml repeats/seeds
+- decision_id: OD-P02-PROTO-02
+  status: CLOSED_R4
+  binding: exact grids/caps/resource limits frozen
+- decision_id: OD-P02-PROTO-03
+  status: CLOSED_R4
+  binding: 95%/10000/BCa-fallback/Wilcoxon/Friedman/Holm frozen
+- decision_id: OD-P02-TRAIN-AUG-01
+  status: CLOSED_R4_AMENDMENT_R1
+  binding: 'P02-TRAIN-AUG-SR-EEGNET-FULL-R1: p=0.5; 4 segments; same five EEGNet seeds;
+    15 diagnostic FULL_TRAIN cells; train-only same-class legal donors; no augmentation-specific
+    retuning.'
+- decision_id: OD-P02-TRAIN-WEIGHT-01
+  status: CLOSED_R4_AMENDMENT_R1
+  binding: 'NEVER_WEIGHT_P02_CURRENT_FROZEN_INPUTS: [1.0,1.0]; exact current train
+    counts verified; changed input/count identity fails closed.'
+current_scientific_freeze: P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R4
+preexecution_amendment_id: P02-PREEXEC-TRAINING-POLICY-AMENDMENT-R1

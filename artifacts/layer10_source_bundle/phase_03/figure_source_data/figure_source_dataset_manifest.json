@@ -1,0 +1,76 @@
+{
+  "config_sha256": "2eda0689ab42e93c91b3ef9b76e0168d1c13d1feb3d1a552beaade91105ab7c3",
+  "dataset_id": "P03-L10-FIGURE-SOURCES-R1",
+  "no_recompute_contract": "PROHIBITED",
+  "product_id": "P03-PROD-041",
+  "run_id": "P03-L3-OFFICIAL-09ca82c743e0411a",
+  "schema_id": "FigureSourceDataset.v1",
+  "source_files": [
+    {
+      "artifact_id": "P03-FIGURE-SOURCE-RELIABILITY-BINS",
+      "bytes": 482743,
+      "columns": [
+        "group_id",
+        "report_id",
+        "bin_index",
+        "lower",
+        "upper",
+        "count",
+        "mean_confidence",
+        "accuracy",
+        "absolute_gap"
+      ],
+      "limitations": [],
+      "path": "figure_source_data/reliability_bins.csv",
+      "sha256": "980841e313fc61faa6d25edd4981ed9d243141ad818e50d02ea749e693ccc325",
+      "source_artifact_ids": [
+        "P03-PROD-020",
+        "P03-PROD-021"
+      ],
+      "source_sha256s": [
+        "980841e313fc61faa6d25edd4981ed9d243141ad818e50d02ea749e693ccc325"
+      ],
+      "units": {
+        "accuracy": "fraction",
+        "bin_index": "index",
+        "count": "records",
+        "lower": "probability",
+        "mean_confidence": "probability",
+        "upper": "probability"
+      }
+    },
+    {
+      "artifact_id": "P03-FIGURE-SOURCE-RISK-COVERAGE",
+      "bytes": 110934194,
+      "columns": [
+        "curve_id",
+        "group_id",
+        "feature_id",
+        "role",
+        "point_index",
+        "threshold",
+        "accepted_count",
+        "rejected_count",
+        "coverage",
+        "risk"
+      ],
+      "limitations": [
+        "P03-LIM-BINARY-UNCERTAINTY-ALIAS-R1",
+        "P03-LIM-SELECTIVE-NO-LEGAL-RULE-R1"
+      ],
+      "path": "figure_source_data/risk_coverage_curves.csv",
+      "sha256": "043f03d9b68623cf628c400135a99dede238d31164a2c0c06d15ea83a827ef44",
+      "source_artifact_ids": [
+        "P03-PROD-028"
+      ],
+      "source_sha256s": [
+        "043f03d9b68623cf628c400135a99dede238d31164a2c0c06d15ea83a827ef44"
+      ],
+      "units": {
+        "coverage": "fraction",
+        "risk": "fraction",
+        "threshold": "feature-specific score"
+      }
+    }
+  ]
+}

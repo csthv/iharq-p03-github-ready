@@ -1,0 +1,187 @@
+cumulative_report_id: IHARQ-CUMULATIVE-PHASE-EVIDENCE-RESULTS-INTERPRETATION-THROUGH-P01-R1
+status: READY_FOR_P01_LAYER0_REVIEW
+p00_continuity:
+  state: ALREADY_DISPOSITIONED
+  current_claim_versions:
+  - P00-CLM-001/v2
+  - P00-CLM-002/v2
+  - P00-CLM-003/v2
+  - P00-CLM-004/v2
+  - P00-CLM-005/v2
+  - P00-CLM-006/v2
+  - P00-CLM-007/v2
+  decision: APPROVE_WITH_QUALIFICATIONS
+  layer0_release_id: P00-LAYER0-RELEASE-R2
+  evidence_map_release_id: P00-EVIDENCE-MAP-RELEASE-R2
+  layer10_package_id: P00-BASIC-LAYER10-PACKAGE-R2
+p01_review_scope:
+- candidate_claim_id: P01-CLAIM-CAND-001
+  proposed_wording: Phase 1 established a checksum-bound, provenance-traceable three-dataset
+    public EEG foundation for the IHARQ binary motor-imagery branch.
+  finding_ids:
+  - P01-FIND-001
+  evidence_class: PROVENANCE_EVIDENCE
+  support_level: DIRECT
+  limitation_tags:
+  - PUBLIC_EEG_ONLY
+  - NON_CLINICAL
+  claim_ceiling: Data provenance and reproducibility only
+  status: CANDIDATE_FOR_LAYER0_REVIEW
+  priority: HIGH
+- candidate_claim_id: P01-CLAIM-CAND-002
+  proposed_wording: The frozen P01 split is subject-grouped and passed the implemented
+    disjointness and leakage checks.
+  finding_ids:
+  - P01-FIND-002
+  - P01-FIND-006
+  evidence_class: VALIDATION_EVIDENCE
+  support_level: DIRECT_BOUNDED
+  limitation_tags:
+  - IMPLEMENTED_CHECKS_ONLY
+  claim_ceiling: Contract leakage/disjointness correctness
+  status: QUALIFICATION_LIKELY_REQUIRED
+  priority: HIGH
+- candidate_claim_id: P01-CLAIM-CAND-003
+  proposed_wording: 'The official Layer-1 pipeline conserved the complete accepted-event
+    denominator: 12,910 accepted events produced 12,910 valid core windows.'
+  finding_ids:
+  - P01-FIND-003
+  evidence_class: INTEGRITY_EVIDENCE
+  support_level: DIRECT
+  limitation_tags:
+  - NO_MODEL_EFFECT_INFERENCE
+  claim_ceiling: Data materialization closure
+  status: CANDIDATE_FOR_LAYER0_REVIEW
+  priority: HIGH
+- candidate_claim_id: P01-CLAIM-CAND-004
+  proposed_wording: The official core numerical Dataset was persisted as 172 lossless
+    HDF5 subject shards and verified by immutable provider/version/manifest identities.
+  finding_ids:
+  - P01-FIND-004
+  evidence_class: INTEGRITY_EVIDENCE
+  support_level: DIRECT
+  limitation_tags:
+  - PRIVATE_KAGGLE_EXTERNAL_ARTIFACT_ACCESS
+  - SOURCE_LICENSE_CONSTRAINTS
+  claim_ceiling: Retrieval/storage reproducibility
+  status: CANDIDATE_FOR_LAYER0_REVIEW
+  priority: MEDIUM
+- candidate_claim_id: P01-CLAIM-CAND-005
+  proposed_wording: P01 quality processing followed an annotate-not-repair policy;
+    20 soft/provider flags were preserved while no hard-invalid summary or official
+    core window was observed.
+  finding_ids:
+  - P01-FIND-005
+  evidence_class: VALIDATION_EVIDENCE
+  support_level: DIRECT_BOUNDED
+  limitation_tags:
+  - SOFT_FLAG_NOT_EQUIVALENT_TO_CORRUPTION
+  claim_ceiling: Quality annotation and hard-validity closure
+  status: QUALIFICATION_LIKELY_REQUIRED
+  priority: MEDIUM
+- candidate_claim_id: P01-CLAIM-CAND-006
+  proposed_wording: P01 established the Layer-1 readiness foundation for all official
+    A0–A13 identities while preserving A14 as absent/prohibited.
+  finding_ids:
+  - P01-FIND-008
+  evidence_class: READINESS_EVIDENCE
+  support_level: DIRECT
+  limitation_tags:
+  - NO_ABLATION_EFFECTIVENESS_IN_P01
+  claim_ceiling: Foundation readiness only
+  status: CANDIDATE_FOR_LAYER0_REVIEW
+  priority: HIGH
+- candidate_claim_id: P01-CLAIM-CAND-007
+  proposed_wording: P01 established a 12,910-event fully matched A4 R2 data substrate
+    for future governed evaluation, without padding, clipping, fabrication, or parent-event
+    loss.
+  finding_ids:
+  - P01-FIND-009
+  - P01-FIND-010
+  evidence_class: READINESS_EVIDENCE
+  support_level: DIRECT_BOUNDED
+  limitation_tags:
+  - A4_R2_RETROSPECTIVE_FEASIBILITY_ORIGIN_NOT_CONFIRMATORY_IN_P01
+  claim_ceiling: Future A4 substrate readiness; not A4 effectiveness
+  status: QUALIFICATION_LIKELY_REQUIRED
+  priority: HIGH
+- candidate_claim_id: P01-CLAIM-CAND-008
+  proposed_wording: The accepted P01 execution closed all 27 stages, 16 deterministic
+    gates, and 50 regression tests with zero unresolved blockers.
+  finding_ids:
+  - P01-FIND-012
+  evidence_class: EXECUTION_EVIDENCE
+  support_level: DIRECT
+  limitation_tags:
+  - NO_EFFECTIVENESS_INFERENCE
+  claim_ceiling: Execution/reproducibility closure
+  status: CANDIDATE_FOR_LAYER0_REVIEW
+  priority: HIGH
+- candidate_claim_id: P01-CLAIM-CAND-009
+  proposed_wording: P01 runtime compatibility and resource amendments preserved the
+    frozen scientific core data contract while recording the actual Python 3.12.13
+    environment.
+  finding_ids:
+  - P01-FIND-011
+  evidence_class: EXECUTION_EVIDENCE
+  support_level: DIRECT_BOUNDED
+  limitation_tags:
+  - ACTUAL_RUNTIME_PYTHON_3_12_13_WITH_COMPATIBILITY_AMENDMENT
+  - ADAPTIVE_DISK_RESOURCE_AMENDMENT
+  claim_ceiling: Execution reproducibility
+  status: QUALIFICATION_LIKELY_REQUIRED
+  priority: MEDIUM
+- candidate_claim_id: P01-CLAIM-CAND-010
+  proposed_wording: P01 provides a frozen technical data contract that P02 can consume
+    without silent relabeling, rewindowing, split mutation, denominator substitution,
+    or test leakage.
+  finding_ids:
+  - P01-FIND-014
+  evidence_class: READINESS_EVIDENCE
+  support_level: DIRECT
+  limitation_tags:
+  - DOCUMENTARY_CLOSURE_SEQUENCE_REMAINS
+  claim_ceiling: Downstream technical readiness
+  status: CANDIDATE_FOR_LAYER0_REVIEW
+  priority: HIGH
+- candidate_claim_id: P01-CLAIM-CAND-011
+  proposed_wording: A4 R2 improves decoder performance relative to the core window.
+  finding_ids:
+  - P01-FIND-009
+  evidence_class: READINESS_EVIDENCE
+  support_level: NONE_FROM_P01
+  limitation_tags:
+  - A4_EFFECTIVENESS_NOT_EXECUTED
+  claim_ceiling: Not claimable from P01
+  status: NOT_SUPPORTED_BY_P01
+  priority: HIGH
+- candidate_claim_id: P01-CLAIM-CAND-012
+  proposed_wording: The P01 data foundation demonstrates clinical effectiveness or
+    deployment safety.
+  finding_ids:
+  - P01-FIND-001
+  - P01-FIND-012
+  evidence_class: EXECUTION_EVIDENCE
+  support_level: NONE_FROM_P01
+  limitation_tags:
+  - NON_CLINICAL
+  - NO_DEPLOYMENT_CLAIM
+  claim_ceiling: Not claimable from P01
+  status: NOT_SUPPORTED_BY_P01
+  priority: HIGH
+negative_evidence:
+- P01-FIND-010
+- P01-FIND-013
+limitations:
+- PUBLIC_EEG_ONLY
+- NON_CLINICAL
+- NO_DEPLOYMENT_CLAIM
+- PRIVATE_KAGGLE_EXTERNAL_ARTIFACT_ACCESS
+- A4_R2_RETROSPECTIVE_FEASIBILITY_ORIGIN_NOT_CONFIRMATORY_IN_P01
+- ACTUAL_RUNTIME_PYTHON_3_12_13_WITH_COMPATIBILITY_AMENDMENT
+- ADAPTIVE_DISK_RESOURCE_AMENDMENT
+- SOURCE_LICENSE_REDISTRIBUTION_CONSTRAINTS
+- BINARY_MI_BRANCH_SCOPE
+claim_ceiling: P01 data provenance, integrity, validation, readiness, execution/reproducibility
+  only; no decoder/clinical/deployment/A4-effectiveness claims.
+unresolved_analytical_blockers: []

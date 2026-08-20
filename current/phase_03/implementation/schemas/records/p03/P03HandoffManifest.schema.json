@@ -1,0 +1,377 @@
+{
+  "$id": "https://github.com/csthv/IHARQ/schemas/schemas/records/p03/P03HandoffManifest.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "allowed_uses": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "artifact_count": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "artifact_index_path": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "blockers": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "checksum_ledger_path": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "config_identity": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "config_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "consumer_smoke_receipt": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "created_at_utc": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "destination": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "environment_identity": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "evidence_map_seed_ids": {
+      "type": "array"
+    },
+    "external_pointer_ids": {
+      "type": "array"
+    },
+    "failure_code": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object",
+        "null"
+      ]
+    },
+    "handoff_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "handoff_status": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "invalidated_by": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object",
+        "null"
+      ]
+    },
+    "layer0_boundary_ids": {
+      "type": "array"
+    },
+    "layer_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "lifecycle_status": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "limitation_ids": {
+      "type": "array"
+    },
+    "limitations": {
+      "type": "array"
+    },
+    "lineage_parent_ids": {
+      "type": "array"
+    },
+    "payload_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "phase_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "producer_module": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "prohibited_uses": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "protocol_identity": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "protocol_snapshot_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "readiness_facets": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "record_family_versions": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "record_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "run_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "run_identity": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "schema_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "schema_version": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "source_artifact_ids": {
+      "type": "array"
+    },
+    "source_sha256s": {
+      "type": "array"
+    },
+    "supersedes": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object",
+        "null"
+      ]
+    },
+    "terminal_status": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "record_id",
+    "phase_id",
+    "layer_id",
+    "run_id",
+    "config_sha256",
+    "protocol_snapshot_id",
+    "created_at_utc",
+    "producer_module",
+    "source_artifact_ids",
+    "source_sha256s",
+    "lineage_parent_ids",
+    "lifecycle_status",
+    "terminal_status",
+    "supersedes",
+    "invalidated_by",
+    "limitations",
+    "failure_code",
+    "payload_sha256",
+    "handoff_id",
+    "destination",
+    "artifact_index_path",
+    "artifact_count",
+    "record_family_versions",
+    "run_identity",
+    "config_identity",
+    "protocol_identity",
+    "environment_identity",
+    "checksum_ledger_path",
+    "readiness_facets",
+    "blockers",
+    "limitation_ids",
+    "allowed_uses",
+    "prohibited_uses",
+    "consumer_smoke_receipt",
+    "external_pointer_ids",
+    "evidence_map_seed_ids",
+    "layer0_boundary_ids",
+    "handoff_status"
+  ],
+  "title": "IHARQ P03 P03HandoffManifest governed profile v1",
+  "type": "object",
+  "x-iharq-layer": "L3",
+  "x-iharq-phase": "P03",
+  "x-iharq-status": "GOVERNED_P03_PROFILE"
+}

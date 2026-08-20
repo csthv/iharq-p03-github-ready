@@ -1,0 +1,13 @@
+{
+  "status": "SUCCESS",
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "branch": "CLS-FBCSP-LR",
+  "checkpoint_sha256": "e630768eee126dbe5b9d63a98edf27fcbd06c19bd29be029742765ad85618839",
+  "model_id": "CLS-FBCSP-LR:A4:PhysioNetMI__FULL_TRAIN__CLS-FBCSP-LR__0__1",
+  "score_type": "NATIVE_PROBABILITY",
+  "latency_summary": {
+    "batch1_latency_median_s": 0.03936129099747632,
+    "batch1_latency_p95_s": 0.04058845459876466,
+    "repeats": 5
+  }
+}

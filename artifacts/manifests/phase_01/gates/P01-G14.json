@@ -1,0 +1,17 @@
+{
+  "gate_id": "P01-G14",
+  "official_or_local_name": "manifest_path_hash_closure",
+  "status": "PASS",
+  "inputs": [],
+  "procedure_version": "P01-L1-GATE-R6",
+  "observations": {},
+  "failure_codes": [],
+  "repair_owner": "BUILD_BOOK_AND_L1_MANIFESTS",
+  "affected_artifacts": [],
+  "evidence_paths": [
+    "manifests/phase_01/execution_bundle_manifest.json",
+    "checksums.sha256"
+  ],
+  "manifest_entry": "manifests/phase_01/gates/P01-G14.json",
+  "blocking_effect": false
+}

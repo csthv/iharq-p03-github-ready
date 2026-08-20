@@ -1,0 +1,56 @@
+{
+  "FBCNet_author_horizon_provenance": {
+    "IHARQ_preserved_differences": {
+      "class_weight_policy": "P02_R2_GOVERNED",
+      "continue_after_earlystop": false,
+      "selection_metric": "validation_BACC",
+      "split_authority": "P01_SUBJECT_GROUPED_ROLES",
+      "test_visibility": "STRICTLY_AFTER_SELECTION"
+    },
+    "author_batch_size": 16,
+    "author_load_best_model": true,
+    "author_lr": 0.001,
+    "author_max_epochs": 1500,
+    "author_no_decrease_epochs": 200,
+    "source_commit": "de1bbdd8a54cb1e466830e3d47070e0e56761a37",
+    "source_file": "codes/classify/cv.py",
+    "source_repository": "ravikiran-mane/FBCNet"
+  },
+  "P00_P01_mutated": false,
+  "P01_consumption_audit": "diagnostics/runtime_successor/stage12_external_models_R6R5/P02_STAGE12_R6R5_P01_CONSUMPTION_AUDIT_R1.json",
+  "blockers": [],
+  "canonical_stage11_runtime_successor": "P02-RUNTIME-SUCCESSOR-R7H7-STAGE11-EEGNET-AUTHOR-CENTERED-10000E-TRUE-P120-CONTINUATION",
+  "dependency_audit": "ACCEPTANCE_PREREQUISITE_ONLY",
+  "evidence": "stage_ledger/stage_12.json",
+  "gate_id": "G12",
+  "model_specific_horizon_policy": {
+    "DNN-FBCNET": {
+      "max_epochs": 1500,
+      "patience": 200,
+      "reason": "PREDECLARED_R6R5_ORIGINAL_AUTHOR_HORIZON_AND_NODECREASE_WINDOW"
+    },
+    "DNN-SEQ": {
+      "max_epochs": 150,
+      "patience": 40,
+      "reason": "AUTHOR_CENTERED_R6R3_HORIZON_RETAINED"
+    },
+    "SSL-CBRAMOD": {
+      "max_epochs": 150,
+      "patience": 40,
+      "reason": "SOURCE_CENTERED_R6R3_HORIZON_RETAINED"
+    }
+  },
+  "observability_status": "PASS",
+  "pre_r6_archive": "diagnostics/runtime_successor/stage12_external_models_R6R5/pre_r6r3_official_stage12_archive/20260812T005807Z",
+  "pre_stage11_r7_status": "PASS",
+  "r6_scientific_training_policy_amendment": true,
+  "revalidation_receipt": "diagnostics/runtime_successor/P02_STAGE12_REVALIDATED_AFTER_CANONICAL_STAGE11_R1.json",
+  "revalidation_required": false,
+  "runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R6R5-STAGE12-FBCNET-AUTHOR-HORIZON-1500-200",
+  "stage12_retraining_implied": false,
+  "stage12_scientific_artifacts_byte_identical": true,
+  "stage_id": "12",
+  "staged_closure_audit": "diagnostics/runtime_successor/stage12_external_models_R6R5/G12_R6R5_STAGED_CLOSURE_AUDIT_R1.json",
+  "status": "PASS",
+  "test_set_used_for_hyperparameter_selection": false
+}

@@ -1,0 +1,20 @@
+layer_id: L8
+mode: FOUNDATION_ONLY
+owner: Layer 8
+profile_version: 1.0-audit3
+stress_families:
+- DROPOUT
+- NOISE
+- DRIFT
+- LATENCY
+- MISSINGNESS
+- CORRUPTION
+intensity_representation: GOVERNED_DECIMAL_STRING
+schedule_required: true
+seed_required: true
+clean_source_immutable: true
+matched_pair_required: true
+required_limitations:
+- STRESS_ONLY
+- MOCK_ONLY
+scientific_execution: false

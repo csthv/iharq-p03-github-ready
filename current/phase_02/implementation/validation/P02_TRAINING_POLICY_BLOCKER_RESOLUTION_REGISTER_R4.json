@@ -1,0 +1,49 @@
+{
+  "register_id": "P02-TRAINING-POLICY-BLOCKER-RESOLUTION-REGISTER-R4",
+  "status": "PASS",
+  "owner_authorization": "Resolve blocker numbers by lawful code calibration from training/validation when possible; otherwise use research-grounded minimal freeze; preserve P02 purpose/outputs/artifacts.",
+  "amendment": "contracts/P02_PREEXECUTION_TRAINING_POLICY_AMENDMENT_R2.yaml",
+  "scientific_freeze": "machine_readable/p02_planned_scientific_execution_freeze_R5.yaml",
+  "blockers": [
+    {
+      "id": "P02-BLOCK-TRAIN-AUG-001",
+      "pre_state": "BLOCKED",
+      "resolution_type": "PREDECLARED_VALIDATION_ONLY_ALGORITHM",
+      "runtime_enforcement": [
+        "Stage05 policy validation",
+        "Stage11 dataset-level S&R probability selection",
+        "Braindecode auto n_segments resolution",
+        "Stage11 final 15 diagnostic fits",
+        "Stage15 closure",
+        "Stage22 handoff"
+      ],
+      "test_access_for_selection": "PROHIBITED",
+      "status": "RESOLVED"
+    },
+    {
+      "id": "P02-BLOCK-TRAIN-WEIGHT-002",
+      "pre_state": "BLOCKED",
+      "resolution_type": "PREDECLARED_TRAIN_LABEL_FORMULA_PLUS_VALIDATION_SELECTION",
+      "runtime_enforcement": [
+        "fit-role count check",
+        "sklearn balanced formula from fit labels",
+        "same selected hyperparameters/seed",
+        "validation BACC/F1/uniform tie",
+        "selected policy only to test"
+      ],
+      "test_access_for_selection": "PROHIBITED",
+      "status": "RESOLVED"
+    }
+  ],
+  "official_A0_A4_counts_unchanged": {
+    "A0": 678,
+    "A4": 1218,
+    "total": 1896
+  },
+  "additional_diagnostic_training_policy_cells": 15,
+  "P00_P01_mutation": false,
+  "A14": "ABSENT_PROHIBITED",
+  "unresolved_after_repair": 0,
+  "external_evidence_note": "docs/P02_TRAINING_POLICY_EXTERNAL_EVIDENCE_NOTE_R2.md",
+  "future_sync_note": "docs/P02_FUTURE_PROTOCOL_BUILD_BOOK_SYNC_NOTE_R2.md"
+}

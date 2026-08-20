@@ -1,0 +1,54 @@
+{
+  "report_id": "P00-LOCAL-TEST-EXECUTION-R5",
+  "revision": "R5",
+  "runtime": "Python 3.13.5",
+  "execution_location": "LOCAL_CONTAINER_ONLY",
+  "github_ci_used": false,
+  "github_hosted_tests_used": false,
+  "collection_count": 214,
+  "execution_strategy": "THREE_NON_OVERLAPPING_LOCAL_SHARDS_EACH_TEST_COLLECTED_EXACTLY_ONCE",
+  "shards": [
+    {
+      "shard_id": "A",
+      "test_file_range": "collection files 1-13",
+      "collected": 34,
+      "passed": 34,
+      "failed": 0,
+      "exit_code": 0,
+      "elapsed_seconds": 8.74
+    },
+    {
+      "shard_id": "B",
+      "test_file_range": "collection files 14-26",
+      "collected": 67,
+      "passed": 67,
+      "failed": 0,
+      "exit_code": 0,
+      "elapsed_seconds": 15.25
+    },
+    {
+      "shard_id": "C",
+      "test_file_range": "collection files 27-45",
+      "collected": 113,
+      "passed": 113,
+      "failed": 0,
+      "exit_code": 0,
+      "elapsed_seconds": 24.42
+    }
+  ],
+  "aggregate": {
+    "collected": 214,
+    "passed": 214,
+    "failed": 0,
+    "unique_coverage": "214_OF_214_EXACTLY_ONCE",
+    "status": "PASS",
+    "elapsed_seconds_sum": 48.41
+  },
+  "monolithic_runner_observation": {
+    "tests_reached_summary": "214 passed in 39.92s during diagnostic run",
+    "process_teardown": "DID_NOT_EXIT_CLEANLY_IN_CURRENT_INSTRUMENTED_ENVIRONMENT",
+    "classification": "RUNNER_TEARDOWN_ANOMALY_NOT_A_TEST_FAILURE",
+    "gate_use": "NOT_USED_AS_CONTROLLING_EXECUTION; EXIT_CLEAN_SHARDS_CONTROL"
+  },
+  "status": "PASS"
+}

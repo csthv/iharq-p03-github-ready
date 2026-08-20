@@ -1,0 +1,174 @@
+contract_id: P02-FULL-ABLATION-EXECUTION-CONTRACT-R3
+status: FROZEN_FOR_SINGLE_NOTEBOOK_IMPLEMENTATION
+full_execution_ablations:
+- ablation_id: A0
+  p02_state: FULL_EXECUTION_REQUIRED_IN_P02
+  scientific_question: What raw accept-all decoder evidence is produced under frozen
+    P01 inputs without calibration/rejection/abstention?
+  reference_condition: A0-RAW-ACCEPT-ALL
+  datasets:
+  - PhysioNetMI
+  - BNCI2014_001
+  - Lee2019_MI
+  split_id: P01-L1-SPLIT-OFFICIAL-R2
+  window_profile: CORE
+  budgets:
+  - FULL_TRAIN
+  - 1
+  - 2
+  - 4
+  - 8
+  - 16
+  - 32
+  expected_test_denominator_by_dataset:
+    PhysioNetMI: 495
+    BNCI2014_001: 288
+    Lee2019_MI: 600
+    TOTAL: 1383
+  model_scope: all planned P02 portfolio branches with terminal outcome; minimum successful
+    floor = >=1 classical + >=1 Riemannian per dataset
+  fit_scope: FULL_TRAIN=train; LOW_LABEL=exact inherited calibration budget subset
+    only
+  selection_scope: validation/inner roles only; never test
+  evaluation_scope: test after selection
+  matching_key:
+  - dataset_id
+  - split_id
+  - CORE
+  - evidence_regime
+  - budget_id
+  - budget_repeat_id
+  - branch_id
+  - model_repeat_index
+  - config_hash
+  - seed_id
+  metrics:
+  - BACC
+  - F1_MACRO
+  - ACC
+  - ROC_AUC_CONDITIONAL
+  - CONFUSION
+  - CLASS_SUPPORT
+  - PRED_COMPLETE
+  - BRANCH_SUCCESS
+  statistics: 95% participant-cluster; 10000 BCa/bootstrap fallback; paired Wilcoxon/Friedman+Holm
+    for predeclared comparisons
+  records:
+  - ModelRegistryRecord
+  - PredictionRecord
+  - BaselineMetricRecord
+  - MatchedComparisonReport
+  - FailureCaseIndex
+  kaggle_stage: '15'
+  gate: G15
+  terminal_completion: EXECUTED_RESULTS_PRESERVED_ANALYSIS_INPUTS_COMPLETE
+- ablation_id: A4
+  p02_state: FULL_EXECUTION_REQUIRED_IN_P02
+  scientific_question: Do authorized ordinary longer/multi-window/ensemble controls
+    change raw decoder performance versus matched CORE and what burden do they impose?
+  input_family: P01-L1-A4-WINDOW-FAMILY-FREEZE-R2
+  long_profile: A4_LONG_MATCHED_3P5S_R2
+  multi_profile: A4_MULTI_3X2S_UNIFORM_0P75S_R2
+  virtual_views:
+  - 0:320
+  - 120:440
+  - 240:560
+  matched_parents: 12910/12910
+  conditions:
+  - condition_id: A4-C0-CORE
+    name: matched CORE A0 reference
+    mandatory: REQUIRED
+    rule: reuse matched A0 CORE predictions
+  - condition_id: A4-C1-LONG-3P5S
+    name: 3.5-s long window
+    mandatory: REQUIRED_WHERE_EXACT_INPUT_SUPPORTED
+    rule: refit exact A4_LONG representation; frozen hyperparams/seed; no pad/crop
+  - condition_id: A4-C2-MULTI-HARD-VOTE
+    name: three-view hard vote
+    mandatory: REQUIRED
+    rule: V0/V1/V2 view predictions -> deterministic parent-level majority vote
+  - condition_id: A4-C3-MULTI-PROB-AVG
+    name: three-view probability average
+    mandatory: CONDITIONALLY_REQUIRED
+    rule: only genuine aligned probabilities; else NOT_APPLICABLE_SCORE_SEMANTICS
+  - condition_id: A4-C4-MODEL-HARD-VOTE
+    name: fixed ordinary model ensemble hard vote
+    mandatory: REQUIRED_WHEN_CLASSICAL_AND_RIEMANNIAN_REPRESENTATIVES_SUCCESS
+    rule: pre-result fixed role membership; no learned gating/weights
+  - condition_id: A4-C5-MODEL-PROB-AVG
+    name: fixed ordinary model ensemble probability average
+    mandatory: CONDITIONALLY_REQUIRED
+    rule: only genuine aligned probabilities; else NOT_APPLICABLE_SCORE_SEMANTICS
+  datasets:
+  - PhysioNetMI
+  - BNCI2014_001
+  - Lee2019_MI
+  split_id: P01-L1-SPLIT-OFFICIAL-R2
+  budgets:
+  - FULL_TRAIN
+  - 1
+  - 2
+  - 4
+  - 8
+  - 16
+  - 32
+  representative_roles:
+  - classical
+  - riemannian
+  - compact_neural_if_admitted
+  - compact_ssl_if_admitted
+  minimum_fixed_model_ensemble:
+  - classical
+  - riemannian
+  representative_selection: validation BACC -> macro-F1 -> lower validation burden
+    -> lexical branch_id; frozen before test
+  run_cell_template: P02-A4-{dataset_id}-{role_id}-{branch_id}-{condition_id}-{evidence_regime}-{budget_id}-{model_repeat_index}-{seed_id}
+  parent_matching_key:
+  - dataset_id
+  - subject_id
+  - session_or_run_id
+  - source_event_id
+  - split_role=test
+  - budget_id
+  - budget_repeat_id
+  - role_id
+  - model_repeat_index
+  - config_hash
+  metrics:
+  - BACC
+  - F1_MACRO
+  - ACC
+  - ROC_AUC_CONDITIONAL
+  - CONFUSION
+  - CLASS_SUPPORT
+  - PRED_COMPLETE
+  - A4_DELAY
+  statistics: paired participant-level deltas; 95% participant-cluster 10000 BCa;
+    Wilcoxon/Friedman+Holm where supported
+  burden_fields:
+  - evidence_duration
+  - observation_horizon
+  - model_or_view_evaluations
+  - member_count
+  - aggregation_operation
+  - batch1_latency_median
+  - batch1_latency_p95
+  records:
+  - PredictionRecord
+  - ModelRegistryRecord
+  - EnsembleControlRecord
+  - BaselineMetricRecord
+  - MatchedComparisonReport
+  - FailureCaseIndex
+  kaggle_stage: '18'
+  gate: G18
+  terminal_completion: EXECUTED_RESULTS_PRESERVED_ANALYSIS_INPUTS_COMPLETE
+analysis_must_not_recompute:
+- matching
+- primary metrics
+- registered comparisons
+- uncertainty source calculations required for P02 completion
+failure_is_visible: true
+negative_results_preserved: true
+one_notebook: true
+alternative_execution_modes: PROHIBITED

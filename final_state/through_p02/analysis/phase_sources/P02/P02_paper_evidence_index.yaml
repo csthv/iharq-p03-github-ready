@@ -1,0 +1,63 @@
+phase_id: P02
+analysis_release_id: P02-PHASE-ANALYSIS-FINAL-R2
+paper_evidence:
+  main_results:
+  - P02-FIND-002
+  - P02-FIND-003
+  - P02-FIND-009
+  - P02-FIND-010
+  secondary_results:
+  - P02-FIND-004
+  - P02-FIND-005
+  - P02-FIND-011
+  negative_results:
+  - P02-FIND-007
+  - P02-FIND-010
+  - P02-FIND-011
+  - P02-FIND-013
+  methodological_findings:
+  - P02-FIND-006
+  - P02-FIND-008
+  - P02-FIND-012
+  figures:
+  - P02_Figure_01_A0_fulltrain_model_by_dataset.png
+  - P02_Figure_02_Lee2019_MI_participant_distribution.png
+  - P02_Figure_02_PhysioNetMI_participant_distribution.png
+  - P02_Figure_03_low_label_BNCI2014_001.png
+  - P02_Figure_03_low_label_Lee2019_MI.png
+  - P02_Figure_03_low_label_PhysioNetMI.png
+  - P02_Figure_04_training_policy_challenger_effect.png
+  - P02_Figure_05_A4_role_control_effects.png
+  - P02_Figure_06_Stage18S_sign_consistency.png
+  tables:
+  - P02_Table_A0_fulltrain_branch_summary.csv
+  - P02_Table_A0_participant_first_fulltrain_source.csv
+  - P02_Table_A4_C4_C5_statistics.csv
+  - P02_Table_A4_role_condition_summary.csv
+  - P02_Table_A4_role_control_statistics.csv
+  - P02_Table_Stage18S_six_budget_sensitivity.csv
+  - P02_Table_Stage18S_three_repeat_anchor_stability.csv
+  - P02_Table_low_label_BACC.csv
+  - P02_Table_training_policy_challenger_statistics.csv
+  limitations:
+  - A4 single-repeat/deep-anchor scope
+  - low-label single frozen subset
+  - BNCI A0 inferential n=1
+  - Stage18S post-hoc only
+  - public EEG/non-clinical scope
+  candidate_claims:
+  - P02-CLAIM-CAND-001
+  - P02-CLAIM-CAND-002
+  - P02-CLAIM-CAND-003
+  - P02-CLAIM-CAND-004
+  - P02-CLAIM-CAND-005
+  - P02-CLAIM-CAND-006
+  - P02-CLAIM-CAND-007
+  - P02-CLAIM-CAND-008
+  - P02-CLAIM-CAND-009
+  - P02-CLAIM-CAND-010
+  unresolved_questions:
+  - Does a prospectively repeated low-label design reveal stable sample-efficiency
+    differences?
+  - Do A4 effects stabilize under the original five-repeat/dense-budget plan?
+  - Would participant-aware model selection outperform one global decoder family?

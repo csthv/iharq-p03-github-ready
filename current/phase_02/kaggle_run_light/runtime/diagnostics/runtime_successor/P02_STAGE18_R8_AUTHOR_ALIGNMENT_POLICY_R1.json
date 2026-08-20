@@ -1,0 +1,63 @@
+{
+  "artifact_id": "P02-STAGE18-R8-A4-AUTHOR-SOURCE-ALIGNED-REFIT-R1",
+  "runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R8-STAGE18-A4-AUTHOR-SOURCE-ALIGNED-R1",
+  "accepted_stage11_source_sha256": "65a506adb6fa6ce20c2ecd11f9f72cf91341c17565d446b4258344e0701f30c2",
+  "accepted_stage12_source_sha256": "12c8196a581fee0571508003a90805a936664dc35418055dacb6426f51e75d75",
+  "scope": "STAGE18_A4_REFIT_IMPLEMENTATION_ONLY",
+  "completed_A0_artifacts_mutated": false,
+  "new_hyperparameter_grid": false,
+  "test_outcome_influence": "PROHIBITED",
+  "representative_selection": "UNCHANGED_VALIDATION_ONLY",
+  "class_weight_policy": "FREEZE_MATCHING_ACCEPTED_A0_SELECTION",
+  "test_signal_load": "AFTER_VALIDATION_SELECTED_CHECKPOINT_SEALED_AND_ROUNDTRIP_PASS",
+  "a4_input_lengths": {
+    "multi_view_raw_samples_160Hz": 320,
+    "long_raw_samples_160Hz": 560
+  },
+  "cbramod_a4_long": "INPUT_INCOMPATIBLE_FAIL_CLOSED_NO_PAD_NO_CROP",
+  "eegnet_recipe": {
+    "recipe_id": "R7H7-EEGNET-LAWHERN-SMR-SOURCE-CENTERED-P01-160HZ-10000E-TRUE-P120-R1",
+    "architecture": {
+      "F1": 8,
+      "D": 2,
+      "F2": 16,
+      "drop_prob": 0.5,
+      "kernel_length": 40,
+      "depthwise_kernel_length": 20,
+      "pool1_kernel_size": 5,
+      "pool2_kernel_size": 10,
+      "pool_mode": "mean",
+      "conv_spatial_max_norm": 1.0,
+      "final_layer_with_constraint": true,
+      "norm_rate": 0.25,
+      "sfreq": 160.0
+    },
+    "input": {
+      "unit_multiplier": 1000000.0,
+      "epsilon_uv": 1e-06,
+      "normalization": "FIT_ROLE_CHANNELWISE_MEAN_STD"
+    },
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "max_epochs": 10000,
+    "patience": 120,
+    "min_epochs_before_early_stop": 1,
+    "effective_batch_target": 64,
+    "batch_ladder": [
+      64,
+      32,
+      16
+    ],
+    "selection": "VALIDATION_BACC_THEN_MACRO_F1_THEN_EARLIER_EPOCH",
+    "restore_best": true,
+    "primary_augmentation": "NONE"
+  },
+  "external_recipe_ids": {
+    "DNN-FBCNET": "R6-FBCNET-AUTHOR-CENTERED-R1",
+    "DNN-SEQ": "R6-DBCONFORMER-AUTHOR-CENTERED-R1",
+    "SSL-CBRAMOD": "R6-CBRAMOD-SOURCE-CENTERED-R1"
+  },
+  "policy_sha256": "73c0070788658867e665e2d4c49f1e2e02e3b7187e63b23362a1ab20a1111c27",
+  "status": "INSTALLED_PRE_RESULT"
+}

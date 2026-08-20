@@ -1,0 +1,56 @@
+{
+  "validation_id": "P02-KAGGLE-PREEXECUTION-FINAL-VALIDATION-R5-HF-R1",
+  "status": "PASS",
+  "decision": "READY_FOR_GOVERNED_KAGGLE_EXECUTION",
+  "scientific_execution_started": false,
+  "scientific_results_generated": false,
+  "fabricated_p02_evidence": false,
+  "identities": {
+    "notebook_id": "IHARQ-P02-COMPLETE-EXECUTION-AND-ANALYSIS-R4",
+    "notebook_file": "IHARQ_Phase_02_Complete_Execution_and_Analysis_R4_HF_R1.ipynb",
+    "build_book": "IHARQ-P02-L2-INTEGRATED-BUILD-BOOK-R4",
+    "scientific_freeze": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5",
+    "preexecution_amendment": "P02-PREEXEC-TRAINING-POLICY-AMENDMENT-R2",
+    "implementation_package": "IHARQ_P02_L2_Kaggle_Notebook_Implementation_Package_R5",
+    "hf_policy": "P02-HF-CONDITIONAL-ASSET-POLICY-R1"
+  },
+  "counts": {
+    "official_L2_modules": 8,
+    "required_capabilities": 53,
+    "model_branches": 16,
+    "A0_cells": 678,
+    "A4_slots": 1218,
+    "official_A0_A4_cells": 1896,
+    "training_policy_final_diagnostic_cells": 15,
+    "runtime_stages": 26,
+    "gates": 26,
+    "authoring_tests_passed": 82,
+    "static_authoring_checks_passed": 91,
+    "fixture_runtime_checksum_targets": 311
+  },
+  "huggingface": {
+    "status": "PASS",
+    "separate_checkpoint_kaggle_dataset_required": false,
+    "CBraMod": "PUBLIC_PINNED_AUTO_RETRIEVAL_HASH_VERIFIED",
+    "REVE": "HF_GATED_SUPPORT_PRESENT_BUT_CURRENT_P02_SCIENTIFIC_OVERLAP_BLOCK_PREVENTS_DOWNLOAD",
+    "offline_asset_fallback_preserved": true,
+    "kaggle_secret_name": "HF_TOKEN",
+    "interactive_hidden_prompt": true,
+    "token_persisted": false,
+    "token_cleared_after_stage03": true,
+    "persistent_hf_login_used": false
+  },
+  "technical_checks": {
+    "pytest": "82/82 PASS",
+    "static_authoring": "91/91 PASS",
+    "real_dispatch_fixture": "PASS",
+    "fixture_runtime_checksums": "311/311 PASS",
+    "fixture_zip_crc": "PASS",
+    "cumulative_P00_P01_verifier": "40/40 PASS",
+    "P01_verifier": "24/24 PASS",
+    "HF_secret_scan": "PASS"
+  },
+  "freeze_critical_blockers": 0,
+  "ready_for_actual_kaggle_execution": true,
+  "runtime_qualification": "Exact environment/network/resource and conditional-branch gates remain normal runtime facts; authentication never overrides scientific eligibility."
+}

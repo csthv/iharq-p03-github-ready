@@ -1,0 +1,77 @@
+{
+  "run_cell_id": "P02-A0-PhysioNetMI-CLS-CSP-LDA-P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS-MR00",
+  "ablation_id": "A0",
+  "terminal_status": "SUCCESS",
+  "prediction_partition": "records/PredictionRecord/dataset=PhysioNetMI/branch=CLS-CSP-LDA/budget=P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS/P02-A0-PhysioNetMI-CLS-CSP-LDA-P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS-MR00.jsonl",
+  "metric_source": "metrics/P02-A0-PhysioNetMI-CLS-CSP-LDA-P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS-MR00.json",
+  "checkpoint_sha256": "d9617c2b4ba9452d331d14c151a864279e1364a65a9d3529d07a0e18dbe37fd5",
+  "observed_denominator": 495,
+  "selected_params": {
+    "n_components": 8,
+    "base_branch_id": "CLS-CSP-LDA",
+    "csp_reg": "oas",
+    "lda_solver": "lsqr",
+    "lda_shrinkage": "auto"
+  },
+  "resolved_variant": "CLS-CSP-LDA",
+  "score_type": "NATIVE_PROBABILITY",
+  "validation_burden_seconds": 0.47670973899948876,
+  "model_storage_bytes": 68715,
+  "selected_candidate_id": "CAND-02",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.0007336810012930073,
+    "batch1_latency_p95_s": 0.000866310199489817,
+    "repeats": 5
+  },
+  "permutation_provenance": null,
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "class_weights": null,
+  "class_weight_calibration": {
+    "selected_policy": "UNIFORM_NO_WEIGHT",
+    "selected_weights": null,
+    "candidate_results": [
+      {
+        "status": "SUCCESS",
+        "policy": "UNIFORM_NO_WEIGHT",
+        "weights": null,
+        "validation_metrics": {
+          "BACC": 0.5107992947399354,
+          "F1_MACRO": 0.5096522251694665,
+          "ACC": 0.5111111111111111,
+          "CONFUSION": [
+            [
+              140,
+              109
+            ],
+            [
+              133,
+              113
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            249,
+            246
+          ],
+          "PRED_COMPLETE": 495,
+          "ROC_AUC": 0.5018284520194599,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "NATIVE_PROBABILITY"
+        },
+        "validation_burden_seconds": 0.47670973899948876,
+        "model_storage_bytes": 68715
+      }
+    ],
+    "training_count_evidence": {
+      "counts": [
+        16,
+        16
+      ],
+      "exactly_equal": true,
+      "selection_required": false
+    },
+    "test_set_used": false
+  },
+  "training_condition_id": "A0-RAW-ACCEPT-ALL",
+  "augmentation_provenance": null,
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

@@ -1,0 +1,65 @@
+{
+  "run_cell_id": "P02-A4-Lee2019_MI-ENSEMBLE-A4-C5-MODEL-PROB-AVG-P01-L1-LOW-CAL-OFFICIAL-R2:128_PER_CLASS-ER04",
+  "ablation_id": "A4",
+  "terminal_status": "SUCCESS",
+  "prediction_partition": "records/PredictionRecord/dataset=Lee2019_MI/branch=PRE_RESULT_ROLE_MEMBERSHIP/budget=P01-L1-LOW-CAL-OFFICIAL-R2:128_PER_CLASS/P02-A4-Lee2019_MI-ENSEMBLE-A4-C5-MODEL-PROB-AVG-P01-L1-LOW-CAL-OFFICIAL-R2:128_PER_CLASS-ER04.jsonl",
+  "source_rows": "raw_outputs/P02-A4-Lee2019_MI-ENSEMBLE-A4-C5-MODEL-PROB-AVG-P01-L1-LOW-CAL-OFFICIAL-R2:128_PER_CLASS-ER04.jsonl",
+  "metric_source": "metrics/P02-A4-Lee2019_MI-ENSEMBLE-A4-C5-MODEL-PROB-AVG-P01-L1-LOW-CAL-OFFICIAL-R2:128_PER_CLASS-ER04.json",
+  "strongest_constituent_branch": "DNN-EEGNET",
+  "strongest_constituent_prediction_partition": "records/PredictionRecord/dataset=Lee2019_MI/branch=DNN-EEGNET/budget=P01-L1-LOW-CAL-OFFICIAL-R2:128_PER_CLASS/P02-A0-Lee2019_MI-DNN-EEGNET-P01-L1-LOW-CAL-OFFICIAL-R2:128_PER_CLASS-MR04.jsonl",
+  "strongest_constituent_checkpoint_sha256": "674d783d4bfe21db929074908d39ad82322a2b08baf3ddf3ced701fb8532e3b8",
+  "validation_selection_provenance": {
+    "selected_branch": "DNN-EEGNET",
+    "candidate_summaries": [
+      {
+        "branch_id": "DNN-EEGNET",
+        "BACC": 0.6659999999999999,
+        "F1": 0.6583120204603581,
+        "burden": 68.71562190499935
+      },
+      {
+        "branch_id": "RIE-TS-LR",
+        "BACC": 0.636,
+        "F1": 0.6359941759068145,
+        "burden": 4.95990318999975
+      },
+      {
+        "branch_id": "SSL-CBRAMOD",
+        "BACC": 0.5720000000000001,
+        "F1": 0.5706535695942476,
+        "burden": 820.9726738929749
+      },
+      {
+        "branch_id": "CLS-CSP-LDA",
+        "BACC": 0.556,
+        "F1": 0.5554238292827505,
+        "burden": 1.2819627819999369
+      }
+    ],
+    "test_outcome_influence": "PROHIBITED"
+  },
+  "ensemble_member_branches": [
+    "CLS-CSP-LDA",
+    "RIE-TS-LR",
+    "DNN-EEGNET",
+    "SSL-CBRAMOD"
+  ],
+  "ensemble_member_checkpoint_ids": [
+    "c0148aaf1c20ce7986df43024f317a2b782fd6ecdef484ef92196b9abba426da",
+    "714229ed5287a97eea3fd9c720df43d6cf347ba729d3e1c6e792921c6c6666c4",
+    "674d783d4bfe21db929074908d39ad82322a2b08baf3ddf3ced701fb8532e3b8",
+    "1abd3682a2d26b569ca290226d9ac6186fa837ddb838d08bf437493a0cb8d54e"
+  ],
+  "observed_denominator": 600,
+  "burden": {
+    "evidence_duration_s": 3.0,
+    "observation_horizon_s": 3.0,
+    "model_or_view_evaluations": 4,
+    "member_count": 4,
+    "aggregation_operation": "PROBABILITY_AVERAGE",
+    "batch1_latency_median_s": 0.011655847996735247,
+    "batch1_latency_p95_s": 0.012445303000640708,
+    "aggregation_latency_s": 0.0002882610006054165
+  },
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

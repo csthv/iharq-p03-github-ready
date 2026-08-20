@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/csthv/IHARQ/schemas/manifests/PhaseRunManifest.schema.json",
+  "title": "PhaseRunManifest",
+  "type": "object",
+  "required": [
+    "run_id",
+    "phase_id",
+    "repository_commit",
+    "environment_id",
+    "config_hash",
+    "input_manifest_id",
+    "output_manifest_id",
+    "status"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "phase_id": {
+      "pattern": "^P(0[0-9]|1[0-5])$",
+      "type": "string"
+    },
+    "repository_commit": {
+      "type": "string"
+    },
+    "environment_id": {
+      "type": "string"
+    },
+    "config_hash": {
+      "type": "string"
+    },
+    "input_manifest_id": {
+      "type": "string"
+    },
+    "output_manifest_id": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    }
+  },
+  "additionalProperties": false,
+  "x-iharq-status": "PHASE0_FOUNDATION_PROFILE"
+}

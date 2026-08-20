@@ -1,0 +1,696 @@
+{
+  "accounted_count": 23,
+  "artifact_id": "P03-PROD-053-bb6c2c78e86a9619d4c4",
+  "complete_count": 23,
+  "complete_count_semantics": "TERMINAL_SCOPE_ACCOUNTED_COUNT__16_PHYSICAL_COMPLETE_PLUS_7_LAWFUL_NOT_APPLICABLE",
+  "created_at_utc": "2026-08-18T19:25:20.972660+00:00",
+  "hardening_id": "P03S-POSTEXT-64-128-256-STAGE23-SUPPLEMENT-NATIVE-SUFFICIENCY-HARDENING-R1",
+  "not_applicable_count": 7,
+  "payload_sha256": "bb6c2c78e86a9619d4c4ffdfc1c89921f64e0d5f05f59e14b9b934c9bfe9eb2a",
+  "physical_complete_count": 16,
+  "product_id": "P03-PROD-053",
+  "run_id": "P03-L3-POSTEXT-64-128-256-R1-1833e865bcb88ff8",
+  "schema_id": "StageLedger.v1",
+  "schema_version": "1.0.0",
+  "source_artifact_ids": [
+    "STAGE23-RAW-STAGE-LEDGER"
+  ],
+  "source_sha256s": [
+    "c976d560cc52e912fe8c51c7b5bb8ddd8dd55639ad4b077a1f907b46b6b81946"
+  ],
+  "source_stage23_sha256": "c976d560cc52e912fe8c51c7b5bb8ddd8dd55639ad4b077a1f907b46b6b81946",
+  "stage_id": "23",
+  "stages": [
+    {
+      "attempt": null,
+      "gate_id": "G03-00-AUTHORITY",
+      "inputs": {
+        "canonical_stage_copied": false,
+        "synthetic_stage_created": false
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": null,
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+      "stage_id": "00",
+      "terminal": {
+        "failure": null,
+        "status": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT"
+      },
+      "tests": {
+        "receipt_status": "NOT_MATERIALIZED",
+        "terminal_receipt_present": false
+      },
+      "timing": null
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-01-REPOSITORY",
+      "inputs": {
+        "canonical_stage_copied": false,
+        "synthetic_stage_created": false
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": null,
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+      "stage_id": "01",
+      "terminal": {
+        "failure": null,
+        "status": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT"
+      },
+      "tests": {
+        "receipt_status": "NOT_MATERIALIZED",
+        "terminal_receipt_present": false
+      },
+      "timing": null
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-02-ENVIRONMENT",
+      "inputs": {
+        "canonical_stage_copied": false,
+        "synthetic_stage_created": false
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": null,
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+      "stage_id": "02",
+      "terminal": {
+        "failure": null,
+        "status": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT"
+      },
+      "tests": {
+        "receipt_status": "NOT_MATERIALIZED",
+        "terminal_receipt_present": false
+      },
+      "timing": null
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-03-RETRIEVAL",
+      "inputs": {
+        "canonical_stage_copied": false,
+        "synthetic_stage_created": false
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": null,
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+      "stage_id": "03",
+      "terminal": {
+        "failure": null,
+        "status": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT"
+      },
+      "tests": {
+        "receipt_status": "NOT_MATERIALIZED",
+        "terminal_receipt_present": false
+      },
+      "timing": null
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-04-HANDOFF",
+      "inputs": {
+        "canonical_stage_copied": false,
+        "synthetic_stage_created": false
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": null,
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+      "stage_id": "04",
+      "terminal": {
+        "failure": null,
+        "status": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT"
+      },
+      "tests": {
+        "receipt_status": "NOT_MATERIALIZED",
+        "terminal_receipt_present": false
+      },
+      "timing": null
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-05-FREEZE",
+      "inputs": {
+        "canonical_stage_copied": false,
+        "synthetic_stage_created": false
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": null,
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+      "stage_id": "05",
+      "terminal": {
+        "failure": null,
+        "status": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT"
+      },
+      "tests": {
+        "receipt_status": "NOT_MATERIALIZED",
+        "terminal_receipt_present": false
+      },
+      "timing": null
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-06-SMOKE",
+      "inputs": {
+        "canonical_stage_copied": false,
+        "synthetic_stage_created": false
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": null,
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "OUT_OF_SCOPE_NOT_MATERIALIZED_POSTEXT_SUPPLEMENT",
+      "stage_id": "06",
+      "terminal": {
+        "failure": null,
+        "status": "NOT_APPLICABLE_POSTEXT_SUPPLEMENT"
+      },
+      "tests": {
+        "receipt_status": "NOT_MATERIALIZED",
+        "terminal_receipt_present": false
+      },
+      "timing": null
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-07-JOIN",
+      "inputs": {
+        "code_sha": null,
+        "config_sha": null,
+        "environment_sha": null,
+        "input_manifest_sha": null,
+        "protocol_sha": null
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": "9ff7f98b07ecf5e0313970b3078fe5bf75d8008ff9e674f74d5bc66c55459d67",
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "07",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": null,
+        "start_time": null
+      }
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-08-LEAKAGE",
+      "inputs": {
+        "code_sha": null,
+        "config_sha": null,
+        "environment_sha": null,
+        "input_manifest_sha": null,
+        "protocol_sha": null
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": "c0cbcf89be6aced50f87d8e6c30bf1f67282bc119280b97e1374e4151e182e61",
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "08",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": null,
+        "start_time": null
+      }
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-09-ELIGIBILITY",
+      "inputs": {
+        "code_sha": null,
+        "config_sha": null,
+        "environment_sha": null,
+        "input_manifest_sha": null,
+        "protocol_sha": null
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": "7f72805e0c79ecaf3717e63a4ca33734ee416ec6ba635c1cdc33a0e97428d51e",
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "09",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": null,
+        "start_time": null
+      }
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-10-IDENTITY",
+      "inputs": {
+        "code_sha": null,
+        "config_sha": null,
+        "environment_sha": null,
+        "input_manifest_sha": null,
+        "protocol_sha": null
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": "7b00c94d1f5edca60114deeb6efa009369a5e0738f02a5957ca45a8fa1067ba0",
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "10",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": null,
+        "start_time": null
+      }
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-11-CALIBRATION",
+      "inputs": {
+        "code_sha": null,
+        "config_sha": null,
+        "environment_sha": null,
+        "input_manifest_sha": null,
+        "protocol_sha": null
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": "12129b1c0a6255a7a363d7c97134d56d0f9faf1c2a58d27d3c238c26c531342f",
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "11",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": null,
+        "start_time": null
+      }
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-12-RELIABILITY",
+      "inputs": {
+        "code_sha": null,
+        "config_sha": null,
+        "environment_sha": null,
+        "input_manifest_sha": null,
+        "protocol_sha": null
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": "4440013c6d118bcaa8c1e8286fde580ab1a5b489c117b6bc6a71c253b08e4347",
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "12",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": null,
+        "start_time": null
+      }
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-13-UNCERTAINTY",
+      "inputs": {
+        "code_sha": null,
+        "config_sha": null,
+        "environment_sha": null,
+        "input_manifest_sha": null,
+        "protocol_sha": null
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": "ab93d52ec18b6e67192192a68d6862c34654e1290757e00d7661a040c1227cc2",
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "13",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": null,
+        "start_time": null
+      }
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-14-A2-SELECT",
+      "inputs": {
+        "code_sha": null,
+        "config_sha": null,
+        "environment_sha": null,
+        "input_manifest_sha": null,
+        "protocol_sha": null
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": "40651951514c1f31177e8d08a7a600108560ad7149d86a002ae6228fae4e50b5",
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "14",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": null,
+        "start_time": null
+      }
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-15-A2-APPLY",
+      "inputs": {
+        "code_sha": null,
+        "config_sha": null,
+        "environment_sha": null,
+        "input_manifest_sha": null,
+        "protocol_sha": null
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": "b1db0ef2e96613420d07db8ebdeab119db15a516a9693d715e1d66d0f5cd51e0",
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "15",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": null,
+        "start_time": null
+      }
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-16-A3",
+      "inputs": {
+        "code_sha": null,
+        "config_sha": null,
+        "environment_sha": null,
+        "input_manifest_sha": null,
+        "protocol_sha": null
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": "42a04119c4808a471ef9792d88eb9c91c9ba6fdf658cad7e3abc8811ea916c2b",
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "16",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": null,
+        "start_time": null
+      }
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-17-THRESHOLD",
+      "inputs": {
+        "code_sha": null,
+        "config_sha": null,
+        "environment_sha": null,
+        "input_manifest_sha": null,
+        "protocol_sha": null
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": "472831fcbaa65c58df9c52bc2d90adc20b078f562d270d1c682ad009205031ee",
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "17",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": null,
+        "start_time": null
+      }
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-18-MATCHED",
+      "inputs": {
+        "code_sha": null,
+        "config_sha": null,
+        "environment_sha": null,
+        "input_manifest_sha": null,
+        "protocol_sha": null
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": "f11f76a542a79de7bc2fc78852db1a9b54f2991c49a56d42f72ea453ca754657",
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "18",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": null,
+        "start_time": null
+      }
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-19-GROUP",
+      "inputs": {
+        "code_sha": null,
+        "config_sha": null,
+        "environment_sha": null,
+        "input_manifest_sha": null,
+        "protocol_sha": null
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": "fe42c59b6cdae4e1ef5ccce298e3de08bbdd8177baa1a14026a49e1d493d941d",
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "19",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": null,
+        "start_time": null
+      }
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-20-NEGATIVE",
+      "inputs": {
+        "code_sha": null,
+        "config_sha": null,
+        "environment_sha": null,
+        "input_manifest_sha": null,
+        "protocol_sha": null
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": "2f35e17af762628d151fd75a0b4b6846da3b8816a2d180eb3b267a0751f508b1",
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "20",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": null,
+        "start_time": null
+      }
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-21-SOURCES",
+      "inputs": {
+        "code_sha": null,
+        "config_sha": null,
+        "environment_sha": null,
+        "input_manifest_sha": null,
+        "protocol_sha": null
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": "3fe80ba37387d06b19a1e7467e53d76ce63d4d84030c7f4c7eed41a16d5042b9",
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "21",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": null,
+        "start_time": null
+      }
+    },
+    {
+      "attempt": null,
+      "gate_id": "G03-22-HANDOFFS",
+      "inputs": {
+        "code_sha": null,
+        "config_sha": null,
+        "environment_sha": null,
+        "input_manifest_sha": null,
+        "protocol_sha": null
+      },
+      "outputs": {
+        "checkpoint": null,
+        "output_manifest_sha": "03e50e2ff2df329eb84f58b8cfd853bca45113f978955596554ab54f966951f5",
+        "stage_fingerprint": null
+      },
+      "resources": null,
+      "scope_disposition": "IN_SCOPE_COMPLETE",
+      "stage_id": "22",
+      "terminal": {
+        "failure": null,
+        "status": "COMPLETE"
+      },
+      "tests": {
+        "receipt_status": "COMPLETE",
+        "terminal_receipt_present": true
+      },
+      "timing": {
+        "end_time": null,
+        "start_time": null
+      }
+    }
+  ]
+}

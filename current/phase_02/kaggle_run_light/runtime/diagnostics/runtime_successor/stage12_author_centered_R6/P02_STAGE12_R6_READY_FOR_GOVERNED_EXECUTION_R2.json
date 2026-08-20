@@ -1,0 +1,95 @@
+{
+  "P01_preflight": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_author_centered_R6/P02_STAGE12_R6_P01_CONSUMPTION_PREFLIGHT_R1.json",
+  "R6_adapter_module": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_author_centered_R6/python/iharq_stage12_r6_author_adapters.py",
+  "R6_adapter_sha256": "97116769101c042f5f63ef0be11b90b51a4dcb0d9bb23801e1987147a817fb6a",
+  "accepted_stage_08_11_sha256": {
+    "08": "a78f86b2fc09443744d818b21fcc0b6084ec53ffeb6dbf5f05d818a989fd6e2d",
+    "09": "1f0f5c2ee8ef83c300bcd3232594cc360c0a44e12812a3d171e3fb6cde6fa388",
+    "10": "1be44b97b389a7aeaf8c88d267aa075159c1623ff6df3b0ffd8cb29af84e91ff",
+    "11": "6321ea2027415ce361382d36a1008103a3ca53507aa7e7fafaeed5d0948c48a3"
+  },
+  "artifact_id": "P02-STAGE12-R6-READY-FOR-GOVERNED-EXECUTION-R2",
+  "created_utc": "2026-08-10T17:40:39.247176+00:00",
+  "marker": "STAGE12_R6_READY_FOR_GOVERNED_EXECUTION",
+  "max_epochs": 150,
+  "parent_adapter_sha256": "add69c0a0f8843366d6d9ed1fb16746f61d43a6d588b04f07193484e0555386a",
+  "parent_runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R5R-STAGE12-RESOURCE-OPTIMIZED-EXTERNAL-MODEL-LIVE-CONTINUATION",
+  "patience": 40,
+  "pre_reentry_smoke": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_author_centered_R6/P02_STAGE12_R6_REAL_P01_PRE_REENTRY_SMOKE_R1.json",
+  "recipes": {
+    "DNN-FBCNET": {
+      "batch_size": 16,
+      "grad_clip": null,
+      "input_scale": 1.0,
+      "label_smoothing": 0.0,
+      "lr": 0.001,
+      "optimizer": "Adam",
+      "recipe_id": "R6-FBCNET-ORIGINAL-AUTHOR-P01-COMPAT",
+      "scheduler": "constant",
+      "use_data_parallel": false,
+      "weight_decay": 0.0
+    },
+    "DNN-SEQ": {
+      "batch_size": 32,
+      "grad_clip": null,
+      "input_scale": 1.0,
+      "label_smoothing": 0.0,
+      "lr": 0.001,
+      "optimizer": "Adam",
+      "recipe_id": "R6-DBCONFORMER-ORIGINAL-AUTHOR-P01-COMPAT",
+      "scheduler": "constant",
+      "use_data_parallel": false,
+      "weight_decay": 0.0
+    },
+    "SSL-CBRAMOD": {
+      "batch_size": 64,
+      "body_lr": 0.0001,
+      "data_parallel_max_gpus": 2,
+      "data_parallel_min_samples": 256,
+      "eta_min": 1e-06,
+      "grad_clip": 1.0,
+      "head_lr": 0.0005,
+      "input_scale": 10000.0,
+      "label_smoothing": 0.1,
+      "lr": 0.0001,
+      "optimizer": "AdamW",
+      "recipe_id": "R6-CBRAMOD-SOURCE-CENTERED-P01-VOLTS-TO-AUTHOR-SCALE",
+      "scheduler": "cosine",
+      "use_data_parallel": true,
+      "weight_decay": 0.05
+    }
+  },
+  "resource_after_preparation": {
+    "created_utc": "2026-08-10T17:40:39.249358+00:00",
+    "cuda": [
+      {
+        "allocated_gib": 0.07036876678466797,
+        "device": 0,
+        "name": "Tesla T4",
+        "reserved_gib": 0.091796875
+      },
+      {
+        "allocated_gib": 0.015869140625,
+        "device": 1,
+        "name": "Tesla T4",
+        "reserved_gib": 0.0390625
+      }
+    ],
+    "cuda_available": true,
+    "cuda_device_count": 2,
+    "label": "R6_PREPARATION_COMPLETE",
+    "process_rss_gib": 10.908008575439453,
+    "system_available_gib": 19.486007690429688,
+    "system_total_gib": 31.347740173339844,
+    "system_used_percent": 37.8
+  },
+  "runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R6-STAGE12-AUTHOR-CENTERED-TRAINING-AND-CBRAMOD-SCALE-REPAIR",
+  "safe_next_action": "RUN_STAGE12_R6_EXECUTION_CELL",
+  "scientific_configuration_changed": true,
+  "stage12_accepted_now": false,
+  "stage12_plan_count": 153,
+  "stage12_terminal_count_now": 0,
+  "status": "PASS",
+  "superseded_R5R_archive": "/kaggle/working/IHARQ_P02_SUPERSEDED_STAGE12_R5R_ARCHIVE_FOR_R6_20260810T174007Z",
+  "superseded_R5R_archive_manifest": "/kaggle/working/IHARQ_P02_SUPERSEDED_STAGE12_R5R_ARCHIVE_FOR_R6_20260810T174007Z/ARCHIVE_MANIFEST.json"
+}

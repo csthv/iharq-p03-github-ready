@@ -1,0 +1,224 @@
+{
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "run_cell_id": "P02-A0-Lee2019_MI-DNN-FBCNET-FULL_TRAIN-MR01",
+  "dataset_id": "Lee2019_MI",
+  "branch_id": "DNN-FBCNET",
+  "resolved_variant": "FBCNet-OriginalAuthor-P01ConstrainedFilterBank",
+  "budget_id": "FULL_TRAIN",
+  "metrics": {
+    "BACC": 0.7133333333333334,
+    "F1_MACRO": 0.713177174239308,
+    "ACC": 0.7133333333333334,
+    "CONFUSION": [
+      [
+        221,
+        79
+      ],
+      [
+        93,
+        207
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      300,
+      300
+    ],
+    "PRED_COMPLETE": 600,
+    "ROC_AUC": 0.8105888888888888,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+  },
+  "validation_selection": {
+    "ACC": 0.72,
+    "BACC": 0.72,
+    "CLASS_SUPPORT": [
+      250,
+      250
+    ],
+    "CONFUSION": [
+      [
+        182,
+        68
+      ],
+      [
+        72,
+        178
+      ]
+    ],
+    "F1_MACRO": 0.7199820788530467,
+    "PRED_COMPLETE": 500,
+    "ROC_AUC": 0.7572479999999999,
+    "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY",
+    "ROC_AUC_STATUS": "PASS"
+  },
+  "validation_burden_seconds": 819.7476897239685,
+  "model_storage_bytes": 56072,
+  "selected_candidate_id": "R6-FBCNET-AUTHOR-CENTERED-R1",
+  "selected_params": {
+    "recipe_id": "R6-FBCNET-AUTHOR-CENTERED-R1",
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "batch_size": 16,
+    "scheduler": "constant",
+    "label_smoothing": 0.0,
+    "grad_clip": null,
+    "max_epochs": 1500,
+    "patience": 200,
+    "selection": "validation_BACC",
+    "restore_best": true,
+    "branch": "DNN-FBCNET",
+    "dataset_id": "Lee2019_MI",
+    "budget_id": "FULL_TRAIN"
+  },
+  "candidate_failures": [],
+  "observed_denominator": 600,
+  "expected_denominator": 600,
+  "score_type": "SOFTMAX_PROBABILITY",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.0005331630000000587,
+    "batch1_latency_p95_s": 0.0005656991999785533,
+    "repeats": 5,
+    "latency_probe_mode": "FORWARD_ONLY_NO_METRICS"
+  },
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "class_weights": null,
+  "class_weight_calibration": {
+    "selected_policy": "UNIFORM_NO_WEIGHT",
+    "selected_weights": null,
+    "validation_metrics": {
+      "BACC": 0.72,
+      "F1_MACRO": 0.7199820788530467,
+      "ACC": 0.72,
+      "CONFUSION": [
+        [
+          182,
+          68
+        ],
+        [
+          72,
+          178
+        ]
+      ],
+      "CLASS_SUPPORT": [
+        250,
+        250
+      ],
+      "PRED_COMPLETE": 500,
+      "ROC_AUC": 0.7572479999999999,
+      "ROC_AUC_STATUS": "PASS",
+      "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+    },
+    "candidate_results": [
+      {
+        "status": "SUCCESS",
+        "policy": "UNIFORM_NO_WEIGHT",
+        "weights": null,
+        "validation_metrics": {
+          "BACC": 0.72,
+          "F1_MACRO": 0.7199820788530467,
+          "ACC": 0.72,
+          "CONFUSION": [
+            [
+              182,
+              68
+            ],
+            [
+              72,
+              178
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            250,
+            250
+          ],
+          "PRED_COMPLETE": 500,
+          "ROC_AUC": 0.7572479999999999,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+        },
+        "validation_burden_seconds": 819.7476897239685,
+        "model_storage_bytes": 56072,
+        "best_epoch": 362,
+        "epochs_completed": 562,
+        "history_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/staging_runtime/raw_outputs/stage12_r6_training_history/P02-A0-Lee2019_MI-DNN-FBCNET-FULL_TRAIN-MR01__UNIFORM_NO_WEIGHT.json",
+        "candidate_checkpoint_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/staging_runtime/raw_outputs/stage12_r6_training_history/P02-A0-Lee2019_MI-DNN-FBCNET-FULL_TRAIN-MR01__UNIFORM_NO_WEIGHT.candidate.chk",
+        "candidate_checkpoint_sha256": "350980517b8e1e16a337cb8d232a991496fd4d972abaf51763d524b4696a33ef"
+      }
+    ],
+    "test_set_used": false
+  },
+  "r6_scientific_amendment": true,
+  "r6_max_epochs": 1500,
+  "r6_patience": 200,
+  "horizon_sufficiency": {
+    "best_by_cutoff": {
+      "100": {
+        "BACC": 0.6699999999999999,
+        "epoch": 93
+      },
+      "1000": {
+        "BACC": 0.72,
+        "epoch": 362
+      },
+      "1250": {
+        "BACC": 0.72,
+        "epoch": 362
+      },
+      "150": {
+        "BACC": 0.696,
+        "epoch": 139
+      },
+      "1500": {
+        "BACC": 0.72,
+        "epoch": 362
+      },
+      "200": {
+        "BACC": 0.706,
+        "epoch": 179
+      },
+      "250": {
+        "BACC": 0.706,
+        "epoch": 179
+      },
+      "300": {
+        "BACC": 0.706,
+        "epoch": 179
+      },
+      "400": {
+        "BACC": 0.72,
+        "epoch": 362
+      },
+      "50": {
+        "BACC": 0.594,
+        "epoch": 39
+      },
+      "500": {
+        "BACC": 0.72,
+        "epoch": 362
+      },
+      "750": {
+        "BACC": 0.72,
+        "epoch": 362
+      }
+    },
+    "epochs_completed": 562,
+    "final_best_BACC": 0.72,
+    "final_best_epoch": 362,
+    "gain_after_100": 0.050000000000000044,
+    "gain_after_1000": 0.0,
+    "gain_after_1250": 0.0,
+    "gain_after_150": 0.02400000000000002,
+    "gain_after_200": 0.014000000000000012,
+    "gain_after_250": 0.014000000000000012,
+    "gain_after_300": 0.014000000000000012,
+    "gain_after_400": 0.0,
+    "gain_after_500": 0.0,
+    "gain_after_750": 0.0,
+    "max_epochs": 1500,
+    "patience": 200,
+    "status": "PASS"
+  },
+  "test_loaded_after_group_selection_sealed": true,
+  "test_set_used_for_selection": false
+}

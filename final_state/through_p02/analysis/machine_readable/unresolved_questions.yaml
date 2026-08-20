@@ -1,0 +1,56 @@
+unresolved_questions:
+- question_id: CUQ-01
+  question: How stable are A4 effects across the full five-repeat plan and dense deep-budget
+    surface?
+  origin_phase: P02
+  relevant_evidence:
+  - P02-FIND-009
+  - P02-FIND-010
+  - P02-FIND-012
+  why_unresolved: Canonical A4 reduced repeats/deep budgets; Stage18S is post-hoc
+    descriptive only.
+  future_phase_or_experiment: Governed expanded A4 replication if scientifically prioritized.
+  claim_impact: Blocks five-repeat stability and dense-budget claims.
+- question_id: CUQ-02
+  question: How stable are low-label model rankings to alternative calibration-subset
+    draws?
+  origin_phase: P01/P02
+  relevant_evidence:
+  - P01-FIND-007
+  - P02-FIND-005
+  why_unresolved: One frozen subset per budget.
+  future_phase_or_experiment: Repeated-subset low-label evaluation under a future
+    governed protocol.
+  claim_impact: Blocks subset-robust sample-efficiency ranking.
+- question_id: CUQ-03
+  question: Which mechanisms drive participant-specific decoder rank reversals and
+    difficult-subject behavior?
+  origin_phase: P02
+  relevant_evidence:
+  - P02-FIND-002
+  - P02-FIND-004
+  why_unresolved: P02 measures heterogeneity but does not isolate physiological/session/representation
+    causes.
+  future_phase_or_experiment: Dedicated personalization/cross-session/mechanism analysis.
+  claim_impact: Blocks causal explanation and personalization claim.
+- question_id: CUQ-04
+  question: Do source/author-aligned training corrections generalize as a principled
+    architecture-specific optimization rule?
+  origin_phase: P02
+  relevant_evidence:
+  - P02-FIND-006
+  - P02-FIND-008
+  why_unresolved: Corrections were architecture-specific and partly post-observation;
+    diagnostics are validation-only.
+  future_phase_or_experiment: Prospective preregistered training-policy comparison.
+  claim_impact: Blocks universal optimization-policy claims.
+- question_id: CUQ-05
+  question: How do P02 raw decoder outputs behave under calibrated uncertainty, thresholding,
+    abstention, temporal stress and downstream safety policies?
+  origin_phase: P02/downstream
+  relevant_evidence:
+  - P02-FIND-014
+  why_unresolved: Those responsibilities belong to later layers/phases.
+  future_phase_or_experiment: P03+ governed downstream phases.
+  claim_impact: Blocks calibration, selective-risk, stress-robustness, clinical and
+    deployment claims.

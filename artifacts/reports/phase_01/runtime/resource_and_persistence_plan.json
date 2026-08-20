@@ -1,0 +1,24 @@
+{
+  "resource_policy_id": "P01-L1-KAGGLE-ENV-FREEZE-R2",
+  "minimum_free_disk_gb": 60,
+  "recommended_free_disk_gb": 90,
+  "minimum_ram_gb": 16,
+  "recommended_ram_gb": 30,
+  "expected_wall_time_hours_upper_bound": 9,
+  "platform_guarantee": "NONE; IHARQ PREFLIGHT THRESHOLDS ONLY",
+  "cache_root": "source_cache/<dataset_id>",
+  "processing_order": [
+    "PhysioNetMI",
+    "BNCI2014_001",
+    "Lee2019_MI"
+  ],
+  "checkpoint_policy": "CHECKPOINT_AFTER_EACH_DATASET_WITH_CONFIG_AND_SOURCE_HASHES",
+  "cache_eviction": "EVICT_ONLY_VERIFIED_PROVIDER_CACHE_COPIES_UNDER_DISK_PRESSURE",
+  "restartability": "RESUME_DATASET_LEVEL_ONLY_WHEN_CONFIG_AND_SOURCE_HASHES_MATCH",
+  "failed_run_preservation": "negative_and_failed_results/",
+  "session_loss_prevention": [
+    "PACKAGE_BUNDLE_BEFORE_SESSION_END",
+    "WRITE_CHECKSUMS",
+    "SAVE_EXECUTED_NOTEBOOK_AND_VERSION"
+  ]
+}

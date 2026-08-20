@@ -1,0 +1,62 @@
+{
+  "config_changed": false,
+  "created_at_utc": "2026-08-18T03:11:57.417482+00:00",
+  "gate_id": "G03-16-A3",
+  "hardening_id": "P03S-POSTEXT-64-128-256-STAGE16-A3-PRODUCT-LINEAGE-HARDENING-R1_3",
+  "hardening_reason": "POST_PROMOTION_RECOVERY__FEATURE_SPECIFIC_CURVE_MASK_MATERIALIZATION__NO_SCIENCE_CHANGE",
+  "lineage": {
+    "curve_records_with_nonempty_sha_and_parent_lineage": 232614,
+    "selective_records_with_nonempty_sha_and_parent_lineage": 213,
+    "stage13_successor_id": "P03S-POSTEXT-64-128-256-PRE14-EVIDENCE-HARDENING-R1_1-S13-UNCERTAINTY",
+    "stage13_successor_manifest_sha256": "2bea42ed1fa29a1d273dc3036361381d0f93f75c018df55be650615462fe8902"
+  },
+  "products": {
+    "P03-PROD-028": {
+      "family_manifest_sha256": "9325034a151100993f803b1b748dd766bf7b351ad669f92b149c734e34dab02e",
+      "family_root": "artifacts/records/phase_03/RiskCoverageCurveSource/P03S-POSTEXT-64-128-256-STAGE16-A3-PRODUCT-LINEAGE-HARDENING-R1_3",
+      "record_count": 232614,
+      "record_family": "RiskCoverageCurveSource"
+    },
+    "P03-PROD-029": {
+      "family_manifest_sha256": "4c5ab8f361ce47d6a007e75f153e6dde95eb801064ca9bab5f5a2e742f398050",
+      "family_root": "artifacts/records/phase_03/SelectivePredictionRecord/P03S-POSTEXT-64-128-256-STAGE16-A3-PRODUCT-LINEAGE-HARDENING-R1_3",
+      "record_count": 213,
+      "record_family": "SelectivePredictionRecord"
+    }
+  },
+  "protocol_changed": false,
+  "run_id": "P03-L3-POSTEXT-64-128-256-R1-1833e865bcb88ff8",
+  "schema_id": "P03SStage16ProspectiveProductLineageHardeningManifest.v1",
+  "schema_version": "1.0.0",
+  "scientific_handler_changed": false,
+  "scientific_invariance": {
+    "binary_alias_curve_exact_identity_required": false,
+    "binary_alias_curve_lattice_missing_count": 2,
+    "binary_alias_rule_application_mismatch_count": 0,
+    "binary_alias_shared_count_coverage_difference_count": 0,
+    "binary_alias_shared_count_mask_difference_count": 0,
+    "binary_alias_shared_count_risk_difference_count": 0,
+    "confidence_lawful_repeated_full_acceptance_rows": 216,
+    "feature_specific_curve_self_consistency_mismatch_count": 0,
+    "no_rule_application_fabrication_count": 0,
+    "no_rule_mask_file_count": 0,
+    "selective_scientific_field_change_count": 0,
+    "test_used_for_selection": false
+  },
+  "scientific_method_changed": false,
+  "scientific_worker_changed": false,
+  "stage16_raw": {
+    "curve_point_count": 232614,
+    "no_rule_count": 111,
+    "other_ineligible_count": 0,
+    "raw_curve_sha256": "abc7970b14da844014012cfad69c561d5c8e3f56fce41c409ce0664fc8e6a1f6",
+    "raw_rule_ledger_sha256": "51003ffef44161545d1d15e3dce2374359224158c9525ac8fc1bbb664bb21229",
+    "raw_selective_jsonl_sha256": "d3d737fb1fc5cdbf817cb3bb6975994cc1bd06a40153f1aaf94971fa584f5477",
+    "rule_candidate_count": 324,
+    "stage16_output_manifest_sha256": "42a04119c4808a471ef9792d88eb9c91c9ba6fdf658cad7e3abc8811ea916c2b",
+    "success_count": 213
+  },
+  "stage16_stage_artifacts_mutated_by_hardening": false,
+  "stage_id": "16",
+  "status": "PASS"
+}

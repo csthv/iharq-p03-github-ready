@@ -1,0 +1,38 @@
+{
+  "annex_id": "P02_LOWLABEL_64_128_256_STAGE18S_R1_a0e2462396cf",
+  "artifact_id": "P02-CURRENT-EXTENSION-ANNEX-POINTER-R1",
+  "baseline_archival": {
+    "repo_id": "Csthv/iharq-p02-phase02-r2-P02-L2-OFFICIAL-RUN-R4DY-20260814t051352z",
+    "revision": "257a407b5c7ea37b6c620863ee261c010c8f197c"
+  },
+  "baseline_whole_working": {
+    "repo_id": "Csthv/p02-phase02-final-whole-working-20260814t052120z-b890ff92",
+    "revision": "bc14961e14f2e48690e55df3577014275f9cbf30",
+    "write_policy": "IMMUTABLE_READ_ONLY"
+  },
+  "canonical_stage18_G18_modified": false,
+  "created_at_utc": "2026-08-17T19:29:19.240378+00:00",
+  "github_ready_annex": {
+    "annex_root": "annexes/P02_LOWLABEL_64_128_256_STAGE18S_R1_a0e2462396cf",
+    "content_revision": "c7504a1719ca7af9e44d849c0802a732099ed365",
+    "location_index": "annexes/P02_LOWLABEL_64_128_256_STAGE18S_R1_a0e2462396cf/manifests/ANNEX_LOCATION_INDEX.csv",
+    "readme": "annexes/P02_LOWLABEL_64_128_256_STAGE18S_R1_a0e2462396cf/README.md",
+    "repo_id": "Csthv/iharq-p02-stage24-replay-github-ready-r1-20260814t060824z",
+    "repo_type": "dataset",
+    "selection_manifest_sha256": "a0e2462396cf1a7c2fd7c7777048ae489c71eebe3ffec53c6ece7999358ec5ea"
+  },
+  "heavy_current": {
+    "immutable_content_revision": "7f43cf3a9ea4b2056d96b9d2135bc14eac605b90",
+    "pointer_manifest": "phase_02/release_manifests/external_artifact_pointer_manifest_R2.json",
+    "policy": "ALREADY_UPLOADED_CURRENT_BYTES_NO_DUPLICATE_HEAVY_UPLOAD",
+    "repo_id": "Csthv/iharq-p02-phase02-r2-P02-L2-OFFICIAL-RUN-R4DY-20260817t182318z",
+    "repo_type": "dataset"
+  },
+  "lookup_precedence": [
+    "CURRENT_PHASE02_EXTENSION_ANNEX",
+    "BASELINE_P02_GITHUB_READY_AND_EXTERNAL_POINTERS",
+    "BASELINE_WHOLE_WORKING"
+  ],
+  "stage18S_claim_scope": "POST_HOC_SENSITIVITY_DESCRIPTIVE",
+  "status": "PASS"
+}

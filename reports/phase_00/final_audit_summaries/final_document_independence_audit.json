@@ -1,0 +1,184 @@
+{
+  "audit_id": "P00-FINAL-DOCUMENT-INDEPENDENCE-R5",
+  "required_count": 18,
+  "present_count": 18,
+  "snapshot_required_count": 17,
+  "snapshot_row_count": 17,
+  "unique_distribution_path_count": 17,
+  "unique_canonical_path_count": 17,
+  "independent_markdown_status": "PASS",
+  "snapshots_body_match": true,
+  "documents": [
+    {
+      "slot": "01",
+      "distribution_path": "docs/phase_00/final_documents/01_IHARQ_Master_Implementation_Build_Book_Current.md",
+      "canonical_source_path": "docs/authorities/08_implementation_build_book/Master_Implementation_Build_Book_R6_Phase_0_No_External_CI_Gate.md",
+      "canonical_sha256": "6820bdedbe8498ad485ccdfd8deb30945a8ea67554424ca2658dfee488f46ea3",
+      "declared_sha256": "6820bdedbe8498ad485ccdfd8deb30945a8ea67554424ca2658dfee488f46ea3",
+      "distribution_sha256": "39ac0a940c5fbf24ebd7e655d368089ff1ec54d69b94ba05408d3d4d921fda84",
+      "body_match": true,
+      "status": "PASS"
+    },
+    {
+      "slot": "02",
+      "distribution_path": "docs/phase_00/final_documents/02_IHARQ_Phase_0_Implementation_and_Finalization_Annex_Current.md",
+      "canonical_source_path": "docs/authorities/08_implementation_build_book/Phase_0_Final_Whole_Stack_Status_Annex_R4.md",
+      "canonical_sha256": "2056ece62b386910abb87e1b147d31869d844630942878a98be0528447e064a8",
+      "declared_sha256": "2056ece62b386910abb87e1b147d31869d844630942878a98be0528447e064a8",
+      "distribution_sha256": "5cb7d898e4f70523458f6d69acfa940a8f2011390667bd9dec16d3d7e52626bc",
+      "body_match": true,
+      "status": "PASS"
+    },
+    {
+      "slot": "03",
+      "distribution_path": "docs/phase_00/final_documents/03_IHARQ_Protocol_v1_0_Master_Current.md",
+      "canonical_source_path": "docs/authorities/protocol_v1_0/master/IHARQ_Protocol_v1_0_Master_R2.md",
+      "canonical_sha256": "938fcaab2be30d2e59ccc5082a9c3cc6c2ccc3e8889b352099aa514b96e046d4",
+      "declared_sha256": "938fcaab2be30d2e59ccc5082a9c3cc6c2ccc3e8889b352099aa514b96e046d4",
+      "distribution_sha256": "5207a580daabeea89bca4aeb7aa5f384a89d5e492b0b22a70d81bd8a89b37699",
+      "body_match": true,
+      "status": "PASS"
+    },
+    {
+      "slot": "04",
+      "distribution_path": "docs/phase_00/final_documents/04_IHARQ_Protocol_v1_0_Phase_00_Annex_Current.md",
+      "canonical_source_path": "docs/authorities/protocol_v1_0/phases/P00/IHARQ_Protocol_v1_0_Phase_00_Annex_R2.md",
+      "canonical_sha256": "a0dbabfc1c5be739955696f8b5d32d9cdbdedf563a1c9225d9767599bbfbd7b5",
+      "declared_sha256": "a0dbabfc1c5be739955696f8b5d32d9cdbdedf563a1c9225d9767599bbfbd7b5",
+      "distribution_sha256": "55f51429396633a819a003e1885a4081f89ef53add31fa8f1dc6ece9af88be75",
+      "body_match": true,
+      "status": "PASS"
+    },
+    {
+      "slot": "05",
+      "distribution_path": "docs/phase_00/final_documents/05_IHARQ_Protocol_v1_0_Final_Independent_Audit_Report_Current.md",
+      "canonical_source_path": "docs/authorities/protocol_v1_0/final_independent_audit_R2/reports/IHARQ_Protocol_v1_0_Final_Independent_Audit_Report_R2.md",
+      "canonical_sha256": "43ad5b04ac5aff825cf30ed36ae8a8f8ed636f0ff5a3a51a5717a5a04ea29ff7",
+      "declared_sha256": "43ad5b04ac5aff825cf30ed36ae8a8f8ed636f0ff5a3a51a5717a5a04ea29ff7",
+      "distribution_sha256": "45ad443090615a1238e4ccdd92fee45777cca4b5b26c240854c19df1ab990540",
+      "body_match": true,
+      "status": "PASS"
+    },
+    {
+      "slot": "06",
+      "distribution_path": "docs/phase_00/final_documents/06_IHARQ_Phase_0_Analysis_Evidence_Results_and_Interpretation_Report_Current.md",
+      "canonical_source_path": "docs/reports/phase_00/IHARQ_Phase_0_Analysis_Evidence_Results_and_Interpretation_Report_R5_NO_EXTERNAL_CI_GATE.md",
+      "canonical_sha256": "81b0d7e0022cd22ba6728ebc032541c112264abe8ac43c8049750e07f69c0a67",
+      "declared_sha256": "81b0d7e0022cd22ba6728ebc032541c112264abe8ac43c8049750e07f69c0a67",
+      "distribution_sha256": "805e2c2f55e5d2174553d8e8049c2b97bf03bf7d9ad5a70e7a888d127a6b031d",
+      "body_match": true,
+      "status": "PASS"
+    },
+    {
+      "slot": "07",
+      "distribution_path": "docs/phase_00/final_documents/07_IHARQ_Phase_0_Analysis_Final_Independent_Audit_Report_Current.md",
+      "canonical_source_path": "docs/reports/phase_00/IHARQ_Phase_0_Analysis_Completeness_Independent_Audit_Report_R3.md",
+      "canonical_sha256": "c2e6849020fb308c18ade1ef8a68aa438fbaa297fd592432cc6299ca9ef73f99",
+      "declared_sha256": "c2e6849020fb308c18ade1ef8a68aa438fbaa297fd592432cc6299ca9ef73f99",
+      "distribution_sha256": "d990b5639c571803b2f8308e2b79076e91a8a27f7bec09cc91cc318bb1efad41",
+      "body_match": true,
+      "status": "PASS"
+    },
+    {
+      "slot": "08",
+      "distribution_path": "docs/phase_00/final_documents/08_IHARQ_Phase_0_Layer_0_Final_Disposition_Report_Current.md",
+      "canonical_source_path": "docs/layer0/phase_00/IHARQ_Phase_0_Layer_0_Final_Disposition_Report_R2.md",
+      "canonical_sha256": "c9f0ef892979e1204fd72b42396c4a2f3181f290bea51111a1559c305ea3fc70",
+      "declared_sha256": "c9f0ef892979e1204fd72b42396c4a2f3181f290bea51111a1559c305ea3fc70",
+      "distribution_sha256": "7eaba2cf2e3298f25aa47577e91c3fb031759d083abf9a543363772dca594977",
+      "body_match": true,
+      "status": "PASS"
+    },
+    {
+      "slot": "09",
+      "distribution_path": "docs/phase_00/final_documents/09_IHARQ_Phase_0_Allowed_and_Prohibited_Wording_Catalog_Current.md",
+      "canonical_source_path": "docs/layer0/phase_00/IHARQ_Phase_0_Allowed_and_Prohibited_Wording_Catalog_R1.md",
+      "canonical_sha256": "2ca27a8502a935ce186ff841a5e58b9d4de24e37decc7df5411ca4dfdef98b5f",
+      "declared_sha256": "2ca27a8502a935ce186ff841a5e58b9d4de24e37decc7df5411ca4dfdef98b5f",
+      "distribution_sha256": "f7da95ad932f3b935068004ac91c3e2697fe1a3fee0c8510b730b7e2dfbfbb77",
+      "body_match": true,
+      "status": "PASS"
+    },
+    {
+      "slot": "10",
+      "distribution_path": "docs/phase_00/final_documents/10_IHARQ_Phase_0_Claim_Limitation_and_Warning_Register_Current.md",
+      "canonical_source_path": "docs/layer0/phase_00/IHARQ_Phase_0_Claim_Limitation_and_Warning_Register_R2.md",
+      "canonical_sha256": "937f04e7b1f87ba389a2ad85d0f8150c823760f5b41d003d81de246a33ce525f",
+      "declared_sha256": "937f04e7b1f87ba389a2ad85d0f8150c823760f5b41d003d81de246a33ce525f",
+      "distribution_sha256": "71f22a6c09f7c0a1ff992c6c0602385f072c78edc0b94e0befbb60530b9dee1a",
+      "body_match": true,
+      "status": "PASS"
+    },
+    {
+      "slot": "11",
+      "distribution_path": "docs/phase_00/final_documents/11_IHARQ_Phase_0_Report_Correction_Decision_Current.md",
+      "canonical_source_path": "docs/layer0/phase_00/IHARQ_Phase_0_Report_Correction_Decision_R1.md",
+      "canonical_sha256": "04d5eeb5cc0939571226f6b1fe8113db3166546f45503ea2e67fbeb157191689",
+      "declared_sha256": "04d5eeb5cc0939571226f6b1fe8113db3166546f45503ea2e67fbeb157191689",
+      "distribution_sha256": "6973b30057e7a7109360c923ef255c3f1db4289863865a9ac5e6fe4dd9f901ae",
+      "body_match": true,
+      "status": "PASS"
+    },
+    {
+      "slot": "12",
+      "distribution_path": "docs/phase_00/final_documents/12_IHARQ_Phase_0_Paper_and_Thesis_Evidence_Map_Annex_Current.md",
+      "canonical_source_path": "docs/evidence_map/phase_00/IHARQ_Phase_0_Paper_and_Thesis_Evidence_Map_Annex_R2.md",
+      "canonical_sha256": "ece1471edf1e117770e7cd3966a61267fd51a726a72630929fd70a1a06a80fd6",
+      "declared_sha256": "ece1471edf1e117770e7cd3966a61267fd51a726a72630929fd70a1a06a80fd6",
+      "distribution_sha256": "073521ab95a7bdacf65ddc1573bf96e1a66d4a2d950af9fd7c3239063d2666f8",
+      "body_match": true,
+      "status": "PASS"
+    },
+    {
+      "slot": "13",
+      "distribution_path": "docs/phase_00/final_documents/13_IHARQ_Phase_0_Basic_Layer_10_Read_Only_Package_Report_Current.md",
+      "canonical_source_path": "docs/layer10/phase_00/IHARQ_Phase_0_Basic_Layer_10_Read_Only_Package_Report_R2.md",
+      "canonical_sha256": "1f177dafa8a5051c5e65c1fbc58d3bd1cd656e9741f20861ac0f4831ffee31cb",
+      "declared_sha256": "1f177dafa8a5051c5e65c1fbc58d3bd1cd656e9741f20861ac0f4831ffee31cb",
+      "distribution_sha256": "1545bb3cdf71f8ba381cc9f7024047ca193f784e3f1ec7d282a9e3dd73139176",
+      "body_match": true,
+      "status": "PASS"
+    },
+    {
+      "slot": "14",
+      "distribution_path": "docs/phase_00/final_documents/14_IHARQ_Phase_0_Reproduction_and_Provenance_Guide_Current.md",
+      "canonical_source_path": "docs/layer10/phase_00/IHARQ_Phase_0_Reproduction_and_Provenance_Guide_R1.md",
+      "canonical_sha256": "c2a65b192ba011c1f65a8d5c100c7c47c3a7509ea3103e22186bd32f9218f5e8",
+      "declared_sha256": "c2a65b192ba011c1f65a8d5c100c7c47c3a7509ea3103e22186bd32f9218f5e8",
+      "distribution_sha256": "8723c78a8fb344e077f5ea56bc2a080691cdb809921f536c3bfc14aa7e607b5d",
+      "body_match": true,
+      "status": "PASS"
+    },
+    {
+      "slot": "15",
+      "distribution_path": "docs/phase_00/final_documents/15_IHARQ_Phase_0_L0_EvidenceMap_L10_Final_Independent_Audit_Report_Current.md",
+      "canonical_source_path": "docs/reports/phase_00/IHARQ_Phase_0_L0_EvidenceMap_L10_Final_Independent_Audit_Report_R2.md",
+      "canonical_sha256": "e16794022634a439cd8f0029cd54db0362fcb33ec75a46424c1c62b24132bbe5",
+      "declared_sha256": "e16794022634a439cd8f0029cd54db0362fcb33ec75a46424c1c62b24132bbe5",
+      "distribution_sha256": "b92fc5ac55c320c5d39057b45a6691c176d3c50cc7273d2095f2130fd0e3a437",
+      "body_match": true,
+      "status": "PASS"
+    },
+    {
+      "slot": "16",
+      "distribution_path": "docs/phase_00/final_documents/16_IHARQ_Phase_0_Final_Whole_Stack_Closure_Report.md",
+      "canonical_source_path": "docs/reports/phase_00/IHARQ_Phase_0_Final_Whole_Stack_Independent_Double_Check_Report_R5.md",
+      "canonical_sha256": "1e7da8359187f2354bb091a32cc4e970ccc4e4ae2d105bf568dfe59de63c9c6e",
+      "declared_sha256": "1e7da8359187f2354bb091a32cc4e970ccc4e4ae2d105bf568dfe59de63c9c6e",
+      "distribution_sha256": "43cd79d43344a55f41ce982f8169da3c7cc2eb9a2f784540ccb97eb30a5395fa",
+      "body_match": true,
+      "status": "PASS"
+    },
+    {
+      "slot": "17",
+      "distribution_path": "docs/phase_00/final_documents/17_IHARQ_Phase_0_to_Phase_1_Authorization_and_Handoff.md",
+      "canonical_source_path": "docs/handoffs/IHARQ_Phase_0_to_Phase_1_Independent_Double_Check_Handoff_R5.md",
+      "canonical_sha256": "7408c8338c6b50ea457167d753fe7299fe8a1b72d9394fc44bf7f0996909a226",
+      "declared_sha256": "7408c8338c6b50ea457167d753fe7299fe8a1b72d9394fc44bf7f0996909a226",
+      "distribution_sha256": "2bb0311f0f6bb3731366152106ef77a3daefd0db4e1c64f7674afd7de84310e6",
+      "body_match": true,
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS"
+}

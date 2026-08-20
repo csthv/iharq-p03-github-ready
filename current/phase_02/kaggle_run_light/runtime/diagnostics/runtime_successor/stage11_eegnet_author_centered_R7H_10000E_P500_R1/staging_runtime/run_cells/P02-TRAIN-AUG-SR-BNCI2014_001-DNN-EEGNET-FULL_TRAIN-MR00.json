@@ -1,0 +1,99 @@
+{
+  "run_cell_id": "P02-TRAIN-AUG-SR-BNCI2014_001-DNN-EEGNET-FULL_TRAIN-MR00",
+  "ablation_id": "TRAINING_POLICY_DIAGNOSTIC",
+  "terminal_status": "SUCCESS",
+  "prediction_partition": "records/PredictionRecord/dataset=BNCI2014_001/branch=DNN-EEGNET/budget=FULL_TRAIN/P02-TRAIN-AUG-SR-BNCI2014_001-DNN-EEGNET-FULL_TRAIN-MR00.jsonl",
+  "metric_source": "metrics/P02-TRAIN-AUG-SR-BNCI2014_001-DNN-EEGNET-FULL_TRAIN-MR00.json",
+  "checkpoint_sha256": "462970a7883e522c1af3f5353427f0d79ad980e4c9a8625f624bf8cfa10954be",
+  "observed_denominator": 288,
+  "expected_denominator": 288,
+  "selected_params": {
+    "recipe_id": "R7H7-EEGNET-LAWHERN-SMR-SOURCE-CENTERED-P01-160HZ-10000E-TRUE-P120-R1",
+    "recipe_sha256": "18cbe259c05bfcea6b26934118216d5a60ff14d659906e6e8e2f590ffc502866",
+    "lr": 0.001,
+    "optimizer": "Adam",
+    "weight_decay": 0.0,
+    "dropout": 0.5,
+    "epochs_max": 10000,
+    "patience": 120,
+    "min_epochs_before_early_stop": 1,
+    "training_policy_label": "TRUE_P120_FLOOR1_R7",
+    "kernel_length": 40,
+    "depthwise_kernel_length": 20,
+    "pool1_kernel_size": 5,
+    "pool2_kernel_size": 10
+  },
+  "resolved_variant": "EEGNet-R7-LAWHERN-SMR-P01-160HZ",
+  "score_type": "SOFTMAX_PROBABILITY",
+  "validation_burden_seconds": 178.79133414999887,
+  "model_storage_bytes": 14811,
+  "selected_candidate_id": "R7H7-EEGNET-LAWHERN-SMR-SOURCE-CENTERED-P01-160HZ-10000E-TRUE-P120-R1",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.001455858999179327,
+    "batch1_latency_p95_s": 0.006652833000043755,
+    "repeats": 5,
+    "latency_probe_mode": "FORWARD_ONLY_NO_METRICS"
+  },
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "class_weights": null,
+  "class_weight_calibration": {
+    "selected_policy": "UNIFORM_NO_WEIGHT",
+    "selected_weights": null,
+    "candidate_results": [
+      {
+        "status": "SUCCESS",
+        "policy": "UNIFORM_NO_WEIGHT",
+        "weights": null,
+        "validation_metrics": {
+          "BACC": 0.8819444444444444,
+          "F1_MACRO": 0.8818019409975375,
+          "ACC": 0.8819444444444444,
+          "CONFUSION": [
+            [
+              132,
+              12
+            ],
+            [
+              22,
+              122
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            144,
+            144
+          ],
+          "PRED_COMPLETE": 288,
+          "ROC_AUC": 0.9644097222222222,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+        },
+        "elapsed_seconds": 178.79133414999887,
+        "recipe_sha256": "18cbe259c05bfcea6b26934118216d5a60ff14d659906e6e8e2f590ffc502866",
+        "recipe_id": "R7H7-EEGNET-LAWHERN-SMR-SOURCE-CENTERED-P01-160HZ-10000E-TRUE-P120-R1",
+        "early_stopping_patience": 120,
+        "epochs_completed": 277
+      }
+    ],
+    "test_set_used": false
+  },
+  "training_condition_id": "P02-TRAIN-AUG-SR-EEGNET-FULL-R2-VALIDATION-RESOLVED",
+  "source_centered_recipe_sha256": "18cbe259c05bfcea6b26934118216d5a60ff14d659906e6e8e2f590ffc502866",
+  "source_centered_recipe_id": "R7H7-EEGNET-LAWHERN-SMR-SOURCE-CENTERED-P01-160HZ-10000E-TRUE-P120-R1",
+  "prospective_policy_sha256": "b482d6a35e7a4e047139c7e357618f0fc5a4f172911436448b026aaf571d7462",
+  "input_statistics": {
+    "source_unit": "V",
+    "unit_multiplier": 1000000.0,
+    "mean_uv_min": -0.001465586505462202,
+    "mean_uv_max": 0.001581691123371561,
+    "std_uv_min": 2.0728119070197364,
+    "std_uv_max": 5.221843519220808,
+    "channel_count": 22,
+    "fit_samples": 1440,
+    "test_statistics_used": false
+  },
+  "best_epoch": 157,
+  "comparison_reference": "P02-A0-BNCI2014_001-DNN-EEGNET-FULL_TRAIN-MR00",
+  "augmentation_probability": 0.75,
+  "augmentation_condition_id": "P02-TRAIN-AUG-SR-EEGNET-FULL-R2-VALIDATION-RESOLVED",
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

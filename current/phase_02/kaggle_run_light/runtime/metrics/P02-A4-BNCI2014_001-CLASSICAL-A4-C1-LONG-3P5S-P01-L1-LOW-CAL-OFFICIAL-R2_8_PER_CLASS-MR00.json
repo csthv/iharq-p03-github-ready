@@ -1,0 +1,39 @@
+{
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "metrics": {
+    "BACC": 0.5,
+    "F1_MACRO": 0.4686074522064476,
+    "ACC": 0.5,
+    "CONFUSION": [
+      [
+        37,
+        107
+      ],
+      [
+        37,
+        107
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      144,
+      144
+    ],
+    "PRED_COMPLETE": 288,
+    "ROC_AUC": 0.49189814814814814,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "NATIVE_PROBABILITY"
+  },
+  "validation_selected_branch": "CLS-CSP-LDA",
+  "observed_denominator": 288,
+  "condition_id": "A4-C1-LONG-3P5S",
+  "burden": {
+    "evidence_duration_s": 3.5,
+    "observation_horizon_s": 3.5,
+    "model_or_view_evaluations": 1,
+    "member_count": 1,
+    "aggregation_operation": "DIRECT_LONG",
+    "batch1_latency_median_s": 0.0009568130008119624,
+    "batch1_latency_p95_s": 0.0032983219985908358,
+    "aggregation_latency_s": 0.0
+  }
+}

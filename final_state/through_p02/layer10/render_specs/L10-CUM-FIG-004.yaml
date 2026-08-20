@@ -1,0 +1,11 @@
+artifact_id: L10-CUM-FIG-004
+source_data: figure_source_data/Claim_Disposition_Counts.csv
+render_script: scripts/render_layer10.py
+claim_ids: []
+finding_ids: []
+limitations:
+- COUNT_SUMMARY_ONLY
+output: figures/L10-CUM-FIG-004.png
+scientific_transform: DISPLAY_ONLY
+source_data_sha256: 24c7c6a71e9f0a47ea3b59bfe37d50737d69831733bf6cc06862d13838abc450
+output_sha256: df36785e794f381f157f247712b3b649eaf437f1f483279a7bc77086079ec5a7

@@ -1,0 +1,7 @@
+metric_or_family,coverage_class,analysis_location,interpretation
+BACC,PRIMARY_ANALYZED,"§6, §7, §10, §11",deepest metric; participant-first/fulltrain/budget/ablation
+F1_MACRO,SECONDARY_ANALYZED,§8 and sources,corroborative; not a replacement for BACC
+ACC,SECONDARY_ANALYZED,§8 and sources,corroborative; not a replacement for BACC
+ROC_AUC,CONDITIONAL_ANALYZED,§8 and diagnostics,only where score semantics valid
+confusion/class-wise,NOT_APPLICABLE,§8,not a standalone frozen Phase Analysis source; no invented class-wise analysis
+A4 burden/evidence horizon/member evaluations/latency,SECONDARY_ANALYZED,§10.5,"descriptive burden, not deployment benchmark"

@@ -1,0 +1,35 @@
+{
+  "stage_id": "24",
+  "status": "SUCCESS",
+  "attempt_id": "02c32aa5e064",
+  "inputs": {},
+  "input_hashes": {},
+  "outputs": {
+    "status": "PASS",
+    "runtime_bundle_generation": "READY_FOR_POST_LEDGER_FINALIZATION",
+    "stub_only": 0,
+    "artifact": "stage_artifacts/24_bundle.json"
+  },
+  "output_hashes": {
+    "status": "727e9bd17b077ba162e13ba877135cc6fbc6b30f83da0b34b3e20233f1cc885f",
+    "runtime_bundle_generation": "7a670d46fa0cf3e943ae51765f9422614f7626d469302d5f5f3f01fd4df929ec",
+    "stub_only": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+    "artifact": "7f4522820466b5236ef743a8adb031a65e62f9758d18641ed7acba5021ec3aa5"
+  },
+  "dependencies": [
+    "23"
+  ],
+  "elapsed_seconds": 0.04720187187194824,
+  "log_path": "logs/stage_24_02c32aa5e064.log",
+  "heartbeat_write_errors": [],
+  "observability_status": "PASS",
+  "blockers": [],
+  "observations": [],
+  "revision_fingerprint": {
+    "notebook_revision": "R4",
+    "source_sha256": "AUTHORING_FIXTURE_SOURCE",
+    "config_sha256": "AUTHORING_FIXTURE_CONFIG",
+    "stage_plan_sha256": "AUTHORING_FIXTURE_STAGE_PLAN",
+    "scientific_freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5"
+  }
+}

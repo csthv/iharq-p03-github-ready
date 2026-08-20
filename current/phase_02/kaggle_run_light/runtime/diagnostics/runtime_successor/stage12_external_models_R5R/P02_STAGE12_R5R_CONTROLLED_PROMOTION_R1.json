@@ -1,0 +1,270 @@
+{
+  "CBraMod_checkpoint_sha256": "a939ace9aa1e229f08391ad8bb2d197b507ae2c519a50addf087f0151b2df5c3",
+  "DBConformer_patched_source_sha256": "c108942e1a07023d84eded2cf2b1de8e6c2d77954f5a12558a3bb4245dab387a",
+  "P00_P01_mutated": false,
+  "REVE": {
+    "authentication_can_override": false,
+    "claim_bearing": false,
+    "module_attachment_can_override": false,
+    "official_stage12_disposition": "SCIENTIFICALLY_BLOCKED_DIAGNOSTIC_BRANCH",
+    "reason": "IMMUTABLE_IMPLEMENTATION_MODULE_NOT_ATTACHED",
+    "resolved_variant": "REVE",
+    "scientific_authority_status": "BLOCKED_KNOWN_P02_OVERLAP",
+    "status": "DEPENDENCY_BLOCKED",
+    "technical_runtime_status": "DEPENDENCY_BLOCKED"
+  },
+  "accepted_stage_08_11_ledgers_byte_identical": true,
+  "accepted_stage_ledger_sha256": {
+    "08": "a78f86b2fc09443744d818b21fcc0b6084ec53ffeb6dbf5f05d818a989fd6e2d",
+    "09": "1f0f5c2ee8ef83c300bcd3232594cc360c0a44e12812a3d171e3fb6cde6fa388",
+    "10": "1be44b97b389a7aeaf8c88d267aa075159c1623ff6df3b0ffd8cb29af84e91ff",
+    "11": "6321ea2027415ce361382d36a1008103a3ca53507aa7e7fafaeed5d0948c48a3"
+  },
+  "artifact_id": "P02-STAGE12-R5R-CONTROLLED-PROMOTION-R1",
+  "candidate_bindings_applied": true,
+  "checkpoint_contract": {
+    "checkpoint_reference_updates": [
+      "iharq.layer2_decoders.a4.save_roundtrip",
+      "iharq.layer2_decoders.checkpoints._iharq_r5r_pre_external_first_save_roundtrip",
+      "iharq.layer2_decoders.scientific.save_roundtrip"
+    ],
+    "dummy_roundtrip": {
+      "checkpoint_bytes": 35,
+      "checkpoint_format": "EXTERNAL_GOVERNED_INTERFACE",
+      "checkpoint_sha256": "74acf2ad52b6e4913c782007fe5c72ceab22d3e410be3004ae2a49b588bc3d06",
+      "path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/checkpoint_route_probe/dummy.external.external.chk",
+      "reason": null,
+      "status": "PASS"
+    },
+    "external_roundtrip_helper_sha256": "487cc0e768e194f0d53a6356cc00a9c8fd85355dad4d801a5bcf1d244024638b",
+    "inherited_save_roundtrip_sha256": "c816120b165f419d95bf5926d4e691dca0076870c0c69afe69f1f8245d34d159",
+    "routing_mode": "EXTERNAL_FIRST_WHEN_PLUGIN_PRESENT_OTHERWISE_EXACT_INHERITED_SAVE_ROUNDTRIP",
+    "scientific_configuration_changed": false,
+    "status": "PASS"
+  },
+  "created_utc": "2026-08-10T08:44:56.565937+00:00",
+  "external_adapter_module_sha256": "add69c0a0f8843366d6d9ed1fb16746f61d43a6d588b04f07193484e0555386a",
+  "function_patch_records": [
+    {
+      "after_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/integration_patch_sources/iharq_layer2_decoders_scientific___fit_weighted_policy_candidate__R5R.py",
+      "after_sha256": "1dd3de71491f39f4c8f8b4ef0a2166f73992a01726a2d9cc36d7e11931b9ea9c",
+      "before_sha256": "8724e174f47e56501db87f4ab80bb1d9ef000981d384448bab7f25a4949ad022",
+      "function": "_fit_weighted_policy_candidate",
+      "module": "iharq.layer2_decoders.scientific",
+      "propagated_references": []
+    },
+    {
+      "after_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/integration_patch_sources/iharq_layer2_decoders_scientific__execute_cell__R5R.py",
+      "after_sha256": "edd988ea3db40cd4de6b502d02b15cd657fe5ce25f1ec5632b5802030d682eac",
+      "before_sha256": "1b16b187f30ffeabc61c8dc8c05253185dcecbfc038fba75fff6d4e75dceb8dc",
+      "function": "execute_cell",
+      "module": "iharq.layer2_decoders.scientific",
+      "propagated_references": [
+        "iharq.layer2_decoders.orchestration.execute_cell"
+      ]
+    },
+    {
+      "after_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/integration_patch_sources/iharq_layer2_decoders_scientific__validation_only_fixed_neural_fit__R5R.py",
+      "after_sha256": "a7249f85df2b2819898942543e0cff116c84683b4299dc35a0ed3726f47cef55",
+      "before_sha256": "c16ab292ad05948944f670d8f30dc9ff6dfcdbb30efc3c38161abf0b8e5fc974",
+      "function": "validation_only_fixed_neural_fit",
+      "module": "iharq.layer2_decoders.scientific",
+      "propagated_references": [
+        "iharq.layer2_decoders.orchestration.validation_only_fixed_neural_fit"
+      ]
+    },
+    {
+      "after_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/integration_patch_sources/iharq_layer2_decoders_a4___fit_member__R5R.py",
+      "after_sha256": "f0d67807fdf608157f69c27ab127511d0f2337981ae9993ead0a1a3e4d507f3a",
+      "before_sha256": "1894d429a884ba7f6af2591cd59dd4b920a3762bd3f3aaa5aaf82d083ef22036",
+      "function": "_fit_member",
+      "module": "iharq.layer2_decoders.a4",
+      "propagated_references": []
+    }
+  ],
+  "marker": "STAGE12_R5R_CONTROLLED_PROMOTION_READY_FOR_EXECUTION",
+  "parent_runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R4-SR-PROBABILITY-STALE-CACHE-INVALIDATION-LIVE-CONTINUATION",
+  "prior_scientific_stages_rerun": false,
+  "production_factory_probe_count": 9,
+  "production_factory_probes": [
+    {
+      "admission": {
+        "admission_authority": "R5R_REAL_P01_SMOKE_9_OF_9",
+        "implementation_equivalence": "ORIGINAL_AUTHOR",
+        "resolved_variant": "FBCNet-OriginalAuthor-P01ConstrainedFilterBank",
+        "status": "ADMITTED"
+      },
+      "branch": "DNN-FBCNET",
+      "dataset_id": "PhysioNetMI",
+      "n_chans": 64,
+      "n_times": 480,
+      "plugin_class": "IHARQFBCNetOriginalAuthorAdapter",
+      "plugin_module_sha256": "add69c0a0f8843366d6d9ed1fb16746f61d43a6d588b04f07193484e0555386a",
+      "resolved_variant": "FBCNet-OriginalAuthor-P01ConstrainedFilterBank",
+      "seed": 758574837
+    },
+    {
+      "admission": {
+        "admission_authority": "R5R_REAL_P01_SMOKE_9_OF_9",
+        "implementation_equivalence": "ORIGINAL_AUTHOR",
+        "resolved_variant": "FBCNet-OriginalAuthor-P01ConstrainedFilterBank",
+        "status": "ADMITTED"
+      },
+      "branch": "DNN-FBCNET",
+      "dataset_id": "BNCI2014_001",
+      "n_chans": 22,
+      "n_times": 480,
+      "plugin_class": "IHARQFBCNetOriginalAuthorAdapter",
+      "plugin_module_sha256": "add69c0a0f8843366d6d9ed1fb16746f61d43a6d588b04f07193484e0555386a",
+      "resolved_variant": "FBCNet-OriginalAuthor-P01ConstrainedFilterBank",
+      "seed": 843793861
+    },
+    {
+      "admission": {
+        "admission_authority": "R5R_REAL_P01_SMOKE_9_OF_9",
+        "implementation_equivalence": "ORIGINAL_AUTHOR",
+        "resolved_variant": "FBCNet-OriginalAuthor-P01ConstrainedFilterBank",
+        "status": "ADMITTED"
+      },
+      "branch": "DNN-FBCNET",
+      "dataset_id": "Lee2019_MI",
+      "n_chans": 62,
+      "n_times": 480,
+      "plugin_class": "IHARQFBCNetOriginalAuthorAdapter",
+      "plugin_module_sha256": "add69c0a0f8843366d6d9ed1fb16746f61d43a6d588b04f07193484e0555386a",
+      "resolved_variant": "FBCNet-OriginalAuthor-P01ConstrainedFilterBank",
+      "seed": 830511967
+    },
+    {
+      "admission": {
+        "admission_authority": "R5R_REAL_P01_SMOKE_9_OF_9",
+        "fallback_used": false,
+        "preferred_sequence_slot": true,
+        "resolved_variant": "DBConformer-OriginalAuthor-P01CompatibilityPatched",
+        "status": "ADMITTED"
+      },
+      "branch": "DNN-SEQ",
+      "dataset_id": "PhysioNetMI",
+      "n_chans": 64,
+      "n_times": 480,
+      "plugin_class": "IHARQDBConformerOriginalAuthorAdapter",
+      "plugin_module_sha256": "add69c0a0f8843366d6d9ed1fb16746f61d43a6d588b04f07193484e0555386a",
+      "resolved_variant": "DBConformer-OriginalAuthor-P01CompatibilityPatched",
+      "seed": 881493230
+    },
+    {
+      "admission": {
+        "admission_authority": "R5R_REAL_P01_SMOKE_9_OF_9",
+        "fallback_used": false,
+        "preferred_sequence_slot": true,
+        "resolved_variant": "DBConformer-OriginalAuthor-P01CompatibilityPatched",
+        "status": "ADMITTED"
+      },
+      "branch": "DNN-SEQ",
+      "dataset_id": "BNCI2014_001",
+      "n_chans": 22,
+      "n_times": 480,
+      "plugin_class": "IHARQDBConformerOriginalAuthorAdapter",
+      "plugin_module_sha256": "add69c0a0f8843366d6d9ed1fb16746f61d43a6d588b04f07193484e0555386a",
+      "resolved_variant": "DBConformer-OriginalAuthor-P01CompatibilityPatched",
+      "seed": 1529732860
+    },
+    {
+      "admission": {
+        "admission_authority": "R5R_REAL_P01_SMOKE_9_OF_9",
+        "fallback_used": false,
+        "preferred_sequence_slot": true,
+        "resolved_variant": "DBConformer-OriginalAuthor-P01CompatibilityPatched",
+        "status": "ADMITTED"
+      },
+      "branch": "DNN-SEQ",
+      "dataset_id": "Lee2019_MI",
+      "n_chans": 62,
+      "n_times": 480,
+      "plugin_class": "IHARQDBConformerOriginalAuthorAdapter",
+      "plugin_module_sha256": "add69c0a0f8843366d6d9ed1fb16746f61d43a6d588b04f07193484e0555386a",
+      "resolved_variant": "DBConformer-OriginalAuthor-P01CompatibilityPatched",
+      "seed": 1276818886
+    },
+    {
+      "admission": {
+        "admission_authority": "R5R_REAL_P01_SMOKE_9_OF_9",
+        "checkpoint_sha256": "a939ace9aa1e229f08391ad8bb2d197b507ae2c519a50addf087f0151b2df5c3",
+        "corpus_overlap_status": "PASS",
+        "resolved_variant": "CBraMod-HF-Braindecode-GovernedP02",
+        "status": "ADMITTED"
+      },
+      "branch": "SSL-CBRAMOD",
+      "dataset_id": "PhysioNetMI",
+      "n_chans": 64,
+      "n_times": 480,
+      "plugin_class": "IHARQCBraModGovernedAdapter",
+      "plugin_module_sha256": "add69c0a0f8843366d6d9ed1fb16746f61d43a6d588b04f07193484e0555386a",
+      "resolved_variant": "CBraMod-HF-Braindecode-GovernedP02",
+      "seed": 2066603508
+    },
+    {
+      "admission": {
+        "admission_authority": "R5R_REAL_P01_SMOKE_9_OF_9",
+        "checkpoint_sha256": "a939ace9aa1e229f08391ad8bb2d197b507ae2c519a50addf087f0151b2df5c3",
+        "corpus_overlap_status": "PASS",
+        "resolved_variant": "CBraMod-HF-Braindecode-GovernedP02",
+        "status": "ADMITTED"
+      },
+      "branch": "SSL-CBRAMOD",
+      "dataset_id": "BNCI2014_001",
+      "n_chans": 22,
+      "n_times": 480,
+      "plugin_class": "IHARQCBraModGovernedAdapter",
+      "plugin_module_sha256": "add69c0a0f8843366d6d9ed1fb16746f61d43a6d588b04f07193484e0555386a",
+      "resolved_variant": "CBraMod-HF-Braindecode-GovernedP02",
+      "seed": 1534795089
+    },
+    {
+      "admission": {
+        "admission_authority": "R5R_REAL_P01_SMOKE_9_OF_9",
+        "checkpoint_sha256": "a939ace9aa1e229f08391ad8bb2d197b507ae2c519a50addf087f0151b2df5c3",
+        "corpus_overlap_status": "PASS",
+        "resolved_variant": "CBraMod-HF-Braindecode-GovernedP02",
+        "status": "ADMITTED"
+      },
+      "branch": "SSL-CBRAMOD",
+      "dataset_id": "Lee2019_MI",
+      "n_chans": 62,
+      "n_times": 480,
+      "plugin_class": "IHARQCBraModGovernedAdapter",
+      "plugin_module_sha256": "add69c0a0f8843366d6d9ed1fb16746f61d43a6d588b04f07193484e0555386a",
+      "resolved_variant": "CBraMod-HF-Braindecode-GovernedP02",
+      "seed": 247862164
+    }
+  ],
+  "resource_execution_authorized_by_user": true,
+  "resource_execution_successor": true,
+  "runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R5R-STAGE12-RESOURCE-OPTIMIZED-EXTERNAL-MODEL-LIVE-CONTINUATION",
+  "safe_next_action": "RUN_GOVERNED_STAGE12_R5R",
+  "scientific_configuration_changed": false,
+  "sequence_resolution": {
+    "EEGConformer_fallback_used": false,
+    "EEGTC_fallback_admission": {
+      "reason": "EEGTCNET_FALLBACK_NOT_ACTIVATED_PRE_RESULT",
+      "status": "CONDITIONAL_SKIP"
+    },
+    "preferred_DBConformer_admitted": true,
+    "resolved_variant_set": [
+      "DBConformer-OriginalAuthor-P01CompatibilityPatched"
+    ]
+  },
+  "smoke_report": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/P02_STAGE12_EXTERNAL_ADAPTER_REAL_P01_SMOKE_R5R_R1.json",
+  "source_freeze_manifest": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/P02_STAGE12_EXTERNAL_MODEL_SOURCE_FREEZE_R1.json",
+  "stage12_branch_counts": {
+    "DNN-EGTC": 15,
+    "DNN-FBCNET": 15,
+    "DNN-SEQ": 15,
+    "SSL-CBRAMOD": 105,
+    "SSL-REVE": 3
+  },
+  "stage12_plan_count": 153,
+  "stage12_terminal_count_after_promotion": 0,
+  "status": "PASS",
+  "test_signal_loaded": false
+}

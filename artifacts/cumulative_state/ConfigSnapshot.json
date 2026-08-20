@@ -1,0 +1,11 @@
+{
+  "manifest_type": "ConfigSnapshot",
+  "config_snapshot_id": "IHARQ-P02-ENTRY-UPSTREAM-CONFIG-SNAPSHOT-R1",
+  "phase": "P02_ENTRY_PREPARATION",
+  "p01_scientific_freeze": "P01-L1-OFFICIAL-RUN-FREEZE-R2",
+  "p01_config_id": "d03f0a7c869dd95a2a67e5a32edc501d52bfc3851d8e761ef56595d8bd1ff52f",
+  "core_window_profile": "+0.5..+3.5 s, 480 samples @160 Hz",
+  "a4_r2_profile": "+0.0..+3.5 s, 560 samples; virtual slices 0:320, 120:440, 240:560",
+  "p02_scientific_config_frozen": false,
+  "rule": "P02 MUST CREATE ITS OWN GOVERNED IMPLEMENTATION/PROTOCOL FREEZE BEFORE EXECUTION."
+}

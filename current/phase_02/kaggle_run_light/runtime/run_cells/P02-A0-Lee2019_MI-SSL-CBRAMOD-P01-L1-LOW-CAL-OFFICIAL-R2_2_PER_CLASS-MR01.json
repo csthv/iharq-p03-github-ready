@@ -1,0 +1,114 @@
+{
+  "run_cell_id": "P02-A0-Lee2019_MI-SSL-CBRAMOD-P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS-MR01",
+  "ablation_id": "A0",
+  "terminal_status": "SUCCESS",
+  "prediction_partition": "records/PredictionRecord/dataset=Lee2019_MI/branch=SSL-CBRAMOD/budget=P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS/P02-A0-Lee2019_MI-SSL-CBRAMOD-P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS-MR01.jsonl",
+  "metric_source": "metrics/P02-A0-Lee2019_MI-SSL-CBRAMOD-P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS-MR01.json",
+  "checkpoint_sha256": "039c51d1145e853185843766a7c0064351b88002893b3e7da1e67988f865071b",
+  "checkpoint_path": "checkpoints/P02-A0-Lee2019_MI-SSL-CBRAMOD-P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS-MR01.external.external.chk",
+  "observed_denominator": 600,
+  "selected_params": {
+    "recipe_id": "R6-CBRAMOD-SOURCE-CENTERED-R1",
+    "optimizer": "AdamW",
+    "body_lr": 0.0001,
+    "head_lr": 0.0005,
+    "weight_decay": 0.05,
+    "batch_size": 64,
+    "scheduler": "cosine",
+    "eta_min": 1e-06,
+    "label_smoothing": 0.1,
+    "grad_clip": 1.0,
+    "input_scale": 10000.0,
+    "source_sampling_hz": 160,
+    "target_sampling_hz": 200,
+    "max_epochs": 150,
+    "patience": 40,
+    "selection": "validation_BACC",
+    "restore_best": true,
+    "branch": "SSL-CBRAMOD",
+    "dataset_id": "Lee2019_MI",
+    "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS"
+  },
+  "resolved_variant": "CBraMod-HF-Braindecode-GovernedP02-R6Scale1e4",
+  "score_type": "SOFTMAX_PROBABILITY",
+  "validation_burden_seconds": 57.40239882469177,
+  "model_storage_bytes": 19993608,
+  "selected_candidate_id": "R6-CBRAMOD-SOURCE-CENTERED-R1",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.009902655001496896,
+    "batch1_latency_p95_s": 0.010056462197826476,
+    "repeats": 5,
+    "latency_probe_mode": "FORWARD_ONLY_NO_METRICS"
+  },
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "class_weights": null,
+  "class_weight_calibration": {
+    "selected_policy": "UNIFORM_NO_WEIGHT",
+    "selected_weights": null,
+    "validation_metrics": {
+      "BACC": 0.528,
+      "F1_MACRO": 0.45219215984847083,
+      "ACC": 0.528,
+      "CONFUSION": [
+        [
+          39,
+          211
+        ],
+        [
+          25,
+          225
+        ]
+      ],
+      "CLASS_SUPPORT": [
+        250,
+        250
+      ],
+      "PRED_COMPLETE": 500,
+      "ROC_AUC": 0.48248,
+      "ROC_AUC_STATUS": "PASS",
+      "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+    },
+    "candidate_results": [
+      {
+        "status": "SUCCESS",
+        "policy": "UNIFORM_NO_WEIGHT",
+        "weights": null,
+        "validation_metrics": {
+          "BACC": 0.528,
+          "F1_MACRO": 0.45219215984847083,
+          "ACC": 0.528,
+          "CONFUSION": [
+            [
+              39,
+              211
+            ],
+            [
+              25,
+              225
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            250,
+            250
+          ],
+          "PRED_COMPLETE": 500,
+          "ROC_AUC": 0.48248,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+        },
+        "validation_burden_seconds": 57.40239882469177,
+        "model_storage_bytes": 19993608,
+        "best_epoch": 24,
+        "epochs_completed": 64,
+        "history_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/staging_runtime/raw_outputs/stage12_r6_training_history/P02-A0-Lee2019_MI-SSL-CBRAMOD-P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS-MR01__UNIFORM_NO_WEIGHT.json",
+        "candidate_checkpoint_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/staging_runtime/raw_outputs/stage12_r6_training_history/P02-A0-Lee2019_MI-SSL-CBRAMOD-P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS-MR01__UNIFORM_NO_WEIGHT.candidate.chk",
+        "candidate_checkpoint_sha256": "9188f84a0e2a764b67ffd16626c2658b51873cfd1e9ebeed7ac1d8bebe0e7e45"
+      }
+    ],
+    "test_set_used": false
+  },
+  "training_condition_id": "A0-RAW-ACCEPT-ALL",
+  "r6_scientific_amendment": true,
+  "test_loaded_after_group_selection_sealed": true,
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

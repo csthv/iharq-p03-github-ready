@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "total": 1896,
+  "A0": 678,
+  "A4": 1218,
+  "unique": 1896,
+  "A0_unrouted": 0,
+  "stage05_decisions": "VERIFY_ALGORITHMIC_POLICY_ONLY_NO_TEST_ACCESS",
+  "scientific_training_policy": {
+    "status": "PASS",
+    "missing": [],
+    "blockers": []
+  },
+  "training_role_class_counts": {
+    "BNCI2014_001": {
+      "left_hand": 720,
+      "right_hand": 720
+    },
+    "Lee2019_MI": {
+      "left_hand": 1600,
+      "right_hand": 1600
+    },
+    "PhysioNetMI": {
+      "left_hand": 1490,
+      "right_hand": 1459
+    }
+  },
+  "training_policy_challenger_cells": 15,
+  "preexecution_amendment_id": "P02-PREEXEC-TRAINING-POLICY-AMENDMENT-R2",
+  "fixture_authority_blocker_bypass": false
+}

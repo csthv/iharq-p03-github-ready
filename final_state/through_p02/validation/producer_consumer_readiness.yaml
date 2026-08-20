@@ -1,0 +1,114 @@
+rows:
+- artifact_id: P02-PREDICTION-SUBSTRATE
+  producer_phase: P02
+  producer_layer: L2
+  artifact_type: PredictionRecord partitions
+  canonical_location: execution/runtime/manifests/record_partitions/PredictionRecord
+  schema: iharq://schemas/p02/predictionrecord/v1
+  status: CURRENT_CANONICAL
+  immediate_consumer: P03/L3
+  later_consumers: L4-L10; reproduction
+  required_or_optional: REQUIRED
+  availability: POINTER_BACKED; partition manifests local; heavy rows recoverable
+    from preferred workspace
+  integrity: 1,014 partition manifests; Stage20 required fields PASS
+  limitations: conditional score semantics; use exact class order
+  ready: 'YES'
+- artifact_id: P02-MODEL-REGISTRY
+  producer_phase: P02
+  producer_layer: L2
+  artifact_type: ModelRegistryRecord
+  canonical_location: execution/runtime/records/ModelRegistryRecord
+  schema: iharq://schemas/p02/modelregistryrecord/v1
+  status: CURRENT_CANONICAL
+  immediate_consumer: P03/L3
+  later_consumers: reproduction; later decoder consumers
+  required_or_optional: REQUIRED
+  availability: LOCAL LIGHT RECORDS + external checkpoints if required
+  integrity: 672 partition manifests; checkpoint hashes recorded
+  limitations: some conditional branches failed/blocked/skipped
+  ready: 'YES'
+- artifact_id: P02-A0
+  producer_phase: P02
+  producer_layer: L2
+  artifact_type: A0 metrics/statistics
+  canonical_location: execution/runtime/analysis_inputs/a0_*
+  schema: Protocol analysis contract
+  status: CURRENT_CANONICAL
+  immediate_consumer: P03 context
+  later_consumers: Analysis/L0/EM/L10
+  required_or_optional: REQUIRED_CONTEXT
+  availability: LOCAL
+  integrity: analysis contract frozen
+  limitations: raw accept-all only
+  ready: 'YES'
+- artifact_id: P02-A4
+  producer_phase: P02
+  producer_layer: L2
+  artifact_type: A4 controls/statistics
+  canonical_location: execution/runtime/analysis_inputs/a4_*
+  schema: Protocol A4 contract
+  status: CURRENT_CANONICAL
+  immediate_consumer: P03 context
+  later_consumers: L4/L10
+  required_or_optional: OPTIONAL_CONTEXT
+  availability: LOCAL
+  integrity: Stage18/G18 PASS; governed counts
+  limitations: single refit repeat + deep anchors only
+  ready: 'YES'
+- artifact_id: P02-L2-READINESS-P03
+  producer_phase: P02
+  producer_layer: L2
+  artifact_type: Layer2ReadinessReport
+  canonical_location: execution/runtime/records/Layer2ReadinessReport/.../P02-L2-READINESS-P03.jsonl
+  schema: iharq://schemas/p02/layer2readinessreport/v1
+  status: CURRENT_CANONICAL
+  immediate_consumer: P03
+  later_consumers: release/reproduction
+  required_or_optional: REQUIRED
+  availability: LOCAL
+  integrity: compatibility PASS; missing_fields=[]; blocking_reasons=[]
+  limitations: inherits P02 limitations
+  ready: 'YES'
+- artifact_id: P02-FAILURE-INDEX
+  producer_phase: P02
+  producer_layer: L2
+  artifact_type: Failure/negative/diagnostic records
+  canonical_location: execution/runtime/records
+  schema: P02 record schema freeze
+  status: CURRENT_CANONICAL
+  immediate_consumer: P03
+  later_consumers: all affected consumers
+  required_or_optional: REQUIRED_SUPPORT
+  availability: LOCAL
+  integrity: parsed/hashed in final package
+  limitations: must preserve non-success semantics
+  ready: 'YES'
+- artifact_id: P02-EXTERNAL-PREFERRED
+  producer_phase: P02
+  producer_layer: L2
+  artifact_type: P02 full workspace snapshot
+  canonical_location: handoff/external_artifact_retrieval.yaml
+  schema: HF immutable dataset revision
+  status: CURRENT_CANONICAL
+  immediate_consumer: P03
+  later_consumers: P04-P15/reproduction
+  required_or_optional: REQUIRED_FOR_HEAVY_BYTES
+  availability: PRIVATE_EXTERNAL
+  integrity: manifest and per-object index governed
+  limitations: requires IHARQ_HF_TOKEN_P02; remote not live-verified
+  ready: 'YES'
+- artifact_id: P01-DATA-SUBSTRATE
+  producer_phase: P02
+  producer_layer: L2
+  artifact_type: Inherited P01 datasets/splits/windows
+  canonical_location: authorities/protocol_v1/.../external_artifact_access_contract.yaml
+  schema: P01 frozen identities
+  status: CURRENT_CANONICAL
+  immediate_consumer: P03 via P02 lineage
+  later_consumers: P04-P15
+  required_or_optional: REQUIRED_UPSTREAM
+  availability: PRIVATE KAGGLE POINTERS
+  integrity: Protocol pointers with manifest hashes
+  limitations: requires predecessor access route; immutable identities
+  ready: 'YES'

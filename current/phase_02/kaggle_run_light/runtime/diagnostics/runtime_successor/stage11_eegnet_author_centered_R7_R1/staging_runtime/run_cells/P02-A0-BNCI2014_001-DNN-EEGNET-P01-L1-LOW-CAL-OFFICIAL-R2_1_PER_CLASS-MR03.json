@@ -1,0 +1,107 @@
+{
+  "run_cell_id": "P02-A0-BNCI2014_001-DNN-EEGNET-P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS-MR03",
+  "ablation_id": "A0",
+  "terminal_status": "SUCCESS",
+  "prediction_partition": "records/PredictionRecord/dataset=BNCI2014_001/branch=DNN-EEGNET/budget=P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS/P02-A0-BNCI2014_001-DNN-EEGNET-P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS-MR03.jsonl",
+  "metric_source": "metrics/P02-A0-BNCI2014_001-DNN-EEGNET-P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS-MR03.json",
+  "checkpoint_sha256": "8ad78170da231f930b2ff20aee2844aa58fe4199c715308cac183df01cc38fc4",
+  "observed_denominator": 288,
+  "expected_denominator": 288,
+  "selected_params": {
+    "recipe_id": "R7-EEGNET-LAWHERN-SMR-SOURCE-CENTERED-P01-160HZ-R1",
+    "lr": 0.001,
+    "optimizer": "Adam",
+    "weight_decay": 0.0,
+    "dropout": 0.5,
+    "epochs": 500,
+    "kernel_length": 40,
+    "depthwise_kernel_length": 20,
+    "pool1_kernel_size": 5,
+    "pool2_kernel_size": 10
+  },
+  "resolved_variant": "EEGNet-R7-LAWHERN-SMR-P01-160HZ",
+  "score_type": "SOFTMAX_PROBABILITY",
+  "validation_burden_seconds": 11.42761417100155,
+  "model_storage_bytes": 14811,
+  "selected_candidate_id": "R7-EEGNET-LAWHERN-SMR-SOURCE-CENTERED-P01-160HZ-R1",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.0012369659998512361,
+    "batch1_latency_p95_s": 0.0016809255997941362,
+    "repeats": 5,
+    "latency_probe_mode": "FORWARD_ONLY_NO_METRICS"
+  },
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "class_weights": null,
+  "class_weight_calibration": {
+    "selected_policy": "UNIFORM_NO_WEIGHT",
+    "selected_weights": null,
+    "candidate_results": [
+      {
+        "status": "SUCCESS",
+        "policy": "UNIFORM_NO_WEIGHT",
+        "weights": null,
+        "validation_metrics": {
+          "BACC": 0.5277777777777778,
+          "F1_MACRO": 0.42857142857142855,
+          "ACC": 0.5277777777777778,
+          "CONFUSION": [
+            [
+              136,
+              8
+            ],
+            [
+              128,
+              16
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            144,
+            144
+          ],
+          "PRED_COMPLETE": 288,
+          "ROC_AUC": 0.49686535493827166,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+        },
+        "candidate_checkpoint_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage11_eegnet_author_centered_R7_R1/staging_runtime/raw_outputs/stage11_r7_training_history/P02-A0-BNCI2014_001-DNN-EEGNET-P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS-MR03__primary__UNIFORM_NO_WEIGHT.candidate.state_dict.pt",
+        "candidate_checkpoint_sha256": "8ad78170da231f930b2ff20aee2844aa58fe4199c715308cac183df01cc38fc4",
+        "candidate_checkpoint_bytes": 14811,
+        "actual_batch_size": 64,
+        "gradient_accumulation": 1,
+        "input_statistics": {
+          "source_unit": "V",
+          "unit_multiplier": 1000000.0,
+          "mean_uv_min": -0.016425896182808986,
+          "mean_uv_max": 0.015658582017593254,
+          "std_uv_min": 1.187665775076413,
+          "std_uv_max": 3.692713848052607,
+          "channel_count": 22,
+          "fit_samples": 2,
+          "test_statistics_used": false
+        },
+        "best_epoch": 344,
+        "elapsed_seconds": 11.42761417100155
+      }
+    ],
+    "test_set_used": false
+  },
+  "training_condition_id": "A0-RAW-ACCEPT-ALL",
+  "source_centered_recipe_sha256": "a677a8d3a9eb7da1a830b95af4e79aecf1ca8c54080c92b83a3e87a312ae7bb9",
+  "source_centered_recipe_id": "R7-EEGNET-LAWHERN-SMR-SOURCE-CENTERED-P01-160HZ-R1",
+  "input_statistics": {
+    "source_unit": "V",
+    "unit_multiplier": 1000000.0,
+    "mean_uv_min": -0.016425896182808986,
+    "mean_uv_max": 0.015658582017593254,
+    "std_uv_min": 1.187665775076413,
+    "std_uv_max": 3.692713848052607,
+    "channel_count": 22,
+    "fit_samples": 2,
+    "test_statistics_used": false
+  },
+  "best_epoch": 344,
+  "comparison_reference": null,
+  "augmentation_probability": null,
+  "augmentation_condition_id": null,
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

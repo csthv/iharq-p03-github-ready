@@ -1,0 +1,212 @@
+policy:
+  policy_id: P02-L2-FULLY-UNLOCKED-ABLATION-SINGLE-NOTEBOOK-R1
+  governing_principle: No alternate execution modes. Any ablation/control that becomes
+    fully unlocked for P02 under valid authority is executed inside the same comprehensive
+    P02 Kaggle notebook and emits analysis-ready evidence.
+  current_directly_unlocked:
+  - A0
+  - A4
+  current_not_unlocked:
+  - A1
+  - A2
+  - A3
+  - A5
+  - A6
+  - A7
+  - A8
+  - A9
+  - A10
+  - A11
+  - A12
+  - A13
+  prohibited:
+  - A14
+  fully_unlocked_criteria:
+  - P02/L2 ownership is present in current authority OR a formally accepted authority
+    successor explicitly assigns execution to P02 before the affected official run
+    stage.
+  - Required upstream records/artifacts are valid, version-pinned and joinable.
+  - Estimand, metric dictionary entries, matched-comparison keys, denominators, visibility
+    rules, seed/repetition policy and failure handling are frozen by their owners.
+  - Required implementation/schema paths exist and pass tests.
+  - License, checkpoint provenance, corpus-overlap and resource gates pass where applicable.
+  - Execution does not absorb another layer scientific responsibility and does not
+    use final-test outcomes to unlock itself.
+  - The ablation is not A14.
+  activation_time: Stage 05 freezes the ablation unlock matrix before official scientific
+    result stages. Result-dependent unlocking is prohibited. A later authority successor
+    requires controlled re-entry from Stage 05 in the same notebook lineage, not a
+    second mode/notebook.
+  notebook_behavior: 'Stage 05 emits p02_ablation_unlock_matrix_frozen.yaml; Stages
+    15/18 execute A0/A4. A generic authority-approved additional-ablation executor
+    remains in the same notebook after A4 and before negative-result accounting; it
+    runs only rows marked DIRECT_EXECUTE_P02 and FULLY_UNLOCKED. Current expected
+    extra rows: none.'
+  analysis_handoff: Every executed unlocked ablation must emit its run cells, matched-comparison
+    source tables, negative/failed rows, metric rows, limitation tags, and Protocol/Phase-Analysis/Layer0/EvidenceMap/Layer10
+    handoff entries.
+ablations:
+- ablation_id: A0
+  official_meaning: Raw Decoder / Accept-All Raw Decoder Reference
+  p02_responsibility: DIRECT_EXECUTE_P02
+  foundation_inherited: 'YES'
+  directly_executed_in_p02: true
+  input_prepared: 'YES'
+  result_emitted: true
+  downstream_owner: P03+ consumes immutable A0
+  comparison_keys: canonical matched key policy
+  limitations: raw baseline only; no calibration/abstention
+- ablation_id: A1
+  official_meaning: Calibrated Decoder / Calibration Visibility
+  p02_responsibility: DOWNSTREAM_LAYER3_NOT_P02
+  foundation_inherited: 'YES'
+  directly_executed_in_p02: false
+  input_prepared: 'YES'
+  result_emitted: false
+  downstream_owner: L3/P03
+  comparison_keys: canonical matched key policy
+  limitations: P02 only prepares native score/probability/logit lineage; no calibration/threshold/selective-prediction
+    execution
+- ablation_id: A2
+  official_meaning: Simple Registered Threshold / Confidence-Threshold Baseline
+  p02_responsibility: DOWNSTREAM_LAYER3_NOT_P02
+  foundation_inherited: 'YES'
+  directly_executed_in_p02: false
+  input_prepared: 'YES'
+  result_emitted: false
+  downstream_owner: L3/P03
+  comparison_keys: canonical matched key policy
+  limitations: P02 only prepares native score/probability/logit lineage; no calibration/threshold/selective-prediction
+    execution
+- ablation_id: A3
+  official_meaning: Uncertainty and Selective Prediction
+  p02_responsibility: DOWNSTREAM_LAYER3_NOT_P02
+  foundation_inherited: 'YES'
+  directly_executed_in_p02: false
+  input_prepared: 'YES'
+  result_emitted: false
+  downstream_owner: L3/P03
+  comparison_keys: canonical matched key policy
+  limitations: P02 only prepares native score/probability/logit lineage; no calibration/threshold/selective-prediction
+    execution
+- ablation_id: A4
+  official_meaning: Longer-Window, Multi-Window Voting/Averaging and Ordinary Ensemble
+    Controls
+  p02_responsibility: DIRECT_EXECUTE_P02
+  foundation_inherited: 'YES'
+  directly_executed_in_p02: true
+  input_prepared: 'YES'
+  result_emitted: true
+  downstream_owner: P03+ consumes ordinary control evidence
+  comparison_keys: canonical matched key policy
+  limitations: ordinary controls only; matched parent-event requirement
+- ablation_id: A5
+  official_meaning: IHARQ-lite / Rule-Based Evidence Verification
+  p02_responsibility: DOWNSTREAM_PREPARE_FIELDS_ONLY
+  foundation_inherited: 'YES'
+  directly_executed_in_p02: false
+  input_prepared: 'YES'
+  result_emitted: false
+  downstream_owner: later governed owner
+  comparison_keys: canonical matched key policy
+  limitations: preserve prediction/model/provenance fields; do not execute merely
+    because technically computable
+- ablation_id: A6
+  official_meaning: IHARQ + Evidence-Quality Estimator
+  p02_responsibility: DOWNSTREAM_PREPARE_FIELDS_ONLY
+  foundation_inherited: 'YES'
+  directly_executed_in_p02: false
+  input_prepared: 'YES'
+  result_emitted: false
+  downstream_owner: later governed owner
+  comparison_keys: canonical matched key policy
+  limitations: preserve prediction/model/provenance fields; do not execute merely
+    because technically computable
+- ablation_id: A7
+  official_meaning: IHARQ + RegimeRisk Temporal Trust
+  p02_responsibility: DOWNSTREAM_PREPARE_FIELDS_ONLY
+  foundation_inherited: 'YES'
+  directly_executed_in_p02: false
+  input_prepared: 'YES'
+  result_emitted: false
+  downstream_owner: later governed owner
+  comparison_keys: canonical matched key policy
+  limitations: preserve prediction/model/provenance fields; do not execute merely
+    because technically computable
+- ablation_id: A8
+  official_meaning: Learning-to-defer / Deferral Comparison
+  p02_responsibility: DOWNSTREAM_PREPARE_FIELDS_ONLY
+  foundation_inherited: 'YES'
+  directly_executed_in_p02: false
+  input_prepared: 'YES'
+  result_emitted: false
+  downstream_owner: later governed owner
+  comparison_keys: canonical matched key policy
+  limitations: preserve prediction/model/provenance fields; do not execute merely
+    because technically computable
+- ablation_id: A9
+  official_meaning: Supervised Adaptive-IHARQ / Adaptive Readiness Policy
+  p02_responsibility: DOWNSTREAM_PREPARE_FIELDS_ONLY
+  foundation_inherited: 'YES'
+  directly_executed_in_p02: false
+  input_prepared: 'YES'
+  result_emitted: false
+  downstream_owner: later governed owner
+  comparison_keys: canonical matched key policy
+  limitations: preserve prediction/model/provenance fields; do not execute merely
+    because technically computable
+- ablation_id: A10
+  official_meaning: Contextual Bandit / Simulation-Bounded Immediate-Reward Adaptation
+  p02_responsibility: DOWNSTREAM_PREPARE_FIELDS_ONLY
+  foundation_inherited: 'YES'
+  directly_executed_in_p02: false
+  input_prepared: 'YES'
+  result_emitted: false
+  downstream_owner: later governed owner
+  comparison_keys: canonical matched key policy
+  limitations: preserve prediction/model/provenance fields; do not execute merely
+    because technically computable
+- ablation_id: A11
+  official_meaning: Reinforcement-Learning Policy / Simulation-Bounded Sequential
+    Policy Learning
+  p02_responsibility: DOWNSTREAM_PREPARE_FIELDS_ONLY
+  foundation_inherited: 'YES'
+  directly_executed_in_p02: false
+  input_prepared: 'YES'
+  result_emitted: false
+  downstream_owner: later governed owner
+  comparison_keys: canonical matched key policy
+  limitations: preserve prediction/model/provenance fields; do not execute merely
+    because technically computable
+- ablation_id: A12
+  official_meaning: StressForge Stress Tests / Controlled Stress Robustness
+  p02_responsibility: DOWNSTREAM_PREPARE_FIELDS_ONLY
+  foundation_inherited: 'YES'
+  directly_executed_in_p02: false
+  input_prepared: 'YES'
+  result_emitted: false
+  downstream_owner: later governed owner
+  comparison_keys: canonical matched key policy
+  limitations: preserve prediction/model/provenance fields; do not execute merely
+    because technically computable
+- ablation_id: A13
+  official_meaning: Layer 9 Simulation-Only Embodiment Demo
+  p02_responsibility: DOWNSTREAM_PREPARE_FIELDS_ONLY
+  foundation_inherited: 'YES'
+  directly_executed_in_p02: false
+  input_prepared: 'YES'
+  result_emitted: false
+  downstream_owner: later governed owner
+  comparison_keys: canonical matched key policy
+  limitations: preserve prediction/model/provenance fields; do not execute merely
+    because technically computable
+- ablation_id: A14
+  official_meaning: ABSENT / PROHIBITED
+  p02_responsibility: ABSENT_PROHIBITED
+  foundation_inherited: 'YES'
+  directly_executed_in_p02: false
+  input_prepared: 'YES'
+  result_emitted: false
+  downstream_owner: NONE
+  comparison_keys: canonical matched key policy
+  limitations: positive implementation count must remain zero

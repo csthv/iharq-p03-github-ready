@@ -1,0 +1,327 @@
+ledger:
+- artifact_requirement_id: DOWN-001
+  authority: Governance V6.1 + prior package convention + current downstream prompt
+  artifact_family: LAYER0
+  expected_artifact: Layer_0_Claim_Governance_Through_P02.md
+  purpose: Human-readable current claim governance
+  required_fields: schema-preserving / task-relevant
+  producer: Layer0
+  consumer: EvidenceMap
+  previous_version_exists: true
+  P02_update_required: true
+  cumulative_update_required: true
+  requirement_status: REQUIRED
+  final_disposition: PRODUCED_OR_PRESERVED
+- artifact_requirement_id: DOWN-002
+  authority: Governance V6.1 + prior package convention + current downstream prompt
+  artifact_family: LAYER0
+  expected_artifact: claim_dispositions.yaml
+  purpose: Reviewed disposition register
+  required_fields: schema-preserving / task-relevant
+  producer: Layer0
+  consumer: EvidenceMap
+  previous_version_exists: true
+  P02_update_required: true
+  cumulative_update_required: true
+  requirement_status: REQUIRED
+  final_disposition: PRODUCED_OR_PRESERVED
+- artifact_requirement_id: DOWN-003
+  authority: Governance V6.1 + prior package convention + current downstream prompt
+  artifact_family: LAYER0
+  expected_artifact: claim_boundaries.yaml
+  purpose: Claim scope/boundary register
+  required_fields: schema-preserving / task-relevant
+  producer: Layer0
+  consumer: EvidenceMap/Layer10
+  previous_version_exists: true
+  P02_update_required: true
+  cumulative_update_required: true
+  requirement_status: REQUIRED
+  final_disposition: PRODUCED_OR_PRESERVED
+- artifact_requirement_id: DOWN-004
+  authority: Governance V6.1 + prior package convention + current downstream prompt
+  artifact_family: LAYER0
+  expected_artifact: claim_evidence_handoff.yaml
+  purpose: Governed claim-to-finding handoff
+  required_fields: schema-preserving / task-relevant
+  producer: Layer0
+  consumer: EvidenceMap
+  previous_version_exists: true
+  P02_update_required: true
+  cumulative_update_required: true
+  requirement_status: REQUIRED
+  final_disposition: PRODUCED_OR_PRESERVED
+- artifact_requirement_id: DOWN-005
+  authority: Governance V6.1 + prior package convention + current downstream prompt
+  artifact_family: LAYER0
+  expected_artifact: prohibited_stronger_wording.yaml
+  purpose: Unsafe stronger wording register
+  required_fields: schema-preserving / task-relevant
+  producer: Layer0
+  consumer: EvidenceMap/Layer10
+  previous_version_exists: true
+  P02_update_required: true
+  cumulative_update_required: true
+  requirement_status: REQUIRED
+  final_disposition: PRODUCED_OR_PRESERVED
+- artifact_requirement_id: DOWN-006
+  authority: Governance V6.1 + prior package convention + current downstream prompt
+  artifact_family: LAYER0
+  expected_artifact: limitation_claim_map.yaml
+  purpose: Limitation-to-claim mapping
+  required_fields: schema-preserving / task-relevant
+  producer: Layer0
+  consumer: EvidenceMap/Layer10
+  previous_version_exists: true
+  P02_update_required: true
+  cumulative_update_required: true
+  requirement_status: REQUIRED
+  final_disposition: PRODUCED_OR_PRESERVED
+- artifact_requirement_id: DOWN-007
+  authority: Governance V6.1 + prior package convention + current downstream prompt
+  artifact_family: EVIDENCE_MAP
+  expected_artifact: IHARQ_Cumulative_Evidence_Map_Through_P02.md
+  purpose: Primary human-readable provenance map
+  required_fields: schema-preserving / task-relevant
+  producer: EvidenceMap
+  consumer: Layer10/Paper
+  previous_version_exists: true
+  P02_update_required: true
+  cumulative_update_required: true
+  requirement_status: REQUIRED
+  final_disposition: PRODUCED_OR_PRESERVED
+- artifact_requirement_id: DOWN-008
+  authority: Governance V6.1 + prior package convention + current downstream prompt
+  artifact_family: EVIDENCE_MAP
+  expected_artifact: evidence_map.yaml
+  purpose: Structured provenance graph
+  required_fields: schema-preserving / task-relevant
+  producer: EvidenceMap
+  consumer: Layer10/Paper
+  previous_version_exists: true
+  P02_update_required: true
+  cumulative_update_required: true
+  requirement_status: REQUIRED
+  final_disposition: PRODUCED_OR_PRESERVED
+- artifact_requirement_id: DOWN-009
+  authority: Governance V6.1 + prior package convention + current downstream prompt
+  artifact_family: EVIDENCE_MAP
+  expected_artifact: claims.yaml
+  purpose: Claim-centric mapping
+  required_fields: schema-preserving / task-relevant
+  producer: EvidenceMap
+  consumer: Layer10
+  previous_version_exists: true
+  P02_update_required: true
+  cumulative_update_required: true
+  requirement_status: REQUIRED
+  final_disposition: PRODUCED_OR_PRESERVED
+- artifact_requirement_id: DOWN-010
+  authority: Governance V6.1 + prior package convention + current downstream prompt
+  artifact_family: EVIDENCE_MAP
+  expected_artifact: findings.yaml
+  purpose: Finding-centric mapping
+  required_fields: schema-preserving / task-relevant
+  producer: EvidenceMap
+  consumer: Layer10/Paper
+  previous_version_exists: true
+  P02_update_required: true
+  cumulative_update_required: true
+  requirement_status: REQUIRED
+  final_disposition: PRODUCED_OR_PRESERVED
+- artifact_requirement_id: DOWN-011
+  authority: Governance V6.1 + prior package convention + current downstream prompt
+  artifact_family: EVIDENCE_MAP
+  expected_artifact: limitations.yaml
+  purpose: Limitation graph
+  required_fields: schema-preserving / task-relevant
+  producer: EvidenceMap
+  consumer: Layer10/Layer0
+  previous_version_exists: true
+  P02_update_required: true
+  cumulative_update_required: true
+  requirement_status: REQUIRED
+  final_disposition: PRODUCED_OR_PRESERVED
+- artifact_requirement_id: DOWN-012
+  authority: Governance V6.1 + prior package convention + current downstream prompt
+  artifact_family: EVIDENCE_MAP
+  expected_artifact: evidence_nodes.yaml
+  purpose: Metric/statistic/source evidence nodes
+  required_fields: schema-preserving / task-relevant
+  producer: EvidenceMap
+  consumer: Layer10/Reproduction
+  previous_version_exists: true
+  P02_update_required: true
+  cumulative_update_required: true
+  requirement_status: REQUIRED
+  final_disposition: PRODUCED_OR_PRESERVED
+- artifact_requirement_id: DOWN-013
+  authority: Governance V6.1 + prior package convention + current downstream prompt
+  artifact_family: EVIDENCE_MAP
+  expected_artifact: artifact_registry.yaml
+  purpose: Artifact provenance registry
+  required_fields: schema-preserving / task-relevant
+  producer: EvidenceMap
+  consumer: Reproduction
+  previous_version_exists: true
+  P02_update_required: true
+  cumulative_update_required: true
+  requirement_status: REQUIRED
+  final_disposition: PRODUCED_OR_PRESERVED
+- artifact_requirement_id: DOWN-014
+  authority: Governance V6.1 + prior package convention + current downstream prompt
+  artifact_family: EVIDENCE_MAP
+  expected_artifact: relationships.yaml
+  purpose: Cross-phase/provenance relationships
+  required_fields: schema-preserving / task-relevant
+  producer: EvidenceMap
+  consumer: Layer10/Paper
+  previous_version_exists: true
+  P02_update_required: true
+  cumulative_update_required: true
+  requirement_status: REQUIRED
+  final_disposition: PRODUCED_OR_PRESERVED
+- artifact_requirement_id: DOWN-015
+  authority: Governance V6.1 + prior package convention + current downstream prompt
+  artifact_family: EVIDENCE_MAP
+  expected_artifact: literature_evidence.yaml
+  purpose: External literature separated from project evidence
+  required_fields: schema-preserving / task-relevant
+  producer: EvidenceMap
+  consumer: Layer0/Paper
+  previous_version_exists: true
+  P02_update_required: true
+  cumulative_update_required: true
+  requirement_status: REQUIRED
+  final_disposition: PRODUCED_OR_PRESERVED
+- artifact_requirement_id: DOWN-016
+  authority: Governance V6.1 + prior package convention + current downstream prompt
+  artifact_family: EVIDENCE_MAP
+  expected_artifact: figure_table_provenance.yaml
+  purpose: Two-way figure/table links
+  required_fields: schema-preserving / task-relevant
+  producer: EvidenceMap
+  consumer: Layer10
+  previous_version_exists: true
+  P02_update_required: true
+  cumulative_update_required: true
+  requirement_status: REQUIRED
+  final_disposition: PRODUCED_OR_PRESERVED
+- artifact_requirement_id: DOWN-017
+  authority: Governance V6.1 + prior package convention + current downstream prompt
+  artifact_family: LAYER10
+  expected_artifact: Layer_10_Artifact_Package_Through_P02.md
+  purpose: Human-readable Layer10 package report
+  required_fields: schema-preserving / task-relevant
+  producer: Layer10
+  consumer: Paper/P03
+  previous_version_exists: true
+  P02_update_required: true
+  cumulative_update_required: true
+  requirement_status: REQUIRED
+  final_disposition: PRODUCED_OR_PRESERVED
+- artifact_requirement_id: DOWN-018
+  authority: Governance V6.1 + prior package convention + current downstream prompt
+  artifact_family: LAYER10
+  expected_artifact: figures/
+  purpose: Claim-safe curated figures
+  required_fields: schema-preserving / task-relevant
+  producer: Layer10
+  consumer: Paper/Thesis
+  previous_version_exists: true
+  P02_update_required: true
+  cumulative_update_required: true
+  requirement_status: REQUIRED
+  final_disposition: PRODUCED_OR_PRESERVED
+- artifact_requirement_id: DOWN-019
+  authority: Governance V6.1 + prior package convention + current downstream prompt
+  artifact_family: LAYER10
+  expected_artifact: tables/
+  purpose: Exact governed tables
+  required_fields: schema-preserving / task-relevant
+  producer: Layer10
+  consumer: Paper/Thesis
+  previous_version_exists: true
+  P02_update_required: true
+  cumulative_update_required: true
+  requirement_status: REQUIRED
+  final_disposition: PRODUCED_OR_PRESERVED
+- artifact_requirement_id: DOWN-020
+  authority: Governance V6.1 + prior package convention + current downstream prompt
+  artifact_family: LAYER10
+  expected_artifact: figure_source_data/
+  purpose: Machine-readable figure sources
+  required_fields: schema-preserving / task-relevant
+  producer: Layer10
+  consumer: Reproduction
+  previous_version_exists: true
+  P02_update_required: true
+  cumulative_update_required: true
+  requirement_status: REQUIRED
+  final_disposition: PRODUCED_OR_PRESERVED
+- artifact_requirement_id: DOWN-021
+  authority: Governance V6.1 + prior package convention + current downstream prompt
+  artifact_family: LAYER10
+  expected_artifact: table_source_data/
+  purpose: Machine-readable table sources
+  required_fields: schema-preserving / task-relevant
+  producer: Layer10
+  consumer: Reproduction
+  previous_version_exists: true
+  P02_update_required: true
+  cumulative_update_required: true
+  requirement_status: REQUIRED
+  final_disposition: PRODUCED_OR_PRESERVED
+- artifact_requirement_id: DOWN-022
+  authority: Governance V6.1 + prior package convention + current downstream prompt
+  artifact_family: LAYER10
+  expected_artifact: render_specs/
+  purpose: Deterministic render specifications
+  required_fields: schema-preserving / task-relevant
+  producer: Layer10
+  consumer: Reproduction
+  previous_version_exists: true
+  P02_update_required: true
+  cumulative_update_required: true
+  requirement_status: REQUIRED
+  final_disposition: PRODUCED_OR_PRESERVED
+- artifact_requirement_id: DOWN-023
+  authority: Governance V6.1 + prior package convention + current downstream prompt
+  artifact_family: LAYER10
+  expected_artifact: scripts/render_layer10.py
+  purpose: Deterministic render script
+  required_fields: schema-preserving / task-relevant
+  producer: Layer10
+  consumer: Reproduction
+  previous_version_exists: true
+  P02_update_required: true
+  cumulative_update_required: true
+  requirement_status: REQUIRED
+  final_disposition: PRODUCED_OR_PRESERVED
+- artifact_requirement_id: DOWN-024
+  authority: Governance V6.1 + prior package convention + current downstream prompt
+  artifact_family: LAYER10
+  expected_artifact: captions/captions.yaml
+  purpose: Layer0-safe captions/warnings
+  required_fields: schema-preserving / task-relevant
+  producer: Layer10
+  consumer: Paper/Thesis
+  previous_version_exists: true
+  P02_update_required: true
+  cumulative_update_required: true
+  requirement_status: REQUIRED
+  final_disposition: PRODUCED_OR_PRESERVED
+- artifact_requirement_id: DOWN-025
+  authority: Governance V6.1 + prior package convention + current downstream prompt
+  artifact_family: LAYER10
+  expected_artifact: manifests/layer10_artifact_registry.yaml
+  purpose: Current artifact registry
+  required_fields: schema-preserving / task-relevant
+  producer: Layer10
+  consumer: EvidenceMap/Reproduction
+  previous_version_exists: true
+  P02_update_required: true
+  cumulative_update_required: true
+  requirement_status: REQUIRED
+  final_disposition: PRODUCED_OR_PRESERVED
+all_dispositioned: true

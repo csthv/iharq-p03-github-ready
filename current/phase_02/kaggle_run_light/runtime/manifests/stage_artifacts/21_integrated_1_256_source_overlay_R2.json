@@ -1,0 +1,69 @@
+{
+  "aggregation_rule_by_branch": {},
+  "artifact_id": "P02-INT21R2-INTEGRATED-1-256-SOURCE-OVERLAY",
+  "canonical_stage21_accepted": true,
+  "canonical_stage21_mutated_by_overlay": false,
+  "created_at_utc": "2026-08-17T18:05:45.575294+00:00",
+  "integrated_source_rows": 324,
+  "integrated_source_sha256": "afdef104dec5c8edcede8ccb222c9b257f665b3f60e1261b994deda43cb087a4",
+  "model_training_performed": false,
+  "next": "INT-22R2",
+  "predecessor_rows_reused": 216,
+  "predecessor_source": "/kaggle/working/iharq_p02_integrated_1_256_R1/history/pre_integration_1_32/runtime/analysis_inputs/low_label_metric_source.csv",
+  "prediction_recomputed": false,
+  "primary_budget_axis": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256
+  ],
+  "repair_mode": "EXISTING_VALID_324_ROW_SOURCE_REUSED",
+  "required_source_inventory": [
+    {
+      "bytes": 873452,
+      "path": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/analysis_inputs/a4_role_control_statistics.json",
+      "sha256": "c485cd1163bac42e70a5440d6a7b1def8c8aff6be6cde8eb3d7a44803cbd5593"
+    },
+    {
+      "bytes": 560839,
+      "path": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/analysis_inputs/a4_c4_c5_statistics.json",
+      "sha256": "8d1cc28fc74b0152c3c56311d960fbf13b005b5fc0c8619fdf091e09cbc629d9"
+    },
+    {
+      "bytes": 434322,
+      "path": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/analysis_inputs/a4_burden_source.csv",
+      "sha256": "45885b42c32989d85d0ae521d54c628c29c6a1d28a8e3a925264f4cc001adf62"
+    },
+    {
+      "bytes": 122933,
+      "path": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/analysis_inputs/stage18S_R1_combined_cell_effects.csv",
+      "sha256": "c7a5e9f69341825407b48d9dc82d9157b2be0e9b9e184512ae5163d64b215ed6"
+    },
+    {
+      "bytes": 25438,
+      "path": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/analysis_inputs/stage18S_R1_three_repeat_anchor_stability.csv",
+      "sha256": "9e6db2cd15d86591967783be6b96d25a8dc80bad24b0d501113077cd409ca473"
+    },
+    {
+      "bytes": 4456,
+      "path": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/analysis_inputs/stage18S_R1_nine_budget_mr00_sensitivity.csv",
+      "sha256": "e3245685c598ea7855ac19c951b056ad746936de944db204430fac4dda42be92"
+    },
+    {
+      "bytes": 2522,
+      "path": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/analysis_inputs/stage18S_R1_decision_support_summary.json",
+      "sha256": "925eaca4c360bfb284d3a78b1003330907bd2a9593fcbe584ed36eb7717e5f77"
+    }
+  ],
+  "stage18S_analysis": {
+    "anchors": 90,
+    "effects": 315,
+    "nine_budget_trajectories": 15
+  },
+  "status": "PASS"
+}

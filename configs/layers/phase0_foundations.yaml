@@ -1,0 +1,45 @@
+layers:
+  L0:
+    foundation_profile: true
+    scientific_execution: false
+    package: src/iharq/layer0_claim_governance
+  L1:
+    foundation_profile: true
+    scientific_execution: false
+    package: src/iharq/layer1_data_protocol
+  L2:
+    foundation_profile: true
+    scientific_execution: false
+    package: src/iharq/layer2_decoders
+  L3:
+    foundation_profile: true
+    scientific_execution: false
+    package: src/iharq/layer3_calibration_uncertainty
+  L4:
+    foundation_profile: true
+    scientific_execution: false
+    package: src/iharq/layer4_iharq
+  L5:
+    foundation_profile: true
+    scientific_execution: false
+    package: src/iharq/layer5_regimerisk
+  L6:
+    foundation_profile: true
+    scientific_execution: false
+    package: src/iharq/layer6_readiness_policy
+  L7:
+    foundation_profile: true
+    scientific_execution: false
+    package: src/iharq/layer7_closed_loop
+  L8:
+    foundation_profile: true
+    scientific_execution: false
+    package: src/iharq/layer8_stressforge
+  L9:
+    foundation_profile: true
+    scientific_execution: false
+    package: src/iharq/layer9_embodiment
+  L10:
+    foundation_profile: true
+    scientific_execution: false
+    package: src/iharq/layer10_reproducibility

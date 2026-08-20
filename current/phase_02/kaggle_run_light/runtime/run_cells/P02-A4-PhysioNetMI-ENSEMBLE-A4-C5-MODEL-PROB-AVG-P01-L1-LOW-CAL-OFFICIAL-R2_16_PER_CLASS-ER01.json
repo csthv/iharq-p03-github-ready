@@ -1,0 +1,65 @@
+{
+  "run_cell_id": "P02-A4-PhysioNetMI-ENSEMBLE-A4-C5-MODEL-PROB-AVG-P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS-ER01",
+  "ablation_id": "A4",
+  "terminal_status": "SUCCESS",
+  "prediction_partition": "records/PredictionRecord/dataset=PhysioNetMI/branch=PRE_RESULT_ROLE_MEMBERSHIP/budget=P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS/P02-A4-PhysioNetMI-ENSEMBLE-A4-C5-MODEL-PROB-AVG-P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS-ER01.jsonl",
+  "source_rows": "raw_outputs/P02-A4-PhysioNetMI-ENSEMBLE-A4-C5-MODEL-PROB-AVG-P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS-ER01.jsonl",
+  "metric_source": "metrics/P02-A4-PhysioNetMI-ENSEMBLE-A4-C5-MODEL-PROB-AVG-P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS-ER01.json",
+  "strongest_constituent_branch": "DNN-EEGNET",
+  "strongest_constituent_prediction_partition": "records/PredictionRecord/dataset=PhysioNetMI/branch=DNN-EEGNET/budget=P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS/P02-A0-PhysioNetMI-DNN-EEGNET-P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS-MR01.jsonl",
+  "strongest_constituent_checkpoint_sha256": "a535307cb40875a38b9cc84870fafff8743a098da7ba7b7f7ac47f85bb7ffefe",
+  "validation_selection_provenance": {
+    "selected_branch": "DNN-EEGNET",
+    "candidate_summaries": [
+      {
+        "branch_id": "DNN-EEGNET",
+        "BACC": 0.5422911156822412,
+        "F1": 0.5259745762711865,
+        "burden": 60.79546778200165
+      },
+      {
+        "branch_id": "SSL-CBRAMOD",
+        "BACC": 0.5350670976589285,
+        "F1": 0.5341653027823241,
+        "burden": 79.4229667186737
+      },
+      {
+        "branch_id": "RIE-TS-LR",
+        "BACC": 0.5144235478499364,
+        "F1": 0.507674966017969,
+        "burden": 2.8416402799994103
+      },
+      {
+        "branch_id": "CLS-CSP-LDA",
+        "BACC": 0.5107992947399354,
+        "F1": 0.5096522251694665,
+        "burden": 0.47670973899948876
+      }
+    ],
+    "test_outcome_influence": "PROHIBITED"
+  },
+  "ensemble_member_branches": [
+    "CLS-CSP-LDA",
+    "RIE-TS-LR",
+    "DNN-EEGNET",
+    "SSL-CBRAMOD"
+  ],
+  "ensemble_member_checkpoint_ids": [
+    "d9617c2b4ba9452d331d14c151a864279e1364a65a9d3529d07a0e18dbe37fd5",
+    "d0d437e7f1d6caf928290d3a5e966951a5632dd89bf312a4cc429b9309db7215",
+    "a535307cb40875a38b9cc84870fafff8743a098da7ba7b7f7ac47f85bb7ffefe",
+    "5e370c1d5c5a5b44ba77766863e394346bb7571914d372a44a4da28534aa9985"
+  ],
+  "observed_denominator": 495,
+  "burden": {
+    "evidence_duration_s": 3.0,
+    "observation_horizon_s": 3.0,
+    "model_or_view_evaluations": 4,
+    "member_count": 4,
+    "aggregation_operation": "PROBABILITY_AVERAGE",
+    "batch1_latency_median_s": 0.021972280996124027,
+    "batch1_latency_p95_s": 0.024105204801162475,
+    "aggregation_latency_s": 0.0015019210004538763
+  },
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

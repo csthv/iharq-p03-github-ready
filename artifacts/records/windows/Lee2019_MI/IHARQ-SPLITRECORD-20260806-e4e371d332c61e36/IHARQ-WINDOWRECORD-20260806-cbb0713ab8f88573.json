@@ -1,0 +1,51 @@
+{
+  "record_id": "IHARQ-WINDOWRECORD-20260806-cbb0713ab8f88573",
+  "record_type": "WindowRecord",
+  "schema_version": "1.0-p01",
+  "authority_status": "REGISTRY_REFERENCED",
+  "owner_layer": "L1",
+  "phase_id": "P01",
+  "config_id": "d03f0a7c869dd95a2a67e5a32edc501d52bfc3851d8e761ef56595d8bd1ff52f",
+  "source_ids": [
+    "IHARQ-DATASETRECORD-20260806-adb91f25a65e588e",
+    "IHARQ-LABELMAPRECORD-20260806-b551cfd20335896c",
+    "IHARQ-PREPROCESSINGRECORD-20260806-a11b59eeb3861a08",
+    "IHARQ-SPLITRECORD-20260806-e4e371d332c61e36"
+  ],
+  "evidence_mode": "IMPLEMENTATION",
+  "limitation_tags": [
+    "NON_CLINICAL",
+    "NO_DEPLOYMENT_CLAIM",
+    "PUBLIC_EEG_ONLY"
+  ],
+  "lifecycle_status": "VALIDATED",
+  "fixture": false,
+  "fixture_tags": [],
+  "evidence_role": "PRIMARY",
+  "payload": {
+    "window_id": "window:065e53693b216c0fd25d",
+    "parent_event_id": "Lee2019_MI:1:1:1train:event:23",
+    "dataset_id": "Lee2019_MI",
+    "subject_id": "1",
+    "session_id": "1",
+    "run_id": "1train",
+    "split_record_id": "IHARQ-SPLITRECORD-20260806-e4e371d332c61e36",
+    "preprocessing_record_id": "IHARQ-PREPROCESSINGRECORD-20260806-a11b59eeb3861a08",
+    "label_map_record_id": "IHARQ-LABELMAPRECORD-20260806-b551cfd20335896c",
+    "original_source_event_sample": 413280,
+    "resampled_event_sample": 66125,
+    "start_offset_samples": 80,
+    "start_sample": 66205,
+    "stop_sample": 66685,
+    "duration_samples": 480,
+    "stride_samples": 480,
+    "overlap_group_id": "Lee2019_MI:1:1:1train:event:23",
+    "normalized_label": "right_hand",
+    "original_label": "right_hand",
+    "role": "validation",
+    "signal_pointer": "external_artifact_pointers/window_to_shard.jsonl#window_id=window:065e53693b216c0fd25d",
+    "channel_mask_id": null
+  },
+  "ablation_id": null,
+  "semantic_hash": "cbb0713ab8f88573ff05eacaa1625efa91dada029b6059e8f6b1db800a1ec391"
+}

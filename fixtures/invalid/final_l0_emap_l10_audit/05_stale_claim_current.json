@@ -1,0 +1,9 @@
+{
+  "fixture_id": "P00-L0-FINAL-INVALID-05",
+  "expected_error_code": "CLAIM_VERSION_CONFLICT",
+  "claim": {
+    "claim_version": "v1",
+    "lifecycle_status": "ACTIVE_CURRENT"
+  },
+  "current_version": "v2"
+}

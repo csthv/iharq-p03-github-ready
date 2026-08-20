@@ -1,0 +1,12 @@
+contract_id: P10-INPUT-CONTRACT-TEMPLATE-R1
+phase_id: P10
+status: TEMPLATE_READY
+required_manifest_types:
+- AuthorityManifest
+- RepositoryManifest
+- EnvironmentManifest
+- ConfigSnapshot
+- InputManifest
+required_source_lineage: true
+limitations_required: true
+no_fabricated_inputs: true

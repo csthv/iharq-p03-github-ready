@@ -1,0 +1,82 @@
+records:
+- record: PredictionRecord
+  status: CANONICAL_REGISTRY_REFERENCED; CURRENT PHYSICAL PROFILE IS P00-LOCKED
+  producer: Prediction logger
+  action: Create P02 successor schema/profile compatible with Registry; never overwrite
+    P00 profile
+  cardinality: derived from accepted run matrix × eligible evaluation windows
+  consumers: L3-L10
+- record: ModelRegistryRecord
+  status: CANONICAL_REGISTRY_REFERENCED; CURRENT PHYSICAL PROFILE IS P00-LOCKED
+  producer: Model-family registry
+  action: Create P02 successor schema/profile preserving identity and lineage
+  cardinality: one per model/checkpoint/config/seed/branch generation
+  consumers: L3-L10/repro
+- record: BaselineMetricRecord
+  status: CANONICAL_REGISTRY_REFERENCED; CURRENT PHYSICAL PROFILE IS P00-LOCKED
+  producer: evaluation path
+  action: Create P02 successor schema/profile + MetricDictionary link
+  cardinality: one per governed metric × aggregation cell
+  consumers: Analysis/L10/L0
+- record: LowCalibrationCurveRecord
+  status: CANONICAL SEMANTIC PROFILE; NO CURRENT PHYSICAL SCHEMA FOUND
+  producer: Low-calibration curve builder
+  action: Realize physical P02 schema from Registry profile before execution; Registry
+    conformance test required
+  cardinality: attempted legal budget point × branch/repeat with failures retained
+  consumers: Analysis/L10
+- record: SubjectProfileRecord
+  status: CANONICAL SEMANTIC PROFILE; NO CURRENT PHYSICAL SCHEMA FOUND
+  producer: Subject difficulty profiler
+  action: Realize physical P02 schema from Registry profile; descriptive only
+  cardinality: subject/session profile where coverage sufficient
+  consumers: L5/L6/L8/L10 as allowed
+- record: EnsembleControlRecord
+  status: CURRENT PHYSICAL PROFILE IS P00-LOCKED
+  producer: Ensemble comparison builder
+  action: Create P02 successor schema/profile
+  cardinality: one per A4 control × matched identity/group
+  consumers: L3/L4/L10/evaluation
+- record: FailureCaseIndex
+  status: CURRENT PROFILE = P00 AUDIT-LOCAL, NOT FINAL P02 PHYSICAL AUTHORITY
+  producer: cross-cutting failure index
+  action: Implement P02 profile per Registry-approved semantic family; preserve local-profile
+    provenance
+  cardinality: versioned index per run/release plus linked failure rows
+  consumers: Analysis/L10/L0
+- record: Layer2ReadinessReport
+  status: CURRENT PROFILE = P00 AUDIT-LOCAL
+  producer: Downstream readiness validator
+  action: Implement P02 profile tied to consumer-specific readiness
+  cardinality: at least one final report + branch/consumer matrix
+  consumers: P03+ and release gate
+- record: LeakageWarningRecord
+  status: TRIGGERED GOVERNED WARNING; CURRENT PROFILE P00 LOCAL/L3 OWNER
+  producer: validation path
+  action: Use only authorized current producer/profile or owner-routed successor;
+    do not silently repurpose
+  cardinality: only when detected
+  consumers: all affected claims/consumers
+- record: MatchedComparisonReport
+  status: CANONICAL/GOVERNED EVALUATION ARTIFACT; CURRENT PHYSICAL PROFILE P00-LOCKED/L10
+    OWNER
+  producer: evaluation/export adapter
+  action: P02 creates supporting matched source tables and routes formal record to
+    owner-compatible profile
+  cardinality: per registered comparison/common-support identity
+  consumers: Protocol/L10/L0
+- record: NegativeResultNote
+  status: GOVERNED EVALUATION/CLAIM-SAFETY ARTIFACT
+  producer: evaluation governance
+  action: emit for relevant weak/null/failed/baseline-sufficient result
+  cardinality: per governed negative result identity
+  consumers: Analysis/L10/L0
+- record: DiagnosticOnlyFlag
+  status: GOVERNED DIAGNOSTIC STATUS
+  producer: evaluation/validation
+  action: emit whenever known validity/ownership gap downgrades evidence
+  cardinality: per affected artifact/result identity
+  consumers: all
+current_schema_gap: Several physical schemas are P00-only; LowCalibrationCurveRecord
+  and SubjectProfileRecord physical schema files were not found in current repository.
+  P02 must create authority-conformant successor profiles, not mutate P00 files.

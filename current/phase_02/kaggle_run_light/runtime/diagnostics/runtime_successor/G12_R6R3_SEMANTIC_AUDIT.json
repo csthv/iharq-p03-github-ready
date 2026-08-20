@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "blocking": false,
+  "stage_id": "12",
+  "gate_id": "G12",
+  "runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R6R5-STAGE12-FBCNET-AUTHOR-HORIZON-1500-200",
+  "planned_cells": 153,
+  "branch_counts": {
+    "DNN-FBCNET": 15,
+    "DNN-SEQ": 15,
+    "DNN-EGTC": 15,
+    "SSL-CBRAMOD": 105,
+    "SSL-REVE": 3
+  },
+  "terminal_counts": {
+    "SUCCESS": 135,
+    "CONDITIONAL_SKIP": 15,
+    "DEPENDENCY_BLOCKED": 3
+  },
+  "branch_terminal_counts": {
+    "DNN-EGTC": {
+      "CONDITIONAL_SKIP": 15
+    },
+    "DNN-FBCNET": {
+      "SUCCESS": 15
+    },
+    "DNN-SEQ": {
+      "SUCCESS": 15
+    },
+    "SSL-CBRAMOD": {
+      "SUCCESS": 105
+    },
+    "SSL-REVE": {
+      "DEPENDENCY_BLOCKED": 3
+    }
+  },
+  "DNN_SEQ_pre_result_resolution": "DBConformer",
+  "EEGTC_fallback_activated": false,
+  "REVE_scientific_authority": "BLOCKED_KNOWN_P02_OVERLAP",
+  "REVE_claim_bearing": false,
+  "r6_scientific_training_policy_amendment": true,
+  "execution_revision": "R6R5-R2",
+  "claim_bearing_training_parallelism": "SINGLE_GPU",
+  "data_parallel_disabled_for_scientific_comparability": true,
+  "external_first_checkpoint_route_restored": true,
+  "local_quarantine_receipt": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/P02_STAGE12_R6R5_LOCAL_QUARANTINE_R1.json",
+  "superseded_R6R4_root": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R4",
+  "model_specific_horizon_policy": {
+    "DNN-FBCNET": {
+      "max_epochs": 1500,
+      "patience": 200,
+      "reason": "PREDECLARED_R6R5_ORIGINAL_AUTHOR_HORIZON_AND_NODECREASE_WINDOW"
+    },
+    "DNN-SEQ": {
+      "max_epochs": 150,
+      "patience": 40,
+      "reason": "AUTHOR_CENTERED_R6R3_HORIZON_RETAINED"
+    },
+    "SSL-CBRAMOD": {
+      "max_epochs": 150,
+      "patience": 40,
+      "reason": "SOURCE_CENTERED_R6R3_HORIZON_RETAINED"
+    }
+  },
+  "FBCNet_author_horizon_provenance": {
+    "source_repository": "ravikiran-mane/FBCNet",
+    "source_commit": "de1bbdd8a54cb1e466830e3d47070e0e56761a37",
+    "source_file": "codes/classify/cv.py",
+    "author_max_epochs": 1500,
+    "author_no_decrease_epochs": 200,
+    "author_batch_size": 16,
+    "author_lr": 0.001,
+    "author_load_best_model": true,
+    "IHARQ_preserved_differences": {
+      "selection_metric": "validation_BACC",
+      "test_visibility": "STRICTLY_AFTER_SELECTION",
+      "split_authority": "P01_SUBJECT_GROUPED_ROLES",
+      "class_weight_policy": "P02_R2_GOVERNED",
+      "continue_after_earlystop": false
+    }
+  },
+  "execution_repair": {
+    "revision": "R6R5-R2",
+    "scientific_configuration_changed": false,
+    "repair": "LATENCY_PROBE_FORWARD_ONLY_NO_SYNTHETIC_LABELS_NO_SKLEARN_METRICS"
+  },
+  "test_set_used_for_hyperparameter_selection": false,
+  "P01_mutated": false,
+  "P00_mutated": false,
+  "issues": []
+}

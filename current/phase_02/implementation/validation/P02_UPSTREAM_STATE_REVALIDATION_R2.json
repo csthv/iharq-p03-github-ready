@@ -1,0 +1,21 @@
+{
+  "validation_id": "P02-UPSTREAM-STATE-REVALIDATION-R2",
+  "status": "PASS",
+  "cumulative_repository_verifier": {
+    "result": "40/40 PASS"
+  },
+  "p01_finalized_release_verifier": {
+    "result": "24/24 PASS"
+  },
+  "p01_execution_bundle": {
+    "sha256": "09c3bb0442d79ddf110cf66fc4fe61fe63e94c7d8ed9f198f606639b4191f16e",
+    "sha_matches_verified_identity": true,
+    "zip_crc": "PASS",
+    "checksum_targets_valid": 13164,
+    "missing": 0,
+    "mismatch": 0,
+    "malformed": 0
+  },
+  "p01_scientific_rerun_required": false,
+  "p00_p01_revision_required_for_current_blockers": false
+}

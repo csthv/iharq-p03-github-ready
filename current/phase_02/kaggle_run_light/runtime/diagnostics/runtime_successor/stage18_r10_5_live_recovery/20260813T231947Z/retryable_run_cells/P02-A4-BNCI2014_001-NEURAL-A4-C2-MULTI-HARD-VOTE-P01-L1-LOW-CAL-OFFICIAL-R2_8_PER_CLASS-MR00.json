@@ -1,0 +1,33 @@
+{
+  "run_cell_id": "P02-A4-BNCI2014_001-NEURAL-A4-C2-MULTI-HARD-VOTE-P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS-MR00",
+  "ablation_id": "A4",
+  "terminal_status": "FAILED",
+  "reason": "A4_MEMBER_UNAVAILABLE",
+  "member_states": [
+    {
+      "status": "FAILED",
+      "reason": "ValueError:invalid literal for int() with base 10: 'P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS'",
+      "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+      "branch": "DNN-EEGNET",
+      "member": 1,
+      "r8_policy_sha256": "a21655f9b52cfbf817b1b271f758739cf01b1e7a75e786c880ccdd1a3c58ef32"
+    },
+    {
+      "status": "FAILED",
+      "reason": "ValueError:invalid literal for int() with base 10: 'P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS'",
+      "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+      "branch": "DNN-EEGNET",
+      "member": 2,
+      "r8_policy_sha256": "a21655f9b52cfbf817b1b271f758739cf01b1e7a75e786c880ccdd1a3c58ef32"
+    },
+    {
+      "status": "FAILED",
+      "reason": "ValueError:invalid literal for int() with base 10: 'P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS'",
+      "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+      "branch": "DNN-EEGNET",
+      "member": 3,
+      "r8_policy_sha256": "a21655f9b52cfbf817b1b271f758739cf01b1e7a75e786c880ccdd1a3c58ef32"
+    }
+  ],
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

@@ -1,0 +1,58 @@
+{
+  "artifact_id": "P02-INT23R2-INTEGRATED-1-256-EVIDENCE-SUFFICIENCY",
+  "canonical_G23_status": "PASS",
+  "canonical_stage18_or_G18_modified": false,
+  "canonical_stage23_evidence_sufficiency": {
+    "missing": [],
+    "status": "PASS"
+  },
+  "canonical_stage23_status": "SUCCESS",
+  "claim_scope": "POST_HOC_SENSITIVITY_DESCRIPTIVE",
+  "created_at_utc": "2026-08-17T18:06:03.791345+00:00",
+  "integrated_overlays": [
+    {
+      "path": "/kaggle/working/iharq_p02_integrated_1_256_R1/stage_artifacts/20_integrated_1_256_readiness_overlay_R2.json",
+      "sha256": "ca792c3c8c518abc7a08a3581443b3f58ea015717569c4ff76df0746a93d3a8e"
+    },
+    {
+      "path": "/kaggle/working/iharq_p02_integrated_1_256_R1/stage_artifacts/21_integrated_1_256_source_overlay_R2.json",
+      "sha256": "436049554d116e34fdd3359c2858947c6c2edd03df475bedda18e1d2ddbb52a5"
+    },
+    {
+      "path": "/kaggle/working/iharq_p02_integrated_1_256_R1/stage_artifacts/22_integrated_1_256_handoff_overlay_R2.json",
+      "sha256": "b3812ad04ea871de0260852bc4bbdae65b279470b09198a59751f15b1500b567"
+    }
+  ],
+  "integrated_state": {
+    "A0_cells": 786,
+    "A4_cells": 1740,
+    "low_label_metric_source_rows": 324,
+    "primary_budget_axis": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64,
+      128,
+      256
+    ],
+    "stage18S_combined_effects": 315,
+    "stage18S_groups": 108,
+    "stage18S_input_incompatible": 54,
+    "stage18S_member_input_incompatible": 54,
+    "stage18S_member_receipts": 432,
+    "stage18S_member_success": 378,
+    "stage18S_nine_budget_trajectories": 15,
+    "stage18S_participant_effect_rows": 1890,
+    "stage18S_planned_cells": 324,
+    "stage18S_success": 270,
+    "stage18S_three_repeat_trajectories": 90,
+    "total_A0_A4": 2526
+  },
+  "missing": [],
+  "next": "INT-24R2",
+  "ready_for_integrated_presentation_and_release": true,
+  "status": "PASS"
+}

@@ -1,0 +1,15 @@
+result_family,stage_handler,record_artifact,manifest_reference,bundle_path,checksum,downstream_reference,status
+A0,s15,analysis_inputs/a0_completion.json + PredictionRecord partitions,analysis_inputs/a0_closure_source_manifest.json,runtime/analysis_inputs + runtime/records,REPOSITORY/RUNTIME_SHA256_REQUIRED,Protocol;Analysis;Layer0;EvidenceMap;Layer10;P03,COMPLETE_TRACE
+A4 C0,s18,analysis_inputs/a4_completion.json + A4 prediction partitions,analysis_inputs/a4_completion.json,runtime/analysis_inputs + runtime/predictions,REPOSITORY/RUNTIME_SHA256_REQUIRED,Analysis;Layer10,COMPLETE_TRACE
+A4 C1,s18,analysis_inputs/a4_completion.json + A4 prediction partitions,analysis_inputs/a4_completion.json,runtime/analysis_inputs + runtime/predictions,REPOSITORY/RUNTIME_SHA256_REQUIRED,Analysis;Layer10,COMPLETE_TRACE
+A4 C2,s18,analysis_inputs/a4_completion.json + A4 prediction partitions,analysis_inputs/a4_completion.json,runtime/analysis_inputs + runtime/predictions,REPOSITORY/RUNTIME_SHA256_REQUIRED,Analysis;Layer10,COMPLETE_TRACE
+A4 C3,s18,analysis_inputs/a4_completion.json + A4 prediction partitions,analysis_inputs/a4_completion.json,runtime/analysis_inputs + runtime/predictions,REPOSITORY/RUNTIME_SHA256_REQUIRED,Analysis;Layer10,COMPLETE_TRACE
+A4 C4,s18,analysis_inputs/a4_completion.json + A4 prediction partitions,analysis_inputs/a4_completion.json,runtime/analysis_inputs + runtime/predictions,REPOSITORY/RUNTIME_SHA256_REQUIRED,Analysis;Layer10,COMPLETE_TRACE
+A4 C5,s18,analysis_inputs/a4_completion.json + A4 prediction partitions,analysis_inputs/a4_completion.json,runtime/analysis_inputs + runtime/predictions,REPOSITORY/RUNTIME_SHA256_REQUIRED,Analysis;Layer10,COMPLETE_TRACE
+C4 vs strongest,s18,analysis_inputs/a4_c4_c5_comparison_artifacts.jsonl,analysis_inputs/a4_c4_c5_statistics.json,runtime/analysis_inputs,REPOSITORY/RUNTIME_SHA256_REQUIRED,Analysis;Layer0;EvidenceMap;Layer10,COMPLETE_TRACE
+C5 vs strongest,s18,analysis_inputs/a4_c4_c5_comparison_artifacts.jsonl,analysis_inputs/a4_c4_c5_statistics.json,runtime/analysis_inputs,REPOSITORY/RUNTIME_SHA256_REQUIRED,Analysis;Layer0;EvidenceMap;Layer10,COMPLETE_TRACE
+failures/negative/diagnostics,s19,records/FailureCaseIndex;NegativeResultNote;DiagnosticOnlyFlag,analysis_inputs/failure_negative_summary.json,runtime/records + runtime/analysis_inputs,REPOSITORY/RUNTIME_SHA256_REQUIRED,Analysis;Layer0;EvidenceMap;Layer10,COMPLETE_TRACE
+readiness,s20,analysis_inputs/readiness_report.json,analysis_inputs/readiness_report.json,runtime/analysis_inputs,REPOSITORY/RUNTIME_SHA256_REQUIRED,P03;Phase closure,COMPLETE_TRACE
+figure sources,s21,figure_source_data/*,analysis_inputs/figure_table_source_manifest.json,runtime/figure_source_data,REPOSITORY/RUNTIME_SHA256_REQUIRED,Layer10,COMPLETE_TRACE
+table sources,s21,table_source_data/*,analysis_inputs/figure_table_source_manifest.json,runtime/table_source_data,REPOSITORY/RUNTIME_SHA256_REQUIRED,Layer10;Analysis,COMPLETE_TRACE
+P03 handoff,s22,handoffs/p03_handoff.yaml,handoffs/runtime_evidence_index.json,runtime/handoffs,REPOSITORY/RUNTIME_SHA256_REQUIRED,P03,COMPLETE_TRACE

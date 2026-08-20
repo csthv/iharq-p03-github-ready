@@ -1,0 +1,51 @@
+crosswalk_id: IHARQ-P00-GITHUB-SOURCE-TO-PUBLICATION-R2
+source:
+  filename: IHARQ_Phase_0_Final_Whole_Stack_Independent_Double_Checked_Repository_COMPLETE_R5(2).zip
+  sha256: afac80fca6eb1fb52c24dc6914cb63bbd395b0f04e514640b7ee89e9cc12cab0
+  size_bytes: 27952891
+  manifest_files: 2004
+selection:
+  source_physical_files: 2005
+  classifications:
+    RELEASE_ASSET_ONLY: 863
+    MAIN_TREE_DIRECT: 523
+    EXCLUDED_HISTORY: 126
+    EXCLUDED_GENERATED_FORMAT: 20
+    EXCLUDED_RAW_AUDIT: 473
+current_final_documents: 18
+responsibility_rows: 20
+layer_rows: 11
+expected_output_rows: 51
+ablation_rows: 14
+a14_status: REJECTED
+generated_publication_surfaces:
+- README.md
+- CHANGELOG.md
+- ROADMAP.md
+- CODE_OF_CONDUCT.md
+- .github/PULL_REQUEST_TEMPLATE.md
+- docs/index.md
+- docs/architecture/README.md
+- docs/authorities/README.md
+- docs/implementation/README.md
+- docs/protocol/README.md
+- docs/phase_00/overview.md
+- docs/phase_00/analysis/README.md
+- docs/phase_00/layer0/README.md
+- docs/phase_00/evidence_map/README.md
+- docs/phase_00/layer10/README.md
+- docs/phase_00/responsibilities/phase_0_responsibility_summary.md
+- docs/phase_00/ablations/README.md
+- docs/phase_00/reproduction/README.md
+- docs/future_phases/README.md
+- fixtures/README.md
+- reports/phase_00/README.md
+- provenance/README.md
+- provenance/full_phase0_archive.md
+- provenance/source_r5_identity.yaml
+- provenance/ROLLBACK.md
+- publication/README.md
+- publication/local_build_report.md
+- manifests/current_release_manifest.yaml
+semantic_boundary: No scientific or engineering result was strengthened; publication
+  surfaces reorganize and summarize current R5 content only.

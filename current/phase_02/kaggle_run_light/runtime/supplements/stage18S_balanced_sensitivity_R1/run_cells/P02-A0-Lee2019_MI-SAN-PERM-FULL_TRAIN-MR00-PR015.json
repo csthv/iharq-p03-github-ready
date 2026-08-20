@@ -1,0 +1,93 @@
+{
+  "run_cell_id": "P02-A0-Lee2019_MI-SAN-PERM-FULL_TRAIN-MR00-PR015",
+  "ablation_id": "A0",
+  "terminal_status": "SUCCESS",
+  "prediction_partition": "records/PredictionRecord/dataset=Lee2019_MI/branch=SAN-PERM/budget=FULL_TRAIN/P02-A0-Lee2019_MI-SAN-PERM-FULL_TRAIN-MR00-PR015.jsonl",
+  "metric_source": "metrics/P02-A0-Lee2019_MI-SAN-PERM-FULL_TRAIN-MR00-PR015.json",
+  "checkpoint_sha256": "4bcb1aebe8f77e943ec5b74c8ee6624ab5f03ec4918f28e5e0be54eb0dbca057",
+  "observed_denominator": 600,
+  "selected_params": {
+    "n_components": 4,
+    "base_branch_id": "CLS-CSP-LDA",
+    "csp_reg": "oas",
+    "lda_solver": "lsqr",
+    "lda_shrinkage": "auto"
+  },
+  "resolved_variant": "SAN-PERM",
+  "score_type": "NATIVE_PROBABILITY",
+  "validation_burden_seconds": 17.371744918999866,
+  "model_storage_bytes": 64098,
+  "selected_candidate_id": "CAND-00",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.0007394449999083008,
+    "batch1_latency_p95_s": 0.0009209635997649456,
+    "repeats": 5
+  },
+  "permutation_provenance": {
+    "performed": true,
+    "scope": "LEGAL_FIT_ROLE_SOURCE_EVENTS_ONLY",
+    "permutation_seed": 1953971701,
+    "aux_repeat_index": 15,
+    "label_count": 3200,
+    "class_support_before": [
+      1600,
+      1600
+    ],
+    "class_support_after": [
+      1600,
+      1600
+    ],
+    "validation_labels_permuted": false,
+    "test_labels_permuted": false
+  },
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "class_weights": null,
+  "class_weight_calibration": {
+    "selected_policy": "UNIFORM_NO_WEIGHT",
+    "selected_weights": null,
+    "candidate_results": [
+      {
+        "status": "SUCCESS",
+        "policy": "UNIFORM_NO_WEIGHT",
+        "weights": null,
+        "validation_metrics": {
+          "BACC": 0.502,
+          "F1_MACRO": 0.49590039477679926,
+          "ACC": 0.502,
+          "CONFUSION": [
+            [
+              98,
+              152
+            ],
+            [
+              97,
+              153
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            250,
+            250
+          ],
+          "PRED_COMPLETE": 500,
+          "ROC_AUC": 0.49236800000000003,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "NATIVE_PROBABILITY"
+        },
+        "validation_burden_seconds": 17.371744918999866,
+        "model_storage_bytes": 64098
+      }
+    ],
+    "training_count_evidence": {
+      "counts": [
+        1600,
+        1600
+      ],
+      "exactly_equal": true,
+      "selection_required": false
+    },
+    "test_set_used": false
+  },
+  "training_condition_id": "A0-RAW-ACCEPT-ALL",
+  "augmentation_provenance": null,
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

@@ -1,0 +1,53 @@
+{
+  "project_state_id": "IHARQ-CUMULATIVE-GITHUB-READY-THROUGH-P02-FINAL-R2",
+  "generated_at": "2026-08-14T22:49:00+03:30",
+  "status": "P00_P01_P02_MERGED_VALIDATED_READY_FOR_P03_INTAKE",
+  "completed_phase_scopes": [
+    "P00",
+    "P01",
+    "P02"
+  ],
+  "current_phase_closed": "P02",
+  "next_governed_step": "P03_INTAKE_AND_PROTOCOL_FREEZE",
+  "p03_execution_started": false,
+  "p02_execution_started": true,
+  "p02_execution_complete": true,
+  "p02_phase_and_layer_closure_status": "GREEN_LIGHT_WITH_EXPLICIT_NONBLOCKING_LIMITATIONS",
+  "final_cumulative_handoff_zip_status": "VALIDATED",
+  "scientific_blockers": 0,
+  "documentary_blockers": 0,
+  "major_issues": 0,
+  "root_layer2_implementation": "PROMOTED_FROM_ACCEPTED_P02_IMPLEMENTATION_WITH_NONEXECUTION_COMPATIBILITY_INIT_SHIM",
+  "p02_stage11": "CANONICAL_ACCEPTED_MAIN_WITH_GRANDFATHERED_LINEAGE",
+  "p02_stage12": "CANONICAL_ACCEPTED_MAIN_WITH_VALIDATION_ONLY_DIAGNOSTIC_HISTORY",
+  "p02_stage18": "CANONICAL_G18_PASS_RESOURCE_CONSTRAINED_SCOPE",
+  "p02_stage18S": "PASS_POST_HOC_SENSITIVITY_DESCRIPTIVE",
+  "p02_stage24_replay": "PASS",
+  "a14": "ABSENT_PROHIBITED",
+  "claim_boundary": "PUBLIC_EEG_ONLY_NON_CLINICAL_NO_DEPLOYMENT_CLAIM",
+  "current_documentary_state": "final_state/through_p02/",
+  "current_handoff": "artifacts/handoffs/phase_02_to_phase_03/downstream_readiness.yaml",
+  "p03_intake_checklist": "artifacts/handoffs/phase_02_to_phase_03/P03_fresh_session_intake_checklist.md",
+  "p02_replay_state": "current/phase_02/",
+  "p02_preexecution_implementation_history": "current/phase_02/implementation/",
+  "p02_heavy_artifacts": {
+    "storage": "HF_SOURCE_SNAPSHOT_EXTERNAL_POINTERS",
+    "repo_id": "Csthv/p02-phase02-final-whole-working-20260814t052120z-b890ff92",
+    "immutable_revision": "bc14961e14f2e48690e55df3577014275f9cbf30",
+    "pointer_manifest": "external_artifact_pointer_manifest.yaml",
+    "credential_class": "IHARQ_HF_TOKEN_P02"
+  },
+  "pre_p02_external_credential_class": "IHARQ_HF_TOKEN_PRE_P02",
+  "nonblocking_limitations": [
+    "A4_RESOURCE_CONSTRAINED_SINGLE_REPEAT_AND_ANCHOR_BUDGET_CEILING",
+    "STAGE18S_POST_HOC_DESCRIPTIVE_SENSITIVITY_ONLY",
+    "LOW_LABEL_SINGLE_FROZEN_SUBSET_PER_BUDGET",
+    "BNCI2014_001_SINGLE_HELD_OUT_P02_TEST_PARTICIPANT_FOR_PARTICIPANT_LEVEL_INFERENCE",
+    "PUBLIC_BENCHMARK_NON_CLINICAL_SCOPE",
+    "PRIVATE_EXTERNAL_ARTIFACT_RETRIEVAL_REQUIRES_AUTHORIZED_SYMBOLIC_CREDENTIALS"
+  ],
+  "merge_validation": "artifacts/cumulative_state/p02_final_merge_R2/final_merge_validation.json",
+  "source_archive_preservation_audit": "artifacts/cumulative_state/p02_final_merge_R2/source_archive_preservation_audit.json",
+  "source_p01_unpreserved_files": 0,
+  "source_p02_unpreserved_files": 0
+}

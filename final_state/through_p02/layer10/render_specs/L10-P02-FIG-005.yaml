@@ -1,0 +1,17 @@
+artifact_id: L10-P02-FIG-005
+source_data: figure_source_data/P02_Table_training_policy_challenger_statistics.csv
+render_script: scripts/render_layer10.py
+claim_ids:
+- P02-CLM-005/v1
+- P02-CLM-006/v1
+- CUM-CLM-006/v1
+finding_ids:
+- P02-FIND-006
+- P02-FIND-007
+- CF-07
+limitations:
+- DIAGNOSTIC_ONLY
+output: figures/L10-P02-FIG-005.png
+scientific_transform: DISPLAY_ONLY
+source_data_sha256: 0b2c9b948726d8691f38edb6e5bf049e2e6b5d38e84da0e88e1ac4f1527ed1d8
+output_sha256: e332e53db035df6d82f6be592972260fc96720813e1614bdd15126959cb520c9

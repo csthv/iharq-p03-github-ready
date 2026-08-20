@@ -1,0 +1,37 @@
+{
+  "artifact_level_schema_realization": {
+    "GroupBudgetAuditTable": "06229d9272306e77aa9ce51f51570ffaf5768e0f1221d3476bee1c9a8b35e11b",
+    "SparseSupportWarning": "41fbc243e12daf45baf0a7a46a8c9e3f40ed94d1cb931978655d30bc45c4684a"
+  },
+  "canonical_exemplar_hardening_id": "P03-C8-STAGE19-GROUPBUDGET-EVIDENCE-HARDENING-R1",
+  "hardening_id": "P03S-POSTEXT-64-128-256-STAGE19-GROUPBUDGET-EVIDENCE-HARDENING-R1_1",
+  "live_record_contract_mutated": false,
+  "materialization_mode": "POST_PROMOTION_APPEND_ONLY_REPORT_PROFILE",
+  "products": {
+    "P03-PROD-033": 1440,
+    "P03-PROD-034": 0
+  },
+  "recovery_from_failed_attempt": {
+    "failed_attempt_final_promoted_outputs": 0,
+    "failed_hardening_id": "P03S-POSTEXT-64-128-256-STAGE19-GROUPBUDGET-EVIDENCE-HARDENING-R1",
+    "failure_class": "CROSS_FILESYSTEM_DIRECTORY_RENAME_EXDEV",
+    "scientific_execution_repeated": false,
+    "scientific_values_changed": false
+  },
+  "repository_mutated": false,
+  "run_id": "P03-L3-POSTEXT-64-128-256-R1-1833e865bcb88ff8",
+  "schema_id": "P03SStage19ReportProfilePostPromotionMaterializerManifest.v1",
+  "schema_version": "1.0.0",
+  "scientific_prohibitions": {
+    "model_or_calibrator_fitting": true,
+    "no_rule_rescue": true,
+    "posthoc_group_creation": true,
+    "sparse_metric_imputation": true,
+    "test_driven_selection": true,
+    "threshold_retuning": true
+  },
+  "stage19_rerun": false,
+  "stage20_executed": false,
+  "stage_id": "19",
+  "status": "PASS"
+}

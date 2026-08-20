@@ -1,0 +1,15 @@
+topic,P00_P01_content,P02_content,relationship,final_location,preservation_notes
+Project-wide framework,P01 Part I,P02 global implications,EXTENDED,Part I,Updated coverage/status/P02 phase state; scientific rules preserved
+P00 protocol record,P01 Part II,none,SAME,Part II,Preserved as historical/current P00 record
+P01 protocol record,P01 Part III,P02 inherits P01 substrate,COMPLEMENTARY,Part III,P01 record preserved; transition note distinguishes historical handoff from current state
+P02/L2 protocol record,none,P02 Annex R2 §§7.1–7.31,PHASE_SPECIFIC,Part IV,Integrated without semantic reconstruction
+Run matrix,P00+P01 cumulative Part IV / Appendix B,P02 run_matrix.yaml,EXTENDED,Part V + machine run_matrix.yaml,Historical rows retained; P02 phase nested
+Analysis contract,P00+P01 cumulative Part V / Appendix C,P02 analysis_contract.yaml,EXTENDED,Part VI + machine analysis_contract.yaml,Phase boundaries and P02 claim locks retained
+Ablation ladder,P01 cumulative Part VI / Appendix D,P02 §7.18,UPDATED,Part VII + ablation_register.yaml,Current official identities used; P01 legacy A13 label traceably retained
+Amendments/reruns,P01 Part VII,P02 §7.21,EXTENDED,Part VIII,P02 Stage11/12/A4/18S/24 history added without sanitization
+Environment/reproducibility,P01 Part VIII,"P02 §§7.1.1,7.11",EXTENDED,Part IX,Distinct P02 hash/notebook classes preserved
+Dataset/split/model state,P01 phase data contract,P02 §§7.6–7.8,COMPLEMENTARY,Part X,P01 substrate + P02 decoder portfolio summarized cumulatively
+External artifacts,P01 Part IX/Appendix E,P02 §§7.24–7.25 + external contract,EXTENDED,Part XI,Kaggle P01 and dual-HF P02 arrangements remain provider/credential-distinct
+Limitations/evidence ceilings,P01 Part X,"P02 §§7.23,7.27",EXTENDED,Part XII,P02 resource/post-hoc limitations preserved
+Downstream handoff/current state,P01 Part XI,P02 §§7.26–7.28,UPDATED,Part XII,Current continuation point becomes P03
+Machine-readable organization,Embedded P01 structured appendices,Three P02 YAML companions,UPDATED,protocol_v1_0/machine_readable,One cumulative phase-indexed structure plus preserved source P02 companions

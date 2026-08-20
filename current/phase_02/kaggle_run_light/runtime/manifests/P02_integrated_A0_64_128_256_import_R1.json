@@ -1,0 +1,105 @@
+{
+  "artifact_id": "P02-INTEGRATED-A0-64-128-256-IMPORT-R1",
+  "checkpoint_reuse_modes": {
+    "HARDLINK": 108
+  },
+  "imported_now": 108,
+  "models_retrained": false,
+  "new_success": 108,
+  "numeric_results_recomputed": false,
+  "predecessor_supplement_mutated": false,
+  "representative_audit": [
+    {
+      "budget_per_class": 64,
+      "dataset_id": "PhysioNetMI",
+      "representatives": {
+        "CLASSICAL": "CLS-CSP-LDA",
+        "NEURAL": "DNN-EEGNET",
+        "RIEMANNIAN": "RIE-TS-LR",
+        "SSL": "SSL-CBRAMOD"
+      }
+    },
+    {
+      "budget_per_class": 128,
+      "dataset_id": "PhysioNetMI",
+      "representatives": {
+        "CLASSICAL": "CLS-CSP-LDA",
+        "NEURAL": "DNN-EEGNET",
+        "RIEMANNIAN": "RIE-TS-LR",
+        "SSL": "SSL-CBRAMOD"
+      }
+    },
+    {
+      "budget_per_class": 256,
+      "dataset_id": "PhysioNetMI",
+      "representatives": {
+        "CLASSICAL": "CLS-CSP-LDA",
+        "NEURAL": "DNN-EEGNET",
+        "RIEMANNIAN": "RIE-TS-LR",
+        "SSL": "SSL-CBRAMOD"
+      }
+    },
+    {
+      "budget_per_class": 64,
+      "dataset_id": "BNCI2014_001",
+      "representatives": {
+        "CLASSICAL": "CLS-CSP-LDA",
+        "NEURAL": "DNN-EEGNET",
+        "RIEMANNIAN": "RIE-TS-LR",
+        "SSL": "SSL-CBRAMOD"
+      }
+    },
+    {
+      "budget_per_class": 128,
+      "dataset_id": "BNCI2014_001",
+      "representatives": {
+        "CLASSICAL": "CLS-CSP-LDA",
+        "NEURAL": "DNN-EEGNET",
+        "RIEMANNIAN": "RIE-TS-LR",
+        "SSL": "SSL-CBRAMOD"
+      }
+    },
+    {
+      "budget_per_class": 256,
+      "dataset_id": "BNCI2014_001",
+      "representatives": {
+        "CLASSICAL": "CLS-CSP-LDA",
+        "NEURAL": "DNN-EEGNET",
+        "RIEMANNIAN": "RIE-TS-LR",
+        "SSL": "SSL-CBRAMOD"
+      }
+    },
+    {
+      "budget_per_class": 64,
+      "dataset_id": "Lee2019_MI",
+      "representatives": {
+        "CLASSICAL": "CLS-CSP-LDA",
+        "NEURAL": "DNN-EEGNET",
+        "RIEMANNIAN": "RIE-TS-LR",
+        "SSL": "SSL-CBRAMOD"
+      }
+    },
+    {
+      "budget_per_class": 128,
+      "dataset_id": "Lee2019_MI",
+      "representatives": {
+        "CLASSICAL": "CLS-CSP-LDA",
+        "NEURAL": "DNN-EEGNET",
+        "RIEMANNIAN": "RIE-TS-LR",
+        "SSL": "SSL-CBRAMOD"
+      }
+    },
+    {
+      "budget_per_class": 256,
+      "dataset_id": "Lee2019_MI",
+      "representatives": {
+        "CLASSICAL": "CLS-CSP-LDA",
+        "NEURAL": "DNN-EEGNET",
+        "RIEMANNIAN": "RIE-TS-LR",
+        "SSL": "SSL-CBRAMOD"
+      }
+    }
+  ],
+  "reused_existing": 0,
+  "status": "PASS"
+}

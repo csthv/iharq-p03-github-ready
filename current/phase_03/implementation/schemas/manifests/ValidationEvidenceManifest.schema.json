@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/csthv/IHARQ/schemas/manifests/ValidationEvidenceManifest.schema.json",
+  "title": "ValidationEvidenceManifest",
+  "type": "object",
+  "required": [
+    "validation_id",
+    "target_ids",
+    "test_ids",
+    "gate_ids",
+    "status"
+  ],
+  "properties": {
+    "validation_id": {
+      "type": "string"
+    },
+    "target_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "test_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "gate_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "status": {
+      "type": "string"
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    }
+  },
+  "additionalProperties": false,
+  "x-iharq-status": "PHASE0_FOUNDATION_PROFILE"
+}

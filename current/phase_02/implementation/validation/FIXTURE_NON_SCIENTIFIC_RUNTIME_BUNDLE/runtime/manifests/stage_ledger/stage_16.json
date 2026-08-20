@@ -1,0 +1,33 @@
+{
+  "stage_id": "16",
+  "status": "SUCCESS",
+  "attempt_id": "de03c5b28e7b",
+  "inputs": {},
+  "input_hashes": {},
+  "outputs": {
+    "status": "PASS",
+    "records": 0,
+    "artifact": "stage_artifacts/16_low_label.json"
+  },
+  "output_hashes": {
+    "status": "727e9bd17b077ba162e13ba877135cc6fbc6b30f83da0b34b3e20233f1cc885f",
+    "records": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+    "artifact": "70ba41f4ed329c9cdd9a8a75754630d82137fcb686b1aeb769e42ab5d72829ad"
+  },
+  "dependencies": [
+    "15"
+  ],
+  "elapsed_seconds": 0.009975433349609375,
+  "log_path": "logs/stage_16_de03c5b28e7b.log",
+  "heartbeat_write_errors": [],
+  "observability_status": "PASS",
+  "blockers": [],
+  "observations": [],
+  "revision_fingerprint": {
+    "notebook_revision": "R4",
+    "source_sha256": "AUTHORING_FIXTURE_SOURCE",
+    "config_sha256": "AUTHORING_FIXTURE_CONFIG",
+    "stage_plan_sha256": "AUTHORING_FIXTURE_STAGE_PLAN",
+    "scientific_freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5"
+  }
+}

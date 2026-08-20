@@ -1,0 +1,38 @@
+{
+  "audit_id": "IHARQ-SOURCE-ARCHIVE-PRESERVATION-AUDIT-R1",
+  "p01": {
+    "source_files": 13802,
+    "unpreserved": [],
+    "status": "PASS"
+  },
+  "p02": {
+    "source_files": 27080,
+    "unchanged_at_original_path": 27061,
+    "modified_current_paths_preserved_under_history": 19,
+    "missing_current_paths_preserved_under_history": 0,
+    "changed_paths": [
+      "CHANGELOG.md",
+      "CITATION.cff",
+      "CONTRIBUTING.md",
+      "CURRENT_CUMULATIVE_REPOSITORY_MANIFEST.json",
+      "CURRENT_PROJECT_STATUS.json",
+      "README.md",
+      "REPOSITORY_CHECKSUMS.sha256",
+      "ROADMAP.md",
+      "SECURITY.md",
+      "current_artifact_index.csv",
+      "current_document_index.md",
+      "docs/index.md",
+      "phase_handoff.yaml",
+      "project_state_checksums.sha256",
+      "project_state_manifest.yaml",
+      "pyproject.toml",
+      "scripts/verify_cumulative_release.py",
+      "src/iharq/layer2_decoders/__init__.py",
+      "tests/test_preliminary_boundaries.py"
+    ],
+    "missing_paths": [],
+    "unpreserved": [],
+    "status": "PASS"
+  }
+}

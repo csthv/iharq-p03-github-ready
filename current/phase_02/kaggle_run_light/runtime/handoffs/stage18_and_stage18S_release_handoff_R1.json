@@ -1,0 +1,17 @@
+{
+  "artifact_id": "P02-STAGE18-AND-STAGE18S-RELEASE-HANDOFF-R1",
+  "canonical_G18_unchanged": true,
+  "canonical_stage18_unchanged": true,
+  "consumer": "STAGE24_RELEASE_FINALIZER_R1",
+  "created_at_utc": "2026-08-17T18:17:35.537788+00:00",
+  "required_manifests": {
+    "checkpoints": "runtime/stage18_consolidated_release_R1/manifests/stage18_and_stage18S_checkpoint_manifest.jsonl",
+    "quick_index": "runtime/stage18_consolidated_release_R1/manifests/stage18_release_family_quick_index.csv",
+    "release_family": "stage_artifacts/18_stage18S_consolidated_release_family_R1.json",
+    "stage18S_outputs": "runtime/stage18_consolidated_release_R1/manifests/stage18S_complete_output_manifest.jsonl",
+    "structured_outputs": "runtime/stage18_consolidated_release_R1/manifests/stage18_and_phase_structured_output_manifest.jsonl"
+  },
+  "stage18S_claim_scope": "POST_HOC_SENSITIVITY_DESCRIPTIVE",
+  "stage18S_preservation_required": true,
+  "status": "PASS"
+}

@@ -1,0 +1,153 @@
+{
+  "run_cell_id": "P02-A0-PhysioNetMI-DNN-FBCNET-FULL_TRAIN-MR02",
+  "ablation_id": "A0",
+  "terminal_status": "SUCCESS",
+  "prediction_partition": "records/PredictionRecord/dataset=PhysioNetMI/branch=DNN-FBCNET/budget=FULL_TRAIN/P02-A0-PhysioNetMI-DNN-FBCNET-FULL_TRAIN-MR02.jsonl",
+  "metric_source": "metrics/P02-A0-PhysioNetMI-DNN-FBCNET-FULL_TRAIN-MR02.json",
+  "checkpoint_sha256": "bfdebe504a9a56d0368a41752e45cb3ae1a9b65bffb67378f21e11f328265380",
+  "checkpoint_path": "checkpoints/P02-A0-PhysioNetMI-DNN-FBCNET-FULL_TRAIN-MR02.external.external.chk",
+  "observed_denominator": 495,
+  "selected_params": {
+    "recipe_id": "R6-FBCNET-AUTHOR-CENTERED-R1",
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "batch_size": 16,
+    "scheduler": "constant",
+    "label_smoothing": 0.0,
+    "grad_clip": null,
+    "max_epochs": 1500,
+    "patience": 200,
+    "selection": "validation_BACC",
+    "restore_best": true,
+    "branch": "DNN-FBCNET",
+    "dataset_id": "PhysioNetMI",
+    "budget_id": "FULL_TRAIN"
+  },
+  "resolved_variant": "FBCNet-OriginalAuthor-P01ConstrainedFilterBank",
+  "score_type": "SOFTMAX_PROBABILITY",
+  "validation_burden_seconds": 1390.9645991325378,
+  "model_storage_bytes": 57608,
+  "selected_candidate_id": "R6-FBCNET-AUTHOR-CENTERED-R1",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.000523865001014201,
+    "batch1_latency_p95_s": 0.0005920459996559657,
+    "repeats": 5,
+    "latency_probe_mode": "FORWARD_ONLY_NO_METRICS"
+  },
+  "class_weight_policy": "SKLEARN_BALANCED_TRAIN_FOLD",
+  "class_weights": [
+    0.9895973154362416,
+    1.010623714873201
+  ],
+  "class_weight_calibration": {
+    "selected_policy": "SKLEARN_BALANCED_TRAIN_FOLD",
+    "selected_weights": [
+      0.9895973154362416,
+      1.010623714873201
+    ],
+    "validation_metrics": {
+      "BACC": 0.7210549515133705,
+      "F1_MACRO": 0.7209558823529412,
+      "ACC": 0.7212121212121212,
+      "CONFUSION": [
+        [
+          186,
+          63
+        ],
+        [
+          75,
+          171
+        ]
+      ],
+      "CLASS_SUPPORT": [
+        249,
+        246
+      ],
+      "PRED_COMPLETE": 495,
+      "ROC_AUC": 0.7435759297352009,
+      "ROC_AUC_STATUS": "PASS",
+      "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+    },
+    "candidate_results": [
+      {
+        "status": "SUCCESS",
+        "policy": "UNIFORM_NO_WEIGHT",
+        "weights": null,
+        "validation_metrics": {
+          "BACC": 0.7156920364384367,
+          "F1_MACRO": 0.7130859447260349,
+          "ACC": 0.7151515151515152,
+          "CONFUSION": [
+            [
+              156,
+              93
+            ],
+            [
+              48,
+              198
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            249,
+            246
+          ],
+          "PRED_COMPLETE": 495,
+          "ROC_AUC": 0.750155091912365,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+        },
+        "validation_burden_seconds": 926.3173272609711,
+        "model_storage_bytes": 57608,
+        "best_epoch": 489,
+        "epochs_completed": 689,
+        "history_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/staging_runtime/raw_outputs/stage12_r6_training_history/P02-A0-PhysioNetMI-DNN-FBCNET-FULL_TRAIN-MR02__UNIFORM_NO_WEIGHT.json",
+        "candidate_checkpoint_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/staging_runtime/raw_outputs/stage12_r6_training_history/P02-A0-PhysioNetMI-DNN-FBCNET-FULL_TRAIN-MR02__UNIFORM_NO_WEIGHT.candidate.chk",
+        "candidate_checkpoint_sha256": "48c3fce8078b59f0fda4ff430fcc28668f6d6181b7566214db2069dd8eafd419"
+      },
+      {
+        "status": "SUCCESS",
+        "policy": "SKLEARN_BALANCED_TRAIN_FOLD",
+        "weights": [
+          0.9895973154362416,
+          1.010623714873201
+        ],
+        "validation_metrics": {
+          "BACC": 0.7210549515133705,
+          "F1_MACRO": 0.7209558823529412,
+          "ACC": 0.7212121212121212,
+          "CONFUSION": [
+            [
+              186,
+              63
+            ],
+            [
+              75,
+              171
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            249,
+            246
+          ],
+          "PRED_COMPLETE": 495,
+          "ROC_AUC": 0.7435759297352009,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "SOFTMAX_PROBABILITY"
+        },
+        "validation_burden_seconds": 1390.9645991325378,
+        "model_storage_bytes": 57608,
+        "best_epoch": 830,
+        "epochs_completed": 1030,
+        "history_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/staging_runtime/raw_outputs/stage12_r6_training_history/P02-A0-PhysioNetMI-DNN-FBCNET-FULL_TRAIN-MR02__SKLEARN_BALANCED_TRAIN_FOLD.json",
+        "candidate_checkpoint_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R6R5/staging_runtime/raw_outputs/stage12_r6_training_history/P02-A0-PhysioNetMI-DNN-FBCNET-FULL_TRAIN-MR02__SKLEARN_BALANCED_TRAIN_FOLD.candidate.chk",
+        "candidate_checkpoint_sha256": "bfdebe504a9a56d0368a41752e45cb3ae1a9b65bffb67378f21e11f328265380"
+      }
+    ],
+    "test_set_used": false
+  },
+  "training_condition_id": "A0-RAW-ACCEPT-ALL",
+  "r6_scientific_amendment": true,
+  "test_loaded_after_group_selection_sealed": true,
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

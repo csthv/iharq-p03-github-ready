@@ -1,0 +1,18 @@
+contract_id: P00-OUTPUT-CONTRACT-R1
+phase_id: P00
+status: FOUNDATION_IMPLEMENTED
+required_manifest_types:
+  - OutputManifest
+  - ArtifactManifest
+  - TestManifest
+  - GateDecisionRecord
+  - PhaseHandoffRecord
+terminal_states:
+  - ACCEPTED
+  - FAILED
+  - BLOCKED
+  - INVALID
+  - DIAGNOSTIC_ONLY
+  - DEFERRED
+limitations_required: true
+no_fabricated_outputs: true

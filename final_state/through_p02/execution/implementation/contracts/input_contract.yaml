@@ -1,0 +1,92 @@
+status: FROZEN_FROM_P01
+upstream:
+  project_state_id: IHARQ-CUMULATIVE-P00-P01-P02-INPUT-R1
+  project_status: P00_P01_MERGED_VALIDATED_READY_FOR_P02_ENTRY
+  p02_entry_green_light: 'YES'
+  p02_execution_started: false
+  p02_execution_condition: FREEZE_P02_SPECIFIC_IMPLEMENTATION_PROTOCOL_ANALYSIS_AND_ENVIRONMENT_BEFORE_EXECUTION
+  datasets:
+  - PhysioNetMI
+  - BNCI2014_001
+  - Lee2019_MI
+  task: binary left-hand vs right-hand motor imagery
+  core_window:
+    profile_id: P01-L1-WINDOW-OFFICIAL-R2
+    start_s: 0.5
+    end_s: 3.5
+    duration_s: 3.0
+    sampling_hz: 160
+    samples: 480
+    window_count: 12910
+    invalid: 0
+  split:
+    profile_id: P01-L1-SPLIT-OFFICIAL-R2
+    unit: SUBJECT
+    seed: 20260804
+    roles:
+    - train
+    - calibration
+    - validation
+    - test
+    subject_groups:
+      train: 102
+      calibration: 35
+      validation: 17
+      test: 18
+  budgets:
+    profile_id: P01-L1-LOW-CAL-OFFICIAL-R2
+    per_class:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 16
+    - 32
+    seed: 20260804
+    source_role: calibration
+    nested: true
+    algorithm: SHA256_RANK_BY_DATASET_SUBJECT_SESSION_RUN_SOURCE_EVENT_WITH_NESTED_PREFIX_SUBSETS
+  quality:
+    policy: ANNOTATE_NOT_REPAIR
+    summaries: 489
+    soft_provider_flags: 20
+    hard_invalid: 0
+  core_external:
+    provider: Kaggle
+    provider_version: 2
+    logical_revision: 1
+    handle: csthv999z/iharq-p01-l1-derived-windows-d03f0a7c869d-20260806222242-68a91473
+    manifest_sha256: dc21f418e9a1add62adb346f627d5d729735a5f1ecaa1d771f6fa5cfede627e1
+    format: LOSSLESS_HDF5_SUBJECT_SHARDS
+    shards: 172
+  a4:
+    family_id: P01-L1-A4-WINDOW-FAMILY-FREEZE-R2
+    long_profile: A4_LONG_MATCHED_3P5S_R2
+    start_s: 0.0
+    end_s: 3.5
+    samples: 560
+    sampling_hz: 160
+    virtual_slices:
+    - 0:320
+    - 120:440
+    - 240:560
+    matched_parents: 12910/12910
+    provider_version: 1
+    logical_revision: 2
+    manifest_sha256: 29124d59907610b1545e0a2b5d1811a4d4a2bf1df64cad49aa880f4721c47305
+  record_contract:
+    DatasetRecord: 3
+    WindowRecord: 12910
+    SplitRecord: 1
+    PreprocessingRecord: 1
+    LabelMapRecord: 3
+    ValidationReport: 1
+  boundaries:
+  - PUBLIC_EEG_ONLY
+  - NON_CLINICAL
+  - NO_DEPLOYMENT_CLAIM
+  a14: ABSENT_PROHIBITED
+rules:
+- read-only upstream
+- no relabel/resplit/rewindow/repair
+- pointer/checksum/version validation required

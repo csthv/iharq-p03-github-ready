@@ -1,0 +1,932 @@
+manifest_id: P00-ABLATION-READINESS-UNLOCK-R2
+strict_state_vocabulary:
+- FOUNDATION_NOT_PRESENT
+- FOUNDATION_PARTIAL
+- FOUNDATION_READY
+- TECHNICALLY_UNLOCKED_FOR_FUTURE_PROTOCOL
+- PROTOCOL_LOCK_REQUIRED
+- UPSTREAM_EVIDENCE_REQUIRED
+- FUTURE_PHASE_ONLY
+- ACTIVATED_UNDER_CURRENT_PROTOCOL
+- EXECUTED
+- BLOCKED
+- REJECTED
+rows:
+- ablation_id: A0
+  official_identity: Raw Decoder / Accept-All Raw Decoder Reference
+  aliases:
+  - Raw decoder / accept-all reference
+  owner_layers:
+  - L1
+  - L2
+  activation_phases:
+  - P01
+  - P02
+  purpose: Raw Decoder / Accept-All Raw Decoder Reference
+  implementation_paths:
+  - catalogs/final_ablation_readiness_matrix.yaml
+  - manifests/ablation_readiness.yaml
+  - schemas/
+  - contracts/phases/
+  selectors_and_configs:
+  - configs/project.yaml
+  - future Protocol annex selector required
+  records_and_artifacts:
+  - DatasetRecord
+  - SplitRecord
+  - PreprocessingRecord
+  - PredictionRecord
+  - ModelRegistryRecord
+  - BaselineMetricRecord
+  validators_and_tests:
+  - scripts/run_phase0_final_implementation_audit.py
+  - tests/test_phase0_ablation_readiness_and_unlocks.py
+  protocol_hooks:
+  - Protocol v1.0 run-matrix and analysis-contract template
+  comparison_and_matching_obligations:
+  - dataset_revision
+  - split_id
+  - subject/session/trial/window
+  - preprocessing_id
+  - model/checkpoint
+  - seed
+  - config_hash
+  - environment_id
+  - policy_mode
+  - stress_profile_id
+  - simulator_task_as_applicable
+  phase0_foundation_state: FOUNDATION_READY
+  unlocked_by_phase0_completion: true
+  unlock_meaning: The schema/config/interface/validator foundation exists; a future
+    phase may become technically executable only after its Protocol annex, inputs,
+    environment, matching, and evidence conditions are frozen and accepted.
+  remaining_activation_conditions:
+  - future phase Protocol lock
+  - upstream source/data/model artifacts
+  - exact environment/resources
+  - matched-comparison and fairness keys
+  - registered analysis contract
+  - evidence gate acceptance
+  activated_in_p00: false
+  executed_in_p00: false
+  nonexecution_reason: P00 is ADMINISTRATIVE_FOUNDATION and has no active empirical
+    ablations.
+  phase_analysis_locations:
+  - Analysis R4 section 32 row A0
+  downstream_handoff: P01;P02
+  limitations:
+  - No empirical result
+  - No effectiveness claim
+  - Mode B engineering evidence only
+  final_status: TECHNICALLY_UNLOCKED_FOR_FUTURE_PROTOCOL
+- ablation_id: A1
+  official_identity: Calibrated Decoder / Calibration Visibility
+  aliases:
+  - Calibration visibility
+  owner_layers:
+  - L2
+  - L3
+  activation_phases:
+  - P02
+  - P03
+  purpose: Calibrated Decoder / Calibration Visibility
+  implementation_paths:
+  - catalogs/final_ablation_readiness_matrix.yaml
+  - manifests/ablation_readiness.yaml
+  - schemas/
+  - contracts/phases/
+  selectors_and_configs:
+  - configs/project.yaml
+  - future Protocol annex selector required
+  records_and_artifacts:
+  - PredictionRecord
+  - CalibrationRecord
+  - MetricDictionaryEntry
+  validators_and_tests:
+  - scripts/run_phase0_final_implementation_audit.py
+  - tests/test_phase0_ablation_readiness_and_unlocks.py
+  protocol_hooks:
+  - Protocol v1.0 run-matrix and analysis-contract template
+  comparison_and_matching_obligations:
+  - dataset_revision
+  - split_id
+  - subject/session/trial/window
+  - preprocessing_id
+  - model/checkpoint
+  - seed
+  - config_hash
+  - environment_id
+  - policy_mode
+  - stress_profile_id
+  - simulator_task_as_applicable
+  phase0_foundation_state: FOUNDATION_READY
+  unlocked_by_phase0_completion: true
+  unlock_meaning: The schema/config/interface/validator foundation exists; a future
+    phase may become technically executable only after its Protocol annex, inputs,
+    environment, matching, and evidence conditions are frozen and accepted.
+  remaining_activation_conditions:
+  - future phase Protocol lock
+  - upstream source/data/model artifacts
+  - exact environment/resources
+  - matched-comparison and fairness keys
+  - registered analysis contract
+  - evidence gate acceptance
+  activated_in_p00: false
+  executed_in_p00: false
+  nonexecution_reason: P00 is ADMINISTRATIVE_FOUNDATION and has no active empirical
+    ablations.
+  phase_analysis_locations:
+  - Analysis R4 section 32 row A1
+  downstream_handoff: P02;P03
+  limitations:
+  - No empirical result
+  - No effectiveness claim
+  - Mode B engineering evidence only
+  final_status: TECHNICALLY_UNLOCKED_FOR_FUTURE_PROTOCOL
+- ablation_id: A2
+  official_identity: Simple Registered Threshold / Confidence-Threshold Baseline
+  aliases:
+  - Simple registered threshold baseline
+  owner_layers:
+  - L2
+  - L3
+  activation_phases:
+  - P02
+  - P03
+  purpose: Simple Registered Threshold / Confidence-Threshold Baseline
+  implementation_paths:
+  - catalogs/final_ablation_readiness_matrix.yaml
+  - manifests/ablation_readiness.yaml
+  - schemas/
+  - contracts/phases/
+  selectors_and_configs:
+  - configs/project.yaml
+  - future Protocol annex selector required
+  records_and_artifacts:
+  - PredictionRecord
+  - ThresholdRegistryRecord
+  - SelectivePredictionRecord
+  validators_and_tests:
+  - scripts/run_phase0_final_implementation_audit.py
+  - tests/test_phase0_ablation_readiness_and_unlocks.py
+  protocol_hooks:
+  - Protocol v1.0 run-matrix and analysis-contract template
+  comparison_and_matching_obligations:
+  - dataset_revision
+  - split_id
+  - subject/session/trial/window
+  - preprocessing_id
+  - model/checkpoint
+  - seed
+  - config_hash
+  - environment_id
+  - policy_mode
+  - stress_profile_id
+  - simulator_task_as_applicable
+  phase0_foundation_state: FOUNDATION_READY
+  unlocked_by_phase0_completion: true
+  unlock_meaning: The schema/config/interface/validator foundation exists; a future
+    phase may become technically executable only after its Protocol annex, inputs,
+    environment, matching, and evidence conditions are frozen and accepted.
+  remaining_activation_conditions:
+  - future phase Protocol lock
+  - upstream source/data/model artifacts
+  - exact environment/resources
+  - matched-comparison and fairness keys
+  - registered analysis contract
+  - evidence gate acceptance
+  activated_in_p00: false
+  executed_in_p00: false
+  nonexecution_reason: P00 is ADMINISTRATIVE_FOUNDATION and has no active empirical
+    ablations.
+  phase_analysis_locations:
+  - Analysis R4 section 32 row A2
+  downstream_handoff: P02;P03
+  limitations:
+  - No empirical result
+  - No effectiveness claim
+  - Mode B engineering evidence only
+  final_status: TECHNICALLY_UNLOCKED_FOR_FUTURE_PROTOCOL
+- ablation_id: A3
+  official_identity: Uncertainty and Selective Prediction
+  aliases:
+  - Uncertainty and selective prediction
+  owner_layers:
+  - L2
+  - L3
+  activation_phases:
+  - P02
+  - P03
+  purpose: Uncertainty and Selective Prediction
+  implementation_paths:
+  - catalogs/final_ablation_readiness_matrix.yaml
+  - manifests/ablation_readiness.yaml
+  - schemas/
+  - contracts/phases/
+  selectors_and_configs:
+  - configs/project.yaml
+  - future Protocol annex selector required
+  records_and_artifacts:
+  - PredictionRecord
+  - UncertaintyRecord
+  - SelectivePredictionRecord
+  validators_and_tests:
+  - scripts/run_phase0_final_implementation_audit.py
+  - tests/test_phase0_ablation_readiness_and_unlocks.py
+  protocol_hooks:
+  - Protocol v1.0 run-matrix and analysis-contract template
+  comparison_and_matching_obligations:
+  - dataset_revision
+  - split_id
+  - subject/session/trial/window
+  - preprocessing_id
+  - model/checkpoint
+  - seed
+  - config_hash
+  - environment_id
+  - policy_mode
+  - stress_profile_id
+  - simulator_task_as_applicable
+  phase0_foundation_state: FOUNDATION_READY
+  unlocked_by_phase0_completion: true
+  unlock_meaning: The schema/config/interface/validator foundation exists; a future
+    phase may become technically executable only after its Protocol annex, inputs,
+    environment, matching, and evidence conditions are frozen and accepted.
+  remaining_activation_conditions:
+  - future phase Protocol lock
+  - upstream source/data/model artifacts
+  - exact environment/resources
+  - matched-comparison and fairness keys
+  - registered analysis contract
+  - evidence gate acceptance
+  activated_in_p00: false
+  executed_in_p00: false
+  nonexecution_reason: P00 is ADMINISTRATIVE_FOUNDATION and has no active empirical
+    ablations.
+  phase_analysis_locations:
+  - Analysis R4 section 32 row A3
+  downstream_handoff: P02;P03
+  limitations:
+  - No empirical result
+  - No effectiveness claim
+  - Mode B engineering evidence only
+  final_status: TECHNICALLY_UNLOCKED_FOR_FUTURE_PROTOCOL
+- ablation_id: A4
+  official_identity: Longer-Window, Multi-Window Voting/Averaging, and Ordinary Ensemble
+    Controls
+  aliases:
+  - Ordinary combination control
+  owner_layers:
+  - L2
+  - L3
+  - L4
+  activation_phases:
+  - P02
+  - P03
+  - P04
+  purpose: Longer-Window, Multi-Window Voting/Averaging, and Ordinary Ensemble Controls
+  implementation_paths:
+  - catalogs/final_ablation_readiness_matrix.yaml
+  - manifests/ablation_readiness.yaml
+  - schemas/
+  - contracts/phases/
+  selectors_and_configs:
+  - configs/project.yaml
+  - future Protocol annex selector required
+  records_and_artifacts:
+  - EnsembleControlRecord
+  - EvidenceQualityRecord
+  - IHARQDecisionRecord
+  validators_and_tests:
+  - scripts/run_phase0_final_implementation_audit.py
+  - tests/test_phase0_ablation_readiness_and_unlocks.py
+  protocol_hooks:
+  - Protocol v1.0 run-matrix and analysis-contract template
+  comparison_and_matching_obligations:
+  - dataset_revision
+  - split_id
+  - subject/session/trial/window
+  - preprocessing_id
+  - model/checkpoint
+  - seed
+  - config_hash
+  - environment_id
+  - policy_mode
+  - stress_profile_id
+  - simulator_task_as_applicable
+  phase0_foundation_state: FOUNDATION_READY
+  unlocked_by_phase0_completion: true
+  unlock_meaning: The schema/config/interface/validator foundation exists; a future
+    phase may become technically executable only after its Protocol annex, inputs,
+    environment, matching, and evidence conditions are frozen and accepted.
+  remaining_activation_conditions:
+  - future phase Protocol lock
+  - upstream source/data/model artifacts
+  - exact environment/resources
+  - matched-comparison and fairness keys
+  - registered analysis contract
+  - evidence gate acceptance
+  activated_in_p00: false
+  executed_in_p00: false
+  nonexecution_reason: P00 is ADMINISTRATIVE_FOUNDATION and has no active empirical
+    ablations.
+  phase_analysis_locations:
+  - Analysis R4 section 32 row A4
+  downstream_handoff: P02;P03;P04
+  limitations:
+  - No empirical result
+  - No effectiveness claim
+  - Mode B engineering evidence only
+  final_status: TECHNICALLY_UNLOCKED_FOR_FUTURE_PROTOCOL
+- ablation_id: A5
+  official_identity: IHARQ-lite / Rule-Based Evidence Verification
+  aliases:
+  - IHARQ evidence decision baseline
+  owner_layers:
+  - L4
+  activation_phases:
+  - P04
+  purpose: IHARQ-lite / Rule-Based Evidence Verification
+  implementation_paths:
+  - catalogs/final_ablation_readiness_matrix.yaml
+  - manifests/ablation_readiness.yaml
+  - schemas/
+  - contracts/phases/
+  selectors_and_configs:
+  - configs/project.yaml
+  - future Protocol annex selector required
+  records_and_artifacts:
+  - EvidenceRequestRecord
+  - EvidenceQualityRecord
+  - IHARQDecisionRecord
+  validators_and_tests:
+  - scripts/run_phase0_final_implementation_audit.py
+  - tests/test_phase0_ablation_readiness_and_unlocks.py
+  protocol_hooks:
+  - Protocol v1.0 run-matrix and analysis-contract template
+  comparison_and_matching_obligations:
+  - dataset_revision
+  - split_id
+  - subject/session/trial/window
+  - preprocessing_id
+  - model/checkpoint
+  - seed
+  - config_hash
+  - environment_id
+  - policy_mode
+  - stress_profile_id
+  - simulator_task_as_applicable
+  phase0_foundation_state: FOUNDATION_READY
+  unlocked_by_phase0_completion: true
+  unlock_meaning: The schema/config/interface/validator foundation exists; a future
+    phase may become technically executable only after its Protocol annex, inputs,
+    environment, matching, and evidence conditions are frozen and accepted.
+  remaining_activation_conditions:
+  - future phase Protocol lock
+  - upstream source/data/model artifacts
+  - exact environment/resources
+  - matched-comparison and fairness keys
+  - registered analysis contract
+  - evidence gate acceptance
+  activated_in_p00: false
+  executed_in_p00: false
+  nonexecution_reason: P00 is ADMINISTRATIVE_FOUNDATION and has no active empirical
+    ablations.
+  phase_analysis_locations:
+  - Analysis R4 section 32 row A5
+  downstream_handoff: P04
+  limitations:
+  - No empirical result
+  - No effectiveness claim
+  - Mode B engineering evidence only
+  final_status: TECHNICALLY_UNLOCKED_FOR_FUTURE_PROTOCOL
+- ablation_id: A6
+  official_identity: IHARQ + Evidence-Quality Estimator
+  aliases:
+  - Learned evidence quality/readiness model
+  owner_layers:
+  - L4
+  - L6
+  activation_phases:
+  - P04
+  - P06
+  purpose: IHARQ + Evidence-Quality Estimator
+  implementation_paths:
+  - catalogs/final_ablation_readiness_matrix.yaml
+  - manifests/ablation_readiness.yaml
+  - schemas/
+  - contracts/phases/
+  selectors_and_configs:
+  - configs/project.yaml
+  - future Protocol annex selector required
+  records_and_artifacts:
+  - EvidenceQualityRecord
+  - ReadinessContextRecord
+  - MatchedComparisonReport
+  validators_and_tests:
+  - scripts/run_phase0_final_implementation_audit.py
+  - tests/test_phase0_ablation_readiness_and_unlocks.py
+  protocol_hooks:
+  - Protocol v1.0 run-matrix and analysis-contract template
+  comparison_and_matching_obligations:
+  - dataset_revision
+  - split_id
+  - subject/session/trial/window
+  - preprocessing_id
+  - model/checkpoint
+  - seed
+  - config_hash
+  - environment_id
+  - policy_mode
+  - stress_profile_id
+  - simulator_task_as_applicable
+  phase0_foundation_state: FOUNDATION_READY
+  unlocked_by_phase0_completion: true
+  unlock_meaning: The schema/config/interface/validator foundation exists; a future
+    phase may become technically executable only after its Protocol annex, inputs,
+    environment, matching, and evidence conditions are frozen and accepted.
+  remaining_activation_conditions:
+  - future phase Protocol lock
+  - upstream source/data/model artifacts
+  - exact environment/resources
+  - matched-comparison and fairness keys
+  - registered analysis contract
+  - evidence gate acceptance
+  activated_in_p00: false
+  executed_in_p00: false
+  nonexecution_reason: P00 is ADMINISTRATIVE_FOUNDATION and has no active empirical
+    ablations.
+  phase_analysis_locations:
+  - Analysis R4 section 32 row A6
+  downstream_handoff: P04;P06
+  limitations:
+  - No empirical result
+  - No effectiveness claim
+  - Mode B engineering evidence only
+  final_status: TECHNICALLY_UNLOCKED_FOR_FUTURE_PROTOCOL
+- ablation_id: A7
+  official_identity: IHARQ + RegimeRisk Temporal Trust
+  aliases:
+  - Temporal trust / RegimeRisk
+  owner_layers:
+  - L5
+  activation_phases:
+  - P05
+  purpose: IHARQ + RegimeRisk Temporal Trust
+  implementation_paths:
+  - catalogs/final_ablation_readiness_matrix.yaml
+  - manifests/ablation_readiness.yaml
+  - schemas/
+  - contracts/phases/
+  selectors_and_configs:
+  - configs/project.yaml
+  - future Protocol annex selector required
+  records_and_artifacts:
+  - RegimeStateRecord
+  - TemporalTrustRecord
+  - WarningRecord
+  validators_and_tests:
+  - scripts/run_phase0_final_implementation_audit.py
+  - tests/test_phase0_ablation_readiness_and_unlocks.py
+  protocol_hooks:
+  - Protocol v1.0 run-matrix and analysis-contract template
+  comparison_and_matching_obligations:
+  - dataset_revision
+  - split_id
+  - subject/session/trial/window
+  - preprocessing_id
+  - model/checkpoint
+  - seed
+  - config_hash
+  - environment_id
+  - policy_mode
+  - stress_profile_id
+  - simulator_task_as_applicable
+  phase0_foundation_state: FOUNDATION_READY
+  unlocked_by_phase0_completion: true
+  unlock_meaning: The schema/config/interface/validator foundation exists; a future
+    phase may become technically executable only after its Protocol annex, inputs,
+    environment, matching, and evidence conditions are frozen and accepted.
+  remaining_activation_conditions:
+  - future phase Protocol lock
+  - upstream source/data/model artifacts
+  - exact environment/resources
+  - matched-comparison and fairness keys
+  - registered analysis contract
+  - evidence gate acceptance
+  activated_in_p00: false
+  executed_in_p00: false
+  nonexecution_reason: P00 is ADMINISTRATIVE_FOUNDATION and has no active empirical
+    ablations.
+  phase_analysis_locations:
+  - Analysis R4 section 32 row A7
+  downstream_handoff: P05
+  limitations:
+  - No empirical result
+  - No effectiveness claim
+  - Mode B engineering evidence only
+  final_status: TECHNICALLY_UNLOCKED_FOR_FUTURE_PROTOCOL
+- ablation_id: A8
+  official_identity: Learning-to-Defer / Deferral Comparison
+  aliases:
+  - Deferral/fallback policy
+  owner_layers:
+  - L4
+  - L6
+  activation_phases:
+  - P04
+  - P06
+  purpose: Learning-to-Defer / Deferral Comparison
+  implementation_paths:
+  - catalogs/final_ablation_readiness_matrix.yaml
+  - manifests/ablation_readiness.yaml
+  - schemas/
+  - contracts/phases/
+  selectors_and_configs:
+  - configs/project.yaml
+  - future Protocol annex selector required
+  records_and_artifacts:
+  - DeferralRecord
+  - PolicyActionRecord
+  - IHARQDecisionRecord
+  validators_and_tests:
+  - scripts/run_phase0_final_implementation_audit.py
+  - tests/test_phase0_ablation_readiness_and_unlocks.py
+  protocol_hooks:
+  - Protocol v1.0 run-matrix and analysis-contract template
+  comparison_and_matching_obligations:
+  - dataset_revision
+  - split_id
+  - subject/session/trial/window
+  - preprocessing_id
+  - model/checkpoint
+  - seed
+  - config_hash
+  - environment_id
+  - policy_mode
+  - stress_profile_id
+  - simulator_task_as_applicable
+  phase0_foundation_state: FOUNDATION_READY
+  unlocked_by_phase0_completion: true
+  unlock_meaning: The schema/config/interface/validator foundation exists; a future
+    phase may become technically executable only after its Protocol annex, inputs,
+    environment, matching, and evidence conditions are frozen and accepted.
+  remaining_activation_conditions:
+  - future phase Protocol lock
+  - upstream source/data/model artifacts
+  - exact environment/resources
+  - matched-comparison and fairness keys
+  - registered analysis contract
+  - evidence gate acceptance
+  activated_in_p00: false
+  executed_in_p00: false
+  nonexecution_reason: P00 is ADMINISTRATIVE_FOUNDATION and has no active empirical
+    ablations.
+  phase_analysis_locations:
+  - Analysis R4 section 32 row A8
+  downstream_handoff: P04;P06
+  limitations:
+  - No empirical result
+  - No effectiveness claim
+  - Mode B engineering evidence only
+  final_status: TECHNICALLY_UNLOCKED_FOR_FUTURE_PROTOCOL
+- ablation_id: A9
+  official_identity: Supervised Adaptive-IHARQ / Adaptive Readiness Policy
+  aliases:
+  - Cost-aware policy action
+  owner_layers:
+  - L6
+  activation_phases:
+  - P06
+  - P11
+  purpose: Supervised Adaptive-IHARQ / Adaptive Readiness Policy
+  implementation_paths:
+  - catalogs/final_ablation_readiness_matrix.yaml
+  - manifests/ablation_readiness.yaml
+  - schemas/
+  - contracts/phases/
+  selectors_and_configs:
+  - configs/project.yaml
+  - future Protocol annex selector required
+  records_and_artifacts:
+  - PolicyActionRecord
+  - PolicyRecord
+  - MatchedComparisonReport
+  validators_and_tests:
+  - scripts/run_phase0_final_implementation_audit.py
+  - tests/test_phase0_ablation_readiness_and_unlocks.py
+  protocol_hooks:
+  - Protocol v1.0 run-matrix and analysis-contract template
+  comparison_and_matching_obligations:
+  - dataset_revision
+  - split_id
+  - subject/session/trial/window
+  - preprocessing_id
+  - model/checkpoint
+  - seed
+  - config_hash
+  - environment_id
+  - policy_mode
+  - stress_profile_id
+  - simulator_task_as_applicable
+  phase0_foundation_state: FOUNDATION_READY
+  unlocked_by_phase0_completion: true
+  unlock_meaning: The schema/config/interface/validator foundation exists; a future
+    phase may become technically executable only after its Protocol annex, inputs,
+    environment, matching, and evidence conditions are frozen and accepted.
+  remaining_activation_conditions:
+  - future phase Protocol lock
+  - upstream source/data/model artifacts
+  - exact environment/resources
+  - matched-comparison and fairness keys
+  - registered analysis contract
+  - evidence gate acceptance
+  activated_in_p00: false
+  executed_in_p00: false
+  nonexecution_reason: P00 is ADMINISTRATIVE_FOUNDATION and has no active empirical
+    ablations.
+  phase_analysis_locations:
+  - Analysis R4 section 32 row A9
+  downstream_handoff: P06;P11
+  limitations:
+  - No empirical result
+  - No effectiveness claim
+  - Mode B engineering evidence only
+  final_status: TECHNICALLY_UNLOCKED_FOR_FUTURE_PROTOCOL
+- ablation_id: A10
+  official_identity: Contextual Bandit
+  aliases:
+  - Contextual-bandit policy
+  owner_layers:
+  - L6
+  - L7
+  activation_phases:
+  - P06
+  - P07
+  - P11
+  purpose: Contextual Bandit
+  implementation_paths:
+  - catalogs/final_ablation_readiness_matrix.yaml
+  - manifests/ablation_readiness.yaml
+  - schemas/
+  - contracts/phases/
+  selectors_and_configs:
+  - configs/project.yaml
+  - future Protocol annex selector required
+  records_and_artifacts:
+  - ReadinessContextRecord
+  - PolicyActionRecord
+  - PolicyUpdateTrace
+  - TransitionRecord
+  validators_and_tests:
+  - scripts/run_phase0_final_implementation_audit.py
+  - tests/test_phase0_ablation_readiness_and_unlocks.py
+  protocol_hooks:
+  - Protocol v1.0 run-matrix and analysis-contract template
+  comparison_and_matching_obligations:
+  - dataset_revision
+  - split_id
+  - subject/session/trial/window
+  - preprocessing_id
+  - model/checkpoint
+  - seed
+  - config_hash
+  - environment_id
+  - policy_mode
+  - stress_profile_id
+  - simulator_task_as_applicable
+  phase0_foundation_state: FOUNDATION_READY
+  unlocked_by_phase0_completion: true
+  unlock_meaning: The schema/config/interface/validator foundation exists; a future
+    phase may become technically executable only after its Protocol annex, inputs,
+    environment, matching, and evidence conditions are frozen and accepted.
+  remaining_activation_conditions:
+  - future phase Protocol lock
+  - upstream source/data/model artifacts
+  - exact environment/resources
+  - matched-comparison and fairness keys
+  - registered analysis contract
+  - evidence gate acceptance
+  activated_in_p00: false
+  executed_in_p00: false
+  nonexecution_reason: P00 is ADMINISTRATIVE_FOUNDATION and has no active empirical
+    ablations.
+  phase_analysis_locations:
+  - Analysis R4 section 32 row A10
+  downstream_handoff: P06;P07;P11
+  limitations:
+  - No empirical result
+  - No effectiveness claim
+  - Mode B engineering evidence only
+  final_status: TECHNICALLY_UNLOCKED_FOR_FUTURE_PROTOCOL
+- ablation_id: A11
+  official_identity: Reinforcement-Learning Policy
+  aliases:
+  - Sequential/RL policy
+  owner_layers:
+  - L6
+  - L7
+  activation_phases:
+  - P07
+  - P11
+  purpose: Reinforcement-Learning Policy
+  implementation_paths:
+  - catalogs/final_ablation_readiness_matrix.yaml
+  - manifests/ablation_readiness.yaml
+  - schemas/
+  - contracts/phases/
+  selectors_and_configs:
+  - configs/project.yaml
+  - future Protocol annex selector required
+  records_and_artifacts:
+  - StateRecord
+  - TransitionRecord
+  - EpisodeRecord
+  - RolloutRecord
+  - PolicyUpdateTrace
+  validators_and_tests:
+  - scripts/run_phase0_final_implementation_audit.py
+  - tests/test_phase0_ablation_readiness_and_unlocks.py
+  protocol_hooks:
+  - Protocol v1.0 run-matrix and analysis-contract template
+  comparison_and_matching_obligations:
+  - dataset_revision
+  - split_id
+  - subject/session/trial/window
+  - preprocessing_id
+  - model/checkpoint
+  - seed
+  - config_hash
+  - environment_id
+  - policy_mode
+  - stress_profile_id
+  - simulator_task_as_applicable
+  phase0_foundation_state: FOUNDATION_READY
+  unlocked_by_phase0_completion: true
+  unlock_meaning: The schema/config/interface/validator foundation exists; a future
+    phase may become technically executable only after its Protocol annex, inputs,
+    environment, matching, and evidence conditions are frozen and accepted.
+  remaining_activation_conditions:
+  - future phase Protocol lock
+  - upstream source/data/model artifacts
+  - exact environment/resources
+  - matched-comparison and fairness keys
+  - registered analysis contract
+  - evidence gate acceptance
+  activated_in_p00: false
+  executed_in_p00: false
+  nonexecution_reason: P00 is ADMINISTRATIVE_FOUNDATION and has no active empirical
+    ablations.
+  phase_analysis_locations:
+  - Analysis R4 section 32 row A11
+  downstream_handoff: P07;P11
+  limitations:
+  - No empirical result
+  - No effectiveness claim
+  - Mode B engineering evidence only
+  final_status: TECHNICALLY_UNLOCKED_FOR_FUTURE_PROTOCOL
+- ablation_id: A12
+  official_identity: StressForge Stress Tests
+  aliases:
+  - StressForge stress-conditioned evaluation
+  owner_layers:
+  - L7
+  - L8
+  activation_phases:
+  - P08
+  - P09
+  - P10
+  purpose: StressForge Stress Tests
+  implementation_paths:
+  - catalogs/final_ablation_readiness_matrix.yaml
+  - manifests/ablation_readiness.yaml
+  - schemas/
+  - contracts/phases/
+  selectors_and_configs:
+  - configs/project.yaml
+  - future Protocol annex selector required
+  records_and_artifacts:
+  - StressProfileRecord
+  - StressScheduleRecord
+  - StressApplicationRecord
+  - StressedDerivativeRecord
+  - MatchedStressPairRecord
+  validators_and_tests:
+  - scripts/run_phase0_final_implementation_audit.py
+  - tests/test_phase0_ablation_readiness_and_unlocks.py
+  protocol_hooks:
+  - Protocol v1.0 run-matrix and analysis-contract template
+  comparison_and_matching_obligations:
+  - dataset_revision
+  - split_id
+  - subject/session/trial/window
+  - preprocessing_id
+  - model/checkpoint
+  - seed
+  - config_hash
+  - environment_id
+  - policy_mode
+  - stress_profile_id
+  - simulator_task_as_applicable
+  phase0_foundation_state: FOUNDATION_READY
+  unlocked_by_phase0_completion: true
+  unlock_meaning: The schema/config/interface/validator foundation exists; a future
+    phase may become technically executable only after its Protocol annex, inputs,
+    environment, matching, and evidence conditions are frozen and accepted.
+  remaining_activation_conditions:
+  - future phase Protocol lock
+  - upstream source/data/model artifacts
+  - exact environment/resources
+  - matched-comparison and fairness keys
+  - registered analysis contract
+  - evidence gate acceptance
+  activated_in_p00: false
+  executed_in_p00: false
+  nonexecution_reason: P00 is ADMINISTRATIVE_FOUNDATION and has no active empirical
+    ablations.
+  phase_analysis_locations:
+  - Analysis R4 section 32 row A12
+  downstream_handoff: P08;P09;P10
+  limitations:
+  - No empirical result
+  - No effectiveness claim
+  - Mode B engineering evidence only
+  final_status: TECHNICALLY_UNLOCKED_FOR_FUTURE_PROTOCOL
+- ablation_id: A13
+  official_identity: Layer 9 MyoSuite/OpenSim/static-replay Embodiment Demo
+  aliases:
+  - Embodiment proxy evaluation
+  owner_layers:
+  - L7
+  - L8
+  - L9
+  activation_phases:
+  - P12
+  - P13
+  purpose: Layer 9 MyoSuite/OpenSim/static-replay Embodiment Demo
+  implementation_paths:
+  - catalogs/final_ablation_readiness_matrix.yaml
+  - manifests/ablation_readiness.yaml
+  - schemas/
+  - contracts/phases/
+  selectors_and_configs:
+  - configs/project.yaml
+  - future Protocol annex selector required
+  records_and_artifacts:
+  - EmbodimentConfigRecord
+  - CommandMappingRecord
+  - EmbodimentStateRecord
+  - EmbodimentOutcomeRecord
+  - SafetyEventRecord
+  - Layer9RewardTrace
+  - Layer9EmbodimentDemoManifest
+  validators_and_tests:
+  - scripts/run_phase0_final_implementation_audit.py
+  - tests/test_phase0_ablation_readiness_and_unlocks.py
+  protocol_hooks:
+  - Protocol v1.0 run-matrix and analysis-contract template
+  comparison_and_matching_obligations:
+  - dataset_revision
+  - split_id
+  - subject/session/trial/window
+  - preprocessing_id
+  - model/checkpoint
+  - seed
+  - config_hash
+  - environment_id
+  - policy_mode
+  - stress_profile_id
+  - simulator_task_as_applicable
+  phase0_foundation_state: FOUNDATION_READY
+  unlocked_by_phase0_completion: true
+  unlock_meaning: The schema/config/interface/validator foundation exists; a future
+    phase may become technically executable only after its Protocol annex, inputs,
+    environment, matching, and evidence conditions are frozen and accepted.
+  remaining_activation_conditions:
+  - future phase Protocol lock
+  - upstream source/data/model artifacts
+  - exact environment/resources
+  - matched-comparison and fairness keys
+  - registered analysis contract
+  - evidence gate acceptance
+  activated_in_p00: false
+  executed_in_p00: false
+  nonexecution_reason: P00 is ADMINISTRATIVE_FOUNDATION and has no active empirical
+    ablations.
+  phase_analysis_locations:
+  - Analysis R4 section 32 row A13
+  downstream_handoff: P12;P13
+  limitations:
+  - No empirical result
+  - No effectiveness claim
+  - Mode B engineering evidence only
+  final_status: TECHNICALLY_UNLOCKED_FOR_FUTURE_PROTOCOL
+a14_rejection:
+  ablation_id: A14
+  final_status: REJECTED
+  accepted_authority_identity_exists: false
+  selector_config_protocol_execution_finding_evidence_map_layer10_activation: false
+  negative_fixtures:
+  - fixtures/invalid/a14.json
+  - fixtures/invalid/final_closure/12_a14_violation.json
+  reason: Official global namespace is A0-A13 only; A14 must fail closed.

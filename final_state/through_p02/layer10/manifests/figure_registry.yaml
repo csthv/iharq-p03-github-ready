@@ -1,0 +1,267 @@
+figures:
+- figure_id: L10-CUM-FIG-001
+  title: Governed phase progression through P02
+  path: figures/L10-CUM-FIG-001.png
+  source_claim_ids:
+  - CUM-CLM-001/v1
+  - CUM-CLM-002/v1
+  - CUM-CLM-008/v1
+  source_findings:
+  - CF-01
+  - CF-02
+  - CF-12
+  source_data: figure_source_data/CUM_FIG_01_Phase_Dependency_source.csv
+  render_script: scripts/render_layer10.py
+  limitations:
+  - TECHNICAL_TRACEABILITY_NOT_EFFECTIVENESS
+  caption: P00 engineering/foundation contracts enable P01’s frozen EEG substrate, which in turn enables P02 Layer-2 decoder evidence. The chain is a provenance/readiness
+    result, not clinical or deployment validation.
+  output_sha256: 04f9c990d27addba6e894720d74869500facfc1aab1769b151bbf5df317f892e
+  lifecycle: CURRENT
+  manuscript_role: MAIN_OR_SUPPLEMENT_AS_GOVERNED
+  source_data_sha256: 174f521d0952e9858e21213bd21113a4169ab7acdbc38d675364d60eeb13a0b6
+- figure_id: L10-CUM-FIG-002
+  title: Ablation evidence evolution
+  path: figures/L10-CUM-FIG-002.png
+  source_claim_ids:
+  - CUM-CLM-005/v1
+  source_findings:
+  - CF-05
+  - CF-06
+  source_data: figure_source_data/CUM_FIG_02_Ablation_Evolution_source.csv
+  render_script: scripts/render_layer10.py
+  limitations:
+  - SINGLE_REPEAT
+  - DEEP_ANCHOR_BUDGETS
+  - POST_HOC_STAGE18S
+  caption: A4 evolves from P01 matched-substrate feasibility into P02 constrained effectiveness testing; P02 does not establish generic C1-C3 improvement, five-repeat
+    stability, dense-budget characterization or full-grid equivalence.
+  output_sha256: ad0a154d70d8c052dc71a9e678d41cd65a7a3b021a0a6a446c50d1e4c195a496
+  lifecycle: CURRENT
+  manuscript_role: MAIN_OR_SUPPLEMENT_AS_GOVERNED
+  source_data_sha256: ab5d0119342307d5dbe26a2e4d088cd0380345571969f4156aba5df119d807c6
+- figure_id: L10-CUM-FIG-003
+  title: Evidence role evolution
+  path: figures/L10-CUM-FIG-003.png
+  source_claim_ids:
+  - CUM-CLM-001/v1
+  - CUM-CLM-007/v1
+  source_findings:
+  - CF-01
+  - CF-08
+  - CF-09
+  source_data: figure_source_data/CUM_FIG_03_Evidence_Role_Evolution_source.csv
+  render_script: scripts/render_layer10.py
+  limitations:
+  - EVIDENCE_CLASS_NOT_INTERCHANGEABLE
+  caption: Evidence responsibilities progress from foundation validation to data-contract evidence to empirical decoder and negative-result evidence, while phase
+    provenance remains explicit.
+  output_sha256: 793ca1fa06db1476b79d1315ccfad9df804ef3bdb4da0d0aca6d395d465e9e0c
+  lifecycle: CURRENT
+  manuscript_role: MAIN_OR_SUPPLEMENT_AS_GOVERNED
+  source_data_sha256: 1fdb88f3d4851d596843749e3eed54fe63621a26c878d5b2f5efeefa1fb8bba6
+- figure_id: L10-CUM-FIG-004
+  title: Layer 0 disposition summary
+  path: figures/L10-CUM-FIG-004.png
+  source_claim_ids: []
+  source_findings: []
+  source_data: figure_source_data/Claim_Disposition_Counts.csv
+  render_script: scripts/render_layer10.py
+  limitations:
+  - COUNT_SUMMARY_ONLY
+  caption: Counts of current reviewed claim dispositions. Historical P00/P01 decisions are preserved; P02/cumulative claims are added under the same taxonomy.
+  output_sha256: df36785e794f381f157f247712b3b649eaf437f1f483279a7bc77086079ec5a7
+  lifecycle: CURRENT
+  manuscript_role: MAIN_OR_SUPPLEMENT_AS_GOVERNED
+  source_data_sha256: 24c7c6a71e9f0a47ea3b59bfe37d50737d69831733bf6cc06862d13838abc450
+- figure_id: L10-P02-FIG-001
+  title: P02 A0 full-training performance by dataset
+  path: figures/L10-P02-FIG-001.png
+  source_claim_ids:
+  - P02-CLM-002/v1
+  - P02-CLM-003/v1
+  - CUM-CLM-003/v1
+  source_findings:
+  - P02-FIND-002
+  - P02-FIND-003
+  - CF-03
+  source_data: figure_source_data/P02_Table_A0_fulltrain_branch_summary.csv
+  render_script: scripts/render_layer10.py
+  limitations:
+  - BNCI_TEST_PARTICIPANTS_1
+  - DATASET_HETEROGENEITY
+  caption: Full-training descriptive ordering differs by dataset. BNCI2014_001 has one held-out test participant; no universal decoder winner is authorized.
+  output_sha256: ed7d0cc5ac13423ed793b1e82d185cdc2210fb69d87734110d232d10a48d05d9
+  lifecycle: CURRENT
+  manuscript_role: MAIN_OR_SUPPLEMENT_AS_GOVERNED
+  source_data_sha256: 2f62ab327d951c7eebe2a57c7f59e448aea9080877299df94afbc10f41c043f7
+- figure_id: L10-P02-FIG-002
+  title: Low-label BACC - BNCI2014_001
+  path: figures/L10-P02-FIG-002.png
+  source_claim_ids:
+  - P02-CLM-004/v1
+  - CUM-CLM-004/v1
+  source_findings:
+  - P02-FIND-005
+  - CF-04
+  source_data: figure_source_data/P02_Table_low_label_BACC.csv
+  render_script: scripts/render_layer10.py
+  limitations:
+  - SINGLE_FROZEN_SUBSET
+  caption: Descriptive low-label BACC under one frozen subset per budget. Rank changes do not establish repeated-subset sample-efficiency stability.
+  output_sha256: 1f3de10676a3cbacfbfb5f2c90b4b344903e2ff425c49292ec21f0de51725392
+  lifecycle: CURRENT
+  manuscript_role: MAIN_OR_SUPPLEMENT_AS_GOVERNED
+  source_data_sha256: 2c3d377c97853deb9c0c489e3b551e11d5fae540c89029ea489510de11e77de1
+- figure_id: L10-P02-FIG-003
+  title: Low-label BACC - Lee2019_MI
+  path: figures/L10-P02-FIG-003.png
+  source_claim_ids:
+  - P02-CLM-004/v1
+  - CUM-CLM-004/v1
+  source_findings:
+  - P02-FIND-005
+  - CF-04
+  source_data: figure_source_data/P02_Table_low_label_BACC.csv
+  render_script: scripts/render_layer10.py
+  limitations:
+  - SINGLE_FROZEN_SUBSET
+  caption: Descriptive low-label BACC under one frozen subset per budget. Rank changes do not establish repeated-subset sample-efficiency stability.
+  output_sha256: 10d8d20fa601d774e3ab46c817ecf63f6243eb7db657d9f187e746fb97cf1d9e
+  lifecycle: CURRENT
+  manuscript_role: MAIN_OR_SUPPLEMENT_AS_GOVERNED
+  source_data_sha256: 2c3d377c97853deb9c0c489e3b551e11d5fae540c89029ea489510de11e77de1
+- figure_id: L10-P02-FIG-004
+  title: Low-label BACC - PhysioNetMI
+  path: figures/L10-P02-FIG-004.png
+  source_claim_ids:
+  - P02-CLM-004/v1
+  - CUM-CLM-004/v1
+  source_findings:
+  - P02-FIND-005
+  - CF-04
+  source_data: figure_source_data/P02_Table_low_label_BACC.csv
+  render_script: scripts/render_layer10.py
+  limitations:
+  - SINGLE_FROZEN_SUBSET
+  caption: Descriptive low-label BACC under one frozen subset per budget. Rank changes do not establish repeated-subset sample-efficiency stability.
+  output_sha256: 4882e5977574c1564a77ec27c5b0bcf3d02a4ff6075fcf1b33528417591bc3d8
+  lifecycle: CURRENT
+  manuscript_role: MAIN_OR_SUPPLEMENT_AS_GOVERNED
+  source_data_sha256: 2c3d377c97853deb9c0c489e3b551e11d5fae540c89029ea489510de11e77de1
+- figure_id: L10-P02-FIG-005
+  title: Stage 11 diagnostic challenger effect
+  path: figures/L10-P02-FIG-005.png
+  source_claim_ids:
+  - P02-CLM-005/v1
+  - P02-CLM-006/v1
+  - CUM-CLM-006/v1
+  source_findings:
+  - P02-FIND-006
+  - P02-FIND-007
+  - CF-07
+  source_data: figure_source_data/P02_Table_training_policy_challenger_statistics.csv
+  render_script: scripts/render_layer10.py
+  limitations:
+  - DIAGNOSTIC_ONLY
+  caption: Diagnostic-only paired delta BACC for the Stage-11 challenger versus canonical primary EEGNet. The challenger is not primary A0 and does not show a consistent
+    cross-dataset improvement.
+  output_sha256: e332e53db035df6d82f6be592972260fc96720813e1614bdd15126959cb520c9
+  lifecycle: CURRENT
+  manuscript_role: MAIN_OR_SUPPLEMENT_AS_GOVERNED
+  source_data_sha256: 0b2c9b948726d8691f38edb6e5bf049e2e6b5d38e84da0e88e1ac4f1527ed1d8
+- figure_id: L10-P02-FIG-006
+  title: A4 C1-C3 role-control effect directions
+  path: figures/L10-P02-FIG-006.png
+  source_claim_ids:
+  - P02-CLM-007/v1
+  - CUM-CLM-005/v1
+  source_findings:
+  - P02-FIND-009
+  - P02-FIND-010
+  - CF-05
+  source_data: figure_source_data/P02_Table_A4_role_condition_summary.csv
+  render_script: scripts/render_layer10.py
+  limitations:
+  - SINGLE_REPEAT
+  - DEEP_ANCHOR_BUDGETS
+  caption: Governed C1-C3 role-control effects under the accepted constrained A4 scope. Across 756 statistical rows, zero reached raw p<=0.05; absence of detection
+    is not proof of zero effect.
+  output_sha256: 60ebe794cb3629f23cbe790984506bb259d1e9525687bc20496fd75ec18e8d3a
+  lifecycle: CURRENT
+  manuscript_role: MAIN_OR_SUPPLEMENT_AS_GOVERNED
+  source_data_sha256: c8a4958910d7db18fa1d0156f9c1883f124601927151f641a4bbbfe0439f2e9b
+- figure_id: L10-P02-FIG-007
+  title: Stage18S sign consistency
+  path: figures/L10-P02-FIG-007.png
+  source_claim_ids:
+  - P02-CLM-009/v1
+  - CUM-CLM-005/v1
+  source_findings:
+  - P02-FIND-012
+  - CF-06
+  source_data: figure_source_data/P02_Table_Stage18S_three_repeat_anchor_stability.csv
+  render_script: scripts/render_layer10.py
+  limitations:
+  - POST_HOC_ONLY
+  - THREE_REPEAT_NOT_FIVE_REPEAT
+  caption: POST-HOC/DESCRIPTIVE/SENSITIVITY evidence only. Mixed signs reinforce the existing claim ceiling and do not modify canonical Stage18/G18.
+  output_sha256: 02b2d838461643f93c7eb540edf6b82da035dd6addaa0d6a5dfd1352e71746cb
+  lifecycle: CURRENT
+  manuscript_role: MAIN_OR_SUPPLEMENT_AS_GOVERNED
+  source_data_sha256: 9f234c9721066123a98380893e917dd32ae9656ee7aa5b850237e8e9b396564f
+- figure_id: L10-P02-FIG-008
+  title: P02 governed non-success categories
+  path: figures/L10-P02-FIG-008.png
+  source_claim_ids:
+  - P02-CLM-010/v1
+  - CUM-CLM-007/v1
+  source_findings:
+  - P02-FIND-013
+  - CF-08
+  source_data: figure_source_data/P02_Table_failure_category_breakdown.csv
+  render_script: scripts/render_layer10.py
+  limitations:
+  - FAILURE_CLASSES_NOT_INTERCHANGEABLE
+  caption: FailureCaseIndex categories are governed non-success states and are not interchangeable with unexpected runtime crashes; NegativeResultNotes and DiagnosticOnlyFlags
+    are tracked separately.
+  output_sha256: 5a7822a4b545cdff3a92f55dad5ac691ea45ce23cf463f05e2108680a5647941
+  lifecycle: CURRENT
+  manuscript_role: MAIN_OR_SUPPLEMENT_AS_GOVERNED
+  source_data_sha256: 4f97a4abe453faf85d02b320d99ed52a152247bc7d25d12c49d6dbe16820ae8e
+- figure_id: L10-P02-FIG-009
+  title: Lee2019_MI participant heterogeneity
+  path: figures/L10-P02-FIG-009.png
+  source_claim_ids:
+  - P02-CLM-002/v1
+  - CUM-CLM-003/v1
+  source_findings:
+  - P02-FIND-004
+  - CF-11
+  source_data: figure_source_data/P02_Table_A0_participant_first_fulltrain_source.csv
+  render_script: scripts/render_layer10.py
+  limitations:
+  - PARTICIPANT_HETEROGENEITY
+  caption: Participant-first BACC distributions show substantial heterogeneity; descriptive means do not imply uniform participant benefit.
+  output_sha256: 444aa170a66376e8021db91c934730601679466a04ddca9a2c9f66fc908aacd5
+  lifecycle: CURRENT
+  manuscript_role: MAIN_OR_SUPPLEMENT_AS_GOVERNED
+  source_data_sha256: 742e4362eebbd8c9e5ed2d59c0018805fe66a491737fde3b7cf1b144cd04743c
+- figure_id: L10-P02-FIG-010
+  title: PhysioNetMI participant heterogeneity
+  path: figures/L10-P02-FIG-010.png
+  source_claim_ids:
+  - P02-CLM-002/v1
+  - CUM-CLM-003/v1
+  source_findings:
+  - P02-FIND-004
+  - CF-11
+  source_data: figure_source_data/P02_Table_A0_participant_first_fulltrain_source.csv
+  render_script: scripts/render_layer10.py
+  limitations:
+  - PARTICIPANT_HETEROGENEITY
+  caption: Participant-first BACC distributions show substantial heterogeneity; descriptive means do not imply uniform participant benefit.
+  output_sha256: 0ab257f8e5c7db8d8be0dd27935560613981eece7449b3b85cbb0e291614ebc9
+  lifecycle: CURRENT
+  manuscript_role: MAIN_OR_SUPPLEMENT_AS_GOVERNED
+  source_data_sha256: 742e4362eebbd8c9e5ed2d59c0018805fe66a491737fde3b7cf1b144cd04743c

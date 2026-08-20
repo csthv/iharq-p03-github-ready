@@ -1,0 +1,192 @@
+schema_id: LimitationRegister.v1
+schema_version: 1.0.0
+register_id: P03-LIMITATION-REGISTER-00e13283ac92f2af2f4d
+run_id: P03-L3-POSTEXT-64-128-256-R1-1833e865bcb88ff8
+config_sha256: 2e5ebd6fc62f4c9ca3ed0102914f64142de9e1206be0b6e6b3e32cad90f1d742
+protocol_snapshot_id: IHARQ-P03-L3-OFFICIAL-STRETCH-C-EXECUTION-FREEZE-R1
+created_at_utc: '2026-08-17T23:03:30.933074+00:00'
+producer_module: L3-M08
+failure_taxonomy_id: IHARQ-P03-FAILURE-TAXONOMY-R1
+negative_contract_id: IHARQ-P03-NEGATIVE-EVIDENCE-R1
+source_sha256s:
+- 3ba261de6a7fdf613f35041a41e3b73e2f55317f7ca50d24027e0e97454bf10f
+- 273ea0a56f08bc9d54b39f7876e0756c78b642a7216346f43b7ad68ce922b2e9
+- 8ca6cd4cc2b3d6b0a62a101e446076a236753211e3e441fbdc860b6e7fb22c9f
+- 51003ffef44161545d1d15e3dce2374359224158c9525ac8fc1bbb664bb21229
+- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+- fe42c59b6cdae4e1ef5ccce298e3de08bbdd8177baa1a14026a49e1d493d941d
+- d70f06423dcb1b74be77ce259670631b59ec3e1966ecc02cc35d7ac3ddf22a5a
+- 0e4d987bf078bb7a4753e2defe5c2acc94a6f96a69daaa845b7df80f0eb30aa2
+- 566efa3ebb3ab8186bd2d410480e63832ed02ff7f9d86249778c06387e9ab89f
+- f4fcfebe41b930907497dd860c2f962f60cb896ad9ad063d05811d2e6f5810f2
+- 2f35e17af762628d151fd75a0b4b6846da3b8816a2d180eb3b267a0751f508b1
+limitations:
+- limitation_id: P03-LIM-SELECTIVE-NO-LEGAL-RULE-R1
+  source_phase: P03
+  source: Stages14–18 selective prediction evidence
+  scope: A2_A3_SELECTIVE_GENERALIZATION
+  lifecycle: ACTIVE
+  status: NONBLOCKING_NEGATIVE_RESULT
+  description: A2 has 37 supplement groups with no legal non-empty threshold under
+    the frozen maximum-risk target; A3 preserves 111 corresponding feature-level NO_LEGAL_THRESHOLD
+    terminals. TEST retuning is prohibited.
+  evidence_consequence: No-rule groups remain explicit ineligible evidence and cannot
+    be silently converted to all-reject or TEST-tuned thresholds.
+  affected_artifacts:
+  - P03-PROD-026
+  - P03-PROD-027
+  - P03-PROD-028
+  - P03-PROD-029
+  - P03-PROD-030
+  - P03-PROD-032
+  - P03-PROD-035
+  - P03-PROD-036
+  - P03-PROD-037
+  source_ids:
+  - Stage14
+  - Stage16
+  - Stage18
+  source_sha256s:
+  - 8ca6cd4cc2b3d6b0a62a101e446076a236753211e3e441fbdc860b6e7fb22c9f
+  - 51003ffef44161545d1d15e3dce2374359224158c9525ac8fc1bbb664bb21229
+  - fe42c59b6cdae4e1ef5ccce298e3de08bbdd8177baa1a14026a49e1d493d941d
+  inherited: false
+- limitation_id: P03-LIM-MEMBER-DISAGREEMENT-UNAVAILABLE-R1
+  source_phase: P03
+  source: Stage13 conditional uncertainty evidence
+  scope: A3_CONDITIONAL_MEMBER_DISAGREEMENT
+  lifecycle: ACTIVE
+  status: CONDITIONAL_INELIGIBILITY
+  description: member_disagreement is unavailable when the exact A4 control is not
+    bound to the source; A4_CONTROL_NOT_BOUND_TO_SOURCE remains explicit.
+  evidence_consequence: No ensemble/member-disagreement estimate may be fabricated
+    from unrelated checkpoints or substituted controls.
+  affected_artifacts:
+  - P03-PROD-025
+  - P03-PROD-035
+  - P03-PROD-036
+  - P03-PROD-037
+  source_ids:
+  - Stage13:member_disagreement
+  source_sha256s:
+  - 273ea0a56f08bc9d54b39f7876e0756c78b642a7216346f43b7ad68ce922b2e9
+  inherited: false
+- limitation_id: P03-LIM-GENUINE-LOGITS-R1
+  source_phase: P03
+  source: Stage11 calibration attempt ledger / score-semantics contract
+  scope: CALIBRATOR_ELIGIBILITY
+  lifecycle: ACTIVE
+  status: CONDITIONAL_INELIGIBILITY
+  description: genuine_logits are required for logits-dependent methods such as temperature
+    and vector_scaling; hard labels or incompatible score semantics are never promoted
+    to fabricated logits.
+  evidence_consequence: Logits-dependent calibrators remain unavailable where genuine
+    compatible logits and class order are not established.
+  affected_artifacts:
+  - P03-PROD-019
+  - P03-PROD-035
+  - P03-PROD-036
+  - P03-PROD-037
+  source_ids:
+  - Stage11:calibration_attempt_ledger
+  source_sha256s:
+  - 3ba261de6a7fdf613f35041a41e3b73e2f55317f7ca50d24027e0e97454bf10f
+  inherited: false
+- limitation_id: P03-LIM-BINARY-UNCERTAINTY-ALIAS-R1
+  source_phase: P03
+  source: Stages13/16 binary uncertainty and selective evidence
+  scope: A3_FEATURE_INTERPRETATION
+  lifecycle: ACTIVE
+  status: NONBLOCKING_INTERPRETATION_LIMIT
+  description: In the binary experiment, confidence, top1_top2_margin and normalized
+    entropy are deterministic monotone/rank-equivalent alias views of the same probability
+    ordering; they do not provide independent selective policy evidence.
+  evidence_consequence: A3 feature multiplicity must not be interpreted as three independent
+    uncertainty mechanisms or as evidence of replicated policy improvement.
+  affected_artifacts:
+  - P03-PROD-024
+  - P03-PROD-028
+  - P03-PROD-029
+  - P03-PROD-032
+  - P03-PROD-037
+  source_ids:
+  - Stage13
+  - Stage16
+  source_sha256s:
+  - 273ea0a56f08bc9d54b39f7876e0756c78b642a7216346f43b7ad68ce922b2e9
+  - 51003ffef44161545d1d15e3dce2374359224158c9525ac8fc1bbb664bb21229
+  inherited: false
+- limitation_id: P03-LIM-CONFORMAL-PROXY-R1
+  source_phase: P03
+  source: Stage13 conformal proxy evidence / frozen conditional design
+  scope: CONFORMAL_CLAIM_CEILING
+  lifecycle: ACTIVE
+  status: NONBLOCKING_CLAIM_LIMIT
+  description: The conformal path is a conditional conformal proxy/diagnostic. Exchangeability
+    under clustered subject/session EEG and downstream selection is not established
+    as a universal formal-coverage guarantee.
+  evidence_consequence: Do not claim universal formal 90% IHARQ TEST coverage from
+    the Stage13 proxy calculations; report empirical/diagnostic behavior only.
+  affected_artifacts:
+  - P03-PROD-025
+  - P03-PROD-037
+  - P03-PROD-046
+  - P03-PROD-063
+  source_ids:
+  - Stage13:conformal_set_size
+  source_sha256s:
+  - 273ea0a56f08bc9d54b39f7876e0756c78b642a7216346f43b7ad68ce922b2e9
+  inherited: false
+- limitation_id: P03-LIM-SPARSE-SUPPORT-POLICY-R1
+  source_phase: P03
+  source: Stage19 group/budget audit
+  scope: GROUP_AUDIT_SUPPORT
+  lifecycle: ACTIVE
+  status: NOT_TRIGGERED_IN_ACCEPTED_RUN
+  description: Sparse support is governed by the frozen minimum-support policy. The
+    accepted supplement Stage19 run observed zero sparse_support warnings; minimum
+    realized subgroup support was above the policy threshold.
+  evidence_consequence: Absence of sparse warnings is a zero-event result, not permission
+    for post-hoc subgroup creation or unsupported sparse-cell inference.
+  affected_artifacts:
+  - P03-PROD-033
+  - P03-PROD-034
+  - P03-PROD-037
+  source_ids:
+  - Stage19
+  source_sha256s:
+  - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  - fe42c59b6cdae4e1ef5ccce298e3de08bbdd8177baa1a14026a49e1d493d941d
+  inherited: false
+- limitation_id: P03-LIM-FAILED-ATTEMPT-PRESERVATION-R1
+  source_phase: P03
+  source: Preserved stage failure receipts
+  scope: EXECUTION_HISTORY
+  lifecycle: ACTIVE
+  status: NONBLOCKING_AFTER_SUCCESSOR_CORRECTION
+  description: Actual failed stage attempts remain immutable evidence and are not
+    deleted after successful successor correction.
+  evidence_consequence: Execution history must distinguish failed attempts from accepted
+    successor stages; documentary summaries cannot rewrite the run as failure-free.
+  affected_artifacts:
+  - P03-PROD-035
+  - P03-PROD-037
+  - P03-PROD-051
+  - P03-PROD-053
+  - P03-PROD-054
+  source_ids:
+  - checkpoints/stage_07/failed_20260817T230545Z.json
+  - checkpoints/stage_20/failed_20260818T151823Z.json
+  - checkpoints/stage_20/failed_20260818T152214Z.json
+  - checkpoints/stage_20/failed_20260818T152636Z.json
+  source_sha256s:
+  - 67b8ff6ce6190a670619a103521db2173fe7735e3770cf64aa7e29e78c779777
+  - 65ad2f9f8289e3724fedb506eb502358f0fb89223f56bf2d17b590522bce9f35
+  - 87e43c5f11489b9cda7a721f45468d762bff3e19a32265f999f250150c662ab6
+  - e4f631d46ab094a9dfbf7b6928b446c3dc4a1b85e5110954cdec364cadbf06ef
+  - fe42c59b6cdae4e1ef5ccce298e3de08bbdd8177baa1a14026a49e1d493d941d
+  inherited: false
+limitation_count: 7
+scientific_outcomes_changed: false
+failed_attempts_deleted: 0
+register_sha256: 634852f23963a163818f1b7317ec02272a0909668b57263781bd00ea420e5f66

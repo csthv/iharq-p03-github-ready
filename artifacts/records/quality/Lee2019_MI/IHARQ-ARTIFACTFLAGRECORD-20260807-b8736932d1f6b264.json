@@ -1,0 +1,36 @@
+{
+  "record_id": "IHARQ-ARTIFACTFLAGRECORD-20260807-b8736932d1f6b264",
+  "record_type": "ArtifactFlagRecord",
+  "schema_version": "1.0-p01",
+  "authority_status": "REGISTRY_REFERENCED",
+  "owner_layer": "L1",
+  "phase_id": "P01",
+  "config_id": "d03f0a7c869dd95a2a67e5a32edc501d52bfc3851d8e761ef56595d8bd1ff52f",
+  "source_ids": [
+    "IHARQ-DATASETRECORD-20260806-adb91f25a65e588e"
+  ],
+  "evidence_mode": "IMPLEMENTATION",
+  "limitation_tags": [
+    "NON_CLINICAL",
+    "NO_DEPLOYMENT_CLAIM",
+    "PUBLIC_EEG_ONLY"
+  ],
+  "lifecycle_status": "VALIDATED",
+  "fixture": false,
+  "fixture_tags": [],
+  "evidence_role": "DERIVED",
+  "payload": {
+    "artifact_flag_id": "Lee2019_MI:1train:Fz:AMPLITUDE_EXCEEDS_SOFT_THRESHOLD",
+    "dataset_id": "Lee2019_MI",
+    "target_id": "Lee2019_MI:5:1:1train",
+    "flag_code": "AMPLITUDE_EXCEEDS_SOFT_THRESHOLD",
+    "channel_name": "Fz",
+    "severity": "WARNING",
+    "source_supported": false,
+    "action": "ANNOTATE_ONLY",
+    "units": "VOLTS",
+    "threshold_profile_id": "P01-L1-QUALITY-OFFICIAL-R2"
+  },
+  "ablation_id": null,
+  "semantic_hash": "b8736932d1f6b26493898c2366375d5040ba0bdb69b63edc2ef4c820a967d4a2"
+}

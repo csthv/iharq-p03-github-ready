@@ -1,0 +1,395 @@
+{
+  "protocol_id": "IHARQ-PROTOCOL-V1-CUMULATIVE-THROUGH-P02-R1",
+  "checks": [
+    {
+      "check": "P00 phase projection exact",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P01 phase projection exact",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 phase projection byte exact",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "master repository copy exact",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P00 phase heading preservation",
+      "status": "PASS",
+      "detail": "missing=[] total=0"
+    },
+    {
+      "check": "P01 phase heading preservation",
+      "status": "PASS",
+      "detail": "missing=[] total=0"
+    },
+    {
+      "check": "P02 heading 7.1 preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 heading 7.2 preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 heading 7.3 preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 heading 7.4 preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 heading 7.5 preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 heading 7.6 preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 heading 7.7 preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 heading 7.8 preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 heading 7.9 preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 heading 7.10 preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 heading 7.11 preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 heading 7.12 preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 heading 7.13 preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 heading 7.14 preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 heading 7.15 preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 heading 7.16 preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 heading 7.17 preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 heading 7.18 preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 heading 7.19 preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 heading 7.20 preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 heading 7.21 preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 heading 7.22 preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 heading 7.23 preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 heading 7.24 preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 heading 7.25 preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 heading 7.26 preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 heading 7.27 preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 heading 7.28 preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 integrated phase-local subsection 7.29",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 integrated phase-local subsection 7.30",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 integrated phase-local subsection 7.31",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "current protocol id front",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "coverage P00-P02",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "final merge status",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 run id present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Stage11 history present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Stage12 revalidation semantics",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "A4 restriction preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Stage18S posthoc preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "A14 prohibited",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "current A13 exact identity",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "A2 exact identity",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "YAML parse external_artifact_access_contract.yaml",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "YAML parse analysis_contract.yaml",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "YAML parse ablation_register.yaml",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "YAML parse run_matrix.yaml",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "YAML parse limitation_register.yaml",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "YAML parse amendment_rerun_register.yaml",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "run matrix P00 exact",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "run matrix P01 exact",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "run matrix P02 exact",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "analysis P00 exact",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "analysis P01 exact",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "analysis P02 exact",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "external P01 exact",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "external P02 preferred exact",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "external P02 archival exact",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "dual credential names",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "analysis input count 38",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 stages count 26",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "P02 gates count 26",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "A0 terminal 678",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "A4 no full grid",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "A14 MR prohibited",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "A13 MR exact",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "no unresolved template braces",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "no merge conflict markers",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "secret scan zero literal patterns",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "merge artifact exists merge/Content_Mapping_Matrix.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "merge artifact exists merge/Harmonization_Decisions.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "merge artifact exists merge/Merge_Notes.md",
+      "status": "PASS",
+      "detail": ""
+    }
+  ],
+  "pass_count": 77,
+  "fail_count": 0,
+  "status": "PASS",
+  "master_sha256": "d993b3b4bf9dc1afc0cbb2eb3c5b173e6ec90957b039d6c6151471962876664b",
+  "secret_hits": []
+}

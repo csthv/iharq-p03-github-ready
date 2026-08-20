@@ -1,0 +1,399 @@
+{
+  "P01_mutated": false,
+  "R6_adapter_module": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_author_centered_R6/python/iharq_stage12_r6_author_adapters.py",
+  "R6_adapter_sha256": "97116769101c042f5f63ef0be11b90b51a4dcb0d9bb23801e1987147a817fb6a",
+  "artifact_id": "P02-STAGE12-R6-REAL-P01-PRE-REENTRY-SMOKE-R1",
+  "created_utc": "2026-08-10T17:40:20.695578+00:00",
+  "parent_adapter_sha256": "add69c0a0f8843366d6d9ed1fb16746f61d43a6d588b04f07193484e0555386a",
+  "results": [
+    {
+      "branch": "DNN-FBCNET",
+      "checkpoint_payload_bytes": 65417,
+      "checkpoint_payload_sha256": "7eb93fb99cdaee60a9230d9fb29f398a9d9c409355c35060e7bf98e48057799e",
+      "dataset": "PhysioNetMI",
+      "elapsed_seconds": 0.5806564579979749,
+      "max_gpu_allocated_gib": 0.11536073684692383,
+      "prepared_probe_shape": [
+        2,
+        1,
+        64,
+        480,
+        6
+      ],
+      "raw_train_shape": [
+        32,
+        64,
+        480
+      ],
+      "raw_validation_shape": [
+        16,
+        64,
+        480
+      ],
+      "recipe": {
+        "batch_size": 16,
+        "grad_clip": null,
+        "input_scale": 1.0,
+        "label_smoothing": 0.0,
+        "lr": 0.001,
+        "optimizer": "Adam",
+        "recipe_id": "R6-FBCNET-ORIGINAL-AUTHOR-P01-COMPAT",
+        "scheduler": "constant",
+        "use_data_parallel": false,
+        "weight_decay": 0.0
+      },
+      "roundtrip_cpu_max_abs_diff": 0.0,
+      "scientific_metric_emitted": false,
+      "seed": 758574837,
+      "status": "PASS",
+      "test_signal_loaded": false
+    },
+    {
+      "branch": "DNN-FBCNET",
+      "checkpoint_payload_bytes": 33161,
+      "checkpoint_payload_sha256": "99954b75d9af15c1fd844f88e318df556df2619e045e19009e6aabf24b3b6ab4",
+      "dataset": "BNCI2014_001",
+      "elapsed_seconds": 0.4171693759999471,
+      "max_gpu_allocated_gib": 0.10732841491699219,
+      "prepared_probe_shape": [
+        2,
+        1,
+        22,
+        480,
+        6
+      ],
+      "raw_train_shape": [
+        32,
+        22,
+        480
+      ],
+      "raw_validation_shape": [
+        16,
+        22,
+        480
+      ],
+      "recipe": {
+        "batch_size": 16,
+        "grad_clip": null,
+        "input_scale": 1.0,
+        "label_smoothing": 0.0,
+        "lr": 0.001,
+        "optimizer": "Adam",
+        "recipe_id": "R6-FBCNET-ORIGINAL-AUTHOR-P01-COMPAT",
+        "scheduler": "constant",
+        "use_data_parallel": false,
+        "weight_decay": 0.0
+      },
+      "roundtrip_cpu_max_abs_diff": 0.0,
+      "scientific_metric_emitted": false,
+      "seed": 843793861,
+      "status": "PASS",
+      "test_signal_loaded": false
+    },
+    {
+      "branch": "DNN-FBCNET",
+      "checkpoint_payload_bytes": 63881,
+      "checkpoint_payload_sha256": "571acd8ba55a085b3225ce0b3e53fdf87bf6d45e2224520d003d6440c572c1c4",
+      "dataset": "Lee2019_MI",
+      "elapsed_seconds": 0.55528373800189,
+      "max_gpu_allocated_gib": 0.11428070068359375,
+      "prepared_probe_shape": [
+        2,
+        1,
+        62,
+        480,
+        6
+      ],
+      "raw_train_shape": [
+        32,
+        62,
+        480
+      ],
+      "raw_validation_shape": [
+        16,
+        62,
+        480
+      ],
+      "recipe": {
+        "batch_size": 16,
+        "grad_clip": null,
+        "input_scale": 1.0,
+        "label_smoothing": 0.0,
+        "lr": 0.001,
+        "optimizer": "Adam",
+        "recipe_id": "R6-FBCNET-ORIGINAL-AUTHOR-P01-COMPAT",
+        "scheduler": "constant",
+        "use_data_parallel": false,
+        "weight_decay": 0.0
+      },
+      "roundtrip_cpu_max_abs_diff": 0.0,
+      "scientific_metric_emitted": false,
+      "seed": 830511967,
+      "status": "PASS",
+      "test_signal_loaded": false
+    },
+    {
+      "branch": "DNN-SEQ",
+      "checkpoint_payload_bytes": 418575,
+      "checkpoint_payload_sha256": "8bdcc390148958f42689a08636c97a60354f93ecf78afb3742b288ba32fe638b",
+      "dataset": "PhysioNetMI",
+      "elapsed_seconds": 0.4260280779999448,
+      "max_gpu_allocated_gib": 0.1377549171447754,
+      "prepared_probe_shape": [
+        2,
+        1,
+        64,
+        480
+      ],
+      "raw_train_shape": [
+        32,
+        64,
+        480
+      ],
+      "raw_validation_shape": [
+        16,
+        64,
+        480
+      ],
+      "recipe": {
+        "batch_size": 32,
+        "grad_clip": null,
+        "input_scale": 1.0,
+        "label_smoothing": 0.0,
+        "lr": 0.001,
+        "optimizer": "Adam",
+        "recipe_id": "R6-DBCONFORMER-ORIGINAL-AUTHOR-P01-COMPAT",
+        "scheduler": "constant",
+        "use_data_parallel": false,
+        "weight_decay": 0.0
+      },
+      "roundtrip_cpu_max_abs_diff": 0.0,
+      "scientific_metric_emitted": false,
+      "seed": 881493230,
+      "status": "PASS",
+      "test_signal_loaded": false
+    },
+    {
+      "branch": "DNN-SEQ",
+      "checkpoint_payload_bytes": 405135,
+      "checkpoint_payload_sha256": "658014779b775c64aeff1515fe09798dbd3be2477831315b2d1c17b009f72462",
+      "dataset": "BNCI2014_001",
+      "elapsed_seconds": 0.4122191809947253,
+      "max_gpu_allocated_gib": 0.09593677520751953,
+      "prepared_probe_shape": [
+        2,
+        1,
+        22,
+        480
+      ],
+      "raw_train_shape": [
+        32,
+        22,
+        480
+      ],
+      "raw_validation_shape": [
+        16,
+        22,
+        480
+      ],
+      "recipe": {
+        "batch_size": 32,
+        "grad_clip": null,
+        "input_scale": 1.0,
+        "label_smoothing": 0.0,
+        "lr": 0.001,
+        "optimizer": "Adam",
+        "recipe_id": "R6-DBCONFORMER-ORIGINAL-AUTHOR-P01-COMPAT",
+        "scheduler": "constant",
+        "use_data_parallel": false,
+        "weight_decay": 0.0
+      },
+      "roundtrip_cpu_max_abs_diff": 0.0,
+      "scientific_metric_emitted": false,
+      "seed": 1529732860,
+      "status": "PASS",
+      "test_signal_loaded": false
+    },
+    {
+      "branch": "DNN-SEQ",
+      "checkpoint_payload_bytes": 417935,
+      "checkpoint_payload_sha256": "74633d57e30170b0bfc7798f151c4479e740bfd2bb7360e82a9098aec1a90137",
+      "dataset": "Lee2019_MI",
+      "elapsed_seconds": 0.43221947999700205,
+      "max_gpu_allocated_gib": 0.1341543197631836,
+      "prepared_probe_shape": [
+        2,
+        1,
+        62,
+        480
+      ],
+      "raw_train_shape": [
+        32,
+        62,
+        480
+      ],
+      "raw_validation_shape": [
+        16,
+        62,
+        480
+      ],
+      "recipe": {
+        "batch_size": 32,
+        "grad_clip": null,
+        "input_scale": 1.0,
+        "label_smoothing": 0.0,
+        "lr": 0.001,
+        "optimizer": "Adam",
+        "recipe_id": "R6-DBCONFORMER-ORIGINAL-AUTHOR-P01-COMPAT",
+        "scheduler": "constant",
+        "use_data_parallel": false,
+        "weight_decay": 0.0
+      },
+      "roundtrip_cpu_max_abs_diff": 0.0,
+      "scientific_metric_emitted": false,
+      "seed": 1276818886,
+      "status": "PASS",
+      "test_signal_loaded": false
+    },
+    {
+      "branch": "SSL-CBRAMOD",
+      "checkpoint_payload_bytes": 20068373,
+      "checkpoint_payload_sha256": "802749012873add5e0912b55d814be7228f6b7f7067bc11ee01642d6e6cb19e1",
+      "dataset": "PhysioNetMI",
+      "elapsed_seconds": 1.7334995869969134,
+      "max_gpu_allocated_gib": 2.4507322311401367,
+      "prepared_probe_shape": [
+        2,
+        64,
+        600
+      ],
+      "raw_train_shape": [
+        64,
+        64,
+        480
+      ],
+      "raw_validation_shape": [
+        16,
+        64,
+        480
+      ],
+      "recipe": {
+        "batch_size": 64,
+        "body_lr": 0.0001,
+        "data_parallel_max_gpus": 2,
+        "data_parallel_min_samples": 256,
+        "eta_min": 1e-06,
+        "grad_clip": 1.0,
+        "head_lr": 0.0005,
+        "input_scale": 10000.0,
+        "label_smoothing": 0.1,
+        "lr": 0.0001,
+        "optimizer": "AdamW",
+        "recipe_id": "R6-CBRAMOD-SOURCE-CENTERED-P01-VOLTS-TO-AUTHOR-SCALE",
+        "scheduler": "cosine",
+        "use_data_parallel": true,
+        "weight_decay": 0.05
+      },
+      "roundtrip_cpu_max_abs_diff": 0.0,
+      "scientific_metric_emitted": false,
+      "seed": 2066603508,
+      "status": "PASS",
+      "test_signal_loaded": false
+    },
+    {
+      "branch": "SSL-CBRAMOD",
+      "checkpoint_payload_bytes": 19866773,
+      "checkpoint_payload_sha256": "686a44d43518856902092a5823f9a57e7729536dbcb1c2b02d34d5b3edca17d0",
+      "dataset": "BNCI2014_001",
+      "elapsed_seconds": 1.2777163300052052,
+      "max_gpu_allocated_gib": 0.9063205718994141,
+      "prepared_probe_shape": [
+        2,
+        22,
+        600
+      ],
+      "raw_train_shape": [
+        64,
+        22,
+        480
+      ],
+      "raw_validation_shape": [
+        16,
+        22,
+        480
+      ],
+      "recipe": {
+        "batch_size": 64,
+        "body_lr": 0.0001,
+        "data_parallel_max_gpus": 2,
+        "data_parallel_min_samples": 256,
+        "eta_min": 1e-06,
+        "grad_clip": 1.0,
+        "head_lr": 0.0005,
+        "input_scale": 10000.0,
+        "label_smoothing": 0.1,
+        "lr": 0.0001,
+        "optimizer": "AdamW",
+        "recipe_id": "R6-CBRAMOD-SOURCE-CENTERED-P01-VOLTS-TO-AUTHOR-SCALE",
+        "scheduler": "cosine",
+        "use_data_parallel": true,
+        "weight_decay": 0.05
+      },
+      "roundtrip_cpu_max_abs_diff": 0.0,
+      "scientific_metric_emitted": false,
+      "seed": 1534795089,
+      "status": "PASS",
+      "test_signal_loaded": false
+    },
+    {
+      "branch": "SSL-CBRAMOD",
+      "checkpoint_payload_bytes": 20058773,
+      "checkpoint_payload_sha256": "083517ba3249ae624fe42905d6ef9348b4c2b8de9e98fbd327d5233671423b20",
+      "dataset": "Lee2019_MI",
+      "elapsed_seconds": 1.6836934449966066,
+      "max_gpu_allocated_gib": 2.3732962608337402,
+      "prepared_probe_shape": [
+        2,
+        62,
+        600
+      ],
+      "raw_train_shape": [
+        64,
+        62,
+        480
+      ],
+      "raw_validation_shape": [
+        16,
+        62,
+        480
+      ],
+      "recipe": {
+        "batch_size": 64,
+        "body_lr": 0.0001,
+        "data_parallel_max_gpus": 2,
+        "data_parallel_min_samples": 256,
+        "eta_min": 1e-06,
+        "grad_clip": 1.0,
+        "head_lr": 0.0005,
+        "input_scale": 10000.0,
+        "label_smoothing": 0.1,
+        "lr": 0.0001,
+        "optimizer": "AdamW",
+        "recipe_id": "R6-CBRAMOD-SOURCE-CENTERED-P01-VOLTS-TO-AUTHOR-SCALE",
+        "scheduler": "cosine",
+        "use_data_parallel": true,
+        "weight_decay": 0.05
+      },
+      "roundtrip_cpu_max_abs_diff": 0.0,
+      "scientific_metric_emitted": false,
+      "seed": 247862164,
+      "status": "PASS",
+      "test_signal_loaded": false
+    }
+  ],
+  "smoke_pass_count": 9,
+  "smoke_total": 9,
+  "stage12_evidence_modified": false,
+  "status": "PASS",
+  "test_signal_loaded": false
+}

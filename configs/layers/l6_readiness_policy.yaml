@@ -1,0 +1,16 @@
+layer: L6
+phase: P00
+foundation_only: true
+legal_actions:
+- ACCEPT
+- DEFER
+- ESCALATE
+- SAFE_STOP
+- ABSTAIN
+policy_modes:
+- ADAPTIVE_TRAINING
+- FROZEN_EVALUATION
+- RULE_BASED
+- DIAGNOSTIC_ONLY
+simulation_status: SIMULATION_ONLY
+policy_learning: false

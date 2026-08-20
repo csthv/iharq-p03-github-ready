@@ -1,0 +1,70 @@
+dataset_id: BNCI2014_001
+aliases:
+- BNCI2014_001
+- BCI Competition IV-2a
+- BNCI 001-2014
+authority_status: PRIMARY_SELECTED
+scientific_role: standard four-class MI benchmark companion; official P01 binary left/right
+  branch
+active_for_run: true
+active_disposition: ACTIVE_FOR_P01_OFFICIAL_RUN
+exact_revision: 001-2014 provider file set A01T/A01E through A09T/A09E
+citation: Tangermann M, Müller KR, Aertsen A, et al. Review of the BCI Competition
+  IV. Frontiers in Neuroscience. 2012;6:55. DOI 10.3389/fnins.2012.00055.
+license: Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0)
+access_method: MOABB_1_5_0_OFFICIAL_BNCI_DOWNLOAD
+official_reference: https://bnci-horizon-2020.eu/database/data-sets; https://moabb.neurotechx.com/docs/generated/moabb.datasets.BNCI2014_001.html;
+  https://doi.org/10.3389/fnins.2012.00055
+published_checksum: NO_SINGLE_PROVIDER_WIDE_PUBLISHED_SHA256
+checksum_policy: COMPUTE_SHA256_PER_GDF/MAT_FILE_AND_FREEZE_AGGREGATE_BEFORE_ADMISSION
+expected_checksum: COMPUTE_OR_VERIFY_PER_FROZEN_POLICY
+adapter: MOABBBNCI2014001Adapter
+cache_path: source_cache/BNCI2014_001
+redistribution_allowed: NO_DERIVATIVE_REDISTRIBUTION; RAW_BYTES_EXCLUDED; ONLY METADATA/HASHES/RECORDS
+  EXPORTED
+source_native_preprocessing:
+- 0.5-100 Hz provider acquisition filter
+- 50 Hz notch filter
+limitations:
+- Feet and tongue are preserved as excluded source labels in the official binary branch
+- EOG channels are metadata/quality channels and not model input
+- CC BY-ND restrictions prohibit redistributed derived raw-signal variants
+adapter_options:
+  moabb_class: BNCI2014_001
+  subjects: 1-9
+  sessions:
+  - 0train
+  - 1test
+  internet_required: true
+  official_reference: https://bnci-horizon-2020.eu/database/data-sets; https://moabb.neurotechx.com/docs/generated/moabb.datasets.BNCI2014_001.html;
+    https://doi.org/10.3389/fnins.2012.00055
+  checksum_policy: COMPUTE_SHA256_PER_GDF/MAT_FILE_AND_FREEZE_AGGREGATE_BEFORE_ADMISSION
+  published_checksum: NO_SINGLE_PROVIDER_WIDE_PUBLISHED_SHA256
+  expected_event_inventory:
+  - '276: idling EEG, eyes open (excluded technical/baseline)'
+  - '277: idling EEG, eyes closed (excluded technical/baseline)'
+  - '768: start of trial (excluded technical)'
+  - '769: left hand MI (included)'
+  - '770: right hand MI (included)'
+  - '771: both feet MI (excluded from binary branch)'
+  - '772: tongue MI (excluded from binary branch)'
+  - '783: cue unknown (blocked/preserved as ambiguous)'
+  - '1023: rejected trial (excluded and preserved)'
+  - '1072: eye movements (excluded technical/artifact provenance)'
+  - '32766: start of new run (excluded technical)'
+  sampling_and_channel_profile:
+    eeg_channels: 22
+    eog_channels: 3
+    sampling_hz: 250
+    trial_duration_seconds: 4
+    format: GDF/MAT
+  source_native_preprocessing:
+  - 0.5-100 Hz provider acquisition filter
+  - 50 Hz notch filter
+  limitations:
+  - Feet and tongue are preserved as excluded source labels in the official binary
+    branch
+  - EOG channels are metadata/quality channels and not model input
+  - CC BY-ND restrictions prohibit redistributed derived raw-signal variants
+  allow_byte_equivalent_attachment_fallback: false
+  acquisition_contract: MOABB_1_5_0_OFFICIAL_PROVIDER_DOWNLOAD_ONLY

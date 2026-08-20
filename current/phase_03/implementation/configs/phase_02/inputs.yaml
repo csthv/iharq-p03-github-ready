@@ -1,0 +1,29 @@
+input_contract_id: P02-KAGGLE-INPUTS-R1
+required:
+  cumulative_project:
+    canonical_filename: IHARQ_Cumulative_GitHub_Ready_Through_P01_R1.zip
+    sha256: dc2708ab70e7746499ae09760456825b54efcf587cae3db3410e6f72b0024542
+    required: true
+  p01_core:
+    provider: Kaggle
+    handle: csthv999z/iharq-p01-l1-derived-windows-d03f0a7c869d-20260806222242-68a91473
+    provider_version: 2
+    logical_revision: 1
+    resolver_file: IHARQ_P01_L1_DERIVED_WINDOW_DATASET_MANIFEST.json
+    manifest_sha256: dc21f418e9a1add62adb346f627d5d729735a5f1ecaa1d771f6fa5cfede627e1
+    expected_bytes: 1166652764
+    required: true
+    expected_windows: 12910
+  p01_a4:
+    provider: Kaggle
+    handle: csthv999z/iharq-p01-l1-a4-d03f0a7c-9a7c6108
+    provider_version: 1
+    logical_revision: 2
+    resolver_file: IHARQ_P01_L1_A4_DERIVED_WINDOW_DATASET_MANIFEST.json
+    manifest_sha256: 29124d59907610b1545e0a2b5d1811a4d4a2bf1df64cad49aa880f4721c47305
+    required: true
+    expected_matched_parents: 12910
+    expected_window_records: 51640
+  conditional_pretrained:
+    required: false
+    rule: IMMUTABLE_CHECKSUM_LICENSE_PREFLIGHT_OR_BLOCK

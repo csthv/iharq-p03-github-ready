@@ -1,0 +1,24 @@
+phase_handoff:
+  handoff_id: P02-FINAL-HANDOFF-P03-READINESS-R1
+  producer_phase: P02
+  producer_layer: L2
+  consumer_phase: P03
+  status: READY_WITH_EXPLICIT_NONBLOCKING_LIMITATIONS
+  p02_execution_status: G24_PASS_REPLAYED_FROM_IMMUTABLE_HF_SNAPSHOT
+  p02_final_closure: GREEN_LIGHT_WITH_EXPLICIT_NONBLOCKING_LIMITATIONS
+  scientific_stage_rerun_for_merge: false
+  canonical_documentary_state: final_state/through_p02/
+  consumer_handoff: artifacts/handoffs/phase_02_to_phase_03/downstream_readiness.yaml
+  fresh_session_checklist: artifacts/handoffs/phase_02_to_phase_03/P03_fresh_session_intake_checklist.md
+  source_snapshot:
+    repo_id: Csthv/p02-phase02-final-whole-working-20260814t052120z-b890ff92
+    immutable_revision: bc14961e14f2e48690e55df3577014275f9cbf30
+    manifest_sha256: 564bbb44e67d14da8457ad83d33651ded93dfc6b89ab90f10f78a36a20b8e8f5
+    credential_class: IHARQ_HF_TOKEN_P02
+  pre_p02_credential_class: IHARQ_HF_TOKEN_PRE_P02
+  rules:
+  - P03 MUST perform fresh authority/reuse/config/environment/Protocol freeze before
+    execution.
+  - P03 MUST preserve P02 limitations and post-hoc labels.
+  - P03 MUST NOT infer one credential can access both pre-P02 and P02 repositories.
+  blockers: []

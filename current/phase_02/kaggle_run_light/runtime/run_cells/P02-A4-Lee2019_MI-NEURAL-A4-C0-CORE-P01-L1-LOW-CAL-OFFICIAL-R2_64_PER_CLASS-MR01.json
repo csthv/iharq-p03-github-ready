@@ -1,0 +1,21 @@
+{
+  "run_cell_id": "P02-A4-Lee2019_MI-NEURAL-A4-C0-CORE-P01-L1-LOW-CAL-OFFICIAL-R2:64_PER_CLASS-MR01",
+  "ablation_id": "A4",
+  "terminal_status": "SUCCESS",
+  "resolved_branch": "DNN-EEGNET",
+  "prediction_partition": "records/PredictionRecord/dataset=Lee2019_MI/branch=DNN-EEGNET/budget=P01-L1-LOW-CAL-OFFICIAL-R2:64_PER_CLASS/P02-A0-Lee2019_MI-DNN-EEGNET-P01-L1-LOW-CAL-OFFICIAL-R2:64_PER_CLASS-MR01.jsonl",
+  "metric_source": "metrics/P02-A0-Lee2019_MI-DNN-EEGNET-P01-L1-LOW-CAL-OFFICIAL-R2:64_PER_CLASS-MR01.json",
+  "checkpoint_sha256": "73c138d5b5d46168f3172fdc4945e69127fa9650290667d81b3d411b8fdffaa1",
+  "observed_denominator": 600,
+  "burden": {
+    "evidence_duration_s": 3.0,
+    "observation_horizon_s": 3.0,
+    "model_or_view_evaluations": 1,
+    "member_count": 1,
+    "aggregation_operation": "DIRECT_CORE",
+    "batch1_latency_median_s": 0.0022379080000973772,
+    "batch1_latency_p95_s": 0.002301360400088015,
+    "aggregation_latency_s": 0.0
+  },
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

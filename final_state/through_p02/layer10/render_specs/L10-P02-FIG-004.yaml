@@ -1,0 +1,15 @@
+artifact_id: L10-P02-FIG-004
+source_data: figure_source_data/P02_Table_low_label_BACC.csv
+render_script: scripts/render_layer10.py
+claim_ids:
+- P02-CLM-004/v1
+- CUM-CLM-004/v1
+finding_ids:
+- P02-FIND-005
+- CF-04
+limitations:
+- SINGLE_FROZEN_SUBSET
+output: figures/L10-P02-FIG-004.png
+scientific_transform: DISPLAY_ONLY
+source_data_sha256: 2c3d377c97853deb9c0c489e3b551e11d5fae540c89029ea489510de11e77de1
+output_sha256: 4882e5977574c1564a77ec27c5b0bcf3d02a4ff6075fcf1b33528417591bc3d8

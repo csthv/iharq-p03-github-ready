@@ -1,0 +1,182 @@
+matrix_id: P02-ABLATION-OWNERSHIP-AND-COMPLETION-R3
+status: FROZEN
+source_rule: MANDATORY_PHASE_OWNED_ABLATION_FULL_EXECUTION
+full_execution_required:
+- A0
+- A4
+partial_execution_required: []
+rows:
+- ablation_id: A0
+  official_identity: Raw Decoder / Accept-All Raw Decoder Reference
+  authority_owner: Layer 2 / Phase 2
+  p02_state: FULL_EXECUTION_REQUIRED_IN_P02
+  expected_p02_end_state: EXECUTED_RESULTS_PRESERVED_ANALYSIS_INPUTS_COMPLETE
+  implementation_complete_in_build_book: true
+  explicit_run_cells: true
+  explicit_kaggle_stage: true
+  complete_evaluation_logic: true
+  phase_analysis_inputs_defined: true
+  p02_confirmatory_execution: true
+- ablation_id: A1
+  official_identity: Calibrated Decoder / Calibration Visibility
+  authority_owner: Layer 3 / Phase 3
+  p02_state: DOWNSTREAM_PHASE_RESPONSIBILITY
+  expected_p02_end_state: UPSTREAM_INPUTS_AND_FOREIGN_KEYS_PRESERVED_NO_CONFIRMATORY_EXECUTION
+  implementation_complete_in_build_book: false
+  explicit_run_cells: false
+  explicit_kaggle_stage: false
+  complete_evaluation_logic: false
+  phase_analysis_inputs_defined: true
+  p02_confirmatory_execution: false
+- ablation_id: A2
+  official_identity: Simple Registered Threshold / Confidence-Threshold Baseline
+  authority_owner: Layer 3 / Phase 3
+  p02_state: DOWNSTREAM_PHASE_RESPONSIBILITY
+  expected_p02_end_state: UPSTREAM_INPUTS_AND_FOREIGN_KEYS_PRESERVED_NO_CONFIRMATORY_EXECUTION
+  implementation_complete_in_build_book: false
+  explicit_run_cells: false
+  explicit_kaggle_stage: false
+  complete_evaluation_logic: false
+  phase_analysis_inputs_defined: true
+  p02_confirmatory_execution: false
+- ablation_id: A3
+  official_identity: Uncertainty and Selective Prediction
+  authority_owner: Layer 3 / Phase 3
+  p02_state: DOWNSTREAM_PHASE_RESPONSIBILITY
+  expected_p02_end_state: UPSTREAM_INPUTS_AND_FOREIGN_KEYS_PRESERVED_NO_CONFIRMATORY_EXECUTION
+  implementation_complete_in_build_book: false
+  explicit_run_cells: false
+  explicit_kaggle_stage: false
+  complete_evaluation_logic: false
+  phase_analysis_inputs_defined: true
+  p02_confirmatory_execution: false
+- ablation_id: A4
+  official_identity: Longer-Window, Multi-Window Voting/Averaging and Ordinary Ensemble
+    Controls
+  authority_owner: Layer 2 / Phase 2
+  p02_state: FULL_EXECUTION_REQUIRED_IN_P02
+  expected_p02_end_state: EXECUTED_RESULTS_PRESERVED_ANALYSIS_INPUTS_COMPLETE
+  implementation_complete_in_build_book: true
+  explicit_run_cells: true
+  explicit_kaggle_stage: true
+  complete_evaluation_logic: true
+  phase_analysis_inputs_defined: true
+  p02_confirmatory_execution: true
+- ablation_id: A5
+  official_identity: IHARQ-lite / Rule-Based Evidence Verification
+  authority_owner: Layer 4 / downstream phase
+  p02_state: DOWNSTREAM_PHASE_RESPONSIBILITY
+  expected_p02_end_state: UPSTREAM_INPUTS_AND_FOREIGN_KEYS_PRESERVED_NO_CONFIRMATORY_EXECUTION
+  implementation_complete_in_build_book: false
+  explicit_run_cells: false
+  explicit_kaggle_stage: false
+  complete_evaluation_logic: false
+  phase_analysis_inputs_defined: true
+  p02_confirmatory_execution: false
+- ablation_id: A6
+  official_identity: IHARQ + Evidence-Quality Estimator
+  authority_owner: Layer 6 / downstream phase
+  p02_state: DOWNSTREAM_PHASE_RESPONSIBILITY
+  expected_p02_end_state: UPSTREAM_INPUTS_AND_FOREIGN_KEYS_PRESERVED_NO_CONFIRMATORY_EXECUTION
+  implementation_complete_in_build_book: false
+  explicit_run_cells: false
+  explicit_kaggle_stage: false
+  complete_evaluation_logic: false
+  phase_analysis_inputs_defined: true
+  p02_confirmatory_execution: false
+- ablation_id: A7
+  official_identity: IHARQ + RegimeRisk Temporal Trust
+  authority_owner: Layer 5 / downstream phase
+  p02_state: DOWNSTREAM_PHASE_RESPONSIBILITY
+  expected_p02_end_state: UPSTREAM_INPUTS_AND_FOREIGN_KEYS_PRESERVED_NO_CONFIRMATORY_EXECUTION
+  implementation_complete_in_build_book: false
+  explicit_run_cells: false
+  explicit_kaggle_stage: false
+  complete_evaluation_logic: false
+  phase_analysis_inputs_defined: true
+  p02_confirmatory_execution: false
+- ablation_id: A8
+  official_identity: Learning-to-defer / Deferral Comparison
+  authority_owner: Layer 6/7 downstream
+  p02_state: DOWNSTREAM_PHASE_RESPONSIBILITY
+  expected_p02_end_state: UPSTREAM_INPUTS_AND_FOREIGN_KEYS_PRESERVED_NO_CONFIRMATORY_EXECUTION
+  implementation_complete_in_build_book: false
+  explicit_run_cells: false
+  explicit_kaggle_stage: false
+  complete_evaluation_logic: false
+  phase_analysis_inputs_defined: true
+  p02_confirmatory_execution: false
+- ablation_id: A9
+  official_identity: Supervised Adaptive-IHARQ / Adaptive Readiness Policy
+  authority_owner: downstream adaptive-policy owner
+  p02_state: DOWNSTREAM_PHASE_RESPONSIBILITY
+  expected_p02_end_state: UPSTREAM_INPUTS_AND_FOREIGN_KEYS_PRESERVED_NO_CONFIRMATORY_EXECUTION
+  implementation_complete_in_build_book: false
+  explicit_run_cells: false
+  explicit_kaggle_stage: false
+  complete_evaluation_logic: false
+  phase_analysis_inputs_defined: true
+  p02_confirmatory_execution: false
+- ablation_id: A10
+  official_identity: Contextual Bandit / Simulation-Bounded Immediate-Reward Adaptation
+  authority_owner: downstream simulation/policy owner
+  p02_state: DOWNSTREAM_PHASE_RESPONSIBILITY
+  expected_p02_end_state: UPSTREAM_INPUTS_AND_FOREIGN_KEYS_PRESERVED_NO_CONFIRMATORY_EXECUTION
+  implementation_complete_in_build_book: false
+  explicit_run_cells: false
+  explicit_kaggle_stage: false
+  complete_evaluation_logic: false
+  phase_analysis_inputs_defined: true
+  p02_confirmatory_execution: false
+- ablation_id: A11
+  official_identity: Reinforcement-Learning Policy / Simulation-Bounded Sequential
+    Policy Learning
+  authority_owner: downstream simulation/policy owner
+  p02_state: DOWNSTREAM_PHASE_RESPONSIBILITY
+  expected_p02_end_state: UPSTREAM_INPUTS_AND_FOREIGN_KEYS_PRESERVED_NO_CONFIRMATORY_EXECUTION
+  implementation_complete_in_build_book: false
+  explicit_run_cells: false
+  explicit_kaggle_stage: false
+  complete_evaluation_logic: false
+  phase_analysis_inputs_defined: true
+  p02_confirmatory_execution: false
+- ablation_id: A12
+  official_identity: StressForge Stress Tests / Controlled Stress Robustness
+  authority_owner: Layer 8 / downstream phase
+  p02_state: DOWNSTREAM_PHASE_RESPONSIBILITY
+  expected_p02_end_state: UPSTREAM_INPUTS_AND_FOREIGN_KEYS_PRESERVED_NO_CONFIRMATORY_EXECUTION
+  implementation_complete_in_build_book: false
+  explicit_run_cells: false
+  explicit_kaggle_stage: false
+  complete_evaluation_logic: false
+  phase_analysis_inputs_defined: true
+  p02_confirmatory_execution: false
+- ablation_id: A13
+  official_identity: Layer 9 Simulation-Only Embodiment Demo
+  authority_owner: Layer 9 / downstream phase
+  p02_state: DOWNSTREAM_PHASE_RESPONSIBILITY
+  expected_p02_end_state: UPSTREAM_INPUTS_AND_FOREIGN_KEYS_PRESERVED_NO_CONFIRMATORY_EXECUTION
+  implementation_complete_in_build_book: false
+  explicit_run_cells: false
+  explicit_kaggle_stage: false
+  complete_evaluation_logic: false
+  phase_analysis_inputs_defined: true
+  p02_confirmatory_execution: false
+- ablation_id: A14
+  official_identity: ABSENT / PROHIBITED
+  authority_owner: NONE
+  p02_state: ABSENT_PROHIBITED
+  expected_p02_end_state: NO_POSITIVE_IMPLEMENTATION_OR_RUN
+  implementation_complete_in_build_book: true
+  explicit_run_cells: false
+  explicit_kaggle_stage: false
+  complete_evaluation_logic: false
+  phase_analysis_inputs_defined: false
+  p02_confirmatory_execution: false
+invariants:
+  FULL_P02_ABLATIONS_WITH_MISSING_IMPLEMENTATION: 0
+  FULL_P02_ABLATIONS_WITHOUT_RUN_CELLS: 0
+  FULL_P02_ABLATIONS_WITHOUT_KAGGLE_EXECUTION_STAGE: 0
+  FULL_P02_ABLATIONS_WITHOUT_COMPLETE_PHASE_ANALYSIS_INPUTS: 0
+  DOWNSTREAM_ABLATIONS_PREMATURELY_EXECUTED: 0
+  A14_POSITIVE_IMPLEMENTATION: 0

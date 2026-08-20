@@ -1,0 +1,72 @@
+{
+  "stage_id": "05",
+  "status": "SUCCESS",
+  "attempt_id": "39df114163ce",
+  "inputs": {},
+  "input_hashes": {},
+  "outputs": {
+    "status": "PASS",
+    "total": 1896,
+    "A0": 678,
+    "A4": 1218,
+    "unique": 1896,
+    "A0_unrouted": 0,
+    "stage05_decisions": "VERIFY_ALGORITHMIC_POLICY_ONLY_NO_TEST_ACCESS",
+    "scientific_training_policy": {
+      "status": "PASS",
+      "missing": [],
+      "blockers": []
+    },
+    "training_role_class_counts": {
+      "BNCI2014_001": {
+        "left_hand": 720,
+        "right_hand": 720
+      },
+      "Lee2019_MI": {
+        "left_hand": 1600,
+        "right_hand": 1600
+      },
+      "PhysioNetMI": {
+        "left_hand": 1490,
+        "right_hand": 1459
+      }
+    },
+    "training_policy_challenger_cells": 15,
+    "preexecution_amendment_id": "P02-PREEXEC-TRAINING-POLICY-AMENDMENT-R2",
+    "fixture_authority_blocker_bypass": false,
+    "artifact": "stage_artifacts/05_freeze.json"
+  },
+  "output_hashes": {
+    "status": "727e9bd17b077ba162e13ba877135cc6fbc6b30f83da0b34b3e20233f1cc885f",
+    "total": "9ce04d52aafc9d73c0cedd9a3b5841faa7fa2f28ea1b88068c910ef66c610be1",
+    "A0": "cebe3d9d614ba5c19f633566104315854a11353a333bf96f16b5afa0e90abdc4",
+    "A4": "f5efb6e05e55f7eda6e88bec2eec69e6e2919cce997d7da9e6723e71b3021a87",
+    "unique": "9ce04d52aafc9d73c0cedd9a3b5841faa7fa2f28ea1b88068c910ef66c610be1",
+    "A0_unrouted": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+    "stage05_decisions": "751df9054b6934a48ae3d670c34b84077bb680a4480d044ff2d28876483d9ac1",
+    "scientific_training_policy": "66973a1dd7f437bef67f07e6a41a9a51db93e3b074aeca064a7a676f64dec2da",
+    "training_role_class_counts": "47186ad6d04ce87f718122058d524ed5592dfb4c18854ff63e949b3d2df1ec67",
+    "training_policy_challenger_cells": "e629fa6598d732768f7c726b4b621285f9c3b85303900aa912017db7617d8bdb",
+    "preexecution_amendment_id": "e1e4004cc864779d44098edaadf35aaf3f2b77ade927222cbd602cf55c3f78f7",
+    "fixture_authority_blocker_bypass": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
+    "artifact": "b3016f5e9721afff0878f9c09a84a5b263f1496eadbdf2b5ce48021c21a03a76"
+  },
+  "dependencies": [
+    "04"
+  ],
+  "elapsed_seconds": 0.0159914493560791,
+  "log_path": "logs/stage_05_39df114163ce.log",
+  "heartbeat_write_errors": [],
+  "observability_status": "PASS",
+  "blockers": [],
+  "observations": [],
+  "revision_fingerprint": {
+    "notebook_revision": "R4",
+    "notebook_id": "IHARQ-P02-COMPLETE-EXECUTION-AND-ANALYSIS-R4",
+    "source_sha256": "a54bfa816acc6763c1d1042b8c65cf54ae04ec774c57ec50de86014a6730c5fa",
+    "config_sha256": "d82334535e397c681d6172694da96d3fff0143ffb1b63a18876ee1f7778f60a1",
+    "stage_plan_sha256": "043eb30e008af910d37c563e8be8c719ef881cf009aec3e34687dc97bdc34aad",
+    "scientific_freeze_sha256": "7449216c988eec14191ba85300d720547f06fbc6ac7020e9e142bf12a4b0a598",
+    "scientific_freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5"
+  }
+}

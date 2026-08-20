@@ -1,0 +1,21 @@
+phase_id: P02
+analysis_release_id: P02-PHASE-ANALYSIS-FINAL-R2
+summary:
+  status: PASS
+  failures: 648
+  negative_result_notes: 340
+  diagnostic_flags: 309
+  all_terminal_states_preserved: true
+  null_negative_evidence_preserved: true
+scientific_interpretation:
+  unexpected_and_expected_non_success_must_not_be_conflated: true
+  important_categories:
+  - A0 FAILED
+  - A0 CONDITIONAL_SKIP
+  - A0 DEPENDENCY_BLOCKED
+  - A4 CONDITIONAL_SKIP
+  - A4 INPUT_INCOMPATIBLE
+  - A4 NOT_APPLICABLE_REPEAT_SLOT
+  - diagnostic-only outcomes
+  findings:
+  - P02-FIND-013

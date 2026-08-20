@@ -1,0 +1,32 @@
+environment_id: P02-L2-KAGGLE-ENV-PLAN-R2
+python: '>=3.12,<3.13'
+target: 3.12.x
+base_pins:
+  moabb: 1.5.0
+  mne: 1.12.1
+  numpy: 2.2.6
+  scipy: 1.15.3
+  pandas: 2.3.1
+  scikit-learn: 1.7.1
+  h5py: 3.14.0
+  pooch: 1.8.2
+  PyYAML: 6.0.2
+  pydantic: 2.11.7
+  jsonschema: 4.25.0
+  nbformat: 5.10.4
+  pytest: 8.4.1
+p02_pins:
+  torch: 2.13.0
+  braindecode: 1.6.1
+  pyriemann: '0.12'
+live_scientific_stage_downloads: PROHIBITED
+external_branches: must be vendored or immutable pointer/checksum resolved before
+  Stage05
+resource_classes:
+  GPU_GE_12_GIB: batch64 standard
+  GPU_8_TO_12_GIB: batch32 + grad accumulate
+  GPU_LT_8_GIB: EEGNet batch16; conditionals blocked unless probe pass
+  CPU_ONLY: classical/riemannian mandatory; EEGNet bounded attempt; others blocked
+    unless preflight pass
+disk_free_min_gib: 8
+environment_change_after_stage05: PROHIBITED

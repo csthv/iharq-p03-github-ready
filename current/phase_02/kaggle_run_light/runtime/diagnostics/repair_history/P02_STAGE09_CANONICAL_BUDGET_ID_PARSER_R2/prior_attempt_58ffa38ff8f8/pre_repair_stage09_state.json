@@ -1,0 +1,63 @@
+{
+  "status": "ARCHIVED",
+  "prior_stage09_attempt_id": "58ffa38ff8f8",
+  "diagnosed_failure": "CANONICAL_LOW_CAL_BUDGET_ID_PARSED_AS_RAW_INTEGER",
+  "planned_cells": 24,
+  "existing_success_cells": 2,
+  "missing_cells": 22,
+  "existing_success_run_ids": [
+    "P02-A0-BNCI2014_001-CLS-CSP-LDA-FULL_TRAIN-MR00",
+    "P02-A0-BNCI2014_001-CLS-FBCSP-LR-FULL_TRAIN-MR00"
+  ],
+  "missing_run_ids": [
+    "P02-A0-BNCI2014_001-CLS-CSP-LDA-P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS-MR00",
+    "P02-A0-BNCI2014_001-CLS-CSP-LDA-P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS-MR00",
+    "P02-A0-BNCI2014_001-CLS-CSP-LDA-P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS-MR00",
+    "P02-A0-BNCI2014_001-CLS-CSP-LDA-P01-L1-LOW-CAL-OFFICIAL-R2:32_PER_CLASS-MR00",
+    "P02-A0-BNCI2014_001-CLS-CSP-LDA-P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS-MR00",
+    "P02-A0-BNCI2014_001-CLS-CSP-LDA-P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS-MR00",
+    "P02-A0-Lee2019_MI-CLS-CSP-LDA-FULL_TRAIN-MR00",
+    "P02-A0-Lee2019_MI-CLS-CSP-LDA-P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS-MR00",
+    "P02-A0-Lee2019_MI-CLS-CSP-LDA-P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS-MR00",
+    "P02-A0-Lee2019_MI-CLS-CSP-LDA-P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS-MR00",
+    "P02-A0-Lee2019_MI-CLS-CSP-LDA-P01-L1-LOW-CAL-OFFICIAL-R2:32_PER_CLASS-MR00",
+    "P02-A0-Lee2019_MI-CLS-CSP-LDA-P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS-MR00",
+    "P02-A0-Lee2019_MI-CLS-CSP-LDA-P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS-MR00",
+    "P02-A0-Lee2019_MI-CLS-FBCSP-LR-FULL_TRAIN-MR00",
+    "P02-A0-PhysioNetMI-CLS-CSP-LDA-FULL_TRAIN-MR00",
+    "P02-A0-PhysioNetMI-CLS-CSP-LDA-P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS-MR00",
+    "P02-A0-PhysioNetMI-CLS-CSP-LDA-P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS-MR00",
+    "P02-A0-PhysioNetMI-CLS-CSP-LDA-P01-L1-LOW-CAL-OFFICIAL-R2:2_PER_CLASS-MR00",
+    "P02-A0-PhysioNetMI-CLS-CSP-LDA-P01-L1-LOW-CAL-OFFICIAL-R2:32_PER_CLASS-MR00",
+    "P02-A0-PhysioNetMI-CLS-CSP-LDA-P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS-MR00",
+    "P02-A0-PhysioNetMI-CLS-CSP-LDA-P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS-MR00",
+    "P02-A0-PhysioNetMI-CLS-FBCSP-LR-FULL_TRAIN-MR00"
+  ],
+  "archived_stage_files": [
+    {
+      "source": "/kaggle/working/iharq_p02_run/stage_ledger/stage_09.json",
+      "archive": "diagnostics/repair_history/P02_STAGE09_CANONICAL_BUDGET_ID_PARSER_R2/prior_attempt_58ffa38ff8f8/stage_level_prior_attempt/stage_ledger/stage_09.json",
+      "bytes": 3785,
+      "sha256": "6f4cce07df9c5da5ba5e9d56ac93d2f3298660a365b7fd6bc986fd1004b81810"
+    },
+    {
+      "source": "/kaggle/working/iharq_p02_run/gate_results/G09.json",
+      "archive": "diagnostics/repair_history/P02_STAGE09_CANONICAL_BUDGET_ID_PARSER_R2/prior_attempt_58ffa38ff8f8/stage_level_prior_attempt/gate_results/G09.json",
+      "bytes": 261,
+      "sha256": "ec2a0a6e80f8566681f80742d7c0e126750bc69405ef87f4f3a2f9ba1577494b"
+    },
+    {
+      "source": "/kaggle/working/iharq_p02_run/heartbeats/stage_09.json",
+      "archive": "diagnostics/repair_history/P02_STAGE09_CANONICAL_BUDGET_ID_PARSER_R2/prior_attempt_58ffa38ff8f8/stage_level_prior_attempt/heartbeats/stage_09.json",
+      "bytes": 1077,
+      "sha256": "7bdd7d9c16445889cd01ef10c57e151368282331528213e9e14c0cebd24402c1"
+    },
+    {
+      "source": "/kaggle/working/iharq_p02_run/logs/stage_09_58ffa38ff8f8.log",
+      "archive": "diagnostics/repair_history/P02_STAGE09_CANONICAL_BUDGET_ID_PARSER_R2/prior_attempt_58ffa38ff8f8/stage_level_prior_attempt/logs/stage_09_58ffa38ff8f8.log",
+      "bytes": 2679,
+      "sha256": "61458bed8e97b0f379152d73c5427de99ec75dcb4a09f0fad5687cf44e3fa531"
+    }
+  ],
+  "scientific_configuration_changed": false
+}

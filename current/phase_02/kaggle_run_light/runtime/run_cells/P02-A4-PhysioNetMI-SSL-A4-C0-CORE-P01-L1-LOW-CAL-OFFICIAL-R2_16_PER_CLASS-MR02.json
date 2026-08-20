@@ -1,0 +1,21 @@
+{
+  "run_cell_id": "P02-A4-PhysioNetMI-SSL-A4-C0-CORE-P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS-MR02",
+  "ablation_id": "A4",
+  "terminal_status": "SUCCESS",
+  "resolved_branch": "SSL-CBRAMOD",
+  "prediction_partition": "records/PredictionRecord/dataset=PhysioNetMI/branch=SSL-CBRAMOD/budget=P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS/P02-A0-PhysioNetMI-SSL-CBRAMOD-P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS-MR02.jsonl",
+  "metric_source": "metrics/P02-A0-PhysioNetMI-SSL-CBRAMOD-P01-L1-LOW-CAL-OFFICIAL-R2:16_PER_CLASS-MR02.json",
+  "checkpoint_sha256": "427e7a6cede0cb82d64b17066f28d475ab6daa2c9e6c9839379ce3cdc3b8e416",
+  "observed_denominator": 495,
+  "burden": {
+    "evidence_duration_s": 3.0,
+    "observation_horizon_s": 3.0,
+    "model_or_view_evaluations": 1,
+    "member_count": 1,
+    "aggregation_operation": "DIRECT_CORE",
+    "batch1_latency_median_s": 0.010448758999700658,
+    "batch1_latency_p95_s": 0.011068388798594241,
+    "aggregation_latency_s": 0.0
+  },
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13"
+}

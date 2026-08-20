@@ -1,0 +1,16 @@
+artifact_id: L10-CUM-FIG-002
+source_data: figure_source_data/CUM_FIG_02_Ablation_Evolution_source.csv
+render_script: scripts/render_layer10.py
+claim_ids:
+- CUM-CLM-005/v1
+finding_ids:
+- CF-05
+- CF-06
+limitations:
+- SINGLE_REPEAT
+- DEEP_ANCHOR_BUDGETS
+- POST_HOC_STAGE18S
+output: figures/L10-CUM-FIG-002.png
+scientific_transform: DISPLAY_ONLY
+source_data_sha256: ab5d0119342307d5dbe26a2e4d088cd0380345571969f4156aba5df119d807c6
+output_sha256: ad0a154d70d8c052dc71a9e678d41cd65a7a3b021a0a6a446c50d1e4c195a496

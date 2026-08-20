@@ -1,0 +1,77 @@
+{
+  "P00_P01_mutated": false,
+  "artifact_id": "P02-STAGE12-R6R3-REHYDRATION-R1",
+  "created_utc": "2026-08-14T00:57:42.341265+00:00",
+  "current_partial_stage12_mutated": false,
+  "current_partial_stage12_terminal_count": 153,
+  "current_partial_stage12_terminal_counts": {
+    "CONDITIONAL_SKIP": 15,
+    "DEPENDENCY_BLOCKED": 3,
+    "SUCCESS": 135
+  },
+  "external_adapter_path": "/kaggle/working/iharq_p02_run/runtime/diagnostics/runtime_successor/stage12_external_models_R5R/python/iharq_stage12_external_adapters.py",
+  "external_adapter_sha256": "add69c0a0f8843366d6d9ed1fb16746f61d43a6d588b04f07193484e0555386a",
+  "factory_probes": [
+    {
+      "branch": "DNN-FBCNET",
+      "dataset": "PhysioNetMI",
+      "resolved_variant": "FBCNet-OriginalAuthor-P01ConstrainedFilterBank",
+      "status": "PASS"
+    },
+    {
+      "branch": "DNN-FBCNET",
+      "dataset": "BNCI2014_001",
+      "resolved_variant": "FBCNet-OriginalAuthor-P01ConstrainedFilterBank",
+      "status": "PASS"
+    },
+    {
+      "branch": "DNN-FBCNET",
+      "dataset": "Lee2019_MI",
+      "resolved_variant": "FBCNet-OriginalAuthor-P01ConstrainedFilterBank",
+      "status": "PASS"
+    },
+    {
+      "branch": "DNN-SEQ",
+      "dataset": "PhysioNetMI",
+      "resolved_variant": "DBConformer-OriginalAuthor-P01CompatibilityPatched",
+      "status": "PASS"
+    },
+    {
+      "branch": "DNN-SEQ",
+      "dataset": "BNCI2014_001",
+      "resolved_variant": "DBConformer-OriginalAuthor-P01CompatibilityPatched",
+      "status": "PASS"
+    },
+    {
+      "branch": "DNN-SEQ",
+      "dataset": "Lee2019_MI",
+      "resolved_variant": "DBConformer-OriginalAuthor-P01CompatibilityPatched",
+      "status": "PASS"
+    },
+    {
+      "branch": "SSL-CBRAMOD",
+      "dataset": "PhysioNetMI",
+      "resolved_variant": "CBraMod-HF-Braindecode-GovernedP02",
+      "status": "PASS"
+    },
+    {
+      "branch": "SSL-CBRAMOD",
+      "dataset": "BNCI2014_001",
+      "resolved_variant": "CBraMod-HF-Braindecode-GovernedP02",
+      "status": "PASS"
+    },
+    {
+      "branch": "SSL-CBRAMOD",
+      "dataset": "Lee2019_MI",
+      "resolved_variant": "CBraMod-HF-Braindecode-GovernedP02",
+      "status": "PASS"
+    }
+  ],
+  "known_defective_physionet_fbcnet_failures": 0,
+  "marker": "IHARQ_P02_R6R3_REHYDRATED_READY_FOR_TRANSACTIONAL_STAGE12",
+  "qualified_substrate_id": "P02-RUNTIME-SUCCESSOR-R5R-STAGE12-RESOURCE-OPTIMIZED-EXTERNAL-MODEL-LIVE-CONTINUATION",
+  "runtime_successor_id": "P02-RUNTIME-SUCCESSOR-R6R3-STAGE12-TRANSACTIONAL-AUTHOR-CENTERED-CLASS-WEIGHT-CORRECTED",
+  "stage00_11_accepted_without_rerun": true,
+  "status": "PASS",
+  "test_signal_loaded": false
+}

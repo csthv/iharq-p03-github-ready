@@ -1,0 +1,49 @@
+{
+  "stage_id": "00",
+  "status": "SUCCESS",
+  "attempt_id": "592903bffb32",
+  "inputs": {},
+  "input_hashes": {},
+  "outputs": {
+    "status": "PASS",
+    "notebook_id": "IHARQ-P02-COMPLETE-EXECUTION-AND-ANALYSIS-R4",
+    "build_book_id": "IHARQ-P02-L2-INTEGRATED-BUILD-BOOK-R4",
+    "freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5",
+    "one_notebook": true,
+    "a14": "ABSENT_PROHIBITED",
+    "fixture": {
+      "fixture": true,
+      "scientific_evidence": false,
+      "labels": [
+        "FIXTURE",
+        "NON_SCIENTIFIC",
+        "NOT_P02_EVIDENCE"
+      ]
+    },
+    "artifact": "stage_artifacts/00_authority.json"
+  },
+  "output_hashes": {
+    "status": "727e9bd17b077ba162e13ba877135cc6fbc6b30f83da0b34b3e20233f1cc885f",
+    "notebook_id": "6e9d11f2792b889e0de4c3fb40047ff23ece52ad049e4ba177e2acacd1f72ee7",
+    "build_book_id": "2ec795697a54e90bf8861d2ed583fe2989e1a50d937fae8738306e71f2de126c",
+    "freeze_id": "4f6bcd599de028c835ac5e3da7ea8e45e8992b7d06cc7c3b94924224698bcef6",
+    "one_notebook": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+    "a14": "abfc3e671c610b344f023af2dd3f947d1ca4588eb2e7dd208170c4b6c86ad5af",
+    "fixture": "5a80c94c19bb736e0baa4e59c92013f191c4285e3ea681025674220d55428cab",
+    "artifact": "f6b067b6a463beff65a0a3abebc0b55ce011e75fafa8f2868ea2b048b4a64682"
+  },
+  "dependencies": [],
+  "elapsed_seconds": 1.7815361022949219,
+  "log_path": "logs/stage_00_592903bffb32.log",
+  "heartbeat_write_errors": [],
+  "observability_status": "PASS",
+  "blockers": [],
+  "observations": [],
+  "revision_fingerprint": {
+    "notebook_revision": "R4",
+    "source_sha256": "AUTHORING_FIXTURE_SOURCE",
+    "config_sha256": "AUTHORING_FIXTURE_CONFIG",
+    "stage_plan_sha256": "AUTHORING_FIXTURE_STAGE_PLAN",
+    "scientific_freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5"
+  }
+}

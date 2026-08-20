@@ -1,0 +1,96 @@
+{
+  "bundle_id": "P03-LAYER10-SOURCE-BUNDLE-4863ea2ae57cac9d90c9",
+  "candidate_only": true,
+  "checksums": "artifacts/layer10_source_bundle/phase_03/checksums.sha256",
+  "claim_approval_performed": false,
+  "config_sha256": "2eda0689ab42e93c91b3ef9b76e0168d1c13d1feb3d1a552beaade91105ab7c3",
+  "files": [
+    {
+      "bytes": 327,
+      "path": "calibration_dashboard_metric_record_index.json",
+      "sha256": "9690f375536524d970efab5350421ee18369a64eea14d95b7843e8a3f915736c"
+    },
+    {
+      "bytes": 457,
+      "path": "cards/reliability_card_source_manifest.json",
+      "sha256": "d93a4a105aadf299fcd594517067d0d3ce49df191fae288bd64999559e49151f"
+    },
+    {
+      "bytes": 523915,
+      "path": "cards/reliability_cards.jsonl",
+      "sha256": "ee19c6584ce8c85d7d272b240573dea191002c481b7fd0bb24b68c5b8ea2abf6"
+    },
+    {
+      "bytes": 1176,
+      "path": "checksums.sha256",
+      "sha256": "fff188c7816a30f586fd326c10c645bb352e6907c84ed022b3a98993105a9b28"
+    },
+    {
+      "bytes": 2115,
+      "path": "figure_source_data/figure_source_dataset_manifest.json",
+      "sha256": "db77ab3b1ae5605457416431ba1053f3a446fd95e89ac278dbb77065d96cb9df"
+    },
+    {
+      "bytes": 482743,
+      "path": "figure_source_data/reliability_bins.csv",
+      "sha256": "980841e313fc61faa6d25edd4981ed9d243141ad818e50d02ea749e693ccc325"
+    },
+    {
+      "bytes": 110934194,
+      "path": "figure_source_data/risk_coverage_curves.csv",
+      "sha256": "043f03d9b68623cf628c400135a99dede238d31164a2c0c06d15ea83a827ef44"
+    },
+    {
+      "bytes": 451,
+      "path": "layer10_source_contract.json",
+      "sha256": "a14af6a4d9594e3da9954096f56fdaaef1314233c8beabf54c145bc9acdfb3ce"
+    },
+    {
+      "bytes": 1163,
+      "path": "source_dataset_index.json",
+      "sha256": "a7ad067f5c761c5223ae8251680208476106f07c41cb79c124ba87c594d27f28"
+    },
+    {
+      "bytes": 436355,
+      "path": "table_source_data/group_budget_audit.csv",
+      "sha256": "64895c333f8d143a6b598e8b90e95223e9ff5cc16b5ca539a732fcc7fb57434b"
+    },
+    {
+      "bytes": 846845,
+      "path": "table_source_data/negative_results.jsonl",
+      "sha256": "15b9caf4d091435fbf76fe7d7117e1d5d36e5e4f66ec71b503990c55a7c63aea"
+    },
+    {
+      "bytes": 1949,
+      "path": "table_source_data/table_source_dataset_manifest.json",
+      "sha256": "779d710a037689ded5c5fd82598774eef6a4b3de95dddaf3274bfb88dd8411ce"
+    }
+  ],
+  "no_recompute_contract": "PROHIBITED",
+  "permissions": [
+    "Layer10 rendering from supplied source artifacts",
+    "Phase Analysis consumption of P03-PROD-039/040"
+  ],
+  "product_id": "P03-PROD-045",
+  "prohibited_use": [
+    "scientific recomputation",
+    "threshold retuning",
+    "claim strengthening",
+    "TEST-driven selection"
+  ],
+  "protocol_sha256": "dc46b87cb802d1a6a3ab0efd3dc6db6be5c3b5c7125c54e95a9cdbea8eef797d",
+  "run_id": "P03-L3-OFFICIAL-09ca82c743e0411a",
+  "schema_id": "Layer10SourceBundle.v1",
+  "schemas": [
+    "artifacts/schemas/phase_03/ArtifactTraceabilityIndex.schema.json",
+    "artifacts/schemas/phase_03/FigureSourceDataset.schema.json",
+    "artifacts/schemas/phase_03/Layer10SourceBundle.schema.json",
+    "artifacts/schemas/phase_03/MetricAnalysisInput.schema.json",
+    "artifacts/schemas/phase_03/ReliabilityCardSource.schema.json",
+    "artifacts/schemas/phase_03/StatisticsInputTable.schema.json",
+    "artifacts/schemas/phase_03/TableSourceDataset.schema.json",
+    "artifacts/schemas/phase_03/CalibrationDashboardMetricRecord.schema.json"
+  ],
+  "source_index": "artifacts/layer10_source_bundle/phase_03/source_dataset_index.json",
+  "stage21_output_manifest_sha256": "de0d00a367af460016f45c5524b4ced2318f5b3e081876b0ded170786fcb4498"
+}

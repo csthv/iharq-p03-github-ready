@@ -1,0 +1,66 @@
+{
+  "curve_records_audited": 719756,
+  "gpu_used": false,
+  "lawful_repeated_full_endpoint_count": 570,
+  "multiprocessing_start_method": "fork",
+  "one_physical_pass_per_partition_for_manifest_and_semantic_audit": true,
+  "r2_canonical_evidence_reused": true,
+  "r2_hardening_id": "P03-C8-STAGE16-A3-PRODUCT-LINEAGE-HARDENING-R2",
+  "recovery_id": "P03-C8-STAGE16-4WORKER-PARALLEL-AUDIT-RECOVERY-R5",
+  "run_id": "P03-L3-OFFICIAL-09ca82c743e0411a",
+  "schema_id": "P03Stage16ParallelAuditOnlyRecoveryReceipt.v1",
+  "schema_version": "1.0.0",
+  "science_audit": {
+    "a3_no_rule_count": 273,
+    "a3_other_ineligible_count": 0,
+    "a3_success_count": 582,
+    "a3_terminal_count": 855,
+    "binary_alias_application_mismatch_count": 0,
+    "binary_alias_curve_mismatch_count": 0,
+    "binary_alias_terminal_distributions_equal": true,
+    "curve_id_count": 855,
+    "curve_role_counts": {
+      "test": 374340,
+      "threshold_validation": 345416
+    },
+    "feature_record_counts": {
+      "confidence": 239919,
+      "normalized_entropy": 239918,
+      "top1_top2_margin": 239919
+    },
+    "field_contract_errors": 0,
+    "governed_partition_files_scanned": 189,
+    "governed_record_family_counts": {
+      "RiskCoverageCurveSource": 719756,
+      "SelectivePredictionRecord": 582
+    },
+    "illegal_selected_feature_fields": 0,
+    "illegal_selection_roles": 0,
+    "lineage_errors": 0,
+    "numeric_domain_errors": 0,
+    "payload_sha_errors": 0,
+    "schema_errors": 0,
+    "source_sha_errors": 0,
+    "stage13_binary_algebra": {
+      "groups": 285,
+      "max_entropy_abs_error": 1.240327285323417e-15,
+      "max_margin_abs_error": 1.1102230246251565e-16,
+      "rows": 500965
+    },
+    "test_nonempty_success_children": 492,
+    "test_risk_above_025_nonempty": 390,
+    "test_risk_at_or_below_025_nonempty": 102,
+    "test_zero_coverage_success_children": 90
+  },
+  "selective_records_audited": 582,
+  "stage13_bytes_changed": false,
+  "stage14_bytes_changed": false,
+  "stage15_bytes_changed": false,
+  "stage16_evidence_rematerialized": false,
+  "stage16_scientific_bytes_changed": false,
+  "stage16_scientific_rerun": false,
+  "stage17_executed": false,
+  "stage_id": "16",
+  "status": "PASS",
+  "workers": 4
+}

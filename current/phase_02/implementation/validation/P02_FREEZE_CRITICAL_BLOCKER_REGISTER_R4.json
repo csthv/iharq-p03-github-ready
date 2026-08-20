@@ -1,0 +1,23 @@
+{
+  "register_id": "P02-FREEZE-CRITICAL-BLOCKER-REGISTER-R4-DYNAMIC-RESOLUTION",
+  "status": "PASS",
+  "source_predecessor": "P02-FREEZE-CRITICAL-BLOCKER-REGISTER-R2",
+  "resolution_amendment_id": "P02-PREEXEC-TRAINING-POLICY-AMENDMENT-R2",
+  "scientific_freeze": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5",
+  "resolved": [
+    {
+      "blocker_id": "P02-BLOCK-TRAIN-AUG-001",
+      "resolution": "Predeclared validation-only dataset-level S&R probability selection over {0.25,0.5,0.75}; pinned Braindecode n_segments=None auto-resolution; final 15 diagnostic cells; no test selection."
+    },
+    {
+      "blocker_id": "P02-BLOCK-TRAIN-WEIGHT-002",
+      "resolution": "No arbitrary imbalance threshold. Equal fit-role counts use uniform. Unequal counts compare uniform vs sklearn-balanced training-label weights on legal validation for native/verified supported classifiers; test selection prohibited."
+    }
+  ],
+  "freeze_critical_blockers": [],
+  "freeze_critical_blocker_count": 0,
+  "P00_P01_revision_required": false,
+  "official_A0_A4_cells_unchanged": 1896,
+  "new_A_number_created": false,
+  "A14": "ABSENT_PROHIBITED"
+}

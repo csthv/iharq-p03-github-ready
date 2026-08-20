@@ -1,0 +1,29 @@
+{
+  "config_sha256": "2e5ebd6fc62f4c9ca3ed0102914f64142de9e1206be0b6e6b3e32cad90f1d742",
+  "equivalence_profile": {
+    "interpretation": "confirmatory_only_when_registered_support_and_multiplicity_requirements_are_satisfied",
+    "metric_specific_margins": {
+      "brier": 0.01,
+      "calibration_error": 0.01,
+      "nll": 0.02
+    },
+    "profile_id": "P03-OFFICIAL-EQUIVALENCE-R1"
+  },
+  "multiplicity_profile": {
+    "alpha": 0.05,
+    "family": "dataset_metric_ablation",
+    "method": "holm",
+    "profile_id": "P03-OFFICIAL-HOLM-R1"
+  },
+  "no_recompute_contract": "PROHIBITED",
+  "normalized_row_count": 5148,
+  "normalized_rows_path": "artifacts/phase_analysis_handoff/phase_03/statistics/statistics_input_table.jsonl",
+  "normalized_rows_sha256": "4e08c3c08defb14aa8b29cf60fdf9c8856e6f8f7324bd0fdf72bd84e9ecea285",
+  "product_id": "P03-PROD-040",
+  "raw_bundle_path": "artifacts/phase_analysis_handoff/phase_03/statistics/statistics_input.json",
+  "raw_bundle_sha256": "ed7a120e6c0716c1d6533696a82dc16f8dfdeb286bdeeb52e8e461257cec447a",
+  "run_id": "P03-L3-POSTEXT-64-128-256-R1-1833e865bcb88ff8",
+  "schema_id": "StatisticsInputTable.v1",
+  "statistics_executed_in_stage21": false,
+  "uncertainty_status": "NOT_EXECUTED_IN_STAGE21"
+}

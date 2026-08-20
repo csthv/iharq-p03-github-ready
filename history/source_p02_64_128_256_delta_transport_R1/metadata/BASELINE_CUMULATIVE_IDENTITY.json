@@ -1,0 +1,21 @@
+{
+  "artifact_id": "P02-GITHUB-READY-DELTA-BASELINE-IDENTITY-R1",
+  "baseline": {
+    "artifact_role": "FROZEN_CUMULATIVE_GITHUB_READY_THROUGH_P02_FINAL_R2",
+    "canonical_zip_name": "IHARQ_Cumulative_GitHub_Ready_Through_P02_Final_R2.zip",
+    "coverage": [
+      "P00",
+      "P01",
+      "P02_PRE_EXTENSION"
+    ],
+    "observed_supplied_zip_sha256": "8f24fdbf11971fbecb886ff214b30b8241d32e7f0baef6dd9f6cf75817fe824b",
+    "root_directory": "IHARQ_Cumulative_GitHub_Ready_Through_P02_Final_R2",
+    "root_manifest": "CURRENT_CUMULATIVE_REPOSITORY_MANIFEST.json",
+    "root_manifest_file_count": 30824,
+    "root_manifest_id": "IHARQ-CUMULATIVE-GITHUB-READY-THROUGH-P02-FINAL-R2-MANIFEST",
+    "root_manifest_sha256": "10df9886ae4c31b61499142a5f79981f61c6935a6b1b6311ac70cb070f488c4b"
+  },
+  "created_at_utc": "2026-08-17T20:04:15.634846+00:00",
+  "merge_policy": "FAIL_CLOSED_UNLESS_THE_LATER_SUPPLIED_BASELINE_ZIP_SHA256_AND_ROOT_MANIFEST_SHA256_MATCH",
+  "status": "PASS"
+}

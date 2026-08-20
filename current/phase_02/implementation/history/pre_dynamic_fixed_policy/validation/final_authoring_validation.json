@@ -1,0 +1,105 @@
+{
+  "validation_id": "P02-KAGGLE-PREEXECUTION-FINAL-VALIDATION-R3",
+  "status": "PASS",
+  "technical_implementation_status": "PASS",
+  "scientific_preexecution_freeze_status": "PASS",
+  "scientific_execution_started": false,
+  "scientific_results_generated": false,
+  "fabricated_p02_evidence": false,
+  "fixture_evidence_only": true,
+  "identities": {
+    "notebook_id": "IHARQ-P02-COMPLETE-EXECUTION-AND-ANALYSIS-R4",
+    "build_book": "IHARQ-P02-L2-INTEGRATED-BUILD-BOOK-R4",
+    "scientific_freeze": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R4",
+    "preexecution_amendment": "P02-PREEXEC-TRAINING-POLICY-AMENDMENT-R1",
+    "implementation_package": "IHARQ_P02_L2_Kaggle_Notebook_Implementation_Package_R3"
+  },
+  "counts": {
+    "official_L2_modules": 8,
+    "required_capabilities": 53,
+    "model_branches": 16,
+    "A0_cells": 678,
+    "A4_slots": 1218,
+    "official_A0_A4_cells": 1896,
+    "training_policy_diagnostic_cells": 15,
+    "runtime_stages": 26,
+    "gates": 26,
+    "authoring_tests_passed": 72,
+    "static_checks_passed": 84,
+    "fixture_runtime_checksum_targets": 298,
+    "audit_sections_1_274": 274,
+    "audit_sections_275_323": 49
+  },
+  "training_policy_resolution": {
+    "augmentation": {
+      "condition_id": "P02-TRAIN-AUG-SR-EEGNET-FULL-R1",
+      "probability": 0.5,
+      "n_segments": 4,
+      "cell_count": 15,
+      "diagnostic_only": true
+    },
+    "class_weighting": {
+      "policy": "NEVER_WEIGHT_P02_CURRENT_FROZEN_INPUTS",
+      "weights": [
+        1.0,
+        1.0
+      ],
+      "reopen_on_input_identity_or_count_change": true
+    }
+  },
+  "technical_checks": {
+    "ordinary_implementation_defects_unrepaired": 0,
+    "production_stage_handlers": "26/26",
+    "C4_C5_closure": "PASS",
+    "Stage18U": "PASS",
+    "P01_failure_hardening": "PASS",
+    "cumulative_verifier": "40/40 PASS",
+    "P01_verifier": "24/24 PASS",
+    "P01_execution_bundle": "13164/13164 PASS",
+    "security_and_path_hygiene": "PASS",
+    "notebook_json": "VALID_UNEXECUTED",
+    "fixture_real_dispatch": {
+      "status": "PASS",
+      "label": "FIXTURE_NON_SCIENTIFIC_NOT_P02_EVIDENCE",
+      "scientific_evidence": false,
+      "stages": 26,
+      "stage15_a0_closure": "PASS",
+      "stage15_training_policy_closure": "PASS",
+      "future_protocol_sync_artifacts": "PASS",
+      "stage18_a4_execution": "PASS",
+      "c1_c2_c3_vs_c0_closure": "PASS",
+      "c4_c5_vs_strongest_closure": "PASS",
+      "stage18u": "PASS",
+      "late_stage_chain": "PASS",
+      "runtime_checksums": {
+        "status": "PASS",
+        "rows": 298,
+        "missing": [],
+        "mismatch": []
+      },
+      "runtime_zip": {
+        "status": "PASS",
+        "sha256": "18504b3b391299da87150d31556a08f8ea0f65cf58932bf187a5f58f6e4af846",
+        "bytes": 249253,
+        "members": 299,
+        "crc": "PASS",
+        "unsafe_paths": 0
+      },
+      "fixture_bundle_path": "validation/FIXTURE_NON_SCIENTIFIC_RUNTIME_BUNDLE.zip"
+    },
+    "external_evidence_note": "docs/P02_TRAINING_POLICY_EXTERNAL_EVIDENCE_NOTE_R1.md",
+    "training_policy_code_ownership": "PASS_CONFIG_OWNED_NO_PRODUCTION_NUMERIC_BINDINGS",
+    "upstream_R3_revalidation": "40/40 cumulative; 24/24 P01; source ZIP CRC PASS"
+  },
+  "source_exhaustion": {
+    "preexisting_gap_confirmed": true,
+    "other_same_class_freeze_gaps_found": 0
+  },
+  "freeze_critical_authority_blockers": [],
+  "freeze_critical_blockers": 0,
+  "ready_for_actual_kaggle_execution": true,
+  "runtime_gate_qualification": "Subject only to normal governed immutable-input/environment/resource/conditional-external-asset gates; no scientific policy choice remains unresolved.",
+  "future_protocol_sync_required": true,
+  "future_protocol_sync_rule": "Synchronize exact pre-execution amendment after accepted run; do not choose replacement values from P02 results.",
+  "decision": "P02_KAGGLE_PREEXECUTION_AUDIT: PASS"
+}

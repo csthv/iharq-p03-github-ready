@@ -1,0 +1,19 @@
+phase_id: P02
+run_id: P02-L2-OFFICIAL-RUN-R4DYN-9e181d2e935d-INT1TO256-R1
+config_sha256: 9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13
+scientific_freeze_id: P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5
+evidence_status: RUNTIME_EXECUTED
+stable_identity_required: true
+evidence:
+  a0: analysis_inputs/a0_completion.json
+  a4: analysis_inputs/a4_completion.json
+  a4_role_controls: analysis_inputs/a4_role_control_statistics.json
+  c4c5: analysis_inputs/a4_c4_c5_statistics.json
+  c4c5_artifacts: analysis_inputs/a4_c4_c5_comparison_artifacts.jsonl
+  a4_burden: analysis_inputs/a4_burden_source.csv
+  figures: analysis_inputs/figure_table_source_manifest.json
+  failures: analysis_inputs/failure_negative_summary.json
+  training_policy_challenger: analysis_inputs/training_policy_challenger_completion.json
+  training_policy_statistics: analysis_inputs/training_policy_challenger_statistics.json
+  training_policy_sr_selection: analysis_inputs/training_policy_sr_probability_selection.json
+  preexecution_amendment: protocol_change_required/P02_PREEXECUTION_TRAINING_POLICY_AMENDMENT_R2.yaml

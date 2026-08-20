@@ -1,0 +1,59 @@
+{
+  "ablation_feature_counts": {
+    "A2:confidence": 194,
+    "A3:confidence": 194,
+    "A3:normalized_entropy": 194,
+    "A3:top1_top2_margin": 194
+  },
+  "hardening_id": "P03-C8-STAGE17-THRESHOLDREGISTRY-EVIDENCE-HARDENING-R1",
+  "parent_lineage_nonempty": true,
+  "partition_count": 4,
+  "partitions": [
+    {
+      "ablation_id": "A2",
+      "bytes": 1211136,
+      "feature_id": "confidence",
+      "path": "records/ablation=A2/feature=confidence/records.jsonl",
+      "record_count": 194,
+      "sha256": "59798c83e46f7a8a756954c60b5af961fc809ab3ee7f2603c7848b909ae00844"
+    },
+    {
+      "ablation_id": "A3",
+      "bytes": 1161666,
+      "feature_id": "confidence",
+      "path": "records/ablation=A3/feature=confidence/records.jsonl",
+      "record_count": 194,
+      "sha256": "8d7b82fe484361fa388508d0d0f64aba9604eb19f85ae0df7dc6723d78ea8312"
+    },
+    {
+      "ablation_id": "A3",
+      "bytes": 1163219,
+      "feature_id": "normalized_entropy",
+      "path": "records/ablation=A3/feature=normalized_entropy/records.jsonl",
+      "record_count": 194,
+      "sha256": "0ed4d20074b0a059d0348b2612e62f941fe59ba79060db6b2d457ae5fc7fbf2a"
+    },
+    {
+      "ablation_id": "A3",
+      "bytes": 1163091,
+      "feature_id": "top1_top2_margin",
+      "path": "records/ablation=A3/feature=top1_top2_margin/records.jsonl",
+      "record_count": 194,
+      "sha256": "e0efd8de3fcb90ba8b6d193db76db20fff47867d60f2f8a9def7b840dcfc7c22"
+    }
+  ],
+  "product_id": "P03-PROD-030",
+  "raw_stage17_registry_event_log_sha256": "6326810afe2941cd0d1fcd075e122d47fb0bd492d0e2e9b444da4ca30745be2c",
+  "raw_stage17_registry_index_sha256": "19a907e0ff0dcc9bae205445810931e2b8ed04940236aec662e762e742bca64d",
+  "raw_stage17_threshold_records_sha256": "be9cdd55bcf18fa068a2c0ca80f6c517675046742146afbf8a6241003460a33b",
+  "record_count": 776,
+  "record_family": "ThresholdRegistryRecord",
+  "run_id": "P03-L3-OFFICIAL-09ca82c743e0411a",
+  "schema_id": "P03Stage17ThresholdRegistryRecordMaterializationManifest.v1",
+  "schema_version": "1.0.0",
+  "scientific_threshold_change_count": 0,
+  "source_sha_lineage_nonempty": true,
+  "stage17_output_manifest_sha256": "7e0c903599d55bfef2b791a48d96d393bf238daf9cfaa50121aefd9e7d2c18d0",
+  "stage_id": "17",
+  "status": "PASS"
+}

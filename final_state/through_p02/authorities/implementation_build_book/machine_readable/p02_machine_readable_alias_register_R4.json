@@ -1,0 +1,67 @@
+{
+  "register_id": "P02-L2-R4-MACHINE-READABLE-ALIAS-REGISTER",
+  "status": "PASS",
+  "rules": [
+    {
+      "current_alias": "machine_readable/p02_notebook_stage_plan.yaml",
+      "canonical_current": "machine_readable/p02_notebook_stage_plan_R4.yaml",
+      "relationship": "BYTE_IDENTICAL_COMPATIBILITY_ALIAS",
+      "note": "R4 notebook-authoring identity; the genuine R3 predecessor stage plan is preserved only under history/R3/machine_readable/.",
+      "alias_sha256": "3f3940b0bcc4879fa7ad320ed38ec730bb46d8775d4c1855753b79e83dca7bae",
+      "target_sha256": "3f3940b0bcc4879fa7ad320ed38ec730bb46d8775d4c1855753b79e83dca7bae",
+      "byte_identical": true
+    },
+    {
+      "current_alias": "machine_readable/p02_requirement_traceability.csv",
+      "scientific_predecessor_equivalent": "machine_readable/p02_requirement_traceability_R3.csv",
+      "relationship": "BYTE_IDENTICAL_R3_SCIENTIFIC_TRACEABILITY_RETAINED_FOR_COMPATIBILITY",
+      "note": "R4 adds p02_prompt_requirement_exhaustion_R4.csv and dedicated R4 traceability families; this legacy matrix is not the R4 finalization-exhaustion authority.",
+      "alias_sha256": "fda6ddccc299cdd084767b8e7e9d8170c491ae6405fc242e70caba87ac98f3f0",
+      "target_sha256": "fda6ddccc299cdd084767b8e7e9d8170c491ae6405fc242e70caba87ac98f3f0",
+      "byte_identical": true
+    },
+    {
+      "current_alias": "machine_readable/p02_gate_matrix.yaml",
+      "scientific_revision_file": "machine_readable/p02_gate_matrix_R3.yaml",
+      "relationship": "BYTE_IDENTICAL_R3_SCIENTIFIC_GATE_MATRIX",
+      "note": "R4 adopts R3 scientific gates unchanged.",
+      "alias_sha256": "66b103eb01498dfd42d1d67220e52c1f91024a5b5479bb974fc5a54e510e10c5",
+      "target_sha256": "66b103eb01498dfd42d1d67220e52c1f91024a5b5479bb974fc5a54e510e10c5",
+      "byte_identical": true
+    },
+    {
+      "current_alias": "machine_readable/p02_test_catalog.yaml",
+      "scientific_revision_file": "machine_readable/p02_test_catalog_R3.yaml",
+      "relationship": "BYTE_IDENTICAL_R3_SCIENTIFIC_TEST_CATALOG",
+      "note": "R4 adds finalization validators but does not change the scientific P02 test catalog.",
+      "alias_sha256": "80feaaea2d3687351158aa7dd243d697655b601223eb74578fed6bdf511d79d8",
+      "target_sha256": "80feaaea2d3687351158aa7dd243d697655b601223eb74578fed6bdf511d79d8",
+      "byte_identical": true
+    },
+    {
+      "current_alias": "machine_readable/p02_run_matrix.yaml",
+      "scientific_revision_file": "machine_readable/p02_run_matrix_R3.yaml",
+      "relationship": "BYTE_IDENTICAL_R3_SCIENTIFIC_RUN_MATRIX",
+      "note": "R4 adopts the R3 scientific run families/cells unchanged.",
+      "alias_sha256": "b0a9dbca423c97b5d5ef518a356d4e47b544aa495cf719f7d06a8f62cc35138b",
+      "target_sha256": "b0a9dbca423c97b5d5ef518a356d4e47b544aa495cf719f7d06a8f62cc35138b",
+      "byte_identical": true
+    },
+    {
+      "current_alias": "machine_readable/p02_ablation_unlock_matrix.yaml",
+      "scientific_revision_file": "machine_readable/p02_ablation_ownership_matrix_R3.yaml",
+      "relationship": "BYTE_IDENTICAL_R3_ABLATION_OWNERSHIP_COMPATIBILITY_ALIAS",
+      "note": "A0/A4 full-execution ownership remains frozen by R3 and adopted unchanged by R4.",
+      "alias_sha256": "0ac82f54c5cb2ec0b46c16a1879291a88240451369176164e4a30ad8a53365e5",
+      "target_sha256": "0ac82f54c5cb2ec0b46c16a1879291a88240451369176164e4a30ad8a53365e5",
+      "byte_identical": true
+    }
+  ],
+  "provenance_repairs": [
+    {
+      "issue": "machine_readable/p02_notebook_stage_plan_R3.yaml had been mutated to carry the R4 notebook identity during R4 generation",
+      "repair": "removed from current machine_readable surface; genuine predecessor restored under history/R3/machine_readable/p02_notebook_stage_plan_R3.yaml",
+      "scientific_effect": "NONE"
+    }
+  ]
+}

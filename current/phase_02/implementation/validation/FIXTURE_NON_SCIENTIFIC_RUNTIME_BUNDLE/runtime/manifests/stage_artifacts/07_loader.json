@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "role_counts": {
+    "train": 48,
+    "calibration": 64,
+    "validation": 24,
+    "test": 24
+  },
+  "label_contract": [
+    "left_hand",
+    "right_hand"
+  ],
+  "unique_events": 160,
+  "unique_windows": 160,
+  "subject_role_overlap_count": 0,
+  "implemented_checks": [
+    "role_presence",
+    "binary_label_contract",
+    "event_id_uniqueness",
+    "window_id_uniqueness",
+    "dataset_scoped_subject_role_disjointness"
+  ],
+  "test_selection": "PROHIBITED",
+  "leakage_statement": "NO_CONTRACT_LEAKAGE_DETECTED_UNDER_IMPLEMENTED_CHECKS"
+}

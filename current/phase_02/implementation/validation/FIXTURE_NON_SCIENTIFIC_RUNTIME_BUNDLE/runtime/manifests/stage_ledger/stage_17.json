@@ -1,0 +1,33 @@
+{
+  "stage_id": "17",
+  "status": "SUCCESS",
+  "attempt_id": "f6df45c23b42",
+  "inputs": {},
+  "input_hashes": {},
+  "outputs": {
+    "status": "PASS",
+    "records": 6,
+    "artifact": "stage_artifacts/17_profiles.json"
+  },
+  "output_hashes": {
+    "status": "727e9bd17b077ba162e13ba877135cc6fbc6b30f83da0b34b3e20233f1cc885f",
+    "records": "e7f6c011776e8db7cd330b54174fd76f7d0216b612387a5ffcfb81e6f0919683",
+    "artifact": "58d8708b65ebf6932abb86c4beee66a147aecd50ffa8aa4e7d32eb9aca3f97f4"
+  },
+  "dependencies": [
+    "16"
+  ],
+  "elapsed_seconds": 0.12948846817016602,
+  "log_path": "logs/stage_17_f6df45c23b42.log",
+  "heartbeat_write_errors": [],
+  "observability_status": "PASS",
+  "blockers": [],
+  "observations": [],
+  "revision_fingerprint": {
+    "notebook_revision": "R4",
+    "source_sha256": "AUTHORING_FIXTURE_SOURCE",
+    "config_sha256": "AUTHORING_FIXTURE_CONFIG",
+    "stage_plan_sha256": "AUTHORING_FIXTURE_STAGE_PLAN",
+    "scientific_freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5"
+  }
+}

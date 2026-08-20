@@ -1,0 +1,282 @@
+{
+  "phase_id": "P01",
+  "status": "ACCEPTED",
+  "gates": [
+    {
+      "gate_id": "P01-G01",
+      "official_or_local_name": "authority_phase0_intake",
+      "status": "PASS",
+      "inputs": [],
+      "procedure_version": "P01-L1-GATE-R6",
+      "observations": {},
+      "failure_codes": [],
+      "repair_owner": "GOVERNANCE_AND_PHASE0",
+      "affected_artifacts": [],
+      "evidence_paths": [
+        "manifests/phase_01/test_manifest.json",
+        "authority_manifest.json"
+      ],
+      "manifest_entry": "manifests/phase_01/gates/P01-G01.json",
+      "blocking_effect": false
+    },
+    {
+      "gate_id": "P01-G02",
+      "official_or_local_name": "source_provenance_license",
+      "status": "PASS",
+      "inputs": [],
+      "procedure_version": "P01-L1-GATE-R6",
+      "observations": {},
+      "failure_codes": [],
+      "repair_owner": "METHOD_SELECTION_AND_OWNER",
+      "affected_artifacts": [],
+      "evidence_paths": [
+        "reports/phase_01/sources/source_version_license_report.json",
+        "inputs/source_inventory.json"
+      ],
+      "manifest_entry": "manifests/phase_01/gates/P01-G02.json",
+      "blocking_effect": false
+    },
+    {
+      "gate_id": "P01-G03",
+      "official_or_local_name": "schema_canonical_object",
+      "status": "PASS",
+      "inputs": [],
+      "procedure_version": "P01-L1-GATE-R6",
+      "observations": {},
+      "failure_codes": [],
+      "repair_owner": "REGISTRY",
+      "affected_artifacts": [],
+      "evidence_paths": [
+        "reports/phase_01/validation/",
+        "records/"
+      ],
+      "manifest_entry": "manifests/phase_01/gates/P01-G03.json",
+      "blocking_effect": false
+    },
+    {
+      "gate_id": "P01-G04",
+      "official_or_local_name": "metadata_completeness",
+      "status": "PASS",
+      "inputs": [],
+      "procedure_version": "P01-L1-GATE-R6",
+      "observations": {},
+      "failure_codes": [],
+      "repair_owner": "L1_METADATA",
+      "affected_artifacts": [],
+      "evidence_paths": [
+        "reports/phase_01/metadata/metadata_completeness.json"
+      ],
+      "manifest_entry": "manifests/phase_01/gates/P01-G04.json",
+      "blocking_effect": false
+    },
+    {
+      "gate_id": "P01-G05",
+      "official_or_local_name": "label_mapping",
+      "status": "PASS",
+      "inputs": [],
+      "procedure_version": "P01-L1-GATE-R6",
+      "observations": {},
+      "failure_codes": [],
+      "repair_owner": "L1_LABELS",
+      "affected_artifacts": [],
+      "evidence_paths": [
+        "reports/phase_01/labels/label_map_validation.json",
+        "records/labels/"
+      ],
+      "manifest_entry": "manifests/phase_01/gates/P01-G05.json",
+      "blocking_effect": false
+    },
+    {
+      "gate_id": "P01-G06",
+      "official_or_local_name": "preprocessing_fit_scope",
+      "status": "PASS",
+      "inputs": [],
+      "procedure_version": "P01-L1-GATE-R6",
+      "observations": {},
+      "failure_codes": [],
+      "repair_owner": "PROTOCOL_AND_L1_PREPROCESSING",
+      "affected_artifacts": [],
+      "evidence_paths": [
+        "reports/phase_01/preprocessing/fit_scope.json",
+        "records/preprocessing/"
+      ],
+      "manifest_entry": "manifests/phase_01/gates/P01-G06.json",
+      "blocking_effect": false
+    },
+    {
+      "gate_id": "P01-G07",
+      "official_or_local_name": "split_disjointness",
+      "status": "PASS",
+      "inputs": [],
+      "procedure_version": "P01-L1-GATE-R6",
+      "observations": {},
+      "failure_codes": [],
+      "repair_owner": "PROTOCOL_AND_L1_SPLITS",
+      "affected_artifacts": [],
+      "evidence_paths": [
+        "reports/phase_01/splits/disjointness.json",
+        "records/splits/"
+      ],
+      "manifest_entry": "manifests/phase_01/gates/P01-G07.json",
+      "blocking_effect": false
+    },
+    {
+      "gate_id": "P01-G08",
+      "official_or_local_name": "leakage_chronology",
+      "status": "PASS",
+      "inputs": [],
+      "procedure_version": "P01-L1-GATE-R6",
+      "observations": {},
+      "failure_codes": [],
+      "repair_owner": "PROTOCOL_AND_L1_LEAKAGE",
+      "affected_artifacts": [],
+      "evidence_paths": [
+        "reports/phase_01/leakage/leakage_contamination.json"
+      ],
+      "manifest_entry": "manifests/phase_01/gates/P01-G08.json",
+      "blocking_effect": false
+    },
+    {
+      "gate_id": "P01-G09",
+      "official_or_local_name": "low_calibration_budgets",
+      "status": "PASS",
+      "inputs": [],
+      "procedure_version": "P01-L1-GATE-R6",
+      "observations": {},
+      "failure_codes": [],
+      "repair_owner": "PROTOCOL_AND_L1_BUDGETS",
+      "affected_artifacts": [],
+      "evidence_paths": [
+        "reports/phase_01/splits/low_calibration_budgets.csv"
+      ],
+      "manifest_entry": "manifests/phase_01/gates/P01-G09.json",
+      "blocking_effect": false
+    },
+    {
+      "gate_id": "P01-G10",
+      "official_or_local_name": "window_identity",
+      "status": "PASS",
+      "inputs": [],
+      "procedure_version": "P01-L1-GATE-R6",
+      "observations": {},
+      "failure_codes": [],
+      "repair_owner": "L1_WINDOWS",
+      "affected_artifacts": [],
+      "evidence_paths": [
+        "reports/phase_01/windows/window_timing_overlap.json",
+        "records/windows/"
+      ],
+      "manifest_entry": "manifests/phase_01/gates/P01-G10.json",
+      "blocking_effect": false
+    },
+    {
+      "gate_id": "P01-G11",
+      "official_or_local_name": "quality_coverage",
+      "status": "PASS",
+      "inputs": [],
+      "procedure_version": "P01-L1-GATE-R6",
+      "observations": {},
+      "failure_codes": [],
+      "repair_owner": "L1_QUALITY",
+      "affected_artifacts": [],
+      "evidence_paths": [
+        "reports/phase_01/quality/quality_coverage.json",
+        "records/quality/"
+      ],
+      "manifest_entry": "manifests/phase_01/gates/P01-G11.json",
+      "blocking_effect": false
+    },
+    {
+      "gate_id": "P01-G12",
+      "official_or_local_name": "matched_keys_ablation_readiness",
+      "status": "PASS",
+      "inputs": [],
+      "procedure_version": "P01-L1-GATE-R6",
+      "observations": {},
+      "failure_codes": [],
+      "repair_owner": "PROTOCOL_AND_L1_READINESS",
+      "affected_artifacts": [],
+      "evidence_paths": [
+        "manifests/phase_01/layer1_ablation_readiness_l1_v1.json",
+        "reports/phase_01/readiness/matched_key_completeness.csv"
+      ],
+      "manifest_entry": "manifests/phase_01/gates/P01-G12.json",
+      "blocking_effect": false
+    },
+    {
+      "gate_id": "P01-G13",
+      "official_or_local_name": "cards_limitations",
+      "status": "PASS",
+      "inputs": [],
+      "procedure_version": "P01-L1-GATE-R6",
+      "observations": {},
+      "failure_codes": [],
+      "repair_owner": "L0_BOUNDARY_AND_L1_CARDS",
+      "affected_artifacts": [],
+      "evidence_paths": [
+        "docs/cards/datasets/",
+        "docs/cards/protocols/"
+      ],
+      "manifest_entry": "manifests/phase_01/gates/P01-G13.json",
+      "blocking_effect": false
+    },
+    {
+      "gate_id": "P01-G14",
+      "official_or_local_name": "manifest_path_hash_closure",
+      "status": "PASS",
+      "inputs": [],
+      "procedure_version": "P01-L1-GATE-R6",
+      "observations": {},
+      "failure_codes": [],
+      "repair_owner": "BUILD_BOOK_AND_L1_MANIFESTS",
+      "affected_artifacts": [],
+      "evidence_paths": [
+        "manifests/phase_01/execution_bundle_manifest.json",
+        "checksums.sha256"
+      ],
+      "manifest_entry": "manifests/phase_01/gates/P01-G14.json",
+      "blocking_effect": false
+    },
+    {
+      "gate_id": "P01-G15",
+      "official_or_local_name": "phase2_compatibility",
+      "status": "PASS",
+      "inputs": [],
+      "procedure_version": "P01-L1-GATE-R6",
+      "observations": {},
+      "failure_codes": [],
+      "repair_owner": "BUILD_BOOK_AND_P02_CONSUMER",
+      "affected_artifacts": [],
+      "evidence_paths": [
+        "phase2_handoff/phase_01_to_phase_02.yaml"
+      ],
+      "manifest_entry": "manifests/phase_01/gates/P01-G15.json",
+      "blocking_effect": false
+    },
+    {
+      "gate_id": "P01-G16",
+      "official_or_local_name": "complete_artifact_closure",
+      "status": "PASS",
+      "inputs": [],
+      "procedure_version": "P01-L1-GATE-R6",
+      "observations": {},
+      "failure_codes": [],
+      "repair_owner": "EXECUTION_PLAN_AND_L1_BUNDLE",
+      "affected_artifacts": [],
+      "evidence_paths": [
+        "manifests/phase_01/layer1_manifest.json",
+        "phase_execution_handoff.yaml"
+      ],
+      "manifest_entry": "manifests/phase_01/gates/P01-G16.json",
+      "blocking_effect": false
+    }
+  ],
+  "blockers": [],
+  "stage_failures": [],
+  "limitations": [
+    "PUBLIC_EEG_ONLY",
+    "NON_CLINICAL",
+    "NO_DEPLOYMENT_CLAIM"
+  ],
+  "evaluation": "PRE_EXPORT_EVIDENCE_SUFFICIENCY"
+}

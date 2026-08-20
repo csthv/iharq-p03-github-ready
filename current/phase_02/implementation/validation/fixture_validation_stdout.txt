@@ -1,0 +1,92 @@
+Computing rank from data with rank=None
+    Using tolerance 0.2 (2.2e-16 eps * 8 dim * 1.1e+14  max singular value)
+    Estimated rank (data): 8
+    data: rank 8 computed from 8 data channels with 0 projectors
+Reducing data rank from 8 -> 8
+Estimating class=0 covariance using OAS
+Done.
+Estimating class=1 covariance using OAS
+Done.
+Computing rank from data with rank=None
+    Using tolerance 0.2 (2.2e-16 eps * 8 dim * 1.1e+14  max singular value)
+    Estimated rank (data): 8
+    data: rank 8 computed from 8 data channels with 0 projectors
+Reducing data rank from 8 -> 8
+Estimating class=0 covariance using OAS
+Done.
+Estimating class=1 covariance using OAS
+Done.
+Computing rank from data with rank=None
+    Using tolerance 0.2 (2.2e-16 eps * 8 dim * 1.1e+14  max singular value)
+    Estimated rank (data): 8
+    data: rank 8 computed from 8 data channels with 0 projectors
+Reducing data rank from 8 -> 8
+Estimating class=0 covariance using OAS
+Done.
+Estimating class=1 covariance using OAS
+Done.
+Computing rank from data with rank=None
+    Using tolerance 0.21 (2.2e-16 eps * 8 dim * 1.2e+14  max singular value)
+    Estimated rank (data): 8
+    data: rank 8 computed from 8 data channels with 0 projectors
+Reducing data rank from 8 -> 8
+Estimating class=0 covariance using OAS
+Done.
+Estimating class=1 covariance using OAS
+Done.
+Computing rank from data with rank=None
+    Using tolerance 0.16 (2.2e-16 eps * 8 dim * 9e+13  max singular value)
+    Estimated rank (data): 8
+    data: rank 8 computed from 8 data channels with 0 projectors
+Reducing data rank from 8 -> 8
+Estimating class=0 covariance using OAS
+Done.
+Estimating class=1 covariance using OAS
+Done.
+Computing rank from data with rank=None
+    Using tolerance 0.16 (2.2e-16 eps * 8 dim * 9.1e+13  max singular value)
+    Estimated rank (data): 8
+    data: rank 8 computed from 8 data channels with 0 projectors
+Reducing data rank from 8 -> 8
+Estimating class=0 covariance using OAS
+Done.
+Estimating class=1 covariance using OAS
+Done.
+Computing rank from data with rank=None
+    Using tolerance 0.16 (2.2e-16 eps * 8 dim * 9e+13  max singular value)
+    Estimated rank (data): 8
+    data: rank 8 computed from 8 data channels with 0 projectors
+Reducing data rank from 8 -> 8
+Estimating class=0 covariance using OAS
+Done.
+Estimating class=1 covariance using OAS
+Done.
+{
+  "status": "PASS",
+  "label": "FIXTURE_NON_SCIENTIFIC_NOT_P02_EVIDENCE",
+  "scientific_evidence": false,
+  "stages": 26,
+  "stage15_a0_closure": "PASS",
+  "stage15_training_policy_closure": "PASS",
+  "future_protocol_sync_artifacts": "PASS",
+  "stage18_a4_execution": "PASS",
+  "c1_c2_c3_vs_c0_closure": "PASS",
+  "c4_c5_vs_strongest_closure": "PASS",
+  "stage18u": "PASS",
+  "late_stage_chain": "PASS",
+  "runtime_checksums": {
+    "status": "PASS",
+    "rows": 311,
+    "missing": [],
+    "mismatch": []
+  },
+  "runtime_zip": {
+    "status": "PASS",
+    "sha256": "80a60ad89125d4bd58178119d94dfa07c240a29c2d36abb45ae633911098a9b6",
+    "bytes": 273050,
+    "members": 312,
+    "crc": "PASS",
+    "unsafe_paths": 0
+  },
+  "fixture_bundle_path": "validation/FIXTURE_NON_SCIENTIFIC_RUNTIME_BUNDLE.zip"
+}

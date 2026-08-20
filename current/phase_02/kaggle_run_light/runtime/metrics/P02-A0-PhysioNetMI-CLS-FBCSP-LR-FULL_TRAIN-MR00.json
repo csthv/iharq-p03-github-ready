@@ -1,0 +1,224 @@
+{
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "run_cell_id": "P02-A0-PhysioNetMI-CLS-FBCSP-LR-FULL_TRAIN-MR00",
+  "dataset_id": "PhysioNetMI",
+  "branch_id": "CLS-FBCSP-LR",
+  "resolved_variant": "CLS-FBCSP-LR",
+  "budget_id": "FULL_TRAIN",
+  "metrics": {
+    "BACC": 0.5595580309019044,
+    "F1_MACRO": 0.5595078701587095,
+    "ACC": 0.5595959595959596,
+    "CONFUSION": [
+      [
+        142,
+        111
+      ],
+      [
+        107,
+        135
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      253,
+      242
+    ],
+    "PRED_COMPLETE": 495,
+    "ROC_AUC": 0.6028484630712443,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "NATIVE_PROBABILITY"
+  },
+  "validation_selection": {
+    "BACC": 0.6926976197472818,
+    "F1_MACRO": 0.6923756255519576,
+    "ACC": 0.692929292929293,
+    "CONFUSION": [
+      [
+        182,
+        67
+      ],
+      [
+        85,
+        161
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      249,
+      246
+    ],
+    "PRED_COMPLETE": 495,
+    "ROC_AUC": 0.7331439579456035,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "NATIVE_PROBABILITY"
+  },
+  "validation_burden_seconds": 116.63465536799777,
+  "model_storage_bytes": 402807,
+  "selected_candidate_id": "CAND-04",
+  "selected_params": {
+    "n_components": 4,
+    "C": 1,
+    "bands_hz": [
+      [
+        8,
+        12
+      ],
+      [
+        12,
+        16
+      ],
+      [
+        16,
+        20
+      ],
+      [
+        20,
+        24
+      ],
+      [
+        24,
+        28
+      ],
+      [
+        28,
+        32
+      ]
+    ],
+    "fs": 160.0,
+    "filter_order": 4,
+    "csp_reg": "oas",
+    "max_iter": 2000
+  },
+  "candidate_failures": [],
+  "observed_denominator": 495,
+  "expected_denominator": 495,
+  "score_type": "NATIVE_PROBABILITY",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.03041807200133917,
+    "batch1_latency_p95_s": 0.03092167159993551,
+    "repeats": 5
+  },
+  "permutation_provenance": null,
+  "class_weight_policy": "SKLEARN_BALANCED_TRAIN_FOLD",
+  "class_weights": [
+    0.9895973154362416,
+    1.010623714873201
+  ],
+  "class_weight_calibration": {
+    "selected_policy": "SKLEARN_BALANCED_TRAIN_FOLD",
+    "selected_weights": [
+      0.9895973154362416,
+      1.010623714873201
+    ],
+    "validation_metrics": {
+      "BACC": 0.6926976197472818,
+      "F1_MACRO": 0.6923756255519576,
+      "ACC": 0.692929292929293,
+      "CONFUSION": [
+        [
+          182,
+          67
+        ],
+        [
+          85,
+          161
+        ]
+      ],
+      "CLASS_SUPPORT": [
+        249,
+        246
+      ],
+      "PRED_COMPLETE": 495,
+      "ROC_AUC": 0.7331439579456035,
+      "ROC_AUC_STATUS": "PASS",
+      "ROC_AUC_SCORE_TYPE": "NATIVE_PROBABILITY"
+    },
+    "candidate_results": [
+      {
+        "status": "SUCCESS",
+        "policy": "UNIFORM_NO_WEIGHT",
+        "weights": null,
+        "validation_metrics": {
+          "BACC": 0.6905916348320109,
+          "F1_MACRO": 0.6899169263145828,
+          "ACC": 0.6909090909090909,
+          "CONFUSION": [
+            [
+              185,
+              64
+            ],
+            [
+              89,
+              157
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            249,
+            246
+          ],
+          "PRED_COMPLETE": 495,
+          "ROC_AUC": 0.7329807033010088,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "NATIVE_PROBABILITY"
+        },
+        "validation_burden_seconds": 115.01882870699774,
+        "model_storage_bytes": 402782
+      },
+      {
+        "status": "SUCCESS",
+        "policy": "SKLEARN_BALANCED_TRAIN_FOLD",
+        "weights": [
+          0.9895973154362416,
+          1.010623714873201
+        ],
+        "validation_metrics": {
+          "BACC": 0.6926976197472818,
+          "F1_MACRO": 0.6923756255519576,
+          "ACC": 0.692929292929293,
+          "CONFUSION": [
+            [
+              182,
+              67
+            ],
+            [
+              85,
+              161
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            249,
+            246
+          ],
+          "PRED_COMPLETE": 495,
+          "ROC_AUC": 0.7331439579456035,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "NATIVE_PROBABILITY"
+        },
+        "validation_burden_seconds": 116.63465536799777,
+        "model_storage_bytes": 402807
+      }
+    ],
+    "test_set_used": false,
+    "training_count_evidence": {
+      "counts": [
+        1490,
+        1459
+      ],
+      "exactly_equal": false,
+      "selection_required": true,
+      "weights": [
+        0.9895973154362416,
+        1.010623714873201
+      ],
+      "formula": "SKLEARN_BALANCED_n_over_Knc"
+    },
+    "weight_formula": {
+      "type": "SKLEARN_COMPUTE_CLASS_WEIGHT_BALANCED",
+      "formula": "n_samples / (n_classes * class_count)",
+      "normalization": "NONE_BEYOND_SKLEARN_BALANCED_FORMULA",
+      "source_labels": "LEGAL_FIT_ROLE_ONLY"
+    },
+    "selection_stage": "POST_HYPERPARAMETER_PRE_TEST_TRAINING_POLICY_CHECK",
+    "selected_validation_burden_seconds": 116.63465536799777,
+    "selected_model_storage_bytes": 402807
+  }
+}

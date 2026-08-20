@@ -1,0 +1,50 @@
+{
+  "checks": [
+    {
+      "check": "A0 657+3+15+3=678",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "A4 591+576+9+42=1218",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "FailureCaseIndex 591+42+9+3+3=648",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Stage18S anchor total 7+22+16=45",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Stage18S six-budget sign flips 15/15",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "C1-C3 raw p<=0.05 rows=0 of 756",
+      "status": "PASS",
+      "detail": "verified from finalized P02 report and governed statistical source"
+    },
+    {
+      "check": "P02 claim count 10",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Cumulative claim count 8",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Prior claim count preserved 19",
+      "status": "PASS",
+      "detail": ""
+    }
+  ],
+  "status": "PASS"
+}

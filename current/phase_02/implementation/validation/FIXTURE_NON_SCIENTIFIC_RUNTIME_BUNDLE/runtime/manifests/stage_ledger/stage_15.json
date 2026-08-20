@@ -1,0 +1,103 @@
+{
+  "stage_id": "15",
+  "status": "SUCCESS",
+  "attempt_id": "d6c2a48d4f30",
+  "inputs": {},
+  "input_hashes": {},
+  "outputs": {
+    "status": "PASS",
+    "planned": 5,
+    "terminal": 5,
+    "terminal_counts": {
+      "SUCCESS": 4,
+      "CHECKPOINT_BLOCKED": 1
+    },
+    "minimum_floor": {
+      "PhysioNetMI": {
+        "classical": true,
+        "riemannian": true
+      }
+    },
+    "participant_metric_rows": 24,
+    "metric_records": 15,
+    "analysis_inputs_complete": true,
+    "p03_raw_prediction_substrate": true,
+    "prediction_record_complete": true,
+    "raw_score_semantics_complete": true,
+    "denominator_accounting_complete": true,
+    "checkpoint_provenance_complete": true,
+    "failure_negative_evidence_expected_at_stage19": true,
+    "figure_table_source_generation_stage": "21",
+    "protocol_handoff_stage": "22",
+    "phase_analysis_handoff_stage": "22",
+    "layer0_handoff_stage": "22",
+    "evidence_map_handoff_stage": "22",
+    "layer10_source_handoff_stage": "22",
+    "stage15_a0_closure": "COMPLETE",
+    "required_closure_outputs_missing": 0,
+    "training_policy_challenger_closure": {
+      "status": "PASS",
+      "planned_cells": 1,
+      "terminal_cells": 1,
+      "successful_comparisons": 1,
+      "non_success_terminal_cells": 0,
+      "incomplete_cells": [],
+      "diagnostic_only": true,
+      "condition_id": "P02-TRAIN-AUG-SR-EEGNET-FULL-R2-VALIDATION-RESOLVED",
+      "not_an_A_number": true,
+      "does_not_replace_primary_A0": true,
+      "does_not_enter_A4_selection": true,
+      "analysis_sources": [
+        "analysis_inputs/training_policy_challenger_terminal_states.jsonl",
+        "analysis_inputs/training_policy_challenger_seed_comparisons.jsonl",
+        "analysis_inputs/training_policy_challenger_participant_comparisons.jsonl",
+        "analysis_inputs/training_policy_challenger_statistics.json",
+        "analysis_inputs/training_policy_sr_probability_selection.json",
+        "analysis_inputs/training_policy_sr_probability_calibration_candidates.jsonl"
+      ]
+    },
+    "artifact": "stage_artifacts/15_a0_and_training_policy_closure.json"
+  },
+  "output_hashes": {
+    "status": "727e9bd17b077ba162e13ba877135cc6fbc6b30f83da0b34b3e20233f1cc885f",
+    "planned": "ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d",
+    "terminal": "ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d",
+    "terminal_counts": "f1bb914f46970317d2c5fdd856ead8146f2c662d1b9057684112d566e5a68162",
+    "minimum_floor": "cb58946fb2758d1af720c9d8e8f2c29ab40d136088abf850eb908a6987fdf7a9",
+    "participant_metric_rows": "c2356069e9d1e79ca924378153cfbbfb4d4416b1f99d41a2940bfdb66c5319db",
+    "metric_records": "e629fa6598d732768f7c726b4b621285f9c3b85303900aa912017db7617d8bdb",
+    "analysis_inputs_complete": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+    "p03_raw_prediction_substrate": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+    "prediction_record_complete": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+    "raw_score_semantics_complete": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+    "denominator_accounting_complete": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+    "checkpoint_provenance_complete": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+    "failure_negative_evidence_expected_at_stage19": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+    "figure_table_source_generation_stage": "6f8f349216adc47cfd723001f3dfbfc11179e1b36c31ce51c85056026f3d85b9",
+    "protocol_handoff_stage": "b16781f85251cf7a5bab973eb0927776b89a75f8def28c649ae65e01b3db5e28",
+    "phase_analysis_handoff_stage": "b16781f85251cf7a5bab973eb0927776b89a75f8def28c649ae65e01b3db5e28",
+    "layer0_handoff_stage": "b16781f85251cf7a5bab973eb0927776b89a75f8def28c649ae65e01b3db5e28",
+    "evidence_map_handoff_stage": "b16781f85251cf7a5bab973eb0927776b89a75f8def28c649ae65e01b3db5e28",
+    "layer10_source_handoff_stage": "b16781f85251cf7a5bab973eb0927776b89a75f8def28c649ae65e01b3db5e28",
+    "stage15_a0_closure": "0ba9a455349c3f02ebe6f28595a29e30a4d03a954f412f2688924056e81a7067",
+    "required_closure_outputs_missing": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+    "training_policy_challenger_closure": "635d2dfeb3f154e0ec10e39db2895704b1f92b627a89e6195219ee27b0c67be0",
+    "artifact": "7fcf3f99141359c1b8e10697e29fb739eb3b08045c88209f5f74f17e1ea1ce94"
+  },
+  "dependencies": [
+    "14"
+  ],
+  "elapsed_seconds": 0.6442892551422119,
+  "log_path": "logs/stage_15_d6c2a48d4f30.log",
+  "heartbeat_write_errors": [],
+  "observability_status": "PASS",
+  "blockers": [],
+  "observations": [],
+  "revision_fingerprint": {
+    "notebook_revision": "R4",
+    "source_sha256": "AUTHORING_FIXTURE_SOURCE",
+    "config_sha256": "AUTHORING_FIXTURE_CONFIG",
+    "stage_plan_sha256": "AUTHORING_FIXTURE_STAGE_PLAN",
+    "scientific_freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5"
+  }
+}

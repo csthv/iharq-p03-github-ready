@@ -1,0 +1,130 @@
+{
+  "analysis_quality": {
+    "MR00_sign_flip_fraction": 1.0,
+    "MR00_trajectories_with_sign_flip": 15,
+    "anchor_sign_consistency_counts": {
+      "ALL_NEGATIVE": 10,
+      "ALL_POSITIVE": 27,
+      "MIXED": 53
+    },
+    "median_repeat_sd_delta_BACC": 0.018471355736408922,
+    "nine_budget_MR00_trajectories": 15,
+    "p90_repeat_sd_delta_BACC": 0.04459155125980861,
+    "participant_audit_issues": [],
+    "participant_effect_rows": 1890,
+    "six_anchor_three_repeat_trajectories": 90
+  },
+  "artifact_id": "P02-STAGE18S-POST-INT16-FORENSIC-METRICS-QUALITY-AUDIT-R1",
+  "audit_files_written_only_under": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/supplements/stage18S_balanced_sensitivity_R1/analysis/post_int16_forensic_audit_R1",
+  "created_at_utc": "2026-08-17T17:00:02.999616+00:00",
+  "execution_receipt": {
+    "artifact_id": "P02-STAGE18S-BALANCED-SENSITIVITY-EXECUTION-R1",
+    "canonical_stage18_byte_identity_preserved": true,
+    "created_at_utc": "2026-08-17T16:45:18.210032+00:00",
+    "elapsed_seconds": 6060.757873773575,
+    "member_receipts": 432,
+    "member_status_counts": {
+      "INPUT_INCOMPATIBLE": 54,
+      "SUCCESS": 378
+    },
+    "planned_cells": 324,
+    "planned_groups": 108,
+    "retry_archives": {
+      "member_files": 0,
+      "run_cell_files": 0
+    },
+    "scientific_recipe_changed": false,
+    "status": "PASS",
+    "supplement_id": "P02-STAGE18S-BALANCED-SENSITIVITY-R1",
+    "terminal_counts": {
+      "INPUT_INCOMPATIBLE": 54,
+      "SUCCESS": 270
+    },
+    "test_outcome_used_for_selection": false,
+    "transport": {
+      "adaptive_resource_guards": true,
+      "automatic_resource_backoff": true,
+      "final_gpu_slot_caps": {
+        "0": 6,
+        "1": 6
+      },
+      "gpu_backoff_events": {},
+      "max_slots_per_gpu": 6,
+      "max_workers": 12,
+      "same_cache_group_on_multiple_workers": false,
+      "same_gpu_virtual_cuda_rng": true,
+      "single_model_multi_gpu": false
+    }
+  },
+  "execution_receipt_path": "/kaggle/working/iharq_p02_integrated_1_256_R1/runtime/supplements/stage18S_balanced_sensitivity_R1/analysis/execution_receipt.json",
+  "execution_receipt_sha256": "f4f2f6219dc28e4eda10e815ff9e009744b46e991e8ab43815467ce8a7004d23",
+  "interpretation_limits": {
+    "INPUT_INCOMPATIBLE_is_expected_CBRAMOD_LONG_fail_closed": true,
+    "claim_scope": "POST_HOC_SENSITIVITY_DESCRIPTIVE",
+    "do_not_claim_full_buildbook_equivalence": true,
+    "do_not_merge_into_canonical_G18": true,
+    "not_five_repeat_confirmatory": true,
+    "three_repeat_results_are_descriptive": true
+  },
+  "member_surface": {
+    "expected_receipts": 432,
+    "expected_status_counts": {
+      "INPUT_INCOMPATIBLE": 54,
+      "SUCCESS": 378
+    },
+    "input_incompatible_contract_issues": [],
+    "observed_receipts": 432,
+    "observed_status_counts": {
+      "INPUT_INCOMPATIBLE": 54,
+      "SUCCESS": 378
+    },
+    "provenance_issues": []
+  },
+  "metric_surface": {
+    "combined_matched_effect_rows": 315,
+    "effect_issues": [],
+    "metric_issues": [],
+    "successful_metric_rows": 270
+  },
+  "quality_checks": {
+    "canonical_stage18_byte_identity": true,
+    "execution_receipt_PASS": true,
+    "execution_receipt_contract_exact": true,
+    "group_closure_exact": true,
+    "matched_A4_vs_C0_effect_surface_315": true,
+    "member_closure_exact": true,
+    "member_training_and_test_firewall_provenance": true,
+    "nine_budget_MR00_surface_15": true,
+    "no_live_stage18S_workers": true,
+    "participant_paired_effect_audit": true,
+    "reuse_partition_162_plus_162": true,
+    "six_anchor_three_repeat_surface_90": true,
+    "successful_metric_integrity": true,
+    "terminal_closure_exact": true
+  },
+  "runtime_quiescence": {
+    "active_worker_records": {},
+    "live_stage18S_threads": [],
+    "queue_size": 0
+  },
+  "scientific_artifacts_modified_by_this_cell": false,
+  "status": "PASS",
+  "supplement_id": "P02-STAGE18S-BALANCED-SENSITIVITY-R1",
+  "terminal_surface": {
+    "expected_cells": 324,
+    "expected_groups": 108,
+    "expected_terminal_counts": {
+      "INPUT_INCOMPATIBLE": 54,
+      "SUCCESS": 270
+    },
+    "new_64_128_256_cells": 162,
+    "observed_cells": 324,
+    "observed_groups": 108,
+    "observed_terminal_counts": {
+      "INPUT_INCOMPATIBLE": 54,
+      "SUCCESS": 270
+    },
+    "predecessor_reused_cells": 162,
+    "unclassified_cells": 0
+  }
+}

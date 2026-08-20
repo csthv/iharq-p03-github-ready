@@ -1,0 +1,36 @@
+{
+  "validation_id": "P02-RECORD-OWNER-ROUTING-AUDIT-R2",
+  "status": "PASS",
+  "direct_p02_physical_records": [
+    "BaselineMetricRecord",
+    "DiagnosticOnlyFlag",
+    "EnsembleControlRecord",
+    "FailureCaseIndex",
+    "Layer2ReadinessReport",
+    "LowCalibrationCurveRecord",
+    "ModelRegistryRecord",
+    "NegativeResultNote",
+    "PredictionRecord",
+    "SubjectProfileRecord"
+  ],
+  "owner_routed_records": [
+    {
+      "record_family": "LeakageWarningRecord",
+      "authority_rule": "use current authorized warning owner/profile; P02 source evidence only if owner requires",
+      "current_output_status": "OWNER_ROUTED_SUPPORT_RECORD; P02_SOURCE_EVIDENCE_ONLY",
+      "source_path": "analysis_inputs/split_leakage_validation.json + downstream handoff",
+      "direct_p02_physical_writer_required": false,
+      "status": "PASS"
+    },
+    {
+      "record_family": "MatchedComparisonReport",
+      "authority_rule": "P02 emits matched source table; formal owner-compatible representation downstream",
+      "current_output_status": "OWNER_ROUTED_SUPPORT_RECORD; P02_MATCHED_SOURCE_TABLES_COMPLETE",
+      "source_path": "analysis_inputs/a4_*common_support* + comparison source tables + downstream handoff",
+      "direct_p02_physical_writer_required": false,
+      "status": "PASS"
+    }
+  ],
+  "direct_writer_missing": 0,
+  "unauthorized_p02_schema_invention": 0
+}

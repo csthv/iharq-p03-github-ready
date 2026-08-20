@@ -1,0 +1,32 @@
+{
+  "cross_repository_location_index": "release/PHASE03_CROSS_REPOSITORY_LOCATION_INDEX.jsonl",
+  "future_evidence_map_input": {
+    "canonical": "artifacts/evidence_map_handoff/phase_03/",
+    "post_extension": "post_extension_64_128_256/artifacts/evidence_map_handoff/phase_03/"
+  },
+  "future_layer0_input": {
+    "canonical": "artifacts/layer0_handoff/phase_03/",
+    "post_extension": "post_extension_64_128_256/artifacts/layer0_handoff/phase_03/"
+  },
+  "future_layer10_input": {
+    "canonical": "artifacts/layer10_source_bundle/phase_03/",
+    "large_sources": "release/EXTERNAL_ARTIFACT_POINTERS.jsonl",
+    "post_extension": "post_extension_64_128_256/artifacts/layer10_source_bundle/phase_03/"
+  },
+  "future_phase_analysis_input": {
+    "canonical": "artifacts/phase_analysis_handoff/phase_03/",
+    "large_rows": "release/EXTERNAL_ARTIFACT_POINTERS.jsonl",
+    "post_extension": "post_extension_64_128_256/artifacts/phase_analysis_handoff/phase_03/"
+  },
+  "future_protocol_input": {
+    "canonical": "artifacts/protocol_v1_handoff/phase_03/",
+    "post_extension": "post_extension_64_128_256/artifacts/protocol_v1_handoff/phase_03/"
+  },
+  "p04": {
+    "canonical_handoff_root": "artifacts/handoffs/phase_03_to_phase_04/",
+    "external_record_resolution": "release/EXTERNAL_ARTIFACT_POINTERS.jsonl",
+    "post_extension_handoff_root": "post_extension_64_128_256/artifacts/handoffs/phase_03_to_phase_04/"
+  },
+  "schema_id": "P03DownstreamInputLocator.v4",
+  "status": "READY"
+}

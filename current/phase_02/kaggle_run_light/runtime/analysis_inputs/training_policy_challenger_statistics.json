@@ -1,0 +1,65 @@
+{
+  "BNCI2014_001": {
+    "participant_rows": 5,
+    "wilcoxon": {
+      "status": "PASS",
+      "n": 5,
+      "p_value": 0.125,
+      "statistic": 1.0,
+      "median_difference": -0.03472222222222221,
+      "rank_biserial": -0.8666666666666667
+    },
+    "bootstrap_delta_BACC": {
+      "status": "PASS",
+      "n": 5,
+      "estimate": -0.03472222222222221,
+      "low": -0.07638888888888895,
+      "high": -0.0347222222222221,
+      "level": 0.95,
+      "method": "BCa",
+      "resamples": 10000
+    }
+  },
+  "Lee2019_MI": {
+    "participant_rows": 30,
+    "wilcoxon": {
+      "status": "PASS",
+      "n": 30,
+      "p_value": 0.23092203251433552,
+      "statistic": 150.5,
+      "median_difference": 0.010000000000000009,
+      "rank_biserial": 0.25862068965517243
+    },
+    "bootstrap_delta_BACC": {
+      "status": "PASS",
+      "n": 30,
+      "estimate": 0.010000000000000009,
+      "low": -0.0050000000000000044,
+      "high": 0.025000000000000022,
+      "level": 0.95,
+      "method": "PERCENTILE_FALLBACK_DEGENERATE_ACCELERATION",
+      "resamples": 10000
+    }
+  },
+  "PhysioNetMI": {
+    "participant_rows": 55,
+    "wilcoxon": {
+      "status": "PASS",
+      "n": 55,
+      "p_value": 0.45518541901492204,
+      "statistic": 607.0,
+      "median_difference": 0.0,
+      "rank_biserial": -0.11901306240928883
+    },
+    "bootstrap_delta_BACC": {
+      "status": "PASS",
+      "n": 55,
+      "estimate": 0.0,
+      "low": -0.03434779149156312,
+      "high": 0.0029761904761905766,
+      "level": 0.95,
+      "method": "BCa",
+      "resamples": 10000
+    }
+  }
+}

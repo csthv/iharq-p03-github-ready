@@ -1,0 +1,96 @@
+canonical_map_id: IHARQ-CUMULATIVE-EVIDENCE-MAP-THROUGH-P02-R1
+taxonomy:
+- PROJECT_EMPIRICAL_EVIDENCE
+- PROJECT_METHOD_AUTHORITY
+- EXTERNAL_METHOD_REFERENCE
+- EXTERNAL_CONTEXTUAL_COMPARISON
+- EXTERNAL_NOVELTY_SUPPORT
+references:
+- reference_id: LIT-EEGNET-2018
+  title: 'EEGNet: a compact convolutional neural network for EEG-based brain-computer interfaces'
+  authors: Lawhern VJ; Solon AJ; Waytowich NR; Gordon SM; Hung CP; Lance BJ
+  year: 2018
+  venue: Journal of Neural Engineering 15(5):056013
+  doi_or_identifier: 10.1088/1741-2552/aace8c
+  model_or_topic: EEGNet
+  comparison_role: EXTERNAL_METHOD_REFERENCE
+  comparability: METHODOLOGICAL_REFERENCE_ONLY
+  verification_source: PubMed PMID 29932424
+  verified_date: '2026-08-14'
+- reference_id: LIT-FBCNET-2021
+  title: 'FBCNet: A Multi-view Convolutional Neural Network for Brain-Computer Interface'
+  authors: Mane R; Chew E; Chua K; Ang KK; Robinson N; Vinod AP; Lee SW; Guan C
+  year: 2021
+  venue: arXiv extended work; model lineage follows EMBC 2020 work
+  doi_or_identifier: arXiv:2104.01233
+  model_or_topic: FBCNet
+  comparison_role: EXTERNAL_METHOD_REFERENCE
+  comparability: METHODOLOGICAL_REFERENCE_ONLY
+  verification_source: arXiv primary manuscript
+  verified_date: '2026-08-14'
+- reference_id: LIT-DBCONFORMER-2026
+  title: 'DBConformer: Dual-Branch Convolutional Transformer for EEG Decoding'
+  authors: Wang Z; Wang H; Jia T; He X; Li S; Wu D
+  year: 2026
+  venue: IEEE Journal of Biomedical and Health Informatics 30(5):4134-4147
+  doi_or_identifier: 10.1109/JBHI.2025.3622725
+  model_or_topic: DBConformer
+  comparison_role: EXTERNAL_METHOD_REFERENCE
+  comparability: METHODOLOGICAL_REFERENCE_ONLY
+  verification_source: PubMed PMID 41129442
+  verified_date: '2026-08-14'
+- reference_id: LIT-CBRAMOD-2025
+  title: 'CBraMod: A Criss-Cross Brain Foundation Model for EEG Decoding'
+  authors: Wang J; Zhao S; Luo Z; Zhou Y; Jiang H; Li S; Li T; Pan G
+  year: 2025
+  venue: ICLR 2025
+  doi_or_identifier: arXiv:2412.07236 / ICLR 2025 proceedings
+  model_or_topic: CBraMod
+  comparison_role: EXTERNAL_METHOD_REFERENCE
+  comparability: METHODOLOGICAL_REFERENCE_ONLY
+  verification_source: ICLR proceedings
+  verified_date: '2026-08-14'
+- reference_id: LIT-PHYSIONET-MI-2009
+  title: EEG Motor Movement/Imagery Dataset v1.0.0
+  authors: Schalk G
+  year: 2009
+  venue: PhysioNet
+  doi_or_identifier: 10.13026/C28G6P
+  model_or_topic: PhysioNetMI dataset
+  comparison_role: PROJECT_SOURCE_REFERENCE
+  comparability: DATASET_REFERENCE
+  verification_source: PhysioNet official dataset page
+  verified_date: '2026-08-14'
+- reference_id: LIT-OPENBMI-2019
+  title: 'EEG dataset and OpenBMI toolbox for three BCI paradigms: an investigation into BCI illiteracy'
+  authors: Lee MH; Kwon OY; Kim YJ; Kim HK; Lee YE; Williamson J; Fazli S; Lee SW
+  year: 2019
+  venue: GigaScience 8(5):giz002
+  doi_or_identifier: 10.1093/gigascience/giz002
+  model_or_topic: Lee2019_MI / OpenBMI
+  comparison_role: PROJECT_SOURCE_REFERENCE_AND_CONTEXT
+  comparability: DATASET_REFERENCE
+  verification_source: PubMed PMID 30698704 / GigaScience
+  verified_date: '2026-08-14'
+- reference_id: LIT-BNCI-2014-001
+  title: BNCI Horizon 2020 dataset 001-2014 / BCI Competition IV dataset 2a
+  authors: Institute for Knowledge Discovery, Graz University of Technology
+  year: 2014
+  venue: BNCI Horizon 2020 dataset registry
+  doi_or_identifier: BNCI 001-2014
+  model_or_topic: BNCI2014_001
+  comparison_role: PROJECT_SOURCE_REFERENCE
+  comparability: DATASET_REFERENCE
+  verification_source: BNCI Horizon 2020 official dataset page
+  verified_date: '2026-08-14'
+- reference_id: LIT-MOABB-2018
+  title: 'MOABB: Trustworthy algorithm benchmarking for BCIs'
+  authors: Jayaram V; Barachant A
+  year: 2018
+  venue: arXiv / Journal of Neural Engineering lineage
+  doi_or_identifier: arXiv:1805.06427
+  model_or_topic: BCI reproducibility / dataset heterogeneity
+  comparison_role: EXTERNAL_CONTEXTUAL_COMPARISON
+  comparability: CONTEXTUAL_ONLY
+  verification_source: arXiv primary manuscript
+  verified_date: '2026-08-14'

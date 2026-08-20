@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iharq"
+version = "0.1.0.p01final1"
+description = "IHARQ BenchGuard Stretch C finalized P01/L1 governed public-data foundation and Phase-2 handoff companion"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "moabb==1.5.0",
+  "mne==1.12.1",
+  "numpy==2.2.6",
+  "scipy==1.15.3",
+  "pandas==2.3.1",
+  "scikit-learn==1.7.1",
+  "h5py==3.14.0",
+  "pooch==1.8.2",
+  "PyYAML==6.0.2",
+  "pydantic==2.11.7",
+  "jsonschema==4.25.0",
+  "nbformat==5.10.4",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==8.4.1"]
+
+[project.scripts]
+iharq = "iharq.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-markers"
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.iharq]
+primary_python = "3.12"
+review_mode = "LLM_ONLY"
+controlling_build_book = "IHARQ-IBB-R10-P01-L1-INDEPENDENT-AUDIT-REPAIRED"
+controlling_annex = "IHARQ-IBB-P01-L1-ANNEX-R4"
+official_run_freeze = "P01-L1-OFFICIAL-RUN-FREEZE-R2"
+runtime_revision = "R6_ACCEPTED_WITH_P01_FINAL_CLOSURE_R1"
+
+current_phase_status = "PHASE_01_SCOPE_FINALIZED_READY_FOR_P02_TRANSITION"
+current_phase_handoff = "P01-FINAL-HANDOFF-P02-READINESS-R1"

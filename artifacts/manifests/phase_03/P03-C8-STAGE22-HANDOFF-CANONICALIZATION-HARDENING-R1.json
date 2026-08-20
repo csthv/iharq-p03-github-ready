@@ -1,0 +1,69 @@
+{
+  "checksum_ledger_path": "artifacts/handoffs/phase_03_to_phase_04/checksums.sha256",
+  "config_changed": false,
+  "hardening_id": "P03-C8-STAGE22-HANDOFF-CANONICALIZATION-HARDENING-R1",
+  "invariants": {
+    "claim_approval_performed": false,
+    "claim_comparators_explicit": true,
+    "claim_strengthening": false,
+    "inferential_statistics_executed": false,
+    "normalized_p039_bound": true,
+    "normalized_p040_bound": true,
+    "raw_stage22_payloads_exactly_reproduced": true,
+    "scientific_recomputation": false,
+    "test_used_for_selection": false
+  },
+  "products": {
+    "P03-PROD-046": {
+      "candidate_claim_count": 4,
+      "path": "artifacts/layer0_handoff/phase_03/layer0_claim_handoff.yaml",
+      "sha256": "087812be5e68900e5674766a69197ae3af1d800d22a2b2e72230d89d9a029b2c"
+    },
+    "P03-PROD-047": {
+      "node_count": 70,
+      "orphan_count": 0,
+      "path": "artifacts/evidence_map_handoff/phase_03/evidence_map_handoff.yaml",
+      "relation_count": 85,
+      "sha256": "a5e0adf43f3cfeff8f275eb5a5d582f6e378957c25ab8d743893a0b455a00e90"
+    },
+    "P03-PROD-048": {
+      "artifact_count": 45,
+      "path": "artifacts/handoffs/phase_03_to_phase_04/p03_handoff_manifest.json",
+      "sha256": "dacec8269c6b127499d0fdc3b565be8d2b2bb96f97430839eb09b181018f1bae"
+    },
+    "P03-PROD-049": {
+      "path": "artifacts/manifests/phase_03/later_phase_handoff.csv",
+      "row_count": 11,
+      "sha256": "6da50a41c180ed1eb8d03413165eea9d093d76679a532b63cb4183010a271a5b"
+    },
+    "P03-PROD-050": {
+      "gate_count": 23,
+      "path": "artifacts/protocol_v1_handoff/phase_03/protocol_actual_run_annex_input.yaml",
+      "sha256": "596f3b634b0d98b83575d2336a396a3c4772b2729e4e63c1b6ce89143ce63615"
+    },
+    "P03-PROD-062": {
+      "metric_rows": 13585,
+      "path": "artifacts/phase_analysis_handoff/phase_03/index.yaml",
+      "sha256": "af5a78021474731997d4a8f0cc11ff4ca430ab3271fd741ef8ffd61ab434ee59",
+      "statistics_rows": 13585
+    },
+    "P03-PROD-063": {
+      "candidate_claim_count": 4,
+      "explicit_comparator_count": 4,
+      "path": "artifacts/layer0_handoff/phase_03/claim_evidence_input.yaml",
+      "sha256": "4e6b9117d070c1a0737b72ffabdc72a2c5ba5b2704bfa92e2bdb053e1a3a49a0"
+    }
+  },
+  "protocol_changed": false,
+  "repository_mutated": false,
+  "run_id": "P03-L3-OFFICIAL-09ca82c743e0411a",
+  "schema_id": "P03Stage22HandoffCanonicalizationHardeningManifest.v1",
+  "schema_version": "1.0.0",
+  "scientific_handler_changed": false,
+  "scientific_handler_sha256": "167a7d3c6a72fc0d52c9f92036a79156f182492f1b0f83eae6017c3155c56ba3",
+  "scientific_method_changed": false,
+  "stage22_output_manifest_sha256": "e1f786ec9f7c3d46dd29a8569d4076c83a1e33493ff32fb4530c02134142862d",
+  "stage22_scientific_bytes_changed": false,
+  "stage_id": "22",
+  "status": "PASS"
+}

@@ -1,0 +1,16 @@
+ablation_id,official_identity,P00,P01,P02,current_cumulative_status,current_interpretation,current_limitation
+A0,Raw Decoder / Accept-All Raw Decoder Reference,FOUNDATION_READY,FOUNDATION_READY,EXECUTED_COMPLETE,EXECUTED_COMPLETE,Baseline spine established; model/dataset heterogeneity and low-label results interpreted,BNCI n=1 inferential restriction; low-label single-subset
+A1,Calibrated Decoder / Calibration Visibility,FOUNDATION_READY,FOUNDATION_READY,NOT_APPLICABLE_TO_P02 / DOWNSTREAM,FOUNDATION_READY_FOR_DOWNSTREAM,Downstream responsibility; P02 supplies raw evidence only,Do not infer calibration from P02
+A2,Simple Registered Threshold / Confidence-Threshold Baseline,FOUNDATION_READY,FOUNDATION_READY,NOT_APPLICABLE_TO_P02 / DOWNSTREAM,FOUNDATION_READY_FOR_DOWNSTREAM,Downstream responsibility,Do not infer threshold effectiveness from P02
+A3,Uncertainty and Selective Prediction,FOUNDATION_READY,FOUNDATION_READY,NOT_APPLICABLE_TO_P02 / DOWNSTREAM,FOUNDATION_READY_FOR_DOWNSTREAM,Downstream responsibility,Do not infer selective risk/abstention from P02
+A4,"Longer-Window, Multi-Window Voting/Averaging and Ordinary Ensemble Controls",FOUNDATION_READY,FOUNDATION_READY + MATCHED_R2_SUBSTRATE,EXECUTED_RESOURCE_CONSTRAINED + STAGE18S_POST_HOC,EXECUTED_WITH_EXPLICIT_LIMITATIONS,Resource-constrained canonical A4 plus post-hoc Stage18S analyzed,No five-repeat stability/dense deep-budget/full-grid equivalence
+A5,IHARQ-lite / Rule-Based Evidence Verification,FOUNDATION_READY,FOUNDATION_READY,NOT_APPLICABLE_TO_P02 / DOWNSTREAM,FOUNDATION_READY_FOR_DOWNSTREAM,Downstream,No P02 claim
+A6,IHARQ + Evidence-Quality Estimator,FOUNDATION_READY,FOUNDATION_READY,NOT_APPLICABLE_TO_P02 / DOWNSTREAM,FOUNDATION_READY_FOR_DOWNSTREAM,Downstream,No P02 claim
+A7,IHARQ + RegimeRisk Temporal Trust,FOUNDATION_READY,FOUNDATION_READY,NOT_APPLICABLE_TO_P02 / DOWNSTREAM,FOUNDATION_READY_FOR_DOWNSTREAM,Downstream,No temporal robustness claim
+A8,Learning-to-defer / Deferral Comparison,FOUNDATION_READY,FOUNDATION_READY,NOT_APPLICABLE_TO_P02 / DOWNSTREAM,FOUNDATION_READY_FOR_DOWNSTREAM,Downstream,No deferral claim
+A9,Supervised Adaptive-IHARQ / Adaptive Readiness Policy,FOUNDATION_READY,FOUNDATION_READY,NOT_APPLICABLE_TO_P02 / DOWNSTREAM,FOUNDATION_READY_FOR_DOWNSTREAM,Downstream,No readiness-policy effectiveness claim
+A10,Contextual Bandit / Simulation-Bounded Immediate-Reward Adaptation,FOUNDATION_READY,FOUNDATION_READY,NOT_APPLICABLE_TO_P02 / DOWNSTREAM,FOUNDATION_READY_FOR_DOWNSTREAM,Downstream,No bandit claim
+A11,Reinforcement-Learning Policy / Simulation-Bounded Sequential Policy Learning,FOUNDATION_READY,FOUNDATION_READY,NOT_APPLICABLE_TO_P02 / DOWNSTREAM,FOUNDATION_READY_FOR_DOWNSTREAM,Downstream,No RL-policy claim
+A12,StressForge Stress Tests / Controlled Stress Robustness,FOUNDATION_READY,FOUNDATION_READY,NOT_APPLICABLE_TO_P02 / DOWNSTREAM,FOUNDATION_READY_FOR_DOWNSTREAM,Downstream,No stress-robustness claim
+A13,Layer 9 MyoSuite/OpenSim/static-replay Embodiment Demo,FOUNDATION_READY,FOUNDATION_READY,NOT_APPLICABLE_TO_P02 / DOWNSTREAM,FOUNDATION_READY_FOR_DOWNSTREAM,Downstream,No embodiment claim
+A14,Rejected / prohibited,REJECTED/PROHIBITED,ABSENT/PROHIBITED,ABSENT/PROHIBITED,PROHIBITED,Retains governed rejected state,Must not be introduced

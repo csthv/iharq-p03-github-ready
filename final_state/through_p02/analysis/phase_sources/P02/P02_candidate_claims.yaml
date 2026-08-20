@@ -1,0 +1,212 @@
+phase_id: P02
+analysis_release_id: P02-PHASE-ANALYSIS-FINAL-R2
+candidate_claims:
+- candidate_claim_id: P02-CLAIM-CAND-001
+  claim_text: Under the frozen P01 subject-grouped binary motor-imagery protocol,
+    P02 established a complete multi-family raw decoder/baseline measurement spine
+    across three public EEG datasets.
+  supporting_findings:
+  - P02-FIND-001
+  supporting_analysis:
+  - A0 completion and prediction/checkpoint closure
+  scope: Layer-2 measurement infrastructure and evidence
+  required_qualification: Raw accept-all decoder evidence only; not clinical or safety
+    evidence.
+  known_limitations:
+  - PUBLIC_EEG_ONLY
+  - NO_CALIBRATION_POLICY_CLAIM
+  confidence: HIGH
+  recommended_manuscript_role: Methods / empirical foundation
+  layer0_status: PENDING_REVIEW
+  claim_ceiling: SUPPORTED
+  layer0_readiness: READY_FOR_REVIEW_NOT_APPROVED
+  prohibited_stronger_wording: Do not call P02 calibration-, threshold-, abstention-,
+    safety-, or deployment-ready.
+- candidate_claim_id: P02-CLAIM-CAND-002
+  claim_text: 'Decoder-family performance was dataset-dependent rather than universally
+    ordered: DBConformer was descriptively strongest at full training on Lee2019_MI
+    and PhysioNetMI, while CSP-LDA led the single-participant BNCI2014_001 test split.'
+  supporting_findings:
+  - P02-FIND-002
+  - P02-FIND-003
+  supporting_analysis:
+  - A0 participant-first summary
+  - A0 statistics
+  scope: Full-training A0
+  required_qualification: Descriptive rankings; no universal winner; BNCI inferential
+    n=1.
+  known_limitations:
+  - DATASET_HETEROGENEITY
+  - BNCI_TEST_PARTICIPANTS_1
+  confidence: HIGH_FOR_DESCRIPTION
+  recommended_manuscript_role: Main/secondary result
+  layer0_status: PENDING_REVIEW
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  layer0_readiness: READY_FOR_REVIEW_NOT_APPROVED
+  prohibited_stronger_wording: Do not claim one decoder is universally best across
+    datasets or participants.
+- candidate_claim_id: P02-CLAIM-CAND-003
+  claim_text: PhysioNetMI exhibited statistically detectable overall decoder heterogeneity
+    under the governed A0 comparison, but no individual alternative-versus-CSP-LDA
+    contrast survived Holm correction.
+  supporting_findings:
+  - P02-FIND-003
+  supporting_analysis:
+  - a0_statistics.json
+  scope: PhysioNetMI A0 full training
+  required_qualification: Global omnibus heterogeneity is not evidence that a specific
+    decoder is superior.
+  known_limitations:
+  - MULTIPLICITY
+  - PARTICIPANT_HETEROGENEITY
+  confidence: HIGH
+  recommended_manuscript_role: Main result / discussion
+  layer0_status: PENDING_REVIEW
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  layer0_readiness: READY_FOR_REVIEW_NOT_APPROVED
+  prohibited_stronger_wording: Do not convert omnibus heterogeneity into a significant
+    pairwise winner claim.
+- candidate_claim_id: P02-CLAIM-CAND-004
+  claim_text: Extreme low-label decoding remained difficult and non-monotonic under
+    the single frozen subset design; P02 does not support a universal sample-efficiency
+    ordering among CSP-LDA, tangent-space, EEGNet and CBraMod.
+  supporting_findings:
+  - P02-FIND-005
+  supporting_analysis:
+  - low_label_metric_source.csv
+  scope: 1-32 labels/class low-label surface
+  required_qualification: One frozen subset per budget; descriptive only.
+  known_limitations:
+  - SINGLE_FROZEN_SUBSET
+  - NO_LOW_LABEL_REPEAT_STABILITY
+  confidence: MEDIUM_HIGH
+  recommended_manuscript_role: Secondary result / limitation
+  layer0_status: PENDING_REVIEW
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  layer0_readiness: READY_FOR_REVIEW_NOT_APPROVED
+  prohibited_stronger_wording: Do not claim stable sample-efficiency ordering or subset-robust
+    low-label behavior.
+- candidate_claim_id: P02-CLAIM-CAND-005
+  claim_text: The Phase-02 training-correction history demonstrates that optimization/training-policy
+    fidelity can materially affect whether an EEG architecture appears collapsed or
+    viable, so optimization failure should not automatically be interpreted as architectural
+    incapacity.
+  supporting_findings:
+  - P02-FIND-006
+  - P02-FIND-008
+  supporting_analysis:
+  - Stage11 recipe amendment
+  - Stage12 validation-only A/B/C diagnostics
+  scope: Methodological observation
+  required_qualification: Mechanistic interpretation; source diagnostics are not a
+    direct claim of test-set performance improvement for every model.
+  known_limitations:
+  - POST_OBSERVATION_AMENDMENT
+  - DIAGNOSTIC_VALIDATION_EVIDENCE
+  confidence: MEDIUM_HIGH
+  recommended_manuscript_role: Discussion / reproducibility observation
+  layer0_status: PENDING_REVIEW
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  layer0_readiness: READY_FOR_REVIEW_NOT_APPROVED
+  prohibited_stronger_wording: Do not claim architecture superiority or theoretical
+    invalidity of the original uniform policy.
+- candidate_claim_id: P02-CLAIM-CAND-006
+  claim_text: The Stage-11 S&R diagnostic challenger did not yield a consistent participant-level
+    BACC improvement over the canonical primary EEGNet across the three datasets.
+  supporting_findings:
+  - P02-FIND-007
+  supporting_analysis:
+  - training_policy_challenger_statistics.json
+  scope: Diagnostic challenger only
+  required_qualification: Not an A-number and not a replacement for primary A0.
+  known_limitations:
+  - DIAGNOSTIC_ONLY
+  confidence: HIGH
+  recommended_manuscript_role: Negative methodological result / supplement
+  layer0_status: PENDING_REVIEW
+  claim_ceiling: SUPPORTED
+  layer0_readiness: READY_FOR_REVIEW_NOT_APPROVED
+  prohibited_stronger_wording: Do not claim the Stage11 challenger improved EEGNet
+    generally.
+- candidate_claim_id: P02-CLAIM-CAND-007
+  claim_text: Within the canonical resource-constrained A4 execution, the C1-C3 longer/multi-view
+    role controls did not produce statistically detectable improvements after the
+    governed paired testing procedure.
+  supporting_findings:
+  - P02-FIND-009
+  - P02-FIND-010
+  supporting_analysis:
+  - a4_role_control_statistics.json
+  scope: A4 C1-C3 anchor/single-repeat governed scope
+  required_qualification: Absence of detected effects is not proof of zero effect;
+    canonical deep scope is reduced.
+  known_limitations:
+  - SINGLE_REPEAT
+  - DEEP_ANCHOR_BUDGETS
+  confidence: HIGH_FOR_TEST_RESULT
+  recommended_manuscript_role: Ablation result / negative result
+  layer0_status: PENDING_REVIEW
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  layer0_readiness: READY_FOR_REVIEW_NOT_APPROVED
+  prohibited_stronger_wording: Do not claim zero A4 effect, five-repeat stability,
+    dense deep-budget characterization, or full-grid equivalence.
+- candidate_claim_id: P02-CLAIM-CAND-008
+  claim_text: 'A hard-vote model ensemble was not uniformly beneficial: one governed
+    PhysioNetMI full-training comparison showed a Holm-significant disadvantage relative
+    to the validation-selected strongest constituent.'
+  supporting_findings:
+  - P02-FIND-011
+  supporting_analysis:
+  - a4_c4_c5_statistics.json
+  scope: Specific C4 PhysioNetMI full-training repeat-4 identity
+  required_qualification: Do not generalize from one corrected comparison to all ensembles.
+  known_limitations:
+  - CELL_SPECIFIC_EFFECT
+  confidence: HIGH_FOR_CELL
+  recommended_manuscript_role: Negative ablation result / discussion
+  layer0_status: PENDING_REVIEW
+  claim_ceiling: SUPPORTED_WITH_QUALIFICATION
+  layer0_readiness: READY_FOR_REVIEW_NOT_APPROVED
+  prohibited_stronger_wording: Do not claim ensembles are generally inferior; one
+    corrected comparison was negative.
+- candidate_claim_id: P02-CLAIM-CAND-009
+  claim_text: Post-hoc Stage18S sensitivity evidence indicates that A4 effect direction
+    can change across repeats and budgets, reinforcing the Protocol restriction against
+    five-repeat stability or dense-budget response claims from canonical Stage18.
+  supporting_findings:
+  - P02-FIND-012
+  supporting_analysis:
+  - Stage18S decision support
+  scope: Post-hoc sensitivity
+  required_qualification: Descriptive/post-hoc only; does not modify canonical G18.
+  known_limitations:
+  - POST_HOC_ONLY
+  - THREE_REPEAT_NOT_FIVE_REPEAT
+  confidence: HIGH_FOR_DESCRIPTION
+  recommended_manuscript_role: Supplement / limitation justification
+  layer0_status: PENDING_REVIEW
+  claim_ceiling: POST_HOC_ONLY
+  layer0_readiness: READY_FOR_REVIEW_NOT_APPROVED
+  prohibited_stronger_wording: Do not present Stage18S as confirmatory or as modifying
+    G18.
+- candidate_claim_id: P02-CLAIM-CAND-010
+  claim_text: P02 provides a fail-closed, provenance-rich Layer-2 evidence substrate
+    for downstream phases while preserving unsuccessful, incompatible, skipped and
+    diagnostic outcomes rather than retaining successful models only.
+  supporting_findings:
+  - P02-FIND-013
+  - P02-FIND-014
+  supporting_analysis:
+  - failure_negative_summary
+  - readiness handoff
+  scope: Reproducibility/downstream readiness
+  required_qualification: Technical readiness is not deployment readiness.
+  known_limitations:
+  - DOWNSTREAM_SCIENCE_NOT_EXECUTED
+  confidence: HIGH
+  recommended_manuscript_role: Methods / reproducibility / supplement
+  layer0_status: PENDING_REVIEW
+  claim_ceiling: SUPPORTED
+  layer0_readiness: READY_FOR_REVIEW_NOT_APPROVED
+  prohibited_stronger_wording: Do not equate technical evidence readiness with deployment
+    readiness.

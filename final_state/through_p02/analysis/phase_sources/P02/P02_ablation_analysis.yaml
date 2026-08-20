@@ -1,0 +1,80 @@
+phase_id: P02
+analysis_release_id: P02-PHASE-ANALYSIS-FINAL-R2
+ablations:
+  A0:
+    status: EXECUTED_COMPLETE
+    planned_cells: 678
+    terminal_counts:
+      SUCCESS: 657
+      FAILED: 3
+      CONDITIONAL_SKIP: 15
+      DEPENDENCY_BLOCKED: 3
+    primary_metric: BACC
+    participant_metric_rows: 3942
+    findings:
+    - P02-FIND-001
+    - P02-FIND-002
+    - P02-FIND-003
+    - P02-FIND-004
+    - P02-FIND-005
+    limitations:
+    - BNCI inferential n=1
+    - low-label single frozen subset
+  A4:
+    status: EXECUTED_COMPLETE_RESOURCE_CONSTRAINED
+    canonical_stage: '18'
+    planned_cells: 1218
+    terminal_counts:
+      SUCCESS: 591
+      CONDITIONAL_SKIP: 576
+      INPUT_INCOMPATIBLE: 9
+      NOT_APPLICABLE_REPEAT_SLOT: 42
+    conditions:
+    - A4-C0-CORE
+    - A4-C1-LONG-3P5S
+    - A4-C2-MULTI-HARD-VOTE
+    - A4-C3-MULTI-PROB-AVG
+    - A4-C4-MODEL-HARD-VOTE
+    - A4-C5-MODEL-PROB-AVG
+    resource_deviation_id: P02-STAGE18-RESOURCE-CONSTRAINED-ANCHOR-BUDGET-SINGLE-REPEAT-R1
+    executed_repeat_indices:
+    - 0
+    skipped_repeat_indices:
+    - 1
+    - 2
+    - 3
+    - 4
+    deep_anchor_budget_ids:
+    - P01-L1-LOW-CAL-OFFICIAL-R2:1_PER_CLASS
+    - P01-L1-LOW-CAL-OFFICIAL-R2:8_PER_CLASS
+    - FULL_TRAIN
+    full_buildbook_replication_equivalence: false
+    findings:
+    - P02-FIND-009
+    - P02-FIND-010
+    - P02-FIND-011
+    claim_ceiling:
+    - anchor-budget/single-repeat A4 effects only
+    - no five-repeat stability
+    - no dense deep-budget curve
+    - no full Build Book equivalence
+  Stage18S:
+    status: POST_HOC_DESCRIPTIVE_SUPPLEMENT
+    canonical_stage18_unchanged: true
+    three_repeat_anchor_trajectories: 45
+    sign_consistency_counts:
+      ALL_NEGATIVE: 7
+      ALL_POSITIVE: 16
+      MIXED: 22
+    six_budget_mr00_trajectories: 15
+    trajectories_with_sign_flip: 15
+    findings:
+    - P02-FIND-012
+    claim_ceiling: POST_HOC_ONLY
+  A1-A3_A5-A13:
+    status: NOT_EXECUTED_IN_P02_WITH_PROTOCOL_ROLE_RETAINED
+    note: P02 records readiness/foundation status as governed; these are downstream
+      or not P02 execution responsibilities.
+  A14:
+    status: REJECTED_PROHIBITED
+    note: Remains rejected under controlling protocol.

@@ -1,0 +1,49 @@
+metrics:
+- metric_id: BACC
+  name: balanced accuracy
+  role: PRIMARY
+  rule: mean per-class recall; claim-ineligible if required true class absent
+- metric_id: F1_MACRO
+  name: macro-F1
+  role: REQUIRED_COMPLEMENTARY
+  rule: class order left_hand,right_hand; zero_division=0; absent true class=>diagnostic
+    only
+- metric_id: ACC
+  name: accuracy
+  role: REQUIRED_SECONDARY
+  rule: correct/valid denominator
+- metric_id: ROC_AUC
+  name: binary ROC-AUC
+  role: CONDITIONAL
+  rule: right_hand positive; both true classes and aligned finite continuous score
+    required
+- metric_id: CONFUSION
+  name: confusion matrix
+  role: REQUIRED_SOURCE
+  rule: rows true/columns predicted; canonical class order
+- metric_id: CLASS_SUPPORT
+  name: class support
+  role: REQUIRED_SOURCE
+  rule: valid denominator by class + exclusions/failures
+- metric_id: PRED_COMPLETE
+  name: prediction completeness
+  role: REQUIRED_SUPPORT
+  rule: valid/expected with missing reasons
+- metric_id: BRANCH_SUCCESS
+  name: branch terminal coverage
+  role: REQUIRED_SUPPORT
+  rule: planned/attempted/success/failed/blocked/skipped/invalid
+- metric_id: A4_DELAY
+  name: A4 burden
+  role: REQUIRED_A4
+  rule: observation duration/member count/model evals/aggregation + batch1 latency
+    median/P95
+not_selected:
+- KAPPA
+- MCC
+- AUPRC
+- BRIER
+- NLL
+- ECE
+- CALIBRATION_SLOPE
+- RISK_COVERAGE

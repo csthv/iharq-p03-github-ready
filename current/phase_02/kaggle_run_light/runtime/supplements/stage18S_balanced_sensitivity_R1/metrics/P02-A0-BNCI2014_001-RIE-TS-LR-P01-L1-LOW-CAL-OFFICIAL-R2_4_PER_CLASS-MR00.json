@@ -1,0 +1,120 @@
+{
+  "config_sha256": "9e181d2e935d2e9674ca6e05572f49520ad0306a3761362b770f8bee8c78ce13",
+  "run_cell_id": "P02-A0-BNCI2014_001-RIE-TS-LR-P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS-MR00",
+  "dataset_id": "BNCI2014_001",
+  "branch_id": "RIE-TS-LR",
+  "resolved_variant": "RIE-TS-LR",
+  "budget_id": "P01-L1-LOW-CAL-OFFICIAL-R2:4_PER_CLASS",
+  "metrics": {
+    "BACC": 0.5902777777777778,
+    "F1_MACRO": 0.5822187254130606,
+    "ACC": 0.5902777777777778,
+    "CONFUSION": [
+      [
+        105,
+        39
+      ],
+      [
+        79,
+        65
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      144,
+      144
+    ],
+    "PRED_COMPLETE": 288,
+    "ROC_AUC": 0.6469425154320988,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "NATIVE_PROBABILITY"
+  },
+  "validation_selection": {
+    "BACC": 0.5486111111111112,
+    "F1_MACRO": 0.4681818181818182,
+    "ACC": 0.5486111111111112,
+    "CONFUSION": [
+      [
+        135,
+        9
+      ],
+      [
+        121,
+        23
+      ]
+    ],
+    "CLASS_SUPPORT": [
+      144,
+      144
+    ],
+    "PRED_COMPLETE": 288,
+    "ROC_AUC": 0.6300154320987654,
+    "ROC_AUC_STATUS": "PASS",
+    "ROC_AUC_SCORE_TYPE": "NATIVE_PROBABILITY"
+  },
+  "validation_burden_seconds": 0.4928594669981976,
+  "model_storage_bytes": 6904,
+  "selected_candidate_id": "CAND-02",
+  "selected_params": {
+    "C": 10,
+    "covariance": "oas",
+    "tangent_metric": "riemann",
+    "max_iter": 2000
+  },
+  "candidate_failures": [],
+  "observed_denominator": 288,
+  "expected_denominator": 288,
+  "score_type": "NATIVE_PROBABILITY",
+  "inference_burden": {
+    "batch1_latency_median_s": 0.0028406519995769486,
+    "batch1_latency_p95_s": 0.002962589199159993,
+    "repeats": 5
+  },
+  "permutation_provenance": null,
+  "class_weight_policy": "UNIFORM_NO_WEIGHT",
+  "class_weights": null,
+  "class_weight_calibration": {
+    "selected_policy": "UNIFORM_NO_WEIGHT",
+    "selected_weights": null,
+    "candidate_results": [
+      {
+        "status": "SUCCESS",
+        "policy": "UNIFORM_NO_WEIGHT",
+        "weights": null,
+        "validation_metrics": {
+          "BACC": 0.5486111111111112,
+          "F1_MACRO": 0.4681818181818182,
+          "ACC": 0.5486111111111112,
+          "CONFUSION": [
+            [
+              135,
+              9
+            ],
+            [
+              121,
+              23
+            ]
+          ],
+          "CLASS_SUPPORT": [
+            144,
+            144
+          ],
+          "PRED_COMPLETE": 288,
+          "ROC_AUC": 0.6300154320987654,
+          "ROC_AUC_STATUS": "PASS",
+          "ROC_AUC_SCORE_TYPE": "NATIVE_PROBABILITY"
+        },
+        "validation_burden_seconds": 0.4928594669981976,
+        "model_storage_bytes": 6904
+      }
+    ],
+    "training_count_evidence": {
+      "counts": [
+        4,
+        4
+      ],
+      "exactly_equal": true,
+      "selection_required": false
+    },
+    "test_set_used": false
+  }
+}

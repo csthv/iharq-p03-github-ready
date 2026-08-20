@@ -1,0 +1,42 @@
+{
+  "stage_id": "22",
+  "status": "SUCCESS",
+  "attempt_id": "c3fbf3019daa",
+  "inputs": {},
+  "input_hashes": {},
+  "outputs": {
+    "status": "PASS",
+    "handoffs": {
+      "protocol_v1_handoff": "protocol_v1_handoff.yaml",
+      "phase_analysis_handoff": "phase_analysis_handoff.yaml",
+      "layer0_handoff": "layer0_handoff.yaml",
+      "evidence_map_handoff": "evidence_map_handoff.yaml",
+      "layer10_source_handoff": "layer10_source_handoff.yaml",
+      "p03_handoff": "p03_handoff.yaml"
+    },
+    "manual_reconstruction_required": false,
+    "artifact": "stage_artifacts/22_handoffs.json"
+  },
+  "output_hashes": {
+    "status": "727e9bd17b077ba162e13ba877135cc6fbc6b30f83da0b34b3e20233f1cc885f",
+    "handoffs": "229a0c71622225373d5621bf9564ede02378527c04e55b15f5230fd1162c2198",
+    "manual_reconstruction_required": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
+    "artifact": "d68c237d27445531443866b37cf5e31923a93c541ab19f8636de926f1b5c5798"
+  },
+  "dependencies": [
+    "21"
+  ],
+  "elapsed_seconds": 0.011658668518066406,
+  "log_path": "logs/stage_22_c3fbf3019daa.log",
+  "heartbeat_write_errors": [],
+  "observability_status": "PASS",
+  "blockers": [],
+  "observations": [],
+  "revision_fingerprint": {
+    "notebook_revision": "R4",
+    "source_sha256": "AUTHORING_FIXTURE_SOURCE",
+    "config_sha256": "AUTHORING_FIXTURE_CONFIG",
+    "stage_plan_sha256": "AUTHORING_FIXTURE_STAGE_PLAN",
+    "scientific_freeze_id": "P02-PLANNED-SCIENTIFIC-EXECUTION-FREEZE-R5"
+  }
+}

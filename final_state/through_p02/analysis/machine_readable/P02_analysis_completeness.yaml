@@ -1,0 +1,62 @@
+p02_analysis_completeness:
+  expected_evidence:
+    total_requirements: 104
+    fully_analyzed: 72
+    partially_analyzed: 0
+    missing: 0
+    not_applicable: 32
+    total_dispositioned: 104
+  actual_evidence:
+    inventory_rows: 46
+    all_scientifically_material_dispositioned: true
+  datasets:
+    count: 3
+    all_analyzed: true
+  models:
+    count: 16
+    all_analyzed: true
+  budgets:
+    governed_low_label:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 16
+    - 32
+    full_train: true
+    all_analyzed: true
+  metrics:
+    count: 6
+    all_analyzed: true
+  participants:
+    participant_level_analysis_complete: true
+  ablations:
+    A0_complete: true
+    A4_complete: true
+    A14_prohibited_preserved: true
+  stage11_12:
+    correction_history_complete: true
+    exact_before_after_analysis_complete_where_comparable: true
+  stage18:
+    canonical_analysis_complete: true
+    resource_deviation_complete: true
+  stage18S:
+    applicable: true
+    analysis_complete: true
+    status: POST_HOC_DESCRIPTIVE
+  failures:
+    all_material_failure_classes_analyzed: true
+    coverage_rows: 7
+  statistics:
+    analysis_complete: true
+    no_new_confirmatory_test_family_added: true
+  negative_results:
+    analysis_complete: true
+  claims:
+    phase_candidate_claims: 10
+    all_traceable: true
+    layer0_status: PENDING_REVIEW
+  limitations:
+    all_mapped: true
+  standalone_preservation_test: NO MATERIAL P02 SCIENTIFIC CONTENT WOULD BE LOST
+  overall_status: FULLY_ANALYZED_AND_PRESERVED_IN_CUMULATIVE_REPORT

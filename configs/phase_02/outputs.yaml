@@ -1,0 +1,104 @@
+records:
+- record: PredictionRecord
+  status: P02_R2_PHYSICAL_SCHEMA_REALIZED_AND_VALIDATED
+  producer: Prediction logger
+  action: Use frozen P02 successor schema from contracts/record_schema_freeze.yaml;
+    writer and validator are implemented; never overwrite P00/P01 records.
+  cardinality: derived from accepted run matrix × eligible evaluation windows
+  consumers: L3-L10
+- record: ModelRegistryRecord
+  status: P02_R2_PHYSICAL_SCHEMA_REALIZED_AND_VALIDATED
+  producer: Model-family registry
+  action: Use frozen P02 successor schema from contracts/record_schema_freeze.yaml;
+    writer and validator are implemented; never overwrite P00/P01 records.
+  cardinality: one per model/checkpoint/config/seed/branch generation
+  consumers: L3-L10/repro
+- record: BaselineMetricRecord
+  status: P02_R2_PHYSICAL_SCHEMA_REALIZED_AND_VALIDATED
+  producer: evaluation path
+  action: Use frozen P02 successor schema from contracts/record_schema_freeze.yaml;
+    writer and validator are implemented; never overwrite P00/P01 records.
+  cardinality: one per governed metric × aggregation cell
+  consumers: Analysis/L10/L0
+- record: LowCalibrationCurveRecord
+  status: P02_R2_PHYSICAL_SCHEMA_REALIZED_AND_VALIDATED
+  producer: Low-calibration curve builder
+  action: Use frozen P02 successor schema from contracts/record_schema_freeze.yaml;
+    writer and validator are implemented; never overwrite P00/P01 records.
+  cardinality: attempted legal budget point × branch/repeat with failures retained
+  consumers: Analysis/L10
+- record: SubjectProfileRecord
+  status: P02_R2_PHYSICAL_SCHEMA_REALIZED_AND_VALIDATED
+  producer: Subject difficulty profiler
+  action: Use frozen P02 successor schema from contracts/record_schema_freeze.yaml;
+    writer and validator are implemented; never overwrite P00/P01 records.
+  cardinality: subject/session profile where coverage sufficient
+  consumers: L5/L6/L8/L10 as allowed
+- record: EnsembleControlRecord
+  status: P02_R2_PHYSICAL_SCHEMA_REALIZED_AND_VALIDATED
+  producer: Ensemble comparison builder
+  action: Use frozen P02 successor schema from contracts/record_schema_freeze.yaml;
+    writer and validator are implemented; never overwrite P00/P01 records.
+  cardinality: one per A4 control × matched identity/group
+  consumers: L3/L4/L10/evaluation
+- record: FailureCaseIndex
+  status: P02_R2_PHYSICAL_SCHEMA_REALIZED_AND_VALIDATED
+  producer: cross-cutting failure index
+  action: Use frozen P02 successor schema from contracts/record_schema_freeze.yaml;
+    writer and validator are implemented; never overwrite P00/P01 records.
+  cardinality: versioned index per run/release plus linked failure rows
+  consumers: Analysis/L10/L0
+- record: Layer2ReadinessReport
+  status: P02_R2_PHYSICAL_SCHEMA_REALIZED_AND_VALIDATED
+  producer: Downstream readiness validator
+  action: Use frozen P02 successor schema from contracts/record_schema_freeze.yaml;
+    writer and validator are implemented; never overwrite P00/P01 records.
+  cardinality: at least one final report + branch/consumer matrix
+  consumers: P03+ and release gate
+- record: LeakageWarningRecord
+  status: OWNER_ROUTED_SUPPORT_RECORD; P02_SOURCE_EVIDENCE_ONLY
+  producer: validation path
+  action: P02 emits validated leakage/source evidence and routes it to the authorized
+    owner/profile; no unauthorized direct record family is invented.
+  cardinality: only when detected
+  consumers: all affected claims/consumers
+  path: analysis_inputs/split_leakage_validation.json + downstream handoff
+- record: MatchedComparisonReport
+  status: OWNER_ROUTED_SUPPORT_RECORD; P02_MATCHED_SOURCE_TABLES_COMPLETE
+  producer: evaluation/export adapter
+  action: P02 emits governed common-support/matched-comparison source tables and routes
+    formal owner-compatible representation downstream; no duplicate physical schema
+    is invented.
+  cardinality: per registered comparison/common-support identity
+  consumers: Protocol/L10/L0
+  path: analysis_inputs/a4_*common_support* + comparison source tables + downstream
+    handoff
+- record: NegativeResultNote
+  status: P02_R2_PHYSICAL_SCHEMA_REALIZED_AND_VALIDATED
+  producer: evaluation governance
+  action: Use frozen P02 successor schema from contracts/record_schema_freeze.yaml;
+    writer and validator are implemented; never overwrite P00/P01 records.
+  cardinality: per governed negative result identity
+  consumers: Analysis/L10/L0
+- record: DiagnosticOnlyFlag
+  status: P02_R2_PHYSICAL_SCHEMA_REALIZED_AND_VALIDATED
+  producer: evaluation/validation
+  action: Use frozen P02 successor schema from contracts/record_schema_freeze.yaml;
+    writer and validator are implemented; never overwrite P00/P01 records.
+  cardinality: per affected artifact/result identity
+  consumers: all
+support_outputs:
+- training_logs
+- inference_logs
+- failure_logs
+- checkpoint_registry
+- model_card_sources
+- figure_source_data
+- table_source_data
+- phase_handoff
+- Protocol_handoff
+- PhaseAnalysis_handoff
+- Layer0_handoff
+- EvidenceMap_handoff
+- Layer10_source_bundle
+- reproducibility_manifest_inputs
